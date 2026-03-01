@@ -35,10 +35,9 @@ By the end of this course, you’ll have a comprehensive, practical understandin
 
 ### Module 1: Introduction to Copilot Extensibility & Agents
 
-- Copilot & Agents Overview
-- What is Agentic AI?
 - Introduction to Agents and Copilots for Microsoft 365
 - The Microsoft 365 platform & Copilot for Microsoft 365 Ecosystem
+- Cloud Adaption Framework for Agentic AI
 - Copilot & Copilot Studio Licensing Options (Full vs PAYG)
 - Key Components of an Agent: Knowledge & Tools
 - Prompt Engineering, Semantic Index & RAG
@@ -63,8 +62,9 @@ By the end of this course, you’ll have a comprehensive, practical understandin
 
 - Prompt Actions & Prompt Library
 - Using Code Interpreter in Prompts
-- Using Dataverse & Enterprise data 
-- Consuming REST Api’s
+- Integrating Dataverse Tables
+- Consuming REST Api’s & Enterprise Data
+- Entra ID & On-Behal-of (OBO) Authentication
 - Integrating Model Context Protocol (MCP)
 - Automating Visual Tasks using Computer Use
 - Managed Agents: Document Processor
@@ -74,6 +74,7 @@ By the end of this course, you’ll have a comprehensive, practical understandin
 
 - Autonomous Agents & Triggers
 - Multi-Agent Orchestration: Focused- & Connected Agents
+- Implementing Routing Patterns
 - Use Deep Reasoning models for complex tasks
 - Agent Flows and determinisric Task Automation
 - Use AI Builder in Flows
@@ -82,12 +83,15 @@ By the end of this course, you’ll have a comprehensive, practical understandin
 - Adding Voice Support to Agents
 - Integrating Pro-Code Agents
 
-### Module 5: Designing & Implementing Business Process
+### Module 5: Designing & Implementing Business Processes
 
 - Defining Scenarios & Envisioning
 - Mapping Scenarios to Capabilities
 - Designing Conversation Flows
-- Implementing Business Processes using Multi-Agent Orchestration
+- Human in the Loop
+- Evaluate Agents & Processes
+- Analytics And Application Insights
+- Troubleshooting and Analyzing Conversations 
 
 ### Module 6: Publishing & Maintaining Copilot Studio Agents
 
@@ -98,7 +102,6 @@ By the end of this course, you’ll have a comprehensive, practical understandin
 - Application Lifecycle Management for Copilot Studio Agents
 - Exporting & Importing Agents between Environments
 - Deployment Pipelines & Source Control integration
-- Using Analytics And Insights
 - Copilot Studio Compliance & Security
 - Introduction to Microsoft Purview
 - Preventing Agent Sprawl
