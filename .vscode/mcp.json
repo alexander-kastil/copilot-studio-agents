@@ -1,5 +1,14 @@
 {
   "servers": {
+    "qr-code": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "run",
+        "src/qr-server/server.py",
+        "--stdio"
+      ]
+    },
     "playwright": {
       "command": "npx",
       "args": [
