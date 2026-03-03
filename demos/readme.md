@@ -1,20 +1,22 @@
 # Designing, Implementing & Maintaining Low-Code Agents using Copilot Studio
 
-Embark on a four-day, hands-on journey into the world of low-code agent development with Copilot Studio, crafted for Power Platform Markers, Software Engineers and Solution Architects ready to bring intelligent automation to life within Microsoft 365.
+Embark on a transformative four-day, hands-on journey into low-code agent development with Copilot Studio, designed for Software Engineers, Solution Architects, and Power Platform Makers ready to deliver intelligent automation within Microsoft 365. You'll progress from foundational AI concepts through advanced orchestration and enterprise governance, gaining practical skills to build agents that solve real business challenges.
 
-Your learning adventure begins with a clear introduction to agents and copilots—what they are, how they operate within the Microsoft 365 ecosystem, and the licensing options available. You’ll explore the essential building blocks of agents: knowledge and tools. Foundational concepts such as prompt engineering, semantic indexing, Retrieval Augmented Generation (RAG), and the Model Context Protocol (MCP) are explained in practical terms. Early on, you’ll learn how to plan and envision agent scenarios and configure your environment for productivity, including no-code approaches with SharePoint and Agent Builder.
+Your learning adventure begins with the essentials of agents and copilots in the Microsoft 365 ecosystem. You'll explore key components like knowledge and tools while mastering foundational concepts like prompt engineering, semantic indexing, Retrieval Augmented Generation (RAG), and the Model Context Protocol (MCP). Environment configuration and planning ensure you're ready to envision and design agent scenarios that drive business value.
 
-The journey continues as you dive into the essentials of Copilot Studio itself. You’ll create and configure agents, manage knowledge and starter prompts, and work with topics, entities, and variables. Power FX is introduced for adding logic, while conversation design best practices and Adaptive Cards help you build engaging and effective interactions. You’ll also see how to publish your agents to channels such as Teams and other common chat applications, making your solutions widely accessible.
+Next, you'll discover the Microsoft Frontier ecosystem and productivity-first approaches to agent development. Copilot Chat, Copilot Tasks, and Microsoft 365 Copilot App Builder provide rapid-development options, while Copilot Workflow, memory management, and Agent Builder (Copilot Studio Light) empower both makers and developers. SharePoint Agents complete the picture, showing how to leverage existing platforms for intelligent automation.
 
-A major focus is placed on extending your agents with powerful tools. You’ll learn to use prompt actions to guide agent behavior, leverage AI Builder and managed agents for document processing, and connect to enterprise data using Connectors and Dataverse. The course covers consuming REST APIs for external integrations and using the Model Context Protocol to enhance agent capabilities. You’ll also automate visual tasks with Computer Use, enabling agents to handle a broader range of business needs.
+The journey deepens as you master Copilot Studio's core capabilities. You'll create and configure agents, design powerful knowledge systems and starter prompts, and work confidently with topics, entities, and variables. Power Fx logic, conversation design best practices, and Adaptive Cards enable rich, engaging interactions that you'll publish to Teams and other channels, reaching real users immediately.
 
-As you progress, advanced topics come into play. You’ll build Autonomous Agents that can act on triggers, orchestrate multiple agents to collaborate on complex workflows, and apply deep reasoning models to solve challenging problems. Agent flows are used to automate tasks, voice support is added for natural interactions, and pro-code agents are integrated for scenarios that require custom logic or advanced features.
+Building on this foundation, you'll extend agents with powerful tools and integrations that transform them into comprehensive automation engines. Prompt actions, Code Interpreter, and Dataverse integration provide fine-grained control, while REST API consumption and the Model Context Protocol (MCP) with WorkIQ connect to enterprise data. Computer Use for visual automation, Managed Agents for document processing, and Component Collections for organization complete your toolkit.
 
-You’ll also learn how to design and implement business processes with agents—defining scenarios, mapping them to agent capabilities, designing conversation flows, and orchestrating multi-agent solutions to automate real business operations.
+Advanced topics unlock sophisticated agent architectures and reasoning capabilities. Autonomous Agents respond to triggers without human initiation, while multi-agent orchestration with focused and connected agents enables complex, distributed workflows. Deep reasoning models solve challenging problems, Agent Flows automate deterministic tasks, voice support adds natural interaction, and pro-code integration handles scenarios demanding custom logic.
 
-The final part of your journey focuses on publishing, monitoring, and maintaining your agents. You’ll work with the Power Platform Admin Center, manage environments and solutions, and deploy agents to a variety of channels, including common chat applications and the web. Application lifecycle management is covered in depth, including exporting and importing agents between environments, setting up deployment pipelines, and integrating with source control for robust versioning. You’ll use analytics and insights to monitor agent performance, ensure compliance and security with Microsoft Purview, and apply strategies to prevent agent sprawl.
+You'll then design and implement business processes powered by agents, moving from isolated tools to end-to-end solutions. Scenario definition, capability mapping, conversation flow design, and human-in-the-loop patterns ensure agents serve real workflows. Analytics, Application Insights, and troubleshooting practices help you evaluate agent performance and continuously refine your processes.
 
-By the end of this course, you’ll have a comprehensive, practical understanding of how to build, extend, monitor, and maintain low-code agents with Copilot Studio—equipped to deliver intelligent automation and real business value.
+Finally, you'll master publishing, maintaining, and governing agents at enterprise scale. The Power Platform Admin Center, environments, and solutions provide organizational foundation, while advanced channels including Teams, web, and WhatsApp ensure broad reach. Application lifecycle management, deployment pipelines, source control integration, and Microsoft Purview compliance complete your governance strategy, preventing agent sprawl and ensuring security.
+
+By course's end, you'll command the full lifecycle of low-code agents from vision through deployment, extension, orchestration, and governance, ready to deliver intelligent automation solutions that drive measurable business value.
 
 ## Duration
 
@@ -48,16 +50,17 @@ By the end of this course, you’ll have a comprehensive, practical understandin
 - Envisioning Planning & Scenarios
 - Tools & Environment Configuration
 
-### Module 2: Copilot Chat, Productivity Agents & Microsoft Frontier
+### Module 2: Microsoft Frontier, Copilot Chat & Productivity Agents
 
 - Microsoft Frontier Program Overview
 - Introduction to Copilot Chat
+- Copilot Tasks
+- Build Apps with Microsoft 365 Copilot App Builder
+- Implement Workflow using Copilot Workflow
 - Memory & Schedules Prompts
 - Productivity Agents
 - Copilot Studio Light (Agent Builder) for No-Code Agents
 - SharePoint Agents
-- Build Apps with Microsoft 365 Copilot App Builder
-- Implement Workflow using Copilot Workflow
 
 ### Module 3: Copilot Studio Basics
 
@@ -76,7 +79,7 @@ By the end of this course, you’ll have a comprehensive, practical understandin
 - Using Code Interpreter in Prompts
 - Integrating Dataverse Tables
 - Consuming REST Api’s & Enterprise Data
-- Integrating Model Context Protocol (MCP)
+- Model Context Protocol (MCP) & WorkIQ
 - Automating Visual Tasks using Computer Use
 - Managed Agents: Document Processor
 - Organizing tools using Component Collections
