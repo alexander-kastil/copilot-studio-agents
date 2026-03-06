@@ -1,0 +1,14 @@
+{
+    "powershell.profiles": [
+        {
+            "name": "PowerShell 7 (Default)",
+            "path": "pwsh",
+            "args": []
+        },
+        {
+            "name": "PowerShell 5",
+            "path": "powershell",
+            "args": []
+        }
+    ]
+}

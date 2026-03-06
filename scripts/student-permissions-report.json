@@ -1,0 +1,397 @@
+﻿{
+    "User": {
+        "DisplayName": "Student 01",
+        "UserPrincipalName": "student01@cloud-agents.org",
+        "Mail": "student01@cloud-agents.org",
+        "Id": "f93c7688-7fcc-40c9-aba6-6ee6c2c9ee44",
+        "AccountEnabled": true
+    },
+    "Licenses": [
+        {
+            "SkuPartNumber": "DEVELOPERPACK_E5",
+            "SkuId": "c42b9cae-ea4f-4ab7-9717-81576235ccac",
+            "ServicePlans": [
+                {
+                    "ServicePlanName": "INSIGHTS_BY_MYANALYTICS",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "MICROSOFT_MYANALYTICS_FULL",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "PEOPLE_SKILLS_FOUNDATION",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "PLACES_CORE",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "COMMON_DEFENDER_PLATFORM_FOR_OFFICE",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "MESH_IMMERSIVE_FOR_TEAMS",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "PURVIEW_DISCOVERY",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "MESH_AVATARS_ADDITIONAL_FOR_TEAMS",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "MESH_AVATARS_FOR_TEAMS",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "CustomerLockboxA_Enterprise",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "MICROSOFT_LOOP",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "Bing_Chat_Enterprise",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "CLIPCHAMP",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "M365_LIGHTHOUSE_CUSTOMER_PLAN1",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "M365_AUDIT_PLATFORM",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "VIVA_LEARNING_SEEDED",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "Nucleus",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "MIP_S_Exchange",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "MICROSOFT_COMMUNICATION_COMPLIANCE",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "GRAPH_CONNECTORS_SEARCH_INDEX",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "Content_Explorer",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "POWER_VIRTUAL_AGENTS_O365_P3",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "CDS_O365_P3",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "PROJECT_O365_P3",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "INSIDER_RISK",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "EXCEL_PREMIUM",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "MTP",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "MICROSOFT_SEARCH",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "DYN365_CDS_O365_P3",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "MICROSOFTBOOKINGS",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "RECORDS_MANAGEMENT",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "ML_CLASSIFICATION",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "INSIDER_RISK_MANAGEMENT",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "INFO_GOVERNANCE",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "DATA_INVESTIGATIONS",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "CUSTOMER_KEY",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "COMMUNICATIONS_DLP",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "COMMUNICATIONS_COMPLIANCE",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "SAFEDOCS",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "M365_ADVANCED_AUDITING",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "YAMMER_ENTERPRISE",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "WHITEBOARD_PLAN3",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "BPOS_S_TODO_3",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "SWAY",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "MCOSTANDARD",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "SHAREPOINTENTERPRISE",
+                    "ProvisioningStatus": "PendingInput"
+                },
+                {
+                    "ServicePlanName": "POWERAPPS_O365_P3",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "BI_AZURE_P2",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "MCOEV",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "SHAREPOINTWAC",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "OFFICESUBSCRIPTION",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "PAM_ENTERPRISE",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "THREAT_INTELLIGENCE",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "ATP_ENTERPRISE",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "ADALLOM_S_O365",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "EQUIVIO_ANALYTICS",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "INTUNE_O365",
+                    "ProvisioningStatus": "PendingActivation"
+                },
+                {
+                    "ServicePlanName": "TEAMS1",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "STREAM_O365_E5",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "Deskless",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "PROJECTWORKMANAGEMENT",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "EXCHANGE_ANALYTICS",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "INTUNE_A",
+                    "ProvisioningStatus": "PendingInput"
+                },
+                {
+                    "ServicePlanName": "FORMS_PLAN_E5",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "ADALLOM_S_STANDALONE",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "MFA_PREMIUM",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "RMS_S_ENTERPRISE",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "MIP_S_CLP1",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "MIP_S_CLP2",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "FLOW_O365_P3",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "EXCHANGE_S_ENTERPRISE",
+                    "ProvisioningStatus": "PendingInput"
+                },
+                {
+                    "ServicePlanName": "LOCKBOX_ENTERPRISE",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "RMS_S_PREMIUM2",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "RMS_S_PREMIUM",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "ATA",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "AAD_PREMIUM_P2",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "AAD_PREMIUM",
+                    "ProvisioningStatus": "Success"
+                }
+            ]
+        },
+        {
+            "SkuPartNumber": "CCIBOTS_PRIVPREV_VIRAL",
+            "SkuId": "606b54a9-78d8-4298-ad8b-df6ef4481c80",
+            "ServicePlans": [
+                {
+                    "ServicePlanName": "FLOW_CCI_BOTS",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "CCIBOTS_PRIVPREV_VIRAL",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "DYN365_CDS_CCI_BOTS",
+                    "ProvisioningStatus": "Success"
+                }
+            ]
+        },
+        {
+            "SkuPartNumber": "POWERAPPS_DEV",
+            "SkuId": "5b631642-bd26-49fe-bd20-1daaa972ef80",
+            "ServicePlans": [
+                {
+                    "ServicePlanName": "EXCHANGE_S_FOUNDATION",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "DYN365_CDS_DEV_VIRAL",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "FLOW_DEV_VIRAL",
+                    "ProvisioningStatus": "Success"
+                },
+                {
+                    "ServicePlanName": "POWERAPPS_DEV_VIRAL",
+                    "ProvisioningStatus": "Success"
+                }
+            ]
+        }
+    ],
+    "DirectoryRoles": [
+        {
+            "RoleName": "Compliance Administrator",
+            "DirectoryScopeId": "/"
+        },
+        {
+            "RoleName": "AI Administrator",
+            "DirectoryScopeId": "/"
+        },
+        {
+            "RoleName": "Global Reader",
+            "DirectoryScopeId": "/"
+        }
+    ],
+    "PowerPlatformRoles": [
+        {
+            "EnvironmentName": "Dev Env (default)",
+            "RoleName": "Environment Maker"
+        }
+    ],
+    "DataverseRoles": [
+        {
+            "EnvironmentName": "Dev Env (default)",
+            "InstanceUrl": "https://org52e38db8.crm4.dynamics.com",
+            "Roles": [],
+            "Error": "The remote server returned an error: (403) Forbidden."
+        }
+    ],
+    "CopilotStudioAssessment": {
+        "HasPotentialLicense": true,
+        "HasPotentialAuthoringRole": false
+    }
+}

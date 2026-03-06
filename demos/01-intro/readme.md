@@ -12,6 +12,18 @@
 - Choose a Copilot Extensibility Development path
 - Envisioning Planning & Scenarios
 
+## Pay as you go licensing
+
+Copilot Licensing:
+
+- Navigate to [Microsoft 365 Admin Center - Copilot Licensing](https://admin.cloud.microsoft/?#/copilot/managecost)
+- Configure a Billing Policy under the Billing Policies section
+
+Copilot Studio Licensing:
+
+- Navigate to [Power Platform Admin Center - Copilot Studio](https://admin.powerplatform.microsoft.com/)
+- Select Licensing -> Copilot Studio -> Manage billing plans
+
 ## Links & Resources
 
 [Microsoft 365 Copilot](https://learn.microsoft.com/en-us/copilot/microsoft-365/)
