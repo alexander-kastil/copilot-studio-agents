@@ -4,6 +4,8 @@
 #Requires -Modules @{ ModuleName="Microsoft.Graph.Identity.DirectoryManagement"; ModuleVersion="2.0" }
 
 param(
+    [Parameter(Mandatory)]
+    [string]$Password,
     [int]$NumberOfUsers = 4,
     [string]$UsernamePattern = "copilot-studio",
     [string]$TenantDomain = "cloud-agents.org",
@@ -32,7 +34,7 @@ function Get-SkuId {
 }
 
 function New-CopilotStudioUser {
-    param([int]$Index, [string]$FirstName, [string]$LastName, [string]$Pattern, [string]$Domain, [string]$UsageLocation)
+    param([int]$Index, [string]$FirstName, [string]$LastName, [string]$Pattern, [string]$Domain, [string]$UsageLocation, [string]$Password)
     
     $upn = "$Pattern-$('{0:D2}' -f $Index)@$Domain"
     $nickname = "$Pattern-$('{0:D2}' -f $Index)"
@@ -43,7 +45,7 @@ function New-CopilotStudioUser {
         return $existing
     }
     
-    $pwd = @{ Password = "TiTp4studi0@"; ForceChangePasswordNextSignIn = $true }
+    $pwd = @{ Password = $Password; ForceChangePasswordNextSignIn = $true }
     
     try {
         $params = @{
@@ -143,7 +145,7 @@ $users = @()
 for ($i = 1; $i -le $NumberOfUsers; $i++) {
     Write-Host "[$i/$NumberOfUsers] Creating user..."
     
-    $user = New-CopilotStudioUser -Index $i -FirstName "Copilot" -LastName "Studio" -Pattern $UsernamePattern -Domain $TenantDomain -UsageLocation $UsageLocation
+    $user = New-CopilotStudioUser -Index $i -FirstName "Copilot" -LastName "Studio" -Pattern $UsernamePattern -Domain $TenantDomain -UsageLocation $UsageLocation -Password $Password
     if ($null -eq $user) { continue }
     
     Add-Licenses -User $user -Licenses $licenses
