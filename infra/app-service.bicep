@@ -23,22 +23,26 @@ param appSettings object = {}
 param appInsightsConnectionString string = ''
 
 // Convert appSettings object to array format required by App Service
-var appSettingsArray = [for key in items(appSettings): {
-  name: key.key
-  value: key.value
-}]
+var appSettingsArray = [
+  for key in items(appSettings): {
+    name: key.key
+    value: key.value
+  }
+]
 
 // Add Application Insights settings if connection string is provided
-var appInsightsSettings = !empty(appInsightsConnectionString) ? [
-  {
-    name: 'APPLICATIONINSIGHTS_CONNECTION_STRING'
-    value: appInsightsConnectionString
-  }
-  {
-    name: 'ApplicationInsightsAgent_EXTENSION_VERSION'
-    value: '~3'
-  }
-] : []
+var appInsightsSettings = !empty(appInsightsConnectionString)
+  ? [
+      {
+        name: 'APPLICATIONINSIGHTS_CONNECTION_STRING'
+        value: appInsightsConnectionString
+      }
+      {
+        name: 'ApplicationInsightsAgent_EXTENSION_VERSION'
+        value: '~3'
+      }
+    ]
+  : []
 
 var finalAppSettings = concat(appSettingsArray, appInsightsSettings)
 
