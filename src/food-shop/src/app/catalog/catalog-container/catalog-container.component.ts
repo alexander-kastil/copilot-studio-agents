@@ -1,5 +1,5 @@
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { AsyncPipe } from '@angular/common';
-import { Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { AILoggerService } from 'src/app/shared/logger/ai-logger.service';
 import { CatalogItem } from '../catalog-item.model';
@@ -13,7 +13,8 @@ import { FoodEntityService } from '../state/food-entity.service';
     CatalogListComponent
   ],
   templateUrl: './catalog-container.component.html',
-  styleUrl: './catalog-container.component.scss'
+  styleUrl: './catalog-container.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CatalogContainerComponent {
   router = inject(Router);

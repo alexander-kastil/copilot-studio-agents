@@ -1,14 +1,15 @@
-import { Component, Input, SimpleChanges, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, SimpleChanges, inject } from '@angular/core';
 
 import { OrderEventResponse } from '../order/order-event-response';
 import { MatCardModule } from '@angular/material/card';
 import { AILoggerService } from 'src/app/shared/logger/ai-logger.service';
 
 @Component({
-    selector: 'app-checkout-response',
-    imports: [MatCardModule],
-    templateUrl: './checkout-response.component.html',
-    styleUrls: ['./checkout-response.component.scss']
+  selector: 'app-checkout-response',
+  imports: [MatCardModule],
+  templateUrl: './checkout-response.component.html',
+  styleUrls: ['./checkout-response.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CheckoutResponseComponent {
   @Input() response: OrderEventResponse | null = null;

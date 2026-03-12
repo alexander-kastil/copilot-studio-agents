@@ -1,5 +1,5 @@
 import { isPlatformBrowser } from '@angular/common';
-import { Component, Inject, PLATFORM_ID, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Inject, PLATFORM_ID, inject, signal } from '@angular/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { of } from 'rxjs';
@@ -15,12 +15,14 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     MatSidenavModule,
     RouterOutlet,
     NavbarComponent,
-  ]
+  ],
+  // Fully migrated to zoneless with OnPush change detection
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
   router = inject(Router);
   title = environment.title;
-  isIframe = window !== window.parent && !window.opener;
+  isIframe = signal(window !== window.parent && !window.opener);
 
   authEnabled = environment.authEnabled;
   authenticated = of(true);
@@ -30,10 +32,10 @@ export class AppComponent {
   }
 
   setMSALIframe() {
-    console.log('setMSALIframe', this.isIframe);
+    console.log('setMSALIframe', this.isIframe());
     if (isPlatformBrowser(this.platformId)) {
       // Use the window reference: this.windowRef
-      this.isIframe = window !== window.parent && !window.opener
+      this.isIframe.set(window !== window.parent && !window.opener);
     }
   }
 

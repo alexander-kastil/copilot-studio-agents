@@ -56,6 +56,14 @@
       ],
       "type": "stdio"
     },
+    "angular-cli": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@angular/cli",
+        "mcp"
+      ]
+    }
   },
   "inputs": []
 }

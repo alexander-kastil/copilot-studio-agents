@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output, effect, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Output, effect, input } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { NumberPickerComponent } from 'src/app/shared/number-picker/number-picker.component';
@@ -13,7 +13,8 @@ import { CartItem } from '../cart-item.model';
     MatCardModule,
     NumberPickerComponent,
     ReactiveFormsModule
-  ]
+  ],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ShopItemComponent {
   food = input<CatalogItem>(new CatalogItem());

@@ -10,5 +10,10 @@
             "path": "powershell",
             "args": []
         }
-    ]
+    ],
+    "chat.mcp.serverSampling": {
+        "copilot-studio-agents/.vscode/mcp.json: angular-cli": {
+            "allowedDuringChat": true
+        }
+    }
 }

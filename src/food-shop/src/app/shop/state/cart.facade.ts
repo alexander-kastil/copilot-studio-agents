@@ -1,74 +1,51 @@
 import { Injectable, inject } from '@angular/core';
-import { Store } from '@ngrx/store';
-import { map, startWith } from 'rxjs/operators';
+import { cartStore } from './cart.store';
 import { CartItem } from '../cart-item.model';
-import { Order } from '../order/order.model';
-import { OrdersService } from '../order/orders.service';
-import { cartActions } from './cart.actions';
-import { CartState, cartState } from './cart.state';
+import { startWith } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CartFacade {
-  store = inject(Store<CartState>);
+  store = inject(cartStore);
 
   clear() {
-    this.store.dispatch(cartActions.clear());
-    this.store.dispatch(cartActions.clearStorage());
+    this.store.clear();
   }
 
   set(item: CartItem) {
-    this.store.dispatch(cartActions.updateCart({ item }));
+    this.store.set(item);
   }
 
   togglePersist(persist: boolean) {
-    if (!persist) {
-      this.store.dispatch(cartActions.clearStorage());
-    }
+    this.store.togglePersist(persist);
   }
 
   getPersist() {
-    return this.store.select(cartState.selectPersist);
+    return this.store.getPersistAsObservable();
   }
 
   getItems() {
-    return this.store.select(cartState.selectItems);
+    return this.store.getItemsAsObservable();
   }
 
   getItemsCount() {
-    return this.store.select(cartState.selectItems).pipe(
-      map((items) =>
-        items.reduce((runningSum, v) => runningSum + v.quantity, 0)
-      ),
-      startWith(0)
-    );
+    return this.store.getCountAsObservable().pipe(startWith(0));
   }
 
   getOrder() {
-    return this.store.select(cartState.selectItems).pipe(
-      map((items) => {
-        let o = Object.assign(new Order(), items);
-        return o;
-      }))
-  };
+    return this.store.getOrderAsObservable();
+  }
 
   getSumTotal() {
-    return this.store.select(cartState.selectItems).pipe(
-      map((items) =>
-        items.reduce((runningSum, v) => {
-          return runningSum + v.quantity * v.price;
-        }, 0)
-      ),
-      startWith(0)
-    );
+    return this.store.getTotalAsObservable().pipe(startWith(0));
   }
 
   saveToStorage(cart: CartItem[]) {
-    this.store.dispatch(cartActions.saveToStorage({ cart }));
+    this.store.saveToStorage(cart);
   }
 
   loadFromStorage() {
-    this.store.dispatch(cartActions.loadFromStorage());
+    this.store.loadFromStorage();
   }
 }

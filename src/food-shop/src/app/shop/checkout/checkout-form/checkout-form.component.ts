@@ -1,5 +1,5 @@
 
-import { Component, EventEmitter, Input, Output, SimpleChanges, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, SimpleChanges, inject } from '@angular/core';
 import { FormArray, FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -12,21 +12,22 @@ import { CartItem } from '../../cart-item.model';
 import { Order } from '../../order/order.model';
 
 @Component({
-    selector: 'app-checkout-form',
-    templateUrl: './checkout-form.component.html',
-    styleUrls: ['./checkout-form.component.scss'],
-    imports: [
-        MatToolbarModule,
-        ReactiveFormsModule,
-        RouterLink,
-        BorderDirective,
-        ColumnDirective,
-        CommandRowDirective,
-        MatFormFieldModule,
-        MatInputModule,
-        MatButtonModule,
-        EuroPipe,
-    ]
+  selector: 'app-checkout-form',
+  templateUrl: './checkout-form.component.html',
+  styleUrls: ['./checkout-form.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [
+    MatToolbarModule,
+    ReactiveFormsModule,
+    RouterLink,
+    BorderDirective,
+    ColumnDirective,
+    CommandRowDirective,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    EuroPipe,
+  ]
 })
 export class CheckoutFormComponent {
   @Input({ required: true }) order: Order = new Order();

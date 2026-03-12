@@ -9,7 +9,7 @@ export const environment = {
   title: 'Food Shop',
   authEnabled: true,
   mockCheckout: true,
-  catalogApi: 'https://food-catalog-api-dev.azurewebsites.net/',
+  catalogApi: 'https://food-catalog-api-copilot.azurewebsites.net',
   ordersApi: 'http://localhost:5002/',
   azure: {
     apimSubscriptionKey: "39fc8b24086a4346a6317d047869f983",

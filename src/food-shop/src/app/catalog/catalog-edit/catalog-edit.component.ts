@@ -1,4 +1,4 @@
-import { Component, effect, inject, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, effect, inject, input } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -6,7 +6,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { Router, RouterLink } from '@angular/router';
 import { CommandRowDirective } from 'src/app/shared/formatting/formatting-directives';
-import { FoodEntityService } from '../state/food-entity.service';
+import { catalogStore } from '../state/catalog.store';
 
 @Component({
   selector: 'app-catalog-edit',
@@ -20,10 +20,11 @@ import { FoodEntityService } from '../state/food-entity.service';
     CommandRowDirective
   ],
   templateUrl: './catalog-edit.component.html',
-  styleUrl: './catalog-edit.component.scss'
+  styleUrl: './catalog-edit.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CatalogEditComponent {
-  service = inject(FoodEntityService);
+  store = inject(catalogStore);
   fb = inject(FormBuilder);
   router = inject(Router);
   id = input.required<number>();
@@ -39,27 +40,29 @@ export class CatalogEditComponent {
   });
 
   constructor() {
+    // Load form when id input changes
     effect(() => {
-      if (this.id() != 0) {
-        this.service.getByKey(this.id()).subscribe((f) => {
-          console.log(f);
-          if (f) {
-            this.form.setValue(f);
-          }
-        });
+      const itemId = this.id();
+      if (itemId !== 0) {
+        const item = this.store.getById(itemId);
+        if (item) {
+          this.form.setValue(item);
+        }
+      } else {
+        this.form.reset();
       }
     }, { allowSignalWrites: true });
   }
 
   saveForm(form: FormGroup) {
-    if (this.id() != 0) {
-      this.service.update(form.value).subscribe(() => {
-        this.router.navigate(["/catalog"]);
-      });
+    if (this.id() !== 0) {
+      // Update existing item
+      this.store.update(form.value);
     } else {
-      this.service.add(form.value).subscribe(() => {
-        this.router.navigate(["/catalog"]);
-      });
+      // Add new item
+      this.store.add(form.value);
     }
+    // Navigate after save
+    this.router.navigate(["/catalog"]);
   }
 }

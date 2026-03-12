@@ -1,15 +1,15 @@
 <mat-sidenav-container>
-  <mat-sidenav #sidenav [opened]="sidenavVisible | async" [mode]="sidenavMode">
+  <mat-sidenav #sidenav [opened]="sidenavVisible()" [mode]="sidenavMode">
     <app-sidebar></app-sidebar>
   </mat-sidenav>
   <mat-sidenav-content [ngStyle]="getWorkbenchStyle()">
     <div class="box">
-      @for (f of food() ; track f) {
-      <app-shop-item
-        [food]="f"
-        [inCart]="getItemsInCart(f.id)()"
-        (amountChange)="updateCart($event)"
-      ></app-shop-item>
+      @for (f of food(); track f) {
+        <app-shop-item
+          [food]="f"
+          [inCart]="getItemsInCart(f.id)()"
+          (amountChange)="updateCart($event)"
+        ></app-shop-item>
       }
     </div>
   </mat-sidenav-content>

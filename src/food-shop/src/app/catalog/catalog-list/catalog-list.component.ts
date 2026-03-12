@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output, SimpleChanges } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, SimpleChanges } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
@@ -8,17 +8,18 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { CatalogItem } from '../catalog-item.model';
 
 @Component({
-    selector: 'app-catalog-list',
-    imports: [
-        MatToolbarModule,
-        MatButtonModule,
-        MatCardModule,
-        MatTableModule,
-        MatIconModule,
-        MatTooltipModule,
-    ],
-    templateUrl: './catalog-list.component.html',
-    styleUrl: './catalog-list.component.scss'
+  selector: 'app-catalog-list',
+  imports: [
+    MatToolbarModule,
+    MatButtonModule,
+    MatCardModule,
+    MatTableModule,
+    MatIconModule,
+    MatTooltipModule,
+  ],
+  templateUrl: './catalog-list.component.html',
+  styleUrl: './catalog-list.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CatalogListComponent {
   @Input() food: CatalogItem[] | null = [];

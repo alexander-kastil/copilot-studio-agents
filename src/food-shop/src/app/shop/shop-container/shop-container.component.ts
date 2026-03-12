@@ -1,43 +1,43 @@
-import { AsyncPipe, NgStyle } from '@angular/common';
-import { Component, DestroyRef, computed, inject } from '@angular/core';
-import { takeUntilDestroyed, toSignal } from '@angular/core/rxjs-interop';
+import { NgStyle } from '@angular/common';
+import { ChangeDetectionStrategy, Component, DestroyRef, computed, inject } from '@angular/core';
+import { takeUntilDestroyed, toSignal, toObservable } from '@angular/core/rxjs-interop';
 import { MatDrawerMode, MatSidenavModule } from '@angular/material/sidenav';
 import { Subscription, combineLatestWith, map, skip, startWith } from 'rxjs';
 import { CatalogItem } from 'src/app/catalog/catalog-item.model';
 import { FoodEntityService } from 'src/app/catalog/state/food-entity.service';
 import { SidebarComponent } from 'src/app/shared/sidebar/sidebar.component';
-import { SidenavFacade } from 'src/app/state/sidenav/sidenav.facade';
+import { sidenavStore } from 'src/app/state/sidenav/sidenav.store';
+import { cartStore } from '../state/cart.store';
 import { environment } from 'src/environments/environment';
 import { CartItem } from '../cart-item.model';
 import { ShopItemComponent } from '../shop-item/shop-item.component';
-import { CartFacade } from '../state/cart.facade';
 import { AILoggerService } from 'src/app/shared/logger/ai-logger.service';
 
 @Component({
   selector: 'app-shop-container',
   imports: [
     MatSidenavModule,
-    AsyncPipe,
     NgStyle,
     SidebarComponent,
     ShopItemComponent,
   ],
   templateUrl: './shop-container.component.html',
-  styleUrl: './shop-container.component.scss'
+  styleUrl: './shop-container.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ShopContainerComponent {
   destroyRef = inject(DestroyRef);
   service = inject(FoodEntityService);
-  cart = inject(CartFacade);
-  mf = inject(SidenavFacade);
+  cart = inject(cartStore);
+  sidenav = inject(sidenavStore);
   ai = inject(AILoggerService);
+
   food = toSignal<CatalogItem[]>(this.service.entities$);
-  cartItems = toSignal<CartItem[]>(this.cart.getItems());
+  cartItems = computed(() => this.cart.items());
 
   // sidenav
   sidenavMode: MatDrawerMode = 'side';
-  sidenavVisible = this.mf.getSideNavVisible();
-  // private destroy$ = new Subject();
+  sidenavVisible = computed(() => this.sidenav.sideNavVisible());
 
   // shopping cart
   cartSubs: Subscription | null = null;
@@ -47,17 +47,12 @@ export class ShopContainerComponent {
     if (this.persistCart) {
       this.ensureStorageFeature();
     }
-    this.mf.getSideNavPosition()
-      .pipe(takeUntilDestroyed(this.destroyRef))
-      .subscribe((mode: string) => {
-        this.sidenavMode = mode as MatDrawerMode;
-      });
   }
 
   ngOnInit(): void {
     this.service.loaded$
       .pipe(takeUntilDestroyed(this.destroyRef))
-      .subscribe((loaded) => {
+      .subscribe((loaded: boolean) => {
         if (!loaded) {
           this.service.getAll();
         }
@@ -66,17 +61,14 @@ export class ShopContainerComponent {
 
   // sidenav
   getWorkbenchStyle() {
-    let result = {};
-    this.mf.getSideNavVisible()
-      .pipe(takeUntilDestroyed(this.destroyRef))
-      .subscribe((visible: boolean) => {
-        result = visible
-          ? {
-            'padding-left': '10px',
-          }
-          : {};
-      });
-    return result;
+    return computed(() => {
+      const visible = this.sidenavVisible();
+      return visible
+        ? {
+          'padding-left': '10px',
+        }
+        : {};
+    });
   }
 
   // shopping cart
@@ -94,12 +86,14 @@ export class ShopContainerComponent {
   }
 
   ensureStorageFeature() {
-    this.cartSubs = this.cart
-      .getItems()
+    const items$ = this.cart.getItems$();
+    const persist$ = this.cart.getPersist$();
+
+    this.cartSubs = items$
       .pipe(
         takeUntilDestroyed(this.destroyRef),
         skip(1),
-        combineLatestWith(this.cart.getPersist().pipe(startWith(true))),
+        combineLatestWith(persist$.pipe(startWith(true))),
         map(([items, persist]) => {
           if (persist) {
             this.cart.saveToStorage(items);
@@ -108,8 +102,7 @@ export class ShopContainerComponent {
       )
       .subscribe();
 
-    this.cart
-      .getPersist()
+    persist$
       .pipe(takeUntilDestroyed(this.destroyRef))
       .subscribe((persist) => {
         if (persist) {
