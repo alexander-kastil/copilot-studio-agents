@@ -16,6 +16,7 @@ param hrMcpServerName string = ''
 param purchasingServiceName string = ''
 param staticWebAppName string = ''
 param appServicePlanName string = ''
+param appInsightsName string = 'custom-copilots'
 
 // Tags that should be applied to all resources
 var tags = {
@@ -59,6 +60,15 @@ module appServicePlan './app-service-plan.bicep' = {
   }
 }
 
+// Application Insights resource reference
+module appInsights './app-insights.bicep' = {
+  name: 'appInsights'
+  params: {
+    appInsightsId: '/subscriptions/${subscription().subscriptionId}/resourcegroups/rg-copilot-studio/providers/microsoft.insights/components/${appInsightsName}'
+    appInsightsName: appInsightsName
+  }
+}
+
 // Food Catalog API
 module foodCatalogApi './app-service.bicep' = {
   name: 'foodCatalogApi'
@@ -73,6 +83,7 @@ module foodCatalogApi './app-service.bicep' = {
     appSettings: {
       STORAGE_ACCOUNT_NAME: storage.outputs.name
     }
+    appInsightsConnectionString: appInsights.outputs.connectionString
   }
 }
 
@@ -88,6 +99,7 @@ module hrMcpServer './app-service.bicep' = {
     runtimeName: 'dotnetcore'
     runtimeVersion: '9.0'
     appSettings: {}
+    appInsightsConnectionString: appInsights.outputs.connectionString
   }
 }
 
@@ -103,6 +115,7 @@ module purchasingService './app-service.bicep' = {
     runtimeName: 'dotnetcore'
     runtimeVersion: '9.0'
     appSettings: {}
+    appInsightsConnectionString: appInsights.outputs.connectionString
   }
 }
 
@@ -137,3 +150,7 @@ output PURCHASING_SERVICE_URI string = purchasingService.outputs.uri
 
 output STATIC_WEB_APP_NAME string = staticWebApp.outputs.name
 output STATIC_WEB_APP_URI string = staticWebApp.outputs.uri
+
+output APP_INSIGHTS_NAME string = appInsights.outputs.name
+output APP_INSIGHTS_INSTRUMENTATION_KEY string = appInsights.outputs.instrumentationKey
+output APP_INSIGHTS_CONNECTION_STRING string = appInsights.outputs.connectionString

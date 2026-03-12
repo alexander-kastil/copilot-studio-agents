@@ -19,11 +19,28 @@ param runtimeVersion string
 @description('Application settings as key-value pairs')
 param appSettings object = {}
 
+@description('Application Insights connection string (optional)')
+param appInsightsConnectionString string = ''
+
 // Convert appSettings object to array format required by App Service
 var appSettingsArray = [for key in items(appSettings): {
   name: key.key
   value: key.value
 }]
+
+// Add Application Insights settings if connection string is provided
+var appInsightsSettings = !empty(appInsightsConnectionString) ? [
+  {
+    name: 'APPLICATIONINSIGHTS_CONNECTION_STRING'
+    value: appInsightsConnectionString
+  }
+  {
+    name: 'ApplicationInsightsAgent_EXTENSION_VERSION'
+    value: '~3'
+  }
+] : []
+
+var finalAppSettings = concat(appSettingsArray, appInsightsSettings)
 
 resource appService 'Microsoft.Web/sites@2023-01-01' = {
   name: name
@@ -38,7 +55,7 @@ resource appService 'Microsoft.Web/sites@2023-01-01' = {
       alwaysOn: false
       ftpsState: 'Disabled'
       minTlsVersion: '1.2'
-      appSettings: appSettingsArray
+      appSettings: finalAppSettings
       cors: {
         allowedOrigins: ['*']
       }
