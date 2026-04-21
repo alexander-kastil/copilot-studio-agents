@@ -1,5 +1,6 @@
-# Name: HR Documents
-# Human Resources related info
+mcs.metadata:
+  componentName: HR Documents
+  description: Human Resources related info
 kind: KnowledgeSourceConfiguration
 source:
   kind: SharePointSearchSource

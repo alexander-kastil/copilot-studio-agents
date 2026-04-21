@@ -1,4 +1,5 @@
-# Name: Collect Employee Data
+mcs.metadata:
+  componentName: Collect Employee Data
 kind: AdaptiveDialog
 modelDescription: "This tool can handle queries like these: add employee information, collect employee data, query for paid leave available"
 beginDialog:

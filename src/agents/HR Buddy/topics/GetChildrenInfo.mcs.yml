@@ -1,4 +1,5 @@
-# Name: Get Children Info
+mcs.metadata:
+  componentName: Get Children Info
 kind: AdaptiveDialog
 modelDescription: "This tool can handle queries like these: get children info, show me my children's information, children details, list my kids, view child profiles, i have a new child"
 beginDialog:

@@ -1,4 +1,5 @@
-# Name: Post conversation
+mcs.metadata:
+  componentName: Post conversation
 kind: AdaptiveDialog
 beginDialog:
   kind: OnRecognizedIntent

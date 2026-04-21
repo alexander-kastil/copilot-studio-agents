@@ -1,5 +1,6 @@
-# Name: Sightseeing
-# Provides Travel Information
+mcs.metadata:
+  componentName: Sightseeing
+  description: Provides Travel Information
 kind: KnowledgeSourceConfiguration
 source:
   kind: SharePointSearchSource

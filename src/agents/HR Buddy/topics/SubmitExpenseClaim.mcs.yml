@@ -1,5 +1,6 @@
-# Name: Submit Expense Claim
-# SubmitExpenseClaim
+mcs.metadata:
+  componentName: Submit Expense Claim
+  description: SubmitExpenseClaim
 kind: AdaptiveDialog
 beginDialog:
   kind: OnRecognizedIntent

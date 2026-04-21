@@ -1,6 +1,6 @@
 # Designing, Implementing & Maintaining Low-Code Agents using Copilot Studio
 
-Companion Material for Class Delivery by [Alexander Kastil](https://www.linkedin.com/in/alexander-kastil-3bb26511a/)
+Companion Material for Class Delivery by [Alexander Kastil](https://www.linkedin.com/in/alexander-kastil/)
 
 This repository contains the content for the Developing Low-Code and Pro-Code Agents and Copilots for Microsoft 365 workshop. The workshop is designed to provide a in-depth hands-on experience in extending Microsoft 365 Copilot capabilities using both low-code and pro-code approaches.
 

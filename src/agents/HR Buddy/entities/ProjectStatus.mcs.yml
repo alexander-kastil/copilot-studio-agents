@@ -1,4 +1,5 @@
-# Name: Project Status
+mcs.metadata:
+  componentName: Project Status
 kind: ClosedListEntity
 smartMatchingEnabled: true
 items:

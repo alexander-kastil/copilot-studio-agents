@@ -1,10 +1,10 @@
-# Name: Book Trip
+mcs.metadata:
+  componentName: Book Trip
 kind: AdaptiveDialog
 beginDialog:
   kind: OnRecognizedIntent
   id: main
   intent:
-    displayName:
     triggerQueries:
       - book a trip
       - plan my vacation

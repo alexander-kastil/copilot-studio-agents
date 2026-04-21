@@ -1,10 +1,10 @@
-# Name: Collect Employee rewards
+mcs.metadata:
+  componentName: Collect Employee rewards
 kind: AdaptiveDialog
 beginDialog:
   kind: OnRecognizedIntent
   id: main
   intent:
-    displayName:
     triggerQueries:
       - collect employee rewards
       - claim my employee reward
@@ -30,7 +30,7 @@ beginDialog:
     - kind: Question
       id: Question_L1omP9
       variable: Topic.RewardChoice
-      prompt: 'Please choose your reward:'
+      prompt: "Please choose your reward:"
       entity:
         kind: EmbeddedEntity
         definition:

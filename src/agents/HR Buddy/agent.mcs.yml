@@ -1,5 +1,6 @@
-# Name: HR Buddy
-# An HR Self service agent
+mcs.metadata:
+  componentName: HR Buddy
+  description: An HR Self service agent
 kind: GptComponentMetadata
 displayName: HR Buddy
 instructions: Answer HR related topics

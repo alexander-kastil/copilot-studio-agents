@@ -1,4 +1,5 @@
-# Name: Microsoft Teams - Post message in a chat or channel
+mcs.metadata:
+  componentName: Microsoft Teams - Post message in a chat or channel
 kind: TaskDialog
 modelDisplayName: Post message in a chat or channel
 modelDescription: Posts a message to a chat or a channel

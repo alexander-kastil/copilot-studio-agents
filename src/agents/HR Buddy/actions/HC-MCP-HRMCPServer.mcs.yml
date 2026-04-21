@@ -1,4 +1,5 @@
-# Name: HC-MCP - HR MCP Server
+mcs.metadata:
+  componentName: HC-MCP - HR MCP Server
 kind: TaskDialog
 modelDisplayName: HR MCP Server
 modelDescription: HR MCP Server
