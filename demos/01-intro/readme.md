@@ -16,13 +16,15 @@
 
 Copilot Licensing:
 
-- Navigate to [Microsoft 365 Admin Center - Copilot Licensing](https://admin.cloud.microsoft/?#/copilot/managecost)
+- Navigate to [Microsoft 365 Admin Center - Copilot - Billing & usage](https://admin.cloud.microsoft/?#/copilot/managecost)
 - Configure a Billing Policy under the Billing Policies section
 
 Copilot Studio Licensing:
 
 - Navigate to [Power Platform Admin Center - Copilot Studio](https://admin.powerplatform.microsoft.com/)
 - Select Licensing -> Copilot Studio -> Manage billing plans
+
+>Note: You will need an Azure Resource Group to be able to setup Pay as you go. It will be used for payment.
 
 ## Links & Resources
 
@@ -31,6 +33,10 @@ Copilot Studio Licensing:
 [Microsoft 365 Copilot Extensibility](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/)
 
 [Set up your development environment for Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/prerequisites?source=recommendations)
+
+[Set up pay-as-you-go for Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365/copilot/pay-as-you-go/setup)
+
+[Set up pay-as-you-go for Microsoft 365 Copilot Studio](https://learn.microsoft.com/en-us/power-platform/admin/pay-as-you-go-set-up)
 
 [Microsoft 365 Copilot extensibility samples](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/samples)
 
