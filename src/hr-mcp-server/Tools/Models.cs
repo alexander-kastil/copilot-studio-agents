@@ -110,3 +110,39 @@ public class EmployeeCollection
     public List<Employee> Employees { get; set; } = new();
 }
 
+/// <summary>
+/// Represents an 8-hour shift assignment for an employee.
+/// </summary>
+public class ShiftAssignment
+{
+    [JsonIgnore]
+    public int Id { get; set; }
+
+    [JsonIgnore]
+    public int EmployeeId { get; set; }
+
+    [JsonPropertyName("employee_name")]
+    public string EmployeeName { get; set; } = string.Empty;
+
+    [JsonPropertyName("date")]
+    public DateOnly Date { get; set; }
+
+    [JsonPropertyName("position")]
+    public string Position { get; set; } = string.Empty;
+
+    /// <summary>Hour (0-23) at which the 8-hour shift starts.</summary>
+    [JsonPropertyName("shift_start_hour")]
+    public int ShiftStartHour { get; set; } = 8;
+
+    [JsonPropertyName("shift_end_hour")]
+    public int ShiftEndHour => ShiftStartHour + 8;
+}
+
+/// <summary>
+/// Container for a collection of shift assignments.
+/// </summary>
+public class ShiftAssignmentCollection
+{
+    public List<ShiftAssignment> Assignments { get; set; } = new();
+}
+

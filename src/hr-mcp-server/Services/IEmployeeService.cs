@@ -39,4 +39,14 @@ public interface IEmployeeService
     /// <param name="searchTerm">The term to search for.</param>
     /// <returns>A list of matching employees.</returns>
     Task<List<Employee>> SearchEmployeesAsync(string searchTerm);
+
+    /// <summary>
+    /// Assigns an employee to an 8-hour shift by name, date, and position.
+    /// </summary>
+    /// <param name="employeeName">Full or partial name of the employee.</param>
+    /// <param name="date">Date of the shift.</param>
+    /// <param name="position">Position for the shift (e.g. bar, waiter).</param>
+    /// <param name="shiftStartHour">Hour (0-23) at which the shift starts. Defaults to 8.</param>
+    /// <returns>The created shift assignment, or null if employee not found.</returns>
+    Task<ShiftAssignment?> AssignShiftAsync(string employeeName, DateOnly date, string position, int shiftStartHour = 8);
 }

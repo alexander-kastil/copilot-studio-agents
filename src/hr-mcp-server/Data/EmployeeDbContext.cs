@@ -11,6 +11,7 @@ public class EmployeeDbContext : DbContext
     }
 
     public DbSet<Employee> Employees => Set<Employee>();
+    public DbSet<ShiftAssignment> ShiftAssignments => Set<ShiftAssignment>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -45,5 +46,25 @@ public class EmployeeDbContext : DbContext
         employeeEntity.Property(c => c.SkillsData)
             .IsRequired()
             .HasColumnType("nvarchar(max)");
+
+        var shiftEntity = modelBuilder.Entity<ShiftAssignment>();
+
+        shiftEntity.ToTable("ShiftAssignments");
+        shiftEntity.HasKey(s => s.Id);
+
+        shiftEntity.Property(s => s.Position)
+            .IsRequired()
+            .HasMaxLength(100);
+
+        shiftEntity.Property(s => s.EmployeeName)
+            .IsRequired()
+            .HasMaxLength(200);
+
+        shiftEntity.Ignore(s => s.ShiftEndHour);
+
+        shiftEntity.HasOne<Employee>()
+            .WithMany()
+            .HasForeignKey(s => s.EmployeeId)
+            .OnDelete(DeleteBehavior.Cascade);
     }
 }

@@ -129,6 +129,29 @@ internal class HRTools
         };
     }
 
+    [McpServerTool]
+    [Description("Assigns an employee to an 8-hour shift by name, date, and position")]
+    public async Task<string> AssignShift(
+        [Description("Full or partial name of the employee")] string employeeName,
+        [Description("Date of the shift in yyyy-MM-dd format")] string date,
+        [Description("Position for the shift (e.g. bar, waiter, host, chef)")] string position,
+        [Description("Hour (0-23) at which the 8-hour shift starts. Defaults to 8")] int shiftStartHour = 8)
+    {
+        if (!DateOnly.TryParseExact(date, "yyyy-MM-dd", out var shiftDate))
+        {
+            return $"Invalid date format '{date}'. Please use yyyy-MM-dd.";
+        }
+
+        var assignment = await _employeeService.AssignShiftAsync(employeeName, shiftDate, position, shiftStartHour);
+
+        if (assignment == null)
+        {
+            return $"No employee found matching '{employeeName}'.";
+        }
+
+        return $"Assigned {assignment.EmployeeName} to '{assignment.Position}' on {assignment.Date:yyyy-MM-dd} from {assignment.ShiftStartHour:D2}:00 to {assignment.ShiftEndHour:D2}:00.";
+    }
+
     private static List<string> ParseCommaSeparatedString(string? input)
     {
         if (string.IsNullOrWhiteSpace(input))

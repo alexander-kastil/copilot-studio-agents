@@ -120,4 +120,39 @@ public class EmployeeService : IEmployeeService
 
         return matchingEmployees;
     }
+
+    public async Task<ShiftAssignment?> AssignShiftAsync(string employeeName, DateOnly date, string position, int shiftStartHour = 8)
+    {
+        if (string.IsNullOrWhiteSpace(employeeName))
+            throw new ArgumentException("Employee name cannot be empty", nameof(employeeName));
+
+        var nameLower = employeeName.Trim().ToLowerInvariant();
+
+        var employees = await _dbContext.Employees.ToListAsync();
+
+        var employee = employees.FirstOrDefault(e =>
+            e.FullName.ToLowerInvariant().Contains(nameLower) ||
+            e.FirstName.ToLowerInvariant().Contains(nameLower) ||
+            e.LastName.ToLowerInvariant().Contains(nameLower));
+
+        if (employee == null)
+            return null;
+
+        var shift = new ShiftAssignment
+        {
+            EmployeeId = employee.Id,
+            EmployeeName = employee.FullName,
+            Date = date,
+            Position = position.Trim(),
+            ShiftStartHour = shiftStartHour
+        };
+
+        await _dbContext.ShiftAssignments.AddAsync(shift);
+        await _dbContext.SaveChangesAsync();
+
+        _logger.LogInformation("Assigned {EmployeeName} to {Position} on {Date} starting at {Hour}:00",
+            employee.FullName, position, date, shiftStartHour);
+
+        return shift;
+    }
 }

@@ -19,15 +19,15 @@ beginDialog:
 
   actions:
     - kind: Question
-      id: Question_w0mGCo
-      variable: Topic.FirstName
-      prompt: What is your first name?
-      entity: PersonNamePrebuiltEntity
-
-    - kind: Question
       id: Question_GeOVef
       variable: Topic.LastName
       prompt: What is your last name?
+      entity: PersonNamePrebuiltEntity
+
+    - kind: Question
+      id: Question_w0mGCo
+      variable: Topic.FirstName
+      prompt: What is your first name?
       entity: PersonNamePrebuiltEntity
 
     - kind: Question
