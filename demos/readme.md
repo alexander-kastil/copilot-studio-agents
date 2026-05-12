@@ -62,6 +62,17 @@ By course's end, you'll command the full lifecycle of low-code agents from visio
 - Copilot Studio Light (Agent Builder) for No-Code Agents
 - SharePoint Agents
 
+### Module: Microsoft 365 Copilot Cowork
+
+- What is Cowork?
+- Getting Started with Cowork
+- Core Capabilities: Communication, Documents, Calendar, Research & Automation
+- Understanding Skills — Built-in Skills & the Side Panel
+- Creating Custom Skills with SKILL.md
+- Scheduling Prompts & Recurring Automation
+- Extending Cowork with Plugins
+- Human-in-the-Loop: Approving Actions & Staying in Control
+
 ### Module 3: Copilot Studio Basics
 
 - Overview Copilot Studio Agents in Copilot Studio
@@ -119,3 +130,104 @@ By course's end, you'll command the full lifecycle of low-code agents from visio
 - Copilot Studio Compliance & Security
 - Introduction to Microsoft Purview
 - Preventing Agent Sprawl
+
+---
+
+## Module: Microsoft 365 Copilot Cowork — Detailed Agenda
+
+> **Duration**: 2 hours · **Audience**: Business users, knowledge workers, team leads, non-developers
+> **Level**: Foundational — no coding required · **Frontier Preview**: requires [Frontier enrollment](https://adoption.microsoft.com/en-us/copilot/frontier-program/)
+
+### Agenda
+
+| Time | Segment | Format |
+|---|---|---|
+| 0:00 – 0:25 | What is Cowork? Core capabilities & live demo | Lecture + Demo |
+| 0:25 – 0:45 | Understanding Skills — built-in skills & the side panel | Lecture + Demo |
+| 0:45 – 1:30 | Creating Custom Skills with SKILL.md | Hands-on Lab |
+| 1:30 – 1:45 | Scheduling Prompts & Plugins | Lecture |
+| 1:45 – 2:00 | Human-in-the-Loop, governance angle & Q&A | Discussion |
+
+### Segment 1 — What is Cowork? (25 min)
+
+- Cowork vs. Copilot Chat: single-step assistant vs. multi-step agent that takes action
+- Where to access: browser ([m365.cloud.microsoft](https://m365.cloud.microsoft)), desktop app, mobile
+- Frontier enrollment — what it means, how to check
+- Live demo: describe a multi-step task (*"Prepare a project status email with an attached summary doc and send it to the team"*) — watch each step execute, follow along in the side panel
+
+### Segment 2 — Understanding Skills (20 min)
+
+- What skills are: specialized capabilities Cowork loads automatically based on your intent
+- Built-in skills: Word, Excel, PowerPoint, PDF, Email, Scheduling, Calendar Management, Meetings, Daily Briefing, Enterprise Search, Deep Research, Communications, Adaptive Cards
+- How skills appear in the side panel during a conversation
+- Key distinction: skills are not the same as Copilot Studio tools — no manual selection needed
+
+### Segment 3 — Creating Custom Skills (45 min, hands-on)
+
+**Concept (10 min)**
+- What a custom skill is: plain-language instructions that teach Cowork a recurring workflow
+- Storage location: `OneDrive/Documents/Cowork/skills/<skill-name>/SKILL.md`
+- Limits: up to 50 skills, 1 MB per file, 20 companion files per skill (10 MB total)
+- Cowork discovers skills automatically at the start of each conversation
+
+**SKILL.md structure**
+```yaml
+---
+name: Weekly Status Report
+description: Generates a weekly status report from my recent emails and calendar.
+---
+
+Gather my sent emails and calendar events from the past week.
+Summarize activity by project and key outcomes.
+Create a Word document with sections: Highlights, In Progress, Blockers, Next Week.
+```
+
+**Skill ideas by persona**
+
+| Persona | Skill idea |
+|---|---|
+| Individual contributor | Weekly status report, meeting prep brief, inbox triage |
+| Team lead / manager | Team update digest, new hire onboarding pack, project kickoff package |
+| Power user | Competitive research brief, proposal template filler, expense folder organizer |
+
+**Lab exercise (35 min)**
+Each participant writes a `SKILL.md` for one recurring task from their own job, saves it to OneDrive, and tests it in Cowork. Groups share and compare results.
+
+### Segment 4 — Scheduling Prompts & Plugins (15 min)
+
+- Scheduled prompts: tell Cowork *what* to do and *when* in plain language (*"Send me a daily briefing every morning at 9 AM"*)
+- Manage schedules from the **Scheduled** tab — edit, pause, resume, or delete (up to 5 active)
+- Plugin skills from the Microsoft 365 App Store: add specialized expertise or external connectors
+- Admin-deployed plugins: IT can roll out plugins for the whole organization
+
+### Segment 5 — Human-in-the-Loop & Governance (15 min)
+
+- Approve before action: Cowork pauses before sending emails, posting in Teams, or scheduling meetings — risk level indicator on each action
+- Pause, resume, cancel at any time
+- Governance angle: connects to Module 7 topics (admin plugin deployment, Frontier enrollment, compliance)
+- When Cowork is the right tool vs. when a full Copilot Studio agent is needed — positioning the rest of the course
+
+### Connections to Other Modules
+
+| Module | Connection |
+|---|---|
+| Module 1 | Demonstrates RAG (Enterprise Search), multi-step orchestration, and the agent concept in a familiar context |
+| Module 2 | Shares the Frontier context and the no-code productivity agent family |
+| Module 5 | Custom skills foreshadow prompt actions and component collections in Copilot Studio |
+| Module 7 | Plugin deployment and Frontier enrollment connect to governance, licensing, and admin controls |
+
+### Key Teaching Points
+
+- **Skills are not tools** — unlike Copilot Studio tools, skills are contextually loaded and activated automatically based on your intent
+- **Custom skills = personal automation** — business users can teach Cowork their recurring workflows without any code or admin involvement
+- **SKILL.md is approachable** — the YAML header and plain-English instructions feel like writing a standard operating procedure, not programming
+- **Human-in-the-loop by default** — the approval model is a concrete entry point for discussing responsible AI in practice
+
+### Resources
+
+- [Cowork Overview](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/)
+- [Cowork Skills & Custom Skills](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/use-cowork)
+- [Cowork FAQ](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-faq)
+- [Cowork Plugins](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-plugins)
+- [Frontier Program](https://adoption.microsoft.com/en-us/copilot/frontier-program/)
+- [Module content](03-cowork/readme.md)
