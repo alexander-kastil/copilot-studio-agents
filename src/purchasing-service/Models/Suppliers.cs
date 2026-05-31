@@ -13,3 +13,8 @@ public class Supplier
     public string EMail { get; set; } = string.Empty;
     public string HomePage { get; set; } = string.Empty;
 }
+
+public class SupplierCollection
+{
+    public List<Supplier> Suppliers { get; set; } = new();
+}
