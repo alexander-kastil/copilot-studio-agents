@@ -54,7 +54,6 @@ Finally, you design and implement real business processes with human-in-the-loop
 - Introduction to Copilot Chat
 - Copilot Tasks
 - Build Apps with Microsoft 365 Copilot App Builder
-- Implement Workflow using Copilot Workflow
 - Memory & Schedules Prompts
 - Productivity Agents
 - Copilot Studio Light (Agent Builder) for No-Code Agents
@@ -141,4 +140,3 @@ Finally, you design and implement real business processes with human-in-the-loop
 - Copilot Studio Compliance & Security
 - Introduction to Microsoft Purview
 - Preventing Agent Sprawl
-
