@@ -5,3 +5,7 @@ node_modules/
 .azure/
 # Ignore .secret-stack folder
 .secret-stack
+
+# .NET build output
+bin/
+obj/
