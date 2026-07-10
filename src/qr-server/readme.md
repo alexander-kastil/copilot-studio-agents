@@ -1,6 +1,6 @@
 # QR Code MCP Server
 
-Generate QR codes from URLs and text in GitHub Copilot Chat.
+A standalone MCP server that generates QR codes from URLs and text. It runs over **stdio** (for GitHub Copilot, Claude Desktop, etc.) or **streamable HTTP** (for web and cloud clients), and is reused as the third MCP server in the [MCP tools demo](../readme.md) (Pattern A).
 
 ## Setup
 
@@ -11,6 +11,18 @@ pip install -r requirements.txt
 # or with uv: uv run server.py --stdio
 ```
 
+## Transports
+
+```bash
+# HTTP mode (default) — serves at http://0.0.0.0:3001/mcp, stateless
+python server.py
+
+# stdio mode — for GitHub Copilot, Claude Desktop, and other stdio MCP clients
+python server.py --stdio
+```
+
+The HTTP port is configurable via the `PORT` environment variable (default `3001`).
+
 ## Use in GitHub Copilot
 
 1. Open Copilot Chat (Ctrl+L)
@@ -18,6 +30,17 @@ pip install -r requirements.txt
 3. Ask: `Generate a QR code for https://www.integrations.at`
 
 The MCP server is configured in `.vscode/mcp.json` and will be automatically available.
+
+## Use with the Foundry agent demo (Pattern A)
+
+The [MCP tools demo](../readme.md) attaches this server to a Foundry agent as the `qr-code` MCP tool, alongside the remote Microsoft Learn server and the local roastery server. Because the Foundry service calls the tool from the cloud, run this server over HTTP and expose it with a dev tunnel:
+
+```bash
+python server.py
+devtunnel host -p 3001 --allow-anonymous
+```
+
+Then set `QR_MCP_URL` in the demo's `.env` to the tunnel URL with the `/mcp` path appended. The [`run.ps1`/`run.sh`](../) scripts in the demo folder automate the environment setup and start this server for you.
 
 ## Parameters
 

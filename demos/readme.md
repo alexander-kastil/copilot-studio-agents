@@ -1,22 +1,20 @@
-# Designing, Implementing & Maintaining Low-Code Agents using Copilot Studio
+# Automate Business Processes using Copilot Cowork and Copilot Studio
 
-Embark on a transformative four-day, hands-on journey into low-code agent development with Copilot Studio, designed for Software Engineers, Solution Architects, and Power Platform Makers ready to deliver intelligent automation within Microsoft 365. You'll progress from foundational AI concepts through advanced orchestration and enterprise governance, gaining practical skills to build agents that solve real business challenges.
+Embark on a four-day, hands-on journey through low-code Agentic AI development with Copilot Studio, designed for Software Engineers, Solution Architects, and Power Platform Makers. You will progress from foundational concepts through advanced orchestration and enterprise governance, gaining practical skills to build agents that solve real business challenges.
 
-Your learning adventure begins with the essentials of agents and copilots in the Microsoft 365 ecosystem. You'll explore key components like knowledge and tools while mastering foundational concepts like prompt engineering, semantic indexing, Retrieval Augmented Generation (RAG), and the Model Context Protocol (MCP). Environment configuration and planning ensure you're ready to envision and design agent scenarios that drive business value.
+You start with the essentials: agents, copilots, prompt engineering, semantic indexing, Retrieval Augmented Generation (RAG), and the Model Context Protocol (MCP). From there you move into the Microsoft Frontier ecosystem, exploring Copilot Chat, Copilot Tasks, App Builder, Copilot Workflow, SharePoint Agents, and Agent Builder.
 
-Next, you'll discover the Microsoft Frontier ecosystem and productivity-first approaches to agent development. Copilot Chat, Copilot Tasks, and Microsoft 365 Copilot App Builder provide rapid-development options, while Copilot Workflow, memory management, and Agent Builder (Copilot Studio Light) empower both makers and developers. SharePoint Agents complete the picture, showing how to leverage existing platforms for intelligent automation.
+You then learn to harness Copilot Cowork, the agentic experience built for everyday knowledge workers. By crafting custom SKILL.md skills, scheduling prompts, and extending capabilities with built-in skills and plugins, anyone on your team can automate recurring workflows without writing a single line of code, while staying in control through human-in-the-loop approvals at every step.
 
-The journey deepens as you master Copilot Studio's core capabilities. You'll create and configure agents, design powerful knowledge systems and starter prompts, and work confidently with topics, entities, and variables. Power Fx logic, conversation design best practices, and Adaptive Cards enable rich, engaging interactions that you'll publish to Teams and other channels, reaching real users immediately.
+Copilot Studio Basics grounds you in creating and configuring agents, mastering knowledge systems including Bing Custom Search, and building rich interactions with topics, entities, variables, Power Fx, and Adaptive Cards.
 
-Building on this foundation, you'll extend agents with powerful tools and integrations that transform them into comprehensive automation engines. Prompt actions, Code Interpreter, and Dataverse integration provide fine-grained control, while REST API consumption and the Model Context Protocol (MCP) with WorkIQ connect to enterprise data. Computer Use for visual automation, Managed Agents for document processing, and Component Collections for organization complete your toolkit.
+You then extend agents with Prompt Actions, the Prompt Assistant for faster prompt engineering, Code Interpreter, and Dataverse integration. Work IQ connects agents to real-time context from files, emails, and meetings, while Computer Use, Managed Agents, and Component Collections complete an enterprise-grade toolkit.
 
-Advanced topics unlock sophisticated agent architectures and reasoning capabilities. Autonomous Agents respond to triggers without human initiation, while multi-agent orchestration with focused and connected agents enables complex, distributed workflows. Deep reasoning models solve challenging problems, Agent Flows automate deterministic tasks, voice support adds natural interaction, and pro-code integration handles scenarios demanding custom logic.
+Advanced topics introduce autonomous agents, multi-agent orchestration, deep reasoning models, Agent Flows, voice support with post-call actions, and pro-code integration.
 
-You'll then design and implement business processes powered by agents, moving from isolated tools to end-to-end solutions. Scenario definition, capability mapping, conversation flow design, and human-in-the-loop patterns ensure agents serve real workflows. Analytics, Application Insights, and troubleshooting practices help you evaluate agent performance and continuously refine your processes.
+A dedicated evaluation module covers Agent Evaluations (GA), test sets, multi-turn conversation tests, activity maps, CSAT transcripts, and the Copilot Studio Kit, giving you structured insight into agent quality and areas for improvement.
 
-Finally, you'll master publishing, maintaining, and governing agents at enterprise scale. The Power Platform Admin Center, environments, and solutions provide organizational foundation, while advanced channels including Teams, web, and WhatsApp ensure broad reach. Application lifecycle management, deployment pipelines, source control integration, and Microsoft Purview compliance complete your governance strategy, preventing agent sprawl and ensuring security.
-
-By course's end, you'll command the full lifecycle of low-code agents from vision through deployment, extension, orchestration, and governance, ready to deliver intelligent automation solutions that drive measurable business value.
+Finally, you design and implement real business processes with human-in-the-loop patterns, analytics, and Application Insights, then master publishing and governance: ALM, deployment pipelines, source control, Microsoft Purview compliance, and preventing agent sprawl.
 
 ## Duration
 
@@ -56,17 +54,28 @@ By course's end, you'll command the full lifecycle of low-code agents from visio
 - Introduction to Copilot Chat
 - Copilot Tasks
 - Build Apps with Microsoft 365 Copilot App Builder
-- Implement Workflow using Copilot Workflow
 - Memory & Schedules Prompts
 - Productivity Agents
 - Copilot Studio Light (Agent Builder) for No-Code Agents
 - SharePoint Agents
+
+### Module: Microsoft 365 Copilot Cowork
+
+- What is Cowork?
+- Getting Started with Cowork
+- Core Capabilities: Communication, Documents, Calendar, Research & Automation
+- Understanding Skills — Built-in Skills & the Side Panel
+- Creating Custom Skills with SKILL.md
+- Scheduling Prompts & Recurring Automation
+- Extending Cowork with Plugins
+- Human-in-the-Loop: Approving Actions & Staying in Control
 
 ### Module 3: Copilot Studio Basics
 
 - Overview Copilot Studio Agents in Copilot Studio
 - Creating & Configuring Copilot Studio Agents
 - Mastering Knowledge & Starter Prompts
+- Bing Custom Search as a Knowledge Source
 - Topics, Entities and Variables
 - Conversation Design Best Practices
 - Collecting Information using Adaptive Cards
@@ -76,10 +85,11 @@ By course's end, you'll command the full lifecycle of low-code agents from visio
 ### Module 4: Extending Copilot Studio Agents Tools
 
 - Prompt Actions & Prompt Library
+- Prompt Assistant for faster Prompt Engineering
 - Using Code Interpreter in Prompts
 - Integrating Dataverse Tables
 - Consuming REST Api’s & Enterprise Data
-- Model Context Protocol (MCP) & WorkIQ
+- Model Context Protocol (MCP) & Work IQ
 - Automating Visual Tasks using Computer Use
 - Managed Agents: Document Processor
 - Organizing tools using Component Collections
@@ -92,10 +102,21 @@ By course's end, you'll command the full lifecycle of low-code agents from visio
 - Use Deep Reasoning models for complex tasks
 - Agent Flows and deterministic Task Automation
 - Use AI Builder in Flows
-- Testing Agents using evaluations
 - Optimize Agent Flows Savings
 - Adding Voice Support to Agents
+- Post-call Actions for Voice Agents
 - Integrating Pro-Code Agents
+
+### Module: Testing & Evaluating Copilot Studio Agents
+
+- Agent Evaluations (GA)
+- Creating Test Sets: Manual, CSV Import & AI-Generated
+- Multi-turn Conversation Tests
+- Thumbs-up/down Feedback & Activity Maps for Diagnosis
+- Viewing & Filtering User Questions and Reactions
+- CSAT Values and Session Transcripts
+- Exporting Evaluation Data for Further Analysis
+- Using Copilot Studio Kit for Advanced Evaluation
 
 ### Module 6: Designing & Implementing Business Processes
 

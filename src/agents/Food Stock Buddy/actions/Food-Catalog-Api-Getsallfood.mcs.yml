@@ -1,0 +1,17 @@
+mcs.metadata:
+  componentName: Food-Catalog-Api - Gets all food
+kind: TaskDialog
+modelDisplayName: Gets all food
+modelDescription: Gets all food
+outputs:
+  - propertyName: Response
+
+action:
+  kind: InvokeConnectorTaskAction
+  connectionReference: iits_foodOrdersBuddy.shared_iits-5ffood-2dcatalog-2dapi-5f0af75e9cbdc7cbac.3b99573cc876430d8c6e520d55b8c3c0
+  connectionProperties:
+    mode: Invoker
+
+  operationId: GetFood
+
+outputMode: All

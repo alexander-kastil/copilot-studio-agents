@@ -1,0 +1,13 @@
+mcs.metadata:
+  componentName: Food Stock Buddy
+  description: A helpful agent that assists you with food orders
+kind: GptComponentMetadata
+displayName: Food Stock Buddy
+instructions: "You are an agent that assists with food orders "
+gptCapabilities: {}
+aISettings:
+  model:
+    modelNameHint: GPT41
+
+  extensionData:
+    lastUsedCustomModel: {}
