@@ -33,7 +33,7 @@ Finally, you design and implement real business processes with human-in-the-loop
 
 ## Modules
 
-### Module 1: Introduction to Microsoft Copilot & AI Agents
+### Module 1: Introduction to Copilot Cowork & Copilot Studio
 
 - Copilot & Agents Overview
 - Introduction to Agents and Copilots for Microsoft 365

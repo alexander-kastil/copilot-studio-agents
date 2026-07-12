@@ -1,4 +1,4 @@
-# Module 1: Introduction to Copilot Extensibility & Agents
+# Module 1: Introduction to Copilot Cowork & Copilot Studio
 
 - Copilot & Agents Overview
 - Introduction to Agents and Copilots for Microsoft 365
@@ -24,7 +24,16 @@ Copilot Studio Licensing:
 - Navigate to [Power Platform Admin Center - Copilot Studio](https://admin.powerplatform.microsoft.com/)
 - Select Licensing -> Copilot Studio -> Manage billing plans
 
->Note: You will need an Azure Resource Group to be able to setup Pay as you go. It will be used for payment.
+> Note: You will need an Azure Resource Group to be able to setup Pay as you go. It will be used for payment.
+
+Cowork Licensing:
+
+- Cowork is a [Microsoft Frontier program](https://adoption.microsoft.com/en-us/copilot/frontier-program/) preview. The tenant needs at least one Microsoft 365 Copilot (or Microsoft E7) license, both the tenant and the managing admin account enrolled in Frontier, and Anthropic enabled as an AI subprocessor.
+- Cowork is not a per-user seat. It is metered by usage-based billing in Copilot Credits, so you pay only for what Cowork actually consumes.
+- Navigate to **Microsoft 365 Admin Center -> Copilot -> Cost Management** and select **Get Started** to activate the default spending policy for the tenant.
+- Choose an Azure subscription as the billing method, set a monthly spending limit and per-user limit, define alert thresholds, then select **Activate**.
+
+> Note: Cowork PAYG uses the same Azure plumbing as the other services (an Azure subscription and resource group with Owner or Contributor rights). Prepaid capacity packs and Copilot Credit Pre-Purchase Plan (P3) credits are drawn down first; pay-as-you-go charges apply only after they are exhausted. Use the [Cowork Estimator](https://aka.ms/CustomerCoworkEstimator) to model credit usage before you enable it.
 
 ## Links & Resources
 
@@ -37,6 +46,10 @@ Copilot Studio Licensing:
 [Set up pay-as-you-go for Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365/copilot/pay-as-you-go/setup)
 
 [Set up pay-as-you-go for Microsoft 365 Copilot Studio](https://learn.microsoft.com/en-us/power-platform/admin/pay-as-you-go-set-up)
+
+[Set up usage-based billing for Cowork (Copilot Credits)](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-credits)
+
+[Usage-based billing and Copilot Credits overview](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits)
 
 [Microsoft 365 Copilot extensibility samples](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/samples)
 

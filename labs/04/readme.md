@@ -1,8 +1,8 @@
 # Extend Microsoft Copilot for Microsoft 365 with Copilot Studio
 
 - [Copilot Studio Basics](./01-basics/)
-- [Copilot Studio Advanced](./02-advanced/)
-- [Copilot Studio Tools](./03-tools/)
+- [Copilot Studio Tools](./02-tools/)
+- [Copilot Studio Advanced](./03-advanced/)
 
 > Note: If you are already familiar with these labs or you need more examples you can also complete the [Maker Path at Copilot Developer Camp](https://microsoft.github.io/copilot-camp/pages/make/copilot-studio/).
 
@@ -12,8 +12,8 @@ Hands-on labs for the rebuilt Copilot Studio (June 2026), paired with the [04-ui
 
 | Lab | Focus |
 |-----|-------|
-| [Build a Sales Account Assistant in the New Experience](./lab-01-sales-account-assistant.md) | Capstone: create a new-experience agent, ground it, add tools and a Dataverse MCP server, package a reusable skill, automate with a workflow, and publish |
-| [Package Team Knowledge into a Portable Skill](./lab-02-portable-skill.md) | Author a portable `SKILL.md`, reuse it across two agents, and contrast the skill approach with classic topics |
+| [Build a Sales Account Assistant in the New Experience](./04-ui-update/lab-01-sales-account-assistant.md) | Capstone: create a new-experience agent, ground it, add tools and a Dataverse MCP server, package a reusable skill, automate with a workflow, and publish |
+| [Package Team Knowledge into a Portable Skill](./04-ui-update/lab-02-portable-skill.md) | Author a portable `SKILL.md`, reuse it across two agents, and contrast the skill approach with classic topics |
 
 ## Additional Learning Paths
 

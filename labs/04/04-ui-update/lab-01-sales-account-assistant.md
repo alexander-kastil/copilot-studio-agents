@@ -8,16 +8,16 @@ The scenario company is Northwind Traders, a wholesale distributor whose sellers
 
 | Step | What you practise | Module topic |
 |------|-------------------|--------------|
-| 1 | Create the agent from a plain-language description | [The Two Copilot Studio Experiences](../../demos/04-copilot-studio/04-ui-update/01-new-experience-overview/readme.md) |
-| 2 | Write scoped Instructions on the unified Build surface | [The Unified Build Surface and the New Orchestrator](../../demos/04-copilot-studio/04-ui-update/02-unified-build-and-orchestrator/readme.md) |
-| 3 | Add product Knowledge and ground the agent | [The Unified Build Surface and the New Orchestrator](../../demos/04-copilot-studio/04-ui-update/02-unified-build-and-orchestrator/readme.md) |
-| 4 | Add account Knowledge and confirm grounding in Preview | [The Unified Build Surface and the New Orchestrator](../../demos/04-copilot-studio/04-ui-update/02-unified-build-and-orchestrator/readme.md) |
-| 5 | Add an Office 365 Outlook connector action as a tool | [Tools, MCP, and the New Workflows Designer](../../demos/04-copilot-studio/04-ui-update/04-workflows-and-mcp/readme.md) |
-| 6 | Add the prebuilt Dataverse MCP server | [Tools, MCP, and the New Workflows Designer](../../demos/04-copilot-studio/04-ui-update/04-workflows-and-mcp/readme.md) |
-| 7 | Chain knowledge and tools and inspect the plan | [The Unified Build Surface and the New Orchestrator](../../demos/04-copilot-studio/04-ui-update/02-unified-build-and-orchestrator/readme.md) |
-| 8 | Package and upload a reusable Skill (SKILL.md) | [Agent Skills in Copilot Studio](../../demos/04-copilot-studio/04-ui-update/03-agent-skills/readme.md) |
-| 9 | Automate the follow-up with a workflow and agent node | [Tools, MCP, and the New Workflows Designer](../../demos/04-copilot-studio/04-ui-update/04-workflows-and-mcp/readme.md) |
-| 10 | Run an end-to-end test in Preview, then Publish | [The Unified Build Surface and the New Orchestrator](../../demos/04-copilot-studio/04-ui-update/02-unified-build-and-orchestrator/readme.md) |
+| 1 | Create the agent from a plain-language description | [The Two Copilot Studio Experiences](../../../demos/04-copilot-studio/04-ui-update/01-new-experience-overview/readme.md) |
+| 2 | Write scoped Instructions on the unified Build surface | [The Unified Build Surface and the New Orchestrator](../../../demos/04-copilot-studio/04-ui-update/02-unified-build-and-orchestrator/readme.md) |
+| 3 | Add product Knowledge and ground the agent | [The Unified Build Surface and the New Orchestrator](../../../demos/04-copilot-studio/04-ui-update/02-unified-build-and-orchestrator/readme.md) |
+| 4 | Add account Knowledge and confirm grounding in Preview | [The Unified Build Surface and the New Orchestrator](../../../demos/04-copilot-studio/04-ui-update/02-unified-build-and-orchestrator/readme.md) |
+| 5 | Add an Office 365 Outlook connector action as a tool | [Tools, MCP, and the New Workflows Designer](../../../demos/04-copilot-studio/04-ui-update/04-workflows-and-mcp/readme.md) |
+| 6 | Add the prebuilt Dataverse MCP server | [Tools, MCP, and the New Workflows Designer](../../../demos/04-copilot-studio/04-ui-update/04-workflows-and-mcp/readme.md) |
+| 7 | Chain knowledge and tools and inspect the plan | [The Unified Build Surface and the New Orchestrator](../../../demos/04-copilot-studio/04-ui-update/02-unified-build-and-orchestrator/readme.md) |
+| 8 | Package and upload a reusable Skill (SKILL.md) | [Agent Skills in Copilot Studio](../../../demos/04-copilot-studio/04-ui-update/03-agent-skills/readme.md) |
+| 9 | Automate the follow-up with a workflow and agent node | [Tools, MCP, and the New Workflows Designer](../../../demos/04-copilot-studio/04-ui-update/04-workflows-and-mcp/readme.md) |
+| 10 | Run an end-to-end test in Preview, then Publish | [The Unified Build Surface and the New Orchestrator](../../../demos/04-copilot-studio/04-ui-update/02-unified-build-and-orchestrator/readme.md) |
 
 ## Lab Files
 
@@ -266,4 +266,4 @@ You built the Northwind Sales Account Assistant: a new-experience agent created 
 - Automate a follow-up with a workflow that calls the agent as a node and reuses a connector action.
 - Run an end-to-end Preview and publish the assistant to seller channels.
 
-Next, take the reasoning skills further in [Trace an Agent's Reasoning in the New Orchestrator](../../demos/04-copilot-studio/demo-02-trace-agent-reasoning.md).
+Next, take the reasoning skills further in [Trace an Agent's Reasoning in the New Orchestrator](../../../demos/04-copilot-studio/04-ui-update/demo-02-trace-agent-reasoning.md).

@@ -12,7 +12,7 @@ Northwind Traders sellers can now ask the Sales Assistant about products and pri
 
 ## Related Topics
 
-This demo puts [Tools, MCP, and the New Workflows Designer](04-ui-update/04-workflows-and-mcp/readme.md) into practice by adding an MCP server and building a workflow from the same Tools surface. It builds on [The Unified Build Surface and the New Orchestrator](04-ui-update/02-unified-build-and-orchestrator/readme.md), because the enhanced orchestration runtime is what reads the server description and decides, on its own, when to call the tool.
+This demo puts [Tools, MCP, and the New Workflows Designer](04-workflows-and-mcp/readme.md) into practice by adding an MCP server and building a workflow from the same Tools surface. It builds on [The Unified Build Surface and the New Orchestrator](02-unified-build-and-orchestrator/readme.md), because the enhanced orchestration runtime is what reads the server description and decides, on its own, when to call the tool.
 
 ## Prerequisites
 
@@ -129,4 +129,4 @@ You connected the Northwind Sales Assistant to live account data and automated a
 - Build a workflow in the new designer with a trigger, an agent node, and a return node.
 - Test a workflow node by node and save a version you can roll back to.
 
-Next, put this together end to end in [Sales Account Assistant](../../labs/04/lab-01-sales-account-assistant.md), where you ground an agent, wire live data, and automate the seller's follow-up as one connected deliverable.
+Next, put this together end to end in [Sales Account Assistant](../../../labs/04/04-ui-update/lab-01-sales-account-assistant.md), where you ground an agent, wire live data, and automate the seller's follow-up as one connected deliverable.

@@ -12,7 +12,7 @@ When a Northwind Traders seller asks one question that needs several facts at on
 
 ## Related Topics
 
-This demo puts [The Unified Build Surface and the New Orchestrator](04-ui-update/02-unified-build-and-orchestrator/readme.md) into practice by exercising the single enhanced runtime that plans and reasons across multiple steps, then exposing that plan through Get rationale and the activity tracker. It builds on [The Two Copilot Studio Experiences](04-ui-update/01-new-experience-overview/readme.md), because only new-type agents run this one non-configurable orchestration runtime; a classic agent would answer single-pass with one tool per turn and would not expose a chained plan.
+This demo puts [The Unified Build Surface and the New Orchestrator](02-unified-build-and-orchestrator/readme.md) into practice by exercising the single enhanced runtime that plans and reasons across multiple steps, then exposing that plan through Get rationale and the activity tracker. It builds on [The Two Copilot Studio Experiences](01-new-experience-overview/readme.md), because only new-type agents run this one non-configurable orchestration runtime; a classic agent would answer single-pass with one tool per turn and would not expose a chained plan.
 
 ## Prerequisites
 

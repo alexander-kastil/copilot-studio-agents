@@ -11,7 +11,7 @@ Northwind Traders sellers write a follow-up email after every customer call, and
 
 ## Related Topics
 
-This demo turns [Agent Skills in Copilot Studio](04-ui-update/03-agent-skills/readme.md) into portal clicks by creating, uploading, testing, and downloading a real `SKILL.md`. It builds on [The Unified Build Surface and the New Orchestrator](04-ui-update/02-unified-build-and-orchestrator/readme.md), where the orchestration runtime matches a request to a skill's description before it loads the full instructions.
+This demo turns [Agent Skills in Copilot Studio](03-agent-skills/readme.md) into portal clicks by creating, uploading, testing, and downloading a real `SKILL.md`. It builds on [The Unified Build Surface and the New Orchestrator](02-unified-build-and-orchestrator/readme.md), where the orchestration runtime matches a request to a skill's description before it loads the full instructions.
 
 ## Prerequisites
 

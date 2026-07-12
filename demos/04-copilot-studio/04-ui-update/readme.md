@@ -17,17 +17,17 @@ Treat classic as the primary teaching track and the new experience as guided dem
 
 | Topic | Demo |
 |-------|------|
-| [The Two Copilot Studio Experiences](01-new-experience-overview/readme.md) | [Build and Ground Your First New-Experience Agent](../demo-01-build-and-ground-an-agent.md) |
-| [The Unified Build Surface and the New Orchestrator](02-unified-build-and-orchestrator/readme.md) | [Trace an Agent's Reasoning in the New Orchestrator](../demo-02-trace-agent-reasoning.md) |
-| [Agent Skills in Copilot Studio](03-agent-skills/readme.md) | [Add a Reusable Skill to an Agent](../demo-03-add-a-reusable-skill.md) |
-| [Tools, MCP, and the New Workflows Designer](04-workflows-and-mcp/readme.md) | [Connect an MCP Server and Automate with a Workflow](../demo-04-connect-mcp-and-workflow.md) |
+| [The Two Copilot Studio Experiences](01-new-experience-overview/readme.md) | [Build and Ground Your First New-Experience Agent](demo-01-build-and-ground-an-agent.md) |
+| [The Unified Build Surface and the New Orchestrator](02-unified-build-and-orchestrator/readme.md) | [Trace an Agent's Reasoning in the New Orchestrator](demo-02-trace-agent-reasoning.md) |
+| [Agent Skills in Copilot Studio](03-agent-skills/readme.md) | [Add a Reusable Skill to an Agent](demo-03-add-a-reusable-skill.md) |
+| [Tools, MCP, and the New Workflows Designer](04-workflows-and-mcp/readme.md) | [Connect an MCP Server and Automate with a Workflow](demo-04-connect-mcp-and-workflow.md) |
 
 ## Labs
 
 | Lab | Focus |
 |-----|-------|
-| [Build a Sales Account Assistant in the New Experience](../../../labs/04/lab-01-sales-account-assistant.md) | Capstone: build, ground, tool up, skill, and publish a new-experience agent end to end |
-| [Package Team Knowledge into a Portable Skill](../../../labs/04/lab-02-portable-skill.md) | Author a `SKILL.md`, reuse it across two agents, and contrast with classic topics |
+| [Build a Sales Account Assistant in the New Experience](../../../labs/04/04-ui-update/lab-01-sales-account-assistant.md) | Capstone: build, ground, tool up, skill, and publish a new-experience agent end to end |
+| [Package Team Knowledge into a Portable Skill](../../../labs/04/04-ui-update/lab-02-portable-skill.md) | Author a `SKILL.md`, reuse it across two agents, and contrast with classic topics |
 
 ## Classic to new quick reference
 

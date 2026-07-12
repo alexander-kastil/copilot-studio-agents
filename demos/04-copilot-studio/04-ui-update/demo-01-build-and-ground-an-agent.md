@@ -11,7 +11,7 @@ Northwind Traders sellers lose the first ten minutes of every customer call hunt
 
 ## Related Topics
 
-This demo puts [The Two Copilot Studio Experiences](04-ui-update/01-new-experience-overview/readme.md) into practice by building entirely on the new-experience surface and confirming which experience you are in. It grounds [The Unified Build Surface and the New Orchestrator](04-ui-update/02-unified-build-and-orchestrator/readme.md) by wiring Instructions and Knowledge together in the single Build view.
+This demo puts [The Two Copilot Studio Experiences](01-new-experience-overview/readme.md) into practice by building entirely on the new-experience surface and confirming which experience you are in. It grounds [The Unified Build Surface and the New Orchestrator](02-unified-build-and-orchestrator/readme.md) by wiring Instructions and Knowledge together in the single Build view.
 
 ## Prerequisites
 
