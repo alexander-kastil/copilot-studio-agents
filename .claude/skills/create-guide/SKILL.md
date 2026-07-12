@@ -24,6 +24,29 @@ kind of work, then write a guide a learner can follow start to finish and reach 
 
 ---
 
+## What makes a guide worth shipping
+
+A guide teaches a capability and leaves the learner holding a real artifact. Judge every guide
+against these before writing a line. A guide that fails any of them is not ready.
+
+- Substantive, not procedural. The subject must be a capability worth the learner's time: a demo
+  runs 15 minutes or more, a lab 20 minutes or more. Signing in, flipping a toggle, switching an
+  experience, or touring tabs is setup, never a demo; fold it into Prerequisites as one line. If the
+  whole guide could be replaced by a single sentence of instructions, it is not a guide.
+- Produces an artifact. By the end the learner has built, configured, tuned, or shipped something
+  real: a grounded agent, a tuned skill, a published workflow, a scored evaluation. Name it up front.
+- Concept-first. Each exercise opens with why it matters and what the feature actually does, in plain
+  prose, before any click. The learner should understand the feature, not just replay keystrokes.
+- Copy-paste ready. Everywhere the learner must supply input (agent instructions, a skill
+  description, a tool description, a test prompt, sample data), ship the exact text in a block they
+  can paste. Never write "add a description" without giving the description.
+- Observable at every step. Every step ends with an Expected result that names the concrete
+  on-screen signal and how the learner knows it worked, not a restatement of the action.
+- Honest. Never fabricate screenshots, tenant data, or tool output. Describe the expected on-screen
+  state in words. If you did not run it, do not invent its output.
+
+---
+
 ## The job (locked)
 
 Naming and placement never vary:
@@ -56,7 +79,11 @@ Do not create any file until this gate passes. Batch the open decisions into one
 - Whether the guide ships a runnable project and, if so, the runtime and stack. Offer C#/.NET,
   Node/TypeScript, and Python as equals; never label one as recommended.
 - Whether companion asset files are needed and which real-world formats they use.
-- Step count. Demos and focused single-topic guides aim for 3 to 4 steps; labs have a minimum of 8.
+- Depth and runtime. A demo is 4 to 6 substantive exercises and runs 15 minutes or more; a lab is 8
+  to 12 substantive steps and runs 20 minutes or more. These are floors for substance, never caps:
+  every exercise must teach a capability and move the deliverable forward. If a proposed guide cannot
+  fill that depth honestly, the subject is too thin to be a guide; propose folding it into a larger
+  one instead.
 
 Before proposing, scan the module root for existing guide files. If one with the same number or the
 same scenario scope already exists, surface it and ask whether to replace, renumber, or coexist.
@@ -74,10 +101,12 @@ tenant) for the modules that are specifically about them.
 |--------|-------------|-------|
 | `prompt-recipe` | Business users and low-code makers | Five-part steps (Overview, Research, Finding, Recipe, Expected Outcome) that teach driving Claude or Copilot with prompts |
 | `guided` | Initial project or environment setup only | Explicit numbered setup steps and commands |
-| `walkthrough` | Developer / code, Microsoft-Learn style | Prose readme with numbered steps, run commands, expected-output blocks, verification, cleanup |
+| `walkthrough` | Product UI (Copilot Studio, M365 portals) and developer code, Microsoft-Learn style | Exercise-based prose: business-outcome milestones, copy-paste inputs, per-exercise expected results, callouts, troubleshooting, a summary. Code sub-mode adds run commands and expected output |
 
-Default to `prompt-recipe` unless the guide is initial project setup (`guided`) or a code walkthrough
-for developers (`walkthrough`). Accept an explicit override in the task.
+Default to `prompt-recipe` unless the guide is initial project setup (`guided`) or a
+Microsoft-Learn-style walkthrough of a product UI or real code (`walkthrough`). Copilot Studio and
+other portal guides use `walkthrough` in its product-UI sub-mode. Accept an explicit override in the
+task.
 
 ---
 
@@ -230,11 +259,19 @@ Rules:
 
 ---
 
-## walkthrough structure (code, Microsoft-Learn style)
+## walkthrough structure (Microsoft-Learn style)
 
-Use for developer guides that run real code, the pattern proven in the ai-103 course. The guide is
-prose with numbered steps, exact run commands, expected-output blocks, a verification step, and
-cleanup. No slide deck is forced.
+Two sub-modes share one quality bar (see "What makes a guide worth shipping"):
+
+- Code walkthrough (Template A): developer guides that run real code. Run-verify first.
+- Product-UI walkthrough (Template B): makers or business users driving a product UI such as Copilot
+  Studio or a Microsoft 365 portal, where the work is configuration and testing, not code. This is
+  the default for Copilot Studio guides.
+
+### Template A - Code walkthrough
+
+Prose with numbered steps, exact run commands, expected-output blocks, a verification step, and
+cleanup. The pattern proven in the ai-103 course. No slide deck is forced.
 
 ```markdown
 # <Verb-action title>
@@ -298,6 +335,88 @@ Rules:
   `creationflags=subprocess.CREATE_NEW_PROCESS_GROUP`.
 - Expected-output blocks show trimmed real output, not invented text. This is why the guide is
   run-verified before it is written (see "Run-verify first").
+
+### Template B - Product-UI walkthrough
+
+Frame the guide as a short set of Exercises, each a business-outcome milestone, never a click log.
+This is the standard for Copilot Studio and portal guides. Model the depth on Microsoft's own labs
+(for example the Copilot Camp and mcs-labs exercises): concept prose, copy-paste inputs, and a
+described expected screen at every turn.
+
+```markdown
+# <Verb-action title>
+
+<Two or three sentences: the business outcome and the real job this automates, then the artifact the
+learner builds.>
+
+## What you'll build
+
+- <the artifact in 3 to 5 concrete bullets the learner can picture>
+
+## Related Topics
+
+<Demo guides only: one paragraph, 2 to 3 module topics with relative links, one sentence each.>
+
+## Prerequisites
+
+- <Accounts, roles, licenses, and any one-line setup such as turning on an experience. Setup lives
+  here, never as an exercise.>
+
+## Exercise 1: <business-outcome title>
+
+<One or two short paragraphs: what this exercise achieves and what the feature actually does and why.
+Explain the feature, not just the path to it.>
+
+1. <Numbered action. Bold the exact UI element acted on, for example select **Add a tool**.>
+2. <Next action; show the value to enter inline or in the paste block below.>
+
+<A copy-paste block for any content the learner must supply:>
+
+```text
+<the exact instructions / description / prompt / sample data to paste>
+```
+
+Expected: <the concrete on-screen signal that proves it worked, and where to look for it.>
+
+> **Tip:** <a real tip that saves time or prevents a common mistake.>
+
+## Exercise <n>: <title>
+
+<Same shape. Later exercises consume earlier outputs and build toward the named artifact.>
+
+## Troubleshooting
+
+| Symptom | Likely cause | Fix |
+|---------|--------------|-----|
+| <what the learner sees go wrong> | <why it happens> | <what to do> |
+
+## Summary
+
+You built <the artifact>. You can now:
+
+- <capability the learner can now perform>
+- <capability>
+
+<One sentence pointing to the next demo or lab.>
+```
+
+Rules for product-UI walkthroughs:
+
+- Exercises are business-outcome milestones. A demo has 4 to 6; a lab has 8 to 12 and forms one
+  connected storyline toward a single named deliverable, with later exercises consuming earlier
+  outputs.
+- Bold the exact UI labels the learner acts on (**Build**, **Add a tool**, **Publish**). This is the
+  one place bold is expected in body text.
+- Every exercise that needs learner input ships a copy-paste block with the real text. Never write
+  "enter a description" without providing the description.
+- Every exercise ends with an Expected line naming the on-screen signal, not a restatement of the
+  action.
+- Use `> **Tip:**`, `> **Note:**`, and `> **Warning:**` callouts for time-savers, context, and
+  gotchas, sparingly (roughly one per two exercises, not every step).
+- Include a Troubleshooting table (at least three real symptoms) and a Summary with a capability
+  checklist.
+- Never fabricate screenshots or tenant data. Describe the expected screen in words. A guide may
+  reference a real image under an `_images/` folder only if that image actually exists.
 
 ---
 
@@ -386,7 +505,9 @@ are only tangentially related.
 
 ## General rules
 
-- No bold or italic in body prose (headings and label words like **Overview** are fine).
+- No bold or italic in body prose (headings and label words like **Overview** are fine). Exception:
+  product-UI walkthroughs bold the exact UI labels the learner clicks (**Build**, **Add a tool**)
+  and the callout keywords (**Tip:**, **Note:**, **Warning:**).
 - No inline comments in code blocks; no placeholder notes.
 - Max 4 sentences per paragraph; start a new paragraph at the 5th.
 - No em dashes; use `,` `;` `:` or `()` instead.

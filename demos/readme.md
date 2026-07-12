@@ -54,7 +54,6 @@ Finally, you design and implement real business processes with human-in-the-loop
 - Introduction to Copilot Chat
 - Copilot Tasks
 - Build Apps with Microsoft 365 Copilot App Builder
-- Memory & Schedules Prompts
 - Productivity Agents
 - Copilot Studio Light (Agent Builder) for No-Code Agents
 - SharePoint Agents
@@ -64,11 +63,22 @@ Finally, you design and implement real business processes with human-in-the-loop
 - What is Cowork?
 - Getting Started with Cowork
 - Core Capabilities: Communication, Documents, Calendar, Research & Automation
-- Understanding Skills — Built-in Skills & the Side Panel
+- Understanding Skills: Built-in Skills & the Side Panel
 - Creating Custom Skills with SKILL.md
 - Scheduling Prompts & Recurring Automation
 - Extending Cowork with Plugins
 - Human-in-the-Loop: Approving Actions & Staying in Control
+
+### Module: Copilot Studio New Experience (New UI)
+
+- Classic vs New Experience: the New Experience Toggle & Coexistence
+- Telling the Experiences Apart: Build, Preview, Evaluate & Monitor Tabs
+- The Unified Build Surface & the Classic-to-New Component Map
+- The Enhanced Orchestration Runtime & Deep Reasoning
+- Agent Skills: the Open SKILL.md Format & Loading on Demand
+- Importing Claude Code & GitHub Copilot Skills
+- Tools, MCP Servers & the New Node-by-Node Workflows Designer
+- Capstone Lab: Building a Sales Account Assistant in the New Experience
 
 ### Module 3: Copilot Studio Basics
 
@@ -131,12 +141,10 @@ Finally, you design and implement real business processes with human-in-the-loop
 ### Module 7: Publishing & Maintaining Copilot Studio Agents
 
 - PowerPlatform Admin Center & Architecture
-- Introduction to Power Platform Environments & Solutions
+- Introduction to Power Platform Environments & Solutios
 - Publishing and Deploying Copilot Studio Agents
 - Using Advanced Channels (Whatsapp, Web, ...)
 - Application Lifecycle Management for Copilot Studio Agents
 - Exporting & Importing Agents between Environments
 - Deployment Pipelines & Source Control integration
 - Copilot Studio Compliance & Security
-- Introduction to Microsoft Purview
-- Preventing Agent Sprawl
