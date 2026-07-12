@@ -110,6 +110,7 @@ These apply across every phase and override any looser guidance in a peer skill:
 - Slash-command tables are topic-specific, never the same generic set in every module.
 - Code fences must declare a language.
 - Internal links use relative paths; anchors use `#heading-name`.
+- Demos and labs meet the substance bar in `create-guide` (see "What makes a guide worth shipping"): a demo teaches a real capability, a lab is a genuine 20+ minute build, both concept-first with copy-paste inputs and a described Expected result at every step. Setup or navigation is never a demo.
 - Layout is unified: numbered module folders under `demos/` and `labs/`.
 - After writing or significantly editing any README or guide, invoke the repo-local
   `brand-voice-*` skill to verify.
