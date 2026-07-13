@@ -12,6 +12,8 @@ You then extend agents with Prompt Actions, the Prompt Assistant for faster prom
 
 Advanced topics introduce autonomous agents, multi-agent orchestration, deep reasoning models, Agent Flows, voice support with post-call actions, and pro-code integration.
 
+A guided preview then walks the rebuilt Copilot Studio New Experience alongside the classic UI: the New experience toggle and coexistence, the unified Build surface with its Build, Preview, Evaluate, and Monitor tabs, and the enhanced orchestration runtime. You work with Agent Skills in the open SKILL.md format, import Claude Code and GitHub Copilot skills, and connect tools, MCP servers, and the new node-by-node Workflows designer. A capstone lab builds a Sales Account Assistant end to end in the new experience.
+
 A dedicated evaluation module covers Agent Evaluations (GA), test sets, multi-turn conversation tests, activity maps, CSAT transcripts, and the Copilot Studio Kit, giving you structured insight into agent quality and areas for improvement.
 
 Finally, you design and implement real business processes with human-in-the-loop patterns, analytics, and Application Insights, then master publishing and governance: ALM, deployment pipelines, source control, Microsoft Purview compliance, and preventing agent sprawl.
@@ -60,7 +62,6 @@ Finally, you design and implement real business processes with human-in-the-loop
 
 ### Module: Microsoft 365 Copilot Cowork
 
-- What is Cowork?
 - Getting Started with Cowork
 - Core Capabilities: Communication, Documents, Calendar, Research & Automation
 - Understanding Skills: Built-in Skills & the Side Panel
@@ -68,17 +69,6 @@ Finally, you design and implement real business processes with human-in-the-loop
 - Scheduling Prompts & Recurring Automation
 - Extending Cowork with Plugins
 - Human-in-the-Loop: Approving Actions & Staying in Control
-
-### Module: Copilot Studio New Experience (New UI)
-
-- Classic vs New Experience: the New Experience Toggle & Coexistence
-- Telling the Experiences Apart: Build, Preview, Evaluate & Monitor Tabs
-- The Unified Build Surface & the Classic-to-New Component Map
-- The Enhanced Orchestration Runtime & Deep Reasoning
-- Agent Skills: the Open SKILL.md Format & Loading on Demand
-- Importing Claude Code & GitHub Copilot Skills
-- Tools, MCP Servers & the New Node-by-Node Workflows Designer
-- Capstone Lab: Building a Sales Account Assistant in the New Experience
 
 ### Module 3: Copilot Studio Basics
 
@@ -97,11 +87,12 @@ Finally, you design and implement real business processes with human-in-the-loop
 - Prompt Actions & Prompt Library
 - Prompt Assistant for faster Prompt Engineering
 - Using Code Interpreter in Prompts
+- Integrate Enterprise Data using Connectors
 - Integrating Dataverse Tables
 - Consuming REST Api’s & Enterprise Data
 - Model Context Protocol (MCP) & Work IQ
+- AI Builder & Managed Agents: Document Processor
 - Automating Visual Tasks using Computer Use
-- Managed Agents: Document Processor
 - Organizing tools using Component Collections
 
 ### Module 5: Advanced Copilot Studio Agents
@@ -117,16 +108,16 @@ Finally, you design and implement real business processes with human-in-the-loop
 - Post-call Actions for Voice Agents
 - Integrating Pro-Code Agents
 
-### Module: Testing & Evaluating Copilot Studio Agents
+### Module: Copilot Studio New Experience (New UI)
 
-- Agent Evaluations (GA)
-- Creating Test Sets: Manual, CSV Import & AI-Generated
-- Multi-turn Conversation Tests
-- Thumbs-up/down Feedback & Activity Maps for Diagnosis
-- Viewing & Filtering User Questions and Reactions
-- CSAT Values and Session Transcripts
-- Exporting Evaluation Data for Further Analysis
-- Using Copilot Studio Kit for Advanced Evaluation
+- Classic vs New Experience: the New Experience Toggle & Coexistence
+- Telling the Experiences Apart: Build, Preview, Evaluate & Monitor Tabs
+- The Unified Build Surface & the Classic-to-New Component Map
+- The Enhanced Orchestration Runtime & Deep Reasoning
+- Agent Skills: the Open SKILL.md Format & Loading on Demand
+- Importing Claude Code & GitHub Copilot Skills
+- Tools, MCP Servers & the New Node-by-Node Workflows Designer
+- Capstone Lab: Building a Sales Account Assistant in the New Experience
 
 ### Module 6: Designing & Implementing Business Processes
 
@@ -138,12 +129,23 @@ Finally, you design and implement real business processes with human-in-the-loop
 - Analytics And Application Insights
 - Troubleshooting and Analyzing Conversations
 
+### Module: Testing & Evaluating Copilot Studio Agents
+
+- Agent Evaluations (GA)
+- Creating Test Sets: Manual, CSV Import & AI-Generated
+- Multi-turn Conversation Tests
+- Thumbs-up/down Feedback & Activity Maps for Diagnosis
+- Viewing & Filtering User Questions and Reactions
+- CSAT Values and Session Transcripts
+- Exporting Evaluation Data for Further Analysis
+- Using Copilot Studio Kit for Advanced Evaluation
+
 ### Module 7: Publishing & Maintaining Copilot Studio Agents
 
 - PowerPlatform Admin Center & Architecture
-- Introduction to Power Platform Environments & Solutios
+- Introduction to Power Platform Environments & Solutions
 - Publishing and Deploying Copilot Studio Agents
-- Using Advanced Channels (Whatsapp, Web, ...)
+- Using Advanced Channels (WhatsApp, Web, ...)
 - Application Lifecycle Management for Copilot Studio Agents
 - Exporting & Importing Agents between Environments
 - Deployment Pipelines & Source Control integration

@@ -1,48 +1,23 @@
-# Module 2: Implementing Low-Code Agents using Microsoft Copilot Studio
+# Implementing Low-Code Agents with Microsoft Copilot Studio
 
-## New Experience (UI Update)
+Copilot Studio is Microsoft's low-code platform for building, extending, and shipping agents. This module works through the classic authoring surface students use today, then previews the rebuilt New Experience that shipped in June 2026.
 
-The [04-ui-update](./04-ui-update/readme.md) sub-module covers the rebuilt Copilot Studio that shipped in June 2026, taught alongside the classic UI students use today. Theory lives in its four topic folders; the demos below are Learn-style portal walkthroughs.
+It is split into four focused topics that move from first agent to advanced orchestration and the new UI.
 
-| Topic | Demo |
-|-------|------|
-| [The Two Copilot Studio Experiences](./04-ui-update/01-new-experience-overview/readme.md) | [Build and Ground Your First New-Experience Agent](./04-ui-update/demo-01-build-and-ground-an-agent.md) |
-| [The Unified Build Surface and the New Orchestrator](./04-ui-update/02-unified-build-and-orchestrator/readme.md) | [Trace an Agent's Reasoning in the New Orchestrator](./04-ui-update/demo-02-trace-agent-reasoning.md) |
-| [Agent Skills in Copilot Studio](./04-ui-update/03-agent-skills/readme.md) | [Add a Reusable Skill to an Agent](./04-ui-update/demo-03-add-a-reusable-skill.md) |
-| [Tools, MCP, and the New Workflows Designer](./04-ui-update/04-workflows-and-mcp/readme.md) | [Connect an MCP Server and Automate with a Workflow](./04-ui-update/demo-04-connect-mcp-and-workflow.md) |
+## Topics
 
-## Copilot Studio Basics
+| # | Topic | What you learn |
+|---|-------|----------------|
+| 1 | [Copilot Studio Basics](./01-basics/readme.md) | Environments and architecture, creating and configuring agents, knowledge sources and starter prompts, topics, entities and variables, Power Fx, conversation design, and publishing to channels |
+| 2 | [Extending Agents with Tools](./02-tools/readme.md) | Prompt actions, connectors, Dataverse, AI Builder and the Document Processing managed agent, the Model Context Protocol (MCP), REST APIs, and Computer Use |
+| 3 | [Advanced Copilot Studio Agents](./03-advanced/readme.md) | Generative orchestration, autonomous agents and triggers, multi-agent orchestration, deep reasoning models, Agent Flows, and voice support |
+| 4 | [The New Copilot Studio Experience](./04-ui-update/readme.md) | The rebuilt UI taught beside the classic experience: the toggle and coexistence, the unified Build surface and new orchestrator, Agent Skills and `SKILL.md`, and tools, MCP, and the new Workflows designer |
 
-- Overview Copilot Studio Agents in Copilot Studio
-- PowerPlatform Admin Center & Architecture
-- Creating & Configuring Copilot Studio Agents
-- Mastering Knowledge & Starter Prompts
-- Topics, Entities and Variables
-- Introduction to Power FX
-- Conversation Design Best Practices
-- Collecting Information using Adaptive Cards
-- Publish Agents to Channels (Teams, Charts)
+Publishing, ALM, and governance for the agents you build here are covered in [Publishing, Maintaining & Governing Copilot Studio Agents](../05-maintaining/readme.md).
 
-## Extending Copilot Studio Agents Tools
+## Links & Resources
 
-- Prompt Actions,
-- AI Builder & Managed Agents: Document Processor
-- Integrate Enterprise data using Connectors
-- Using Dataverse & Integrating Data
-- Consuming REST Api’s
-- Integrating Model Context Protocol (MCP)
-- Automating Visual Tasks using Computer Use
-
-## Advanced Copilot Studio Agents
-
-- Autonomous Agents & Triggers
-- Setup & Implement Multi-Agent Orchestration
-- Use Deep Reasoning models for complex tasks
-- Using Agent Flows to Automate Tasks
-- Adding Voice Support to Agents
-
-## Publishing & Monitoring Copilot Studio Agents
-
-- Introduction to Power Platform Environments & Solutions
-- Publishing and Deploying Copilot Studio Agents
-- Using Analytics And Insights
+- [Microsoft Copilot Studio documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+- [Create and edit topics with Copilot](https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-authoring)
+- [Create expressions using Power Fx](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-power-fx)
+- [Managed Agents in Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-install-agent)

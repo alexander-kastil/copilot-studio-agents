@@ -43,7 +43,7 @@ Long-running work shows its status right in the Microsoft 365 Copilot app, and o
 
 Frontier is Microsoft's early-access program for the newest Copilot innovations. Enrolling opts your tenant into preview features before general availability, so your organization can try, shape, and plan for what is coming.
 
-Frontier is where capabilities like Copilot Cowork first appear. Preview features are subject to change and may carry different licensing, so treat them as evaluation, not production. Enrollment and pay-as-you-go setup are covered in [Module 1: Pay as you go licensing](../../01-intro/readme.md#pay-as-you-go-licensing).
+Frontier is where capabilities like Copilot Cowork first appear. Preview features are subject to change and may carry different licensing, so treat them as evaluation, not production. Enrollment and pay-as-you-go setup are covered in [Module 1: Pay as you go licensing](../../01-intro/04-licensing-setup/readme.md#pay-as-you-go-licensing).
 
 ---
 

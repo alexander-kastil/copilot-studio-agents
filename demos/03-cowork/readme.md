@@ -15,7 +15,7 @@ Cowork is Microsoft 365's agentic AI that does work on your behalf. You describe
 
 ## Licensing at a Glance
 
-Cowork is metered by usage-based billing in Copilot Credits, not a per-user seat. The tenant needs at least one Microsoft 365 Copilot license, Frontier enrollment, and Anthropic enabled as an AI subprocessor. Setup and pay-as-you-go configuration are covered in [Module 1: Pay as you go licensing](../01-intro/readme.md#pay-as-you-go-licensing).
+Cowork is metered by usage-based billing in Copilot Credits, not a per-user seat. The tenant needs at least one Microsoft 365 Copilot license, Frontier enrollment, and Anthropic enabled as an AI subprocessor. Setup and pay-as-you-go configuration are covered in [Module 1: Pay as you go licensing](../01-intro/04-licensing-setup/readme.md#pay-as-you-go-licensing).
 
 ## Links & Resources
 

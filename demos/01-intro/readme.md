@@ -1,68 +1,39 @@
-# Module 1: Introduction to Copilot Cowork & Copilot Studio
+# Introduction to Copilot Cowork & Copilot Studio
 
-- Copilot & Agents Overview
-- Introduction to Agents and Copilots for Microsoft 365
-- The Microsoft 365 platform & Copilot for Microsoft 365 Ecosystem
-- Copilot & Copilot Studio Licensing Options (Full vs PAYG)
-- What is Agentic AI?
-- Key Components of an Agent: Knowledge & Tools
-- Prompt Engineering, Semantic Index & RAG
-- Tools & Model Context Protocol (MCP)
-- Microsoft Copilot Extensibility Fundamentals
-- Choose a Copilot Extensibility Development path
-- Envisioning Planning & Scenarios
+This module builds the foundation for the whole course. Before you touch Copilot Studio or Cowork, you need a clear model of what agents and copilots are, the parts every agent is made of, how Microsoft lets you extend Copilot, and what to license and configure first. Get these four things right and everything in the later modules has somewhere to land.
 
-## Pay as you go licensing
+It is split into four focused topics that move from concept to setup.
 
-Copilot Licensing:
+## Topics
 
-- Navigate to [Microsoft 365 Admin Center - Copilot - Billing & usage](https://admin.cloud.microsoft/?#/copilot/managecost)
-- Configure a Billing Policy under the Billing Policies section
+| # | Topic | What you learn |
+|---|-------|----------------|
+| 1 | [Agents & Copilots for Microsoft 365](./01-agents-copilots/readme.md) | The vocabulary (copilot, agent, agentic AI), the Copilot ecosystem map, and where agents live in Microsoft 365 |
+| 2 | [How Agents Work: Knowledge, Prompting & Tools](./02-agent-anatomy/readme.md) | The three parts of every agent, prompt engineering, semantic index and RAG, and tools via the Model Context Protocol |
+| 3 | [Extensibility & Development Paths](./03-extensibility/readme.md) | The extensibility surface, a framework for choosing a build path, and how to envision a scenario before building |
+| 4 | [Licensing & Environment Setup](./04-licensing-setup/readme.md) | Full vs pay-as-you-go licensing, enabling PAYG for Copilot, Studio, and Cowork, spending governance, and the one-time tools setup |
 
-Copilot Studio Licensing:
+## Duration & Audience
 
-- Navigate to [Power Platform Admin Center - Copilot Studio](https://admin.powerplatform.microsoft.com/)
-- Select Licensing -> Copilot Studio -> Manage billing plans
+This module opens a four-day, hands-on course on low-code Agentic AI with Copilot Studio and Cowork. It is written for Power Platform makers, software engineers, and solution architects building agents for Microsoft 365.
 
-> Note: You will need an Azure Resource Group to be able to setup Pay as you go. It will be used for payment.
+## Prerequisites
 
-Cowork Licensing:
-
-- Cowork is a [Microsoft Frontier program](https://adoption.microsoft.com/en-us/copilot/frontier-program/) preview. The tenant needs at least one Microsoft 365 Copilot (or Microsoft E7) license, both the tenant and the managing admin account enrolled in Frontier, and Anthropic enabled as an AI subprocessor.
-- Cowork is not a per-user seat. It is metered by usage-based billing in Copilot Credits, so you pay only for what Cowork actually consumes.
-- Navigate to **Microsoft 365 Admin Center -> Copilot -> Cost Management** and select **Get Started** to activate the default spending policy for the tenant.
-- Choose an Azure subscription as the billing method, set a monthly spending limit and per-user limit, define alert thresholds, then select **Activate**.
-
-> Note: Cowork PAYG uses the same Azure plumbing as the other services (an Azure subscription and resource group with Owner or Contributor rights). Prepaid capacity packs and Copilot Credit Pre-Purchase Plan (P3) credits are drawn down first; pay-as-you-go charges apply only after they are exhausted. Use the [Cowork Estimator](https://aka.ms/CustomerCoworkEstimator) to model credit usage before you enable it.
+- A GitHub account
+- Basic knowledge of the Microsoft 365 platform
+- A Microsoft 365 tenant with Copilot, plus an Azure subscription for pay-as-you-go billing (see [Licensing & Environment Setup](./04-licensing-setup/readme.md))
 
 ## Links & Resources
 
-[Microsoft 365 Copilot](https://learn.microsoft.com/en-us/copilot/microsoft-365/)
-
-[Microsoft 365 Copilot Extensibility](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/)
-
-[Set up your development environment for Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/prerequisites?source=recommendations)
-
-[Set up pay-as-you-go for Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365/copilot/pay-as-you-go/setup)
-
-[Set up pay-as-you-go for Microsoft 365 Copilot Studio](https://learn.microsoft.com/en-us/power-platform/admin/pay-as-you-go-set-up)
-
-[Set up usage-based billing for Cowork (Copilot Credits)](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-credits)
-
-[Usage-based billing and Copilot Credits overview](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits)
-
-[Microsoft 365 Copilot extensibility samples](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/samples)
-
-[Microsoft 365 Copilot Sample Solution Gallery](https://adoption.microsoft.com/en-us/sample-solution-gallery/?product=Microsoft+Graph+connectors&product=Microsoft+365+Copilot)
-
-[Copilot Chat](https://m365.cloud.microsoft/)
-
-[Copilot Control System](https://admin.cloud.microsoft/?#/copilot/overview)
-
-[Copilot Success Kit](https://adoption.microsoft.com/en-us/copilot/success-kit/)
-
-[Microsoft Scenario Library](https://adoption.microsoft.com/en-us/scenario-library/)
+- [Microsoft 365 Copilot](https://learn.microsoft.com/en-us/copilot/microsoft-365/)
+- [Microsoft 365 Copilot Extensibility](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/)
+- [Microsoft 365 Copilot extensibility samples](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/samples)
+- [Microsoft 365 Copilot Sample Solution Gallery](https://adoption.microsoft.com/en-us/sample-solution-gallery/?product=Microsoft+Graph+connectors&product=Microsoft+365+Copilot)
+- [Copilot Chat](https://m365.cloud.microsoft/)
+- [Copilot Control System](https://admin.cloud.microsoft/?#/copilot/overview)
+- [Copilot Success Kit](https://adoption.microsoft.com/en-us/copilot/success-kit/)
+- [Microsoft Scenario Library](https://adoption.microsoft.com/en-us/scenario-library/)
 
 ## Additional Labs & Walkthroughs
 
-[Learning Path - Prepare your organization for Copilot for Microsoft 365](https://learn.microsoft.com/en-us/training/paths/prepare-your-organization-microsoft-365-copilot/)
+- [Learning Path: Prepare your organization for Copilot for Microsoft 365](https://learn.microsoft.com/en-us/training/paths/prepare-your-organization-microsoft-365-copilot/)

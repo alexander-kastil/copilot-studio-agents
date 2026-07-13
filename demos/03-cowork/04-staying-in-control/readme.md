@@ -50,7 +50,7 @@ Control does not stop at the individual. Admins decide whether Cowork is availab
 - **Frontier enrollment**: Both the tenant and the managing admin account must be enrolled in the Frontier program (Copilot -> Settings -> Frontier).
 - **Anthropic as a subprocessor**: Cowork uses Anthropic models, so Anthropic must be enabled as an AI subprocessor in the tenant.
 - **Agent availability**: In the Microsoft 365 admin center under **Copilot -> Agents -> All agents**, Cowork can be set to **Available to all users**, **Available to specific users or groups**, or **Blocked**.
-- **Spending policies**: Usage-based billing is governed by spending policies with monthly limits, per-user limits, and alert thresholds, so a single user cannot drain the tenant's Copilot Credits. See [Module 1: Pay as you go licensing](../../01-intro/readme.md#pay-as-you-go-licensing).
+- **Spending policies**: Usage-based billing is governed by spending policies with monthly limits, per-user limits, and alert thresholds, so a single user cannot drain the tenant's Copilot Credits. See [Module 1: Pay as you go licensing](../../01-intro/04-licensing-setup/readme.md#pay-as-you-go-licensing).
 
 ---
 
