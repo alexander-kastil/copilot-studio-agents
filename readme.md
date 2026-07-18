@@ -1,4 +1,4 @@
-# Designing, Implementing & Maintaining Low-Code Agents using Copilot Studio
+# Automate Business Processes using Copilot Cowork and Copilot Studio
 
 Companion Material for Class Delivery by [Alexander Kastil](https://www.linkedin.com/in/alexander-kastil/)
 
