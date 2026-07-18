@@ -297,6 +297,21 @@ slides. Do not declare success until one full fix-and-verify cycle passes clean.
 Write the deck to `{module-root}/pptx/{module-name}.pptx` and print a one-line summary with
 the slide count and path.
 
+### Editing an existing deck in place
+
+When the task is to revise an existing branded `.pptx` (delete, reorder, retitle, clone,
+or split slides) rather than generate a new one, do not regenerate it: editing in place
+preserves the theme, layouts, and images. Follow
+[references/edit-existing-pptx.md](references/edit-existing-pptx.md), which carries the
+python-pptx recipe (Windows encoding gate, the part-name-resequences-on-save gotcha,
+delete/reorder via `sldIdLst`, theme-preserving slide cloning with rId remap, and the
+copy-then-keep-only trick for splitting a deck). To merge slides ACROSS decks with
+fidelity, follow [references/merge-slides.md](references/merge-slides.md) (PowerPoint COM
+`InsertFromFile` for subset/positional insert, or the cross-platform ZIP script).
+
+When one deck carries two modules, split it one-deck-per-module: extract each module's
+section into that module's own deck, mirroring the folder separation.
+
 ---
 
 ## Cross-cutting rules
@@ -304,6 +319,8 @@ the slide count and path.
 - No em dashes in prose or slide fields. Use `,` `;` `:` or `()`.
 - Code fences declare a language.
 - Mermaid node labels use `"quoted<br/>labels"`, never `\n`.
+- A deck's filename number must match its `demos/NN-*` module folder number (`01 …` -> `demos/01-intro`, `04 …` -> `demos/04-maintaining`). Number and title every deck to its module folder.
+- A module's identity spans three assets that drift independently: the master TOC (`demos/readme.md`), the folder guides (`demos/NN-*/readme.md` topic table + topic H1s), and the pptx deck (filename + title slide + agenda + section dividers). The folder is the source of truth; align the TOC and deck to it, keeping each topic title identical across the TOC bullet, module-table row, topic H1, and deck divider/agenda.
 - Internal links use relative paths; anchors use `#heading-name`.
 - Never overwrite an existing spec file or deck silently; skip and report instead.
 - Parallelize independent work (reading multiple readmes, writing multiple spec files).

@@ -5,11 +5,61 @@ path: Gamma caps at roughly 10 items per generation call, so a module with more 
 spec files is generated across multiple separate Gamma PPTX exports that then need combining
 into a single deck.
 
+## Two approaches: pick by environment and need
+
+| | PowerPoint COM (below) | ZIP/XML script (rest of this doc) |
+| --- | --- | --- |
+| Needs | Windows + Office installed | python + lxml only (cross-platform) |
+| Insert position | any position (after any slide) | append-only (end of deck) |
+| Which source slides | any subset (`SlideStart..SlideEnd`) | all slides in the file |
+| Media collisions | remapped automatically | handled by manual `f2_`-prefix rename |
+| Fidelity | full (layouts, images, tables) | full, once rename is correct |
+
+Prefer COM when Office is present and you need positional or subset insert (for example
+unifying two overlapping decks). Use the ZIP script for headless/cross-platform runs or
+when Office is unavailable. **Do not attempt a slide-copy with `python-pptx`**: it cannot
+copy a slide with fidelity (its picture/table relationships break) — use COM or the ZIP
+script.
+
+## High-fidelity insert via PowerPoint COM (Windows + Office)
+
+`Slides.InsertFromFile(FileName, Index, SlideStart, SlideEnd)` inserts source slides
+`SlideStart..SlideEnd` (1-based) *after* position `Index` (1-based), preserving layouts,
+images, and tables and remapping media automatically.
+
+```python
+import win32com.client as w
+import os
+
+base   = os.path.abspath("full-deck.pptx")     # deck to insert INTO
+source = os.path.abspath("other-deck.pptx")    # deck to pull slides FROM
+out    = os.path.abspath("merged.pptx")
+
+app = w.Dispatch("PowerPoint.Application")
+pres = app.Presentations.Open(base, WithWindow=False)
+pres.Slides.InsertFromFile(source, 10, 2, 4)   # source slides 2-4, after slide 10
+pres.SaveAs(out, 24)                            # 24 = ppSaveAsOpenXMLPresentation
+pres.Close()
+app.Quit()
+```
+
+Requires `pywin32` (`import win32com.client`) and a working install
+(`Dispatch("PowerPoint.Application")`). Verify by enumerating titles with python-pptx
+after the merge.
+
+### Deciding what to merge ("take the best of both")
+
+When unifying two overlapping decks, list both decks' slide titles first, mark which
+source slides are *unique* (not already covered by the base), and insert only those, at
+the topically correct position. Redundant title, summary, and duplicate-topic slides are
+dropped, not inserted.
+
 ## When to invoke
 
 - After generating slides in batches (Gamma caps at ~10 items per generation call)
 - When a module has more than 10 slide spec files and was therefore split across multiple Gamma exports
 - The user asks to "merge the pptx files" or "combine the parts"
+- The user asks to unify/reorder decks and keep the best of both (use the COM path above)
 
 ## Invocation
 

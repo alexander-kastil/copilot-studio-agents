@@ -59,6 +59,13 @@ work.
 
 ## Rules
 
+- The topic `readme.md` must be developed, concept-first LEARNING prose a student reads to learn
+  the topic, under descriptive subheadings, never an instructor "what to teach" bullet outline.
+  Keep comparison tables and Key Topics links. "Teaching" a topic means this prose PLUS both a
+  Hands-On Demo and a Hands-On Lab linked under Hands-On sections (a "learning" is a hands-on lab).
+- Validate product names, availability, and version facts against Microsoft Learn (the MS Learn
+  MCP) before authoring; never assert a product fact from memory. Use "Microsoft Foundry", never
+  "Azure AI Foundry" (the product was renamed).
 - The slash-command table must be topic-specific to this module. Never repeat a generic set of
   slash commands across modules; each table reflects the technologies and tasks of its own topic.
 - For each item, describe its use case, its stack, and 1-2 standout details at the audience's

@@ -59,7 +59,9 @@ Naming and placement never vary:
   folder alongside. Only when the target names no numbered topic subfolder does the file sit at the
   module (or sub-module) root. Never create a nested subfolder beyond what the target names.
 - Number is two-digit zero-padded; slug is a lowercase hyphen phrase. For labs the number is a
-  per-topic sequence (`lab-01` is the first lab in that topic folder), not the module number.
+  per-topic sequence (`lab-01` is the first lab in that topic folder), not the module number. When
+  moving an existing lab into a topic, rename it to `lab-01` and update its self-references and its
+  companion folder name.
 - The H1 title is a polished verb-action phrase for what the learner does (for example
   `# Compile a Monthly Team Report`). Never prefix it with `Demo 01`, `Lab 03`, or any number or
   type label.
@@ -436,6 +438,12 @@ Renaming or moving a runnable folder means updating **every** reference: in-scri
 `readme.md` links, `state.md`, the guide's run commands, and any `provision`/`deprovision` paths.
 Moving a Python folder breaks its `.venv` (hardcoded absolute paths), so delete and recreate the
 venv after a move.
+
+Moving or renaming a guide or topic folder also breaks its relative markdown links: rewrite
+own-topic links to `./`, sibling-topic links to `../NN-topic/`, and mind the depth ripple (a lab
+referencing a demo gains one extra `../` when nesting deepens). Validate every link and `#anchor`
+with a resolver script after the move; on Windows a grep end-anchor `$` silently misses CRLF lines,
+so use a script or drop the `$`.
 
 ---
 

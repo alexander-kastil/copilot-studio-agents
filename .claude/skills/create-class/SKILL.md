@@ -20,10 +20,12 @@ license: CC-BY-NC-SA-4.0
 # Create Class
 
 One master skill for the full course-authoring lifecycle. It is the entry point that
-routes a request to the right standalone peer skill. Each peer is a real skill in its
-own folder under `.claude/skills/`, independently invocable and also delegated to from
-here by name. This master holds no leaf content of its own; it decides which skill to
-invoke and enforces the cross-cutting rules below.
+routes a request to the right peer skill. Each peer lives NESTED under
+`.claude/skills/create-class/<peer>/SKILL.md`, not at the skills root, so `Skill <peer>`
+returns "Unknown skill": invoke a peer by READING its `SKILL.md` and following it, never
+as a top-level Skill call, and never promote a peer to a top-level skill. This master
+holds no leaf content of its own; it decides which peer to use and enforces the
+cross-cutting rules below.
 
 Classes differ by audience: some are code classes, some are for low-code makers, some
 are for business users. The authoring engine is the same for all of them. The one
@@ -90,7 +92,7 @@ The dashboard is optional per class. Use it only when a class wants a progress b
 | Task | Peer skill |
 |------|-----------|
 | Run and verify a code demo (.NET, Python, Node), then fold findings back into the guide | `run-demo` |
-| Run and verify an Azure AI Foundry or Agent Framework demo | `run-foundry-demo` |
+| Run and verify a Microsoft Foundry or Agent Framework demo | `run-foundry-demo` |
 | Run a guide as a real user in a live browser or desktop app, then rewrite it from what worked | `run-guide-browser` |
 
 Guides are run-verified first, then written. Pair `create-guide` with `run-demo` /
@@ -114,6 +116,9 @@ These apply across every phase and override any looser guidance in a peer skill:
 - Code fences must declare a language.
 - Internal links use relative paths; anchors use `#heading-name`.
 - Demos and labs meet the substance bar in `create-guide` (see "What makes a guide worth shipping"): a demo teaches a real capability, a lab is a genuine 20+ minute build, both concept-first with copy-paste inputs and a described Expected result at every step. Setup or navigation is never a demo.
+- "Teaching" a topic means both, not either: the topic `readme.md` is developed, concept-first LEARNING prose a student reads under descriptive subheadings (never an instructor "what to teach" bullet outline), AND the topic carries both a Hands-On Demo and a Hands-On Lab. A "learning" is a hands-on lab.
+- Validate product names, availability, and version facts against Microsoft Learn (the MS Learn MCP) before authoring slides or prose; never assert a product fact from memory.
+- It is "Microsoft Foundry", never "Azure AI Foundry" (the product was renamed). Never write the old name in course content.
 - Layout is unified: numbered module folders under `demos/` and `labs/`.
 - After writing or significantly editing any README or guide, invoke the repo-local
   `brand-voice-*` skill to verify.
