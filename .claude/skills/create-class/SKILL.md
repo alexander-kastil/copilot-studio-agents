@@ -14,7 +14,6 @@ description: >-
   slides, enrich module readme, class dashboard, module status, whats missing, run demo,
   verify code demo, run guide in browser, evaluate guide, brand voice check, quality
   check, business class, maker class, code class.
-disable-model-invocation: true
 license: CC-BY-NC-SA-4.0
 ---
 

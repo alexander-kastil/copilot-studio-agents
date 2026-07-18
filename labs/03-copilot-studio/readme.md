@@ -8,7 +8,7 @@
 
 ## New Experience Labs
 
-Hands-on labs for the rebuilt Copilot Studio (June 2026), paired with the [04-ui-update](../../demos/04-copilot-studio/04-ui-update/readme.md) theory and demos.
+Hands-on labs for the rebuilt Copilot Studio (June 2026), paired with the [04-ui-update](../../demos/03-copilot-studio/04-ui-update/readme.md) theory and demos.
 
 | Lab | Focus |
 |-----|-------|

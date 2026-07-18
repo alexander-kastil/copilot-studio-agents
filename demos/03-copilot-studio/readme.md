@@ -13,7 +13,7 @@ It is split into four focused topics that move from first agent to advanced orch
 | 3 | [Advanced Copilot Studio Agents](./03-advanced/readme.md) | Generative orchestration, autonomous agents and triggers, multi-agent orchestration, deep reasoning models, Agent Flows, and voice support |
 | 4 | [The New Copilot Studio Experience](./04-ui-update/readme.md) | The rebuilt UI taught beside the classic experience: the toggle and coexistence, the unified Build surface and new orchestrator, Agent Skills and `SKILL.md`, and tools, MCP, and the new Workflows designer |
 
-Publishing, ALM, and governance for the agents you build here are covered in [Publishing, Maintaining & Governing Copilot Studio Agents](../05-maintaining/readme.md).
+Publishing, ALM, and governance for the agents you build here are covered in [Publishing, Maintaining & Governing Copilot Studio Agents](../04-maintaining/readme.md).
 
 ## Links & Resources
 

@@ -15,15 +15,15 @@ By the end you have one deliverable: a reusable `objection-handling` skill, pack
 
 | Step | Focus | Module topic practised |
 |------|-------|------------------------|
-| 1 | Spot a repeatable task worth packaging | [Agent Skills in Copilot Studio](../../../demos/04-copilot-studio/04-ui-update/03-agent-skills/readme.md) |
-| 2 | Design the skill name and description | [Agent Skills in Copilot Studio](../../../demos/04-copilot-studio/04-ui-update/03-agent-skills/readme.md) |
-| 3 | Author SKILL.md front matter and instructions | [Agent Skills in Copilot Studio](../../../demos/04-copilot-studio/04-ui-update/03-agent-skills/readme.md) |
-| 4 | Add a reference file and package a ZIP | [Agent Skills in Copilot Studio](../../../demos/04-copilot-studio/04-ui-update/03-agent-skills/readme.md) |
-| 5 | Upload the skill to a new-experience agent | [The Two Copilot Studio Experiences](../../../demos/04-copilot-studio/04-ui-update/01-new-experience-overview/readme.md) |
-| 6 | Test activation in the Preview tab | [The Two Copilot Studio Experiences](../../../demos/04-copilot-studio/04-ui-update/01-new-experience-overview/readme.md) |
-| 7 | Refine the description and Replace the skill | [Agent Skills in Copilot Studio](../../../demos/04-copilot-studio/04-ui-update/03-agent-skills/readme.md) |
-| 8 | Reuse the skill on a second agent | [Agent Skills in Copilot Studio](../../../demos/04-copilot-studio/04-ui-update/03-agent-skills/readme.md) |
-| 9 | Contrast with the classic topic approach | [The Two Copilot Studio Experiences](../../../demos/04-copilot-studio/04-ui-update/01-new-experience-overview/readme.md) |
+| 1 | Spot a repeatable task worth packaging | [Agent Skills in Copilot Studio](../../../demos/03-copilot-studio/04-ui-update/03-agent-skills/readme.md) |
+| 2 | Design the skill name and description | [Agent Skills in Copilot Studio](../../../demos/03-copilot-studio/04-ui-update/03-agent-skills/readme.md) |
+| 3 | Author SKILL.md front matter and instructions | [Agent Skills in Copilot Studio](../../../demos/03-copilot-studio/04-ui-update/03-agent-skills/readme.md) |
+| 4 | Add a reference file and package a ZIP | [Agent Skills in Copilot Studio](../../../demos/03-copilot-studio/04-ui-update/03-agent-skills/readme.md) |
+| 5 | Upload the skill to a new-experience agent | [The Two Copilot Studio Experiences](../../../demos/03-copilot-studio/04-ui-update/01-new-experience-overview/readme.md) |
+| 6 | Test activation in the Preview tab | [The Two Copilot Studio Experiences](../../../demos/03-copilot-studio/04-ui-update/01-new-experience-overview/readme.md) |
+| 7 | Refine the description and Replace the skill | [Agent Skills in Copilot Studio](../../../demos/03-copilot-studio/04-ui-update/03-agent-skills/readme.md) |
+| 8 | Reuse the skill on a second agent | [Agent Skills in Copilot Studio](../../../demos/03-copilot-studio/04-ui-update/03-agent-skills/readme.md) |
+| 9 | Contrast with the classic topic approach | [The Two Copilot Studio Experiences](../../../demos/03-copilot-studio/04-ui-update/01-new-experience-overview/readme.md) |
 
 ## Lab Files
 
@@ -36,7 +36,7 @@ By the end you have one deliverable: a reusable `objection-handling` skill, pack
 ## Prerequisites
 
 - A Copilot Studio environment where you can create agents (a Power Platform environment with the maker role).
-- The new experience turned on, and one new-type agent already built. If you do not have one, run [Build and Ground Your First New-Experience Agent](../../../demos/04-copilot-studio/04-ui-update/demo-01-build-and-ground-an-agent.md) first and keep that Sales Assistant agent open.
+- The new experience turned on, and one new-type agent already built. If you do not have one, run [Build and Ground Your First New-Experience Agent](../../../demos/03-copilot-studio/04-ui-update/demo-01-build-and-ground-an-agent.md) first and keep that Sales Assistant agent open.
 - A second new-type agent to reuse the skill across (for example an Account Manager). You can create it during Step 8 if you do not have it yet.
 - A plain text editor (Notepad, VS Code, or similar) and the built-in ZIP tool of your operating system.
 
@@ -276,7 +276,7 @@ You packaged team knowledge into a portable `objection-handling` skill: a single
 - Upload, activation-test, and refine a skill's description as the lever that controls when it fires.
 - Reuse one authored skill across multiple new-experience agents through **Download** and **Upload a skill**.
 
-Next, wire an external system into the same agent in [Connect an MCP Server and Publish a Workflow](../../../demos/04-copilot-studio/04-ui-update/demo-04-connect-mcp-and-workflow.md).
+Next, wire an external system into the same agent in [Connect an MCP Server and Publish a Workflow](../../../demos/03-copilot-studio/04-ui-update/demo-04-connect-mcp-and-workflow.md).
 
 ## Cleanup
 

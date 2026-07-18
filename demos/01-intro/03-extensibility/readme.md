@@ -24,9 +24,8 @@ The paths trade ease of building against control and capability. No-code is fast
 | Declarative agents (Agent Builder, SharePoint) | Lowest, no code | Instructions plus knowledge, on top of the Copilot model | A grounded Q&A or task assistant over your sites and files |
 | Copilot Studio (low-code) | Low to medium | Topics, tools, orchestration, channels, governance | A custom process agent that calls tools and publishes to Teams or web |
 | Graph connectors | Medium | External content indexed into Microsoft Graph | You need Copilot to answer from a system outside M365 |
-| Pro-code (Agents SDK, Azure AI Foundry) | Highest | Full control over the agent runtime and model | Complex orchestration, custom hosting, deep integration |
 
-Most of this course lives in the Copilot Studio low-code path, because it hits the best balance of speed and control for the maker and architect audience. You will still meet the declarative and pro-code ends so you know when to reach for them.
+Most of this course lives in the Copilot Studio low-code path, because it hits the best balance of speed and control for the maker and architect audience. You will still meet the declarative end (Agent Builder, SharePoint) so you know when to reach for it. There is also a pro-code end (Agents SDK, Microsoft Foundry) for complex custom hosting and orchestration, which is out of scope here.
 
 ---
 
@@ -42,7 +41,7 @@ flowchart TB
   Q2 -->|Yes| Studio["Copilot Studio<br/>(low-code)"]
   Q2 -->|No| Q3{"Content lives in<br/>an external system?"}
   Q3 -->|Yes| Conn["Graph connector"]
-  Q3 -->|No| Pro["Pro-code<br/>(SDK / Foundry)"]
+  Q3 -->|No| Pro["Pro-code<br/>(out of scope)"]
 ```
 
 The bias should be toward the lowest-effort path that meets the need, then move up only when a real requirement forces it. Over-engineering a simple Q&A into a pro-code project wastes time; under-building a tool-heavy process in a declarative agent hits a wall. Naming the requirement that forces the jump (a tool call, a channel, external data) keeps the choice honest.

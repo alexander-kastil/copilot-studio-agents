@@ -1,4 +1,4 @@
-# Module 3: Microsoft 365 Copilot Cowork
+# Module 2: Microsoft 365 Copilot Cowork
 
 > **Frontier Preview**: Cowork requires enrollment in the [Microsoft Frontier Program](https://adoption.microsoft.com/en-us/copilot/frontier-program/). Features are subject to change.
 
@@ -17,9 +17,20 @@ Cowork is Microsoft 365's agentic AI that does work on your behalf. You describe
 
 Cowork is metered by usage-based billing in Copilot Credits, not a per-user seat. The tenant needs at least one Microsoft 365 Copilot license, Frontier enrollment, and Anthropic enabled as an AI subprocessor. Setup and pay-as-you-go configuration are covered in [Module 1: Pay as you go licensing](../01-intro/04-licensing-setup/readme.md#pay-as-you-go-licensing).
 
+## Hands-On Learning
+
+Cowork is best understood by delegating real work and watching it plan, act, and pause for approval. These guided paths take you from your first request through authoring and packaging your own skills.
+
+| Path | What you do |
+|---|---|
+| [Lab 1: Get more done with Copilot Cowork](https://learn.microsoft.com/en-us/training/modules/delegate-work-copilot-cowork/) | An eight-unit Microsoft Learn module: choose the right AI tool, write effective requests, and watch Cowork run multi-step work end to end while you stay in control |
+| [Lab 2: Copilot Cowork on Copilot Developer Camp](https://microsoft.github.io/copilot-camp/pages/copilot-cowork/01-cowork-skills/) | Build your first custom Agent Skill for Cowork, then package skills and connectors into a Cowork plugin you can deploy |
+
 ## Links & Resources
 
 - [Cowork Overview](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/)
 - [Get Started with Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/get-started)
 - [Cowork FAQ](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-faq)
+- [Copilot Developer Camp](https://microsoft.github.io/copilot-camp/)
+- [Microsoft 365 Copilot: Developer Camp (show series)](https://learn.microsoft.com/en-us/shows/microsoft-365-copilot-developer-camp/)
 - [Frontier Program](https://adoption.microsoft.com/en-us/copilot/frontier-program/)

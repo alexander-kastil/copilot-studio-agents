@@ -2,7 +2,7 @@
 
 Embark on a four-day, hands-on journey through low-code Agentic AI development with Copilot Studio, designed for Software Engineers, Solution Architects, and Power Platform Makers. You will progress from foundational concepts through advanced orchestration and enterprise governance, gaining practical skills to build agents that solve real business challenges.
 
-You start with the essentials: agents, copilots, prompt engineering, semantic indexing, Retrieval Augmented Generation (RAG), and the Model Context Protocol (MCP). From there you move into the Microsoft Frontier ecosystem, exploring Copilot Chat, Copilot Tasks, App Builder, Copilot Workflow, SharePoint Agents, and Agent Builder.
+You start with the essentials: agents, copilots, prompt engineering, semantic indexing, Retrieval Augmented Generation (RAG), and the Model Context Protocol (MCP). The same foundation module then tours the ready-to-use Copilot surface: Copilot Chat free and licensed, Copilot Tasks, the Frontier program, App Builder, SharePoint Agents, and Agent Builder.
 
 You then learn to harness Copilot Cowork, the agentic experience built for everyday knowledge workers. By crafting custom SKILL.md skills, scheduling prompts, and extending capabilities with built-in skills and plugins, anyone on your team can automate recurring workflows without writing a single line of code, while staying in control through human-in-the-loop approvals at every step.
 
@@ -49,18 +49,13 @@ Finally, you design and implement real business processes with human-in-the-loop
 - Choose a Copilot Extensibility Development path
 - Envisioning Planning & Scenarios
 - Tools & Environment Configuration
-
-### Module 2: Microsoft Frontier, Copilot Chat & Productivity Agents
-
-- Microsoft Frontier Program Overview
-- Introduction to Copilot Chat
-- Copilot Tasks
-- Build Apps with Microsoft 365 Copilot App Builder
-- Productivity Agents
-- Copilot Studio Light (Agent Builder) for No-Code Agents
+- Copilot Chat: Free vs Licensed & the Frontier Program
+- Copilot Tasks & Scheduled Prompts
+- Build No-Code Apps with App Builder (vs Agent Builder)
+- Productivity Agents: Researcher, Analyst & Coaches
 - SharePoint Agents
 
-### Module: Microsoft 365 Copilot Cowork
+### Module 2: Microsoft 365 Copilot Cowork
 
 - Getting Started with Cowork
 - Core Capabilities: Communication, Documents, Calendar, Research & Automation

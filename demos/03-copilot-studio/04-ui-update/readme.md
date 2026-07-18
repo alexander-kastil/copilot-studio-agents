@@ -26,8 +26,8 @@ Treat classic as the primary teaching track and the new experience as guided dem
 
 | Lab | Focus |
 |-----|-------|
-| [Build a Sales Account Assistant in the New Experience](../../../labs/04/04-ui-update/lab-01-sales-account-assistant.md) | Capstone: build, ground, tool up, skill, and publish a new-experience agent end to end |
-| [Package Team Knowledge into a Portable Skill](../../../labs/04/04-ui-update/lab-02-portable-skill.md) | Author a `SKILL.md`, reuse it across two agents, and contrast with classic topics |
+| [Build a Sales Account Assistant in the New Experience](../../../labs/03-copilot-studio/04-ui-update/lab-01-sales-account-assistant.md) | Capstone: build, ground, tool up, skill, and publish a new-experience agent end to end |
+| [Package Team Knowledge into a Portable Skill](../../../labs/03-copilot-studio/04-ui-update/lab-02-portable-skill.md) | Author a `SKILL.md`, reuse it across two agents, and contrast with classic topics |
 
 ## Classic to new quick reference
 

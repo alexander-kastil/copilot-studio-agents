@@ -1,9 +1,12 @@
 # Labs
 
-- Introduction to Developing AI Agents and Copilots for Microsoft 365
-- Extend Microsoft Copilot for Microsoft 365 with Copilot Studio
-- Pro-Code Extensibility Fundamentals, Copilot Connectors & Copilot API Capabilities
-- Implementing Pro-Code Declarative- & Custom Engine Agents for Microsoft 365 Copilot
+Hands-on labs paired with the [demo modules](../demos/readme.md). Each folder mirrors a demo module.
+
+| # | Lab area | Pairs with |
+|---|----------|-----------|
+| 1 | [Intro: Agents, Frontier & Productivity](./01-intro/readme.md) | [Module 1: Intro](../demos/01-intro/readme.md) |
+| 2 | [Copilot Cowork](./02-cowork/readme.md) | [Module 2: Cowork](../demos/02-cowork/readme.md) |
+| 3 | [Copilot Studio](./03-copilot-studio/readme.md) | [Module 3: Copilot Studio](../demos/03-copilot-studio/readme.md) |
 
 ## Getting Started
 
