@@ -4,7 +4,7 @@ Hand Cowork a quarter of regional sales data and manager notes, and walk away wi
 
 ## Related Topics
 
-This demo puts the [Intro to Cowork](./readme.md) interaction model to work: you describe an outcome and Cowork plans, reads, and builds across Excel, Word, and PowerPoint in one task. It leans on the document and communication capabilities that the built-in [Skills](../02-skills/readme.md) provide, and every send or save in the final step runs through the approval flow covered in [Staying in Control](../04-staying-in-control/readme.md).
+This demo puts the [Getting Started with Cowork](./readme.md) interaction model to work: you describe an outcome and Cowork plans, reads, and builds across Excel, Word, and PowerPoint in one task. It leans on the document and communication capabilities that the built-in [Skills](../02-built-in-skills/readme.md) provide, and every send or save in the final step runs through the approval flow covered in [Human-in-the-Loop](../06-staying-in-control/readme.md).
 
 ---
 
@@ -120,4 +120,4 @@ Draft an email to Elena Varga with the Q3 review deck attached. Two short paragr
 
 **Expected Outcome:** A drafted email addressed to Elena with the deck attached, held at the approval step with a visible risk level, waiting for you to press **Send** or edit first.
 
-> Approvals, risk levels, and how to steer a task mid-run are covered in [Staying in Control](../04-staying-in-control/readme.md).
+> Approvals, risk levels, and how to steer a task mid-run are covered in [Human-in-the-Loop](../06-staying-in-control/readme.md).

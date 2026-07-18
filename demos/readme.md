@@ -37,23 +37,12 @@ Finally, you design and implement real business processes with human-in-the-loop
 
 ### Module 1: Introduction to Copilot Cowork & Copilot Studio
 
-- Copilot & Agents Overview
-- Introduction to Agents and Copilots for Microsoft 365
-- The Microsoft 365 platform & Copilot for Microsoft 365 Ecosystem
-- Copilot & Copilot Studio Licensing Options (Full vs PAYG)
-- What is Agentic AI?
-- Key Components of an Agent: Knowledge & Tools
-- Prompt Engineering, Semantic Index & RAG
-- Tools & Model Context Protocol (MCP)
-- Microsoft Copilot Extensibility Fundamentals
-- Choose a Copilot Extensibility Development path
-- Envisioning Planning & Scenarios
-- Tools & Environment Configuration
-- Copilot Chat: Free vs Licensed & the Frontier Program
-- Copilot Tasks & Scheduled Prompts
-- Build No-Code Apps with App Builder (vs Agent Builder)
-- Productivity Agents: Researcher, Analyst & Coaches
-- SharePoint Agents
+- Agents & Copilots for Microsoft 365
+- Agentic AI & Design Patterns
+- How Agents Work: Knowledge, Prompting, Tools & MCP
+- Extensibility & Development Paths
+- Licensing & Environment Setup
+- Copilot Chat & Productivity Agents
 
 ### Module 2: Microsoft 365 Copilot Cowork
 
@@ -103,7 +92,7 @@ Finally, you design and implement real business processes with human-in-the-loop
 - Post-call Actions for Voice Agents
 - Integrating Pro-Code Agents
 
-### Module: Copilot Studio New Experience (New UI)
+### Module 6: Copilot Studio New Experience (New UI)
 
 - Classic vs New Experience: the New Experience Toggle & Coexistence
 - Telling the Experiences Apart: Build, Preview, Evaluate & Monitor Tabs
@@ -114,7 +103,7 @@ Finally, you design and implement real business processes with human-in-the-loop
 - Tools, MCP Servers & the New Node-by-Node Workflows Designer
 - Capstone Lab: Building a Sales Account Assistant in the New Experience
 
-### Module 6: Designing & Implementing Business Processes
+### Module 7: Designing & Implementing Business Processes
 
 - Defining Scenarios & Envisioning
 - Mapping Scenarios to Capabilities
@@ -124,7 +113,7 @@ Finally, you design and implement real business processes with human-in-the-loop
 - Analytics And Application Insights
 - Troubleshooting and Analyzing Conversations
 
-### Module: Testing & Evaluating Copilot Studio Agents
+### Module 8: Testing & Evaluating Copilot Studio Agents
 
 - Agent Evaluations (GA)
 - Creating Test Sets: Manual, CSV Import & AI-Generated
@@ -135,7 +124,7 @@ Finally, you design and implement real business processes with human-in-the-loop
 - Exporting Evaluation Data for Further Analysis
 - Using Copilot Studio Kit for Advanced Evaluation
 
-### Module 7: Publishing & Maintaining Copilot Studio Agents
+### Module 9: Publishing & Maintaining Copilot Studio Agents
 
 - PowerPlatform Admin Center & Architecture
 - Introduction to Power Platform Environments & Solutions

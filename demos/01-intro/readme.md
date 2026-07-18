@@ -2,17 +2,18 @@
 
 This module builds the foundation for the whole course. Before you touch Copilot Studio or Cowork, you need a clear model of what agents and copilots are, the parts every agent is made of, how Microsoft lets you extend Copilot, and what to license and configure first. Get these four things right and everything in the later modules has somewhere to land.
 
-It is split into five focused topics: the first four move from concept to setup, and the fifth tours the Copilot Chat productivity surface you will build on.
+It is split into six focused topics: the first two establish the concepts, the middle three move from agent anatomy to environment setup, and the sixth tours the Copilot Chat productivity surface you will build on.
 
 ## Topics
 
 | # | Topic | What you learn |
 |---|-------|----------------|
-| 1 | [Agents & Copilots for Microsoft 365](./01-agents-copilots/readme.md) | The vocabulary (copilot, agent, agentic AI), the Copilot ecosystem map, and where agents live in Microsoft 365 |
-| 2 | [How Agents Work: Knowledge, Prompting & Tools](./02-agent-anatomy/readme.md) | The three parts of every agent, prompt engineering, semantic index and RAG, and tools via the Model Context Protocol |
-| 3 | [Extensibility & Development Paths](./03-extensibility/readme.md) | The extensibility surface, a framework for choosing a build path, and how to envision a scenario before building |
-| 4 | [Licensing & Environment Setup](./04-licensing-setup/readme.md) | Full vs pay-as-you-go licensing, enabling PAYG for Copilot, Studio, and Cowork, spending governance, and the one-time tools setup |
-| 5 | [Copilot Chat & Productivity Agents](./05-chat-productivity/readme.md) | Copilot Chat free vs licensed, Copilot Tasks, the Frontier program, App Builder, and the prebuilt and SharePoint agents |
+| 1 | [Agents & Copilots for Microsoft 365](./01-agents-copilots/readme.md) | The vocabulary (copilot, agent, assistant), the Copilot ecosystem map, and where agents live in Microsoft 365 |
+| 2 | [Agentic AI & Design Patterns](./02-agentic-ai/readme.md) | The goal-driven agent model, business process before and after agents, and the multi-agent and human-in-the-loop patterns |
+| 3 | [How Agents Work: Knowledge, Prompting, Tools & MCP](./03-agent-anatomy/readme.md) | The three parts of every agent, prompt engineering, semantic index and RAG, and tools via the Model Context Protocol |
+| 4 | [Extensibility & Development Paths](./04-extensibility/readme.md) | The extensibility surface, a framework for choosing a build path, and how to envision a scenario before building |
+| 5 | [Licensing & Environment Setup](./05-licensing-setup/readme.md) | Full vs pay-as-you-go licensing, enabling PAYG for Copilot, Studio, and Cowork, spending governance, and the one-time tools setup |
+| 6 | [Copilot Chat & Productivity Agents](./06-chat-productivity/readme.md) | Copilot Chat free vs licensed, Copilot Tasks, the Frontier program, App Builder, and the prebuilt and SharePoint agents |
 
 ## Duration & Audience
 
@@ -22,7 +23,7 @@ This module opens a four-day, hands-on course on low-code Agentic AI with Copilo
 
 - A GitHub account
 - Basic knowledge of the Microsoft 365 platform
-- A Microsoft 365 tenant with Copilot, plus an Azure subscription for pay-as-you-go billing (see [Licensing & Environment Setup](./04-licensing-setup/readme.md))
+- A Microsoft 365 tenant with Copilot, plus an Azure subscription for pay-as-you-go billing (see [Licensing & Environment Setup](./05-licensing-setup/readme.md))
 
 ## Links & Resources
 

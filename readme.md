@@ -6,7 +6,7 @@ This repository contains the content for the **Automate Business Processes using
 
 - [Introduction to Copilot Extensibility & Agents](demos/01-intro/readme.md)
 - [Microsoft 365 Copilot Cowork](demos/02-cowork/readme.md)
-- [Implementing Low-Code Agents with Microsoft Copilot Studio](demos/03-copilot-studio/readme.md)
+- [Building & Testing Agents with Microsoft Copilot Studio](demos/03-copilot-studio/readme.md)
 - [Publishing, Maintaining & Governing Agents](demos/04-maintaining/readme.md)
 
 See the [full module and topic outline](demos/readme.md) for the day-by-day breakdown.

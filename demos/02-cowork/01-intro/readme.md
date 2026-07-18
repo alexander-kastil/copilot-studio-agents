@@ -1,4 +1,4 @@
-# Microsoft 365 Copilot Cowork
+# Getting Started with Cowork
 
 > **Availability**: Cowork is now generally available. Access is governed by usage-based billing (Copilot Credits), not by Frontier enrollment; see [Setting Up Cowork in Your Tenant](#setting-up-cowork-in-your-tenant).
 
@@ -75,13 +75,13 @@ If Cowork still does not appear, recheck licensing, the billing policy, and tena
 4. **Approve before sensitive actions**: Before sending an email or posting in Teams, Cowork pauses and asks for your go-ahead. Risk level (medium or high) is shown on each action.
 5. **Review the results**: Download documents, confirm sent messages, or ask for changes.
 
-The approval model, risk indicators, and pause controls are covered in depth in [Staying in Control](../04-staying-in-control/readme.md).
+The approval model, risk indicators, and pause controls are covered in depth in [Human-in-the-Loop](../06-staying-in-control/readme.md).
 
 ---
 
-## What Cowork Can Do
+## Core Capabilities
 
-Cowork's capabilities span five areas. This is the overview; the deeper topics build on it.
+Cowork's capabilities span five areas: communication, documents, calendar, research, and automation. This is the overview; the deeper topics build on it.
 
 ### Communication
 - Draft and send emails, replies, and forwards through Outlook
@@ -109,13 +109,13 @@ Cowork's capabilities span five areas. This is the overview; the deeper topics b
 - Run prompts on a recurring schedule (weekly reports, daily briefings)
 - Manage scheduled prompts from the **Scheduled** tab in Task views
 
-Automation is covered in detail in [Automation & Plugins](../03-automation/readme.md).
+Automation is covered in detail in [Scheduling Prompts & Recurring Automation](../04-automation/readme.md), and connecting external systems in [Extending Cowork with Plugins](../05-plugins/readme.md).
 
 ---
 
 ## How Cowork Gets Things Done: Skills
 
-Behind every capability is a **skill**. As Cowork works on your task, it automatically loads the right skills and shows them in the side panel; you never pick one manually. Built-in skills cover common office tasks, and you can add your own. See [Skills](../02-skills/readme.md) for the full catalog and how to author custom skills.
+Behind every capability is a **skill**. As Cowork works on your task, it automatically loads the right skills and shows them in the side panel; you never pick one manually. Built-in skills cover common office tasks, and you can add your own. See [Understanding Skills](../02-built-in-skills/readme.md) for the built-in catalog and the side panel, and [Creating Custom Skills](../03-custom-skills/readme.md) for authoring your own.
 
 ---
 
@@ -136,15 +136,17 @@ Behind every capability is a **skill**. As Cowork works on your task, it automat
 Put this interaction model to work end to end on the Aurora Outdoor scenario:
 
 - [Compile a Q3 Business Review Deck](./demo-01-quarterly-review.md): turn a quarter of sales data and manager notes into a boardroom deck and a cover email to your VP.
-- [Clear a Monday Backlog into a Briefing](./demo-04-monday-briefing.md): triage a weekend inbox, resolve a calendar clash, and draft the hardest replies for approval.
+- [Clear a Monday Backlog into a Briefing](./demo-02-monday-briefing.md): triage a weekend inbox, resolve a calendar clash, and draft the hardest replies for approval.
 
 ---
 
 ## Where to Go Next
 
-1. **[Skills](../02-skills/readme.md)**: the building blocks behind every capability, and how to write your own
-2. **[Automation & Plugins](../03-automation/readme.md)**: recurring work and extending Cowork
-3. **[Staying in Control](../04-staying-in-control/readme.md)**: approvals, risk, and governance
+1. **[Understanding Skills](../02-built-in-skills/readme.md)**: the built-in catalog and the side panel that shows Cowork's work
+2. **[Creating Custom Skills](../03-custom-skills/readme.md)**: teach Cowork your own recurring workflows with a `SKILL.md`
+3. **[Scheduling Prompts & Recurring Automation](../04-automation/readme.md)**: put recurring work on a schedule
+4. **[Extending Cowork with Plugins](../05-plugins/readme.md)**: connect external systems from the App Store
+5. **[Human-in-the-Loop](../06-staying-in-control/readme.md)**: approvals, risk, and governance
 
 ---
 

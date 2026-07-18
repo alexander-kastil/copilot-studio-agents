@@ -45,17 +45,11 @@ The experiences layer is what end users touch. The build layer is where makers a
 
 ---
 
-## What Is Agentic AI?
+## From Copilot to Agent
 
-A plain chatbot answers one question at a time and forgets. Agentic AI is different: you give it a goal, and it plans a sequence of steps, calls tools to get information or take action, checks the result, and keeps going until the goal is met. The shift is from "answer my question" to "get this done for me."
+The step up from a copilot to an agent is autonomy: instead of answering one turn, an agent takes a goal and works a sequence of steps to reach it. An agent is a copilot given a goal, the tools to pursue it, and a loop to keep going until it is met.
 
-Three properties make an AI agentic.
-
-- Goal-driven: it works toward an outcome you describe, not a single reply.
-- Tool-using: it can call functions, search knowledge, read data, and act in other systems.
-- Iterative: it loops (plan, act, observe, adjust) instead of answering once.
-
-You stay in control through human-in-the-loop approvals: the agent proposes an action such as sending an email or updating a record, and a person approves before it runs. This is a theme you will see across Cowork and Copilot Studio throughout the course.
+That shift, the three properties behind it, and the design patterns teams use to structure it are the subject of the [next topic on Agentic AI](../02-agentic-ai/readme.md). Here it is enough to place agents on the map above; the mechanics come next.
 
 ---
 
@@ -89,9 +83,9 @@ The dividing line is scope and autonomy. When a task repeats, spans steps, or ne
 
 ## Where to Go Next
 
-1. [How Agents Work: Knowledge, Prompting & Tools](../02-agent-anatomy/readme.md): the parts every agent is made of
-2. [Extensibility & Development Paths](../03-extensibility/readme.md): how to choose where to build
-3. [Licensing & Environment Setup](../04-licensing-setup/readme.md): what to enable before you build
+1. [Agentic AI & Design Patterns](../02-agentic-ai/readme.md): the goal-driven model and the patterns you will build with
+2. [How Agents Work: Knowledge, Prompting, Tools & MCP](../03-agent-anatomy/readme.md): the parts every agent is made of
+3. [Extensibility & Development Paths](../04-extensibility/readme.md): how to choose where to build
 
 ---
 
