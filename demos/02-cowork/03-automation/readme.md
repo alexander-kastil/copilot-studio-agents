@@ -47,6 +47,12 @@ Built-in skills handle the common office tasks. Custom skills handle *your* recu
 
 ---
 
+## Hands-On Demo
+
+- [Automate a Weekly Status Report](./demo-05-automation.md): author a custom skill from a house template, run it once to check the output, then put it on a Friday schedule that still pauses the send for approval.
+
+---
+
 ## Where to Go Next
 
 - **[Skills](../02-skills/readme.md)**: build the custom skills you schedule here

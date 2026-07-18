@@ -103,6 +103,12 @@ Each skill folder can hold supporting material next to the `SKILL.md`: reference
 
 ---
 
+## Hands-On Demo
+
+- [Produce a Competitive Market Brief](./demo-03-research-brief.md): use Deep Research and Enterprise Search together to survey the market, compare it against Aurora's own positioning, and ship a decision-ready brief.
+
+---
+
 ## Where to Go Next
 
 - **[Automation & Plugins](../03-automation/readme.md)**: put a skill on a recurring schedule and add plugin skills from the App Store

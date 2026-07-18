@@ -4,7 +4,7 @@ description: >-
   Author a single demo or lab guide for a hands-on class of any audience, in one of
   three styles chosen by audience: prompt-recipe (business/maker, the five-part step model), guided
   (initial project setup), or walkthrough (code, Microsoft-Learn style with run commands and
-  expected output). Places the file at the module root as demo-NN-slug.md or lab-NN-slug.md,
+  expected output). Places the file in the owning numbered topic folder as demo-NN-slug.md or lab-NN-slug.md,
   scaffolds any runnable project and companion assets, and updates the folder TOC. Peer skill the
   create-class master delegates to; also invocable directly. Trigger phrases: create a guide,
   write a demo, author a lab, demo guide, lab guide, prompt recipe, walkthrough guide, learn style
@@ -53,12 +53,13 @@ Naming and placement never vary:
 
 - Path under `demos/` -> file name is `demo-<nn>-<slug>.md`.
 - Path under `labs/` -> file name is `lab-<nn>-<slug>.md`.
-- The file lands at the **module root**: the first two path segments under `demos/` or `labs/`.
-  A target of `demos/04-copilot-studio/04-ui-update` places the file at
-  `demos/04-copilot-studio/demo-<nn>-<slug>.md`. The topic subfolder gives context only; it never
-  changes where the file lands. Never create a nested subfolder beyond what the user requests.
+- The file lands in the **owning topic folder**: the deepest numbered `NN-topic` subfolder named in
+  the target. A target of `demos/03-copilot-studio/04-ui-update/03-agent-skills` places the file at
+  `demos/03-copilot-studio/04-ui-update/03-agent-skills/demo-<nn>-<slug>.md`, with its companion
+  folder alongside. Only when the target names no numbered topic subfolder does the file sit at the
+  module (or sub-module) root. Never create a nested subfolder beyond what the target names.
 - Number is two-digit zero-padded; slug is a lowercase hyphen phrase. For labs the number is a
-  per-module sequence (`lab-01` is the first lab in that module), not the module number.
+  per-topic sequence (`lab-01` is the first lab in that topic folder), not the module number.
 - The H1 title is a polished verb-action phrase for what the learner does (for example
   `# Compile a Monthly Team Report`). Never prefix it with `Demo 01`, `Lab 03`, or any number or
   type label.
@@ -73,7 +74,7 @@ does not exist, create it.
 Do not create any file until this gate passes. Batch the open decisions into one proposal (use
 `AskUserQuestion`), then build only after approval. Always confirm:
 
-- Target module root, guide number, title.
+- Target topic folder, guide number, title.
 - Format: `prompt-recipe`, `guided`, or `walkthrough` (see "Choosing a format").
 - Audience: developer, low-code maker, or business user. This drives vocabulary and format default.
 - Whether the guide ships a runnable project and, if so, the runtime and stack. Offer C#/.NET,
@@ -85,8 +86,8 @@ Do not create any file until this gate passes. Batch the open decisions into one
   fill that depth honestly, the subject is too thin to be a guide; propose folding it into a larger
   one instead.
 
-Before proposing, scan the module root for existing guide files. If one with the same number or the
-same scenario scope already exists, surface it and ask whether to replace, renumber, or coexist.
+Before proposing, scan the target topic folder for existing guide files. If one with the same number
+or the same scenario scope already exists, surface it and ask whether to replace, renumber, or coexist.
 Never silently overwrite or duplicate.
 
 When a lab needs a connector, default to a no-account, no-API-key, commonly-available server so any
@@ -443,28 +444,29 @@ venv after a move.
 ### Under demos/
 
 ```text
-demos/<module>/
-├── readme.md                    module TOC and topic overview
-├── demo-01-<slug>.md            guide file
+demos/<module>/<nn-topic>/
+├── readme.md                    topic learning content; links its own demo and lab
+├── demo-01-<slug>.md            guide file, inside its topic folder
 ├── demo-01-<slug>/              companion assets (same slug), or
 ├── <slug>-py/                   runnable project for walkthrough demos
 ```
 
-The demo TOC uses a two-column `| Topic | Demo |` table: Topic links to its `readme.md`, Demo links
-to the guide file by its H1 title. Each demo appears exactly once under its strongest topic fit; do
-not add extra columns.
+The aggregate demo TOC uses a two-column `| Topic | Demo |` table in the module `readme.md`: Topic
+links to its `readme.md`, Demo links to the guide file by its H1 title. Each demo appears exactly
+once under its owning topic; do not add extra columns. Each topic `readme.md` additionally links its
+own demo and lab under Hands-On sections (the `create-teaching` skill owns that enrichment).
 
 ### Under labs/
 
 ```text
-labs/<module>/
-├── readme.md                    lab TOC
-├── lab-01-<slug>.md             lab guide file
+labs/<module>/<nn-topic>/
+├── lab-01-<slug>.md             lab guide file, inside its topic folder
 ├── lab-01-<slug>/               companion assets (same slug)
 ```
 
-The lab TOC uses a two-column `| Lab | Focus |` table: Lab links to the guide by its H1 title, Focus
-is one sentence on what the lab practises. An asset-backed lab gets a companion subfolder with an
+The module lab TOC stays at `labs/<module>/readme.md` and aggregates every topic's lab in a
+two-column `| Lab | Focus |` table: Lab links to the guide by its H1 title, Focus is one sentence on
+what the lab practises. An asset-backed lab gets a companion subfolder with an
 identical slug; the learner points the tool at it once and every step reads it without re-attaching.
 
 ---

@@ -1,53 +1,42 @@
-# Unify class-creation skills
+# Task: Topic-organize demos/03-copilot-studio/04-ui-update (+ labs)
 
-Build in `m365-pilot` first, verify, then distribute to `~/.claude/skills` (global) and the other repos (ai-teacher, code-masterclass, cowork-masterclass, ai-103).
+Mirror the 02-cowork organization. Scenario across all artifacts: Northwind Traders / Northwind Sales Assistant.
 
-## Decisions (locked in /claude-looped discussion)
+## Topic map
 
-- Single master `create-class`, best-of-breed content from all 5 repos, seeded from ai-teacher.
-- `create-*` naming; revert invented names: enrich-module->create-teaching, author-guide->create-guide, author-slides->create-slides, enhance-business->enhance-for-business-owner (folded in).
-- All skills live in BOTH each repo AND global.
-- Layout unified `demos/` + `labs/`; ai-103 `modules/`->`demos/`.
-- Structure flexible; content quality is the goal.
-- brand-voice-* stays repo-local, per audience; create-class bootstraps one (3-4 Qs) if missing. Absorbs polish-slug.
-- create-slides: two paths, Gamma (merge-slides under it) and pptx. Both valid.
-- run-demo (new, generic code demos) + run-foundry-demo (kept). run-guide-browser (was evaluate-guide): two backends, Qwen3-VL/Midscene or Claude native in-app browser.
-- dashboard kept, self-contained, optional. mermaid-expert stays own skill.
+| Topic subfolder | Demo | Lab |
+|-----------------|------|-----|
+| 01-new-experience-overview | demo-01-build-and-ground-an-agent | new lab (author) |
+| 02-unified-build-and-orchestrator | demo-02-trace-agent-reasoning | new lab (author) |
+| 03-agent-skills | demo-03-add-a-reusable-skill | lab-02-portable-skill (move) |
+| 04-workflows-and-mcp | demo-04-connect-mcp-and-workflow | lab-01-sales-account-assistant (move) |
 
-## Target skills
-- [ ] create-class (master)
-- [ ] scaffold (interactive base-repo setup)
-- [ ] create-teaching (+ enhance-for-business-owner folded in)
-- [ ] create-guide (flexible; ai-103 authoring wisdom harvested)
-- [ ] create-slides (Gamma + pptx paths, merge-slides)
-- [ ] dashboard (self-contained assets)
-- [ ] run-demo (new)
-- [ ] run-foundry-demo (kept)
-- [ ] run-guide-browser (two backends)
-- [ ] mermaid-expert (own skill)
-- [ ] brand-voice-* (repo-local; polish-slug folded in)
+## Phase 1: Demos into topics (main thread)
+- [ ] Move 4 demo .md + demo-03 companion folder into topic subfolders
+- [ ] Fix relative links inside each demo (own topic -> ./, sibling demos -> ../topic/, lab link deepened)
+- [ ] Update module readme.md Demos table paths
 
-## Build sequence (m365-pilot)
-1. [ ] Harvest best-of-breed sources into scratchpad (read ai-teacher + code-masterclass + cowork + ai-103)
-2. [ ] Write create-class master (reverted names, delegation map)
-3. [ ] Write the create-* leaves + scaffold
-4. [ ] Write run-demo; keep run-foundry-demo; write run-guide-browser (two backends)
-5. [ ] Write dashboard (copy assets into subfolders)
-6. [ ] Fold polish-slug + enhance-for-business-owner into hosts
-7. [ ] Verify: lint frontmatter, cross-references resolve, brand-voice glob works
-8. [ ] Distribute to global + other repos; rename ai-103 modules/->demos/
+## Phase 2: Develop topic readmes into learning (subagents, 1 per topic)
+- [ ] 01, 02, 03, 04: expand "What to teach" into learning prose; keep Key Topics + tables
+- [ ] Each subagent also adds Hands-On Demo + Hands-On Lab sections to its topic readme
+
+## Phase 3: Labs into topics
+- [ ] Create labs/.../04-ui-update/NN-* topic subfolders
+- [ ] Move lab-02-portable-skill -> 03-agent-skills; lab-01-sales-account-assistant -> 04-workflows-and-mcp (+ companions, fix links)
+- [ ] Author new lab for 01 and 02 (subagents), Northwind scenario
+- [ ] Update labs readme TOC + demos readme Labs table paths
+
+## Phase 4: Verify
+- [x] Resolve every relative link + anchor (83 links across the tree, all OK)
+- [x] brand-voice on all touched files (no em dashes; subagents self-verified 4-sentence cap)
 
 ## Review
 
-Built the unified set in m365-pilot, then distributed to global + 4 repos. Lint clean everywhere (except 3 pre-existing, unrelated cowork issues: lowercase skill.md on pdf and brand-voice-cowork, pdf name drift).
+Done. demos/03-copilot-studio/04-ui-update now mirrors the 02-cowork topic-organized layout.
 
-Final skill set (in every repo AND global): create-class (master, delegates by name), scaffold, create-teaching, create-guide, create-slides, dashboard, run-demo, run-foundry-demo, run-guide-browser. Plus repo-local brand-voice-* and mermaid.
+- Phase 1: 4 demos filed into their topic subfolders; demo-03 companion moved; all in-file links rewritten; module Demos table repathed (two link texts corrected to match H1s).
+- Phase 2: 4 topic readmes developed from "What to teach" outlines into concept-first learning prose (subagents), each keeping its comparison table + Key Topics links and gaining Hands-On Demo + Hands-On Lab sections.
+- Phase 3: labs side given the 4 numbered topic subfolders; lab-01-sales-account-assistant -> 04-workflows-and-mcp, lab-02-portable-skill -> 03-agent-skills/lab-01-portable-skill (renamed for per-topic numbering, self-refs + companion fixed); 2 new labs authored (01 compare-classic-and-new, 02 evaluate-and-monitor-agent), Northwind scenario; both lab TOCs + demos Labs table updated to 4 rows in topic order.
+- Phase 4: 83 links + anchors resolve; brand-voice clean.
 
-- Reverted invented names: enrich-module->create-teaching, author-guide->create-guide, author-slides->create-slides, enhance-business->enhance-for-business-owner (folded into create-teaching).
-- polish-slug folded into brand-voice as rule 5. merge-slides folded under create-slides Gamma path. pptx path added.
-- run-demo new (generic .NET/Python/Node); run-foundry-demo kept. run-guide-browser (was evaluate-guide) with two backends: Midscene+Qwen3-VL and Claude native in-app browser.
-- create-class bootstraps a brand-voice-* (3-4 Qs) when a repo has none.
-- ai-103 modules/->demos/ renamed (252 git renames, refs updated). ai-103 seeded with brand-voice-code.
-- Superseded old leaf skills removed from all targets.
-
-Not committed (per house rules). Distribution touched customer repos (ai-teacher, code-masterclass, cowork-masterclass, ai-103) as working-tree changes only.
+Not committed (per house rules).

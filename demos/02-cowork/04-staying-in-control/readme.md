@@ -54,6 +54,12 @@ Control does not stop at the individual. Admins decide whether Cowork is availab
 
 ---
 
+## Hands-On Demo
+
+- [Turn a Partner Meeting into a Follow-Up Package](./demo-02-follow-up.md): watch the approval gate and risk levels in action as Cowork edits a proposal, emails an external partner, and books a follow-up call, each held for your go-ahead.
+
+---
+
 ## Where to Go Next
 
 - **[Intro to Cowork](../01-intro/readme.md)**: revisit the interaction model this control layer sits on
