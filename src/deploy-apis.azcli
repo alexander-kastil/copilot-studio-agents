@@ -1,5 +1,5 @@
 env=pl7008
-grp=rg-$env
+grp=rg-cowork-copilot-studio
 loc=westeurope
 acct=storage$env
 container=food

@@ -7,17 +7,17 @@
         <PackageReference Include="ModelContextProtocol.AspNetCore" Version="1.4.1" />
         <PackageReference Include="Azure.Identity" Version="1.21.0" />
         <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.23.0" />
-        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.9" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.10" />
         <PackageReference Include="Microsoft.Azure.AppConfiguration.AspNetCore" Version="8.5.0" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.9" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.9">
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.10" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.10">
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
             <PrivateAssets>all</PrivateAssets>
         </PackageReference>
-        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.9" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.10" />
         <PackageReference Include="Microsoft.FeatureManagement.AspNetCore" Version="4.6.0" />
-        <PackageReference Include="Microsoft.Identity.Web" Version="4.13.0" />
-        <PackageReference Include="Microsoft.Identity.Web.UI" Version="4.13.0" />
+        <PackageReference Include="Microsoft.Identity.Web" Version="4.13.1" />
+        <PackageReference Include="Microsoft.Identity.Web.UI" Version="4.13.1" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="10.2.3" />
         <PackageReference Include="coverlet.msbuild" Version="10.0.1">
             <PrivateAssets>all</PrivateAssets>

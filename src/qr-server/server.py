@@ -2,9 +2,9 @@
 # /// script
 # requires-python = ">=3.10"
 # dependencies = [
-#     "mcp>=1.26.0",
-#     "qrcode[pil]>=8.0",
-#     "uvicorn>=0.34.0",
+#     "mcp>=1.28.0",
+#     "qrcode[pil]>=8.2",
+#     "uvicorn>=0.51.0",
 #     "starlette>=0.46.0",
 # ]
 # ///

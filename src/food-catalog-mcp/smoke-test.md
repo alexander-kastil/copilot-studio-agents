@@ -259,15 +259,15 @@ Write-Host "`n✅ All smoke tests passed - Food Catalog API is healthy"
 
 **CORS errors:**
 
-- Run: `az webapp cors show -n food-catalog-api-pl7008 -g rg-pl7008`
+- Run: `az webapp cors show -n food-catalog-api-pl7008 -g rg-cowork-copilot-studio`
 - Should include wildcard `*` in allowed origins
 
 **500 errors:**
 
 - Check Application Insights logs
-- Review Azure App Service logs: `az webapp log tail -n food-catalog-api-pl7008 -g rg-pl7008`
+- Review Azure App Service logs: `az webapp log tail -n food-catalog-api-pl7008 -g rg-cowork-copilot-studio`
 
 **Connection timeout:**
 
-- Verify App Service is running: `az webapp show -n food-catalog-api-pl7008 -g rg-pl7008 --query state`
-- Restart if needed: `az webapp restart -n food-catalog-api-pl7008 -g rg-pl7008`
+- Verify App Service is running: `az webapp show -n food-catalog-api-pl7008 -g rg-cowork-copilot-studio --query state`
+- Restart if needed: `az webapp restart -n food-catalog-api-pl7008 -g rg-cowork-copilot-studio`

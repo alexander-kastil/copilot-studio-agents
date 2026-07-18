@@ -18,7 +18,7 @@ resource storageAccounts_m365copilotdev_name_resource 'Microsoft.Storage/storage
   properties: {
     defaultToOAuthAuthentication: false
     allowCrossTenantReplication: false
-    minimumTlsVersion: 'TLS1_0'
+    minimumTlsVersion: 'TLS1_2'
     allowBlobPublicAccess: true
     allowSharedKeyAccess: true
     networkAcls: {
@@ -244,7 +244,6 @@ resource sites_food_catalog_api_dev_name_resource 'Microsoft.Web/sites@2024-11-0
     clientCertMode: 'Required'
     hostNamesDisabled: false
     ipMode: 'IPv4'
-    customDomainVerificationId: '1A7E116ED6934625FBEA7701F8B25119E474E48CB44851A6B8B581C4279228BC'
     containerSize: 0
     dailyMemoryTimeQuota: 0
     httpsOnly: true
@@ -301,7 +300,6 @@ resource sites_hr_mcp_server_dev_name_resource 'Microsoft.Web/sites@2024-11-01' 
     clientCertMode: 'Required'
     hostNamesDisabled: false
     ipMode: 'IPv4'
-    customDomainVerificationId: '1A7E116ED6934625FBEA7701F8B25119E474E48CB44851A6B8B581C4279228BC'
     containerSize: 0
     dailyMemoryTimeQuota: 0
     httpsOnly: true
@@ -358,7 +356,6 @@ resource sites_purchasing_service_dev_name_resource 'Microsoft.Web/sites@2024-11
     clientCertMode: 'Required'
     hostNamesDisabled: false
     ipMode: 'IPv4'
-    customDomainVerificationId: '1A7E116ED6934625FBEA7701F8B25119E474E48CB44851A6B8B581C4279228BC'
     containerSize: 0
     dailyMemoryTimeQuota: 0
     httpsOnly: true
@@ -441,15 +438,13 @@ resource sites_food_catalog_api_dev_name_web 'Microsoft.Web/sites/config@2024-11
       'index.php'
       'hostingstart.html'
     ]
-    netFrameworkVersion: 'v9.0'
-    phpVersion: '5.6'
+    netFrameworkVersion: 'v10.0'
     requestTracingEnabled: false
     remoteDebuggingEnabled: false
     httpLoggingEnabled: true
     acrUseManagedIdentityCreds: false
     logsDirectorySizeLimit: 100
     detailedErrorLoggingEnabled: false
-    publishingUsername: 'REDACTED'
     scmType: 'None'
     use32BitWorkerProcess: true
     webSocketsEnabled: false
@@ -525,15 +520,13 @@ resource sites_hr_mcp_server_dev_name_web 'Microsoft.Web/sites/config@2024-11-01
       'index.php'
       'hostingstart.html'
     ]
-    netFrameworkVersion: 'v9.0'
-    phpVersion: '5.6'
+    netFrameworkVersion: 'v10.0'
     requestTracingEnabled: false
     remoteDebuggingEnabled: false
     httpLoggingEnabled: true
     acrUseManagedIdentityCreds: false
     logsDirectorySizeLimit: 100
     detailedErrorLoggingEnabled: false
-    publishingUsername: 'REDACTED'
     scmType: 'None'
     use32BitWorkerProcess: true
     webSocketsEnabled: false
@@ -603,15 +596,13 @@ resource sites_purchasing_service_dev_name_web 'Microsoft.Web/sites/config@2024-
       'index.php'
       'hostingstart.html'
     ]
-    netFrameworkVersion: 'v9.0'
-    phpVersion: '5.6'
+    netFrameworkVersion: 'v10.0'
     requestTracingEnabled: false
     remoteDebuggingEnabled: false
     httpLoggingEnabled: true
     acrUseManagedIdentityCreds: false
     logsDirectorySizeLimit: 100
     detailedErrorLoggingEnabled: false
-    publishingUsername: 'REDACTED'
     scmType: 'None'
     use32BitWorkerProcess: true
     webSocketsEnabled: false
@@ -661,86 +652,6 @@ resource sites_purchasing_service_dev_name_web 'Microsoft.Web/sites/config@2024-
     minimumElasticInstanceCount: 0
     azureStorageAccounts: {}
     http20ProxyFlag: 0
-  }
-}
-
-resource sites_food_catalog_api_dev_name_1fc1b77c169e4f57afa241662f7d5585 'Microsoft.Web/sites/deployments@2024-11-01' = {
-  parent: sites_food_catalog_api_dev_name_resource
-  name: '1fc1b77c169e4f57afa241662f7d5585'
-  location: 'West Europe'
-  properties: {
-    status: 4
-    author_email: 'N/A'
-    author: 'N/A'
-    deployer: 'ZipDeploy'
-    message: 'Created via a push deployment'
-    start_time: '2025-10-04T08:47:44.2515304Z'
-    end_time: '2025-10-04T08:48:09.0811085Z'
-    active: false
-  }
-}
-
-resource sites_purchasing_service_dev_name_34508753e5fa44ae8d3836fc94b98862 'Microsoft.Web/sites/deployments@2024-11-01' = {
-  parent: sites_purchasing_service_dev_name_resource
-  name: '34508753e5fa44ae8d3836fc94b98862'
-  location: 'West Europe'
-  properties: {
-    status: 4
-    author_email: 'N/A'
-    author: 'N/A'
-    deployer: 'ZipDeploy'
-    message: 'Created via a push deployment'
-    start_time: '2025-10-04T22:53:01.0358019Z'
-    end_time: '2025-10-04T22:53:15.3954213Z'
-    active: true
-  }
-}
-
-resource sites_hr_mcp_server_dev_name_53237649b45346b3885cb59b4a6629e1 'Microsoft.Web/sites/deployments@2024-11-01' = {
-  parent: sites_hr_mcp_server_dev_name_resource
-  name: '53237649b45346b3885cb59b4a6629e1'
-  location: 'West Europe'
-  properties: {
-    status: 4
-    author_email: 'N/A'
-    author: 'N/A'
-    deployer: 'ZipDeploy'
-    message: 'Created via a push deployment'
-    start_time: '2025-10-04T06:29:39.3380863Z'
-    end_time: '2025-10-04T06:30:37.1743216Z'
-    active: true
-  }
-}
-
-resource sites_food_catalog_api_dev_name_d9881d6eee404fd8a62de2a2da2489c3 'Microsoft.Web/sites/deployments@2024-11-01' = {
-  parent: sites_food_catalog_api_dev_name_resource
-  name: 'd9881d6eee404fd8a62de2a2da2489c3'
-  location: 'West Europe'
-  properties: {
-    status: 4
-    author_email: 'N/A'
-    author: 'N/A'
-    deployer: 'ZipDeploy'
-    message: 'Created via a push deployment'
-    start_time: '2025-10-04T22:19:26.6572055Z'
-    end_time: '2025-10-04T22:20:38.4656078Z'
-    active: true
-  }
-}
-
-resource sites_purchasing_service_dev_name_da6dd9c2f93947f9bdb1bb1dd888c0ca 'Microsoft.Web/sites/deployments@2024-11-01' = {
-  parent: sites_purchasing_service_dev_name_resource
-  name: 'da6dd9c2f93947f9bdb1bb1dd888c0ca'
-  location: 'West Europe'
-  properties: {
-    status: 4
-    author_email: 'N/A'
-    author: 'N/A'
-    deployer: 'ZipDeploy'
-    message: 'Created via a push deployment'
-    start_time: '2025-10-04T20:47:04.0601451Z'
-    end_time: '2025-10-04T20:47:27.1239187Z'
-    active: false
   }
 }
 

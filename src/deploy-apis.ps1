@@ -1,5 +1,5 @@
 $env = "dev"
-$grp = "m365-copilot-$env"
+$grp = "rg-cowork-copilot-studio"
 $loc = "westeurope"
 $plan = "m365-copilot-plan-$env"
 $acct = "m365copilot$env"

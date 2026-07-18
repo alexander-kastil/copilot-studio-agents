@@ -1,5 +1,5 @@
 {
     "appService.preDeployTask": "publish-release",
-    "appService.deploySubpath": "bin/Release/net9.0/publish",
-    "appService.defaultWebAppToDeploy": "/subscriptions/cd091145-5ea2-4703-ba5d-41063b1d4308/resourceGroups/m365-copilot/providers/Microsoft.Web/sites/food-app-copilot"
+    "appService.deploySubpath": "bin/Release/net10.0/publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/cd091145-5ea2-4703-ba5d-41063b1d4308/resourceGroups/rg-cowork-copilot-studio/providers/Microsoft.Web/sites/food-app-copilot"
 }
