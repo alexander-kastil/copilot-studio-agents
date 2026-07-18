@@ -2,18 +2,19 @@
 
 Companion Material for Class Delivery by [Alexander Kastil](https://www.linkedin.com/in/alexander-kastil/)
 
-This repository contains the content for the Developing Low-Code and Pro-Code Agents and Copilots for Microsoft 365 workshop. The workshop is designed to provide a in-depth hands-on experience in extending Microsoft 365 Copilot capabilities using both low-code and pro-code approaches.
+This repository contains the content for the **Automate Business Processes using Copilot Cowork and Copilot Studio** workshop, a four-day hands-on class on extending Microsoft 365 Copilot with low-code agents. You build agents with Copilot Cowork and Copilot Studio, then publish, maintain, and govern them for the enterprise. The material is organized into four modules:
 
-- Introduction to Copilot Extensibility & Agents
-- Implementing Low-Code Agents using Microsoft Copilot Studio
-- Microsoft Copilot Pro-Code Extensibility
+- [Introduction to Copilot Extensibility & Agents](demos/01-intro/readme.md)
+- [Microsoft 365 Copilot Cowork](demos/02-cowork/readme.md)
+- [Implementing Low-Code Agents with Microsoft Copilot Studio](demos/03-copilot-studio/readme.md)
+- [Publishing, Maintaining & Governing Agents](demos/04-maintaining/readme.md)
+
+See the [full module and topic outline](demos/readme.md) for the day-by-day breakdown.
 
 ## Prerequisites
 
-- Typescript and C# programming skills
-- Basic AI Development Skills
-- Basic Azure Skills helpful
-- Basic Microsoft 365 Developer Skills helpful
+- A GitHub account
+- Basic knowledge of the Microsoft 365 platform
 
 ## Getting Started
 
