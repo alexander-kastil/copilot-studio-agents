@@ -1,5 +1,5 @@
 ---
-name: brand-voice-cowork
+name: brand-voice-copilot
 description: >-
   Repo-local brand-voice checker for this Microsoft 365 / Copilot Studio &
   Copilot Cowork masterclass. Audits and fixes Markdown in demos/ and labs/
@@ -7,7 +7,7 @@ description: >-
   paragraph cap, topic-specific slash-command tables). Run after writing or
   significantly editing any readme.md or guide. The create-class master skill
   discovers this skill by globbing .claude/skills/brand-voice-*. Trigger phrases:
-  brand voice check, brand-voice-cowork, quality check readme, fix em dashes,
+  brand voice check, brand-voice-copilot, quality check readme, fix em dashes,
   check mermaid labels, cowork brand voice, audit readme, polish demos readme.
 license: CC-BY-NC-SA-4.0
 ---

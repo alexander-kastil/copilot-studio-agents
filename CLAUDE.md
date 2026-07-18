@@ -14,12 +14,12 @@ This is a hands-on masterclass repository for **Designing, Implementing & Mainta
 Skills live under `.claude/skills/`. There are no custom slash commands in this repo.
 
 - `create-class` — master skill for authoring and maintaining this course (scaffold, write guides, generate slides, enrich module READMEs, track completeness).
-- `brand-voice-cowork` — audits and fixes Markdown against the repo's brand-voice rules (see below).
+- `brand-voice-copilot` — audits and fixes Markdown against the repo's brand-voice rules (see below).
 - `mermaid-expert` — authors Mermaid diagrams for the module and lab docs, following the repo's Mermaid label rule.
 
 ## Brand Voice
 
-All `readme.md` files in `demos/` must pass the brand-voice rules in `.claude/skills/brand-voice-cowork/references/rules.md`. Run the `brand-voice-cowork` skill after writing or significantly editing any README. Brand voice stays a repo-local skill (the Cowork audience differs from a Claude Code class); the `create-class` master discovers it by globbing `.claude/skills/brand-voice-*`.
+All `readme.md` files in `demos/` must pass the brand-voice rules in `.claude/skills/brand-voice-copilot/references/rules.md`. Run the `brand-voice-copilot` skill after writing or significantly editing any README. Brand voice stays a repo-local skill (the Cowork audience differs from a Claude Code class); the `create-class` master discovers it by globbing `.claude/skills/brand-voice-*`.
 
 The four rules in short:
 - No em dashes in prose — replace with `,` `;` `:` or `()`

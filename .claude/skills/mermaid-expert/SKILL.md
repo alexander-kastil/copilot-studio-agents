@@ -21,7 +21,7 @@ metadata:
 
 ## Do not use this skill when
 
-- The task is prose editing, not diagramming (use `brand-voice-cowork`).
+- The task is prose editing, not diagramming (use `brand-voice-copilot`).
 - No diagram improves the explanation; do not add one for its own sake.
 
 ## Repo rules (non-negotiable)
