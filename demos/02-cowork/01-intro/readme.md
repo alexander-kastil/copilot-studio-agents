@@ -136,7 +136,7 @@ Behind every capability is a **skill**. As Cowork works on your task, it automat
 Put this interaction model to work end to end on the Aurora Outdoor scenario:
 
 - [Compile a Q3 Business Review Deck](./demo-01-quarterly-review.md): turn a quarter of sales data and manager notes into a boardroom deck and a cover email to your VP.
-- [Clear a Monday Backlog into a Briefing](./demo-02-monday-briefing.md): triage a weekend inbox, resolve a calendar clash, and draft the hardest replies for approval.
+- [Schedule a Meeting Where Your Week Has Room](./demo-02-workiq-scheduling.md): let Work IQ read your live week, have Cowork defend the best slot for a one-hour Agentic AI session, and book it through the approval gate.
 
 ---
 
