@@ -62,7 +62,7 @@ Create a `SKILL.md` file in your OneDrive under `Documents/Cowork/skills/weekly-
 
 ```text
 ---
-name: Weekly Regional Status Report
+name: weekly-status-report
 description: Writes my Northern Europe weekly status report in the house format from my recent emails, meetings, and latest figures, then prepares it to send to my manager.
 ---
 

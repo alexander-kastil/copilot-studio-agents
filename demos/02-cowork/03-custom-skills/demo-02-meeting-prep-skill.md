@@ -22,7 +22,7 @@ As Regional Manager for Northern Europe at Aurora Outdoor, you prep the same way
 
 ## Demo Files
 
-Point Cowork at the `demo-01-meeting-prep-skill` folder.
+Point Cowork at the `demo-02-meeting-prep-skill` folder.
 
 | File | What it represents |
 |------|--------------------|
@@ -30,7 +30,7 @@ Point Cowork at the `demo-01-meeting-prep-skill` folder.
 
 ## Load the demo files
 
-In Microsoft 365 Copilot Cowork, start a new task, click **+**, and attach `meeting-brief-template.docx` from the `demo-01-meeting-prep-skill` folder. Keep it attached for the first steps.
+In Microsoft 365 Copilot Cowork, start a new task, click **+**, and attach `meeting-brief-template.docx` from the `demo-02-meeting-prep-skill` folder. Keep it attached for the first steps.
 
 ---
 
@@ -62,7 +62,7 @@ Create a `SKILL.md` file in your OneDrive at `Documents/Cowork/skills/meeting-pr
 
 ```text
 ---
-name: Meeting Prep
+name: meeting-prep
 description: Writes a one-page meeting brief in Aurora Outdoor house format before a partner call or 1:1, pulling from my calendar, recent emails with the attendee, and related files. Use whenever I say prep me for a meeting, write a brief, or name an upcoming meeting to prepare for.
 ---
 

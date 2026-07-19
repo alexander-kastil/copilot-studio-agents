@@ -31,7 +31,7 @@ A skill file has two parts: a YAML header (name and description) and plain-langu
 
 ```yaml
 ---
-name: Weekly Status Report
+name: weekly-report
 description: Generates a weekly status report from my recent emails and calendar.
 ---
 
@@ -40,6 +40,8 @@ Summarize activity by project and key outcomes.
 Create a Word document with sections: Highlights, In Progress, Blockers, Next Week.
 Send the document to my manager every Friday at 4 PM.
 ```
+
+The **name** is the skill's identity: lowercase letters, numbers, and hyphens only, up to 64 characters, and it must match its folder name exactly. A mismatch between the folder and the `name` is the most common reason a skill silently fails to load, so `weekly-report/` must carry `name: weekly-report`.
 
 The **description** is what Cowork reads to decide when a skill applies, so make it specific and trigger-oriented. A vague description ("helps with reports") rarely matches; a concrete one ("writes my weekly Northern Europe status report from my emails and figures") loads at the right moment. The body is the step-by-step recipe Cowork follows.
 
@@ -80,7 +82,8 @@ Both add new capabilities, but they come from different places and solve differe
 
 ## Hands-On Demo
 
-- [Build a Reusable Meeting-Prep Skill](./demo-01-meeting-prep-skill.md): author a `SKILL.md` with a companion brief template, tune its description so Cowork discovers it, then run and refine it until every meeting brief comes out in house format.
+- [Turn a Market Brief into a Repeatable Product Pitch](./demo-01-product-pitch-skill.md): author a `SKILL.md` with a companion PowerPoint structure, run it against a research brief, and tune it until every pitch card cites its evidence.
+- [Build a Reusable Meeting-Prep Skill](./demo-02-meeting-prep-skill.md): author a `SKILL.md` with a companion brief template, tune its description so Cowork discovers it, then run and refine it until every meeting brief comes out in house format.
 
 ---
 

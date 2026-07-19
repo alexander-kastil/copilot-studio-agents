@@ -15,6 +15,7 @@ This is a hands-on masterclass repository for **Designing, Implementing & Mainta
 Skills live under `.claude/skills/`. There are no custom slash commands in this repo.
 
 - `create-class` — master skill for authoring and maintaining this course (scaffold, write guides, generate slides, enrich module READMEs, track completeness).
+- `create-cowork-skill` — authors a Copilot Cowork custom `SKILL.md` (frontmatter contract, kebab-case name-matches-folder rule, companion-file limits, run-and-tune loop). Use it whenever course content demonstrates or ships a Cowork skill, so the examples stay valid.
 - `brand-voice-copilot` — audits and fixes Markdown against the repo's brand-voice rules (see below).
 - `mermaid-expert` — authors Mermaid diagrams for the module and lab docs, following the repo's Mermaid label rule.
 

@@ -28,7 +28,8 @@ Guided, copy-paste demos that put each topic to work. Most run on one shared sce
 | [Getting Started with Cowork](./01-intro/readme.md) | [Compile a Q3 Business Review Deck](./01-intro/demo-01-quarterly-review.md) |
 | [Getting Started with Cowork](./01-intro/readme.md) | [Clear a Monday Backlog into a Briefing](./01-intro/demo-02-monday-briefing.md) |
 | [Understanding Skills](./02-built-in-skills/readme.md) | [Produce a Competitive Market Brief](./02-built-in-skills/demo-01-research-brief.md) |
-| [Creating Custom Skills](./03-custom-skills/readme.md) | [Build a Reusable Meeting-Prep Skill](./03-custom-skills/demo-01-meeting-prep-skill.md) |
+| [Creating Custom Skills](./03-custom-skills/readme.md) | [Turn a Market Brief into a Repeatable Product Pitch](./03-custom-skills/demo-01-product-pitch-skill.md) |
+| [Creating Custom Skills](./03-custom-skills/readme.md) | [Build a Reusable Meeting-Prep Skill](./03-custom-skills/demo-02-meeting-prep-skill.md) |
 | [Scheduling Prompts & Recurring Automation](./04-automation/readme.md) | [Automate a Weekly Status Report](./04-automation/demo-01-automation.md) |
 | [Extending Cowork with Plugins](./05-plugins/readme.md) | [Extend Cowork with a Community Plugin](./05-plugins/demo-01-plugins.md) |
 | [Human-in-the-Loop: Staying in Control](./06-staying-in-control/readme.md) | [Turn a Partner Meeting into a Follow-Up Package](./06-staying-in-control/demo-01-follow-up.md) |

@@ -4,18 +4,28 @@
 
 ## Skills
 
+- **Cowork skill authoring is now owned by the `create-cowork-skill` skill (local + global).** It holds the validated frontmatter contract, limits, companion-file rules, three-layer loading, and the run-and-tune loop. Read it before writing any `SKILL.md` example into course content; do not re-derive the format from memory or from a single MS Learn page.
 - **create-class peer subskills are nested, not top-level.** They live at `.claude/skills/create-class/<peer>/SKILL.md`. `Skill <peer>` returns "Unknown skill". Use a peer by reading its file. Never propose promoting them to top-level; the user rejected this firmly.
 
 ## Course content accuracy
 
 - **It is "Microsoft Foundry", not "Azure AI Foundry".** Microsoft renamed it roughly a year ago. Never write "Azure AI Foundry" in course content.
-- **Validate product facts against Microsoft Learn (the MS Learn MCP) before authoring slides or prose.** Doing this for Copilot Cowork (July 2026) corrected the repo: Cowork is generally available (June 2026 GA), not Frontier-only; a `SKILL.md` `name` must be kebab-case and match its folder name exactly (the repo example `name: Weekly Status Report` is wrong); skills and plugins are managed on the Customize page; a model picker offers Claude Opus 4.8, Sonnet 5, and Fable 5 (preview). Some `02-cowork` readmes still carry stale "Frontier Preview" banners and the non-kebab-case example, so the markdown lags the validated deck.
+- **Validate product facts against Microsoft Learn (the MS Learn MCP) before authoring slides or prose.** Doing this for Copilot Cowork (July 2026) corrected the repo: Cowork is generally available (June 2026 GA), not Frontier-only; a `SKILL.md` `name` must be kebab-case and match its folder name exactly (the repo example `name: Weekly Status Report` is wrong); skills and plugins are managed on the Customize page; a model picker offers Claude Opus 4.8, Sonnet 5, and Fable 5 (preview). Some `02-cowork` readmes still carry stale "Frontier Preview" banners, so the markdown lags the validated deck.
+- **A lesson recorded is not a lesson applied; close the fix in the same pass.** The kebab-case finding above was captured in an earlier session with a note that the `02-cowork` readmes still carried the wrong example, and the fix never landed, so a later session re-derived the same rule from scratch. All three non-kebab-case examples are now fixed (`03-custom-skills/readme.md`, `demo-02-meeting-prep-skill.md`, `04-automation/demo-01-automation.md`) and the rule is taught in the Anatomy section rather than only demonstrated. When a lesson names a specific stale file, either fix it then or record it as an open task, never as prose in the lessons file.
+- **The "Frontier Preview" banners in six `02-cowork` readmes are still open.** Cowork reached GA in June 2026, so the banner is wrong in `readme.md`, `02-built-in-skills`, `03-custom-skills`, `04-automation`, `05-plugins`, and `06-staying-in-control`.
 
 ## Course structure
 
 - **File demos and labs inside the deepest numbered topic subfolder, not the module or sub-module root.** When a module (or a sub-module like `04-ui-update`) has `NN-topic` subfolders, each `demo-NN-*.md` / `lab-NN-*.md` and its companion folder belongs inside the matching topic subfolder. `create-guide` now does this natively (its old "module root" rule was updated). It previously defaulted to module root, which the user corrected twice (02-cowork, then 03-copilot-studio/04-ui-update). Place into the topic from the start.
 - **Fix links after every move.** Own topic becomes `./`, sibling topics become `../NN-topic/`, and a depth change ripples to cross-tree links (labs reference demos with one extra `../`). Validate with a resolver that also checks `#anchors`; on Windows a grep end-anchor `$` silently misses CRLF lines, so use a script or drop `$`.
 - **Per-topic lab numbering resets to `lab-01`.** With topics as sub-modules, each topic's first lab is `lab-01-<slug>`. When moving an existing lab into a topic, rename it to `lab-01` and update its self-references and companion folder name.
+
+## Demo design
+
+- **Chain demos by artifact: one demo's output is the next demo's input.** The `03-custom-skills` pitch demo consumes the AW26 Market Brief that the `02-built-in-skills` Deep Research demo produces, which teaches the handoff (research output becomes sales input) on top of the feature. Ship the upstream artifact as a companion file in the downstream demo's folder so the demo still stands alone when a learner skips ahead.
+- **A demo that ships a skill ships the runnable skill folder, not just a paste block.** `demo-01-product-pitch-skill/product-pitch/` holds a correctly named `SKILL.md` plus its companion, so the learner can drag it into OneDrive; the guide still shows the full text, because authoring it by hand once is what makes the tuning step meaningful.
+- **Generate business demo assets with python-docx / python-pptx, then delete the script.** Keep every asset in one demo internally consistent with the others (same company, same period, same admitted gaps), and derive them from any existing asset in the chain rather than inventing parallel facts.
+- **"Create a `<format>`" said while discussing a demo means the DEMO produces that artifact, not the repo.** The user said "shorten it a bit and create a pdf" about the built-in-skills demo and meant: add a step where Cowork exports the brief as a PDF (exercising the built-in PDF skill). It was misread as "export the guide as a PDF file", which created unwanted duplicate collateral next to the markdown. Default to the demo-native reading; never check in rendered snapshots of course markdown unless explicitly asked for a handout.
 
 ## Terminology
 

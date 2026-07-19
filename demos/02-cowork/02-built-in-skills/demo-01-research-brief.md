@@ -1,10 +1,10 @@
 # Produce a Competitive Market Brief
 
-Send Cowork out to research the outdoor market, hold its findings up against your own positioning document, and come back with a decision-ready brief.
+Send Cowork out to research the outdoor market, hold its findings up against your own positioning document, and come back with a decision-ready brief, shipped as a PDF for leadership.
 
 ## Related Topics
 
-This demo is built on the Deep Research and Enterprise Search capabilities described in [Understanding Skills](./readme.md): Cowork gathers from the open web and from your own files in a single task. It is the research half of the [Getting Started with Cowork](../01-intro/readme.md) capability map, and the same recurring-report idea returns in [Scheduling Prompts & Recurring Automation](../04-automation/readme.md) when you put a brief like this on a schedule.
+This demo runs on the Deep Research capability described in [Understanding Skills](./readme.md); watch the side panel to see skills activate as the task runs. The same recurring-report idea returns in [Scheduling Prompts & Recurring Automation](../04-automation/readme.md) when you put a brief like this on a schedule.
 
 ---
 
@@ -26,7 +26,7 @@ Point Cowork at the `demo-01-research-brief` folder.
 
 | File | What it represents |
 |------|--------------------|
-| `internal-positioning.docx` | Aurora's confidential brand and product positioning, including its target segments, differentiators, and known gaps |
+| `internal-positioning.docx` | Aurora's confidential brand and product positioning: target segments, differentiators, and known gaps |
 
 ## Load the demo files
 
@@ -36,43 +36,43 @@ In Microsoft 365 Copilot Cowork, start a new task, click **+**, and attach `inte
 
 ## Step 1: Research the market
 
-**Overview:** Start on the outside. Have Cowork run deep research on the real outdoor apparel and gear market so the brief rests on current trends, not assumptions. This step touches the open web, not your files.
+**Overview:** Start on the outside: deep research on the real outdoor market, so the brief rests on current trends rather than assumptions.
 
 **Research / Planning / Discussion:**
 
 Send this prompt:
 
 ```
-Do deep research on the European outdoor apparel and gear market for the coming season. I want the three or four trends shaping premium outdoor brands right now: what is happening with sustainability claims and lifecycle transparency, the growth of trail running, direct-to-consumer versus wholesale, and repairability and circular programmes. Cite where each finding comes from and note anything a mid-premium Nordic brand should be worried about.
+Do deep research on the European outdoor apparel and gear market for the coming season. I want the three or four trends shaping premium outdoor brands right now: sustainability claims and lifecycle transparency, the growth of trail running, direct-to-consumer versus wholesale, and repairability and circular programmes. Cite where each finding comes from and note anything a mid-premium Nordic brand should be worried about.
 ```
 
-**Finding:** Deep Research runs longer than a normal answer; watch the side panel to see it working through sources. A strong brief-in-progress names concrete trends with citations and reads as synthesis rather than a link dump. If it stays vague, ask it to back each trend with a source and to say why that trend matters commercially, not just that it exists.
+**Finding:** Deep Research runs longer than a normal answer; watch the side panel to see the skill working through sources. A strong result names concrete trends with citations and reads as synthesis, not a link dump; if it stays vague, ask it to back each trend with a source and say why it matters commercially.
 
-**Expected Outcome:** A researched summary of three or four current market trends, each with a citation, and an initial read on which trends create risk for a mid-premium Nordic brand.
+**Expected Outcome:** Three or four cited market trends and an initial read on which ones create risk for a mid-premium Nordic brand.
 
 ---
 
 ## Step 2: Hold the research against your own positioning
 
-**Overview:** Research only matters where it touches you. Now bring your confidential positioning into the same task and let Cowork find the gaps between where the market is going and where Aurora stands.
+**Overview:** Research only matters where it touches you. Bring the confidential positioning into the same task and let Cowork find the gaps.
 
 **Research / Planning / Discussion:**
 
 With `internal-positioning.docx` attached, send:
 
 ```
-Now read internal-positioning.docx. Compare Aurora's stated positioning, differentiators, and known gaps against the market trends you just researched. Where is Aurora already aligned with where the market is heading, and where is it exposed? Be specific about the gaps we admit to in our own document.
+Now read internal-positioning.docx. Compare Aurora's stated positioning, differentiators, and known gaps against the market trends you just researched. Where is Aurora already aligned, and where is it exposed? Be specific about the gaps we admit to in our own document.
 ```
 
-**Finding:** Check that Cowork connects the two sides rather than summarising each in turn. It should notice that Aurora's repairability programme aligns with the circular-economy trend but that the admitted lack of published sustainability metrics is exactly where specialist competitors are pulling ahead, and that the thin trail-running presence collides with that segment's growth. If it treats the market and the document as separate lists, ask it to name the single biggest exposure.
+**Finding:** Check that Cowork connects the two sides instead of summarising each in turn: the repairability programme aligning with the circular trend, the missing sustainability metrics as the exposure, the thin trail-running presence colliding with that segment's growth. If it produces two separate lists, ask for the single biggest exposure.
 
-**Expected Outcome:** A gap analysis that pairs each market trend with Aurora's actual position, calling out the sustainability-metrics gap and the trail-running exposure by name.
+**Expected Outcome:** A gap analysis pairing each trend with Aurora's actual position, naming the sustainability-metrics gap and the trail-running exposure.
 
 ---
 
 ## Step 3: Write the brief
 
-**Overview:** You have the raw research and the gap analysis. Turn them into a short, scannable document that a leadership team can read in five minutes and act on.
+**Overview:** Turn the research and the gap analysis into a short document a leadership team can read in five minutes and act on.
 
 **Recipe:**
 
@@ -87,7 +87,7 @@ Create a Word document titled "AW26 Market Brief - Aurora Outdoor" with these se
 Keep it to roughly two pages and write for an executive reader.
 ```
 
-**Expected Outcome:** A `.docx` brief of about two pages with the four sections, cited trends, and a risks section that traces back to Aurora's own admitted gaps.
+**Expected Outcome:** A `.docx` brief of about two pages with the four sections, cited trends, and risks that trace back to Aurora's own admitted gaps.
 
 > The recipe above assumes the trends and gaps found above. If your research surfaced different trends, structure the brief around those.
 
@@ -95,7 +95,7 @@ Keep it to roughly two pages and write for an executive reader.
 
 ## Step 4: Turn insight into a recommendation
 
-**Overview:** A brief that only describes the world is half the job. The last step forces a point of view: what should Aurora actually do about what the research found.
+**Overview:** A brief that only describes the world is half the job; the last step forces a point of view.
 
 **Research / Planning / Discussion:**
 
@@ -105,14 +105,14 @@ In the same task, send:
 Based on the brief, what are the three moves Aurora should make for AW26, in priority order? For each, say what the move is, which risk it closes, and roughly how hard it is to do before the season. If you had to pick only one to fund, which would it be?
 ```
 
-**Finding:** A useful answer commits to a priority order and a single top pick, rather than hedging with "it depends". It should tie each recommendation to a specific risk from the brief, for example publishing sustainability metrics to close the transparency gap. If it lists moves without ranking them, ask it to choose the one to fund first and defend the choice.
+**Finding:** A useful answer commits to a priority order and a single top pick tied to a specific risk, for example publishing sustainability metrics to close the transparency gap. If it lists moves without ranking them, ask it to choose the one to fund first and defend the choice.
 
 **Recipe:**
 
 Then send:
 
 ```
-Add a Recommendations section to the market brief with those three prioritised moves, each as a short bullet naming the move and the risk it closes. Mark your top pick. Save the updated document.
+Add a Recommendations section to the market brief with those three prioritised moves, each as a short bullet naming the move and the risk it closes. Mark your top pick. Save the updated document, then export the finished brief as a PDF with the same name for distribution to leadership.
 ```
 
-**Expected Outcome:** The brief is updated with a Recommendations section listing three prioritised moves, a flagged top pick, and each move tied back to a named risk.
+**Expected Outcome:** The brief updated in place with three prioritised moves and a flagged top pick, plus an `AW26 Market Brief - Aurora Outdoor.pdf` alongside the `.docx` in the working folder. Watch the side panel as the last part runs: the Word skill hands over to the PDF skill, one more built-in skill activating on its own because the task called for it.
