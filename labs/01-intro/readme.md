@@ -6,7 +6,7 @@ Hands-on labs for [Module 1](../../demos/01-intro/readme.md). Start with Agent B
 
 [Lab: Making agents with Agent Builder](https://microsoft.github.io/copilot-camp/pages/make/agent-builder/)
 
-[Lab: Understanding and Building SharePoint Agents](https://microsoft.github.io/copilot-camp/pages/make/sharepoint-agents/)
+[Lab: Understanding and Building SharePoint Agents](https://microsoft.github.io/copilot-camp/pages/sharepoint/)
 
 > Note: Implement exercises MAB and MAB1
 

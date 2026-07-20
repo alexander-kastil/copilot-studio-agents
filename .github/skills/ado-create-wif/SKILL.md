@@ -1,5 +1,5 @@
 ---
-name: create-wi
+name: ado-create-wif
 description: Automate creation of Azure DevOps workload identity federation service connections with deployment metadata from deploy.json. Use when users need to create or delete Azure service connections with workload identity federation for secure, passwordless authentication.
 license: MIT
 ---
@@ -245,10 +245,10 @@ Scripts automatically read metadata from `.github/deploy.json` in the repository
 
 ```json
 {
-    "ResourceGroup": "your-resource-group-name",
-    "WIF": "your-managed-identity-name-prefix",
-    "ADOOrg": "https://dev.azure.com/your-org",
-    "ADOProject": "your-project-name"
+  "ResourceGroup": "your-resource-group-name",
+  "WIF": "your-managed-identity-name-prefix",
+  "ADOOrg": "https://dev.azure.com/your-org",
+  "ADOProject": "your-project-name"
 }
 ```
 
@@ -256,10 +256,10 @@ Scripts automatically read metadata from `.github/deploy.json` in the repository
 
 ```json
 {
-    "ResourceGroup": "rg-agentic-sw-engineering",
-    "WIF": "wi-agentic-sw",
-    "ADOOrg": "https://dev.azure.com/integrationsonline",
-    "ADOProject": "agentic-sw-engineering"
+  "ResourceGroup": "rg-agentic-sw-engineering",
+  "WIF": "wi-agentic-sw",
+  "ADOOrg": "https://dev.azure.com/integrationsonline",
+  "ADOProject": "agentic-sw-engineering"
 }
 ```
 
