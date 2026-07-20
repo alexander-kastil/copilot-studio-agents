@@ -56,6 +56,14 @@ artifacts (`01:`, `Module 13.01`) and label prefixes (`Demo:`, `Lab 01`,
 `Introduction to`). Use sentence case, no trailing punctuation, and include the
 concrete technology (`Build a Custom MCP Server in C#`, not `Build MCP`).
 
+Exception: a topic H1 that is also a master-TOC bullet is governed first by the
+`module-toc-conception` "one title, three places" contract (the TOC bullet, the
+topic H1, and the module-table row must stay identical). Never retitle such an H1
+verb-first in isolation; that desyncs it from the TOC. Retitle the bullet, the H1,
+and the table row together, and only with author approval. Gerund-led titles
+(`Getting Started`, `Creating Custom Skills`, `Building Agents`) already satisfy
+the spirit of Rule 5, so leave them as the author set them.
+
 Workflow when asked to polish slugs:
 
 1. Glob topic readmes (`demos/XX/YY/readme.md`), standalone demo guides

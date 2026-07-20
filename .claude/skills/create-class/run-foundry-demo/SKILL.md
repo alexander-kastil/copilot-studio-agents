@@ -1,7 +1,7 @@
 ---
 name: run-foundry-demo
 description: >-
-  Guide the user through running an Azure AI Foundry / Microsoft Agent Framework
+  Guide the user through running a Microsoft Foundry / Microsoft Agent Framework
   demo in the repo. Prepares the environment (config, venv, deps) and gives the
   user the terminal commands to run. Does not run interactive scripts directly.
   Errors are discussed and resolved collaboratively.

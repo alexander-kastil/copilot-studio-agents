@@ -4,14 +4,29 @@ In June 2026 Microsoft shipped a rebuilt Copilot Studio, delivered as a producti
 
 The teaching goal is transfer, not replacement. Students learn the classic authoring surface they use in production today (Topics, Knowledge, Actions, Settings), then see the new experience beside it so the concepts carry over when their tenant adopts it. Treat classic as the primary track and the new experience as guided demos.
 
-## What to teach
+### What launched
 
-- What launched: an enhanced orchestration runtime, a natural-language-first authoring model, and a single consolidated Build surface, all available alongside classic.
-- How to tell which experience you are in: classic shows Topics, Knowledge, Actions, and Settings in the left navigation; the new experience shows Build, Preview, Evaluate, and Monitor tabs across the top.
-- How to switch: on the classic home page choose Try it now, then use the New experience toggle to move back and forth at any time.
-- The one-way rule: agents built in one experience cannot be converted to the other, because the two use fundamentally different architectures. This makes the per-agent choice a real commitment.
-- What classic still does better: deterministic topic and branching logic, configurable orchestration modes (classic or generative), and a broader mature feature set.
-- When to choose new: a greenfield agent that reasons over Microsoft 365 data, a simpler instructions-first model, and access to skills.
+The rebuilt Copilot Studio brings three changes that matter to a maker. It adds an enhanced orchestration runtime that reasons and plans across steps on every turn, a natural-language-first authoring model where you describe the agent's job instead of hand-building topics, and a single consolidated Build surface that replaces the separate classic areas. All of this ships alongside classic, not on top of it, so nothing you run today is moved or rewritten.
+
+Because both experiences are live in the same tenant, coexistence is the normal state, not a migration event. You can keep shipping classic agents while you learn the new surface, and you decide per agent which one to build in. Treat the toggle as a per-agent choice rather than a tenant-wide switch you flip once.
+
+### Telling the two experiences apart
+
+The fastest tell is the navigation. Classic shows Topics, Knowledge, Actions, and Settings down the left; the new experience shows Build, Preview, Evaluate, and Monitor tabs across the top. If you ever see Topics in the navigation, you are in classic, full stop.
+
+To move between them, open the Copilot Studio home page, choose Try it now on the banner, then use the New experience toggle to switch back and forth at any time. Confirming which experience you are in before you create an agent is the single habit that prevents the most rework. A minute spent reading the tabs saves an hour of building in the wrong place.
+
+### The one-way conversion rule
+
+Agents built in one experience cannot be converted to the other. The two run on fundamentally different architectures (classic uses authored topics and branching; the new experience uses instructions plus the reasoning runtime), so there is no bridge and no import path between them. This makes the per-agent choice a real commitment rather than a preference you can undo later.
+
+The practical consequence is simple: decide the experience before you invest in an agent, not after. Rebuilding a mature classic agent in the new experience means re-authoring it from scratch, and the same is true in reverse. Read the navigation, confirm the experience, then start building.
+
+### When to choose which
+
+Classic still leads where you need deterministic control: authored topics and branching logic, configurable orchestration modes (classic or generative), and the broader mature feature set that production agents lean on today. Reach for classic when the flow must follow an exact, auditable path, or when it depends on a feature the new experience has not surfaced yet.
+
+Choose the new experience for a greenfield agent that reasons over Microsoft 365 data, when you want the simpler instructions-first model, and when you want access to Skills and the enhanced orchestrator. In this module, classic stays the primary production track and the new experience runs as guided demos and labs, so the concepts transfer cleanly when your tenant adopts it.
 
 ## Classic to new at a glance
 
@@ -22,6 +37,14 @@ The teaching goal is transfer, not replacement. Students learn the classic autho
 | Orchestration | Configurable (classic or generative) | Enhanced runtime, used for all agents |
 | Convert between them | Not possible | Not possible |
 | Status | Generally available | Production-ready preview |
+
+## Hands-On Demo
+
+- [Build and Ground Your First New-Experience Agent](./demo-01-build-and-ground-an-agent.md): the maker creates a Northwind Sales Assistant from a plain-language description, scopes it with Instructions, grounds it on a product document, and verifies a cited answer in Preview.
+
+## Hands-On Lab
+
+- [Compare the Classic and New Copilot Studio Experiences Side by Side](../../../../labs/03-copilot-studio/04-ui-update/01-new-experience-overview/lab-01-compare-classic-and-new.md): the maker stands up a minimal Northwind assistant in the new experience, contrasts it against a classic agent, and records a per-agent decision that reinforces the toggle, coexistence, and the one-way conversion rule.
 
 ## Key Topics covered in this module
 

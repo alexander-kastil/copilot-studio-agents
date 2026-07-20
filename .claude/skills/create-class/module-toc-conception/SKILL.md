@@ -85,6 +85,13 @@ moved path, update the master TOC and the affected module READMEs, and update th
 the narrative "story" in `demos/readme.md`. After any structural change, verify zero broken relative
 links across the tree before reporting done.
 
+Before writing or repointing a cross-module link, confirm the target folder's CURRENT name in the
+working tree (glob or `ls`), never the name from the session-start git snapshot: that snapshot is
+stale, and a parallel restructure of another module may have already renumbered the folder you are
+linking to (for example `01-intro/04-licensing-setup` becoming `05-licensing-setup`). Match links to
+the live tree. Leave any unrelated in-progress folder renames untouched; scope your edits to your own
+module plus the specific inbound links that point into it.
+
 ## Writing style
 
 No em dashes in anything this subskill produces or in this file itself. Use a colon, comma,

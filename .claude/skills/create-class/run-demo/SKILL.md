@@ -6,7 +6,7 @@ description: >-
   Node), prepares the environment (config, deps, build), and hands the user the
   exact terminal commands. Does not run interactive or long-running scripts
   directly. Errors are read from logs and resolved collaboratively. Delegates to
-  run-foundry-demo when the demo is an Azure AI Foundry / Agent Framework demo.
+  run-foundry-demo when the demo is a Microsoft Foundry / Agent Framework demo.
   Triggers on: "run demo", "run the demo", "run this demo", "start demo",
   "execute demo", "verify code demo", "evaluate code demo", "run dotnet demo",
   "run python demo", "run node demo", "does the demo work".
@@ -24,7 +24,7 @@ A demo is verified when it runs the way the guide claims, on this machine. The d
 
 ## Step 0: Is this a Foundry demo?
 
-If the demo targets Azure AI Foundry or the Microsoft Agent Framework (a `*-py/` agent project, a `PROJECT_ENDPOINT` / `MODEL_DEPLOYMENT_NAME` config, a `provision.azcli`, or imports of `azure.ai.projects` / `agent_framework`), stop here and use the `run-foundry-demo` skill instead. It owns the Foundry-specific provisioning, RBAC, and model checks. Return to this skill only for non-Foundry demos.
+If the demo targets Microsoft Foundry or the Microsoft Agent Framework (a `*-py/` agent project, a `PROJECT_ENDPOINT` / `MODEL_DEPLOYMENT_NAME` config, a `provision.azcli`, or imports of `azure.ai.projects` / `agent_framework`), stop here and use the `run-foundry-demo` skill instead. It owns the Foundry-specific provisioning, RBAC, and model checks. Return to this skill only for non-Foundry demos.
 
 ## Step 1: Locate the demo
 

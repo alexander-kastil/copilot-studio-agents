@@ -40,6 +40,8 @@ When installed into a course repo, all runtime files live in `dashboard/` at the
 
 A module's overall status is the worst state across its components. See `references/class-module-evaluation.md` for the discovery rules the evaluator applies per component (theory, code demos, labs, slides).
 
+A module's identity spans three assets that drift independently: the master TOC (`demos/readme.md`), the folder guides (`demos/NN-*/readme.md`), and the pptx deck. The folder is the source of truth; flag drift when a topic title differs across the TOC bullet, module-table row, topic H1, and deck divider/agenda.
+
 ## Sub-verb: setup
 
 Scaffold `dashboard/` with everything needed to evaluate module status and render a live progress dashboard. Run this once when setting up a new course repo. Populate modules first, then use the `publish` sub-verb to install the GitHub Pages workflow.
