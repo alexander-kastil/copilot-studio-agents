@@ -1,0 +1,36 @@
+displayName: Onboarding Agent
+schemaName: iits_onboardingAgent
+accessControlPolicy: Any
+authenticationMode: Integrated
+authenticationTrigger: Always
+configuration:
+  channels:
+    - channelId: MsTeams
+
+    - channelId: Microsoft365Copilot
+
+  settings:
+    GenerativeActionsEnabled: true
+
+  isAgentConnectable: true
+  publishOnCreate: false
+  publishOnImport: true
+  gPTSettings:
+    defaultSchemaName: iits_onboardingAgent.gpt.default
+
+  isLightweightBot: false
+  aISettings:
+    useModelKnowledge: true
+    isFileAnalysisEnabled: true
+    isSemanticSearchEnabled: true
+    contentModeration: Low
+    optInUseLatestModels: false
+
+  recognizer:
+    kind: GenerativeAIRecognizer
+
+  deferredProvisioning: false
+
+publishedOn: 2026-07-21T08:19:21.0000000Z
+template: default-2.1.0
+language: 1033

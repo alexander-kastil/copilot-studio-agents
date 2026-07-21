@@ -1,0 +1,89 @@
+kind: AdaptiveDialog
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent:
+    triggerQueries:
+      - create account
+      - sign up
+      - register
+      - open new account
+      - start registration
+      - set up user profile
+      - make a new account
+      - begin sign up process
+      - how do I create an account?
+      - I want to register
+
+  actions:
+    - kind: AdaptiveCardPrompt
+      id: firstNameCard
+      card: |-
+        {
+          "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
+          "type": "AdaptiveCard",
+          "version": "1.5",
+          "body": [
+            {
+              "type": "TextBlock",
+              "text": "Let's create your account",
+              "size": "Large",
+              "weight": "Bolder",
+              "wrap": true
+            },
+            {
+              "type": "Input.Text",
+              "id": "firstName",
+              "label": "What is your first name?",
+              "placeholder": "Enter your first name",
+              "isRequired": true,
+              "errorMessage": "Please enter your first name"
+            }
+          ],
+          "actions": [
+            {
+              "type": "Action.Submit",
+              "title": "Continue"
+            }
+          ]
+        }
+      output:
+        binding:
+          firstName: Global.FirstName
+
+      outputType:
+        properties:
+          firstName: String
+
+    - kind: Question
+      id: Question_vslIaf
+      variable: Topic.LastName
+      prompt: What is your last name?
+      entity: PersonNamePrebuiltEntity
+
+    - kind: Question
+      id: Question_Kt9pRv
+      variable: Topic.BirthDate
+      prompt: What is your birth date?
+      entity: DatePrebuiltEntity
+
+    - kind: Question
+      id: Question_Z7hsTh
+      variable: Topic.Department
+      prompt: Which department are you in?
+      entity: StringPrebuiltEntity
+
+    - kind: SendActivity
+      id: SendActivity_Vr00WE
+      activity: Thank you, {Global.FirstName} {Topic.LastName} from {Topic.Department} department. We are creating your account...
+
+    - kind: SendActivity
+      id: SendActivity_ad4gfH
+      activity: Your account has been created successfully! You can now log in.
+
+    - kind: SendActivity
+      id: SendActivity_gwS9nR
+      activity: Your account has been created successfully! You can now log in.
+
+inputType: {}
+outputType: {}

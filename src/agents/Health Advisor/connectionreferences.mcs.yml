@@ -1,0 +1,7 @@
+﻿connectionReferences:
+  - connectionReferenceLogicalName: integrat_symptomChecker.shared_office365users.012fa3ea5a40407e9305a13b4a69d300
+    connectorId: /providers/Microsoft.PowerApps/apis/shared_office365users
+  - connectionReferenceLogicalName: new_sharedadvancedapprovals_126be
+    connectorId: /providers/Microsoft.PowerApps/apis/shared_advancedapprovals
+  - connectionReferenceLogicalName: new_sharedcommondataserviceforapps_c7146
+    connectorId: /providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps

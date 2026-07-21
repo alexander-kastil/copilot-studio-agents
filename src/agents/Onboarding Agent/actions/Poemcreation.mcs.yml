@@ -1,0 +1,16 @@
+mcs.metadata:
+  componentName: Poem creation
+kind: TaskDialog
+inputs:
+  - kind: AutomaticTaskInput
+    propertyName: Topic
+    name: Topic
+    shouldPromptUser: true
+
+modelDisplayName: Poem creation
+modelDescription: Poem creation
+action:
+  kind: InvokeAIBuilderModelTaskAction
+  aIModelId: 7c348a9a-a737-4784-90db-c7caf5b5e9f2
+
+outputMode: All

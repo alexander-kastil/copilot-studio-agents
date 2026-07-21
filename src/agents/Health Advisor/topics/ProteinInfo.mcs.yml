@@ -1,0 +1,36 @@
+mcs.metadata:
+  componentName: Protein Info
+kind: AdaptiveDialog
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent:
+    displayName:
+    triggerQueries:
+      - protein info
+      - tell me about protein
+      - what is protein
+      - protein information
+      - how much protein do I need
+      - benefits of protein
+      - sources of protein
+      - protein facts
+      - explain protein to me
+      - why is protein important
+
+  actions:
+    - kind: Question
+      id: Question_MWb7nz
+      variable: Topic.RequestedProteinType
+      prompt: Which protein type do you want to get information about?
+      entity:
+        kind: ClosedListEntityReference
+        entityId: integrat_symptomChecker.entity.ProteinTypes
+        selectedItems:
+          - PSXhxT
+          - 0Wp7Av
+          - 7TBuZA
+          - OXhf7K
+
+inputType: {}
+outputType: {}

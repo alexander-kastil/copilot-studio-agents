@@ -30,8 +30,6 @@
 
 - [Task 1: Create a base Agent](https://microsoft.github.io/copilot-camp/pages/make/copilot-studio/01-first-agent/)
 
-- [Task 2: Defining Topics](https://microsoft.github.io/copilot-camp/pages/make/copilot-studio/02-topics/)
-
 ## Lab 3: Power Fx
 
 - [Task 1: Work with Power Fx functions](https://learn.microsoft.com/en-gb/training/paths/work-powerfx-functions/)

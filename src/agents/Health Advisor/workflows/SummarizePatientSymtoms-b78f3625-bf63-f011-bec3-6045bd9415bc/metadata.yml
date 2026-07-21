@@ -1,0 +1,32 @@
+﻿jsonFileName: workflows/SummarizePatientSymtoms-b78f3625-bf63-f011-bec3-6045bd9415bc/workflow.json
+workflowId: b78f3625-bf63-f011-bec3-6045bd9415bc
+name: Summarize Patient Symtoms
+type: 1
+description: This flow collects a patient's age, gender, and symptom as input. It then sends this combined information to an AI model for analysis. The AI processes the input and generates a summarized text response based on the patient's details. Finally, the flow returns this summarized text as the output, providing a concise summary related to the patient's information.
+subprocess: false
+category: 5
+mode: 0
+scope: 4
+onDemand: false
+triggerOnCreate: false
+triggerOnDelete: false
+asyncAutodelete: false
+syncWorkflowLogOnFailure: false
+stateCode: 1
+statusCode: 2
+runAs: 1
+isTransacted: true
+introducedVersion: 1.0.0.0
+isCustomizable:
+  value: true
+  canBeChanged: true
+  managedPropertyLogicalName: iscustomizableanddeletable
+businessProcessType: 0
+isCustomProcessingStepAllowedForOtherPublishers:
+  value: true
+  canBeChanged: true
+  managedPropertyLogicalName: canbedeleted
+modernFlowType: 1
+primaryEntity: none
+connectionReferences:
+- new_sharedcommondataserviceforapps_c7146

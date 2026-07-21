@@ -1,0 +1,132 @@
+﻿{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps-1": {
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        },
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedcommondataserviceforapps_c7146"
+        },
+        "runtimeSource": "embedded"
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        },
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "type": "Request",
+          "kind": "Skills",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "number": {
+                  "description": "The age of the patient",
+                  "title": "Age",
+                  "type": "number",
+                  "x-ms-content-hint": "NUMBER",
+                  "x-ms-dynamically-added": true
+                },
+                "text": {
+                  "description": "The gender of the patient",
+                  "title": "Gender",
+                  "type": "string",
+                  "x-ms-content-hint": "TEXT",
+                  "x-ms-dynamically-added": true
+                },
+                "text_1": {
+                  "description": "The patient Symptom",
+                  "title": "Sympton",
+                  "type": "string",
+                  "x-ms-content-hint": "TEXT",
+                  "x-ms-dynamically-added": true
+                }
+              },
+              "required": [
+                "number",
+                "text",
+                "text_1"
+              ]
+            }
+          },
+          "metadata": {
+            "operationMetadataId": "898f45a1-68cc-4e16-8fc8-1af72eb5539e"
+          }
+        }
+      },
+      "actions": {
+        "Run_a_prompt": {
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "recordId": "572f57a7-7a8f-49fc-adb4-331e02c509a6",
+              "item/requestv2/inputText": " Analyze the patients health issues based on age gender and symtoms @{triggerBody()?[\u0027number\u0027]}@{triggerBody()?[\u0027text\u0027]}@{triggerBody()?[\u0027text_1\u0027]}. \n\nUse this classification if the patient should be advised to stay in bed or just reduce activiy:\n\nHas stable vital signs (e.g., heart rate, blood pressure within normal range).\nDemonstrates adequate muscle strength and joint mobility (can sit, stand, walk short distances).\nShows no signs of deep vein thrombosis (DVT) (no calf pain, swelling, or warmth).\nIs mentally alert and emotionally stable (no signs of depression or confusion).\nCan perform basic activities of daily living (ADLs) with minimal or moderate assistance.\nHas no acute pain or only mild discomfort that does not limit movement.\nExhibits normal bowel and respiratory function (no constipation, shallow breathing, or secretion pooling).\n\nIf the pacient experiences mild conditions you do not have to mention the classification\n\nBesides your general recommendation the analysis should end with: Patient is cleared for light work and movement. Encourage gentle mobility, hydration, and diversional activities. Monitor for fatigue or discomfort. Or a clear instruction to stay in bed or at least reduce movement until further medical examination. "
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "aibuilderpredict_customprompt",
+              "connectionName": "shared_commondataserviceforapps-1"
+            }
+          },
+          "runAfter": {},
+          "metadata": {
+            "flowSystemMetadata": {
+              "portalOperationId": "aibuilderpredict_customprompt",
+              "portalOperationGroup": "aibuilder",
+              "portalOperationApiDisplayNameOverride": "AI Builder",
+              "portalOperationIconOverride": "https://content.powerapps.com/resource/makerx/static/pauto/images/designeroperations/aiBuilderNew.51dbdb6b.png",
+              "portalOperationBrandColorOverride": "#0A76C4",
+              "portalOperationApiTierOverride": "Standard"
+            },
+            "operationMetadataId": "96d959d0-4c29-4dbb-86c6-9a49ed014abd"
+          }
+        },
+        "Respond_to_the_agent": {
+          "type": "Response",
+          "kind": "Skills",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "title": "Outcome",
+                  "description": "",
+                  "type": "string",
+                  "x-ms-content-hint": "TEXT",
+                  "x-ms-dynamically-added": true
+                }
+              },
+              "additionalProperties": {}
+            },
+            "statusCode": 200,
+            "body": {
+              "outcome": "@{triggerBody()}"
+            }
+          },
+          "runAfter": {
+            "Run_a_prompt": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "0341396d-9793-420b-ae05-8db401155b8c"
+          }
+        }
+      },
+      "outputs": {}
+    }
+  },
+  "schemaVersion": "1.0.0.0"
+}

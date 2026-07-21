@@ -23,73 +23,113 @@ beginDialog:
       id: HwUyv5
       card: |-
         {
-          "type": "AdaptiveCard",
           "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
+          "type": "AdaptiveCard",
           "version": "1.5",
           "body": [
             {
               "type": "TextBlock",
-              "size": "Medium",
+              "text": "Submit Travel Expenses",
               "weight": "Bolder",
-              "text": "Submit Travel Expenses"
+              "size": "Large"
+            },
+            {
+              "type": "TextBlock",
+              "text": "Start Date"
             },
             {
               "type": "Input.Date",
-              "id": "StartDate",
-              "label": "Start Date"
+              "id": "startDate"
+            },
+            {
+              "type": "TextBlock",
+              "text": "End Date",
+              "spacing": "Medium"
             },
             {
               "type": "Input.Date",
-              "id": "EndDate",
-              "label": "End Date"
+              "id": "endDate"
+            },
+            {
+              "type": "TextBlock",
+              "text": "Destination",
+              "spacing": "Medium"
             },
             {
               "type": "Input.Text",
-              "id": "Destination",
+              "id": "destination",
               "placeholder": "Enter destination"
             },
             {
+              "type": "TextBlock",
+              "text": "Amount",
+              "spacing": "Medium"
+            },
+            {
               "type": "Input.Number",
-              "id": "Amount",
+              "id": "amount",
               "placeholder": "Enter amount"
             },
             {
+              "type": "TextBlock",
+              "text": "Number of Children",
+              "spacing": "Medium"
+            },
+            {
+              "type": "Input.Number",
+              "id": "numberOfChildren",
+              "placeholder": "Enter number of children",
+              "min": 0
+            },
+            {
+              "type": "TextBlock",
+              "text": "Comment (Optional)",
+              "spacing": "Medium"
+            },
+            {
               "type": "Input.Text",
-              "id": "Comment",
-              "placeholder": "Add a comment (optional)",
-              "isMultiline": true
+              "id": "comment",
+              "isMultiline": true,
+              "placeholder": "Add a comment (optional)"
             }
           ],
           "actions": [
             {
               "type": "Action.Submit",
-              "title": "Submit"
+              "title": "Submit",
+              "data": {
+                "action": "submitTravelExpense"
+              }
             }
           ]
         }
       output:
         binding:
+          action: Topic.action
           actionSubmitId: Topic.actionSubmitId
-          Amount: Topic.Amount
-          Comment: Topic.Comment
-          Destination: Topic.Destination
-          EndDate: Topic.EndDate
-          StartDate: Topic.StartDate
+          amount: Topic.amount
+          comment: Topic.comment
+          destination: Topic.destination
+          endDate: Topic.endDate
+          numberOfChildren: Topic.numberOfChildren
+          startDate: Topic.startDate
 
       outputType:
         properties:
+          action: String
           actionSubmitId: String
-          Amount: Number
-          Comment: String
-          Destination: String
-          EndDate: Date
-          StartDate: Date
+          amount: Number
+          comment: String
+          destination: String
+          endDate: Date
+          numberOfChildren: Number
+          startDate: Date
 
     - kind: ConditionGroup
       id: conditionGroup_Wtoj2e
       conditions:
         - id: conditionItem_ZAGLeP
-          condition: =Topic.Amount <= 100
+          condition: =Topic.amount <= 100
           actions:
             - kind: SendActivity
               id: sendActivity_C83gjt
@@ -98,4 +138,4 @@ beginDialog:
       elseActions:
         - kind: SendActivity
           id: sendActivity_m7bSuj
-          activity: Your exprense claim was submitted for approval
+          activity: Your expense claim was submitted for approval

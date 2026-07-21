@@ -1,0 +1,109 @@
+﻿{
+  "properties": {
+    "connectionReferences": {
+      "shared_teams-1": {
+        "api": {
+          "name": "shared_teams"
+        },
+        "connection": {
+          "connectionReferenceLogicalName": "iits_agenticAiKnowledgeAssistant.shared_teams.shared-teams-7f42d328-c12b-4ab6-b955-28f5f9a6da5d"
+        },
+        "runtimeSource": "invoker"
+      },
+      "shared_advancedapprovals": {
+        "api": {
+          "name": "shared_advancedapprovals"
+        },
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedadvancedapprovals_126be"
+        },
+        "runtimeSource": "invoker"
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        },
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "type": "Request",
+          "kind": "Skills",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "description": "Please enter your input",
+                  "title": "Post Text",
+                  "type": "string",
+                  "x-ms-content-hint": "TEXT",
+                  "x-ms-dynamically-added": true
+                }
+              },
+              "required": [
+                "text"
+              ]
+            }
+          }
+        }
+      },
+      "actions": {
+        "Post_message_in_a_chat_or_channel": {
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "poster": "User",
+              "location": "Channel",
+              "body/recipient/groupId": "9c07913d-b504-4571-a451-28cb721a4ef5",
+              "body/recipient/channelId": "19:6Ivu331rZb46kxuKCQvw2O94gnq_gPF7ryoBsUBnIEo1@thread.tacv2",
+              "body/messageBody": "\u003Cp class=\u0022editor-paragraph\u0022\u003EA new post with content: @{triggerBody()?[\u0027text\u0027]}\u003C/p\u003E"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_teams",
+              "operationId": "PostMessageToConversation",
+              "connectionName": "shared_teams-1"
+            }
+          },
+          "runAfter": {
+            "Request_for_information": [
+              "SUCCEEDED"
+            ]
+          }
+        },
+        "Request_for_information": {
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "parameters": {
+              "RequestForInformationInput/title": "Posing Cotnrol",
+              "RequestForInformationInput/message": "Decide if we should post this: @{triggerBody()?[\u0027text\u0027]}",
+              "RequestForInformationInput/assignedTo": "alexander.kastil@integrations.at",
+              "RequestForInformationInput/input": {
+                "type": "object",
+                "properties": {},
+                "required": []
+              }
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_advancedapprovals",
+              "operationId": "RequestForInformation",
+              "connectionName": "shared_advancedapprovals"
+            }
+          },
+          "runAfter": {}
+        }
+      },
+      "outputs": {},
+      "description": "This flow starts by receiving a text input from the user. It then sends a message to a chat or channel, with the message being posted by a bot named \u0022Flow bot.\u0022 The location for posting the message is not specified in the flow. The process involves capturing user input and using it to generate a message that is posted automatically in a communication space."
+    }
+  },
+  "schemaVersion": "1.0.0.0"
+}

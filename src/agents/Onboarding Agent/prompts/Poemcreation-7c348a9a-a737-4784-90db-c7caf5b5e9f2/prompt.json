@@ -1,0 +1,29 @@
+﻿{
+  "name": "Poem creation",
+  "instruction": "You are tasked with creating a short poem consisting of exactly five lines based on a given topic.\n\n### Instructions:\n1. Read the input topic carefully.\n2. Compose a poem that is exactly five lines long.\n3. Ensure the poem reflects the theme or essence of the provided topic.\n4. Use creative and expressive language appropriate for poetry.\n5. Maintain coherence and flow throughout the poem.\n\n### Output Format:\n- Provide the poem as plain text with each line separated by a line break.\n- The poem must be exactly five lines.\n\nProvide the topic for the poem here: \n {{Topic}}",
+  "model": "gpt-41-mini",
+  "modelParameters": {
+    "gptParameters": {
+      "temperature": 0
+    }
+  },
+  "inputs": [
+    {
+      "id": "Topic",
+      "text": "Topic",
+      "type": "text",
+      "quickTestValue": "Sighthounds"
+    }
+  ],
+  "output": {
+    "formats": [
+      "text"
+    ]
+  },
+  "settings": {
+    "recordRetrievalLimit": 30,
+    "shouldPreserveRecordLinks": null,
+    "runtime": null
+  },
+  "version": "GptDynamicPrompt-2"
+}

@@ -18,6 +18,7 @@ Skills live under `.claude/skills/`. There are no custom slash commands in this 
 - `create-cowork-skill` — authors a Copilot Cowork custom `SKILL.md` (frontmatter contract, kebab-case name-matches-folder rule, companion-file limits, run-and-tune loop). Use it whenever course content demonstrates or ships a Cowork skill, so the examples stay valid.
 - `brand-voice-copilot` — audits and fixes Markdown against the repo's brand-voice rules (see below).
 - `mermaid-expert` — authors Mermaid diagrams for the module and lab docs, following the repo's Mermaid label rule.
+- `copilot-studio` — authors and validates the `.mcs.yml` agent definitions under `src/agents/` (topic YAML, prebuilt entities, Adaptive Cards, conversation design, clone/sync via the VS Code extension). Read its `references/schema-verification.md` before writing any Copilot Studio YAML token; Learn documents the UI, not the literal identifiers.
 
 ## Brand Voice
 
