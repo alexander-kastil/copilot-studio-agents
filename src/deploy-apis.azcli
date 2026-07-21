@@ -5,8 +5,11 @@ acct=storage$env
 container=food
 law=pl7008-$env
 appInsights=cs-ai-$env
-foodConStr="Data Source=.;Initial Catalog=FoodCatalogDB;Persist Security Info=True;User ID=copilot;Password='copilot';TrustServerCertificate=true"
-hrConStr="<YOUR_HR_DB_CONNECTION_STRING>"
+sqlHost=server-2025.austriaeast.cloudapp.azure.com
+sqlUser=$SQL_USER
+sqlPwd=$SQL_PWD
+foodConStr="Server=$sqlHost;Database=FoodCatalogDB;User Id=$sqlUser;Password=$sqlPwd;TrustServerCertificate=true;"
+hrConStr="Server=$sqlHost;Database=HR-Data;User Id=$sqlUser;Password=$sqlPwd;TrustServerCertificate=true;"
 
 az group create -n $grp -l $loc
 
@@ -24,10 +27,10 @@ az storage blob upload-batch --destination $container --source assets/images --a
 aiConnStr=$(az monitor app-insights component show -g $grp -n $appInsights --query connectionString -o tsv)
 
 # Deploy food-catalog-api
-cd food-catalog-api
+cd food-catalog-mcp
 az webapp up -n food-catalog-api-$env -g $grp -p process-food-plan-$env -l $loc -r "dotnet:10"
 az webapp config appsettings set -g $grp -n food-catalog-api-$env --settings \
-  "ConnectionStrings:DefaultDatabase=$foodConStr"
+  "ConnectionStrings__DefaultDatabase=$foodConStr"
 az webapp cors add --allowed-origins "*" -n food-catalog-api-$env -g $grp
 cd ..
 
@@ -36,6 +39,8 @@ cd hr-mcp-server
 az webapp up -n human-resource-mcp-$env -g $grp -p human-resource-plan-$env -l $loc -r "dotnet:10"
 az webapp config appsettings set -g $grp -n human-resource-mcp-$env --settings \
   "APPLICATIONINSIGHTS_CONNECTION_STRING=$aiConnStr" \
-  "ConnectionStrings:DefaultDatabase=$hrConStr"
+  "ConnectionStrings__EmployeeDatabase=$hrConStr" \
+  "Kestrel__Endpoints__Http__Url=http://*:8080" \
+  "WEBSITES_PORT=8080"
 az webapp cors add --allowed-origins "*" -n human-resource-mcp-$env -g $grp
 cd ..

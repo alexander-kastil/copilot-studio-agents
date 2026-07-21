@@ -16,20 +16,20 @@ az storage blob upload-batch -d $container -s "assets/images" --account-name $ac
 
 az appservice plan create -n $plan -g $grp --sku B1 --is-linux
 
-cd "food-catalog-api"
+cd "food-catalog-mcp"
 $webappName = "food-catalog-api-$env"
-az webapp up -n $webappName -g $grp -p $plan -l $loc --os-type Linux -r "DOTNETCORE:9.0"
+az webapp up -n $webappName -g $grp -p $plan -l $loc --os-type Linux -r "DOTNETCORE:10.0"
 az webapp cors add --allowed-origins "*" --name $webappName --resource-group $grp
 cd ..
 
 cd "hr-mcp-server"
 $webappName = "hr-mcp-server-$env"
-az webapp up -n $webappName -g $grp -p $plan -l $loc --os-type Linux -r "DOTNETCORE:9.0"
+az webapp up -n $webappName -g $grp -p $plan -l $loc --os-type Linux -r "DOTNETCORE:10.0"
 az webapp cors add --allowed-origins "*" --name $webappName --resource-group $grp
 cd ..
 
 cd "purchasing-service"
 $webappName = "purchasing-service-$env"
-az webapp up -n $webappName -g $grp -p $plan -l $loc --os-type Linux -r "DOTNETCORE:9.0"
+az webapp up -n $webappName -g $grp -p $plan -l $loc --os-type Linux -r "DOTNETCORE:10.0"
 az webapp cors add --allowed-origins "*" --name $webappName --resource-group $grp
 cd ..

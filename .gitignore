@@ -9,3 +9,10 @@ node_modules/
 # .NET build output
 bin/
 obj/
+publish/
+publish-out/
+app.zip
+
+# Local credentials (never commit)
+credentials.md
+credentials.json
