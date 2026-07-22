@@ -16,13 +16,15 @@
 
 > Note: This lab rewrites the MS-4022 connector-action lab for the new Copilot Studio agent experience (Build, Preview, Evaluate, Monitor) and folds in the Excel and SharePoint connector scenarios.
 
+Companion labs on the classic experience, both building on the HR agent from [01-basics](../01-basics/readme.md):
+
+[Define Tools with Power Platform Connectors](./defining-tools/readme.md): build Excel Online tools and a Power Automate flow tool for the HR agent
+
+[Extend Microsoft 365 Copilot with a Declarative Agent](./extend-m365-copilot/readme.md): publish a Copilot Studio agent to Microsoft 365 Copilot Chat with SharePoint knowledge
+
 Background reading:
 
 [Extend declarative agents with connector tools in Copilot Studio](https://learn.microsoft.com/en-us/training/modules/extend-declarative-agents-connector-actions-copilot-studio)
-
-[Use an Excel connector in Copilot Studio](https://microsoft.github.io/copilot-camp/pages/make/copilot-studio/03-actions/)
-
-[Use a SharePoint connector in Copilot Studio](https://microsoft.github.io/copilot-camp/pages/make/copilot-studio/04-extending-m365-copilot/)
 
 ## Lab 4: REST Api Tools
 

@@ -27,7 +27,7 @@ aiConnStr=$(az monitor app-insights component show -g $grp -n $appInsights --que
 
 # Deploy food-catalog-api
 cd food-catalog-mcp
-az webapp up -n food-catalog-api -g $grp -p process-food-plan -l $loc -r "dotnet:10"
+az webapp up -n food-catalog-api -g $grp -p process-food-plan -l $loc --os-type Windows -r "dotnet:10" --sku F1
 az webapp config appsettings set -g $grp -n food-catalog-api --settings \
   "ConnectionStrings__DefaultDatabase=$foodConStr"
 az webapp cors add --allowed-origins "*" -n food-catalog-api -g $grp
@@ -35,7 +35,7 @@ cd ..
 
 # Deploy hr-mcp-server
 cd hr-mcp-server
-az webapp up -n human-resource-mcp -g $grp -p human-resource-plan -l $loc -r "dotnet:10"
+az webapp up -n human-resource-mcp -g $grp -p human-resource-plan -l $loc --os-type Windows -r "dotnet:10" --sku F1
 az webapp config appsettings set -g $grp -n human-resource-mcp --settings \
   "APPLICATIONINSIGHTS_CONNECTION_STRING=$aiConnStr" \
   "ConnectionStrings__EmployeeDatabase=$hrConStr" \

@@ -14,7 +14,7 @@ az storage container create -n $container --account-key $key --account-name $acc
 
 az storage blob upload-batch -d $container -s "assets/images" --account-name $acct --account-key $key
 
-az appservice plan create -n $plan -g $grp --sku B1 --is-linux
+az appservice plan create -n $plan -g $grp --sku F1 --is-linux
 
 cd "food-catalog-mcp"
 $webappName = "food-catalog-api-$env"
@@ -24,12 +24,6 @@ cd ..
 
 cd "hr-mcp-server"
 $webappName = "hr-mcp-server-$env"
-az webapp up -n $webappName -g $grp -p $plan -l $loc --os-type Linux -r "DOTNETCORE:10.0"
-az webapp cors add --allowed-origins "*" --name $webappName --resource-group $grp
-cd ..
-
-cd "purchasing-service"
-$webappName = "purchasing-service-$env"
 az webapp up -n $webappName -g $grp -p $plan -l $loc --os-type Linux -r "DOTNETCORE:10.0"
 az webapp cors add --allowed-origins "*" --name $webappName --resource-group $grp
 cd ..

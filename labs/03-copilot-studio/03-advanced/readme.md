@@ -13,7 +13,7 @@
 
 - [Task 1: Create your first Autonomous Agent](https://learn.microsoft.com/en-us/training/modules/autonomous-agent/exercise-create-your-first-autonomous-agent)
 
-- [Task 2: Create a SharePoint based Autonomous Agent](https://microsoft.github.io/copilot-camp/pages/make/copilot-studio/07-autonomous/)
+- [Task 2: Create a SharePoint based Autonomous Agent](./02-autonomous-agents/readme.md)
 
 ### Lab 2: Setup multi-agent orchestration
 

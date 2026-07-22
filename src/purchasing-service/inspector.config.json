@@ -1,9 +1,0 @@
-{
-    "mcpServers": {
-        "purchasing-mcp": {
-            "type": "streamable-http",
-            "url": "http://localhost:5151",
-            "note": "Local Purchasing MCP Server running on port 5151"
-        }
-    }
-}

@@ -65,17 +65,17 @@ Add the Options for user of USD, EUR, and GBP. Save response as a variable named
 
 Add synonyms for each option, like dollars, euros, and pounds.
 
-![Image](./_image_/image_10.svg)
+![Image](./_images/image_10.svg)
 
 |     | Pro tip: You can add synonyms by selecting your options and adding synonyms like dollars for USD. |
 | --- | ------------------------------------------------------------------------------------------------- |
 
 Copilot Studio will automatically create the choice condition logic underneath the question node.  
 We will want to remove all the conditions for this scenario by clicking the ellipsis and then selecting Delete.
-![Image](./_image_/image_11.png)
+![Image](./_images/image_11.png)
 
 Next, you will want to add the HTTP Request node to make the API call to check the price of Bitcoin. You do this by clicking the (+) and go to Advanced and Send HTTP request.
-![Image](./_image_/image_2.png)
+![Image](./_images/image_2.png)
 
 Now we need to provide information about the API to allow Copilot Studio to get the price of Bitcoin in the selected Currency. To do this, inside the URL field we will need to select Formula and put the following the Power Fx formula.
 
@@ -83,7 +83,7 @@ Now we need to provide information about the API to allow Copilot Studio to get 
 | --- | ------------------------------------------------------------------------- | --- |
 
 This formula does several things. It makes sure that the URL passed in is lower case, then it concatenates the URL to include the currency that the user selected in the question above. This will make sure that the URL for USD or EUR for example is correct for the API.
-![Image](./_image_/image_3.svg)
+![Image](./_images/image_3.svg)
 
 Now we need to provide a sample output of the JSON payload that will be returned by the API to allow the node to parse the response for us.
 To do this you select From sample data in the Response data type field in the HTTP Request node.
@@ -136,7 +136,7 @@ Name the Variable
 
 CryptoCurrentPrice.
 
-![Image](./_image_/image_4.png)
+![Image](./_images/image_4.png)
 
 Now, let’s add a message to give the user of your bot a formatted response to tell them the current price of Bitcoin. Click the (+) to add a new node and select Send a message. You can create your own message leveraging the variables to structure a response to the user about the price of Bitcoin.
 
@@ -156,7 +156,7 @@ You can use a formula to format the price a specific way, for example with a tho
 ) | |
 |--|--|--|
 
-![Image](./_image_/image_5.png)
+![Image](./_images/image_5.png)
 
 To end the conversation, select Topic management and Go to another topic and select End of Conversation.
 
@@ -169,7 +169,7 @@ Open the test pane and test your copilot.
 |     | What’s the current bid price for Bitcoins in dollars? |     |
 | --- | ----------------------------------------------------- | --- |
 
-![Image](./_image_/image_6.png)
+![Image](./_images/image_6.png)
 
 You have successfully created a HTTP Request node to provide real time data from an external service to the user!
 
@@ -247,8 +247,8 @@ FOR ANY PERSONAL INJURY OR DEATH THAT MAY OCCUR AS A RESULT OF YOUR CHATBOT OR Y
 
 MICROSOFT COPILOT STUDIO IN CONNECTION WITH YOUR CHATBOT, INCLUDING (WITHOUT LIMITATION) ANY SUCH INJURIES TO END USERS.
 
-![Image](./_image_/image_7.png)
+![Image](./_images/image_7.png)
 
-![Image](./_image_/image_8.png)
+![Image](./_images/image_8.png)
 
-![Image](./_image_/image_9.png)
+![Image](./_images/image_9.png)

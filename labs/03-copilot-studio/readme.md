@@ -4,7 +4,20 @@
 - [Copilot Studio Tools](./02-tools/)
 - [Copilot Studio Advanced](./03-advanced/)
 
-> Note: If you are already familiar with these labs or you need more examples you can also complete the [Maker Path at Copilot Developer Camp](https://microsoft.github.io/copilot-camp/pages/make/copilot-studio/).
+> Note: The Copilot Developer Camp maker labs used by these sections are included in this repository, so no external navigation is needed. If you want additional examples beyond them, the full [Maker Path at Copilot Developer Camp](https://microsoft.github.io/copilot-camp/pages/make/copilot-studio/) covers RAG, connected agents, and OAuth-protected MCP servers.
+
+## Maker Path Labs (HR agent walkthrough)
+
+A connected sequence that builds one HR agent from an empty environment to an autonomous document processor.
+
+| Lab | Focus |
+|-----|-------|
+| [Set Up Your Power Platform Environment](./01-basics/lab-01-setup-environment.md) | Create a dedicated Power Platform environment and activate Copilot Studio |
+| [Build Your First Copilot Studio Agent](./01-basics/lab-02-first-agent.md) | Create the HR agent, ground it with SharePoint and web knowledge, and publish it to Teams |
+| [Define Topics and Adaptive Cards](./01-basics/lab-03-topics.md) | Enable generative orchestration, author custom topics, and collect input with Adaptive Cards |
+| [Define Tools with Power Platform Connectors](./02-tools/defining-tools/readme.md) | Add Excel Online tools and a Power Automate flow tool, then call them from a topic |
+| [Extend Microsoft 365 Copilot with a Declarative Agent](./02-tools/extend-m365-copilot/readme.md) | Publish a Copilot Studio agent into Microsoft 365 Copilot Chat |
+| [Create an Autonomous Agent](./03-advanced/02-autonomous-agents/readme.md) | Trigger an agent from SharePoint uploads and write candidate records through an MCP server |
 
 ## New Experience Labs
 
