@@ -1,42 +1,37 @@
 {
-  "openapi": "3.0.4",
+  "swagger": "2.0",
   "info": {
-    "title": "Food-Inventory",
+    "title": "Food Inventory-XX",
+    "description": "Food inventory catalog for a restaurant kitchen. Use this API to list, search, create, update, and delete food items, to read their price, description, picture, and stock levels, and to book stock in or out when goods are delivered or consumed.",
     "version": "v1"
   },
+  "host": "food-catalog-api.azurewebsites.net",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
   "paths": {
     "/Food": {
       "get": {
         "tags": [
           "Food"
         ],
+        "operationId": "ListFoodItems",
+        "summary": "List all food items",
+        "description": "Returns every food item in the inventory with its id, name, price, description, picture URL, current stock, and minimum stock level. Use this to show the full catalog or to find items that are running low.",
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/FoodItem"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/FoodItem"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/FoodItem"
-                  }
-                }
+            "description": "The complete list of food items.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/FoodItem"
               }
             }
           }
@@ -46,45 +41,29 @@
         "tags": [
           "Food"
         ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/FoodDTO"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/FoodDTO"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/FoodDTO"
-              }
+        "operationId": "CreateFoodItem",
+        "summary": "Create a food item",
+        "description": "Adds a new food item to the inventory. The id is assigned by the service and returned in the response.",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "The food item to create.",
+            "schema": {
+              "$ref": "#/definitions/FoodDTO"
             }
           }
-        },
+        ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/FoodItem"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/FoodItem"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/FoodItem"
-                }
-              }
+            "description": "The created food item, including its new id.",
+            "schema": {
+              "$ref": "#/definitions/FoodItem"
             }
+          },
+          "400": {
+            "description": "The supplied food item is invalid."
           }
         }
       },
@@ -92,45 +71,32 @@
         "tags": [
           "Food"
         ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/FoodItem"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/FoodItem"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/FoodItem"
-              }
+        "operationId": "UpdateFoodItem",
+        "summary": "Update a food item",
+        "description": "Replaces an existing food item. Send the complete item including its id; all fields are overwritten with the values you supply.",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "The complete food item to store, including its id.",
+            "schema": {
+              "$ref": "#/definitions/FoodItem"
             }
           }
-        },
+        ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/FoodItem"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/FoodItem"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/FoodItem"
-                }
-              }
+            "description": "The updated food item.",
+            "schema": {
+              "$ref": "#/definitions/FoodItem"
             }
+          },
+          "400": {
+            "description": "The supplied food item is invalid."
+          },
+          "404": {
+            "description": "No food item exists with the supplied id."
           }
         }
       }
@@ -140,42 +106,25 @@
         "tags": [
           "Food"
         ],
+        "operationId": "SearchFoodItemsByName",
+        "summary": "Search food items by name",
+        "description": "Returns the food items whose name matches the supplied search text. Use this when the user names a dish instead of an id, for example Schnitzel or Germknoedel.",
         "parameters": [
           {
             "name": "name",
             "in": "query",
-            "schema": {
-              "type": "string"
-            }
+            "required": false,
+            "type": "string",
+            "description": "The name or part of the name of the food item to search for, for example Schnitzel."
           }
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/FoodItem"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/FoodItem"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/FoodItem"
-                  }
-                }
+            "description": "The food items matching the search text.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/FoodItem"
               }
             }
           }
@@ -187,37 +136,28 @@
         "tags": [
           "Food"
         ],
+        "operationId": "GetFoodItemById",
+        "summary": "Get a food item by id",
+        "description": "Returns the single food item with the supplied id, including price, description, picture URL, and stock levels.",
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
+            "type": "integer",
+            "format": "int32",
+            "description": "The unique id of the food item to retrieve."
           }
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/FoodItem"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/FoodItem"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/FoodItem"
-                }
-              }
+            "description": "The requested food item.",
+            "schema": {
+              "$ref": "#/definitions/FoodItem"
             }
+          },
+          "404": {
+            "description": "No food item exists with the supplied id."
           }
         }
       },
@@ -225,20 +165,25 @@
         "tags": [
           "Food"
         ],
+        "operationId": "DeleteFoodItem",
+        "summary": "Delete a food item",
+        "description": "Permanently removes the food item with the supplied id from the inventory.",
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
+            "type": "integer",
+            "format": "int32",
+            "description": "The unique id of the food item to delete."
           }
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "The food item was deleted."
+          },
+          "404": {
+            "description": "No food item exists with the supplied id."
           }
         }
       }
@@ -248,121 +193,118 @@
         "tags": [
           "Food"
         ],
+        "operationId": "UpdateFoodItemStock",
+        "summary": "Book stock in or out",
+        "description": "Adjusts the stock level of a food item by a relative amount. Use a positive amount to book a delivery in and a negative amount to book consumption out. Returns the food item with its new stock level.",
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
+            "type": "integer",
+            "format": "int32",
+            "description": "The unique id of the food item whose stock is adjusted."
           },
           {
             "name": "amount",
             "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "description": "The relative change to the stock level, for example 10 to add ten units or -3 to remove three units."
           }
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/FoodItem"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/FoodItem"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/FoodItem"
-                }
-              }
+            "description": "The food item with its updated stock level.",
+            "schema": {
+              "$ref": "#/definitions/FoodItem"
             }
+          },
+          "404": {
+            "description": "No food item exists with the supplied id."
           }
         }
       }
     }
   },
-  "components": {
-    "schemas": {
-      "FoodDTO": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "price": {
-            "type": "number",
-            "format": "double"
-          },
-          "inStock": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "minStock": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "pictureUrl": {
-            "type": "string",
-            "nullable": true
-          },
-          "description": {
-            "type": "string",
-            "nullable": true
-          }
+  "definitions": {
+    "FoodDTO": {
+      "type": "object",
+      "description": "A new food item to add to the inventory, without an id.",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The name of the dish, for example Wiener Schnitzel."
         },
-        "additionalProperties": false
-      },
-      "FoodItem": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "price": {
-            "type": "number",
-            "format": "double"
-          },
-          "inStock": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "minStock": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "pictureUrl": {
-            "type": "string",
-            "nullable": true
-          },
-          "description": {
-            "type": "string",
-            "nullable": true
-          }
+        "price": {
+          "type": "number",
+          "format": "double",
+          "description": "The selling price of the dish in euro."
         },
-        "additionalProperties": false
+        "inStock": {
+          "type": "integer",
+          "format": "int32",
+          "description": "The number of units currently available in stock."
+        },
+        "minStock": {
+          "type": "integer",
+          "format": "int32",
+          "description": "The minimum stock level below which the item must be reordered."
+        },
+        "pictureUrl": {
+          "type": "string",
+          "description": "The absolute URL of a picture of the dish."
+        },
+        "description": {
+          "type": "string",
+          "description": "A short description of the dish."
+        }
+      }
+    },
+    "FoodItem": {
+      "type": "object",
+      "description": "A food item stored in the inventory.",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int32",
+          "description": "The unique id of the food item."
+        },
+        "name": {
+          "type": "string",
+          "description": "The name of the dish, for example Wiener Schnitzel."
+        },
+        "price": {
+          "type": "number",
+          "format": "double",
+          "description": "The selling price of the dish in euro."
+        },
+        "inStock": {
+          "type": "integer",
+          "format": "int32",
+          "description": "The number of units currently available in stock."
+        },
+        "minStock": {
+          "type": "integer",
+          "format": "int32",
+          "description": "The minimum stock level below which the item must be reordered."
+        },
+        "pictureUrl": {
+          "type": "string",
+          "description": "The absolute URL of a picture of the dish."
+        },
+        "description": {
+          "type": "string",
+          "description": "A short description of the dish."
+        }
       }
     }
   },
   "tags": [
     {
-      "name": "Food"
+      "name": "Food",
+      "description": "Operations on the food inventory."
     }
   ]
 }

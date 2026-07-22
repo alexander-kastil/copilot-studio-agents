@@ -15,7 +15,7 @@ Verify the Food Catalog API deployment is operational in both local and Azure en
 ### Prerequisites
 
 - **Local**: API running on `http://localhost:5000`
-- **Azure**: Deployed to `https://food-catalog-api-pl7008.azurewebsites.net`
+- **Azure**: Deployed to `https://food-catalog-api.azurewebsites.net`
 
 ### Test Procedure
 
@@ -32,7 +32,7 @@ curl http://localhost:5000/food
 **Azure:**
 
 ```powershell
-curl https://food-catalog-api-pl7008.azurewebsites.net/food
+curl https://food-catalog-api.azurewebsites.net/food
 ```
 
 Expected: HTTP 200 response with JSON array of food items.
@@ -55,7 +55,7 @@ Confirm all **5 core CRUD endpoints** are accessible:
 ```powershell
 curl http://localhost:5000/food
 # OR for Azure:
-curl https://food-catalog-api-pl7008.azurewebsites.net/food
+curl https://food-catalog-api.azurewebsites.net/food
 ```
 
 **Expected Response:**
@@ -80,7 +80,7 @@ curl https://food-catalog-api-pl7008.azurewebsites.net/food
     "name": "Butter Chicken",
     "price": 12.5,
     "inStock": 10,
-    "pictureUrl": "https://storagepl7008.blob.core.windows.net/food/butter-chicken.jpg",
+    "pictureUrl": "https://storagecoworkcopilot.blob.core.windows.net/food/butter-chicken.jpg",
     "description": "Creamy tomato-based curry with tender chicken pieces"
   },
   {
@@ -88,7 +88,7 @@ curl https://food-catalog-api-pl7008.azurewebsites.net/food
     "name": "Pad Thai",
     "price": 10.0,
     "inStock": 15,
-    "pictureUrl": "https://storagepl7008.blob.core.windows.net/food/pad-thai.jpg",
+    "pictureUrl": "https://storagecoworkcopilot.blob.core.windows.net/food/pad-thai.jpg",
     "description": "Classic Thai stir-fried noodles with peanuts and lime"
   }
 ]
@@ -259,15 +259,15 @@ Write-Host "`n✅ All smoke tests passed - Food Catalog API is healthy"
 
 **CORS errors:**
 
-- Run: `az webapp cors show -n food-catalog-api-pl7008 -g rg-cowork-copilot-studio`
+- Run: `az webapp cors show -n food-catalog-api -g rg-cowork-copilot-studio`
 - Should include wildcard `*` in allowed origins
 
 **500 errors:**
 
 - Check Application Insights logs
-- Review Azure App Service logs: `az webapp log tail -n food-catalog-api-pl7008 -g rg-cowork-copilot-studio`
+- Review Azure App Service logs: `az webapp log tail -n food-catalog-api -g rg-cowork-copilot-studio`
 
 **Connection timeout:**
 
-- Verify App Service is running: `az webapp show -n food-catalog-api-pl7008 -g rg-cowork-copilot-studio --query state`
-- Restart if needed: `az webapp restart -n food-catalog-api-pl7008 -g rg-cowork-copilot-studio`
+- Verify App Service is running: `az webapp show -n food-catalog-api -g rg-cowork-copilot-studio --query state`
+- Restart if needed: `az webapp restart -n food-catalog-api -g rg-cowork-copilot-studio`

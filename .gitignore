@@ -16,3 +16,6 @@ app.zip
 # Local credentials (never commit)
 credentials.md
 credentials.json
+
+# Local reference clone of microsoft/copilot-camp (1.1 GB, not ours to track)
+labs/copilot-dev-camp/

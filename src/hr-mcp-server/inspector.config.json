@@ -7,7 +7,7 @@
         },
         "hr-mcp-azure-dev": {
             "type": "streamable-http",
-            "url": "https://hr-mcp-server-copilot.azurewebsites.net",
+            "url": "https://human-resource-mcp.azurewebsites.net",
             "note": "Dev deployment hosted on Azure App Service (rg-cowork-copilot-studio)"
         }
     }

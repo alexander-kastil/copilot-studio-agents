@@ -1,10 +1,9 @@
-env=pl7008
 grp=rg-cowork-copilot-studio
 loc=westeurope
-acct=storage$env
+acct=storagecoworkcopilot
 container=food
-law=pl7008-$env
-appInsights=cs-ai-$env
+law=law-cowork-copilot
+appInsights=cs-ai-cowork-copilot
 sqlHost=server-2025.austriaeast.cloudapp.azure.com
 sqlUser=$SQL_USER
 sqlPwd=$SQL_PWD
@@ -28,19 +27,19 @@ aiConnStr=$(az monitor app-insights component show -g $grp -n $appInsights --que
 
 # Deploy food-catalog-api
 cd food-catalog-mcp
-az webapp up -n food-catalog-api-$env -g $grp -p process-food-plan-$env -l $loc -r "dotnet:10"
-az webapp config appsettings set -g $grp -n food-catalog-api-$env --settings \
+az webapp up -n food-catalog-api -g $grp -p process-food-plan -l $loc -r "dotnet:10"
+az webapp config appsettings set -g $grp -n food-catalog-api --settings \
   "ConnectionStrings__DefaultDatabase=$foodConStr"
-az webapp cors add --allowed-origins "*" -n food-catalog-api-$env -g $grp
+az webapp cors add --allowed-origins "*" -n food-catalog-api -g $grp
 cd ..
 
 # Deploy hr-mcp-server
 cd hr-mcp-server
-az webapp up -n human-resource-mcp-$env -g $grp -p human-resource-plan-$env -l $loc -r "dotnet:10"
-az webapp config appsettings set -g $grp -n human-resource-mcp-$env --settings \
+az webapp up -n human-resource-mcp -g $grp -p human-resource-plan -l $loc -r "dotnet:10"
+az webapp config appsettings set -g $grp -n human-resource-mcp --settings \
   "APPLICATIONINSIGHTS_CONNECTION_STRING=$aiConnStr" \
   "ConnectionStrings__EmployeeDatabase=$hrConStr" \
   "Kestrel__Endpoints__Http__Url=http://*:8080" \
   "WEBSITES_PORT=8080"
-az webapp cors add --allowed-origins "*" -n human-resource-mcp-$env -g $grp
+az webapp cors add --allowed-origins "*" -n human-resource-mcp -g $grp
 cd ..

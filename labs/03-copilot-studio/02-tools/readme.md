@@ -12,23 +12,29 @@
 
 ## Lab 3: Connectors & Tools
 
-[Task 1: Extend declarative agents with connector tools in Copilot Studio](https://learn.microsoft.com/en-us/training/modules/extend-declarative-agents-connector-actions-copilot-studio)
+[Give a Product Support Agent Live SharePoint and Excel Data with Connector Tools](./lab-3/readme.md)
 
-[Task 2: Use an Excel connector in Copilot Studio](https://microsoft.github.io/copilot-camp/pages/make/copilot-studio/03-actions/)
+> Note: This lab rewrites the MS-4022 connector-action lab for the new Copilot Studio agent experience (Build, Preview, Evaluate, Monitor) and folds in the Excel and SharePoint connector scenarios.
 
-[Task 3: Use a SharePoint connector in Copilot Studio](https://microsoft.github.io/copilot-camp/pages/make/copilot-studio/04-extending-m365-copilot/)
+Background reading:
+
+[Extend declarative agents with connector tools in Copilot Studio](https://learn.microsoft.com/en-us/training/modules/extend-declarative-agents-connector-actions-copilot-studio)
+
+[Use an Excel connector in Copilot Studio](https://microsoft.github.io/copilot-camp/pages/make/copilot-studio/03-actions/)
+
+[Use a SharePoint connector in Copilot Studio](https://microsoft.github.io/copilot-camp/pages/make/copilot-studio/04-extending-m365-copilot/)
 
 ## Lab 4: REST Api Tools
 
-[Task 1: Use a REST Api](https://microsoft.github.io/copilot-camp/pages/make/copilot-studio/05-connectors/)
+[Lab 4: Call a Secured REST API from an Agent](./lab-4/readme.md)
 
-> Note: The download mentioned in the lab is in folder [lab-4](./lab-4/)
+> Note: The API source is in [lab-4/hr-service](./lab-4/hr-service/). A hosted alternative needing no local setup is covered at the end of the lab.
 
 ## Lab 5: Use MCP Tools
 
-[Task 1: Use Model Context Protocol (MCP) in Copilot Studio](https://microsoft.github.io/copilot-camp/pages/make/copilot-studio/06-mcp/)
+[Lab 5: Give an Agent MCP Tools](./lab-5/readme.md)
 
-> Note: The download mentioned in the lab is in folder [lab-5](./lab-5/)
+> Note: The MCP server is deployed at `https://human-resource-mcp.azurewebsites.net`; its source is in [src/hr-mcp-server](../../../src/hr-mcp-server/).
 
 ## Lab 6: Use Managed Agents in Copilot Studio - optional
 
