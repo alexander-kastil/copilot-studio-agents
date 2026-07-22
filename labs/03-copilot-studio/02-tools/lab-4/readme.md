@@ -43,7 +43,7 @@ An API never holds the secret of its own caller. Keeping the two registrations s
 - [Node.js v22 or higher](https://nodejs.org/en) and the [Azure Functions Core Tools](https://learn.microsoft.com/azure/azure-functions/functions-run-local)
 - [Dev tunnel CLI](https://learn.microsoft.com/azure/developer/dev-tunnels/get-started)
 
-The API source is already in this repository. You do not need to download anything: use [`./hr-service`](./hr-service/).
+The API source is already in this repository. You do not need to download anything: use [`./hr-service`](./hr-service/). The specification you import into Power Platform is [`./hr-service-swagger.json`](./hr-service-swagger.json), also in this folder.
 
 > **Provisioning note:** the main path of this lab runs entirely on your machine, so it needs no Azure resources. The hosted shortcut at the end of the lab, and [Lab 5](../lab-5/readme.md), depend on two Azure App Service resources, `food-catalog-api` and `human-resource-mcp`. They must be provisioned before those parts will work. The trainer creates them with [`src/deploy-apis.azcli`](../../../../src/deploy-apis.azcli), which also sets up the storage account, Application Insights, and the SQL connection strings the services read.
 
@@ -59,7 +59,7 @@ Open [`./hr-service`](./hr-service/) in Visual Studio Code. The parts that matte
 | --- | --- |
 | `src/functions/candidatesFunction.ts` | The Azure Function implementing the API |
 | `src/data/candidates.json` | The seed list of candidates |
-| `src/openapi.json` | The OpenAPI specification you will import into Power Platform |
+| `src/openapi.json` | The OpenAPI 3.0 specification the service ships with |
 | `askCandidateData.json` | An Adaptive Card that collects data for a new candidate |
 | `http/ht-service.http` | REST Client requests for local testing |
 | `local.settings.json.sample` | The configuration template |
@@ -186,13 +186,17 @@ Use `http/ht-service-dev-tunnel.http` to check the tunnel, replacing the host in
 
 Go to [Power Automate](https://make.powerautomate.com) and switch to the `Copilot Dev Camp` environment with the environment picker in the top right corner. Navigate to **More**, **Discover all**, then **Custom connectors**.
 
-Select **+ New custom connector**, then **Import an OpenAPI file**. Name the connector `HR-Services` and browse to `hr-service/src/openapi.json`. Select **Continue**.
+Select **+ New custom connector**, then **Import an OpenAPI file**. Name the connector `HR-Services` and browse to [`hr-service-swagger.json`](./hr-service-swagger.json) in this lab folder. Select **Continue**.
 
-> If the import rejects the file, your environment expects Swagger 2.0. Convert the specification with any OpenAPI converter and import the 2.0 result.
+Use that file, not `hr-service/src/openapi.json`. The service ships an OpenAPI 3.0 specification, and Power Platform custom connectors are built on Swagger 2.0, so the 3.0 file is rejected or imported with missing operations. `hr-service-swagger.json` is the same API expressed in Swagger 2.0, with three additions that matter downstream:
+
+- A `description` on every operation. Generative orchestration reads these to decide whether the agent should call the action.
+- `x-ms-summary` on every parameter and property, which is what Power Platform shows as a friendly field label instead of `current_role`.
+- `required` fields on the candidate definition, so the agent knows it must collect a first name, last name, and email before calling `addCandidate`.
 
 ### Step 2: Point the connector at the tunnel
 
-On the **General** tab:
+The `host` value in the file is the placeholder `your-tunnel-id-7071.euw.devtunnels.ms`, so you have to correct it. On the **General** tab:
 
 - **Host:** the host name of your dev tunnel URL, with no `https://` prefix and no trailing slash, for example `hr-service-abc123.euw.devtunnels.ms`
 - **Base URL:** `/`
@@ -284,6 +288,8 @@ You are done when all of the following are true:
 
 | Symptom | Cause |
 | --- | --- |
+| The import fails, or the **Definition** tab shows no operations | You imported `hr-service/src/openapi.json`; import `hr-service-swagger.json` instead |
+| Calls go to the wrong address | The `host` placeholder was not replaced on the **General** tab |
 | `AADSTS50011` reply URL mismatch | The connector's redirect URL is missing from the consumer app's **Web** platform |
 | 401 even with a valid connection | `requestedAccessTokenVersion` is not `2`, or `local.settings.json` holds the wrong client ID |
 | Connector test returns 502 or times out | The dev tunnel or the Functions host stopped; restart both |
@@ -298,7 +304,7 @@ If you cannot run Azure Functions or a dev tunnel, there is a REST API already d
 https://food-catalog-api.azurewebsites.net
 ```
 
-Its OpenAPI specification is at `/swagger/v1/swagger.json`, and the same file is in this repository at [`src/assets/food-api-swagger.json`](../../../../src/assets/food-api-swagger.json). It exposes a Food Inventory catalog:
+The service publishes an OpenAPI 3.0 document at `/swagger/v1/swagger.json`, which custom connectors do not accept. Import [`src/assets/food-api-swagger.json`](../../../../src/assets/food-api-swagger.json) instead: it is the Swagger 2.0 equivalent, prepared the same way as `hr-service-swagger.json`. It exposes a Food Inventory catalog:
 
 | Method | Route |
 | --- | --- |

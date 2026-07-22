@@ -1,0 +1,173 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "HR Service",
+    "description": "Manages the list of candidates for a job role. Provides operations to list candidates, get a single candidate by email, add a new candidate, and remove a candidate.",
+    "version": "1.0.0"
+  },
+  "host": "your-tunnel-id-7071.euw.devtunnels.ms",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/api/candidates": {
+      "get": {
+        "operationId": "getCandidates",
+        "summary": "Get all candidates",
+        "description": "Lists all the HR candidates from an external system, including their skills, spoken languages, and current role.",
+        "responses": {
+          "200": {
+            "description": "A list of candidates",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Candidate"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "operationId": "addCandidate",
+        "summary": "Add a new candidate",
+        "description": "Adds a new HR candidate to the external system and returns the updated list of candidates.",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "The candidate to add",
+            "schema": {
+              "$ref": "#/definitions/Candidate"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The updated list of candidates",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Candidate"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/candidates/{email}": {
+      "get": {
+        "operationId": "getCandidate",
+        "summary": "Get a candidate by email",
+        "description": "Retrieves the details of a single HR candidate identified by email address.",
+        "parameters": [
+          {
+            "name": "email",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "Email address of the candidate",
+            "x-ms-summary": "Email"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The candidate details",
+            "schema": {
+              "$ref": "#/definitions/Candidate"
+            }
+          },
+          "404": {
+            "description": "Candidate not found"
+          }
+        }
+      },
+      "delete": {
+        "operationId": "removeCandidate",
+        "summary": "Remove a candidate by email",
+        "description": "Removes the HR candidate identified by email address and returns the updated list of candidates.",
+        "parameters": [
+          {
+            "name": "email",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "Email address of the candidate to remove",
+            "x-ms-summary": "Email"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The updated list of candidates",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Candidate"
+              }
+            }
+          },
+          "404": {
+            "description": "Candidate not found"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Candidate": {
+      "type": "object",
+      "required": [
+        "firstname",
+        "lastname",
+        "email"
+      ],
+      "properties": {
+        "firstname": {
+          "type": "string",
+          "description": "First name of the candidate",
+          "x-ms-summary": "First name"
+        },
+        "lastname": {
+          "type": "string",
+          "description": "Last name of the candidate",
+          "x-ms-summary": "Last name"
+        },
+        "email": {
+          "type": "string",
+          "description": "Email address of the candidate",
+          "x-ms-summary": "Email"
+        },
+        "spoken_languages": {
+          "type": "array",
+          "description": "Languages the candidate speaks",
+          "x-ms-summary": "Spoken languages",
+          "items": {
+            "type": "string"
+          }
+        },
+        "skills": {
+          "type": "array",
+          "description": "Skills of the candidate",
+          "x-ms-summary": "Skills",
+          "items": {
+            "type": "string"
+          }
+        },
+        "current_role": {
+          "type": "string",
+          "description": "Current role of the candidate",
+          "x-ms-summary": "Current role"
+        }
+      }
+    }
+  },
+  "securityDefinitions": {},
+  "security": []
+}

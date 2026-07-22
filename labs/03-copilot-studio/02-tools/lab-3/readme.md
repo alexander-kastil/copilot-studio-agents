@@ -31,8 +31,8 @@ flowchart LR
 
 - A Microsoft 365 tenant with Microsoft 365 Copilot and a Copilot Studio license, and permission to create agents.
 - The new agent experience turned on. Open [Copilot Studio](https://copilotstudio.microsoft.com/), and use the **New experience** toggle on the home page. You are in the new experience when the agent surface shows **Build**, **Preview**, **Evaluate**, and **Monitor** tabs instead of **Topics**, **Knowledge**, **Actions**, and **Settings**.
-- A SharePoint communication or team site named `Product Support`. Note its URL, for example `https://contoso.sharepoint.com/sites/ProductSupport`.
-- A document library on that site named `Products`, holding the five files from the [assets](./assets/) folder next to this lab. Upload all five as they are; the names and the contents are what the exercises test against.
+- Permission to create a SharePoint site, or an existing site where you may add a document library.
+- A site named `Product Support` holding a document library named `Products`, filled with the five files from the [assets](./assets/) folder. Build it with the scripts in [setup](./setup/) or by hand, both covered below.
 
 > **Note:** The new agent experience is a production-ready preview. Some connector configuration screens still open the shared tool details page that the classic experience uses, so a few panes in this lab look like classic Copilot Studio even though you author on the **Build** tab. That is expected and does not break anything.
 
@@ -58,19 +58,84 @@ $env:PNP_CLIENT_ID = "<your client id>"
 ./Provision-ProductSupport.ps1 -SiteUrl "https://contoso.sharepoint.com/sites/product-support"
 ```
 
-### Or upload by hand
+### Or create it by hand
 
-1. Open your `Product Support` site and go to the `Products` library.
-2. Select **Upload**, then **Files**, and select all five files from the `assets` folder.
-3. Open `ProductInventory.xlsx` in Excel for the web and confirm that the range `A1:E13` is a table named `Stock`. Select any cell in the data, then check the name in the **Table Design** tab.
+Four steps in the browser, roughly five minutes. Do them in order; the connector inputs in Exercise 3 and Exercise 6 are the values you write down at the end.
 
-The `Stock` table looks like this:
+#### Step 1: Create the site
+
+Skip to Step 2 if you already have a site you can use.
+
+1. Go to [https://www.office.com/launch/sharepoint](https://www.office.com/launch/sharepoint) and select **Create site**.
+2. Choose **Team site**. A communication site works equally well; the connector does not care which.
+3. Set **Site name** to:
+
+```text
+Product Support
+```
+
+4. Check the site address that SharePoint proposes underneath the name, for example `https://contoso.sharepoint.com/sites/ProductSupport`. Copy it now, this is the **Site Address** input the connector needs.
+5. Select **Next**, leave the privacy and language defaults, select **Create site**, then skip adding members.
+
+Expected: the new site opens on its Home page, with **Documents** already listed in the left navigation.
+
+#### Step 2: Create the Products document library
+
+The lab needs a document library, not a list and not a folder. A library stores files and is what the SharePoint **List folder** action and the Excel connector both read. A custom list stores rows of columns and holds no files at all, so it cannot serve this lab.
+
+1. On the site Home page, select **+ New** in the command bar at the top.
+2. Select **Document library**.
+3. Set **Name** to exactly:
+
+```text
+Products
+```
+
+4. Optionally set **Description** to `Product support material for the Product Support Assistant`.
+5. Leave **Show in site navigation** checked, then select **Create**.
+
+Expected: the empty `Products` library opens, and `Products` now appears in the left navigation under **Documents**. The address bar reads something like `https://contoso.sharepoint.com/sites/ProductSupport/Products`.
+
+> **Warning:** The name must be exactly `Products`, with a capital P and no trailing space. You type this string into the connector's **File Identifier** input in Exercise 3, and SharePoint matches it literally. Renaming the library later changes its display name but not its internal URL, which then no longer matches what you typed.
+
+#### Step 3: Upload the five files
+
+1. Open the `Products` library.
+2. Select **Upload** in the command bar, then **Files**.
+3. Navigate to the [assets](./assets/) folder next to this lab, select all five files, and confirm.
+4. Wait until the upload column stops showing progress.
+
+Expected: the library lists exactly five items, four documents and one workbook, with no folders and nothing nested inside a subfolder.
+
+> **Note:** Leave the files at the top level of the library. If you drop them into a subfolder, the **File Identifier** value in Exercise 3 has to become `Products/<subfolder>` instead, and the Excel connector's **File** picker gains an extra level. Keeping them flat matches every value printed in this lab.
+
+#### Step 4: Verify the Excel table
+
+The Excel connector reads a named table, not a sheet and not a plain range. The shipped workbook already has one, so this step is a confirmation rather than a task, but it is worth doing because an unnamed range is the single most common reason Exercise 6 stalls with an empty table picker.
+
+1. In the library, select `ProductInventory.xlsx` to open it in Excel for the web.
+2. Select any cell inside the data, for example `B4`.
+3. Open the **Table Design** tab in the ribbon and read the **Table Name** box on the left.
+
+Expected: the table name is `Stock` and the range is `A1:E13`, one header row plus twelve data rows. The `Stock` table holds:
 
 ```text
 ProductCode | ProductName | UnitsInStock | WarehouseLocation | WarrantyMonths
 AUR-X1      | Aurora X1   | 142          | Vienna            | 24
 NIM-500     | Nimbus 500  | 18           | Graz              | 12
 ```
+
+#### Write down these four values
+
+Every connector input in the lab comes from this table. Fill in your own site address and keep it next to you.
+
+| Where it is used | Input | Your value |
+|------------------|-------|------------|
+| Exercise 3, SharePoint tool | Site Address | `https://<tenant>.sharepoint.com/sites/ProductSupport` |
+| Exercise 3, SharePoint tool | File Identifier | `Products` |
+| Exercise 6, Excel tool | Document Library | `Products` |
+| Exercise 6, Excel tool | File | `ProductInventory.xlsx` |
+| Exercise 6, Excel tool | Table | `Stock` |
 
 ## Exercise 1: Create the Product Support Assistant
 
@@ -325,6 +390,8 @@ Expected: the agent answers inside Microsoft 365 Copilot with both the document 
 |---------|--------------|-----|
 | The **Connectors** tab shows no SharePoint entry | You are in the classic experience, not the new one | Check the top tabs. Classic shows **Topics**, **Knowledge**, **Actions**; use the **New experience** toggle on the home page |
 | The tool returns an empty list of files | **File Identifier** points at the site root, not the library folder | Set **File Identifier** to **Custom** with the value `Products`, and confirm the library name matches exactly |
+| The **Upload** command offers no file option, only **New item** | You created a custom list instead of a document library | Delete it and repeat Step 2 of the setup, choosing **Document library** under **+ New** |
+| The library is called `Products` but the connector cannot find it | The library was renamed after creation, so its URL still holds the old name | Check the address bar on the library and use that final path segment as the **File Identifier** |
 | The Excel table dropdown is empty | The workbook range is not formatted as a table | Open `ProductInventory.xlsx`, apply **Format as Table**, and name the table `Stock` |
 | The agent answers stock questions from general knowledge | No routing line in the instructions, or a vague tool description | Add the explicit "when the user asks about availability" rule and make the description name the columns it returns |
 | Both tools fire on every question | The two descriptions overlap | Add negative guidance to the over-selected tool, for example `Do not use this tool to list documents or files` |
