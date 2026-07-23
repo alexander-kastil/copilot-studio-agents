@@ -39,7 +39,7 @@ The standout new node type is the agent node, which calls an agent from inside a
 
 ## Hands-On Lab
 
-- [Build a Sales Account Assistant in the New Experience](../../../../labs/03-copilot-studio/04-ui-update/04-workflows-and-mcp/lab-01-sales-account-assistant.md): a capstone that grounds an agent on knowledge, connects an Outlook action and a Dataverse MCP server, and automates the follow-up with a workflow agent node.
+- [Build a Sales Account Assistant in the New Experience](../../../../labs/03-copilot-studio/04-ui-update/05-workflows-and-mcp/lab-01-sales-account-assistant.md): a capstone that grounds an agent on knowledge, connects an Outlook action and a Dataverse MCP server, and automates the follow-up with a workflow agent node.
 
 ## Key Topics covered in this module
 

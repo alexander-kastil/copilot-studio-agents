@@ -150,4 +150,4 @@ You gave the Northwind Sales Assistant a second knowledge source, asked a questi
 - Review a past turn's chained actions in the **Monitor** tab to debug routing after the fact.
 - Shape the depth of planning with a reason instruction, and explain how that differs from classic single-pass orchestration.
 
-Next, package a reusable set of instructions and actions the orchestrator can call as one unit in [Add a Reusable Skill to Your Agent](../03-agent-skills/demo-03-add-a-reusable-skill.md).
+Next, package a reusable set of instructions and actions the orchestrator can call as one unit in [Add a Reusable Skill to Your Agent](../04-agent-skills/demo-03-add-a-reusable-skill.md).

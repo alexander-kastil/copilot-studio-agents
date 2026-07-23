@@ -179,4 +179,4 @@ You packaged the follow-up-email recipe as a reusable Agent Skill: created it fr
 - Test activation in Preview and fix over- or under-matching by tuning the description, not the instructions.
 - Replace a skill in place and download it for per-agent distribution.
 
-Next, give the assistant a live action by wiring an external tool through the Model Context Protocol in [Connect an MCP Server and Automate with a Workflow](../04-workflows-and-mcp/demo-04-connect-mcp-and-workflow.md).
+Next, give the assistant a live action by wiring an external tool through the Model Context Protocol in [Connect an MCP Server and Automate with a Workflow](../05-workflows-and-mcp/demo-04-connect-mcp-and-workflow.md).

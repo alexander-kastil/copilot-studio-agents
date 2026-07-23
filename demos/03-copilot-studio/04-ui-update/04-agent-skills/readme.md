@@ -51,7 +51,7 @@ Steps the agent should follow, response format, and edge cases go here as plain 
 
 ## Hands-On Lab
 
-- [Package Team Knowledge into a Portable Skill](../../../../labs/03-copilot-studio/04-ui-update/03-agent-skills/lab-01-portable-skill.md): capture repeatable objection-handling guidance as a ZIP-packaged skill, then prove it is portable by reusing it on a second agent.
+- [Package Team Knowledge into a Portable Skill](../../../../labs/03-copilot-studio/04-ui-update/04-agent-skills/lab-01-portable-skill.md): capture repeatable objection-handling guidance as a ZIP-packaged skill, then prove it is portable by reusing it on a second agent.
 
 ## Key Topics covered in this module
 

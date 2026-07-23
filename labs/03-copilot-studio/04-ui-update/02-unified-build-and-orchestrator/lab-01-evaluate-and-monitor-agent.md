@@ -7,14 +7,14 @@ The scenario company is Northwind Traders, a wholesale distributor whose sellers
 ## What you'll build
 
 - A Northwind Sales Assistant composed on the **Build** tab from a description, scoped Instructions, one Knowledge source, and one Tool.
-- A five-case test set on the **Evaluate** tab, each case carrying an expected response and a grader (test method).
+- A five-case test set on the **Evaluate** tab, each case carrying an expected response, scored by the set's **General quality** test method.
 - A baseline evaluation run with an aggregate quality score and a per-case scorecard.
 - A targeted Instructions fix driven by a failing case, and a second run that shows the score move.
 - A run review on the **Monitor** tab that confirms which knowledge and tools each answer actually used.
 
 ## Prerequisites
 
-- A Copilot Studio environment where you can create agents (a Power Platform environment with the maker role), with the new experience turned on: open [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com), confirm the **New experience** toggle at the top right is on, and note that agent evaluation is a preview feature. This is the only setup step; everything after it is building.
+- A Copilot Studio environment where you can create agents (a Power Platform environment with the maker role), with the new experience turned on: open [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com), confirm the **New experience** toggle at the top right is on, and note that agent evaluation in the new experience is a production-ready preview, so the surface keeps changing. This is the only setup step; everything after it is building.
 
 ## Exercise 1: Create the agent and confirm the four-tab surface
 
@@ -158,27 +158,21 @@ Expected: the **Evaluate** tab lists five test cases under Northwind quality set
 
 > **Tip:** Give each expected response the citation phrasing you want ("cited from the Northwind reference"), not just the bare fact. That way the grader rewards the behavior your Instructions require, not only a correct number.
 
-## Exercise 7: Attach graders to the test cases
+## Exercise 7: Configure the test set and understand what the grader judges
 
-A test set with no grader is just a list of questions; the grader (the test method) is what turns each answer into a pass or fail. Copilot Studio offers several test methods, and picking the right one per case is the skill this exercise builds: **General quality** compares the answer against your expected response, **Tool use** checks whether the agent called (or correctly avoided) a specific tool, and **Keyword match** checks that required words appear. Choosing per case is what makes the score trustworthy rather than a single blunt average.
+A test set with no grader is just a list of questions; the grader (the test method) is what turns each answer into a pass or fail. In the new experience the **Configure test set** panel holds three settings that decide what your score means, and the test method is fixed rather than chosen per case. Understanding what that one grader actually judges is the difference between reading your results correctly and misreading them confidently.
 
 1. On the **Evaluate** tab, open the Northwind quality set.
-2. For each case, set the **Test method** as follows:
+2. In the **Configure test set** panel, read the **Data type** label. It reads `Data type: Conversation`, the only test set type available here.
+3. Read the **Test method** card. It shows **General quality**, described as responses meeting quality standards such as relevance and completeness, and it states that it does not compare to expected responses. There is no per-case grader picker.
+4. Under **User profile**, select **Manage** and confirm the profile that will run the evaluation, checking that its connections show as ready.
+5. Select **Save**.
 
-```text
-Lead time for a Tier 1 account        -> General quality
-Cost of a case of Cold Brew           -> General quality
-Tier and region of Blauer See         -> General quality
-Binding quote for 500 cases           -> General quality (expects a refusal)
-Capital of France                     -> Tool use (expects that Send an email was NOT called)
-```
+Expected: the panel shows the set name, the `Data type: Conversation` label, a single **General quality** test method card with no alternatives, and a configured user profile. Your five cases will all be scored by that one grader, on answer quality rather than on similarity to the expected responses you wrote.
 
-3. Confirm each case now shows its assigned test method.
-4. Select **Save**.
+> **Warning:** **General quality** does not compare the answer to your expected response, so a confidently worded wrong answer can pass. The classic Evaluation page offers comparing graders (Compare meaning, Text similarity, Exact match, Keyword match, Tool use), but they are not available on this tab. Do not follow classic evaluation guidance in the new experience; the controls it describes are not there.
 
-Expected: each of the five cases displays its chosen test method, mixing General quality for the fact and refusal cases with a Tool-use check on the off-topic case. The set now measures three things at once: correct grounded facts, correct refusals, and correct tool restraint.
-
-> **Note:** Test methods are the graders. General quality uses a language model to compare the response to your expected answer, so it tolerates wording differences while still catching a wrong fact or a missing refusal.
+> **Note:** Expected responses are still worth writing. They document what "correct" means for whoever maintains the set, and they are what travels when the set moves through a CSV, even though they do not drive the score here.
 
 ## Exercise 8: Run the baseline evaluation and read the scorecard
 
@@ -230,7 +224,8 @@ Expected: **Monitor** lists the agent's sessions, and opening a turn shows its t
 | The **Evaluate** tab is missing or **New evaluation** is greyed out | Agent evaluation is a preview feature not enabled, or the agent has not been saved | Confirm the environment has the evaluation preview available and that the agent is saved, then reopen the **Evaluate** tab |
 | A grounded-fact case fails even though Preview answers correctly | The Knowledge source was still processing when the run started, or the expected response is too rigid | Confirm the source shows ready on the **Build** tab, loosen the expected response to accept correct phrasing, then re-run |
 | The refusal case fails | Instructions do not explicitly tell the agent to refuse binding quotes | Add the refusal line from Exercise 9 to **Instructions**, save, and re-run the set |
-| The Tool-use case fails because the agent called Send an email | The tool description is too broad, so the orchestrator matched an unrelated question | Sharpen the Step 4 tool description to "only when a seller explicitly asks to send an email", save, and re-run |
+| The off-topic case passes but Monitor shows Send an email was called | The tool description is too broad, so the orchestrator matched an unrelated question, and General quality graded only the answer text | Sharpen the Exercise 4 tool description to "only when a seller explicitly asks to send an email", save, and re-run |
+| A per-case **Test method** picker cannot be found | The new experience applies one test method to the whole set; per-case graders are a classic Evaluation page feature | Use the single **General quality** card in the **Configure test set** panel, and switch to a classic agent when you need comparing graders |
 | The score changes slightly on every run with no edits | Language-model graders are non-deterministic within a few percent | Treat small moves as noise; average three runs for a baseline and act only on a case that flips pass to fail |
 
 ## Summary
@@ -239,8 +234,8 @@ You took a Northwind Sales Assistant across all four tabs of the new experience:
 
 - Recognize what each of the four tabs is for and confirm you are in the new experience before you build.
 - Compose a scoreable agent on the **Build** tab with scoped Instructions, grounded Knowledge, and a scoped Tool.
-- Build a test set on the **Evaluate** tab and choose the right grader (General quality, Tool use, Keyword match) per case.
+- Build a test set on the **Evaluate** tab, configure its name, data type, test method, and user profile, and say what **General quality** judges and what it ignores.
 - Run a baseline evaluation, read the aggregate score and per-case scorecard, and drive a targeted fix from a failing case.
 - Re-run the same set to prove a change moved the score, and review the underlying runs on the **Monitor** tab.
 
-Next, put this reasoning under the microscope in [Trace the Agentic Reasoning Loop](../../../../demos/03-copilot-studio/04-ui-update/02-unified-build-and-orchestrator/demo-02-trace-agent-reasoning.md), then build the full assistant end to end in the capstone [Build a Sales Account Assistant in the New Experience](../04-workflows-and-mcp/lab-01-sales-account-assistant.md).
+Next, go deeper on measurement in [Evaluate a New-Experience Agent with Test Sets](../03-evaluations/lab-01-evaluate-with-test-sets.md), put the reasoning under the microscope in [Trace the Agentic Reasoning Loop](../../../../demos/03-copilot-studio/04-ui-update/02-unified-build-and-orchestrator/demo-02-trace-agent-reasoning.md), then build the full assistant end to end in the capstone [Build a Sales Account Assistant in the New Experience](../05-workflows-and-mcp/lab-01-sales-account-assistant.md).

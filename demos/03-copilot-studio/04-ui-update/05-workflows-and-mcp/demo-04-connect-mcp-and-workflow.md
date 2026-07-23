@@ -129,4 +129,4 @@ You connected the Northwind Sales Assistant to live account data and automated a
 - Build a workflow in the new designer with a trigger, an agent node, and a return node.
 - Test a workflow node by node and save a version you can roll back to.
 
-Next, put this together end to end in [Sales Account Assistant](../../../../labs/03-copilot-studio/04-ui-update/04-workflows-and-mcp/lab-01-sales-account-assistant.md), where you ground an agent, wire live data, and automate the seller's follow-up as one connected deliverable.
+Next, put this together end to end in [Sales Account Assistant](../../../../labs/03-copilot-studio/04-ui-update/05-workflows-and-mcp/lab-01-sales-account-assistant.md), where you ground an agent, wire live data, and automate the seller's follow-up as one connected deliverable.

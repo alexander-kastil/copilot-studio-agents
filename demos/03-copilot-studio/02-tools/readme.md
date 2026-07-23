@@ -2,7 +2,7 @@
 
 A grounded agent can answer questions; a tooled agent can act. This topic moves from an agent that reads knowledge to one that calls real systems: running an AI prompt, invoking a connector, reading and writing Dataverse, processing documents, reaching a standardized set of tools over MCP, calling a REST API, and even driving a UI that has no API at all. Each tool type has a job it does best, and the maker skill is choosing the right one.
 
-The classic authoring surface exposes all of this from the Actions area, and adding a tool is a configuration task, not a coding task. MCP returns in the new experience ([04-workflows-and-mcp](../04-ui-update/04-workflows-and-mcp/readme.md)) under a redesigned Tools surface, so the concepts you learn here carry straight across.
+The classic authoring surface exposes all of this from the Actions area, and adding a tool is a configuration task, not a coding task. MCP returns in the new experience ([04-workflows-and-mcp](../04-ui-update/05-workflows-and-mcp/readme.md)) under a redesigned Tools surface, so the concepts you learn here carry straight across.
 
 ## What to teach
 

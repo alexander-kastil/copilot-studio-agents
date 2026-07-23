@@ -26,9 +26,10 @@ Hands-on labs for the rebuilt Copilot Studio (June 2026), paired with the [04-ui
 | Lab | Focus |
 |-----|-------|
 | [Compare the Classic and New Copilot Studio Experiences Side by Side](./04-ui-update/01-new-experience-overview/lab-01-compare-classic-and-new.md) | Stand up a minimal Northwind assistant in the new experience and contrast it against classic to master the toggle, coexistence, navigation tells, and the one-way conversion rule |
-| [Build, Evaluate, and Monitor a Northwind Sales Assistant](./04-ui-update/02-unified-build-and-orchestrator/lab-01-evaluate-and-monitor-agent.md) | Work all four Build-surface tabs, then build a test set with graders in Evaluate and review runs in Monitor |
-| [Package Team Knowledge into a Portable Skill](./04-ui-update/03-agent-skills/lab-01-portable-skill.md) | Author a portable `SKILL.md`, reuse it across two agents, and contrast the skill approach with classic topics |
-| [Build a Sales Account Assistant in the New Experience](./04-ui-update/04-workflows-and-mcp/lab-01-sales-account-assistant.md) | Capstone: create a new-experience agent, ground it, add tools and a Dataverse MCP server, package a reusable skill, automate with a workflow, and publish |
+| [Build, Evaluate, and Monitor a Northwind Sales Assistant](./04-ui-update/02-unified-build-and-orchestrator/lab-01-evaluate-and-monitor-agent.md) | Work all four Build-surface tabs, then build a test set in Evaluate and review runs in Monitor |
+| [Evaluate a New-Experience Agent with Test Sets](./04-ui-update/03-evaluations/lab-01-evaluate-with-test-sets.md) | Fill a conversation test set three ways, run a baseline, diagnose each failure into a component bucket, change one thing, and prove the fix with a second run |
+| [Package Team Knowledge into a Portable Skill](./04-ui-update/04-agent-skills/lab-01-portable-skill.md) | Author a portable `SKILL.md`, reuse it across two agents, and contrast the skill approach with classic topics |
+| [Build a Sales Account Assistant in the New Experience](./04-ui-update/05-workflows-and-mcp/lab-01-sales-account-assistant.md) | Capstone: create a new-experience agent, ground it, add tools and a Dataverse MCP server, package a reusable skill, automate with a workflow, and publish |
 
 ## Additional Learning Paths
 

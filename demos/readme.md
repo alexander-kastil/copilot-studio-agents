@@ -98,6 +98,11 @@ Finally, you design and implement real business processes with human-in-the-loop
 - Telling the Experiences Apart: Build, Preview, Evaluate & Monitor Tabs
 - The Unified Build Surface & the Classic-to-New Component Map
 - The Enhanced Orchestration Runtime & Deep Reasoning
+- Test & Evaluate Agents: Test Sets, Graders & the Evaluate Tab
+- Multi-turn Conversation Tests & Reading a Scorecard
+- Diagnosing a Failing Case with Activity Maps
+- Post-Release Signals: Thumbs Feedback, CSAT, Transcripts & Themes
+- Exporting Evaluation Data & Scaling with the Copilot Studio Kit
 - Agent Skills: the Open SKILL.md Format & Loading on Demand
 - Importing Claude Code & GitHub Copilot Skills
 - Tools, MCP Servers & the New Node-by-Node Workflows Designer
@@ -113,18 +118,7 @@ Finally, you design and implement real business processes with human-in-the-loop
 - Analytics And Application Insights
 - Troubleshooting and Analyzing Conversations
 
-### Module 8: Testing & Evaluating Copilot Studio Agents
-
-- Agent Evaluations (GA)
-- Creating Test Sets: Manual, CSV Import & AI-Generated
-- Multi-turn Conversation Tests
-- Thumbs-up/down Feedback & Activity Maps for Diagnosis
-- Viewing & Filtering User Questions and Reactions
-- CSAT Values and Session Transcripts
-- Exporting Evaluation Data for Further Analysis
-- Using Copilot Studio Kit for Advanced Evaluation
-
-### Module 9: Publishing & Maintaining Copilot Studio Agents
+### Module 8: Publishing & Maintaining Copilot Studio Agents
 
 - PowerPlatform Admin Center & Architecture
 - Introduction to Power Platform Environments & Solutions

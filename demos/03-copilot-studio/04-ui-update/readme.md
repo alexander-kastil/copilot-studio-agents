@@ -10,8 +10,9 @@ Treat classic as the primary teaching track and the new experience as guided dem
 |-------|-----------------|
 | [The Two Copilot Studio Experiences](01-new-experience-overview/readme.md) | The toggle, coexistence, the one-way conversion rule, and how to tell which experience you are in |
 | [The Unified Build Surface and the New Orchestrator](02-unified-build-and-orchestrator/readme.md) | The four-tab Build surface, the component map from classic, and the enhanced orchestration runtime |
-| [Agent Skills in Copilot Studio](03-agent-skills/readme.md) | The Agent Skills open format, `SKILL.md`, and importing Claude Code or GitHub Copilot skills |
-| [Tools, MCP, and the New Workflows Designer](04-workflows-and-mcp/readme.md) | Connectors, MCP servers, and the new node-by-node workflows designer with agent nodes |
+| [Test and Evaluate Copilot Studio Agents](03-evaluations/readme.md) | Test sets and graders on both surfaces, the Evaluate tab in the new experience, diagnosing a failing case, and post-release analytics from thumbs to CSAT to themes |
+| [Agent Skills in Copilot Studio](04-agent-skills/readme.md) | The Agent Skills open format, `SKILL.md`, and importing Claude Code or GitHub Copilot skills |
+| [Tools, MCP, and the New Workflows Designer](05-workflows-and-mcp/readme.md) | Connectors, MCP servers, and the new node-by-node workflows designer with agent nodes |
 
 ## Demos
 
@@ -19,17 +20,18 @@ Treat classic as the primary teaching track and the new experience as guided dem
 |-------|------|
 | [The Two Copilot Studio Experiences](01-new-experience-overview/readme.md) | [Build and Ground Your First New-Experience Agent](01-new-experience-overview/demo-01-build-and-ground-an-agent.md) |
 | [The Unified Build Surface and the New Orchestrator](02-unified-build-and-orchestrator/readme.md) | [Trace the Agentic Reasoning Loop](02-unified-build-and-orchestrator/demo-02-trace-agent-reasoning.md) |
-| [Agent Skills in Copilot Studio](03-agent-skills/readme.md) | [Add and Tune an Agent Skill](03-agent-skills/demo-03-add-a-reusable-skill.md) |
-| [Tools, MCP, and the New Workflows Designer](04-workflows-and-mcp/readme.md) | [Connect an MCP Server and Automate with a Workflow](04-workflows-and-mcp/demo-04-connect-mcp-and-workflow.md) |
+| [Agent Skills in Copilot Studio](04-agent-skills/readme.md) | [Add and Tune an Agent Skill](04-agent-skills/demo-03-add-a-reusable-skill.md) |
+| [Tools, MCP, and the New Workflows Designer](05-workflows-and-mcp/readme.md) | [Connect an MCP Server and Automate with a Workflow](05-workflows-and-mcp/demo-04-connect-mcp-and-workflow.md) |
 
 ## Labs
 
 | Lab | Focus |
 |-----|-------|
 | [Compare the Classic and New Copilot Studio Experiences Side by Side](../../../labs/03-copilot-studio/04-ui-update/01-new-experience-overview/lab-01-compare-classic-and-new.md) | Stand up a minimal Northwind assistant in the new experience and contrast it against classic: the toggle, coexistence, navigation tells, and the one-way conversion rule |
-| [Build, Evaluate, and Monitor a Northwind Sales Assistant](../../../labs/03-copilot-studio/04-ui-update/02-unified-build-and-orchestrator/lab-01-evaluate-and-monitor-agent.md) | Work all four Build-surface tabs, then build a test set with graders in Evaluate and review runs in Monitor |
-| [Package Team Knowledge into a Portable Skill](../../../labs/03-copilot-studio/04-ui-update/03-agent-skills/lab-01-portable-skill.md) | Author a `SKILL.md`, reuse it across two agents, and contrast with classic topics |
-| [Build a Sales Account Assistant in the New Experience](../../../labs/03-copilot-studio/04-ui-update/04-workflows-and-mcp/lab-01-sales-account-assistant.md) | Capstone: build, ground, tool up, skill, and publish a new-experience agent end to end |
+| [Build, Evaluate, and Monitor a Northwind Sales Assistant](../../../labs/03-copilot-studio/04-ui-update/02-unified-build-and-orchestrator/lab-01-evaluate-and-monitor-agent.md) | Work all four Build-surface tabs, then build a test set in Evaluate and review runs in Monitor |
+| [Evaluate a New-Experience Agent with Test Sets](../../../labs/03-copilot-studio/04-ui-update/03-evaluations/lab-01-evaluate-with-test-sets.md) | Fill a conversation test set three ways, run a baseline, diagnose each failure into a component bucket, change one thing, and prove the fix with a second run |
+| [Package Team Knowledge into a Portable Skill](../../../labs/03-copilot-studio/04-ui-update/04-agent-skills/lab-01-portable-skill.md) | Author a `SKILL.md`, reuse it across two agents, and contrast with classic topics |
+| [Build a Sales Account Assistant in the New Experience](../../../labs/03-copilot-studio/04-ui-update/05-workflows-and-mcp/lab-01-sales-account-assistant.md) | Capstone: build, ground, tool up, skill, and publish a new-experience agent end to end |
 
 ## Classic to new quick reference
 

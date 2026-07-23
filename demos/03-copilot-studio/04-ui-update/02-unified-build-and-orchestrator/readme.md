@@ -50,7 +50,9 @@ The new experience makes the agent's thinking visible so you can trust and debug
 
 ## Hands-On Lab
 
-- [Build, Evaluate, and Monitor a Northwind Sales Assistant](../../../../labs/03-copilot-studio/04-ui-update/02-unified-build-and-orchestrator/lab-01-evaluate-and-monitor-agent.md): Compose an agent across the Build and Preview tabs, then score it with a grader-backed test set on the Evaluate tab and review its runs on the Monitor tab.
+- [Build, Evaluate, and Monitor a Northwind Sales Assistant](../../../../labs/03-copilot-studio/04-ui-update/02-unified-build-and-orchestrator/lab-01-evaluate-and-monitor-agent.md): Compose an agent across the Build and Preview tabs, then score it with a test set on the Evaluate tab and review its runs on the Monitor tab.
+
+Scoring the agent in depth is its own topic: see [Test and Evaluate Copilot Studio Agents](../03-evaluations/readme.md).
 
 ## Key Topics covered in this module
 

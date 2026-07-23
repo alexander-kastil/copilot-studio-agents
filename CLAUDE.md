@@ -4,7 +4,7 @@ This is a hands-on masterclass repository for **Designing, Implementing & Mainta
 
 ## Repository Layout
 
-- `demos/01-intro`, `02-cowork`, `03-copilot-studio`, `04-maintaining`: tutorial modules, numbered by delivery order. Do not reorganize. Modules carry numbered `NN-topic` subfolders (for example `03-copilot-studio` holds `01-basics`, `02-tools`, `03-advanced`, `04-ui-update`, `05-evaluations`).
+- `demos/01-intro`, `02-cowork`, `03-copilot-studio`, `04-maintaining`: tutorial modules, numbered by delivery order. Do not reorganize. Modules carry numbered `NN-topic` subfolders (for example `03-copilot-studio` holds `01-basics`, `02-tools`, `03-advanced`, `04-ui-update`).
 - `labs/01-intro`, `02-cowork`, `03-copilot-studio`: matching hands-on exercises. `03-copilot-studio` nests further (`01-basics`, `02-tools`, `03-advanced`, `04-ui-update`).
 - When a module or sub-module has numbered `NN-topic` subfolders, its demos and labs are filed inside the owning topic subfolder (companion folders alongside), never left at the parent root; per-topic lab numbering starts at `lab-01`. Each topic is a complete learning unit: developed learning-prose `readme.md` plus a Hands-On Demo and a Hands-On Lab.
 - `src/` — standalone runnable projects referenced by modules (MCP servers, connectors, agents, sample services).

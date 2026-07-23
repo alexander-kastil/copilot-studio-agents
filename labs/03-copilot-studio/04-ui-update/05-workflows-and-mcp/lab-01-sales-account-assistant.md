@@ -12,11 +12,11 @@ The scenario company is Northwind Traders, a wholesale distributor whose sellers
 | 2 | Write scoped Instructions on the unified Build surface | [The Unified Build Surface and the New Orchestrator](../../../../demos/03-copilot-studio/04-ui-update/02-unified-build-and-orchestrator/readme.md) |
 | 3 | Add product Knowledge and ground the agent | [The Unified Build Surface and the New Orchestrator](../../../../demos/03-copilot-studio/04-ui-update/02-unified-build-and-orchestrator/readme.md) |
 | 4 | Add account Knowledge and confirm grounding in Preview | [The Unified Build Surface and the New Orchestrator](../../../../demos/03-copilot-studio/04-ui-update/02-unified-build-and-orchestrator/readme.md) |
-| 5 | Add an Office 365 Outlook connector action as a tool | [Tools, MCP, and the New Workflows Designer](../../../../demos/03-copilot-studio/04-ui-update/04-workflows-and-mcp/readme.md) |
-| 6 | Add the prebuilt Dataverse MCP server | [Tools, MCP, and the New Workflows Designer](../../../../demos/03-copilot-studio/04-ui-update/04-workflows-and-mcp/readme.md) |
+| 5 | Add an Office 365 Outlook connector action as a tool | [Tools, MCP, and the New Workflows Designer](../../../../demos/03-copilot-studio/04-ui-update/05-workflows-and-mcp/readme.md) |
+| 6 | Add the prebuilt Dataverse MCP server | [Tools, MCP, and the New Workflows Designer](../../../../demos/03-copilot-studio/04-ui-update/05-workflows-and-mcp/readme.md) |
 | 7 | Chain knowledge and tools and inspect the plan | [The Unified Build Surface and the New Orchestrator](../../../../demos/03-copilot-studio/04-ui-update/02-unified-build-and-orchestrator/readme.md) |
-| 8 | Package and upload a reusable Skill (SKILL.md) | [Agent Skills in Copilot Studio](../../../../demos/03-copilot-studio/04-ui-update/03-agent-skills/readme.md) |
-| 9 | Automate the follow-up with a workflow and agent node | [Tools, MCP, and the New Workflows Designer](../../../../demos/03-copilot-studio/04-ui-update/04-workflows-and-mcp/readme.md) |
+| 8 | Package and upload a reusable Skill (SKILL.md) | [Agent Skills in Copilot Studio](../../../../demos/03-copilot-studio/04-ui-update/04-agent-skills/readme.md) |
+| 9 | Automate the follow-up with a workflow and agent node | [Tools, MCP, and the New Workflows Designer](../../../../demos/03-copilot-studio/04-ui-update/05-workflows-and-mcp/readme.md) |
 | 10 | Run an end-to-end test in Preview, then Publish | [The Unified Build Surface and the New Orchestrator](../../../../demos/03-copilot-studio/04-ui-update/02-unified-build-and-orchestrator/readme.md) |
 
 ## Lab Files
