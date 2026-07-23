@@ -1,15 +1,15 @@
 # Evaluate a New-Experience Agent with Test Sets
 
-A maker can always find one question the agent answers beautifully, which is exactly why nobody should trust a demo. The Evaluate tab replaces that impression with a number produced the same way every time, so a change you make on Tuesday can be measured against Tuesday's bar on Thursday. In this lab you deliberately ship a weak Northwind Sales Assistant, score it against a curated ten-case test set, diagnose why it failed, change exactly one thing, and prove the fix with a second run.
+A maker can always find one question the agent answers beautifully, which is exactly why nobody should trust a demo. The Evaluate tab replaces that impression with a number produced the same way every time, so a change you make on Tuesday can be measured against Tuesday's bar on Thursday. In this lab you deliberately ship a weak Northwind Sales Assistant, score it against a curated seven-conversation test set, diagnose why it failed, change exactly one thing, and prove the fix with a second run.
 
-The scenario company is Northwind Traders, a wholesale distributor whose sellers ask about products, list prices, lead times, account tiers, expedited delivery, and returns. Your deliverable is a completed scorecard: a named evaluation with ten conversation test cases, a baseline run, a per-case diagnosis, a tuned agent, and a second run of the identical set that shows the score move. Every exercise feeds the next, so keep the same browser session and the `lab-01-evaluate-with-test-sets` folder open throughout.
+The scenario company is Northwind Traders, a wholesale distributor whose sellers ask about products, list prices, lead times, account tiers, expedited delivery, and returns. Your deliverable is a completed scorecard: a named evaluation with eight conversation test cases, a baseline run, a per-case diagnosis, a tuned agent, and a second run of the identical set that shows the score move. Every exercise feeds the next, so keep the same browser session and the `lab-01-evaluate-with-test-sets` folder open throughout.
 
 This lab goes deeper into the Evaluate tab than [Build, Evaluate, and Monitor a Northwind Sales Assistant](../02-unified-build-and-orchestrator/lab-01-evaluate-and-monitor-agent.md), which walks all four tabs at a shallower depth. Where that lab tours the surface, this one builds the measurement discipline: three ways to fill a test set, what the grader actually judges, how to read Invalid and Error apart from Fail, and the one-change-per-run rule.
 
 ## What you'll build
 
 - A Northwind Sales Assistant grounded in one reference document, running deliberately weak baseline instructions.
-- A ten-case conversation test set built three ways: AI-generated with **Quick conversation set**, uploaded from a curated CSV, and hand-written for the multi-turn case.
+- An eight-conversation test set built three ways: AI-generated with **Quick conversation set**, uploaded from a curated CSV, and hand-written for the multi-turn case.
 - A baseline run with an **Evaluation summary** score and a per-conversation **Test run result** table.
 - A per-case diagnosis that sorts every failure into a component bucket (knowledge, instructions, tool, multi-turn, test case, environment).
 - A second run of the identical set after one targeted Instructions change, with both runs recorded side by side in a scorecard workbook.
@@ -21,16 +21,16 @@ Everything you paste or upload in this lab ships in the `lab-01-evaluate-with-te
 | File | What it is |
 |------|------------|
 | `northwind-sales-reference.docx` | The knowledge source: account tiers, list prices, accounts, quoting policy, expedited delivery, and returns. Every expected answer in the test set traces back to this document. |
-| `northwind-test-set.csv` | The curated ten-case test set: six grounded-fact cases, two guardrail cases, one off-topic case, and one multi-part case. |
+| `northwind-test-set.csv` | The curated test set in the product's own template shape: seven conversations over fourteen turns, covering grounded facts, a multi-turn tier lookup, two guardrails, and one off-topic request. |
 | `agent-instructions-v1.txt` | The deliberately weak baseline Instructions. No citation rule, no refusal rules, no scope limit. |
 | `agent-instructions-v2.txt` | The tuned Instructions used for the second run, with citation, refusal, routing, and scope rules added. |
-| `evaluation-scorecard.xlsx` | Three sheets: a Run log, a per-case scorecard, and a Diagnosis buckets reference you use in Exercise 8. |
+| `evaluation-scorecard.xlsx` | A local tracking workbook: a Read me first sheet, a Run log, a per-case scorecard, and a Diagnosis buckets reference you use in Exercise 9. Never uploaded to Copilot Studio. |
 
 ## Prerequisites
 
 - A Copilot Studio environment where you can create agents (a Power Platform environment with the maker role), with the new experience turned on at [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com). Agent evaluation in the new experience is a production-ready preview, so expect the surface to keep changing.
 - The `lab-01-evaluate-with-test-sets` folder from this repository, available locally so you can upload from it.
-- A spreadsheet application to open `evaluation-scorecard.xlsx` and, if you want to edit it, `northwind-test-set.csv`.
+- A spreadsheet application to open `evaluation-scorecard.xlsx` and, if you want to edit it, `northwind-test-set.csv`. The workbook is a local tracking sheet only; the **Evaluate** tab accepts CSV and rejects `.xlsx`.
 
 > **Note:** Agents created in the new experience cannot be converted to the classic experience. If your tabs read Topics, Knowledge, Actions, and Settings, you are in classic and there is no Evaluate tab; return to the home page, turn on the **New experience** toggle, and create the agent again.
 
@@ -90,7 +90,7 @@ What is the standard lead time for a Tier 1 account, and what does a case of Org
 Give me a binding quote for 500 cases of Dark Roast Beans at 15 percent off.
 ```
 
-4. Open `evaluation-scorecard.xlsx`, go to the **Case scorecard** sheet, and write your prediction (pass or fail) for each of the ten cases in the Run 1 verdict column.
+4. Open `evaluation-scorecard.xlsx`, go to the **Case scorecard** sheet, and write your prediction (pass or fail) for each conversation in the Prediction column.
 
 Expected: the first message is answered correctly from the reference. The second is the interesting one: with the weak baseline instructions the agent will most likely attempt a discounted quote or hedge rather than refusing and routing to Sales Operations, which is exactly the failure your guardrail cases are designed to catch. Your predictions are now on record, so the baseline run either confirms your model of the agent or corrects it.
 
@@ -109,24 +109,44 @@ Expected: the **Review your test cases** list fills with ten AI-generated conver
 
 ## Exercise 5: Upload the curated test set from CSV
 
-CSV is how a test set travels: between environments, into a spreadsheet for review, and out to a subject-matter expert who will never open Copilot Studio. The curated set you are about to upload is deliberately unbalanced toward failure, with six grounded-fact cases, two guardrail cases, one off-topic case, and one multi-part case that needs two facts and a tier rule in a single answer. That mix is what a real regression set looks like.
+CSV is how a test set travels: between environments, into a spreadsheet for review, and out to a subject-matter expert who will never open Copilot Studio. The import format is conversation-shaped rather than one row per question, and understanding that shape is the point of this exercise. The curated set you are about to upload is deliberately unbalanced toward failure, with four grounded-fact conversations (one of them a three-turn tier lookup), two guardrail conversations, and one off-topic request.
+
+The template has exactly three columns, and `conversationNumber` is what does the work: every row sharing a number becomes one multi-turn test case, in file order. The `response` column is the reference answer and is optional, which matters because the grader does not compare against it anyway.
+
+```text
+"conversationNumber","question","response"
+"1","What is the standard lead time for a Tier 1 account?","Tier 1 (strategic) accounts have a standard lead time of 3 business days..."
+"1","And for a Tier 3 account?","Tier 3 (transactional) accounts have a standard lead time of 10 business days..."
+"2","How much does a case of NWT Cold Brew Concentrate cost?","A case of 12 (CB-100) has a list price of 48.00 USD..."
+```
 
 1. Return to the **Evaluate** tab and select **New evaluation** to start a fresh evaluation.
-2. In the **Data source** section, select the **CSV** link to download the official template, and open it to confirm the column headings it expects.
-3. Open `northwind-test-set.csv` from the lab folder and confirm its `Question` and `Expected response` columns line up with the template. Adjust the file to match the template if the product has changed it.
+2. In the **Data source** section, select the **CSV** link to download `EvalConversationTemplate.csv`, and open it. Read the `#` comment block at the top: it states the columns and the limits, and the rows beneath it are a worked example.
+3. Open `northwind-test-set.csv` from the lab folder and compare it against the template. It carries the same `#` comment block, the same three column headings, and the same quoting.
 4. Drag `northwind-test-set.csv` onto the upload area, or select **browse** and pick it.
 5. Review the imported conversations in the **Review your test cases** list.
 
-Expected: ten conversations appear in the list, each showing its question text and a **Total messages** count. The maximum CSV file size is 5 MB, which no realistic test set approaches.
+The limits the template states are worth writing down, because they shape how you design a set:
 
-> **Warning:** The template you download from the **CSV** link is the authority on the file format, not this guide and not a blog post. The evaluation surface is a production-ready preview and the accepted columns can change, so check the template every time you author a new import file.
+```text
+8 question-and-answer pairs max per conversation
+50 conversations max
+500 characters max per question, including spaces
+5 MB max file size
+```
+
+Expected: a green banner reads "Your file was uploaded successfully. Review your test cases or start evaluation.", and **Review your test cases (7)** lists seven conversations. Each row shows the conversation's opening question and a **Total messages** count that is twice its question-answer pair count, so the three-turn conversations read 6 and the single-turn ones read 2.
+
+> **Warning:** Upload the `.csv` only. The **Data source** area rejects `.xlsx`, so dragging `evaluation-scorecard.xlsx` here returns "The CSV file does not match the expected format. Please use the correct template." That workbook is a local tracking sheet you never upload.
+
+> **Note:** The template you download from the **CSV** link is the authority on the format, not this guide. The evaluation surface is a production-ready preview and the accepted columns can change, so check the template every time you author a new import file. The same error message appears whenever the columns do not match, including if you reach for the classic `Question` and `Expected response` layout, which this tab does not accept.
 
 ## Exercise 6: Inspect and hand-write a multi-turn conversation
 
 A conversation test case is not a single question. Opening one shows the real shape: a sequence of user questions with optional expected agent responses, which is how you test an agent that gathers context, asks a clarifying question, or slot-fills across turns. Hand-writing one case teaches the structure that the CSV and the generator both hide from you.
 
 1. In the **Review your test cases** list, select any conversation to open the **Review and edit** dialog.
-2. Read the structure: a right-aligned user question bubble, an **Agent** entry with a **Reference** label, and a `+ Add a response.... (optional)` line beneath it. Note the counter in the bottom corner showing how many question-answer pairs the conversation holds out of a maximum of six.
+2. Read the structure: a right-aligned user question bubble, an **Agent** entry with a **Reference** label, and a `+ Add a response.... (optional)` line beneath it. Note the counter in the bottom corner showing how many question-answer pairs the conversation holds.
 3. Close the dialog, then select **Add conversations** and choose **Write** to create a new conversation.
 4. Open the new row and build a two-turn case using the text below, adding the first user question, then a second user question beneath it.
 
@@ -140,7 +160,7 @@ Turn 2 expected response: The assistant states that Blauer See Delikatessen is T
 
 5. Select **Done** to close the dialog.
 
-Expected: the new conversation shows a **Total messages** count reflecting both turns, and the set now holds eleven cases. The conversation cannot exceed six question-answer pairs, which is a real design constraint: a test case is a focused scenario, not a full transcript.
+Expected: the new conversation shows a **Total messages** count of 4 (two question-answer pairs), and the set now holds eight cases. A conversation is capped at eight question-answer pairs, which is a real design constraint: a test case is a focused scenario, not a full transcript.
 
 > **Note:** Expected responses are optional here and worth writing anyway. They document what "correct" means for the humans who read and maintain the set, and they are what travels in the CSV. Exercise 7 explains why they do not drive the score in this experience.
 
@@ -150,7 +170,7 @@ The **Configure test set** panel is small and easy to skip, and skipping it is h
 
 1. In the **Configure test set** panel on the right, set **Name** to `Northwind regression set`.
 2. Read the **Data type** label above it. It reads `Data type: Conversation`, which is the only test set type available in this experience.
-3. Read the **Test method** card. It shows **General quality**, described as responses meeting quality standards such as relevance and completeness, and it states plainly that it does not compare to expected responses.
+3. Read the **Test method** card. It shows **General quality**, described as responses meeting quality standards such as relevance and completeness, and it states plainly that it does not compare to expected responses. Test methods are not carried in the CSV, and **General quality** is applied by default to any imported set.
 4. Under **User profile**, select **Manage** and confirm the profile that will run the evaluation, checking that its connections show as ready.
 5. Select **Save** to store the test set without running it yet.
 
@@ -162,7 +182,7 @@ Expected: the panel shows the name `Northwind regression set`, the `Data type: C
 
 ## Exercise 8: Run the baseline and read both levels of the result
 
-Running the set turns eleven cases into an objective baseline you can point at instead of arguing from a demo. Read the result at two levels, because they answer different questions: the summary tells you overall health, and the per-conversation table tells you which behavior to change. A maker who only reads the summary score learns a number and fixes nothing.
+Running the set turns eight cases into an objective baseline you can point at instead of arguing from a demo. Read the result at two levels, because they answer different questions: the summary tells you overall health, and the per-conversation table tells you which behavior to change. A maker who only reads the summary score learns a number and fixes nothing.
 
 1. With `Northwind regression set` selected, choose **Evaluate** to start the run.
 2. Wait for it to finish. A set of this size takes several minutes.
@@ -249,7 +269,9 @@ Expected: the second run is stored as a separate result next to the first, the g
 |---------|--------------|-----|
 | There is no **Evaluate** tab and the tabs read Topics, Knowledge, Actions, Settings | The agent was created in the classic experience | Return to the home page, turn on the **New experience** toggle, and recreate the agent; a new-experience agent cannot be converted from classic |
 | **Save** and **Evaluate** are both greyed out | The test set has no cases yet, or the **Name** field is empty | Add at least one conversation and enter a **Name** in the **Configure test set** panel |
-| The CSV upload is rejected or imports nothing | The file's columns do not match the current template, or it exceeds 5 MB | Download the template from the **CSV** link, match its headings exactly, and re-upload |
+| "The CSV file does not match the expected format. Please use the correct template." | The file is not a CSV at all (for example the `.xlsx` scorecard), or its columns are not `conversationNumber`, `question`, `response` | Upload `northwind-test-set.csv`, never the workbook. Download `EvalConversationTemplate.csv` from the **CSV** link and match its three headings exactly |
+| The import succeeds but every row became its own test case | Each row carries a different `conversationNumber`, so nothing was grouped | Give every turn of one scenario the same `conversationNumber`, in the order the turns should run |
+| A conversation is rejected or truncated | It exceeds 8 question-answer pairs, the file exceeds 50 conversations, or a question exceeds 500 characters | Split the scenario into two conversations, or shorten the question |
 | Grounded-fact cases fail even though **Preview** answers them correctly | The knowledge source was still processing when the run started | Confirm the source shows ready on the **Build** tab, then re-run |
 | A wrong answer passed the grader | **General quality** judges quality standards and does not compare to your expected response | Read the agent's actual response rather than trusting the verdict alone, and use the classic Evaluation page when you need a comparing grader |
 | Cases come back **Invalid** rather than Pass or Fail | The case is missing an input the grader needs | Open the case and supply the missing question or response content |
@@ -262,7 +284,7 @@ Expected: the second run is stored as a separate result next to the first, the g
 You have met the lab goal when all of the following are true:
 
 1. The agent is grounded in `northwind-sales-reference.docx` and the source shows ready on the **Build** tab.
-2. `Northwind regression set` holds eleven conversation cases, including the hand-written two-turn expedited-delivery case.
+2. `Northwind regression set` holds eight conversation cases, including the hand-written two-turn expedited-delivery case.
 3. The **Run log** sheet records two runs of the identical set with exactly one change between them.
 4. The **Case scorecard** sheet holds a verdict for every case in both runs, with a diagnosis bucket on each baseline failure.
 5. At least one guardrail or off-topic case flipped from fail to pass, and you can name the instruction line that caused it.

@@ -65,7 +65,18 @@ The new tab offers three entry points, and they are good at different things rat
 
 **Quick conversation set** generates ten conversations from the agent's own description, instructions, and topics. It is the fastest route to breadth and it is structurally blind to the guardrails you never wrote down, because it reads the same instructions the agent answers from. Use it to discover scenarios and to grow a set you already trust, never to author one from nothing.
 
-A CSV upload is how a test set travels. It moves between environments, gets reviewed in a spreadsheet by someone who will never open Copilot Studio, and survives an agent being rebuilt. The **CSV** link on the **Data source** panel downloads the template that defines the accepted format, and that template is the authority rather than any guide, because the surface is a production-ready preview and the format can change.
+A CSV upload is how a test set travels. It moves between environments, gets reviewed in a spreadsheet by someone who will never open Copilot Studio, and survives an agent being rebuilt. The **CSV** link on the **Data source** panel downloads `EvalConversationTemplate.csv`, and that template is the authority rather than any guide, because the surface is a production-ready preview and the format can change.
+
+The new-experience template is conversation-shaped, which catches out anyone carrying the classic single-question layout across. It has three columns (`conversationNumber`, `question`, `response`), and every row sharing a conversation number becomes one multi-turn test case in file order. The `response` column is a reference answer and is optional, since the grader does not compare against it. Its stated limits are 8 question-answer pairs per conversation, 50 conversations, 500 characters per question, and a 5 MB file.
+
+```text
+"conversationNumber","question","response"
+"1","What is the standard lead time for a Tier 1 account?","Tier 1 accounts have a standard lead time of 3 business days."
+"1","And for a Tier 3 account?","Tier 3 accounts have a standard lead time of 10 business days."
+"2","How much does a case of Cold Brew Concentrate cost?","A case of 12 lists at 48.00 USD."
+```
+
+Test methods are not carried in the file, and **General quality** is applied by default to an imported set.
 
 Writing questions by hand is the only way to get the cases that hurt: the refusal, the off-topic request, the multi-turn exchange where the agent has to ask which account before it can answer. A set built only from generation confirms your assumptions; a set with hand-written guardrails challenges them.
 
