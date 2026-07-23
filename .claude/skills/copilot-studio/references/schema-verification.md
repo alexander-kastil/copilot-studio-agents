@@ -8,12 +8,41 @@ Work down this ladder. Stop at the highest tier that answers the question.
 
 | Tier | Source | Answers | Trust |
 | --- | --- | --- | --- |
-| 1 | Language server binary (below) | Exact tokens, node kinds, validator rules | Definitive |
+| 1 | Language server binary, or a template the product itself generates (below) | Exact tokens, node kinds, validator rules, import file formats | Definitive |
 | 2 | A working `.mcs.yml` in this repo, or one exported from Copilot Studio | Full node shape, property names, nesting | High |
-| 3 | Microsoft Learn | Concepts, behavior, channel limits, base types | High for prose, silent on tokens |
+| 3 | Microsoft Learn | Concepts, behavior, channel limits, base types | High for prose, silent on tokens, and split across two surfaces |
 | 4 | Blogs, forum posts, search summaries | Hints only | Never authoritative |
 
 Tier 4 actively misleads. Searching for the date entity returned confident claims for both `DatePrebuiltEntity` and `DateTimePrebuiltEntity`; both strings exist, but they are different entities, and only tier 1 disambiguates them.
+
+## Tier 1 also means: the template the product hands you
+
+Any file the product generates for you to fill in is tier 1, exactly like the language server's string table. A downloadable template, an export, or a schema endpoint states the contract the importer actually enforces, which is the thing you need.
+
+The trap is treating your own written caveat as if it were verification. Shipping a companion asset built from documentation while the guide says "check the downloaded template, it is the authority" is not verification; it is deferring your unfinished work to the learner. The evaluations lab did exactly this and shipped a CSV in the classic column layout, which the new experience rejects with `The CSV file does not match the expected format. Please use the correct template.` **Get the template first, then author the asset against it.**
+
+When the download is generated client-side (a `<button>` with no `href` that builds a Blob), you can read it without saving a file:
+
+```javascript
+const oc = URL.createObjectURL;
+URL.createObjectURL = function (b) { window.__capBlob = b; return oc.call(URL, b); };
+HTMLAnchorElement.prototype.click = function () {};
+// click the product's download control, then:
+const text = await window.__capBlob.text();
+```
+
+Split the text into lines and read it in slices rather than as one string, which also avoids tripping content filters on large blobs.
+
+## Tier 3 caveat: Learn documents two Copilot Studio surfaces
+
+Classic and the new agent experience have separate, near-identically titled documentation trees, and search interleaves them with no visual tell. The URL path is the only reliable signal:
+
+| Path | Surface |
+| --- | --- |
+| `learn.microsoft.com/microsoft-copilot-studio/<page>` | Classic |
+| `learn.microsoft.com/microsoft-copilot-studio/agents-experience/<page>` | New agent experience |
+
+Both trees carry pages called "Evaluate an agent", "Create a test set for an agent", and "Run an evaluation". They describe genuinely different features: classic offers seven per-case graders (General quality, Compare meaning, Tool use, Keyword match, Text similarity, Exact match, Custom) and two test set types, while the new experience offers one **General quality** method applied per set and conversation test sets only. Mixing them produces confident, wrong guidance, such as telling a maker to pick a `Tool use` grader on a tab that has no grader picker. Check the path segment before quoting a Learn page, and say which surface the fact came from.
 
 ## Tier 1: the language server binary
 
