@@ -10,8 +10,11 @@ They look similar and are not interchangeable. Power Apps YAML describes control
 src/agents/<Agent Name>/
 ├── agent.mcs.yml                 # main agent definition
 ├── settings.mcs.yml              # configuration
+├── connectionreferences.mcs.yml  # connection references used by connectors
 ├── topics/*.mcs.yml              # conversation topics (AdaptiveDialog)
 ├── actions/*.mcs.yml             # tools and connectors
+├── workflows/<name>/             # metadata.yaml + workflow.json
+├── trigger/*.mcs.yml             # event triggers
 ├── knowledge/files/              # knowledge sources
 ├── icon.png
 └── .mcs/botdefinition.json       # GENERATED bundle, never hand-edit

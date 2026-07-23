@@ -1,11 +1,11 @@
 # Lessons
 
-> Distributed into the `create-class` skills (local): nested-peers + MS-Learn-validation + "Microsoft Foundry" naming + teachings=learning -> master `SKILL.md` cross-cutting rules and `create-teaching`; link-fix-after-move + lab-01 migration -> `create-guide`; deck#=module + three-asset sync + split-deck-per-module -> `create-slides`; three-asset drift -> `dashboard`; COM/python-pptx deck editing -> `create-slides/references/*`. Entries below are the source log.
+> Distributed into the `create-class` skill (local `references/*.md`): leaf-layout + MS-Learn-validation + "Microsoft Foundry" naming + teachings=learning -> master `SKILL.md` cross-cutting rules and `create-teaching`; link-fix-after-move + lab-01 migration -> `create-guide`; deck#=module + three-asset sync + split-deck-per-module -> `references/create-slides.md`; three-asset drift -> `references/dashboard.md`; COM/python-pptx deck editing -> `references/edit-existing-pptx.md`. Entries below are the source log.
 
 ## Skills
 
 - **Cowork skill authoring is now owned by the `create-cowork-skill` skill (local + global).** It holds the validated frontmatter contract, limits, companion-file rules, three-layer loading, and the run-and-tune loop. Read it before writing any `SKILL.md` example into course content; do not re-derive the format from memory or from a single MS Learn page.
-- **create-class peer subskills are nested, not top-level.** They live at `.claude/skills/create-class/<peer>/SKILL.md`. `Skill <peer>` returns "Unknown skill". Use a peer by reading its file. Never propose promoting them to top-level; the user rejected this firmly.
+- **`create-class` leaves are `references/*.md`, never nested subskills.** The skill holds ONE root `SKILL.md` (the router) and every leaf is a plain `references/<leaf>.md` with no frontmatter. `Skill <leaf>` returns "Unknown skill"; use a leaf by READING its file. The local copy previously used nested `<peer>/SKILL.md` folders, which tripped 9 lint errors and drifted from global; it was removed in `b0b051d` and pulled fresh from global in the correct layout. Never propose promoting a leaf to a top-level skill; the user rejected that firmly.
 
 ## Course content accuracy
 
@@ -16,7 +16,7 @@
 
 ## Verifying a live product surface
 
-> Distributed: ladder extension + Learn classic-vs-new trap -> `copilot-studio/references/schema-verification.md`; template-first authoring -> `create-class` `create-guide` ("Run-verify first"); blob capture + write-path verification -> `create-class` `run-guide-browser`. Entries below are the source log.
+> Distributed: ladder extension + Learn classic-vs-new trap -> `copilot-studio/references/schema-verification.md`; template-first authoring -> `create-class/references/create-guide.md` ("Run-verify first"); blob capture + write-path verification -> `create-class/references/run-guide-browser.md`. Entries below are the source log.
 
 - **A caveat in prose is not verification; get the artifact.** The evaluations lab shipped a `northwind-test-set.csv` built from the *classic* documented columns (`Question`, `Expected response`), while the guide itself told the learner "the downloaded template is the authority, check it every time". The user hit `The CSV file does not match the expected format` twice. The template was one click away in a browser that was already open and already driven this session. **When a companion asset must match a product-defined schema, obtain the schema before authoring the asset.** Writing "verify this yourself" into the guide is not a substitute for verifying it, and it pushes your unfinished work onto the learner.
 - **Microsoft Learn ships two parallel doc sets for Copilot Studio, and their titles are nearly identical.** Classic lives at `learn.microsoft.com/microsoft-copilot-studio/analytics-agent-evaluation-*`; the new experience lives at `.../microsoft-copilot-studio/agents-experience/analytics-agent-evaluation-*`. Both carry pages called "Create a test set for an agent" and "Evaluate an agent", and MCP search interleaves them with no visual tell. Read the URL path segment: `agents-experience/` means new experience. This trap produced two separate defects: a pre-existing lab telling learners to set per-case `Tool use` and `Keyword match` graders that do not exist in the new UI, and the wrong CSV format.

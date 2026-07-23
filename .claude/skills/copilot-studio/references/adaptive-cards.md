@@ -81,7 +81,7 @@ Copilot Studio supports schema 1.6 and earlier, but the ceiling is set by the *h
 
 ## What you give up by replacing a Question with a card
 
-A `Question` node with a prebuilt entity does natural-language extraction and participates in slot filling. A card input does neither: the user types into a form field and the raw value is stored verbatim. Swapping a Question for a card trades NLU and proactive slot filling for a structured, validated form. That is usually the right trade for multi-field data entry and the wrong one for a single conversational value.
+A `Question` node with a prebuilt entity does natural-language extraction and participates in slot filling. A card input does neither: the user types into a form field and the raw value is stored verbatim. Swapping a Question for a card trades NLU and proactive slot filling for a structured, validated form. That is usually the right trade for multi-field data entry and the wrong one for a single conversational value. Say so when making the swap rather than presenting it as a pure upgrade.
 
 ## Consecutive cards
 

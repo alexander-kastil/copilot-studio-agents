@@ -20,6 +20,8 @@ Exact command ids, from the extension's `package.json`. All are reachable via `C
 | Copilot Studio: Show Session Info | `microsoft-copilot-studio.sessionInfo` |
 | Help: Copilot Studio: Report Issue | `microsoft-copilot-studio.reportIssue` |
 
+**These are VS Code commands with no CLI equivalent.** An agent/automation cannot run them; `pac` CLI covers solution import/export, not this live-sync model. When a user asks to "sync the agent back," the correct move is to run the pre-flight checks and then hand them the exact palette command, not to claim it was done.
+
 Use the extension's own **Report Issue** command rather than VS Code's generic one; it attaches diagnostic session data.
 
 ## Apply lives in the Agent Changes view, not the palette
@@ -66,7 +68,7 @@ Four rules that matter more than the rest:
 - **Apply is not Publish.** It updates the agent in the environment but does not publish it to channels. Test afterward in the Copilot Studio test pane.
 - **Apply is blocked while unretrieved remote changes exist.** The icon and command are disabled until you Get. This is a guardrail, not a bug.
 - **Get overwrites uncommitted local work.** Commit to Git *before* running Get, always.
-- **Apply hits the live agent instantly.** There is no staging step, so treat it like a deploy.
+- **Apply hits the live agent instantly.** There is no staging step, so treat it like a deploy and confirm before triggering it on someone's behalf.
 
 Conflicts (a component changed both locally and remotely) surface during Get: you choose to revert to your local version or keep the remote "latest change." If you dismiss the dialog, reopen it with the **Open Changes** icon on the highlighted component.
 
@@ -79,6 +81,18 @@ Preview at the start of a session, before major changes, and periodically (every
 - **Problems pane is clean** (see [`schema-verification.md`](schema-verification.md)).
 - Work committed to Git.
 - You have permission to modify the agent.
+
+## Is this folder attached?
+
+`.mcs/conn.json` holds the binding and is the fastest way to check without opening VS Code:
+
+```bash
+cat "src/agents/<Agent Name>/.mcs/conn.json"
+```
+
+It carries `EnvironmentId`, `EnvironmentDisplayName`, `AgentId`, `DataverseEndpoint`, and the signed-in `AccountEmail`. If it is present and names the expected environment, the folder is attached and Preview/Get/Apply will work. If it is missing (the normal case here, because these agents arrived via `git clone` rather than a Copilot Studio clone), run **Reattach Agent** first.
+
+Sibling files in `.mcs/`: `changetoken.txt` (remote sync watermark) and `botdefinition.json` (a generated bundle that embeds the topic YAML verbatim). The extension diffs working files against these to compute "local changes", which is why an edited `.yml` shows as a pending change while `botdefinition.json` still holds the old text. That is expected; never hand-edit either file.
 
 ## Reattach: the command that makes the repo work
 
