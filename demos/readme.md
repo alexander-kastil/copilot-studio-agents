@@ -110,16 +110,6 @@ Finally, you design and implement real business processes with human-in-the-loop
 - Building Apps in Copilot Studio
 - Capstone Lab: Building a Sales Account Assistant in the New Experience
 
-### Module 7: Designing & Implementing Business Processes
-
-- Defining Scenarios & Envisioning
-- Mapping Scenarios to Capabilities
-- Designing Conversation Flows
-- Human in the Loop
-- Evaluate Agents & Processes
-- Analytics And Application Insights
-- Troubleshooting and Analyzing Conversations
-
 ### Module 8: Publishing & Maintaining Copilot Studio Agents
 
 - PowerPlatform Admin Center & Architecture
