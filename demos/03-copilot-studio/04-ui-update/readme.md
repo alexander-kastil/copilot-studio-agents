@@ -13,6 +13,8 @@ Treat classic as the primary teaching track and the new experience as guided dem
 | [Test and Evaluate Copilot Studio Agents](03-evaluations/readme.md) | Test sets and graders on both surfaces, the Evaluate tab in the new experience, diagnosing a failing case, and post-release analytics from thumbs to CSAT to themes |
 | [Agent Skills in Copilot Studio](04-agent-skills/readme.md) | The Agent Skills open format, `SKILL.md`, and importing Claude Code or GitHub Copilot skills |
 | [Tools, MCP, and the New Workflows Designer](05-workflows-and-mcp/readme.md) | Connectors, MCP servers, and the new node-by-node workflows designer with agent nodes |
+| [Grounding Agents with Work IQ, Foundry IQ, and Fabric IQ](06-iq-grounding/readme.md) | What each IQ grounds on, how it is added in the new experience, and how to choose between Work IQ, Foundry IQ, and Fabric IQ |
+| [Building Apps in Copilot Studio](07-apps/readme.md) | Apps generated from a description beside agents and workflows: refining by conversation, publish versus share, and data access |
 
 ## Demos
 
@@ -22,6 +24,8 @@ Treat classic as the primary teaching track and the new experience as guided dem
 | [The Unified Build Surface and the New Orchestrator](02-unified-build-and-orchestrator/readme.md) | [Trace the Agentic Reasoning Loop](02-unified-build-and-orchestrator/demo-02-trace-agent-reasoning.md) |
 | [Agent Skills in Copilot Studio](04-agent-skills/readme.md) | [Add and Tune an Agent Skill](04-agent-skills/demo-03-add-a-reusable-skill.md) |
 | [Tools, MCP, and the New Workflows Designer](05-workflows-and-mcp/readme.md) | [Connect an MCP Server and Automate with a Workflow](05-workflows-and-mcp/demo-04-connect-mcp-and-workflow.md) |
+| [Grounding Agents with Work IQ, Foundry IQ, and Fabric IQ](06-iq-grounding/readme.md) | [Ground an Agent in Your Work Context with Work IQ](06-iq-grounding/demo-05-ground-with-iq.md) |
+| [Building Apps in Copilot Studio](07-apps/readme.md) | [Build an App from a Description](07-apps/demo-06-build-an-app.md) |
 
 ## Labs
 
@@ -32,6 +36,8 @@ Treat classic as the primary teaching track and the new experience as guided dem
 | [Evaluate a New-Experience Agent with Test Sets](../../../labs/03-copilot-studio/04-ui-update/03-evaluations/lab-01-evaluate-with-test-sets.md) | Fill a conversation test set three ways, run a baseline, diagnose each failure into a component bucket, change one thing, and prove the fix with a second run |
 | [Package Team Knowledge into a Portable Skill](../../../labs/03-copilot-studio/04-ui-update/04-agent-skills/lab-01-portable-skill.md) | Author a `SKILL.md`, reuse it across two agents, and contrast with classic topics |
 | [Build a Sales Account Assistant in the New Experience](../../../labs/03-copilot-studio/04-ui-update/05-workflows-and-mcp/lab-01-sales-account-assistant.md) | Capstone: build, ground, tool up, skill, and publish a new-experience agent end to end |
+| [Ground an Agent with Work IQ and Route Work Questions to It](../../../labs/03-copilot-studio/04-ui-update/06-iq-grounding/lab-01-ground-with-iq.md) | Add Work IQ to a new-experience agent, route work-context questions to it in Instructions, and verify the routing in the activity trace |
+| [Build and Share a Business App](../../../labs/03-copilot-studio/04-ui-update/07-apps/lab-01-build-an-app.md) | Connect a generated app to a SharePoint list, publish and share it with a classmate, and confirm that data access is a separate permission |
 
 ## Classic to new quick reference
 

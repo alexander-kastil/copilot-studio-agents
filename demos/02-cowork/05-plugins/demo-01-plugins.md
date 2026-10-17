@@ -4,7 +4,7 @@ Install a real community plugin, the `dietitian` plugin, and combine its two cli
 
 ## Related Topics
 
-This demo builds on [Understanding Skills](../02-built-in-skills/readme.md), which explains how Cowork activates skills automatically from the side panel. It uses the open `SKILL.md` format introduced in [Creating Custom Skills](../03-custom-skills/readme.md), the same format a plugin ships. It puts into practice the sideloading and App Store paths described in [Extending Cowork with Plugins](./readme.md).
+This demo builds on [Understanding Skills](../02-built-in-skills/readme.md), which explains how Cowork activates skills automatically from the side panel. It uses the open `SKILL.md` format introduced in [Creating Custom Skills](../03-custom-skills/readme.md), the same format a plugin ships. It puts into practice the upload and Discover paths described in [Extending Cowork with Plugins](./readme.md).
 
 ---
 
@@ -32,7 +32,7 @@ Point Cowork at the `demo-01-plugins` folder.
 
 ## Load the demo files
 
-In Microsoft 365 Copilot Cowork, start a new task, click **+**, and attach `client-intake.docx` from the `demo-01-plugins` folder. Keep it attached through the assessment and handout steps.
+In Microsoft Copilot with **Cowork** selected in the top toggle, start a new task, click **+**, and attach `client-intake.docx` from the `demo-01-plugins` folder. Keep it attached through the assessment and handout steps.
 
 ---
 
@@ -45,13 +45,14 @@ In Microsoft 365 Copilot Cowork, start a new task, click **+**, and attach `clie
 The plugin is packaged as a Microsoft 365 / Teams app, not a single file: it is a `manifest.json` plus icon PNGs and a `skills/` folder that holds the two agent skills. That package shape decides how you install it. Work through these options in order:
 
 - Download the `dietitian` folder from the repository.
-- Zip the `manifest.json` together with its icon assets so you have a valid app package.
-- Upload that package as a custom Microsoft 365 app, through the Microsoft 365 or Teams admin, then add it to Cowork.
-- If the plugin is published to the Microsoft 365 App Store, install it from there instead with **Add**, which skips the manual packaging.
+- Zip `manifest.json`, the icon PNGs and the `skills/` folder into one `.zip`.
+- In Cowork, open **Customize** > **Plugins** > **Upload plugin** and pick the zip.
+- In the **Share** dialog, choose **Only you** > **Apply**.
+- If the plugin is listed in **Discover**, select it and **Add** instead.
 
-**Finding:** Uploading a custom app usually requires admin permission to sideload, so confirm your tenant allows custom app uploads before you start, or ask your IT admin to add the package for you. If custom uploads are blocked and the plugin is not yet in the App Store, that is your gate to clear first, not a Cowork problem.
+**Finding:** Uploading a plugin for yourself needs no admin; only org-wide sharing waits for admin approval. If the upload is blocked, the tenant has blocked that plugin or uses Purview Information Barriers, which currently block plugin and skill uploads, so that is the gate to clear with IT.
 
-**Expected Outcome:** After installing, starting a new task shows the plugin's two skills, `clinical-nutrition` and `dietary-communication`, available to Cowork. When a task matches their descriptions, they appear in the side panel alongside your built-in skills.
+**Expected Outcome:** The plugin shows under **Installed**, its two skills are on in **Sources & Skills**, and in a new task `clinical-nutrition` and `dietary-communication` appear as chips in the side panel when the task matches their descriptions.
 
 ---
 

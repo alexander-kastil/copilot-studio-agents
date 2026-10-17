@@ -88,7 +88,7 @@ Write me a short mapping table with one row per card: card number, card name, wh
 
 Create a `SKILL.md` file in your OneDrive at `Documents/Cowork/skills/product-pitch/SKILL.md`, place a copy of `pitch-deck-structure.pptx` in the same folder, and paste this as the file contents:
 
-To skip the typing, copy the whole `product-pitch` folder from `demo-01-product-pitch-skill` into `Documents/Cowork/skills/` instead: it already holds the `SKILL.md` below and its companion deck. Author it by hand at least once, though, since the wording is what you tune in Step 5.
+To skip the typing, copy the whole `product-pitch` folder from `demo-01-product-pitch-skill` into `Documents/Cowork/skills/` instead: it already holds the `SKILL.md` below and its companion deck. Or zip the contents of that folder, with `SKILL.md` at the root of the archive, and upload it through the arrow next to **Add** in **Customize** > **Skills**, then **Upload skill**. Author it by hand at least once, though, since the wording is what you tune in Step 5.
 
 ```text
 ---
@@ -116,7 +116,7 @@ Never invent pricing, order tiers, assortment, or terms. The product and The off
 Keep every card to three short bullets or fewer. Save the finished deck as a PowerPoint file titled with the range name and the season.
 ```
 
-**Finding:** Cowork discovers custom skills at the start of each conversation, so start a new task after saving and confirm Product Pitch is listed. The `name` is kebab-case and matches its folder exactly, which is what the Agent Skills format requires; a mismatch between folder and name is the most common reason a skill fails to load. The `description` is the only part Cowork reads when deciding whether the skill applies, so check that yours names the trigger phrases you would actually type.
+**Finding:** Cowork discovers custom skills at the start of each conversation, so start a new task after saving and confirm Product Pitch is listed. The `name` is kebab-case and matches its folder exactly, which is what the Agent Skills format requires; a mismatch between folder and name is the most common reason a skill fails to load. The `description` is the only part Cowork reads when deciding whether the skill applies, so check that yours names the trigger phrases you would actually type. If Cowork returns a **Skill Report** for the skill, start with its lowest-scoring dimension.
 
 **Expected Outcome:** A `SKILL.md` saved at `Documents/Cowork/skills/product-pitch/` with the structure deck beside it as a companion file, listed as an available custom skill in a new task.
 
@@ -160,7 +160,7 @@ In the same task, send:
 Look at my Product Pitch skill description and instructions. Which pitch requests phrased the way I actually talk would fail to trigger it? And which instruction let through the weak claims we just found? Suggest a tighter description and the specific instruction changes that would fix both.
 ```
 
-**Finding:** A good answer points to natural phrasings the description misses, such as asking for a partner deck or a range presentation without saying pitch, and it ties each weak claim back to the instruction that permitted it. Usually the fix is to make the sourcing rule refuse rather than soften, and to name the confidential sections that must never travel onto a card. Fold both into the `SKILL.md`.
+**Finding:** A good answer points to natural phrasings the description misses, such as asking for a partner deck or a range presentation without saying pitch, and it ties each weak claim back to the instruction that permitted it. Usually the fix is to make the sourcing rule refuse any claim it cannot cite, and to name the confidential sections that must never travel onto a card. Fold both into the `SKILL.md`, then read the **Skill Report** Cowork returns for it: the lowest-scoring dimension shows what to fix, and a low **Trigger clarity** usually points at the description.
 
 **Recipe:**
 

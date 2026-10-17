@@ -41,8 +41,12 @@ Apply the full ruleset in [references/rules.md](references/rules.md). In short:
 
 ## How to run
 
-1. Read the target file(s).
-2. Check each rule against the content. Parallelize reads across multiple files.
+1. Run the mechanical checks for rules 1 to 3 first:
+   `python -I .claude/skills/brand-voice-copilot/scripts/check.py --paths <files or folders>`.
+   It skips fenced code (any fence length), prints one `file: rule: excerpt` line per
+   violation and ends with `files=N em_dash=N mermaid_newline=N over_cap=N`; exit 1 means
+   something to fix. Rules 4 and 5 stay manual.
+2. Read the target file(s) and check the remaining rules. Parallelize reads across multiple files.
 3. Fix violations in place with minimal diffs. Do not rewrite a section to fix a
    single em dash.
 4. Report each fix as `file:rule` so the change is auditable.

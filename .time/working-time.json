@@ -1,0 +1,88 @@
+{
+  "repo": "m365-pilot",
+  "origin": "https://github.com/alexander-kastil/low-code-agents",
+  "sessions": [
+    {
+      "date": "2026-10-17",
+      "from": "19:58",
+      "to": "20:53",
+      "sessionId": "69c6c996-3b23-4313-babc-8b8b052e90b1",
+      "branch": "okt-2026-update",
+      "commits": [],
+      "surfaces": ["m365-pilot"],
+      "files": [
+        "assets/findings-okt-2026.md",
+        "demos/02-cowork/readme.md",
+        "demos/02-cowork/04-automation/readme.md",
+        "labs/02-cowork/lab-03-cowork-plugins.md",
+        ".claude/skills/brand-voice-copilot/scripts/check.py",
+        ".claude/skills/copilot-cowork/scripts/mcp-tool-description.sh"
+      ],
+      "mechanism": {
+        "takes": "a published training module, the vendor's current documentation and recent announcements",
+        "does": "re-verifies every product claim against first-party sources, settles conflicting sources against the published schema or the live product, then rewrites each topic guide, demo and lab from one verified fact sheet",
+        "returns": "a training module and its labs that match the current product, plus a dated findings record of what changed and what stayed unconfirmed"
+      },
+      "portsAsIs": [
+        "parallel research slices merged into one verified fact sheet",
+        "one editor per topic folder bound to the fact sheet",
+        "mechanical style and link checks before delivery"
+      ],
+      "perCustomer": [
+        "the product the course teaches",
+        "the course's house style rules"
+      ],
+      "evidence": [
+        "assets/findings-okt-2026.md",
+        "link-check demos/02-cowork: files=16 links=103 broken=0",
+        "link-rot demos/02-cowork: urls=29 ok=29 broken=0",
+        "brand-voice check demos/02-cowork and labs/02-cowork: files=20 em_dash=0 mermaid_newline=0 over_cap=0",
+        "admin center plugin upload path read live: Agents > Tools > Registry > Upload"
+      ],
+      "toolchain": {
+        "skills": ["create-class", "brand-voice-copilot", "copilot-cowork", "report-plugin:report", "learn-loop-plugin:claude-learn"],
+        "mcpServers": ["microsoft-learn", "claude-in-chrome", "claude_ai_Mermaid_Chart"],
+        "agents": ["subagent-delegation-plugin:fact-gatherer", "docs-agent", "fork"]
+      },
+      "industry": "technical training and enablement",
+      "status": "Built and running in-house",
+      "catalogue": { "action": "none" }
+    },
+    {
+      "date": "2026-10-17",
+      "from": "20:27",
+      "to": "21:03",
+      "sessionId": "ef287bc1-b8ca-409d-8f6a-17aa79567c99",
+      "branch": "okt-2026-update",
+      "commits": [],
+      "surfaces": ["m365-pilot"],
+      "files": [
+        "tasks/lessons.md"
+      ],
+      "mechanism": {
+        "takes": "a training module folder, a cut-off date and an earlier dated findings snapshot",
+        "does": "inventories every topic file, fans the product research out to parallel read-only researchers per topic plus one researcher for dated announcements, and merges their reports against the snapshot",
+        "returns": "a per-topic inventory and a dated list of what the vendor shipped or changed since the snapshot, with conflicting sources named"
+      },
+      "portsAsIs": [
+        "one read-only researcher per topic folder plus one dated-news researcher",
+        "an earlier findings snapshot recovered from the git index as the baseline"
+      ],
+      "perCustomer": [
+        "the product the course teaches",
+        "what the course owner counts as new teaching content"
+      ],
+      "evidence": [
+        "four researcher reports merged in session; the user then redirected the research to new teachings only"
+      ],
+      "toolchain": {
+        "skills": ["create-class", "report-plugin:report", "learn-loop-plugin:claude-learn"],
+        "mcpServers": [],
+        "agents": ["subagent-delegation-plugin:fact-gatherer", "fork"]
+      },
+      "industry": "technical training and enablement",
+      "status": "Built and running in-house",
+      "catalogue": { "action": "none" }
+    }
+  ]
+}

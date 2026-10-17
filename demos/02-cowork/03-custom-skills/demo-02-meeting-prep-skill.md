@@ -4,7 +4,7 @@ Author a custom `SKILL.md` that turns Cowork into a repeatable meeting-brief wri
 
 ## Related Topics
 
-This demo builds on [Understanding Skills](../02-built-in-skills/readme.md), which explains how Cowork picks a skill for a task and why a clear description matters, and on [Creating Custom Skills](./readme.md), which introduces the `SKILL.md` file and companion files you author here. Once the skill is reliable, [Scheduling Prompts & Recurring Automation](../04-automation/readme.md) shows how to put it on a recurring schedule so the prep happens before you even open your calendar.
+This demo builds on [Understanding Skills](../02-built-in-skills/readme.md), which explains how Cowork picks a skill for a task and why a clear description matters, and on [Creating Custom Skills](./readme.md), which introduces the `SKILL.md` file and companion files you author here. Once the skill is reliable, [Scheduled Prompts & Event-Driven Tasks](../04-automation/readme.md) shows how to put it on a recurring schedule so the prep happens before you even open your calendar.
 
 ---
 
@@ -83,7 +83,9 @@ Fill every section of the template in order:
 Keep the brief to one page. Replace every bracketed placeholder with real detail from my sources. Where a section needs my judgement, draft a first version I can adjust rather than leaving it blank. Save the finished brief as a Word document titled with the attendee name and meeting date.
 ```
 
-**Finding:** Cowork discovers custom skills at the start of each conversation, so start a new task after saving the file and check that Meeting Prep is listed. The `description` is what Cowork reads to decide when the skill applies, so confirm yours names the situation and the trigger phrases rather than staying generic. If Cowork does not find the skill, verify the file is named exactly `SKILL.md` inside its own subfolder with the template beside it.
+To upload instead, zip the contents of the `meeting-prep` folder, with `SKILL.md` at the root of the archive, and use the arrow next to **Add** in **Customize** > **Skills** to choose **Upload skill**.
+
+**Finding:** Cowork discovers custom skills at the start of each conversation, so start a new task after saving the file and check that Meeting Prep is listed. The `description` is what Cowork reads to decide when the skill applies, so confirm yours names the situation and the trigger phrases rather than staying generic. If Cowork does not find the skill, verify the file is named exactly `SKILL.md` inside its own subfolder with the template beside it. If Cowork returns a **Skill Report** for the skill, start with its lowest-scoring dimension.
 
 **Expected Outcome:** A `SKILL.md` saved in your OneDrive skills folder, with the template as its companion file, that Cowork lists as an available custom skill in a new task.
 
@@ -119,7 +121,7 @@ In the same task, send:
 Look at my Meeting Prep skill description and instructions. Which meeting requests would fail to trigger it, and which template sections came out weakest in the brief you just wrote? Suggest a tighter description and any instruction changes that would fix both.
 ```
 
-**Finding:** A good answer points to phrasings you would use naturally that the current description misses, such as asking to get ready for a call, and to any section that read thin, often Risks and sensitivities or Talking points. Fold its suggestions into the `SKILL.md`: widen the description with the trigger phrases you actually say, and sharpen the instruction for the weak section so it draws on the right source.
+**Finding:** A good answer points to phrasings you would use naturally that the current description misses, such as asking to get ready for a call, and to any section that read thin, often Risks and sensitivities or Talking points. Fold its suggestions into the `SKILL.md`: widen the description with the trigger phrases you actually say, and sharpen the instruction for the weak section so it draws on the right source. Then read the **Skill Report** for the edited skill: the lowest-scoring dimension shows what to fix, and a low **Trigger clarity** usually points at the description.
 
 **Recipe:**
 

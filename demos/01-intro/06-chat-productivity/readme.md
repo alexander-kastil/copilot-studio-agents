@@ -21,7 +21,7 @@ Start with Copilot Chat for quick drafts and answers. Add the license when you n
 
 ## Copilot Tasks & the Frontier Program
 
-Copilot helps you capture and track work, not just answer questions. Ask it to pull the to-dos and owners out of a meeting recap or a long thread, or set a prompt to run on a recurring schedule so a Monday status summary arrives without you asking. Recurring automation across your apps is covered in depth in [Module 2: Scheduling Prompts & Recurring Automation](../../02-cowork/04-automation/readme.md).
+Copilot helps you capture and track work, not just answer questions. Ask it to pull the to-dos and owners out of a meeting recap or a long thread, or set a prompt to run on a recurring schedule so a Monday status summary arrives without you asking. Recurring automation across your apps is covered in depth in [Module 2: Scheduled Prompts & Event-Driven Tasks](../../02-cowork/04-automation/readme.md).
 
 Frontier is Microsoft's early-access program for the newest Copilot innovations. Enrolling opts your tenant into preview features before general availability, and it is where capabilities like Copilot Cowork first appear. Treat preview features as evaluation, not production; enrollment and pay-as-you-go setup are covered in [Licensing & Environment Setup](../05-licensing-setup/readme.md#pay-as-you-go-licensing).
 

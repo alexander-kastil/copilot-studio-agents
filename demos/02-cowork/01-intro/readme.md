@@ -18,52 +18,55 @@ Cowork is Microsoft 365's agentic AI that does work on your behalf. You describe
 
 Think of Copilot Chat as your AI thought partner. Think of Cowork as your AI colleague who actually does the work.
 
+Microsoft announced a new Copilot Home on September 25, 2026, where Chat and Cowork come together in one starting point. Copilot routes each request to Chat, Cowork, or Code, so you don't have to pick a mode. Home and Code roll out through the Frontier program first. Autopilot (previously Scout) is a separate cloud-hosted digital teammate with its own identity, in private preview, and it is not part of Cowork.
+
 ---
 
 ## Setting Up Cowork in Your Tenant
 
-Before anyone can open Cowork, a tenant admin has to enable a few things. Cowork runs on Anthropic models and is gated by usage-based billing, so both have to be switched on and paid for. This is admin work, not maker work; if Cowork is already live in your tenant, skip to [Where to Access Cowork](#where-to-access-cowork).
+Before anyone can open Cowork, a tenant admin has to enable a few things. Cowork is gated by usage-based billing: a user gets Cowork when a spending policy that selects Cowork covers them. This is admin work, not maker work; if Cowork is already live in your tenant, skip to [Where to Access Cowork](#where-to-access-cowork).
 
 ### Prerequisites
 
 | Requirement | Detail |
 |---|---|
 | **Copilot license** | An active Microsoft 365 Copilot license assigned to every pilot user (and to the admin account doing the setup). |
-| **Admin roles** | **Global admin** or **Billing admin** to configure usage-based billing; **AI Admin**, **Security Admin**, or **Office Apps Admin** to manage Frontier settings. |
-| **Anthropic subprocessor** | Anthropic must be enabled as a subprocessor in the tenant. Cowork uses Anthropic models, so this is mandatory, not optional. |
-| **Usage-based billing** | Cowork consumption (model responses, skill and tool calls, browser tasks) is paid with Copilot Credits, so a spending policy must exist. |
-| **Modern browser** | Microsoft Edge or Google Chrome for the pilot users. |
+| **Admin roles** | **Global administrator** or **Billing administrator** create spending policies and set billing; **AI administrator** or **License administrator** can edit policies but not create them. |
+| **Anthropic models (optional)** | An optional model family, on by default for most commercial tenants. Defaults to **No users** in the EU, EFTA, and the UK, and is currently excluded from the EU Data Boundary. Turning it off does not block access. |
+| **Spending policy** | The access grant. A policy whose scope includes the user and that selects **Cowork** under **Select agents and services** gives access; a limit of one credit is enough. |
+| **Modern browser** | Microsoft Edge or Google Chrome for the pilot users. Browser tasks need Microsoft Edge 152 or later. |
+| **Frontier (optional)** | Needed only for the App skill and the GPT 5.5 model. |
 
-Route the Anthropic subprocessor decision through your compliance and legal review before a broad rollout. Start with a small pilot group and strict spending limits, then expand once you have seen real consumption.
+Route the Anthropic models decision through your compliance and legal review before a broad rollout, because the family is optional and excluded from the EU Data Boundary. Start with a small pilot group and strict spending limits, then expand once you have seen real consumption.
 
 ### Enablement Steps
 
 ```mermaid
 flowchart LR
-  A["Enable Anthropic<br/>subprocessor"] --> B["Turn on<br/>usage-based billing"]
-  B --> C["Create a<br/>spending policy"]
-  C --> D["Make Cowork<br/>discoverable"]
-  D --> E["Assign licenses<br/>to pilot users"]
-  E --> F["Users verify<br/>access"]
+  A["Turn on<br/>usage-based billing"] --> B["Create a spending<br/>policy for Cowork"]
+  B --> C["Decide on<br/>Anthropic models"]
+  C --> D["Set<br/>discovery"]
+  D --> E["Users verify<br/>access"]
 ```
 
-1. **Enable Anthropic as a subprocessor.** In the [Microsoft 365 admin center](https://admin.microsoft.com), turn on the *Anthropic as a subprocessor* setting so Cowork can call Anthropic models. See [Optimize Copilot configuration settings](https://learn.microsoft.com/microsoft-365/copilot/optimize-microsoft-365-configuration-settings#recommended-copilot-tenant-settings).
-2. **Turn on usage-based billing.** Sign in to the admin center as a Global or Billing admin, go to **Copilot** > **Cost Management**, and select **Get Started** to unlock the AI experiences gated by usage-based billing (Cowork and Work IQ API).
-3. **Create a spending policy.** In the *Activate the default spending policy* panel, pick a billing method (an Azure subscription, prepaid P3 credits, or pay-as-you-go), set an optional monthly cap and per-user limit, and choose who gets budget alerts. A per-user limit stops one person from draining the whole budget.
-4. **Make Cowork discoverable.** Turn on the discovery setting for AI experiences so licensed users can find Cowork. If it is discoverable but billing is not enabled, users can request access and admins approve per policy.
-5. **Assign licenses and verify.** Confirm Copilot licenses on your pilot group, then have a user open [m365.cloud.microsoft](https://m365.cloud.microsoft), select the **Cowork** toggle, and confirm they can start a task, hit an approval step, and see task history.
+1. **Turn on usage-based billing.** As a Global or Billing administrator, go to **Copilot** > **Cost Management** in the [Microsoft 365 admin center](https://admin.microsoft.com) and select **Get Started**.
+2. **Create a spending policy.** On the **Configuration** page, select **+ Add spending policy**. Under **Scope user and group**, choose **Specific groups** and select your pilot group. Under **Select agents and services**, select **Cowork**. Set the limits, keeping a per-user limit so one person cannot drain the whole budget, choose the billing method, and optionally assign a model profile.
+3. **Decide on Anthropic models.** Under **Copilot** > **Settings** > **View All** > **AI providers operating as Microsoft subprocessors**, choose whether the Anthropic family stays on. Turning it off does not block Cowork access, because **Auto** picks from the remaining models. See [Optimize Copilot configuration settings](https://learn.microsoft.com/microsoft-365/copilot/optimize-microsoft-365-configuration-settings#recommended-copilot-tenant-settings).
+4. **Set discovery.** Turn on the **AI experiences enabled by usage-based billing** setting so licensed users can find Cowork. The setting controls visibility only. If Cowork is discoverable but billing is not enabled, users can request access, and admins approve the request.
+5. **Users verify access.** A pilot user opens [copilot.cloud.microsoft](https://copilot.cloud.microsoft), selects **Cowork** in the top toggle next to Chat, starts a task, approves an action when Cowork asks, and finds the task under **My tasks**.
 
-If Cowork still does not appear, recheck licensing, the billing policy, and tenant enablement; preview and rollout changes can take time to propagate.
+If Cowork still does not appear, first check whether the user is in scope of a spending policy that selects Cowork. Then recheck licensing, the billing policy, and tenant enablement; rollout changes can take time to propagate.
 
-> **Frontier vs. general availability**: Cowork first shipped through the Frontier preview with agent-based access control. It is now generally available, and access is governed by usage-based billing rather than by adding the Cowork agent per user or group.
+> **Frontier vs. general availability**: Cowork first shipped through the Frontier preview with agent-based access control. That control is deprecated: settings under **Agents** > **All agents** no longer affect who can use Cowork. Access is governed by usage-based billing.
 
 ---
 
 ## Where to Access Cowork
 
-- **Browser**: [m365.cloud.microsoft](https://m365.cloud.microsoft)
-- **Desktop**: Microsoft 365 Copilot app for Windows and Mac
-- **Mobile**: Microsoft 365 Copilot app for iOS and Android
+- **Browser**: [copilot.cloud.microsoft](https://copilot.cloud.microsoft) (Microsoft Copilot; select **Cowork** in the top toggle next to Chat)
+- **Outlook and Teams**: Cowork also works inside both apps.
+- **Desktop**: Microsoft Copilot app for Windows and macOS
+- **Mobile**: Microsoft Copilot app for iPhone and Android. Custom skills are not available on mobile.
 
 ---
 
@@ -76,6 +79,27 @@ If Cowork still does not appear, recheck licensing, the billing policy, and tena
 5. **Review the results**: Download documents, confirm sent messages, or ask for changes.
 
 The approval model, risk indicators, and pause controls are covered in depth in [Human-in-the-Loop](../06-staying-in-control/readme.md).
+
+---
+
+## Choosing a Model and Reasoning Effort
+
+| Model | Use it for |
+|---|---|
+| **Auto** | For most day-to-day work. |
+| **GPT 5.5 (Frontier)** | Capable model for medium effort work. |
+| **GPT 5.6 Sol** | Intelligent and efficient for hard work. |
+| **GPT 5.6 Terra** | Balanced effort for common tasks. |
+| **GPT 6 Astra** | Latest model for tough problems. |
+| **Opus 5** | For complex, high stakes work. |
+| **Claude Sonnet 5** | For everyday tasks and fast responses such as drafting, quick lookups, and day-to-day work. |
+| **Claude Fable 5.1** | Most advanced model for ambitious work. |
+
+**Auto** is the default, and it suits most work. Cowork picks the model for each task from the models your organization makes available, so you rarely need to change the **Model** dropdown. A model badge in the conversation shows which model produced each response.
+
+Reasoning effort sets how hard Cowork works on a task. The five levels are **Light**, **Medium** (default), **High**, **Extra High**, and **Max**, and you select them from the dropdown next to the model picker on the web, Windows, and macOS. Higher effort is more thorough but slower, and it uses more credits.
+
+Admins can turn off the Anthropic model family or build model profiles and assign them to spending policies; see [Human-in-the-Loop](../06-staying-in-control/readme.md).
 
 ---
 
@@ -92,6 +116,8 @@ Cowork's capabilities span five areas: communication, documents, calendar, resea
 ### Documents & Files
 - Create Word documents, Excel spreadsheets, PowerPoint presentations, and PDFs from scratch
 - Edit existing documents shared in the conversation
+- Edit an existing Word, Excel, or PowerPoint file in place in OneDrive or SharePoint; its version history stays available
+- Find output files in the side panel **Output folder** and your OneDrive **Cowork** folder; **Download All** zips up to 50 files and 500 MB
 - Create and reorganize SharePoint and OneDrive folders
 
 ### Calendar & Meetings
@@ -104,12 +130,14 @@ Cowork's capabilities span five areas: communication, documents, calendar, resea
 - Search across your organization for documents, messages, and people
 - Perform **Deep Research** that synthesizes information from multiple sources into a report
 - Browse SharePoint and OneDrive to pull in the files you need
+- Run browser tasks in Microsoft Edge with your existing sign-ins (an admin must turn on browser access first)
 
 ### Automation
 - Run prompts on a recurring schedule (weekly reports, daily briefings)
-- Manage scheduled prompts from the **Scheduled** tab in Task views
+- Manage schedules on the **Automations** page: **Runs** shows each run, and **Manage schedules** lets you edit, pause, resume, or delete them
+- Start a task when an email or a Teams message arrives
 
-Automation is covered in detail in [Scheduling Prompts & Recurring Automation](../04-automation/readme.md), and connecting external systems in [Extending Cowork with Plugins](../05-plugins/readme.md).
+Automation is covered in detail in [Scheduled Prompts & Event-Driven Tasks](../04-automation/readme.md), and connecting external systems in [Extending Cowork with Plugins](../05-plugins/readme.md).
 
 ---
 
@@ -144,8 +172,8 @@ Put this interaction model to work end to end on the Aurora Outdoor scenario:
 
 1. **[Understanding Skills](../02-built-in-skills/readme.md)**: the built-in catalog and the side panel that shows Cowork's work
 2. **[Creating Custom Skills](../03-custom-skills/readme.md)**: teach Cowork your own recurring workflows with a `SKILL.md`
-3. **[Scheduling Prompts & Recurring Automation](../04-automation/readme.md)**: put recurring work on a schedule
-4. **[Extending Cowork with Plugins](../05-plugins/readme.md)**: connect external systems from the App Store
+3. **[Scheduled Prompts & Event-Driven Tasks](../04-automation/readme.md)**: put recurring work on a schedule
+4. **[Extending Cowork with Plugins](../05-plugins/readme.md)**: connect external systems with plugins from Discover or your own upload
 5. **[Human-in-the-Loop](../06-staying-in-control/readme.md)**: approvals, risk, and governance
 
 ---
@@ -156,6 +184,8 @@ Put this interaction model to work end to end on the Aurora Outdoor scenario:
 - [Get Started with Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/get-started)
 - [Use Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/use-cowork)
 - [Cowork FAQ](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-faq)
+- [Choose a Model for Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-models)
+- [How Access to Cowork Is Determined](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-access)
 - [Manage Cowork for Your Organization](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-admin-governance)
 - [Managing Usage-Based Billing (Copilot Credits)](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-credits)
 - [Anthropic as a Subprocessor](https://learn.microsoft.com/en-us/microsoft-365/copilot/connect-to-ai-subprocessor)

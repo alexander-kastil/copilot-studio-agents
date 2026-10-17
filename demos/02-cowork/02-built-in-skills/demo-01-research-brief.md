@@ -4,7 +4,7 @@ Send Cowork out to research the outdoor market, hold its findings up against you
 
 ## Related Topics
 
-This demo runs on the Deep Research capability described in [Understanding Skills](./readme.md); watch the side panel to see skills activate as the task runs. The same recurring-report idea returns in [Scheduling Prompts & Recurring Automation](../04-automation/readme.md) when you put a brief like this on a schedule.
+This demo runs on the Deep Research capability described in [Understanding Skills](./readme.md); watch the side panel to see skills activate as the task runs. The same recurring-report idea returns in [Scheduled Prompts & Event-Driven Tasks](../04-automation/readme.md) when you put a brief like this on a schedule.
 
 ---
 
@@ -30,7 +30,7 @@ Point Cowork at the `demo-01-research-brief` folder.
 
 ## Load the demo files
 
-In Microsoft 365 Copilot Cowork, start a new task, click **+**, and attach `internal-positioning.docx` from the `demo-01-research-brief` folder. Keep it attached for the whole demo.
+In Microsoft Copilot (copilot.cloud.microsoft), with **Cowork** selected in the top toggle, start a new task, select **Add attachments** > **Upload images and files**, and attach `internal-positioning.docx` from the `demo-01-research-brief` folder. Keep it attached for the whole demo.
 
 ---
 

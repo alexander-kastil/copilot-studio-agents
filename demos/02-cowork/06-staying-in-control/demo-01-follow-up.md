@@ -31,7 +31,7 @@ Point Cowork at the `demo-01-follow-up` folder.
 
 ## Load the demo files
 
-In Microsoft 365 Copilot Cowork, start a new task, click **+**, and attach both files from the `demo-01-follow-up` folder. They remain available for every step.
+In Microsoft Copilot (copilot.cloud.microsoft), with **Cowork** selected in the top toggle, start a new task, click **+**, and attach both files from the `demo-01-follow-up` folder. They remain available for every step.
 
 ---
 

@@ -32,7 +32,7 @@ Point Cowork at the `demo-01-quarterly-review` folder. It holds the raw quarter 
 
 ## Load the demo files
 
-In Microsoft 365 Copilot Cowork (m365.cloud.microsoft), start a new task, click the **+** button, and add all three files from the `demo-01-quarterly-review` folder. Cowork keeps them in the task's working folder, so every step below reads and writes there without re-attaching. Part of the point is that you never tell Cowork which file to use for what; it has to work that out.
+In Microsoft Copilot (copilot.cloud.microsoft), select **Cowork** in the top toggle next to Chat, start a new task, select **Add attachments** > **Upload images and files**, and add all three files from the `demo-01-quarterly-review` folder. Cowork keeps them in the task's working folder, so every step below reads and writes there without re-attaching. Part of the point is that you never tell Cowork which file to use for what; it has to work that out.
 
 ---
 

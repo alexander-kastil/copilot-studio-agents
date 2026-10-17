@@ -37,7 +37,7 @@ This plugin model is aligned with the Microsoft 365 app ecosystem and follows th
 
 ### Step 2: Compare plugin categories and understand management boundaries
 
-In Copilot Cowork, the plugin catalog can include:
+In Copilot Cowork, the plugin catalog can include the following. Browse it in **Discover** on **Customize** > **Plugins**:
 
 - **Microsoft plugins** (for example Dynamics 365 and Fabric IQ scenarios)
 - **Partner plugins** from third-party publishers
@@ -50,7 +50,7 @@ Use this model when choosing your strategy:
 
 Keep this distinction in mind:
 
-- **Users** browse and acquire allowed plugins, enable or disable them per session, and remove self-acquired plugins
+- **Users** add allowed plugins from **Discover**, turn them on or off per conversation in **Sources & Skills**, and can't remove admin-deployed plugins
 - **Admins** control availability, deployment scope, and governance from the Microsoft 365 Admin Center
 
 If a plugin requires connector authentication, each user still completes their own one-time sign-in and consent flow.
@@ -126,7 +126,7 @@ Common authorization types include:
 
 - `None`: anonymous or public endpoint access
 - `OAuthPluginVault`: OAuth 2.0 with secure credential storage reference
-- `ApiKeyPluginVault`: API key flow with secure reference storage
+- `ApiKeyPluginVault`: API key flow with secure reference storage. API key authentication isn't available in Cowork yet.
 
 Choose the model based on security and data sensitivity. For production, authenticated connectors are the common pattern.
 
@@ -143,7 +143,7 @@ Use the following model:
 ```json
 {
   "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.28/MicrosoftTeams.schema.json",
-  "manifestVersion": "devPreview",
+  "manifestVersion": "1.28",
   "version": "1.5.0",
   "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
   "developer": {
@@ -178,6 +178,9 @@ Use the following model:
       "toolSource": {
         "remoteMcpServer": {
           "mcpServerUrl": "https://learn.microsoft.com/api/mcp",
+          "mcpToolDescription": {
+            "file": "./tools/microsoft-learn-mcp-tools.json"
+          },
           "authorization": {
             "type": "None"
           }
@@ -190,10 +193,26 @@ Use the following model:
 
 The `agentSkills` section defines the skills associated with your custom plugin. The `agentConnectors` section defines the MCP servers, including their authorization model, consumed by the custom plugin.
 
+The `mcpToolDescription` object points to `tools/microsoft-learn-mcp-tools.json`. The v1.28 schema requires it on a `remoteMcpServer`, so the file must be in the ZIP even though Cowork discovers the tools from the server at runtime. Its content must match the server's own `tools/list` response, so generate it from the server instead of writing it by hand:
+
+```bash
+mkdir -p tools
+curl -s -X POST https://learn.microsoft.com/api/mcp \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json, text/event-stream" \
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/list","params":{}}' \
+  | sed -n 's/^data: //p' \
+  | node -e "let s='';process.stdin.on('data',d=>s+=d).on('end',()=>process.stdout.write(JSON.stringify(JSON.parse(s).result,null,2)))" \
+  > tools/microsoft-learn-mcp-tools.json
+```
+
+The file holds a `tools` array with the three tools the server exposes: `microsoft_docs_search`, `microsoft_code_sample_search`, and `microsoft_docs_fetch`.
+
 Important validation checks:
 
 - Each `agentSkills[].folder` must exist in the package
 - Each skill folder must contain `SKILL.md`
+- The file named by `mcpToolDescription` exists in the `tools/` folder
 - Skill frontmatter `name` must be kebab-case and match its folder name
 - Connector `id` values must be unique
 
@@ -251,8 +270,8 @@ Add a `package.json` file in the plugin root folder and define scripts like the 
   "description": "Copilot Dev Camp plugin for Cowork - Research Microsoft Foundry, create presentations and documentation",
   "main": "manifest.json",
   "scripts": {
-    "package": "PowerShell -Command \"Compress-Archive -Path manifest.json, color.png, outline.png, skills -DestinationPath copilot-dev-camp.zip -Force; Write-Host 'Plugin packaged: copilot-dev-camp.zip'\"",
-    "package:unix": "zip -r copilot-dev-camp.zip manifest.json color.png outline.png skills/"
+    "package": "PowerShell -Command \"Compress-Archive -Path manifest.json, color.png, outline.png, tools, skills -DestinationPath copilot-dev-camp.zip -Force; Write-Host 'Plugin packaged: copilot-dev-camp.zip'\"",
+    "package:unix": "zip -r copilot-dev-camp.zip manifest.json color.png outline.png tools/ skills/"
   },
   "license": "MIT"
 }
@@ -274,7 +293,7 @@ On macOS or Linux:
 npm run package:unix
 ```
 
-Expected result: a `.zip` package containing `manifest.json`, the icons, and the full `skills/` folder at root level.
+Expected result: a `.zip` package containing `manifest.json`, the icons, the `tools/` folder, and the full `skills/` folder at root level.
 
 If needed, inspect the ZIP content before upload to avoid structure-related validation failures.
 
@@ -287,8 +306,11 @@ Before deployment, verify that:
 - `name` values match the skill folder names
 - The connector URL is HTTPS and the auth config is coherent
 - Icon file names and dimensions are correct (`color.png`, `outline.png`)
+- The `tools/` file named by `mcpToolDescription` is inside the ZIP
 
 Fix issues now to avoid failed uploads in admin workflows.
+
+The preview `wiqd plugin validate --mode deep` command packages the plugin and runs the same checks locally, including the ASKILL-P001 to ASKILL-P008 codes for folders, `SKILL.md` frontmatter and `name` rules. Keep the npm scripts above as your packaging path and use the `wiqd` check as a second pass before upload.
 
 ## Exercise 5: Vibe-code the whole plugin with GitHub Copilot (optional)
 
@@ -404,23 +426,20 @@ After generation, review `manifest.json`, validate each `SKILL.md` frontmatter, 
 
 In this exercise you upload your plugin package and validate end-to-end behavior in Cowork.
 
+Before you involve an admin, test the package yourself. Open **Customize** > **Plugins** > **Upload plugin**, select your `.zip`, and choose **Only you** in the **Share** dialog; no admin is needed. Sharing with **Specific users in your organization** also needs no admin, but publishing to the whole organization waits for admin approval. The admin upload in Step 1 is what lists the plugin in **Discover**, and custom plugins don't run in Cowork on mobile.
+
 ### Step 1: Upload the plugin in the Microsoft 365 Admin Center
 
 Use the following path:
 
 1. Open the **Microsoft 365 Admin Center**
-2. Go to **Agents**
-3. Select **All Agents**
-4. Select **Upload Agent**
-5. Upload your plugin `.zip` package
+2. Go to **Agents** > **Tools**
+3. On the **Registry** tab, select **Upload**
+4. Upload your plugin `.zip` package
+5. Review the components the package contains (the three skills and the MCP connector), then select **Next**
+6. In **Scope users**, choose **All users** or **Specific users or groups**, then select **Install**
 
-After upload, confirm that the package metadata and availability scope match your target audience.
-
-As an admin, decide how to roll out the plugin:
-
-- Available to all users
-- Available to specific users or groups
-- Blocked (if not approved)
+The **Registry** tab lists your plugin under the **Plugins** tile once the upload finishes. To block it later, open it from the same list.
 
 Remember that users enable or disable active plugins per session, while admin deployment controls tenant availability and lifecycle.
 
@@ -428,8 +447,8 @@ Remember that users enable or disable active plugins per session, while admin de
 
 Open Copilot Cowork and verify that:
 
-- The plugin appears in the plugin inventory
-- The plugin can be installed and enabled from the plugin detail page
+- The plugin appears in **Discover** under **Customize** > **Plugins**
+- The plugin can be added from its detail page and turned on in **Sources & Skills**
 - The three skills activate based on relevant prompts
 - The connector is discoverable and, when applicable, prompts for authentication (in this sample the MCP server is publicly available with anonymous access)
 

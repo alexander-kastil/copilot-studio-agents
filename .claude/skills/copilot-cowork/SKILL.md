@@ -1,6 +1,6 @@
 ---
 name: copilot-cowork
-description: Router for Cowork work, both authoring a custom skill and running Cowork as standing infrastructure. Covers the Microsoft 365 Copilot Cowork skill contract (frontmatter, kebab-case name-matches-folder, OneDrive placement, companion files, the run-and-tune loop) and the product-agnostic operating loop (scheduled morning briefing, manual production block, scheduled end-of-day wrap-up, reusable task templates, weekly refinement). Read the ONE matching reference. Use when asked to create or fix a cowork skill, write a SKILL.md for Copilot, package a skill for upload, a skill will not load or will not trigger, or to automate the day, build a morning briefing or end-of-day report, schedule a recurring session, write a task template, or work out why an automation stopped being useful.
+description: Router for Cowork work, both authoring a custom skill and running Cowork as standing infrastructure. Covers the Microsoft 365 Copilot Cowork skill contract (frontmatter, kebab-case name-matches-folder, OneDrive placement, companion files, the run-and-tune loop) and the product-agnostic operating loop (scheduled morning briefing, manual production block, scheduled end-of-day wrap-up, reusable task templates, weekly refinement). Read the ONE matching reference. Use when asked to create or fix a cowork skill, write a SKILL.md for Copilot, package a skill for upload, package a Cowork plugin or its MCP connector (manifest version, mcpToolDescription, plugin upload fails), a skill will not load or will not trigger, to write a /goal or run one from the prompt vault (organization branding kit), or to automate the day, build a morning briefing or end-of-day report, schedule a recurring session, write a task template, or work out why an automation stopped being useful.
 metadata:
   version: 2.0.0
 ---
@@ -15,11 +15,13 @@ Cowork as recurring infrastructure rather than a chat window.
 | The frontmatter contract, size and count limits, companion-file rules, the three-layer loading model, cross-platform compatibility | `references/format-reference.md` |
 | Writing a description that triggers, structuring the instruction body, evidence and refusal rules, the run-and-pressure-test loop | `references/authoring-and-tuning.md` |
 | The recurring daily loop (briefing, production block, wrap-up), task templates, the gates before scheduling anything, keeping it useful over time | `references/daily-loop.md` |
+| Writing a `/goal`: discovery before production, confirmed versus recommended, the approval stop, and the organization branding-kit goal | `references/goal-workflows.md` |
 
 The authoring half below is **Microsoft 365 Copilot Cowork** specific. The operating loop in
 `daily-loop.md` holds for Claude Cowork as well, which shares the name and almost nothing else.
 
-Related: `schedule` and `loop` for the same recurring idea inside Claude Code, `obsidian` when the
+Related: `work-iq` for the Microsoft 365 signal layer these skills read from, and for the `/goal`
+that mines it for automation candidates, `schedule` and `loop` for the same recurring idea inside Claude Code, `obsidian` when the
 outputs land in a vault, `claude-orchestration` when one session needs to fan out across agents
 instead of repeating on a schedule.
 
@@ -72,7 +74,8 @@ Two required frontmatter fields, `name` and `description`. Nothing else is requi
 | Personal skill, authored by hand | OneDrive `Documents/Cowork/skills/<name>/SKILL.md` |
 | Authored conversationally | Ask Cowork in chat to build a skill, or use **Customize** > **Skills** > **Add** > **Create new** |
 | Import an existing skill | **Customize** > **Skills** > **Add** > **Upload skill** (`.md`, `.zip`, or `.skill`) |
-| Share with the organization | Package as a plugin and publish, see the plugin path in `references/format-reference.md` |
+| Share with specific colleagues | Skill detail page on **Customize** > **Share** > **Specific users in your organization** > **Apply**; after an edit, **Re-share** pushes the new version |
+| Share with the whole organization | Package as a plugin and publish, see the plugin path in `references/format-reference.md` |
 
 Create the `Documents/Cowork/skills/` folder if it does not exist. Each skill gets its own subfolder named for the skill.
 
@@ -96,9 +99,11 @@ Steps 6 and 7 are not optional polish; a skill that has never been run and corre
 
 Read the reference file that matches the task:
 
-- `references/format-reference.md` — the full frontmatter contract, size and count limits, companion-file rules and validation table, the three-layer loading model, and cross-platform compatibility with Claude Code and other Agent Skills hosts.
+- `references/format-reference.md` — the full frontmatter contract, size and count limits, companion-file rules and validation table, the three-layer loading model, cross-platform compatibility with Claude Code and other Agent Skills hosts, and plugin packaging (manifest 1.28 versus 1.29, the `mcpToolDescription` file, the self-test and admin upload paths).
+- `scripts/mcp-tool-description.sh` generates a connector's tool-description file from the MCP server's own `tools/list`: `bash scripts/mcp-tool-description.sh --url <https mcp endpoint> --out tools/<name>.json` (add `--dry-run` to only list the tools). It prints `tools=N names=... out=...`.
 - `references/authoring-and-tuning.md` — how to write a description that triggers, how to structure the instruction body, evidence and refusal rules, and the run-and-pressure-test loop.
 - `references/daily-loop.md` — the three-session operating loop, task templates, the gates before anything gets scheduled, and the weekly refinement pass.
+- `references/goal-workflows.md` — what makes a `/goal` work rather than a long chat message, and the organization branding-kit goal, whose prompt is kept verbatim in `templates/goal-branding-kit.md`.
 
 ---
 
