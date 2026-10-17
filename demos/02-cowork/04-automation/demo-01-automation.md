@@ -4,7 +4,7 @@ Teach Cowork your house status-report format once, then hand it a schedule so th
 
 ## Related Topics
 
-This demo builds directly on [Scheduling Prompts & Recurring Automation](./readme.md), where scheduling and recurring prompts are introduced, and on [Creating Custom Skills](../03-custom-skills/readme.md), which explains the custom `SKILL.md` file you author here. The scheduled send still respects the approval and governance model from [Human-in-the-Loop](../06-staying-in-control/readme.md), so automation never means unsupervised.
+This demo builds directly on [Scheduled Prompts & Event-Driven Tasks](./readme.md), where scheduling and recurring prompts are introduced, and on [Creating Custom Skills](../03-custom-skills/readme.md), which explains the custom `SKILL.md` file you author here. The scheduled send still respects the approval and governance model from [Human-in-the-Loop](../06-staying-in-control/readme.md), so automation never means unsupervised.
 
 ---
 
@@ -30,7 +30,7 @@ Point Cowork at the `demo-01-automation` folder.
 
 ## Load the demo files
 
-In Microsoft 365 Copilot Cowork, start a new task, click **+**, and attach `weekly-status-template.docx` from the `demo-01-automation` folder. Keep it attached for the first steps.
+In Microsoft Copilot, select **Cowork** in the top toggle, start a new task, click **+**, and attach `weekly-status-template.docx` from the `demo-01-automation` folder. Keep it attached for the first steps.
 
 ---
 
@@ -81,7 +81,7 @@ Fill every section of the template in order:
 Keep the report to one page. Replace every bracketed placeholder. Save it as a Word document titled with the week ending date, then draft an email to Elena Varga with the report attached and hold it for my approval.
 ```
 
-**Finding:** Cowork discovers custom skills at the start of each conversation, so start a new task after saving the file and check the skill is picked up. The `description` is what Cowork reads to decide when the skill applies, so confirm yours is specific and trigger-oriented rather than generic. If Cowork does not find the skill, verify the file is named exactly `SKILL.md` inside its own subfolder.
+**Finding:** Cowork makes a saved skill available in your next session, so start a new task after saving the file and check the skill is picked up. The `description` is what Cowork reads to decide when the skill applies, so confirm yours is specific and trigger-oriented rather than generic. If Cowork does not find the skill, verify the file is named exactly `SKILL.md` inside its own subfolder.
 
 **Expected Outcome:** A `SKILL.md` saved in your OneDrive skills folder that Cowork lists as an available custom skill in a new task.
 
@@ -119,8 +119,8 @@ In the same task, send:
 Schedule my Weekly Regional Status Report skill to run every Friday at 3 PM. Each week it should produce the report and prepare the email to Elena, then hold the send for my approval rather than sending on its own. Add this to my scheduled prompts.
 ```
 
-**Finding:** Open the **Scheduled** tab in Task views and confirm the new recurring prompt is listed with a Friday 3 PM recurrence. From there you can pause, edit, or delete it later. Note that scheduling the run does not schedule the send: the report is generated automatically, but the high-risk email still stops for your approval each week, so nothing reaches your manager unread.
+**Finding:** Open the **Automations** page in the left navigation, select **Manage schedules**, and confirm the new recurring prompt is listed with a Friday 3 PM recurrence. If Cowork asks how to activate it, choose **Activate** so the first run lands on Friday (or **Activate and run now** to watch one run and its approval immediately). From there you can pause, edit, or delete it later. Note that scheduling the run does not schedule the send: the report is generated automatically, but the high-risk email still stops for your approval each week, so nothing reaches your manager unread.
 
-**Expected Outcome:** A recurring prompt visible in the Scheduled tab, set to Friday 3 PM, that will generate the report each week and pause the email at the approval step.
+**Expected Outcome:** A recurring prompt listed under **Automations** > **Manage schedules**, set to Friday 3 PM, that will generate the report each week and pause the email at the approval step.
 
-> Scheduling, recurrence, and how automation pairs with custom skills are covered in [Scheduling Prompts & Recurring Automation](./readme.md#how-scheduling-works).
+> Scheduling, recurrence, and how automation pairs with custom skills are covered in [Scheduled Prompts & Event-Driven Tasks](./readme.md#how-scheduling-works).

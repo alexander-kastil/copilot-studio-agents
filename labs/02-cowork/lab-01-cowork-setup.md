@@ -47,21 +47,21 @@ Review [Get started with Copilot Cowork](https://learn.microsoft.com/en-us/micro
 - Users have an active Microsoft 365 Copilot license
 - Cowork is available in your tenant
 - Usage-based billing is enabled for Cowork
-- Anthropic as a subprocessor is enabled for your tenant, or you are in a Frontier tenant so that you can choose GPT 5.5 instead
+- A spending policy that selects **Cowork** covers your pilot users. A limit of one credit is enough to grant access. A Global or Billing administrator creates the policy under **Copilot** > **Cost Management** > **Configuration**; an AI or License administrator can edit it but not create it.
 - Supported client/browser access is available (web, desktop app, mobile)
+- Optional: Frontier enrollment, needed only for the **App** skill and the **GPT 5.5 (Frontier)** model
 
-> **Note: Anthropic subprocessor requirement.** Cowork uses Anthropic models as a subprocessor in Microsoft 365 Copilot. Make sure your compliance and legal review process includes this prerequisite before broad rollout. In Frontier tenants you can also use GPT 5.5 as an alternative. Read [Choose a model for Copilot Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-models) for the supported models.
+> **Note: optional Anthropic models.** Cowork can use Anthropic models as an optional subprocessor. The setting is on by default for most commercial tenants, but it defaults to **No users** in the EU, EFTA, and the UK. Anthropic models are currently excluded from the EU Data Boundary, and turning them off does not block access because **Auto** picks from the remaining models. Include this choice in your compliance and legal review before broad rollout; [Choose a model for Copilot Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-models) lists the supported models.
 
 ### Step 2: Configure Copilot Credits and usage-based billing
 
-In the Microsoft 365 admin center, open the cost management experience for usage-based billing and configure your billing strategy based on [Usage-Based Billing and Cost Management for Copilot Credits](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits).
+In the Microsoft 365 admin center, go to **Copilot** > **Cost Management** and select **Get Started** the first time to activate usage-based billing. Then configure your billing strategy based on [Usage-Based Billing and Cost Management for Copilot Credits](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits).
 
 Define at least:
 
-- Billing mode (prepaid credits, pay-as-you-go, or existing capacity)
-- Azure subscription connection for billing at scale
-- Spending policies and limits
-- Budget protections (alerts and hard caps)
+- Billing method: Azure subscription, prepaid credits (P3), or pay-as-you-go ($0.01 per credit)
+- Spending policies and limits, including a policy that selects **Cowork** under **Select agents and services**
+- Budget protections (alerts and limits)
 
 > **Important: pilot first.** Start with a controlled pilot audience and strict spending policies. Expand gradually after reviewing real consumption trends and cost drivers.
 
@@ -71,9 +71,9 @@ Assign a pilot group, ask pilot users to open Cowork, and validate that they can
 
 - Start conversations
 - Run at least one task requiring approval
-- See task history and scheduled tasks
+- See past work under **My tasks** and scheduled work under **Automations**
 
-If users cannot access Cowork, recheck licensing, billing configuration, and tenant-level enablement.
+If users cannot access Cowork, check whether they are in scope of a spending policy that selects **Cowork**, then recheck licensing, billing configuration, and tenant-level enablement.
 
 ## Exercise 3: Start using Copilot Cowork
 
@@ -81,18 +81,21 @@ In this exercise you start using Cowork in the product experience, observe the e
 
 ### Step 1: Open Cowork
 
-Open [Microsoft 365 Copilot](https://m365.cloud.microsoft) and select **Cowork** in the top toggle next to **Chat**.
+Open **Microsoft Copilot** at [copilot.cloud.microsoft](https://copilot.cloud.microsoft) and select **Cowork** in the top toggle next to **Chat**.
 
 ![User interface sidebar showing navigation options including Home, New task, Search, Scheduled, and Customize, with a highlighted Cowork tab at the top indicated by a red arrow.](./_images/cowork-start-01.png)
+
+The screenshot predates the rename, so the entry it shows as **Scheduled** now appears as **Automations**.
 
 Notice that Cowork is oriented around delegated execution: you describe an outcome and Cowork plans and performs tasks for you across Microsoft 365.
 
 In the left navigation you find these core options:
 
-- **New task**: start a new Cowork execution from scratch with a fresh prompt.
 - **My tasks**: find previous tasks and reopen past work quickly.
-- **Scheduled**: review and manage recurring or scheduled Cowork tasks.
-- **Customize**: manage available plugins and skills for your Cowork experience.
+- **Automations**: review and manage scheduled prompts and event-driven tasks. **Runs** shows each run, and **Manage schedules** lets you edit, pause, resume, or delete them.
+- **Customize**: manage plugins, skills, and your preferences for your Cowork experience.
+
+To start a new task, type in the chat input on the Cowork home page.
 
 ### Step 2: Observe the execution model
 
@@ -112,7 +115,7 @@ Once the work is complete, you see a recap of all executed tasks and steps.
 
 ![Screenshot of Microsoft Copilot in Cowork mode showing a completed task summary. The main panel lists a drafted weekly status update email grouped by activities. A PDF version of the update is attached. On the right, a Workspace panel displays completed steps and the generated output file.](./_images/cowork-prompt-execution-02.png)
 
-Cowork executed multiple tasks: it created a draft of an email, generated a PDF, and stored it in your OneDrive for Business. All of that ran asynchronously, so you could work on something else in the meantime.
+Cowork executed multiple tasks: it created a draft of an email, generated a PDF, and stored it in your OneDrive for Business. While Cowork works, you can send more messages. They queue up and can redirect the task.
 
 ### Step 3: Test approval controls
 
@@ -132,15 +135,16 @@ This lab series focuses on the Cowork extensibility model. In this exercise you 
 
 ### Step 1: Open the Customize experience
 
-In Cowork, select **Customize** from the left navigation. You find two key tabs:
+In Cowork, select **Customize** from the left navigation. You find three tabs:
 
+- **Preferences**: custom instructions that Cowork applies to every task, such as tone and formatting. You can write up to 20 KB (about 3,000 English words).
 - **Plugins**: installed, discoverable, and shared plugins
 - **Skills**: built-in skills and your custom skills
 
 Before continuing, keep this simple comparison in mind:
 
 - **Skills** are task instructions and behavior patterns that guide how Cowork should execute specific types of work.
-- **Plugins** are packaged integrations and connectors that add capabilities or external data sources Cowork can use.
+- **Plugins** are packages that contain skills, connectors to external systems, or both.
 - Choose **Skills** when you need to shape behavior and task logic. Choose **Plugins** when you need to connect tools, systems, or specialized packaged functionality.
 
 Cowork already includes a rich set of built-in skills such as Word, Excel, PowerPoint, PDF, Email, Scheduling, Calendar Management, Meetings, Daily Briefing, Enterprise Search, Deep Research, Communications, and Adaptive Cards. These skills are automatically activated by Cowork based on the conversation context, and you can see which ones were used in the **Skills** section of the side panel.
@@ -153,8 +157,10 @@ The Microsoft plugins currently included in Cowork are:
 - **Dynamics 365 ERP**
 - **Dynamics 365 Sales**
 - **Fabric IQ**
+- **Business Applications in Work IQ**
+- Role-based plugins for Legal, Sales, Service, and Education
 
-Beyond these Microsoft plugins, a broad catalog of third-party partner plugins is available in the Microsoft 365 App Store, and that catalog keeps growing.
+Beyond these Microsoft plugins, a growing partner catalog is available in the **Discover** grid on **Customize** > **Plugins**, with partners such as Salesforce, Zendesk, monday.com, Miro, Moody's, and LSEG.
 
 ## Summary
 

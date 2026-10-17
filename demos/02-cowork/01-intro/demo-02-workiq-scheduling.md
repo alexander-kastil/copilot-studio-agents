@@ -22,7 +22,7 @@ Work IQ is the layer that grounds Cowork in your working life: your mail, meetin
 
 There is no companion folder for this demo. Everything Cowork reads comes from your own calendar, mail, and files through Work IQ, so run it in a week with real meetings on it. The meeting you book in Step 3 is real and stays on your calendar, so choose a week you are willing to commit the hour to.
 
-In Microsoft 365 Copilot Cowork (m365.cloud.microsoft), start a new task. Do not attach anything.
+In Microsoft Copilot (copilot.cloud.microsoft), select **Cowork** in the top toggle next to Chat, start a new task. Do not attach anything.
 
 ---
 

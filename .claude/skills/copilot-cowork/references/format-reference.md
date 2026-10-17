@@ -102,9 +102,26 @@ Documents/Cowork/skills/
 | Customize page | **Customize** > **Skills** > **Add** > **Create new** for a guided authoring flow |
 | From chat | Tell Cowork you want help creating a skill; it writes the `SKILL.md` to OneDrive |
 | Upload | **Customize** > **Skills** > **Add** > **Upload skill**, accepting `.md`, `.zip`, or `.skill`; an archive needs `SKILL.md` at its root |
-| Plugin | Package skills into a plugin for publishing to the Microsoft 365 App Store or org-wide deployment |
+| Plugin | Package skills (and optionally MCP connectors) into a plugin; see "Plugin packaging" below |
 
 An uploaded skill whose name collides with an existing one is kept alongside it with a number appended, not overwritten.
+
+## Plugin packaging
+
+A plugin is a Microsoft 365 app package: `manifest.json`, `color.png` (192x192), `outline.png` (32x32), a `skills/` folder of `SKILL.md` folders, and for connectors a `tools/` folder. Verified 2026-10-17:
+
+| Fact | Value |
+|------|-------|
+| `manifestVersion` | `"1.28"` with the v1.28 `$schema` for hand-authored packages; `wiqd plugin create` pins `"1.29"`; `atk import openplugin` emits `devPreview`, which a 1.28 channel rejects |
+| Strict schema | v1.28 sets `additionalProperties: false` at the root, so any extra field (for example `packageName`) fails the upload |
+| `mcpToolDescription` | Required on every `remoteMcpServer` at 1.28: the published schema lists `required: ["mcpServerUrl", "mcpToolDescription"]`, although the Learn page also calls it optional. Optional at 1.29 |
+| Tool-description file | Must match the server's `tools/list` response; generate it with `scripts/mcp-tool-description.sh --url <mcp url> --out tools/<name>.json` instead of writing it by hand |
+| Connector auth | `None`, `OAuthPluginVault`, or Dynamic Client Registration (omit `authorization`); API key auth isn't available in Cowork yet |
+| Author self-test | **Customize** > **Plugins** > **Upload plugin**, share **Only you**; no admin needed (one Learn page labels the button **Add plugin**) |
+| Admin listing in **Discover** | Microsoft 365 admin center **Agents** > **Tools** > **Registry** > **Upload**, review components, **Next**, **Scope users**, **Install** (checked live; Learn also cites **All agents** > **Upload custom agent** and **Manage apps** > **Upload custom app**, neither of which is the plugin path) |
+| `wiqd plugin share` | Lands in **Shared with me** under **Sources & Skills** > **Plugins**, not in **Discover** |
+
+When two Learn pages disagree on a manifest rule, the published JSON schema decides (`https://developer.microsoft.com/json-schemas/teams/v1.28/MicrosoftTeams.schema.json`); when they disagree on a UI path, the live admin center decides.
 
 ## Cross-platform compatibility
 

@@ -12,7 +12,7 @@ You then extend agents with Prompt Actions, the Prompt Assistant for faster prom
 
 Advanced topics introduce autonomous agents, multi-agent orchestration, deep reasoning models, Agent Flows, voice support with post-call actions, and pro-code integration.
 
-A guided preview then walks the rebuilt Copilot Studio New Experience alongside the classic UI: the New experience toggle and coexistence, the unified Build surface with its Build, Preview, Evaluate, and Monitor tabs, and the enhanced orchestration runtime. You work with Agent Skills in the open SKILL.md format, import Claude Code and GitHub Copilot skills, and connect tools, MCP servers, and the new node-by-node Workflows designer. A capstone lab builds a Sales Account Assistant end to end in the new experience.
+A guided preview then walks the rebuilt Copilot Studio New Experience alongside the classic UI: the New experience toggle and coexistence, the unified Build surface with its Build, Preview, Evaluate, and Monitor tabs, and the enhanced orchestration runtime. You work with Agent Skills in the open SKILL.md format, import Claude Code and GitHub Copilot skills, and connect tools, MCP servers, and the new node-by-node Workflows designer. You ground agents with Work IQ, Foundry IQ, and Fabric IQ, and build apps from a description. A capstone lab builds a Sales Account Assistant end to end in the new experience.
 
 A dedicated evaluation module covers Agent Evaluations (GA), test sets, multi-turn conversation tests, activity maps, CSAT transcripts, and the Copilot Studio Kit, giving you structured insight into agent quality and areas for improvement.
 
@@ -50,7 +50,7 @@ Finally, you design and implement real business processes with human-in-the-loop
 - Core Capabilities: Communication, Documents, Calendar, Research & Automation
 - Understanding Skills: Built-in Skills & the Side Panel
 - Creating Custom Skills with SKILL.md
-- Scheduling Prompts & Recurring Automation
+- Scheduled Prompts & Event-Driven Tasks
 - Extending Cowork with Plugins
 - Human-in-the-Loop: Approving Actions & Staying in Control
 
@@ -106,6 +106,8 @@ Finally, you design and implement real business processes with human-in-the-loop
 - Agent Skills: the Open SKILL.md Format & Loading on Demand
 - Importing Claude Code & GitHub Copilot Skills
 - Tools, MCP Servers & the New Node-by-Node Workflows Designer
+- Grounding Agents with Work IQ, Foundry IQ, and Fabric IQ
+- Building Apps in Copilot Studio
 - Capstone Lab: Building a Sales Account Assistant in the New Experience
 
 ### Module 7: Designing & Implementing Business Processes

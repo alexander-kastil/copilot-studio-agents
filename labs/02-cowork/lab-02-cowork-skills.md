@@ -8,7 +8,7 @@ By the end of this lab you will:
 
 - Understand what skills are and when to create custom skills
 - Manage built-in and custom skills from the **Customize** experience
-- Create a skill using the native **Add skill** guided flow
+- Create a skill using the native guided flow from **Add** > **Create new**
 - Create skills manually at a lower level (for example with VS Code), package them, and upload them
 
 ## Exercise 1: Understand what Agent Skills are
@@ -29,7 +29,7 @@ Unlike one-off prompts, skills are durable assets you reuse across many conversa
 
 ### Step 2: Compare built-in skills and custom skills
 
-Cowork already includes built-in skills for common tasks like documents, communication, scheduling, and enterprise search. Create custom skills when:
+Cowork already includes built-in skills for common tasks like documents, communication, scheduling, enterprise search, and building lightweight apps with **App (Frontier)**. That app skill needs Frontier enrollment. Create custom skills when:
 
 - You need organization-specific process logic
 - You need consistent formatting or governance for outputs
@@ -52,10 +52,11 @@ In this exercise you explore how to manage available skills directly in Cowork.
 
 ### Step 1: Open the Customize experience
 
-Open [Microsoft 365 Copilot](https://m365.cloud.microsoft), switch to 1️⃣ **Cowork**, and select 2️⃣ **Customize** in the left navigation.
+Open [Microsoft Copilot](https://copilot.cloud.microsoft), switch to 1️⃣ **Cowork** in the top toggle next to **Chat**, and select 2️⃣ **Customize** in the left navigation.
 
-You should see two tabs:
+You should see three tabs:
 
+- **Preferences**
 - **Plugins**
 - **Skills**
 
@@ -73,12 +74,12 @@ For your own skills, if any, validate that you can perform management operations
 - Edit instructions
 - Open the file location in OneDrive
 - Download the skill
-- Share the skill
+- Share the skill: select **Share**, choose **Only you** or **Specific users in your organization**, then select **Apply**
 - Delete the skill
 
 ![UI screen showing the copilot-camp-flash-cards skill with description, usage guidelines, and instructions for generating PowerPoint flash cards from Copilot Dev Camp labs.](./_images/cowork-skills-02.png)
 
-After any edit, start a new conversation to test the behavior change.
+After any edit, start a new conversation to test the behavior change. After you edit a shared skill, select **Re-share** to send the latest version. Custom skills aren't supported in Cowork on mobile.
 
 ## Exercise 3: Create a skill with the native Add skill flow
 
@@ -118,7 +119,7 @@ The result should be a PowerPoint deck with no more than 10 flash cards based on
 Name the skill "copilot-flash-cards".
 ```
 
-Cowork starts processing your request: it checks the skill name, checks the capacity of your Cowork profile, generates the skill, stores it in your OneDrive for Business, validates it, and produces a quality report.
+Cowork starts processing your request: it checks the skill name, checks the capacity of your Cowork profile, generates the skill, stores it in your OneDrive for Business, validates it, and returns a **Skill Report**.
 
 > You can have up to 50 custom skills configured in your profile, so when you create a new skill Cowork checks whether you are at your capacity limit.
 
@@ -128,6 +129,8 @@ You can test your skill directly from Cowork and iterate to fine-tune it. For ex
 Test it with the following URL: https://microsoft.github.io/copilot-camp/pages/extend-m365-copilot/11-mcp-app/
 ```
 
+Read the **Skill Report** that Cowork returns each time it creates or updates your skill. The score runs from 0 to 100 across **Trigger clarity**, **Instruction specificity**, **Scope boundaries**, and **Robustness**, each worth 25 points. The bands are **Excellent** (85+), **Good** (70-84), **Needs work** (50-69), and **Poor** (below 50). Fix the lowest-scoring dimension first, then test again in a new conversation.
+
 ### Step 2: Save and verify where the skill is stored
 
 Once you are happy with your skill, close the current session. Cowork stored the skill in your OneDrive for Business in a folder with the following name:
@@ -136,7 +139,7 @@ Once you are happy with your skill, close the current session. Cowork stored the
 /Documents/Cowork/skills/<name-of-the-skill>
 ```
 
-Browse your OneDrive for Business and check the content of the new skill folder.
+Browse your OneDrive for Business and check the content of the new skill folder. A skill you ask Cowork to build in chat, or write yourself, is saved in the same folder.
 
 ![The folder on OneDrive for Business under Documents/Cowork/skills containing the SKILL.md definition file and the skill quality report JSON file.](./_images/cowork-custom-skill-03.png)
 
@@ -162,7 +165,7 @@ Open the file in VS Code and add YAML frontmatter with `name` and `description`.
 
 Use this baseline template:
 
-```yaml
+`````yaml
 ---
 name: weekly-status-mail
 description: |
@@ -200,7 +203,7 @@ saves it as a **draft for review** — it never sends automatically.
 
 ## Quick Start
 
-````
+````text
 User: "Draft my weekly status email for the team"
 1. Resolve the week window (today → next 7 days) and the team recipients.
 2. Gather: open tasks, upcoming meetings, action items from M365.
@@ -238,7 +241,7 @@ User: "Draft my weekly status email for the team"
 - **Tone:** Warm, professional, concise. **Length:** roughly 120-200 words — scannable bullets, not paragraphs.
 - **Body structure** (emoji headers, each section 2-5 bullets; omit a section's bullets and write "Nothing to report" when empty):
 
-````
+````text
 👋 Hi team — here's where things stand this week.
 
 📋 Open Tasks
@@ -262,7 +265,7 @@ Thanks!
 - **Respect calendar privacy** — show private/confidential events as a time block, not their subject.
 - **Keep it concise.** If a section has many items, surface the top few and note the rest exist rather than dumping everything.
 - Use a light touch with emojis — section headers and the greeting, not every bullet.
-```
+`````
 
 You can download the whole source of the skill from [the Copilot Dev Camp repository](https://github.com/microsoft/copilot-camp/blob/main/src/cowork/weekly-status-mail/SKILL.md).
 
@@ -274,9 +277,9 @@ Important checks:
 
 ### Step 2: Upload the skill in Cowork
 
-In Cowork, open **Customize**, select **Skills**, and use the **Upload skill** option under the **Add** action to upload your package.
+In Cowork, open **Customize**, select **Skills**, select the arrow next to **Add**, and then select **Upload skill** to upload your package. Upload a `.md` file (a single `SKILL.md`, up to 1 MB), or a `.zip` or `.skill` archive with `SKILL.md` at its root (up to 10 MB compressed, 50 MB uncompressed, 100 files). To package the folder from Step 1, zip the files inside it, not the folder itself.
 
-After upload, verify that the included skills appear in **Your skills**.
+After upload, verify that the included skills appear in **Your skills**. If a skill with the same name already exists, Cowork keeps both and numbers the new one. Only upload skills from sources you trust.
 
 If validation fails, check the common issues:
 
@@ -299,6 +302,6 @@ Verify activation from the side panel and confirm that outputs follow the expect
 
 ## Summary
 
-You created a Cowork skill twice: once through the guided **Add skill** flow, and once by hand-authoring `SKILL.md` and uploading it. You also know where Cowork stores your skills and how to verify activation.
+You created a Cowork skill twice: once through the guided **Add** > **Create new** flow, and once by hand-authoring `SKILL.md` and uploading it. You also know where Cowork stores your skills and how to verify activation.
 
 Continue with [Lab 03: Build your first Cowork plugin](./lab-03-cowork-plugins.md).
