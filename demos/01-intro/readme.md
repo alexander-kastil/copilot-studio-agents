@@ -13,7 +13,7 @@ It is split into six focused topics: the first two establish the concepts, the m
 | 3 | [How Agents Work: Knowledge, Prompting, Tools & MCP](./03-agent-anatomy/readme.md) | The three parts of every agent, prompt engineering, semantic index and RAG, and tools via the Model Context Protocol |
 | 4 | [Extensibility & Development Paths](./04-extensibility/readme.md) | The extensibility surface, a framework for choosing a build path, and how to envision a scenario before building |
 | 5 | [Licensing & Environment Setup](./05-licensing-setup/readme.md) | Full vs pay-as-you-go licensing, enabling PAYG for Copilot, Studio, and Cowork, spending governance, and the one-time tools setup |
-| 6 | [Copilot Chat & Productivity Agents](./06-chat-productivity/readme.md) | Copilot Chat free vs licensed, Copilot Tasks, the Frontier program, App Builder, and the prebuilt and SharePoint agents |
+| 6 | [Copilot Chat & Productivity Agents](./06-chat-productivity/readme.md) | Copilot Chat free vs licensed, Researcher and Analyst, and SharePoint agents |
 
 ## Duration & Audience
 

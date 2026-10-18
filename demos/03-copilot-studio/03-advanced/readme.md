@@ -2,7 +2,7 @@
 
 Basics build an agent that answers, and tools let it act; this topic makes it run on its own. You move from an agent a person chats with to one that wakes on an event, plans across several steps, reasons through a hard problem, calls other agents, automates a deterministic process, and even talks. This is where a Copilot Studio agent stops being a smarter FAQ and starts being a coworker that handles a workflow end to end.
 
-The shift underneath all of this is generative orchestration: the LLM-driven planning layer that reads a request, picks the right tools, knowledge, and agents, and executes a multi-step plan. Autonomous behavior, multi-agent handoffs, and deep reasoning all depend on it being turned on. This is the same runtime the new experience makes always-on, so understanding it in classic is what makes the new orchestrator ([02-unified-build-and-orchestrator](../04-ui-update/02-unified-build-and-orchestrator/readme.md)) feel familiar.
+The shift underneath all of this is generative orchestration: the LLM-driven planning layer that reads a request, picks the right tools, knowledge, and agents, and executes a multi-step plan. Autonomous behavior, multi-agent handoffs, and deep reasoning all depend on it being turned on. This is the same runtime the new experience makes always-on, so understanding it in classic is what makes the new orchestrator ([02-unified-build-and-orchestrator](../04-new-experience/02-unified-build-and-orchestrator/readme.md)) feel familiar.
 
 ## What to teach
 

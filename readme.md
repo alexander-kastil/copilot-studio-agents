@@ -2,12 +2,13 @@
 
 Companion Material for Class Delivery by [Alexander Kastil](https://www.linkedin.com/in/alexander-kastil/)
 
-This repository contains the content for the **Automate Business Processes using Copilot Cowork and Copilot Studio** workshop, a four-day hands-on class on extending Microsoft 365 Copilot with low-code agents. You build agents with Copilot Cowork and Copilot Studio, then publish, maintain, and govern them for the enterprise. The material is organized into four modules:
+This repository contains the content for the **Automate Business Processes using Copilot Cowork and Copilot Studio** workshop, a four-day hands-on class on extending Microsoft 365 Copilot with low-code agents. You build agents with Copilot Cowork and Copilot Studio, then publish, maintain, and govern them for the enterprise. The material is organized into five modules:
 
 - [Introduction to Copilot Extensibility & Agents](demos/01-intro/readme.md)
 - [Microsoft 365 Copilot Cowork](demos/02-cowork/readme.md)
 - [Building & Testing Agents with Microsoft Copilot Studio](demos/03-copilot-studio/readme.md)
 - [Publishing, Maintaining & Governing Agents](demos/04-maintaining/readme.md)
+- [AI Teammates: Autopilot & Agent Accounts](demos/05-ai-teammates/readme.md)
 
 See the [full module and topic outline](demos/readme.md) for the day-by-day breakdown.
 

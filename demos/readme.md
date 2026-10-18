@@ -2,7 +2,7 @@
 
 Embark on a four-day, hands-on journey through low-code Agentic AI development with Copilot Studio, designed for Software Engineers, Solution Architects, and Power Platform Makers. You will progress from foundational concepts through advanced orchestration and enterprise governance, gaining practical skills to build agents that solve real business challenges.
 
-You start with the essentials: agents, copilots, prompt engineering, semantic indexing, Retrieval Augmented Generation (RAG), and the Model Context Protocol (MCP). The same foundation module then tours the ready-to-use Copilot surface: Copilot Chat free and licensed, Copilot Tasks, the Frontier program, App Builder, SharePoint Agents, and Agent Builder.
+You start with the essentials: agents, copilots, prompt engineering, semantic indexing, Retrieval Augmented Generation (RAG), and the Model Context Protocol (MCP). The same foundation module then tours the ready-to-use Copilot surface: Copilot Chat free and licensed, Researcher and Analyst, SharePoint Agents, and Agent Builder.
 
 You then learn to harness Copilot Cowork, the agentic experience built for everyday knowledge workers. By crafting custom SKILL.md skills, scheduling prompts, and extending capabilities with built-in skills and plugins, anyone on your team can automate recurring workflows without writing a single line of code, while staying in control through human-in-the-loop approvals at every step.
 
@@ -17,6 +17,8 @@ A guided preview then walks the rebuilt Copilot Studio New Experience alongside 
 A dedicated evaluation module covers Agent Evaluations (GA), test sets, multi-turn conversation tests, activity maps, CSAT transcripts, and the Copilot Studio Kit, giving you structured insight into agent quality and areas for improvement.
 
 Finally, you design and implement real business processes with human-in-the-loop patterns, analytics, and Application Insights, then master publishing and governance: ALM, deployment pipelines, source control, Microsoft Purview compliance, and preventing agent sprawl.
+
+A forward look then hands whole processes to AI teammates: Autopilot, the persistent agent in the new Copilot, and agent accounts that give a Copilot Studio agent its own Entra ID, mailbox, and Teams presence, made proactive with email and schedule triggers and governed through shared memory rules, Frontier licensing, and Agent 365.
 
 ## Duration
 
@@ -120,3 +122,11 @@ Finally, you design and implement real business processes with human-in-the-loop
 - Exporting & Importing Agents between Environments
 - Deployment Pipelines & Source Control integration
 - Copilot Studio Compliance & Security
+
+### Module 9: AI Teammates: Autopilot & Agent Accounts
+
+- Meet Autopilot: Digital Teammates in Microsoft 365
+- Working with Autopilot: Goals, Memory & Long-Running Work
+- Agent Accounts: Give a Copilot Studio Agent Its Own Identity
+- Proactive Teammates: Triggers, Email & Teams Mentions
+- Shared Memory, Licensing & Teammate Governance

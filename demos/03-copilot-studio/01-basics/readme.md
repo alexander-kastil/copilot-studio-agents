@@ -2,7 +2,7 @@
 
 Copilot Studio is Microsoft's low-code platform for building agents, and this topic is where makers get their footing. You start in the Power Platform admin center to understand environments and where an agent actually lives, then build and configure your first agent, ground it with knowledge, shape its conversations with topics, and publish it to a channel your colleagues already use. The goal is a working, grounded agent in Teams by the end, built without writing code.
 
-The through-line is the classic authoring surface (Topics, Knowledge, Actions, Settings) that most tenants still open by default and that all production agents and ALM pipelines live in today. Everything here transfers: the new experience in [04-ui-update](../04-ui-update/readme.md) reuses these same concepts under a consolidated Build surface. Learn the classic model first and the new one reads as a rearrangement, not a reset.
+The through-line is the classic authoring surface (Topics, Knowledge, Actions, Settings) that most tenants still open by default and that all production agents and ALM pipelines live in today. Everything here transfers: the new experience in [04-new-experience](../04-new-experience/readme.md) reuses these same concepts under a consolidated Build surface. Learn the classic model first and the new one reads as a rearrangement, not a reset.
 
 ## What to teach
 

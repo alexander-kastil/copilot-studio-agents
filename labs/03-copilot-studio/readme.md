@@ -21,17 +21,17 @@ A connected sequence that builds one HR agent from an empty environment to an au
 
 ## New Experience Labs
 
-Hands-on labs for the rebuilt Copilot Studio (June 2026), paired with the [04-ui-update](../../demos/03-copilot-studio/04-ui-update/readme.md) theory and demos.
+Hands-on labs for the rebuilt Copilot Studio (June 2026), paired with the [04-new-experience](../../demos/03-copilot-studio/04-new-experience/readme.md) theory and demos.
 
 | Lab | Focus |
 |-----|-------|
-| [Compare the Classic and New Copilot Studio Experiences Side by Side](./04-ui-update/01-new-experience-overview/lab-01-compare-classic-and-new.md) | Stand up a minimal Northwind assistant in the new experience and contrast it against classic to master the toggle, coexistence, navigation tells, and the one-way conversion rule |
-| [Build, Evaluate, and Monitor a Northwind Sales Assistant](./04-ui-update/02-unified-build-and-orchestrator/lab-01-evaluate-and-monitor-agent.md) | Work all four Build-surface tabs, then build a test set in Evaluate and review runs in Monitor |
-| [Evaluate a New-Experience Agent with Test Sets](./04-ui-update/03-evaluations/lab-01-evaluate-with-test-sets.md) | Fill a conversation test set three ways, run a baseline, diagnose each failure into a component bucket, change one thing, and prove the fix with a second run |
-| [Package Team Knowledge into a Portable Skill](./04-ui-update/04-agent-skills/lab-01-portable-skill.md) | Author a portable `SKILL.md`, reuse it across two agents, and contrast the skill approach with classic topics |
-| [Build a Sales Account Assistant in the New Experience](./04-ui-update/05-workflows-and-mcp/lab-01-sales-account-assistant.md) | Capstone: create a new-experience agent, ground it, add tools and a Dataverse MCP server, package a reusable skill, automate with a workflow, and publish |
-| [Ground an Agent with Work IQ and Route Work Questions to It](./04-ui-update/06-iq-grounding/lab-01-ground-with-iq.md) | Add Work IQ to a new-experience agent, route work-context questions to it in Instructions, and verify the routing in the activity trace |
-| [Build and Share a Business App](./04-ui-update/07-apps/lab-01-build-an-app.md) | Connect a generated app to a SharePoint list, publish and share it with a classmate, and confirm that data access is a separate permission |
+| [Compare the Classic and New Copilot Studio Experiences Side by Side](./04-new-experience/01-new-experience-overview/lab-01-compare-classic-and-new.md) | Stand up a minimal Northwind assistant in the new experience and contrast it against classic to master the toggle, coexistence, navigation tells, and the one-way conversion rule |
+| [Build, Evaluate, and Monitor a Northwind Sales Assistant](./04-new-experience/02-unified-build-and-orchestrator/lab-01-evaluate-and-monitor-agent.md) | Work all four Build-surface tabs, then build a test set in Evaluate and review runs in Monitor |
+| [Evaluate a New-Experience Agent with Test Sets](./04-new-experience/03-evaluations/lab-01-evaluate-with-test-sets.md) | Fill a conversation test set three ways, run a baseline, diagnose each failure into a component bucket, change one thing, and prove the fix with a second run |
+| [Package Team Knowledge into a Portable Skill](./04-new-experience/04-agent-skills/lab-01-portable-skill.md) | Author a portable `SKILL.md`, reuse it across two agents, and contrast the skill approach with classic topics |
+| [Build a Sales Account Assistant in the New Experience](./04-new-experience/05-workflows-and-mcp/lab-01-sales-account-assistant.md) | Capstone: create a new-experience agent, ground it, add tools and a Dataverse MCP server, package a reusable skill, automate with a workflow, and publish |
+| [Ground an Agent with Work IQ and Route Work Questions to It](./04-new-experience/06-iq-grounding/lab-01-ground-with-iq.md) | Add Work IQ to a new-experience agent, route work-context questions to it in Instructions, and verify the routing in the activity trace |
+| [Build and Share a Business App](./04-new-experience/07-apps/lab-01-build-an-app.md) | Connect a generated app to a SharePoint list, publish and share it with a classmate, and confirm that data access is a separate permission |
 
 ## Additional Learning Paths
 

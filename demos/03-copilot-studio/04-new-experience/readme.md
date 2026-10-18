@@ -1,0 +1,68 @@
+# The New Copilot Studio Experience
+
+In June 2026 Microsoft shipped a rebuilt Copilot Studio, delivered as a production-ready preview and rolled out worldwide. It runs beside the classic experience rather than replacing it: a New experience toggle on the home page switches between them, and an agent built in one experience cannot be converted to the other. This sub-module teaches what students work with today (the classic authoring surface in [Basics](../01-basics/readme.md), [Tools](../02-tools/readme.md), and [Advanced](../03-advanced/readme.md)) alongside an honest, demo-led preview of the new experience.
+
+Treat classic as the primary teaching track and the new experience as guided demos. Most tenants still open classic by default, existing agents and ALM pipelines live there, and not every feature has moved across yet. For each new-experience idea, the theory and demos show the classic equivalent so the concept transfers when a tenant adopts the toggle.
+
+## Topics
+
+| Topic | What it teaches |
+|-------|-----------------|
+| [The Two Copilot Studio Experiences](01-new-experience-overview/readme.md) | The toggle, coexistence, the one-way conversion rule, and how to tell which experience you are in |
+| [The Unified Build Surface and the New Orchestrator](02-unified-build-and-orchestrator/readme.md) | The four-tab Build surface, the component map from classic, and the enhanced orchestration runtime |
+| [Test and Evaluate Copilot Studio Agents](03-evaluations/readme.md) | Test sets and graders on both surfaces, the Evaluate tab in the new experience, diagnosing a failing case, and post-release analytics from thumbs to CSAT to themes |
+| [Agent Skills in Copilot Studio](04-agent-skills/readme.md) | The Agent Skills open format, `SKILL.md`, and importing Claude Code or GitHub Copilot skills |
+| [Tools, MCP, and the New Workflows Designer](05-workflows-and-mcp/readme.md) | Connectors, MCP servers, and the new node-by-node workflows designer with agent nodes |
+| [Grounding Agents with Work IQ, Foundry IQ, and Fabric IQ](06-iq-grounding/readme.md) | What each IQ grounds on, how it is added in the new experience, and how to choose between Work IQ, Foundry IQ, and Fabric IQ |
+| [Building Apps in Copilot Studio](07-apps/readme.md) | Apps generated from a description beside agents and workflows: refining by conversation, publish versus share, and data access |
+
+## Demos
+
+| Topic | Demo |
+|-------|------|
+| [The Two Copilot Studio Experiences](01-new-experience-overview/readme.md) | [Build and Ground Your First New-Experience Agent](01-new-experience-overview/demo-01-build-and-ground-an-agent.md) |
+| [The Unified Build Surface and the New Orchestrator](02-unified-build-and-orchestrator/readme.md) | [Trace the Agentic Reasoning Loop](02-unified-build-and-orchestrator/demo-02-trace-agent-reasoning.md) |
+| [Agent Skills in Copilot Studio](04-agent-skills/readme.md) | [Add and Tune an Agent Skill](04-agent-skills/demo-03-add-a-reusable-skill.md) |
+| [Tools, MCP, and the New Workflows Designer](05-workflows-and-mcp/readme.md) | [Connect an MCP Server and Automate with a Workflow](05-workflows-and-mcp/demo-04-connect-mcp-and-workflow.md) |
+| [Grounding Agents with Work IQ, Foundry IQ, and Fabric IQ](06-iq-grounding/readme.md) | [Ground an Agent in Your Work Context with Work IQ](06-iq-grounding/demo-05-ground-with-iq.md) |
+| [Building Apps in Copilot Studio](07-apps/readme.md) | [Build an App from a Description](07-apps/demo-06-build-an-app.md) |
+
+## Labs
+
+| Lab | Focus |
+|-----|-------|
+| [Compare the Classic and New Copilot Studio Experiences Side by Side](../../../labs/03-copilot-studio/04-new-experience/01-new-experience-overview/lab-01-compare-classic-and-new.md) | Stand up a minimal Northwind assistant in the new experience and contrast it against classic: the toggle, coexistence, navigation tells, and the one-way conversion rule |
+| [Build, Evaluate, and Monitor a Northwind Sales Assistant](../../../labs/03-copilot-studio/04-new-experience/02-unified-build-and-orchestrator/lab-01-evaluate-and-monitor-agent.md) | Work all four Build-surface tabs, then build a test set in Evaluate and review runs in Monitor |
+| [Evaluate a New-Experience Agent with Test Sets](../../../labs/03-copilot-studio/04-new-experience/03-evaluations/lab-01-evaluate-with-test-sets.md) | Fill a conversation test set three ways, run a baseline, diagnose each failure into a component bucket, change one thing, and prove the fix with a second run |
+| [Package Team Knowledge into a Portable Skill](../../../labs/03-copilot-studio/04-new-experience/04-agent-skills/lab-01-portable-skill.md) | Author a `SKILL.md`, reuse it across two agents, and contrast with classic topics |
+| [Build a Sales Account Assistant in the New Experience](../../../labs/03-copilot-studio/04-new-experience/05-workflows-and-mcp/lab-01-sales-account-assistant.md) | Capstone: build, ground, tool up, skill, and publish a new-experience agent end to end |
+| [Ground an Agent with Work IQ and Route Work Questions to It](../../../labs/03-copilot-studio/04-new-experience/06-iq-grounding/lab-01-ground-with-iq.md) | Add Work IQ to a new-experience agent, route work-context questions to it in Instructions, and verify the routing in the activity trace |
+| [Build and Share a Business App](../../../labs/03-copilot-studio/04-new-experience/07-apps/lab-01-build-an-app.md) | Connect a generated app to a SharePoint list, publish and share it with a classmate, and confirm that data access is a separate permission |
+
+## Classic to new quick reference
+
+| Task | Classic experience | New experience |
+|------|--------------------|----------------|
+| Switch surfaces | Not applicable | Home page, top-right New experience toggle |
+| Primary navigation | Topics, Knowledge, Actions, Settings | Build, Preview, Evaluate, Monitor |
+| Configure an agent | Nine-plus config areas | Unified Build components panel |
+| Orchestration | Configurable, classic or generative | Enhanced runtime, always on |
+| Reusable behaviour | Topics, plugins | Skills panel, `SKILL.md` create or upload |
+| Add an MCP server | Tools, add tool, requires generative orchestration | Tools, Add a tool, Model Context Protocol |
+| Test | Test pane | Preview tab, then Evaluate and Monitor |
+
+## Labs to draw from
+
+The official [microsoft/mcs-labs](https://github.com/microsoft/mcs-labs) repo carries the closest hands-on material. The in-class capstone above is based on [Orchestration with Copilot Studio](https://microsoft.github.io/mcs-labs/labs/mcs-orchestration/) (Level 300, roughly 60 minutes), which builds a new-experience Sales Account Assistant and packages behaviour into a Skill. For a full day, extend into [Advanced Agent in a Day](https://microsoft.github.io/mcs-labs/workshops/advanced-agent-in-a-day/). Note that the older Copilot Developer Camp labs retire on 2026-06-30 in favour of the [Copilot Studio Agent Academy](https://microsoft.github.io/agent-academy/).
+
+## Links & Resources
+
+[Agents overview (new experience)](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/overview)
+
+[Classic vs. new agent experience](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/classic-vs-new)
+
+[Skills overview (preview)](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/skills-overview)
+
+[What's new in Copilot Studio](https://learn.microsoft.com/microsoft-copilot-studio/whats-new)
+
+[Meet the new Copilot Studio (announcement)](https://techcommunity.microsoft.com/blog/copilot-studio-blog/meet-the-new-copilot-studio-rebuilt-for-more-complex-multi-step-work/4526488)

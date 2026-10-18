@@ -11,7 +11,7 @@ It is split into four focused topics that move from first agent to advanced orch
 | 1 | [Copilot Studio Basics](./01-basics/readme.md) | Environments and architecture, creating and configuring agents, knowledge sources and starter prompts, topics, entities and variables, Power Fx, conversation design, and publishing to channels |
 | 2 | [Extending Agents with Tools](./02-tools/readme.md) | Prompt actions, connectors, Dataverse, AI Builder and the Document Processing managed agent, the Model Context Protocol (MCP), REST APIs, and Computer Use |
 | 3 | [Advanced Copilot Studio Agents](./03-advanced/readme.md) | Generative orchestration, autonomous agents and triggers, multi-agent orchestration, deep reasoning models, Agent Flows, and voice support |
-| 4 | [The New Copilot Studio Experience](./04-ui-update/readme.md) | The rebuilt UI taught beside the classic experience: the toggle and coexistence, the unified Build surface and new orchestrator, testing and evaluating agents on both surfaces, Agent Skills and `SKILL.md`, tools, MCP, and the new Workflows designer, grounding with Work IQ, Foundry IQ, and Fabric IQ, and building apps |
+| 4 | [The New Copilot Studio Experience](./04-new-experience/readme.md) | The rebuilt UI taught beside the classic experience: the toggle and coexistence, the unified Build surface and new orchestrator, testing and evaluating agents on both surfaces, Agent Skills and `SKILL.md`, tools, MCP, and the new Workflows designer, grounding with Work IQ, Foundry IQ, and Fabric IQ, and building apps |
 
 Publishing, ALM, and governance for the agents you build here are covered in [Publishing, Maintaining & Governing Copilot Studio Agents](../04-maintaining/readme.md).
 
