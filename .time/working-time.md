@@ -33,5 +33,6 @@
 | 2026-10-06 | 0.97 | 10:55 | 11:53 | October currency research for the Cowork and Copilot Studio modules |
 | 2026-10-17 | 0.91 | 19:58 | 20:53 | Cowork module and labs refreshed to the October product state |
 | 2026-10-17 | 0.17 | 20:27 | 21:03 | Copilot Studio module inventory and October update research |
+| 2026-10-18 | 1.07 | 21:16 | 22:20 | Teaching diagrams and slide deck outlines for all five course modules |
 
-**Total: 19.16h**
+**Total: 20.23h**

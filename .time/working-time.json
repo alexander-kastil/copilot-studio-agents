@@ -83,6 +83,71 @@
       "industry": "technical training and enablement",
       "status": "Built and running in-house",
       "catalogue": { "action": "none" }
+    },
+    {
+      "date": "2026-10-18",
+      "from": "21:16",
+      "to": "22:20",
+      "sessionId": "83a389b5-4fc6-4c95-8b11-2968a38ed325",
+      "branch": "v-3.0.0",
+      "commits": [
+        "d40b52a",
+        "4794076"
+      ],
+      "surfaces": [
+        "m365-pilot"
+      ],
+      "files": [
+        "demos/01-intro/pptx/00-02-module-path.md",
+        "demos/03-copilot-studio/pptx/topics.json",
+        "demos/02-cowork/pptx/images/01-03-interaction-loop.svg",
+        "CLAUDE.md"
+      ],
+      "mechanism": {
+        "takes": "a course repository of topic readmes, demo guides and labs, plus a slide-spec workflow with its diagram style",
+        "does": "fans the modules out to parallel diagram agents under one written contract with owned-file lists, has them draw self-contained SVG diagrams (animated where motion carries the point), write one slide spec per deck card with speaker notes and image prompts, keep each diagram in one place shared by the slide and the readme, then reuses the diagrams across other modules' readmes and labs from an inventory of where each one is already shown",
+        "returns": "five module deck outlines ready for slide generation, 156 diagrams embedded across the course text, and a verification pass with zero broken links or malformed specs"
+      },
+      "portsAsIs": [
+        "one contract file plus short per-agent briefs with owned-file lists",
+        "diagrams stored once at the slide image path and embedded by every doc that teaches the same point",
+        "an asset inventory with current embed locations driving cross-module reuse",
+        "a spec and diagram checker run before any paid generation"
+      ],
+      "perCustomer": [
+        "the course modules and their topic order",
+        "the diagram colour tokens and the deck template"
+      ],
+      "evidence": [
+        "scripts/check_specs.py over the five decks: specs=90 svgs=70 unused=0 md_svg_links=232 problems=0",
+        "contact sheets of every deck reviewed in session",
+        "28 agents: 20 diagram and spec agents, 8 reuse agents"
+      ],
+      "toolchain": {
+        "skills": [
+          "create-pptx",
+          "create-class",
+          "brand-voice-copilot",
+          "humanizer",
+          "report-plugin:report",
+          "learn-loop-plugin:claude-learn",
+          "claude-learn-harvest",
+          "claude-learn-worktime",
+          "track-time"
+        ],
+        "mcpServers": [
+          "subagent-delegation-plugin"
+        ],
+        "agents": [
+          "image-producer",
+          "fork"
+        ]
+      },
+      "industry": "technical training and enablement",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      }
     }
   ]
 }
