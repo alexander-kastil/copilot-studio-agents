@@ -16,11 +16,15 @@ Three properties separate an agent from a chatbot.
 
 You stay in control through human-in-the-loop approvals: the agent proposes an action such as sending an email or updating a record, and a person approves before it runs. This control theme runs through Cowork and Copilot Studio for the rest of the course.
 
+![A chatbot turns one question into one answer, while an agent loops through plan, act, observe, and adjust until the goal is reached, calling tools and waiting for a person to approve before an action runs.](../pptx/images/02-01-agentic-loop.svg)
+
 ---
 
 ## Business Process: Before and After Agents
 
 The clearest way to see the value is to compare an everyday process run by hand versus run with an agent. A quarterly account review today means a person gathering files, reading emails, checking a CRM, and assembling a summary across an afternoon. The same review with an agent becomes a goal you hand off, with the person reviewing and approving the result.
+
+![The quarterly account review in two lanes: today a person runs all four steps by hand, and with agentic AI the person sets the goal, an agent runs the same steps through tools and knowledge, and the person reviews and approves.](../pptx/images/02-02-before-after.svg)
 
 | | Process today | Process with agentic AI |
 |---|---|---|
@@ -55,6 +59,8 @@ A weak agent is usually missing depth in one of these, and naming which one is t
 
 Most agent solutions are assembled from a small set of recurring patterns. You choose a pattern for the shape of the problem, not by habit, and you can combine them in one solution.
 
+![Five pattern sketches: single agent, multi-agent orchestration, deterministic flow, autonomous agent, and human-in-the-loop, each with when to use it.](../pptx/images/02-03-design-patterns.svg)
+
 | Pattern | When to use it |
 |---|---|
 | Single agent | One job, one set of instructions, knowledge, and tools |
@@ -71,17 +77,7 @@ Deterministic flows and autonomous agents are covered in the advanced module; si
 
 When one agent would carry too many jobs, you split the work: a master agent owns the goal and routes each request to a specialist that owns one domain. Each specialist has its own instructions, knowledge, and tools, so it stays small and easy to maintain. The master handles orchestration, deciding which specialist answers and combining their results.
 
-```mermaid
-flowchart TB
-  User["User goal"] --> Master["Master agent<br/>(orchestrator)"]
-  Master --> Hotel["Hotel booking<br/>agent"]
-  Master --> Flight["Flight search<br/>agent"]
-  Master --> Dining["Restaurant<br/>agent"]
-  Hotel --> Master
-  Flight --> Master
-  Dining --> Master
-  Master --> Result["Combined<br/>answer"]
-```
+![The user goal goes to a master agent, which routes work to hotel booking, flight search, and restaurant agents, collects their results, and returns one combined answer.](./_images/multi-agent-orchestration.svg)
 
 This design gives you specialized expertise per agent, integrated tools and knowledge across the system, and modular pieces that are easier to reuse and expand. The trade-off is orchestration: the master needs clear routing rules so the right specialist handles each request. You build exactly this in the advanced module as focused and connected agents.
 

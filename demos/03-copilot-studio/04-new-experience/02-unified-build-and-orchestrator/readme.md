@@ -10,11 +10,15 @@ The new experience organizes an agent into four tabs across the top, and knowing
 
 The tabs read left to right in the order you actually work: build it, try it, measure it, watch it. A maker coming from classic can map the familiar pieces here: the old Test pane became **Preview** and the old Analytics became **Monitor**, with **Evaluate** added as a scoring discipline classic never had.
 
+![Four tabs from left to right in working order: Build, Preview, Evaluate and Monitor, each with what it is for and where it came from in classic (scattered areas, Test pane, Analytics), with Evaluate adding test-set scoring.](./_images/four-tabs-work-order.svg)
+
 ### The unified components panel
 
 On the **Build** tab, everything that shapes the agent lives in one components panel instead of scattered navigation areas. Instructions replace classic topic logic and are the always-in-context brief the runtime reasons against on every turn. Knowledge sources ground answers in your own content so the agent can cite where a fact came from. Tools connect the agent to real actions and services, and Skills package a reusable task recipe the agent loads on demand.
 
 Consolidating these four into one view is the heart of the new experience. A maker no longer hops between a Topics area, a Knowledge section, an Actions section, and a plugins area; they compose the whole agent in a single place and see how the pieces fit together.
+
+![The classic Topics area, Knowledge section, Actions section and plugins area each map to one component in the single components panel of the Build tab: Instructions, Knowledge, Tools and Skills.](./_images/classic-areas-to-components-panel.svg)
 
 ### Microsoft IQ and memory
 
@@ -23,6 +27,8 @@ From the same Knowledge component, Microsoft IQ connects the agent to organizati
 ### The enhanced orchestration runtime
 
 Behind every new-experience agent runs a single enhanced orchestration runtime, and it is not a setting you choose. In classic you picked classic or generative orchestration; here the runtime is always on and plans across multiple steps on its own. That means one question can make the agent consult several knowledge sources and tools, then stitch the result into a single answer, which is why a new agent behaves so differently from a classic one.
+
+![One multi-part question enters the always-on enhanced orchestration runtime, which builds an ordered plan, applies deep reasoning when needed, consults knowledge sources and tools, and returns one answer stitched together.](../../pptx/images/04-03-orchestration-runtime.svg)
 
 ### Deep reasoning
 

@@ -14,6 +14,8 @@ Because both experiences are live in the same tenant, coexistence is the normal 
 
 The fastest tell is the navigation. Classic shows Topics, Knowledge, Actions, and Settings down the left; the new experience shows Build, Preview, Evaluate, and Monitor tabs across the top. If you ever see Topics in the navigation, you are in classic, full stop.
 
+![Classic lists Topics, Knowledge, Actions and Settings down the left, while the new experience shows Build, Preview, Evaluate and Monitor tabs across the top with its Build tab components below.](../../pptx/images/04-02-telling-experiences-apart.svg)
+
 To move between them, open the Copilot Studio home page, choose Try it now on the banner, then use the New experience toggle to switch back and forth at any time. Confirming which experience you are in before you create an agent is the single habit that prevents the most rework. A minute spent reading the tabs saves an hour of building in the wrong place.
 
 ### The one-way conversion rule
@@ -22,11 +24,15 @@ Agents built in one experience cannot be converted to the other. The two run on 
 
 The practical consequence is simple: decide the experience before you invest in an agent, not after. Rebuilding a mature classic agent in the new experience means re-authoring it from scratch, and the same is true in reverse. Read the navigation, confirm the experience, then start building.
 
+![Inside one tenant, the New experience toggle sends each new agent into either the classic lane of authored topics and branching or the new lane of instructions plus the reasoning runtime, and the lanes never meet because the experience is fixed at creation.](../../pptx/images/04-01-experience-per-agent.svg)
+
 ### When to choose which
 
 Classic still leads where you need deterministic control: authored topics and branching logic, configurable orchestration modes (classic or generative), and the broader mature feature set that production agents lean on today. Reach for classic when the flow must follow an exact, auditable path, or when it depends on a feature the new experience has not surfaced yet.
 
 Choose the new experience for a greenfield agent that reasons over Microsoft 365 data, when you want the simpler instructions-first model, and when you want access to Skills and the enhanced orchestrator. In this module, classic stays the primary production track and the new experience runs as guided demos and labs, so the concepts transfer cleanly when your tenant adopts it.
+
+![Two columns of choice drivers: classic for deterministic control, auditable paths, authored topics and its mature feature set; the new experience for greenfield agents that reason over Microsoft 365 data with instructions, Skills and the enhanced orchestrator.](./_images/when-to-choose-classic-or-new.svg)
 
 ## Classic to new at a glance
 

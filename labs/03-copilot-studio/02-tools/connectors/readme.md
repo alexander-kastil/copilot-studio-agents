@@ -28,6 +28,8 @@ Using generative AI to determine how your agent responds can make the conversati
 
 In generative mode, a agent can select multiple actions or topics at once, to handle multi-intent queries. Once actions and topics are selected, the agent generates a plan that determines their execution order.
 
+![Classic orchestration triggers the one topic whose trigger phrases match most closely. Generative orchestration picks topics and actions mainly by their descriptions, plans one or more of them in execution order, and fills inputs from the context or by asking the user.](./_images/classic-vs-generative-orchestration.svg)
+
 When you test a agent that uses generative mode in Copilot Studio, you can open the conversation map to follow the execution of the plan.
 
 ![Image 5](./_images/image_23.png)
@@ -85,6 +87,8 @@ Save, and then select Next.
 Review the configuration and select Finish.
 
 Task 2: Test your action
+
+![How the agent fills the inputs of Get forecast for today: it asks for the missing Location, fills it with your city and keeps Units at I (Imperial), answers with the forecast, and fills Location again when you change the query.](./_images/weather-action-input-filling.svg)
 
 Go to the Test pane.
 

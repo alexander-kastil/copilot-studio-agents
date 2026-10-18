@@ -18,6 +18,8 @@ Each step follows the same pattern:
 
 You are a registered dietitian who has Cowork and wants to speed up routine client prep. This demo steps outside the Aurora Outdoor sales scenario on purpose, because the plugin is domain-specific, and that is exactly the point of a plugin. You start from a client intake form and finish with a single Word packet: an assessment plus a client-facing education handout.
 
+![The dietitian plugin's clinical-nutrition skill turns client-intake.docx into a nutrition assessment, dietary-communication turns it into a client handout, and the built-in Word skill compiles both into the Client Nutrition Packet. A registered dietitian reviews and approves the packet before it reaches a client.](./_images/dietitian-packet-flow.svg)
+
 > **Warning:** Every skill in the `dietitian` plugin is for drafting only. Its output does not constitute medical nutrition therapy, and a registered dietitian must review and approve any content before it reaches a client. Treat everything Cowork produces here as a first draft for professional review, never as final clinical advice.
 
 ---

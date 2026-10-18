@@ -1,0 +1,28 @@
+{
+  "topics": [
+    {
+      "title": "Agents & Copilots for Microsoft 365",
+      "subtitle": "The vocabulary, the ecosystem map and where agents live"
+    },
+    {
+      "title": "Agentic AI & Design Patterns",
+      "subtitle": "The goal-driven model and the patterns teams build with"
+    },
+    {
+      "title": "How Agents Work: Knowledge, Prompting, Tools & MCP",
+      "subtitle": "Instructions, knowledge, tools, RAG and MCP"
+    },
+    {
+      "title": "Extensibility & Development Paths",
+      "subtitle": "Choosing a build path and envisioning a scenario"
+    },
+    {
+      "title": "Licensing & Environment Setup",
+      "subtitle": "Full or pay-as-you-go licensing and the one-time setup"
+    },
+    {
+      "title": "Copilot Chat & Productivity Agents",
+      "subtitle": "Copilot Chat, Researcher, Analyst and SharePoint agents"
+    }
+  ]
+}

@@ -10,6 +10,8 @@ Northwind Traders sellers can now ask the Sales Assistant about products and pri
 - An agent node inside that workflow that calls the Northwind Sales Assistant to draft the follow-up text.
 - A workflow tested node by node, with a saved version you can roll back to.
 
+![The demo build: a Preview question reaches the Northwind Sales Assistant, which calls the Dataverse MCP server, and a workflow runs a trigger, an agent node that calls the same assistant, and a final node, with each piece tagged by its exercise.](./_images/mcp-and-workflow-demo-overview.svg)
+
 ## Related Topics
 
 This demo puts [Tools, MCP, and the New Workflows Designer](readme.md) into practice by adding an MCP server and building a workflow from the same Tools surface. It builds on [The Unified Build Surface and the New Orchestrator](../02-unified-build-and-orchestrator/readme.md), because the enhanced orchestration runtime is what reads the server description and decides, on its own, when to call the tool.
@@ -24,6 +26,8 @@ This demo puts [Tools, MCP, and the New Workflows Designer](readme.md) into prac
 ## Exercise 1: Add the prebuilt Dataverse MCP server
 
 The new experience lists three kinds of tools on one surface, and each is fit for a different purpose. A connector wraps a single named action against a known API (send this mail, create this row). An MCP server attaches a standardized bundle of related tools that a vendor maintains, so you get a whole capability without wiring each action. A workflow automates a repeatable, deterministic process you define. You want live account records here, so the MCP server is the right fit, and using a prebuilt Microsoft server makes the wizard a few fields instead of a custom build.
+
+![An agent reaches out through one Tools surface in three shapes: a connector for one action against one service, an MCP server for one connection to a shared set of tools, and a workflow for a fixed sequence of steps from input to output.](../../pptx/images/04-06-connectors-mcp-workflows.svg)
 
 1. On the **Build** tab, open the **Tools** component in the components panel.
 2. Select **Add a tool**, then choose **Model Context Protocol** to start the onboarding wizard.
@@ -43,6 +47,8 @@ Expected: the Dataverse MCP server appears in the agent's **Tools** list with th
 ## Exercise 2: Trigger the MCP tool from Preview
 
 You confirm the wiring by asking a natural question, not by clicking the tool. That is the point of the new experience: the orchestrator, not a hand-authored topic, decides to call the server based on the description you wrote. In classic Copilot Studio this behavior requires generative orchestration to be turned on, and a topic cannot call an MCP server directly. In the new experience the enhanced orchestration runtime is always on, so there is no setting to flip.
+
+![The orchestrator reads the Preview question and the Server description side by side, matches accounts and support cases in both, and calls the Dataverse MCP server, whose live records return as the Preview answer.](./_images/mcp-description-routing.svg)
 
 1. Open the **Preview** tab next to **Build**.
 2. Send the following message:

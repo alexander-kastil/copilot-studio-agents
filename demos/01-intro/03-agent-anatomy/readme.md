@@ -40,6 +40,8 @@ A language model on its own only knows its training data, which is generic and f
 
 The semantic index is what makes retrieval find the right snippets. It stores your content as embeddings (numeric representations of meaning), so a search for "time off policy" also matches a document titled "annual leave," because the two are close in meaning, not just in words.
 
+![A search for time off policy and a document titled annual leave share no words, yet their embeddings land close together in the semantic index, so the search matches the document.](../pptx/images/03-02-semantic-index.svg)
+
 ```mermaid
 flowchart LR
   Q["User question"] --> R["Retrieve relevant<br/>snippets from index"]
@@ -58,6 +60,8 @@ Knowledge lets an agent read. Tools let it act and reach live systems: check an 
 
 The Model Context Protocol (MCP) is an open standard for exposing tools to any AI agent. Instead of writing a bespoke integration for each product, you run an MCP server that describes its tools once, and any MCP-aware agent (Copilot Studio, Claude, and others) can discover and call them.
 
+![Copilot Studio, Claude, and other agent hosts all call one MCP server, which describes its tools once and reaches live systems.](../pptx/images/03-03-mcp-server.svg)
+
 | Without MCP | With MCP |
 |---|---|
 | A custom connector per agent platform | One server, many agents |
@@ -71,6 +75,8 @@ MCP matters because it makes your integrations portable. A tool you expose today
 ## Putting the Parts Together
 
 A well-built agent reads its instructions, retrieves grounding from knowledge when it needs facts, and calls tools when it needs live data or has to act. Diagnosing a weak agent means asking which part is thin.
+
+![A user question reaches the agent, which reads its instructions, retrieves grounding from knowledge when it needs facts, calls tools when it needs live data or has to act, and returns a grounded answer or action.](../pptx/images/03-01-three-parts.svg)
 
 | Symptom | Likely missing part |
 |---|---|

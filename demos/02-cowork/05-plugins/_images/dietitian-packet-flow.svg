@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">The dietitian demo, step by step</title>
+  <desc id="d">Step 1 installs the dietitian plugin. In the Cowork side panel, clinical-nutrition turns client-intake.docx into a nutrition assessment, dietary-communication turns the assessment into a client education handout, and the built-in Word skill compiles both into the Client Nutrition Packet NUT-2041 with the DRAFT ONLY line first. A registered dietitian reviews and approves the packet before it reaches a client.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+  </defs>
+  <rect x="110" y="145" width="240" height="190" rx="14" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="135" y="192" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">Step 1</text>
+  <text x="135" y="238" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" fill="#24292f" font-weight="700">dietitian</text>
+  <text x="135" y="278" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" fill="#24292f" font-weight="700">plugin</text>
+  <text x="135" y="318" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">installed</text>
+  <rect x="370" y="70" width="1480" height="295" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="400" y="118" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" fill="#24292f" font-weight="700">Cowork side panel</text>
+  <rect x="400" y="145" width="440" height="190" rx="12" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="430" y="192" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">Step 2</text>
+  <text x="430" y="244" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f">clinical-nutrition</text>
+  <text x="430" y="292" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">dietitian plugin</text>
+  <rect x="890" y="145" width="440" height="190" rx="12" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="920" y="192" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">Step 3</text>
+  <text x="920" y="244" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f">dietary-communication</text>
+  <text x="920" y="292" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">dietitian plugin</text>
+  <rect x="1380" y="145" width="440" height="190" rx="12" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1410" y="192" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">Step 4</text>
+  <text x="1410" y="244" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" fill="#24292f" font-weight="700">Word</text>
+  <text x="1410" y="292" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">built-in skill</text>
+  <path d="M350,240 L398,240" fill="none" stroke="#57606a" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+  <path d="M110,470 H310 L350,510 V760 H110 Z" fill="#ffffff" stroke="#8c959f" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M310,470 V510 H350" fill="none" stroke="#8c959f" stroke-width="2" stroke-linejoin="round"/>
+  <text x="135" y="580" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f">client-</text>
+  <text x="135" y="620" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f">intake.docx</text>
+  <text x="135" y="680" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">Intake form</text>
+  <path d="M400,470 H800 L840,510 V760 H400 Z" fill="#ffffff" stroke="#8c959f" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M800,470 V510 H840" fill="none" stroke="#8c959f" stroke-width="2" stroke-linejoin="round"/>
+  <text x="430" y="545" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" fill="#24292f" font-weight="700">Nutrition</text>
+  <text x="430" y="587" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" fill="#24292f" font-weight="700">assessment</text>
+  <text x="430" y="650" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">Energy and protein needs</text>
+  <text x="430" y="694" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">Labs interpreted</text>
+  <path d="M890,470 H1290 L1330,510 V760 H890 Z" fill="#ffffff" stroke="#8c959f" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M1290,470 V510 H1330" fill="none" stroke="#8c959f" stroke-width="2" stroke-linejoin="round"/>
+  <text x="920" y="545" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" fill="#24292f" font-weight="700">Client education</text>
+  <text x="920" y="587" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" fill="#24292f" font-weight="700">handout</text>
+  <text x="920" y="650" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">Plain language</text>
+  <text x="920" y="694" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">SMART goals</text>
+  <path d="M1380,470 H1780 L1820,510 V760 H1380 Z" fill="#eaf2ff" stroke="#8c959f" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M1780,470 V510 H1820" fill="none" stroke="#8c959f" stroke-width="2" stroke-linejoin="round"/>
+  <text x="1410" y="545" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" fill="#24292f" font-weight="700">Client Nutrition</text>
+  <text x="1410" y="587" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" fill="#24292f" font-weight="700">Packet</text>
+  <text x="1410" y="650" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f">NUT-2041</text>
+  <text x="1410" y="694" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">DRAFT ONLY line first</text>
+  <path d="M620,335 L620,468" fill="none" stroke="#57606a" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+  <path d="M1110,335 L1110,468" fill="none" stroke="#57606a" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+  <path d="M1600,335 L1600,468" fill="none" stroke="#57606a" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+  <path d="M350,615 L398,615" fill="none" stroke="#57606a" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+  <path d="M840,615 L888,615" fill="none" stroke="#57606a" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+  <path d="M1330,615 L1378,615" fill="none" stroke="#57606a" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+  <path d="M620,760 L620,840 L1600,840 L1600,762" fill="none" stroke="#57606a" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+  <path d="M1760,760 L1760,898" fill="none" stroke="#57606a" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+  <rect x="110" y="900" width="1710" height="110" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="965" y="966" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" fill="#24292f" font-weight="600" text-anchor="middle">A registered dietitian reviews and approves the packet before it reaches a client</text>
+  <g opacity="1" fill="none" stroke="#e0a534" stroke-width="7"><rect x="400" y="145" width="440" height="190" rx="12"/><animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.25" values="1;0"/></g>
+  <g opacity="1" fill="none" stroke="#e0a534" stroke-width="7"><path d="M400,470 H800 L840,510 V760 H400 Z" stroke-linejoin="round"/><animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.25" values="1;0"/></g>
+  <circle cx="0" cy="0" r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="1"><animateMotion dur="12s" repeatCount="indefinite" calcMode="linear" path="M620,335 V470" keyTimes="0;0.0833;1" keyPoints="0;1;1"/><animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.0833" values="1;0"/></circle>
+  <g opacity="0" fill="none" stroke="#e0a534" stroke-width="7"><rect x="890" y="145" width="440" height="190" rx="12"/><animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.25;0.5" values="0;1;0"/></g>
+  <g opacity="0" fill="none" stroke="#e0a534" stroke-width="7"><path d="M890,470 H1290 L1330,510 V760 H890 Z" stroke-linejoin="round"/><animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.25;0.5" values="0;1;0"/></g>
+  <circle cx="0" cy="0" r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion dur="12s" repeatCount="indefinite" calcMode="linear" path="M1110,335 V470" keyTimes="0;0.25;0.3333;1" keyPoints="0;0;1;1"/><animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.25;0.3333" values="0;1;0"/></circle>
+  <g opacity="0" fill="none" stroke="#e0a534" stroke-width="7"><rect x="1380" y="145" width="440" height="190" rx="12"/><animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.5;0.75" values="0;1;0"/></g>
+  <g opacity="0" fill="none" stroke="#e0a534" stroke-width="7"><path d="M1380,470 H1780 L1820,510 V760 H1380 Z" stroke-linejoin="round"/><animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.5;0.75" values="0;1;0"/></g>
+  <circle cx="0" cy="0" r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion dur="12s" repeatCount="indefinite" calcMode="linear" path="M1600,335 V470" keyTimes="0;0.5;0.5833;1" keyPoints="0;0;1;1"/><animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.5;0.5833" values="0;1;0"/></circle>
+  <g opacity="0" fill="none" stroke="#e0a534" stroke-width="7"><rect x="110" y="900" width="1710" height="110" rx="16"/><animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.75" values="0;1"/></g>
+  <circle cx="0" cy="0" r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion dur="12s" repeatCount="indefinite" calcMode="linear" path="M350,615 H400" keyTimes="0;0.05;0.1;1" keyPoints="0;0;1;1"/><animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.05;0.1" values="0;1;0"/></circle>
+  <circle cx="0" cy="0" r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion dur="12s" repeatCount="indefinite" calcMode="linear" path="M840,615 H890" keyTimes="0;0.3;0.35;1" keyPoints="0;0;1;1"/><animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.3;0.35" values="0;1;0"/></circle>
+  <circle cx="0" cy="0" r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion dur="12s" repeatCount="indefinite" calcMode="linear" path="M1330,615 H1380" keyTimes="0;0.55;0.6;1" keyPoints="0;0;1;1"/><animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.55;0.6" values="0;1;0"/></circle>
+  <circle cx="0" cy="0" r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion dur="12s" repeatCount="indefinite" calcMode="linear" path="M620,760 V840 H1600 V760" keyTimes="0;0.55;0.65;1" keyPoints="0;0;1;1"/><animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.55;0.65" values="0;1;0"/></circle>
+  <circle cx="0" cy="0" r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion dur="12s" repeatCount="indefinite" calcMode="linear" path="M1760,760 V900" keyTimes="0;0.75;0.8333;1" keyPoints="0;0;1;1"/><animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.75;0.8333" values="0;1;0"/></circle>
+</svg>

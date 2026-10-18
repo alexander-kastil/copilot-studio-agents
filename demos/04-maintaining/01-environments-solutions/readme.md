@@ -9,6 +9,8 @@ Every Copilot Studio agent lives inside a Power Platform environment, and every 
 - Managed versus unmanaged solutions, and why a custom publisher and prefix matter
 - Dataverse as the store for solutions, environment variables, and in-product pipelines
 
+![The Power Platform Admin Center creates environments, assigns security and applies policies for a tenant with default, developer, sandbox and production environments. Inside an environment, Dataverse stores the default solution, a custom preferred solution with its own publisher and prefix, environment variables and in-product pipelines.](../pptx/images/01-01-environments-admin-center.svg)
+
 ## Why it matters
 
 Agents created in Copilot Studio land in the default solution automatically, which is fine for a quick build but not for anything you plan to promote. To export, import, and manage agents across environments you create a custom solution and set it as your preferred solution, so new components are captured as you build. Getting this right early is what makes clean deployments possible later.

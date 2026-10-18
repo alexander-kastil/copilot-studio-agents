@@ -49,7 +49,9 @@ Read that table twice before you teach the topic. A maker who follows a classic 
 
 An evaluation on the new tab has four parts, and every one of them is visible in the **Configure test set** panel on the right. Getting the vocabulary straight against the actual controls prevents most of the confusion that follows.
 
-A conversation is one test case: a sequence of user questions, each with an optional expected agent response, capped at six question-answer pairs. An evaluation is the named set those conversations belong to. The test method is the grader applied to the whole set rather than to individual cases. The user profile is the authenticated identity the run executes as.
+A conversation is one test case: a sequence of user questions, each with an optional expected agent response, capped at eight question-answer pairs. An evaluation is the named set those conversations belong to. The test method is the grader applied to the whole set rather than to individual cases. The user profile is the authenticated identity the run executes as.
+
+![An evaluation on the Evaluate tab: one named test set of conversations, one General quality test method for the whole set, a user profile the run executes as, and a run that saves a score and a Pass or Fail per conversation.](./_images/evaluation-anatomy.svg)
 
 That last one is quietly the most important. An evaluation that runs as an over-privileged identity reaches content your real users cannot see, so it produces the most flattering and least useful score available. Set the profile to match the audience, and check that its connections show as ready before you run.
 
@@ -76,21 +78,13 @@ The new-experience template is conversation-shaped, which catches out anyone car
 "2","How much does a case of Cold Brew Concentrate cost?","A case of 12 lists at 48.00 USD."
 ```
 
+![Three CSV rows become two test cases: the two rows with conversationNumber 1 become one multi-turn conversation in file order, and the row with conversationNumber 2 becomes a second conversation.](./_images/csv-rows-to-conversations.svg)
+
 Test methods are not carried in the file, and **General quality** is applied by default to an imported set.
 
 Writing questions by hand is the only way to get the cases that hurt: the refusal, the off-topic request, the multi-turn exchange where the agent has to ask which account before it can answer. A set built only from generation confirms your assumptions; a set with hand-written guardrails challenges them.
 
-```mermaid
-flowchart LR
-  A["Quick<br/>conversation set"] --> D["Test set"]
-  B["CSV<br/>upload"] --> D
-  C["Write questions<br/>yourself"] --> D
-  D --> E["Run"]
-  E --> F["Score and<br/>per-case verdicts"]
-  F --> G["Diagnose one<br/>failing case"]
-  G --> H["Change exactly<br/>one component"]
-  H --> E
-```
+![A Quick conversation set, a CSV upload, or questions you write yourself fill the test set; the test set goes to a run, which produces a score and per-case verdicts, then you diagnose one failing case, change exactly one component, and run again.](../../pptx/images/04-04-test-set-loop.svg)
 
 ## What the graders actually measure
 
@@ -114,6 +108,8 @@ Scored graders take a pass threshold, and the threshold is a policy decision rat
 
 This is the fact that most often trips a maker moving to the new tab, and it is worth stating bluntly. **General quality** is the only test method there, it applies to the whole set, and it judges responses against quality standards such as relevance and completeness. It does not compare the answer to your expected response.
 
+![On the Evaluate tab, General quality judges the agent's answer alone and the optional expected response serves the people who maintain the set; on the classic page, Compare meaning or Text similarity reads the answer and the required expected response and scores against a pass threshold.](./_images/general-quality-inputs.svg)
+
 Two consequences follow. A confidently worded wrong answer can pass, so the verdict is never a substitute for reading what the agent actually said. And the comparing graders from the table above are simply not present on that tab, so classic guidance describes controls it does not have.
 
 Expected responses are still worth writing. They record what "correct" means for whoever maintains the set, they travel in the CSV, and they are what makes a failing case diagnosable rather than merely red. They just do not drive the number in the new experience.
@@ -124,6 +120,8 @@ A pass rate is a summary, and summaries hide the thing you need. The per-case ta
 
 **Pass** and **Fail** are verdicts about the agent's answer. **Invalid** means the case could not be graded, almost always because the grader needs an expected response or keyword the case does not have. **Error** means the run itself failed, for example an authentication or connection problem under the selected user profile. Invalid and Error results are your problem, not the agent's, and clearing them is the first thing to do on a messy first run.
 
+![The four outcomes of one test case: Invalid and Error are about the run or the case and are cleared first; Pass and Fail are verdicts about the agent's answer and are interpreted second.](./_images/four-outcomes-two-owners.svg)
+
 Language-model graders are not deterministic, so the same set against an unchanged agent will move a few percent between runs. That variance is why a single run is a weak signal and why the discipline of running before and after a single change matters so much. A small score move is noise; a case that flips from fail to pass is signal. If a case flickers between runs without any change, the case itself is too rigid, and the fix is to loosen the expected response or lower the threshold rather than to keep re-running.
 
 Change one thing at a time. If you sharpen instructions, add a knowledge source, and rewrite a tool description before re-running, a higher score tells you the bundle helped and nothing about which part did. The habit worth teaching is baseline, one change, re-run, record, repeat.
@@ -132,14 +130,7 @@ Change one thing at a time. If you sharpen instructions, add a knowledge source,
 
 The value of evaluation is the path it gives you from a symptom to a cause. A single thumbs-down or a dip in pass rate is a starting point, not a verdict, and the diagnosis tools let you walk from that signal to the exact decision the agent made. The flow below is the loop students practice: notice a weak signal, open the case, read what the orchestrator did, and change the knowledge, instructions, or tools that let it down.
 
-```mermaid
-flowchart LR
-  A["Signal:<br/>low CSAT or<br/>thumbs-down"] --> B["Open the<br/>session transcript"]
-  B --> C["Read the<br/>activity map"]
-  C --> D["Fix knowledge,<br/>instructions, or tools"]
-  D --> E["Re-run the<br/>test set"]
-  E --> A
-```
+![A loop: a low CSAT or thumbs-down signal leads to the session transcript, then the activity map, then a fix to knowledge, instructions, or tools, then a re-run of the test set, which feeds the next signal.](./_images/low-rating-to-fix-loop.svg)
 
 The activity map is the diagnostic instrument that makes this loop more than guesswork. It shows the sequence of inputs, decisions, and tool calls behind a single response, so you can see whether the agent consulted the knowledge source at all, whether it picked the wrong tool, and where in a multi-step plan it went off course. Without it, a failing case tells you the answer was wrong; with it, you know which component to change.
 
@@ -147,22 +138,13 @@ Most failures fall into four buckets, and the bucket tells you the fix. A wrong 
 
 The right answer reached through the wrong path, or a tool that fired when it should not have, is a tool description problem, because the orchestrator selects tools by matching a request against that description. A conversation that never recovers after a clarifying question is a multi-turn design problem rather than a content one.
 
-```mermaid
-flowchart TD
-  A["Failing<br/>test case"] --> B{"What went<br/>wrong?"}
-  B -->|"Fact is wrong<br/>or missing"| C["Fix the<br/>knowledge source"]
-  B -->|"Refused too little<br/>or too much"| D["Fix the<br/>instructions"]
-  B -->|"Wrong tool,<br/>or no tool"| E["Fix the tool<br/>description"]
-  B -->|"Lost the thread<br/>across turns"| F["Fix the multi-turn<br/>conversation design"]
-  C --> G["Re-run the<br/>same test set"]
-  D --> G
-  E --> G
-  F --> G
-```
+![A failing test case sorted by what went wrong: a wrong or missing fact means fix the knowledge source, refusing too little or too much means fix the instructions, a wrong tool or no tool means fix the tool description, and losing the thread across turns means fix the multi-turn conversation design; every fix ends in a re-run of the same test set.](./_images/failing-case-to-fix.svg)
 
 ## Where evaluation stops and Monitor begins
 
 Evaluation tells you whether an answer met the bar. **Monitor** tells you what the agent actually did to produce it, which is a different and complementary question. A case can pass for the wrong reason, for example answering correctly from general model knowledge while never touching the knowledge source you added, and only the run detail on **Monitor** exposes that.
+
+![One test case reaches a Pass by two paths, through the knowledge source you added or from general model knowledge; Evaluate shows the same verdict for both, and Monitor shows the different paths.](./_images/evaluate-and-monitor-paths.svg)
 
 The habit worth teaching is to confirm a sample of passing cases on **Monitor** rather than only investigating failures. A green set that passed for the wrong reasons is a regression waiting to happen, because the next model update can take the shortcut away.
 

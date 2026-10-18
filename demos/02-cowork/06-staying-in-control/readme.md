@@ -10,6 +10,8 @@ Cowork acts on your behalf, but never behind your back. It asks for approval bef
 
 Before Cowork does anything that leaves a mark (sending an email, posting in Teams, saving a file), it pauses and asks.
 
+![The approval card with its risk level indicator and Show parameters, and its four choices: Approve once approves one action, More options also skips similar prompts for the session, Approve All (n) releases every pending approval, and Cancel skips the action while Cowork carries on.](../pptx/images/06-01-approval-model.svg)
+
 - **Approve once**: The action button (for example **Send**, **Post**, or **Create**) approves that one action.
 - **More options**: The dropdown next to the action button approves and skips similar prompts for the rest of the session. For email and Teams, choose **Only to** a specific recipient, **Only to** a specific domain's recipients, or **Always allow**. For other actions, choose **Approve & don't ask again**.
 - **Approve All (n)**: When several approvals are pending, releases every one of them.
@@ -35,6 +37,8 @@ The examples show the typical split; the risk indicator on the approval card is 
 
 You are never locked out while Cowork works.
 
+![Three lanes show where a task stops: Pause (soft) finishes the current step before pausing, Pause (hard) stops mid-step, and Cancel clears the task. Resume continues either paused task.](../pptx/images/06-02-steering-tasks.svg)
+
 - **Pause (soft)**: Finishes the current step, then pauses.
 - **Pause (hard)**: Stops immediately, mid-step.
 - **Resume**: Continues the paused task.
@@ -57,6 +61,8 @@ Every response can be rated and corrected.
 ## Governance for Admins
 
 Control does not stop at the individual. Admins decide whether Cowork is available at all, and to whom.
+
+![Access comes from a spending policy whose scope includes the user and that selects Cowork, while the discovery setting AI experiences enabled by usage-based billing controls only who sees Cowork.](../pptx/images/06-03-admin-governance.svg)
 
 - **Access**: A spending policy under **Copilot** > **Cost Management** > **Configuration** grants access when its scope includes the user and it selects **Cowork** under **Select agents and services**; a limit of one credit is enough. To block a user, remove them from the policy scope.
 - **Discovery**: The discovery setting **AI experiences enabled by usage-based billing** controls visibility only, not access. If Cowork is visible but billing is not enabled, users can request access and admins approve.

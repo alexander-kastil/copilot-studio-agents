@@ -129,6 +129,8 @@ NIM-500     | Nimbus 500  | 18           | Graz              | 12
 
 Every connector input in the lab comes from this table. Fill in your own site address and keep it next to you.
 
+![The Product Support site, the Products library, its five files and the Stock table, with the SharePoint tool inputs and the Excel tool inputs placed beside the level each one points at.](./_images/connector-inputs-to-sharepoint.svg)
+
 | Where it is used | Input | Your value |
 |------------------|-------|------------|
 | Exercise 3, SharePoint tool | Site Address | `https://<tenant>.sharepoint.com/sites/ProductSupport` |
@@ -297,6 +299,8 @@ Expected: the tool is listed as **Get product stock levels**, and all four input
 
 With one tool, selection is trivial. With two, the orchestrator has to discriminate, and this is where vague descriptions show up as wrong answers. Add a routing rule for the second tool, then deliberately ask a question that needs both tools in one turn and read the plan the orchestrator built.
 
+![Three test questions reach the enhanced orchestrator, which reads the routing lines and the tool descriptions; the file question calls List product support files, the stock question calls Get product stock levels, and the Aurora X1 question calls both.](../../../../demos/03-copilot-studio/pptx/images/02-02-tool-selection.svg)
+
 1. On the **Build** tab, add this to your **Instructions**:
 
 ```text
@@ -356,6 +360,8 @@ Expected: with the vague description the agent either picks the SharePoint tool,
 ## Exercise 9: Decide whose credentials the connectors use
 
 By default a connector tool runs under the credentials of the person chatting with the agent, so every user sees only what SharePoint permissions allow them to see. That is the right default for a support library with mixed permissions. When the data is deliberately public inside the company and you do not want a sign-in prompt, you switch the tool to maker-provided credentials so it runs under your connection instead. The trade-off is explicit: convenience for the user against your own permissions being applied to everyone.
+
+![User credentials, where each user reads the Products library as themselves after a Connect to continue card, next to maker-provided credentials, where every user reads it through the maker's connection with no sign-in prompt.](./_images/connector-credentials-choice.svg)
 
 1. Open the **List product support files** tool details page.
 2. Under **Details**, expand **Additional details** and find **Credentials to use**.

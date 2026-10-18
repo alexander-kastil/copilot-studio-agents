@@ -34,6 +34,8 @@ Two Entra ID applications appear in this picture, and mixing them up is the sing
 
 An API never holds the secret of its own caller. Keeping the two registrations separate is what makes the token meaningful.
 
+![A sequence across Agentic HR, the HR-Services connector registered as HR-Service-Consumer, Microsoft Entra ID and the HR Service API registered as HR-Service-API: the user signs in, Entra ID returns a token for HR.Consume, the connector calls GET /api/candidates with it, the API checks audience and scope, and the candidate list returns.](./_images/identity-chain-sequence.svg)
+
 ## Prerequisites
 
 - A Microsoft 365 tenant where you can register Entra ID applications
@@ -165,6 +167,8 @@ Keep this browser tab open. You come back to it in Exercise 4 with a redirect UR
 
 Power Platform runs in the cloud and cannot reach `localhost`. A dev tunnel gives your local port a public HTTPS URL for the duration of the lab.
 
+![The HR-Services connector in the cloud calls the public URL of the hr-service dev tunnel, which reaches the devtunnel host process and the HR Service API on localhost:7071 on your machine, with the four devtunnel commands listed in order below.](./_images/dev-tunnel-bridge.svg)
+
 ```powershell
 devtunnel user login
 devtunnel create hr-service -a --host-header unchanged
@@ -216,6 +220,8 @@ Select **Security** at the bottom of the page. Choose **OAuth 2.0** as the authe
 | Scope | `HR.Consume` |
 
 The Resource URL is the field people get wrong. It identifies the API being called, so it uses the **API** application's client ID, while every other field on this page belongs to the **consumer** application.
+
+![The Security tab fields of the HR-Services connector linked to their app registration: Client ID, Client secret and Redirect URL to HR-Service-Consumer, Resource URL and Scope to HR-Service-API.](./_images/connector-security-fields.svg)
 
 Select **Create connector** in the top right corner.
 

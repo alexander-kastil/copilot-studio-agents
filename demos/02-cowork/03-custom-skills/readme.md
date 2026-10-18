@@ -31,6 +31,8 @@ OneDrive/
 
 Cowork **automatically discovers** your custom skills at the start of each conversation. You can create up to **50 custom skills**. Because discovery happens per conversation, a skill you just added shows up in the next new task, not the one you already have open.
 
+![Diagram of the guided flow, asking in chat, and writing a SKILL.md yourself all ending in Documents/Cowork/skills/, where the next new task discovers the skills at its start while a task already open does not list them.](../pptx/images/03-01-create-a-skill.svg)
+
 ---
 
 ## Uploading and Sharing Skills
@@ -68,17 +70,23 @@ The **name** is the skill's identity: lowercase letters, numbers, and hyphens on
 
 The **description** is what Cowork reads to decide when a skill applies, so make it specific and trigger-oriented. A vague description ("helps with reports") rarely matches; a concrete one ("writes my weekly Northern Europe status report from my emails and figures") loads at the right moment. The body is the step-by-step recipe Cowork follows, and a `SKILL.md` can be up to 1 MB.
 
+![Annotated weekly-report SKILL.md: the name matches the folder name, the description is what Cowork reads to decide when the skill applies, and the instructions are the recipe Cowork follows.](../pptx/images/03-02-skill-anatomy.svg)
+
 ---
 
 ## Companion Files
 
 Each skill folder can hold supporting material next to the `SKILL.md`: reference documents, templates, or scripts. The limits are **20 companion files** and **10 MB per skill**. A proposal-writing skill, for example, can carry your standard template so every output matches house style. Point the skill at the companion file by name in its instructions, and Cowork reads it whenever the skill runs.
 
+![Diagram of the product-pitch and meeting-prep skill folders, each with a SKILL.md that names its companion file, pitch-deck-structure.pptx or meeting-brief-template.docx, which Cowork reads whenever the skill runs.](./_images/companion-files.svg)
+
 ---
 
 ## Reading the Skill Report
 
 Cowork scores every skill you create or update automatically, and the **Skill Report** it returns gives the verdict first. The score runs from 0 to 100 across four 25-point dimensions: **Trigger clarity** (fires at the right time), **Instruction specificity** (knows what to do), **Scope boundaries** (stays in its purpose), and **Robustness** (handles unexpected input safely). The score falls into one of four bands: **Excellent** (85+), **Good** (70-84), **Needs work** (50-69), or **Poor** (below 50).
+
+![Diagram of the Skill Report score: four dimensions worth 25 points each add up to one score from 0 to 100, which falls into the bands Poor, Needs work, Good, or Excellent.](./_images/skill-report-score.svg)
 
 | Issue | What happens |
 | --- | --- |
@@ -123,6 +131,8 @@ A skill carries one recurring task: the sources, format, and steps for a job you
 ## Custom Skills vs. Plugins
 
 Both add new capabilities, but they come from different places and solve different problems. A custom skill is *yours*: plain-language instructions you author for your own recurring work. A [plugin](../05-plugins/readme.md) is a package of skills, connectors, or both, from **Discover**, your admin, a colleague, or your own upload. Reach for a custom skill to standardize how *you* do a task; reach for a plugin to bring in data or expertise you cannot write yourself.
+
+![Side-by-side comparison of a custom skill, one SKILL.md of instructions you author for your own recurring work, and a plugin, a package of skills, connectors, or both that brings in data or expertise you cannot write yourself.](./_images/skill-vs-plugin.svg)
 
 ---
 

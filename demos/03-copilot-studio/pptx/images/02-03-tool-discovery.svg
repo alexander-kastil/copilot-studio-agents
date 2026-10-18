@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">A connector's design-time contract next to an MCP server's runtime contract</title>
+  <desc id="d">Top lane, custom connector from Lab 4: hr-service-swagger.json, an OpenAPI file, is imported at design time into the HR-Services custom connector with four operations, getCandidates, getCandidate, addCandidate and removeCandidate, and each operation becomes one action in Agentic HR, such as Get all candidates. To add a capability you re-import the specification and re-add the action. Bottom lane, MCP server from Lab 5: the McpServerTool methods in Tools/HRTools.cs generate the tool schemas of the HR MCP Server, which offers six tools: list_employees, search_employees, add_employee, update_employee, remove_employee and assign_shift. The HR Employee Management agent asks tools/list at runtime and gets the current set. To add a capability you add a method and restart the server. An animation repeats the tools/list request and its answer.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse">
+      <path d="M0,0 L12,6 L0,12 z" fill="#8c959f"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="70" y="96" font-size="30" font-weight="700" fill="#57606a">Custom connector, Lab 4</text>
+    <text x="70" y="576" font-size="30" font-weight="700" fill="#57606a">MCP server, Lab 5</text>
+    <line x1="70" y1="520" x2="1850" y2="520" stroke="#d0d7de" stroke-width="2"/>
+
+    <g stroke="#8c959f" stroke-width="2" fill="none" marker-end="url(#arrow)">
+      <line x1="480" y1="220" x2="684" y2="220"/>
+      <line x1="1180" y1="305" x2="1384" y2="305"/>
+      <line x1="480" y1="700" x2="684" y2="700"/>
+      <line x1="1390" y1="770" x2="1186" y2="770"/>
+      <line x1="1180" y1="850" x2="1384" y2="850"/>
+    </g>
+    <g font-size="28" fill="#57606a" text-anchor="middle">
+      <text x="582" y="200">imported at</text>
+      <text x="582" y="262">design time</text>
+      <text x="1285" y="285">one action</text>
+      <text x="1285" y="347">per operation</text>
+      <text x="582" y="680">generates</text>
+      <text x="582" y="742">tool schemas</text>
+      <text x="1285" y="892">at runtime</text>
+    </g>
+    <text x="1288" y="750" font-size="28" fill="#24292f" text-anchor="middle" font-family="Consolas, Menlo, monospace">tools/list</text>
+
+    <rect x="70" y="140" width="410" height="160" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="100" y="206" font-size="28" font-weight="700" fill="#24292f" font-family="Consolas, Menlo, monospace">hr-service-swagger.json</text>
+    <text x="100" y="252" font-size="28" fill="#57606a">OpenAPI file</text>
+    <text x="70" y="370" font-size="28" font-weight="700" fill="#24292f">To add a capability:</text>
+    <text x="70" y="412" font-size="28" fill="#57606a">re-import the specification,</text>
+    <text x="70" y="454" font-size="28" fill="#57606a">re-add the action</text>
+
+    <rect x="690" y="130" width="490" height="350" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="722" y="190" font-size="32" font-weight="700" fill="#24292f">HR-Services</text>
+    <text x="722" y="230" font-size="28" fill="#57606a">custom connector</text>
+    <g font-family="Consolas, Menlo, monospace" font-size="28" fill="#24292f">
+      <text x="722" y="292">getCandidates</text>
+      <text x="722" y="334">getCandidate</text>
+      <text x="722" y="376">addCandidate</text>
+      <text x="722" y="418">removeCandidate</text>
+    </g>
+
+    <rect x="1390" y="210" width="460" height="190" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1420" y="270" font-size="32" font-weight="700" fill="#24292f">Agentic HR</text>
+    <text x="1420" y="314" font-size="28" fill="#57606a">action:</text>
+    <text x="1420" y="356" font-size="28" fill="#24292f">Get all candidates</text>
+
+    <rect x="70" y="620" width="410" height="170" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="100" y="684" font-size="28" font-weight="700" fill="#24292f" font-family="Consolas, Menlo, monospace">Tools/HRTools.cs</text>
+    <text x="100" y="730" font-size="28" fill="#24292f" font-family="Consolas, Menlo, monospace">[McpServerTool]</text>
+    <text x="100" y="768" font-size="28" fill="#57606a">methods</text>
+    <text x="70" y="860" font-size="28" font-weight="700" fill="#24292f">To add a capability:</text>
+    <text x="70" y="902" font-size="28" fill="#57606a">add a method,</text>
+    <text x="70" y="944" font-size="28" fill="#57606a">restart the server</text>
+
+    <rect x="690" y="606" width="490" height="384" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <g fill="#fff6e5">
+      <rect x="708" y="736" width="456" height="38" rx="6" opacity="0">
+        <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.22;0.24;0.62;0.66;1"/>
+      </rect>
+      <rect x="708" y="774" width="456" height="38" rx="6" opacity="0">
+        <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.26;0.28;0.62;0.66;1"/>
+      </rect>
+      <rect x="708" y="812" width="456" height="38" rx="6" opacity="0">
+        <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.30;0.32;0.62;0.66;1"/>
+      </rect>
+      <rect x="708" y="850" width="456" height="38" rx="6" opacity="0">
+        <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.34;0.36;0.62;0.66;1"/>
+      </rect>
+      <rect x="708" y="888" width="456" height="38" rx="6" opacity="0">
+        <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.38;0.40;0.62;0.66;1"/>
+      </rect>
+      <rect x="708" y="926" width="456" height="38" rx="6" opacity="0">
+        <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.42;0.44;0.62;0.66;1"/>
+      </rect>
+    </g>
+    <text x="722" y="664" font-size="32" font-weight="700" fill="#24292f">HR MCP Server</text>
+    <text x="722" y="706" font-size="28" fill="#57606a">six tools, found at runtime</text>
+    <g font-family="Consolas, Menlo, monospace" font-size="28" fill="#24292f">
+      <text x="726" y="764">list_employees</text>
+      <text x="726" y="802">search_employees</text>
+      <text x="726" y="840">add_employee</text>
+      <text x="726" y="878">update_employee</text>
+      <text x="726" y="916">remove_employee</text>
+      <text x="726" y="954">assign_shift</text>
+    </g>
+
+    <rect x="1390" y="700" width="460" height="210" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1420" y="760" font-size="30" font-weight="700" fill="#24292f">HR Employee</text>
+    <text x="1420" y="798" font-size="30" font-weight="700" fill="#24292f">Management</text>
+    <text x="1420" y="842" font-size="28" fill="#57606a">MCP tool:</text>
+    <text x="1420" y="882" font-size="28" fill="#24292f">HR MCP Server</text>
+
+    <rect x="1390" y="700" width="460" height="210" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0">
+      <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.0;0.02;0.06;0.08;1"/>
+    </rect>
+    <rect x="1390" y="700" width="460" height="210" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0">
+      <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.66;0.68;0.86;0.90;1"/>
+    </rect>
+    <g fill="#e0a534">
+      <circle r="14" opacity="0">
+        <animateMotion dur="8s" repeatCount="indefinite" path="M1390,770 L1180,770" keyPoints="0;0;1;1" keyTimes="0;0.06;0.22;1" calcMode="linear"/>
+        <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.059;0.06;0.22;0.221;1"/>
+      </circle>
+      <circle r="14" opacity="0">
+        <animateMotion dur="8s" repeatCount="indefinite" path="M1180,850 L1390,850" keyPoints="0;0;1;1" keyTimes="0;0.48;0.66;1" calcMode="linear"/>
+        <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.479;0.48;0.66;0.661;1"/>
+      </circle>
+    </g>
+  </g>
+</svg>

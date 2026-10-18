@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title id="t">The five topics of the AI teammates module</title>
+<desc id="d">Topic 01, Meet Autopilot: digital teammates in Microsoft 365, leads to two paths. The Autopilot path continues with topic 02, Working with Autopilot: goals, memory and long-running work. The agent account path continues with topic 03, Agent Accounts: its own identity for a Copilot Studio agent, and topic 04, Proactive Teammates: triggers, email and Teams mentions. Both paths end in topic 05, Shared Memory, Licensing and Teammate Governance.</desc>
+<rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#57606a"/></marker></defs>
+<rect x="60" y="390" width="380" height="300" rx="20" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<rect x="90" y="420" width="72" height="46" rx="23" fill="#24292f"/><text x="126" y="453" font-size="28" font-weight="600" fill="#ffffff" text-anchor="middle">01</text>
+<text x="90" y="520" font-size="30" font-weight="600" fill="#24292f">Meet Autopilot</text>
+<text x="90" y="570" font-size="28" fill="#57606a">Digital teammates</text>
+<text x="90" y="610" font-size="28" fill="#57606a">in Microsoft 365</text>
+<rect x="540" y="90" width="840" height="270" rx="20" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+<rect x="570" y="120" width="72" height="46" rx="23" fill="#24292f"/><text x="606" y="153" font-size="28" font-weight="600" fill="#ffffff" text-anchor="middle">02</text>
+<text x="570" y="220" font-size="30" font-weight="600" fill="#24292f">Working with Autopilot</text>
+<text x="570" y="270" font-size="28" fill="#57606a">Goals, memory and long-running work</text>
+<rect x="540" y="720" width="380" height="270" rx="20" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<rect x="570" y="750" width="72" height="46" rx="23" fill="#24292f"/><text x="606" y="783" font-size="28" font-weight="600" fill="#ffffff" text-anchor="middle">03</text>
+<text x="570" y="850" font-size="30" font-weight="600" fill="#24292f">Agent Accounts</text>
+<text x="570" y="900" font-size="28" fill="#57606a">Its own identity for</text>
+<text x="570" y="940" font-size="28" fill="#57606a">a Copilot Studio agent</text>
+<rect x="1000" y="720" width="380" height="270" rx="20" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<rect x="1030" y="750" width="72" height="46" rx="23" fill="#24292f"/><text x="1066" y="783" font-size="28" font-weight="600" fill="#ffffff" text-anchor="middle">04</text>
+<text x="1030" y="850" font-size="30" font-weight="600" fill="#24292f">Proactive Teammates</text>
+<text x="1030" y="900" font-size="28" fill="#57606a">Triggers, email and</text>
+<text x="1030" y="940" font-size="28" fill="#57606a">Teams mentions</text>
+<rect x="1460" y="390" width="400" height="300" rx="20" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<rect x="1490" y="420" width="72" height="46" rx="23" fill="#24292f"/><text x="1526" y="453" font-size="28" font-weight="600" fill="#ffffff" text-anchor="middle">05</text>
+<text x="1490" y="520" font-size="30" font-weight="600" fill="#24292f">Shared Memory,</text>
+<text x="1490" y="560" font-size="30" font-weight="600" fill="#24292f">Licensing &amp; Teammate</text>
+<text x="1490" y="600" font-size="30" font-weight="600" fill="#24292f">Governance</text>
+<path d="M440,480 L532,300" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M440,600 L532,780" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M920,855 L992,855" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M1380,225 L1452,460" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M1380,855 L1452,620" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+</svg>

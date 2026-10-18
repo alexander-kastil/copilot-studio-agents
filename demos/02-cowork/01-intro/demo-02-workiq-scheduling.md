@@ -22,6 +22,8 @@ Work IQ is the layer that grounds Cowork in your working life: your mail, meetin
 
 There is no companion folder for this demo. Everything Cowork reads comes from your own calendar, mail, and files through Work IQ, so run it in a week with real meetings on it. The meeting you book in Step 3 is real and stays on your calendar, so choose a week you are willing to commit the hour to.
 
+![Your calendar, mail, meetings, files, and people reach the Cowork task through Work IQ; mapping the week and defending a slot only read, while booking the Agentic AI meeting and attaching the prep note each pass an approval step.](./_images/workiq-scheduling-flow.svg)
+
 In Microsoft Copilot (copilot.cloud.microsoft), select **Cowork** in the top toggle next to Chat, start a new task. Do not attach anything.
 
 ---

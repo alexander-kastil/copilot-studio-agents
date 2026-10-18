@@ -9,9 +9,13 @@ Governance keeps a growing fleet of agents secure, compliant, and countable. It 
 - The agent registry in the Microsoft 365 admin center and Agent 365: viewing every agent, the agents-at-risk signals from Defender, Entra, and Purview, and governance actions to block, reassign, or delete an agent
 - Preventing Agent Sprawl: default environment routing, managed environments, and publishing approval so agents are catalogued and reviewed before they spread across the tenant
 
+![Every agent in the tenant appears in the agent registry, which takes agents-at-risk signals from Microsoft Defender, Microsoft Entra and Microsoft Purview. From the registry an admin blocks, reassigns or deletes an agent.](../pptx/images/04-02-agent-registry.svg)
+
 ## Why it matters
 
 Every agent that connects to enterprise data is a new surface for oversharing and compliance risk, and a tenant can accumulate them fast. Purview and environment-level DLP put guardrails on what agents can see and do, while the agent registry gives admins one place to see and act on the whole estate. Preventing sprawl is not about blocking makers; it is about making sure every published agent is visible, owned, and governed.
+
+![Makers build agents that pass default environment routing, managed environments and publishing approval, so they are catalogued and reviewed before they spread across the tenant. Every published agent is visible, owned and governed.](../pptx/images/04-03-agent-sprawl.svg)
 
 ## Links & Resources
 

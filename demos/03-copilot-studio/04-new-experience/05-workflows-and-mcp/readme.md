@@ -10,6 +10,8 @@ Everything an agent can do beyond talking lives on one Tools surface, and it com
 
 The reason to keep the three straight is that they solve different problems. A connector is the right size for "send one email" or "create one record", an MCP server is the right size for "give every agent the same shared toolbox", and a workflow is the right size for "do these five steps the same way every time". You add all three from the same place, so the choice is about fit, not about where the button lives.
 
+![An agent reaches out through one Tools surface in three shapes: a connector for one action against one service, an MCP server for one connection to a shared set of tools, and a workflow for a fixed sequence of steps from input to output.](../../pptx/images/04-06-connectors-mcp-workflows.svg)
+
 ## Connecting an MCP server
 
 Model Context Protocol (MCP) is an open standard that lets an agent reach a whole set of tools through one connection instead of wiring up each action by hand. You add one from the Tools page: choose Add a tool, then Model Context Protocol, then walk the onboarding wizard where you enter the server name, description, and URL, and pick an authentication method (None, API key, or OAuth 2.0). Copilot Studio ships prebuilt Microsoft servers such as Dataverse, GitHub, and Outlook, and you can point at third-party servers like Salesforce or JIRA or a custom server of your own.
@@ -18,11 +20,15 @@ The server description is not documentation; it is instruction. The orchestrator
 
 Two currency details matter for makers. Copilot Studio supports the Streamable transport, which means a change on the server side (a new tool, an updated one) reaches your agent automatically without republishing every agent that uses it. This is the payoff of the shared-toolbox model: you maintain the server once, and every agent connected to it stays current.
 
+![One MCP server, maintained once, sends a new tool and an updated tool over the Streamable transport to three connected agents, and each agent stays current without a republish.](./_images/mcp-server-maintained-once.svg)
+
 ## The new workflows designer
 
 A workflow is for the deterministic work you want done the same way every time: take an input, run a fixed sequence of steps, produce an output. The new workflows designer builds this node by node, and it adds two things makers have wanted for a long time. You can test each node on its own before running the whole flow, and you can version the workflow so a change is deliberate rather than a surprise. The designer is currently in public preview.
 
 The standout new node type is the agent node, which calls an agent from inside a workflow as a single step. That closes the loop between the two worlds: a workflow can hand a task to your agent's reasoning, take the result, and pass it to the next deterministic step (for example, drafting a recap with the agent, then sending it through an Outlook action). It is worth naming the classic contrast so makers coming from the old experience notice the shift: in classic, MCP required generative orchestration to be turned on and topics could not call an MCP server directly, whereas the new experience treats all three tool types as first-class from one surface.
+
+![A workflow runs Input, Agent node, Outlook action and Output in a fixed order; at the agent node it hands the task to your agent, which drafts the recap and returns the result to the next step.](./_images/workflow-agent-node-handoff.svg)
 
 ## When to use which tool
 

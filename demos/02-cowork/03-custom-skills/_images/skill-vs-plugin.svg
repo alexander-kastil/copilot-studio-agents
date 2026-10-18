@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">A custom skill next to a plugin</title>
+  <desc id="d">A custom skill is yours: one SKILL.md of plain-language instructions you author for your own recurring work; reach for it to standardize how you do a task. A plugin is a package of skills, connectors, or both, where connectors reach external systems; it comes from Discover, your admin, a colleague, or your own upload; reach for it to bring in data or expertise you cannot write yourself.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="100" y="120" width="740" height="820" rx="22" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="140" y="190" font-size="36" font-weight="700" fill="#24292f">Custom skill</text>
+    <text x="140" y="234" font-size="28" fill="#57606a">yours</text>
+    <rect x="140" y="280" width="660" height="320" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <path d="M180,320 L238,320 L262,344 L262,430 L180,430 Z" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <path d="M238,320 L238,344 L262,344" fill="none" stroke="#8c959f" stroke-width="2"/>
+    <text x="296" y="388" font-size="30" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#24292f">SKILL.md</text>
+    <text x="180" y="490" font-size="28" fill="#57606a">plain-language instructions</text>
+    <text x="180" y="534" font-size="28" fill="#57606a">you author for your own</text>
+    <text x="180" y="578" font-size="28" fill="#57606a">recurring work</text>
+    <text x="140" y="690" font-size="28" fill="#57606a">Authored by you</text>
+    <rect x="140" y="750" width="660" height="170" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="172" y="806" font-size="28" font-weight="700" fill="#24292f">Reach for it to</text>
+    <text x="172" y="850" font-size="28" fill="#24292f">standardize how you do a task</text>
+
+    <rect x="920" y="120" width="900" height="820" rx="22" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="960" y="190" font-size="36" font-weight="700" fill="#24292f">Plugin</text>
+    <text x="960" y="234" font-size="28" fill="#57606a">a package of skills, connectors, or both</text>
+    <rect x="960" y="280" width="820" height="320" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <rect x="990" y="310" width="370" height="260" rx="14" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1020" y="360" font-size="30" font-weight="700" fill="#24292f">Skills</text>
+    <rect x="1020" y="388" width="230" height="58" rx="29" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1135" y="427" font-size="28" font-family="Consolas, Menlo, monospace" fill="#24292f" text-anchor="middle">SKILL.md</text>
+    <rect x="1020" y="466" width="230" height="58" rx="29" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1135" y="505" font-size="28" font-family="Consolas, Menlo, monospace" fill="#24292f" text-anchor="middle">SKILL.md</text>
+    <rect x="1390" y="310" width="360" height="260" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="1420" y="360" font-size="30" font-weight="700" fill="#24292f">Connectors</text>
+    <text x="1420" y="420" font-size="28" fill="#57606a">reach external</text>
+    <text x="1420" y="462" font-size="28" fill="#57606a">systems</text>
+    <text x="960" y="668" font-size="28" fill="#57606a">From Discover, your admin,</text>
+    <text x="960" y="710" font-size="28" fill="#57606a">a colleague, or your own upload</text>
+    <rect x="960" y="750" width="820" height="170" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="992" y="806" font-size="28" font-weight="700" fill="#24292f">Reach for it to</text>
+    <text x="992" y="850" font-size="28" fill="#24292f">bring in data or expertise</text>
+    <text x="992" y="892" font-size="28" fill="#24292f">you cannot write yourself</text>
+  </g>
+</svg>

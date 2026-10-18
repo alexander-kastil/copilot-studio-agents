@@ -41,6 +41,8 @@ Connecting to data provides companies with some of the most benefits as it provi
 
 In this exercise, you will go through creating a new topic, adding a simple HTTP Request node action to retrieve information from an external service, and display that data back to the user.
 
+![The Crypto Currency Price topic: the Question node saves the currency, the HTTP Request node calls api.gemini.com with the lowercase ticker URL and saves the JSON as Topic.CryptoCurrentPrice, and the Message node shows the bid price.](./_images/crypto-price-topic-data-flow.svg)
+
 ### Task 1: Create a new topic
 
 Open the Copilot Studio authoring canvas’ Topics page and click Add a topic drop down at the top of the screen, select the From blank option. Name your topic

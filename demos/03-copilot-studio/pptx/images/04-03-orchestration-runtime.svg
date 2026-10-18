@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">The enhanced orchestration runtime plans one question across several sources and tools</title>
+  <desc id="d">One multi-part question goes into the enhanced orchestration runtime, which is always on and not a setting you choose. The runtime turns the question into an ordered plan of several steps, and deep reasoning applies automatically on complex tasks or is forced by the keyword reason. Following the plan, the runtime consults knowledge sources and tools, takes their results back, and returns one answer stitched together.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="70" y="260" width="340" height="200" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <g font-size="34" font-weight="700" fill="#24292f" text-anchor="middle">
+    <text x="240" y="350">One multi-part</text>
+    <text x="240" y="395">question</text>
+  </g>
+
+  <rect x="520" y="130" width="880" height="460" rx="24" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="960" y="200" font-size="40" font-weight="700" fill="#24292f" text-anchor="middle">Enhanced orchestration runtime</text>
+  <text x="960" y="252" font-size="30" fill="#57606a" text-anchor="middle">Always on, not a setting you choose</text>
+
+  <rect x="560" y="300" width="385" height="250" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="752" y="365" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Multi-step plan</text>
+  <g font-size="28" fill="#24292f" text-anchor="middle">
+    <text x="752" y="420">One question becomes</text>
+    <text x="752" y="460">an ordered plan</text>
+    <text x="752" y="500">of several steps</text>
+  </g>
+
+  <rect x="975" y="300" width="385" height="250" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="1167" y="365" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Deep reasoning</text>
+  <g font-size="28" fill="#24292f" text-anchor="middle">
+    <text x="1167" y="420">Automatic on complex</text>
+    <text x="1167" y="460">tasks, or forced by</text>
+    <text x="1167" y="500">the keyword <tspan font-family="Consolas, monospace" font-weight="700">reason</tspan></text>
+  </g>
+
+  <rect x="1510" y="260" width="340" height="200" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1680" y="348" font-size="34" font-weight="700" fill="#24292f" text-anchor="middle">One answer</text>
+  <text x="1680" y="395" font-size="28" fill="#57606a" text-anchor="middle">stitched together</text>
+
+  <g stroke-width="2">
+    <rect x="588" y="758" width="355" height="180" rx="16" fill="#e9f7ef" stroke="#8c959f"/>
+    <rect x="574" y="744" width="355" height="180" rx="16" fill="#e9f7ef" stroke="#8c959f"/>
+    <rect x="560" y="730" width="355" height="180" rx="16" fill="#e9f7ef" stroke="#8c959f"/>
+    <rect x="1033" y="758" width="355" height="180" rx="16" fill="#eaf2ff" stroke="#8c959f"/>
+    <rect x="1019" y="744" width="355" height="180" rx="16" fill="#eaf2ff" stroke="#8c959f"/>
+    <rect x="1005" y="730" width="355" height="180" rx="16" fill="#eaf2ff" stroke="#8c959f"/>
+  </g>
+  <g font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">
+    <text x="737" y="808">Knowledge sources</text>
+    <text x="1182" y="808">Tools</text>
+  </g>
+  <g font-size="28" fill="#57606a" text-anchor="middle">
+    <text x="737" y="855">your own content</text>
+    <text x="1182" y="855">actions and services</text>
+  </g>
+
+  <g stroke="#57606a" stroke-width="3" marker-end="url(#ah)">
+    <line x1="418" y1="360" x2="512" y2="360"/>
+    <line x1="1408" y1="360" x2="1502" y2="360"/>
+    <line x1="690" y1="598" x2="690" y2="722"/>
+    <line x1="790" y1="722" x2="790" y2="598"/>
+    <line x1="1130" y1="598" x2="1130" y2="722"/>
+    <line x1="1230" y1="722" x2="1230" y2="598"/>
+  </g>
+  <g font-size="28" fill="#57606a">
+    <text x="665" y="670" text-anchor="end">consult</text>
+    <text x="815" y="670">result</text>
+    <text x="1105" y="670" text-anchor="end">consult</text>
+    <text x="1255" y="670">result</text>
+  </g>
+
+  <g fill="none" stroke="#24292f" stroke-width="5">
+    <rect x="550" y="290" width="405" height="270" rx="20" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.12;0.25" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1500" y="250" width="360" height="220" rx="22" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.77;0.95" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <g fill="#24292f">
+    <circle r="13" cx="0" cy="0">
+      <animateMotion path="M418,360 L512,360" keyPoints="0;1;1" keyTimes="0;0.12;1" calcMode="linear" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0" keyTimes="0;0.12" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="13" cx="0" cy="0" opacity="0">
+      <animateMotion path="M690,598 L690,722" keyPoints="0;0;1;1" keyTimes="0;0.25;0.4;1" calcMode="linear" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.25;0.4" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="13" cx="0" cy="0" opacity="0">
+      <animateMotion path="M1130,598 L1130,722" keyPoints="0;0;1;1" keyTimes="0;0.25;0.4;1" calcMode="linear" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.25;0.4" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="13" cx="0" cy="0" opacity="0">
+      <animateMotion path="M790,722 L790,598" keyPoints="0;0;1;1" keyTimes="0;0.45;0.6;1" calcMode="linear" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.45;0.6" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="13" cx="0" cy="0" opacity="0">
+      <animateMotion path="M1230,722 L1230,598" keyPoints="0;0;1;1" keyTimes="0;0.45;0.6;1" calcMode="linear" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.45;0.6" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="13" cx="0" cy="0" opacity="0">
+      <animateMotion path="M1408,360 L1502,360" keyPoints="0;0;1;1" keyTimes="0;0.65;0.77;1" calcMode="linear" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.65;0.77" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

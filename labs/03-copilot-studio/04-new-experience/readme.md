@@ -4,6 +4,8 @@ Hands-on labs for the new Copilot Studio experience. Each lab belongs to a topic
 
 Work them in order: the first four each isolate one surface (the toggle, the Build tabs, Evaluate, Skills), and the fifth pulls all of them together into a capstone agent. The last two add IQ grounding and apps.
 
+![The lab path: the toggle, the Build tabs, Evaluate and Skills labs each isolate one surface and feed the capstone Sales Account Assistant, after which the last two labs add IQ grounding and apps.](./_images/new-experience-lab-path.svg)
+
 ## Labs
 
 | Topic | Lab | Focus |

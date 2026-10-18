@@ -23,6 +23,8 @@ Full seats are simplest to reason about when everyone uses Copilot daily. Pay-as
 
 Each service is enabled from its own admin surface, but all three draw on the same Azure billing account.
 
+![Copilot, Copilot Studio, and Cowork are each enabled in their own admin center with a billing policy, billing plan, or spending policy. All three bill to one Azure subscription and resource group with Owner or Contributor rights.](../pptx/images/05-01-payg-setup.svg)
+
 ### Copilot (message metering)
 
 - Navigate to [Microsoft 365 Admin Center: Copilot: Billing & usage](https://admin.cloud.microsoft/?#/copilot/managecost).
@@ -46,11 +48,15 @@ Cowork is not a per-user seat. It is metered by usage-based billing in Copilot C
 
 > Note: Cowork PAYG uses the same Azure plumbing as the other services (an Azure subscription and resource group with Owner or Contributor rights). Prepaid capacity packs and Copilot Credit Pre-Purchase Plan (P3) credits are drawn down first; pay-as-you-go charges apply only after they are exhausted. Use the [Cowork Estimator](https://aka.ms/CustomerCoworkEstimator) to model credit usage before you enable it.
 
+![Cowork usage in Copilot Credits draws down prepaid capacity packs and P3 credits first. Pay-as-you-go charges to the Azure subscription apply only after those are exhausted.](../pptx/images/05-02-cowork-billing.svg)
+
 ---
 
 ## Spending Governance
 
 Pay-as-you-go without limits is a surprise waiting to happen, so set guardrails when you enable it. Spending policies cap monthly and per-user consumption and raise alerts before you hit the ceiling, which means a single heavy user cannot drain the tenant's credits.
+
+![Each user's consumption stops at the per-user limit, while all usage adds up toward the tenant's monthly spending limit. Alert thresholds below that ceiling notify you before it is reached.](../pptx/images/05-03-spending-governance.svg)
 
 | Guardrail | What it controls |
 |---|---|

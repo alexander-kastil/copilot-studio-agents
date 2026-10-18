@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">The same question before and after adding Work IQ</title>
+  <desc id="d">The question "What did the most recent customer email I received ask me to do, and by when?" is asked twice to the Aurora Provisions Account Assistant. Exercise 1, no grounding tool: no tool added, the reply is a general answer with no sender, subject or deadline from your mailbox, and the activity trace shows no tool node, so any specific detail in the reply is a guess. Exercise 3, Work IQ (Preview) added: the agent calls Work IQ, which reads your mailbox, the reply names the sender, subject and deadline from your real email, and the activity trace shows a Work IQ node whose output contains the email the reply quoted, followed by the green checkmark that every tool call finished.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="160" y="60" width="1600" height="150" rx="20" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="960" y="115" font-size="28" fill="#57606a" text-anchor="middle">Same question, asked twice</text>
+    <text x="960" y="168" font-size="30" fill="#24292f" text-anchor="middle">“What did the most recent customer email I received ask me to do, and by when?”</text>
+    <line x1="500" y1="212" x2="500" y2="254" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="1420" y1="212" x2="1420" y2="254" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+    <rect x="80" y="260" width="840" height="760" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <rect x="1000" y="260" width="840" height="760" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="500" y="316" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Exercise 1: no grounding tool</text>
+    <text x="1420" y="316" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Exercise 3: Work IQ (Preview) added</text>
+
+    <rect x="120" y="345" width="360" height="140" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="300" y="407" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Aurora Provisions</text>
+    <text x="300" y="449" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Account Assistant</text>
+    <rect x="540" y="345" width="340" height="140" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2" stroke-dasharray="10 8"/>
+    <text x="710" y="425" font-size="28" fill="#57606a" text-anchor="middle">no tool added</text>
+
+    <rect x="1040" y="345" width="360" height="140" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1220" y="407" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Aurora Provisions</text>
+    <text x="1220" y="449" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Account Assistant</text>
+    <rect x="1460" y="345" width="340" height="140" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1630" y="406" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Work IQ (Preview)</text>
+    <text x="1630" y="450" font-size="28" fill="#57606a" text-anchor="middle">reads your mailbox</text>
+    <line x1="1402" y1="395" x2="1454" y2="395" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="1458" y1="438" x2="1406" y2="438" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+    <line x1="300" y1="487" x2="300" y2="539" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="1220" y1="487" x2="1220" y2="539" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+    <rect x="120" y="545" width="760" height="150" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="500" y="607" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Reply: a general answer</text>
+    <text x="500" y="652" font-size="28" fill="#57606a" text-anchor="middle">no sender, subject or deadline from your mailbox</text>
+    <rect x="1040" y="545" width="760" height="150" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="1420" y="607" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Reply: from your real email</text>
+    <text x="1420" y="652" font-size="28" fill="#57606a" text-anchor="middle">names the sender, subject and deadline</text>
+
+    <rect x="120" y="730" width="760" height="260" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="150" y="782" font-size="30" font-weight="700" fill="#24292f">Activity trace</text>
+    <rect x="150" y="810" width="260" height="76" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2" stroke-dasharray="10 8"/>
+    <text x="280" y="858" font-size="28" fill="#57606a" text-anchor="middle">no tool node</text>
+    <text x="150" y="950" font-size="28" fill="#57606a">any specific detail in the reply is a guess</text>
+
+    <rect x="1040" y="730" width="760" height="260" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1070" y="782" font-size="30" font-weight="700" fill="#24292f">Activity trace</text>
+    <rect x="1070" y="810" width="260" height="76" rx="12" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1200" y="858" font-size="28" fill="#24292f" text-anchor="middle">Work IQ node</text>
+    <line x1="1332" y1="848" x2="1378" y2="848" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <circle cx="1414" cy="848" r="28" fill="#e9f7ef" stroke="#2da44e" stroke-width="3"/>
+    <path d="M1400,849 L1410,860 L1429,836" fill="none" stroke="#2da44e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="1458" y="858" font-size="28" fill="#24292f">every tool call finished</text>
+    <text x="1070" y="950" font-size="28" fill="#57606a">output contains the email the reply quoted</text>
+  </g>
+</svg>

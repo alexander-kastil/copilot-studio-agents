@@ -10,6 +10,8 @@
 
 A connected sequence that builds one HR agent from an empty environment to an autonomous document processor.
 
+![The six Maker Path labs as stops on one track, from the environment and first agent in 01-basics through connector tools and Microsoft 365 Copilot Chat in 02-tools to an autonomous agent in 03-advanced.](./_images/hr-agent-maker-path.svg)
+
 | Lab | Focus |
 |-----|-------|
 | [Set Up Your Power Platform Environment](./01-basics/lab-01-setup-environment.md) | Create a dedicated Power Platform environment and activate Copilot Studio |

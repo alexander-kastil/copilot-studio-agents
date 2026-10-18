@@ -2,6 +2,8 @@
 
 Send Cowork out to research the outdoor market, hold its findings up against your own positioning document, and come back with a decision-ready brief, shipped as a PDF for leadership.
 
+![Diagram of the four demo steps: research the market with Deep Research, hold the findings against internal-positioning.docx, write the two-page Word brief, then add three ranked moves while the Word skill hands over to the PDF skill.](../pptx/images/02-03-market-brief.svg)
+
 ## Related Topics
 
 This demo runs on the Deep Research capability described in [Understanding Skills](./readme.md); watch the side panel to see skills activate as the task runs. The same recurring-report idea returns in [Scheduled Prompts & Event-Driven Tasks](../04-automation/readme.md) when you put a brief like this on a schedule.

@@ -96,6 +96,8 @@ Select the **Add** button to add the new data source to the knowledge base of th
 
 ### Step 4: Publishing the agent in Microsoft 365 Copilot Chat
 
+![The publishing cycle: create Agentic HR in Copilot Studio, publish with the app manifest details, copy the direct link, select Add in the company app store, then chat with the agent in Copilot Chat. After a change, such as the tool in Exercise 2, you publish again and select Update now.](./_images/publish-add-update-lifecycle.svg)
+
 Now you can publish and test the agent in Microsoft 365 Copilot Chat. 1️⃣ Select the **Publish** command in the upper right corner of the page to make the agent available in Copilot Chat. Then 2️⃣ fill in the details for the agent. Lastly 3️⃣ select the **Publish** command in the lower part of the publishing dialog.
 
 ![The agent in Copilot Studio with the **Publish** button highlighted and the publishing dialog where there are fields to define, short description, long description, developer name, developer website URL, privacy statement URL, terms of use URL.](./_images/create-agent-m365-copilot-chat-08.png)
@@ -227,6 +229,8 @@ It is really easy to invoke the just created tool simply providing to the agent 
 ```txt
 Show me the list of candidates for HR with role "HR Director" or "HR Manager"
 ```
+
+![The sequence of the tool call: your prompt, the permission request for the external API, Allow once, Sign in to Agentic HR, then List rows present in a table on Candidates_Table and the matching candidates back to you.](./_images/copilot-chat-tool-call-sequence.svg)
 
 Microsoft 365 Copilot Chat will ask you the permission to consume an external API (Excel Online) and you will have to select the option to **Always allow** or **Allow once**. For the sake of testing purposes, choose **Allow once** so that you will be able to test the authorization process again in the future.
 

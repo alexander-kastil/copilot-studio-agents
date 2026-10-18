@@ -4,6 +4,8 @@ This module builds the foundation for the whole course. Before you touch Copilot
 
 It is split into six focused topics: the first two establish the concepts, the middle three move from agent anatomy to environment setup, and the sixth tours the Copilot Chat productivity surface you will build on.
 
+![Six topic cards in three groups: topics 1 and 2 establish the concepts, topics 3 to 5 move from agent anatomy to environment setup, and topic 6 tours the Copilot Chat productivity surface.](./pptx/images/00-02-module-path.svg)
+
 ## Topics
 
 | # | Topic | What you learn |

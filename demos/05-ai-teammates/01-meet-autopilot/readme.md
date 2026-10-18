@@ -23,6 +23,8 @@ Autopilot is the third part. Microsoft describes it as a persistent, proactive, 
 
 Autopilot is cloud-hosted and lives in your tenant with its own identity, memory, computer, and workspace. It is built on Microsoft IQ, so it grounds its work in how your organization operates. You set the objective and the boundaries; permissions, audit, and governance sit behind every action.
 
+![The new Copilot: Home routes each request to Chat, Cowork, or Code, and Autopilot works in your tenant with its own identity, memory, computer, and workspace.](../pptx/images/01-02-new-copilot.svg)
+
 ## Scout, Autopilot, and the Name Collision
 
 Autopilot was previously called Microsoft Scout. Microsoft Learn still documents the product under the Scout name, as a Frontier preview desktop app for Windows and macOS, and has no Autopilot page as of October 2026. The announcement describes Autopilot as cloud-hosted, so read the Scout pages as the documented behavior of its predecessor, not as a final specification.

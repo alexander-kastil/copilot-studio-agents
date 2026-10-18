@@ -18,6 +18,8 @@ Cowork is Microsoft 365's agentic AI that does work on your behalf. You describe
 
 Think of Copilot Chat as your AI thought partner. Think of Cowork as your AI colleague who actually does the work.
 
+![Two lanes: in Copilot Chat you ask one question at a time and merge the text yourself; in Cowork you describe the outcome, Cowork plans and acts across Outlook, Teams, Word, Excel and PowerPoint, and you review the documents and sent messages.](../pptx/images/01-01-cowork-and-chat.svg)
+
 Microsoft announced a new Copilot Home on September 25, 2026, where Chat and Cowork come together in one starting point. Copilot routes each request to Chat, Cowork, or Code, so you don't have to pick a mode. Home and Code roll out through the Frontier program first. Autopilot (previously Scout) is a separate cloud-hosted digital teammate with its own identity, in private preview, and it is not part of Cowork.
 
 ---
@@ -25,6 +27,8 @@ Microsoft announced a new Copilot Home on September 25, 2026, where Chat and Cow
 ## Setting Up Cowork in Your Tenant
 
 Before anyone can open Cowork, a tenant admin has to enable a few things. Cowork is gated by usage-based billing: a user gets Cowork when a spending policy that selects Cowork covers them. This is admin work, not maker work; if Cowork is already live in your tenant, skip to [Where to Access Cowork](#where-to-access-cowork).
+
+![A pilot user with a Copilot license reaches Cowork through a spending policy under Copilot > Cost Management that selects Cowork; Anthropic models, Frontier, the discovery setting and Agents > All agents each have their own job.](../pptx/images/01-02-cowork-access.svg)
 
 ### Prerequisites
 
@@ -77,6 +81,8 @@ If Cowork still does not appear, first check whether the user is in scope of a s
 3. **Steer at any time**: Interrupt, add context, or redirect during execution.
 4. **Approve before sensitive actions**: Before sending an email or posting in Teams, Cowork pauses and asks for your go-ahead. Risk level (medium or high) is shown on each action.
 5. **Review the results**: Download documents, confirm sent messages, or ask for changes.
+
+![The five steps of a Cowork interaction: describe your task, watch Cowork work, steer at any time with more messages, approve before sensitive actions such as sending an email or posting in Teams, and review the results.](../pptx/images/01-03-interaction-loop.svg)
 
 The approval model, risk indicators, and pause controls are covered in depth in [Human-in-the-Loop](../06-staying-in-control/readme.md).
 

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Instructions, knowledge, tools and skills each do one job in the agent</title>
+  <desc id="d">Inside a Copilot Studio agent, instructions set the agent's general behavior on every turn, knowledge grounds the agent, skills are focused, self-contained task recipes that load when a request matches, and tools connect the agent to services and data over a live connection. A skill can direct the agent to use a tool, and the tool reaches the external service or data source.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="60" y="100" width="1290" height="880" rx="24" fill="none" stroke="#8c959f" stroke-width="2" stroke-dasharray="12 10"/>
+  <text x="110" y="160" font-size="30" font-weight="700" fill="#57606a">Copilot Studio agent</text>
+
+  <rect x="110" y="200" width="460" height="330" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="340" y="290" text-anchor="middle" font-size="36" font-weight="700" fill="#24292f">Instructions</text>
+  <text x="340" y="345" text-anchor="middle" font-size="28" fill="#57606a">set the agent's</text>
+  <text x="340" y="385" text-anchor="middle" font-size="28" fill="#57606a">general behavior</text>
+  <rect x="210" y="430" width="260" height="56" rx="28" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="340" y="468" text-anchor="middle" font-size="28" fill="#24292f">every turn</text>
+
+  <rect x="840" y="200" width="460" height="330" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1070" y="345" text-anchor="middle" font-size="36" font-weight="700" fill="#24292f">Knowledge</text>
+  <text x="1070" y="400" text-anchor="middle" font-size="28" fill="#57606a">grounds the agent</text>
+
+  <rect x="110" y="590" width="460" height="330" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="340" y="680" text-anchor="middle" font-size="36" font-weight="700" fill="#24292f">Skills</text>
+  <text x="340" y="735" text-anchor="middle" font-size="28" fill="#57606a">focused task recipes,</text>
+  <text x="340" y="775" text-anchor="middle" font-size="28" fill="#57606a">self-contained</text>
+  <rect x="160" y="820" width="360" height="56" rx="28" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="340" y="858" text-anchor="middle" font-size="28" fill="#24292f">when a request matches</text>
+
+  <rect x="840" y="590" width="460" height="330" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1070" y="680" text-anchor="middle" font-size="36" font-weight="700" fill="#24292f">Tools</text>
+  <text x="1070" y="735" text-anchor="middle" font-size="28" fill="#57606a">connect the agent</text>
+  <text x="1070" y="775" text-anchor="middle" font-size="28" fill="#57606a">to services and data</text>
+  <rect x="930" y="820" width="280" height="56" rx="28" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1070" y="858" text-anchor="middle" font-size="28" fill="#24292f">live connection</text>
+
+  <text x="705" y="728" text-anchor="middle" font-size="28" fill="#57606a">can direct the</text>
+  <text x="705" y="764" text-anchor="middle" font-size="28" fill="#57606a">agent to use</text>
+  <line x1="570" y1="790" x2="836" y2="790" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="1500" y="620" width="340" height="270" rx="18" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="1670" y="715" text-anchor="middle" font-size="32" font-weight="700" fill="#24292f">External</text>
+  <text x="1670" y="757" text-anchor="middle" font-size="32" font-weight="700" fill="#24292f">service or</text>
+  <text x="1670" y="799" text-anchor="middle" font-size="32" font-weight="700" fill="#24292f">data source</text>
+
+  <line x1="1300" y1="755" x2="1496" y2="755" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+</svg>

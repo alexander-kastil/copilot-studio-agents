@@ -20,6 +20,8 @@ With the Power Platform, you can create different environments and easily switch
 An environment stores apps, flows, data, agents, etc. and each environment is completely isolated from any other environment.
 You can learn more about Power Platform environments reading this [overview document](https://learn.microsoft.com/en-us/power-platform/admin/environments-overview).
 
+![The Power Platform admin center creates the Copilot Dev Camp environment in Exercise 1 and Copilot Studio selects it in Exercise 2; any other environment stays isolated.](./_images/power-platform-environment-setup.svg)
+
 > **Power Platform administrative rights:** In order to proceed with the steps illustrated in this Exercise, you need a user account that is a Power Platform administrator in your target tenant. If you don't have such an account, ask to a Power Plaform administrator to create the environment for you and to give you access to that new environment.
 
 ### Step 1: Creating a new Power Platform environment

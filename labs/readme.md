@@ -2,6 +2,8 @@
 
 Hands-on labs paired with the [demo modules](../demos/readme.md). Each folder mirrors a demo module.
 
+![Class path across six days: each module is a row, and each day column shows the time the module takes that day and how many labs it runs there.](../demos/_images/class-path-by-day.svg)
+
 | # | Lab area | Pairs with |
 |---|----------|-----------|
 | 1 | [Intro: Agents, Frontier & Productivity](./01-intro/readme.md) | [Module 1: Intro](../demos/01-intro/readme.md) |

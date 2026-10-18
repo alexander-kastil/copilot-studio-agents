@@ -6,6 +6,8 @@ Cowork is Microsoft 365's agentic AI that does work on your behalf. You describe
 
 ## Topics
 
+![Six numbered topic cards in four phases: get started with core capabilities, use and author skills, make it recurring and extensible, and keep it under human control.](./pptx/images/00-02-overview.svg)
+
 | # | Topic | What you learn |
 |---|-------|----------------|
 | 1 | [Getting Started with Cowork](./01-intro/readme.md) | What Cowork is, how it differs from Copilot Chat, where to access it, the interaction model, choosing a model and reasoning effort, and its core capabilities across communication, documents, calendar, research, and automation |

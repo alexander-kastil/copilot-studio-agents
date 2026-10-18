@@ -15,6 +15,8 @@ Building an agent is only half the job; this module covers everything that happe
 
 A healthy setup uses at least three environments: development where makers build, test where changes are validated, and production where agents reach real users. Solutions are the containers that carry an agent and its components between those environments, and Dataverse stores both the solutions and the deployment pipelines. Governance runs across all of it: environment-level data loss prevention, Microsoft Purview compliance, and admin controls that stop agents from multiplying unchecked.
 
+![Development, test and production environments, each with Dataverse holding a solution that carries the agent and its components, linked by deployment pipelines and published to channels such as Teams, SharePoint and WhatsApp. Numbered pills map the parts to the four topics, with governance running across all of it.](./pptx/images/00-02-module-lifecycle.svg)
+
 ## Links & Resources
 
 - [Application lifecycle management with Power Platform](https://learn.microsoft.com/power-platform/alm/overview-alm)

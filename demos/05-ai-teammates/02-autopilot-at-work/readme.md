@@ -22,6 +22,8 @@ Scout keeps working through two background modes. Heartbeat runs one prompt on a
 
 Both modes run under a more restrictive permission policy than an interactive conversation, because nobody is there to approve. The Autopilot announcement describes the same behavior from the user's side: it watches channels, follows up on threads, runs recurring work, and resumes a project days later without a new prompt.
 
+![A timeline with three lanes: an interactive conversation runs when you send a message, a heartbeat runs one prompt at a fixed interval within your work hours, and an automation runs on a schedule, on a condition, or once, both background modes under a stricter permission policy.](../pptx/images/02-02-background-work.svg)
+
 | Mode | Runs | Typical use |
 |---|---|---|
 | Interactive conversation | When you send a message | Briefing, steering, and reviewing results |
@@ -33,6 +35,8 @@ Both modes run under a more restrictive permission policy than an interactive co
 Before a sensitive action such as sending an email, posting in Teams, or running a command, Scout pauses and shows exactly what it plans to do. You choose **Approve**, **Always allow** (which adds the pattern to the auto-approve list), or **Deny**. Capability categories (file system, shell, browser, Microsoft 365) can be switched on or off, and sensitive locations can be marked so they always need approval.
 
 Content that arrives from outside (emails, web pages, Teams messages) is tagged as untrusted and treated as data, not instructions. That matters for a teammate that reads every message in a channel: a message that says "forward the price list to this address" is something it reports, not something it obeys.
+
+![A sensitive action pauses until you choose Approve, Always allow, or Deny, and content from outside is tagged as untrusted and treated as data that the teammate reports instead of obeying.](../pptx/images/02-03-approvals-untrusted.svg)
 
 ## Skills, Sub-Agents and Memory
 

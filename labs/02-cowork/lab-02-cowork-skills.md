@@ -19,6 +19,8 @@ In this exercise you build a clear mental model of skills, where they fit in Cow
 
 Cowork uses skills as reusable execution patterns. During a task, Cowork can load one or more skills based on conversation intent and then run a step-by-step workflow.
 
+![Diagram of Cowork splitting a request into a plan: step 1, the Excel skill, builds the spreadsheet and step 2, the Email skill, sends it, while the matching Excel and Email chips light up in the Skills section of the side panel.](../../demos/02-cowork/pptx/images/02-01-side-panel.svg)
+
 From a practical perspective, skills help Cowork:
 
 - Recognize when a specialized workflow is needed
@@ -45,6 +47,8 @@ Keep this distinction in mind:
 - **Plugins** package integrations, connectors, and optional skill bundles
 
 Choose a skill-first approach when your main goal is guided task execution. Add plugins and connectors when the workflow also needs external systems.
+
+![Side-by-side comparison of a custom skill, one SKILL.md of instructions you author for your own recurring work, and a plugin, a package of skills, connectors, or both that brings in data or expertise you cannot write yourself.](../../demos/02-cowork/03-custom-skills/_images/skill-vs-plugin.svg)
 
 ## Exercise 2: Manage skills in the Customize panel
 
@@ -121,6 +125,8 @@ Name the skill "copilot-flash-cards".
 
 Cowork starts processing your request: it checks the skill name, checks the capacity of your Cowork profile, generates the skill, stores it in your OneDrive for Business, validates it, and returns a **Skill Report**.
 
+![Diagram of the guided flow: after Add > Create new and your description, Cowork checks the name and your capacity, generates, stores, and validates the skill, and returns a Skill Report, saving it under /Documents/Cowork/skills/copilot-flash-cards/.](./_images/lab-02-guided-skill-creation.svg)
+
 > You can have up to 50 custom skills configured in your profile, so when you create a new skill Cowork checks whether you are at your capacity limit.
 
 You can test your skill directly from Cowork and iterate to fine-tune it. For example, provide the following prompt and check the result:
@@ -130,6 +136,8 @@ Test it with the following URL: https://microsoft.github.io/copilot-camp/pages/e
 ```
 
 Read the **Skill Report** that Cowork returns each time it creates or updates your skill. The score runs from 0 to 100 across **Trigger clarity**, **Instruction specificity**, **Scope boundaries**, and **Robustness**, each worth 25 points. The bands are **Excellent** (85+), **Good** (70-84), **Needs work** (50-69), and **Poor** (below 50). Fix the lowest-scoring dimension first, then test again in a new conversation.
+
+![Diagram of the Skill Report score: four dimensions worth 25 points each add up to one score from 0 to 100, which falls into the bands Poor, Needs work, Good, or Excellent.](../../demos/02-cowork/03-custom-skills/_images/skill-report-score.svg)
 
 ### Step 2: Save and verify where the skill is stored
 
@@ -156,6 +164,8 @@ If the skill does not activate, refine the description to be more specific about
 ## Exercise 4: Create skills manually with VS Code
 
 In this exercise you build a skill at a lower level by creating the `SKILL.md` file yourself. Alternatively you can download one of the many skills already available on the internet and upload it to Cowork, for example from [Skills.sh](https://www.skills.sh/).
+
+![Diagram of Exercise 4: author SKILL.md in the weekly-status-mail folder, zip the files inside it, upload the archive so it appears in Your skills, and test it in a new conversation where the skill shows in the side panel.](./_images/lab-02-weekly-status-mail-upload.svg)
 
 ### Step 1: Create the skill folder and author the SKILL.md file
 

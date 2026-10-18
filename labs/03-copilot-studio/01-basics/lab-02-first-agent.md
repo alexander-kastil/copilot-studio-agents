@@ -3,6 +3,8 @@
 In this lab, you'll create your first agent with Microsoft Copilot Studio. The agent that you are going to create helps users to find information about HR policies and processes to hire or layoff employees, to improve your career, and to define learning pathways.
 The knowledge base of the agent will be a set of documents stored in SharePoint Online and some public web content.
 
+![The HR Agent you build: this lab adds its instructions, knowledge from the Microsoft Careers site and SharePoint HR Documents, and the Teams channel; Lab 03 adds topics and generative orchestration.](../../../demos/03-copilot-studio/pptx/images/01-01-agent-parts.svg)
+
 In this lab you will learn:
 
 - How to create an agent with Copilot Studio
@@ -212,6 +214,8 @@ You will notice that, despite spaghetti alla carbonara is always a good choice ð
 ## Exercise 3 : Publishing the agent
 
 In this final exercise of this lab you are going to publish your custom agent in Microsoft Teams.
+
+![Publish registers the agent in the environment; adding the Teams + Microsoft 365 channel and copying the link from the availability options brings it into a chat in Microsoft Teams.](../../../demos/03-copilot-studio/pptx/images/01-03-publish-to-teams.svg)
 
 ### Step 1: Publishing the agent in Microsoft Teams
 

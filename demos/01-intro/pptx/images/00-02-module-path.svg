@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">The six topics of module 1 in three groups</title>
+  <desc id="d">Topics 1 and 2 establish the concepts, topics 3 to 5 move from agent anatomy to environment setup, and topic 6 tours the Copilot Chat productivity surface.</desc>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+
+  <rect x="80" y="80" width="540" height="920" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="112" y="150" font-size="32" font-weight="700" fill="#24292f">Concepts</text>
+  <text x="112" y="192" font-size="28" fill="#57606a">Topics 1 and 2</text>
+
+  <rect x="690" y="80" width="540" height="920" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="722" y="150" font-size="32" font-weight="700" fill="#24292f">From anatomy to setup</text>
+  <text x="722" y="192" font-size="28" fill="#57606a">Topics 3 to 5</text>
+
+  <rect x="1300" y="80" width="540" height="920" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="1332" y="150" font-size="32" font-weight="700" fill="#24292f">Productivity surface</text>
+  <text x="1332" y="192" font-size="28" fill="#57606a">Topic 6</text>
+
+  <rect x="108" y="360" width="484" height="220" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="140" y="422" font-size="40" font-weight="700" fill="#57606a">01</text>
+  <text x="140" y="478" font-size="30" font-weight="700" fill="#24292f">Agents &amp; Copilots</text>
+  <text x="140" y="518" font-size="30" font-weight="700" fill="#24292f">for Microsoft 365</text>
+
+  <rect x="108" y="620" width="484" height="220" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="140" y="682" font-size="40" font-weight="700" fill="#57606a">02</text>
+  <text x="140" y="738" font-size="30" font-weight="700" fill="#24292f">Agentic AI &amp;</text>
+  <text x="140" y="778" font-size="30" font-weight="700" fill="#24292f">Design Patterns</text>
+
+  <rect x="718" y="230" width="484" height="220" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="750" y="288" font-size="40" font-weight="700" fill="#57606a">03</text>
+  <text x="750" y="340" font-size="30" font-weight="700" fill="#24292f">How Agents Work:</text>
+  <text x="750" y="378" font-size="30" font-weight="700" fill="#24292f">Knowledge, Prompting,</text>
+  <text x="750" y="416" font-size="30" font-weight="700" fill="#24292f">Tools &amp; MCP</text>
+
+  <rect x="718" y="490" width="484" height="220" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="750" y="552" font-size="40" font-weight="700" fill="#57606a">04</text>
+  <text x="750" y="608" font-size="30" font-weight="700" fill="#24292f">Extensibility &amp;</text>
+  <text x="750" y="648" font-size="30" font-weight="700" fill="#24292f">Development Paths</text>
+
+  <rect x="718" y="750" width="484" height="220" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="750" y="812" font-size="40" font-weight="700" fill="#57606a">05</text>
+  <text x="750" y="868" font-size="30" font-weight="700" fill="#24292f">Licensing &amp;</text>
+  <text x="750" y="908" font-size="30" font-weight="700" fill="#24292f">Environment Setup</text>
+
+  <rect x="1328" y="490" width="484" height="220" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1360" y="552" font-size="40" font-weight="700" fill="#57606a">06</text>
+  <text x="1360" y="608" font-size="30" font-weight="700" fill="#24292f">Copilot Chat &amp;</text>
+  <text x="1360" y="648" font-size="30" font-weight="700" fill="#24292f">Productivity Agents</text>
+
+  <line x1="630" y1="540" x2="678" y2="540" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <line x1="1240" y1="540" x2="1288" y2="540" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+</svg>

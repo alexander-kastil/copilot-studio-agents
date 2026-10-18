@@ -124,6 +124,8 @@ Never recommend a supplier without checking its certification expiry against the
 
 Expected: the instruction block saves with the word reason sitting in step 4 and nowhere else. Steps 1 to 3 are retrieval and stay on the fast default model; step 4 is the one that will run on Azure OpenAI o3.
 
+![Instruction steps 1 to 3 and 5 run on the fast default model; only step 4, which carries the reason keyword, runs on Azure OpenAI o3.](../../../../demos/03-copilot-studio/pptx/images/03-03-deep-reasoning.svg)
+
 > **Warning:** Resist adding reason to steps 1, 2, and 3 to be thorough. Each keyword sends another step to the slow model, and a four-reason instruction block turns a ten second answer into a minute of waiting while the credits meter runs.
 
 ## Exercise 6: Run the same question again and compare
@@ -150,7 +152,9 @@ The policy and the data admit one correct outcome:
 | Excluded by R2 | Meridian Tea Co. (93.4 percent), Lowfield Commodity Group (94.1 percent) |
 | Excluded by R3 | Harbor Leaf Trading (open critical incident INC-2214), Lowfield Commodity Group (open major incident INC-2231) |
 | Excluded by R4 | Alpen Blattwerk (price index 112) |
-| Not selected | Coastline Naturals and Terra Verde Farms are eligible but rank below Cascade Organics under R7 |
+| Not selected | Coastline Naturals is eligible but ranks below Cascade Organics under R7; Terra Verde Farms ranks above Cascade Organics, but its 3,000-case capacity does not cover the 5,200-case remainder |
+
+![Rules R1 to R4 screen out six of the ten suppliers; of the four eligible, Silverpine Estates gets 6,800 cases under the 60 percent cap and Cascade Organics, in a different region, gets 5,200.](./_images/supplier-screening-and-award.svg)
 
 Expected: the deep reasoning answer names Silverpine Estates as primary and a different-region secondary, and it shows its screening rather than asserting a winner. Compare it against the Exercise 4 transcript: the baseline named a supplier, this answer defends one. If it still misses an exclusion, sharpen step 4 to name the rule numbers explicitly and run once more.
 

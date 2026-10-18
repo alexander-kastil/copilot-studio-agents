@@ -9,6 +9,8 @@
 
 ## Labs
 
+![Chat, an event trigger and voice hand a request to generative orchestration, which plans across tools, knowledge, other agents, a deep reasoning model and agent flows: the parts these labs build.](../../../demos/03-copilot-studio/pptx/images/03-01-generative-orchestration.svg)
+
 ### Lab 1: Autonomous Agents & Triggers
 
 - [Task 1: Create your first Autonomous Agent](https://learn.microsoft.com/en-us/training/modules/autonomous-agent/exercise-create-your-first-autonomous-agent)

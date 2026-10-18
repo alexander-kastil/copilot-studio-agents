@@ -102,6 +102,8 @@ Expected: the `follow-up-email-drafter` skill is listed in the **Skills** panel 
 
 The **Preview** tab is where you confirm the description is specific enough for the runtime to pick the skill, and no more. A well-tuned skill activates on the requests it should own and stays quiet on everything else. You will send one prompt that should activate it and one that should not, so you see both sides of the matching decision.
 
+![Animated diagram: the follow-up request matches the follow-up-email-drafter description and the skill drafts subject, greeting, recap, next step and sign-off. The lead-time question finds no match, so the skill stays quiet and the agent answers from instructions and knowledge.](./_images/follow-up-skill-activation-test.svg)
+
 1. Open the **Preview** tab.
 2. Send the activation prompt:
 

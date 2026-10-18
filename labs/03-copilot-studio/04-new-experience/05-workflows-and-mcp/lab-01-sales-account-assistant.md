@@ -4,6 +4,8 @@ Every seller loses the first ten minutes of a customer call stitching together a
 
 The scenario company is Northwind Traders, a wholesale distributor whose sellers each manage dozens of accounts. You will create a Sales Account Assistant, sharpen its Instructions, ground it on two knowledge documents, connect an Outlook action and a prebuilt Dataverse MCP server, watch the orchestrator chain them, package a reusable account-research Skill, build a follow-up workflow and hand it to the agent as a tool, and publish for sellers. This lab is based on Microsoft's mcs-orchestration lab, and each step feeds the next: the Instructions shape the Preview tests, the Knowledge and Tools get chained by the orchestrator, the Skill you upload comes from this lab's own companion folder, and the workflow reuses the Outlook connector you signed in to earlier.
 
+![The finished Sales Account Assistant on the Build tab, with each component tagged by the lab step that fills it, plus the Preview tests and the Step 11 publish to Teams and Microsoft 365 Copilot.](./_images/sales-account-assistant-overview.svg)
+
 ## What This Lab Covers
 
 | Step | What you practise | Module topic |
@@ -180,6 +182,8 @@ Expected: the Dataverse MCP server appears in the **Tools** list alongside the O
 
 This is where the enhanced orchestrator earns its name. The runtime is always on and performs multi-step reasoning, so a single question can force it to combine the grounded documents with a live Dataverse lookup and plan the order itself. You will ask one briefing-shaped question, then open **Get rationale** to see the plan the orchestrator built, which is the fastest way to understand and debug how the agent thinks.
 
+![The Step 7 question about Around the Horn goes to the orchestrator, which looks up the order in northwind-accounts, the Tier 2 lead time in northwind-products and the open cases in the Dataverse MCP server, then returns one answer whose plan Get rationale shows.](./_images/chained-plan-knowledge-and-mcp.svg)
+
 1. Open the **Preview** tab.
 2. Send this message:
 
@@ -242,6 +246,8 @@ Expected: the designer shows three nodes in order, the trigger pane lists `accou
 ## Step 10: Configure the workflow as a tool and let the agent fill its inputs
 
 A published workflow is a capability the agent has, not yet one it knows when or how to use. That is what the **Workflow details** dialog settles: the description tells the orchestrator when to reach for the workflow, and each input gets a rule for how its value arrives. **AI** means the agent works the value out from the conversation and the input's description, while **Value** pins it to a fixed value you enter. You will let the agent fill the account name and the message body, and pin the recipient to your own mailbox so a test run cannot email a customer.
+
+![The agent fills accountName and followUpBody with AI from the conversation while recipientEmail is pinned with Value; the trigger passes all three to the Subject, Body and To fields of Send an email (V2), and Respond to the agent returns the status.](./_images/workflow-as-tool-inputs.svg)
 
 1. On the **Build** tab, open the **Tools** component and select the Send Account Follow-Up workflow to open the **Workflow details** dialog.
 2. On the **Details** pane, paste this description:

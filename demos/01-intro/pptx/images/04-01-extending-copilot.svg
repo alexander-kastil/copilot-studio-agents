@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Two ways to extend Microsoft 365 Copilot</title>
+  <desc id="d">Out of the box, Microsoft 365 Copilot answers from the web and, with a license, your Graph content. One way to extend it grounds Copilot in more of your content through connectors and knowledge sources, so it answers from systems it could not see before. The other builds a focused agent with its own instructions, knowledge, and tools in Agent Builder, Copilot Studio, or pro-code, so it handles a specific job end to end. Both close the gap to your custom systems, line-of-business data, and specific processes.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" text-anchor="middle">
+    <rect x="80" y="120" width="460" height="720" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="310" y="215" font-size="38" font-weight="700" fill="#24292f">Microsoft 365</text>
+    <text x="310" y="262" font-size="38" font-weight="700" fill="#24292f">Copilot</text>
+    <text x="310" y="325" font-size="30" fill="#57606a">Out of the box</text>
+    <rect x="120" y="380" width="380" height="150" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="310" y="467" font-size="32" font-weight="700" fill="#24292f">The web</text>
+    <rect x="120" y="570" width="380" height="220" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="310" y="652" font-size="32" font-weight="700" fill="#24292f">Your Graph</text>
+    <text x="310" y="694" font-size="32" font-weight="700" fill="#24292f">content</text>
+    <text x="310" y="744" font-size="28" fill="#57606a">(with a license)</text>
+
+    <line x1="542" y1="280" x2="638" y2="280" stroke="#57606a" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="542" y1="680" x2="638" y2="680" stroke="#57606a" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="650" y="120" width="580" height="320" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="940" y="215" font-size="36" font-weight="700" fill="#24292f">Ground Copilot in</text>
+    <text x="940" y="260" font-size="36" font-weight="700" fill="#24292f">more of your content</text>
+    <text x="940" y="335" font-size="30" fill="#57606a">Connectors,</text>
+    <text x="940" y="375" font-size="30" fill="#57606a">knowledge sources</text>
+
+    <rect x="650" y="520" width="580" height="320" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="940" y="600" font-size="36" font-weight="700" fill="#24292f">Build a focused agent</text>
+    <text x="940" y="655" font-size="30" fill="#57606a">Own instructions, knowledge,</text>
+    <text x="940" y="693" font-size="30" fill="#57606a">and tools</text>
+    <text x="940" y="758" font-size="28" font-weight="700" fill="#24292f">Agent Builder, Copilot Studio,</text>
+    <text x="940" y="796" font-size="28" font-weight="700" fill="#24292f">pro-code</text>
+
+    <line x1="1232" y1="280" x2="1318" y2="280" stroke="#57606a" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="1232" y1="680" x2="1318" y2="680" stroke="#57606a" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="1330" y="120" width="510" height="320" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="1585" y="268" font-size="32" font-weight="700" fill="#24292f">Answers from systems</text>
+    <text x="1585" y="312" font-size="32" font-weight="700" fill="#24292f">it could not see before</text>
+
+    <rect x="1330" y="520" width="510" height="320" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="1585" y="668" font-size="32" font-weight="700" fill="#24292f">Handles a specific job</text>
+    <text x="1585" y="712" font-size="32" font-weight="700" fill="#24292f">end to end</text>
+
+    <rect x="80" y="900" width="1760" height="100" rx="18" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <text x="960" y="961" font-size="30" fill="#24292f">Both close the gap: your custom systems, line-of-business data, and specific processes</text>
+  </g>
+</svg>

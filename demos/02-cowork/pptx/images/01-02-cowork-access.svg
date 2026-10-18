@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">What grants Cowork access: a spending policy that selects Cowork</title>
+  <desc id="d">A pilot user in your pilot group with a Microsoft 365 Copilot license is covered by a spending policy under Copilot &gt; Cost Management. The policy needs usage-based billing turned on, a scope that includes the user, Cowork selected, a limit where one credit is enough, a per-user limit and billing method, and an optional model profile. It leads to Cowork in the top toggle next to Chat at copilot.cloud.microsoft. Four settings are set separately, each with its own job: Anthropic models decide the models Auto picks, Frontier adds the App skill and GPT 5.5, the discovery setting controls visibility only, and Agents &gt; All agents is deprecated for access.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .h { font-size: 34px; font-weight: 700; text-anchor: middle; }
+      .t { font-size: 30px; font-weight: 600; text-anchor: middle; }
+      .nc { font-size: 28px; text-anchor: middle; }
+      .sc { font-size: 28px; fill: #57606a; text-anchor: middle; }
+      .s { font-size: 28px; fill: #57606a; }
+      .code { font-family: Consolas, 'Courier New', monospace; font-size: 28px; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="440" y1="420" x2="560" y2="420"/>
+    <line x1="1320" y1="420" x2="1420" y2="420"/>
+  </g>
+
+  <rect x="80" y="250" width="360" height="340" rx="20" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="260" y="330">Pilot user</text>
+  <text class="nc" x="260" y="380">in your pilot group</text>
+  <line x1="120" y1="415" x2="400" y2="415" stroke="#8c959f" stroke-width="2"/>
+  <text class="nc" x="260" y="470">Microsoft 365</text>
+  <text class="nc" x="260" y="508">Copilot license</text>
+
+  <rect x="560" y="130" width="760" height="600" rx="24" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="940" y="192">Spending policy</text>
+  <text class="sc" x="940" y="236">Copilot &gt; Cost Management</text>
+  <g stroke="#8c959f" stroke-width="2">
+    <rect x="600" y="268" width="680" height="60" rx="14" fill="#f6f8fa"/>
+    <rect x="600" y="340" width="680" height="60" rx="14" fill="#ffffff"/>
+    <rect x="600" y="412" width="680" height="60" rx="14" fill="#e9f7ef"/>
+    <rect x="600" y="484" width="680" height="60" rx="14" fill="#ffffff"/>
+    <rect x="600" y="556" width="680" height="60" rx="14" fill="#ffffff"/>
+    <rect x="600" y="628" width="680" height="60" rx="14" fill="#ffffff"/>
+  </g>
+  <text class="nc" x="940" y="308">Usage-based billing turned on</text>
+  <text class="nc" x="940" y="380">Scope includes the user</text>
+  <text class="t" x="940" y="453">Selects Cowork</text>
+  <text class="nc" x="940" y="524">Limit: one credit is enough</text>
+  <text class="nc" x="940" y="596">Per-user limit, billing method</text>
+  <text class="nc" x="940" y="668">Model profile (optional)</text>
+
+  <rect x="1420" y="250" width="420" height="340" rx="20" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="1630" y="330">Cowork</text>
+  <text class="nc" x="1630" y="382">in the top toggle</text>
+  <text class="nc" x="1630" y="420">next to Chat</text>
+  <line x1="1460" y1="455" x2="1800" y2="455" stroke="#8c959f" stroke-width="2"/>
+  <text class="code" x="1630" y="510">copilot.cloud.microsoft</text>
+
+  <text class="s" x="80" y="800">Set separately, each with its own job</text>
+  <g stroke="#8c959f" stroke-width="2" fill="#f6f8fa">
+    <rect x="80" y="830" width="410" height="150" rx="18"/>
+    <rect x="530" y="830" width="410" height="150" rx="18"/>
+    <rect x="980" y="830" width="410" height="150" rx="18"/>
+    <rect x="1430" y="830" width="410" height="150" rx="18"/>
+  </g>
+  <text class="t" x="285" y="886">Anthropic models</text>
+  <text class="sc" x="285" y="934">the models Auto picks</text>
+  <text class="t" x="735" y="886">Frontier</text>
+  <text class="sc" x="735" y="934">App skill and GPT 5.5</text>
+  <text class="t" x="1185" y="886">Discovery setting</text>
+  <text class="sc" x="1185" y="934">visibility only</text>
+  <text class="t" x="1635" y="886">Agents &gt; All agents</text>
+  <text class="sc" x="1635" y="934">deprecated for access</text>
+</svg>

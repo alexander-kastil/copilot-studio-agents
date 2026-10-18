@@ -68,6 +68,8 @@ Now open pitch-deck-structure.pptx. This is our house pitch structure for wholes
 
 **Finding:** Look for a card-by-card mapping that reaches for specific evidence rather than themes: the trend section feeding The shift with its named sources, the segment-growth figure sizing The gap, the repair programme and its pillar filling Why Aurora. It should flag the cards a market brief genuinely cannot answer, normally The product and The offer, since pricing, assortment, and terms are commercial decisions no research document holds. If every card comes back confidently filled, push back and ask which card it is inventing content for.
 
+![Diagram mapping aw26-market-brief.docx to the seven pitch cards: trends fill The shift, the segment-growth figure fills The gap, the repair programme fills Why Aurora, The product and The offer wait for your input, and the admitted gaps stay internal.](./_images/pitch-evidence-map.svg)
+
 **Recipe:**
 
 Then send:
@@ -83,6 +85,8 @@ Write me a short mapping table with one row per card: card number, card name, wh
 ## Step 3: Author the Product Pitch skill
 
 **Overview:** Now capture the mapping as a reusable custom skill. A `SKILL.md` file lets Cowork run this conversion by name against any brief, not just this one, and a companion file lets it carry the house structure with it. You author it once in your OneDrive skills folder and place the structure deck beside it.
+
+![Diagram of the product-pitch and meeting-prep skill folders, each with a SKILL.md that names its companion file, pitch-deck-structure.pptx or meeting-brief-template.docx, which Cowork reads whenever the skill runs.](./_images/companion-files.svg)
 
 **Recipe:**
 
@@ -151,6 +155,8 @@ Go through every factual claim on The shift, The gap, and Why Aurora. For each o
 ## Step 5: Tune the skill for discovery and evidence discipline
 
 **Overview:** The skill works, but the first run always exposes both a discovery gap and a quality gap. Refine the description so Cowork reaches for Product Pitch without being told, and tighten the instruction behind whichever card failed your check.
+
+![Diagram of the run-and-tune loop: start a new task, run the skill, check the result against the template and the source, ask what misses, and fold the fixes in, repeating until the skill fires without being named.](../pptx/images/03-03-run-and-tune.svg)
 
 **Research / Planning / Discussion:**
 

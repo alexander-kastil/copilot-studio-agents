@@ -1,0 +1,10 @@
+{
+  "topics": [
+    {"title": "Getting Started with Cowork", "subtitle": "What Cowork is, setup, and how a task runs"},
+    {"title": "Understanding Skills: Built-in Skills & the Side Panel", "subtitle": "The built-in catalog and Cowork's live work"},
+    {"title": "Creating Custom Skills with SKILL.md", "subtitle": "Your own skills in plain language"},
+    {"title": "Scheduled Prompts & Event-Driven Tasks", "subtitle": "On a schedule or when a message arrives"},
+    {"title": "Extending Cowork with Plugins", "subtitle": "External data and expertise from plugins"},
+    {"title": "Human-in-the-Loop: Approving Actions & Staying in Control", "subtitle": "Approvals, risk levels, and governance"}
+  ]
+}

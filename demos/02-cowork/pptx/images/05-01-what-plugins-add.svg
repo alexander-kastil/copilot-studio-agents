@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Plugins reach beyond Microsoft 365</title>
+  <desc id="d">Cowork inside Microsoft 365 holds built-in, custom and plugin skills in its side panel. A plugin adds expertise skills and MCP connectors; the connectors reach CRM data, ticketing systems and third-party APIs beyond Microsoft 365 after a one-time Connect sign-in per user, and an MCP app returns an interactive widget into the conversation.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+  </defs>
+  <line x1="1230" y1="70" x2="1230" y2="1010" stroke="#8c959f" stroke-width="3" stroke-dasharray="14 10"/>
+  <text x="1200" y="108" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" fill="#57606a" font-weight="600" text-anchor="end">Microsoft 365</text>
+  <text x="1260" y="108" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" fill="#57606a" font-weight="600">Beyond Microsoft 365</text>
+  <rect x="60" y="140" width="500" height="820" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="90" y="192" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" fill="#24292f" font-weight="700">Cowork</text>
+  <rect x="90" y="220" width="440" height="400" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="115" y="262" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">Side panel</text>
+  <rect x="115" y="285" width="390" height="86" rx="12" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="140" y="338" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#24292f" font-weight="600">Built-in skills</text>
+  <rect x="115" y="391" width="390" height="86" rx="12" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="140" y="444" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#24292f" font-weight="600">Custom skills</text>
+  <rect x="115" y="497" width="390" height="86" rx="12" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="140" y="550" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#24292f" font-weight="600">Plugin skills</text>
+  <rect x="90" y="650" width="440" height="280" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="115" y="692" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">Conversation</text>
+  <rect x="115" y="720" width="390" height="140" rx="12" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="140" y="778" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#24292f" font-weight="600">Interactive widget</text>
+  <text x="140" y="826" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">UI from an MCP app</text>
+  <rect x="680" y="140" width="440" height="820" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="710" y="192" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" fill="#24292f" font-weight="700">Plugin</text>
+  <rect x="710" y="220" width="380" height="380" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="740" y="272" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" fill="#24292f" font-weight="700">Skills</text>
+  <text x="740" y="316" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">Specialized expertise</text>
+  <text x="740" y="380" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#24292f">Financial analysis</text>
+  <text x="740" y="426" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#24292f">Legal research</text>
+  <text x="740" y="472" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#24292f">Clinical or HR</text>
+  <text x="740" y="518" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#24292f">domain knowledge</text>
+  <rect x="710" y="630" width="380" height="300" rx="14" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="740" y="682" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" fill="#24292f" font-weight="700">Connectors</text>
+  <text x="740" y="728" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#24292f">MCP servers</text>
+  <text x="740" y="800" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">One-time Connect</text>
+  <text x="740" y="844" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">sign-in per user</text>
+  <path d="M710,540 L507,540" fill="none" stroke="#57606a" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+  <path d="M710,790 L507,790" fill="none" stroke="#57606a" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+  <rect x="1330" y="245" width="520" height="150" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="1590" y="331" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" fill="#24292f" font-weight="700" text-anchor="middle">CRM data</text>
+  <rect x="1330" y="475" width="520" height="150" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="1590" y="561" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" fill="#24292f" font-weight="700" text-anchor="middle">Ticketing systems</text>
+  <rect x="1330" y="705" width="520" height="150" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="1590" y="791" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" fill="#24292f" font-weight="700" text-anchor="middle">Third-party APIs</text>
+  <path d="M1090,780 L1328,780" fill="none" stroke="#57606a" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+  <path d="M1180,780 L1180,320 L1328,320" fill="none" stroke="#57606a" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+  <path d="M1180,550 L1328,550" fill="none" stroke="#57606a" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+  <g opacity="1" fill="none" stroke="#e0a534" stroke-width="7"><rect x="1330" y="245" width="520" height="150" rx="14"/><animate attributeName="opacity" dur="9s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.2222" values="1;0"/></g>
+  <circle cx="0" cy="0" r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="1"><animateMotion dur="9s" repeatCount="indefinite" calcMode="linear" path="M1090,780 H1180 V320 H1330" keyTimes="0;0.1111;0.1111;0.2222;1" keyPoints="0;1;1;0;0"/><animate attributeName="opacity" dur="9s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.2222" values="1;0"/></circle>
+  <g opacity="0" fill="none" stroke="#e0a534" stroke-width="7"><rect x="1330" y="475" width="520" height="150" rx="14"/><animate attributeName="opacity" dur="9s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.3333;0.5556" values="0;1;0"/></g>
+  <circle cx="0" cy="0" r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion dur="9s" repeatCount="indefinite" calcMode="linear" path="M1090,780 H1180 V550 H1330" keyTimes="0;0.3333;0.4444;0.4444;0.5556;1" keyPoints="0;0;1;1;0;0"/><animate attributeName="opacity" dur="9s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.3333;0.5556" values="0;1;0"/></circle>
+  <g opacity="0" fill="none" stroke="#e0a534" stroke-width="7"><rect x="1330" y="705" width="520" height="150" rx="14"/><animate attributeName="opacity" dur="9s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.6667;0.8889" values="0;1;0"/></g>
+  <circle cx="0" cy="0" r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion dur="9s" repeatCount="indefinite" calcMode="linear" path="M1090,780 H1330" keyTimes="0;0.6667;0.7778;0.7778;0.8889;1" keyPoints="0;0;1;1;0;0"/><animate attributeName="opacity" dur="9s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.6667;0.8889" values="0;1;0"/></circle>
+  <g opacity="1" fill="none" stroke="#e0a534" stroke-width="7"><rect x="710" y="630" width="380" height="300" rx="14"/><animate attributeName="opacity" dur="9s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.2222;0.3333;0.5556;0.6667;0.8889" values="1;0;1;0;1;0"/></g>
+</svg>

@@ -4,6 +4,8 @@ Sellers do not trust an assistant because it answered one demo question well; th
 
 The scenario company is Northwind Traders, a wholesale distributor whose sellers each manage dozens of accounts. Your deliverable is a scored, tuned evaluation: a Northwind Sales Assistant with a named five-case test set, graders attached to each case, a first evaluation run with a baseline score, a targeted fix, and a second run that proves the fix, all reviewed on the Monitor tab. This lab deliberately stays inside the four tabs and does not add MCP servers, workflows, or uploaded skills; those live in the workflows and skills topics. Each exercise feeds the next: the Instructions and Knowledge you set shape the answers, the test set measures them, the score sends you back to Instructions, and Monitor confirms what actually ran.
 
+![The lab's path across the four tabs: Build with Instructions, the northwind-reference Knowledge source and the Send an email Tool, a Preview smoke test, and Evaluate with the five-case Northwind quality set and two runs. A failing case loops back to one Instructions fix, and Monitor confirms what ran.](./_images/northwind-build-evaluate-tune-loop.svg)
+
 ## What you'll build
 
 - A Northwind Sales Assistant composed on the **Build** tab from a description, scoped Instructions, one Knowledge source, and one Tool.
@@ -208,6 +210,8 @@ Expected: the second run is saved as a separate result next to the first, the pr
 ## Exercise 10: Review the runs on the Monitor tab
 
 Evaluate tells you whether an answer was right; **Monitor** tells you what the agent actually did to produce it, across the sessions it has handled. Reviewing runs here confirms from an independent view that a passing answer passed for the right reason (it used the Knowledge source) and that the off-topic case passed because the agent correctly did not call the Outlook tool. This is the after-the-fact view a maker uses to explain, days later, why a given answer came out the way it did.
+
+![One test turn, What is the capital of France?, has two parts: the Evaluate tab's General quality reads the answer text for relevance and completeness, and the Monitor tab shows the activity, where Send an email was not called.](./_images/evaluate-and-monitor-one-turn.svg)
 
 1. Open the **Monitor** tab.
 2. Locate the recent sessions, including the Preview smoke test from Exercise 5 and the evaluation runs.

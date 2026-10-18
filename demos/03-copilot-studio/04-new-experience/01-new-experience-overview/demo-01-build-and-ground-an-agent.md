@@ -9,6 +9,8 @@ Northwind Traders sellers lose the first ten minutes of every customer call hunt
 - A knowledge source (a product and pricing sheet) that the agent cites when it answers.
 - A tested agent that answers a real seller question with a citation and refuses an out-of-scope request, verified in the Preview tab.
 
+![The finished Northwind Sales Assistant in Preview: its orchestration runtime answers the Tier 2 lead time and Cold Brew price question from the northwind-products knowledge source with a citation, and declines the signed contract price request because the Instructions forbid binding quotes.](./_images/northwind-assistant-grounded-answer.svg)
+
 ## Related Topics
 
 This demo puts [The Two Copilot Studio Experiences](readme.md) into practice by building entirely on the new-experience surface and confirming which experience you are in. It grounds [The Unified Build Surface and the New Orchestrator](../02-unified-build-and-orchestrator/readme.md) by wiring Instructions and Knowledge together in the single Build view.

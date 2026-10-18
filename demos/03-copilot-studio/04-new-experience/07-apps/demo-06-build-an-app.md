@@ -2,6 +2,8 @@
 
 Aurora Provisions sales reps log customer tasting requests in email, so nobody can see which requests are open or who owns them. In this demo you describe a small tracker app in plain language, refine it twice by conversation, read the generated code, then publish and share it. The app runs on sample data, which keeps the focus on the build loop and away from connections.
 
+![The app build loop: describe the problem, review the draft, and refine by conversation, repeating review and refine until the main scenarios work, then publish.](../../pptx/images/04-08-building-apps.svg)
+
 What you practice here: turning a plain-language description into a published app through small, checked refinements.
 
 Duration: about 15 minutes.
@@ -65,6 +67,8 @@ Expected: the status field offers the four choices, and the open and closed coun
 
 Every app has real code behind it. The code view shows what Copilot Studio generated. The view is read-only, so you learn from the code but make every change through the conversation. Reading the priority field shows how your sentence became a data structure.
 
+![A message in the conversation makes Copilot Studio update the data model, the logic, and the user interface together. The live preview and the read-only code view show the result, and every change goes back through the conversation.](./_images/app-parts-conversation-to-code.svg)
+
 1. Switch from the app preview to the code view with the control that toggles between the app and its code.
 2. Find the priority field and check that it lists High, Medium, and Low.
 3. Try to edit a line. The view does not accept edits, so return to the conversation and describe the change there.
@@ -74,6 +78,8 @@ Expected: the code view shows the priority choices you asked for, and it refuses
 ## Exercise 5: Publish and share
 
 Publishing and sharing are separate actions. Publish makes the latest version available to the people you share it with. Share decides who can open it. Test the main scenario first, because changes made after publishing stay hidden until you publish again.
+
+![A timeline of the maker's changes and two publish points: app users see the first published version until the maker publishes again, and Share decides who the app users are.](./_images/app-publish-and-share.svg)
 
 1. Run the app and test one scenario: open a request, change its status to Completed, and check that the summary updates.
 2. Select **Publish**, read any validation messages, then confirm.

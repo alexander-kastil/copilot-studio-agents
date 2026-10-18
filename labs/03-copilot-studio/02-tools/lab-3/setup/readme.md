@@ -6,6 +6,8 @@ The default site is `https://integrationsonline.sharepoint.com/sites/copilot-dem
 
 ## What gets created
 
+![The Product Support site, the Products library, its five files and the Stock table, with the SharePoint tool inputs and the Excel tool inputs placed beside the level each one points at.](../_images/connector-inputs-to-sharepoint.svg)
+
 | Item | Value |
 |------|-------|
 | Document library | `Products`, base template 101, versioning on, shown on the quick launch |

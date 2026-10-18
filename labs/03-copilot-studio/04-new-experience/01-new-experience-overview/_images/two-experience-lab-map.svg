@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Where each exercise of the two-experience lab lands</title>
+  <desc id="d">On the left, one environment holds the home page New experience toggle (exercises 1 and 5), a classic agent (exercise 2) and the new-experience Northwind Sales Assistant (exercises 3, 4, 6, 7 and 8). On the right, the Northwind Two-Experience Decision Card lists its sections with the exercise that fills each one: the toggle path, classic navigation, new-experience navigation, the authoring model, conversion between them, the per-agent decision, and a final review in exercise 10. A highlight steps through the exercises in order.</desc>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+
+  <rect x="60" y="60" width="960" height="940" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="100" y="112" font-size="30" font-weight="700" fill="#24292f">One environment</text>
+
+  <rect x="100" y="140" width="880" height="200" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="130" y="190" font-size="30" font-weight="700" fill="#24292f">Home page: New experience toggle</text>
+  <rect x="116" y="218" width="848" height="54" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2" opacity="0">
+    <animate attributeName="opacity" dur="11s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.0455;0.1364"/>
+  </rect>
+  <rect x="116" y="276" width="848" height="54" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2" opacity="0">
+    <animate attributeName="opacity" dur="11s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.4091;0.5"/>
+  </rect>
+
+  <rect x="100" y="370" width="880" height="150" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="130" y="420" font-size="30" font-weight="700" fill="#24292f">Classic agent</text>
+  <rect x="116" y="443" width="848" height="54" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2" opacity="0">
+    <animate attributeName="opacity" dur="11s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.1364;0.2273"/>
+  </rect>
+
+  <rect x="100" y="550" width="880" height="420" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="130" y="600" font-size="30" font-weight="700" fill="#24292f">Northwind Sales Assistant (new experience)</text>
+  <rect x="116" y="625" width="848" height="54" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2" opacity="0">
+    <animate attributeName="opacity" dur="11s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.2273;0.3182"/>
+  </rect>
+  <rect x="116" y="687" width="848" height="54" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2" opacity="0">
+    <animate attributeName="opacity" dur="11s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.3182;0.4091"/>
+  </rect>
+  <rect x="116" y="749" width="848" height="54" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2" opacity="0">
+    <animate attributeName="opacity" dur="11s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.5;0.5909"/>
+  </rect>
+  <rect x="116" y="811" width="848" height="54" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2" opacity="0">
+    <animate attributeName="opacity" dur="11s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.5909;0.6818"/>
+  </rect>
+  <rect x="116" y="873" width="848" height="54" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2" opacity="0">
+    <animate attributeName="opacity" dur="11s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.6818;0.7727"/>
+  </rect>
+
+  <g font-size="28">
+    <rect x="130" y="223" width="112" height="44" rx="22" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+    <text x="186" y="255" font-weight="700" fill="#24292f" text-anchor="middle">Ex 1</text>
+    <text x="266" y="255" fill="#24292f">Find it through Try it now</text>
+    <rect x="130" y="281" width="112" height="44" rx="22" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+    <text x="186" y="313" font-weight="700" fill="#24292f" text-anchor="middle">Ex 5</text>
+    <text x="266" y="313" fill="#24292f">Off and on: both agents survive</text>
+
+    <rect x="130" y="448" width="112" height="44" rx="22" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+    <text x="186" y="480" font-weight="700" fill="#24292f" text-anchor="middle">Ex 2</text>
+    <text x="266" y="480" fill="#24292f">Read the left navigation</text>
+
+    <rect x="130" y="630" width="112" height="44" rx="22" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+    <text x="186" y="662" font-weight="700" fill="#24292f" text-anchor="middle">Ex 3</text>
+    <text x="266" y="662" fill="#24292f">Create it from one sentence</text>
+    <rect x="130" y="692" width="112" height="44" rx="22" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+    <text x="186" y="724" font-weight="700" fill="#24292f" text-anchor="middle">Ex 4</text>
+    <text x="266" y="724" fill="#24292f">Read the top tabs</text>
+    <rect x="130" y="754" width="112" height="44" rx="22" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+    <text x="186" y="786" font-weight="700" fill="#24292f" text-anchor="middle">Ex 6</text>
+    <text x="266" y="786" fill="#24292f">Rewrite the Instructions</text>
+    <rect x="130" y="816" width="112" height="44" rx="22" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+    <text x="186" y="848" font-weight="700" fill="#24292f" text-anchor="middle">Ex 7</text>
+    <text x="266" y="848" fill="#24292f">Smoke-test it in Preview</text>
+    <rect x="130" y="878" width="112" height="44" rx="22" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+    <text x="186" y="910" font-weight="700" fill="#24292f" text-anchor="middle">Ex 8</text>
+    <text x="266" y="910" fill="#24292f">Look for a convert option</text>
+  </g>
+
+  <line x1="1024" y1="530" x2="1096" y2="530" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="1100" y="60" width="760" height="940" rx="16" fill="#ffffff"/>
+  <path d="M1100,190 V76 Q1100,60 1116,60 H1844 Q1860,60 1860,76 V190 Z" fill="#f6f8fa"/>
+  <text x="1140" y="115" font-size="32" font-weight="700" fill="#24292f">Decision Card</text>
+  <text x="1140" y="165" font-size="28" font-family="Consolas, monospace" fill="#57606a">northwind-two-experience-decision-card.md</text>
+  <line x1="1100" y1="190" x2="1860" y2="190" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1100" y="60" width="760" height="940" rx="16" fill="none" stroke="#8c959f" stroke-width="2"/>
+
+  <g font-size="28">
+    <rect x="1130" y="215" width="700" height="88" rx="12" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <rect x="1130" y="215" width="700" height="88" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2" opacity="0">
+      <animate attributeName="opacity" dur="11s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.0455;0.1364"/>
+    </rect>
+    <text x="1160" y="269" fill="#24292f">Where the toggle lives</text>
+    <rect x="1690" y="237" width="112" height="44" rx="22" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+    <text x="1746" y="269" font-weight="700" fill="#24292f" text-anchor="middle">Ex 1</text>
+
+    <rect x="1130" y="323" width="700" height="88" rx="12" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <rect x="1130" y="323" width="700" height="88" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2" opacity="0">
+      <animate attributeName="opacity" dur="11s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.1364;0.2273"/>
+    </rect>
+    <text x="1160" y="377" fill="#24292f">Classic navigation</text>
+    <rect x="1690" y="345" width="112" height="44" rx="22" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+    <text x="1746" y="377" font-weight="700" fill="#24292f" text-anchor="middle">Ex 2</text>
+
+    <rect x="1130" y="431" width="700" height="88" rx="12" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <rect x="1130" y="431" width="700" height="88" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2" opacity="0">
+      <animate attributeName="opacity" dur="11s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.3182;0.4091"/>
+    </rect>
+    <text x="1160" y="485" fill="#24292f">New-experience navigation</text>
+    <rect x="1690" y="453" width="112" height="44" rx="22" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+    <text x="1746" y="485" font-weight="700" fill="#24292f" text-anchor="middle">Ex 4</text>
+
+    <rect x="1130" y="539" width="700" height="88" rx="12" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <rect x="1130" y="539" width="700" height="88" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2" opacity="0">
+      <animate attributeName="opacity" dur="11s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.5;0.5909"/>
+    </rect>
+    <text x="1160" y="593" fill="#24292f">Authoring model</text>
+    <rect x="1690" y="561" width="112" height="44" rx="22" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+    <text x="1746" y="593" font-weight="700" fill="#24292f" text-anchor="middle">Ex 6</text>
+
+    <rect x="1130" y="647" width="700" height="88" rx="12" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <rect x="1130" y="647" width="700" height="88" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2" opacity="0">
+      <animate attributeName="opacity" dur="11s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.6818;0.7727"/>
+    </rect>
+    <text x="1160" y="701" fill="#24292f">Conversion between them</text>
+    <rect x="1690" y="669" width="112" height="44" rx="22" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+    <text x="1746" y="701" font-weight="700" fill="#24292f" text-anchor="middle">Ex 8</text>
+
+    <rect x="1130" y="755" width="700" height="88" rx="12" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <rect x="1130" y="755" width="700" height="88" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2" opacity="0">
+      <animate attributeName="opacity" dur="11s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.7727;0.8636"/>
+    </rect>
+    <text x="1160" y="809" fill="#24292f">Per-agent decision</text>
+    <rect x="1690" y="777" width="112" height="44" rx="22" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+    <text x="1746" y="809" font-weight="700" fill="#24292f" text-anchor="middle">Ex 9</text>
+
+    <rect x="1130" y="863" width="700" height="88" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2" stroke-dasharray="10 8"/>
+    <rect x="1130" y="863" width="700" height="88" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2" opacity="0">
+      <animate attributeName="opacity" dur="11s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.8636;0.9545"/>
+    </rect>
+    <text x="1160" y="917" fill="#24292f">Review every section</text>
+    <rect x="1690" y="885" width="112" height="44" rx="22" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+    <text x="1746" y="917" font-weight="700" fill="#24292f" text-anchor="middle">Ex 10</text>
+  </g>
+</svg>

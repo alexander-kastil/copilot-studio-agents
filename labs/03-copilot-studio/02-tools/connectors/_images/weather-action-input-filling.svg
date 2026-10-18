@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">How the agent fills the inputs of Get forecast for today</title>
+  <desc id="d">You ask a question. The Location input is missing, so the agent asks for a location and you answer with a city. Then a loop: Location is filled with the city, the action Get forecast for today runs on the MSN Weather connector with Location from the conversation and Units set as a value to I (Imperial), using Copilot author authentication, the maker's connection. The agent answers with the forecast, you change the query after a mistake, and Location is filled again.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#24292f">
+    <rect x="60" y="110" width="460" height="120" rx="60" fill="#ffffff" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" dur="12s" repeatCount="indefinite" calcMode="discrete" values="#8c959f;#e0a534;#8c959f" keyTimes="0;0.02;0.08"/>
+      <animate attributeName="stroke-width" dur="12s" repeatCount="indefinite" calcMode="discrete" values="2;5;2" keyTimes="0;0.02;0.08"/>
+    </rect>
+    <text x="290" y="180" text-anchor="middle">You ask a question</text>
+
+    <rect x="60" y="300" width="460" height="170" rx="14" fill="#eaf2ff" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" dur="12s" repeatCount="indefinite" calcMode="discrete" values="#8c959f;#e0a534;#8c959f" keyTimes="0;0.14;0.22"/>
+      <animate attributeName="stroke-width" dur="12s" repeatCount="indefinite" calcMode="discrete" values="2;5;2" keyTimes="0;0.14;0.22"/>
+    </rect>
+    <text x="290" y="365" text-anchor="middle" font-weight="700">Location is missing</text>
+    <text x="290" y="420" text-anchor="middle" fill="#57606a">the agent asks for it</text>
+
+    <rect x="60" y="540" width="460" height="120" rx="60" fill="#ffffff" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" dur="12s" repeatCount="indefinite" calcMode="discrete" values="#8c959f;#e0a534;#8c959f" keyTimes="0;0.28;0.33"/>
+      <animate attributeName="stroke-width" dur="12s" repeatCount="indefinite" calcMode="discrete" values="2;5;2" keyTimes="0;0.28;0.33"/>
+    </rect>
+    <text x="290" y="610" text-anchor="middle">You answer with a city</text>
+
+    <rect x="640" y="110" width="420" height="220" rx="14" fill="#eaf2ff" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" dur="12s" repeatCount="indefinite" calcMode="discrete" values="#8c959f;#e0a534;#8c959f;#e0a534;#8c959f" keyTimes="0;0.40;0.46;0.85;0.90"/>
+      <animate attributeName="stroke-width" dur="12s" repeatCount="indefinite" calcMode="discrete" values="2;5;2;5;2" keyTimes="0;0.40;0.46;0.85;0.90"/>
+    </rect>
+    <text x="850" y="200" text-anchor="middle" font-weight="700">Location</text>
+    <text x="850" y="250" text-anchor="middle" fill="#57606a">filled with the city</text>
+
+    <rect x="1200" y="80" width="660" height="480" rx="14" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <text x="1530" y="140" text-anchor="middle" font-weight="700">Get forecast for today</text>
+    <text x="1530" y="185" text-anchor="middle" fill="#57606a">MSN Weather connector</text>
+    <rect x="1230" y="215" width="600" height="100" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" dur="12s" repeatCount="indefinite" calcMode="discrete" values="#8c959f;#e0a534;#8c959f;#e0a534" keyTimes="0;0.51;0.57;0.95"/>
+      <animate attributeName="stroke-width" dur="12s" repeatCount="indefinite" calcMode="discrete" values="2;5;2;5" keyTimes="0;0.51;0.57;0.95"/>
+    </rect>
+    <text x="1260" y="257" font-weight="700">Location</text>
+    <text x="1260" y="296" fill="#57606a">from the conversation</text>
+    <rect x="1230" y="335" width="600" height="100" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1260" y="377" font-weight="700">Units</text>
+    <text x="1260" y="416" fill="#57606a">I (Imperial), set as a value</text>
+    <text x="1530" y="487" text-anchor="middle" fill="#57606a">Copilot author authentication</text>
+    <text x="1530" y="527" text-anchor="middle" fill="#57606a">uses the maker's connection</text>
+
+    <rect x="1200" y="680" width="660" height="200" rx="14" fill="#eaf2ff" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" dur="12s" repeatCount="indefinite" calcMode="discrete" values="#8c959f;#e0a534;#8c959f" keyTimes="0;0.62;0.68"/>
+      <animate attributeName="stroke-width" dur="12s" repeatCount="indefinite" calcMode="discrete" values="2;5;2" keyTimes="0;0.62;0.68"/>
+    </rect>
+    <text x="1530" y="765" text-anchor="middle" font-weight="700">The agent answers</text>
+    <text x="1530" y="815" text-anchor="middle" fill="#57606a">with the forecast</text>
+
+    <rect x="640" y="680" width="420" height="200" rx="100" fill="#ffffff" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" dur="12s" repeatCount="indefinite" calcMode="discrete" values="#8c959f;#e0a534;#8c959f" keyTimes="0;0.73;0.79"/>
+      <animate attributeName="stroke-width" dur="12s" repeatCount="indefinite" calcMode="discrete" values="2;5;2" keyTimes="0;0.73;0.79"/>
+    </rect>
+    <text x="850" y="765" text-anchor="middle">You change the query</text>
+    <text x="850" y="805" text-anchor="middle">after a mistake</text>
+
+    <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+      <line x1="290" y1="230" x2="290" y2="292"/>
+      <line x1="290" y1="470" x2="290" y2="532"/>
+      <path d="M520 600 H580 V220 H632"/>
+      <line x1="1060" y1="220" x2="1192" y2="220"/>
+      <line x1="1530" y1="560" x2="1530" y2="672"/>
+      <line x1="1200" y1="780" x2="1068" y2="780"/>
+      <line x1="850" y1="680" x2="850" y2="338"/>
+    </g>
+  </g>
+
+  <g stroke="#ffffff" stroke-width="3" fill="#e0a534">
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M290 230 L290 292" keyPoints="0;0;1;1" keyTimes="0;0.08;0.14;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.08;0.14"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M290 470 L290 532" keyPoints="0;0;1;1" keyTimes="0;0.22;0.28;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.22;0.28"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M520 600 H580 V220 H632" keyPoints="0;0;1;1" keyTimes="0;0.33;0.40;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.33;0.40"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1060 220 L1192 220" keyPoints="0;0;1;1" keyTimes="0;0.46;0.51;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.46;0.51"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1530 560 L1530 672" keyPoints="0;0;1;1" keyTimes="0;0.57;0.62;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.57;0.62"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1200 780 L1068 780" keyPoints="0;0;1;1" keyTimes="0;0.68;0.73;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.68;0.73"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M850 680 L850 338" keyPoints="0;0;1;1" keyTimes="0;0.79;0.85;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.79;0.85"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1060 220 L1192 220" keyPoints="0;0;1;1" keyTimes="0;0.90;0.95;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.90;0.95"/>
+    </circle>
+  </g>
+</svg>

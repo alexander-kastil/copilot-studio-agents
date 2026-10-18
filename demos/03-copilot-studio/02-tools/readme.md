@@ -2,6 +2,8 @@
 
 A grounded agent can answer questions; a tooled agent can act. This topic moves from an agent that reads knowledge to one that calls real systems: running an AI prompt, invoking a connector, reading and writing Dataverse, processing documents, reaching a standardized set of tools over MCP, calling a REST API, and even driving a UI that has no API at all. Each tool type has a job it does best, and the maker skill is choosing the right one.
 
+![A Copilot Studio agent in the centre reaching seven tool types: prompt action, connector, Dataverse, Document Processing managed agent, MCP server, REST API tool and computer use, each labelled with what it reaches.](../pptx/images/02-01-tool-types.svg)
+
 The classic authoring surface exposes all of this from the Actions area, and adding a tool is a configuration task, not a coding task. MCP returns in the new experience ([04-workflows-and-mcp](../04-new-experience/05-workflows-and-mcp/readme.md)) under a redesigned Tools surface, so the concepts you learn here carry straight across.
 
 ## What to teach
@@ -29,6 +31,8 @@ The classic authoring surface exposes all of this from the Actions area, and add
 ## Create Tables in Dataverse
 
 The connector and Dataverse demos in this topic use two related tables. Create them in your environment before running those demos.
+
+![The OfferRequests and OfferRequestDetails tables with every column and its type, joined one-to-many through the offerId lookup.](./_images/offer-requests-tables.svg)
 
 1. Table: OfferRequests
 

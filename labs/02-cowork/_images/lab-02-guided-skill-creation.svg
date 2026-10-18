@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">What Cowork does after you describe the flash-card skill</title>
+  <desc id="d">You select Add, Create new, then Skip and paste the flash-card text. Cowork, with the Skill management skill, runs six steps in order: check the skill name, check your capacity of up to 50 skills, generate the skill, store it in OneDrive, validate it, and return the Skill Report. The skill lands in OneDrive for Business under /Documents/Cowork/skills/copilot-flash-cards/. You then test and iterate, fixing the lowest dimension first.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="18" markerHeight="18" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="100" y="100" width="800" height="140" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <text x="132" y="158" font-size="30" font-weight="700" fill="#24292f">Add &gt; Create new</text>
+    <text x="132" y="204" font-size="28" fill="#57606a">Skip, then paste the flash-card text</text>
+
+    <rect x="80" y="300" width="1760" height="420" rx="22" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="1810" y="352" font-size="28" font-weight="700" fill="#57606a" text-anchor="end">Cowork, with the Skill management skill</text>
+
+    <line x1="225" y1="240" x2="225" y2="387" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+    <rect x="100" y="390" width="250" height="290" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <rect x="394" y="390" width="250" height="290" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <rect x="688" y="390" width="250" height="290" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <rect x="982" y="390" width="250" height="290" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <rect x="1276" y="390" width="250" height="290" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <rect x="1570" y="390" width="250" height="290" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+
+    <rect x="100" y="390" width="250" height="290" rx="16" fill="none" stroke="#e0a534" stroke-width="6" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.04;0.05;0.14;0.15;1" dur="12s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="394" y="390" width="250" height="290" rx="16" fill="none" stroke="#e0a534" stroke-width="6" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.17;0.18;0.27;0.28;1" dur="12s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="688" y="390" width="250" height="290" rx="16" fill="none" stroke="#e0a534" stroke-width="6" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.30;0.31;0.40;0.41;1" dur="12s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="982" y="390" width="250" height="290" rx="16" fill="none" stroke="#e0a534" stroke-width="6" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.43;0.44;0.53;0.54;1" dur="12s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1276" y="390" width="250" height="290" rx="16" fill="none" stroke="#e0a534" stroke-width="6" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.56;0.57;0.66;0.67;1" dur="12s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1570" y="390" width="250" height="290" rx="16" fill="none" stroke="#e0a534" stroke-width="6" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.69;0.70;0.79;0.80;1" dur="12s" repeatCount="indefinite"/>
+    </rect>
+
+    <g text-anchor="middle">
+      <circle cx="225" cy="448" r="28" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+      <text x="225" y="459" font-size="30" font-weight="700" fill="#24292f">1</text>
+      <text x="225" y="545" font-size="28" font-weight="700" fill="#24292f">Check the</text>
+      <text x="225" y="585" font-size="28" font-weight="700" fill="#24292f">skill name</text>
+
+      <circle cx="519" cy="448" r="28" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+      <text x="519" y="459" font-size="30" font-weight="700" fill="#24292f">2</text>
+      <text x="519" y="545" font-size="28" font-weight="700" fill="#24292f">Check your</text>
+      <text x="519" y="585" font-size="28" font-weight="700" fill="#24292f">capacity</text>
+      <text x="519" y="630" font-size="28" fill="#57606a">up to 50</text>
+
+      <circle cx="813" cy="448" r="28" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+      <text x="813" y="459" font-size="30" font-weight="700" fill="#24292f">3</text>
+      <text x="813" y="545" font-size="28" font-weight="700" fill="#24292f">Generate</text>
+      <text x="813" y="585" font-size="28" font-weight="700" fill="#24292f">the skill</text>
+
+      <circle cx="1107" cy="448" r="28" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+      <text x="1107" y="459" font-size="30" font-weight="700" fill="#24292f">4</text>
+      <text x="1107" y="545" font-size="28" font-weight="700" fill="#24292f">Store it in</text>
+      <text x="1107" y="585" font-size="28" font-weight="700" fill="#24292f">OneDrive</text>
+
+      <circle cx="1401" cy="448" r="28" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+      <text x="1401" y="459" font-size="30" font-weight="700" fill="#24292f">5</text>
+      <text x="1401" y="545" font-size="28" font-weight="700" fill="#24292f">Validate it</text>
+
+      <circle cx="1695" cy="448" r="28" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+      <text x="1695" y="459" font-size="30" font-weight="700" fill="#24292f">6</text>
+      <text x="1695" y="545" font-size="28" font-weight="700" fill="#24292f">Return the</text>
+      <text x="1695" y="585" font-size="28" font-weight="700" fill="#24292f">Skill Report</text>
+    </g>
+
+    <line x1="350" y1="535" x2="391" y2="535" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="644" y1="535" x2="685" y2="535" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="938" y1="535" x2="979" y2="535" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="1232" y1="535" x2="1273" y2="535" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="1526" y1="535" x2="1567" y2="535" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+    <line x1="1107" y1="680" x2="1107" y2="797" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="1695" y1="680" x2="1695" y2="797" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+    <rect x="620" y="800" width="780" height="170" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <rect x="620" y="800" width="780" height="170" rx="16" fill="none" stroke="#e0a534" stroke-width="6" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.44;0.45;0.94;0.95;1" dur="12s" repeatCount="indefinite"/>
+    </rect>
+    <text x="652" y="852" font-size="30" font-weight="700" fill="#24292f">OneDrive for Business</text>
+    <text x="652" y="898" font-size="28" font-family="Consolas, Menlo, monospace" fill="#24292f">/Documents/Cowork/skills/</text>
+    <text x="652" y="940" font-size="28" font-family="Consolas, Menlo, monospace" fill="#24292f">copilot-flash-cards/</text>
+
+    <rect x="1460" y="800" width="360" height="170" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <rect x="1460" y="800" width="360" height="170" rx="16" fill="none" stroke="#e0a534" stroke-width="6" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.82;0.83;0.94;0.95;1" dur="12s" repeatCount="indefinite"/>
+    </rect>
+    <text x="1490" y="852" font-size="28" font-weight="700" fill="#24292f">Test and iterate</text>
+    <text x="1490" y="896" font-size="28" fill="#57606a">fix the lowest</text>
+    <text x="1490" y="938" font-size="28" fill="#57606a">dimension first</text>
+  </g>
+</svg>

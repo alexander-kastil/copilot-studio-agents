@@ -10,6 +10,8 @@ The scenario company is Northwind Traders, a wholesale distributor whose sellers
 - A completed Northwind Two-Experience Decision Card: a filled comparison of the classic and new surfaces plus a recorded per-agent decision for two Northwind scenarios.
 - A confirmed, first-hand understanding of the toggle, coexistence, the navigation tells, and the one-way conversion rule.
 
+![The lab map: exercises on the home page toggle, a classic agent and the new-experience Northwind Sales Assistant in one environment, and the Decision Card section that each exercise fills, from the toggle path in exercise 1 to the review in exercise 10.](./_images/two-experience-lab-map.svg)
+
 ## Prerequisites
 
 - A Copilot Studio environment where you can create agents (a Power Platform environment with the maker role), with access to [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com); no files, connectors, or API keys are needed because every input in this lab is provided inline.
@@ -83,6 +85,8 @@ Expected: the agent is created and opens on its authoring surface without you ha
 ## Exercise 4: Read the new surface and capture its tells
 
 With the new agent open, read its layout the same way you read classic in Exercise 2. The new experience consolidates everything into one Build surface with tabs across the top, and the behavior you would have authored as topics is instead seeded as Instructions from your description. This contrast is the heart of the lab.
+
+![Classic lists Topics, Knowledge, Actions and Settings down the left, while the new experience shows Build, Preview, Evaluate and Monitor tabs across the top with Instructions seeded and Knowledge, Tools and Skills empty on the Build tab.](../../../../demos/03-copilot-studio/pptx/images/04-02-telling-experiences-apart.svg)
 
 1. Look at the tabs across the top of the agent.
 2. On the **Build** tab, find the components panel and note which components are present.
@@ -160,6 +164,8 @@ Expected: there is no option to convert this new-experience agent to classic, an
 ## Exercise 9: Record a per-agent decision for two Northwind scenarios
 
 The point of telling the experiences apart is to choose well per agent. Classic leads where you need deterministic, auditable paths and its broader mature feature set; the new experience leads for greenfield agents that reason over Microsoft 365 data with a simpler instructions-first model. Apply that to two real Northwind scenarios.
+
+![Two columns of choice drivers: classic for deterministic control, auditable paths, authored topics and its mature feature set; the new experience for greenfield agents that reason over Microsoft 365 data with instructions, Skills and the enhanced orchestrator.](../../../../demos/03-copilot-studio/04-new-experience/01-new-experience-overview/_images/when-to-choose-classic-or-new.svg)
 
 Read these two scenarios and decide the experience for each using the guidance above:
 

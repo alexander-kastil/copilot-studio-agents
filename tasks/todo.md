@@ -14,3 +14,13 @@
 ## Review
 
 Module 05 demo and lab guides are planned in each topic readme and in the labs readme, not written: they need a Frontier tenant with agent accounts activated.
+
+## SVG teachings and module deck specs (2026-10-18)
+
+- [x] SVG diagrams for every demos/ and labs/ topic where a picture adds understanding (156 new, many SMIL-animated), embedded in the readmes, demo guides and labs
+- [x] Mermaid blocks evaluated: 9 replaced by SVGs, 5 kept
+- [x] create-pptx Gamma-path specs for the five module decks in `demos/<module>/pptx/` (90 specs, `topics.json`, 70 opus-svg slide images shared with the readmes)
+- [ ] Render the 20 nano-banana photo slides (visual prompts are in the specs)
+- [ ] Gamma generation per module (gamma-deck Steps 4 to 9)
+- [x] Fixed: `labs/03-copilot-studio/03-advanced/04-reasoning/lab-01-supplier-recommendation.md:155` says Terra Verde Farms ranks below Cascade Organics under R7; the scorecard ranks it above (97.1 vs 96.2), it loses only on capacity (3,000 < 5,200)
+- [x] Fixed: `demos/03-copilot-studio/04-new-experience/03-evaluations/readme.md:52` caps a conversation at six question-answer pairs; line 72 and the verified facts say 8

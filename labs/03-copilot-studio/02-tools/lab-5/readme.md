@@ -4,6 +4,8 @@ In [Lab 4](../lab-4/readme.md) you described an API with OpenAPI, wrapped it in 
 
 That difference is the lesson. A connector is a design-time contract: you import a specification and the tool list is frozen until you re-import it. An MCP server is a runtime contract: the agent asks the server what it can do, so adding a tool on the server side makes it available to the agent without touching the agent.
 
+![Two lanes: the Lab 4 custom connector imports hr-service-swagger.json at design time into four fixed operations, while the Lab 5 agent asks the HR MCP Server for its six tools with tools/list at runtime.](../../../../demos/03-copilot-studio/pptx/images/02-03-tool-discovery.svg)
+
 The server you will use is the HR MCP server from this repository, a .NET 10 application built on the MCP C# SDK. It manages employees in a SQL database and can assign shifts.
 
 **Estimated time:** 30 to 45 minutes
@@ -175,6 +177,8 @@ Copilot Studio creates the tool and then asks for a connection, showing **Not co
 
 Registering a server and connecting to it are two separate acts. The registration is a definition in the environment; the connection is per user, and this is why you connect again later in Microsoft 365 Copilot.
 
+![One MCP tool registration in the Copilot Dev Camp environment, used from the Copilot Studio test panel and from Microsoft 365 Copilot, each with its own per-user connection to the same HR MCP Server.](./_images/mcp-registration-and-connections.svg)
+
 Once connected, select **Add and configure**. The details page lists all six tools now available to the agent.
 
 ### Step 3: Test in the agent
@@ -271,6 +275,8 @@ Copy the **Connect via browser** URL, open it once in a browser, and select **Co
 ### Step 3: Debug a tool
 
 Set a breakpoint in `Tools/HRTools.cs` and attach the Visual Studio Code debugger. Prompt the agent, and execution stops inside the tool with the arguments the model extracted from natural language. Watching those values arrive is the clearest way to understand what orchestration actually sends.
+
+![The prompt Assign John Smith to the bar shift on 2026-08-03 starting at 10 split into the employeeName, position, date and shiftStartHour arguments that tools/call sends to assign_shift, where a breakpoint in Tools/HRTools.cs stops.](./_images/assign-shift-arguments.svg)
 
 Adding a method with `[McpServerTool]` and a `[Description]` is all it takes to add a capability. Restart the server, reconnect, and the agent discovers it. Compare that with re-importing an OpenAPI file and re-adding an action.
 

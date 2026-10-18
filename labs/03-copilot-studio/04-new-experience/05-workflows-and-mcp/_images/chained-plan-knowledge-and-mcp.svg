@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+<title id="t">One question, one plan across Knowledge and the Dataverse MCP server</title>
+<desc id="d">The Step 7 Preview question about Around the Horn reaches the orchestrator, which plans the lookups itself: the last-quarter order from northwind-accounts, the Tier 2 lead time from northwind-products and the open cases from the Dataverse MCP server. The results come back as one answer in one turn, and Get rationale shows the plan.</desc>
+<rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L16,8 L0,16 z" fill="#57606a"/></marker></defs>
+<rect x="80" y="120" width="560" height="440" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text x="120" y="190" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#24292f" text-anchor="start">Preview</text>
+<text x="120" y="262" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="400" fill="#24292f" text-anchor="start">Prepare me for my call</text>
+<text x="120" y="307" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="400" fill="#24292f" text-anchor="start">with Around the Horn:</text>
+<text x="120" y="352" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="400" fill="#24292f" text-anchor="start">what did they order last</text>
+<text x="120" y="397" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="400" fill="#24292f" text-anchor="start">quarter, any open cases,</text>
+<text x="120" y="442" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="400" fill="#24292f" text-anchor="start">and their standard lead</text>
+<text x="120" y="487" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="400" fill="#24292f" text-anchor="start">time?</text>
+<rect x="760" y="230" width="340" height="220" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="930" y="315" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Orchestrator</text>
+<text x="930" y="362" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="middle">plans the order</text>
+<text x="930" y="400" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="middle">itself</text>
+<line x1="640" y1="340" x2="756" y2="340" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="1260" y="100" width="580" height="220" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<text x="1290" y="150" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="start">Knowledge</text>
+<text x="1290" y="197" font-family="Consolas, Menlo, monospace" font-size="30" font-weight="700" fill="#24292f" text-anchor="start">northwind-accounts</text>
+<text x="1290" y="250" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#24292f" text-anchor="start">12 cases Organic Green Tea,</text>
+<text x="1290" y="290" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#24292f" text-anchor="start">1 case backordered</text>
+<line x1="1100" y1="280" x2="1256" y2="210" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="1260" y="380" width="580" height="220" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<text x="1290" y="430" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="start">Knowledge</text>
+<text x="1290" y="477" font-family="Consolas, Menlo, monospace" font-size="30" font-weight="700" fill="#24292f" text-anchor="start">northwind-products</text>
+<text x="1290" y="530" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#24292f" text-anchor="start">Tier 2: 5 business days</text>
+<line x1="1100" y1="340" x2="1256" y2="490" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="1260" y="660" width="580" height="220" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+<text x="1290" y="710" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="start">Tool</text>
+<text x="1290" y="757" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#24292f" text-anchor="start">Dataverse MCP server</text>
+<text x="1290" y="810" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#24292f" text-anchor="start">live open cases</text>
+<line x1="1100" y1="400" x2="1256" y2="770" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<line x1="930" y1="450" x2="930" y2="646" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="80" y="650" width="1020" height="240" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text x="590" y="716" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">One answer in one turn</text>
+<text x="590" y="764" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="middle">order and Tier 2 lead time from Knowledge,</text>
+<text x="590" y="804" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="middle">open cases from the Dataverse MCP server</text>
+<text x="590" y="852" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="600" fill="#24292f" text-anchor="middle">Get rationale shows the plan</text>
+<rect x="70" y="110" width="580" height="460" rx="20" fill="none" stroke="#e0a534" stroke-width="8" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.0200;0.0360;0.0840;0.1000;1.0000" dur="10s" repeatCount="indefinite"/></rect>
+<circle r="14" cx="0" cy="0" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0795;0.0800;0.1800;0.1805;1" dur="10s" repeatCount="indefinite"/><animateMotion path="M640,340 L760,340" keyPoints="0;0;1;1" keyTimes="0;0.0800;0.1800;1" calcMode="linear" dur="10s" repeatCount="indefinite"/></circle>
+<rect x="750" y="220" width="360" height="240" rx="20" fill="none" stroke="#e0a534" stroke-width="8" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.1800;0.1960;0.2440;0.2600;1.0000" dur="10s" repeatCount="indefinite"/></rect>
+<circle r="14" cx="0" cy="0" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2595;0.2600;0.4000;0.4005;1" dur="10s" repeatCount="indefinite"/><animateMotion path="M1100,280 L1260,210" keyPoints="0;0;1;1" keyTimes="0;0.2600;0.4000;1" calcMode="linear" dur="10s" repeatCount="indefinite"/></circle>
+<rect x="1250" y="90" width="600" height="240" rx="20" fill="none" stroke="#e0a534" stroke-width="8" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.4000;0.4200;0.4800;0.5000;1.0000" dur="10s" repeatCount="indefinite"/></rect>
+<circle r="14" cx="0" cy="0" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4995;0.5000;0.6400;0.6405;1" dur="10s" repeatCount="indefinite"/><animateMotion path="M1260,210 L1100,280" keyPoints="0;0;1;1" keyTimes="0;0.5000;0.6400;1" calcMode="linear" dur="10s" repeatCount="indefinite"/></circle>
+<circle r="14" cx="0" cy="0" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2595;0.2600;0.4000;0.4005;1" dur="10s" repeatCount="indefinite"/><animateMotion path="M1100,340 L1260,490" keyPoints="0;0;1;1" keyTimes="0;0.2600;0.4000;1" calcMode="linear" dur="10s" repeatCount="indefinite"/></circle>
+<rect x="1250" y="370" width="600" height="240" rx="20" fill="none" stroke="#e0a534" stroke-width="8" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.4000;0.4200;0.4800;0.5000;1.0000" dur="10s" repeatCount="indefinite"/></rect>
+<circle r="14" cx="0" cy="0" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4995;0.5000;0.6400;0.6405;1" dur="10s" repeatCount="indefinite"/><animateMotion path="M1260,490 L1100,340" keyPoints="0;0;1;1" keyTimes="0;0.5000;0.6400;1" calcMode="linear" dur="10s" repeatCount="indefinite"/></circle>
+<circle r="14" cx="0" cy="0" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2595;0.2600;0.4000;0.4005;1" dur="10s" repeatCount="indefinite"/><animateMotion path="M1100,400 L1260,770" keyPoints="0;0;1;1" keyTimes="0;0.2600;0.4000;1" calcMode="linear" dur="10s" repeatCount="indefinite"/></circle>
+<rect x="1250" y="650" width="600" height="240" rx="20" fill="none" stroke="#e0a534" stroke-width="8" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.4000;0.4200;0.4800;0.5000;1.0000" dur="10s" repeatCount="indefinite"/></rect>
+<circle r="14" cx="0" cy="0" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4995;0.5000;0.6400;0.6405;1" dur="10s" repeatCount="indefinite"/><animateMotion path="M1260,770 L1100,400" keyPoints="0;0;1;1" keyTimes="0;0.5000;0.6400;1" calcMode="linear" dur="10s" repeatCount="indefinite"/></circle>
+<circle r="14" cx="0" cy="0" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6395;0.6400;0.7400;0.7405;1" dur="10s" repeatCount="indefinite"/><animateMotion path="M930,450 L930,650" keyPoints="0;0;1;1" keyTimes="0;0.6400;0.7400;1" calcMode="linear" dur="10s" repeatCount="indefinite"/></circle>
+<rect x="70" y="640" width="1040" height="260" rx="20" fill="none" stroke="#e0a534" stroke-width="8" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.7400;0.7760;0.8840;0.9200;1.0000" dur="10s" repeatCount="indefinite"/></rect>
+</svg>

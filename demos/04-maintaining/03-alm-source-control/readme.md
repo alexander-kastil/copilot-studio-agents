@@ -9,6 +9,8 @@ Application Lifecycle Management (ALM) is the discipline of moving an agent thro
 - Copilot Studio specific items that are not solution-aware (deployed channels, authentication settings, sharing, and Application Insights) and need post-deployment steps in the target environment
 - Deployment Pipelines & Source Control integration: one-click pipeline deployment from inside Copilot Studio, native Git integration, environment variables and connection references for settings that change per environment, and Azure DevOps or GitHub for pro-dev CI/CD
 
+![A deployment pipeline carries the custom solution (agent, required objects, environment variables, connection references) from development, backed by Git, into test and production. There the same agent runs with that environment's settings, and deployed channels, authentication settings, sharing and Application Insights are set up after deployment.](../pptx/images/03-02-solution-deployment.svg)
+
 ## Why it matters
 
 Without ALM, promoting an agent means rebuilding it by hand and hoping nothing drifts between environments. Solutions plus environment variables let the same agent carry different settings in dev, test, and production without editing the agent itself. Pipelines and source control turn that from a careful manual ritual into an automated, auditable release.

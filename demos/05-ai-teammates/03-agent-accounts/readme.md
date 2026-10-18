@@ -28,6 +28,8 @@ Agent accounts live in Copilot Studio Preview, on an environment that uses the e
 
 Publishing provisions the mailbox, Teams presence, directory entry, and Entra Agent IDs, and assigns one Microsoft 365 Frontier for AI Teammates license to the agent. If no license is free, publishing fails until an admin frees one or buys more.
 
+![Publishing a new agent with an account assigns one Frontier for AI Teammates license and provisions the agent account (mailbox, Teams presence, directory entry) and its Microsoft Entra Agent ID.](../pptx/images/03-01-publish-account.svg)
+
 ## Plan the Identity Before You Publish
 
 The email address uses your own alias as a fixed prefix, and the agent reports to you. During the preview you cannot change that prefix or the reporting relationship, and you cannot change the email address after you publish. Pick a name your colleagues will recognize in a mail thread, because that name is how the process will know it.

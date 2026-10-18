@@ -16,6 +16,8 @@ Setup: sign in to Copilot Studio with the New experience toggle on, and open the
 - A status filter and a priority sort, both added by conversation.
 - A published app that a classmate opens from a link, with access to the list granted separately.
 
+![The finished lab solution by step: the CSV attached as context only (Step 2), the app reading and writing the Aurora Tasting Requests list (Step 3), the filter, the sort, and publishing (Steps 4 to 6), then the classmate's app access (Step 7) and list access (Step 8).](./_images/tasting-request-app-overview.svg)
+
 ## Lab Files
 
 | File | What it represents |
@@ -122,6 +124,8 @@ Expected: your classmate appears in the share list, and the dialog states what d
 ## Step 8: Confirm that data access is a separate permission
 
 This step proves the rule from the topic readme. Your classmate can open the app, but the records come from the SharePoint list, and the list has its own permissions. You grant those permissions in SharePoint.
+
+![An app user reaches connected data only after three separate decisions: the maker shares the app, the user consents to the connection, and the data owner grants access to the SharePoint list or Dataverse table.](../../../../demos/03-copilot-studio/04-new-experience/07-apps/_images/app-sharing-is-not-data-access.svg)
 
 1. Ask your classmate to open the app link from Step 7 and select the sharing invitation.
 2. Ask your classmate to note what the app shows. The app may open with no records, or show a permission message or a consent prompt for the connection.

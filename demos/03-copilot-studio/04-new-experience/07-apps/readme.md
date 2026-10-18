@@ -21,6 +21,8 @@ An app in Copilot Studio is an interactive web experience that a maker describes
 
 The maker can open the code behind the app, but the code view is read-only. The maker reads and checks the code there, and makes every change in the conversation.
 
+![A message in the conversation makes Copilot Studio update the data model, the logic, and the user interface together. The live preview and the read-only code view show the result, and every change goes back through the conversation.](./_images/app-parts-conversation-to-code.svg)
+
 ## Choosing an app, a workflow, or an agent
 
 The right build depends on the shape of the work. Ask who touches the work and whether that person needs a screen to see and update records or a conversation to get answers.
@@ -33,6 +35,8 @@ The right build depends on the shape of the work. Ask who touches the work and w
 
 Microsoft describes the three as complementary. Apps provide the interface, workflows run repeatable steps, and agents handle questions, exceptions, and adaptation. A single business process often uses all three, so a sales follow-up might pair a tracker app, a confirmation workflow, and a pricing agent.
 
+![In a sales follow-up, the sales rep uses the tracker app on a screen and asks the pricing agent in a conversation. When a request is marked Completed, the confirmation workflow sends a confirmation email.](./_images/app-workflow-agent-sales-follow-up.svg)
+
 ## The describe, draft, and refine loop
 
 App creation is a conversation that builds toward a working app. Each pass through the loop moves the app closer to the version you want.
@@ -41,6 +45,8 @@ App creation is a conversation that builds toward a working app. Each pass throu
 2. Review the draft. The app preview appears, and the chat moves to the left pane. Test the main scenario in the preview.
 3. Refine by conversation. Describe one change, such as adding a filter or changing a field. You can also attach a file, add a screenshot, or annotate the canvas to point at the part you want changed.
 4. Repeat until the main scenarios work, then publish.
+
+![The app build loop: describe the problem, review the draft, and refine by conversation, repeating review and refine until the main scenarios work, then publish.](../../pptx/images/04-08-building-apps.svg)
 
 Each change updates the data model, the logic, and the interface together. Keep requests small and review the preview after each one, because a large request is harder to check when something goes wrong. Microsoft recommends the same approach for complex apps: break the requirements into smaller changes.
 
@@ -72,6 +78,8 @@ Attaching a file gives the agent context for building the app, but the attachmen
 
 Apps use the signed-in user's identity to reach connected data. Three separate decisions control who can use an app and what it shows them.
 
+![An app user reaches connected data only after three separate decisions: the maker shares the app, the user consents to the connection, and the data owner grants access to the SharePoint list or Dataverse table.](./_images/app-sharing-is-not-data-access.svg)
+
 | Decision | Who controls it | Question it answers |
 | --- | --- | --- |
 | Share the app | The maker, within environment policy | Who can open and use the app? |
@@ -91,6 +99,8 @@ Publishing and sharing are two actions with two jobs. Publishing makes the lates
 
 Changes made after publishing stay hidden from app users until you publish again. Your environment and administrator policies decide which share methods appear, and a blocked method is hidden or explained in the product.
 
+![A timeline of the maker's changes and two publish points: app users see the first published version until the maker publishes again, and Share decides who the app users are.](./_images/app-publish-and-share.svg)
+
 ## Runtime, administration, and credits
 
 Apps run on Microsoft-hosted infrastructure. Microsoft's announcement describes Copilot Managed Runtime as providing Microsoft-operated hosting, identity, governed data access, and lifecycle management. The same runtime adds Git-backed versioning and central visibility across apps built in Copilot Studio, Copilot Cowork, and Copilot Code.
@@ -98,6 +108,8 @@ Apps run on Microsoft-hosted infrastructure. Microsoft's announcement describes 
 Administrators can turn app creation off, although it is on by default. They receive app inventory and policy information for the apps in their organization. Makers never choose an environment, because Copilot Studio routes app creation to the maker's personal environment and the app follows the organization's data and sharing policies.
 
 Building, previewing, and testing an app consume Copilot Credits. Billing starts as soon as you start building, which differs from the standard harness, where billing starts after publishing. The **Monitor** page shows the credits an agent uses, and administrators allocate credits to environments in the Power Platform admin center.
+
+![For apps, billing starts with the first build and covers previewing and testing; in the standard harness, billing starts after publishing.](./_images/app-credits-start-at-build.svg)
 
 ## Preview status
 

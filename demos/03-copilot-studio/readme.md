@@ -4,6 +4,8 @@ Copilot Studio is Microsoft's low-code platform for building, extending, and shi
 
 It is split into four focused topics that move from first agent to advanced orchestration, then to the new UI and evaluating what you ship.
 
+![The four topics of this module in order: Basics, Tools and Advanced on the classic authoring surface, then the New Copilot Studio Experience, leading on to module 04 for publishing, ALM and governance.](./pptx/images/00-02-module-path.svg)
+
 ## Topics
 
 | # | Topic | What you learn |

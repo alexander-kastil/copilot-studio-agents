@@ -8,6 +8,8 @@ An agent with an account keeps one memory across everyone it works with, so what
 
 Shared memory has no privacy boundary between users. A record about one person can be used in later conversations with other people, and the agent is only guided not to bring up one person's details with someone else. The People card states it directly: anything shared can be summarized and included in the agent's responses to any user, even users without permission to the original file or chat and regardless of sensitivity label.
 
+![What one person explains goes into one shared memory of work facts and people details, and later conversations with other people can use it.](../pptx/images/05-01-shared-memory.svg)
+
 ## What Shared Memory Never Keeps
 
 | Excluded | Examples |
@@ -41,6 +43,8 @@ Agent 365 itself has been generally available per user since May 1, 2026, and ag
 2. In the Microsoft 365 admin center, an admin opens **All Agents**, filters by **Agent template: Yes**, selects **Copilot Studio (Frontier)**, selects **Activate**, and picks the users or groups allowed to create agents with accounts.
 3. In the Power Platform admin center, an admin opens **Copilot** > **Settings**, selects **Agent accounts** under **Copilot Studio**, and turns it on for the environment.
 4. The environment's **Release cycle** is set to **Early**.
+
+![The four activation steps in order: enroll in Frontier and activate Copilot Studio (Frontier) in the Microsoft 365 admin center, turn on agent accounts in the Power Platform admin center, and set the environment's release cycle to Early.](../pptx/images/05-02-admin-activation.svg)
 
 Only the users and groups chosen in step 2 can create agents with accounts. In the European Economic Area, Teams is licensed separately: an agent still gets its account, mailbox, and directory entry, but appears in Teams only if the tenant licenses Teams.
 

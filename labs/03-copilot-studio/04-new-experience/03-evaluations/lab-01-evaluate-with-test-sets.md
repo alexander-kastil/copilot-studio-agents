@@ -14,6 +14,8 @@ This lab goes deeper into the Evaluate tab than [Build, Evaluate, and Monitor a 
 - A per-case diagnosis that sorts every failure into a component bucket (knowledge, instructions, tool, multi-turn, test case, environment).
 - A second run of the identical set after one targeted Instructions change, with both runs recorded side by side in a scorecard workbook.
 
+![The ten exercises in order: ground the agent and install weak Instructions, fill and configure the Northwind regression set, then run a baseline, diagnose each failure, change one thing, and run again.](./_images/lab-overview-ten-exercises.svg)
+
 ## Lab Files
 
 Everything you paste or upload in this lab ships in the `lab-01-evaluate-with-test-sets` folder beside this guide.
@@ -137,6 +139,8 @@ The limits the template states are worth writing down, because they shape how yo
 
 Expected: a green banner reads "Your file was uploaded successfully. Review your test cases or start evaluation.", and **Review your test cases (7)** lists seven conversations. Each row shows the conversation's opening question and a **Total messages** count that is twice its question-answer pair count, so the three-turn conversations read 6 and the single-turn ones read 2.
 
+![The fourteen rows of northwind-test-set.csv grouped by conversationNumber into seven conversations: four grounded facts, two guardrails, and one off-topic request, each with a Total messages count twice its question count.](./_images/northwind-csv-to-seven-conversations.svg)
+
 > **Warning:** Upload the `.csv` only. The **Data source** area rejects `.xlsx`, so dragging `evaluation-scorecard.xlsx` here returns "The CSV file does not match the expected format. Please use the correct template." That workbook is a local tracking sheet you never upload.
 
 > **Note:** The template you download from the **CSV** link is the authority on the format, not this guide. The evaluation surface is a production-ready preview and the accepted columns can change, so check the template every time you author a new import file. The same error message appears whenever the columns do not match, including if you reach for the classic `Question` and `Expected response` layout, which this tab does not accept.
@@ -168,6 +172,8 @@ Expected: the new conversation shows a **Total messages** count of 4 (two questi
 
 The **Configure test set** panel is small and easy to skip, and skipping it is how makers end up misreading their own results. Three settings live here, and each one changes what the score means. The most important thing to understand before you run is what the grader is actually judging, because the honest answer surprises most people coming from the classic Evaluation page.
 
+![On the Evaluate tab, General quality judges the agent's answer alone and the optional expected response serves the people who maintain the set; on the classic page, Compare meaning or Text similarity reads the answer and the required expected response and scores against a pass threshold.](../../../../demos/03-copilot-studio/04-new-experience/03-evaluations/_images/general-quality-inputs.svg)
+
 1. In the **Configure test set** panel on the right, set **Name** to `Northwind regression set`.
 2. Read the **Data type** label above it. It reads `Data type: Conversation`, which is the only test set type available in this experience.
 3. Read the **Test method** card. It shows **General quality**, described as responses meeting quality standards such as relevance and completeness, and it states plainly that it does not compare to expected responses. Test methods are not carried in the CSV, and **General quality** is applied by default to any imported set.
@@ -194,6 +200,8 @@ Running the set turns eight cases into an objective baseline you can point at in
 Expected: the run completes with an aggregate **Score** and a per-conversation table where each case reads Pass or Fail. With the weak baseline instructions the grounded-fact cases should largely pass, and the guardrail, off-topic, and multi-part cases are where the failures cluster. Comparing the verdicts against your Exercise 3 predictions is the point: the cases you got wrong are the ones where your mental model of the agent was wrong.
 
 > **Tip:** Not every non-pass is a failure of the agent. A case that returns **Invalid** could not be graded, usually because a required input is missing, and a case that returns **Error** means the run itself failed, typically an authentication or connection problem under the selected user profile. Clear those two before you interpret anything else; they are your problem, not the agent's.
+
+![The four outcomes of one test case: Invalid and Error are about the run or the case and are cleared first; Pass and Fail are verdicts about the agent's answer and are interpreted second.](../../../../demos/03-copilot-studio/04-new-experience/03-evaluations/_images/four-outcomes-two-owners.svg)
 
 ## Exercise 9: Diagnose each failure into a component bucket
 
@@ -230,6 +238,8 @@ Expected: the failures concentrate heavily in the **Instructions** bucket, becau
 ## Exercise 10: Change one thing, re-run, and compare the runs
 
 A score is only worth producing if it drives a change, and a change is only worth making if you can prove it worked. This exercise closes the loop with the rule that makes evaluation trustworthy: change exactly one thing, re-run the identical set, and compare. Edit three components at once and a higher score tells you the bundle helped while hiding which part did.
+
+![Run 1 and Run 2 share the knowledge source, the Northwind regression set, the General quality test method, and the user profile; only the Instructions change, from agent-instructions-v1.txt to agent-instructions-v2.txt.](./_images/one-change-two-runs.svg)
 
 1. On the **Build** tab, open **Instructions** and replace the contents with `agent-instructions-v2.txt`:
 

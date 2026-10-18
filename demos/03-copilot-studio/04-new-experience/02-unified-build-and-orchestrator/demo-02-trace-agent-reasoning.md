@@ -85,6 +85,8 @@ An answer that looks right is not the same as an answer you can trust. Get ratio
 
 Reading a rationale for a question you already understand teaches you what a healthy plan looks like, so that a broken one later is easy to spot. For the Around the Horn question, a healthy plan breaks the request into its parts (orders, support cases, lead time) and attributes each to the document that holds it.
 
+![The Around the Horn question splits into three parts: orders last quarter and open support cases are answered from northwind-accounts, and standard lead time is answered from the product reference as 5 business days for Tier 2.](./_images/around-the-horn-healthy-plan.svg)
+
 1. In the **Preview** tab, find the multi-source answer from Exercise 2.
 2. On that answer, select **Get rationale** to open the planner's decision detail.
 3. Read the ordered steps and note which source each step drew from.

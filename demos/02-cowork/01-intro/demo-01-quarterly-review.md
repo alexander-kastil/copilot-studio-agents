@@ -30,6 +30,8 @@ Point Cowork at the `demo-01-quarterly-review` folder. It holds the raw quarter 
 | `q3-regional-notes.docx`  | Your qualitative notes on what drove the numbers and what needs a decision                       |
 | `q2-review.pptx`          | Last quarter's review deck: the structure, tone, and slide count the new deck should match       |
 
+![The three demo files feed one Cowork task that plans, builds the Aurora Northern Europe - Q3 Review deck, and adds speaker notes in place; the deck then travels in an email draft through an approval step to your own inbox.](./_images/q3-review-deck-flow.svg)
+
 ## Load the demo files
 
 In Microsoft Copilot (copilot.cloud.microsoft), select **Cowork** in the top toggle next to Chat, start a new task, select **Add attachments** > **Upload images and files**, and add all three files from the `demo-01-quarterly-review` folder. Cowork keeps them in the task's working folder, so every step below reads and writes there without re-attaching. Part of the point is that you never tell Cowork which file to use for what; it has to work that out.

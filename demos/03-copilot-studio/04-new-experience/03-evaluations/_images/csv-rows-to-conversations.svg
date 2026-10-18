@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+<title id="t">CSV rows grouped into conversation test cases</title>
+<desc id="d">The import file has the columns conversationNumber, question and response. The two rows with conversationNumber 1 become one multi-turn test case, Conversation 1, with turn 1 and turn 2 in file order. The row with conversationNumber 2 becomes a second test case, Conversation 2. A highlight moves from the rows of each conversation to the test case they form.</desc>
+<rect width="1920" height="1080" fill="#ffffff"/>
+<defs>
+<style>
+.h{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#24292f;font-weight:600}
+.r{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#24292f}
+.s{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#57606a}
+.c{font-family:Consolas,Menlo,monospace;fill:#24292f}
+</style>
+<marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+</defs>
+<g transform="translate(0,80)">
+
+<rect x="60" y="62" width="1000" height="80" rx="12" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text class="c" x="90" y="113" font-size="28">"conversationNumber","question","response"</text>
+
+<rect x="60" y="200" width="1000" height="190" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<circle cx="125" cy="295" r="36" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text class="c" x="125" y="306" font-size="32" font-weight="700" text-anchor="middle">1</text>
+<text class="r" x="190" y="262" font-size="28">What is the standard lead time for a Tier 1 account?</text>
+<text class="s" x="190" y="310" font-size="28">Tier 1 accounts have a standard lead time</text>
+<text class="s" x="190" y="350" font-size="28">of 3 business days.</text>
+
+<rect x="60" y="420" width="1000" height="190" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<circle cx="125" cy="515" r="36" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text class="c" x="125" y="526" font-size="32" font-weight="700" text-anchor="middle">1</text>
+<text class="r" x="190" y="482" font-size="28">And for a Tier 3 account?</text>
+<text class="s" x="190" y="530" font-size="28">Tier 3 accounts have a standard lead time</text>
+<text class="s" x="190" y="570" font-size="28">of 10 business days.</text>
+
+<rect x="60" y="700" width="1000" height="150" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<circle cx="125" cy="775" r="36" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<text class="c" x="125" y="786" font-size="32" font-weight="700" text-anchor="middle">2</text>
+<text class="r" x="190" y="762" font-size="28">How much does a case of Cold Brew Concentrate cost?</text>
+<text class="s" x="190" y="808" font-size="28">A case of 12 lists at 48.00 USD.</text>
+
+<path d="M1060,295 H1232" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M1060,515 H1232" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M1060,775 H1232" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+<rect x="1240" y="200" width="620" height="410" rx="20" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<rect x="1270" y="265" width="220" height="60" rx="30" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="r" x="1380" y="305" font-size="28" text-anchor="middle">Turn 1</text>
+<rect x="1270" y="485" width="220" height="60" rx="30" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="r" x="1380" y="525" font-size="28" text-anchor="middle">Turn 2</text>
+<text class="h" x="1530" y="388" font-size="32">Conversation 1</text>
+<text class="s" x="1530" y="430" font-size="28">one multi-turn</text>
+<text class="s" x="1530" y="468" font-size="28">test case</text>
+
+<rect x="1240" y="700" width="620" height="150" rx="20" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<rect x="1270" y="745" width="220" height="60" rx="30" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="r" x="1380" y="785" font-size="28" text-anchor="middle">Turn 1</text>
+<text class="h" x="1530" y="765" font-size="32">Conversation 2</text>
+<text class="s" x="1530" y="808" font-size="28">one test case</text>
+
+<g opacity="0">
+<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.08;0.42;0.5;1" dur="6s" repeatCount="indefinite"/>
+<rect x="54" y="194" width="1012" height="202" rx="18" fill="none" stroke="#e0a534" stroke-width="6"/>
+<rect x="54" y="414" width="1012" height="202" rx="18" fill="none" stroke="#e0a534" stroke-width="6"/>
+<rect x="1234" y="194" width="632" height="422" rx="24" fill="none" stroke="#e0a534" stroke-width="6"/>
+</g>
+<g opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5;0.58;0.92;1" dur="6s" repeatCount="indefinite"/>
+<rect x="54" y="694" width="1012" height="162" rx="18" fill="none" stroke="#e0a534" stroke-width="6"/>
+<rect x="1234" y="694" width="632" height="162" rx="24" fill="none" stroke="#e0a534" stroke-width="6"/>
+</g>
+
+<circle cx="1070" cy="295" r="11" fill="#e0a534" opacity="0">
+<animate attributeName="cx" values="1070;1070;1222;1222" keyTimes="0;0.08;0.33;1" dur="6s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.08;0.33;0.36;1" dur="6s" repeatCount="indefinite"/>
+</circle>
+<circle cx="1070" cy="515" r="11" fill="#e0a534" opacity="0">
+<animate attributeName="cx" values="1070;1070;1222;1222" keyTimes="0;0.17;0.42;1" dur="6s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.17;0.42;0.45;1" dur="6s" repeatCount="indefinite"/>
+</circle>
+<circle cx="1070" cy="775" r="11" fill="#e0a534" opacity="0">
+<animate attributeName="cx" values="1070;1070;1222;1222" keyTimes="0;0.58;0.83;1" dur="6s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.58;0.83;0.86;1" dur="6s" repeatCount="indefinite"/>
+</circle>
+</g>
+</svg>

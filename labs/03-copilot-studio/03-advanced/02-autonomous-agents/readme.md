@@ -2,6 +2,8 @@
 
 In this lab, you are going to understand how to create an autonomous agent using Microsoft Copilot Studio. The autonomous agent that you are going to create automatically processes candidate data from PDF files uploaded to SharePoint. The agent monitors a SharePoint document library for new PDF uploads, extracts the candidate information using AI, and automatically creates employee records through the HR MCP server of this repository. This lab demonstrates how autonomous agents can streamline HR workflows by automating document processing and data entry tasks.
 
+![A candidate PDF uploaded to SharePoint fires a Power Automate trigger that prompts the Autonomous HR Docs Processor, which calls add_employee on the HR MCP server and SendEmail on the Email Management MCP Server.](../../../../demos/03-copilot-studio/pptx/images/03-02-autonomous-triggers.svg)
+
 > **Note:** This lab builds on [Lab 5: Give an Agent MCP Tools](../../02-tools/lab-5/readme.md) and consumes the same server, the HR MCP server in [`src/hr-mcp-server`](../../../../src/hr-mcp-server/). It is a .NET 10 application built on the MCP C# SDK that manages employees in a SQL database. Nothing new needs to be built here, you only register the server as a tool again, this time in an agent that runs without a user in the loop.
 
 In this lab you will learn:
@@ -283,6 +285,8 @@ In case of need, you can customize the behavior of the flow to add additional be
 
 Another interesting thing to know about triggers of autonomous agents is that, when you upload multiple files to SharePoint, or in general when multiple triggering events happen you will not always see one Power Automate flow triggered for each file/event. Likewise, you will not see one agent instance for each file/event. In fact, for example when processing files uploaded to a SharePoint Online document library, there could be one flow instance processing multiple files uploaded in a single unit of time.
 The Power Automate flow will then trigger one agent instance, which will process one by one every single file.
+
+![Two resume PDFs uploaded at once start one flow run and one agent instance, which calls add_employee for the first file and then for the second.](./_images/batched-uploads-one-agent-run.svg)
 
 You can clearly inspect the described behavior if you upload two (or more) files at once and then wait for the flow to run in Power Automate and for the autonomous agent to be invoked in Copilot Studio. In fact, there will be only one flow executed for a set of uploaded files and there will be one agent instance for that flow.
 

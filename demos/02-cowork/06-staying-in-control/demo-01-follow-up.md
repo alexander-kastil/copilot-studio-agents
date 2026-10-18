@@ -18,6 +18,8 @@ Each step follows the same pattern:
 
 You have just come off a discovery call with Fjallbryggan Retail, a Nordic chain that wants to stock Aurora Outdoor for the AW26 season. You promised a revised proposal within a week and a follow-up call.
 
+![The four demo steps with both files attached throughout: reconcile, close the open terms into proposal v1.0, draft the email to Markus Lind, and book the follow-up call. The proposal is held for your go-ahead, the email at high risk, and the invite at medium risk.](./_images/follow-up-package-flow.svg)
+
 ---
 
 ## Demo Files

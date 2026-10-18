@@ -48,6 +48,8 @@ While Cowork runs, the **side panel** shows where the task stands and which file
 
 The **Skills** chips show how Cowork decomposes a request: each skill that lights up is one step in its plan. Watching the chips is the fastest way to see that, for example, the **Excel** skill builds a spreadsheet before the **Email** skill sends it. When a step stalls or produces the wrong output, the chips tell you which skill to steer.
 
+![Diagram of Cowork splitting a request into a plan: step 1, the Excel skill, builds the spreadsheet and step 2, the Email skill, sends it, while the matching Excel and Email chips light up in the Skills section of the side panel.](../pptx/images/02-01-side-panel.svg)
+
 ---
 
 ## Where Skills Come From
@@ -61,6 +63,8 @@ Built-in skills are only the starting point. You can also:
 - **Upload a plugin package** of your own from **Customize** > **Plugins**
 
 Custom skills, uploaded skills, and plugin skills all appear as chips in the same **Skills** section and activate the same way. Cowork reads each description and loads the skill when the work calls for it, so you do not invoke a skill by name.
+
+![Diagram of six skill sources, from built-in skills to your own plugin package, all feeding one step where Cowork reads each description and loads the skill, which then appears as a chip in the same Skills section.](../pptx/images/02-02-skill-sources.svg)
 
 You can narrow the set per conversation: the conversation **Sources** picker opens the **Sources & Skills** panel, where you turn plugins on or off. In **Customize** > **Skills**, **Your skills** and **Built-in** list the skills available to you.
 

@@ -14,20 +14,15 @@ Built-in skills handle common office tasks and [custom skills](../03-custom-skil
 - **Microsoft and role-based plugins**: Dynamics 365 Customer Service, Sales and ERP, Fabric IQ and Business Applications in Work IQ, plus role-based plugins for Legal, Sales, Service and Education
 - **Admin deployment**: IT admins can roll out plugins organization-wide; they appear with **Managed by your organization**
 
+![A plugin adds expertise skills to the Cowork side panel and MCP connectors that reach CRM data, ticketing systems and third-party APIs beyond Microsoft 365. An MCP app returns an interactive widget into the conversation.](../pptx/images/05-01-what-plugins-add.svg)
+
 ---
 
 ## Where Plugins Fit
 
 Cowork draws skills from five sources, and every one of them surfaces in the same side panel and activates the same way: automatically, based on the task.
 
-```mermaid
-flowchart LR
-  A["Built-in<br/>skills"] --> P["Cowork<br/>side panel"]
-  B["Custom skills<br/>(Customize or OneDrive)"] --> P
-  C["Plugins<br/>(Discover)"] --> P
-  D["Admin-deployed<br/>plugins"] --> P
-  E["Shared or<br/>uploaded"] --> P
-```
+![Five sources feed the Cowork side panel: built-in skills, custom skills from Customize or OneDrive, plugins from Discover, admin-deployed plugins, and skills that are shared or uploaded.](../pptx/images/05-02-where-plugins-fit.svg)
 
 Built-in skills handle the common office tasks. Custom skills handle *your* recurring workflows. Plugins reach into the systems and expertise your work depends on, and admin-deployed plugins let IT standardize that reach across the whole organization. Skills and plugins that colleagues share with you, or that you upload yourself, join the same panel.
 
@@ -51,6 +46,8 @@ A plugin is packaged as a Microsoft 365 app: a `manifest.json`, `color.png`, `ou
 Select **Upload plugin** under **Customize** > **Plugins** and pick a `.zip` package. A Claude or other compatible plugin package is converted automatically, including its bundled skills and connectors.
 
 The **Share** dialog then offers **Only you** or **Specific users in your organization**. Sharing with specific people needs no admin, while publishing to the whole organization waits for admin approval.
+
+![Four widening steps of reach for an uploaded plugin: Only you and Specific users in your organization need no admin, the whole organization waits for admin approval, and a public store listing goes through Partner Center.](../pptx/images/05-03-sharing-a-plugin.svg)
 
 For code-first authoring, the `wiqd` command-line tool (preview) scaffolds, validates, packages and shares plugins:
 

@@ -4,6 +4,8 @@ Basics build an agent that answers, and tools let it act; this topic makes it ru
 
 The shift underneath all of this is generative orchestration: the LLM-driven planning layer that reads a request, picks the right tools, knowledge, and agents, and executes a multi-step plan. Autonomous behavior, multi-agent handoffs, and deep reasoning all depend on it being turned on. This is the same runtime the new experience makes always-on, so understanding it in classic is what makes the new orchestrator ([02-unified-build-and-orchestrator](../04-new-experience/02-unified-build-and-orchestrator/readme.md)) feel familiar.
 
+![Chat, an event trigger and voice hand a request to generative orchestration, which reads it, picks tools, knowledge and agents, and executes a multi-step plan using tools, knowledge, other agents, a deep reasoning model and agent flows.](../pptx/images/03-01-generative-orchestration.svg)
+
 ## What to teach
 
 - Generative orchestration: how the planner interprets intent and chooses tools, knowledge, and agents at runtime, and why advanced features require it rather than classic orchestration.

@@ -13,6 +13,8 @@ There are two broad ways to extend Copilot, and they answer different questions.
 - Ground Copilot in more of your content, so it can answer from systems it could not see before (connectors, knowledge sources).
 - Build a focused agent with its own instructions, knowledge, and tools, so it handles a specific job end to end (Agent Builder, Copilot Studio, pro-code).
 
+![Out of the box, Microsoft 365 Copilot answers from the web and, with a license, your Graph content. You extend it either by grounding it in more of your content through connectors and knowledge sources, or by building a focused agent with its own instructions, knowledge, and tools.](../pptx/images/04-01-extending-copilot.svg)
+
 ---
 
 ## The Extensibility Paths
@@ -27,22 +29,15 @@ The paths trade ease of building against control and capability. No-code is fast
 
 Most of this course lives in the Copilot Studio low-code path, because it hits the best balance of speed and control for the maker and architect audience. You will still meet the declarative end (Agent Builder, SharePoint) so you know when to reach for it. There is also a pro-code end (Agents SDK, Microsoft Foundry) for complex custom hosting and orchestration, which is out of scope here.
 
+![The four extensibility paths on one build-effort scale, from declarative agents (lowest effort, no code) through Copilot Studio and Graph connectors to pro-code (steepest effort). Copilot Studio is marked as most of this course and pro-code as out of scope.](../pptx/images/04-02-extensibility-paths.svg)
+
 ---
 
 ## Choosing a Path: A Decision Framework
 
 Run a candidate scenario through these questions in order, and stop at the first path that fits.
 
-```mermaid
-flowchart TB
-  Start["New scenario"] --> Q1{"Just grounded<br/>Q&A over your<br/>sites and files?"}
-  Q1 -->|Yes| Dec["Declarative agent<br/>(Agent Builder /<br/>SharePoint)"]
-  Q1 -->|No| Q2{"Needs tools,<br/>topics, or a<br/>published channel?"}
-  Q2 -->|Yes| Studio["Copilot Studio<br/>(low-code)"]
-  Q2 -->|No| Q3{"Content lives in<br/>an external system?"}
-  Q3 -->|Yes| Conn["Graph connector"]
-  Q3 -->|No| Pro["Pro-code<br/>(out of scope)"]
-```
+![Decision flow for a new scenario: just grounded Q&A over your sites and files leads to a declarative agent; needing tools, topics, or a published channel leads to Copilot Studio; content in an external system leads to a Graph connector; anything else is pro-code, out of scope here.](./_images/choosing-a-path.svg)
 
 The bias should be toward the lowest-effort path that meets the need, then move up only when a real requirement forces it. Over-engineering a simple Q&A into a pro-code project wastes time; under-building a tool-heavy process in a declarative agent hits a wall. Naming the requirement that forces the jump (a tool call, a channel, external data) keeps the choice honest.
 

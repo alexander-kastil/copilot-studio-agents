@@ -2,6 +2,8 @@
 
 Copilot Studio is Microsoft's low-code platform for building agents, and this topic is where makers get their footing. You start in the Power Platform admin center to understand environments and where an agent actually lives, then build and configure your first agent, ground it with knowledge, shape its conversations with topics, and publish it to a channel your colleagues already use. The goal is a working, grounded agent in Teams by the end, built without writing code.
 
+![The HR Agent built in labs 01 to 03: instructions, knowledge, topics and orchestration settings in the Copilot Dev Camp environment, grounded in the Microsoft Careers site and SharePoint HR Documents, and published to Microsoft Teams.](../pptx/images/01-01-agent-parts.svg)
+
 The through-line is the classic authoring surface (Topics, Knowledge, Actions, Settings) that most tenants still open by default and that all production agents and ALM pipelines live in today. Everything here transfers: the new experience in [04-new-experience](../04-new-experience/readme.md) reuses these same concepts under a consolidated Build surface. Learn the classic model first and the new one reads as a rearrangement, not a reset.
 
 ## What to teach
@@ -23,6 +25,8 @@ The through-line is the classic authoring surface (Topics, Knowledge, Actions, S
 | Open-ended questions over your content | Knowledge sources and generative answers |
 | Capture a specific value from the user (a date, an ID) | An entity plus slot filling in a topic |
 | Branching or calculation inside a flow | Power Fx in a topic node |
+
+![Generative orchestration reads the names and descriptions of topics and knowledge sources and sends each prompt to the best match; classic orchestration starts the topic whose trigger phrases match most closely.](../pptx/images/01-02-topics-or-knowledge.svg)
 
 ## Key Topics covered in this module
 

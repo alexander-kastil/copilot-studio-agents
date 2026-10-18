@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Extensibility paths on one build-effort scale</title>
+  <desc id="d">Four extensibility paths ordered by build effort. Declarative agents in Agent Builder and SharePoint have the lowest effort and need no code; they also appear in this course. Copilot Studio, the low-code path, is low to medium effort and is most of this course. Graph connectors bring external content into Microsoft Graph at medium effort. Pro-code with the Agents SDK and Microsoft Foundry has the steepest effort and is out of scope here. The scale runs from no-code, fastest to ship, to pro-code, most power and steepest effort.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" text-anchor="middle">
+    <rect x="110" y="100" width="380" height="440" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="300" y="200" font-size="40" font-weight="700" fill="#24292f">Declarative</text>
+    <text x="300" y="250" font-size="40" font-weight="700" fill="#24292f">agents</text>
+    <text x="300" y="320" font-size="30" fill="#57606a">Agent Builder,</text>
+    <text x="300" y="362" font-size="30" fill="#57606a">SharePoint</text>
+    <line x1="150" y1="410" x2="450" y2="410" stroke="#8c959f" stroke-width="2"/>
+    <text x="300" y="480" font-size="32" font-weight="700" fill="#24292f">Lowest, no code</text>
+
+    <rect x="550" y="100" width="380" height="440" rx="18" fill="#eaf2ff" stroke="#57606a" stroke-width="5"/>
+    <text x="740" y="200" font-size="40" font-weight="700" fill="#24292f">Copilot</text>
+    <text x="740" y="250" font-size="40" font-weight="700" fill="#24292f">Studio</text>
+    <text x="740" y="320" font-size="30" fill="#57606a">Low-code</text>
+    <line x1="590" y1="410" x2="890" y2="410" stroke="#8c959f" stroke-width="2"/>
+    <text x="740" y="480" font-size="32" font-weight="700" fill="#24292f">Low to medium</text>
+
+    <rect x="990" y="100" width="380" height="440" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1180" y="200" font-size="40" font-weight="700" fill="#24292f">Graph</text>
+    <text x="1180" y="250" font-size="40" font-weight="700" fill="#24292f">connectors</text>
+    <text x="1180" y="320" font-size="30" fill="#57606a">External content</text>
+    <text x="1180" y="362" font-size="30" fill="#57606a">in Microsoft Graph</text>
+    <line x1="1030" y1="410" x2="1330" y2="410" stroke="#8c959f" stroke-width="2"/>
+    <text x="1180" y="480" font-size="32" font-weight="700" fill="#24292f">Medium</text>
+
+    <rect x="1430" y="100" width="380" height="440" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="1620" y="200" font-size="40" font-weight="700" fill="#24292f">Pro-code</text>
+    <text x="1620" y="320" font-size="30" fill="#57606a">Agents SDK,</text>
+    <text x="1620" y="362" font-size="30" fill="#57606a">Microsoft Foundry</text>
+    <line x1="1470" y1="410" x2="1770" y2="410" stroke="#8c959f" stroke-width="2"/>
+    <text x="1620" y="480" font-size="32" font-weight="700" fill="#24292f">Steepest effort</text>
+
+    <rect x="130" y="570" width="340" height="75" rx="37" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="300" y="618" font-size="30" fill="#24292f">Also in this course</text>
+    <rect x="570" y="570" width="340" height="75" rx="37" fill="#eaf2ff" stroke="#57606a" stroke-width="3"/>
+    <text x="740" y="618" font-size="30" font-weight="700" fill="#24292f">Most of this course</text>
+    <rect x="1450" y="570" width="340" height="75" rx="37" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="1620" y="618" font-size="30" fill="#57606a">Out of scope here</text>
+
+    <line x1="300" y1="645" x2="300" y2="776" stroke="#8c959f" stroke-width="2"/>
+    <line x1="740" y1="645" x2="740" y2="776" stroke="#8c959f" stroke-width="2"/>
+    <line x1="1180" y1="540" x2="1180" y2="776" stroke="#8c959f" stroke-width="2"/>
+    <line x1="1620" y1="645" x2="1620" y2="776" stroke="#8c959f" stroke-width="2"/>
+
+    <line x1="110" y1="790" x2="1800" y2="790" stroke="#57606a" stroke-width="4" marker-end="url(#arrow)"/>
+    <circle cx="300" cy="790" r="14" fill="#e9f7ef" stroke="#57606a" stroke-width="3"/>
+    <circle cx="740" cy="790" r="14" fill="#eaf2ff" stroke="#57606a" stroke-width="3"/>
+    <circle cx="1180" cy="790" r="14" fill="#f3edff" stroke="#57606a" stroke-width="3"/>
+    <circle cx="1620" cy="790" r="14" fill="#f6f8fa" stroke="#57606a" stroke-width="3"/>
+
+    <text x="110" y="870" font-size="30" font-weight="700" fill="#24292f" text-anchor="start">No-code: fastest to ship</text>
+    <text x="960" y="870" font-size="30" fill="#57606a">Build effort</text>
+    <text x="1810" y="870" font-size="30" font-weight="700" fill="#24292f" text-anchor="end">Pro-code: most power, steepest effort</text>
+  </g>
+</svg>

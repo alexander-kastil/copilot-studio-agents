@@ -17,6 +17,8 @@ In this lab you will learn:
 
 In this exercise you are going to enhance the agent that you created in [Lab 03](../../01-basics/lab-03-topics.md) to use Excel Online to retrieve a hypotethical list of candidates from an Excel spreadsheet stored in a SharePoint Online document library. Then you will add a tool to consume a Power Automate flow that can add new candidates to the same spreadsheet.
 
+![The HR agent in Copilot Studio with two tools: List HR candidates reads Candidates_Table through Excel Online (Business), and the agent flow behind Insert new candidate for HR adds a row to the same table. Generative orchestration can call both tools; the topic Add a new candidate to Excel calls the insert tool.](./_images/hr-agent-excel-tools-overview.svg)
+
 ### Step 1: Consuming a Power Platform connector
 
 To create a new tool, in the upper side of the screen select the 1️⃣ **Tools** tab, then select 2️⃣ **+ Add a tool** to start creating a new tool.
@@ -243,6 +245,8 @@ Select the **+ Set value** for each and every input argument and select the corr
 - text_1: represents the last name
 - text_2: represents the current role
 - text_3: represents the expertise
+
+![Each candidate value passes through three names: the adaptive card ids firstname, lastname, current_role and expertise feed the tool inputs text, text_1, text_2 and text_3, which reach the flow inputs Firstname, Lastname, Role and Expertise.](./_images/topic-to-flow-input-mapping.svg)
 
 Then, using data binding in Copilot Studio, configure every input argument to the corresponding topic level variables, collected by the user through the **Ask with adaptive card** action.
 At the end, the tool action will look like in the following image.

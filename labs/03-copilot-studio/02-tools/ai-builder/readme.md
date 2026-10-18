@@ -30,6 +30,8 @@ Custom prompts give makers the freedom to instruct the GPT model to behave in a 
 
 ### Task 1: Create a prompt to summarize text
 
+![In the Check Ticket Status topic, a Prompt node passes SNTicketInfo to the Ticket Details input of the AI Builder prompt Ticket customer communication (GPT4o) and saves the output as PersonalizedMessage, which a Message node shows as PersonalizedMessage.text.](./_images/ticket-prompt-data-flow.svg)
+
 Go to Topics, and open Check Ticket Status.
 
 After the last message that contained an Adaptive Card, add another node with the (+) button.

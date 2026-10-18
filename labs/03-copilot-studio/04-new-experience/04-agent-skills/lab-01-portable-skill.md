@@ -11,6 +11,8 @@ By the end you have one deliverable: a reusable `objection-handling` skill, pack
 - The skill uploaded, activation-tested in **Preview**, then refined and replaced in place on the first agent.
 - The identical package downloaded and reused on a second agent, proving the skill is portable.
 
+![Animated diagram of the lab: a ZIP with SKILL.md at the root and references/objection-handling.md is uploaded, tested and replaced on the Sales Assistant in Steps 5 to 7. In Step 8 the downloaded package is uploaded to the Account Manager and gives the same labelled reply.](./_images/objection-handling-skill-journey.svg)
+
 ## What This Lab Covers
 
 | Step | Focus | Module topic practised |
@@ -63,6 +65,8 @@ Expected: you can state one reason a skill fits better than instructions here, n
 
 The runtime keeps only the name and description of each skill in context until a request matches, so those two lines do all of the activation work. A hyphenated, lowercase name reads cleanly across the open Agent Skills format, and a keyword-rich description is what makes activation reliable. Aim the description at the exact words a seller would type when they hit a wall.
 
+![Animated diagram: a request reaches the orchestration runtime, which matches it to the objection-handling description. Agent instructions and every skill's name and description sit in context on every turn; the objection-handling instructions load only on the match.](../../../../demos/03-copilot-studio/pptx/images/04-05-agent-skills.svg)
+
 Write the description so it says both what the skill does and when to use it. Pack it with the trigger words a real request would contain: objection, push-back, price, timing, budget, competitor.
 
 1. Choose the name: `objection-handling` (lowercase, hyphenated, no spaces).
@@ -83,6 +87,8 @@ Expected: you have a name and a one-to-two-sentence description whose keywords m
 A skill is a single `SKILL.md` file: YAML front matter for the name and description, then Markdown instructions for the behaviour. Keep the instructions focused on this one task with a clear method, a response format, and at least one edge case. The front matter is the only structured part; everything below the second `---` is plain Markdown the runtime reads when the skill activates.
 
 Use the four-move method below (Acknowledge, Clarify, Reframe, Next step) so every reply has the same shape. The provided `lab-01-portable-skill/SKILL.md` is the finished example; author your own and compare against it.
+
+![Diagram mapping the four moves (Acknowledge, Clarify, Reframe, Next step) to the three labelled parts of the reply. Reframe draws its standard wording from references/objection-handling.md.](./_images/objection-handling-four-moves.svg)
 
 1. Open your text editor and create a new file named `SKILL.md`.
 2. Paste the full content below, keeping the front matter (between the two `---` lines) at the very top of the file.

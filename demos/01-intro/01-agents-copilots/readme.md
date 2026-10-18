@@ -16,30 +16,15 @@ These words get used loosely, so this course fixes their meaning up front.
 
 A useful way to hold it: every agent is a copilot with a narrower job and more autonomy. Microsoft 365 Copilot is the broad assistant across your apps. An agent you build in Copilot Studio is a focused copilot for one process, for example handling sales objections or answering HR policy questions.
 
+![Nested categories: assistant contains copilot, and copilot contains agent. Each step inward means a narrower job and more autonomy, from turn-by-turn answers to an agent that plans and acts toward a goal.](../pptx/images/01-01-vocabulary.svg)
+
 ---
 
 ## The Microsoft 365 Copilot Ecosystem
 
 Copilot is not one product, it is a layer that spans the platform. The pieces you will meet in this course sit at different levels, from the everyday chat experience up to the pro-code extensibility surface.
 
-```mermaid
-flowchart TB
-  subgraph Experiences["Where people work"]
-    Chat["Copilot Chat<br/>(web, Teams, apps)"]
-    Cowork["Copilot Cowork<br/>(agentic workspace)"]
-    InApp["In-app Copilot<br/>(Word, Excel, Outlook)"]
-  end
-  subgraph Build["Where makers build"]
-    Studio["Copilot Studio<br/>(low-code agents)"]
-    Agents["SharePoint &<br/>Agent Builder agents"]
-  end
-  subgraph Foundation["What grounds it"]
-    Graph["Microsoft Graph<br/>(your work content)"]
-    Tools["Tools, connectors<br/>& MCP servers"]
-  end
-  Experiences --> Foundation
-  Build --> Foundation
-```
+![Three layers of the Copilot ecosystem: where people work (Copilot Chat, Copilot Cowork, in-app Copilot) and where makers build (Copilot Studio, SharePoint and Agent Builder agents) both stand on what grounds it (Microsoft Graph and tools, connectors and MCP servers).](../pptx/images/01-02-copilot-ecosystem.svg)
 
 The experiences layer is what end users touch. The build layer is where makers and developers assemble agents. Both stand on a shared foundation: Microsoft Graph, which grounds Copilot in your emails, files, chats, and meetings, and the tools and connectors that let agents reach beyond Graph into other systems.
 
@@ -65,6 +50,8 @@ The same agent concept shows up in several places, each suited to a different bu
 | Copilot Studio | Custom agents with topics, tools, and orchestration | Low-code makers, pro-code |
 
 You do not have to choose one path forever. A common pattern is to prototype in a no-code surface, then rebuild in Copilot Studio when the process needs custom tools, multi-agent orchestration, or governance.
+
+![A prototype in Agent Builder or a SharePoint agent is rebuilt in Copilot Studio when the process needs custom tools, multi-agent orchestration, or governance.](../pptx/images/01-03-where-agents-live.svg)
 
 ---
 

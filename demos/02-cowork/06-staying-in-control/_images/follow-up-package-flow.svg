@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">The four steps of the follow-up package and where each one is held</title>
+  <desc id="d">Both files, partner-meeting-notes.docx and partnership-proposal-draft.docx, stay attached for every step. Step 1 reconciles the notes against the draft: each open term and its decision, plus the new fleece fit item. Step 2 closes every open term: proposal v1.0 saved as a new file, draft untouched, held for your go-ahead. Step 3 drafts the follow-up email to Markus Lind with v1.0 attached: high risk, external recipient. Step 4 books the follow-up call, a 30-minute invite to Markus Lind next week: medium risk, others' calendars.</desc>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="65" y="80" width="1790" height="110" rx="20" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="161" y="146" font-size="30" font-weight="700" fill="#24292f">Attached for every step:</text>
+    <rect x="619" y="103" width="510" height="64" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="874" y="145" font-size="28" font-family="Consolas, monospace" fill="#24292f" text-anchor="middle">partner-meeting-notes.docx</text>
+    <rect x="1169" y="103" width="590" height="64" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1464" y="145" font-size="28" font-family="Consolas, monospace" fill="#24292f" text-anchor="middle">partnership-proposal-draft.docx</text>
+
+    <g fill="#eaf2ff" stroke="#8c959f" stroke-width="2">
+      <rect x="65" y="250" width="410" height="220" rx="20"/>
+      <rect x="525" y="250" width="410" height="220" rx="20"/>
+      <rect x="985" y="250" width="410" height="220" rx="20"/>
+      <rect x="1445" y="250" width="410" height="220" rx="20"/>
+    </g>
+    <g fill="#ffffff" stroke="#8c959f" stroke-width="2">
+      <rect x="90" y="272" width="130" height="44" rx="22"/>
+      <rect x="550" y="272" width="130" height="44" rx="22"/>
+      <rect x="1010" y="272" width="130" height="44" rx="22"/>
+      <rect x="1470" y="272" width="130" height="44" rx="22"/>
+    </g>
+    <g font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">
+      <text x="155" y="304">Step 1</text>
+      <text x="615" y="304">Step 2</text>
+      <text x="1075" y="304">Step 3</text>
+      <text x="1535" y="304">Step 4</text>
+    </g>
+    <g font-size="32" font-weight="700" fill="#24292f">
+      <text x="90" y="382">Reconcile notes</text>
+      <text x="90" y="427">against the draft</text>
+      <text x="550" y="382">Close every</text>
+      <text x="550" y="427">open term</text>
+      <text x="1010" y="382">Draft the</text>
+      <text x="1010" y="427">follow-up email</text>
+      <text x="1470" y="382">Book the</text>
+      <text x="1470" y="427">follow-up call</text>
+    </g>
+
+    <g fill="#e9f7ef" stroke="#8c959f" stroke-width="2">
+      <rect x="65" y="540" width="410" height="230" rx="20"/>
+      <rect x="525" y="540" width="410" height="230" rx="20"/>
+      <rect x="985" y="540" width="410" height="230" rx="20"/>
+      <rect x="1445" y="540" width="410" height="230" rx="20"/>
+    </g>
+    <g font-size="30" font-weight="700" fill="#24292f">
+      <text x="90" y="602">Each open term</text>
+      <text x="550" y="602">Proposal v1.0</text>
+      <text x="1010" y="602">Follow-up email</text>
+      <text x="1470" y="602">30-minute invite</text>
+    </g>
+    <g font-size="28" fill="#57606a">
+      <text x="90" y="647">and its decision</text>
+      <text x="90" y="692">New item flagged:</text>
+      <text x="90" y="732">the fleece fit</text>
+      <text x="550" y="647">saved as a new file,</text>
+      <text x="550" y="687">draft untouched</text>
+      <text x="1010" y="647">to Markus Lind,</text>
+      <text x="1010" y="687">v1.0 attached</text>
+      <text x="1470" y="647">to Markus Lind,</text>
+      <text x="1470" y="687">next week</text>
+    </g>
+
+    <rect x="525" y="840" width="410" height="150" rx="20" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <g font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">
+      <text x="730" y="905">Held for your</text>
+      <text x="730" y="948">go-ahead</text>
+    </g>
+    <rect x="985" y="840" width="410" height="150" rx="20" fill="#fdecec" stroke="#c24141" stroke-width="3"/>
+    <text x="1190" y="905" font-size="34" font-weight="700" fill="#24292f" text-anchor="middle">High risk</text>
+    <text x="1190" y="952" font-size="28" fill="#57606a" text-anchor="middle">External recipient</text>
+    <rect x="1445" y="840" width="410" height="150" rx="20" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+    <text x="1650" y="905" font-size="34" font-weight="700" fill="#24292f" text-anchor="middle">Medium risk</text>
+    <text x="1650" y="952" font-size="28" fill="#57606a" text-anchor="middle">Others' calendars</text>
+
+    <g stroke="#57606a" stroke-width="3" marker-end="url(#ah)">
+      <line x1="477" y1="360" x2="519" y2="360"/>
+      <line x1="937" y1="360" x2="979" y2="360"/>
+      <line x1="1397" y1="360" x2="1439" y2="360"/>
+      <line x1="270" y1="472" x2="270" y2="534"/>
+      <line x1="730" y1="472" x2="730" y2="534"/>
+      <line x1="1190" y1="472" x2="1190" y2="534"/>
+      <line x1="1650" y1="472" x2="1650" y2="534"/>
+      <line x1="730" y1="772" x2="730" y2="834"/>
+      <line x1="1190" y1="772" x2="1190" y2="834"/>
+      <line x1="1650" y1="772" x2="1650" y2="834"/>
+    </g>
+  </g>
+</svg>

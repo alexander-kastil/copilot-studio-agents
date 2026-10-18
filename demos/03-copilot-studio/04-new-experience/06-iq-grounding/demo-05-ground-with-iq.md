@@ -13,6 +13,8 @@ Duration: about 15 minutes.
 - A Work IQ (Preview) connection in the agent's Tools section.
 - A trace view that shows the Work IQ call and what it returned.
 
+![The same question asked before and after adding Work IQ (Preview): without a tool the reply is a general answer and the trace has no tool node; with Work IQ the reply names the sender, subject and deadline, and the trace shows the Work IQ node.](./_images/same-question-before-and-after-work-iq.svg)
+
 ## Related Topics
 
 This demo applies [Grounding Agents with Work IQ, Foundry IQ, and Fabric IQ](readme.md) to a live agent. The lab repeats the steps with learners and adds routing instructions: [Ground an Agent with Work IQ and Route Work Questions to It](../../../../labs/03-copilot-studio/04-new-experience/06-iq-grounding/lab-01-ground-with-iq.md).

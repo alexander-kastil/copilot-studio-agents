@@ -13,6 +13,8 @@ Duration: about 25 minutes, not counting the optional Step 9.
 - A reply that quotes a renewal email you sent to yourself, checked against your inbox.
 - A trace check that shows which replies used Work IQ and which did not.
 
+![The finished agent's Instructions send the Step 6 renewal question to Work IQ (Preview), which reads the seed email, while the Step 8 general question is answered directly with no Work IQ node in the trace.](./_images/routing-work-questions-to-work-iq.svg)
+
 ## What This Lab Covers
 
 | Step | Focus |
@@ -142,6 +144,8 @@ Expected: the agent answers the question directly, and the trace shows no Work I
 ## Step 9: Optional: ground the agent with Foundry IQ or Fabric IQ
 
 Foundry IQ and Fabric IQ ground an agent in data outside mail, but each needs a resource that your instructor must provide: a knowledge base in Microsoft Foundry, or a semantic model in Microsoft Fabric that your account can open. Skip this step if you do not have access. Add either connection to a second agent, so the Work IQ agent from Steps 1 to 7 stays as built.
+
+![Copilot Studio holds the Work IQ, Foundry IQ and Fabric IQ connections as tools, while each source stays in Microsoft 365, Microsoft Foundry or Microsoft Fabric with the owner who tunes it.](../../../../demos/03-copilot-studio/pptx/images/04-07-iq-grounding.svg)
 
 Path A: Foundry IQ
 

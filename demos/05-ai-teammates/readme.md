@@ -16,15 +16,7 @@ Both are Frontier previews as of October 2026. Autopilot is in private preview w
 
 ## How the Two Paths Relate
 
-```mermaid
-flowchart LR
-    A["A business process<br/>that needs an owner"] --> B{"Who builds<br/>the teammate?"}
-    B -->|"A user describes<br/>name, role, goal"| C["Autopilot<br/>(private preview)"]
-    B -->|"A maker configures<br/>instructions, tools, triggers"| D["Copilot Studio agent<br/>with an agent account"]
-    C --> E["Own identity, memory,<br/>Teams and Outlook presence"]
-    D --> E
-    E --> F["Governed in<br/>Agent 365 and Entra"]
-```
+![A business process that needs an owner leads to the question who builds the teammate: a user describing name, role, and goal leads to Autopilot, a maker configuring instructions, tools, and triggers leads to a Copilot Studio agent with an agent account, and both end in their own identity, memory, Teams and Outlook presence, governed in Agent 365 and Entra.](./pptx/images/01-03-two-paths.svg)
 
 Autopilot is the ready-made teammate a user sets up in Copilot, and an agent account is the build path for a maker who needs control over instructions, tools, and triggers. Both end in the same place: an identity that admins govern like any other member of the organization.
 

@@ -16,6 +16,10 @@ Topic: [Meet Autopilot](../../demos/05-ai-teammates/01-meet-autopilot/readme.md)
 
 Topic: [Working with Autopilot](../../demos/05-ai-teammates/02-autopilot-at-work/readme.md). About 30 minutes.
 
+![A timeline with three lanes: an interactive conversation runs when you send a message, a heartbeat runs one prompt at a fixed interval within your work hours, and an automation runs on a schedule, on a condition, or once.](../../demos/05-ai-teammates/pptx/images/02-02-background-work.svg)
+
+![A sensitive action pauses until you choose Approve, Always allow, or Deny, and content from outside is tagged as untrusted and treated as data.](../../demos/05-ai-teammates/pptx/images/02-03-approvals-untrusted.svg)
+
 - Brief the teammate with the Lab 1 brief.
 - Configure a heartbeat with work hours and a scheduled automation.
 - Add a custom `SKILL.md` and confirm the teammate discovers it.
@@ -24,6 +28,8 @@ Topic: [Working with Autopilot](../../demos/05-ai-teammates/02-autopilot-at-work
 ## Lab 3: Create the Cadence Agent with an Account
 
 Topic: [Agent Accounts](../../demos/05-ai-teammates/03-agent-accounts/readme.md). About 30 minutes.
+
+![What you build in Labs 3 and 4: Cadence with its instructions, account, and tool authentication, started by a recurrence or email trigger, reading a SharePoint workstream tracker, creating a new review document, and exchanging the link and updates with reviewers.](./_images/cadence-what-you-build.svg)
 
 - Create a new agent in Copilot Studio Preview in the early release environment.
 - Paste the Cadence instructions, add an account, and plan the display name and email address before you publish.
@@ -42,6 +48,10 @@ Topic: [Proactive Teammates](../../demos/05-ai-teammates/04-proactive-teammates/
 ## Lab 5: Teammate Readiness Review
 
 Topic: [Shared Memory, Licensing & Teammate Governance](../../demos/05-ai-teammates/05-memory-governance/readme.md). About 25 minutes.
+
+![The four activation steps in order across the Microsoft 365 admin center, the Power Platform admin center, and the environment, after which only the chosen users and groups can create agents with accounts.](../../demos/05-ai-teammates/pptx/images/05-02-admin-activation.svg)
+
+![You tell Cadence a preference, a performance judgment, and a phone number; only the preference lands in its shared memories, which you then list and delete from.](./_images/memory-test-what-it-keeps.svg)
 
 - Walk the four admin activation steps and record who owns each one in your tenant.
 - Check the Frontier for AI Teammates license pool before and after publishing.

@@ -33,6 +33,8 @@ This gives you a flexible packaging model:
 - Connector-only plugin (external tools used by built-in skills)
 - Combined plugin (custom skills orchestrating external tools)
 
+![Three plugin shapes: a skills-only plugin packages custom skills, a connector-only plugin packages a connector that built-in skills use to reach a remote MCP endpoint, and a combined plugin packages custom skills that call the remote endpoint through its connector.](./_images/lab-03-plugin-shapes.svg)
+
 This plugin model is aligned with the Microsoft 365 app ecosystem and follows the same enterprise governance patterns used for Teams apps and agents.
 
 ### Step 2: Compare plugin categories and understand management boundaries
@@ -89,6 +91,8 @@ The plugin is made of the following skills:
 - **foundry-research**: researches and compiles comprehensive information about Microsoft Foundry, including documentation, architecture, models, and deployment options. Used when the user asks to "research Microsoft Foundry", "learn about Foundry", "Foundry documentation", "Foundry architecture", "Foundry models", "how to deploy with Foundry", "Foundry features", or "Foundry capabilities".
 - **dev-camp-deck**: creates a professional PowerPoint presentation about a Copilot Dev Camp lab or topic. Researches Microsoft Learn documentation, organizes content into a slide structure, and generates a polished deck with speaker notes. Used when the user asks to "create a presentation on", "make a deck about", "build a slideshow for", "present on Dev Camp topic", or "generate slides about" any Copilot Dev Camp lab or Microsoft technology topic.
 - **dev-camp-document**: authors a professional Word document about a Copilot Dev Camp lab or Microsoft technology topic. Researches Microsoft Learn documentation, organizes content into a document structure, and generates a polished one-pager or detailed guide with formatting and citations. Used when the user asks to "write a document about", "create a guide for", "author a one-pager on", "write a technical brief on", or "create documentation for" any Copilot Dev Camp lab or Microsoft technology topic.
+
+![Three Cowork prompts each activate one skill of the Copilot Dev Camp plugin. The skill calls the Microsoft Learn MCP Server through the microsoft-learn-mcp connector and returns Foundry research, a PowerPoint deck or a Word document.](./_images/lab-03-dev-camp-plugin-runtime.svg)
 
 The plugin folder structure is the following:
 
@@ -215,6 +219,8 @@ Important validation checks:
 - The file named by `mcpToolDescription` exists in the `tools/` folder
 - Skill frontmatter `name` must be kebab-case and match its folder name
 - Connector `id` values must be unique
+
+![Inside copilot-dev-camp.zip, manifest.json points to color.png, outline.png, the three skill folders and tools/microsoft-learn-mcp-tools.json, while mcpServerUrl points outside the package to the Microsoft Learn MCP Server.](./_images/lab-03-manifest-wiring.svg)
 
 You also need the `color.png` and `outline.png` icons for the application package. Download them from the following URLs:
 
@@ -427,6 +433,8 @@ After generation, review `manifest.json`, validate each `SKILL.md` frontmatter, 
 In this exercise you upload your plugin package and validate end-to-end behavior in Cowork.
 
 Before you involve an admin, test the package yourself. Open **Customize** > **Plugins** > **Upload plugin**, select your `.zip`, and choose **Only you** in the **Share** dialog; no admin is needed. Sharing with **Specific users in your organization** also needs no admin, but publishing to the whole organization waits for admin approval. The admin upload in Step 1 is what lists the plugin in **Discover**, and custom plugins don't run in Cowork on mobile.
+
+![Four widening steps of reach for an uploaded plugin: Only you and Specific users in your organization need no admin, the whole organization waits for admin approval, and a public store listing goes through Partner Center.](../../demos/02-cowork/pptx/images/05-03-sharing-a-plugin.svg)
 
 ### Step 1: Upload the plugin in the Microsoft 365 Admin Center
 

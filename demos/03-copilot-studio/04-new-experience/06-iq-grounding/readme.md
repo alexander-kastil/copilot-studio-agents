@@ -21,7 +21,11 @@ Grounding means the agent's answer rests on a source it reads when the question 
 
 The difference matters most for questions about information that moves, such as a customer email from this morning or a figure refreshed overnight. A file uploaded last week cannot answer those questions. The activity trace also shows which lookups ran, so you can verify grounding without relying on the wording of the reply.
 
+![Two panels compare an uploaded knowledge file, which the agent answers from as an indexed copy, with an IQ connection, which reads the source where it lives when the question arrives. The animation follows a question through each path.](./_images/uploaded-copy-versus-live-source.svg)
+
 ## What each IQ grounds on
+
+![Copilot Studio holds the Work IQ, Foundry IQ and Fabric IQ connections as tools, while each source stays in Microsoft 365, Microsoft Foundry or Microsoft Fabric with the owner who tunes it.](../../pptx/images/04-07-iq-grounding.svg)
 
 ### Work IQ
 

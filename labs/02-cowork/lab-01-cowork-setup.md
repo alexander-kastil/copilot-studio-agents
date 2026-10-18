@@ -10,6 +10,8 @@ In this exercise you explore the core Cowork experience and understand how it di
 
 Copilot Cowork is built for execution, not only conversation. Instead of only answering prompts, Cowork interprets a goal, breaks it into tasks, selects the needed skills, and coordinates actions across Microsoft 365 workloads such as Outlook, Teams, Word, Excel, PowerPoint, and enterprise search. The operating model is goal-driven orchestration: users provide intent, Cowork builds and runs a plan, and users can inspect each step while the work progresses.
 
+![Two lanes: in Copilot Chat you ask one question at a time and merge the text yourself; in Cowork you describe the outcome, Cowork plans and acts across Outlook, Teams, Word, Excel and PowerPoint, and you review the documents and sent messages.](../../demos/02-cowork/pptx/images/01-01-cowork-and-chat.svg)
+
 The main advantage of this model is practical productivity at scale. Cowork can handle multi-step, cross-app workflows that normally require context switching, manual copy/paste, and repeated coordination. It also keeps humans in control through approvals for sensitive actions. Users can delegate more operational work without losing visibility, governance, or trust.
 
 Organizations need Cowork because modern work is fragmented across tools, messages, meetings, and documents, while execution speed and consistency matter more than ever. Cowork addresses this by turning intent into reliable action inside existing Microsoft 365 security, identity, and compliance boundaries. In this lab you first understand the foundation, then configure the tenant prerequisites, and finally explore extensibility options.
@@ -37,6 +39,8 @@ At organizational level, Cowork exists to help teams turn intent into consistent
 ## Exercise 2: Prepare your tenant for Copilot Cowork
 
 In this exercise you configure the core tenant prerequisites required to enable Cowork safely.
+
+![A pilot user with a Copilot license reaches Cowork through a spending policy under Copilot > Cost Management that selects Cowork; Anthropic models, Frontier, the discovery setting and Agents > All agents each have their own job.](../../demos/02-cowork/pptx/images/01-02-cowork-access.svg)
 
 ### Step 1: Validate prerequisites
 
@@ -78,6 +82,8 @@ If users cannot access Cowork, check whether they are in scope of a spending pol
 ## Exercise 3: Start using Copilot Cowork
 
 In this exercise you start using Cowork in the product experience, observe the execution model in action, and validate approval controls for sensitive actions.
+
+![The five steps of a Cowork interaction: describe your task, watch Cowork work, steer at any time with more messages, approve before sensitive actions such as sending an email or posting in Teams, and review the results.](../../demos/02-cowork/pptx/images/01-03-interaction-loop.svg)
 
 ### Step 1: Open Cowork
 
@@ -146,6 +152,8 @@ Before continuing, keep this simple comparison in mind:
 - **Skills** are task instructions and behavior patterns that guide how Cowork should execute specific types of work.
 - **Plugins** are packages that contain skills, connectors to external systems, or both.
 - Choose **Skills** when you need to shape behavior and task logic. Choose **Plugins** when you need to connect tools, systems, or specialized packaged functionality.
+
+![The Customize page with its three tabs: Preferences apply custom instructions to every task, Plugins package skills and connectors to external systems, and Skills hold task instructions that Cowork activates from the conversation context.](./_images/lab-01-customize-extensibility-map.svg)
 
 Cowork already includes a rich set of built-in skills such as Word, Excel, PowerPoint, PDF, Email, Scheduling, Calendar Management, Meetings, Daily Briefing, Enterprise Search, Deep Research, Communications, and Adaptive Cards. These skills are automatically activated by Cowork based on the conversation context, and you can see which ones were used in the **Skills** section of the side panel.
 

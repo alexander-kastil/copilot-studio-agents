@@ -8,6 +8,8 @@ On October 15, 2026, Microsoft announced triggers for agents on the GitHub Copil
 
 The Learn example puts the rule plainly: instructions alone don't create a schedule or grant access. Writing "every Monday, prepare the review" in the instructions does nothing until a recurrence trigger exists and the tools can reach the sources. Treat the trigger, the tools, and the instructions as three separate pieces of configuration that must all be present.
 
+![A recurrence, an email, or a person starts the agent's cycle, which runs only when the trigger, tools that reach the sources, and the instructions are all configured.](../pptx/images/04-01-trigger-tools-instructions.svg)
+
 | Trigger | Starts the cycle when | Fits |
 |---|---|---|
 | Recurrence | The schedule you set comes around | Weekly reviews, status packs, reminder chains |
@@ -24,15 +26,7 @@ Replies and comments are how people add judgment to a process the agent runs. Th
 
 Cadence is the execution-review agent from the Learn documentation, and it is a useful template for any review process. You give it an approved workstream tracker and a small internal reviewer group, then configure supported tools and a recurrence trigger. On each scheduled run it reads the tracker and status evidence, identifies blockers and missing updates, generates a new review document, and sends reviewers the link.
 
-```mermaid
-flowchart LR
-    A["Recurrence<br/>trigger fires"] --> B["Read tracker and<br/>status evidence"]
-    B --> C["Find blockers and<br/>missing updates"]
-    C --> D["Generate a new<br/>review document"]
-    D --> E["Send link to<br/>reviewers"]
-    E --> F["Reviewers reply<br/>or comment"]
-    F --> G["People decide<br/>priorities"]
-```
+![The Cadence cycle in order: the recurrence trigger fires, Cadence reads the tracker and status evidence, finds blockers and missing updates, generates a new review document, and sends the link to reviewers, who reply or comment while people decide priorities.](../pptx/images/04-02-cadence-pattern.svg)
 
 The design works inside the preview limits on purpose. Cadence creates a new document each cycle because co-authoring an existing one is not supported, and it asks reviewers for the specific context or decision it needs. Its instructions tell it to preserve uncertainty (a missing reply does not mean the work is on track) and to stop and explain when a source, connection, or permission is missing.
 

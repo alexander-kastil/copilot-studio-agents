@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">How manifest.json points into the plugin package</title>
+  <desc id="d">Inside copilot-dev-camp.zip at root level, manifest.json references color.png and outline.png through icons, the three skill folders foundry-research, dev-camp-deck and dev-camp-document through agentSkills, each holding a SKILL.md whose frontmatter name equals the folder name, and tools/microsoft-learn-mcp-tools.json through mcpToolDescription.file. Its mcpServerUrl points outside the package to the remote Microsoft Learn MCP Server.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+  </defs>
+  <rect x="40" y="50" width="1360" height="980" rx="20" fill="#ffffff" stroke="#8c959f" stroke-width="2" stroke-dasharray="14 10"/>
+  <text x="70" y="102" font-size="30" fill="#24292f"><tspan font-family="Consolas, 'Courier New', monospace" font-weight="700">copilot-dev-camp.zip</tspan><tspan font-family="Segoe UI, Helvetica, Arial, sans-serif" fill="#57606a">, root level</tspan></text>
+  <rect x="840" y="130" width="520" height="860" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="870" y="190" font-family="Consolas, 'Courier New', monospace" font-size="30" fill="#24292f" font-weight="700">manifest.json</text>
+  <text x="870" y="255" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f" font-weight="700">icons</text>
+  <text x="900" y="310" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f">color</text>
+  <text x="900" y="370" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f">outline</text>
+  <text x="870" y="445" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f" font-weight="700">agentSkills</text>
+  <text x="900" y="500" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f">[0].folder</text>
+  <text x="900" y="560" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f">[1].folder</text>
+  <text x="900" y="620" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f">[2].folder</text>
+  <text x="870" y="695" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f" font-weight="700">agentConnectors[0]</text>
+  <text x="900" y="750" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#57606a">id: microsoft-learn-mcp</text>
+  <text x="900" y="810" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f">mcpServerUrl</text>
+  <text x="900" y="870" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f">mcpToolDescription.file</text>
+  <text x="900" y="930" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#57606a">authorization.type: None</text>
+  <rect x="520" y="276" width="240" height="48" rx="10" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="545" y="310" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f">color.png</text>
+  <rect x="520" y="336" width="240" height="48" rx="10" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="545" y="370" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f">outline.png</text>
+  <rect x="120" y="420" width="640" height="270" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="150" y="462" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f" font-weight="700">skills/</text>
+  <rect x="280" y="468" width="460" height="44" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="300" y="500" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f">foundry-research/SKILL.md</text>
+  <rect x="280" y="528" width="460" height="44" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="300" y="560" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f">dev-camp-deck/SKILL.md</text>
+  <rect x="280" y="588" width="460" height="44" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="300" y="620" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f">dev-camp-document/SKILL.md</text>
+  <text x="150" y="668" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">frontmatter name = folder name</text>
+  <rect x="120" y="760" width="640" height="205" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="150" y="802" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f" font-weight="700">tools/</text>
+  <rect x="180" y="838" width="560" height="44" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="200" y="870" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f">microsoft-learn-mcp-tools.json</text>
+  <text x="150" y="936" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">matches the server's tools/list</text>
+  <path d="M840,300 L762,300" fill="none" stroke="#57606a" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+  <path d="M840,360 L762,360" fill="none" stroke="#57606a" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+  <path d="M840,490 L742,490" fill="none" stroke="#57606a" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+  <path d="M840,550 L742,550" fill="none" stroke="#57606a" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+  <path d="M840,610 L742,610" fill="none" stroke="#57606a" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+  <path d="M840,860 L742,860" fill="none" stroke="#57606a" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+  <rect x="1490" y="660" width="390" height="270" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="1515" y="708" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">remote endpoint</text>
+  <text x="1515" y="752" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" fill="#24292f" font-weight="700">Microsoft Learn</text>
+  <text x="1515" y="792" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" fill="#24292f" font-weight="700">MCP Server</text>
+  <text x="1515" y="846" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f">learn.microsoft.com</text>
+  <text x="1515" y="886" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f">/api/mcp</text>
+  <path d="M1360,800 L1488,800" fill="none" stroke="#57606a" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+</svg>

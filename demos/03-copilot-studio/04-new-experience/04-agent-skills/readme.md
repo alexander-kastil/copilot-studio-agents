@@ -14,11 +14,15 @@ The instructions can be as simple as a numbered method and a response format, or
 
 A skill lives in a single `SKILL.md` file. The top of the file is YAML front matter (the `name` and `description`) fenced between two `---` lines; everything below is plain Markdown that describes the behaviour. When a task needs supporting material, you bundle the `SKILL.md` together with scripts, templates, or reference documents into a ZIP, with `SKILL.md` at the root.
 
+![Diagram of a SKILL.md file: YAML front matter with the name and description between two --- lines, then the Markdown instructions. The file is bundled at the root of a ZIP package beside scripts, templates and reference documents.](./_images/skill-md-file-and-zip.svg)
+
 Keeping the data in a reference file (a price table, a set of canned responses) rather than in the instructions themselves means you update it in one place without rewriting the recipe. The instructions stay short and readable; the details stay maintainable.
 
 ## Loaded on demand, driven by the description
 
 Only the name and description of each skill sit in the agent's context by default. The full instructions load just-in-time, when the orchestration runtime matches an incoming request to the skill. That on-demand loading is what lets an agent carry many skills without bloating every single turn with instructions it rarely needs.
+
+![Animated diagram: a request reaches the orchestration runtime, which matches it to the objection-handling description. Agent instructions and every skill's name and description sit in context on every turn; the objection-handling instructions load only on the match.](../../pptx/images/04-05-agent-skills.svg)
 
 Because the runtime decides activation from the description alone, the description is your activation dial, not a summary. Pack it with the exact words a real request would contain (the caller's vocabulary, not yours) and say both what the skill does and when to use it. If a skill fails to fire, widen or narrow the description before you touch the instructions.
 
@@ -28,9 +32,13 @@ On the Build tab of a new-experience agent, the Skills panel offers two paths: C
 
 Portability is the payoff of the shared open format. A skill a maker or developer already wrote for Claude Code or GitHub Copilot can be uploaded straight into a Copilot Studio agent, and a skill authored here can travel the other way. Distribution is per-agent today: a skill moves with its agent through solutions and ALM, but there is no shared cross-tenant catalog yet, so each agent gets its own copy.
 
+![Diagram: the same SKILL.md or ZIP moves between Claude Code, GitHub Copilot and a Copilot Studio agent's Skills panel through Upload a skill and Download, beside Create from blank, Replace and Delete. Each agent holds its own copy.](./_images/skill-portability.svg)
+
 ## Skills versus tools
 
 Skills and tools solve different problems and work best together. A tool connects the agent to an external service or data source; a skill is self-contained instructions with no live connection of its own. A skill can, however, direct the agent to use a specific tool in a particular way, which makes the two complementary rather than competing.
+
+![Diagram of a Copilot Studio agent: instructions set general behavior on every turn, knowledge grounds the agent, skills load when a request matches and tools hold the live connection to an external service or data source. A skill can direct the agent to use a tool.](./_images/skills-instructions-knowledge-tools.svg)
 
 ## Skill file shape
 

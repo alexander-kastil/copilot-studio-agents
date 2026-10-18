@@ -18,6 +18,8 @@ Each step follows the same pattern:
 
 Every Friday you write the same regional status report from the same sources. This demo turns that recurring chore into a custom skill on a schedule, so it lands in your manager's inbox before you have finished your coffee.
 
+![The demo at a glance: Step 1 maps the template to its sources, Step 2 writes the weekly-status-report skill, Step 3 runs it once by hand, and Step 4 runs it every Friday at 3 PM. Each run produces a one-page Word report and a draft email to Elena Varga held for your approval.](./_images/weekly-status-report-build.svg)
+
 ---
 
 ## Demo Files

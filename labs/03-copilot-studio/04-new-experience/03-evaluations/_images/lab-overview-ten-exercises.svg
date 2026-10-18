@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+<title id="t">The ten exercises of the evaluation lab</title>
+<desc id="d">Exercises 1 to 3 prepare the agent: ground it in northwind-sales-reference.docx, install the weak baseline Instructions from agent-instructions-v1.txt, and smoke-test on Preview while predicting a verdict per case in the Case scorecard. Exercises 4 to 7 fill and configure the test set: a Quick conversation set of 10 generated conversations, an upload of northwind-test-set.csv with 7 conversations, one hand-written two-turn expedited delivery case so the set holds 8, and the Northwind regression set configured with General quality. Exercises 8 to 10 run it: Run 1 as the baseline, a diagnosis bucket for each failure, then one change to agent-instructions-v2.txt, Run 2, comparison and export. A highlight steps through the exercises in order.</desc>
+<rect width="1920" height="1080" fill="#ffffff"/>
+<defs>
+<style>
+.h{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#24292f;font-weight:600}
+.r{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#24292f}
+.s{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#57606a}
+.c{font-family:Consolas,Menlo,monospace;fill:#24292f}
+</style>
+<marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+</defs>
+
+<rect x="60" y="60" width="580" height="260" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<circle cx="112" cy="118" r="30" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="112" y="128" font-size="28" text-anchor="middle">1</text>
+<text class="h" x="160" y="130" font-size="30">Ground the agent</text>
+<text class="c" x="96" y="205" font-size="28">northwind-sales-reference.docx</text>
+<text class="s" x="96" y="255" font-size="28">wait until it shows ready</text>
+
+<rect x="60" y="410" width="580" height="260" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<circle cx="112" cy="468" r="30" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="112" y="478" font-size="28" text-anchor="middle">2</text>
+<text class="h" x="160" y="480" font-size="30">Weak baseline Instructions</text>
+<text class="c" x="96" y="555" font-size="28">agent-instructions-v1.txt</text>
+<text class="s" x="96" y="605" font-size="28">no citation, refusal, scope rules</text>
+
+<rect x="60" y="760" width="580" height="260" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<circle cx="112" cy="818" r="30" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="112" y="828" font-size="28" text-anchor="middle">3</text>
+<text class="h" x="160" y="830" font-size="30">Smoke-test on Preview</text>
+<text class="r" x="96" y="905" font-size="28">predict a verdict per case</text>
+<text class="s" x="96" y="955" font-size="28">in the Case scorecard</text>
+
+<rect x="710" y="60" width="500" height="195" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<circle cx="762" cy="112" r="30" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="762" y="122" font-size="28" text-anchor="middle">4</text>
+<text class="h" x="810" y="122" font-size="30">Quick conversation set</text>
+<text class="r" x="746" y="177" font-size="28">10 generated conversations</text>
+<text class="s" x="746" y="220" font-size="28">count the refusals</text>
+
+<rect x="710" y="315" width="500" height="195" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<circle cx="762" cy="367" r="30" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="762" y="377" font-size="28" text-anchor="middle">5</text>
+<text class="h" x="810" y="377" font-size="30">Upload the curated CSV</text>
+<text class="c" x="746" y="432" font-size="28">northwind-test-set.csv</text>
+<text class="s" x="746" y="475" font-size="28">7 conversations</text>
+
+<rect x="710" y="570" width="500" height="195" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<circle cx="762" cy="622" r="30" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="762" y="632" font-size="28" text-anchor="middle">6</text>
+<text class="h" x="810" y="632" font-size="30">Write a two-turn case</text>
+<text class="r" x="746" y="687" font-size="28">expedited delivery</text>
+<text class="s" x="746" y="730" font-size="28">the set holds 8</text>
+
+<rect x="710" y="825" width="500" height="195" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<circle cx="762" cy="877" r="30" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="762" y="887" font-size="28" text-anchor="middle">7</text>
+<text class="h" x="810" y="887" font-size="30">Configure the set</text>
+<text class="r" x="746" y="942" font-size="28">Northwind regression set</text>
+<text class="s" x="746" y="985" font-size="28">General quality</text>
+
+<rect x="1280" y="60" width="580" height="260" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+<circle cx="1332" cy="118" r="30" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="1332" y="128" font-size="28" text-anchor="middle">8</text>
+<text class="h" x="1380" y="130" font-size="30">Run 1: the baseline</text>
+<text class="r" x="1316" y="205" font-size="28">Score and Test run result</text>
+<text class="s" x="1316" y="255" font-size="28">verdicts in the scorecard</text>
+
+<rect x="1280" y="410" width="580" height="260" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+<circle cx="1332" cy="468" r="30" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="1332" y="478" font-size="28" text-anchor="middle">9</text>
+<text class="h" x="1380" y="480" font-size="30">Diagnose each failure</text>
+<text class="r" x="1316" y="555" font-size="28">one component bucket per case</text>
+<text class="s" x="1316" y="605" font-size="28">count the buckets</text>
+
+<rect x="1280" y="760" width="580" height="260" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+<circle cx="1332" cy="818" r="30" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="1332" y="828" font-size="28" text-anchor="middle">10</text>
+<text class="h" x="1380" y="830" font-size="30">One change, Run 2</text>
+<text class="c" x="1316" y="905" font-size="28">agent-instructions-v2.txt</text>
+<text class="s" x="1316" y="955" font-size="28">compare, then export results</text>
+
+<g fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)">
+<path d="M350,320 V402"/>
+<path d="M350,670 V752"/>
+<path d="M960,255 V307"/>
+<path d="M960,510 V562"/>
+<path d="M960,765 V817"/>
+<path d="M1570,320 V402"/>
+<path d="M1570,670 V752"/>
+<path d="M640,890 H675 V158 H702"/>
+<path d="M1210,922 H1245 V190 H1272"/>
+</g>
+
+<g fill="none" stroke="#e0a534" stroke-width="7">
+<rect x="53" y="53" width="594" height="274" rx="24"><animate attributeName="opacity" values="1;0" keyTimes="0;0.1" calcMode="discrete" dur="10s" repeatCount="indefinite"/></rect>
+<rect x="53" y="403" width="594" height="274" rx="24" opacity="0"><animate attributeName="opacity" values="0;1;0" keyTimes="0;0.1;0.2" calcMode="discrete" dur="10s" repeatCount="indefinite"/></rect>
+<rect x="53" y="753" width="594" height="274" rx="24" opacity="0"><animate attributeName="opacity" values="0;1;0" keyTimes="0;0.2;0.3" calcMode="discrete" dur="10s" repeatCount="indefinite"/></rect>
+<rect x="703" y="53" width="514" height="209" rx="24" opacity="0"><animate attributeName="opacity" values="0;1;0" keyTimes="0;0.3;0.4" calcMode="discrete" dur="10s" repeatCount="indefinite"/></rect>
+<rect x="703" y="308" width="514" height="209" rx="24" opacity="0"><animate attributeName="opacity" values="0;1;0" keyTimes="0;0.4;0.5" calcMode="discrete" dur="10s" repeatCount="indefinite"/></rect>
+<rect x="703" y="563" width="514" height="209" rx="24" opacity="0"><animate attributeName="opacity" values="0;1;0" keyTimes="0;0.5;0.6" calcMode="discrete" dur="10s" repeatCount="indefinite"/></rect>
+<rect x="703" y="818" width="514" height="209" rx="24" opacity="0"><animate attributeName="opacity" values="0;1;0" keyTimes="0;0.6;0.7" calcMode="discrete" dur="10s" repeatCount="indefinite"/></rect>
+<rect x="1273" y="53" width="594" height="274" rx="24" opacity="0"><animate attributeName="opacity" values="0;1;0" keyTimes="0;0.7;0.8" calcMode="discrete" dur="10s" repeatCount="indefinite"/></rect>
+<rect x="1273" y="403" width="594" height="274" rx="24" opacity="0"><animate attributeName="opacity" values="0;1;0" keyTimes="0;0.8;0.9" calcMode="discrete" dur="10s" repeatCount="indefinite"/></rect>
+<rect x="1273" y="753" width="594" height="274" rx="24" opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0;0.9" calcMode="discrete" dur="10s" repeatCount="indefinite"/></rect>
+</g>
+</svg>

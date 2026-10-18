@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title id="t">Three separate things to license for agent accounts</title>
+<desc id="d">The maker license covers the person who builds the agent: Microsoft 365 E5 with the Agent 365 add-on, or Microsoft 365 E7, which includes Agent 365. Each agent with an account gets one Microsoft 365 Frontier for AI Teammates license, assigned at publish from the pool the tenant receives on Frontier enrollment; when the pool is empty, an admin removes one from another agent or acquires more. Copilot Credits cover the usage: building, testing, evaluating and running the agent on usage-based billing. Agents are covered under their owner's license and need no Agent 365 seat of their own.</desc>
+<rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#57606a"/></marker></defs>
+<rect x="60" y="90" width="540" height="710" rx="20" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="90" y="160" font-size="32" font-weight="600" fill="#24292f">Maker license</text>
+<text x="90" y="208" font-size="28" fill="#57606a">The person who builds</text>
+<text x="90" y="246" font-size="28" fill="#57606a">the agent</text>
+<rect x="90" y="300" width="480" height="230" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="120" y="352" font-size="28" fill="#24292f">Microsoft 365 E5 with</text>
+<text x="120" y="394" font-size="28" fill="#24292f">the Agent 365 add-on,</text>
+<text x="120" y="436" font-size="28" fill="#24292f">or Microsoft 365 E7,</text>
+<text x="120" y="478" font-size="28" fill="#24292f">which includes Agent 365</text>
+<rect x="660" y="90" width="600" height="710" rx="20" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+<text x="690" y="160" font-size="32" font-weight="600" fill="#24292f">Microsoft 365 Frontier</text>
+<text x="690" y="198" font-size="32" font-weight="600" fill="#24292f">for AI Teammates</text>
+<text x="690" y="246" font-size="28" fill="#57606a">Each agent with an account</text>
+<rect x="690" y="290" width="540" height="160" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="720" y="342" font-size="30" font-weight="600" fill="#24292f">License pool</text>
+<text x="720" y="384" font-size="28" fill="#57606a">The tenant receives it</text>
+<text x="720" y="420" font-size="28" fill="#57606a">on Frontier enrollment</text>
+<path d="M960,450 L960,532" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<text x="985" y="500" font-size="28" fill="#57606a">Assigned at publish</text>
+<rect x="690" y="540" width="540" height="90" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="720" y="597" font-size="30" font-weight="600" fill="#24292f">One license per agent</text>
+<text x="690" y="690" font-size="28" fill="#57606a">When the pool is empty, an admin</text>
+<text x="690" y="728" font-size="28" fill="#57606a">removes one from another agent</text>
+<text x="690" y="766" font-size="28" fill="#57606a">or acquires more</text>
+<rect x="1320" y="90" width="540" height="710" rx="20" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<text x="1350" y="160" font-size="32" font-weight="600" fill="#24292f">Copilot Credits</text>
+<text x="1350" y="208" font-size="28" fill="#57606a">The usage</text>
+<rect x="1350" y="300" width="480" height="230" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="1380" y="352" font-size="28" fill="#24292f">Building, testing,</text>
+<text x="1380" y="394" font-size="28" fill="#24292f">evaluating and running</text>
+<text x="1380" y="436" font-size="28" fill="#24292f">the agent consume credits</text>
+<text x="1380" y="478" font-size="28" fill="#24292f">on usage-based billing</text>
+<rect x="60" y="850" width="1800" height="120" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text x="960" y="922" font-size="28" fill="#24292f" text-anchor="middle">Agents are covered under their owner's license and need no Agent 365 seat of their own</text>
+</svg>

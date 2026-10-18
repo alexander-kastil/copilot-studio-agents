@@ -9,6 +9,8 @@ Publishing creates the live version of your agent; channels put that live versio
 - Microsoft channels: Microsoft Teams and Microsoft 365 Copilot, and SharePoint
 - Using Advanced Channels: WhatsApp, a custom website or embedded web app (iframe), the prebuilt demo website for testing, and the Direct Line API for custom and mobile apps
 
+![One publish turns the agent into a live version that reaches every connected channel at once: Teams and Microsoft 365 Copilot, SharePoint, WhatsApp, a custom website, the demo website and the Direct Line API. The authentication model chosen at publish time is Entra ID by default, manual, or none.](../pptx/images/02-01-publish-channels.svg)
+
 ## Why it matters
 
 Each channel has its own connection steps and its own availability, and some channels differ between the classic and new agent experiences. The authentication choice is not cosmetic: selecting No authentication lets anyone with the link chat with the agent and blocks tools that rely on user credentials. Choosing the right channel and auth model is what turns a working agent into a safely shared one.

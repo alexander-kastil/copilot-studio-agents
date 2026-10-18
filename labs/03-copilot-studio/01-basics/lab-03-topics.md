@@ -31,6 +31,8 @@ One important feature of an agent made with Copilot Studio, is generative orches
 
 Nowadays and by default, Copilot Studio agents use generative AI orchestration, which means that Copilot Studio understands the intent of the user processing the prompt provided by the user in natural language and determines the best item to trigger. If you like, you can revert the agent back to classic orchestration, where an agent responds to users by triggering a topic whose trigger phrases match most closely the user's query.
 
+![Generative orchestration sends the role feedback prompt to the Collect user's role topic and the hiring question to the HR Documents and Microsoft Careers site knowledge; classic orchestration matches trigger phrases instead.](../../../demos/03-copilot-studio/pptx/images/01-02-topics-or-knowledge.svg)
+
 In Copilot Studio, you can also enable **Deep reasoning** (which is a preview feature) to enable advanced reasoning for AI actions.
 
 To configure orchestration and deep reasoning, open a browser and, using the work account of your target Microsoft 365 tenant, go to [https://copilotstudio.microsoft.com](https://copilotstudio.microsoft.com) to start using Microsoft Copilot Studio.
@@ -171,6 +173,8 @@ Exercise 2 is now completed, well done! You can now move to Exercise 3 to create
 
 For simple interactions, you create single-turn conversations with just one question and one answer. But more substantive topics require a multi-turn conversation with multiple back-and-forth interactions between the user and the agent. In this exercise, you are going to create a multi-turn topic to collect data about a potential candidate for a new role.
 
+![The multi-turn topic asks for first name, last name, e-mail and current role in turn, asks again for an invalid e-mail, recaps the four variables in one message, and ends after a yes or no confirmation.](./_images/multi-turn-topic-entities.svg)
+
 ### Step 1: Creating a new multi-turn topic
 
 Imagine that you want to create a topic to collect the following information about a new candidate:
@@ -239,6 +243,8 @@ Collecting inputs using multiple instances of **Ask a question** actions is defi
 
 Adaptive Cards are platform-independent UI snippets authored in JSON that can be exchanged between apps and services. Once delivered to an app, the JSON transforms into native UI that automatically adapts to its environment. This enables the design and integration of lightweight UI across major platforms and frameworks.
 </details>
+
+![The six card inputs become topic variables, and a Formula Card binds them into the Candidate Summary, turning the two table variables into text with Text and Concat.](./_images/adaptive-card-round-trip.svg)
 
 ### Step 1: Collecting input with Adaptive Cards
 

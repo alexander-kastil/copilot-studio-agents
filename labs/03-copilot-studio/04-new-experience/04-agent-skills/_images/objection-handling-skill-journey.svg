@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">The objection-handling skill: one ZIP package, tested and refined on the Sales Assistant, reused on the Account Manager</title>
+  <desc id="d">Steps 1 to 4 build a ZIP package with SKILL.md at the root, holding the name, description and four-move method, and a references folder beside it with objection-handling.md, the standard responses. Steps 5 to 7 upload the ZIP to the Sales Assistant, test in Preview that it fires on an objection, then refine it and Replace it so it stays one skill. In Step 8 the downloaded package is uploaded to the Account Manager, where Preview gives the same labelled reply from the identical package with no re-authoring.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="80" y="120" width="500" height="800" rx="18" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="330" y="190" text-anchor="middle" font-size="36" font-weight="700" fill="#24292f">ZIP package</text>
+  <text x="330" y="236" text-anchor="middle" font-size="28" fill="#57606a">Steps 1 to 4</text>
+
+  <rect x="110" y="280" width="440" height="160" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="140" y="332" font-size="28" font-weight="700" font-family="Consolas, monospace" fill="#24292f">SKILL.md</text>
+  <text x="520" y="332" text-anchor="end" font-size="28" fill="#57606a">at the root</text>
+  <text x="140" y="380" font-size="28" fill="#57606a">name, description,</text>
+  <text x="140" y="420" font-size="28" fill="#57606a">four-move method</text>
+
+  <rect x="110" y="490" width="440" height="160" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="140" y="555" font-size="28" font-family="Consolas, monospace" fill="#24292f">references/</text>
+  <text x="140" y="602" font-size="28" fill="#57606a">folder beside SKILL.md</text>
+
+  <polyline points="128,650 128,780 150,780" fill="none" stroke="#8c959f" stroke-width="2"/>
+  <rect x="150" y="700" width="400" height="160" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="175" y="765" font-size="28" font-family="Consolas, monospace" fill="#24292f">objection-handling.md</text>
+  <text x="175" y="812" font-size="28" fill="#57606a">standard responses</text>
+
+  <rect x="740" y="120" width="460" height="800" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="970" y="190" text-anchor="middle" font-size="36" font-weight="700" fill="#24292f">Sales Assistant</text>
+  <text x="970" y="236" text-anchor="middle" font-size="28" fill="#57606a">Steps 5 to 7</text>
+  <rect x="770" y="280" width="400" height="160" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="970" y="345" text-anchor="middle" font-size="30" fill="#24292f">Upload a skill</text>
+  <text x="970" y="392" text-anchor="middle" font-size="28" fill="#57606a">the ZIP</text>
+  <rect x="770" y="490" width="400" height="160" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="970" y="555" text-anchor="middle" font-size="30" fill="#24292f">Test in Preview</text>
+  <text x="970" y="602" text-anchor="middle" font-size="28" fill="#57606a">fires on an objection</text>
+  <rect x="770" y="700" width="400" height="160" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="970" y="765" text-anchor="middle" font-size="30" fill="#24292f">Refine and Replace</text>
+  <text x="970" y="812" text-anchor="middle" font-size="28" fill="#57606a">still one skill</text>
+
+  <rect x="1360" y="120" width="460" height="800" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1590" y="190" text-anchor="middle" font-size="36" font-weight="700" fill="#24292f">Account Manager</text>
+  <text x="1590" y="236" text-anchor="middle" font-size="28" fill="#57606a">Step 8</text>
+  <rect x="1390" y="280" width="400" height="160" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1590" y="345" text-anchor="middle" font-size="30" fill="#24292f">Upload a skill</text>
+  <text x="1590" y="392" text-anchor="middle" font-size="28" fill="#57606a">the downloaded package</text>
+  <rect x="1390" y="490" width="400" height="160" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1590" y="555" text-anchor="middle" font-size="30" fill="#24292f">Test in Preview</text>
+  <text x="1590" y="602" text-anchor="middle" font-size="28" fill="#57606a">same labelled reply</text>
+  <rect x="1390" y="700" width="400" height="160" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1590" y="765" text-anchor="middle" font-size="30" fill="#24292f">Identical package</text>
+  <text x="1590" y="812" text-anchor="middle" font-size="28" fill="#57606a">no re-authoring</text>
+
+  <line x1="580" y1="360" x2="736" y2="360" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <line x1="1200" y1="360" x2="1356" y2="360" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <text x="1278" y="336" text-anchor="middle" font-size="28" fill="#57606a">Download</text>
+
+  <rect x="770" y="280" width="400" height="160" rx="12" fill="none" stroke="#1a7f37" stroke-width="6" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.12;0.125;0.24;0.245;1" dur="10s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="770" y="490" width="400" height="160" rx="12" fill="none" stroke="#1a7f37" stroke-width="6" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.24;0.245;0.36;0.365;1" dur="10s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="770" y="700" width="400" height="160" rx="12" fill="none" stroke="#1a7f37" stroke-width="6" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.36;0.365;0.48;0.485;1" dur="10s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="1390" y="280" width="400" height="160" rx="12" fill="none" stroke="#1a7f37" stroke-width="6" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6;0.605;0.72;0.725;1" dur="10s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="1390" y="490" width="400" height="160" rx="12" fill="none" stroke="#1a7f37" stroke-width="6" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.72;0.725;0.84;0.845;1" dur="10s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="1390" y="700" width="400" height="160" rx="12" fill="none" stroke="#1a7f37" stroke-width="6" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.84;0.845;0.96;0.965;1" dur="10s" repeatCount="indefinite"/>
+  </rect>
+
+  <circle cx="0" cy="0" r="13" fill="#1a7f37" opacity="1">
+    <animateMotion path="M580,360 L736,360" keyPoints="0;1;1" keyTimes="0;0.12;1" calcMode="linear" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.12;0.125;1" dur="10s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="0" cy="0" r="13" fill="#1a7f37" opacity="0">
+    <animateMotion path="M1200,360 L1356,360" keyPoints="0;0;1;1" keyTimes="0;0.48;0.6;1" calcMode="linear" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.479;0.48;0.6;0.605;1" dur="10s" repeatCount="indefinite"/>
+  </circle>
+</svg>

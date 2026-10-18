@@ -25,6 +25,8 @@ A Microsoft 365 Copilot license gives licensed users first-party agents with not
 
 A SharePoint agent is an assistant scoped to the content you choose: a whole site, specific folders, or selected documents. It grounds its answers in that content and only surfaces what the person asking already has permission to see. You create one from a site or from selected files with no code, then publish it so people can chat with it in SharePoint and in Microsoft 365 Copilot.
 
+![A SharePoint agent answers only from the overlap of two sets: the content you choose (a whole site, specific folders, or selected documents) and what the person asking already has permission to see.](../pptx/images/06-02-productivity-agents.svg)
+
 | Scenario | Reach for |
 |---|---|
 | Catch up on a 40-message thread before a meeting | Copilot Chat summary |

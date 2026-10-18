@@ -56,6 +56,8 @@ Read meeting-brief-template.docx. This is our house format for a one-page meetin
 
 **Overview:** Now capture that recipe as a reusable custom skill. A `SKILL.md` file lets Cowork discover and reuse this recipe by name, so you never re-explain the format. You author it once, store it in your OneDrive skills folder, and place the template next to it as a companion file.
 
+![Diagram of the product-pitch and meeting-prep skill folders, each with a SKILL.md that names its companion file, pitch-deck-structure.pptx or meeting-brief-template.docx, which Cowork reads whenever the skill runs.](./_images/companion-files.svg)
+
 **Recipe:**
 
 Create a `SKILL.md` file in your OneDrive at `Documents/Cowork/skills/meeting-prep/SKILL.md`, place a copy of `meeting-brief-template.docx` in the same folder, and paste this as the file contents:
@@ -112,6 +114,8 @@ Run my Meeting Prep skill for my upcoming Fjallbryggan follow-up with Markus Lin
 ## Step 4: Tune the skill for reliable discovery
 
 **Overview:** The skill works, but discovery and quality both improve with a sharper description and clearer instructions. Refine the wording so Cowork reaches for Meeting Prep on its own, then re-run to confirm the brief holds up.
+
+![Diagram of the run-and-tune loop: start a new task, run the skill, check the result against the template and the source, ask what misses, and fold the fixes in, repeating until the skill fires without being named.](../pptx/images/03-03-run-and-tune.svg)
 
 **Research / Planning / Discussion:**
 

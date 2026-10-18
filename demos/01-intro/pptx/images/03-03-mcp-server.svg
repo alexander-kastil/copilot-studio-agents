@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">One MCP server shared by many agents</title>
+  <desc id="d">Copilot Studio, Claude and other MCP-aware agent hosts all call the same MCP server. The server describes its tools once, such as checking an order status, creating a ticket, querying a database and calling an internal API, and agents discover them at runtime. The tools reach live systems. Calls from each agent travel to the server in turn.</desc>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+
+  <text x="80" y="130" font-size="28" fill="#57606a">MCP-aware agents</text>
+  <rect x="80" y="160" width="460" height="150" rx="20" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="310" y="246" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Copilot Studio</text>
+  <rect x="80" y="465" width="460" height="150" rx="20" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="310" y="551" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Claude</text>
+  <rect x="80" y="770" width="460" height="150" rx="20" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="310" y="856" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Other agent hosts</text>
+
+  <path id="a1" d="M542,235 C650,235 650,420 756,420" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <path id="a2" d="M542,540 L756,540" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <path id="a3" d="M542,845 C650,845 650,660 756,660" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="760" y="200" width="440" height="660" rx="24" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="800" y="262" font-size="36" font-weight="700" fill="#24292f">MCP server</text>
+  <text x="800" y="306" font-size="28" fill="#57606a">Tools described once,</text>
+  <text x="800" y="342" font-size="28" fill="#57606a">discovered at runtime</text>
+  <rect x="790" y="380" width="380" height="80" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="980" y="430" font-size="28" fill="#24292f" text-anchor="middle">Check an order status</text>
+  <rect x="790" y="485" width="380" height="80" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="980" y="535" font-size="28" fill="#24292f" text-anchor="middle">Create a ticket</text>
+  <rect x="790" y="590" width="380" height="80" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="980" y="640" font-size="28" fill="#24292f" text-anchor="middle">Query a database</text>
+  <rect x="790" y="695" width="380" height="80" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="980" y="745" font-size="28" fill="#24292f" text-anchor="middle">Call an internal API</text>
+  <text x="980" y="932" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">One server, many agents</text>
+
+  <path id="b" d="M1202,530 L1436,530" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <rect x="1440" y="400" width="400" height="260" rx="24" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1640" y="500" font-size="34" font-weight="700" fill="#24292f" text-anchor="middle">Live systems</text>
+  <text x="1640" y="550" font-size="28" fill="#57606a" text-anchor="middle">Fresh data</text>
+  <text x="1640" y="590" font-size="28" fill="#57606a" text-anchor="middle">and actions</text>
+
+  <rect x="80" y="160" width="460" height="150" rx="20" fill="none" stroke="#e0a534" stroke-width="7" opacity="0">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;0.2" calcMode="discrete" dur="9s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="80" y="465" width="460" height="150" rx="20" fill="none" stroke="#e0a534" stroke-width="7" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.333;0.533" calcMode="discrete" dur="9s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="80" y="770" width="460" height="150" rx="20" fill="none" stroke="#e0a534" stroke-width="7" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.667;0.867" calcMode="discrete" dur="9s" repeatCount="indefinite"/>
+  </rect>
+
+  <g fill="#e0a534" stroke="#ffffff" stroke-width="3">
+    <circle r="13" opacity="0">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;0.2" calcMode="discrete" dur="9s" repeatCount="indefinite"/>
+      <animateMotion dur="9s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.2;1" path="M542,235 C650,235 650,420 756,420"/>
+    </circle>
+    <circle r="13" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.2;0.3" calcMode="discrete" dur="9s" repeatCount="indefinite"/>
+      <animateMotion dur="9s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.2;0.3;1" path="M1202,530 L1436,530"/>
+    </circle>
+    <circle r="13" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.333;0.533" calcMode="discrete" dur="9s" repeatCount="indefinite"/>
+      <animateMotion dur="9s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.333;0.533;1" path="M542,540 L756,540"/>
+    </circle>
+    <circle r="13" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.533;0.633" calcMode="discrete" dur="9s" repeatCount="indefinite"/>
+      <animateMotion dur="9s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.533;0.633;1" path="M1202,530 L1436,530"/>
+    </circle>
+    <circle r="13" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.667;0.867" calcMode="discrete" dur="9s" repeatCount="indefinite"/>
+      <animateMotion dur="9s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.667;0.867;1" path="M542,845 C650,845 650,660 756,660"/>
+    </circle>
+    <circle r="13" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.867;0.967" calcMode="discrete" dur="9s" repeatCount="indefinite"/>
+      <animateMotion dur="9s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.867;0.967;1" path="M1202,530 L1436,530"/>
+    </circle>
+  </g>
+</svg>

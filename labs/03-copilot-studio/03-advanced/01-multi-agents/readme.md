@@ -65,6 +65,8 @@ Then ask a non‑HR question, e.g.:
 “What’s our Wi‑Fi guest password policy?”
 Expected: Control is back with the Parent and it answers from its knowledge.
 
+![Contoso Help Hub checks each question: the PTO question is delegated to the child agent Contoso HR Policy, which answers and hands control back, while the Wi-Fi guest password question is answered by the parent directly.](./_images/parent-child-routing.svg)
+
 Step 4 — Make routing bullet‑proof
 
 Sharpen the child’s Description with phrases like “only invoke when… / such as…” to reduce false positives and ensure the conversation naturally “returns” to the parent when out of scope. This tuning approach is commonly used by Copilot Studio practitioners. [Return fro...lot Studio]
@@ -75,6 +77,8 @@ If you already have an HR agent elsewhere (another team/environment) and want re
 
 From the Parent → Agents → Add an agent → Connect an existing agent → pick the HR agent.
 (If your UI presents it) consider whether to pass conversation history when connecting; keep privacy in mind. (Community walkthroughs show this option when connecting agents.) [Add other...lot Studio], [Setting Up...lot Studio]
+
+![A child agent lives inside Contoso Help Hub and is published with it; a connected agent is an existing HR agent in another team or environment with its own ALM, reached from the parent.](./_images/child-versus-connected-agent.svg)
 
 Step 6 — Publish and validate
 
