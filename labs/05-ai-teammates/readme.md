@@ -8,6 +8,8 @@ Hands-on labs for [Module 5](../../demos/05-ai-teammates/readme.md). This is a d
 
 Topic: [Meet Autopilot](../../demos/05-ai-teammates/01-meet-autopilot/readme.md). About 20 minutes, no preview access.
 
+![A business process that needs an owner raises the question who builds the teammate: a user who describes name, role, and goal gets Autopilot, and a maker who configures instructions, tools, and triggers builds a Copilot Studio agent with an agent account. Both paths end in their own identity, memory, Teams and Outlook presence, governed in Agent 365 and Entra.](../../demos/05-ai-teammates/pptx/images/01-03-two-paths.svg)
+
 - Pick a recurring process from your own work (supplier review, project status, onboarding).
 - Write the name, role, goal, boundaries, and escalation rules for a teammate that owns it.
 - Decide whether Autopilot or a Copilot Studio agent with an account should carry it, and justify the choice against the comparison table.
@@ -50,6 +52,8 @@ Topic: [Proactive Teammates](../../demos/05-ai-teammates/04-proactive-teammates/
 Topic: [Shared Memory, Licensing & Teammate Governance](../../demos/05-ai-teammates/05-memory-governance/readme.md). About 25 minutes.
 
 ![The four activation steps in order across the Microsoft 365 admin center, the Power Platform admin center, and the environment, after which only the chosen users and groups can create agents with accounts.](../../demos/05-ai-teammates/pptx/images/05-02-admin-activation.svg)
+
+![Each agent with an account takes one Microsoft 365 Frontier for AI Teammates license, assigned at publish from the pool the tenant receives on Frontier enrollment, beside the maker license and the Copilot Credits that cover usage. When the pool is empty, an admin removes a license from another agent or acquires more.](../../demos/05-ai-teammates/pptx/images/05-03-licensing.svg)
 
 ![You tell Cadence a preference, a performance judgment, and a phone number; only the preference lands in its shared memories, which you then list and delete from.](./_images/memory-test-what-it-keeps.svg)
 

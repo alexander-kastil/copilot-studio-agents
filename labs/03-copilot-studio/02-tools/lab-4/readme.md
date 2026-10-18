@@ -328,6 +328,8 @@ You still learn the connector mechanics: OpenAPI import, host configuration, the
 - Use `askCandidateData.json` to collect new candidate data with an Adaptive Card instead of free-text prompts
 - Compare this flow with [Lab 5](../lab-5/readme.md), where an MCP server exposes its tools without an OpenAPI file or a connector definition
 
+![Two lanes: the Lab 4 custom connector imports hr-service-swagger.json at design time into four fixed operations, while the Lab 5 agent asks the HR MCP Server for its six tools with tools/list at runtime.](../../../../demos/03-copilot-studio/pptx/images/02-03-tool-discovery.svg)
+
 ## Reference
 
 - [Extend agents with custom connectors](https://microsoft.github.io/copilot-camp/pages/make/copilot-studio/05-connectors/) (the upstream lab, with screenshots for every step)

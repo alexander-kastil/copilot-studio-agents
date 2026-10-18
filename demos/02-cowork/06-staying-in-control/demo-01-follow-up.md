@@ -91,6 +91,8 @@ Draft an email to Markus Lind at Fjallbryggan with the finished proposal attache
 
 **Expected Outcome:** A drafted email to Markus Lind with the finished proposal attached, paused at a high-risk approval step with a visible **Send** action.
 
+![The approval card with its risk level indicator and Show parameters. Approve once (Send, Post, or Create) approves that one action; More options, Approve All (n) and Cancel are the other choices.](../pptx/images/06-01-approval-model.svg)
+
 ---
 
 ## Step 4: Book the follow-up call

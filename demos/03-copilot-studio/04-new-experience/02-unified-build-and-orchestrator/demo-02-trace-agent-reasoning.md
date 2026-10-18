@@ -113,6 +113,8 @@ Deep reasoning is applied automatically when the orchestrator judges a task comp
 
 This is the lever that separates the new orchestrator from classic generative orchestration. Classic orchestration is single-pass and picks one tool per turn, so there is no multi-step plan to shape; here you are directly influencing how deeply the runtime plans before it answers. You will add the instruction, re-ask the multi-source question, and re-open the rationale to see the ordered plan the keyword produced.
 
+![One multi-part question enters the always-on enhanced orchestration runtime, which builds an ordered plan, applies deep reasoning automatically on complex tasks or when the keyword reason forces it, consults knowledge sources and tools, and returns one answer stitched together.](../../pptx/images/04-03-orchestration-runtime.svg)
+
 1. On the **Build** tab, open the **Instructions** component.
 2. Add the following as a new instruction step, then select **Save**:
 

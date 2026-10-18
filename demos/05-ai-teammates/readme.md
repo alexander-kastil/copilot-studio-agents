@@ -2,9 +2,13 @@
 
 Cowork completes the work you hand it, and a Copilot Studio agent answers when someone asks. A teammate agent goes one step further: it holds its own identity in the tenant, remembers what the team tells it, and keeps a business process moving without waiting for a prompt. This module covers the two ways Microsoft 365 delivers that model today: Autopilot, the persistent personal agent announced on September 25, 2026, and agent accounts, which give a Copilot Studio agent its own Entra ID, mailbox, and Teams presence.
 
+![An assistant such as Chat or Cowork acts as you, keeps memory personal to you, works in your chat or task pane, and starts when you send a prompt. A teammate such as Autopilot or an agent with an account acts as itself, keeps memory shared with the team, reaches people in Teams, Outlook, and documents, and starts from a goal, a schedule, or an incoming signal.](./pptx/images/01-01-assistant-teammate.svg)
+
 Both are Frontier previews as of October 2026. Autopilot is in private preview with no general availability date, and agent accounts need a Frontier-enrolled tenant, an early release environment, and dedicated per-agent licenses. Treat the module as a forward look you can run in a prepared tenant, and plan the prerequisites in [Shared Memory, Licensing & Teammate Governance](./05-memory-governance/readme.md) before the class starts.
 
 ## Topics
+
+![The five topics of this module: topic 1 leads to two paths, Working with Autopilot in topic 2, or Agent Accounts and Proactive Teammates in topics 3 and 4, and both paths end in topic 5 on shared memory, licensing, and teammate governance.](./pptx/images/00-02-topic-path.svg)
 
 | # | Topic | What you learn |
 |---|-------|----------------|

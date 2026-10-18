@@ -55,6 +55,8 @@ Keep this distinction in mind:
 - **Users** add allowed plugins from **Discover**, turn them on or off per conversation in **Sources & Skills**, and can't remove admin-deployed plugins
 - **Admins** control availability, deployment scope, and governance from the Microsoft 365 Admin Center
 
+![Five sources feed the Cowork side panel: built-in skills, custom skills from Customize or OneDrive, plugins from Discover, admin-deployed plugins, and skills that are shared or uploaded.](../../demos/02-cowork/pptx/images/05-02-where-plugins-fit.svg)
+
 If a plugin requires connector authentication, each user still completes their own one-time sign-in and consent flow.
 
 ## Exercise 2: Inspect plugin structure and design decisions
@@ -243,6 +245,8 @@ In each `SKILL.md`:
 - Keep the description explicit with trigger phrases ("Use when user asks to ...")
 - Define a clear workflow and output format
 - Reference tools explicitly when a connector is required
+
+![Anatomy of a SKILL.md: the YAML header holds the name, which matches the folder exactly, and the description Cowork reads to decide when the skill applies. Below it, the instructions are the step-by-step recipe Cowork follows.](../../demos/02-cowork/pptx/images/03-02-skill-anatomy.svg)
 
 You can copy the content of the three skills from the following URLs:
 

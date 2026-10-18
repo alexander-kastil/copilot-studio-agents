@@ -21,6 +21,8 @@ Cowork is Microsoft 365's agentic AI that does work on your behalf. You describe
 
 Cowork is metered by usage-based billing in Copilot Credits, not a per-user seat. A user can open Cowork once a spending policy that selects Cowork covers them, even with a one-credit limit. Anthropic models are optional, and Frontier is needed only for the App skill and GPT 5.5. Setup and pay-as-you-go configuration are covered in [Module 1: Pay as you go licensing](../01-intro/05-licensing-setup/readme.md#pay-as-you-go-licensing), and the tenant steps are in [Setting Up Cowork in Your Tenant](./01-intro/readme.md#setting-up-cowork-in-your-tenant).
 
+![A pilot user with a Copilot license reaches Cowork through a spending policy under Copilot > Cost Management that selects Cowork; Anthropic models, Frontier, the discovery setting and Agents > All agents each have their own job.](./pptx/images/01-02-cowork-access.svg)
+
 ## Hands-On Demos
 
 Guided, copy-paste demos that put each topic to work. Most run on one shared scenario: you are the Regional Manager for Northern Europe at Aurora Outdoor, a Nordic outdoor-gear retailer, closing out Q3. The plugins demo steps into its plugin's own domain, since a plugin brings outside expertise. Each demo runs about 15 minutes, leaves you holding a real artifact, and lives inside the topic it practises.

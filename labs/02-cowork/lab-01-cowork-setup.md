@@ -67,6 +67,8 @@ Define at least:
 - Spending policies and limits, including a policy that selects **Cowork** under **Select agents and services**
 - Budget protections (alerts and limits)
 
+![Each user's consumption stops at the per-user limit, while all usage adds up toward the tenant's monthly spending limit. Alert thresholds below that ceiling notify you before it is reached.](../../demos/01-intro/pptx/images/05-03-spending-governance.svg)
+
 > **Important: pilot first.** Start with a controlled pilot audience and strict spending policies. Expand gradually after reviewing real consumption trends and cost drivers.
 
 ### Step 3: Assign pilot users and verify access

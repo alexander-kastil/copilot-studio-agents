@@ -189,6 +189,8 @@ When the knowledge base will be updated, in the **Overview** tab you will see bo
 
 > **Important:** When configuring SharePoint Online sites as the knowledge base for an agent in Copilot Studio, users will only be able to get answers and content from documents that they have access to. The security and the access control are guaranteed by the Microsoft 365 security infrastructure and Copilot Studio agents access documents on behalf of the current user.
 
+![The agent answers only from the overlap of the SharePoint content you choose and what the person asking already has permission to see.](../../../demos/01-intro/pptx/images/06-02-productivity-agents.svg)
+
 ### Step 2: Testing the updated agent
 
 Now you can test again the agent, using the right side panel. For example, let's provide the following prompt:
@@ -231,6 +233,8 @@ In order to make the agent actually available in a specific target platform (cha
 
 By default, when you make and agent and publish it with default settings, the agent will be configured for Microsoft authentication, which means that the agent will rely on Microsoft Entra ID authentication in Teams, Power Apps, or Microsoft 365 Copilot.
 With the default authentication settings, the agent can only be published in **Microsoft Teams and Microsoft 365 Copilot** and **SharePoint** channels, as you can notice from the warning message displayed at the top of the **Channels** tab in the previous screenshot. 
+
+![The authentication model is chosen at publish time, with Authenticate with Microsoft (Entra ID) as the default. Teams and Microsoft 365 Copilot and SharePoint are the Microsoft channels; WhatsApp, a custom website, the demo website and the Direct Line API are advanced channels.](../../../demos/04-maintaining/pptx/images/02-01-publish-channels.svg)
 
 > **Copilot Studio Authentication model:** You can learn more about authentication of agents in Copilot Studio reading the document [Configure user authentication in Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/configuration-end-user-authentication).
 

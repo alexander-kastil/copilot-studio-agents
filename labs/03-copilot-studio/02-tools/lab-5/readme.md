@@ -314,6 +314,8 @@ Adding a method with `[McpServerTool]` and a `[Description]` is all it takes to 
 
 MCP is not a replacement for connectors. It suits capability sets that change often and that you want to reuse across several AI clients, since the same server also works with Claude, VS Code, and any other MCP host.
 
+![Copilot Studio, Claude and other MCP-aware agent hosts all call the same MCP server, which describes its tools once and lets every agent discover them at runtime.](../../../../demos/01-intro/pptx/images/03-03-mcp-server.svg)
+
 ## Reference
 
 - [Consuming an MCP server](https://microsoft.github.io/copilot-camp/pages/make/copilot-studio/06-mcp/) (the upstream lab, with screenshots for every step)

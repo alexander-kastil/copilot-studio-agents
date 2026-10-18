@@ -92,6 +92,8 @@ Select the **Add** button to add the new data source to the knowledge base of th
 
 > **Important:** When configuring SharePoint Online sites as the knowledge base for an agent in Copilot Studio, users will only be able to get answers and content from documents that they have access to. The security and the access control are guaranteed by the Microsoft 365 security infrastructure and Copilot Studio agents access documents on behalf of the current user.
 
+![Two overlapping circles: the content you choose for the agent (a whole site, specific folders or selected documents) and what the person asking already has permission to see. The agent's answers come only from the overlap.](../../../../demos/01-intro/pptx/images/06-02-productivity-agents.svg)
+
 
 
 ### Step 4: Publishing the agent in Microsoft 365 Copilot Chat

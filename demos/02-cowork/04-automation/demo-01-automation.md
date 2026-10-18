@@ -85,6 +85,8 @@ Keep the report to one page. Replace every bracketed placeholder. Save it as a W
 
 **Finding:** Cowork makes a saved skill available in your next session, so start a new task after saving the file and check the skill is picked up. The `description` is what Cowork reads to decide when the skill applies, so confirm yours is specific and trigger-oriented rather than generic. If Cowork does not find the skill, verify the file is named exactly `SKILL.md` inside its own subfolder.
 
+![Three ways to create a skill all end in one folder, Documents/Cowork/skills, with one subfolder per skill and up to 50 custom skills. A task that was already open before the save does not list the new skill; the next new task discovers it at its start.](../pptx/images/03-01-create-a-skill.svg)
+
 **Expected Outcome:** A `SKILL.md` saved in your OneDrive skills folder that Cowork lists as an available custom skill in a new task.
 
 > You can hold up to 50 custom skills, and each can carry companion files. See [Creating Custom Skills](../03-custom-skills/readme.md#companion-files).
@@ -105,6 +107,8 @@ Run my Weekly Regional Status Report skill for this week. Show me the finished r
 
 **Finding:** Compare the output against `weekly-status-template.docx`: the sections should be in the same order, every bracketed placeholder should be gone, and the report should fit on one page. Read the Highlights and Asks sections closely, since those were the judgement calls flagged in Step 1. If a section is thin or a placeholder survived, refine the skill wording and run it again before moving on.
 
+![The run-and-tune loop: start a new task, run the skill by name, check the result against the template and the source, ask what misses, and fold the fixes into SKILL.md. Repeat until the skill fires without being named.](../pptx/images/03-03-run-and-tune.svg)
+
 **Expected Outcome:** A one-page status report matching the house format, plus a draft email to Elena held at an approval step, produced entirely from the skill.
 
 ---
@@ -122,6 +126,8 @@ Schedule my Weekly Regional Status Report skill to run every Friday at 3 PM. Eac
 ```
 
 **Finding:** Open the **Automations** page in the left navigation, select **Manage schedules**, and confirm the new recurring prompt is listed with a Friday 3 PM recurrence. If Cowork asks how to activate it, choose **Activate** so the first run lands on Friday (or **Activate and run now** to watch one run and its approval immediately). From there you can pause, edit, or delete it later. Note that scheduling the run does not schedule the send: the report is generated automatically, but the high-risk email still stops for your approval each week, so nothing reaches your manager unread.
+
+![The run is automatic and the send waits for your approval: a schedule or trigger fires, Cowork prepares the send, and it is held for your approval before it leaves your workspace unless you pre-authorized it. Below, the guardrails: your permissions, rate limits, loop protection, and results only to you.](../pptx/images/04-03-automation-approvals.svg)
 
 **Expected Outcome:** A recurring prompt listed under **Automations** > **Manage schedules**, set to Friday 3 PM, that will generate the report each week and pause the email at the approval step.
 

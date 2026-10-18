@@ -2,6 +2,8 @@
 
 Your product support team keeps its material in two places: the datasheets, manuals, and troubleshooting guides sit in a SharePoint document library, and the current stock and warranty figures live in an Excel workbook next to them. A knowledge source can read those files, but it cannot tell a user what is in the folder right now or what today's stock number is. Connector tools can, because they call the SharePoint and Excel APIs at conversation time and hand the result back to the orchestrator.
 
+![The three parts of an agent at run time: the agent reads its instructions, retrieves grounding from knowledge when it needs facts, and calls tools when it needs live data or has to act, ending in a grounded answer or an action.](../../../../demos/01-intro/pptx/images/03-01-three-parts.svg)
+
 In this lab you build a Product Support Assistant in the new Copilot Studio experience and give it two prebuilt connector tools: SharePoint List folder and Excel List rows present in a table. You then tune the tool descriptions until the orchestrator picks the right tool on its own, inspect the reasoning to prove which tool ran, and publish the agent to Microsoft 365 Copilot.
 
 This is a rewrite of the Microsoft Learn lab [Create a connector action](https://microsoftlearning.github.io/MS-4022-Extend-Microsoft-365-Copilot-in-Copilot-Studio/Instructions/Labs/03-Connector-actions/01-create-connector-action.html) for the new agent experience, extended with the Excel and SharePoint scenarios from Copilot Camp.
@@ -33,6 +35,8 @@ flowchart LR
 - The new agent experience turned on. Open [Copilot Studio](https://copilotstudio.microsoft.com/), and use the **New experience** toggle on the home page. You are in the new experience when the agent surface shows **Build**, **Preview**, **Evaluate**, and **Monitor** tabs instead of **Topics**, **Knowledge**, **Actions**, and **Settings**.
 - Permission to create a SharePoint site, or an existing site where you may add a document library.
 - A site named `Product Support` holding a document library named `Products`, filled with the five files from the [assets](./assets/) folder. Build it with the scripts in [setup](./setup/) or by hand, both covered below.
+
+![Classic Copilot Studio lists Topics, Knowledge, Actions and Settings down the left, while the new experience shows Build, Preview, Evaluate and Monitor tabs across the top, with Instructions, Knowledge, Tools and Skills in the Build tab's components panel.](../../../../demos/03-copilot-studio/pptx/images/04-02-telling-experiences-apart.svg)
 
 > **Note:** The new agent experience is a production-ready preview. Some connector configuration screens still open the shared tool details page that the classic experience uses, so a few panes in this lab look like classic Copilot Studio even though you author on the **Build** tab. That is expected and does not break anything.
 
@@ -376,6 +380,8 @@ Expected: the **Connect to continue** card no longer appears for that tool, and 
 ## Exercise 10: Publish the agent to Microsoft 365 Copilot
 
 An agent that only works in the maker preview has not shipped. Publishing pushes the current instructions, tools, and connections to the runtime, and makes the agent available in the Microsoft 365 Copilot chat surface where support staff already work. Every later change needs another publish before users see it, which is the most common cause of a fixed agent that still misbehaves.
+
+![Publishing turns your agent into the live version, and one publish updates every connected channel, Teams and Microsoft 365 Copilot among them. Users see the updated content after a new session starts.](../../../../demos/04-maintaining/pptx/images/02-01-publish-channels.svg)
 
 1. Return to the **Build** tab and select **Publish**.
 2. Wait for the publish to complete.

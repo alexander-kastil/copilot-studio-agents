@@ -173,6 +173,8 @@ This gives your autonomous agent access to all the tools that [`src/hr-mcp-serve
 
 The agent will primarily use the `add_employee` tool for processing new PDF uploads. Note that you never declared this list anywhere: the agent called `tools/list` on the server and discovered it, which is why adding a tool in `Tools/HRTools.cs` makes it available to the autonomous agent without touching the agent at all.
 
+![The McpServerTool methods in Tools/HRTools.cs generate the six tools of the HR MCP Server, which an agent finds at runtime through tools/list, so a new method and a server restart add a capability. A custom connector, by contrast, needs its specification re-imported and the action re-added.](../../../../demos/03-copilot-studio/pptx/images/02-03-tool-discovery.svg)
+
 ### Step 4: Adding the Email Management MCP Server
 
 Your autonomous agent also needs access to the **Email Management MCP Server** to being able to send e-mails. Navigate to the **Tools** section and select **+ Add a tool**.

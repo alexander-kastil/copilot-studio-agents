@@ -5,6 +5,8 @@
 - A **Parent** agent (router) that uses **generative orchestration** to decide when to invoke a **Child** agent.
 - The **Child** agent is scoped to a narrow domain (e.g., HR policies). The parent remains the single entry point.
 
+![Generative orchestration, the planning layer, reads each request and picks the right tools, knowledge and agents; child and connected agents sit beside tools and knowledge as things the plan can use.](../../../../demos/03-copilot-studio/pptx/images/03-01-generative-orchestration.svg)
+
 ---
 
 ## Prerequisites

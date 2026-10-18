@@ -1,5 +1,7 @@
 # Extending Copilot Studio Agents Tools
 
+![A Copilot Studio agent reaching seven tool types: prompt action, connector, Dataverse, the Document Processing managed agent, MCP server, REST API tool and computer use, each with what it reaches.](../../../demos/03-copilot-studio/pptx/images/02-01-tool-types.svg)
+
 ## Lab 1: Prompt Actions
 
 [Task 1: Use prompts to make your agent perform specific tasks](https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-prompt-node)

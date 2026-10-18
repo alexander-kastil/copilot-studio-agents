@@ -26,6 +26,8 @@ The shift underneath all of this is generative orchestration: the LLM-driven pla
 | Delegate specialized work | A connected or child agent |
 | Handle a phone or spoken interaction | Voice support |
 
+![Five agent design patterns side by side: a single agent, a master agent routing work to focused specialists, a deterministic flow of fixed steps, an autonomous agent fired by a trigger, and a person approving before an agent's action runs.](../../01-intro/pptx/images/02-03-design-patterns.svg)
+
 ## Key Topics covered in this module
 
 [Apply generative orchestration capabilities](https://learn.microsoft.com/microsoft-copilot-studio/guidance/generative-orchestration)

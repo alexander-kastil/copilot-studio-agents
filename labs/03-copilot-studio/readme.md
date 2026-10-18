@@ -25,6 +25,8 @@ A connected sequence that builds one HR agent from an empty environment to an au
 
 Hands-on labs for the rebuilt Copilot Studio (June 2026), paired with the [04-new-experience](../../demos/03-copilot-studio/04-new-experience/readme.md) theory and demos.
 
+![Both experiences stay live in one tenant: the New experience toggle decides classic or new for each agent, and an agent never converts from one to the other.](../../demos/03-copilot-studio/pptx/images/04-01-experience-per-agent.svg)
+
 | Lab | Focus |
 |-----|-------|
 | [Compare the Classic and New Copilot Studio Experiences Side by Side](./04-new-experience/01-new-experience-overview/lab-01-compare-classic-and-new.md) | Stand up a minimal Northwind assistant in the new experience and contrast it against classic to master the toggle, coexistence, navigation tells, and the one-way conversion rule |

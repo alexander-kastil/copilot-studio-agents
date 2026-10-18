@@ -84,6 +84,8 @@ Pick the single best one-hour slot this week for a working discussion on Agentic
 
 **Overview:** So far Cowork has only read. Creating an event writes to your real calendar, and a write is where the approval model shows up: the action carries a risk level and pauses for you. You are about to approve a real booking, which is exactly why the demo made Cowork defend the slot first.
 
+![The approval card with its risk level indicator and Show parameters. Approve once (Send, Post, or Create) approves that one action; More options, Approve All (n) and Cancel are the other choices.](../pptx/images/06-01-approval-model.svg)
+
 **Research / Planning / Discussion:**
 
 In the same task, send:

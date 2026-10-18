@@ -30,6 +30,8 @@ You will run the same hard question twice, once on the default model and once wi
 
 Deep reasoning is not a standalone feature. It plugs into generative orchestration, the planning layer that reads a request, decides which knowledge and tools to use, and sequences the steps. Without orchestration there is no plan for a reasoning model to be invoked inside, and the deep reasoning switch stays unavailable. So the first move is an agent whose planner is on.
 
+![Generative orchestration, the LLM-driven planning layer, reads the request, picks the right tools, knowledge and agents, and executes a multi-step plan; a deep reasoning model with the reason keyword is one of the things that plan can use.](../../../../demos/03-copilot-studio/pptx/images/03-01-generative-orchestration.svg)
+
 1. In Copilot Studio, select **Create**, then **New agent**.
 2. Name the agent `Sourcing Advisor` and paste this description:
 

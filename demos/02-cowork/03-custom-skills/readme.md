@@ -97,6 +97,8 @@ Cowork scores every skill you create or update automatically, and the **Skill Re
 
 A low **Trigger clarity** score usually means the description needs the trigger phrases you would actually type, so tune the description first. Then start a new task and check that the skill fires without being named.
 
+![Diagram of the run-and-tune loop: start a new task, run the skill, check the result against the template and the source, ask what misses, and fold the fixes in, repeating until the skill fires without being named.](../pptx/images/03-03-run-and-tune.svg)
+
 ---
 
 ## Custom Instructions vs. Skills

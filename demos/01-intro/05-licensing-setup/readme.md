@@ -39,7 +39,9 @@ Each service is enabled from its own admin surface, but all three draw on the sa
 
 ### Cowork
 
-Cowork is a [Microsoft Frontier program](https://adoption.microsoft.com/en-us/copilot/frontier-program/) preview with extra prerequisites. The tenant needs at least one Microsoft 365 Copilot (or Microsoft E7) license, both the tenant and the managing admin account enrolled in Frontier, and Anthropic enabled as an AI subprocessor.
+Cowork has been generally available since June 2026, and access comes from a Copilot Credits spending policy, not from Frontier enrollment. Each user needs a Microsoft 365 Copilot (or Microsoft E7) license and must be in scope of a spending policy that selects Cowork; a limit of one credit is enough. Anthropic models are optional, and the [Microsoft Frontier program](https://adoption.microsoft.com/en-us/copilot/frontier-program/) is needed only for the App skill and the GPT 5.5 model. The tenant steps are in [Setting Up Cowork in Your Tenant](../../02-cowork/01-intro/readme.md#setting-up-cowork-in-your-tenant).
+
+![A pilot user with a Copilot license reaches Cowork through a spending policy under Copilot > Cost Management that selects Cowork; Anthropic models, Frontier, the discovery setting and Agents > All agents each have their own job.](../../02-cowork/pptx/images/01-02-cowork-access.svg)
 
 Cowork is not a per-user seat. It is metered by usage-based billing in Copilot Credits, so you pay only for what Cowork actually consumes.
 

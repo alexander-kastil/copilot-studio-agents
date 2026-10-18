@@ -37,6 +37,8 @@ You are the Northwind Sales Assistant. You help Northwind Traders sellers prepar
 
 Expected: the agent opens on the **Build** tab, and the top tabs read Build, Preview, Evaluate, and Monitor. The components panel shows Instructions already seeded from your description, plus empty Knowledge, Tools, and Skills. You authored zero topics.
 
+![Classic lists Topics, Knowledge, Actions and Settings down the left, while the new experience shows Build, Preview, Evaluate and Monitor tabs across the top with Instructions seeded and Knowledge, Tools and Skills empty on the Build tab.](../../pptx/images/04-02-telling-experiences-apart.svg)
+
 > **Note:** If the tabs read Topics, Knowledge, Actions, and Settings, you are in the classic experience. Return to the home page, turn on the New experience toggle, and create the agent again.
 
 ## Exercise 2: Shape behavior with Instructions

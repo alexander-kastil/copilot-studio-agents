@@ -77,6 +77,8 @@ Expected: open the **Data** view from the app's metadata menu. It names the Shar
 
 A filter is a single, checkable change. Keep the request to one change, so that if the preview breaks you know which change caused it.
 
+![The app build loop: describe the problem, review the draft, and refine by conversation, repeating review and refine until the main scenarios work, then publish.](../../../../demos/03-copilot-studio/pptx/images/04-08-building-apps.svg)
+
 1. Paste the request below and send it.
 
 ```text

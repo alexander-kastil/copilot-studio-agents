@@ -9,6 +9,9 @@ The through-line is the classic authoring surface (Topics, Knowledge, Actions, S
 ## What to teach
 
 - Environments and architecture: what a Power Platform environment is, why an agent belongs to one, and how the admin center is where you manage environments, security, and Dataverse before you build anything.
+
+  ![The Power Platform admin center creates environments, assigns security and applies policies; every agent lives inside an environment, where Dataverse holds its solutions.](../../04-maintaining/pptx/images/01-01-environments-admin-center.svg)
+
 - Create and configure an agent: name, description, instructions, and the general settings that set an agent's identity and tone.
 - Knowledge and starter prompts: add knowledge sources (public websites, SharePoint, files, Dataverse) so the agent answers from real content, and configure conversation starters that appear on the welcome screen.
 - Topics: the classic unit of deterministic conversation, built on the authoring canvas from trigger phrases and nodes, for flows you want to control precisely rather than leave to generative answers.
@@ -16,6 +19,8 @@ The through-line is the classic authoring surface (Topics, Knowledge, Actions, S
 - Power Fx: Excel-like formulas that set variables, parse strings, and evaluate conditions, the low-code logic layer inside topics.
 - Conversation design: fallback topics, prompt phrasing, and escalation so the agent stays helpful when a request falls outside what it knows.
 - Publish to channels: push the agent to Microsoft Teams, Microsoft 365 Copilot, or a custom website, and understand that publish is what makes edits go live.
+
+![One publish creates the live version and updates every connected channel: Teams and Microsoft 365 Copilot, SharePoint, a custom website and the other advanced channels.](../../04-maintaining/pptx/images/02-01-publish-channels.svg)
 
 ## Topics versus generative answers
 

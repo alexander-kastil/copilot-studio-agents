@@ -2,6 +2,8 @@
 
 In June 2026 Microsoft shipped a rebuilt Copilot Studio, delivered as a production-ready preview and rolled out worldwide. It runs beside the classic experience rather than replacing it: a New experience toggle on the home page switches between them, and an agent built in one experience cannot be converted to the other. This sub-module teaches what students work with today (the classic authoring surface in [Basics](../01-basics/readme.md), [Tools](../02-tools/readme.md), and [Advanced](../03-advanced/readme.md)) alongside an honest, demo-led preview of the new experience.
 
+![The Copilot Studio module path: topics 1 to 3, Basics, Tools and Advanced, work on the classic authoring surface, and topic 4 covers the New Experience that shipped in June 2026 before module 04 on publishing, ALM and governance.](../pptx/images/00-02-module-path.svg)
+
 Treat classic as the primary teaching track and the new experience as guided demos. Most tenants still open classic by default, existing agents and ALM pipelines live there, and not every feature has moved across yet. For each new-experience idea, the theory and demos show the classic equivalent so the concept transfers when a tenant adopts the toggle.
 
 ## Topics

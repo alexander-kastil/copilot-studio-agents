@@ -4,6 +4,8 @@ In this lab you learn how to build custom Agent Skills for Copilot Cowork, how t
 
 At a high level, an Agent Skill is a structured instruction file that teaches Cowork when and how to execute a specific domain workflow. Skills are not generic prompts. They include intent signals, execution guidance, and output expectations so Cowork can reliably select and run the right behavior for a given request.
 
+![Annotated weekly-report SKILL.md: the name matches the folder name, the description is what Cowork reads to decide when the skill applies, and the instructions are the recipe Cowork follows.](../../demos/02-cowork/pptx/images/03-02-skill-anatomy.svg)
+
 By the end of this lab you will:
 
 - Understand what skills are and when to create custom skills
@@ -148,6 +150,8 @@ Once you are happy with your skill, close the current session. Cowork stored the
 ```
 
 Browse your OneDrive for Business and check the content of the new skill folder. A skill you ask Cowork to build in chat, or write yourself, is saved in the same folder.
+
+![Diagram of the guided flow, asking in chat, and writing a SKILL.md yourself all ending in Documents/Cowork/skills/, where the next new task discovers the skills at its start while a task already open does not list them.](../../demos/02-cowork/pptx/images/03-01-create-a-skill.svg)
 
 ![The folder on OneDrive for Business under Documents/Cowork/skills containing the SKILL.md definition file and the skill quality report JSON file.](./_images/cowork-custom-skill-03.png)
 

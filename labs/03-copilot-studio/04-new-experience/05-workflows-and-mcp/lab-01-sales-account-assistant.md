@@ -163,6 +163,8 @@ Expected: the Office 365 Outlook **Send an email** action appears in the **Tools
 
 An MCP server gives the agent a standardized, shared set of tools over Model Context Protocol, rather than a single connector action. Copilot Studio ships a prebuilt Microsoft Dataverse server, so the assistant can read account, order, and case records straight from Dataverse without you wiring up individual actions. Because the connection uses the Streamable transport, later changes on the server are reflected without republishing the agent.
 
+![An agent reaches out through one Tools surface in three shapes: a connector for one action against one service, such as Send an email in Outlook, an MCP server for one connection to a shared set of tools, and a workflow for a fixed sequence of steps from input to output.](../../../../demos/03-copilot-studio/pptx/images/04-06-connectors-mcp-workflows.svg)
+
 1. On the **Build** tab, open the **Tools** component and select **Add a tool**, then **Model Context Protocol**.
 2. In the wizard, choose the prebuilt Dataverse server (or enter its name, description, and URL if prompted).
 3. For authentication, choose the method your environment requires (None, API key, or OAuth 2.0).

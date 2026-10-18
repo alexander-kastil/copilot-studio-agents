@@ -34,6 +34,8 @@ The experiences layer is what end users touch. The build layer is where makers a
 
 The step up from a copilot to an agent is autonomy: instead of answering one turn, an agent takes a goal and works a sequence of steps to reach it. An agent is a copilot given a goal, the tools to pursue it, and a loop to keep going until it is met.
 
+![Copilot Chat answers one question at a time while you do the planning. Cowork takes the outcome you describe, breaks the goal into tasks, acts across Outlook, Teams, Word, Excel, and PowerPoint, and hands the result back for your review.](../../02-cowork/pptx/images/01-01-cowork-and-chat.svg)
+
 That shift, the three properties behind it, and the design patterns teams use to structure it are the subject of the [next topic on Agentic AI](../02-agentic-ai/readme.md). Here it is enough to place agents on the map above; the mechanics come next.
 
 ---

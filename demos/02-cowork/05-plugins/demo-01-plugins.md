@@ -54,6 +54,8 @@ The plugin is packaged as a Microsoft 365 / Teams app, not a single file: it is 
 
 **Finding:** Uploading a plugin for yourself needs no admin; only org-wide sharing waits for admin approval. If the upload is blocked, the tenant has blocked that plugin or uses Purview Information Barriers, which currently block plugin and skill uploads, so that is the gate to clear with IT.
 
+![Four widening steps of reach for an uploaded plugin: Only you and Specific users in your organization need no admin, the whole organization waits for admin approval, and a public store listing goes through Partner Center.](../pptx/images/05-03-sharing-a-plugin.svg)
+
 **Expected Outcome:** The plugin shows under **Installed**, its two skills are on in **Sources & Skills**, and in a new task `clinical-nutrition` and `dietary-communication` appear as chips in the side panel when the task matches their descriptions.
 
 ---
@@ -121,5 +123,7 @@ Using the Word skill, compile the nutrition assessment and the client education 
 **Discussion:**
 
 Across the run, the side panel surfaced `clinical-nutrition` when the task called for calculations and lab interpretation, then `dietary-communication` when the work turned to client education, then the built-in Word skill when it was time to compile. You never told Cowork which engine to route to; each skill activated from its description as the task shifted. That is the whole promise of the plugin model: once installed, a community skill sits in the same panel and follows the same context-based activation as the skills Microsoft ships. It also means the same governance applies, so the drafting-only disclaimer travels with the plugin's output no matter which skill produced it.
+
+![Six skill sources, among them plugin skills from Discover and your own plugin package, feed one step: Cowork reads each description and loads the skill when the work calls for it, so you do not name it. The loaded skills appear as chips in one Skills section.](../pptx/images/02-02-skill-sources.svg)
 
 **Expected Outcome:** A clear read on plugin behavior: installed plugin skills and built-in skills share one side panel and one activation model, and you compose across all of them in a single task without any manual switching.

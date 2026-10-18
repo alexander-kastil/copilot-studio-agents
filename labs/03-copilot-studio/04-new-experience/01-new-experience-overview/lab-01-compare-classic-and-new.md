@@ -153,6 +153,8 @@ Expected: the first reply gives a short, professional answer about Tier 1 lead t
 
 This is the rule that makes the choice matter. Agents built in one experience cannot be converted to the other because the architectures differ (classic authored topics versus instructions plus the reasoning runtime), so there is no import path either way. You will confirm there is no convert option, which is exactly what you should find.
 
+![Inside one tenant, the New experience toggle sends each new agent into either the classic lane of authored topics and branching or the new lane of instructions plus the reasoning runtime, and the lanes never meet because the experience is fixed at creation.](../../../../demos/03-copilot-studio/pptx/images/04-01-experience-per-agent.svg)
+
 1. On the Northwind Sales Assistant, open the agent menu and its **Settings** or overflow options.
 2. Look for any "convert to classic", "switch this agent", or "export to classic" command.
 3. Confirm no such command exists; the experience is fixed at creation time.

@@ -17,6 +17,8 @@ Everyone in a commercial tenant gets Copilot Chat for free, grounded in the web.
 
 You reach it in the browser at [m365.cloud.microsoft](https://m365.cloud.microsoft), in the Microsoft 365 Copilot apps, and inside Teams, Outlook, and the Office apps. In the redesigned Copilot, Home brings Chat and Cowork together in one starting point; delegating whole tasks is covered in [Module 2: Cowork](../../02-cowork/readme.md).
 
+![Home is the new starting point of the redesigned Copilot and routes each request to Chat, Cowork, or Code. Beside it sits Autopilot, an agent you give a name, a role, and a goal that keeps working in your tenant with its own identity and memory.](../../05-ai-teammates/pptx/images/01-02-new-copilot.svg)
+
 ---
 
 ## Productivity & SharePoint Agents

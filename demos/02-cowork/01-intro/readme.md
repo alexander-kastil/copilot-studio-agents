@@ -43,6 +43,8 @@ Before anyone can open Cowork, a tenant admin has to enable a few things. Cowork
 
 Route the Anthropic models decision through your compliance and legal review before a broad rollout, because the family is optional and excluded from the EU Data Boundary. Start with a small pilot group and strict spending limits, then expand once you have seen real consumption.
 
+![Each user's consumption stops at the per-user limit, while all usage adds up toward the tenant's monthly spending limit. Alert thresholds below that ceiling notify you before it is reached.](../../01-intro/pptx/images/05-03-spending-governance.svg)
+
 ### Enablement Steps
 
 ```mermaid
