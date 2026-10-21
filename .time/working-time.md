@@ -44,5 +44,9 @@
 | 2026-10-21 | 0.33 | 15:08 | 15:52 | Corrected three-day training agenda and apology reply for the customer |
 | 2026-10-21 | 0.38 | 17:12 | 17:35 | Copilot Studio agents inventoried, first two cloned into the course repo, safe cloning method recorded |
 | 2026-10-21 | 1.50 | 17:35 | 19:05 | Course agents and workflows copied into the repo with an inventory, 15 rebuild demos drafted, first rebuilt agent verified, plan and handoff written |
+| 2026-10-21 | 2.68 | 19:05 | 21:46 | Five course agents rebuilt with their tools, sample APIs deployed to Azure, eight demo guides aligned with the live product |
+| 2026-10-21 | 0.67 | 21:46 | 22:26 | Three more agents live, health advisor demo flows wired and tested, Foundry research agent provisioned |
+| 2026-10-21 | 0.22 | 22:26 | 22:39 | Business travel planner connected to its three specialists, every route verified, two demo guides updated |
+| 2026-10-21 | 0.23 | 22:39 | 22:53 | Compliance check connected to its Foundry research agent and verified, demo guides and handoff updated |
 
-**Total: 25.27h**
+**Total: 29.07h**

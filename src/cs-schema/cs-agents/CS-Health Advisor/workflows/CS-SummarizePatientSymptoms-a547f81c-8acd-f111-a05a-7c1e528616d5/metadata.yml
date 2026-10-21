@@ -1,0 +1,32 @@
+﻿jsonFileName: workflows/CS-SummarizePatientSymptoms-a547f81c-8acd-f111-a05a-7c1e528616d5/workflow.json
+workflowId: a547f81c-8acd-f111-a05a-7c1e528616d5
+name: CS-Summarize Patient Symptoms
+type: 1
+description: Classifies a patient's age, gender and symptoms with the CS-Classify Patient Symptoms prompt and returns the analysis as Outcome.
+subprocess: false
+category: 5
+mode: 0
+scope: 4
+onDemand: false
+triggerOnCreate: false
+triggerOnDelete: false
+asyncAutodelete: false
+syncWorkflowLogOnFailure: false
+stateCode: 1
+statusCode: 2
+runAs: 1
+isTransacted: true
+introducedVersion: 1.0.0.0
+isCustomizable:
+  value: true
+  canBeChanged: true
+  managedPropertyLogicalName: iscustomizableanddeletable
+businessProcessType: 0
+isCustomProcessingStepAllowedForOtherPublishers:
+  value: true
+  canBeChanged: true
+  managedPropertyLogicalName: canbedeleted
+modernFlowType: 1
+primaryEntity: none
+connectionReferences:
+- iits_CSDataverse

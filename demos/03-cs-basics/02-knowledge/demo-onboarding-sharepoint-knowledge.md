@@ -103,7 +103,7 @@ Where can I find the benefits enrollment form?
 What do I need to complete in my first week?
 ```
 
-Expected: the activity map shows the plan searching HR Documents. The replies summarize what the HR documents say and show citations that link to the documents on the HR Documents site, as Step 3 of the instructions asks. Compare with the last demo, where the same benefits question ended with a suggestion to contact HR.
+Expected: the activity map shows the plan searching HR Documents. The replies summarize what the HR documents say and show citations that link to the documents on the HR Documents site, as Step 3 of the instructions asks; in the live run the benefits answer cited Employee Onboarding.docx. Compare with the last demo, where the same benefits question ended with a suggestion to contact HR.
 
 ## Exercise 4: Answer a sightseeing question from the Sightseeing site
 

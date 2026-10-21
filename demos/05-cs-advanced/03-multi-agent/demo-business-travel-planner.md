@@ -41,11 +41,13 @@ Expected: the **Overview** page shows CS-Business Travel Planner with the descri
 
 A connected agent must be published in the same environment and must allow other agents to call it. The parent always uses the last published version, so an unpublished change in a specialist never reaches the planner.
 
-1. Open CS-Travel Agent, go to its **Settings** page, and check that **Let other agents connect to and use this one** is on.
+1. Open CS-Travel Agent, select **Settings**, and on the **Generative AI** page check that **Let other agents connect to and use this one** under **Connected agents** is on.
 2. Select **Publish** and confirm.
 3. Repeat both steps for CS-Health Advisor and CS-Travel Expense Refund.
 
 Expected: all three agents show a fresh publish time, and the toggle is on in each agent's **Settings**.
+
+> **Note:** For CS-Health Advisor and CS-Travel Expense Refund the **Publish this agent** dialog first lists "Your agent runs tools that use the author's credentials", with **View 4 tools** and **View 2 tools**: their agent flows run with your connections. Anyone who chats with the published agent uses those connections, so share the agents only with your class.
 
 ## Exercise 3: Connect the specialists with routing descriptions
 
@@ -160,7 +162,13 @@ Is there a gym I can use for free in Budapest after work?
 What is on the canteen menu today?
 ```
 
-Expected: the first message shows a CS-Travel Agent node and a trip summary with sightseeing tips. The second shows CS-Health Advisor and a first advice on whether to travel. The third shows CS-Travel Expense Refund answering about allowances, the fourth shows Work life balance Buddy citing the gym document, and the canteen question runs without any agent node and gets a short answer that the planner can't help with it.
+Expected: each message lands in one place, and the activity map shows it.
+
+- Booking: a CS-Travel Agent node runs its Book Trip topic, which asks for the place, the date and the number of travelers even though the message names them. Answer `Budapest`, `May 12, 2027` and `2`; the agent returns the trip summary and evening tips such as the Castle District and a Danube cruise, citing your Sightseeing pages.
+- Health: CS-Health Advisor runs CS-Summarize Patient Symptoms and its Check Symptoms topic. After `42`, `male` and `mild cold with a sore throat` it advises that traveling is reasonable while the symptoms stay mild, citing Traveling with Health Issues.
+- Allowance: CS-Travel Expense Refund answers with the tax-free allowance of €30 per 24 hours and €2.50 per commenced hour, citing the WKO page.
+- Gym: Work life balance Buddy names the No Pain - No Gain gym in Budapest with up to three free one-day passes and cites the gym document.
+- Canteen: no agent node runs. With **Web Search** on, the planner searches the web and then answers that it has no access to today's canteen menu.
 
 ## Troubleshooting
 

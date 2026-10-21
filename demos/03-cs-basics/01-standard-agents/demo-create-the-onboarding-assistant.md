@@ -10,7 +10,7 @@ Duration: about 40 minutes.
 
 - A Standard agent named CS-Employee Onboarding Assistant with the original description.
 - Structured instructions with purpose, guidelines, skills, steps, error handling, examples and a closing rule.
-- GPT-5.5 Chat as the primary model.
+- GPT Chat Latest as the primary model.
 - Generative orchestration with the original answer settings: no web search, ungrounded answers allowed, semantic search on, moderation Low.
 - Two test runs of the same off-topic question, before and after the instructions, plus in-scope tests read in the activity map.
 
@@ -24,11 +24,13 @@ Duration: about 40 minutes.
 The name and description are what users see in Teams and what other agents read when they decide whether to call this one. Create the agent blank, so the instructions you add next are the only behavior it has, and keep one off-topic answer as the baseline.
 
 1. Go to **Agents** and select **Create blank agent**.
-2. Enter the name below and select **Create**.
+2. In **Name your agent**, enter the name below and select **Create**. **Agent settings (Optional)** shows the language, the solution and the schema name; keep the defaults.
 
 ```text
 CS-Employee Onboarding Assistant
 ```
+
+The agent shows "Setting up..." for about a minute. Reload the **Overview** page before you edit, because **Edit** in **Details** stays disabled until the setup is done.
 
 3. On the **Overview** page, in the **Details** section, select **Edit**, paste the description below, and select **Save**.
 
@@ -42,7 +44,7 @@ Helps new employees complete onboarding by providing guidance and resources from
 What's the capital of Australia, and can you write me a limerick about it?
 ```
 
-Expected: the **Details** section shows the CS- name and the description. The agent answers the question and writes the limerick, because nothing yet tells it what its job is. Keep this reply on screen for Exercise 5.
+Expected: the **Details** section shows the CS- name and the description. The agent answers "Canberra" and writes the limerick, because nothing yet tells it what its job is. Keep this reply on screen for Exercise 5.
 
 ## Exercise 2: Paste the structured instructions
 
@@ -105,12 +107,12 @@ Expected: the **Instructions** section shows the text with its headings, startin
 
 ## Exercise 3: Choose the primary model
 
-The model does the reasoning behind every answer and every plan. The original runs on GPT-5.5 Chat, a generally available model with the General tag, which fits short grounded answers and checklists.
+The model does the reasoning behind every answer and every plan. The original runs on GPT-5.5 Chat, but the model list now marks it with "will retire on 10/30/2026", so the rebuild uses GPT Chat Latest, which always points to the current GPT chat model and fits short grounded answers and checklists.
 
 1. On the **Overview** page, in the **Model** section, open the model list.
-2. Select **GPT-5.5 Chat**.
+2. Select **GPT Chat Latest**.
 
-The original stores the choice as a model hint in `agent.mcs.yml`:
+The original stores its choice as a model hint in `agent.mcs.yml`, and the rebuild's choice appears as `GPT56Chat` in the same place:
 
 ```yaml
 aISettings:
@@ -118,16 +120,16 @@ aISettings:
     modelNameHint: GPT55Chat
 ```
 
-Expected: the **Model** section shows GPT-5.5 Chat.
+Expected: the **Model** section shows GPT Chat Latest.
 
 ## Exercise 4: Set orchestration and where answers may come from
 
 Generative orchestration lets the agent pick knowledge, tools and topics from their descriptions instead of from trigger phrases. Four more settings on the same page decide where answers may come from, and the original sets each one on purpose: web search off, ungrounded answers allowed, tenant graph grounding on for SharePoint, and moderation Low.
 
 1. Select **Settings** on the top menu bar, then **Generative AI**.
-2. Under **Orchestration**, set **Use generative AI orchestration for your agent's responses?** to **Yes**.
-3. In the **Knowledge** section, turn off **Use information from the web**, turn on **Allow ungrounded responses**, and turn on **Tenant graph grounding with semantic search**.
-4. Set the content moderation level to **Low**, then select **Save**.
+2. Under **Orchestration**, check that **Use generative AI orchestration for your agent's responses?** is **Yes**.
+3. In the **Knowledge** section, turn off **Use information from the Web** if it is on, and check that **Allow ungrounded responses** and **Tenant graph grounding with semantic search** are on.
+4. Check that the content moderation level is **Low**, then select **Save** if you changed anything.
 
 These are the original's settings, the first from `agent.mcs.yml` and the rest from `settings.mcs.yml`:
 
@@ -148,7 +150,9 @@ configuration:
     kind: GenerativeAIRecognizer
 ```
 
-Expected: after **Save**, orchestration shows **Yes**, web information is off, **Allow ungrounded responses** and **Tenant graph grounding with semantic search** are on, and moderation shows **Low**.
+Expected: orchestration shows **Yes**, web information is off, **Allow ungrounded responses** and **Tenant graph grounding with semantic search** are on, and moderation shows **Low**. Back on the **Overview** page, **Web Search** shows **Disabled**.
+
+> **Tip:** Orchestration, ungrounded responses, tenant graph grounding and moderation Low are already the defaults of a new agent, so this exercise is mostly a check. Web search is the setting to watch: depending on how the agent was created it starts on, and the original keeps it off.
 
 > **Note:** **Tenant graph grounding with semantic search** can only be changed while the agent's authentication is **Authenticate with Microsoft**, which is the default for a new agent.
 
@@ -175,7 +179,7 @@ Where can I find the benefits enrollment form?
 What's the capital of Australia, and can you write me a limerick about it?
 ```
 
-Expected: the checklist reply lists tasks with a line each on how to complete them, as Step 4 of the instructions asks, and ends with the supportive closing. The benefits question follows Error Handling: the agent has no SharePoint source yet, so it says it can't find the form and suggests contacting HR. The off-topic reply depends on the model: usually the agent declines the limerick and steers back to onboarding; if it still answers, that is **Allow ungrounded responses** letting the model use general knowledge, and the reply is still narrower than the one from Exercise 1.
+Expected: the checklist reply lists tasks with a line each on how to complete them, as Step 4 of the instructions asks, and ends with the supportive closing. The benefits question follows Error Handling: the agent has no SharePoint source yet, so it points you to HR. In the live run the off-topic question was declined and the reply ended with the closing line; if your model still answers it, that is **Allow ungrounded responses** letting the model use general knowledge.
 
 ## Troubleshooting
 

@@ -37,8 +37,8 @@ instructions: |-
      - Notify the user that the data is ready for the next step.
 
   5. **Run the Background Check**
-     - After the user confirmed the details, call CS-Social Profiler with the full name, the email address and the company name.
-     - Summarize what CS-Social Profiler returns for the user, and say that it comes from the social research agent.
+     - After the user confirmed the details, call {System.Bot.Components.Agents.'iits_CSComplianceAgent.action.CS-SocialProfiler'.DisplayName} with the full name, the email address and the company name.
+     - Summarize what {System.Bot.Components.Agents.'iits_CSComplianceAgent.action.CS-SocialProfiler'.DisplayName} returns for the user, and say that it comes from the social research agent.
 
   # Error Handling
   - If the user provides incomplete or invalid data, politely request clarification or correction.
@@ -61,4 +61,4 @@ gptCapabilities:
 
 aISettings:
   model:
-    modelNameHint: GPT56Chat
+    modelNameHint: Sonnet46

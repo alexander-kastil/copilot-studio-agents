@@ -681,6 +681,251 @@
       "catalogue": {
         "action": "none"
       }
+    },
+    {
+      "date": "2026-10-21",
+      "from": "19:05",
+      "to": "21:46",
+      "sessionId": "40163078-2413-4ae2-b23e-d7fe2695a197",
+      "branch": "v-3.0.0",
+      "commits": [
+        "f0b6f6d",
+        "820dbdc",
+        "851458a",
+        "cd4e127"
+      ],
+      "surfaces": [
+        "copilot-studio-agents",
+        "hr-mcp-server",
+        "food-catalog-mcp"
+      ],
+      "files": [
+        "src/cs-schema/cs-agents/",
+        "src/hr-mcp-server/Services/EmployeeService.cs",
+        "demos/03-cs-basics/",
+        "demos/04-cs-tools/",
+        "tasks/handoff-cs-rebuild.md",
+        "tasks/todo.md"
+      ],
+      "mechanism": {
+        "takes": "Copilot Studio agents cloned to YAML, the demo guides that rebuild them, and the course's sample APIs in source",
+        "does": "creates blank prefixed agents in the portal, ports the YAML with parallel writer agents, pushes it with Apply from automation, deploys the REST and MCP sample servers to Azure App Service, builds the prompt, custom connector, Teams, MCP, Outlook and Dataverse tools (the Dataverse table and agent flow through the Web API), tests each agent live and folds every difference into its guide",
+        "returns": "five rebuilt and tested agents with working tools, two deployed APIs, eight guides aligned with the live product, and a resume handoff"
+      },
+      "portsAsIs": [
+        "Dataverse table and agent flow creation through the Web API instead of the designer",
+        "live-run guide alignment: test each step in the portal, rewrite the guide from what happened"
+      ],
+      "perCustomer": [
+        "the environment, its agents and demo story",
+        "the sample APIs"
+      ],
+      "evidence": [
+        "Teams post and schedule mail verified through the Microsoft 365 connector",
+        "a test claim row written to the Dataverse table"
+      ],
+      "toolchain": {
+        "skills": [
+          "class-authoring-plugin:create-class",
+          "copilot-studio",
+          "claude-in-chrome",
+          "report-plugin:report",
+          "claude-push",
+          "brand-voice-copilot"
+        ],
+        "mcpServers": [
+          "claude-in-chrome",
+          "claude.ai Microsoft 365"
+        ],
+        "agents": [
+          "general-purpose",
+          "dotnet-expert",
+          "subagent-delegation-plugin:fact-gatherer"
+        ]
+      },
+      "industry": "technical training",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      }
+    },
+    {
+      "date": "2026-10-21",
+      "from": "21:46",
+      "to": "22:26",
+      "sessionId": "40163078-2413-4ae2-b23e-d7fe2695a197",
+      "branch": "v-3.0.0",
+      "commits": [],
+      "surfaces": [
+        "copilot-studio-agents"
+      ],
+      "files": [
+        "src/cs-schema/cs-agents/CS-Compliance Agent/agent.mcs.yml",
+        "src/cs-schema/cs-agents/CS-Health Advisor/topics/CheckSymptoms.mcs.yml",
+        "src/cs-schema/cs-agents/CS-Health Advisor/topics/PostToTeams.mcs.yml",
+        "src/cs-schema/cs-agents/CS-Health Advisor/actions/",
+        "demos/04-cs-tools/04-agent-flows/demo-health-advisor-flows.md",
+        "tasks/lessons.md",
+        "tasks/handoff-cs-rebuild.md"
+      ],
+      "mechanism": {
+        "takes": "ported agent YAML not yet applied, a guide whose agent flows call a prompt and a human review step, and a Foundry agent the guides connect",
+        "does": "applies and smoke-tests the remaining agents, builds the prompt in the portal and both agent flows plus their connection references as Dataverse rows, attaches them as tools with maker credentials, wires them into topics through YAML, and provisions a Foundry account, project, model deployment and a web-search prompt agent with the Activity Protocol through az and the Azure MCP foundry tools",
+        "returns": "three more agents live, a symptom check that branches on a classified outcome, a review request in the reviewer's inbox, a callable Foundry research agent, and the guide plus lessons updated"
+      },
+      "portsAsIs": [
+        "prompt plus agent flow tools built without the flow designer",
+        "a Foundry web-search agent provisioned end to end for a Copilot Studio connection"
+      ],
+      "perCustomer": [
+        "the agents, topics and demo story",
+        "the reviewer mailbox and Teams channel"
+      ],
+      "evidence": [
+        "mild and serious symptom checks branching correctly in the test chat",
+        "Posting Control mail from Power Automate in the reviewer mailbox",
+        "agent_invoke of social-profiler returning cited web results"
+      ],
+      "toolchain": {
+        "skills": [
+          "copilot-studio",
+          "claude-in-chrome",
+          "class-authoring-plugin:create-class",
+          "brand-voice-copilot",
+          "microsoft-agent-framework",
+          "report-plugin:report",
+          "learn-loop-plugin:claude-learn",
+          "claude-learn-worktime"
+        ],
+        "mcpServers": [
+          "claude-in-chrome",
+          "azure-deploy",
+          "claude.ai Microsoft 365"
+        ],
+        "agents": [
+          "fork"
+        ]
+      },
+      "industry": "technical training",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      }
+    },
+    {
+      "date": "2026-10-21",
+      "from": "22:26",
+      "to": "22:39",
+      "sessionId": "40163078-2413-4ae2-b23e-d7fe2695a197",
+      "branch": "v-3.0.0",
+      "commits": [],
+      "surfaces": [
+        "copilot-studio-agents"
+      ],
+      "files": [
+        "src/cs-schema/cs-agents/CS-Business Travel Planner/",
+        "demos/05-cs-advanced/03-multi-agent/demo-business-travel-planner.md",
+        "demos/04-cs-tools/04-agent-flows/demo-health-advisor-flows.md",
+        "tasks/lessons.md",
+        "tasks/handoff-cs-rebuild.md"
+      ],
+      "mechanism": {
+        "takes": "a parent agent ported as YAML with three connected agents and a child agent, and three specialist agents that were never published",
+        "does": "publishes the specialists with connections allowed, applies the parent through the VS Code extension, recovers from an Apply that reported failure but landed, shortens an over-long knowledge schema name, and runs one test question per route with the activity map",
+        "returns": "a planner whose booking, health, allowance, gym and off-topic questions each land on the right agent, the guide rewritten from the run, and slide screenshots of every route"
+      },
+      "portsAsIs": [
+        "publishing and connecting Copilot Studio specialists behind one parent agent with YAML and Apply"
+      ],
+      "perCustomer": [
+        "the specialist agents, their knowledge and the routing descriptions"
+      ],
+      "evidence": [
+        "five route tests in the test chat with the expected agent node each",
+        "Remote Changes listing the applied components after the failed Apply toast"
+      ],
+      "toolchain": {
+        "skills": [
+          "copilot-studio",
+          "claude-in-chrome",
+          "class-authoring-plugin:create-class",
+          "brand-voice-copilot",
+          "microsoft-agent-framework",
+          "report-plugin:report",
+          "learn-loop-plugin:claude-learn",
+          "claude-learn-worktime"
+        ],
+        "mcpServers": [
+          "claude-in-chrome",
+          "azure-deploy",
+          "claude.ai Microsoft 365"
+        ],
+        "agents": [
+          "fork"
+        ]
+      },
+      "industry": "technical training",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      }
+    },
+    {
+      "date": "2026-10-21",
+      "from": "22:39",
+      "to": "22:53",
+      "sessionId": "40163078-2413-4ae2-b23e-d7fe2695a197",
+      "branch": "v-3.0.0",
+      "commits": [],
+      "surfaces": [
+        "copilot-studio-agents"
+      ],
+      "files": [
+        "src/cs-schema/cs-agents/CS-Compliance Agent/",
+        "demos/05-cs-advanced/05-connect-foundry-agents/demo-compliance-agent-foundry.md",
+        "demos/03-cs-basics/01-standard-agents/demo-create-the-onboarding-assistant.md",
+        "demos/03-cs-basics/02-knowledge/demo-onboarding-sharepoint-knowledge.md",
+        "tasks/lessons.md",
+        "tasks/handoff-cs-rebuild.md"
+      ],
+      "mechanism": {
+        "takes": "a Copilot Studio compliance agent with ordered instructions and a prompt agent in a new Microsoft Foundry project",
+        "does": "creates a project-bound Foundry connection, adds the Foundry agent as an external agent, turns its mentions in the instructions into agent references through YAML and Apply, and runs a confirmed check and an invalid-email check with the activity map",
+        "returns": "a compliance agent that calls the Foundry research agent only after the user confirmed the data and returns its sourced profile, the guide rewritten from the run, and a handoff for the next session"
+      },
+      "portsAsIs": [
+        "connecting a Microsoft Foundry agent to a Copilot Studio agent as an external agent"
+      ],
+      "perCustomer": [
+        "the Foundry project endpoint, the research agent's instructions and the data the check collects"
+      ],
+      "evidence": [
+        "activity map with the CS-Social Profiler node and its AgentId input after confirmation",
+        "no external agent node in the invalid-email run"
+      ],
+      "toolchain": {
+        "skills": [
+          "copilot-studio",
+          "claude-in-chrome",
+          "class-authoring-plugin:create-class",
+          "brand-voice-copilot",
+          "microsoft-agent-framework",
+          "learn-loop-plugin:claude-learn",
+          "claude-learn-worktime"
+        ],
+        "mcpServers": [
+          "claude-in-chrome",
+          "azure-deploy"
+        ],
+        "agents": [
+          "fork"
+        ]
+      },
+      "industry": "technical training",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      }
     }
   ]
 }

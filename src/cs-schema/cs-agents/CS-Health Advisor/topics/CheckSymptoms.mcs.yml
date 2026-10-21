@@ -43,5 +43,38 @@ beginDialog:
       prompt: _Describe to me the symptoms that you're having_
       entity: StringPrebuiltEntity
 
+    - kind: InvokeFlowAction
+      id: invokeFlowAction_EdzBhH
+      input:
+        binding:
+          number: =Topic.Age
+          text: =Text(Topic.Gender)
+          text_1: =Topic.UserSymptoms
+
+      output:
+        binding:
+          outcome: Topic.Outcome
+
+      flowId: a547f81c-8acd-f111-a05a-7c1e528616d5
+
+    - kind: SendActivity
+      id: sendActivity_ACd2R2
+      activity: this is the outcome {Topic.Outcome}
+
+    - kind: ConditionGroup
+      id: conditionGroup_Xr7Kd2
+      conditions:
+        - id: conditionItem_seriousCondition
+          condition: =!("cleared for light work" in Topic.Outcome)
+          actions:
+            - kind: Question
+              id: question_Qm4vTb
+              interruptionPolicy:
+                allowInterruption: true
+
+              variable: init:Topic.TookDrugs
+              prompt: _Your condition looks serious. Did you take any drugs or medication?_
+              entity: BooleanPrebuiltEntity
+
 inputType: {}
 outputType: {}

@@ -1,0 +1,15 @@
+mcs.metadata:
+  componentName: CS-Summarize Patient Symptoms
+kind: TaskDialog
+outputs:
+  - propertyName: outcome
+
+action:
+  kind: InvokeFlowTaskAction
+  flowId: a547f81c-8acd-f111-a05a-7c1e528616d5
+  connectionProperties:
+    $kind: ConnectionProperties
+    diagnostics:
+    mode: Invoker
+
+outputMode: All

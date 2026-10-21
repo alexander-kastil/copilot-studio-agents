@@ -16,7 +16,19 @@ Duration: about 40 minutes.
 ## Prerequisites
 
 - Copilot Studio in the classic experience: on the home page, select the three dots (**…**) at the bottom of the side bar, then **Open classic experience**.
-- The `social-profiler` agent in your Microsoft Foundry project with the Activity Protocol turned on, as in Exercise 1 of [Connect a Foundry Agent to the Help Desk](./demo-connect-a-foundry-agent.md), and the project endpoint.
+- The `social-profiler` agent in your Microsoft Foundry project with the Activity Protocol turned on, as in Exercise 1 of [Connect a Foundry Agent to the Help Desk](./demo-connect-a-foundry-agent.md), and the project endpoint. The class environment runs it as a prompt agent on `gpt-5.4-mini` with the **Web search** tool and the instructions below; its answers come back in the five sections they name.
+
+```text
+You prepare a short social profile and background check for a person, based on the full name, email address and company you receive.
+
+1. Search the web for public, professional information about the person at that company: role, professional background, public talks or publications, and the company's business.
+2. Check that the email domain matches the company, and say so.
+3. Report only what public sources show, and name each source. If you find nothing reliable, say that no public profile was found.
+4. Never guess private details, and never include home addresses, private phone numbers, health, family or other sensitive personal data.
+
+Answer with these sections: Person, Company, Email domain check, Public sources, Notes for the compliance check.
+```
+
 - A Copilot Studio account that can sign in to the Foundry project with at least the **Foundry Agent Consumer** role.
 - External models allowed by your admin, so Claude models appear in the model list.
 - The original agent definition, for reference: [src/cs-schema/agents/Compliance Agent](../../../src/cs-schema/agents/Compliance%20Agent/).
@@ -109,20 +121,26 @@ Expected: the **Model** section shows Claude Sonnet 4.6, and the agent explains 
 
 The research itself belongs to the team that built social-profiler in Foundry, so CS-Compliance Agent calls it instead of copying it. The connection tells Copilot Studio which Foundry project to reach, and the entry's description tells the planner when to call it.
 
-1. Go to the **Agents** page and select **Add an agent**.
-2. Under **Connect to an external agent**, select **Microsoft Foundry**.
-3. Create a new connection with your Foundry project endpoint (`<your Foundry project endpoint>`), sign in when asked, and select **Next**.
-4. Enter `CS-Social Profiler` as the **Name**, paste this **Description**, and enter `social-profiler` as the **Agent Id**:
+1. Go to the **Agents** page and select **Add**. The dialog **Choose how you want to extend your agent** opens.
+2. Open **Connect to an external agent** and select **Microsoft Foundry**.
+3. In **Connect Microsoft Foundry agent**, open the **Connection** list and select **Create new connection**. In **Connect to Azure AI Foundry Agent Service**, enter `CS-Microsoft Foundry` as **Display name**, keep **Microsoft Entra ID User Login**, enter your project endpoint as **Azure AI Project Endpoint**, and select **Create**.
+
+```text
+https://<your-foundry-account>.services.ai.azure.com/api/projects/<your-project>
+```
+
+4. Complete the sign-in window that opens; the dialog then shows the fields for the agent with CS-Microsoft Foundry under **Connection**.
+5. Enter `CS-Social Profiler` as the **Name**, paste this **Description**, and enter `social-profiler` as the **Agent Id**:
 
 ```text
 Get a social profile and background check based on name, e-mail and company
 ```
 
-5. Select **Add Agent**.
+6. Select **Add and configure**.
 
-Expected: CS-Social Profiler appears on the **Agents** page with its **Enabled** toggle on.
+Expected: the settings page of CS-Social Profiler opens with **Enabled** on, **Azure AI Foundry Agent Service** as **Server**, CS-Microsoft Foundry as **Connection**, and the input **AgentId** set to `social-profiler`. The **Agents** page lists CS-Social Profiler.
 
-> **Note:** If the connection dialog lets you name the connection, call it `CS-Microsoft Foundry`. If it doesn't, the connection is listed under the Azure AI Foundry Agent Service connector, which is how you find it for cleanup.
+> **Note:** The connection takes the CS- name from the **Display name** field and is listed under the Azure AI Foundry Agent Service connector, which is how you find it for cleanup. An existing connection to another Foundry project appears in the same list; create a new one, because each connection points at one project endpoint.
 
 ## Exercise 4: Hand the confirmed details to CS-Social Profiler
 
@@ -179,7 +197,7 @@ Yes, that's correct.
 jana.novak(at)example
 ```
 
-Expected: in the first run the agent asks for the name, the email and the company in separate turns, repeats all three for confirmation, and only after your confirmation the activity map shows a CS-Social Profiler node and the reply summarizes what the Foundry agent returned. In the second run the agent asks you to correct the email address, and no CS-Social Profiler node appears.
+Expected: in the first run the agent asks for the name, the email and the company in separate turns and repeats all three in a table for confirmation. Only after your confirmation the activity map shows a CS-Social Profiler node with the input `social-profiler`, and the reply carries the Foundry agent's sections Person, Company, Email domain check, Public sources and Notes for the compliance check; for `example.com` it reports a reserved example domain that doesn't match the company. In the second run the agent says the email format looks invalid and asks for a corrected address, and no CS-Social Profiler node appears.
 
 ## Troubleshooting
 

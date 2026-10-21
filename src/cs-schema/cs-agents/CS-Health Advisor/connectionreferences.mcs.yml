@@ -1,0 +1,7 @@
+﻿connectionReferences:
+  - connectionReferenceLogicalName: iits_CSDataverse
+    connectorId: /providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps
+  - connectionReferenceLogicalName: iits_CSHumanintheloop
+    connectorId: /providers/Microsoft.PowerApps/apis/shared_advancedapprovals
+  - connectionReferenceLogicalName: iits_CSTeams
+    connectorId: /providers/Microsoft.PowerApps/apis/shared_teams
