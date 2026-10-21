@@ -1,0 +1,19 @@
+mcs.metadata:
+  componentName: Social Profiler
+kind: TaskDialog
+inputs:
+  - kind: ManualTaskInput
+    propertyName: AgentId
+    value: social-profiler
+
+modelDisplayName: Social Profiler
+modelDescription: Get a social profile and background check based on name, e-mail and company
+action:
+  kind: InvokeExternalAgentTaskAction
+  connectionReference: iits_complianceAgent.shared_azureagentservice.506339739fde4997bc295fdfaee3b65c
+  connectionProperties:
+    mode: Invoker
+
+  operationDetails:
+    kind: ActivityProtocolMetadata
+    operationId: SendActivity

@@ -1,0 +1,48 @@
+mcs.metadata:
+  componentName: Food-Inventory - Create a food item
+kind: TaskDialog
+inputs:
+  - kind: AutomaticTaskInput
+    propertyName: description
+
+  - kind: AutomaticTaskInput
+    propertyName: inStock
+
+  - kind: AutomaticTaskInput
+    propertyName: minStock
+
+  - kind: AutomaticTaskInput
+    propertyName: name
+
+  - kind: AutomaticTaskInput
+    propertyName: pictureUrl
+
+  - kind: AutomaticTaskInput
+    propertyName: price
+
+modelDisplayName: Create a food item
+modelDescription: Adds a new food item to the inventory.
+outputs:
+  - propertyName: description
+
+  - propertyName: id
+
+  - propertyName: inStock
+
+  - propertyName: minStock
+
+  - propertyName: name
+
+  - propertyName: pictureUrl
+
+  - propertyName: price
+
+action:
+  kind: InvokeConnectorTaskAction
+  connectionReference: iits_FoodStockAgent.shared_iits-5ffood-2dinventory-5f0af75e9cbdc7cbac.53883454e354435ba9b4343af9466673
+  connectionProperties:
+    mode: Invoker
+
+  operationId: CreateFoodItem
+
+outputMode: All

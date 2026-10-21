@@ -85,7 +85,7 @@
 - **Show a schedule as one table per day, one row per topic.** The user rejected a nested list ("more table like") and then per-day tables whose topics were joined with middots in one wide cell ("what is so hard about creating a table for each day"). Accepted: `Time | Session / Topic`, module and lab rows bold with an `HH:MM-HH:MM` span, topic rows below with an empty time cell, breaks as rows.
 - **Mail drafts through the claude.ai Microsoft 365 connector accept no HTML attributes,** so the agenda tables arrive borderless and the HTML signature is lost; the global `work-iq` skill (`references/m365-connector.md`) carries the allowlist. Tell the user to add borders and the signature in Outlook before sending; once the signature is in, the `integrations-email-tables` skill in Claude for Outlook brands the agenda tables in place.
 
-## Copilot Studio agent YAML (`src/agents/**/*.mcs.yml`)
+## Copilot Studio agent YAML (`src/cs-schema/agents/**/*.mcs.yml`)
 
 > Distributed into the local `copilot-studio` skill: verification ladder -> `references/schema-verification.md`; entity catalog -> `references/prebuilt-entities.md`; card contract -> `references/adaptive-cards.md`; flow/scoping -> `references/conversation-design.md`; file anatomy -> `references/topic-yaml.md`; extension workflow -> `references/clone-and-sync.md`. Entries below are the source log.
 
@@ -99,3 +99,12 @@
 - **Swapping a Question for a card trades away NLU and slot filling.** A card input stores the typed value verbatim; there is no entity extraction and no proactive slot filling. Right trade for a multi-field form, wrong one for a single conversational value. Say so when making the swap instead of presenting it as a pure upgrade.
 - **Match the surrounding file on style, do not normalize to an external sample.** External guides claim `variable: init:Topic.X` is mandatory; the working topics here use plain `variable: Topic.X`. Both are valid, and the file's existing style is proven.
 - **`Copilot Studio: Reattach Agent` is the missing first step for anyone who gets these agents via Git.** Cloning the repo yields agent folders with no binding to an environment; Preview/Get/Apply do nothing until Reattach runs. Also note Apply updates the live agent immediately but does not publish, Apply is blocked while unretrieved remote changes exist, and Get overwrites uncommitted local work, so commit before Get.
+
+## Reading and cloning the live agents (2026-10-21)
+
+> Distributed: second-window clone procedure and the reload trap -> global `copilot-studio` `references/clone-and-sync.md` ("Clone from a Claude Code session"), the repo copy retired; this repo's environment, clone folder and example topics -> `.claude/rules/copilot-studio.md`. Entries below are the source log.
+
+- **The extension's Clone agent reloads the window it runs in, and that killed this Claude session.** It ends with `vscode.openFolder(<folder>, { forceReuseWindow: true })`; run from the window hosting the Claude panel, the user had to reopen VS Code and resume. Proven fix (Transportation Agent, Food Buddy): open a second window with `code -n`, drive the palette there with SendKeys targeted by exact window title, and only that window reloads.
+- **When the user says they signed in to the extension, clone with the extension.** The session first scraped the Copilot Studio pages in the browser and was stopped twice ("why dont you just use their commands here in vs code?"). The extension writes the real YAML plus `.mcs/conn.json`; a page scrape gives neither.
+- **Copilot Studio pages give `get_page_text` nothing, and a `javascript_tool` result truncates near 1,000 characters.** Read the agent list from `[role="row"]` cells and the overview from `main.innerText`, sliced small. Opening the environment's Dataverse Web API (`org...crm4.dynamics.com/api/data`) in the browser starts a passkey sign-in, which is the user's to complete.
+- **The user capped parallel agents at 4 in this session ("you can use up to 4 agents max in paralell").** A count is a ceiling for agents running at once, so a larger job runs in waves of 4.

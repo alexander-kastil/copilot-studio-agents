@@ -1,0 +1,51 @@
+mcs.metadata:
+  componentName: Copilot-Food-Catalog - Add food
+kind: TaskDialog
+inputs:
+  - kind: AutomaticTaskInput
+    propertyName: description
+
+  - kind: AutomaticTaskInput
+    propertyName: id
+
+  - kind: AutomaticTaskInput
+    propertyName: inStock
+
+  - kind: AutomaticTaskInput
+    propertyName: minStock
+
+  - kind: AutomaticTaskInput
+    propertyName: name
+
+  - kind: AutomaticTaskInput
+    propertyName: pictureUrl
+
+  - kind: AutomaticTaskInput
+    propertyName: price
+
+modelDisplayName: Add food
+modelDescription: Add food
+outputs:
+  - propertyName: description
+
+  - propertyName: id
+
+  - propertyName: inStock
+
+  - propertyName: minStock
+
+  - propertyName: name
+
+  - propertyName: pictureUrl
+
+  - propertyName: price
+
+action:
+  kind: InvokeConnectorTaskAction
+  connectionReference: iits_footInventory.shared_iits-5fcopilot-2dfood-2dcatalog-5f0af75e9cbdc7cbac.645218e9d08a42358bd8aed755efa5da
+  connectionProperties:
+    mode: Invoker
+
+  operationId: AddFood
+
+outputMode: All

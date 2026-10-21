@@ -1,0 +1,3 @@
+connectionReferences:
+  - connectionReferenceLogicalName: new_sharedadvancedapprovals_126be
+    connectorId: /providers/Microsoft.PowerApps/apis/shared_advancedapprovals

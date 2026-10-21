@@ -1,0 +1,19 @@
+displayName: Employee Agent
+schemaName: iits_employeeagent_i-gL4u
+accessControlPolicy: GroupMembership
+authenticationMode: Integrated
+authenticationTrigger: Always
+configuration:
+  recognizer:
+    kind: CLICopilotRecognizer
+
+  agentSettings:
+    model:
+      series: GPT5Chat
+
+    instructions: {}
+    web:
+      enableWebSearch: true
+
+template: cliagent-1.0.0
+language: 1033

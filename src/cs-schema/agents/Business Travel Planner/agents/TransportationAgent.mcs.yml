@@ -1,0 +1,11 @@
+mcs.metadata:
+  componentName: Transportation Agent
+  description: Manages transportation booking. Knows about connecting 2 places by bus, train, car, taxi, flight and sends booking conformation with metadata
+kind: TaskDialog
+modelDisplayName: Transportation Agent
+modelDescription: Manages transportation booking. Knows about connecting 2 places by bus, train, car, taxi, flight and sends booking conformation with metadata
+action:
+  kind: InvokeConnectedAgentTaskAction
+  botSchemaName: iits_transportationAgent
+  historyType:
+    kind: ConversationHistory

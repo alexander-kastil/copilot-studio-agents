@@ -1,0 +1,19 @@
+mcs.metadata:
+  componentName: Employee Welcome
+kind: TaskDialog
+inputs:
+  - kind: AutomaticTaskInput
+    propertyName: EmployeeName
+    name: EmployeeName
+
+  - kind: AutomaticTaskInput
+    propertyName: Department_20
+    name: "Department "
+
+modelDisplayName: Employee Welcome
+modelDescription: Generates a welcome message for a new employee
+action:
+  kind: InvokeAIBuilderModelTaskAction
+  aIModelId: 455d8c9a-28cc-49d4-bffe-1fb969d55196
+
+outputMode: All

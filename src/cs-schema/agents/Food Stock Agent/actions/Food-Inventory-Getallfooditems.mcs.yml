@@ -1,0 +1,17 @@
+mcs.metadata:
+  componentName: Food-Inventory - Get all food items
+kind: TaskDialog
+modelDisplayName: Get all food items
+modelDescription: Returns the complete list of all food items in the inventory.
+outputs:
+  - propertyName: Response
+
+action:
+  kind: InvokeConnectorTaskAction
+  connectionReference: iits_FoodStockAgent.shared_iits-5ffood-2dinventory-5f0af75e9cbdc7cbac.53883454e354435ba9b4343af9466673
+  connectionProperties:
+    mode: Invoker
+
+  operationId: GetAllFoodItems
+
+outputMode: All

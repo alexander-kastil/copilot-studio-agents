@@ -1,0 +1,9 @@
+mcs.metadata:
+  componentName: Sightseeing
+  description: Recommended Sightseeing info
+kind: KnowledgeSourceConfiguration
+source:
+  kind: SharePointSearchSource
+  triggerCondition: true
+  site: https://integrationsonline.sharepoint.com/sites/copilot-demo/Sightseeing
+  additionalSearchTerms:

@@ -1,0 +1,7 @@
+﻿connectionReferences:
+  - connectionReferenceLogicalName: copilots_header_f215c.shared_a365outlookmailmcp.7e4ceaad72584349968dc88587480051
+    connectorId: /providers/Microsoft.PowerApps/apis/shared_a365outlookmailmcp
+  - connectionReferenceLogicalName: iits_sharedmicrosoftcopilotstudio_4afe9
+    connectorId: /providers/Microsoft.PowerApps/apis/shared_microsoftcopilotstudio
+  - connectionReferenceLogicalName: iits_sharedoffice365_8c122
+    connectorId: /providers/Microsoft.PowerApps/apis/shared_office365

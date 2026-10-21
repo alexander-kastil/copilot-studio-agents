@@ -1,0 +1,421 @@
+﻿{
+  "swagger": "2.0",
+  "host": "food-catalog-api-copilot.azurewebsites.net",
+  "schemes": [
+    "https"
+  ],
+  "definitions": {
+    "FoodDTO": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the food item.",
+          "type": "string",
+          "x-ms-summary": "Name"
+        },
+        "price": {
+          "format": "double",
+          "description": "The price of the food item.",
+          "type": "number",
+          "x-ms-summary": "Price"
+        },
+        "inStock": {
+          "format": "int32",
+          "description": "The current quantity of the food item in stock.",
+          "type": "integer",
+          "x-ms-summary": "In Stock"
+        },
+        "minStock": {
+          "format": "int32",
+          "description": "The minimum stock level before a reorder is needed.",
+          "type": "integer",
+          "x-ms-summary": "Min Stock"
+        },
+        "pictureUrl": {
+          "description": "The URL of the food item\u0027s picture.",
+          "type": "string",
+          "x-ms-summary": "Picture URL"
+        },
+        "description": {
+          "description": "A short description of the food item.",
+          "type": "string",
+          "x-ms-summary": "Description"
+        }
+      },
+      "additionalProperties": false
+    },
+    "FoodItem": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "description": "The unique identifier of the food item.",
+          "type": "integer",
+          "x-ms-summary": "ID"
+        },
+        "name": {
+          "description": "The name of the food item.",
+          "type": "string",
+          "x-ms-summary": "Name"
+        },
+        "price": {
+          "format": "double",
+          "description": "The price of the food item.",
+          "type": "number",
+          "x-ms-summary": "Price"
+        },
+        "inStock": {
+          "format": "int32",
+          "description": "The current quantity of the food item in stock.",
+          "type": "integer",
+          "x-ms-summary": "In Stock"
+        },
+        "minStock": {
+          "format": "int32",
+          "description": "The minimum stock level before a reorder is needed.",
+          "type": "integer",
+          "x-ms-summary": "Min Stock"
+        },
+        "pictureUrl": {
+          "description": "The URL of the food item\u0027s picture.",
+          "type": "string",
+          "x-ms-summary": "Picture URL"
+        },
+        "description": {
+          "description": "A short description of the food item.",
+          "type": "string",
+          "x-ms-summary": "Description"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "tags": [
+    {
+      "name": "Food"
+    }
+  ],
+  "x-ms-openai-manifest": {
+    "humanName": "Food-Inventory",
+    "modelDescription": "Manage food inventory items including stock levels, pricing, and product details.",
+    "contactEmail": "",
+    "legalUrl": ""
+  },
+  "info": {
+    "title": "Food-Inventory",
+    "description": "Manage food inventory items including stock levels, pricing, and product details.",
+    "version": "v1"
+  },
+  "paths": {
+    "/Food": {
+      "get": {
+        "tags": [
+          "Food"
+        ],
+        "summary": "Get all food items",
+        "description": "Returns the complete list of all food items in the inventory.",
+        "operationId": "GetAllFoodItems",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/FoodItem"
+              }
+            }
+          }
+        },
+        "x-ms-openai-data": {
+          "openai-enabled": true,
+          "operations": [
+            {
+              "operationId": "GetAllFoodItems",
+              "x-ms-require-user-confirmation": false,
+              "summary": "Get all food items",
+              "description": "Returns the complete list of all food items in the inventory."
+            }
+          ]
+        }
+      },
+      "post": {
+        "tags": [
+          "Food"
+        ],
+        "summary": "Create a food item",
+        "description": "Adds a new food item to the inventory.",
+        "operationId": "CreateFoodItem",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*\u002Bjson"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "The food item details to create.",
+            "schema": {
+              "$ref": "#/definitions/FoodDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/FoodItem"
+            }
+          }
+        },
+        "x-ms-openai-data": {
+          "openai-enabled": true,
+          "operations": [
+            {
+              "operationId": "CreateFoodItem",
+              "x-ms-require-user-confirmation": false,
+              "summary": "Create a food item",
+              "description": "Adds a new food item to the inventory."
+            }
+          ]
+        }
+      },
+      "put": {
+        "tags": [
+          "Food"
+        ],
+        "summary": "Update a food item",
+        "description": "Updates an existing food item in the inventory.",
+        "operationId": "UpdateFoodItem",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*\u002Bjson"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "The updated food item data.",
+            "schema": {
+              "$ref": "#/definitions/FoodItem"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/FoodItem"
+            }
+          }
+        },
+        "x-ms-openai-data": {
+          "openai-enabled": true,
+          "operations": [
+            {
+              "operationId": "UpdateFoodItem",
+              "x-ms-require-user-confirmation": false,
+              "summary": "Update a food item",
+              "description": "Updates an existing food item in the inventory."
+            }
+          ]
+        }
+      }
+    },
+    "/Food/byname": {
+      "get": {
+        "tags": [
+          "Food"
+        ],
+        "summary": "Get food items by name",
+        "description": "Returns all food items whose name matches the specified search term.",
+        "operationId": "GetFoodItemsByName",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "name",
+            "description": "The name or partial name of the food item to search for.",
+            "type": "string",
+            "x-ms-summary": "Food Name"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/FoodItem"
+              }
+            }
+          }
+        },
+        "x-ms-openai-data": {
+          "openai-enabled": true,
+          "operations": [
+            {
+              "operationId": "GetFoodItemsByName",
+              "x-ms-require-user-confirmation": false,
+              "summary": "Get food items by name",
+              "description": "Returns all food items whose name matches the specified search term."
+            }
+          ]
+        }
+      }
+    },
+    "/Food/{id}": {
+      "get": {
+        "tags": [
+          "Food"
+        ],
+        "summary": "Get a food item by ID",
+        "description": "Returns a single food item matching the specified ID.",
+        "operationId": "GetFoodItemById",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "The unique identifier of the food item.",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "x-ms-summary": "Food Item ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/FoodItem"
+            }
+          }
+        },
+        "x-ms-openai-data": {
+          "openai-enabled": true,
+          "operations": [
+            {
+              "operationId": "GetFoodItemById",
+              "x-ms-require-user-confirmation": false,
+              "summary": "Get a food item by ID",
+              "description": "Returns a single food item matching the specified ID."
+            }
+          ]
+        }
+      },
+      "delete": {
+        "tags": [
+          "Food"
+        ],
+        "summary": "Delete a food item",
+        "description": "Removes a food item from the inventory by its ID.",
+        "operationId": "DeleteFoodItem",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "The unique identifier of the food item to delete.",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "x-ms-summary": "Food Item ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "x-ms-openai-data": {
+          "openai-enabled": true,
+          "operations": [
+            {
+              "operationId": "DeleteFoodItem",
+              "x-ms-require-user-confirmation": false,
+              "summary": "Delete a food item",
+              "description": "Removes a food item from the inventory by its ID."
+            }
+          ]
+        }
+      }
+    },
+    "/Food/{id}/update-stock": {
+      "patch": {
+        "tags": [
+          "Food"
+        ],
+        "summary": "Update stock for a food item",
+        "description": "Adjusts the in-stock quantity of a food item by the specified amount.",
+        "operationId": "UpdateFoodItemStock",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "The unique identifier of the food item.",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "x-ms-summary": "Food Item ID"
+          },
+          {
+            "in": "query",
+            "name": "amount",
+            "description": "The amount to adjust the stock by. Use a positive value to add stock or a negative value to reduce it.",
+            "type": "integer",
+            "format": "int32",
+            "x-ms-summary": "Stock Amount"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/FoodItem"
+            }
+          }
+        },
+        "x-ms-openai-data": {
+          "openai-enabled": true,
+          "operations": [
+            {
+              "operationId": "UpdateFoodItemStock",
+              "x-ms-require-user-confirmation": false,
+              "summary": "Update stock for a food item",
+              "description": "Adjusts the in-stock quantity of a food item by the specified amount."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

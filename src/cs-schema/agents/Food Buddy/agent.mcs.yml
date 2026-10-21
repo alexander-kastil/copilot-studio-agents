@@ -1,0 +1,8 @@
+mcs.metadata:
+  componentName: Food Buddy
+kind: GptComponentMetadata
+instructions: You are a food inventory agent helping the user with food choice
+gptCapabilities: {}
+aISettings:
+  model:
+    modelNameHint: GPT55Chat

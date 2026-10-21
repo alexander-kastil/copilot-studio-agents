@@ -1,0 +1,158 @@
+﻿{
+  "name": "Extract Data from Invoice",
+  "instruction": "extract the data from the {{Invoice}}. Let the output format be:\n\n{\r\n    \u0022invoice\u0022: {\r\n        \u0022vendor\u0022: {\r\n            \u0022name\u0022: \u0022Billa AG\u0022,\r\n            \u0022address\u0022: \u00223400 KLOSTERNEUBURG, AUFELDGASSE 45-49\u0022,\r\n            \u0022telephone\u0022: \u0022059915-03357\u0022,\r\n            \u0022tax_id\u0022: \u0022ATU 15255907\u0022\r\n        },\r\n        \u0022date\u0022: \u002204.03.2026\u0022,\r\n        \u0022items\u0022: [\r\n            {\r\n                \u0022name\u0022: \u0022Ja! Bio Spitzpaprika 200g\u0022,\r\n                \u0022price\u0022: 2.29\r\n            }           \r\n        ],\r\n        \u0022total\u0022: {\r\n            \u0022currency\u0022: \u0022EUR\u0022,\r\n            \u0022amount\u0022: 34.92\r\n        }\r\n    }\r\n}",
+  "model": "gpt-5-chat",
+  "modelParameters": {
+    "gptParameters": {
+      "temperature": 0
+    }
+  },
+  "inputs": [
+    {
+      "id": "Invoice",
+      "text": "Invoice",
+      "type": "document"
+    }
+  ],
+  "output": {
+    "formats": [
+      "json"
+    ],
+    "jsonSchema": {
+      "type": "object",
+      "properties": {
+        "invoice": {
+          "type": "object",
+          "properties": {
+            "vendor": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "telephone": {
+                  "type": "string"
+                },
+                "tax_id": {
+                  "type": "string"
+                }
+              }
+            },
+            "date": {
+              "type": "string"
+            },
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "price": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "name",
+                  "price"
+                ]
+              }
+            },
+            "total": {
+              "type": "object",
+              "properties": {
+                "currency": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "jsonExamples": [
+      {
+        "invoice": {
+          "vendor": {
+            "name": "Billa AG",
+            "address": "1190 WIEN, KROTTENBACHSTR. 82-88",
+            "telephone": "059915-01037",
+            "tax_id": "ATU 15255907"
+          },
+          "date": "30.05.2026",
+          "items": [
+            {
+              "name": "Ja! Bio P\u00FCreeerd\u00E4pfel 1kg",
+              "price": 1.79
+            },
+            {
+              "name": "Ja! Bio Rucola 100g",
+              "price": 2.49
+            },
+            {
+              "name": "Kabeljaufilet OH",
+              "price": 23.71
+            },
+            {
+              "name": "EXTREM AKTION",
+              "price": -7.92
+            },
+            {
+              "name": "FILIALAKTION 30%",
+              "price": -4.74
+            },
+            {
+              "name": "Ja!Nat. Bio Heumilch",
+              "price": 1.99
+            },
+            {
+              "name": "Cv H-Oberkeulenschnitzel",
+              "price": 9.98
+            },
+            {
+              "name": "Ja! Faschiertes",
+              "price": 26.9
+            },
+            {
+              "name": "Ja!Nat. Apfel-Birn",
+              "price": 5.18
+            },
+            {
+              "name": "VITACOCO KOKOSWASSER",
+              "price": 3.99
+            },
+            {
+              "name": "NIMM MEHR",
+              "price": -1
+            },
+            {
+              "name": "VITACOCO KOKOSWASSER",
+              "price": 3.99
+            },
+            {
+              "name": "NIMM MEHR",
+              "price": -1
+            }
+          ],
+          "total": {
+            "currency": "EUR",
+            "amount": 60.93
+          }
+        }
+      }
+    ]
+  },
+  "settings": {
+    "recordRetrievalLimit": 30,
+    "shouldPreserveRecordLinks": null,
+    "runtime": null
+  },
+  "version": "GptDynamicPrompt-2"
+}

@@ -1,0 +1,21 @@
+﻿{
+  "connectorid": "b53d68b9-c2a2-4bd3-8c9e-a7e37c4a4254",
+  "name": "iits_5Ffood-20mcp",
+  "displayname": "Food MCP",
+  "description": "An mcp that knows about food and other nice things",
+  "connectorinternalid": "shared_iits-5Ffood-20mcp-5F0af75e9cbdc7cbac",
+  "openapidefinition": "connectors/iits_5Ffood-20mcp-b53d68b9-c2a2-4bd3-8c9e-a7e37c4a4254/openapidefinition.json",
+  "connectionparameters": "connectors/iits_5Ffood-20mcp-b53d68b9-c2a2-4bd3-8c9e-a7e37c4a4254/connectionparameters.json",
+  "connectionparametersets": null,
+  "policytemplateinstances": "connectors/iits_5Ffood-20mcp-b53d68b9-c2a2-4bd3-8c9e-a7e37c4a4254/policytemplateinstances.json",
+  "iconbrandcolor": null,
+  "iconblob": "connectors/iits_5Ffood-20mcp-b53d68b9-c2a2-4bd3-8c9e-a7e37c4a4254/iconblob.png",
+  "connectortype": 1,
+  "statecode": 0,
+  "statuscode": 1,
+  "ismanaged": false,
+  "componentstate": 0,
+  "createdon": "2026-08-12T08:05:07Z",
+  "modifiedon": "2026-08-12T08:05:27Z",
+  "versionnumber": 25821157
+}

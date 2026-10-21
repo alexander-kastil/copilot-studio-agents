@@ -1,0 +1,5 @@
+﻿connectionReferences:
+  - connectionReferenceLogicalName: iits_FoodBuddy.shared_iits-5ffood-20inventory-20v5-5f0af75e9cbdc7cbac.2329ba2fae504808ac11a168054d8986
+    connectorId: /providers/Microsoft.PowerApps/apis/shared_iits-5ffood-20inventory-20v5-5f0af75e9cbdc7cbac
+  - connectionReferenceLogicalName: iits_FoodBuddy.shared_iits-5ffood-20mcp-5f0af75e9cbdc7cbac.e68149809e6649cdb3134aff0bb12c4c
+    connectorId: /providers/Microsoft.PowerApps/apis/shared_iits-5ffood-20mcp-5f0af75e9cbdc7cbac

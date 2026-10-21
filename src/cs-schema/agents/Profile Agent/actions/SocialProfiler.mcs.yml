@@ -1,0 +1,19 @@
+mcs.metadata:
+  componentName: Social Profiler
+kind: TaskDialog
+inputs:
+  - kind: ManualTaskInput
+    propertyName: AgentId
+    value: social-profiler
+
+modelDisplayName: Social Profiler
+modelDescription: Creates a social profile for a given user
+action:
+  kind: InvokeExternalAgentTaskAction
+  connectionReference: iits_ProfileAgent.shared_azureagentservice.506339739fde4997bc295fdfaee3b65c
+  connectionProperties:
+    mode: Invoker
+
+  operationDetails:
+    kind: ActivityProtocolMetadata
+    operationId: SendActivityV2

@@ -1,0 +1,21 @@
+﻿{
+  "connectorid": "4f03aad7-62a3-4cde-9854-160fc86e2bba",
+  "name": "iits_5Ffood-20inventory-20v5",
+  "displayname": "Food Inventory v5",
+  "description": "Read and maintain the food catalog: list all food items, look them up by name or id, add new items, update existing ones, adjust stock levels and delete items.",
+  "connectorinternalid": "shared_iits-5Ffood-20inventory-20v5-5F0af75e9cbdc7cbac",
+  "openapidefinition": "connectors/iits_5Ffood-20inventory-20v5-4f03aad7-62a3-4cde-9854-160fc86e2bba/openapidefinition.json",
+  "connectionparameters": "connectors/iits_5Ffood-20inventory-20v5-4f03aad7-62a3-4cde-9854-160fc86e2bba/connectionparameters.json",
+  "connectionparametersets": null,
+  "policytemplateinstances": "connectors/iits_5Ffood-20inventory-20v5-4f03aad7-62a3-4cde-9854-160fc86e2bba/policytemplateinstances.json",
+  "iconbrandcolor": null,
+  "iconblob": "connectors/iits_5Ffood-20inventory-20v5-4f03aad7-62a3-4cde-9854-160fc86e2bba/iconblob.png",
+  "connectortype": 1,
+  "statecode": 0,
+  "statuscode": 1,
+  "ismanaged": false,
+  "componentstate": 0,
+  "createdon": "2026-08-12T07:30:12Z",
+  "modifiedon": "2026-08-12T07:30:21Z",
+  "versionnumber": 25820412
+}

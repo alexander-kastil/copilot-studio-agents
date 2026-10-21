@@ -1,0 +1,3 @@
+connectionReferences:
+  - connectionReferenceLogicalName: iits_employeeagent_i-gL4u.cr.shared_sharepointonline
+    connectorId: /providers/Microsoft.PowerApps/apis/shared_sharepointonline

@@ -564,6 +564,63 @@
       "catalogue": {
         "action": "none"
       }
+    },
+    {
+      "date": "2026-10-21",
+      "from": "17:12",
+      "to": "17:35",
+      "sessionId": "73dbb9b2-6521-46be-9c5c-25d9d0f68734",
+      "branch": "v-3.0.0",
+      "commits": [],
+      "surfaces": [
+        "copilot-studio-agents"
+      ],
+      "files": [
+        ".claude/skills/copilot-studio/references/clone-and-sync.md",
+        ".claude/rules/copilot-studio.md",
+        "tasks/lessons.md"
+      ],
+      "mechanism": {
+        "takes": "a list of agent names in a Copilot Studio environment the user is signed in to through the VS Code extension",
+        "does": "clones each agent to local YAML by driving the extension's palette and folder dialog with keystrokes in a second VS Code window, so the extension's reload never ends the assistant session that drives it",
+        "returns": "one attached agent folder per agent with its topics, tools, settings and environment binding"
+      },
+      "portsAsIs": [
+        "second-window keystroke driving of a VS Code extension command that reloads its window",
+        "window targeting by exact title"
+      ],
+      "perCustomer": [
+        "the environment and its agents",
+        "the clone target folder"
+      ],
+      "evidence": [
+        "src/agents/Transportation Agent/.mcs/conn.json",
+        "src/agents/Food Buddy/.mcs/conn.json",
+        "two clones run from a second window, the assistant window survived"
+      ],
+      "toolchain": {
+        "skills": [
+          "class-authoring-plugin:create-class",
+          "claude-in-chrome",
+          "copilot-studio",
+          "vscode-extension",
+          "learn-loop-plugin:claude-learn",
+          "claude-learn-worktime",
+          "track-time"
+        ],
+        "mcpServers": [
+          "claude-in-chrome"
+        ],
+        "agents": [
+          "subagent-delegation-plugin:fact-gatherer",
+          "fork"
+        ]
+      },
+      "industry": "technical training",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      }
     }
   ]
 }
