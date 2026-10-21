@@ -1,12 +1,63 @@
 # Handoff: rebuild the class environment as CS- agents
 
-Written 2026-10-21 at the end of a long session that ran out of context. Read this file, then the plan in [todo.md](todo.md) (section "Rebuild the class environment as CS- agents"), then start at "Next steps". Everything below was observed in this session unless marked otherwise.
+Written 2026-10-21 at the end of a long session that ran out of context, updated at 21:45 by the second session before a compact. Start with section 0, then the plan in [todo.md](todo.md) (section "Rebuild the class environment as CS- agents"). Sections 1 to 8 are the first session's record; section 0 overrides them where they differ.
+
+## 0. Resume here (second session, 2026-10-21 21:45)
+
+### Done and pushed (`f0b6f6d`, `820dbdc` on `v-3.0.0`)
+
+| Agent | AgentId | Schema | State |
+| --- | --- | --- | --- |
+| CS-Employee Onboarding Assistant | `bd42a7f9-6dcd-f111-a05a-7c1e528616d5` | `iits_CSEmployeeOnboardingAssistant` | first session, live |
+| CS-HR Buddy | `3124d03e-72cd-f111-a05a-7c1e528616d5` | `iits_CSHRBuddy` | applied, tested |
+| CS-Travel Expense Refund | `362c599e-72cd-f111-a05a-7c1e528616d5` | `new_CSTravelExpenseRefund` | applied, tested, flow wired |
+| CS-Food Stock Buddy | `5c717ca7-72cd-f111-a05a-7c1e528616d5` | `iits_CSFoodStockBuddy` | applied, tested, prompt and REST tools |
+| CS-Travel Agent | `f073f6be-72cd-f111-a05a-7c1e528616d5` | `cr915_CSTravelAgent` | applied, tested, Teams post verified |
+| CS-Restaurant HR Manager | `d14ea3dc-72cd-f111-a05a-7c1e528616d5` | `iits_CSRestaurantHRManager` | applied, tested, MCP and mail |
+| CS-Health Advisor | `0092e2cb-83cd-f111-a05a-7c1e528616d5` | `iits_CSHealthAdvisor` | ported and applied (Apply uploaded both .docx knowledge files), not tested, no tools |
+| CS-Returns Agent | `ef2c30e4-83cd-f111-a05a-7c1e528616d5` | `cr915_CSReturnsAgent` | ported, NOT applied |
+| CS-Business Travel Planner | `8f9d08ee-83cd-f111-a05a-7c1e528616d5` | `iits_CSBusinessTravelPlanner` | ported (3 connected agents, child Work life balance Buddy), NOT applied |
+| CS-Compliance Agent | `23bdf5f8-83cd-f111-a05a-7c1e528616d5` | `iits_CSComplianceAgent` | ported, NOT applied |
+
+The four batch-2 writers finished but their reports never reached the main thread; read their folders instead of asking them.
+
+Live CS- tools and ids: CS-Calculate food to order (`aIModelId ca34d1e4-0310-41f0-8210-1e36afa2b430`); CS-Food Catalog connector with CS-Gets all food, CS-Add food, CS-Update food stock quantity (connection reference `iits_CSFoodStockBuddy.shared_iits-5fcs-2dfood-20catalog-5f0af75e9cbdc7cbac.758ce0d5cbd1414e93a57bd870350d65`, connection named CS-Food Catalog); CS-Post message in a chat or channel; CS-HR MCP Server (connection named CS-HR MCP Server) and CS-Send an email; table `iits_cstravelexpenseclaim` (CS-Travel Expense Claims); connection reference `iits_CSDataverse` (CS-Dataverse, on your connection `shared-commondataser-dcf9ba9e-d89f-49ab-8e90-1f71fe579abe`); agent flow CS-Save Claim to Dataverse `433e0b24-7ecd-f111-a05a-7c1e528616d5`. Teams travel desk: team `9c07913d-b504-4571-a451-28cb721a4ef5`, General `19:6Ivu331rZb46kxuKCQvw2O94gnq_gPF7ryoBsUBnIEo1@thread.tacv2` (in CS-Travel Agent's instructions).
+
+Azure `rg-copilot-studio` (subscription `cd091145-5ea2-4703-ba5d-41063b1d4308`), F1 Linux plan `cs-copilot-studio-plan`: `cs-food-catalog-api.azurewebsites.net` (REST `/Food`, MCP `/api/mcp`) and `cs-hr-mcp-server.azurewebsites.net` (MCP at `/`, redeployed with the full-name search fix from `src/hr-mcp-server/Services/EmployeeService.cs`). The food stock is back at the seed values.
+
+Guides updated from the live run: 03/03, 03/04, 03/05, 04/01, 04/02, 04/03, 04/05, 04/06. Not yet: 03/01 and 03/02 (fold in section 6), 03/06, 04/04, 05/01, 05/03, 05/05. Link check shows only the known `%20` false positives; brand voice and fences clean.
+
+### Next steps
+
+1. Apply CS-Returns Agent and CS-Compliance Agent, smoke-test CS-Health Advisor (CheckSymptoms, ProteinInfo) and both new ones with two prompts each.
+2. 04/04 tools on CS-Health Advisor: CS-Classify Patient Symptoms prompt (portal, like 04/01), then CS-Summarize Patient Symptoms and CS-Post to teams agent flows from `src/cs-schema/agents/Health Advisor/workflows/` (Web API recipe below; the prompt inside a flow needs the new prompt id), then wire topics and test.
+3. 05/01 tools: CS-Work IQ Mail MCP tool and the CS-When a new email arrives in a shared mailbox trigger with its flow.
+4. 05/05: CS-Social Profiler Foundry agent entry (the `microsoft-foundry` MCP server was disconnected this session).
+5. 05/03: apply CS-Business Travel Planner last; if Apply or the test refuses the connected agents, publish CS-Travel Agent, CS-Health Advisor and CS-Travel Expense Refund first.
+6. 03/06 publish CS-HR Buddy; 03/02 exercises 4 and 5.
+7. Guides for every topic as it runs (owner: "in parallel update guide texts when you found issues"), then the "(optional)" rows in the module **Hands-On Demos** tables and the topic readme bullets; `link-check.sh`, `fence-lang.py`, brand-voice-copilot.
+8. Status table when asked; commit all and push when guides are done (owner standing instruction this session). Cleanup only after sign-off.
+
+### Procedures proven this session
+
+- **Blank agent:** `https://copilotstudio.microsoft.com/environments/Default-d92b247e-90e0-4469-a129-6a32866c0d0a/bots/new` opens "Name your agent" directly; click the field at (783,367), type, **Create** at (867,440) in a 1568-wide frame. The schema prefix varies (`iits_`, `cr915_`, `new_`); new agents start with web search on.
+- **Clone:** helper window `code -n "D:\git-classes\copilot-studio-agents\src\cs-schema\cs-agents"`, then `clone-full.ps1 -Name <agent> -Root <that folder> -HelperTitle '^(.* - )?cs-agents - Visual Studio Code$'`. An abort means focus moved; send `{ESC}||{ESC}` to the helper and retry.
+- **`vsc.ps1`** (global copilot-studio skill) now presses Alt before `SetForegroundWindow` only when the target is not already in front; Chrome in front otherwise blocks the focus switch.
+- **Apply:** `C:\Users\ALEXAN~1\AppData\Local\Temp\claude\D--git-classes-copilot-studio-agents\40163078-2413-4ae2-b23e-d7fe2695a197\scratchpad\apply.ps1 -Name <agent>` opens the helper, runs Preview, screenshots Problems and the Local Changes row; then click the Apply icon at (379,152), or (367,152) when the side bar is narrower, and close with **View: Close Window**. If the Copilot Studio view was already open, the (37,636) click hides the side bar; click it again. Remote changes block Apply: run **Copilot Studio: Get changes** first. Get pulls portal-made tools into `actions/`, `connectionreferences.mcs.yml`, `workflows/`, `prompts/`, `connectors/`.
+- **Portal tools:** **Add a tool** offers cards **Add new Computer use / Workflow / Prompt / MCP** and, under **See more**, **Add new REST API / Custom connector**, plus filters Popular, Connector, Prompt, Workflows, REST API, Model Context Protocol. After **Add and configure**, rename the tool on its settings page; wizard names do not carry over. Rich text fields (Message to display) keep text only after a click outside before **Save**.
+- **Dataverse and flows without the portal:** token `az account get-access-token --resource https://orgaa1e572d.crm4.dynamics.com`; scripts `dv-table.py` and `dv-flow.py` in the scratchpad above. An agent flow is a `workflows` row with `category 5`, `type 1`, `modernflowtype 1`, `primaryentity none` and `clientdata`, turned on with a PATCH of `statecode 1`, `statuscode 2`, header `MSCRM.SolutionUniqueName: Playground`. A connection reference must point at a connection you own.
+- **Verify without the browser:** Graph via `az rest` for Teams ids; the claude.ai Microsoft 365 connector for channel messages and mail; the agent's **Activity** tab (read `main.innerText`) shows each tool's prepared inputs.
+- **Deploy:** `C:\Users\ALEXAN~1\AppData\Local\Temp\claude\D--git-classes-copilot-studio-agents\40163078-2413-4ae2-b23e-d7fe2695a197\scratchpad\deploy-cs.ps1` (publish, zip, `az webapp deploy`).
+
+### Owner instructions this session
+
+Fix typos while porting; cheaper models (Sonnet general agents) for porting; build in batches and finish one before creating more ("we dont want to build castles in the cloud"); full go for the Teams post and the 04/06 shift booking and mail (to alexander.kastil@integrations.at); update guides in parallel; commit all and push when guides are done; give the status table on request.
 
 ## 1. Goal, in the owner's words
 
 - "the goal is a fresh cleaned / consolidated environment with a perfect demo guide that is currently missing"; the new demos "we will keep them as optional".
 - "we want to re-create the agents standard agents with CS-* prefix github agents with GH-* prefix", and "we want prefix also on tools so we easily find old artifacts and can delete them after success".
-- The owner asked to "present your reflected perfect demo story" before implementing, then for "a plan, a learn loop and a top handoff". Re-create was recommended over mapping the existing agents; the owner has not yet said "go" to it explicitly. Confirm in one line, then execute.
+- The owner asked to "present your reflected perfect demo story" before implementing, then for "a plan, a learn loop and a top handoff". Re-create was recommended over mapping the existing agents and the owner confirmed it on 2026-10-21 (blank in the portal, then YAML and Apply).
 
 ## 2. Settled decisions (do not re-ask)
 
