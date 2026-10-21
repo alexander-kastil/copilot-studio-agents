@@ -1,24 +1,16 @@
 # Automate Business Processes with Copilot Studio and Copilot Cowork
 
-Embark on a four-day, hands-on journey through low-code Agentic AI development with Copilot Studio, designed for Software Engineers, Solution Architects, and Power Platform Makers. You will progress from foundational concepts through advanced orchestration and enterprise governance, gaining practical skills to build agents that solve real business challenges.
+Embark on a four-day, hands-on journey through low-code Agentic AI development with Copilot Studio and Copilot Cowork, designed for Software Engineers, Solution Architects, and Power Platform Makers. You progress from foundational concepts through tools, orchestration, and ALM, and build agents that solve real business challenges.
 
-You start with the essentials: agents, copilots, prompt engineering, semantic indexing, Retrieval Augmented Generation (RAG), and the Model Context Protocol (MCP), then where to build an agent and how Copilot Credits pay for it. The same foundation module then tours the ready-to-use agents in Copilot: Researcher and Analyst, SharePoint Agents, and Agent Builder. The Copilot Chat basics are pre-class homework.
+You start with the essentials: what agents and copilots are, how agents work with knowledge, prompts, tools, and the Model Context Protocol (MCP), where to build an agent and how Copilot Credits pay for it, and the ready-to-use agents in Copilot: Researcher and Analyst, SharePoint Agents, and Agent Builder. The Copilot Chat basics are pre-class homework.
 
-You then learn to harness Copilot Cowork, the agentic experience built for everyday knowledge workers. By crafting custom SKILL.md skills, scheduling prompts, and extending capabilities with built-in skills and plugins, anyone on your team can automate recurring workflows without writing a single line of code, while staying in control through human-in-the-loop approvals at every step.
+Copilot Cowork, the agentic experience for everyday knowledge workers, follows. With built-in skills, custom SKILL.md skills, scheduled and event-driven prompts, and plugins, anyone on your team automates recurring workflows without writing code, while human-in-the-loop approvals keep every step under control.
 
-Copilot Studio Basics grounds you in creating and configuring agents, mastering knowledge systems including Bing Custom Search, and building rich interactions with topics, entities, variables, Power Fx, and Adaptive Cards.
+Copilot Studio Basics teaches you to create and configure Standard agents, ground them with knowledge, and build conversations with topics, entities, variables, Power Fx, and Adaptive Cards before you publish to Teams and Copilot. You then give agents tools: prompts with Code Interpreter, Dataverse, connectors, Agent Flows, REST APIs, MCP servers, and Computer Use for apps without an API. Advanced topics add autonomous agents with event triggers, deep reasoning, multi-agent routing, and Microsoft Foundry agents, with voice agents as an option.
 
-You then extend agents with Prompt Actions, the Prompt Assistant for faster prompt engineering, Code Interpreter, and Dataverse integration. Work IQ connects agents to real-time context from files, emails, and meetings, while Computer Use, Managed Agents, and Component Collections complete an enterprise-grade toolkit.
+GitHub Copilot agents come next, built side by side with the Standard agents of the earlier modules: the unified Build surface and its orchestrator, Agent Skills in the open SKILL.md format, tools, MCP, and the Workflows designer, grounding with Work IQ, Foundry IQ, and Fabric IQ, building apps, and testing agents with evaluations. You then publish and maintain what you build: environments and solutions, Microsoft channels, ALM, and source control.
 
-Advanced topics introduce autonomous agents, multi-agent orchestration, deep reasoning models, Agent Flows, voice support with post-call actions, and pro-code integration.
-
-A guided preview then walks the rebuilt Copilot Studio New Experience alongside the classic UI: the New experience toggle and coexistence, the unified Build surface with its Build, Preview, Evaluate, and Monitor tabs, and the enhanced orchestration runtime. You work with Agent Skills in the open SKILL.md format, import Claude Code and GitHub Copilot skills, and connect tools, MCP servers, and the new node-by-node Workflows designer. You ground agents with Work IQ, Foundry IQ, and Fabric IQ, and build apps from a description. A capstone lab builds a Sales Account Assistant end to end in the new experience.
-
-A dedicated evaluation module covers Agent Evaluations (GA), test sets, multi-turn conversation tests, activity maps, CSAT transcripts, and the Copilot Studio Kit, giving you structured insight into agent quality and areas for improvement.
-
-Finally, you design and implement real business processes with human-in-the-loop patterns, analytics, and Application Insights, then master publishing and maintenance: environments, ALM, deployment pipelines and source control.
-
-A forward look then hands whole processes to AI teammates: Autopilot, the persistent agent in the new Copilot, and agent accounts that give a Copilot Studio agent its own Entra ID, mailbox, and Teams presence, made proactive with email and schedule triggers and governed through shared memory rules, Frontier licensing, and Agent 365.
+An optional forward look hands whole processes to AI teammates: Autopilot, and agent accounts that give a Copilot Studio agent its own identity, mailbox, and Teams presence, made proactive with triggers and governed through shared memory and licensing.
 
 ## Duration
 

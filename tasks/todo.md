@@ -1,5 +1,12 @@
 # Todo
 
+## Standard-agent evaluation lab (2026-10-21)
+
+A tailored 3-day customer agenda runs evaluations on Standard agents (the customer dropped the GitHub Copilot agents block), but the only evaluation lab, `labs/06-cs-gh-copilot/07-evaluations/lab-01-evaluate-with-test-sets.md`, builds a GitHub Copilot agent and uses its Evaluate tab.
+
+- [ ] Write a 25-minute lab that evaluates the HR agent from the Basics labs on the Standard agent **Evaluation** page: a test set, a comparing grader (Compare meaning or Text similarity), a baseline run, one diagnosed fix, a second run; the topic readme `demos/06-cs-gh-copilot/07-evaluations/readme.md` already teaches both surfaces
+- [ ] Get the Standard agent test-set CSV template from the live product before authoring the companion CSV (see the evaluations lesson in `tasks/lessons.md`)
+
 ## Classic Copilot Studio teachings per topic (2026-10-21)
 
 Owner request: `demos/03-copilot-studio/01-basics`, `02-tools` and `03-advanced` get numbered topic folders shaped like `04-new-experience`, each with learning-prose `readme.md` and a demo guide; the classic experience stays taught because clients ask for it. Labs were moved into matching topic folders; no new labs in this pass.

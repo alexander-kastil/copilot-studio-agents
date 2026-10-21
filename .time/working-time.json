@@ -447,6 +447,123 @@
       "catalogue": {
         "action": "none"
       }
+    },
+    {
+      "date": "2026-10-21",
+      "from": "14:48",
+      "to": "15:32",
+      "sessionId": "f0331b48-42c8-4449-852d-b52114569716",
+      "branch": "v-3.0.0",
+      "commits": [],
+      "surfaces": [
+        "copilot-studio-agents",
+        "integrations.at"
+      ],
+      "files": [
+        "demos/readme.md",
+        "CLAUDE.md",
+        "D:/git-projects/integrations.at/src/integrations.at/content/classes/copilot-studio-cowork-page.md",
+        "D:/git-projects/integrations-marketplace/plugins/content/class-authoring-plugin/skills/create-class/scripts/pack-schedule.py",
+        "D:/git-projects/integrations-marketplace/plugins/content/class-authoring-plugin/skills/create-class/scripts/class-time-budget.py",
+        "D:/git-projects/integrations-marketplace/plugins/orchestration/subagent-delegation-plugin/hooks/register.ts"
+      ],
+      "mechanism": {
+        "takes": "a course repository of numbered modules, topic readmes, demo guides and lab guides, plus a fixed day count and day frame",
+        "does": "measures each topic from its prose, counts presented demos, times each lab from its steps, scales the labs to fit the fixed days and packs modules and labs into clock rows with breaks between topics",
+        "returns": "a day-by-day timed schedule table in teaching order with every lab as its own row and the end time of each day"
+      },
+      "portsAsIs": [
+        "schedule packing from measured course material",
+        "fixed day count enforced by one lab scaling factor"
+      ],
+      "perCustomer": [
+        "topic phrases and lab descriptions",
+        "the day frame and day count"
+      ],
+      "evidence": [
+        "packed table equals the hand-built 51-row schedule cell for cell",
+        "days=4 rows=50 lab_minutes=615 ends=16:30,16:45,16:35,16:05",
+        "subagent-delegation-plugin tests: 38 pass, 0 fail"
+      ],
+      "toolchain": {
+        "skills": [
+          "class-authoring-plugin:create-class",
+          "brand-voice-copilot",
+          "german-register",
+          "vermenschlichen",
+          "marketing-psychology",
+          "learn-loop-plugin:claude-learn",
+          "claude-learn-harvest",
+          "claude-learn-worktime",
+          "track-time"
+        ],
+        "mcpServers": [],
+        "agents": [
+          "docs-agent",
+          "fork"
+        ]
+      },
+      "industry": "technical training and enablement",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      }
+    },
+    {
+      "date": "2026-10-21",
+      "from": "15:08",
+      "to": "15:52",
+      "sessionId": "f92f74ea-241d-4577-88af-e148374064f1",
+      "branch": "v-3.0.0",
+      "commits": [],
+      "surfaces": [
+        "copilot-studio-agents"
+      ],
+      "files": [
+        "tasks/lessons.md",
+        "tasks/todo.md",
+        "D:/git-projects/integrations-marketplace/plugins/content/class-authoring-plugin/skills/create-class/scripts/agenda-clock.py",
+        "D:/git-projects/integrations-marketplace/plugins/content/class-authoring-plugin/skills/create-class/references/class-schedule.md"
+      ],
+      "mechanism": {
+        "takes": "a client's mail thread with their agreed training constraints, plus the current course readme with its module titles and timed schedule",
+        "does": "reads the thread through the mail connector when the primary work-signal service is out of quota, rebuilds a multi-day agenda from the course's own block and lab lengths under the agreed moves and exclusions, scales trimmed blocks as flagged estimates, and clocks every day against an agreed end",
+        "returns": "an apology and new proposal mail shown for review, with one time and session table per day and the day ends"
+      },
+      "portsAsIs": [
+        "agenda clocking from ordered rows with a day-end check",
+        "connector-safe HTML tables for a mail draft"
+      ],
+      "perCustomer": [
+        "the agreed day count, moved modules and exclusions",
+        "the course's module list and lab lengths"
+      ],
+      "evidence": [
+        "agenda-clock.py on the final agenda: days=3 blocks=26 teaching=1085 ends=16:35,16:35,16:25 over=0, every span equal to the hand-built tables",
+        "mail not sent, shown in the terminal as asked"
+      ],
+      "toolchain": {
+        "skills": [
+          "work-iq",
+          "claude-learn",
+          "create-class",
+          "claude-learn-harvest",
+          "claude-learn-worktime",
+          "track-time"
+        ],
+        "mcpServers": [
+          "work-iq",
+          "claude_ai_Microsoft_365"
+        ],
+        "agents": [
+          "fork"
+        ]
+      },
+      "industry": "corporate IT training",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      }
     }
   ]
 }
