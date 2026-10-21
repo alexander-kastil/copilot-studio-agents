@@ -1,4 +1,4 @@
-# Automate Business Processes using Copilot Cowork and Copilot Studio
+# Automate Business Processes with Copilot Studio and Copilot Cowork
 
 Embark on a four-day, hands-on journey through low-code Agentic AI development with Copilot Studio, designed for Software Engineers, Solution Architects, and Power Platform Makers. You will progress from foundational concepts through advanced orchestration and enterprise governance, gaining practical skills to build agents that solve real business challenges.
 

@@ -1,8 +1,8 @@
-# Automate Business Processes using Copilot Cowork and Copilot Studio
+# Automate Business Processes with Copilot Studio and Copilot Cowork
 
 Companion Material for Class Delivery by [Alexander Kastil](https://www.linkedin.com/in/alexander-kastil/)
 
-This repository contains the content for the **Automate Business Processes using Copilot Cowork and Copilot Studio** workshop, a four-day hands-on class on extending Microsoft 365 Copilot with low-code agents. You build agents with Copilot Cowork and Copilot Studio, then publish, maintain, and govern them for the enterprise. The material is organized into five modules:
+This repository contains the content for the **Automate Business Processes with Copilot Studio and Copilot Cowork** workshop, a four-day hands-on class on extending Microsoft 365 Copilot with low-code agents. You build agents with Copilot Cowork and Copilot Studio, then publish, maintain, and govern them for the enterprise. The material is organized into five modules:
 
 - [Introduction to Copilot Extensibility & Agents](demos/01-intro/readme.md)
 - [Microsoft 365 Copilot Cowork](demos/02-cowork/readme.md)

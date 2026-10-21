@@ -148,6 +148,150 @@
       "catalogue": {
         "action": "none"
       }
+    },
+    {
+      "date": "2026-10-21",
+      "from": "09:16",
+      "to": "10:20",
+      "sessionId": "31e12b4a-6e12-4566-91ff-0f7e150a6ec1",
+      "branch": "v-3.0.0",
+      "commits": [],
+      "surfaces": [
+        "m365-pilot"
+      ],
+      "files": [
+        "tasks/lessons.md"
+      ],
+      "mechanism": {
+        "takes": "a customer's mail thread about a training request (their own trimmed module list, the agreed day count and add-on sessions) plus the course's module readme and lab guides",
+        "does": "reads the whole correspondence from the mailbox, keeps the customer's module numbering and bullet wording as the closed set, maps each hands-on bullet to one existing lab after checking which labs depend on earlier ones, lays the modules and labs onto the course's day clock, and drafts the reply in the mailbox without sending it",
+        "returns": "a fixed per-day agenda with one table per day and one row per topic, an optional conference-news slot, and a threaded reply draft waiting in Drafts"
+      },
+      "portsAsIs": [
+        "the customer's own module list treated as the closed set of topics",
+        "hands-on bullets mapped to existing labs through their prerequisite chain",
+        "one table per day with one row per topic",
+        "a reply draft saved, never sent"
+      ],
+      "perCustomer": [
+        "the modules and topics the customer kept",
+        "the day count and add-on sessions they asked for"
+      ],
+      "evidence": [
+        "reply draft saved in Drafts, not sent",
+        "agenda tables accepted after two format corrections"
+      ],
+      "toolchain": {
+        "skills": [
+          "work-iq",
+          "create-class",
+          "learn-loop-plugin:claude-learn",
+          "claude-learn-harvest",
+          "claude-learn-worktime",
+          "track-time"
+        ],
+        "mcpServers": [
+          "work-iq",
+          "claude_ai_Microsoft_365"
+        ],
+        "agents": [
+          "fork"
+        ]
+      },
+      "industry": "technical training and enablement",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      }
+    },
+    {
+      "date": "2026-10-21",
+      "from": "10:29",
+      "to": "10:34",
+      "sessionId": "31e12b4a-6e12-4566-91ff-0f7e150a6ec1",
+      "branch": "v-3.0.0",
+      "commits": [],
+      "surfaces": [
+        "m365-pilot"
+      ],
+      "files": [
+        "tasks/lessons.md"
+      ],
+      "mechanism": {
+        "takes": "a reply draft saved through a mail connector that strips all HTML attributes, so its tables arrive borderless",
+        "does": "names the in-Outlook follow-up that restyles the draft's tables in place once the user's signature supplies the anchor it needs",
+        "returns": "a documented two-step path from an unstyled connector draft to a branded one"
+      },
+      "portsAsIs": [
+        "connector draft first, in-client table styling second"
+      ],
+      "perCustomer": [
+        "the brand palette applied to the tables"
+      ],
+      "evidence": [
+        "lessons entry for agenda reply drafts"
+      ],
+      "toolchain": {
+        "skills": [
+          "learn-loop-plugin:claude-learn",
+          "claude-learn-worktime",
+          "report-plugin:report",
+          "work-iq"
+        ],
+        "mcpServers": [],
+        "agents": [
+          "fork"
+        ]
+      },
+      "industry": "technical training and enablement",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      }
+    },
+    {
+      "date": "2026-10-21",
+      "from": "10:53",
+      "to": "10:58",
+      "sessionId": "31e12b4a-6e12-4566-91ff-0f7e150a6ec1",
+      "branch": "v-3.0.0",
+      "commits": [],
+      "surfaces": [
+        "learn-loop-plugin",
+        "report-plugin"
+      ],
+      "files": [
+        ".time/working-time.md",
+        ".time/working-time.json"
+      ],
+      "mechanism": {
+        "takes": "plugin skill edits made in the marketplace source after the installed version was already cached",
+        "does": "bumps each edited plugin's version and runs the plugin update so the installed cache matches the source, then verifies source and cache are content-identical",
+        "returns": "installed plugins that carry the session's skill fixes for every later session"
+      },
+      "portsAsIs": [
+        "edit, bump, update, diff source against cache"
+      ],
+      "perCustomer": [],
+      "evidence": [
+        "source and installed cache content-identical for both plugins"
+      ],
+      "toolchain": {
+        "skills": [
+          "learn-loop-plugin:claude-learn",
+          "claude-learn-worktime",
+          "learn-loop-harvest-plugin:claude-learn-harvest"
+        ],
+        "mcpServers": [],
+        "agents": [
+          "fork"
+        ]
+      },
+      "industry": "technical training and enablement",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      }
     }
   ]
 }
