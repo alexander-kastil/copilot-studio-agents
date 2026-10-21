@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Four Standard agent areas move into one components panel on the Build tab</title>
+  <desc id="d">On the left, four separate areas of a Standard agent: Topics area, Knowledge section, Actions section and plugins area. Each maps to one component in the single components panel on the Build tab: Topics area to Instructions, the always-in-context brief on every turn; Knowledge section to Knowledge, which grounds answers and cites where a fact came from; Actions section to Tools, real actions and services; plugins area to Skills, a reusable task recipe loaded on demand.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <text x="320" y="210" font-size="34" font-weight="700" fill="#57606a" text-anchor="middle">Standard agent</text>
+
+  <g fill="#f6f8fa" stroke="#8c959f" stroke-width="2">
+    <rect x="80" y="260" width="480" height="145" rx="16"/>
+    <rect x="80" y="430" width="480" height="145" rx="16"/>
+    <rect x="80" y="600" width="480" height="145" rx="16"/>
+    <rect x="80" y="770" width="480" height="145" rx="16"/>
+  </g>
+  <g font-size="36" font-weight="700" fill="#24292f" text-anchor="middle">
+    <text x="320" y="345">Topics area</text>
+    <text x="320" y="515">Knowledge section</text>
+    <text x="320" y="685">Actions section</text>
+    <text x="320" y="855">Plugins area</text>
+  </g>
+
+  <g stroke="#57606a" stroke-width="3" marker-end="url(#ah)">
+    <line x1="572" y1="332" x2="890" y2="332"/>
+    <line x1="572" y1="502" x2="890" y2="502"/>
+    <line x1="572" y1="672" x2="890" y2="672"/>
+    <line x1="572" y1="842" x2="890" y2="842"/>
+  </g>
+
+  <rect x="900" y="150" width="940" height="800" rx="24" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1370" y="210" font-size="34" font-weight="700" fill="#24292f" text-anchor="middle">Build tab: one components panel</text>
+
+  <g fill="#ffffff" stroke="#8c959f" stroke-width="2">
+    <rect x="940" y="260" width="860" height="145" rx="14"/>
+    <rect x="940" y="430" width="860" height="145" rx="14"/>
+    <rect x="940" y="600" width="860" height="145" rx="14"/>
+    <rect x="940" y="770" width="860" height="145" rx="14"/>
+  </g>
+  <g font-size="36" font-weight="700" fill="#24292f">
+    <text x="980" y="320">Instructions</text>
+    <text x="980" y="490">Knowledge</text>
+    <text x="980" y="660">Tools</text>
+    <text x="980" y="830">Skills</text>
+  </g>
+  <g font-size="28" fill="#57606a">
+    <text x="980" y="368">The always-in-context brief on every turn</text>
+    <text x="980" y="538">Grounds answers, cites where a fact came from</text>
+    <text x="980" y="708">Real actions and services</text>
+    <text x="980" y="878">Reusable task recipe, loaded on demand</text>
+  </g>
+</svg>

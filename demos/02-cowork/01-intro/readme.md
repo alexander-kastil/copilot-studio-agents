@@ -43,7 +43,7 @@ Before anyone can open Cowork, a tenant admin has to enable a few things. Cowork
 
 Route the Anthropic models decision through your compliance and legal review before a broad rollout, because the family is optional and excluded from the EU Data Boundary. Start with a small pilot group and strict spending limits, then expand once you have seen real consumption.
 
-![Each user's consumption stops at the per-user limit, while all usage adds up toward the tenant's monthly spending limit. Alert thresholds below that ceiling notify you before it is reached.](../../01-intro/pptx/images/05-03-spending-governance.svg)
+![Each user's consumption stops at the per-user limit, while all usage adds up toward the tenant's monthly spending limit. Alert thresholds below that ceiling notify you before it is reached.](../../01-intro/pptx/images/03-03-spending-governance.svg)
 
 ### Enablement Steps
 
@@ -87,6 +87,23 @@ If Cowork still does not appear, first check whether the user is in scope of a s
 ![The five steps of a Cowork interaction: describe your task, watch Cowork work, steer at any time with more messages, approve before sensitive actions such as sending an email or posting in Teams, and review the results.](../pptx/images/01-03-interaction-loop.svg)
 
 The approval model, risk indicators, and pause controls are covered in depth in [Human-in-the-Loop](../06-staying-in-control/readme.md).
+
+---
+
+## What Cowork Remembers
+
+Cowork's memory lasts for one conversation. Microsoft's application card for Cowork describes its memory as conversation-scoped: context carries across the steps and messages of one conversation, and approval choices last for that session, but nothing carries into the next conversation. Preferences that should apply every time belong in the custom instructions on the **Customize** page or in a [custom skill](../03-custom-skills/readme.md).
+
+Copilot Chat works differently. Copilot Memory keeps saved memories (anything you ask Copilot to remember), details inferred from your chat history, and your custom instructions. Rolling out through October 2026 (MC1492154), it also uses **work insights**: details learned from your emails, Teams chats, and meeting transcripts, so you type less context into each prompt. Learn documents Copilot Memory for Copilot Chat and still labels it preview.
+
+| You want to | Do this |
+|---|---|
+| See what Copilot knows about you | Ask Copilot *"What do you know about me?"* |
+| Drop one work insight | Ask Copilot to forget it |
+| Delete a saved memory | **Settings** > **Personalization** > **Saved memories** > **Manage saved memories** |
+| Stop using chat history and work insights | Turn off **Chat history & work insights** under **Settings** > **Personalization** |
+
+For admins, the switch is the **Enhanced personalization** control. It is on by default, and you turn it off for the tenant or for one group through the Microsoft Graph `enhancedPersonalizationSetting` resource. Memories sit in a hidden folder of the user's mailbox and are discoverable in eDiscovery, but Purview retention policies don't apply to them, memory actions write no audit log entries, and admins can't restrict what goes into memory. Route the work insights rollout through the same privacy review as any other processing of personal data, because it infers context from mail and meeting transcripts.
 
 ---
 
@@ -193,6 +210,9 @@ Put this interaction model to work end to end on the Aurora Outdoor scenario:
 - [Use Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/use-cowork)
 - [Cowork FAQ](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-faq)
 - [Choose a Model for Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-models)
+- [Cowork Application Card](https://learn.microsoft.com/en-us/microsoft-365/copilot/responsible-ai/copilot-cowork-application-card)
+- [Manage Copilot Personalization and Memory](https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-personalization-memory)
+- [Manage Copilot Memory in Microsoft Copilot](https://support.microsoft.com/topic/b3231eae-9e60-4b3c-ac58-81fddbe56279)
 - [How Access to Cowork Is Determined](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-access)
 - [Manage Cowork for Your Organization](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-admin-governance)
 - [Managing Usage-Based Billing (Copilot Credits)](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-credits)

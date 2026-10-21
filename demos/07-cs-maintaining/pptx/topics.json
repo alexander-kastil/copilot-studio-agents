@@ -1,0 +1,8 @@
+{
+  "topics": [
+    {"title": "Environments, Solutions & the Admin Center", "subtitle": "Environment types, solutions and Dataverse"},
+    {"title": "Publishing Agents & Microsoft Channels", "subtitle": "Publishing, authentication and Microsoft channels"},
+    {"title": "Application Lifecycle Management & Source Control", "subtitle": "Solutions, pipelines and Git"},
+    {"title": "Using Advanced Channels: WhatsApp, Web & Direct Line", "subtitle": "Optional: websites, Direct Line and WhatsApp"}
+  ]
+}

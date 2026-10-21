@@ -1,6 +1,6 @@
 ---
 slide: "02-01"
-topic: 02-agentic-ai
+topic: 02-how-agents-work
 title: "What makes an AI agentic"
 subtitle: "From answering a question to working toward a goal"
 layout: diagram
@@ -19,7 +19,7 @@ visual-prompt: >
   leads down to a green #e9f7ef box "Outcome reached". An amber outline steps through the four loop
   boxes in order.
 order: 6
-source: demos/01-intro/02-agentic-ai/readme.md
+source: demos/01-intro/02-how-agents-work/readme.md
 gamma_prompt: >
   Slide titled "What makes an AI agentic", subtitle "From answering a question to working toward a goal".
   Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram

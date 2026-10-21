@@ -48,6 +48,10 @@ Each uploaded file needs `name` and `description` frontmatter. If a skill with t
 
 To share a skill, open its detail page, select **Share**, and choose **Only you** or **Specific users in your organization**, then select **Apply**. After you edit a shared skill, select **Re-share** to send the latest version. Custom skills are not available in Cowork on mobile.
 
+Because a skill is a Markdown file in OneDrive, you can review it there with colleagues before you share it. OneDrive and SharePoint open Markdown files natively, custom skill files included, with rich-text editing on top of the `.md` file, anchored comments, live presence, and real-time coauthoring.
+
+Cowork is also no longer the only Copilot that keeps skills as Markdown. Copilot in OneDrive saves a process you repeat as a personal skill in a Markdown file (announced in October 2026), and Copilot in SharePoint adds site skills: `SKILL.md` files in the site's **Agent Assets** library that members with **Edit** permission create and members with **View** permission run. Learn does not say that Cowork loads these skills, so treat each product's skills as its own set that shares the Markdown approach.
+
 ---
 
 ## Anatomy of a SKILL.md
@@ -158,5 +162,7 @@ Both add new capabilities, but they come from different places and solve differe
 - [Use Cowork: Skills & Custom Skills](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/use-cowork)
 - [Customize Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-customize)
 - [How Cowork Evaluates Skills](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/use-cowork#how-cowork-evaluates-skills)
+- [Extend Copilot in SharePoint with Skills](https://learn.microsoft.com/en-us/sharepoint/copilot-in-sharepoint-skills)
+- [OneDrive: New Copilot Capabilities, Simpler Sharing, and Smarter Photos](https://techcommunity.microsoft.com/blog/onedriveblog/onedrive-just-got-a-major-upgrade-new-copilot-capabilities-simpler-sharing-and-s/4565995)
 - [Cowork Overview](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/)
 - [Cowork FAQ](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-faq)

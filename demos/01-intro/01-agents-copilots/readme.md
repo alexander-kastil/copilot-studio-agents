@@ -36,7 +36,7 @@ The step up from a copilot to an agent is autonomy: instead of answering one tur
 
 ![Copilot Chat answers one question at a time while you do the planning. Cowork takes the outcome you describe, breaks the goal into tasks, acts across Outlook, Teams, Word, Excel, and PowerPoint, and hands the result back for your review.](../../02-cowork/pptx/images/01-01-cowork-and-chat.svg)
 
-That shift, the three properties behind it, and the design patterns teams use to structure it are the subject of the [next topic on Agentic AI](../02-agentic-ai/readme.md). Here it is enough to place agents on the map above; the mechanics come next.
+That shift, the parts behind it, and the design patterns teams use to structure it are the subject of the [next topic, How Agents Work](../02-how-agents-work/readme.md). Here it is enough to place agents on the map above; the mechanics come next.
 
 ---
 
@@ -72,15 +72,14 @@ The dividing line is scope and autonomy. When a task repeats, spans steps, or ne
 
 ## Where to Go Next
 
-1. [Agentic AI & Design Patterns](../02-agentic-ai/readme.md): the goal-driven model and the patterns you will build with
-2. [How Agents Work: Knowledge, Prompting, Tools & MCP](../03-agent-anatomy/readme.md): the parts every agent is made of
-3. [Extensibility & Development Paths](../04-extensibility/readme.md): how to choose where to build
+1. [How Agents Work](../02-how-agents-work/readme.md): the agentic loop, the parts every agent is made of, and the patterns you will build with
+2. [Where to Build and What It Costs](../03-where-to-build/readme.md): how to choose where to build, and how it bills
 
 ---
 
 ## Links & Resources
 
 - [Microsoft 365 Copilot overview](https://learn.microsoft.com/microsoft-365/copilot/microsoft-365-copilot-overview)
-- [What are agents in Microsoft 365 Copilot](https://learn.microsoft.com/microsoft-365-copilot/extensibility/agents-overview)
-- [Microsoft 365 Copilot extensibility overview](https://learn.microsoft.com/microsoft-365-copilot/extensibility/)
+- [What are agents in Microsoft 365 Copilot](https://learn.microsoft.com/microsoft-365/copilot/extensibility/agents-overview)
+- [Microsoft 365 Copilot extensibility overview](https://learn.microsoft.com/microsoft-365/copilot/extensibility/)
 - [Microsoft Copilot Scenario Library](https://adoption.microsoft.com/en-us/scenario-library/)

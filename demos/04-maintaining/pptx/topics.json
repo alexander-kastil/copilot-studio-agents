@@ -1,8 +1,0 @@
-{
-  "topics": [
-    {"title": "Environments, Solutions & the Admin Center", "subtitle": "Environment types, solutions and Dataverse"},
-    {"title": "Publishing Agents & Advanced Channels", "subtitle": "Publishing, authentication and channels"},
-    {"title": "Application Lifecycle Management & Source Control", "subtitle": "Solutions, pipelines and Git"},
-    {"title": "Governance, Compliance & Preventing Agent Sprawl", "subtitle": "DLP, Purview, the agent registry and sprawl"}
-  ]
-}

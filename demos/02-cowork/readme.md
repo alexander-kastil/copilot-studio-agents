@@ -10,7 +10,7 @@ Cowork is Microsoft 365's agentic AI that does work on your behalf. You describe
 
 | # | Topic | What you learn |
 |---|-------|----------------|
-| 1 | [Getting Started with Cowork](./01-intro/readme.md) | What Cowork is, how it differs from Copilot Chat, where to access it, the interaction model, choosing a model and reasoning effort, and its core capabilities across communication, documents, calendar, research, and automation |
+| 1 | [Getting Started with Cowork](./01-intro/readme.md) | What Cowork is, how it differs from Copilot Chat, where to access it, the interaction model, what it remembers, choosing a model and reasoning effort, and its core capabilities across communication, documents, calendar, research, and automation |
 | 2 | [Understanding Skills: Built-in Skills & the Side Panel](./02-built-in-skills/readme.md) | The built-in skill catalog, how the side panel shows Cowork's live work, and where additional skills come from |
 | 3 | [Creating Custom Skills with SKILL.md](./03-custom-skills/readme.md) | Authoring your own skills in plain language: the `SKILL.md` anatomy, discovery, description tuning, and companion files |
 | 4 | [Scheduled Prompts & Event-Driven Tasks](./04-automation/readme.md) | Running a prompt or custom skill on a schedule or when an email or Teams message arrives, while high-risk actions still pause for approval |
@@ -19,7 +19,7 @@ Cowork is Microsoft 365's agentic AI that does work on your behalf. You describe
 
 ## Licensing at a Glance
 
-Cowork is metered by usage-based billing in Copilot Credits, not a per-user seat. A user can open Cowork once a spending policy that selects Cowork covers them, even with a one-credit limit. Anthropic models are optional, and Frontier is needed only for the App skill and GPT 5.5. Setup and pay-as-you-go configuration are covered in [Module 1: Pay as you go licensing](../01-intro/05-licensing-setup/readme.md#pay-as-you-go-licensing), and the tenant steps are in [Setting Up Cowork in Your Tenant](./01-intro/readme.md#setting-up-cowork-in-your-tenant).
+Cowork is metered by usage-based billing in Copilot Credits, not a per-user seat. A user can open Cowork once a spending policy that selects Cowork covers them, even with a one-credit limit. Anthropic models are optional, and Frontier is needed only for the App skill and GPT 5.5. Setup and pay-as-you-go configuration are covered in [Module 1: What It Costs](../01-intro/03-where-to-build/readme.md#what-it-costs-copilot-credits), and the tenant steps are in [Setting Up Cowork in Your Tenant](./01-intro/readme.md#setting-up-cowork-in-your-tenant).
 
 ![A pilot user with a Copilot license reaches Cowork through a spending policy under Copilot > Cost Management that selects Cowork; Anthropic models, Frontier, the discovery setting and Agents > All agents each have their own job.](./pptx/images/01-02-cowork-access.svg)
 

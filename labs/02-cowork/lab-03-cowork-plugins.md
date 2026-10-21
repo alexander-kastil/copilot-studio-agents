@@ -15,6 +15,7 @@ By the end of this lab you will:
 - Build a custom plugin package with multiple skills and an MCP connector
 - Automate packaging with `package.json` scripts
 - Deploy the plugin from the Microsoft 365 Admin Center
+- Import a Claude plugin with `wiqd`, publish it for admin approval, and export it back to the Claude format
 
 ## Exercise 1: Understand the plugin model in Copilot Cowork
 
@@ -484,6 +485,142 @@ Write a one-pager about Copilot Dev Camp lab: https://microsoft.github.io/copilo
 
 > **Important:** testing the custom skills of this plugin in Copilot Cowork consumes Copilot Credits.
 
+## Exercise 7: Write once, run in Claude and Copilot
+
+In this exercise you round-trip a plugin between the Claude and Copilot formats. You import a Claude plugin with the `wiqd` command-line tool, publish it for admin approval, use it in Cowork, and export it back to the Claude format. The companion folder [lab-03-cowork-plugins](./lab-03-cowork-plugins) holds the Claude plugin: a `.claude-plugin/plugin.json` manifest and the `foundry-research` skill from Exercise 3. The skill has no connector, so the round trip carries skills only.
+
+WIQD is a preview tool, and its `wiqd plugin` commands are alpha and may change. Run `wiqd --help` if a command differs from the one shown here. The expected results in this exercise come from a run in a course tenant on 2026-10-21 with WIQD 0.19.0.
+
+### Prerequisites for this exercise
+
+- PowerShell 7 (`pwsh`). The WIQD installer does not run in Windows PowerShell 5.1.
+- Node.js 24.15 or later. The installer adds it when it is missing.
+- The privacy, terms and website URLs that your organization publishes, used on the first import.
+- Administrator access to the Microsoft 365 admin center for the approval step, or a colleague who holds it.
+- A Copilot Credits spending policy with credits left, for the Cowork step. Cowork tasks consume Copilot Credits.
+
+### Step 1: Install WIQD and check the install
+
+Install WIQD from PowerShell 7:
+
+```powershell
+iex "& { $(irm 'https://aka.ms/wiqd/install.ps1') }"
+```
+
+In an interactive PowerShell 7 window, the installer asks `Your choice [default: a]` to accept the WIQD license. Press Enter to accept. In a non-interactive run, the installer stops with `EULA acceptance required but installer is running non-interactively`, so run it in an interactive window.
+
+Open a new terminal so that `wiqd` is on your PATH. Then check the version, the environment and the license:
+
+```powershell
+wiqd --version
+wiqd doctor
+wiqd eula status
+```
+
+Expected result: `wiqd --version` prints a version number, and `wiqd doctor` reports the state of the install, Node.js included. Resolve any error it flags before you continue. `wiqd eula status` lists `wiqd: EULA accepted`.
+
+### Step 2: Import the Claude plugin
+
+Import the companion folder. Replace `<source>` with the path to `labs/02-cowork/lab-03-cowork-plugins` in your clone of this repository. Replace the three URLs with your organization's website, privacy and terms pages:
+
+```powershell
+wiqd plugin import --path <source> --privacy-url <privacy-url> --terms-url <terms-url> --website-url <website-url>
+```
+
+The companion `plugin.json` has no `homepage` or `author` field, so `--website-url` is required. Without it, the import stops with `developer.websiteUrl could not be resolved`.
+
+Expected result: `✔ Plugin imported`, plus a new project folder named `dev-camp-foundry-research` in the folder where you ran the command. The import reports the name `Dev Camp Foundry Research` and the capability `agentSkills`. Open the project folder. The remaining steps run inside it.
+
+### Step 3: Validate and sign in
+
+Run the offline checks first:
+
+```powershell
+wiqd plugin validate
+```
+
+Then sign in. This command opens a browser sign-in, so run it yourself in your own terminal. Sign in with the account that holds the admin role for Step 6:
+
+```powershell
+wiqd auth login --interactive
+wiqd auth status
+```
+
+Expected result: the offline validation passes with a note that the plugin has no declarative agent to check. `wiqd auth status` shows `✔ Microsoft 365 (wiqd core): signed in` followed by your user principal name.
+
+### Step 4: Provision, package and deep-validate
+
+Provisioning must run before packaging, sharing and deep validation. Name the `dev` environment on each command, because the default environment is `local`:
+
+```powershell
+wiqd plugin provision --env dev
+wiqd plugin package --env dev
+wiqd plugin validate --mode deep --env dev
+```
+
+Expected result: provisioning takes about 25 seconds and prints `✔ Re-provisioned plugin to dev`, a title ID that starts with `T_`, and a link to open the plugin in Microsoft 365 Copilot Chat. The plugin already appears in **Agents** > **Tools** > **Registry** with type Plugin, status Available, publisher Unknown and source Catalog.
+
+Packaging prints `✔ Plugin packaged` and writes `appPackage\build\appPackage.dev.zip`, about 1.6 KB.
+
+Deep validation runs about 55 checks. It ends with `✔ Deep validation passed`, 0 errors and 1 warning: `Full description should not repeat the same lines in short description.` The warning does not block the package. Leave it, or reword the plugin's full description so it does not repeat the short one.
+
+### Step 5: Publish to the org catalog
+
+Submit the plugin to the development environment of your organization's catalog:
+
+```powershell
+wiqd plugin publish --env dev
+```
+
+Expected result: WIQD prints `Submitting plugin to org admin catalog (dev)...`. If the submission succeeds, tenant users cannot discover the plugin until an administrator approves it, so continue with Step 6.
+
+The publish step can be refused with `Publishing is not permitted for this account. Ask your tenant admin for app publishing access.` The course tenant refused it even for an administrator account, and WIQD does not say why. If that happens, use the upload path in Step 6 instead.
+
+### Step 6: Approve the request as an admin
+
+Use the path that matches the result of Step 5.
+
+If Step 5 submitted the plugin, an administrator opens the Microsoft 365 admin center, goes to **Agents** > **Tools** > **Requests (preview)**, and approves the plugin request there.
+
+Expected result: the request no longer shows as pending, and the plugin can be found by users in the tenant.
+
+If Step 5 was refused, upload the package from the admin center:
+
+1. Go to **Agents** > **Tools** > **Registry** and select **Upload** (its accessible name is **Upload a tool**).
+2. On the upload step, select **Choose file** and pick `appPackage\build\appPackage.dev.zip`. Expected result: the page shows **Upload complete** with the plugin's name and description.
+3. On the users step, set **Publish** to **Specific users and groups** and add one test user, so only that user sees the plugin. Set **Install** to **No users**, so nobody gets it installed by default.
+4. On the **Review & finish** step, select **Upload**. The upload takes about 30 seconds. Expected result: the registry count rises by one.
+
+### Step 7: Use the plugin in Cowork and Word
+
+Sign in to Cowork as the test user from Step 6. Select **Customize** in the left navigation. Under **Discover**, select **Dev Camp Foundry Research** in **Get started**, then select **Install**. If your tenant shows a **Plugins** button in place of **Customize**, select that button instead.
+
+Expected result: the detail page shows the skill `foundry-research` with its description, version 1.0.0, and the legal links **Privacy policy** and **Terms of service**. The publisher shows **Unknown**, because the companion manifest has no `author` field and WIQD has no name to show.
+
+Then run this prompt in a new task:
+
+```text
+Research Microsoft Foundry deployment options
+```
+
+This task consumes Copilot Credits. If the spending policy has no credits left, Cowork stops the task with `You've reached the monthly credit limit`, and the skill cannot activate.
+
+Expected result: the plugin's `foundry-research` skill shows in the **Sources & Skills** panel for the task and activates on the prompt.
+
+In Word, open the **Plugins** menu once the Plugins rollout reaches your tenant, and find the plugin there. Until then, use Cowork for this step.
+
+### Step 8: Export to the Claude format and inspect the result
+
+Export the project to the Claude format:
+
+```powershell
+wiqd plugin export --format claude-plugin
+```
+
+Expected result: `wiqd` writes an uncompressed directory at `export/claude-plugin` in the project folder, with `plugin.json` at its root, next to `color.png`, `outline.png` and `skills/foundry-research/SKILL.md`.
+
+Open `export/claude-plugin/plugin.json` and compare it with the companion `.claude-plugin/plugin.json`. The `name`, `version` and `description` stay the same. `wiqd` adds a `$schema`, an `author` and a `homepage`, plus an `extensions` block with Teams app fields. The `author` name is `Unknown`, the same gap you saw as the publisher in Step 7.
+
 ## Summary
 
-You packaged a Cowork plugin that bundles three skills and one MCP connector, automated its packaging, and deployed it through the Microsoft 365 Admin Center. With that, you completed the Copilot Cowork lab pathway.
+You packaged a Cowork plugin that bundles three skills and one MCP connector, automated its packaging, and deployed it through the Microsoft 365 Admin Center. In Exercise 7 you round-tripped a Claude plugin through WIQD: you imported it, published it for admin approval, used it in Cowork and Word, and exported it back to the Claude format. With that, you completed the Copilot Cowork lab pathway.

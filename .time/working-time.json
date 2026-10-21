@@ -292,6 +292,161 @@
       "catalogue": {
         "action": "none"
       }
+    },
+    {
+      "date": "2026-10-21",
+      "from": "11:42",
+      "to": "12:22",
+      "sessionId": "6bf9772d-f0cc-48f6-9027-8d3ffc8447ef",
+      "branch": "v-3.0.0",
+      "commits": [],
+      "surfaces": [
+        "copilot-studio-agents"
+      ],
+      "files": [
+        "demos/02-cowork/01-intro/readme.md",
+        "demos/03-copilot-studio/04-new-experience/06-iq-grounding/readme.md",
+        "demos/02-cowork/03-custom-skills/readme.md",
+        "demos/01-intro/06-chat-productivity/readme.md",
+        "demos/05-ai-teammates/02-autopilot-at-work/readme.md",
+        "tasks/todo.md"
+      ],
+      "mechanism": {
+        "takes": "vendor announcements about a fast-moving product suite: social posts, developer blog posts and product blog posts",
+        "does": "checks each claim against the vendor's official documentation, decides which course topic owns the feature, and writes it into that topic's learning prose with sources, deferring labs whose product surface is still in preview to a dated task",
+        "returns": "course topics carrying sourced sections and a comparison table, plus a follow-up task with its recheck conditions"
+      },
+      "portsAsIs": [
+        "announcement triage against official docs before it enters a curriculum",
+        "topic ownership check before filing product news"
+      ],
+      "perCustomer": [
+        "the course's module and topic structure",
+        "the product suite the course tracks"
+      ],
+      "evidence": [
+        "brand-voice check: 6 files, 0 em dashes, 0 paragraphs over the cap",
+        "docs-versus-blog conflict resolved to the docs value"
+      ],
+      "toolchain": {
+        "skills": [
+          "class-authoring-plugin:create-class",
+          "brand-voice-copilot",
+          "claude-in-chrome",
+          "learn-loop-plugin:claude-learn",
+          "learn-loop-worktime-plugin:claude-learn-worktime",
+          "learn-loop-worktime-plugin:track-time",
+          "content-research"
+        ],
+        "mcpServers": [
+          "microsoft-learn",
+          "claude-in-chrome"
+        ],
+        "agents": [
+          "subagent-delegation-plugin:fact-gatherer",
+          "fork"
+        ]
+      },
+      "industry": "technical training and enablement",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      }
+    },
+    {
+      "date": "2026-10-21",
+      "from": "12:22",
+      "to": "12:29",
+      "sessionId": "6bf9772d-f0cc-48f6-9027-8d3ffc8447ef",
+      "branch": "v-3.0.0",
+      "commits": [],
+      "surfaces": [
+        "copilot-studio-agents"
+      ],
+      "files": [
+        ".time/working-time.md",
+        ".time/working-time.json"
+      ],
+      "mechanism": {
+        "takes": "a request for timed status updates while a background learning review is still running",
+        "does": "schedules a five-minute status job that reads the review's transcript and deliverables against a recorded baseline, keeps the job out of the review's own cleanup, removes it from the main conversation once the review reports completion, then reruns the review so it captures only what changed since the first pass",
+        "returns": "a closed session with no status job left running and no lesson recorded twice"
+      },
+      "portsAsIs": [
+        "baseline-anchored status job on a background run",
+        "watcher removed by the coordinator, never by the run it watches"
+      ],
+      "perCustomer": [],
+      "evidence": [
+        "status job removed on the review's completion notice",
+        "second review pass found no lesson the first pass lacked"
+      ],
+      "toolchain": {
+        "skills": [
+          "report-plugin:report",
+          "learn-loop-plugin:claude-learn",
+          "claude-learn-worktime"
+        ],
+        "mcpServers": [],
+        "agents": [
+          "fork"
+        ]
+      },
+      "industry": "technical training and enablement",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      }
+    },
+    {
+      "date": "2026-10-21",
+      "from": "12:50",
+      "to": "12:55",
+      "sessionId": "6bf9772d-f0cc-48f6-9027-8d3ffc8447ef",
+      "branch": "v-3.0.0",
+      "commits": [],
+      "surfaces": [
+        "copilot-studio-agents",
+        "integrations-marketplace"
+      ],
+      "files": [
+        "tasks/lessons.md",
+        ".time/working-time.md",
+        ".time/working-time.json",
+        "plugins/learning/learn-loop-worktime-plugin/skills/claude-learn-worktime/scripts/append-sidecar.py",
+        "plugins/learning/learn-loop-worktime-plugin/skills/claude-learn-worktime/references/offering-harvest.md",
+        "plugins/learning/learn-loop-worktime-plugin/.claude-plugin/plugin.json"
+      ],
+      "mechanism": {
+        "takes": "a hand-maintained JSON log whose earlier records keep a compact layout, plus one new record to add",
+        "does": "splices the new record in as text before the closing bracket of the record list, keeps the file's line endings, and refuses to write unless the parsed result equals the old records plus the new one",
+        "returns": "an updated log whose change review shows only added lines"
+      },
+      "portsAsIs": [
+        "text splice append for a human-formatted JSON file",
+        "write refused unless parsed result equals old content plus addition"
+      ],
+      "perCustomer": [],
+      "evidence": [
+        "scratch copy appended with 15 added and 0 deleted lines",
+        "Windows line endings preserved on a scratch copy",
+        "sidecar checker reports 0 problems on the appended copy"
+      ],
+      "toolchain": {
+        "skills": [
+          "learn-loop-plugin:claude-learn",
+          "claude-learn-worktime"
+        ],
+        "mcpServers": [],
+        "agents": [
+          "fork"
+        ]
+      },
+      "industry": "technical training and enablement",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      }
     }
   ]
 }

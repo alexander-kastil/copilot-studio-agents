@@ -5,24 +5,16 @@
       "subtitle": "The vocabulary, the ecosystem map and where agents live"
     },
     {
-      "title": "Agentic AI & Design Patterns",
-      "subtitle": "The goal-driven model and the patterns teams build with"
+      "title": "How Agents Work",
+      "subtitle": "The agentic loop, instructions, knowledge, tools, RAG, MCP and the design patterns"
     },
     {
-      "title": "How Agents Work: Knowledge, Prompting, Tools & MCP",
-      "subtitle": "Instructions, knowledge, tools, RAG and MCP"
-    },
-    {
-      "title": "Extensibility & Development Paths",
-      "subtitle": "Choosing a build path and envisioning a scenario"
-    },
-    {
-      "title": "Licensing & Environment Setup",
-      "subtitle": "Full or pay-as-you-go licensing and the one-time setup"
+      "title": "Where to Build and What It Costs",
+      "subtitle": "The build paths and how Copilot Credits pay for them"
     },
     {
       "title": "Copilot Chat & Productivity Agents",
-      "subtitle": "Copilot Chat, Researcher, Analyst and SharePoint agents"
+      "subtitle": "Researcher, Analyst, SharePoint agents and Agent Builder"
     }
   ]
 }

@@ -35,15 +35,15 @@ gamma_prompt: >
 ## Content
 
 - **Concepts**: copilots, agents and the agentic design patterns
-- **From anatomy to setup**: how agents work, build paths, licensing and environment
+- **Where to build**: the build paths and what Copilot Credits cost
 - **Productivity surface**: Copilot Chat, Researcher, Analyst and SharePoint agents
 
 ## Speaker Notes
 
 This slide opens the course: before anyone touches Copilot Studio or Cowork, the module builds a clear model of agents and gets the tenant ready.
 
-Concepts: the first two topics fix the vocabulary (copilot, agent, assistant) and explain the goal-driven agent model with the patterns teams build with.
+Concepts: the first two topics fix the vocabulary (copilot, agent, assistant) and explain how agents work: the goal-driven loop, the three parts, RAG, MCP and the patterns teams build with.
 
-From anatomy to setup: the middle three topics cover the parts every agent is made of, how Microsoft lets you extend Copilot, and what to license and configure first.
+Where to build: the third topic places the build paths on one effort scale and shows how Copilot Credits pay for what agents do.
 
 Productivity surface: the last topic tours Copilot Chat and the ready-to-use agents, so everyone knows what Copilot already does before building anything.

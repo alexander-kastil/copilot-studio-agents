@@ -2,13 +2,16 @@
 
 Companion Material for Class Delivery by [Alexander Kastil](https://www.linkedin.com/in/alexander-kastil/)
 
-This repository contains the content for the **Automate Business Processes with Copilot Studio and Copilot Cowork** workshop, a four-day hands-on class on extending Microsoft 365 Copilot with low-code agents. You build agents with Copilot Cowork and Copilot Studio, then publish, maintain, and govern them for the enterprise. The material is organized into five modules:
+This repository contains the content for the **Automate Business Processes with Copilot Studio and Copilot Cowork** workshop, a four-day hands-on class on extending Microsoft 365 Copilot with low-code agents. You build agents with Copilot Cowork and Copilot Studio, then publish, maintain, and govern them for the enterprise. The material is organized into eight modules:
 
-- [Introduction to Copilot Extensibility & Agents](demos/01-intro/readme.md)
+- [Introduction to Copilot Cowork & Copilot Studio](demos/01-intro/readme.md)
 - [Microsoft 365 Copilot Cowork](demos/02-cowork/readme.md)
-- [Building & Testing Agents with Microsoft Copilot Studio](demos/03-copilot-studio/readme.md)
-- [Publishing, Maintaining & Governing Agents](demos/04-maintaining/readme.md)
-- [AI Teammates: Autopilot & Agent Accounts](demos/05-ai-teammates/readme.md)
+- [Copilot Studio Basics](demos/03-cs-basics/readme.md)
+- [Extending Copilot Studio Agents with Tools](demos/04-cs-tools/readme.md)
+- [Advanced Copilot Studio Agents](demos/05-cs-advanced/readme.md)
+- [GitHub Copilot Agents in Copilot Studio](demos/06-cs-gh-copilot/readme.md)
+- [Publishing & Maintaining Copilot Studio Agents](demos/07-cs-maintaining/readme.md)
+- [AI Teammates: Autopilot & Agent Accounts](demos/08-ai-teammates/readme.md)
 
 See the [full module and topic outline](demos/readme.md) for the day-by-day breakdown.
 

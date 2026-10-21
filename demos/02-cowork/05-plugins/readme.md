@@ -1,8 +1,8 @@
 # Extending Cowork with Plugins
 
-> **Generally available**: part of [Getting Started with Cowork](../01-intro/readme.md). Last checked against Microsoft Learn on 2026-10-17.
+> **Generally available**: part of [Getting Started with Cowork](../01-intro/readme.md). Last checked against Microsoft Learn on 2026-10-21.
 
-Built-in skills handle common office tasks and [custom skills](../03-custom-skills/readme.md) capture your own recipes, but both live inside Microsoft 365. Plugins reach *beyond* it. Plugins come from **Discover** on the **Customize** page (the Microsoft 365 plugin marketplace), from your admin, from a colleague, or from a package you upload. A plugin carries skills, connectors or both, and once installed, its skills appear alongside built-in skills and activate automatically based on context, exactly like the ones you already use.
+Built-in skills handle common office tasks and [custom skills](../03-custom-skills/readme.md) capture your own recipes, but both live inside Microsoft 365. Copilot plugins reach *beyond* it. Plugins come from **Discover** on the **Customize** page (the Microsoft 365 plugin marketplace), from your admin, from a colleague, or from a package you upload. A plugin carries skills, connectors or both, and once installed, its skills appear alongside built-in skills and activate automatically based on context, exactly like the ones you already use.
 
 ---
 
@@ -25,6 +25,34 @@ Cowork draws skills from five sources, and every one of them surfaces in the sam
 ![Five sources feed the Cowork side panel: built-in skills, custom skills from Customize or OneDrive, plugins from Discover, admin-deployed plugins, and skills that are shared or uploaded.](../pptx/images/05-02-where-plugins-fit.svg)
 
 Built-in skills handle the common office tasks. Custom skills handle *your* recurring workflows. Plugins reach into the systems and expertise your work depends on, and admin-deployed plugins let IT standardize that reach across the whole organization. Skills and plugins that colleagues share with you, or that you upload yourself, join the same panel.
+
+---
+
+## One Plugin, Every Copilot Surface
+
+This topic covers Copilot plugins, which you use in Cowork today. Microsoft's plugin registry lets developers publish a plugin once for admin review, so one package serves each Copilot experience. The registry is the shared place to discover, publish, manage and govern plugins across the surfaces below.
+
+A plugin bundles skills (reusable instructions for specialized work), connectors (approved access to services and data) and agents (customizations of Copilot for specific uses). It can also carry the metadata and configuration that connect it to MCP servers. The package does not contain those services: an MCP server runs separately, and the plugin holds only its connection information.
+
+| Surface | Registry status |
+| --- | --- |
+| Home (Chat and Cowork), Code, Autopilot, Word, Excel, PowerPoint, SharePoint | Covered |
+| Copilot Studio, GitHub Copilot, Microsoft Foundry | Announced for later |
+
+The Plugins page replaces and expands the Agents page. Message center item MC1484008 (2026-09-30) replaces the **Agents**, **Agents & Skills** and **Customize** buttons with one **Plugins** button as the rollout reaches your tenant. The registry rolls out from late September to late October 2026, and its UI changes follow from late October to late November 2026. Until the change arrives in your tenant, Cowork still shows **Customize**, and the Customize steps in this topic match your screen.
+
+Admins govern plugins from **Agents** in the Microsoft 365 admin center. **Agents** > **Settings** > **Agent and plugin access** selects the publisher categories users can install from: Microsoft, your organization and certified external publishers. Users select **Request access** on a plugin, and admins approve or reject the request under **Agents** > **Tools** > **Requests (preview)**.
+
+Anthropic's Claude plugins follow the same idea, and the table compares the two.
+
+| | Anthropic | Microsoft |
+| --- | --- | --- |
+| What gets installed | Plugin: skills, agents, commands, hooks, MCP servers | Plugin: skills, declarative agents, connectors, MCP servers |
+| Where it is listed | Marketplaces (public or org-private) | Plugin registry (Microsoft, partner, tenant) |
+| Who controls it | Org admin settings | Agent 365: publisher filters, user scopes, access requests, tool toggles |
+| Format | Claude plugin, `SKILL.md` | M365 app package, the same `SKILL.md`, imports and exports the Claude format |
+
+Cowork converts a Claude plugin package when you upload it, and `wiqd` imports and exports that format, as the [plugin round-trip exercise](../../../labs/02-cowork/lab-03-cowork-plugins.md#exercise-7-write-once-run-in-claude-and-copilot) shows.
 
 ---
 
@@ -51,12 +79,12 @@ The **Share** dialog then offers **Only you** or **Specific users in your organi
 
 For code-first authoring, the `wiqd` command-line tool (preview) scaffolds, validates, packages and shares plugins:
 
-```bash
+```powershell
 wiqd plugin create --name <name>
-wiqd plugin add skill
+wiqd plugin add skill --name "<name>"
 wiqd plugin validate
 wiqd plugin package
-wiqd plugin share --scope users
+wiqd plugin share --scope users --email <address>
 ```
 
 Public store listings are submitted through Partner Center.
@@ -93,3 +121,11 @@ Beyond the official Microsoft 365 plugins, the community publishes ready-to-inst
 - [Build Plugins for Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-plugin-development)
 - [Manage Plugins for Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-manage-plugins)
 - [Available Plugins](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-available-plugins)
+- [Introducing the plugin registry (Tech Community, 2026-09-30)](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/introducing-the-plugin-registry---one-place-to-discover-and-govern-plugins-for-m/4559682)
+- [The new Microsoft Copilot: Home, Code and Autopilot (Microsoft Blog, 2026-09-25)](https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/)
+- [What is a Microsoft 365 Copilot plugin?](https://learn.microsoft.com/microsoft-365/copilot/extensibility/plugins-overview)
+- [Manage plugins, skills and MCP servers](https://learn.microsoft.com/microsoft-365/admin/manage/manage-plugins-skills-mcp-servers)
+- [Govern plugins](https://learn.microsoft.com/microsoft-365/copilot/extensibility/govern-plugins)
+- [Quickstart: build a plugin](https://learn.microsoft.com/microsoft-365/copilot/extensibility/quickstart-plugin)
+- [WIQD: build a plugin](https://microsoft.github.io/wiqd/getting-started/build-a-plugin/)
+- [WIQD: installation](https://microsoft.github.io/wiqd/getting-started/installation/)
