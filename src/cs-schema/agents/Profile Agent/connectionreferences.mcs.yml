@@ -1,3 +1,0 @@
-﻿connectionReferences:
-  - connectionReferenceLogicalName: iits_ProfileAgent.shared_azureagentservice.506339739fde4997bc295fdfaee3b65c
-    connectorId: /providers/Microsoft.PowerApps/apis/shared_azureagentservice

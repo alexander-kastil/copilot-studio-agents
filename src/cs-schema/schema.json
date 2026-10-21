@@ -1,0 +1,2069 @@
+{
+  "environment": {
+    "name": "Integrations e. U. (default)",
+    "id": "Default-d92b247e-90e0-4469-a129-6a32866c0d0a",
+    "portal": "https://copilotstudio.microsoft.com/environments/Default-d92b247e-90e0-4469-a129-6a32866c0d0a"
+  },
+  "generated": "2026-10-21",
+  "clonedWith": "Copilot Studio VS Code extension 1.9.17 (Clone agent, Clone workflow)",
+  "notCloned": [
+    "Copilot in Power Apps",
+    "Adaptive Card Gallery"
+  ],
+  "sortedOut": [
+    {
+      "name": "Food Stock Agent",
+      "reason": "Incomplete duplicate of Food Inventory REST: the same two operations on a twin food inventory custom connector, one-line instructions, never published."
+    },
+    {
+      "name": "Onboarding Agent",
+      "reason": "Incomplete duplicate of Employee Onboarding Assistant: same HR Documents site and purpose; its only topic sends messages and its prompt writes poems."
+    },
+    {
+      "name": "Profile Agent",
+      "reason": "Incomplete duplicate of Compliance Agent: the same social-profiler Foundry tool with empty instructions and description."
+    }
+  ],
+  "harnesses": {
+    "standard": "Classic UI. Environment-wide Tools page (Prompt, Agent flow, Computer use, Model Context Protocol, Custom connector, REST API); topics, entities and prompts.",
+    "githubCopilot": "New UI. No environment-wide Tools page: tools are added per agent under Build > components panel > Tools > Add a tool (Featured, MCP, Connectors, Workflows). No prompt tool, no topics."
+  },
+  "locations": {
+    "instructions": {
+      "disk": {
+        "standard": "agents/<agent>/agent.mcs.yml (instructions)",
+        "githubCopilot": "agents/<agent>/settings.mcs.yml (instructions)"
+      },
+      "ui": {
+        "standard": "Classic UI (Home > ... > Open classic experience): agent > Overview > Instructions",
+        "githubCopilot": "New UI: agent > Build > Instructions"
+      },
+      "scope": "agent"
+    },
+    "settings": {
+      "disk": {
+        "standard": "agents/<agent>/settings.mcs.yml",
+        "githubCopilot": "agents/<agent>/settings.mcs.yml, agents/<agent>/settings/"
+      },
+      "ui": {
+        "standard": "Classic UI (Home > ... > Open classic experience): agent > Settings",
+        "githubCopilot": "New UI: agent > ... (designer toolbar) > Settings"
+      },
+      "scope": "agent"
+    },
+    "knowledge": {
+      "disk": {
+        "standard": "agents/<agent>/knowledge/*.mcs.yml (KnowledgeSourceConfiguration), uploaded files in knowledge/files/",
+        "githubCopilot": "agents/<agent>/capabilities/knowledge/*.mcs.yml (KnowledgeSourceConfiguration)"
+      },
+      "ui": {
+        "standard": "Classic UI (Home > ... > Open classic experience): agent > Knowledge > Add knowledge",
+        "githubCopilot": "New UI: agent > Build > components panel > Knowledge > Add knowledge"
+      },
+      "scope": "agent; the SharePoint site, website, file or Dataverse table stays where it is"
+    },
+    "topic": {
+      "disk": {
+        "standard": "agents/<agent>/topics/*.mcs.yml (AdaptiveDialog)",
+        "githubCopilot": null
+      },
+      "ui": {
+        "standard": "Classic UI (Home > ... > Open classic experience): agent > Topics",
+        "githubCopilot": null
+      },
+      "scope": "agent",
+      "newHarness": "No topics: the Build tab is natural-language first. Move the logic into instructions, a skill, or a workflow added as a tool."
+    },
+    "entity": {
+      "disk": {
+        "standard": "agents/<agent>/entities/*.mcs.yml (ClosedListEntity)",
+        "githubCopilot": null
+      },
+      "ui": {
+        "standard": "Classic UI (Home > ... > Open classic experience): agent > Settings > Entities",
+        "githubCopilot": null
+      },
+      "scope": "agent",
+      "newHarness": "No entities: they only feed Question nodes in topics."
+    },
+    "tool.connector": {
+      "disk": {
+        "standard": "agents/<agent>/actions/*.mcs.yml (TaskDialog, action.kind InvokeConnectorTaskAction)",
+        "githubCopilot": "agents/<agent>/capabilities/tools/*.mcs.yml (ConnectorTool)"
+      },
+      "ui": {
+        "standard": "Classic UI (Home > ... > Open classic experience): agent > Tools > Add a tool > Connector",
+        "githubCopilot": "New UI: agent > Build > components panel > Tools > Add a tool > Connectors"
+      },
+      "scope": "agent association; the connector and its connection reference are environment level",
+      "newHarness": "Connector tool: pick the same connector from the Connectors tab of Add a tool."
+    },
+    "tool.customConnector": {
+      "disk": {
+        "standard": "agents/<agent>/actions/*.mcs.yml (InvokeConnectorTaskAction) plus the definition in agents/<agent>/connectors/<connector>/",
+        "githubCopilot": "agents/<agent>/capabilities/tools/*.mcs.yml (ConnectorTool) plus agents/<agent>/connectors/<connector>/"
+      },
+      "ui": {
+        "standard": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Custom connector or REST API, then agent > Tools > Add a tool",
+        "githubCopilot": "New UI: agent > Build > components panel > Tools > Add a tool > Connectors"
+      },
+      "scope": "agent association; the custom connector is environment level",
+      "newHarness": "Connector tool on the same custom connector; build new ones on the classic Tools page or in Power Apps > Custom connectors."
+    },
+    "tool.mcp": {
+      "disk": {
+        "standard": "agents/<agent>/actions/*.mcs.yml or agents/<agent>/agents/topic.<name>.mcs.yml (TaskDialog, InvokeExternalAgentTaskAction with ModelContextProtocolMetadata), server definition in agents/<agent>/connectors/<connector>/",
+        "githubCopilot": "agents/<agent>/capabilities/tools/*.mcs.yml (McpTool)"
+      },
+      "ui": {
+        "standard": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Model Context Protocol, or agent > Tools > Add a tool > Model Context Protocol",
+        "githubCopilot": "New UI: agent > Build > components panel > Tools > Add a tool > Model Context Protocol (MCP) tab to pick an existing server, or Add a tool > Add > Model Context Protocol (MCP) to register a new one"
+      },
+      "scope": "agent association; the MCP server is an environment-level connector",
+      "newHarness": "MCP tool: pick the same server from the MCP tab of Add a tool."
+    },
+    "tool.prompt": {
+      "disk": {
+        "standard": "agents/<agent>/actions/*.mcs.yml (TaskDialog, InvokeAIBuilderModelTaskAction aIModelId), prompt text in agents/<agent>/prompts/<name>-<aIModelId>/prompt.json",
+        "githubCopilot": null
+      },
+      "ui": {
+        "standard": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Prompt, or agent > Tools > Add a tool > Prompt",
+        "githubCopilot": null
+      },
+      "scope": "environment (AI Builder prompt), usable by standard agents and their topics only",
+      "newHarness": "No prompt tool. Reusable instructions become a skill; one AI call inside a process becomes a prompt node in a workflow added as a workflow tool; a separate specialist becomes a connected agent."
+    },
+    "tool.connectedAgent": {
+      "disk": {
+        "standard": "agents/<agent>/agents/<name>.mcs.yml (TaskDialog, InvokeConnectedAgentTaskAction botSchemaName)",
+        "githubCopilot": null
+      },
+      "ui": {
+        "standard": "Classic UI (Home > ... > Open classic experience): agent > Agents > Add an agent > Copilot Studio agent",
+        "githubCopilot": "New UI: agent > Build > Connected agents"
+      },
+      "scope": "agent association; the connected agent is its own environment-level agent",
+      "newHarness": "Connected agent."
+    },
+    "tool.foundryAgent": {
+      "disk": {
+        "standard": "agents/<agent>/actions/*.mcs.yml (TaskDialog, InvokeExternalAgentTaskAction with ActivityProtocolMetadata over shared_azureagentservice)",
+        "githubCopilot": "agents/<agent>/capabilities/tools/*.mcs.yml (ConnectorTool on shared_azureagentservice)"
+      },
+      "ui": {
+        "standard": "Classic UI (Home > ... > Open classic experience): agent > Agents > Add an agent > Microsoft Foundry",
+        "githubCopilot": "New UI: agent > Build > components panel > Tools > Add a tool > Connectors (Azure AI Agent Service)"
+      },
+      "scope": "agent association; the agent itself lives in a Microsoft Foundry project",
+      "newHarness": "Connector tool on the Azure AI Agent Service connector, or a connected agent."
+    },
+    "tool.workflow": {
+      "disk": {
+        "standard": "called from a topic (InvokeFlowAction flowId); definition in agents/<agent>/workflows/<name>-<id>/ and workflows/<name>/",
+        "githubCopilot": "agents/<agent>/capabilities/tools/*.mcs.yml (WorkflowTool workflowId); definition in agents/<agent>/workflows/<name>-<id>/ and workflows/<name>/"
+      },
+      "ui": {
+        "standard": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Agent flow, or a topic > Call an action; listed on the Workflows page",
+        "githubCopilot": "New UI: agent > Build > components panel > Tools > Add a tool > Workflows tab to pick an existing workflow, or Add a tool > Add > Workflow to create one; listed on the Workflows page"
+      },
+      "scope": "environment; any agent can add it from the Workflows page",
+      "newHarness": "Workflow tool."
+    },
+    "childAgent": {
+      "disk": {
+        "standard": "agents/<agent>/agents/<name>/agent.mcs.yml (AgentDialog) plus its knowledge/",
+        "githubCopilot": null
+      },
+      "ui": {
+        "standard": "Classic UI (Home > ... > Open classic experience): agent > Agents > Add an agent > New child agent",
+        "githubCopilot": null
+      },
+      "scope": "agent (lives inside the parent)",
+      "newHarness": "A skill, or a connected agent when it needs its own knowledge."
+    },
+    "trigger": {
+      "disk": {
+        "standard": "agents/<agent>/trigger/*.mcs.yml (ExternalTriggerConfiguration, WorkflowExternalTrigger flowId) plus the trigger flow in agents/<agent>/workflows/",
+        "githubCopilot": null
+      },
+      "ui": {
+        "standard": "Classic UI (Home > ... > Open classic experience): agent > Overview > Triggers > Add trigger",
+        "githubCopilot": "New UI: agent > Triggers"
+      },
+      "scope": "agent; the trigger flow is an environment-level cloud flow",
+      "newHarness": "Trigger (preview)."
+    },
+    "connectionReference": {
+      "disk": {
+        "standard": "agents/<agent>/connectionreferences.mcs.yml",
+        "githubCopilot": "agents/<agent>/infrastructure/connections/*.sync.yaml"
+      },
+      "ui": {
+        "standard": "Classic UI (Home > ... > Open classic experience): agent > Settings > Connection settings; Solutions > Connection references",
+        "githubCopilot": "Solutions > Connection references"
+      },
+      "scope": "environment (solution component)"
+    },
+    "workflow": {
+      "disk": {
+        "standalone": "workflows/<name>/workflows/<name>-<id>/workflow.json plus metadata.yml; connections in workflows/<name>/infrastructure/connections/"
+      },
+      "ui": {
+        "both": "Copilot Studio > Workflows page"
+      },
+      "scope": "environment"
+    }
+  },
+  "sources": [
+    "https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/faqs-copilot-harness",
+    "https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/add-tools-custom-agent",
+    "https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/tools-available",
+    "https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/tools-manage",
+    "https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/tools-add-workflow",
+    "https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/skills-overview",
+    "https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/switch-experiences",
+    "https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/knowledge-add-existing-copilot",
+    "https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/authoring-add-event-trigger",
+    "https://learn.microsoft.com/microsoft-copilot-studio/library-add-actions",
+    "https://learn.microsoft.com/microsoft-copilot-studio/authoring-trigger-event",
+    "https://learn.microsoft.com/microsoft-copilot-studio/advanced-entities-slot-filling",
+    "https://learn.microsoft.com/microsoft-copilot-studio/whats-new"
+  ],
+  "standardTools": [
+    {
+      "agent": "Business Travel Planner",
+      "name": "Health Advisor",
+      "location": "tool.connectedAgent",
+      "file": "agents/Business Travel Planner/agents/HealthAdvisor.mcs.yml",
+      "ui": "Classic UI (Home > ... > Open classic experience): agent > Agents > Add an agent > Copilot Studio agent",
+      "scope": "agent association; the connected agent is its own environment-level agent",
+      "newHarness": "Connected agent."
+    },
+    {
+      "agent": "Business Travel Planner",
+      "name": "Transportation Agent",
+      "location": "tool.connectedAgent",
+      "file": "agents/Business Travel Planner/agents/TransportationAgent.mcs.yml",
+      "ui": "Classic UI (Home > ... > Open classic experience): agent > Agents > Add an agent > Copilot Studio agent",
+      "scope": "agent association; the connected agent is its own environment-level agent",
+      "newHarness": "Connected agent."
+    },
+    {
+      "agent": "Business Travel Planner",
+      "name": "Travel Expense Refund",
+      "location": "tool.connectedAgent",
+      "file": "agents/Business Travel Planner/agents/TravelExpenseRefund.mcs.yml",
+      "ui": "Classic UI (Home > ... > Open classic experience): agent > Agents > Add an agent > Copilot Studio agent",
+      "scope": "agent association; the connected agent is its own environment-level agent",
+      "newHarness": "Connected agent."
+    },
+    {
+      "agent": "Claim-Reporter",
+      "name": "Report Claim > InvokeAIBuilderModelAction",
+      "location": "tool.prompt",
+      "file": "agents/Claim-Reporter/topics/ReportClaim.mcs.yml",
+      "ui": "Classic UI (Home > ... > Open classic experience): agent > Topics > Report Claim (node inside the topic)",
+      "scope": "environment (AI Builder prompt), usable by standard agents and their topics only",
+      "newHarness": "No prompt tool. Reusable instructions become a skill; one AI call inside a process becomes a prompt node in a workflow added as a workflow tool; a separate specialist becomes a connected agent."
+    },
+    {
+      "agent": "Compliance Agent",
+      "name": "Social Profiler",
+      "location": "tool.foundryAgent",
+      "file": "agents/Compliance Agent/actions/SocialProfiler.mcs.yml",
+      "ui": "Classic UI (Home > ... > Open classic experience): agent > Agents > Add an agent > Microsoft Foundry",
+      "scope": "agent association; the agent itself lives in a Microsoft Foundry project",
+      "newHarness": "Connector tool on the Azure AI Agent Service connector, or a connected agent."
+    },
+    {
+      "agent": "Employee Onboarding Assistant",
+      "name": "Employee Welcome",
+      "location": "tool.prompt",
+      "file": "agents/Employee Onboarding Assistant/actions/EmployeeWelcome.mcs.yml",
+      "ui": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Prompt, or agent > Tools > Add a tool > Prompt",
+      "scope": "environment (AI Builder prompt), usable by standard agents and their topics only",
+      "newHarness": "No prompt tool. Reusable instructions become a skill; one AI call inside a process becomes a prompt node in a workflow added as a workflow tool; a separate specialist becomes a connected agent."
+    },
+    {
+      "agent": "Food Buddy",
+      "name": "Food Inventory v5 - Food Inventory v5",
+      "location": "tool.customConnector",
+      "file": "agents/Food Buddy/actions/FoodInventoryv5-FoodInventoryv5.mcs.yml",
+      "ui": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Custom connector or REST API, then agent > Tools > Add a tool",
+      "scope": "agent association; the custom connector is environment level",
+      "newHarness": "Connector tool on the same custom connector; build new ones on the classic Tools page or in Power Apps > Custom connectors."
+    },
+    {
+      "agent": "Food Buddy",
+      "name": "Food MCP",
+      "location": "tool.mcp",
+      "file": "agents/Food Buddy/agents/topic.FoodMCP.mcs.yml",
+      "ui": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Model Context Protocol, or agent > Tools > Add a tool > Model Context Protocol",
+      "scope": "agent association; the MCP server is an environment-level connector",
+      "newHarness": "MCP tool: pick the same server from the MCP tab of Add a tool."
+    },
+    {
+      "agent": "Food Inventory REST",
+      "name": "Copilot-Food-Catalog - Add food",
+      "location": "tool.customConnector",
+      "file": "agents/Food Inventory REST/actions/Copilot-Food-Catalog-Addfood.mcs.yml",
+      "ui": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Custom connector or REST API, then agent > Tools > Add a tool",
+      "scope": "agent association; the custom connector is environment level",
+      "newHarness": "Connector tool on the same custom connector; build new ones on the classic Tools page or in Power Apps > Custom connectors."
+    },
+    {
+      "agent": "Food Inventory REST",
+      "name": "Copilot-Food-Catalog - Gets all food",
+      "location": "tool.customConnector",
+      "file": "agents/Food Inventory REST/actions/Copilot-Food-Catalog-Getsallfood.mcs.yml",
+      "ui": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Custom connector or REST API, then agent > Tools > Add a tool",
+      "scope": "agent association; the custom connector is environment level",
+      "newHarness": "Connector tool on the same custom connector; build new ones on the classic Tools page or in Power Apps > Custom connectors."
+    },
+    {
+      "agent": "Food Stock Buddy",
+      "name": "Calculate food to order",
+      "location": "tool.prompt",
+      "file": "agents/Food Stock Buddy/actions/Calculatefoodtoorder.mcs.yml",
+      "ui": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Prompt, or agent > Tools > Add a tool > Prompt",
+      "scope": "environment (AI Builder prompt), usable by standard agents and their topics only",
+      "newHarness": "No prompt tool. Reusable instructions become a skill; one AI call inside a process becomes a prompt node in a workflow added as a workflow tool; a separate specialist becomes a connected agent."
+    },
+    {
+      "agent": "Food Stock Buddy",
+      "name": "Food-Catalog-Api - Gets all food",
+      "location": "tool.customConnector",
+      "file": "agents/Food Stock Buddy/actions/Food-Catalog-Api-Getsallfood.mcs.yml",
+      "ui": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Custom connector or REST API, then agent > Tools > Add a tool",
+      "scope": "agent association; the custom connector is environment level",
+      "newHarness": "Connector tool on the same custom connector; build new ones on the classic Tools page or in Power Apps > Custom connectors."
+    },
+    {
+      "agent": "Food Stock Buddy",
+      "name": "Calculate order quantity > InvokeConnectorAction",
+      "location": "tool.connector",
+      "file": "agents/Food Stock Buddy/topics/Calculateorderquantity.mcs.yml",
+      "ui": "Classic UI (Home > ... > Open classic experience): agent > Topics > Calculate order quantity (node inside the topic)",
+      "scope": "agent association; the connector and its connection reference are environment level",
+      "newHarness": "Connector tool: pick the same connector from the Connectors tab of Add a tool."
+    },
+    {
+      "agent": "Food Stock Buddy",
+      "name": "Calculate order quantity > InvokeAIBuilderModelAction",
+      "location": "tool.prompt",
+      "file": "agents/Food Stock Buddy/topics/Calculateorderquantity.mcs.yml",
+      "ui": "Classic UI (Home > ... > Open classic experience): agent > Topics > Calculate order quantity (node inside the topic)",
+      "scope": "environment (AI Builder prompt), usable by standard agents and their topics only",
+      "newHarness": "No prompt tool. Reusable instructions become a skill; one AI call inside a process becomes a prompt node in a workflow added as a workflow tool; a separate specialist becomes a connected agent."
+    },
+    {
+      "agent": "Health Advisor",
+      "name": "Check Symptoms > InvokeFlowAction",
+      "location": "tool.workflow",
+      "file": "agents/Health Advisor/topics/CheckSymptoms.mcs.yml",
+      "ui": "Classic UI (Home > ... > Open classic experience): agent > Topics > Check Symptoms (node inside the topic)",
+      "scope": "environment; any agent can add it from the Workflows page",
+      "newHarness": "Workflow tool."
+    },
+    {
+      "agent": "Health Advisor",
+      "name": "Resolve E-Mail Address > InvokeConnectorAction",
+      "location": "tool.connector",
+      "file": "agents/Health Advisor/topics/ResolveE-Mail.mcs.yml",
+      "ui": "Classic UI (Home > ... > Open classic experience): agent > Topics > Resolve E-Mail Address (node inside the topic)",
+      "scope": "agent association; the connector and its connection reference are environment level",
+      "newHarness": "Connector tool: pick the same connector from the Connectors tab of Add a tool."
+    },
+    {
+      "agent": "Health Advisor",
+      "name": "Post to teams > InvokeFlowAction",
+      "location": "tool.workflow",
+      "file": "agents/Health Advisor/topics/SaveInformation.mcs.yml",
+      "ui": "Classic UI (Home > ... > Open classic experience): agent > Topics > Post to teams (node inside the topic)",
+      "scope": "environment; any agent can add it from the Workflows page",
+      "newHarness": "Workflow tool."
+    },
+    {
+      "agent": "HR Buddy",
+      "name": "HC-MCP - HR MCP Server",
+      "location": "tool.mcp",
+      "file": "agents/HR Buddy/actions/HC-MCP-HRMCPServer.mcs.yml",
+      "ui": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Model Context Protocol, or agent > Tools > Add a tool > Model Context Protocol",
+      "scope": "agent association; the MCP server is an environment-level connector",
+      "newHarness": "MCP tool: pick the same server from the MCP tab of Add a tool."
+    },
+    {
+      "agent": "Restaurant HR Manager",
+      "name": "Restaurant HR MCP",
+      "location": "tool.mcp",
+      "file": "agents/Restaurant HR Manager/agents/topic.RestaurantHRMCP.mcs.yml",
+      "ui": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Model Context Protocol, or agent > Tools > Add a tool > Model Context Protocol",
+      "scope": "agent association; the MCP server is an environment-level connector",
+      "newHarness": "MCP tool: pick the same server from the MCP tab of Add a tool."
+    },
+    {
+      "agent": "Returns Agent",
+      "name": "Work IQ Mail MCP - Work IQ Mail (Preview)",
+      "location": "tool.mcp",
+      "file": "agents/Returns Agent/actions/WorkIQMailMCP-WorkIQMailPreview.mcs.yml",
+      "ui": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Model Context Protocol, or agent > Tools > Add a tool > Model Context Protocol",
+      "scope": "agent association; the MCP server is an environment-level connector",
+      "newHarness": "MCP tool: pick the same server from the MCP tab of Add a tool."
+    },
+    {
+      "agent": "Travel Agent",
+      "name": "Microsoft Teams - Post message in a chat or channel",
+      "location": "tool.connector",
+      "file": "agents/Travel Agent/actions/MicrosoftTeams-Postmessageinachatorchannel.mcs.yml",
+      "ui": "Classic UI (Home > ... > Open classic experience): agent > Tools > Add a tool > Connector",
+      "scope": "agent association; the connector and its connection reference are environment level",
+      "newHarness": "Connector tool: pick the same connector from the Connectors tab of Add a tool."
+    },
+    {
+      "agent": "Travel Agent",
+      "name": "Post conversation > InvokeFlowAction",
+      "location": "tool.workflow",
+      "file": "agents/Travel Agent/topics/Postconversation.mcs.yml",
+      "ui": "Classic UI (Home > ... > Open classic experience): agent > Topics > Post conversation (node inside the topic)",
+      "scope": "environment; any agent can add it from the Workflows page",
+      "newHarness": "Workflow tool."
+    },
+    {
+      "agent": "Travel Expense Refund",
+      "name": "Work IQ SharePoint MCP - Work IQ SharePoint (Preview)",
+      "location": "tool.mcp",
+      "file": "agents/Travel Expense Refund/actions/WorkIQSharePointMCP-WorkIQSharePointPreview.mcs.yml",
+      "ui": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Model Context Protocol, or agent > Tools > Add a tool > Model Context Protocol",
+      "scope": "agent association; the MCP server is an environment-level connector",
+      "newHarness": "MCP tool: pick the same server from the MCP tab of Add a tool."
+    },
+    {
+      "agent": "Travel Expense Refund",
+      "name": "Submit Refund Request > InvokeFlowAction",
+      "location": "tool.workflow",
+      "file": "agents/Travel Expense Refund/topics/SubmitRefundRequest.mcs.yml",
+      "ui": "Classic UI (Home > ... > Open classic experience): agent > Topics > Submit Refund Request (node inside the topic)",
+      "scope": "environment; any agent can add it from the Workflows page",
+      "newHarness": "Workflow tool."
+    }
+  ],
+  "agents": [
+    {
+      "name": "Business Travel Planner",
+      "folder": "agents/Business Travel Planner",
+      "harness": "standard",
+      "portalStatus": "Published",
+      "lastModified": "2026-05-06",
+      "agentId": "ee031db5-724c-f011-877a-6045bd9415bc",
+      "schemaName": "integrat_travelAdvisor",
+      "extensionAttached": true,
+      "description": "An agent that demonstrates a simple multi scenario using connected agents",
+      "whatItDoes": "Front door for business travel questions. It routes sightseeing and work-life questions to its child agent Work life balance Buddy, transport to Transportation Agent, a health check before a trip to Health Advisor and expense refunds to Travel Expense Refund, and answers event questions from the Dataverse Event table.",
+      "maturity": "mature",
+      "gaps": [],
+      "model": "GPT5Chat",
+      "instructionLines": 8,
+      "tools": [
+        {
+          "name": "Health Advisor",
+          "file": "agents/Business Travel Planner/agents/HealthAdvisor.mcs.yml",
+          "yamlKind": "TaskDialog/InvokeConnectedAgentTaskAction",
+          "location": "tool.connectedAgent",
+          "botSchemaName": "integrat_symptomChecker",
+          "ui": "Classic UI (Home > ... > Open classic experience): agent > Agents > Add an agent > Copilot Studio agent",
+          "scope": "agent association; the connected agent is its own environment-level agent",
+          "newHarness": "Connected agent.",
+          "connectedAgentFolder": "Health Advisor"
+        },
+        {
+          "name": "Transportation Agent",
+          "file": "agents/Business Travel Planner/agents/TransportationAgent.mcs.yml",
+          "yamlKind": "TaskDialog/InvokeConnectedAgentTaskAction",
+          "location": "tool.connectedAgent",
+          "botSchemaName": "iits_transportationAgent",
+          "ui": "Classic UI (Home > ... > Open classic experience): agent > Agents > Add an agent > Copilot Studio agent",
+          "scope": "agent association; the connected agent is its own environment-level agent",
+          "newHarness": "Connected agent.",
+          "connectedAgentFolder": "Transportation Agent"
+        },
+        {
+          "name": "Travel Expense Refund",
+          "file": "agents/Business Travel Planner/agents/TravelExpenseRefund.mcs.yml",
+          "yamlKind": "TaskDialog/InvokeConnectedAgentTaskAction",
+          "location": "tool.connectedAgent",
+          "botSchemaName": "cr915_expensepilot",
+          "ui": "Classic UI (Home > ... > Open classic experience): agent > Agents > Add an agent > Copilot Studio agent",
+          "scope": "agent association; the connected agent is its own environment-level agent",
+          "newHarness": "Connected agent.",
+          "connectedAgentFolder": "Travel Expense Refund"
+        }
+      ],
+      "topics": [],
+      "knowledge": [
+        {
+          "name": "Event",
+          "file": "agents/Business Travel Planner/knowledge/integrat_travelAdvisor.topic.Event_0mwb_mkipbXiic3julIj0.mcs.yml",
+          "sourceKind": "DataverseStructuredSearchSource",
+          "target": null,
+          "location": "knowledge"
+        }
+      ],
+      "entities": [],
+      "prompts": [],
+      "customConnectors": [],
+      "workflows": [],
+      "triggers": [],
+      "childAgents": [
+        {
+          "name": "Work life balance Buddy",
+          "folder": "agents/Business Travel Planner/agents/Work life balance Buddy",
+          "knowledge": [
+            "No Pain - No Gain Europe’s Premier Employee Gym for Employees",
+            "Sightseeing"
+          ],
+          "location": "childAgent"
+        }
+      ],
+      "connectionReferences": []
+    },
+    {
+      "name": "Claim-Reporter",
+      "folder": "agents/Claim-Reporter",
+      "harness": "standard",
+      "portalStatus": "Draft",
+      "lastModified": "2026-08-15",
+      "agentId": "0f567c3f-7f95-f111-8075-7c1e528616d5",
+      "schemaName": "iits_ClaimReporter",
+      "extensionAttached": true,
+      "description": null,
+      "whatItDoes": "Reads an uploaded invoice with the Extract Data from Invoice prompt and returns vendor, date, line items and total as JSON. The Report Claim topic ends after the extraction, so nothing is confirmed or saved.",
+      "maturity": "partial",
+      "gaps": [
+        "empty instructions and description",
+        "topic stops after extraction"
+      ],
+      "model": "GPT55Chat",
+      "instructionLines": 0,
+      "tools": [],
+      "topics": [
+        {
+          "name": "Report Claim",
+          "file": "agents/Claim-Reporter/topics/ReportClaim.mcs.yml",
+          "trigger": "OnRecognizedIntent",
+          "calls": [
+            {
+              "kind": "InvokeAIBuilderModelAction",
+              "aIModelId": "fffe230c-fb92-480c-ad3f-0fc0cd4898e7"
+            }
+          ],
+          "redirects": [],
+          "location": "topic"
+        }
+      ],
+      "knowledge": [],
+      "entities": [],
+      "prompts": [
+        {
+          "name": "Extract Data from Invoice",
+          "aIModelId": "fffe230c-fb92-480c-ad3f-0fc0cd4898e7",
+          "folder": "agents/Claim-Reporter/prompts/ExtractDatafromInvoice-fffe230c-fb92-480c-ad3f-0fc0cd4898e7",
+          "location": "tool.prompt",
+          "calledFrom": [
+            "topic Report Claim"
+          ]
+        }
+      ],
+      "customConnectors": [],
+      "workflows": [],
+      "triggers": [],
+      "childAgents": [],
+      "connectionReferences": []
+    },
+    {
+      "name": "Compliance Agent",
+      "folder": "agents/Compliance Agent",
+      "harness": "standard",
+      "portalStatus": "Draft",
+      "lastModified": "2026-05-15",
+      "agentId": "b1958505-4949-f111-bec7-6045bd9d83bd",
+      "schemaName": "iits_complianceAgent",
+      "extensionAttached": true,
+      "description": "Performs background checks on individuals by collecting name, email, and company details, then prepares the data for integration with a social research agent.",
+      "whatItDoes": "Runs a background check on a person. Its instructions collect and confirm the person's details, then hand off to the social-profiler agent in Microsoft Foundry over the Azure AI Agent Service connection. It runs on the Sonnet46 model.",
+      "maturity": "mature",
+      "gaps": [],
+      "model": "Sonnet46",
+      "instructionLines": 39,
+      "tools": [
+        {
+          "name": "Social Profiler",
+          "file": "agents/Compliance Agent/actions/SocialProfiler.mcs.yml",
+          "yamlKind": "TaskDialog/InvokeExternalAgentTaskAction",
+          "location": "tool.foundryAgent",
+          "connector": "shared_azureagentservice",
+          "operationId": "SendActivity",
+          "foundryAgentId": "social-profiler",
+          "ui": "Classic UI (Home > ... > Open classic experience): agent > Agents > Add an agent > Microsoft Foundry",
+          "scope": "agent association; the agent itself lives in a Microsoft Foundry project",
+          "newHarness": "Connector tool on the Azure AI Agent Service connector, or a connected agent."
+        }
+      ],
+      "topics": [],
+      "knowledge": [],
+      "entities": [],
+      "prompts": [],
+      "customConnectors": [],
+      "workflows": [],
+      "triggers": [],
+      "childAgents": [],
+      "connectionReferences": [
+        {
+          "logicalName": "iits_complianceAgent.shared_azureagentservice.506339739fde4997bc295fdfaee3b65c",
+          "connector": "shared_azureagentservice"
+        }
+      ]
+    },
+    {
+      "name": "Employee Agent",
+      "folder": "agents/Employee Agent",
+      "harness": "githubCopilot",
+      "portalStatus": "Draft",
+      "lastModified": "2026-07-22",
+      "agentId": "519a99e2-214c-4287-a02d-7a5db857f0aa",
+      "schemaName": "iits_employeeagent_i-gL4u",
+      "extensionAttached": true,
+      "description": null,
+      "whatItDoes": "GitHub Copilot agent with empty instructions and one SharePoint Get items tool. No site or list is set in the clone, so it has no defined job yet.",
+      "maturity": "stub",
+      "gaps": [
+        "empty instructions",
+        "no site or list on the tool"
+      ],
+      "model": "GPT5Chat",
+      "instructionLines": 0,
+      "tools": [
+        {
+          "name": "Get items",
+          "file": "agents/Employee Agent/capabilities/tools/Getitems_g3h.mcs.yml",
+          "yamlKind": "ConnectorTool",
+          "location": "tool.connector",
+          "connector": "shared_sharepointonline",
+          "operationId": "GetItems",
+          "ui": "New UI: agent > Build > components panel > Tools > Add a tool > Connectors",
+          "scope": "agent association; the connector and its connection reference are environment level"
+        }
+      ],
+      "topics": [],
+      "knowledge": [],
+      "entities": [],
+      "prompts": [],
+      "customConnectors": [],
+      "workflows": [],
+      "triggers": [],
+      "childAgents": [],
+      "connectionReferences": [
+        {
+          "logicalName": "iits_employeeagent_i-gL4u.cr.shared_sharepointonline",
+          "connector": "shared_sharepointonline"
+        }
+      ]
+    },
+    {
+      "name": "Employee Onboarding Assistant",
+      "folder": "agents/Employee Onboarding Assistant",
+      "harness": "standard",
+      "portalStatus": "Published",
+      "lastModified": "2026-08-11",
+      "agentId": "f9e18ce0-c494-f111-8075-7c1e528616d5",
+      "schemaName": "iits_employeeOnboardingAssistant",
+      "extensionAttached": true,
+      "description": "Helps new employees complete onboarding by providing guidance and resources from the HR SharePoint site.",
+      "whatItDoes": "Answers new employees' onboarding questions from the HR Documents SharePoint site, adds local tips from the Sightseeing site, and writes a personal welcome with the Employee Welcome prompt. Published to Teams and Microsoft 365 Copilot.",
+      "maturity": "mature",
+      "gaps": [
+        "[link] placeholder in the instructions"
+      ],
+      "model": "GPT55Chat",
+      "instructionLines": 37,
+      "tools": [
+        {
+          "name": "Employee Welcome",
+          "file": "agents/Employee Onboarding Assistant/actions/EmployeeWelcome.mcs.yml",
+          "yamlKind": "TaskDialog/InvokeAIBuilderModelTaskAction",
+          "location": "tool.prompt",
+          "aIModelId": "455d8c9a-28cc-49d4-bffe-1fb969d55196",
+          "ui": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Prompt, or agent > Tools > Add a tool > Prompt",
+          "scope": "environment (AI Builder prompt), usable by standard agents and their topics only",
+          "newHarness": "No prompt tool. Reusable instructions become a skill; one AI call inside a process becomes a prompt node in a workflow added as a workflow tool; a separate specialist becomes a connected agent."
+        }
+      ],
+      "topics": [],
+      "knowledge": [
+        {
+          "name": "HR Documents",
+          "file": "agents/Employee Onboarding Assistant/knowledge/iits_employeeOnboardingAssistant.topic.HRDocuments_5DbqXenFSqXbaoOQUKVgz.mcs.yml",
+          "sourceKind": "SharePointSearchSource",
+          "target": "https://integrationsonline.sharepoint.com/sites/copilot-demo/HRDocuments",
+          "location": "knowledge"
+        },
+        {
+          "name": "Sightseeing",
+          "file": "agents/Employee Onboarding Assistant/knowledge/iits_employeeOnboardingAssistant.topic.Sightseeing_r7O8Wi4fGmSRP9v6f8wpB.mcs.yml",
+          "sourceKind": "SharePointSearchSource",
+          "target": "https://integrationsonline.sharepoint.com/sites/copilot-demo/Sightseeing",
+          "location": "knowledge"
+        }
+      ],
+      "entities": [],
+      "prompts": [
+        {
+          "name": "Employee Welcome",
+          "aIModelId": "455d8c9a-28cc-49d4-bffe-1fb969d55196",
+          "folder": "agents/Employee Onboarding Assistant/prompts/EmployeeWelcome-455d8c9a-28cc-49d4-bffe-1fb969d55196",
+          "location": "tool.prompt",
+          "calledFrom": [
+            "tool Employee Welcome"
+          ]
+        }
+      ],
+      "customConnectors": [],
+      "workflows": [],
+      "triggers": [],
+      "childAgents": [],
+      "connectionReferences": []
+    },
+    {
+      "name": "Food Body",
+      "folder": "agents/Food Body",
+      "harness": "githubCopilot",
+      "portalStatus": "Draft",
+      "lastModified": "2026-08-12",
+      "agentId": "9c9f13d6-2f1d-48cd-a51a-c88d3f1cab0a",
+      "schemaName": "iits_foodbody_D2IGed",
+      "extensionAttached": true,
+      "description": null,
+      "whatItDoes": "GitHub Copilot experiment about food: the Food MCP tool, a hello-world echo workflow, an echo-agent run on the Azure AI Agent Service, and the Sightseeing SharePoint site labelled all about food.",
+      "maturity": "stub",
+      "gaps": [
+        "template leftovers (hello-world, echo-agent)",
+        "knowledge source does not match its description",
+        "typos in instructions"
+      ],
+      "model": "GPT5Chat",
+      "instructionLines": 1,
+      "tools": [
+        {
+          "name": "Create Run",
+          "file": "agents/Food Body/capabilities/tools/CreateRun_bDa.mcs.yml",
+          "yamlKind": "ConnectorTool",
+          "location": "tool.foundryAgent",
+          "connector": "shared_azureagentservice",
+          "operationId": "CreateRun",
+          "ui": "New UI: agent > Build > components panel > Tools > Add a tool > Connectors (Azure AI Agent Service)",
+          "scope": "agent association; the agent itself lives in a Microsoft Foundry project"
+        },
+        {
+          "name": "Food MCP — Food MCP",
+          "file": "agents/Food Body/capabilities/tools/FoodMCP-FoodMCP_z5e.mcs.yml",
+          "yamlKind": "McpTool",
+          "location": "tool.mcp",
+          "connector": "shared_iits-5ffood-20mcp-5f0af75e9cbdc7cbac",
+          "operationId": "InvokeServer",
+          "ui": "New UI: agent > Build > components panel > Tools > Add a tool > Model Context Protocol (MCP) tab to pick an existing server, or Add a tool > Add > Model Context Protocol (MCP) to register a new one",
+          "scope": "agent association; the MCP server is an environment-level connector"
+        },
+        {
+          "name": "hello-world",
+          "file": "agents/Food Body/capabilities/tools/hello-world_5vr.mcs.yml",
+          "yamlKind": "WorkflowTool",
+          "location": "tool.workflow",
+          "workflowId": "a8b4b290-0b20-fd6b-3c85-36dd5c86304c",
+          "ui": "New UI: agent > Build > components panel > Tools > Add a tool > Workflows tab to pick an existing workflow, or Add a tool > Add > Workflow to create one; listed on the Workflows page",
+          "scope": "environment; any agent can add it from the Workflows page"
+        }
+      ],
+      "topics": [],
+      "knowledge": [
+        {
+          "name": "Sightseeing",
+          "file": "agents/Food Body/capabilities/knowledge/iits_foodbody_D2IGed.Sightseeing_7382kLzvn28X6RRZFjfsp.mcs.yml",
+          "sourceKind": "SharePointKnowledgeSource",
+          "target": "https://integrationsonline.sharepoint.com/sites/copilot-demo/Sightseeing",
+          "location": "knowledge"
+        }
+      ],
+      "entities": [],
+      "prompts": [],
+      "customConnectors": [
+        {
+          "name": "Food MCP",
+          "folder": "agents/Food Body/connectors/iits_5Ffood-20mcp-b53d68b9-c2a2-4bd3-8c9e-a7e37c4a4254",
+          "kind": "mcpServer",
+          "connectorInternalId": "shared_iits-5Ffood-20mcp-5F0af75e9cbdc7cbac",
+          "host": "food-catalog-api.azurewebsites.net",
+          "operations": [
+            "InvokeServer"
+          ],
+          "location": "tool.mcp"
+        }
+      ],
+      "workflows": [
+        {
+          "name": "hello-world",
+          "workflowId": "a8b4b290-0b20-fd6b-3c85-36dd5c86304c",
+          "folder": "agents/Food Body/workflows/hello-world-a8b4b290-0b20-fd6b-3c85-36dd5c86304c",
+          "trigger": {
+            "manual": {
+              "type": "Request",
+              "kind": "Skills"
+            }
+          },
+          "connectors": [],
+          "location": "tool.workflow"
+        }
+      ],
+      "triggers": [],
+      "childAgents": [],
+      "connectionReferences": [
+        {
+          "logicalName": "iits_foodbody_D2IGed.cr.shared_azureagentservice",
+          "connector": "shared_azureagentservice"
+        },
+        {
+          "logicalName": "iits_foodbody_D2IGed.cr.shared_iits-5ffood-2.e68149809e6649cdb3134aff0bb12c4c",
+          "connector": "shared_iits-5ffood-20mcp-5f0af75e9cbdc7cbac"
+        }
+      ]
+    },
+    {
+      "name": "Food Buddy",
+      "folder": "agents/Food Buddy",
+      "harness": "standard",
+      "portalStatus": "Draft",
+      "lastModified": "2026-09-03",
+      "agentId": "f5d1a459-2096-f111-8075-7c1e528616d5",
+      "schemaName": "iits_FoodBuddy",
+      "extensionAttached": true,
+      "description": null,
+      "whatItDoes": "Helps users pick food from the inventory. It lists food items through the Food Inventory v5 custom connector and asks the Food MCP server.",
+      "maturity": "partial",
+      "gaps": [
+        "no description",
+        "one-line instructions",
+        "1 of 7 connector operations wired"
+      ],
+      "model": "GPT55Chat",
+      "instructionLines": 1,
+      "tools": [
+        {
+          "name": "Food Inventory v5 - Food Inventory v5",
+          "file": "agents/Food Buddy/actions/FoodInventoryv5-FoodInventoryv5.mcs.yml",
+          "yamlKind": "TaskDialog/InvokeConnectorTaskAction",
+          "location": "tool.customConnector",
+          "connector": "shared_iits-5ffood-20inventory-20v5-5f0af75e9cbdc7cbac",
+          "operationId": "ListFoodItems",
+          "ui": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Custom connector or REST API, then agent > Tools > Add a tool",
+          "scope": "agent association; the custom connector is environment level",
+          "newHarness": "Connector tool on the same custom connector; build new ones on the classic Tools page or in Power Apps > Custom connectors."
+        },
+        {
+          "name": "Food MCP",
+          "file": "agents/Food Buddy/agents/topic.FoodMCP.mcs.yml",
+          "yamlKind": "TaskDialog/InvokeExternalAgentTaskAction",
+          "location": "tool.mcp",
+          "connector": "shared_iits-5ffood-20mcp-5f0af75e9cbdc7cbac",
+          "operationId": "InvokeServer",
+          "ui": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Model Context Protocol, or agent > Tools > Add a tool > Model Context Protocol",
+          "scope": "agent association; the MCP server is an environment-level connector",
+          "newHarness": "MCP tool: pick the same server from the MCP tab of Add a tool."
+        }
+      ],
+      "topics": [],
+      "knowledge": [],
+      "entities": [],
+      "prompts": [],
+      "customConnectors": [
+        {
+          "name": "Food Inventory v5",
+          "folder": "agents/Food Buddy/connectors/iits_5Ffood-20inventory-20v5-4f03aad7-62a3-4cde-9854-160fc86e2bba",
+          "kind": "customConnector",
+          "connectorInternalId": "shared_iits-5Ffood-20inventory-20v5-5F0af75e9cbdc7cbac",
+          "host": "food-catalog-api.azurewebsites.net",
+          "operations": [
+            "ListFoodItems",
+            "CreateFoodItem",
+            "UpdateFoodItem",
+            "SearchFoodItemsByName",
+            "GetFoodItemById",
+            "DeleteFoodItem",
+            "UpdateFoodItemStock"
+          ],
+          "location": "tool.customConnector"
+        },
+        {
+          "name": "Food MCP",
+          "folder": "agents/Food Buddy/connectors/iits_5Ffood-20mcp-b53d68b9-c2a2-4bd3-8c9e-a7e37c4a4254",
+          "kind": "mcpServer",
+          "connectorInternalId": "shared_iits-5Ffood-20mcp-5F0af75e9cbdc7cbac",
+          "host": "food-catalog-api.azurewebsites.net",
+          "operations": [
+            "InvokeServer"
+          ],
+          "location": "tool.mcp"
+        }
+      ],
+      "workflows": [],
+      "triggers": [],
+      "childAgents": [],
+      "connectionReferences": [
+        {
+          "logicalName": "iits_FoodBuddy.shared_iits-5ffood-20inventory-20v5-5f0af75e9cbdc7cbac.2329ba2fae504808ac11a168054d8986",
+          "connector": "shared_iits-5ffood-20inventory-20v5-5f0af75e9cbdc7cbac"
+        },
+        {
+          "logicalName": "iits_FoodBuddy.shared_iits-5ffood-20mcp-5f0af75e9cbdc7cbac.e68149809e6649cdb3134aff0bb12c4c",
+          "connector": "shared_iits-5ffood-20mcp-5f0af75e9cbdc7cbac"
+        }
+      ]
+    },
+    {
+      "name": "Food Inventory REST",
+      "folder": "agents/Food Inventory REST",
+      "harness": "standard",
+      "portalStatus": "Published",
+      "lastModified": "2026-08-01",
+      "agentId": "59618854-74b3-f011-bbd2-7c1e52278fc9",
+      "schemaName": "iits_footInventory",
+      "extensionAttached": true,
+      "description": "Manages Food inventory / stock using REST",
+      "whatItDoes": "Maintains the food stock over REST: adds a food item and lists all food through the Copilot-Food-Catalog custom connector.",
+      "maturity": "partial",
+      "gaps": [
+        "empty instructions",
+        "2 of 7 connector operations wired"
+      ],
+      "model": "GPT41",
+      "instructionLines": 0,
+      "tools": [
+        {
+          "name": "Copilot-Food-Catalog - Add food",
+          "file": "agents/Food Inventory REST/actions/Copilot-Food-Catalog-Addfood.mcs.yml",
+          "yamlKind": "TaskDialog/InvokeConnectorTaskAction",
+          "location": "tool.customConnector",
+          "connector": "shared_iits-5fcopilot-2dfood-2dcatalog-5f0af75e9cbdc7cbac",
+          "operationId": "AddFood",
+          "ui": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Custom connector or REST API, then agent > Tools > Add a tool",
+          "scope": "agent association; the custom connector is environment level",
+          "newHarness": "Connector tool on the same custom connector; build new ones on the classic Tools page or in Power Apps > Custom connectors."
+        },
+        {
+          "name": "Copilot-Food-Catalog - Gets all food",
+          "file": "agents/Food Inventory REST/actions/Copilot-Food-Catalog-Getsallfood.mcs.yml",
+          "yamlKind": "TaskDialog/InvokeConnectorTaskAction",
+          "location": "tool.customConnector",
+          "connector": "shared_iits-5fcopilot-2dfood-2dcatalog-5f0af75e9cbdc7cbac",
+          "operationId": "GetFood",
+          "ui": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Custom connector or REST API, then agent > Tools > Add a tool",
+          "scope": "agent association; the custom connector is environment level",
+          "newHarness": "Connector tool on the same custom connector; build new ones on the classic Tools page or in Power Apps > Custom connectors."
+        }
+      ],
+      "topics": [],
+      "knowledge": [],
+      "entities": [],
+      "prompts": [],
+      "customConnectors": [
+        {
+          "name": "Copilot-Food-Catalog",
+          "folder": "agents/Food Inventory REST/connectors/iits_5Fcopilot-2Dfood-2Dcatalog-051ee3b2-6a1e-4c46-8857-2504e0949734",
+          "kind": "customConnector",
+          "connectorInternalId": "shared_iits-5Fcopilot-2Dfood-2Dcatalog-5F0af75e9cbdc7cbac",
+          "host": "food-catalog-api-pl7008.azurewebsites.net",
+          "operations": [
+            "GetFood",
+            "AddFood",
+            "UpdateFood",
+            "GetFoodByName",
+            "GetFoodByID",
+            "DeleteFood",
+            "UpdateInStock"
+          ],
+          "location": "tool.customConnector"
+        }
+      ],
+      "workflows": [],
+      "triggers": [],
+      "childAgents": [],
+      "connectionReferences": [
+        {
+          "logicalName": "iits_footInventory.shared_iits-5fcopilot-2dfood-2dcatalog-5f0af75e9cbdc7cbac.645218e9d08a42358bd8aed755efa5da",
+          "connector": "shared_iits-5fcopilot-2dfood-2dcatalog-5f0af75e9cbdc7cbac"
+        }
+      ]
+    },
+    {
+      "name": "Food Stock Buddy",
+      "folder": "agents/Food Stock Buddy",
+      "harness": "standard",
+      "portalStatus": "Published",
+      "lastModified": "2026-03-12",
+      "agentId": null,
+      "schemaName": "iits_foodOrdersBuddy",
+      "extensionAttached": false,
+      "description": "A helpful agent that assists you with food orders",
+      "whatItDoes": "Collects a restaurant's order demand on a 9-dish Adaptive Card, reads the current stock from the food catalog API, and calculates what to order with the Calculate food to order prompt.",
+      "maturity": "mature",
+      "gaps": [],
+      "model": "GPT41",
+      "instructionLines": 1,
+      "tools": [
+        {
+          "name": "Calculate food to order",
+          "file": "agents/Food Stock Buddy/actions/Calculatefoodtoorder.mcs.yml",
+          "yamlKind": "TaskDialog/InvokeAIBuilderModelTaskAction",
+          "location": "tool.prompt",
+          "aIModelId": "a647be5e-845b-4579-8836-2947a7e37387",
+          "ui": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Prompt, or agent > Tools > Add a tool > Prompt",
+          "scope": "environment (AI Builder prompt), usable by standard agents and their topics only",
+          "newHarness": "No prompt tool. Reusable instructions become a skill; one AI call inside a process becomes a prompt node in a workflow added as a workflow tool; a separate specialist becomes a connected agent."
+        },
+        {
+          "name": "Food-Catalog-Api - Gets all food",
+          "file": "agents/Food Stock Buddy/actions/Food-Catalog-Api-Getsallfood.mcs.yml",
+          "yamlKind": "TaskDialog/InvokeConnectorTaskAction",
+          "location": "tool.customConnector",
+          "connector": "shared_iits-5ffood-2dcatalog-2dapi-5f0af75e9cbdc7cbac",
+          "operationId": "GetFood",
+          "ui": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Custom connector or REST API, then agent > Tools > Add a tool",
+          "scope": "agent association; the custom connector is environment level",
+          "newHarness": "Connector tool on the same custom connector; build new ones on the classic Tools page or in Power Apps > Custom connectors."
+        }
+      ],
+      "topics": [
+        {
+          "name": "Calculate order quantity",
+          "file": "agents/Food Stock Buddy/topics/Calculateorderquantity.mcs.yml",
+          "trigger": "OnRecognizedIntent",
+          "calls": [
+            {
+              "kind": "InvokeConnectorAction",
+              "connector": "shared_food-20inventory-20rest-5f0af75e9cbdc7cbac-5f26dfabd9fb0863ca",
+              "operationId": "GetFood"
+            },
+            {
+              "kind": "InvokeAIBuilderModelAction",
+              "aIModelId": "a647be5e-845b-4579-8836-2947a7e37387"
+            }
+          ],
+          "redirects": [],
+          "location": "topic"
+        },
+        {
+          "name": "Submit Demand",
+          "file": "agents/Food Stock Buddy/topics/SubmitDemand.mcs.yml",
+          "trigger": "OnRecognizedIntent",
+          "calls": [
+            {
+              "kind": "AdaptiveCardPrompt"
+            }
+          ],
+          "redirects": [],
+          "location": "topic"
+        }
+      ],
+      "knowledge": [],
+      "entities": [],
+      "prompts": [],
+      "customConnectors": [],
+      "workflows": [],
+      "triggers": [],
+      "childAgents": [],
+      "connectionReferences": [
+        {
+          "logicalName": "iits_foodOrdersBuddy.shared_food-20inventory-20rest-5f0af75e9cbdc7cbac-5f26dfabd9fb0863ca.46131fd9-caa1-436e-b6aa-7d86cc8eda7d",
+          "connector": "shared_food-20inventory-20rest-5f0af75e9cbdc7cbac-5f26dfabd9fb0863ca"
+        },
+        {
+          "logicalName": "iits_foodOrdersBuddy.shared_iits-5ffood-2dcatalog-2dapi-5f0af75e9cbdc7cbac.3b99573cc876430d8c6e520d55b8c3c0",
+          "connector": "shared_iits-5ffood-2dcatalog-2dapi-5f0af75e9cbdc7cbac"
+        }
+      ]
+    },
+    {
+      "name": "Health Advisor",
+      "folder": "agents/Health Advisor",
+      "harness": "standard",
+      "portalStatus": "Published",
+      "lastModified": "2026-05-06",
+      "agentId": null,
+      "schemaName": "integrat_symptomChecker",
+      "extensionAttached": false,
+      "description": "An agent that helps with first advice on different symptoms. It demonstrates on how to ask for information in a topic and the summarizes them in a flow using using an ai capability",
+      "whatItDoes": "First responder for health questions. It collects age, gender and symptoms, has a flow summarize them with a prompt, advises a doctor unless the outcome clears light work, explains protein types, resolves a colleague's email address and posts the case to Teams after an approval. It answers from two Word documents on fasting and traveling with health issues and serves Business Travel Planner as its symptom checker.",
+      "maturity": "mature",
+      "gaps": [],
+      "model": "GPT5Chat",
+      "instructionLines": 3,
+      "tools": [],
+      "topics": [
+        {
+          "name": "Check Symptoms",
+          "file": "agents/Health Advisor/topics/CheckSymptoms.mcs.yml",
+          "trigger": "OnRecognizedIntent",
+          "calls": [
+            {
+              "kind": "InvokeFlowAction",
+              "flowId": "b78f3625-bf63-f011-bec3-6045bd9415bc"
+            }
+          ],
+          "redirects": [],
+          "location": "topic"
+        },
+        {
+          "name": "Protein Info",
+          "file": "agents/Health Advisor/topics/ProteinInfo.mcs.yml",
+          "trigger": "OnRecognizedIntent",
+          "calls": [],
+          "redirects": [],
+          "location": "topic"
+        },
+        {
+          "name": "Resolve E-Mail Address",
+          "file": "agents/Health Advisor/topics/ResolveE-Mail.mcs.yml",
+          "trigger": "OnRecognizedIntent",
+          "calls": [
+            {
+              "kind": "InvokeConnectorAction",
+              "connector": "shared_office365users",
+              "operationId": "SearchUserV2"
+            }
+          ],
+          "redirects": [],
+          "location": "topic"
+        },
+        {
+          "name": "Post to teams",
+          "file": "agents/Health Advisor/topics/SaveInformation.mcs.yml",
+          "trigger": "OnRecognizedIntent",
+          "calls": [
+            {
+              "kind": "InvokeFlowAction",
+              "flowId": "1c2684b6-77b3-f011-bbd2-7c1e52278fc9"
+            }
+          ],
+          "redirects": [],
+          "location": "topic"
+        }
+      ],
+      "knowledge": [
+        {
+          "name": "The Benefits of Intermittent Fasting.docx",
+          "file": "agents/Health Advisor/knowledge/files/TheBenefitsofIntermittentFasting.docx_VlP.mcs.yml",
+          "sourceKind": "UploadedFile",
+          "binary": "agents/Health Advisor/knowledge/files/The Benefits of Intermittent Fasting.docx",
+          "location": "knowledge"
+        },
+        {
+          "name": "Traveling with Health Issues",
+          "file": "agents/Health Advisor/knowledge/files/TravelingwithHealthIssues.docx_Qkw.mcs.yml",
+          "sourceKind": "UploadedFile",
+          "binary": "agents/Health Advisor/knowledge/files/Traveling with Health Issues",
+          "location": "knowledge"
+        }
+      ],
+      "entities": [
+        {
+          "name": "Gender",
+          "file": "agents/Health Advisor/entities/Gender.mcs.yml",
+          "kind": "ClosedListEntity",
+          "values": [
+            {
+              "value": "male",
+              "synonyms": [
+                "man"
+              ]
+            },
+            {
+              "value": "female",
+              "synonyms": [
+                "woman"
+              ]
+            }
+          ],
+          "location": "entity"
+        },
+        {
+          "name": "Protein Types",
+          "file": "agents/Health Advisor/entities/ProteinTypes.mcs.yml",
+          "kind": "ClosedListEntity",
+          "values": [
+            {
+              "value": "Whey",
+              "synonyms": []
+            },
+            {
+              "value": "Whey Isolate",
+              "synonyms": []
+            },
+            {
+              "value": "Casein",
+              "synonyms": []
+            },
+            {
+              "value": "Plant based",
+              "synonyms": [
+                "Pea protein",
+                "Soy protein"
+              ]
+            }
+          ],
+          "location": "entity"
+        }
+      ],
+      "prompts": [],
+      "customConnectors": [],
+      "workflows": [
+        {
+          "name": "Post to teams",
+          "workflowId": "1c2684b6-77b3-f011-bbd2-7c1e52278fc9",
+          "folder": "agents/Health Advisor/workflows/Posttoteams-1c2684b6-77b3-f011-bbd2-7c1e52278fc9",
+          "trigger": {
+            "manual": {
+              "type": "Request",
+              "kind": "Skills"
+            }
+          },
+          "connectors": [
+            "shared_advancedapprovals",
+            "shared_teams"
+          ],
+          "location": "tool.workflow"
+        },
+        {
+          "name": "Summarize Patient Symtoms",
+          "workflowId": "b78f3625-bf63-f011-bec3-6045bd9415bc",
+          "folder": "agents/Health Advisor/workflows/SummarizePatientSymtoms-b78f3625-bf63-f011-bec3-6045bd9415bc",
+          "trigger": {
+            "manual": {
+              "type": "Request",
+              "kind": "Skills"
+            }
+          },
+          "connectors": [
+            "shared_commondataserviceforapps"
+          ],
+          "location": "tool.workflow"
+        }
+      ],
+      "triggers": [],
+      "childAgents": [],
+      "connectionReferences": [
+        {
+          "logicalName": "integrat_symptomChecker.shared_office365users.012fa3ea5a40407e9305a13b4a69d300",
+          "connector": "shared_office365users"
+        },
+        {
+          "logicalName": "new_sharedadvancedapprovals_126be",
+          "connector": "shared_advancedapprovals"
+        },
+        {
+          "logicalName": "new_sharedcommondataserviceforapps_c7146",
+          "connector": "shared_commondataserviceforapps"
+        }
+      ]
+    },
+    {
+      "name": "Health Agent v2",
+      "folder": "agents/Health Agent v2",
+      "harness": "githubCopilot",
+      "portalStatus": "Draft",
+      "lastModified": "2026-07-22",
+      "agentId": "e3625bee-9b13-4241-9d13-44b87da69f0f",
+      "schemaName": "iits_healthagent_zXeueq",
+      "extensionAttached": true,
+      "description": null,
+      "whatItDoes": "GitHub Copilot rebuild of the Health Advisor symptom check: one instruction line that runs the CheckSymptoms workflow, which classifies age and symptoms with a Microsoft 365 Copilot prompt.",
+      "maturity": "partial",
+      "gaps": [
+        "one-line instructions",
+        "typos (healt, Symptombs)"
+      ],
+      "model": "GPT5Chat",
+      "instructionLines": 1,
+      "tools": [
+        {
+          "name": "CheckSymptoms",
+          "file": "agents/Health Agent v2/capabilities/tools/CheckSymptoms_J8e.mcs.yml",
+          "yamlKind": "WorkflowTool",
+          "location": "tool.workflow",
+          "workflowId": "9a815bdf-dc44-7e16-c7e4-620180cdec53",
+          "ui": "New UI: agent > Build > components panel > Tools > Add a tool > Workflows tab to pick an existing workflow, or Add a tool > Add > Workflow to create one; listed on the Workflows page",
+          "scope": "environment; any agent can add it from the Workflows page"
+        }
+      ],
+      "topics": [],
+      "knowledge": [],
+      "entities": [],
+      "prompts": [],
+      "customConnectors": [],
+      "workflows": [
+        {
+          "name": "CheckSymptoms",
+          "workflowId": "9a815bdf-dc44-7e16-c7e4-620180cdec53",
+          "folder": "agents/Health Agent v2/workflows/CheckSymptoms-9a815bdf-dc44-7e16-c7e4-620180cdec53",
+          "trigger": {
+            "manual": {
+              "type": "Request",
+              "kind": "Skills"
+            }
+          },
+          "connectors": [
+            "shared_m365copilotv2"
+          ],
+          "location": "tool.workflow"
+        }
+      ],
+      "triggers": [],
+      "childAgents": [],
+      "connectionReferences": [
+        {
+          "logicalName": "new_sharedm365copilotv2_f1b99714",
+          "connector": "shared_m365copilotv2"
+        }
+      ]
+    },
+    {
+      "name": "HR Buddy",
+      "folder": "agents/HR Buddy",
+      "harness": "standard",
+      "portalStatus": "Published",
+      "lastModified": "2026-03-12",
+      "agentId": null,
+      "schemaName": "copilots_header_1fcf6",
+      "extensionAttached": false,
+      "description": "An HR Self service agent",
+      "whatItDoes": "HR self-service. It identifies the employee (name, department, cost center) and remembers that for the conversation, submits expense claims on a card (up to 100 processed, above that sent for approval), records children, offers a reward (dinner or theatre), and answers from the HR Documents SharePoint site and the HR MCP server.",
+      "maturity": "mature",
+      "gaps": [
+        "unused Project Status entity",
+        "variable typo Global.EmplyeeIdentified"
+      ],
+      "model": null,
+      "instructionLines": 1,
+      "tools": [
+        {
+          "name": "HC-MCP - HR MCP Server",
+          "file": "agents/HR Buddy/actions/HC-MCP-HRMCPServer.mcs.yml",
+          "yamlKind": "TaskDialog/InvokeExternalAgentTaskAction",
+          "location": "tool.mcp",
+          "connector": "shared_hc-2dmcp-5f0af75e9cbdc7cbac-5f4d6f05a93ca37b7a",
+          "operationId": "InvokeMCP",
+          "ui": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Model Context Protocol, or agent > Tools > Add a tool > Model Context Protocol",
+          "scope": "agent association; the MCP server is an environment-level connector",
+          "newHarness": "MCP tool: pick the same server from the MCP tab of Add a tool."
+        }
+      ],
+      "topics": [
+        {
+          "name": "Collect Employee Data",
+          "file": "agents/HR Buddy/topics/CollectEmployeeData.mcs.yml",
+          "trigger": "OnRecognizedIntent",
+          "calls": [],
+          "redirects": [],
+          "location": "topic"
+        },
+        {
+          "name": "Collect Employee rewards",
+          "file": "agents/HR Buddy/topics/CollectEmployeerewards.mcs.yml",
+          "trigger": "OnRecognizedIntent",
+          "calls": [],
+          "redirects": [
+            "CollectEmployeeData"
+          ],
+          "location": "topic"
+        },
+        {
+          "name": "Get Children Info",
+          "file": "agents/HR Buddy/topics/GetChildrenInfo.mcs.yml",
+          "trigger": "OnRecognizedIntent",
+          "calls": [],
+          "redirects": [],
+          "location": "topic"
+        },
+        {
+          "name": "Submit Expense Claim",
+          "file": "agents/HR Buddy/topics/SubmitExpenseClaim.mcs.yml",
+          "trigger": "OnRecognizedIntent",
+          "calls": [
+            {
+              "kind": "AdaptiveCardPrompt"
+            }
+          ],
+          "redirects": [],
+          "location": "topic"
+        }
+      ],
+      "knowledge": [
+        {
+          "name": "HR Documents",
+          "file": "agents/HR Buddy/knowledge/copilots_header_1fcf6.topic.HRDocuments_X_RIPcr0acwyhvRcyaV0o.mcs.yml",
+          "sourceKind": "SharePointSearchSource",
+          "target": "https://integrationsonline.sharepoint.com/sites/copilot-demo/HRDocuments",
+          "location": "knowledge"
+        }
+      ],
+      "entities": [
+        {
+          "name": "Project Status",
+          "file": "agents/HR Buddy/entities/ProjectStatus.mcs.yml",
+          "kind": "ClosedListEntity",
+          "values": [
+            {
+              "value": "Draft",
+              "synonyms": []
+            },
+            {
+              "value": "In Progress",
+              "synonyms": [
+                "Läuft",
+                "Running"
+              ]
+            },
+            {
+              "value": "Completed",
+              "synonyms": []
+            }
+          ],
+          "location": "entity"
+        }
+      ],
+      "prompts": [],
+      "customConnectors": [],
+      "workflows": [],
+      "triggers": [],
+      "childAgents": [],
+      "connectionReferences": [
+        {
+          "logicalName": "copilots_header_1fcf6.shared_hc-2dmcp-5f0af75e9cbdc7cbac-5f4d6f05a93ca37b7a.85c18d3216bf4227ae76138ad4ff8133",
+          "connector": "shared_hc-2dmcp-5f0af75e9cbdc7cbac-5f4d6f05a93ca37b7a"
+        }
+      ]
+    },
+    {
+      "name": "Restaurant HR Manager",
+      "folder": "agents/Restaurant HR Manager",
+      "harness": "standard",
+      "portalStatus": "Published",
+      "lastModified": "2026-05-07",
+      "agentId": "ae4e24df-1e49-f111-bec7-6045bd9d83bd",
+      "schemaName": "iits_restaurantHrManager",
+      "extensionAttached": true,
+      "description": "Manages restaurant staff by assigning employees to schedules and ensuring proper staffing levels.",
+      "whatItDoes": "Plans restaurant staff: assigns employees to schedules through the Restaurant HR MCP server under structured instructions.",
+      "maturity": "mature",
+      "gaps": [
+        "instructions promise to email the schedule, but no mail tool is attached"
+      ],
+      "model": "GPT5Chat",
+      "instructionLines": 35,
+      "tools": [
+        {
+          "name": "Restaurant HR MCP",
+          "file": "agents/Restaurant HR Manager/agents/topic.RestaurantHRMCP.mcs.yml",
+          "yamlKind": "TaskDialog/InvokeExternalAgentTaskAction",
+          "location": "tool.mcp",
+          "connector": "shared_iits-5frestaurant-20hr-20mcp-5f0af75e9cbdc7cbac",
+          "operationId": "InvokeServer",
+          "ui": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Model Context Protocol, or agent > Tools > Add a tool > Model Context Protocol",
+          "scope": "agent association; the MCP server is an environment-level connector",
+          "newHarness": "MCP tool: pick the same server from the MCP tab of Add a tool."
+        }
+      ],
+      "topics": [],
+      "knowledge": [],
+      "entities": [],
+      "prompts": [],
+      "customConnectors": [
+        {
+          "name": "Restaurant HR MCP",
+          "folder": "agents/Restaurant HR Manager/connectors/iits_5Frestaurant-20hr-20mcp-e976015a-abce-4150-afe6-068aade32f5d",
+          "kind": "mcpServer",
+          "connectorInternalId": "shared_iits-5Frestaurant-20hr-20mcp-5F0af75e9cbdc7cbac",
+          "host": "hr-mcp-server-copilot.azurewebsites.net",
+          "operations": [
+            "InvokeServer"
+          ],
+          "location": "tool.mcp"
+        }
+      ],
+      "workflows": [],
+      "triggers": [],
+      "childAgents": [],
+      "connectionReferences": [
+        {
+          "logicalName": "iits_restaurantHrManager.shared_iits-5frestaurant-20hr-20mcp-5f0af75e9cbdc7cbac.3e9f357bd1ee44dfa192244f5dc7bdaf",
+          "connector": "shared_iits-5frestaurant-20hr-20mcp-5f0af75e9cbdc7cbac"
+        }
+      ]
+    },
+    {
+      "name": "Returns Agent",
+      "folder": "agents/Returns Agent",
+      "harness": "standard",
+      "portalStatus": "Published",
+      "lastModified": "2026-05-13",
+      "agentId": "26a3141b-50f8-f011-8406-6045bd9d83bd",
+      "schemaName": "copilots_header_f215c",
+      "extensionAttached": true,
+      "description": "An autonomous agent dealing with returns",
+      "whatItDoes": "Autonomous returns desk. A trigger flow wakes it for each new email in the help@integrations.at shared mailbox; it checks the request against the returns-policy document on SharePoint and handles mail through the Work IQ Mail MCP server.",
+      "maturity": "mature",
+      "gaps": [
+        "typo acccordance in instructions"
+      ],
+      "model": "GPT5Chat",
+      "instructionLines": 2,
+      "tools": [
+        {
+          "name": "Work IQ Mail MCP - Work IQ Mail (Preview)",
+          "file": "agents/Returns Agent/actions/WorkIQMailMCP-WorkIQMailPreview.mcs.yml",
+          "yamlKind": "TaskDialog/InvokeExternalAgentTaskAction",
+          "location": "tool.mcp",
+          "connector": "shared_a365outlookmailmcp",
+          "operationId": "mcp_MailTools",
+          "ui": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Model Context Protocol, or agent > Tools > Add a tool > Model Context Protocol",
+          "scope": "agent association; the MCP server is an environment-level connector",
+          "newHarness": "MCP tool: pick the same server from the MCP tab of Add a tool."
+        }
+      ],
+      "topics": [],
+      "knowledge": [
+        {
+          "name": "returns-policy.docx",
+          "file": "agents/Returns Agent/knowledge/copilots_header_f215c.topic.returnspolicydocx_FjqPtJlufWjIffFl5jbJS.mcs.yml",
+          "sourceKind": "SharePointSearchSource",
+          "target": "https://integrationsonline.sharepoint.com/sites/copilot-demo/Instructions/returns-policy.docx",
+          "location": "knowledge"
+        }
+      ],
+      "entities": [],
+      "prompts": [],
+      "customConnectors": [],
+      "workflows": [
+        {
+          "name": "When a new email arrives in a shared mailbox (V2)",
+          "workflowId": "ee7c5930-55f8-f011-8406-6045bd9d83bd",
+          "folder": "agents/Returns Agent/workflows/Whenanewemailarrivesinasharedmailbox(V2)-ee7c5930-55f8-f011-8406-6045bd9d83bd",
+          "trigger": {
+            "When_a_new_email_arrives_in_a_shared_mailbox_(V2)": {
+              "type": "OpenApiConnection",
+              "kind": null
+            }
+          },
+          "connectors": [
+            "shared_microsoftcopilotstudio",
+            "shared_office365"
+          ],
+          "location": "tool.workflow"
+        }
+      ],
+      "triggers": [
+        {
+          "name": "When a new email arrives in a shared mailbox (V2)",
+          "file": "agents/Returns Agent/trigger/Whenanewemailarri.28b94a73-2c42-45ef-b3f1-0e61c8b0a96.mcs.yml",
+          "flowId": "ee7c5930-55f8-f011-8406-6045bd9d83bd",
+          "connection": "Office 365 Outlook",
+          "location": "trigger"
+        }
+      ],
+      "childAgents": [],
+      "connectionReferences": [
+        {
+          "logicalName": "copilots_header_f215c.shared_a365outlookmailmcp.7e4ceaad72584349968dc88587480051",
+          "connector": "shared_a365outlookmailmcp"
+        },
+        {
+          "logicalName": "iits_sharedmicrosoftcopilotstudio_4afe9",
+          "connector": "shared_microsoftcopilotstudio"
+        },
+        {
+          "logicalName": "iits_sharedoffice365_8c122",
+          "connector": "shared_office365"
+        }
+      ]
+    },
+    {
+      "name": "Transportation Agent",
+      "folder": "agents/Transportation Agent",
+      "harness": "standard",
+      "portalStatus": "Published",
+      "lastModified": "2026-09-14",
+      "agentId": "b9308f38-25b4-f011-bbd2-7c1e52278fc9",
+      "schemaName": "iits_transportationAgent",
+      "extensionAttached": true,
+      "description": "This agent manages transportation booking",
+      "whatItDoes": "Mock transport booker: its instructions tell it to invent bus, train or flight answers without asking for details. It exists to be the transport specialist that Business Travel Planner connects to.",
+      "maturity": "stub by design",
+      "gaps": [],
+      "model": null,
+      "instructionLines": 1,
+      "tools": [],
+      "topics": [],
+      "knowledge": [],
+      "entities": [],
+      "prompts": [],
+      "customConnectors": [],
+      "workflows": [],
+      "triggers": [],
+      "childAgents": [],
+      "connectionReferences": []
+    },
+    {
+      "name": "Travel Agent",
+      "folder": "agents/Travel Agent",
+      "harness": "standard",
+      "portalStatus": "Published",
+      "lastModified": "2026-02-02",
+      "agentId": null,
+      "schemaName": "copilots_header_8b576",
+      "extensionAttached": false,
+      "description": "A travel agent",
+      "whatItDoes": "Gives travel information from the Sightseeing SharePoint site and the web, books a trip by collecting place, date and number of people, and posts the conversation to Teams through a connector tool and the Post to teams flow.",
+      "maturity": "mature",
+      "gaps": [],
+      "model": null,
+      "instructionLines": 1,
+      "tools": [
+        {
+          "name": "Microsoft Teams - Post message in a chat or channel",
+          "file": "agents/Travel Agent/actions/MicrosoftTeams-Postmessageinachatorchannel.mcs.yml",
+          "yamlKind": "TaskDialog/InvokeConnectorTaskAction",
+          "location": "tool.connector",
+          "connector": "shared_teams",
+          "operationId": "PostMessageToConversation",
+          "ui": "Classic UI (Home > ... > Open classic experience): agent > Tools > Add a tool > Connector",
+          "scope": "agent association; the connector and its connection reference are environment level",
+          "newHarness": "Connector tool: pick the same connector from the Connectors tab of Add a tool."
+        }
+      ],
+      "topics": [
+        {
+          "name": "Book Trip",
+          "file": "agents/Travel Agent/topics/BookTrip.mcs.yml",
+          "trigger": "OnRecognizedIntent",
+          "calls": [],
+          "redirects": [],
+          "location": "topic"
+        },
+        {
+          "name": "Post conversation",
+          "file": "agents/Travel Agent/topics/Postconversation.mcs.yml",
+          "trigger": "OnRecognizedIntent",
+          "calls": [
+            {
+              "kind": "InvokeFlowAction",
+              "flowId": "1c2684b6-77b3-f011-bbd2-7c1e52278fc9"
+            }
+          ],
+          "redirects": [],
+          "location": "topic"
+        }
+      ],
+      "knowledge": [
+        {
+          "name": "Sightseeing",
+          "file": "agents/Travel Agent/knowledge/copilots_header_8b576.topic.Sightseeing_UpFNSbcVgOqvgfENI7Yli.mcs.yml",
+          "sourceKind": "SharePointSearchSource",
+          "target": "https://integrationsonline.sharepoint.com/sites/copilot-demo/Sightseeing",
+          "location": "knowledge"
+        }
+      ],
+      "entities": [],
+      "prompts": [],
+      "customConnectors": [],
+      "workflows": [
+        {
+          "name": "Post to teams",
+          "workflowId": "1c2684b6-77b3-f011-bbd2-7c1e52278fc9",
+          "folder": "agents/Travel Agent/workflows/Posttoteams-1c2684b6-77b3-f011-bbd2-7c1e52278fc9",
+          "trigger": {
+            "manual": {
+              "type": "Request",
+              "kind": "Skills"
+            }
+          },
+          "connectors": [
+            "shared_teams"
+          ],
+          "location": "tool.workflow"
+        }
+      ],
+      "triggers": [],
+      "childAgents": [],
+      "connectionReferences": [
+        {
+          "logicalName": "copilots_header_8b576.shared_teams.shared-teams-3bd188ed-6ae7-4282-a241-f906b75f630e",
+          "connector": "shared_teams"
+        }
+      ]
+    },
+    {
+      "name": "Travel Expense Refund",
+      "folder": "agents/Travel Expense Refund",
+      "harness": "standard",
+      "portalStatus": "Published",
+      "lastModified": "2026-01-24",
+      "agentId": "27c438b7-4633-f011-8c4e-6045bd9415bc",
+      "schemaName": "cr915_expensepilot",
+      "extensionAttached": true,
+      "description": "An agent that helps with refunding travel cost by taking the request and stores it in Dataverse\n",
+      "whatItDoes": "Expense pilot. It asks for the employee number, collects a travel claim on a 7-field Adaptive Card, builds a claim ID and ISO dates with Power Fx, and saves the claim to the Dataverse table iits_travelexpenseclaims through the Save Claim to Dataverse flow. It answers travel tax questions from a WKO public page and SharePoint through Work IQ, and serves Business Travel Planner as its expense specialist.",
+      "maturity": "mature",
+      "gaps": [
+        "flow reads date and date_1, which its trigger does not define; the ISO date variables are set but not passed"
+      ],
+      "model": "CurrentModels",
+      "instructionLines": 1,
+      "tools": [
+        {
+          "name": "Work IQ SharePoint MCP - Work IQ SharePoint (Preview)",
+          "file": "agents/Travel Expense Refund/actions/WorkIQSharePointMCP-WorkIQSharePointPreview.mcs.yml",
+          "yamlKind": "TaskDialog/InvokeExternalAgentTaskAction",
+          "location": "tool.mcp",
+          "connector": "shared_workiqsharepoint",
+          "operationId": "mcp_SharePointRemoteServer",
+          "ui": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Model Context Protocol, or agent > Tools > Add a tool > Model Context Protocol",
+          "scope": "agent association; the MCP server is an environment-level connector",
+          "newHarness": "MCP tool: pick the same server from the MCP tab of Add a tool."
+        }
+      ],
+      "topics": [
+        {
+          "name": "Submit Refund Request",
+          "file": "agents/Travel Expense Refund/topics/SubmitRefundRequest.mcs.yml",
+          "trigger": "OnRecognizedIntent",
+          "calls": [
+            {
+              "kind": "AdaptiveCardPrompt"
+            },
+            {
+              "kind": "InvokeFlowAction",
+              "flowId": "722883f1-62b3-f011-bbd2-7c1e52278fc9"
+            }
+          ],
+          "redirects": [],
+          "location": "topic"
+        }
+      ],
+      "knowledge": [
+        {
+          "name": "Lohnsteuerliche Behandlung von Dienstreisen",
+          "file": "agents/Travel Expense Refund/knowledge/cr915_expensepilot.topic.LohnsteuerlicheBehandlungvonDienstreisen_NThgC9wmmPdRYJ_LHb1TS.mcs.yml",
+          "sourceKind": "PublicSiteSearchSource",
+          "target": "https://www.wko.at/lohnverrechnung/lohnsteuerliche-behandlung-dienstreisen",
+          "location": "knowledge"
+        }
+      ],
+      "entities": [],
+      "prompts": [],
+      "customConnectors": [],
+      "workflows": [
+        {
+          "name": "Save Claim to Dataverse",
+          "workflowId": "722883f1-62b3-f011-bbd2-7c1e52278fc9",
+          "folder": "agents/Travel Expense Refund/workflows/SaveClaimtoDataverse-722883f1-62b3-f011-bbd2-7c1e52278fc9",
+          "trigger": {
+            "manual": {
+              "type": "Request",
+              "kind": "Skills"
+            }
+          },
+          "connectors": [
+            "shared_commondataserviceforapps"
+          ],
+          "location": "tool.workflow"
+        }
+      ],
+      "triggers": [],
+      "childAgents": [],
+      "connectionReferences": [
+        {
+          "logicalName": "cr915_expensepilot.shared_workiqsharepoint.shared-workiqsharepo-addf0531-7cd0-446a-9d61-6fb315ad13ce",
+          "connector": "shared_workiqsharepoint"
+        },
+        {
+          "logicalName": "new_sharedcommondataserviceforapps_5d5bd",
+          "connector": "shared_commondataserviceforapps"
+        }
+      ]
+    }
+  ],
+  "workflows": [
+    {
+      "name": "CheckSymptoms",
+      "workflowId": "9a815bdf-dc44-7e16-c7e4-620180cdec53",
+      "folder": "workflows/CheckSymptoms/workflows/CheckSymptoms-9a815bdf-dc44-7e16-c7e4-620180cdec53",
+      "trigger": {
+        "manual": {
+          "type": "Request",
+          "kind": "Skills"
+        }
+      },
+      "connectors": [
+        "shared_m365copilotv2"
+      ],
+      "cloneFolder": "workflows/CheckSymptoms",
+      "lastModified": "2026-07-22",
+      "usedBy": [
+        "Health Agent v2 (tool CheckSymptoms)"
+      ],
+      "copiesInAgentFolders": [
+        "agents/Health Agent v2/workflows/CheckSymptoms-9a815bdf-dc44-7e16-c7e4-620180cdec53"
+      ],
+      "location": "workflow"
+    },
+    {
+      "name": "Get Protein",
+      "workflowId": "2be4ef12-93fc-4f71-c182-7369c4a6c66e",
+      "folder": "workflows/GetProtein/workflows/GetProtein-2be4ef12-93fc-4f71-c182-7369c4a6c66e",
+      "trigger": {
+        "manual": {
+          "type": "Request",
+          "kind": "Skills"
+        }
+      },
+      "connectors": [],
+      "cloneFolder": "workflows/GetProtein",
+      "lastModified": "2026-01-25",
+      "usedBy": [],
+      "copiesInAgentFolders": [],
+      "location": "workflow"
+    },
+    {
+      "name": "hello-world",
+      "workflowId": "a8b4b290-0b20-fd6b-3c85-36dd5c86304c",
+      "folder": "workflows/hello-world/workflows/hello-world-a8b4b290-0b20-fd6b-3c85-36dd5c86304c",
+      "trigger": {
+        "manual": {
+          "type": "Request",
+          "kind": "Skills"
+        }
+      },
+      "connectors": [],
+      "cloneFolder": "workflows/hello-world",
+      "lastModified": "2026-08-13",
+      "usedBy": [
+        "Food Body (tool hello-world)"
+      ],
+      "copiesInAgentFolders": [
+        "agents/Food Body/workflows/hello-world-a8b4b290-0b20-fd6b-3c85-36dd5c86304c"
+      ],
+      "location": "workflow"
+    },
+    {
+      "name": "Post to teams",
+      "workflowId": "1c2684b6-77b3-f011-bbd2-7c1e52278fc9",
+      "folder": "workflows/Posttoteams/workflows/Posttoteams-1c2684b6-77b3-f011-bbd2-7c1e52278fc9",
+      "trigger": {
+        "manual": {
+          "type": "Request",
+          "kind": "Skills"
+        }
+      },
+      "connectors": [
+        "shared_advancedapprovals",
+        "shared_teams"
+      ],
+      "cloneFolder": "workflows/Posttoteams",
+      "lastModified": "2026-03-12",
+      "usedBy": [
+        "Health Advisor (topic Post to teams)",
+        "Travel Agent (topic Post conversation)"
+      ],
+      "copiesInAgentFolders": [
+        "agents/Health Advisor/workflows/Posttoteams-1c2684b6-77b3-f011-bbd2-7c1e52278fc9",
+        "agents/Travel Agent/workflows/Posttoteams-1c2684b6-77b3-f011-bbd2-7c1e52278fc9"
+      ],
+      "location": "workflow"
+    },
+    {
+      "name": "Save Claim to Dataverse",
+      "workflowId": "722883f1-62b3-f011-bbd2-7c1e52278fc9",
+      "folder": "workflows/SaveClaimtoDataverse/workflows/SaveClaimtoDataverse-722883f1-62b3-f011-bbd2-7c1e52278fc9",
+      "trigger": {
+        "manual": {
+          "type": "Request",
+          "kind": "Skills"
+        }
+      },
+      "connectors": [
+        "shared_commondataserviceforapps"
+      ],
+      "cloneFolder": "workflows/SaveClaimtoDataverse",
+      "lastModified": "2026-01-24",
+      "usedBy": [
+        "Travel Expense Refund (topic Submit Refund Request)"
+      ],
+      "copiesInAgentFolders": [
+        "agents/Travel Expense Refund/workflows/SaveClaimtoDataverse-722883f1-62b3-f011-bbd2-7c1e52278fc9"
+      ],
+      "location": "workflow"
+    },
+    {
+      "name": "Summarize Patient Symtoms",
+      "workflowId": "b78f3625-bf63-f011-bec3-6045bd9415bc",
+      "folder": "workflows/SummarizePatientSymtoms/workflows/SummarizePatientSymtoms-b78f3625-bf63-f011-bec3-6045bd9415bc",
+      "trigger": {
+        "manual": {
+          "type": "Request",
+          "kind": "Skills"
+        }
+      },
+      "connectors": [
+        "shared_commondataserviceforapps"
+      ],
+      "cloneFolder": "workflows/SummarizePatientSymtoms",
+      "lastModified": "2026-07-22",
+      "usedBy": [
+        "Health Advisor (topic Check Symptoms)"
+      ],
+      "copiesInAgentFolders": [
+        "agents/Health Advisor/workflows/SummarizePatientSymtoms-b78f3625-bf63-f011-bec3-6045bd9415bc"
+      ],
+      "location": "workflow"
+    }
+  ],
+  "shared": {
+    "connectors": [
+      {
+        "connector": "shared_a365outlookmailmcp",
+        "usedBy": [
+          "Returns Agent (tool.mcp: Work IQ Mail MCP - Work IQ Mail (Preview))"
+        ]
+      },
+      {
+        "connector": "shared_azureagentservice",
+        "usedBy": [
+          "Compliance Agent (tool.foundryAgent: Social Profiler)",
+          "Food Body (tool.foundryAgent: Create Run)"
+        ]
+      },
+      {
+        "connector": "shared_food-20inventory-20rest-5f0af75e9cbdc7cbac-5f26dfabd9fb0863ca",
+        "usedBy": [
+          "Food Stock Buddy (topic Calculate order quantity)"
+        ]
+      },
+      {
+        "connector": "shared_hc-2dmcp-5f0af75e9cbdc7cbac-5f4d6f05a93ca37b7a",
+        "usedBy": [
+          "HR Buddy (tool.mcp: HC-MCP - HR MCP Server)"
+        ]
+      },
+      {
+        "connector": "shared_iits-5fcopilot-2dfood-2dcatalog-5f0af75e9cbdc7cbac",
+        "usedBy": [
+          "Food Inventory REST (tool.customConnector: Copilot-Food-Catalog - Add food)",
+          "Food Inventory REST (tool.customConnector: Copilot-Food-Catalog - Gets all food)"
+        ]
+      },
+      {
+        "connector": "shared_iits-5ffood-20inventory-20v5-5f0af75e9cbdc7cbac",
+        "usedBy": [
+          "Food Buddy (tool.customConnector: Food Inventory v5 - Food Inventory v5)"
+        ]
+      },
+      {
+        "connector": "shared_iits-5ffood-20mcp-5f0af75e9cbdc7cbac",
+        "usedBy": [
+          "Food Body (tool.mcp: Food MCP — Food MCP)",
+          "Food Buddy (tool.mcp: Food MCP)"
+        ]
+      },
+      {
+        "connector": "shared_iits-5ffood-2dcatalog-2dapi-5f0af75e9cbdc7cbac",
+        "usedBy": [
+          "Food Stock Buddy (tool.customConnector: Food-Catalog-Api - Gets all food)"
+        ]
+      },
+      {
+        "connector": "shared_iits-5frestaurant-20hr-20mcp-5f0af75e9cbdc7cbac",
+        "usedBy": [
+          "Restaurant HR Manager (tool.mcp: Restaurant HR MCP)"
+        ]
+      },
+      {
+        "connector": "shared_office365users",
+        "usedBy": [
+          "Health Advisor (topic Resolve E-Mail Address)"
+        ]
+      },
+      {
+        "connector": "shared_sharepointonline",
+        "usedBy": [
+          "Employee Agent (tool.connector: Get items)"
+        ]
+      },
+      {
+        "connector": "shared_teams",
+        "usedBy": [
+          "Travel Agent (tool.connector: Microsoft Teams - Post message in a chat or channel)"
+        ]
+      },
+      {
+        "connector": "shared_workiqsharepoint",
+        "usedBy": [
+          "Travel Expense Refund (tool.mcp: Work IQ SharePoint MCP - Work IQ SharePoint (Preview))"
+        ]
+      }
+    ],
+    "prompts": [
+      {
+        "aIModelId": "455d8c9a-28cc-49d4-bffe-1fb969d55196",
+        "name": "Employee Welcome",
+        "usedBy": [
+          "Employee Onboarding Assistant (tool Employee Welcome)"
+        ]
+      },
+      {
+        "aIModelId": "a647be5e-845b-4579-8836-2947a7e37387",
+        "name": "Calculate food to order",
+        "usedBy": [
+          "Food Stock Buddy (tool Calculate food to order)",
+          "Food Stock Buddy (topic Calculate order quantity)"
+        ]
+      },
+      {
+        "aIModelId": "fffe230c-fb92-480c-ad3f-0fc0cd4898e7",
+        "name": "Extract Data from Invoice",
+        "usedBy": [
+          "Claim-Reporter (topic Report Claim)"
+        ]
+      }
+    ],
+    "connectedAgents": [
+      {
+        "botSchemaName": "cr915_expensepilot",
+        "agentFolder": "Travel Expense Refund",
+        "connectedFrom": [
+          "Business Travel Planner"
+        ]
+      },
+      {
+        "botSchemaName": "iits_transportationAgent",
+        "agentFolder": "Transportation Agent",
+        "connectedFrom": [
+          "Business Travel Planner"
+        ]
+      },
+      {
+        "botSchemaName": "integrat_symptomChecker",
+        "agentFolder": "Health Advisor",
+        "connectedFrom": [
+          "Business Travel Planner"
+        ]
+      }
+    ]
+  }
+}

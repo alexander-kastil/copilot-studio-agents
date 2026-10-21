@@ -1,0 +1,19 @@
+mcs.metadata:
+  componentName: Protein Types
+kind: ClosedListEntity
+smartMatchingEnabled: true
+items:
+  - id: PSXhxT
+    displayName: Whey
+
+  - id: 0Wp7Av
+    displayName: Whey Isolate
+
+  - id: 7TBuZA
+    displayName: Casein
+
+  - id: OXhf7K
+    displayName: Plant based
+    synonyms:
+      - Pea protein
+      - Soy protein

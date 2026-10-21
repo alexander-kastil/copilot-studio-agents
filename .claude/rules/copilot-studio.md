@@ -23,6 +23,5 @@ The global `copilot-studio` skill holds the generic rules. These are the facts i
 
 - Adaptive Card nodes: `src/cs-schema/agents/Food Stock Buddy/topics/SubmitDemand.mcs.yml` (also shows a top-level `modelDescription:`) and `src/cs-schema/agents/HR Buddy/topics/SubmitExpenseClaim.mcs.yml`.
 - `NumberPrebuiltEntity`: `src/cs-schema/agents/Travel Agent/topics/BookTrip.mcs.yml` and `src/cs-schema/agents/HR Buddy/topics/CollectEmployeeData.mcs.yml`.
-- `DatePrebuiltEntity`: `src/cs-schema/agents/Travel Agent/topics/BookTrip.mcs.yml:31` (trip date) and `src/cs-schema/agents/Onboarding Agent/topics/UserAccountCreation.mcs.yml` (birth date).
-- Variable style: the topics here write plain `variable: Topic.LastName`, never `init:`; match it.
-- Scope smell: `UserAccountCreation` keeps `Global.FirstName` beside `Topic.LastName`.
+- `DatePrebuiltEntity`: `src/cs-schema/agents/Travel Agent/topics/BookTrip.mcs.yml:31` (trip date).
+- Variable style: the topics here write plain `variable: Topic.X`, never `init:`; match it.

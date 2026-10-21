@@ -621,6 +621,66 @@
       "catalogue": {
         "action": "none"
       }
+    },
+    {
+      "date": "2026-10-21",
+      "from": "17:35",
+      "to": "19:05",
+      "sessionId": "73dbb9b2-6521-46be-9c5c-25d9d0f68734",
+      "branch": "v-3.0.0",
+      "commits": [],
+      "surfaces": [
+        "copilot-studio-agents"
+      ],
+      "files": [
+        "src/cs-schema/schema.json",
+        "src/cs-schema/schema-notes.json",
+        "src/cs-schema/cs-agents/CS-Employee Onboarding Assistant/agent.mcs.yml",
+        "tasks/todo.md",
+        "tasks/handoff-cs-rebuild.md",
+        "tasks/lessons.md"
+      ],
+      "mechanism": {
+        "takes": "a Copilot Studio environment whose agents and workflows grew by hand, plus the course modules that demonstrate them",
+        "does": "clones every agent and workflow to YAML through the VS Code extension, generates a JSON inventory of where each element lives in both UIs, sorts out duplicates, drafts chained rebuild demos with parallel writers, and proves a YAML-first rebuild loop: blank agent in the portal, edit YAML, push with the extension's Apply from automation",
+        "returns": "a repo copy of the whole environment, schema.json with per-agent purpose, maturity and gaps, 15 optional demo drafts, one rebuilt and verified CS- agent, and a plan plus handoff for the rest"
+      },
+      "portsAsIs": [
+        "YAML-first rebuild of Copilot Studio agents with Apply driven by keystrokes and clicks in a helper window",
+        "environment inventory generator from cloned agent folders"
+      ],
+      "perCustomer": [
+        "the environment, its agents and tools",
+        "the demo story and prefix convention"
+      ],
+      "evidence": [
+        "src/cs-schema/cs-agents/CS-Employee Onboarding Assistant/.mcs/conn.json",
+        "Apply toast 'Completed applying changes' on two agents, values confirmed in the portal",
+        "five Haiku checks of schema.json, defects fixed"
+      ],
+      "toolchain": {
+        "skills": [
+          "class-authoring-plugin:create-class",
+          "copilot-studio",
+          "claude-in-chrome",
+          "report-plugin:report",
+          "learn-loop-plugin:claude-learn",
+          "claude-learn-worktime"
+        ],
+        "mcpServers": [
+          "claude-in-chrome",
+          "microsoft-learn"
+        ],
+        "agents": [
+          "subagent-delegation-plugin:fact-gatherer",
+          "fork"
+        ]
+      },
+      "industry": "technical training",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      }
     }
   ]
 }

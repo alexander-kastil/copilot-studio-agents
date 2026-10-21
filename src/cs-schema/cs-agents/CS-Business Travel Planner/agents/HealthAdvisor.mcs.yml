@@ -1,0 +1,11 @@
+mcs.metadata:
+  componentName: CS-Health Advisor
+  description: An agent that helps with first advice on different symptoms. It can be used to decide if an employee can start a business trip
+kind: TaskDialog
+modelDisplayName: CS-Health Advisor
+modelDescription: An agent that helps with first advice on different symptoms. It can be used to decide if an employee can start a business trip
+action:
+  kind: InvokeConnectedAgentTaskAction
+  botSchemaName: iits_CSHealthAdvisor
+  historyType:
+    kind: ConversationHistory

@@ -1,8 +1,0 @@
-mcs.metadata:
-  componentName: Profile Agent
-kind: GptComponentMetadata
-instructions:
-gptCapabilities: {}
-aISettings:
-  model:
-    modelNameHint: GPT55Chat

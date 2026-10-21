@@ -1,0 +1,7 @@
+mcs.metadata:
+  componentName: No Pain - No Gain Europe’s Premier Employee Gym for Employees
+  description: Gym locations that the employee can use for free on business trips
+kind: KnowledgeSourceConfiguration
+source:
+  kind: SharePointSearchSource
+  site: https://integrationsonline.sharepoint.com/sites/copilot-demo/Instructions/No%20Pain%20-%20No%20Gain%20Europe%E2%80%99s%20Premier%20Employee%20Gym%20Experience.docx

@@ -1,0 +1,11 @@
+mcs.metadata:
+  componentName: CS-Travel Expense Refund
+  description: An agent that helps with helping to claim travel expense refunds by taking the refund claim and then storing it for further processing. It also knows about official compensation rates for business travel
+kind: TaskDialog
+modelDisplayName: CS-Travel Expense Refund
+modelDescription: An agent that helps with helping to claim travel expense refunds by taking the refund claim and then storing it for further processing. It also knows about official compensation rates for business travel
+action:
+  kind: InvokeConnectedAgentTaskAction
+  botSchemaName: new_CSTravelExpenseRefund
+  historyType:
+    kind: ConversationHistory

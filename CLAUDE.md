@@ -31,7 +31,7 @@ Every `readme.md` and guide under `demos/` and `labs/` follows `.claude/skills/b
 
 | Topic | Lives in |
 | --- | --- |
-| Copilot Cowork custom `SKILL.md` authoring (frontmatter contract, kebab-case name matching the folder, companion-file limits, run-and-tune loop); use it whenever course content demonstrates or ships a Cowork skill | `.claude/skills/copilot-cowork/` |
+| Copilot Cowork custom `SKILL.md` authoring (frontmatter contract, kebab-case name matching the folder, companion-file limits, run-and-tune loop); use it whenever course content demonstrates or ships a Cowork skill | global `copilot-cowork` skill |
 | Copilot Studio `.mcs.yml` agent definitions under `src/cs-schema/agents/` (topic YAML, prebuilt entities, Adaptive Cards, conversation design, clone and sync via the VS Code extension); read its `references/schema-verification.md` before writing any Copilot Studio YAML token, because Learn documents the UI, not the literal identifiers | global `copilot-studio` skill, repo facts in `.claude/rules/copilot-studio.md` |
 | Mermaid diagrams for the module and lab docs, following the Mermaid label rule | `.claude/skills/mermaid-expert/` |
 | Brand-voice audit and fixes for Markdown | `.claude/skills/brand-voice-copilot/` |

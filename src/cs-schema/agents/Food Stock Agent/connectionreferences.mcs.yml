@@ -1,3 +1,0 @@
-﻿connectionReferences:
-  - connectionReferenceLogicalName: iits_FoodStockAgent.shared_iits-5ffood-2dinventory-5f0af75e9cbdc7cbac.53883454e354435ba9b4343af9466673
-    connectorId: /providers/Microsoft.PowerApps/apis/shared_iits-5ffood-2dinventory-5f0af75e9cbdc7cbac
