@@ -1,0 +1,7 @@
+mcs.metadata:
+  componentName: Lohnsteuerliche Behandlung von Dienstreisen
+  description: Official resource on what counts as a business trip and which costs can be claimed
+kind: KnowledgeSourceConfiguration
+source:
+  kind: PublicSiteSearchSource
+  site: https://www.wko.at/lohnverrechnung/lohnsteuerliche-behandlung-dienstreisen

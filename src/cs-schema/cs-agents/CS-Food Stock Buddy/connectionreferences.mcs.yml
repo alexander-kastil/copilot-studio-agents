@@ -1,0 +1,3 @@
+﻿connectionReferences:
+  - connectionReferenceLogicalName: iits_CSFoodStockBuddy.shared_iits-5fcs-2dfood-20catalog-5f0af75e9cbdc7cbac.758ce0d5cbd1414e93a57bd870350d65
+    connectorId: /providers/Microsoft.PowerApps/apis/shared_iits-5fcs-2dfood-20catalog-5f0af75e9cbdc7cbac

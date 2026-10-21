@@ -1,0 +1,3 @@
+﻿connectionReferences:
+  - connectionReferenceLogicalName: cr915_CSTravelAgent.shared_teams.shared-teams-b50218de-1fd3-4931-8e56-3a3fed001032
+    connectorId: /providers/Microsoft.PowerApps/apis/shared_teams

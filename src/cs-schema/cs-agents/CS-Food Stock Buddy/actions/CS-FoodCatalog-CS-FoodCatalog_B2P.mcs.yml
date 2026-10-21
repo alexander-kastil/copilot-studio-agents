@@ -1,0 +1,30 @@
+mcs.metadata:
+  componentName: CS-Food Catalog - CS-Food Catalog
+kind: TaskDialog
+modelDisplayName: CS-Add food
+modelDescription: Adds a new dish to the food catalog with its name, price, description, current stock and minimum stock. Use it only when the user asks to add a dish that is not in the list yet; the catalog assigns the id.
+outputs:
+  - propertyName: description
+
+  - propertyName: id
+
+  - propertyName: inStock
+
+  - propertyName: minStock
+
+  - propertyName: name
+
+  - propertyName: pictureUrl
+
+  - propertyName: price
+
+action:
+  kind: InvokeConnectorTaskAction
+  connectionReference: iits_CSFoodStockBuddy.shared_iits-5fcs-2dfood-20catalog-5f0af75e9cbdc7cbac.758ce0d5cbd1414e93a57bd870350d65
+  connectionProperties:
+    mode: Invoker
+
+  operationId: AddFood
+  aIPluginOperationExportKey: aiplugin.name=msdynaip_e15697e4-254b-46d1-b1ac-d55bc466db94,operationid=msdynaip_AddFood
+
+outputMode: All

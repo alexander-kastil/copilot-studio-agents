@@ -1,0 +1,35 @@
+﻿{
+  "name": "CS-Calculate food to order",
+  "instruction": "You plan the food order for a canteen.\n\nDemand per dish as JSON: {{foodDemand}}\n\nCurrent stock per dish as JSON: {{foodStock}}\n\nFor every dish in the demand with a value above 0, find the stock item with the same name, ignoring spaces, letter case and umlauts. WienerSchnitzel matches Wiener Schnitzel, and WeisswurstMitBrezn matches Wei\u00DFwurst mit Brezn.\nCalculate orderQuantity = demand \u002B minStock - inStock. If the result is below 0, use 0. If a dish has no stock item, use inStock 0 and minStock 0.\nReturn only a JSON array, one object per dish with the fields name, demand, inStock, minStock and orderQuantity, in the order of the demand. Return no other text.  ",
+  "model": "gpt-41-mini",
+  "modelParameters": {
+    "gptParameters": {
+      "temperature": 0
+    }
+  },
+  "inputs": [
+    {
+      "id": "foodDemand",
+      "text": "foodDemand",
+      "type": "text",
+      "quickTestValue": "{\u0022Kaiserschmarrn\u0022:0,\u0022WeisswurstMitBrezn\u0022:0,\u0022WienerSchnitzel\u0022:40,\u0022PizzaNapoli\u0022:30,\u0022Germknoedel\u0022:0,\u0022AranciniNapoletana\u0022:0,\u0022SchweinshaxeMitKraut\u0022:0,\u0022PadKaPrao\u0022:0,\u0022GreenCurry\u0022:25}"
+    },
+    {
+      "id": "foodStock",
+      "text": "foodStock",
+      "type": "text",
+      "quickTestValue": "[{\u0022id\u0022:1,\u0022name\u0022:\u0022Wiener Schnitzel\u0022,\u0022price\u0022:18,\u0022inStock\u0022:30,\u0022minStock\u0022:6},{\u0022id\u0022:2,\u0022name\u0022:\u0022Germknoedel\u0022,\u0022price\u0022:7,\u0022inStock\u0022:26,\u0022minStock\u0022:6},{\u0022id\u0022:3,\u0022name\u0022:\u0022Kaiserschmarrn\u0022,\u0022price\u0022:9,\u0022inStock\u0022:22,\u0022minStock\u0022:5},{\u0022id\u0022:4,\u0022name\u0022:\u0022Wei\u00DFwurst mit Brezn\u0022,\u0022price\u0022:10,\u0022inStock\u0022:20,\u0022minStock\u0022:5},{\u0022id\u0022:5,\u0022name\u0022:\u0022Schweinshaxe mit Kraut\u0022,\u0022price\u0022:19,\u0022inStock\u0022:12,\u0022minStock\u0022:3},{\u0022id\u0022:6,\u0022name\u0022:\u0022Pizza Napoli\u0022,\u0022price\u0022:9,\u0022inStock\u0022:28,\u0022minStock\u0022:6},{\u0022id\u0022:7,\u0022name\u0022:\u0022Arancini Napoletana\u0022,\u0022price\u0022:7,\u0022inStock\u0022:15,\u0022minStock\u0022:4},{\u0022id\u0022:8,\u0022name\u0022:\u0022Pad Ka Prao\u0022,\u0022price\u0022:10,\u0022inStock\u0022:18,\u0022minStock\u0022:4},{\u0022id\u0022:9,\u0022name\u0022:\u0022Green Curry\u0022,\u0022price\u0022:13,\u0022inStock\u0022:17,\u0022minStock\u0022:4}]"
+    }
+  ],
+  "output": {
+    "formats": [
+      "text"
+    ]
+  },
+  "settings": {
+    "recordRetrievalLimit": 30,
+    "shouldPreserveRecordLinks": null,
+    "runtime": null
+  },
+  "version": "GptDynamicPrompt-2"
+}

@@ -1,0 +1,18 @@
+mcs.metadata:
+  componentName: CS-Food Catalog - CS-Food Catalog
+kind: TaskDialog
+modelDisplayName: CS-Gets all food
+modelDescription: Lists every food item in the canteen stock with its id, name, price, current stock (inStock) and minimum stock (minStock). Use it to answer what is in stock, to find the id of a dish before changing its stock, and to read the stock before calculating an order.
+outputs:
+  - propertyName: Response
+
+action:
+  kind: InvokeConnectorTaskAction
+  connectionReference: iits_CSFoodStockBuddy.shared_iits-5fcs-2dfood-20catalog-5f0af75e9cbdc7cbac.758ce0d5cbd1414e93a57bd870350d65
+  connectionProperties:
+    mode: Invoker
+
+  operationId: GetFood
+  aIPluginOperationExportKey: aiplugin.name=msdynaip_e15697e4-254b-46d1-b1ac-d55bc466db94,operationid=msdynaip_GetFood
+
+outputMode: All
