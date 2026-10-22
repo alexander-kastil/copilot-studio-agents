@@ -3,9 +3,9 @@ slide: "02-01"
 topic: 02-how-agents-work
 title: "What makes an AI agentic"
 subtitle: "From answering a question to working toward a goal"
-layout: diagram
-visual-weight: 1/2
-visual-type: photo
+layout: diagram-full
+visual-weight: full
+visual-type: svg
 media-source: opus-svg
 media-file: demos/01-intro/pptx/images/02-01-agentic-loop.svg
 visual-prompt: >
@@ -22,25 +22,20 @@ order: 6
 source: demos/01-intro/02-how-agents-work/readme.md
 gamma_prompt: >
   Slide titled "What makes an AI agentic", subtitle "From answering a question to working toward a goal".
-  Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram
-  as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped,
-  never used as a background or side accent. Use exactly the one image given for this card; do not
-  generate or add any other images, icons or logos.
-  Theme: Integrations House (themeId idege54tfobdv2k), Montserrat bold headings, Poppins body, #1B365D accent.
+  Full-width diagram layout: title and subtitle at the top, the provided diagram across the whole card
+  width at its natural aspect ratio, never cropped, then one caption line under it. Use exactly the one
+  image given for this card; do not generate or add any other images, icons or logos.
 ---
 
 # What makes an AI agentic
 
 ## Content
 
-- **Goal-driven**: works toward an outcome you describe, not a single reply
-- **Tool-using**: calls functions, searches knowledge, reads data and acts in other systems
-- **Iterative**: loops through plan, act, observe and adjust instead of answering once
-- **Human-in-the-loop**: a person approves before an action such as sending an email runs
+- A chatbot answers once, while an **agent** plans, acts, observes and adjusts until the goal is reached, and a person approves before an action runs
 
 ## Speaker Notes
 
-A plain chatbot answers one turn at a time and forgets; an agent takes a goal, breaks it into steps and works the steps until the outcome is reached. The move is from "answer my question" to "get this done for me".
+A plain chatbot answers one turn at a time and forgets; an agent takes a goal, breaks it into steps and loops until the outcome is reached. Topic two starts with that shift from answering to pursuing a goal.
 
 Goal-driven: the agent works toward an outcome you describe rather than producing a single reply.
 
@@ -48,4 +43,4 @@ Tool-using: it calls functions, searches knowledge, reads data and acts in other
 
 Iterative: it loops through plan, act, observe and adjust instead of answering once.
 
-Human-in-the-loop: the agent proposes an action such as sending an email or updating a record, and a person approves before it runs. This control theme runs through Cowork and Copilot Studio for the rest of the course.
+Human-in-the-loop: the agent proposes an action such as sending an email, and a person approves before it runs. This control theme runs through Cowork and Copilot Studio for the rest of the course.

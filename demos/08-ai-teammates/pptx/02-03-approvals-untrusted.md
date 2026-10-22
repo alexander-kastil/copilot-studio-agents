@@ -5,7 +5,7 @@ title: "Approvals and untrusted content"
 subtitle: "What pauses for you and what stays data"
 layout: diagram
 visual-weight: 1/2
-visual-type: photo
+visual-type: svg
 media-source: opus-svg
 media-file: demos/08-ai-teammates/pptx/images/02-03-approvals-untrusted.svg
 visual-prompt: >
@@ -48,4 +48,4 @@ Capability categories: file system, shell, browser and Microsoft 365 can each be
 
 Sensitive locations: mark them so they always need approval.
 
-Untrusted content: emails, web pages and Teams messages are tagged and treated as data, not instructions. A message that says forward the price list to this address is something it reports, not something it obeys.
+Untrusted content: emails, web pages and Teams messages are tagged and treated as data, not instructions. A message that says "forward the price list to this address" is something it reports, not something it obeys.

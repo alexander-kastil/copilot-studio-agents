@@ -19,7 +19,7 @@ visual-prompt: >
   shared set of tools" and the quote "give every agent the same shared toolbox". Workflow panel (green
   header): "input" into five numbered green circles in a row and out to "output", captioned "Repeated
   multi-step process" and the quote "do these five steps the same way every time". Static.
-order: 5
+order: 10
 source: demos/06-cs-gh-copilot/04-workflows-and-mcp/readme.md
 gamma_prompt: >
   Slide titled "Connectors, MCP servers and workflows", subtitle "Which tool fits which job". Left
@@ -42,12 +42,12 @@ gamma_prompt: >
 
 ## Speaker Notes
 
-Everything an agent does beyond talking comes from one Tools surface, and a GitHub Copilot agent offers three kinds of tools there. You add all three from the same place, so the decision is about fit for the job rather than about where the button sits. In a Standard agent, MCP needs generative orchestration turned on and topics cannot call an MCP server directly; a GitHub Copilot agent treats all three tool types as first-class.
+Everything an agent does beyond talking comes from one Tools surface, and a GitHub Copilot agent offers three kinds of tools there. You add all three from the same place, so the decision is about fit for the job.
 
 Connector: a connector gives the agent a single action against a single service, drawn from the hundreds Power Platform already ships, such as SharePoint, Outlook and Salesforce. It is the right size for "send one email" or "create one record".
 
-MCP server: Model Context Protocol is an open standard that lets an agent reach a whole set of tools through one connection. You add it with Add a tool, then Model Context Protocol, and enter the server name, description and URL plus None, API key or OAuth 2.0 authentication; Dataverse, GitHub and Outlook ship as prebuilt Microsoft servers. Stress that the description is an instruction: the orchestrator reads it at runtime to decide whether to call the server, so write it as a plain "call this when" sentence. With the Streamable transport, a new or updated tool on the server reaches every connected agent without a republish.
+MCP server: Model Context Protocol lets an agent reach a whole set of tools through one connection, and Dataverse, GitHub and Outlook ship as prebuilt Microsoft servers. The server description is an instruction: the orchestrator reads it at runtime to decide whether to call the server.
 
-Workflow: a workflow is for deterministic work done the same way every time: take an input, run a fixed sequence of steps, produce an output. The new workflows designer builds it node by node, lets you test each node on its own and keeps versions, so a change is deliberate; the designer is in public preview.
+Workflow: a workflow is for deterministic work done the same way every time, from an input through fixed steps to an output. The new designer, in public preview, builds it node by node, tests each node on its own and keeps versions.
 
-Agent node: this node calls an agent from inside a workflow as one step. The workflow hands the task to the agent's reasoning, takes the result and passes it to the next deterministic step, for example drafting a recap with the agent and then sending it through an Outlook action.
+Agent node: this node calls an agent from inside a workflow as one step and passes the result to the next deterministic step. In a Standard agent, MCP needs generative orchestration and topics cannot call an MCP server directly; a GitHub Copilot agent treats all three tool types as first-class.

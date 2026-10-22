@@ -1,55 +1,51 @@
 ---
 slide: "00-01"
 topic: 04-cs-tools
-title: "Tool types"
-subtitle: "What each tool lets an agent reach"
-layout: diagram
+title: "Tools in Copilot Studio"
+subtitle: "From answering questions to calling real systems"
+layout: content
 visual-weight: 1/2
 visual-type: photo
-media-source: opus-svg
-media-file: demos/04-cs-tools/pptx/images/00-01-tool-types.svg
+media-source: nano-banana
+subject: people-talk
+media-file: demos/04-cs-tools/pptx/images/00-01-title.jpg
 visual-prompt: >
-  Hand-written SVG, viewBox 0 0 1920 1080, white background, Segoe UI, Helvetica, Arial, sans-serif,
-  borders #8c959f 2px, text #24292f and #57606a, minimum 28px type, no heading inside the image, no
-  arrow crossing a box or a label. A purple #f3edff box in the centre, "Copilot Studio agent" with
-  secondary "calls real systems", with arrows out to seven blue #eaf2ff cards. Left column of four:
-  "Prompt action" (AI Builder prompt: summarize, classify, extract), "Connector" (SharePoint, Outlook,
-  Salesforce, SQL, or custom), "Dataverse" (business records, read and write), "Document Processing"
-  (managed agent: invoices, contracts, receipts). Right column of three: "MCP server" (shared,
-  versioned toolset that many agents can share), "REST API tool" (any REST endpoint from an OpenAPI
-  description), "Computer use" (websites and desktop apps that have no API). Static.
+  ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych,
+  no collage. In the bright kitchen of a modern staff canteen during morning prep, the canteen manager,
+  a woman in her early thirties in a white chef jacket, stands at the stainless steel pass with a Power
+  Platform maker, a man in his late twenties in modern work-casual clothes. She points at a row of full
+  steel trays of breaded schnitzel and green curry while he listens with a smile; in her other hand she
+  holds a paper order list showing only faint grey lines, with no letters, words or numbers anywhere.
+  Clean white tiles, light-oak shelves with neatly stacked steel containers, a pot of fresh herbs on the
+  pass. Modern, light, bright and friendly: high-key natural daylight, soft pastel accents in light blue,
+  mint and lavender, green plants, 2020s design. 16:9 landscape, contemporary editorial photography.
+  Avoid: readable text, logos, watermarks, extra people, labels or writing on trays, papers or
+  containers, dark or moody lighting, vintage or retro decor, grime, clutter.
 order: 1
 source: demos/04-cs-tools/readme.md
 gamma_prompt: >
-  Slide titled "Tool types", subtitle "What each tool lets an agent reach". Left column: five short
-  bullets on what a tooled agent does, prompt actions with connectors and Dataverse, the Document
-  Processing managed agent, MCP servers with REST API tools, and computer use. Right column, wider
-  than the left: the provided diagram of one agent reaching seven tool types, as an inline content
-  image at its natural 16:9 aspect ratio, never cropped, never used as a background or side accent.
-  White background, calm pastel accents. Use exactly the one image given for this card; do not
-  generate or add any other images, icons or logos.
+  Content card titled "Tools in Copilot Studio", subtitle "From answering questions to calling real
+  systems". Three short bullets on the left half on plain white: a tooled agent acts on the systems a
+  team already uses, the seven tool types of the module, and one real job per demo agent. The provided
+  photograph of a canteen manager showing a maker the day's order at the kitchen pass fills the right
+  half as a side accent, no text over it. Use exactly the one image given for this card; do not generate
+  or add any other images, icons or logos.
 ---
 
-# Tool types
+# Tools in Copilot Studio
 
 ## Content
 
-- A **tooled agent** acts on real systems, where a grounded agent only answers
-- **Prompt actions**, connectors and Dataverse handle AI tasks, known services and business records
-- The **Document Processing** managed agent pulls fields from invoices, contracts and receipts
-- **MCP servers** and REST API tools reach shared toolsets and services without a connector
-- **Computer use** drives websites and desktop apps that have no API
+- A grounded agent answers questions; a **tooled agent acts** on the systems a team already uses
+- Seven tool types: prompts, Dataverse, connectors, agent flows, REST APIs, MCP servers and **computer use**
+- Each demo gives a CS- agent one real job, starting with the **canteen order**
 
 ## Speaker Notes
 
-This topic moves the agent from reading knowledge to calling real systems. Adding a tool is a configuration task in a Standard agent's Tools area, and the skill is picking the right type.
+This module moves a Standard agent from reading knowledge to calling real systems. Adding a tool is a configuration task on the agent's Tools page, and the maker skill is choosing the right one.
 
-Tooled agent: a grounded agent can answer questions, a tooled agent can act. Walk the diagram from the agent in the centre out to what each tool reaches.
+A tooled agent acts: it runs a prompt, writes a Dataverse row, posts to Teams, calls an API or an MCP server, or drives a user interface that has no API. Each tool type has a job it does best.
 
-Prompt actions, connectors and Dataverse: a prompt action runs a reusable AI Builder prompt to summarize, classify or extract. Connectors cover one action in a known service, and Dataverse reads and writes business records.
+Seven tool types: the module takes them in delivery order, one topic each. Tools, MCP and workflows come back for GitHub Copilot agents in module 06, so the concepts carry straight across.
 
-Document Processing: this prebuilt managed agent extracts, categorizes and validates fields from invoices, contracts and receipts. Nobody has to train a model from scratch.
-
-MCP servers and REST API tools: an MCP server gives many agents one standardized, versioned set of tools, and in a Standard agent it needs generative orchestration. A REST API tool connects to any endpoint from an OpenAPI description when no connector fits.
-
-Computer use: the agent reads the screen and acts on a website or desktop app. It is the route into a legacy system with no API.
+One real job per demo: CS-Food Stock Buddy calculates the canteen order first and later reads live stock from an API. The other demos run on CS-Travel Expense Refund, CS-Travel Agent, CS-Health Advisor, CS-Restaurant HR Manager and CS-Grey Logistics IT Help Desk.

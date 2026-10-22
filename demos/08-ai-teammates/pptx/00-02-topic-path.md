@@ -5,7 +5,7 @@ title: "Overview"
 subtitle: "Five topics along two paths to a teammate"
 layout: diagram
 visual-weight: 1/2
-visual-type: photo
+visual-type: svg
 media-source: opus-svg
 media-file: demos/08-ai-teammates/pptx/images/00-02-topic-path.svg
 visual-prompt: >

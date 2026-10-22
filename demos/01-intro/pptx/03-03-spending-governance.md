@@ -1,11 +1,11 @@
 ---
 slide: "03-03"
 topic: 03-where-to-build
-title: "Spending governance"
-subtitle: "Limits and alerts set when you activate Copilot Credits"
+title: "Spending limits"
+subtitle: "Guardrails set when you activate Copilot Credits"
 layout: diagram
 visual-weight: 1/2
-visual-type: photo
+visual-type: svg
 media-source: opus-svg
 media-file: demos/01-intro/pptx/images/03-03-spending-governance.svg
 visual-prompt: >
@@ -16,33 +16,33 @@ visual-prompt: >
   the tenant, filled partway, with a thick amber top line "Monthly spending limit, the tenant's total
   ceiling" and two dashed amber "Alert thresholds" lines below it; the lower threshold, already
   passed, has a filled amber marker.
-order: 13
+order: 11
 source: demos/01-intro/03-where-to-build/readme.md
 gamma_prompt: >
-  Slide titled "Spending governance", subtitle "Limits and alerts set when you
-  activate Copilot Credits". Left column: four short bullets. Right column: the provided diagram showing user
-  columns capped by a per-user limit and a tenant total with alert thresholds below its monthly
-  ceiling. White background, calm pastel accents. Use exactly the one image given for this card; do
-  not generate or add any other images, icons or logos.
+  Slide titled "Spending limits", subtitle "Guardrails set when you activate Copilot Credits". Layout:
+  Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an
+  inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never
+  used as a background or side accent. Use exactly the one image given for this card; do not generate or
+  add any other images, icons or logos.
 ---
 
-# Spending governance
+# Spending limits
 
 ## Content
 
 - **Monthly spending limit**: the tenant's total ceiling for the billing period
 - **Per-user limit**: the most any one user can consume, at least 2,000 credits a month
-- **Alert thresholds**: notifications at set percentages of the limit
+- **Alert thresholds** below the ceiling notify you before it is reached
 - Set them **at activation**, with numbers from the Copilot Credit Estimator
 
 ## Speaker Notes
 
-Copilot Credits without limits are a surprise waiting to happen, so this slide covers the guardrails you set when you activate them.
+This slide covers the guardrails you set when you activate Copilot Credits, before the first bill arrives.
 
-Monthly spending limit: this is the tenant's total ceiling for the billing period.
+Monthly spending limit: a spending policy caps the tenant's monthly total for the billing period.
 
-Per-user limit: it caps the most any one user can consume, so a single heavy user cannot drain the tenant's credits. Microsoft sets the minimum at 2,000 credits a month, and a user who reaches it loses access until credits reset on the first of the month.
+Per-user limit: it caps each user's share, so a single heavy user cannot use up the tenant's credits. Microsoft sets the minimum at 2,000 credits a month, and a user who reaches it loses access until credits reset on the first of the month.
 
-Alert thresholds: notifications fire at set percentages of the limit, so you hear about spend before you hit the ceiling.
+Alert thresholds: alerts fire at thresholds below the ceiling, so you hear about the spend before the limit is reached.
 
-At activation: set all three when you activate, not after the first large bill. The Copilot Credit Estimator helps you pick realistic numbers before go-live.
+At activation: set all three when you activate, not after the first bill. The Copilot Credit Estimator models realistic numbers first.

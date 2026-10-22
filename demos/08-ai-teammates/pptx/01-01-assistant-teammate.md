@@ -3,9 +3,9 @@ slide: "01-01"
 topic: 01-meet-autopilot
 title: "What makes an agent a teammate"
 subtitle: "Four properties that separate a teammate from an assistant"
-layout: diagram
-visual-weight: 1/2
-visual-type: photo
+layout: diagram-full
+visual-weight: full
+visual-type: svg
 media-source: opus-svg
 media-file: demos/08-ai-teammates/pptx/images/01-01-assistant-teammate.svg
 visual-prompt: >
@@ -20,23 +20,21 @@ order: 3
 source: demos/08-ai-teammates/01-meet-autopilot/readme.md
 gamma_prompt: >
   Slide titled "What makes an agent a teammate", subtitle "Four properties that separate a teammate from
-  an assistant". Left: four bullets. Right, wider: the provided comparison grid of assistant and
-  teammate across identity, memory, reach and start. Use exactly the one image given for this card; do
-  not generate or add any other images, icons or logos.
+  an assistant". Full-width layout: the provided comparison grid of assistant and teammate across
+  identity, memory, reach and start spans the card below the title, with the single caption line under
+  it. Use exactly the one image given for this card; do not generate or add any other images, icons or
+  logos.
 ---
 
 # What makes an agent a teammate
 
 ## Content
 
-- **Identity**: it acts as itself, so admins audit it like any other account
-- **Memory**: context one person explains carries into the next conversation
-- **Reach**: Teams, Outlook, chats, channels and documents, reached with an @mention
-- **Persistence**: it follows up, runs recurring work and picks a project back up days later
+- A **teammate** acts as itself, keeps its memory for the team, works in Teams, Outlook and documents, and starts from a goal, a schedule or an incoming signal
 
 ## Speaker Notes
 
-Most agents in this course wait for a person to start them. This slide names the four properties that turn an agent into a teammate, set against an assistant such as Chat or Cowork.
+Most agents in this course wait for a person to start them. The grid sets the four properties of a teammate against an assistant such as Chat or Cowork.
 
 Identity: its actions are attributed to it, not to you. Admins audit it like any other account.
 

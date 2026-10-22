@@ -1,0 +1,32 @@
+{
+  "topics": [
+    {
+      "title": "Autonomous Agents & Event Triggers",
+      "subtitle": "Event triggers, unattended runs and a shared returns mailbox"
+    },
+    {
+      "title": "Deep Reasoning Models",
+      "subtitle": "The reason keyword on the one step that weighs the rules"
+    },
+    {
+      "title": "Generative Orchestration & Multi-Agent Routing",
+      "subtitle": "The planner, child agents and connected agents"
+    },
+    {
+      "title": "Microsoft Foundry Agents: Core Concepts",
+      "subtitle": "Prompt agents, versions and the stable endpoint"
+    },
+    {
+      "title": "Foundry Agents in Copilot Studio",
+      "subtitle": "A Foundry specialist behind a Standard agent"
+    },
+    {
+      "title": "Voice Agents: IVR & Post-Call",
+      "subtitle": "Optional: speech and keypad menus, then work after the call"
+    },
+    {
+      "title": "Test and Evaluate Standard Agents",
+      "subtitle": "Optional: test sets, graders and one change per run"
+    }
+  ]
+}

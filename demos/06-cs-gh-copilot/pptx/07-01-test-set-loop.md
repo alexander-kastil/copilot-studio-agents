@@ -17,7 +17,7 @@ visual-prompt: >
   case", down and left to a blue box "Change exactly one component", and left and up back to Run.
   SMIL animation on a 7 second loop: an amber outline steps from the three sources to Test set,
   Run, Score, Diagnose, Change and back to Run. Complete and readable at t=0.
-order: 8
+order: 18
 source: demos/06-cs-gh-copilot/07-evaluations/readme.md
 gamma_prompt: >
   Slide titled "Evaluating agents with test sets", subtitle "Fill a set, run it, change one thing,

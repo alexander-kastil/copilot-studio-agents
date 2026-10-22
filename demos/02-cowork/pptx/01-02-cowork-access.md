@@ -5,7 +5,7 @@ title: "Setting up Cowork access"
 subtitle: "A spending policy that selects Cowork"
 layout: diagram
 visual-weight: 1/2
-visual-type: photo
+visual-type: svg
 media-source: opus-svg
 media-file: demos/02-cowork/pptx/images/01-02-cowork-access.svg
 visual-prompt: >
@@ -23,9 +23,10 @@ source: demos/02-cowork/01-intro/readme.md
 gamma_prompt: >
   Slide titled "Setting up Cowork access", subtitle "A spending policy that selects Cowork". Left
   column: five short bullets on the license, usage-based billing, the spending policy and the optional
-  settings. Right column: the provided diagram of a pilot user reaching Cowork through a spending
-  policy, with four separate settings listed below. White background, calm pastel accents. Use exactly
-  the one image given for this card; do not generate or add any other images, icons or logos.
+  settings. Right column, wider than the left: the provided diagram of a pilot user reaching Cowork
+  through a spending policy, with four separate settings listed below, at its natural 16:9 aspect
+  ratio, never cropped. White background, calm pastel accents. Use exactly the one image given for
+  this card; do not generate or add any other images, icons or logos.
 ---
 
 # Setting up Cowork access

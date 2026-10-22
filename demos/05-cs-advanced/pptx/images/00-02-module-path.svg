@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">The seven topics of module 5 in four groups</title>
+  <desc id="d">Topic 1, Autonomous Agents and Event Triggers, wakes an agent on an event: CS-Returns Agent answers every new email in a shared mailbox. Topic 2, Deep Reasoning Models, reasons through a hard problem: the help desk orders a ticket backlog with the reason keyword on one step. Topics 3 to 5 route work to other agents: CS-Business Travel Planner routes to connected agents and a child agent, a device specialist is built as a prompt agent in Microsoft Foundry, and CS-Compliance Agent hands a confirmed check to CS-Social Profiler. Topics 6 and 7 are optional: a keypad and speech menu with a post-call action, and a routing test set for CS-Business Travel Planner.</desc>
+  <style>
+    svg { font-size: 28px; }
+    .group { font-weight: 700; fill: #24292f; }
+    .groupsub { fill: #57606a; }
+    .num { font-weight: 700; fill: #24292f; }
+    .ttl { font-weight: 700; fill: #24292f; }
+    .demo { fill: #57606a; }
+  </style>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+
+  <text x="60" y="100" class="group" font-size="32">Wakes on an event</text>
+  <text x="60" y="140" class="groupsub" font-size="26">topic 1</text>
+  <line x1="432" y1="58" x2="432" y2="158" stroke="#8c959f" stroke-width="4" stroke-linecap="round"/>
+
+  <text x="60" y="240" class="group" font-size="32">Reasons through</text>
+  <text x="60" y="276" class="group" font-size="32">a hard problem</text>
+  <text x="60" y="312" class="groupsub" font-size="26">topic 2</text>
+  <line x1="432" y1="214" x2="432" y2="314" stroke="#8c959f" stroke-width="4" stroke-linecap="round"/>
+
+  <text x="60" y="522" class="group" font-size="32">Routes work to</text>
+  <text x="60" y="558" class="group" font-size="32">other agents</text>
+  <text x="60" y="594" class="groupsub" font-size="26">topics 3 to 5</text>
+  <line x1="432" y1="370" x2="432" y2="734" stroke="#8c959f" stroke-width="4" stroke-linecap="round"/>
+
+  <text x="60" y="896" class="group" font-size="32">Optional</text>
+  <text x="60" y="934" class="groupsub" font-size="26">topics 6 and 7</text>
+  <line x1="432" y1="790" x2="432" y2="1022" stroke="#8c959f" stroke-width="4" stroke-linecap="round"/>
+
+  <rect x="460" y="50" width="1400" height="116" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="530" cy="108" r="34" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="530" y="118" class="num" font-size="30" text-anchor="middle">1</text>
+  <text x="596" y="100" class="ttl" font-size="34">Autonomous Agents &amp; Event Triggers</text>
+  <text x="596" y="142" class="demo">CS-Returns Agent answers every new email in a shared mailbox</text>
+
+  <rect x="460" y="206" width="1400" height="116" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="530" cy="264" r="34" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="530" y="274" class="num" font-size="30" text-anchor="middle">2</text>
+  <text x="596" y="256" class="ttl" font-size="34">Deep Reasoning Models</text>
+  <text x="596" y="298" class="demo">The help desk orders a ticket backlog with <tspan font-family="Consolas, monospace">reason</tspan> on one step</text>
+
+  <rect x="460" y="362" width="1400" height="116" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="530" cy="420" r="34" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="530" y="430" class="num" font-size="30" text-anchor="middle">3</text>
+  <text x="596" y="412" class="ttl" font-size="34">Generative Orchestration &amp; Multi-Agent Routing</text>
+  <text x="596" y="454" class="demo">CS-Business Travel Planner routes to connected agents and a child agent</text>
+
+  <rect x="460" y="494" width="1400" height="116" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="530" cy="552" r="34" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="530" y="562" class="num" font-size="30" text-anchor="middle">4</text>
+  <text x="596" y="544" class="ttl" font-size="34">Microsoft Foundry Agents: Core Concepts</text>
+  <text x="596" y="586" class="demo">A device specialist built as a prompt agent in Microsoft Foundry</text>
+
+  <rect x="460" y="626" width="1400" height="116" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="530" cy="684" r="34" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="530" y="694" class="num" font-size="30" text-anchor="middle">5</text>
+  <text x="596" y="676" class="ttl" font-size="34">Foundry Agents in Copilot Studio</text>
+  <text x="596" y="718" class="demo">CS-Compliance Agent hands a confirmed check to CS-Social Profiler</text>
+
+  <rect x="460" y="782" width="1400" height="116" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2" stroke-dasharray="10 8"/>
+  <circle cx="530" cy="840" r="34" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="530" y="850" class="num" font-size="30" text-anchor="middle">6</text>
+  <text x="596" y="832" class="ttl" font-size="34">Voice Agents: IVR &amp; Post-Call</text>
+  <text x="596" y="874" class="demo">A keypad and speech menu with a post-call action</text>
+
+  <rect x="460" y="914" width="1400" height="116" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2" stroke-dasharray="10 8"/>
+  <circle cx="530" cy="972" r="34" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="530" y="982" class="num" font-size="30" text-anchor="middle">7</text>
+  <text x="596" y="964" class="ttl" font-size="34">Test and Evaluate Standard Agents</text>
+  <text x="596" y="1006" class="demo">A routing test set for CS-Business Travel Planner</text>
+</svg>

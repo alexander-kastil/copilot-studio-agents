@@ -3,9 +3,9 @@ slide: "03-01"
 topic: 03-where-to-build
 title: "Where to build an agent"
 subtitle: "The lowest-effort path that meets the need"
-layout: diagram
-visual-weight: 1/2
-visual-type: photo
+layout: diagram-full
+visual-weight: full
+visual-type: svg
 media-source: opus-svg
 media-file: demos/01-intro/pptx/images/03-01-build-paths.svg
 visual-prompt: >
@@ -21,34 +21,28 @@ visual-prompt: >
   line to a dot on the axis. Below the axis, one wide purple #f3edff bar "Serves every path" holding
   three chips: "Copilot connectors: external content", "MCP servers: tools", "Plugins: one
   installable package".
-order: 11
+order: 9
 source: demos/01-intro/03-where-to-build/readme.md
 gamma_prompt: >
   Slide titled "Where to build an agent", subtitle "The lowest-effort path that meets the need".
-  Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided
-  diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column,
-  never cropped, never used as a background or side accent. Use exactly the one image given for this
-  card; do not generate or add any other images, icons or logos.
-  Theme: Integrations House (themeId idege54tfobdv2k), Montserrat bold headings, Poppins body, #1B365D accent.
+  Full-width diagram layout: title and subtitle at the top, the provided diagram across the whole card
+  width at its natural aspect ratio, never cropped, then one caption line under it. Use exactly the one
+  image given for this card; do not generate or add any other images, icons or logos.
 ---
 
 # Where to build an agent
 
 ## Content
 
-- **No code**: Agent Builder, SharePoint agents, Cowork skills and plugins
-- **Copilot Studio**: low code, and most of this course
-- **Harnesses** decide how a Copilot Studio agent runs and bills
-- **Pro-code** (Agents Toolkit, Agents SDK, Foundry) is out of scope
-- **Connectors, MCP servers and plugins** serve every path
+- Start on the **lowest-effort path** that meets the need, and move up when a tool call, a channel or a multi-step process requires it
 
 ## Speaker Notes
 
-The build paths trade ease of building against control. Start with the lowest-effort path that meets the need, and move up only when a real requirement such as a tool call, a channel or a multi-step process forces it.
+The build paths trade ease of building against control, so start with the lowest-effort path that meets the need. A common pattern is to prototype without code, then rebuild in Copilot Studio when the process needs custom tools, multi-agent orchestration or governance.
 
 No code: Agent Builder and SharePoint agents answer from your sites and files, and Cowork skills and plugins automate recurring knowledge work. Both come in the first two modules.
 
-Copilot Studio: the low-code path for process agents with tools, triggers, channels and governance, and the home of most of this course. Its three harnesses decide how an agent runs: the GitHub Copilot harness reasons through multi-step processes, the standard harness follows the topics and flows you define, and the Copilot chat harness extends Copilot Chat with your knowledge.
+Copilot Studio: the low-code path for process agents with tools, triggers, channels and governance, and the home of most of this course. Its harness decides how an agent runs and bills: the GitHub Copilot harness reasons through multi-step processes, the standard harness follows the topics and flows you define, and the Copilot chat harness extends Copilot Chat with your knowledge.
 
 Pro-code: the Microsoft 365 Agents Toolkit, the Agents SDK and Microsoft Foundry bring your own orchestrator, models or hosting. They are out of scope here.
 

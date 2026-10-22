@@ -5,7 +5,7 @@ title: "Autopilot in the new Copilot"
 subtitle: "Home, Code and Autopilot, announced on September 25, 2026"
 layout: diagram
 visual-weight: 1/2
-visual-type: photo
+visual-type: svg
 media-source: opus-svg
 media-file: demos/08-ai-teammates/pptx/images/01-02-new-copilot.svg
 visual-prompt: >

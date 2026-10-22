@@ -5,7 +5,7 @@ title: "Licensing for agent accounts"
 subtitle: "Three separate things to plan"
 layout: diagram
 visual-weight: 1/2
-visual-type: photo
+visual-type: svg
 media-source: opus-svg
 media-file: demos/08-ai-teammates/pptx/images/05-03-licensing.svg
 visual-prompt: >
@@ -18,7 +18,7 @@ visual-prompt: >
   removes one from another agent or acquires more. Green "Copilot Credits" (the usage): building,
   testing, evaluating and running the agent consume credits on usage-based billing. A grey band below:
   agents are covered under their owner's license and need no Agent 365 seat of their own. Static.
-order: 16
+order: 17
 source: demos/08-ai-teammates/05-memory-governance/readme.md
 gamma_prompt: >
   Slide titled "Licensing for agent accounts", subtitle "Three separate things to plan". Left: four

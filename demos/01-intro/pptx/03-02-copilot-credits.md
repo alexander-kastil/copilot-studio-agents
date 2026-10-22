@@ -5,7 +5,7 @@ title: "What agents cost"
 subtitle: "Copilot Credits and the three billing routes"
 layout: diagram
 visual-weight: 1/2
-visual-type: photo
+visual-type: svg
 media-source: opus-svg
 media-file: demos/01-intro/pptx/images/03-02-copilot-credits.svg
 visual-prompt: >
@@ -20,7 +20,7 @@ visual-prompt: >
   From the band one arrow drops into a green #e9f7ef box "Azure subscription and resource group" with
   the line "Owner or Contributor rights". SMIL animation, 6 second loop: an amber dot travels down
   each column's arrow in turn, through the band, into the Azure box.
-order: 12
+order: 10
 source: demos/01-intro/03-where-to-build/readme.md
 gamma_prompt: >
   Slide titled "What agents cost", subtitle "Copilot Credits and the three billing routes". Layout:
@@ -46,6 +46,6 @@ Since September 2025, Copilot Credits are the common currency for agent usage ac
 
 Copilot license: licensed users run Copilot Studio agents in Copilot Chat, Teams and SharePoint at zero-rated usage for classic answers, generative answers and Graph grounding. Everything else draws credits.
 
-Three routes: agents in Copilot Chat and SharePoint agents for unlicensed users bill through a billing policy under Copilot, Billing & usage in the Microsoft 365 admin center. Copilot Studio agents bill through a billing plan under Licensing, Pay-as-you-go plans in the Power Platform admin center. Cowork, the Work IQ API and other usage-based services bill through a spending policy under Copilot, Cost Management.
+Three routes: agents in Copilot Chat and SharePoint agents for unlicensed users bill through a billing policy in the Microsoft 365 admin center, and Copilot Studio agents through a billing plan in the Power Platform admin center. Cowork, the Work IQ API and other usage-based services bill through a spending policy under Copilot, Cost Management.
 
 Prepaid first: prepaid capacity packs and the Copilot Credit Pre-Purchase Plan are drawn down first, then pay-as-you-go bills an Azure subscription and resource group on which the admin holds Owner or Contributor rights.

@@ -2,52 +2,50 @@
 slide: "06-03"
 topic: 06-staying-in-control
 title: "Governance for admins"
-subtitle: "Who can use Cowork, who sees it, and what it may reach"
-layout: diagram
-visual-weight: 1/2
-visual-type: photo
+subtitle: "Where each Cowork control lives"
+layout: diagram-full
+visual-weight: full
+visual-type: svg
 media-source: opus-svg
-media-file: demos/02-cowork/pptx/images/06-03-admin-governance.svg
+media-file: demos/02-cowork/pptx/images/06-03-admin-controls.svg
 visual-prompt: >
   Hand-written SVG, viewBox 0 0 1920 1080, white background, Segoe UI, 2px #8c959f borders, text
-  #24292f and #57606a, pastel fills, no heading inside the image. Two rows. Row "Access, who can use
-  Cowork": a blue box "Spending policy" with the path "Copilot > Cost Management > Configuration",
-  three ticks "Its scope includes the user", "It selects Cowork under Select agents and services", "A
-  limit of one credit is enough" and the line "To block a user, remove them from the scope", with an
-  arrow to a green box "Can use Cowork". Row "Visibility, who sees Cowork": a purple box "Discovery
-  setting" with "AI experiences enabled by usage-based billing" and "Controls visibility only, not
-  access", with an arrow to a grey box "Sees Cowork; billing not enabled: users request access,
-  admins approve".
+  #24292f and #57606a, pastel fills, no heading inside the image, static. A 2 by 2 grid of cards with a
+  coloured left edge. Blue "Copilot > Cost management": Configuration, a spending policy that selects
+  Cowork grants access with limits and alerts; Model profiles, a Cowork-only profile with at least two
+  models; Consumption, credits by policy, user and service. Purple "Cowork settings" with the path
+  "Copilot > Settings > View All": Allow browser access (Cowork Browsing), off by default, limit it to
+  security groups, the audit log records each browser task. Green "Agents > Tools", Plugins: deploy to
+  everyone or to groups, allow or block each plugin, org-wide sharing waits for admin approval. Amber
+  "Reports and Microsoft Purview": Cowork usage report with active users, total tasks, scheduled
+  versus user-initiated and CSV export, refreshed once a day; Purview with auditing, sensitivity
+  labels, DLP and eDiscovery.
 order: 20
 source: demos/02-cowork/06-staying-in-control/readme.md
 gamma_prompt: >
-  Slide titled "Governance for admins", subtitle "Who can use Cowork, who sees it, and what it may
-  reach". Left column: five short bullets. Right column: the provided diagram contrasting access,
-  granted by a spending policy, with visibility, controlled by the discovery setting. White
-  background, calm pastel accents. Use exactly the one image given for this card; do not generate or
-  add any other images, icons or logos.
+  Slide titled "Governance for admins", subtitle "Where each Cowork control lives". The provided
+  diagram of four cards, Cost management, Cowork settings, Agents > Tools, and reports with Purview,
+  across the whole card width at its natural aspect ratio, never cropped. One caption line under the
+  diagram. White background, calm pastel accents. Use exactly the one image given for this card; do
+  not generate or add any other images, icons or logos.
 ---
 
 # Governance for admins
 
 ## Content
 
-- A **spending policy** that covers the user and selects Cowork grants access, even at a one-credit limit
-- The **discovery setting** controls visibility only; visible users without billing can request access
-- **Cowork Browsing** is off by default and can be limited to security groups
-- **Plugins** deploy to everyone or to groups and are allowed or blocked in Agents > Tools
-- The **usage report** and Microsoft Purview cover adoption, auditing, labels and DLP
+- A **spending policy** grants access; browsing, plugins and reporting each have their own place in the admin center
 
 ## Speaker Notes
 
-Control does not stop at the individual user. Admins decide whether Cowork is available at all, and to whom.
+Control does not stop at the individual user. Admins decide whether Cowork is available at all, to whom, and what it may reach.
 
-Spending policy: under Copilot, Cost Management, Configuration, a policy grants access when its scope includes the user and it selects Cowork under Select agents and services; a limit of one credit is enough. To block a user, remove them from the scope, and rely on the policy's limits and alerts so no single user drains the tenant's Copilot Credits.
+Cost management: a spending policy under Copilot > Cost management > Configuration grants access when its scope includes the user and it selects Cowork, and to block a user you remove them from the scope. Model profiles there hold a Cowork-only set of at least two models, and Consumption splits Copilot Credits by policy, user and service, never by task.
 
-Discovery setting: AI experiences enabled by usage-based billing controls visibility only, not access. If Cowork is visible but billing is not enabled, users can request access and admins approve.
+Visibility: the discovery setting AI experiences enabled by usage-based billing controls only who sees Cowork, not who can use it. The Agents > All agents control from the preview has no effect on access any more.
 
-Cowork Browsing: the tenant setting is off by default; turn on Allow browser access in the Cowork settings, limit it to security groups and review the audit log of browser tasks. Model profiles under Cost management, Configuration let you build a Cowork-only profile of at least two models.
+Cowork settings: the tenant setting Cowork Browsing is off by default. Turn on Allow browser access, limit it to security groups and review the audit log, which records each browser task.
 
-Plugins: deploy them to everyone or to groups, and allow or block them in Agents, Tools. Org-wide sharing needs admin approval.
+Agents > Tools: deploy plugins to everyone or to groups and allow or block them there. Org-wide sharing needs admin approval, and no single setting turns off sharing with specific people.
 
-Usage report and Purview: the Cowork usage report in the Microsoft 365 admin center shows active users, total tasks and scheduled versus user-initiated tasks. Purview supports Cowork for DSPM, auditing, sensitivity labels, DLP and more.
+Reports and Purview: the Cowork usage report shows active users, total tasks and scheduled versus user-initiated tasks, and it refreshes once a day. Purview supports Cowork for DSPM, auditing, sensitivity labels, DLP, Insider Risk Management, Communication Compliance, eDiscovery and Data Lifecycle Management.

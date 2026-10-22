@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Per-user licenses and the three places Copilot Credits come from</title>
+  <desc id="d">Left, the per-user licenses: a Microsoft 365 Copilot license for every learner in modules 1, 2 and 8, paid per user; Copilot Studio access for every maker in modules 3 to 8, free; and a GitHub account as the class prerequisite, free. Right, Copilot Credits at about one cent each, charged where the work runs. The agent environment runs Standard and GitHub Copilot agents, agent flows, workflows and computer use, paid by a billing plan with the Copilot Studio meter set up in the Power Platform admin center. The maker's personal developer environment runs the building and previewing of apps in module 6, paid by the same billing plan with this environment added, also in the Power Platform admin center. The Microsoft 365 tenant runs Cowork, the Work IQ API and Copilot Managed Runtime for apps, paid by a spending policy that selects each service, set up in the Microsoft 365 admin center. An arrow leads from the credits down to the Azure subscription and resource group, which pays every pay-as-you-go route and needs Owner or Contributor rights.</desc>
+  <style>svg { font-size: 28px; }</style>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+
+  <rect x="48" y="60" width="520" height="960" rx="22" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="80" y="125" font-size="32" font-weight="700" fill="#24292f">Per-user licenses</text>
+  <text x="80" y="165" font-size="28" fill="#57606a">Every learner or maker</text>
+
+  <rect x="76" y="205" width="464" height="250" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="104" y="262" font-size="30" font-weight="700" fill="#24292f">Microsoft 365 Copilot</text>
+  <text x="104" y="302" font-size="30" font-weight="700" fill="#24292f">license</text>
+  <text x="104" y="362" font-size="28" fill="#57606a">Modules 1, 2 and 8</text>
+  <text x="104" y="404" font-size="28" fill="#57606a">Paid per user</text>
+
+  <rect x="76" y="485" width="464" height="225" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="104" y="545" font-size="30" font-weight="700" fill="#24292f">Copilot Studio access</text>
+  <text x="104" y="607" font-size="28" fill="#57606a">Modules 3 to 8</text>
+  <text x="104" y="649" font-size="28" fill="#57606a">Free</text>
+
+  <rect x="76" y="740" width="464" height="225" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="104" y="800" font-size="30" font-weight="700" fill="#24292f">GitHub account</text>
+  <text x="104" y="862" font-size="28" fill="#57606a">Class prerequisite</text>
+  <text x="104" y="904" font-size="28" fill="#57606a">Free</text>
+
+  <rect x="608" y="60" width="1264" height="770" rx="22" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="640" y="125" font-size="32" font-weight="700" fill="#24292f">Copilot Credits, charged where the work runs</text>
+  <text x="640" y="165" font-size="28" fill="#57606a">About $0.01 per credit, pay-as-you-go</text>
+
+  <rect x="636" y="200" width="388" height="600" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="660" y="252" font-size="30" font-weight="700" fill="#24292f">Agent environment</text>
+  <text x="660" y="342" font-size="26" fill="#57606a">Runs</text>
+  <text x="660" y="380" fill="#24292f">Standard and GitHub</text>
+  <text x="660" y="416" fill="#24292f">Copilot agents, agent</text>
+  <text x="660" y="452" fill="#24292f">flows, workflows,</text>
+  <text x="660" y="488" fill="#24292f">computer use</text>
+  <text x="660" y="540" font-size="26" fill="#57606a">Credit source</text>
+  <rect x="656" y="558" width="348" height="96" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="674" y="597" fill="#24292f">Billing plan with the</text>
+  <text x="674" y="633" fill="#24292f">Copilot Studio meter</text>
+  <text x="660" y="694" font-size="26" fill="#57606a">Set up in</text>
+  <text x="660" y="732" fill="#24292f">Power Platform</text>
+  <text x="660" y="768" fill="#24292f">admin center</text>
+
+  <rect x="1046" y="200" width="388" height="600" rx="16" fill="#ffffff" stroke="#e0a534" stroke-width="3"/>
+  <text x="1070" y="252" font-size="30" font-weight="700" fill="#24292f">Maker's personal</text>
+  <text x="1070" y="290" font-size="30" font-weight="700" fill="#24292f">developer environment</text>
+  <text x="1070" y="342" font-size="26" fill="#57606a">Runs</text>
+  <text x="1070" y="380" fill="#24292f">Building and</text>
+  <text x="1070" y="416" fill="#24292f">previewing apps</text>
+  <text x="1070" y="452" fill="#24292f">in module 6</text>
+  <text x="1070" y="540" font-size="26" fill="#57606a">Credit source</text>
+  <rect x="1066" y="558" width="348" height="96" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="1084" y="597" fill="#24292f">The same billing plan,</text>
+  <text x="1084" y="633" fill="#24292f">this environment added</text>
+  <text x="1070" y="694" font-size="26" fill="#57606a">Set up in</text>
+  <text x="1070" y="732" fill="#24292f">Power Platform</text>
+  <text x="1070" y="768" fill="#24292f">admin center</text>
+
+  <rect x="1456" y="200" width="388" height="600" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1480" y="252" font-size="30" font-weight="700" fill="#24292f">Microsoft 365 tenant</text>
+  <text x="1480" y="342" font-size="26" fill="#57606a">Runs</text>
+  <text x="1480" y="380" fill="#24292f">Cowork, the Work IQ</text>
+  <text x="1480" y="416" fill="#24292f">API, Copilot Managed</text>
+  <text x="1480" y="452" fill="#24292f">Runtime for apps</text>
+  <text x="1480" y="540" font-size="26" fill="#57606a">Credit source</text>
+  <rect x="1476" y="558" width="348" height="96" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="1494" y="597" fill="#24292f">Spending policy that</text>
+  <text x="1494" y="633" fill="#24292f">selects each service</text>
+  <text x="1480" y="694" font-size="26" fill="#57606a">Set up in</text>
+  <text x="1480" y="732" fill="#24292f">Microsoft 365</text>
+  <text x="1480" y="768" fill="#24292f">admin center</text>
+
+  <line x1="1240" y1="834" x2="1240" y2="872" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="608" y="880" width="1264" height="140" rx="22" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1240" y="940" font-size="34" font-weight="700" fill="#24292f" text-anchor="middle">Azure subscription and resource group</text>
+  <text x="1240" y="986" fill="#57606a" text-anchor="middle">Pays every pay-as-you-go route, Owner or Contributor rights</text>
+</svg>

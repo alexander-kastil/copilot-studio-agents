@@ -2,11 +2,11 @@
   "topics": [
     {
       "title": "Agents & Copilots for Microsoft 365",
-      "subtitle": "The vocabulary, the ecosystem map and where agents live"
+      "subtitle": "The vocabulary, the ecosystem map and the step to an agent"
     },
     {
       "title": "How Agents Work",
-      "subtitle": "The agentic loop, instructions, knowledge, tools, RAG, MCP and the design patterns"
+      "subtitle": "The agentic loop, the three parts of every agent and the design patterns"
     },
     {
       "title": "Where to Build and What It Costs",
@@ -15,6 +15,10 @@
     {
       "title": "Copilot Chat & Productivity Agents",
       "subtitle": "Researcher, Analyst, SharePoint agents and Agent Builder"
+    },
+    {
+      "title": "Prepare the Tenant: Licenses & Credits",
+      "subtitle": "Optional: the licenses, credit sources and costs behind each module"
     }
   ]
 }

@@ -1,0 +1,11 @@
+{
+  "topics": [
+    {"title": "Prompt Tool & Code Interpreter", "subtitle": "A fixed instruction for the canteen order"},
+    {"title": "Dataverse: Knowledge & Business Records", "subtitle": "Travel claims saved as table rows"},
+    {"title": "Connector Tools: Prebuilt Connectors", "subtitle": "One Teams action, filled from the chat"},
+    {"title": "Agent Flows: Deterministic Automation", "subtitle": "Fixed steps with a prompt and a reviewer"},
+    {"title": "Custom Connectors & REST APIs", "subtitle": "Live canteen stock from an OpenAPI file"},
+    {"title": "MCP Servers as Agent Tools", "subtitle": "Staff and shifts discovered at runtime"},
+    {"title": "Computer Use: Apps Without APIs", "subtitle": "Reading and filling web apps by screen"}
+  ]
+}

@@ -5,7 +5,7 @@ title: "Heartbeat and automations"
 subtitle: "How Autopilot keeps working in the background"
 layout: diagram
 visual-weight: 1/2
-visual-type: photo
+visual-type: svg
 media-source: opus-svg
 media-file: demos/08-ai-teammates/pptx/images/02-02-background-work.svg
 visual-prompt: >

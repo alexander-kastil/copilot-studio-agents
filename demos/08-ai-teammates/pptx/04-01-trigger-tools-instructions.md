@@ -5,7 +5,7 @@ title: "Triggers, tools and instructions"
 subtitle: "Three pieces that start an agent's cycle"
 layout: diagram
 visual-weight: 1/2
-visual-type: photo
+visual-type: svg
 media-source: opus-svg
 media-file: demos/08-ai-teammates/pptx/images/04-01-trigger-tools-instructions.svg
 visual-prompt: >
@@ -18,7 +18,7 @@ visual-prompt: >
   "Instructions" ("every Monday, prepare the review") below feed the same box by elbow arrows; the
   caption "All three must be present" sits under the trigger arrow. SMIL animation, 9 s loop: each
   trigger lights up in turn and a dot travels to the cycle; complete and readable at t=0.
-order: 11
+order: 12
 source: demos/08-ai-teammates/04-proactive-teammates/readme.md
 gamma_prompt: >
   Slide titled "Triggers, tools and instructions", subtitle "Three pieces that start an agent's cycle".
@@ -47,6 +47,6 @@ Email: a message arrives in the agent's mailbox. It fits the intake of requests,
 
 A person: someone @mentions it or sends it a task. It fits ad hoc questions, assignments and updates.
 
-Three pieces: writing every Monday, prepare the review in the instructions does nothing until a recurrence trigger exists and the tools can reach the sources. Treat trigger, tools and instructions as three separate pieces of configuration.
+Three pieces: writing "every Monday, prepare the review" into the instructions does nothing until a recurrence trigger exists and the tools can reach the sources. Treat trigger, tools and instructions as three separate pieces of configuration.
 
 GitHub Copilot harness: Microsoft announced triggers for agents on it on October 15, 2026. The rollout runs through the Frontier program, alongside agent accounts and business process memory.

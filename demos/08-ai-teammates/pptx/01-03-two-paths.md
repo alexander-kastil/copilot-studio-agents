@@ -5,7 +5,7 @@ title: "Autopilot or an agent account"
 subtitle: "Two ways Microsoft 365 delivers a teammate today"
 layout: diagram
 visual-weight: 1/2
-visual-type: photo
+visual-type: svg
 media-source: opus-svg
 media-file: demos/08-ai-teammates/pptx/images/01-03-two-paths.svg
 visual-prompt: >

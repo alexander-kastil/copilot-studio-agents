@@ -1,54 +1,51 @@
 ---
 slide: "05-01"
-topic: 01-intro
-title: "Takeaways"
-subtitle: "What to carry into the Cowork module"
-layout: content
+topic: 05-setup
+title: "Licenses and credit sources"
+subtitle: "Few seats, and credits charged where the work runs"
+layout: diagram
 visual-weight: 1/2
-visual-type: photo
-media-source: nano-banana
-media-file: demos/01-intro/pptx/images/05-01-takeaways.jpg
+visual-type: svg
+media-source: opus-svg
+media-file: demos/01-intro/pptx/images/05-01-licenses-credits.svg
 visual-prompt: >
-  ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych, no
-  collage. Three colleagues, women and men in their late twenties to mid thirties in modern work-casual
-  clothes, sit at a long light-oak bench in a bright office kitchen at the end of a workshop day,
-  chatting and laughing over coffee, laptops closed on the bench. People centred in the frame. Modern,
-  light, bright and friendly: high-key natural daylight, white and light-oak contemporary interior, soft
-  pastel accents in light blue, mint and lavender, green plants, 2020s design. Screens show only soft
-  blurred shapes and colours, never readable UI. 2:3 portrait, people centred, contemporary editorial
-  photography. Avoid: readable text, readable labels on cups or packaging, logos, watermarks, extra
-  people, dark or moody lighting, vintage or retro decor, grime, clutter.
-order: 16
-source: demos/01-intro/readme.md
+  Hand-written SVG, viewBox 0 0 1920 1080, white background, Segoe UI, Helvetica, Arial, sans-serif,
+  borders #8c959f 2px, text #24292f and #57606a, minimum 26px type, no heading inside the image. Left grey
+  panel "Per-user licenses" with three blue cards: "Microsoft 365 Copilot license" (modules 1, 2 and 8,
+  paid per user), "Copilot Studio access" (modules 3 to 8, free), "GitHub account" (class prerequisite,
+  free). Right purple panel "Copilot Credits, charged where the work runs" (about $0.01 per credit,
+  pay-as-you-go) with three white cards, each listing what runs there, an amber credit-source box and
+  where it is set up: "Agent environment" (billing plan with the Copilot Studio meter, Power Platform
+  admin center), "Maker's personal developer environment" with an amber border (the same billing plan,
+  this environment added), "Microsoft 365 tenant" (spending policy that selects each service, Microsoft
+  365 admin center). An arrow leads down to a green bar "Azure subscription and resource group".
+order: 14
+source: demos/01-intro/05-setup/readme.md
 gamma_prompt: >
-  Closing slide titled "Takeaways", subtitle "What to carry into the Cowork module". Side-accent layout:
-  title, subtitle and five bullets on the left half on plain white, the provided photograph of three
-  colleagues chatting over coffee in a bright office kitchen filling the right half, no text over it.
-  Use exactly the one image given for this card; do not generate or add any other images, icons or
-  logos.
-  Theme: Integrations House (themeId idege54tfobdv2k), Montserrat bold headings, Poppins body, #1B365D accent.
+  Slide titled "Licenses and credit sources", subtitle "Few seats, and credits charged where the work
+  runs". Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided
+  diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never
+  cropped, never used as a background or side accent. Use exactly the one image given for this card; do
+  not generate or add any other images, icons or logos.
 ---
 
-# Takeaways
+# Licenses and credit sources
 
 ## Content
 
-- Every agent is a copilot with a **narrower job and more autonomy**
-- An agent works toward a **goal** in a loop, and a person approves consequential actions
-- Fix a weak agent by naming its thin part: **instructions, knowledge or tools**
-- Take the **lowest-effort path** that meets the need
-- Agents bill in **Copilot Credits**: set spending limits at activation
+- **Per user**: a Microsoft 365 Copilot license, Copilot Studio access and a GitHub account
+- Everything else is **Copilot Credits** or an Azure resource on one subscription
+- Credits are charged **where the work runs**: agent environment, developer environment or tenant
+- Each maker's **personal developer environment** needs the billing plan too
 
 ## Speaker Notes
 
-Close the module with the habits it built, each one a decision you make before you start building.
+This optional topic collects what setting up the class tenant taught us. Few of the licenses are per-user seats, and each credit source has to be in place before the module that uses it starts.
 
-Narrower job, more autonomy: a copilot answers turn by turn, an agent takes a specific job with its own knowledge, instructions and tools.
+Per user: every learner needs a Microsoft 365 account with a Microsoft 365 Copilot license, every maker needs Copilot Studio access, and a GitHub account is a class prerequisite. Copilot Studio access is free through the Copilot license, the Copilot Studio user license or the trial.
 
-Goal and approval: an agent plans, acts, observes and adjusts until the outcome is reached, and a person approves before an action such as sending an email runs.
+Credits or Azure: everything else is usage in Copilot Credits, about one cent each, or an Azure resource. One Azure subscription and resource group, with Owner or Contributor rights for the admin, pays every pay-as-you-go route.
 
-Name the thin part: confident but wrong answers, off-topic replies and no access to current data each point to one of instructions, knowledge or tools.
+Where the work runs: agents, agent flows, workflows and computer use bill to the billing plan of the agent environment. Cowork, the Work IQ API and Copilot Managed Runtime bill through a Microsoft 365 spending policy that selects each service.
 
-Lowest-effort path: start with Agent Builder, a SharePoint agent or a Cowork skill, and move up to Copilot Studio only when a real requirement such as a tool call, a channel or a multi-step process forces it.
-
-Copilot Credits and limits: a Copilot license zero-rates Copilot Studio agents in Chat, Teams and SharePoint, everything else draws credits billed to an Azure subscription, and monthly and per-user limits belong in place at activation. Copilot Chat and the prebuilt agents are the baseline, and the Cowork module builds on it next.
+Personal developer environment: Copilot Studio builds every maker's apps there, with no picker, and creates it the first time the maker opens the App tile. An agent environment can be fully billed while the app build in the same browser tab fails, because the app is built somewhere else.

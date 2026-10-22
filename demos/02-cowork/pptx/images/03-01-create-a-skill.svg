@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
   <title id="t">Three ways in, one skills folder, discovered by the next new task</title>
-  <desc id="d">The guided flow under Customize, Skills, Add, Create new, asking in chat, and writing a SKILL.md yourself all end in one folder, Documents/Cowork/skills, with one subfolder per skill such as weekly-report and meeting-prep, up to 50 custom skills. A task that is already open started before the save and does not list the new skill. The next new task discovers the skills at its start and lists weekly-report and meeting-prep.</desc>
+  <desc id="d">The guided flow under Customize, Add, Create skill with Cowork, asking in chat, and writing a SKILL.md yourself all end in one folder, Documents/Cowork/Skills, with one subfolder per skill such as weekly-report and meeting-prep, up to 50 custom skills. A task that is already open started before the save and does not list the new skill. The next new task discovers the skills at its start and lists weekly-report and meeting-prep under Custom skills.</desc>
   <rect width="1920" height="1080" fill="#ffffff"/>
   <defs>
     <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="18" markerHeight="18" markerUnits="userSpaceOnUse" orient="auto">
@@ -10,8 +10,8 @@
   <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
     <rect x="100" y="150" width="560" height="170" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
     <text x="132" y="204" font-size="30" font-weight="700" fill="#24292f">Guided flow</text>
-    <text x="132" y="248" font-size="28" fill="#57606a">Customize &gt; Skills &gt;</text>
-    <text x="132" y="288" font-size="28" fill="#57606a">Add &gt; Create new</text>
+    <text x="132" y="248" font-size="28" fill="#57606a">Customize &gt; Add &gt;</text>
+    <text x="132" y="288" font-size="28" fill="#57606a">Create skill with Cowork</text>
 
     <rect x="100" y="395" width="560" height="170" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
     <text x="132" y="449" font-size="30" font-weight="700" fill="#24292f">Ask in chat</text>
@@ -32,7 +32,7 @@
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.19;0.21;0.93;0.95;1" dur="10s" repeatCount="indefinite"/>
     </rect>
     <g font-family="Consolas, Menlo, monospace" font-size="28">
-      <text x="815" y="312" font-weight="700" fill="#24292f">Documents/Cowork/skills/</text>
+      <text x="815" y="312" font-weight="700" fill="#24292f">Documents/Cowork/Skills/</text>
       <text x="845" y="380" fill="#24292f">weekly-report/</text>
       <text x="885" y="424" fill="#57606a">SKILL.md</text>
       <text x="845" y="484" fill="#24292f">meeting-prep/</text>
@@ -55,7 +55,7 @@
     </rect>
     <text x="1410" y="530" font-size="30" font-weight="700" fill="#24292f">Next new task</text>
     <text x="1410" y="576" font-size="28" fill="#57606a">discovery at its start</text>
-    <text x="1410" y="660" font-size="28" font-weight="700" fill="#24292f">Skills</text>
+    <text x="1410" y="660" font-size="28" font-weight="700" fill="#24292f">Custom skills</text>
     <rect x="1410" y="690" width="290" height="62" rx="31" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
     <rect x="1410" y="690" width="290" height="62" rx="31" fill="#fff6e5" stroke="#e0a534" stroke-width="4" opacity="0">
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5;0.52;0.93;0.95;1" dur="10s" repeatCount="indefinite"/>

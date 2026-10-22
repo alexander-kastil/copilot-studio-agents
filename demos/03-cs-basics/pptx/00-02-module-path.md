@@ -2,34 +2,21 @@
 slide: "00-02"
 topic: 03-cs-basics
 title: "Overview"
-subtitle: "Four topics in delivery order"
+subtitle: "Six topics, four agents rebuilt in the demos"
 layout: diagram
 visual-weight: 1/2
-visual-type: photo
+visual-type: svg
 media-source: opus-svg
-media-file: demos/03-cs-basics/pptx/images/00-02-module-path.svg
-visual-prompt: >
-  Hand-written SVG, viewBox 0 0 1920 1080, white background, Segoe UI, Helvetica, Arial, sans-serif,
-  borders #8c959f 2px, text #24292f and #57606a, minimum 28px type, no heading inside the image, no
-  arrow crossing a box or a label. Four numbered topic cards in one row with short arrows between
-  neighbours. Cards 1 to 3 blue #eaf2ff under a bracket labelled "Standard agents": 1 Copilot
-  Studio Basics (Environments, Agents and knowledge, Topics and Power Fx, Conversation design, Publish
-  to channels), 2 Extending Agents with Tools (Prompt actions, Connectors, Dataverse, AI Builder, MCP
-  and REST APIs, Computer Use), 3 Advanced Copilot Studio Agents (Generative orchestration, Autonomous
-  agents, Multi-agent, Deep reasoning, Agent Flows and voice). Card 4 purple #f3edff under a bracket
-  labelled "GitHub Copilot agents": GitHub Copilot Agents (Unified Build surface,
-  Testing and evaluation, Agent Skills, SKILL.md, Workflows and MCP, IQ grounding, apps). An arrow from
-  card 4 down to a grey #f6f8fa band: "Next, module 04: Publishing, Maintaining & Governing" with
-  "Publishing, ALM and governance for the agents you build here". Static.
+media-file: demos/03-cs-basics/pptx/images/00-02-basics-path.svg
 order: 2
 source: demos/03-cs-basics/readme.md
 gamma_prompt: >
-  Slide titled "Overview", subtitle "Four topics in delivery order". Layout: Two columns. Left column:
-  five short bullets walking the path through the module. Right column, wider than the left: the
-  provided diagram of four numbered topic cards, three on Standard agents and one on
-  GitHub Copilot agents, leading on to module 04, as an inline content image at its natural 16:9 aspect ratio,
-  never cropped, never used as a background or side accent. Use exactly the one image given for this
-  card; do not generate or add any other images, icons or logos.
+  Slide titled "Overview", subtitle "Six topics, four agents rebuilt in the demos". Layout: Two columns.
+  Left column: five short bullets walking the path through the module. Right column, wider than the
+  left: the provided diagram of six numbered topic cards in two rows, each naming the CS- agent its demo
+  builds, as an inline content image at its natural 16:9 aspect ratio, never cropped, never used as a
+  background or side accent. Use exactly the one image given for this card; do not generate or add any
+  other images, icons or logos.
   Theme: Integrations House (themeId idege54tfobdv2k), Montserrat bold headings, Poppins body, #1B365D accent.
 ---
 
@@ -37,20 +24,20 @@ gamma_prompt: >
 
 ## Content
 
-- Start with the basics: environments, knowledge, topics and publishing to a channel
-- Give the agent **tools**: prompt actions, connectors, Dataverse, MCP and REST APIs
-- Let it run on its own with **generative orchestration**, triggers and agent flows
-- Finish with **GitHub Copilot agents**, taught beside Standard agents
-- Publishing, ALM and governance follow in module 04
+- Create **CS-Employee Onboarding Assistant** and ground it in two SharePoint sites
+- Build **CS-HR Buddy** topics that identify an employee once
+- Turn a travel claim into values ready to save with **Power Fx**
+- Collect a canteen demand on one **Adaptive Card**
+- Publish CS-HR Buddy to **Teams and Microsoft 365 Copilot**
 
 ## Speaker Notes
 
-This is the map of the module. Each topic builds on the one before, and the first three stay on Standard agents.
+This is the map of the module: six topics in delivery order, and every demo rebuilds one agent of the class environment with the CS- prefix.
 
-Basics: you start in the Power Platform admin center with environments, then create an agent, ground it with knowledge, shape it with topics and publish it to Teams. The goal is a working, grounded agent built without writing code.
+Onboarding assistant: topics one and two create CS-Employee Onboarding Assistant with structured instructions, then ground it in the HR Documents and Sightseeing SharePoint sites and trace each answer to its citation.
 
-Tools: a tooled agent can act. Prompt actions, connectors, Dataverse, the Document Processing managed agent, MCP, REST APIs and computer use each have a job they do best.
+HR Buddy: topic three rebuilds two HR topics in CS-HR Buddy, joined by a global variable, so an employee answers the four identity questions only once per session.
 
-Advanced: generative orchestration is the planning layer that autonomous agents, multi-agent handoffs and deep reasoning depend on. Agent flows cover the fixed steps you do not want an LLM to improvise.
+Power Fx and cards: topic four lets three formulas turn a travel expense claim into a claim ID and ISO dates, and topic five collects the canteen's demand for nine dishes on one Adaptive Card.
 
-GitHub Copilot agents: since June 2026 they run beside Standard agents, and an agent built as one type cannot be converted to the other. Publishing, ALM and governance for everything built here come in module 04.
+Publishing: topic six takes CS-HR Buddy to Teams and Microsoft 365 Copilot, shares it with a pilot group and rolls out a change with one publish.

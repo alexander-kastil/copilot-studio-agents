@@ -3,50 +3,57 @@ slide: "02-01"
 topic: 02-autopilot-at-work
 title: "Briefing Autopilot"
 subtitle: "Name, role, goal and the boundaries you set"
-layout: content
+layout: split-code
 visual-weight: 1/2
 visual-type: photo
 media-source: nano-banana
 media-file: demos/08-ai-teammates/pptx/images/02-01-briefing-autopilot.jpg
+subject: people-at-work
 visual-prompt: >
   ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych, no
-  collage. At a light-oak standing desk beside a tall window, a procurement team lead in her early
-  thirties turns her open laptop toward a new colleague in his late twenties and points at the screen
-  while she explains a plan; he nods and listens. Both people are centred in the frame. Modern, light,
-  bright and friendly: high-key natural daylight, white and light-oak contemporary interior, soft pastel
-  accents in light blue, mint and lavender, green plants, 2020s design. Screens show only soft blurred
-  shapes and colours, never readable UI. 16:9 landscape, contemporary editorial photography. Avoid:
-  readable text, logos, watermarks, dark or moody lighting, vintage or retro decor, grime, clutter,
-  extra people, notebooks, sticky notes or printouts with writing.
+  collage. At a light-oak standing desk by a tall window, a procurement team lead in her early thirties
+  in modern work-casual clothes types a short brief into her open laptop and pauses with a small smile as
+  she reads it back; beside the laptop lies a printed supplier list that shows only faint grey lines and
+  small pastel colour bars, with no letters, words or numbers anywhere. The laptop display faces her and
+  glows with five short soft-blurred bands of mint and light blue; the camera stands beside her at a
+  slight angle, so her face and the display are both in view. She is centred in the frame. Modern,
+  light, bright and friendly: high-key natural daylight, white and light-oak contemporary interior, soft
+  pastel accents in light blue, mint and lavender, green plants, 2020s design. Screens show only soft
+  blurred shapes and colours, never readable UI. 2:3 portrait, contemporary editorial photography.
+  Avoid: readable text, readable screen content, letters or numbers on the paper, logos, watermarks,
+  extra people, dark or moody lighting, vintage or retro decor, grime, clutter.
 order: 6
 source: demos/08-ai-teammates/02-autopilot-at-work/readme.md
 gamma_prompt: >
-  Slide titled "Briefing Autopilot", subtitle "Name, role, goal and the boundaries you set". Five
-  bullets on the left half on plain white; the provided photograph of a team lead handing over a plan to
-  a new colleague as a side accent on the right half, no text over it. Use exactly the one image given
-  for this card; do not generate or add any other images, icons or logos.
+  Slide titled "Briefing Autopilot", subtitle "Name, role, goal and the boundaries you set". Split code
+  layout: the five-line brief as a code block in a light grey monospace panel on the left, exactly as
+  given; on the right the provided photograph of a procurement team lead writing the brief at a standing
+  desk, at its natural aspect ratio, never cropped. Use exactly the one image given for this card; do not
+  generate or add any other images, icons or logos.
 ---
 
 # Briefing Autopilot
 
 ## Content
 
-- **Name**: how colleagues find and @mention it
-- **Role**: which part of the process it owns
-- **Goal**: what done looks like
-- **Boundaries and escalation**: the decisions it brings back to you
-- Leave the **steps** open: working them out is the work you hand over
+```text
+Name: Supplier Review Lead
+Role: Run the quarterly supplier review for the procurement team.
+Goal: Every active supplier has a scorecard, a review meeting, and recorded actions by the end of the quarter.
+Boundaries: Contact suppliers only through the procurement shared mailbox. Ask me before you move a meeting with a supplier executive.
+Escalate: Any supplier with two missed deliveries or an open quality incident.
+```
 
 ## Speaker Notes
 
-Autopilot starts from three inputs: a name, a role and a goal. A good brief reads like the handover you would give a new colleague, which is what the photo shows.
+Autopilot starts from three inputs: a name, a role and a goal. A good brief reads like the handover you would give a new colleague, and this one is the supplier review example from the topic.
 
-Name: this is how colleagues find and @mention it in Teams, Outlook and documents.
+Name: colleagues find and @mention the teammate by it, so pick one the procurement team will recognize.
 
-Role: it says which part of the process the teammate owns. In the supplier review example, it runs the quarterly review for the procurement team.
+Role: it says which part of the process the teammate owns, here the quarterly supplier review for the procurement team.
 
-Goal: what done looks like. In the example, every active supplier has a scorecard, a review meeting and recorded actions by the end of the quarter.
+Goal: what done looks like. Every active supplier has a scorecard, a review meeting and recorded actions by the end of the quarter.
 
-Boundaries and escalation: you set the objective and the boundaries. The example contacts suppliers only through the shared mailbox and escalates any supplier with two missed deliveries.
+Boundaries and escalation: you set the objective and the limits, and the brief names the decisions that come back to you. Suppliers are contacted only through the shared mailbox, and any supplier with two missed deliveries or an open quality incident is escalated.
 
-Steps: leave them open. The schedule, the follow-ups and the reminders are the work you are handing over.
+Steps: the brief leaves them open on purpose. Working out the schedule, the follow-ups and the reminders is the work you are handing over.

@@ -3,9 +3,9 @@ slide: "01-01"
 topic: 01-intro
 title: "Cowork and Copilot Chat"
 subtitle: "Who plans the work"
-layout: diagram
-visual-weight: 1/2
-visual-type: photo
+layout: diagram-full
+visual-weight: full
+visual-type: svg
 media-source: opus-svg
 media-file: demos/02-cowork/pptx/images/01-01-cowork-and-chat.svg
 visual-prompt: >
@@ -21,33 +21,27 @@ visual-prompt: >
 order: 3
 source: demos/02-cowork/01-intro/readme.md
 gamma_prompt: >
-  Slide titled "Cowork and Copilot Chat", subtitle "Who plans the work". Left column: five short
-  bullets comparing Copilot Chat and Cowork. Right column: the provided two-lane diagram, Copilot Chat
-  answering one question at a time above Cowork taking an outcome through a plan and actions across
-  Microsoft 365 apps. White background, calm pastel accents. Use exactly the one image given for this
-  card; do not generate or add any other images, icons or logos.
+  Slide titled "Cowork and Copilot Chat", subtitle "Who plans the work". The provided two-lane diagram
+  across the whole card width, Copilot Chat answering one question at a time above Cowork taking an
+  outcome through a plan and actions across Microsoft 365 apps, at its natural aspect ratio, never
+  cropped. One caption line under the diagram. White background, calm pastel accents. Use exactly the
+  one image given for this card; do not generate or add any other images, icons or logos.
 ---
 
 # Cowork and Copilot Chat
 
 ## Content
 
-- **Copilot Chat** gives fast, single-step help: a draft, a summary or an answer
-- **Cowork** completes multi-step work across Microsoft 365, in minutes to hours
-- In Chat you plan the work and ask **one question at a time**
-- In Cowork you **describe the outcome**, and it proposes the plan and takes the steps
-- **Copilot Home** routes each request to Chat, Cowork or Code
+- In Chat you ask **one question at a time**; in Cowork you **describe the outcome**, and it plans and acts across Microsoft 365
 
 ## Speaker Notes
 
-This slide sets Cowork apart from Copilot Chat, which the class already knows. Think of Chat as an AI thought partner and Cowork as an AI colleague who actually does the work.
+This slide sets Cowork apart from Copilot Chat, which the class already knows. Think of Chat as your AI thought partner and Cowork as your AI colleague who actually does the work.
 
-Copilot Chat: it gives fast, single-task support, a quick draft, answer or insight in seconds to minutes. Use it when you need a suggestion rather than an action.
+Copilot Chat: it gives fast, single-task support, a quick draft, answer or insight in seconds to minutes. You drive it one question at a time and merge the text yourself, the loop in the upper lane.
 
-Cowork: it completes multi-step workflows across apps and data, and a task can run from minutes to hours. Use it when you need Copilot to take action, not just suggest.
+Cowork: it completes multi-step work across apps and data, and a task can run from minutes to hours. You name the outcome, it breaks the goal into tasks, selects skills and acts in Outlook, Teams, Word, Excel and PowerPoint.
 
-You plan in Chat: you drive the work one question at a time and merge the text yourself. The upper lane of the diagram shows that loop.
+Your job shifts: instead of asking good questions, you judge a plan before work starts and review what comes back. Use Cowork when you need Copilot to take action, not just suggest.
 
-Cowork proposes the plan: you name the outcome, and it breaks the goal into tasks, selects skills and acts in Outlook, Teams, Word, Excel and PowerPoint. Your job shifts from asking good questions to judging a plan before work starts.
-
-Copilot Home: announced on September 25, 2026, it routes each request to Chat, Cowork or Code, so you don't pick a mode. Home and Code roll out through the Frontier program first.
+Copilot Home: announced on September 25, 2026, it brings Chat and Cowork into one starting point and routes each request to Chat, Cowork or Code. Home and Code roll out through the Frontier program first.

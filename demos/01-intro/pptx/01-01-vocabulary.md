@@ -5,7 +5,7 @@ title: "Copilot, agent and assistant"
 subtitle: "Three terms the course uses with fixed meanings"
 layout: diagram
 visual-weight: 1/2
-visual-type: photo
+visual-type: svg
 media-source: opus-svg
 media-file: demos/01-intro/pptx/images/01-01-vocabulary.svg
 visual-prompt: >

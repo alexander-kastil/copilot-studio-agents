@@ -5,7 +5,7 @@ title: "Publishing an agent with an account"
 subtitle: "What the account provisions at publish"
 layout: diagram
 visual-weight: 1/2
-visual-type: photo
+visual-type: svg
 media-source: opus-svg
 media-file: demos/08-ai-teammates/pptx/images/03-01-publish-account.svg
 visual-prompt: >
@@ -50,4 +50,4 @@ License: publishing assigns one Microsoft 365 Frontier for AI Teammates license 
 
 Two identities: Agent 365 provisions and governs the account with user-grade visibility. Copilot Studio also creates a Microsoft Entra Agent ID that admins manage separately.
 
-People picker: in the demo the agent shows up in Teams and the organization directory like a colleague you can @mention.
+People picker: once published, people find the agent in Teams and the directory and @mention it like a colleague. The planned demo looks it up in the Teams people picker and the organization directory.

@@ -2,52 +2,47 @@
 slide: "01-03"
 topic: 01-intro
 title: "A typical Cowork interaction"
-subtitle: "Describe, watch, steer, approve, review"
+subtitle: "The Q3 review deck from brief to approved send"
 layout: diagram
 visual-weight: 1/2
-visual-type: photo
-media-source: opus-svg
-media-file: demos/02-cowork/pptx/images/01-03-interaction-loop.svg
+visual-type: screenshot
+media-source: existing
+media-file: demos/02-cowork/pptx/images/01-03-q3-review-deck.png
+photo-link: demos/02-cowork/pptx/images/01-03-q3-review-deck.png
 visual-prompt: >
-  Hand-written SVG, viewBox 0 0 1920 1080, white background, Segoe UI, 2px #8c959f borders, text
-  #24292f and #57606a, pastel fills, no heading inside the image. A row of numbered boxes: 1 blue
-  "Describe your task, use natural language", 2 green "Watch Cowork work, steps, visibly, one by one", 4
-  amber "Approve before sensitive actions, risk level: medium or high", 5 blue "Review the results:
-  download, confirm, ask for changes". Above box 2 a blue box 3 "Steer at any time: interrupt, add
-  context, or redirect", joined to box 2 by an up arrow "send more messages" and a down arrow "they
-  redirect the task". Above box 4 a dashed amber note "Sending an email or posting in Teams, Cowork
-  pauses first" with a dashed arrow into box 4. SMIL animation, 10 s loop: a dot travels the steps,
-  loops through steering and waits while the approval box pulses; the first frame is complete.
+  Screenshot from the Q3 review demo run (pool 02-01-009): Cowork's summary of the six slides beside
+  the finished Aurora Northern Europe - Q3 Review deck, open on the Revenue vs target by country slide.
 order: 5
-source: demos/02-cowork/01-intro/readme.md
+source: demos/02-cowork/01-intro/demo-01-quarterly-review.md
 gamma_prompt: >
-  Slide titled "A typical Cowork interaction", subtitle "Describe, watch, steer, approve, review".
-  Left column: five short bullets, one per step. Right column: the provided diagram of the five
-  numbered steps with steering as a loop back into the work and approval as an amber step before
-  sensitive actions. White background, calm pastel accents. Use exactly the one image given for this
-  card; do not generate or add any other images, icons or logos.
+  Slide titled "A typical Cowork interaction", subtitle "The Q3 review deck from brief to approved
+  send". Left column: five short bullets, one per step of the interaction. Right column, wider than
+  the left: the provided screenshot of a Cowork task beside the finished Q3 review deck in a
+  PowerPoint preview, as an inline content image at its natural aspect ratio, never cropped. White
+  background. Use exactly the one image given for this card; do not generate or add any other images,
+  icons or logos.
 ---
 
 # A typical Cowork interaction
 
 ## Content
 
-- **Describe** the task in natural language
-- **Watch** Cowork break it into steps and work through them one by one
-- **Steer** at any time: interrupt, add context or redirect
-- **Approve** before sensitive actions, each shown with a medium or high risk level
-- **Review** the results, download documents or ask for changes
+- **Describe** the outcome: three attached files and one brief for the Q3 review
+- **Watch** the numbered plan, then the steps as Cowork builds the deck
+- **Steer** the plan: open with the fleece returns, close with the six open roles
+- **Approve** the send at a Send draft? card marked Medium risk
+- **Review** the deck under Output, with speaker notes saved in the same file
 
 ## Speaker Notes
 
-Every Cowork task follows the same five steps, in the browser, in Outlook and Teams, or in the Copilot app. The two demos in this topic run the pattern end to end on the Aurora Outdoor scenario.
+Every Cowork task follows five steps, and the first demo walks them on the Q3 business review for your VP, Elena Varga. The screenshot shows the finished deck in the PowerPoint preview beside the task, with Cowork's summary of each slide on the left.
 
-Describe: you state the task in natural language, for example sending a meeting recap to your team with today's notes attached. Cowork breaks the request into steps from there.
+Describe: you attach q2-review.pptx, q3-sales-by-region.xlsx and q3-regional-notes.docx and name the outcome without saying which file is for what. Cowork works out that the Q2 deck is the template, the workbook holds the figures and the notes carry the story.
 
-Watch: Cowork works through its steps visibly, one by one. It loads the right skills on its own and shows them in the side panel.
+Watch: Cowork returns a numbered plan and waits, because you asked to see it first. After your go-ahead the Workspace panel adds Steps, and after several minutes the deck appears under Output.
 
-Steer: you can interrupt, add context or redirect during execution. Messages you send while it works queue up and can redirect the task.
+Steer: you redirect the plan like a colleague's outline, leading with the fleece returns across all four countries and closing with the six open roles. The revenue-versus-target slide in the screenshot matches the Targets sheet of the workbook.
 
-Approve: before sending an email or posting in Teams, Cowork pauses and asks for your go-ahead, with the risk level shown on the action. The last topic of the module covers approvals in depth.
+Approve: sending the deck leaves your workspace, so Cowork holds it at a Send draft? card with a Medium risk badge even though the prompt said to send. In the demo the mail goes to your own address, standing in for Elena.
 
-Review: download documents, confirm sent messages or ask for changes. Output files land in the side panel Output folder and in your OneDrive Cowork folder.
+Review: the speaker notes land in the same file, and Output still lists one deck rather than an original plus a copy. The preview hides the notes; Open in PowerPoint shows them.

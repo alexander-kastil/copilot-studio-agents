@@ -5,7 +5,7 @@ title: "Steering an active task"
 subtitle: "Pause, resume or cancel while Cowork works"
 layout: diagram
 visual-weight: 1/2
-visual-type: photo
+visual-type: svg
 media-source: opus-svg
 media-file: demos/02-cowork/pptx/images/06-02-steering-tasks.svg
 visual-prompt: >

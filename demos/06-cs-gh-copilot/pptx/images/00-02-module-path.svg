@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">The seven topics of module 6 in four groups</title>
+  <desc id="d">Topics 1 and 2 cover the two kinds of agent: Standard vs. GitHub Copilot Agents, then the unified Build surface and the new orchestrator. Topics 3 to 5 sit on the Build tab: Agent Skills, then Tools, MCP and the new Workflows designer, then grounding with Work IQ, Foundry IQ and Fabric IQ. Topic 6, Building Apps in Copilot Studio, sits beside agents. Topic 7, Test and Evaluate Copilot Studio Agents, comes before an agent ships. Arrows lead from one group to the next.</desc>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+
+  <rect x="60" y="70" width="410" height="940" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="92" y="140" font-size="32" font-weight="700" fill="#24292f">Two kinds of agent</text>
+  <text x="92" y="182" font-size="28" fill="#57606a">Topics 1 and 2</text>
+
+  <rect x="526" y="70" width="410" height="940" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="558" y="140" font-size="32" font-weight="700" fill="#24292f">On the Build tab</text>
+  <text x="558" y="182" font-size="28" fill="#57606a">Topics 3 to 5</text>
+
+  <rect x="992" y="70" width="410" height="940" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="1024" y="140" font-size="32" font-weight="700" fill="#24292f">Beside agents</text>
+  <text x="1024" y="182" font-size="28" fill="#57606a">Topic 6</text>
+
+  <rect x="1458" y="70" width="410" height="940" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="1490" y="140" font-size="32" font-weight="700" fill="#24292f">Before it ships</text>
+  <text x="1490" y="182" font-size="28" fill="#57606a">Topic 7</text>
+
+  <rect x="84" y="360" width="362" height="230" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="112" y="422" font-size="40" font-weight="700" fill="#57606a">01</text>
+  <text x="112" y="474" font-size="30" font-weight="700" fill="#24292f">Standard vs.</text>
+  <text x="112" y="514" font-size="30" font-weight="700" fill="#24292f">GitHub Copilot</text>
+  <text x="112" y="554" font-size="30" font-weight="700" fill="#24292f">Agents</text>
+
+  <rect x="84" y="620" width="362" height="230" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="112" y="682" font-size="40" font-weight="700" fill="#57606a">02</text>
+  <text x="112" y="734" font-size="30" font-weight="700" fill="#24292f">The Unified Build</text>
+  <text x="112" y="774" font-size="30" font-weight="700" fill="#24292f">Surface and the</text>
+  <text x="112" y="814" font-size="30" font-weight="700" fill="#24292f">New Orchestrator</text>
+
+  <rect x="550" y="235" width="362" height="230" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="578" y="297" font-size="40" font-weight="700" fill="#57606a">03</text>
+  <text x="578" y="349" font-size="30" font-weight="700" fill="#24292f">Agent Skills in</text>
+  <text x="578" y="389" font-size="30" font-weight="700" fill="#24292f">Copilot Studio</text>
+
+  <rect x="550" y="490" width="362" height="230" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="578" y="552" font-size="40" font-weight="700" fill="#57606a">04</text>
+  <text x="578" y="604" font-size="30" font-weight="700" fill="#24292f">Tools, MCP, and the</text>
+  <text x="578" y="644" font-size="30" font-weight="700" fill="#24292f">New Workflows</text>
+  <text x="578" y="684" font-size="30" font-weight="700" fill="#24292f">Designer</text>
+
+  <rect x="550" y="745" width="362" height="230" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="578" y="807" font-size="40" font-weight="700" fill="#57606a">05</text>
+  <text x="578" y="859" font-size="30" font-weight="700" fill="#24292f">Grounding with</text>
+  <text x="578" y="899" font-size="30" font-weight="700" fill="#24292f">Work IQ, Foundry IQ,</text>
+  <text x="578" y="939" font-size="30" font-weight="700" fill="#24292f">and Fabric IQ</text>
+
+  <rect x="1016" y="490" width="362" height="230" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1044" y="552" font-size="40" font-weight="700" fill="#57606a">06</text>
+  <text x="1044" y="604" font-size="30" font-weight="700" fill="#24292f">Building Apps in</text>
+  <text x="1044" y="644" font-size="30" font-weight="700" fill="#24292f">Copilot Studio</text>
+
+  <rect x="1482" y="490" width="362" height="230" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="1510" y="552" font-size="40" font-weight="700" fill="#57606a">07</text>
+  <text x="1510" y="604" font-size="30" font-weight="700" fill="#24292f">Test and Evaluate</text>
+  <text x="1510" y="644" font-size="30" font-weight="700" fill="#24292f">Copilot Studio</text>
+  <text x="1510" y="684" font-size="30" font-weight="700" fill="#24292f">Agents</text>
+
+  <line x1="476" y1="605" x2="518" y2="605" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <line x1="942" y1="605" x2="984" y2="605" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <line x1="1408" y1="605" x2="1450" y2="605" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+</svg>

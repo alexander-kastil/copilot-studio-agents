@@ -8,22 +8,25 @@ visual-weight: 1/2
 visual-type: photo
 media-source: nano-banana
 media-file: demos/08-ai-teammates/pptx/images/06-01-takeaways.jpg
+subject: object
 visual-prompt: >
   ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych, no
-  collage. At a bright office cafe counter with high stools, a process owner in her early thirties and
-  an IT admin in his mid thirties look at a tablet together and nod, relaxed and smiling. Both are
-  centred in the frame. Modern, light, bright and friendly: high-key natural daylight, white and light-
-  oak contemporary interior, soft pastel accents in light blue, mint and lavender, green plants, 2020s
-  design. Screens show only soft blurred shapes and colours, never readable UI. 16:9 landscape,
-  contemporary editorial photography. Avoid: readable text, logos, watermarks, dark or moody lighting,
-  vintage or retro decor, grime, clutter, extra people, menus, cups or signs with writing.
-order: 17
+  collage. A still life on a light-oak desk by a bright window: a printed checklist sheet with four rows
+  lies beside a pen and a small green plant in a white pot. Each row is a pale mint, lavender or light
+  blue bar with a green checkmark glyph drawn as a symbol at its left end and only faint grey lines
+  beside it, with no letters, words or numbers anywhere. Soft morning light falls across the sheet, and
+  the checklist is in the centre of the frame. Modern, light, bright and friendly: high-key natural
+  daylight, soft pastel accents in light blue, mint and lavender, green plants, 2020s design. 2:3
+  portrait, contemporary editorial photography. Avoid: readable text, letters or numbers on the sheet,
+  words in square brackets or parentheses, logos, watermarks, people, dark or moody lighting, vintage or
+  retro decor, grime, clutter.
+order: 18
 source: demos/08-ai-teammates/readme.md
 gamma_prompt: >
-  Slide titled "Takeaways", subtitle "What to settle before a teammate joins the team". Five bullets on
-  the left half on plain white; the provided photograph of a process owner and an IT admin agreeing over
-  a tablet as a side accent on the right half, no text over it. Use exactly the one image given for this
-  card; do not generate or add any other images, icons or logos.
+  Closing slide titled "Takeaways", subtitle "What to settle before a teammate joins the team". Five
+  bullets on the left half on plain white; the provided photograph of a completed four-row checklist on a
+  light-oak desk as a side accent on the right half, no text over it. Use exactly the one image given for
+  this card; do not generate or add any other images, icons or logos.
 ---
 
 # Takeaways
@@ -38,7 +41,7 @@ gamma_prompt: >
 
 ## Speaker Notes
 
-Five points to carry out of this module. Both products are Frontier previews as of October 2026, so treat the module as a forward look you run in a prepared tenant.
+Five points to carry out of this module. Both products are Frontier previews as of October 2026, so treat the module as a forward look you run in a prepared tenant, with the readiness checklist done first.
 
 Teammate: identity, memory, reach and persistence separate it from an assistant. It owns a process instead of finishing one task.
 

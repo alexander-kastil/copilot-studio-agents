@@ -5,7 +5,7 @@ title: "Tool discovery with MCP"
 subtitle: "A connector is fixed at import, an MCP server lists its tools at runtime"
 layout: diagram
 visual-weight: 1/2
-visual-type: photo
+visual-type: svg
 media-source: opus-svg
 media-file: demos/04-cs-tools/pptx/images/06-01-tool-discovery.svg
 visual-prompt: >
@@ -24,17 +24,16 @@ visual-prompt: >
   capability: add a method, restart the server". SMIL animation on an 8 second loop in the bottom lane
   only: a dot carries tools/list to the server, the six tool rows light up one after another, and a
   dot carries the answer back to the agent.
-order: 3
-source: labs/04-cs-tools/06-mcp/lab-01-give-an-agent-mcp-tools.md
+order: 17
+source: demos/04-cs-tools/06-mcp/readme.md
 gamma_prompt: >
-  Slide titled "Tool discovery with MCP", subtitle "A connector is fixed at import, an MCP server
-  lists its tools at runtime". Left column: five short bullets on the custom connector's import, the
-  MCP server's tools/list, tool metadata from the C# method signatures, adding a tool, and the
-  Streamable HTTP transport. Right column, wider than the left: the provided diagram comparing the Lab
-  4 connector lane with the Lab 5 MCP server lane, as an inline content image at its natural 16:9
-  aspect ratio, never cropped, never used as a background or side accent. White background, calm
-  pastel accents. Use exactly the one image given for this card; do not generate or add any other
-  images, icons or logos.
+  Slide titled "Tool discovery with MCP", subtitle "A connector is fixed at import, an MCP server lists
+  its tools at runtime". Left column: five short bullets on the connector's import, the server's
+  tools/list, descriptions owned by the server, adding a tool, and the orchestration requirement. Right
+  column, wider than the left: the provided diagram comparing the connector lane with the MCP server
+  lane, as an inline content image at its natural 16:9 aspect ratio, never cropped, never used as a
+  background or side accent. Use exactly the one image given for this card; do not generate or add any
+  other images, icons or logos.
 ---
 
 # Tool discovery with MCP
@@ -43,20 +42,20 @@ gamma_prompt: >
 
 - A **custom connector** keeps the operations of the OpenAPI file you imported
 - An **MCP server** answers `tools/list` at runtime with its current tools
-- Tool names, descriptions and **parameter schemas** come from the C# method signatures
+- Tool descriptions come from the server's `[Description]` attributes, so a vague one is fixed there
 - **Adding a tool** means adding a method and restarting the server
-- **Streamable HTTP** is the transport Copilot Studio requires
+- MCP needs **generative orchestration**, and topics cannot call a server directly
 
 ## Speaker Notes
 
-Labs 4 and 5 reach their own services in two ways, and this slide puts them side by side. Read the top lane as Lab 4 and the bottom lane as Lab 5.
+A connector is a design-time contract, an MCP server a runtime one. The diagram puts the two HR labs of this module side by side: the REST API lab's connector on top, the MCP lab's server below.
 
-Custom connector: you import an OpenAPI specification and map one operation to one action. The tool list stays frozen until you re-import the file and re-add the action.
+Custom connector: you import an OpenAPI file and map each operation to a tool. The tool list stays fixed until you import the file again and re-add the operation.
 
-MCP server: you point Copilot Studio at the server URL and every tool it exposes shows up at once. The agent calls tools/list and gets back the current set.
+MCP server: the agent asks the server which tools exist, and Copilot Studio reflects added, changed and removed tools on its own. On the agent the whole server is one tool, and its settings page lists the server's tools.
 
-Parameter schemas: the HR MCP Server builds each tool's name, description and parameters from the C# method signatures in Tools/HRTools.cs. The agent's instructions never name a tool, because orchestration matches intent against these descriptions.
+Descriptions: in the HR server each tool is a C# method marked [McpServerTool], and its [Description] attributes become what the orchestrator reads. A maker cannot enrich them in Copilot Studio.
 
-Adding a tool: a new method with [McpServerTool] and a [Description] adds a capability. Restart the server, reconnect, and the agent discovers it without any change to the agent.
+Adding a tool: a new method plus a restart, and connected agents discover it the next time they list the tools. Copilot Studio supports the Streamable HTTP transport only, so a server has to sit behind an HTTPS URL.
 
-Streamable HTTP: Copilot Studio requires this transport. The older stdio transport works only for a server on the same machine as the client.
+Orchestration: only the orchestrator decides when to call one of the server's tools, so MCP does not work with classic orchestration. Learn's guidance: use MCP when several agents share a toolset or the upstream API changes often.

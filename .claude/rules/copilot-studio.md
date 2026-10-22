@@ -33,3 +33,10 @@ The global `copilot-studio` skill holds the generic rules. These are the facts i
 - MCP tool on maker credentials (`mode: Maker`; the original's `mode: Invoker`): `src/cs-schema/cs-agents/CS-Returns Agent/actions/MailMCP-MailPreview.mcs.yml`.
 - Event trigger and its flow (shared mailbox `help@integrations.at`, folder typed as `Inbox`): `src/cs-schema/cs-agents/CS-Returns Agent/trigger/` and `workflows/`.
 - Publish, channels and a shared security group (Copilot Users) in settings: `src/cs-schema/cs-agents/CS-HR Buddy/settings.mcs.yml`.
+
+## Terminal runs with the Microsoft plugins (07/05)
+
+- CS-Grey Logistics IT Help Desk (`481983ea-f2cd-f111-a05a-7c1e528616d5`, schema `iits_CSContosoITHelpDesk` from its earlier name) and its migrated GitHub Copilot copy GH-Grey Logistics IT Help Desk (`d3b8dc10-e2a6-410d-8a40-abc6d56eeccf`, solution `catmgr_GHGreyLogisticsITHelpDesk`) live in `src/cs-schema/cs-agents/`, with `MIGRATION-PLAN-a7c41e9d.md` beside them.
+- Point tests of integrated-auth agents use the public client app CopilotstudioClient (`5b37e805-a278-4aa1-bac6-24e09971b615`): `eval-api.bundle.js auth --workspace <agent folder> --client-id 5b37e805-a278-4aa1-bac6-24e09971b615`.
+- The PAC profile for this environment is created with the Dataverse URL `https://orgaa1e572d.crm4.dynamics.com/`; the `Default-` ID is rejected. Both plugins are installed at project scope; `.claude/settings.local.json` picks the active one per module.
+- What the plugins really expose, the sign-ins and the migration traps: global `copilot-studio` `references/terminal-plugins.md`.

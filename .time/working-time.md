@@ -57,5 +57,7 @@
 | 2026-10-22 | 0.58 | 09:34 | 10:09 | Detailed cost record per demo, pending charges checked in the admin centers and Azure, with a scheduled recheck |
 | 2026-10-22 | 0.73 | 10:14 | 10:58 | Course teaching updated from the live demo runs, demo cost tables with model comparisons |
 | 2026-10-22 | 0.43 | 10:27 | 11:24 | Legacy web app automation demo run live, demo guide corrected to the live product, demo status updated |
+| 2026-10-22 | 0.37 | 11:25 | 12:40 | Animated overview pictures on every demo, default and optional demos per topic |
+| 2026-10-22 | 0.88 | 11:28 | 12:21 | Fictional company renamed to Grey Logistics across all demos and labs, terminal build-and-migrate demo run live and corrected, published as a new lab |
 
-**Total: 34.25h**
+**Total: 35.50h**

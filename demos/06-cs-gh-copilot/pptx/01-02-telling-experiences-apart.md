@@ -18,7 +18,7 @@ visual-prompt: >
   amber callout "Tabs mean GitHub Copilot" pointing up at it, and below the label "Build tab:
   components panel" four cards: a purple Instructions card "Seeded from your description" and dashed
   empty cards Knowledge, Tools and Skills. Static.
-order: 2
+order: 4
 source: demos/06-cs-gh-copilot/01-standard-vs-github-copilot/readme.md
 gamma_prompt: >
   Slide titled "Telling Standard and GitHub Copilot apart", subtitle "The navigation shows which one is open".
@@ -41,12 +41,12 @@ gamma_prompt: >
 
 ## Speaker Notes
 
-The previous slide made the choice; this one gives the habit that protects it: knowing which agent type is open before building anything. The diagram puts both surfaces side by side.
+The previous slide made the choice; this one gives the habit that protects it: knowing which kind of agent is open before building anything. The diagram puts both surfaces side by side.
 
-Standard navigation: a Standard agent lists Topics, Knowledge, Tools and Settings down the left. It is the topic-driven surface students use in production today.
+Standard navigation: a Standard agent opens on an Overview page with Knowledge, Tools, Topics and Settings. It is the topic-driven surface most production agents use today.
 
-GitHub Copilot tabs: a GitHub Copilot agent shows Build, Preview, Evaluate and Monitor tabs across the top. A new agent opens on the Build tab with Instructions seeded from its description and empty Knowledge, Tools and Skills.
+GitHub Copilot tabs: a GitHub Copilot agent opens on the Build tab with Build, Preview, Evaluate and Monitor across the top. The panel on the right lists Model, Channels, Skills, Tools, Knowledge, Connected agents and a Memory switch.
 
-Topics means Standard: if Topics appears in the navigation, you are in a Standard agent, full stop. In the demo and the lab, that sign means going back to the home page, opening the **New agent** menu and creating the agent again with the **GitHub Copilot** badge.
+Topics means Standard: if Topics appears in the navigation, you are in a Standard agent. In the demo and the lab, that sign means going back to the New agent menu and creating the agent again with the GitHub Copilot badge.
 
-Check before you create: confirming the badge in the **New agent** menu before creating an agent is the single habit that prevents the most rework. A minute spent reading the badge saves an hour of building in the wrong place.
+Check before you create: a minute spent reading the badge and the navigation saves an hour of building in the wrong place.

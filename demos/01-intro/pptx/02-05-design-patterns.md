@@ -3,9 +3,9 @@ slide: "02-05"
 topic: 02-how-agents-work
 title: "Design patterns in agentic AI"
 subtitle: "Five patterns to choose and combine"
-layout: diagram
-visual-weight: 1/2
-visual-type: photo
+layout: diagram-full
+visual-weight: full
+visual-type: svg
 media-source: opus-svg
 media-file: demos/01-intro/pptx/images/02-05-design-patterns.svg
 visual-prompt: >
@@ -17,26 +17,20 @@ visual-prompt: >
   "Restaurant". "Deterministic flow": steps 1, 2, 3 in a row. "Autonomous agent": "Trigger" to "Agent"
   to "Acts". "Human-in-the-loop": "Agent proposes" to an amber "Person approves" to a green "Action
   runs".
-order: 10
+order: 8
 source: demos/01-intro/02-how-agents-work/readme.md
 gamma_prompt: >
-  Slide titled "Design patterns in agentic AI", subtitle "Five patterns to choose and combine". Layout:
-  Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an
-  inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never
-  used as a background or side accent. Use exactly the one image given for this card; do not generate or
-  add any other images, icons or logos.
-  Theme: Integrations House (themeId idege54tfobdv2k), Montserrat bold headings, Poppins body, #1B365D accent.
+  Slide titled "Design patterns in agentic AI", subtitle "Five patterns to choose and combine". Full-width
+  diagram layout: title and subtitle at the top, the provided diagram across the whole card width at its
+  natural aspect ratio, never cropped, then one caption line under it. Use exactly the one image given
+  for this card; do not generate or add any other images, icons or logos.
 ---
 
 # Design patterns in agentic AI
 
 ## Content
 
-- **Single agent**: one job with one set of instructions, knowledge and tools
-- **Multi-agent orchestration**: a master agent routes work to focused specialists
-- **Deterministic flow**: fixed steps that run the same way every time
-- **Autonomous agent**: a trigger fires the agent without a person starting it
-- **Human-in-the-loop**: a person approves before a consequential action
+- Choose a **pattern** for the shape of the problem, and combine several in one solution
 
 ## Speaker Notes
 
@@ -44,7 +38,7 @@ Most agent solutions are assembled from a small set of recurring patterns. You c
 
 Single agent: one job, one set of instructions, knowledge and tools. Single-agent design starts in Copilot Studio Basics.
 
-Multi-agent orchestration: a master agent owns the goal and routes each request to a specialist, such as hotel booking, flight search or restaurant agents. The master needs clear routing rules, and you build this in the advanced module as focused and connected agents.
+Multi-agent orchestration: a master agent routes work to focused specialists, sketched here as hotel booking, flight search and restaurant agents. You build it in the advanced module.
 
 Deterministic flow: the steps are fixed and must run the same way every time. It is covered in the advanced module.
 

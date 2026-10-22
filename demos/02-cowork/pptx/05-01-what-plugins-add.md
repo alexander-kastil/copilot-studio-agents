@@ -5,7 +5,7 @@ title: "What plugins add"
 subtitle: "Skills and connectors that reach beyond Microsoft 365"
 layout: diagram
 visual-weight: 1/2
-visual-type: photo
+visual-type: svg
 media-source: opus-svg
 media-file: demos/02-cowork/pptx/images/05-01-what-plugins-add.svg
 visual-prompt: >
@@ -43,12 +43,12 @@ gamma_prompt: >
 
 ## Speaker Notes
 
-Built-in skills handle common office tasks and custom skills capture your own recipes, but both live inside Microsoft 365. Plugins reach beyond it, and they come from Discover, from your admin, from a colleague or from a package you upload.
+Built-in skills handle common office tasks and custom skills capture your own recipes, but both live inside Microsoft 365. Plugins reach beyond it, and they come from Discover on the Customize page, from your admin, from a colleague or from a package you upload.
 
-Specialized expertise: a plugin can carry skills for financial analysis, legal research, or clinical and HR domain knowledge. Microsoft offers Dynamics 365 Customer Service, Sales and ERP, Fabric IQ and Business Applications plugins, plus role-based ones for Legal, Sales, Service and Education.
+Specialized expertise: a plugin can carry skills for financial analysis, legal research, or clinical and HR domain knowledge. Microsoft offers Dynamics 365 Customer Service, Sales and ERP, Fabric IQ and Business Applications in Work IQ, plus role-based plugins for Legal, Sales, Service and Education.
 
 MCP connectors: a plugin's connectors are MCP servers that reach CRM data, ticketing systems and third-party APIs. In the diagram they are the only part that crosses the Microsoft 365 line.
 
-Connect sign-in: each user completes a one-time Connect sign-in. When a connector requires authentication, every user goes through their own sign-in and consent flow.
+Connect sign-in: each user completes a one-time Connect sign-in before a connector works for them.
 
-Widgets and admin rollout: an MCP app returns a UI that renders in the conversation. IT admins can roll plugins out organization-wide, and those plugins appear with Managed by your organization.
+Widgets and admin rollout: an MCP app returns a UI that renders in the conversation. IT admins can roll plugins out to the whole organization, and those plugins show Managed by your organization.

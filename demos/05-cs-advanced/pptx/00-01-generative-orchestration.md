@@ -1,55 +1,50 @@
 ---
 slide: "00-01"
 topic: 05-cs-advanced
-title: "Generative orchestration"
-subtitle: "How the planner turns a request into a multi-step plan"
-layout: diagram
+title: "Advanced Copilot Studio Agents"
+subtitle: "Agents that run on their own and work with other agents"
+layout: content
 visual-weight: 1/2
 visual-type: photo
-media-source: opus-svg
-media-file: demos/05-cs-advanced/pptx/images/00-01-generative-orchestration.svg
+subject: place
+media-source: nano-banana
+media-file: demos/05-cs-advanced/pptx/images/00-01-advanced-agents.jpg
 visual-prompt: >
-  Hand-written SVG, viewBox 0 0 1920 1080, white background, Segoe UI, Helvetica, Arial, sans-serif,
-  borders #8c959f 2px, text #24292f and #57606a, minimum 28px type, no heading inside the image, no
-  arrow crossing a box or a label. Left column labelled "How work starts": three blue #eaf2ff boxes
-  "Chat" (a person chats with the agent), "Event trigger" (a new record, an incoming email, a scheduled
-  time) and "Voice" (speech and IVR, phone-style calls), each with an arrow into a large purple #f3edff
-  box in the centre, "Generative orchestration" with secondary "the LLM-driven planning layer", holding
-  three numbered white cards: "1 Reads the request", "2 Picks the right tools, knowledge, and agents",
-  "3 Executes a multi-step plan". Right column labelled "What the plan can use": five green #e9f7ef
-  boxes, "Tools", "Knowledge", "Other agents" (child, connected, Microsoft Foundry, A2A), "Deep
-  reasoning model" (with the reason keyword) and "Agent flows" (fixed sequence of steps), each reached
-  by an arrow from the planner. Static.
+  ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych, no
+  collage. The IT desk of a modern logistics company office early on a weekday morning, before anyone
+  has arrived: a long light-oak service counter with three closed silver laptops and two docking
+  stations lined up neatly, ready to be handed back, a low shelf behind it with plain white boxes of
+  loaner laptops, tall windows letting in soft morning daylight, green plants. The counter is centred
+  in the frame. Modern, light, bright and friendly: high-key natural daylight, soft pastel accents in
+  light blue, mint and lavender, green plants, 2020s design. 2:3 portrait, subject centred,
+  contemporary editorial photography. Avoid: readable text, labels, stickers or signs with text, logos
+  on the devices, watermarks, people, dark or moody lighting, vintage or retro decor, grime, clutter,
+  server racks.
 order: 1
 source: demos/05-cs-advanced/readme.md
 gamma_prompt: >
-  Slide titled "Generative orchestration", subtitle "How the planner turns a request into a multi-step
-  plan". Layout: Two columns. Left column: four short bullets on the planning layer, the multi-step
-  plan, the features that depend on it and GitHub Copilot agents. Right column, wider than the left: the
-  provided diagram of chat, event trigger and voice feeding the planner, which reaches tools, knowledge,
-  other agents, a deep reasoning model and agent flows, as an inline content image at its natural 16:9
-  aspect ratio, never cropped, never used as a background or side accent. Use exactly the one image
-  given for this card; do not generate or add any other images, icons or logos.
+  Title slide "Advanced Copilot Studio Agents" with subtitle "Agents that run on their own and work
+  with other agents". Side-accent layout: title, subtitle and three bullets on the left half on plain
+  white, the provided photograph of a bright IT desk counter with laptops lined up for hand-back
+  filling the right half, no text over the photo. Use exactly the one image given for this card; do
+  not generate or add any other images, icons or logos.
   Theme: Integrations House (themeId idege54tfobdv2k), Montserrat bold headings, Poppins body, #1B365D accent.
 ---
 
-# Generative orchestration
+# Advanced Copilot Studio Agents
 
 ## Content
 
-- **Generative orchestration** is the LLM-driven planning layer of the agent
-- It reads a request, picks tools, knowledge and agents, and runs a **multi-step plan**
-- Autonomous agents, multi-agent handoffs and **deep reasoning** all need it turned on
-- **GitHub Copilot agents** run the same runtime, always on
+- **On its own**: an event starts the agent, with nobody in the chat
+- **With other agents**: one front door routes work to child, connected and Microsoft Foundry agents
+- **Harder problems**: deep reasoning for the one step that has to weigh several rules
 
 ## Speaker Notes
 
-This topic takes the agent from answering and acting to running on its own. All of it rests on one planning layer, so the topic opens there.
+Basics built a Standard agent that answers, and tools let it act. This module makes it run on its own and work with other agents.
 
-Planning layer: generative orchestration is the LLM-driven layer that interprets the intent behind a request at runtime. A chat, an event trigger or a voice call can all hand it that request.
+On its own: an agent can wake on an event, such as a new email in a shared mailbox, and do its job with no person in the chat.
 
-Multi-step plan: the planner picks the right tools, knowledge and agents and executes the steps of its plan. Walk the diagram from the inputs on the left through the planner to what the plan can use.
+With other agents: a main agent routes work to child agents, connected agents and agents that a developer team built in Microsoft Foundry.
 
-Prerequisite: autonomous behavior, multi-agent handoffs and deep reasoning all depend on generative orchestration being turned on. With classic orchestration only, the deep reasoning switch stays unavailable.
-
-GitHub Copilot agents: a GitHub Copilot agent runs this runtime always on. Learning it in a Standard agent is what makes the GitHub Copilot orchestrator feel familiar.
+Harder problems: a deep reasoning model works through a step that weighs several rules, slower and more carefully. Generative orchestration sits under all three, and voice and evaluation follow as optional topics.

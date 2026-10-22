@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">The seven tool types of the module in delivery order</title>
+  <desc id="d">Seven numbered cards in two rows, joined by arrows in delivery order. 01 Prompt: CS-Food Stock Buddy turns demand and stock into the canteen order. 02 Dataverse: CS-Travel Expense Refund writes each travel claim as a table row. 03 Connector: CS-Travel Agent posts the trip summary to a Teams channel. 04 Agent flow: CS-Health Advisor classifies symptoms and waits for a reviewer. 05 REST API: CS-Food Stock Buddy reads live stock and books deliveries. 06 MCP server: CS-Restaurant HR Manager finds staff and books shifts. 07 Computer use: CS-Grey Logistics IT Help Desk reads and fills web apps that have no API.</desc>
+  <style>
+    svg { font-size: 28px; }
+    .num { font-weight: 700; fill: #57606a; }
+    .tool { font-weight: 700; fill: #24292f; }
+    .agent { font-weight: 600; fill: #24292f; }
+    .what { fill: #57606a; }
+    .card { stroke: #8c959f; stroke-width: 2; }
+    .rule { stroke: #d0d7de; stroke-width: 2; }
+    .flow { fill: none; stroke: #57606a; stroke-width: 3; }
+  </style>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+
+  <g transform="translate(60,90)">
+    <rect class="card" width="420" height="380" rx="20" fill="#f3edff"/>
+    <text class="num" x="30" y="64" font-size="40">01</text>
+    <text class="tool" x="30" y="120" font-size="34">Prompt</text>
+    <line class="rule" x1="30" y1="148" x2="390" y2="148"/>
+    <text class="agent" x="30" y="200">CS-Food Stock Buddy</text>
+    <text class="what" x="30" y="290">turns demand and stock</text>
+    <text class="what" x="30" y="328">into the canteen order</text>
+  </g>
+
+  <g transform="translate(520,90)">
+    <rect class="card" width="420" height="380" rx="20" fill="#e9f7ef"/>
+    <text class="num" x="30" y="64" font-size="40">02</text>
+    <text class="tool" x="30" y="120" font-size="34">Dataverse</text>
+    <line class="rule" x1="30" y1="148" x2="390" y2="148"/>
+    <text class="agent" x="30" y="200">CS-Travel Expense Refund</text>
+    <text class="what" x="30" y="290">writes each travel claim</text>
+    <text class="what" x="30" y="328">as a table row</text>
+  </g>
+
+  <g transform="translate(980,90)">
+    <rect class="card" width="420" height="380" rx="20" fill="#eaf2ff"/>
+    <text class="num" x="30" y="64" font-size="40">03</text>
+    <text class="tool" x="30" y="120" font-size="34">Connector</text>
+    <line class="rule" x1="30" y1="148" x2="390" y2="148"/>
+    <text class="agent" x="30" y="200">CS-Travel Agent</text>
+    <text class="what" x="30" y="290">posts the trip summary</text>
+    <text class="what" x="30" y="328">to a Teams channel</text>
+  </g>
+
+  <g transform="translate(1440,90)">
+    <rect width="420" height="380" rx="20" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <text class="num" x="30" y="64" font-size="40">04</text>
+    <text class="tool" x="30" y="120" font-size="34">Agent flow</text>
+    <line class="rule" x1="30" y1="148" x2="390" y2="148"/>
+    <text class="agent" x="30" y="200">CS-Health Advisor</text>
+    <text class="what" x="30" y="290">classifies symptoms and</text>
+    <text class="what" x="30" y="328">waits for a reviewer</text>
+  </g>
+
+  <g transform="translate(290,610)">
+    <rect class="card" width="420" height="380" rx="20" fill="#eaf2ff"/>
+    <text class="num" x="30" y="64" font-size="40">05</text>
+    <text class="tool" x="30" y="120" font-size="34">REST API</text>
+    <line class="rule" x1="30" y1="148" x2="390" y2="148"/>
+    <text class="agent" x="30" y="200">CS-Food Stock Buddy</text>
+    <text class="what" x="30" y="290">reads live stock and</text>
+    <text class="what" x="30" y="328">books deliveries</text>
+  </g>
+
+  <g transform="translate(750,610)">
+    <rect class="card" width="420" height="380" rx="20" fill="#e9f7ef"/>
+    <text class="num" x="30" y="64" font-size="40">06</text>
+    <text class="tool" x="30" y="120" font-size="34">MCP server</text>
+    <line class="rule" x1="30" y1="148" x2="390" y2="148"/>
+    <text class="agent" x="30" y="200">CS-Restaurant HR Manager</text>
+    <text class="what" x="30" y="290">finds staff and</text>
+    <text class="what" x="30" y="328">books shifts</text>
+  </g>
+
+  <g transform="translate(1210,610)">
+    <rect class="card" width="420" height="380" rx="20" fill="#f6f8fa"/>
+    <text class="num" x="30" y="64" font-size="40">07</text>
+    <text class="tool" x="30" y="120" font-size="34">Computer use</text>
+    <line class="rule" x1="30" y1="148" x2="390" y2="148"/>
+    <text class="agent" x="30" y="200">CS-Grey Logistics</text>
+    <text class="agent" x="30" y="238">IT Help Desk</text>
+    <text class="what" x="30" y="290">reads and fills web apps</text>
+    <text class="what" x="30" y="328">that have no API</text>
+  </g>
+
+  <line class="flow" x1="484" y1="280" x2="514" y2="280" marker-end="url(#ah)"/>
+  <line class="flow" x1="944" y1="280" x2="974" y2="280" marker-end="url(#ah)"/>
+  <line class="flow" x1="1404" y1="280" x2="1434" y2="280" marker-end="url(#ah)"/>
+  <path class="flow" d="M1650,474 L1650,540 L500,540 L500,604" marker-end="url(#ah)"/>
+  <line class="flow" x1="714" y1="800" x2="744" y2="800" marker-end="url(#ah)"/>
+  <line class="flow" x1="1174" y1="800" x2="1204" y2="800" marker-end="url(#ah)"/>
+</svg>

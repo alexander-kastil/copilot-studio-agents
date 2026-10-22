@@ -3,50 +3,51 @@ slide: "03-02"
 topic: 03-custom-skills
 title: "Anatomy of a SKILL.md"
 subtitle: "A YAML header plus plain-language instructions"
-layout: diagram
+layout: split-code
 visual-weight: 1/2
-visual-type: photo
-media-source: opus-svg
-media-file: demos/02-cowork/pptx/images/03-02-skill-anatomy.svg
+visual-type: svg
+media-source: existing
+media-file: demos/02-cowork/03-custom-skills/_images/companion-files.svg
+photo-link: demos/02-cowork/03-custom-skills/_images/companion-files.svg
 visual-prompt: >
-  Hand-written SVG, viewBox 0 0 1920 1080, white background, Segoe UI and Consolas, 2px #8c959f
-  borders, text #24292f and #57606a, pastel fills, no heading inside the image. Left: a file card
-  titled weekly-report/SKILL.md showing the readme's example verbatim, the YAML header on a blue band
-  and the instructions on a green band; the folder name in the tab and the value of name are both
-  highlighted amber. Right: three callouts with arrows into the file, amber "name: matches the folder
-  exactly, lowercase, numbers, hyphens, up to 64 characters", blue "description: what Cowork reads to
-  decide when the skill applies, specific, trigger-oriented", green "instructions: the step-by-step
-  recipe Cowork follows, SKILL.md up to 1 MB". Static.
+  Existing topic diagram companion-files.svg: the product-pitch and meeting-prep skill folders, each
+  with a SKILL.md that names its companion file, pitch-deck-structure.pptx or
+  meeting-brief-template.docx, and the limit of 20 companion files and 10 MB per skill.
 order: 10
-source: demos/02-cowork/03-custom-skills/readme.md
+source: demos/02-cowork/03-custom-skills/demo-01-product-pitch-skill.md
 gamma_prompt: >
   Slide titled "Anatomy of a SKILL.md", subtitle "A YAML header plus plain-language instructions".
-  Left column: five short bullets. Right column, wider than the left: the provided diagram of an
-  annotated weekly-report SKILL.md with callouts for name, description and instructions, at its
-  natural 16:9 aspect ratio, never cropped. White background, calm pastel accents. Use exactly the
-  one image given for this card; do not generate or add any other images, icons or logos.
+  Two short bullets under the title. Left column: a light grey panel holding the given SKILL.md code
+  block in a monospace font, exactly as given. Right column: the provided diagram of two skill
+  folders with their companion files, at its natural aspect ratio, never cropped. White background.
+  Use exactly the one image given for this card; do not generate or add any other images, icons or
+  logos.
 ---
 
 # Anatomy of a SKILL.md
 
 ## Content
 
-- The **name** is kebab-case, up to 64 characters, and matches its folder exactly
-- The **description** is what Cowork reads to decide when the skill applies
-- The **body** is the step-by-step recipe Cowork follows, up to 1 MB
-- **Companion files** sit beside it: up to 20 files and 10 MB per skill
-- Name each companion file **in the instructions** so Cowork reads it
+- The **name** matches its folder, and the **description** is what Cowork reads to decide when the skill applies
+- **Companion files** sit beside `SKILL.md`, up to 20 files and 10 MB, each named in the instructions
+
+```markdown
+---
+name: product-pitch
+description: Turns a market brief, research report, or product document into a wholesale partner pitch deck in Aurora Outdoor house structure, with every claim traced back to a named source. Use whenever I say build a pitch, pitch this to partners, turn this brief into a deck, or name a range or season to pitch.
+---
+
+Produce a seven-card partner pitch deck in the house structure defined by pitch-deck-structure.pptx, which sits in this skill folder.
+```
 
 ## Speaker Notes
 
-This slide takes apart the weekly-report example from the topic readme. A skill file has two parts: a YAML header with a name and a description, and plain-language instructions.
+This slide takes apart the product-pitch skill from the first demo of the topic. A skill file has two parts: a YAML header with a name and a description, and plain-language instructions.
 
-Name: lowercase letters, numbers and hyphens only, so the folder weekly-report/ must carry name: weekly-report. A mismatch between folder and name is the most common reason a skill silently fails to load.
+Name: lowercase letters, numbers and hyphens, up to 64 characters, and it must match its folder, so product-pitch/ carries name: product-pitch. A mismatch is the most common reason a skill silently fails to load.
 
-Description: make it specific and trigger-oriented. A vague "helps with reports" rarely matches, while "writes my weekly Northern Europe status report from my emails and figures" loads at the right moment.
+Description: Cowork reads only the description to decide whether the skill applies, so it names the phrases you would actually type, such as build a pitch or turn this brief into a deck. A vague description like helps with reports rarely matches.
 
-Body: here it gathers a week of sent mail and calendar events and writes a Word report with Highlights, In Progress, Blockers and Next Week. A SKILL.md can be up to 1 MB.
+Instructions: the body is the step-by-step recipe Cowork follows, up to 1 MB. This one fills seven cards in order and never invents pricing, order tiers or terms.
 
-Companion files: reference documents, templates or scripts that live in the skill folder next to the SKILL.md. A proposal-writing skill, for example, can carry your standard template so every output matches house style.
-
-In the instructions: point the skill at the companion file by name, and Cowork reads it whenever the skill runs. The product-pitch demo does this with pitch-deck-structure.pptx.
+Companion files: the diagram shows both demo skills, product-pitch naming pitch-deck-structure.pptx and meeting-prep naming meeting-brief-template.docx. Cowork reads the companion file whenever the skill runs.

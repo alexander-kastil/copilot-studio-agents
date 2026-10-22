@@ -5,7 +5,7 @@ title: "Admin activation"
 subtitle: "Four steps, in order, before anyone builds"
 layout: diagram
 visual-weight: 1/2
-visual-type: photo
+visual-type: svg
 media-source: opus-svg
 media-file: demos/08-ai-teammates/pptx/images/05-02-admin-activation.svg
 visual-prompt: >
@@ -19,7 +19,7 @@ visual-prompt: >
   a full-width green box: Only the users and groups chosen in step 2 can create agents with accounts.
   SMIL animation, 10 s loop: the cards light up in order, then the outcome; complete and readable at
   t=0.
-order: 15
+order: 16
 source: demos/08-ai-teammates/05-memory-governance/readme.md
 gamma_prompt: >
   Slide titled "Admin activation", subtitle "Four steps, in order, before anyone builds". Left: five

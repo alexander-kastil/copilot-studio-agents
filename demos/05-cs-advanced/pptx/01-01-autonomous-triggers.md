@@ -5,7 +5,7 @@ title: "Autonomous agents and triggers"
 subtitle: "A trigger is a Power Automate flow that prompts the agent"
 layout: diagram
 visual-weight: 1/2
-visual-type: photo
+visual-type: svg
 media-source: opus-svg
 media-file: demos/05-cs-advanced/pptx/images/01-01-autonomous-triggers.svg
 visual-prompt: >
@@ -21,16 +21,16 @@ visual-prompt: >
   loop: an amber dot carries the upload from SharePoint through both flow steps into the agent, then to
   add_employee and to SendEmail, each box outlined amber as the dot arrives; the diagram is complete at
   t=0.
-order: 2
-source: labs/05-cs-advanced/01-autonomous-agents/lab-01-create-an-autonomous-agent.md
+order: 3
+source: demos/05-cs-advanced/01-autonomous-agents/readme.md
 gamma_prompt: >
   Slide titled "Autonomous agents and triggers", subtitle "A trigger is a Power Automate flow that
-  prompts the agent". Layout: Two columns. Left column: four short bullets on events instead of chats,
-  the Power Automate flow behind a trigger, the lab scenario and the author's credentials. Right column,
-  wider than the left: the provided diagram of a PDF upload flowing from SharePoint through the trigger
-  flow into the autonomous agent and on to two MCP servers, as an inline content image at its natural
-  16:9 aspect ratio, never cropped, never used as a background or side accent. Use exactly the one image
-  given for this card; do not generate or add any other images, icons or logos.
+  prompts the agent". Layout: Two columns. Left column: four short bullets on event triggers, the
+  payload, the flow behind a trigger and the lab scenario. Right column, wider than the left: the
+  provided diagram of a PDF upload flowing from SharePoint through the trigger flow into the autonomous
+  agent and on to two MCP servers, as an inline content image at its natural 16:9 aspect ratio, never
+  cropped, never used as a background or side accent. Use exactly the one image given for this card;
+  do not generate or add any other images, icons or logos.
   Theme: Integrations House (themeId idege54tfobdv2k), Montserrat bold headings, Poppins body, #1B365D accent.
 ---
 
@@ -38,19 +38,19 @@ gamma_prompt: >
 
 ## Content
 
-- An **autonomous agent** acts on an event: a new record, an incoming email, a scheduled time
-- Its trigger is a **Power Automate flow** that sends the agent a prompt
+- An **event trigger** fires when something happens in another system, not when a user types
+- It sends the agent a **payload** with the event's data, and the instructions decide which tools run
+- Behind every trigger sits a small **Power Automate flow** that sends the agent a prompt
 - In the lab, a resume PDF in SharePoint becomes an employee record through the **HR MCP server**
-- Triggers use the **author's credentials**; the instructions set the agent's boundaries
 
 ## Speaker Notes
 
-Generative orchestration plans the work; an autonomous agent decides when the work starts. Here the request comes from an event instead of a person.
+Every agent so far waited for someone to type. An autonomous agent reacts to an event instead: a new list item, an email, a completed Planner task or a set time.
 
-Events instead of chats: an autonomous agent reacts to a new record, an incoming email or a scheduled time with no human in the loop. It acts within the decision boundaries and guardrails its instructions set.
+Event trigger: Learn calls it one part of a three-part workflow. The trigger registers the event, sends a payload, and the agent's instructions choose among the tools and topics the maker gave it; it never invents a new action.
 
-The trigger: behind every trigger sits a Power Automate flow, here When a file is created (properties only) followed by Sends a prompt to the specified copilot for processing. Almost any Power Automate trigger can therefore start an autonomous agent.
+Payload: each trigger ships a default, such as "Use content from Body". The payload says how to react to this one event, and the agent instructions keep the rules that apply to every run.
 
-The lab: a resume PDF uploaded to SharePoint makes the Autonomous HR Docs Processor extract the candidate data, call add_employee on the HR MCP server and confirm with SendEmail. Several files uploaded at once can arrive as one flow run and one agent instance that processes them one by one.
+The flow: Edit in Power Automate opens the flow behind the trigger, the event followed by an action that prompts the agent. Almost any event Power Automate can listen to can start an agent, and event triggers need generative orchestration.
 
-Credentials and boundaries: publishing warns that triggers use the author's credentials and that editors get access to the embedded connections. The lab instructions draw the line: work without waiting for user input, and never invent candidate data.
+The lab: an uploaded resume PDF makes the Autonomous HR Docs Processor call add_employee on the HR MCP server and confirm with SendEmail. Several files uploaded at once start one flow run and one agent session.

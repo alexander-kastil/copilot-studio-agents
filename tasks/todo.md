@@ -180,3 +180,7 @@ Module 05 demo and lab guides are planned in each topic readme and in the labs r
 - [x] Agent C: 04/03, 04/04, 04/05, 04/06
 - [x] Agent D: 05/01, 05/03, 05/05
 - [x] Main thread: brand-voice check, fence-lang, link-check, read every section
+
+## Open from the overview SVG run (2026-10-22)
+
+- [ ] `demos/05-cs-advanced/02-deep-reasoning/demo-deep-reasoning.md` Exercise 1 Expected lists T-102 before T-106, but by the guide's own deadline rules T-106 (Thursday 08:00) comes before T-102 (Thursday 18:30); fix the order, then rank the two in `_images/deep-reasoning-overview.svg`, which shows them as "8, 9" unordered.

@@ -5,7 +5,7 @@ title: "Shared memory"
 subtitle: "One memory for everyone the agent works with"
 layout: diagram
 visual-weight: 1/2
-visual-type: photo
+visual-type: svg
 media-source: opus-svg
 media-file: demos/08-ai-teammates/pptx/images/05-01-shared-memory.svg
 visual-prompt: >
@@ -18,7 +18,7 @@ visual-prompt: >
   summarized in the agent's responses to any user, even users without permission to the original file or
   chat, regardless of sensitivity label. SMIL animation, 8 s loop: a dot carries a fact from the person
   through the memory to later conversations; complete and readable at t=0.
-order: 14
+order: 15
 source: demos/08-ai-teammates/05-memory-governance/readme.md
 gamma_prompt: >
   Slide titled "Shared memory", subtitle "One memory for everyone the agent works with". Left: five

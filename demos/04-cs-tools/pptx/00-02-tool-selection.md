@@ -1,60 +1,55 @@
 ---
 slide: "00-02"
 topic: 04-cs-tools
-title: "How the orchestrator picks a tool"
-subtitle: "Tool names, descriptions and routing lines decide which tool runs"
+title: "Overview"
+subtitle: "Seven tool types, one demo agent each"
 layout: diagram
 visual-weight: 1/2
-visual-type: photo
+visual-type: svg
 media-source: opus-svg
-media-file: demos/04-cs-tools/pptx/images/00-02-tool-selection.svg
+media-file: demos/04-cs-tools/pptx/images/00-02-overview.svg
 visual-prompt: >
   Hand-written SVG, viewBox 0 0 1920 1080, white background, Segoe UI, Helvetica, Arial, sans-serif,
   borders #8c959f 2px, text #24292f and #57606a, minimum 28px type, no heading inside the image, no
-  arrow crossing a box or a label. Left: three grey #f6f8fa question cards from the Product Support
-  lab, "What product support files are available?" (calls: List product support files), "How many
-  Nimbus 500 units do we have in stock, and where are they?" (calls: Get product stock levels) and
-  "Give me everything you have on the Aurora X1: which support documents exist and how many units
-  are left." (calls: both tools in one turn), each with an arrow into a purple #f3edff box "Enhanced
-  orchestrator" that reads the routing lines in the instructions, every tool name and description.
-  Right: two blue #eaf2ff tool cards, "List product support files" (SharePoint: List folder, Products
-  document library) and "Get product stock levels" (Excel: List rows present in a table, Stock table
-  in ProductInventory.xlsx). SMIL animation on a 12 second loop: each question in turn lights up
-  amber, a dot travels to the orchestrator and on to its tool, and the third question sends two dots
-  to both tools.
+  arrow crossing a box or a label. Seven numbered cards in delivery order, four in the top row and three
+  in the bottom row, joined by short arrows and one connector in the gap between the rows. Each card:
+  number, tool type, demo agent, what it does. 01 Prompt, CS-Food Stock Buddy, turns demand and stock
+  into the canteen order. 02 Dataverse, CS-Travel Expense Refund, writes each travel claim as a table
+  row. 03 Connector, CS-Travel Agent, posts the trip summary to a Teams channel. 04 Agent flow,
+  CS-Health Advisor, classifies symptoms and waits for a reviewer. 05 REST API, CS-Food Stock Buddy,
+  reads live stock and books deliveries. 06 MCP server, CS-Restaurant HR Manager, finds staff and books
+  shifts. 07 Computer use, CS-Grey Logistics IT Help Desk, reads and fills web apps that have no API.
+  Static.
 order: 2
-source: demos/04-cs-tools/03-connectors/readme.md
+source: demos/04-cs-tools/readme.md
 gamma_prompt: >
-  Slide titled "How the orchestrator picks a tool", subtitle "Tool names, descriptions and routing
-  lines decide which tool runs". Left column: five short bullets on what the orchestrator reads,
-  routing lines in the instructions, two tool calls in one turn, negative guidance against overlap,
-  and the reasoning card as proof. Right column, wider than the left: the provided diagram of three
-  questions passing through the enhanced orchestrator to a SharePoint tool and an Excel tool, as an
-  inline content image at its natural 16:9 aspect ratio, never cropped, never used as a background or
-  side accent. White background, calm pastel accents. Use exactly the one image given for this card;
-  do not generate or add any other images, icons or logos.
+  Slide titled "Overview", subtitle "Seven tool types, one demo agent each". Left column: five short
+  bullets walking the path through the module. Right column, wider than the left: the provided diagram
+  of seven numbered tool cards, each with its demo agent, as an inline content image at its natural 16:9
+  aspect ratio, never cropped, never used as a background or side accent. Use exactly the one image
+  given for this card; do not generate or add any other images, icons or logos.
 ---
 
-# How the orchestrator picks a tool
+# Overview
 
 ## Content
 
-- The orchestrator reads each **tool name and description** to decide whether a question is its job
-- **Routing lines** in the instructions say when the business wants a tool used
-- A question that needs both sources gets **two tool calls** in one turn
-- **Negative guidance** on the over-selected tool stops two tools from overlapping
-- The **reasoning card** in the maker preview shows which tool ran
+- A **prompt** calculates the canteen order, and a Dataverse table keeps every travel claim
+- One Teams action posts a trip summary, and two **agent flows** run the Health Advisor's fixed steps
+- Live canteen stock comes from a **REST API**, staff and shifts from an MCP server
+- **Computer use** reads and fills web apps that have no API
+- Each tool type has a job it does best, and choosing the right one is the maker skill
 
 ## Speaker Notes
 
-This slide comes from the Product Support Assistant lab, where one agent gets a SharePoint tool and an Excel tool. It shows how the agent decides which of them a question needs.
+This slide walks the seven topics once, in delivery order, with the agent that each demo builds.
 
-Name and description: the orchestrator has no memory of your intent and reads only the tool name, the description and the input descriptions. Renaming List folder to List product support files in business language is what makes selection reliable.
+Prompt and Dataverse: CS-Food Stock Buddy hands demand and stock to a prompt that returns the order quantities. CS-Travel Expense Refund saves every claim as a row through an agent flow.
 
-Routing lines: the description says what a tool can do, the instructions say when the business wants it used. An explicit routing line is the cheapest way to stop an agent from answering a live-data question from general knowledge.
+Teams action and agent flows: CS-Travel Agent posts a trip summary with one prebuilt Microsoft Teams action. CS-Health Advisor classifies symptoms in one flow and waits for a reviewer in a second one.
 
-Two tools in one turn: walk the three questions in the diagram, the last one asks for documents and stock together. The orchestrator then calls both tools and combines the results into one answer.
+REST API and MCP: CS-Food Stock Buddy comes back and swaps its sample stock for the live food catalog API. CS-Restaurant HR Manager reads staff and books shifts through the repository's HR MCP server.
 
-Negative guidance: a vague description such as Gets product data makes the orchestrator pick the wrong tool. Adding "Do not use this tool to list documents or files" to the over-selected tool fixes the overlap.
+Computer use: CS-Grey Logistics IT Help Desk reads values from one web app and types records into another. It is the route for systems that offer no API and no connector.
 
-Reasoning card: with End user preview off, the card shows each tool execution step and the values it returned. It is the instrument for every selection problem.
+Choosing the right tool: a grounded agent can answer questions, a tooled agent can act. Each topic closes with when its tool fits and when another one fits better.

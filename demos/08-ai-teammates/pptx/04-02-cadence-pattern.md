@@ -5,7 +5,7 @@ title: "The Cadence pattern"
 subtitle: "An execution-review agent from the Learn documentation"
 layout: diagram
 visual-weight: 1/2
-visual-type: photo
+visual-type: svg
 media-source: opus-svg
 media-file: demos/08-ai-teammates/pptx/images/04-02-cadence-pattern.svg
 visual-prompt: >
@@ -16,7 +16,7 @@ visual-prompt: >
   Generate a new review document, Send link to reviewers, Reviewers reply or comment, People decide
   priorities. SMIL animation, 10 s loop: the steps light up in order with a dot on each arrow; complete
   and readable at t=0.
-order: 12
+order: 13
 source: demos/08-ai-teammates/04-proactive-teammates/readme.md
 gamma_prompt: >
   Slide titled "The Cadence pattern", subtitle "An execution-review agent from the Learn documentation".

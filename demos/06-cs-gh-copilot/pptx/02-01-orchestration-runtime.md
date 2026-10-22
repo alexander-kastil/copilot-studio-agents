@@ -18,7 +18,7 @@ visual-prompt: >
   stacked blue cards "Tools", each joined by a "consult" arrow down and a "result" arrow up. Right:
   green box "One answer, stitched together". SMIL animation on an 8 second loop: a dot carries the
   question into the runtime, down to the sources and tools, back up, and out to the answer.
-order: 3
+order: 6
 source: demos/06-cs-gh-copilot/02-unified-build-and-orchestrator/readme.md
 gamma_prompt: >
   Slide titled "The enhanced orchestration runtime", subtitle "How one question becomes a plan
@@ -38,18 +38,18 @@ gamma_prompt: >
 - **Always on**: every GitHub Copilot agent runs this runtime; there is no setting to pick
 - **Multi-step plans**: one question can draw on several knowledge sources and tools and come back as one answer
 - **Deep reasoning**: applied on its own to complex tasks, or forced with the keyword `reason` in an instruction
-- **Visible plan**: Get rationale in Preview and the Monitor tab show what the agent chained
+- **Visible plan**: the step list in Preview shows each step, and History keeps every Preview session
 
 ## Speaker Notes
 
 This slide moves from the Build surface to the runtime behind it. The point to land is why a GitHub Copilot agent behaves so differently from a Standard one.
 
-Build tab: instructions, knowledge, tools and skills now sit in one components panel instead of separate Topics, Knowledge, Actions and plugins areas. Instructions are the always-in-context brief the runtime reasons against on every turn.
+Build tab: instructions, knowledge, tools and skills sit in one components panel instead of separate Topics, Knowledge, Actions and plugins areas. Instructions are the always-in-context brief the runtime reasons against on every turn.
 
-Always on: in a Standard agent you picked classic or generative orchestration, while here the enhanced runtime runs for every GitHub Copilot agent. There is no switch to look for in settings.
+Always on: in a Standard agent you pick classic or generative orchestration, while here the enhanced runtime runs for every GitHub Copilot agent. There is no switch to look for in settings.
 
 Multi-step plans: one question can make the agent consult several knowledge sources and tools, then stitch the results into a single answer. Walk the diagram from the question through the runtime to the sources and back out to one answer.
 
 Deep reasoning: the runtime spends more planning effort when it judges a task complex enough. Makers force it by adding the keyword reason to an instruction step, the lever for high-stakes flows.
 
-Visible plan: Get rationale in Preview opens the plan behind one answer, and the Monitor tab reopens past runs to show what the agent chained. The demo uses both on a question about the Around the Horn account.
+Visible plan: with Debug mode on, every Preview reply carries a step list with each search and its query. History keeps every Preview session; in the live run Monitor counted the credits but listed no Preview sessions.

@@ -20,7 +20,7 @@ visual-prompt: >
   agent type is fixed when the agent is created". SMIL animation on an 8 second loop: a dot travels
   from the menu into the Standard lane, then a second dot into the GitHub Copilot lane, each lane pulsing amber
   when the dot arrives.
-order: 1
+order: 3
 source: demos/06-cs-gh-copilot/01-standard-vs-github-copilot/readme.md
 gamma_prompt: >
   Slide titled "Choosing Standard or GitHub Copilot per agent", subtitle "Both run in one tenant, and
@@ -36,19 +36,19 @@ gamma_prompt: >
 
 ## Content
 
-- **GitHub Copilot agents** since June 2026, running beside **Standard** agents
-- Choose per agent in the **New agent** menu: **GitHub Copilot** first, **Standard** under **Other ways to build**
+- **GitHub Copilot agents** since June 2026, running beside **Standard** agents in the same tenant
+- Each agent is **one kind**, fixed when you create it
 - **No conversion** in either direction, so decide before you invest
 - **Standard** for exact, auditable paths; **GitHub Copilot** for greenfield agents over Microsoft 365 data
 
 ## Speaker Notes
 
-This slide opens GitHub Copilot agents by showing where they sit next to Standard agents. The diagram shows one tenant in which each agent is created as one type and stays there.
+This slide opens GitHub Copilot agents by showing where they sit next to Standard agents. The diagram shows one tenant in which each agent is created as one kind and stays there.
 
-Production-ready preview: Microsoft shipped GitHub Copilot agents (Learn: GitHub Copilot harness) in June 2026 and rolled them out worldwide. They run beside Standard agents (Learn: standard harness) rather than replacing them, so nothing students run today is moved or rewritten.
+Production-ready preview: Microsoft shipped GitHub Copilot agents (Learn: GitHub Copilot harness) in June 2026 and rolled them out worldwide. They run beside Standard agents (Learn: standard harness), so nothing students built earlier is moved or rewritten.
 
-New agent menu: on the home page, open the arrow next to **New agent**. **Agent** with the **GitHub Copilot** badge sits under Optimize your business processes and **Agent** with the **Standard** badge under **Other ways to build**; the agents list shows Standard for a standard agent, and **Open classic experience** in the side bar menu opens existing ones. Treat it as a choice per agent, not a switch flipped once for the whole tenant.
+One kind per agent: the choice is made per agent in the New agent menu on the Agents page, never once for the whole tenant. The Agents list marks every Standard agent as Standard.
 
-No conversion: Standard agents use authored topics and branching, while GitHub Copilot agents use instructions plus the reasoning runtime, so there is no import path between them. Moving a mature agent to the other type means re-authoring it from scratch.
+No conversion: Standard agents use authored topics, triggers and branching, while GitHub Copilot agents use instructions plus the reasoning runtime. Moving a mature agent to the other kind means authoring it again from scratch.
 
-When to pick which: Standard leads when the flow must follow an exact, auditable path or needs a feature GitHub Copilot agents have not surfaced yet. GitHub Copilot suits a greenfield agent that reasons over Microsoft 365 data with the simpler instructions-first model.
+When to pick which: Standard leads when the conversation must follow an exact, auditable path or needs a feature such as the prompt tool or the WhatsApp channel. GitHub Copilot suits a greenfield agent that reasons over Microsoft 365 data with Skills, memory and the enhanced orchestrator.

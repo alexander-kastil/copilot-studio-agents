@@ -3,9 +3,9 @@ slide: "01-02"
 topic: 01-agents-copilots
 title: "The Microsoft 365 Copilot ecosystem"
 subtitle: "Experiences, build surfaces and the foundation that grounds them"
-layout: diagram
-visual-weight: 1/2
-visual-type: photo
+layout: diagram-full
+visual-weight: full
+visual-type: svg
 media-source: opus-svg
 media-file: demos/01-intro/pptx/images/01-02-copilot-ecosystem.svg
 visual-prompt: >
@@ -21,21 +21,17 @@ order: 4
 source: demos/01-intro/01-agents-copilots/readme.md
 gamma_prompt: >
   Slide titled "The Microsoft 365 Copilot ecosystem", subtitle "Experiences, build surfaces and the
-  foundation that grounds them". Layout: Two columns. Left column: the bullets. Right column, wider than
-  the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to
-  fit the column, never cropped, never used as a background or side accent. Use exactly the one image
-  given for this card; do not generate or add any other images, icons or logos.
-  Theme: Integrations House (themeId idege54tfobdv2k), Montserrat bold headings, Poppins body, #1B365D accent.
+  foundation that grounds them". Full-width diagram layout: title and subtitle at the top, the provided
+  diagram across the whole card width at its natural aspect ratio, never cropped, then one caption line
+  under it. Use exactly the one image given for this card; do not generate or add any other images,
+  icons or logos.
 ---
 
 # The Microsoft 365 Copilot ecosystem
 
 ## Content
 
-- **Where people work**: Copilot Chat, Copilot Cowork and Copilot inside the apps
-- **Where makers build**: Copilot Studio, SharePoint and Agent Builder agents
-- **Microsoft Graph** grounds Copilot in your emails, files, chats and meetings
-- **Tools, connectors and MCP servers** reach beyond Graph into other systems
+- What people use and what makers build both stand on **Microsoft Graph** and the tools that reach other systems
 
 ## Speaker Notes
 

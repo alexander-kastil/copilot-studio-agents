@@ -5,49 +5,43 @@ title: "Where skills come from"
 subtitle: "Built-in, custom and plugin skills load the same way"
 layout: diagram
 visual-weight: 1/2
-visual-type: photo
-media-source: opus-svg
-media-file: demos/02-cowork/pptx/images/02-02-skill-sources.svg
+visual-type: screenshot
+media-source: existing
+media-file: demos/02-cowork/pptx/images/02-02-customize-page.png
+photo-link: demos/02-cowork/pptx/images/02-02-customize-page.png
 visual-prompt: >
-  Hand-written SVG, viewBox 0 0 1920 1080, white background, Segoe UI, 2px #8c959f borders, text
-  #24292f and #57606a, pastel fills, no heading inside the image. Six source boxes stacked on the
-  left: grey "Built-in skills, ship with Cowork"; blue "Custom skills, Customize > Skills, or a
-  SKILL.md file" and "Uploaded skill file, or one a colleague shares with you"; purple "Plugin
-  skills, from Discover", "Admin-deployed plugins, rolled out by your IT organization" and "Your own
-  plugin package, Customize > Plugins". All six arrows converge on an amber box "Cowork reads each
-  description and loads the skill when the work calls for it, you do not name it", which points to a
-  green "Skills" box with the chips built-in, custom, uploaded and plugin. Static.
+  Screenshot from the custom-skills demo run (pool 02-03-013): the Customize page with the Add button,
+  Added (6) holding product-pitch, weekly-status-report and dietitian, and the Discover cards below.
 order: 7
 source: demos/02-cowork/02-built-in-skills/readme.md
 gamma_prompt: >
   Slide titled "Where skills come from", subtitle "Built-in, custom and plugin skills load the same
-  way". Left column: five short bullets. Right column, wider than the left: the provided diagram of
-  six skill sources converging on one step where Cowork reads each description, ending in a single
-  Skills section, at its natural 16:9 aspect ratio, never cropped. White background, calm pastel
-  accents. Use exactly the one image given for this card; do not generate or add any other images,
-  icons or logos.
+  way". Left column: five short bullets on creating, uploading and adding skills and plugins. Right
+  column: the provided screenshot of the Cowork Customize page with its Added list and Discover cards,
+  as an inline content image at its natural aspect ratio, never cropped. White background. Use exactly
+  the one image given for this card; do not generate or add any other images, icons or logos.
 ---
 
 # Where skills come from
 
 ## Content
 
-- **Custom skills** from Customize > Skills, or a `SKILL.md` in OneDrive
-- **Uploaded skill files**, and skills a colleague shares with you
-- **Plugin skills** from Discover, admin-deployed plugins and your own plugin package
+- **Create** a skill with Customize > Add > Create skill with Cowork, or as a `SKILL.md` in OneDrive
+- **Upload** a skill file with Customize > Add > Upload, or use one a colleague shares
+- **Plugins** come from Discover, from your IT organization, or as your own uploaded package
 - Cowork **reads each description** and loads the skill when the work calls for it
-- The **Sources picker** turns plugins on or off for one conversation
+- Type **/** in the composer to call a skill by name from the Skills tab
 
 ## Speaker Notes
 
-This slide widens the view from the built-in catalog to every place a skill can come from. The diagram shows all of them ending in the same Skills section of the side panel.
+Built-in skills are only the starting point. The screenshot is the Customize page of the class tenant after the demos, with the custom skills product-pitch and weekly-status-report and the dietitian plugin under Added, and Discover below.
 
-Custom skills: you create them in Customize > Skills or as a SKILL.md file in OneDrive. The next topic teaches how to write one.
+Create: Customize > Add > Create skill with Cowork starts a guided conversation, and you can also write a SKILL.md into OneDrive yourself. The next topic teaches both.
 
-Uploaded skill files: you can upload a skill file or use one a colleague shares with you. They appear as chips like every other skill.
+Upload: Customize > Add > Upload takes a skill file, and a colleague can share a skill with you. The same Upload also takes a plugin package of your own.
 
-Plugin skills: they come from Discover, from plugins your IT organization deploys, or from a plugin package you upload in Customize > Plugins. Plugins get their own topic later in the module.
+Plugins: they come from Discover, as admin-deployed plugins your IT organization rolls out, or as a package you upload. Plugins get their own topic later in the module.
 
-Reads each description: custom, uploaded and plugin skills all activate the same way. Cowork loads a skill when the work calls for it, so you do not invoke a skill by name.
+Reads each description: custom, uploaded and plugin skills appear in the same Plugins list and activate the same way. Cowork loads a skill when the work calls for it, so you rarely name one.
 
-Sources picker: the conversation Sources picker opens the Sources & Skills panel, where you turn plugins on or off. In Customize > Skills, Your skills and Built-in list the skills available to you.
+Slash: to call a skill on purpose, type / in the composer and pick it from the Skills tab, where your own skills sit under Custom skills. Customize lists everything under Added, each with its own switch.

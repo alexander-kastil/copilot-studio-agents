@@ -5,7 +5,7 @@ title: "Productivity and SharePoint agents"
 subtitle: "Ready-to-use agents with nothing to build"
 layout: diagram
 visual-weight: 1/2
-visual-type: photo
+visual-type: svg
 media-source: opus-svg
 media-file: demos/01-intro/pptx/images/04-01-productivity-agents.svg
 visual-prompt: >
@@ -14,7 +14,7 @@ visual-prompt: >
   pale blue: "Content you choose" with "A whole site", "Specific folders", "Selected documents".
   Right, pale green: "What the person asking already has permission to see". The overlap, filled
   pale purple: "Where the agent's answers come from".
-order: 14
+order: 12
 source: demos/01-intro/04-chat-productivity/readme.md
 gamma_prompt: >
   Slide titled "Productivity and SharePoint agents", subtitle "Ready-to-use agents with nothing to

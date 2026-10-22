@@ -2,52 +2,47 @@
 slide: "06-01"
 topic: 06-staying-in-control
 title: "The approval model"
-subtitle: "Cowork pauses before anything that leaves a mark"
+subtitle: "Cowork pauses before anything that leaves your workspace"
 layout: diagram
 visual-weight: 1/2
-visual-type: photo
-media-source: opus-svg
-media-file: demos/02-cowork/pptx/images/06-01-approval-model.svg
+visual-type: screenshot
+media-source: existing
+media-file: demos/02-cowork/pptx/images/06-01-calendar-approval-card.png
+photo-link: demos/02-cowork/pptx/images/06-01-calendar-approval-card.png
 visual-prompt: >
-  Hand-written SVG, viewBox 0 0 1920 1080, white background, Segoe UI, 2px #8c959f borders, text
-  #24292f and #57606a, pastel fills, no heading inside the image. Left: an amber box "Approval card,
-  Cowork pauses before anything that leaves a mark" with two white chips "Risk level indicator" and
-  "Show parameters". A connector fans out to four rows, each a choice box with an arrow to a grey
-  result box: green "Approve once (Send, Post, or Create)" to "Approves that one action"; blue "More
-  options (Only to, Always allow, Approve & don't ask again)" to "Approves it, then skips similar
-  prompts for the rest of the session; review or revoke under Permissions"; green "Approve All (n),
-  several approvals pending" to "Releases every pending approval"; grey "Cancel" to "Skips the
-  action; Cowork carries on".
+  Screenshot from the Work IQ scheduling demo run (pool 02-01-023): the Create calendar event? card
+  at Medium risk for the one-hour Agentic AI session with its three-point agenda, Cancel and Save,
+  and the Always allow Create event option open under the arrow.
 order: 18
 source: demos/02-cowork/06-staying-in-control/readme.md
 gamma_prompt: >
-  Slide titled "The approval model", subtitle "Cowork pauses before anything that leaves a mark".
-  Left column: five short bullets. Right column: the provided diagram showing the approval card and
-  its four choices, Approve once, More options, Approve All and Cancel, each with how far it
-  reaches. White background, calm pastel accents. Use exactly the one image given for this card; do
-  not generate or add any other images, icons or logos.
+  Slide titled "The approval model", subtitle "Cowork pauses before anything that leaves your
+  workspace". Left column: five short bullets. Right column, wider than the left: the provided
+  screenshot of a Create calendar event? approval card marked Medium risk, as an inline content image
+  at its natural aspect ratio, never cropped. White background. Use exactly the one image given for
+  this card; do not generate or add any other images, icons or logos.
 ---
 
 # The approval model
 
 ## Content
 
-- **Approve once** with the action button, such as Send, Post or Create
-- **More options** approves and skips similar prompts for the rest of the session
-- **Approve All (n)** releases every pending approval, Cancel skips just that one
-- **Risk levels**: medium changes your content or others' calendars, high reaches other people
-- Review or revoke don't-ask-again choices under **Permissions** in the side panel
+- The card names the action as a question, here **Create calendar event?**, and shows what it will write
+- **Save** approves this one action, and the task records Approved 1 action
+- The arrow beside it offers **Always allow Create event** for the rest of the session
+- **Medium risk** changes your content or calendar; **high risk** reaches other people
+- New files in Output and saved drafts need **no approval**
 
 ## Speaker Notes
 
-Cowork acts on your behalf, but never behind your back. Before it sends an email, posts in Teams or saves a file, it pauses and shows an approval card.
+Cowork acts on your behalf, but never behind your back. The screenshot is the card from the Work IQ scheduling demo, where Cowork booked a one-hour Agentic AI session on your own calendar.
 
-Approve once: the action button, for example Send, Post or Create, approves that one action. Show parameters reveals the technical details before you decide.
+The card: before Cowork sends an email, posts in Teams, books or changes a meeting or edits an existing file, it pauses and shows what it will write. Here that is the date, the title, the attendees and the agenda, all still editable.
 
-More options: the dropdown next to the action button approves and skips similar prompts for the rest of the session. For email and Teams you choose Only to a specific recipient, Only to a specific domain's recipients or Always allow; other actions offer Approve & don't ask again.
+Approve once: the action button, here Save, approves that one action, and Cancel skips it while Cowork carries on. When several approvals are pending, Approve All (n) releases every one of them.
 
-Approve All and Cancel: when several approvals are pending, Approve All (n) releases every one of them. Cancel skips the action, and Cowork carries on with the rest.
+More options: the arrow approves and skips similar prompts for the rest of the session; for email and Teams it offers Only to a recipient, Only to a domain, or Always allow. The Permissions section of the Workspace panel lets you review or revoke those choices.
 
-Risk levels: medium-risk actions such as saving files or scheduling a meeting change your content or others' calendars, while high-risk actions such as sending email or posting in Teams leave your workspace. The risk indicator on the approval card is the authority.
+Risk levels: creating or updating an event, editing a file or mailing yourself shows Medium, while mail to other people or a Teams post shows High. The indicator on the card is the authority: the review deck sent to your own address showed Medium.
 
-Permissions: don't-ask-again choices apply to the current session, and the side panel Permissions section lets you review or revoke them. Office file edits ask Approve once or Always allow, and a sensitive browser submission asks Approve or Reject.
+No approval: new files in the task's Output and an email saved to your Drafts folder need no approval, so a prompt that ends with do not send stops at a draft. The follow-up package demo of this topic relies on that before it books the partner call.

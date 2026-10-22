@@ -1501,6 +1501,143 @@
       "catalogue": {
         "action": "none"
       }
+    },
+    {
+      "date": "2026-10-22",
+      "from": "11:28",
+      "to": "12:21",
+      "sessionId": "03bc699e-373e-44aa-bfea-e33f54f5b96e",
+      "branch": "v-3.0.0",
+      "commits": [],
+      "surfaces": [
+        "demos",
+        "labs"
+      ],
+      "files": [
+        "demos/07-cs-maintaining/05-agentic-building/demo-build-and-migrate-from-the-terminal.md",
+        "demos/07-cs-maintaining/05-agentic-building/readme.md",
+        "labs/07-cs-maintaining/05-agentic-building/lab-01-build-and-migrate-from-the-terminal.md",
+        "labs/readme.md",
+        "demos/demo-check.md"
+      ],
+      "mechanism": {
+        "takes": "a terminal demo guide that drives two vendor coding-agent plugins against a live low-code agent environment, plus a renaming request for the course's fictional company",
+        "does": "renames the company across every guide, asset and the live agent, runs each guide prompt in a resumed headless coding-agent session, checks portal results in the browser, hands every sign-in to the owner, and rewrites each step from what the plugins and the product actually did",
+        "returns": "a corrected, run-verified guide, the same guide published as a lab, and a migrated copy of the agent on the new agent platform"
+      },
+      "portsAsIs": [
+        "headless step runner with resumed sessions and owner-started sign-ins",
+        "probe of what a coding-agent session really loads before a guide names a command"
+      ],
+      "perCustomer": [
+        "the agent environment and its ids",
+        "the course's company name and module layout"
+      ],
+      "evidence": [
+        "demos/demo-check.md 07/05 row",
+        "point test returned the operating system question with Windows and macOS",
+        "migrated agent Preview showed Used skill vpn-wont-connect"
+      ],
+      "toolchain": {
+        "skills": [
+          "class-authoring-plugin:create-class",
+          "brand-voice-copilot",
+          "copilot-studio:clone-agent",
+          "copilot-studio:manage-agent",
+          "copilot-studio:validate",
+          "copilot-studio:new-topic",
+          "copilot-studio:chat-with-agent",
+          "copilot-studio:detect-mode",
+          "mcs-assistant:migrate",
+          "mcs-assistant:push-agent",
+          "learn-loop-plugin:claude-learn"
+        ],
+        "mcpServers": [
+          "claude-in-chrome"
+        ],
+        "agents": [
+          "copilot-studio:Copilot Studio Advisor",
+          "copilot-studio:Copilot Studio Author",
+          "mcs-assistant:Copilot Studio Init",
+          "mcs-assistant:Copilot Studio Describer",
+          "mcs-assistant:Copilot Studio Architect"
+        ]
+      },
+      "industry": "corporate training, low-code agent development",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      }
+    },
+    {
+      "date": "2026-10-22",
+      "from": "11:25",
+      "to": "12:40",
+      "sessionId": "25a523e7-ddd1-415b-8d57-f912e587f892",
+      "branch": "v-3.0.0",
+      "commits": [],
+      "surfaces": [
+        "demos"
+      ],
+      "files": [
+        "demos/04-cs-tools/07-computer-use/_images/computer-use-overview.svg",
+        "demos/03-cs-basics/03-topics/readme.md",
+        "demos/04-cs-tools/07-computer-use/readme.md",
+        "demos/readme.md"
+      ],
+      "mechanism": {
+        "takes": "a course's demo guides and a slice size per drawing agent",
+        "does": "fans the guides out to parallel image agents under one written SVG contract, each draws an animated overview of its demo from the guide's own names and results and returns alt text, then a script embeds every picture under its guide's title and topic pages list a default and an optional demo",
+        "returns": "one animated overview SVG at the top of every demo guide and topic pages that mark the alternative demo as optional"
+      },
+      "portsAsIs": [
+        "the overview SVG contract with a readable static first frame",
+        "fan-out by module slice with one scratchpad per agent",
+        "the TSV-driven embed script that is safe to rerun"
+      ],
+      "perCustomer": [
+        "the guides and their demo story",
+        "the reference diagram the style copies",
+        "which demo of a pair is the default"
+      ],
+      "evidence": [
+        "48 overview SVGs parse and render with no text overflow or overlap at 26px minimum",
+        "embed dry-run over the 48 reports already=48",
+        "link check over demos/: broken=0",
+        "class page commit bd548abf in the integrations.at repo (lastmod only)"
+      ],
+      "toolchain": {
+        "skills": [
+          "class-authoring-plugin:create-class",
+          "brand-voice-copilot",
+          "report-plugin:report",
+          "learn-loop-plugin:claude-learn",
+          "claude-learn-harvest",
+          "claude-learn-worktime",
+          "track-time",
+          "humanizer",
+          "vermenschlichen",
+          "humanizer-de",
+          "german-register",
+          "marketing-psychology",
+          "check-google-rating"
+        ],
+        "mcpServers": [
+          "chrome-devtools",
+          "microsoft-learn",
+          "subagent-delegation-plugin"
+        ],
+        "agents": [
+          "image-producer",
+          "content-writer",
+          "fork"
+        ]
+      },
+      "industry": "corporate training, low-code agent development",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      }
     }
   ]
 }
