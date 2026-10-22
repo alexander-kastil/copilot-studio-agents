@@ -45,4 +45,4 @@ More options: the arrow approves and skips similar prompts for the rest of the s
 
 Risk levels: creating or updating an event, editing a file or mailing yourself shows Medium, while mail to other people or a Teams post shows High. The indicator on the card is the authority: the review deck sent to your own address showed Medium.
 
-No approval: new files in the task's Output and an email saved to your Drafts folder need no approval, so a prompt that ends with do not send stops at a draft. The follow-up package demo of this topic relies on that before it books the partner call.
+No approval: new files in the task's Output and an email saved to your Drafts folder need no approval, so a prompt that ends with do not send stops at a draft. The follow-up package demo of this topic relies on that: it saves the partner email as a draft with no approval, then books the follow-up call through a medium-risk approval.

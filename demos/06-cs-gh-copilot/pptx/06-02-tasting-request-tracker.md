@@ -13,7 +13,7 @@ visual-prompt: >
   Live screenshot, pool id 06-06-011: the app build conversation on the left after the status change
   request, and the Tasting Request Tracker preview on the right with 8 open requests (3 New, 5
   Scheduled), 3 closed, and the sample requests grouped into high, medium and low priority.
-order: 17
+order: 22
 source: demos/06-cs-gh-copilot/06-apps/demo-06-build-an-app.md
 gamma_prompt: >
   Slide titled "The Tasting Request Tracker", subtitle "An app refined by conversation, checked in the

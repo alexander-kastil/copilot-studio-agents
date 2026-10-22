@@ -19,7 +19,7 @@ visual-prompt: >
   shared set of tools" and the quote "give every agent the same shared toolbox". Workflow panel (green
   header): "input" into five numbered green circles in a row and out to "output", captioned "Repeated
   multi-step process" and the quote "do these five steps the same way every time". Static.
-order: 10
+order: 15
 source: demos/06-cs-gh-copilot/04-workflows-and-mcp/readme.md
 gamma_prompt: >
   Slide titled "Connectors, MCP servers and workflows", subtitle "Which tool fits which job". Left

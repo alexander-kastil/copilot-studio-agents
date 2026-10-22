@@ -8,6 +8,8 @@ paths:
 
 The global `copilot-studio` skill holds the generic rules. These are the facts it leaves out because they belong to this repo.
 
+- Read the global `copilot-studio` skill's `references/schema-verification.md` before writing any Copilot Studio YAML token: Learn documents the UI, not the literal identifiers.
+
 ## Where the agents live
 
 - `src/cs-schema/agents/<Agent Name>/` holds Copilot Studio agents cloned from the environment **Integrations e. U. (default)** (`Default-d92b247e-90e0-4469-a129-6a32866c0d0a`) and committed here; they can be pushed back with the extension.

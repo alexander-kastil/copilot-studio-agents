@@ -71,7 +71,7 @@ Control does not stop at the individual. Admins decide whether Cowork is availab
 - **Model profiles**: Under **Copilot** > **Cost management** > **Configuration** > **Model profiles**, build a Cowork-only profile with at least two models, then assign it to spending policies.
 - **Browser use**: The tenant setting **Cowork Browsing** is off by default. Turn on **Allow browser access** under **Copilot** > **Settings** > **View All** > **Cowork settings**, limit it to security groups, and review the audit log, which records each browser task.
 - **Plugins**: Deploy plugins to everyone or to groups, and allow or block them in **Agents** > **Tools**. Org-wide sharing needs admin approval, and there is no single setting that turns off sharing with specific people.
-- **Spending limits**: Usage-based billing is governed by spending policies with limits and alerts, so a single user cannot drain the tenant's Copilot Credits. See [Module 1: Spending Limits](../../01-intro/03-where-to-build/readme.md#spending-limits).
+- **Spending limits**: Usage-based billing is governed by spending policies with limits and alerts, so a single user cannot drain the tenant's Copilot Credits. See [Module 1: Spending Limits](../../01-intro/04-where-to-build/readme.md#spending-limits).
 
   ![Spending guardrails for pay-as-you-go: a per-user limit caps what any one user can consume, and the monthly spending limit caps the tenant total, with alert thresholds set below it.](../../01-intro/pptx/images/03-03-spending-governance.svg)
 

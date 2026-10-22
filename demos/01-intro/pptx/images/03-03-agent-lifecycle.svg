@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">One agent lifecycle in five stages, with a return loop</title>
+  <desc id="d">Five stages run from left to right. Create sets the purpose and the harness and is taught in modules 3 and 6. Build adds instructions, knowledge, tools, the model and boundaries, taught in modules 3 to 6. Test uses the test chat or Preview for one example and an evaluation for a fixed set; evaluations come in modules 5 and 6. Publish releases the agent to its channels, taught in modules 3 and 7. Monitor shows real conversations, tasks and credits, from module 6. A return arrow runs beneath the row from Monitor back to Build: focused change, test again, republish.</desc>
+  <style>svg { font-size: 28px; }</style>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+
+  <rect x="60" y="210" width="312" height="340" rx="20" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="216" y="280" font-size="38" font-weight="700" fill="#24292f" text-anchor="middle">Create</text>
+  <text x="216" y="340" font-size="30" fill="#57606a" text-anchor="middle">Purpose and</text>
+  <text x="216" y="380" font-size="30" fill="#57606a" text-anchor="middle">harness</text>
+
+  <rect x="432" y="210" width="312" height="340" rx="20" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="588" y="280" font-size="38" font-weight="700" fill="#24292f" text-anchor="middle">Build</text>
+  <text x="588" y="340" font-size="30" fill="#57606a" text-anchor="middle">Instructions,</text>
+  <text x="588" y="380" font-size="30" fill="#57606a" text-anchor="middle">knowledge, tools,</text>
+  <text x="588" y="420" font-size="30" fill="#57606a" text-anchor="middle">model, boundaries</text>
+
+  <rect x="804" y="210" width="312" height="340" rx="20" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="960" y="280" font-size="38" font-weight="700" fill="#24292f" text-anchor="middle">Test</text>
+  <text x="960" y="340" font-size="30" fill="#57606a" text-anchor="middle">Test chat or Preview:</text>
+  <text x="960" y="380" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">one example</text>
+  <line x1="844" y1="410" x2="1076" y2="410" stroke="#8c959f" stroke-width="2"/>
+  <text x="960" y="452" font-size="30" fill="#57606a" text-anchor="middle">Evaluation:</text>
+  <text x="960" y="492" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">a fixed set</text>
+
+  <rect x="1176" y="210" width="312" height="340" rx="20" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1332" y="280" font-size="38" font-weight="700" fill="#24292f" text-anchor="middle">Publish</text>
+  <text x="1332" y="340" font-size="30" fill="#57606a" text-anchor="middle">Channels</text>
+
+  <rect x="1548" y="210" width="312" height="340" rx="20" fill="#fff6e5" stroke="#8c959f" stroke-width="2"/>
+  <text x="1704" y="280" font-size="38" font-weight="700" fill="#24292f" text-anchor="middle">Monitor</text>
+  <text x="1704" y="340" font-size="30" fill="#57606a" text-anchor="middle">Real conversations,</text>
+  <text x="1704" y="380" font-size="30" fill="#57606a" text-anchor="middle">tasks and credits</text>
+
+  <g stroke="#57606a" stroke-width="4" marker-end="url(#ah)">
+    <line x1="376" y1="380" x2="426" y2="380"/>
+    <line x1="748" y1="380" x2="798" y2="380"/>
+    <line x1="1120" y1="380" x2="1170" y2="380"/>
+    <line x1="1492" y1="380" x2="1542" y2="380"/>
+  </g>
+
+  <g fill="#f6f8fa" stroke="#8c959f" stroke-width="2">
+    <rect x="90.5" y="580" width="251" height="56" rx="28"/>
+    <rect x="473" y="580" width="230" height="56" rx="28"/>
+    <rect x="835" y="580" width="250" height="96" rx="28"/>
+    <rect x="1206.5" y="580" width="251" height="56" rx="28"/>
+    <rect x="1587.5" y="580" width="233" height="56" rx="28"/>
+  </g>
+  <g font-size="28" fill="#24292f" text-anchor="middle">
+    <text x="216" y="618">Modules 3 and 6</text>
+    <text x="588" y="618">Modules 3 to 6</text>
+    <text x="960" y="620">Evaluations in</text>
+    <text x="960" y="656">modules 5 and 6</text>
+    <text x="1332" y="618">Modules 3 and 7</text>
+    <text x="1704" y="618">From module 6</text>
+  </g>
+
+  <path d="M1564,552 V744 Q1564,784 1524,784 H764 Q724,784 724,744 V556" fill="none" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <text x="1144" y="836" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">Focused change, test again, republish</text>
+</svg>

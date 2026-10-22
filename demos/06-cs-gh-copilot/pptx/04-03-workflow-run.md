@@ -13,7 +13,7 @@ visual-prompt: >
   Live screenshot, pool id 06-04-013: the published GH-Food Reorder Draft workflow on its Activity tab,
   one run of 17 s, the nodes When an agent calls the flow, Agent (17.1 s) and Respond to the agent
   (0.01 s) with green checks, and the Agent node's Run Details showing status Completed and the result.
-order: 12
+order: 17
 source: demos/06-cs-gh-copilot/04-workflows-and-mcp/demo-04-connect-mcp-and-workflow.md
 gamma_prompt: >
   Slide titled "A workflow with an agent node", subtitle "Fixed steps around one call to your agent".

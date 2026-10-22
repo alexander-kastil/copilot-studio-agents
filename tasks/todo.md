@@ -1,5 +1,18 @@
 # Todo
 
+## Agent harnesses in Module 1 (2026-10-22, approved without the lab)
+
+Source: Learn training module `explore-copilot-studio-agent-harnesses` units 2 to 6, checked against Learn `harnesses-overview` (four harnesses, the training module names three) and the live Copilot Studio menus.
+
+- [x] Owner agreed the layout without the lab: new topic 03 Agent Harnesses: Choose the Runtime, siblings 03 to 05 renumbered to 04 to 06
+- [x] 02-how-agents-work: Agent, Model and Harness section with a new 02-06 diagram (02-02-three-parts.svg kept, a lab in module 4 embeds it), Proceed / Confirm / Escalate, agent-calls-workflow pattern
+- [x] New 03 topic readme and demo (live menus and Powered by column read, no credits)
+- [x] 04-where-to-build: harness paragraph down to a pointer; 05-chat-productivity: Copilot chat line
+- [x] Slide specs 02-06, 03-01 to 03-03, retitled 02-02, updated 00-01, 00-02, 04-01, 07-01, topics.json; shared images 03-03 and 04-01 keep their names so modules 2 and 3 stay untouched
+- [x] Master TOC, class intro, Day 1 schedule (Module 1 55m, Day 1 ends 16:50)
+- [ ] SVGs from image-producer, demo overview embedded, link-check
+- [ ] Deck rebuild (Gamma) not done
+
 ## Grey Logistics and the 07/05 terminal run (2026-10-22)
 
 - [x] Replace Contoso with Grey Logistics in every file under `demos/` and `labs/` (readmes, guides, SVGs, CSV)

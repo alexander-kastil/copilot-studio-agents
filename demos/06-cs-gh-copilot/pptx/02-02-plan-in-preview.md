@@ -13,7 +13,7 @@ visual-prompt: >
   Live screenshot, pool id 06-01-027: GH-Health Advisor in Preview with Debug mode on, answering the
   fever and business trip question. The step list shows the thought, Ran 2 events in parallel and an
   expanded Used tool: Searched knowledge with its three uploaded sources, the Input query and the Output.
-order: 7
+order: 12
 source: demos/06-cs-gh-copilot/02-unified-build-and-orchestrator/demo-02-trace-agent-reasoning.md
 gamma_prompt: >
   Slide titled "Reading the plan in Preview", subtitle "A reason instruction turns one question into

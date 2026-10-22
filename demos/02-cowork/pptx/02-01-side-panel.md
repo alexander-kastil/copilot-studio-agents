@@ -38,7 +38,7 @@ gamma_prompt: >
 
 This slide opens the skills topic with what ships in the box and where you watch it work. Cowork chooses the skills from the task you describe, and you can also call one by name.
 
-Built-in skills: Word, Excel, PowerPoint, PDF, Email, Scheduling, Calendar Management, Meetings, Daily Briefing, Enterprise Search, Deep Research, Communications, Adaptive Cards and App (Frontier) ship with Cowork. Every PowerPoint deck Cowork creates gets your organization's brand template.
+Built-in skills: Word, Excel, PowerPoint, PDF, Email, Scheduling, Calendar Management, Meetings, Daily Briefing, Enterprise Search, Deep Research, Communications, Adaptive Cards and App (Frontier) ship with Cowork. Image generation ships too: it runs on ChatGPT Images 2.0, asks clarifying questions when a prompt lacks detail, and saves the image to your session and your OneDrive output folder. Every PowerPoint deck Cowork creates gets your organization's brand template.
 
 Workspace panel: Steps shows the plan with each step ticked when done, Output the files Cowork created and References the files you attached. Schedule lists scheduled prompts, and Permissions the actions you approved with don't ask again.
 

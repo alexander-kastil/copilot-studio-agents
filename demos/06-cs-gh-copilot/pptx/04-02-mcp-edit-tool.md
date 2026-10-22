@@ -13,7 +13,7 @@ visual-prompt: >
   Live screenshot, pool id 06-04-022: the Edit tool dialog of GH-Food Buddy for its MCP server, with
   the connection GH-Food MCP, Authentication End user account and Tool permissions listing seven food
   catalog tools under Allow all.
-order: 11
+order: 16
 source: demos/06-cs-gh-copilot/04-workflows-and-mcp/demo-04-connect-mcp-and-workflow.md
 gamma_prompt: >
   Slide titled "Adding an MCP server", subtitle "One connection, every tool the server exposes". Layout:

@@ -1,6 +1,6 @@
 # Introduction to Developing AI Agents and Copilots for Microsoft 365
 
-Hands-on labs for [Module 1](../../demos/01-intro/readme.md). The essential labs follow [Copilot Chat & Productivity Agents](../../demos/01-intro/04-chat-productivity/readme.md): build an agent with Agent Builder, then build and share a SharePoint agent. The optional labs come after them: put Analyst and Researcher to work, use shared agents, and try Workflows.
+Hands-on labs for [Module 1](../../demos/01-intro/readme.md). The essential labs follow [Copilot Chat & Productivity Agents](../../demos/01-intro/05-chat-productivity/readme.md): build an agent with Agent Builder, then build and share a SharePoint agent. The optional labs come after them: put Analyst and Researcher to work, use shared agents, and try Workflows.
 
 ![The lab path: the Agent Builder and SharePoint agent labs first. The optional labs follow: Analyst and Researcher, which need a Microsoft Copilot license, then Share and use agents, and Workflows, which also needs Frontier program access.](./_images/lab-path.svg)
 

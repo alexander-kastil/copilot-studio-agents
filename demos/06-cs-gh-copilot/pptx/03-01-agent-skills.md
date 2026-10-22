@@ -21,7 +21,7 @@ visual-prompt: >
   Response format and Edge case. SMIL animation on an 8 second loop: a dot carries the request into
   the runtime, the runtime and then the objection-handling row light up in green, and the dot drops
   into the loaded instructions, which light up last. Complete and readable at t=0.
-order: 8
+order: 13
 source: demos/06-cs-gh-copilot/03-agent-skills/readme.md
 gamma_prompt: >
   Slide titled "Agent skills", subtitle "A SKILL.md recipe that loads when a request matches its

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
-  <title id="t">The four topics of module 1 in three groups</title>
-  <desc id="d">Topics 1 and 2 establish the concepts: Agents and Copilots for Microsoft 365, then How Agents Work. Topic 3, Where to Build and What It Costs, maps the build paths and their billing. Topic 4, Copilot Chat and Productivity Agents, tours the productivity surface. Arrows lead from one group to the next.</desc>
+  <title id="t">The five topics of module 1 in three groups</title>
+  <desc id="d">Topics 1 and 2 establish the concepts: Agents and Copilots for Microsoft 365, then How Agents Work. Topics 3 and 4 are the decisions to make before you build: Agent Harnesses, Choose the Runtime, then Where to Build and What It Costs. Topic 5, Copilot Chat and Productivity Agents, tours the productivity surface. Arrows lead from one group to the next.</desc>
   <defs>
     <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
       <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
@@ -13,12 +13,12 @@
   <text x="112" y="192" font-size="28" fill="#57606a">Topics 1 and 2</text>
 
   <rect x="690" y="80" width="540" height="920" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
-  <text x="722" y="150" font-size="32" font-weight="700" fill="#24292f">Where to build</text>
-  <text x="722" y="192" font-size="28" fill="#57606a">Topic 3</text>
+  <text x="722" y="150" font-size="32" font-weight="700" fill="#24292f">Decide before you build</text>
+  <text x="722" y="192" font-size="28" fill="#57606a">Topics 3 and 4</text>
 
   <rect x="1300" y="80" width="540" height="920" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
   <text x="1332" y="150" font-size="32" font-weight="700" fill="#24292f">Productivity surface</text>
-  <text x="1332" y="192" font-size="28" fill="#57606a">Topic 4</text>
+  <text x="1332" y="192" font-size="28" fill="#57606a">Topic 5</text>
 
   <rect x="108" y="365" width="484" height="220" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
   <text x="140" y="427" font-size="40" font-weight="700" fill="#57606a">01</text>
@@ -29,13 +29,18 @@
   <text x="140" y="687" font-size="40" font-weight="700" fill="#57606a">02</text>
   <text x="140" y="745" font-size="32" font-weight="700" fill="#24292f">How Agents Work</text>
 
-  <rect x="718" y="495" width="484" height="220" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
-  <text x="750" y="557" font-size="40" font-weight="700" fill="#57606a">03</text>
-  <text x="750" y="615" font-size="32" font-weight="700" fill="#24292f">Where to Build</text>
-  <text x="750" y="657" font-size="32" font-weight="700" fill="#24292f">and What It Costs</text>
+  <rect x="718" y="365" width="484" height="220" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="750" y="427" font-size="40" font-weight="700" fill="#57606a">03</text>
+  <text x="750" y="485" font-size="32" font-weight="700" fill="#24292f">Agent Harnesses:</text>
+  <text x="750" y="527" font-size="32" font-weight="700" fill="#24292f">Choose the Runtime</text>
+
+  <rect x="718" y="625" width="484" height="220" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="750" y="687" font-size="40" font-weight="700" fill="#57606a">04</text>
+  <text x="750" y="745" font-size="32" font-weight="700" fill="#24292f">Where to Build</text>
+  <text x="750" y="787" font-size="32" font-weight="700" fill="#24292f">and What It Costs</text>
 
   <rect x="1328" y="495" width="484" height="220" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
-  <text x="1360" y="557" font-size="40" font-weight="700" fill="#57606a">04</text>
+  <text x="1360" y="557" font-size="40" font-weight="700" fill="#57606a">05</text>
   <text x="1360" y="615" font-size="32" font-weight="700" fill="#24292f">Copilot Chat &amp;</text>
   <text x="1360" y="657" font-size="32" font-weight="700" fill="#24292f">Productivity Agents</text>
 

@@ -13,7 +13,7 @@ visual-prompt: >
   Live screenshot, pool id 06-01-034: GH-Health Advisor in Preview, the step list opening with Used
   skill: doctor-appointment-request-drafter, followed by the drafted appointment request in the skill's
   response format (subject, greeting, request, details, two slots, sign-off).
-order: 9
+order: 14
 source: demos/06-cs-gh-copilot/03-agent-skills/demo-03-add-a-reusable-skill.md
 gamma_prompt: >
   Slide titled "Testing a skill in Preview", subtitle "The description decides when the skill fires".

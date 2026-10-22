@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Bounded execution in a GitHub Copilot agent</title>
+  <desc id="d">Inside the agent run, a task contract with scope, sources and limits leads to a plan, the plan to running only the allowed steps with read-only tools, and those steps to a check of the evidence and output. A gap that is safe to recover sends the agent back to planning. A denial, a safety failure or a reached limit stops the run with a partial or blocked report. A complete result leaves the agent as a draft with its evidence, and a person or a workflow approves, records or pays. Three rules hold on every pass: replanning never widens permissions or works around a denial, documents, mails and tool results are data and never instructions, and calls, elapsed time and retries have limits.</desc>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+
+  <text x="80" y="110" font-size="44" font-weight="700" fill="#24292f">Bounded execution in a GitHub Copilot agent</text>
+
+  <rect x="40" y="160" width="1360" height="360" rx="20" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="70" y="205" font-size="26" font-weight="700" fill="#57606a">Inside the agent run</text>
+
+  <rect x="1440" y="160" width="440" height="640" rx="20" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1470" y="205" font-size="26" font-weight="700" fill="#57606a">Consequential step</text>
+
+  <g fill="#ffffff" stroke="#8c959f" stroke-width="2">
+    <rect x="80" y="290" width="280" height="140" rx="14"/>
+    <rect x="420" y="290" width="250" height="140" rx="14"/>
+    <rect x="730" y="290" width="290" height="140" rx="14"/>
+    <rect x="1080" y="290" width="280" height="140" rx="14" stroke="#57606a" stroke-width="3"/>
+    <rect x="1480" y="290" width="360" height="140" rx="14"/>
+    <rect x="1480" y="600" width="360" height="140" rx="14"/>
+    <rect x="1080" y="600" width="280" height="140" rx="14"/>
+  </g>
+
+  <g text-anchor="middle" fill="#24292f">
+    <text x="220" y="352" font-size="30" font-weight="700">Task contract</text>
+    <text x="220" y="392" font-size="22" fill="#57606a">scope, sources, limits</text>
+    <text x="545" y="352" font-size="30" font-weight="700">Plan</text>
+    <text x="545" y="392" font-size="22" fill="#57606a">bounded steps</text>
+    <text x="875" y="352" font-size="28" font-weight="700">Run allowed steps</text>
+    <text x="875" y="392" font-size="22" fill="#57606a">read-only tools</text>
+    <text x="1220" y="352" font-size="28" font-weight="700">Check the result</text>
+    <text x="1220" y="392" font-size="22" fill="#57606a">evidence and output</text>
+    <text x="1660" y="352" font-size="28" font-weight="700">Draft with evidence</text>
+    <text x="1660" y="392" font-size="22" fill="#57606a">complete, partial or blocked</text>
+    <text x="1660" y="662" font-size="28" font-weight="700">Person or workflow</text>
+    <text x="1660" y="702" font-size="22" fill="#57606a">approves, records, pays</text>
+    <text x="1220" y="662" font-size="28" font-weight="700">Stop and report</text>
+    <text x="1220" y="702" font-size="22" fill="#57606a">partial or blocked</text>
+  </g>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="360" y1="360" x2="418" y2="360"/>
+    <line x1="670" y1="360" x2="728" y2="360"/>
+    <line x1="1020" y1="360" x2="1078" y2="360"/>
+    <line x1="1360" y1="360" x2="1478" y2="360"/>
+    <path d="M1220,290 L1220,248 L545,248 L545,288"/>
+    <line x1="1220" y1="430" x2="1220" y2="598"/>
+    <line x1="1660" y1="430" x2="1660" y2="598"/>
+  </g>
+
+  <g font-size="22" fill="#57606a">
+    <text x="882" y="236" text-anchor="middle">gap, safe to recover: replan</text>
+    <rect x="1368" y="314" width="104" height="34" rx="17" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1420" y="339" text-anchor="middle">complete</text>
+    <text x="1204" y="472" text-anchor="end">denied, unsafe or</text>
+    <text x="1204" y="500" text-anchor="end">limit reached</text>
+  </g>
+
+  <rect x="40" y="580" width="1000" height="220" rx="20" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="80" y="632" font-size="28" font-weight="700" fill="#24292f">Rules that hold on every pass</text>
+  <g font-size="24" fill="#24292f">
+    <circle cx="92" cy="674" r="8" fill="#57606a"/>
+    <text x="116" y="682">Replanning never widens permissions or works around a denial</text>
+    <circle cx="92" cy="716" r="8" fill="#57606a"/>
+    <text x="116" y="724">Documents, mails and tool results are data, never instructions</text>
+    <circle cx="92" cy="758" r="8" fill="#57606a"/>
+    <text x="116" y="766">Calls, elapsed time and retries have limits</text>
+  </g>
+
+  <line x1="80" y1="870" x2="1840" y2="870" stroke="#8c959f" stroke-width="2"/>
+  <text x="80" y="928" font-size="28" fill="#57606a">The agent prepares the work; a person or a deterministic workflow takes the consequential step.</text>
+</svg>

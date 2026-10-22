@@ -18,7 +18,7 @@ visual-prompt: >
   stacked blue cards "Tools", each joined by a "consult" arrow down and a "result" arrow up. Right:
   green box "One answer, stitched together". SMIL animation on an 8 second loop: a dot carries the
   question into the runtime, down to the sources and tools, back up, and out to the answer.
-order: 6
+order: 11
 source: demos/06-cs-gh-copilot/02-unified-build-and-orchestrator/readme.md
 gamma_prompt: >
   Slide titled "The enhanced orchestration runtime", subtitle "How one question becomes a plan

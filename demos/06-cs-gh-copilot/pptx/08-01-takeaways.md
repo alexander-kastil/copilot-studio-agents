@@ -20,7 +20,7 @@ visual-prompt: >
   2:3 portrait, people centred, contemporary editorial photography. Avoid: readable text, readable
   labels on jars, bottles, tins or shelves, logos, watermarks, extra people, dark or moody lighting,
   vintage or retro decor, grime, clutter.
-order: 21
+order: 26
 source: demos/06-cs-gh-copilot/readme.md
 gamma_prompt: >
   Closing slide titled "Takeaways", subtitle "What to carry into publishing and maintaining". Side-accent

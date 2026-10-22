@@ -1,42 +1,28 @@
 # CLAUDE.md
 
-Hands-on masterclass repository for **Automate Business Processes with Copilot Studio and Copilot Cowork**, a four-day workshop for Power Platform Makers, software engineers and solution architects. Most content is README documentation; a few areas contain runnable code projects.
-
-Author with the global `create-class` skill, build slides with the global `create-pptx` skill, and run the `brand-voice-copilot` skill after writing or editing a readme or guide.
+Automate Business Processes with Copilot Studio and Copilot Cowork: a 4-day hands-on class for Power Platform makers, software engineers and solution architects who build agents for business teams.
 
 ## Layout
 
 ```text
 demos/readme.md                      class readme: Duration, Audience, Prerequisites, Modules, Schedule
-demos/NN-<module>/readme.md          01-intro, 02-cowork, 03-cs-basics, 04-cs-tools, 05-cs-advanced, 06-cs-gh-copilot, 07-cs-maintaining, 08-ai-teammates
-demos/NN-<module>/NN-<topic>/        readme.md (learning prose), the Hands-On Demo and its companion folders
-demos/NN-<module>/pptx/              slide specs NN-MM-<slug>.md, topics.json, images/<slide>-<slug>.svg
-labs/readme.md                       lab index, each folder pairs with a demo module
-labs/NN-<module>/                    01-intro, 02-cowork, 03-cs-basics to 06-cs-gh-copilot, 08-ai-teammates: readme.md, NN-<topic>/lab-01-<slug>.md, _images/
-src/                                 standalone runnable projects the modules reference: agents, MCP servers, connectors, sample services
-infra/, azure.yaml, scripts/         deployment assets for the sample projects
+demos/_images/                       class-path-by-day.svg
+demos/NN-<module>/readme.md          module readme, 8 modules from 01-intro to 08-ai-teammates
+demos/NN-<module>/NN-<topic>/        readme.md (teaching), demo-<slug>.md guides, companion folders, _images/
+demos/NN-<module>/pptx/              slide specs NN-MM-<slug>.md, topics.json, images/
+demos/pptx/                          portraits.json
+labs/NN-<module>/                    readme.md, NN-<topic>/lab-01-<slug>.md, _images/
+src/cs-schema/                       Copilot Studio agents, CS- rebuilds and workflows as .mcs.yml
+src/food-catalog-mcp/, hr-mcp-server/  MCP servers (.NET)
+src/parts-inventory-connector/       custom connector API (.NET)
+src/food-shop/                       Angular sample app
+src/assets/                          food-api-swagger.json
+infra/, azure.yaml                   deployment of the sample projects
+setup/                               tenant, Cowork, credit and AI teammates setup
 tasks/                               todo.md, lessons.md
 ```
 
-- Modules and topics are numbered by delivery order; do not reorganize them. Copilot Studio spans modules 03 to 07 (`cs-` prefix): Standard agents in `03-cs-basics`, `04-cs-tools`, `05-cs-advanced`, GitHub Copilot agents in `06-cs-gh-copilot`, then `07-cs-maintaining`.
-- When a module or sub-module has numbered `NN-topic` subfolders, its demos and labs are filed inside the owning topic subfolder (companion folders alongside), never left at the parent root; per-topic lab numbering starts at `lab-01`.
-- Each topic is a complete learning unit: developed learning-prose `readme.md` plus a Hands-On Demo and a Hands-On Lab.
-- The `demos/01-intro/pptx/` to `demos/08-ai-teammates/pptx/` slide specs follow the create-pptx Gamma path. A readme, demo guide or lab that shows a slide diagram embeds that same file by relative path; a diagram no slide uses sits in `_images/` beside the doc that embeds it.
-
-## Brand Voice
-
-Every `readme.md` and guide under `demos/` and `labs/` follows `.claude/skills/brand-voice-copilot/references/rules.md`. Check a file against it after writing or significantly editing it. The skill stays repo-local because the Cowork audience differs from a Claude Code class; `create-class` finds it by globbing `.claude/skills/brand-voice-*`.
-
-## Where the detail lives
-
-| Topic | Lives in |
-| --- | --- |
-| Copilot Cowork custom `SKILL.md` authoring (frontmatter contract, kebab-case name matching the folder, companion-file limits, run-and-tune loop); use it whenever course content demonstrates or ships a Cowork skill | global `copilot-cowork` skill |
-| Copilot Studio `.mcs.yml` agent definitions under `src/cs-schema/agents/` (topic YAML, prebuilt entities, Adaptive Cards, conversation design, clone and sync via the VS Code extension); read its `references/schema-verification.md` before writing any Copilot Studio YAML token, because Learn documents the UI, not the literal identifiers | global `copilot-studio` skill, repo facts in `.claude/rules/copilot-studio.md` |
-| Mermaid diagrams for the module and lab docs, following the Mermaid label rule | `.claude/skills/mermaid-expert/` |
-| Brand-voice audit and fixes for Markdown | `.claude/skills/brand-voice-copilot/` |
-
-There are no custom slash commands in this repo.
+Module and topic numbers are two-digit, in delivery order; do not reorganize them. Copilot Studio spans `03-cs-basics` to `07-cs-maintaining`: Standard agents in 03 to 05, GitHub Copilot agents in 06. Every topic has a teaching readme, a Hands-On Demo and a Hands-On Lab, filed inside its `NN-<topic>/` folder; lab numbering restarts at `lab-01` per topic. A doc that shows a slide diagram embeds that slide's file by relative path; a diagram no slide uses sits in `_images/` beside the doc.
 
 ## Harness
 
@@ -52,11 +38,11 @@ Orchestration runs in the integrations-marketplace mods (`D:\git-projects\integr
 
 ## Hard Rules
 
-- **`docs-agent` is banned in this repo, no exceptions**: never pass it as `subagent_type`, even when a hook or the roster names it. Every readme, guide, lab and schedule under `demos/` and `labs/` is written on the main thread through the `class-authoring-plugin:create-class` skill, invoked as the first tool call.
-- Internal links use relative paths (e.g. `demos/01-intro/readme.md`); anchors use `#heading-name`.
+- `docs-agent` is banned here, even when a hook or the roster names it: readmes, guides, labs and schedules are written on the main thread.
+- Internal links are relative; anchors use `#heading-name`.
 - Code fences declare a language (`bash`, `python`, `json`, ...).
-- If a quality check fails, fix the underlying issue. Do not bypass with `--no-verify`.
-- **Zero comments in code under `src/`, no exceptions**: no `//`, `/* */`, `///` or `/** */` doc comments, `#` script comments, JSDoc, banner or divider comments, `TODO`/`FIXME`/`HACK` notes, commented-out code or explanation lines above a method; delete any you meet while editing a file, rename or extract instead, and keep prose in `readme.md`.
+- If a quality check fails, fix the underlying issue; never bypass with `--no-verify`.
+- No comments of any kind in code under `src/` (`//`, `/* */`, `///`, `#`, JSDoc, `TODO`, commented-out code); delete any you meet in a file you edit, keep prose in `readme.md`.
 - No error handling in scripts unless explicitly requested.
 
 ## Working Method

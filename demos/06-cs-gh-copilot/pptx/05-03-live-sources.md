@@ -20,7 +20,7 @@ visual-prompt: >
   shapes and colours, never readable UI. 2:3 portrait, person centred, contemporary editorial
   photography. Avoid: readable text, readable screen content, logos, watermarks, extra people, dark or
   moody lighting, vintage or retro decor, grime, clutter.
-order: 15
+order: 20
 source: demos/06-cs-gh-copilot/05-iq-grounding/readme.md
 gamma_prompt: >
   Slide titled "Live sources and uploaded files", subtitle "Why grounding matters for information that

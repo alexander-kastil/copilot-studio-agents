@@ -21,7 +21,7 @@ visual-prompt: >
   green plants, 2020s design. 2:3 portrait, contemporary editorial photography. Avoid: readable text,
   letters, numbers, logos, watermarks, people, hands, dark or moody lighting, vintage or retro decor,
   grime, clutter.
-order: 19
+order: 24
 source: demos/06-cs-gh-copilot/07-evaluations/readme.md
 gamma_prompt: >
   Slide titled "A test set worth trusting", subtitle "Weight the cases toward where the agent is likely

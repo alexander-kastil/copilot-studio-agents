@@ -20,7 +20,7 @@ visual-prompt: >
   tested version", reached from 2 by an arrow labelled "When the main scenarios work". SMIL
   animation on a 12 second loop: box 1 lights up, then review and refine light up in turn twice,
   then the exit arrow and Publish. Complete and readable at t=0.
-order: 16
+order: 21
 source: demos/06-cs-gh-copilot/06-apps/readme.md
 gamma_prompt: >
   Slide titled "Building apps", subtitle "Describe the app, then review and refine it until the

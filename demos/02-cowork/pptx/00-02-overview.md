@@ -32,7 +32,7 @@ gamma_prompt: >
 
 ## Content
 
-- **Get started**: what Cowork is, tenant setup and how a task runs
+- **Get started**: what Cowork is, how it differs from Chat, tenant setup and how a task runs
 - **Use and author skills**: the built-in catalog, the Workspace panel and your own `SKILL.md`
 - Make the work **recurring** with scheduled prompts and event-driven tasks
 - Make it **extensible** with plugins that add external data and expertise
@@ -42,7 +42,7 @@ gamma_prompt: >
 
 This slide walks the path through the module before the first topic starts. The six topics fall into four phases, shown left to right in the diagram.
 
-Get started: topic 1 explains what Cowork is, how it differs from Copilot Chat, how an admin enables it and how a typical task runs. Its two demos build a Q3 business review deck and book a meeting from live calendar data.
+Get started: topic 1 explains what Cowork is, how it differs from Copilot Chat, how an admin enables it, where to open it, what it remembers, which model and reasoning effort to choose, its core capabilities and how a typical task runs. Its two demos build a Q3 business review deck and book a meeting from live calendar data.
 
 Use and author skills: topic 2 covers the built-in skill catalog and the Workspace panel that shows Cowork's live work. Topic 3 teaches you to write your own skill in plain language as a `SKILL.md` file.
 

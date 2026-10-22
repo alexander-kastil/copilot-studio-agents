@@ -20,7 +20,7 @@ visual-prompt: >
   settings; Fabric semantic model: business data and analytics in tables and measures), each with an amber owner
   card below pointing up at it (Administrators govern it, Microsoft 365 admin center; The owning team tunes it,
   sources, retrieval, ranking; Workspace and model owner, decides what the model holds).
-order: 13
+order: 18
 source: demos/06-cs-gh-copilot/05-iq-grounding/readme.md
 gamma_prompt: >
   Slide titled "Grounding with Work IQ, Foundry IQ and Fabric IQ", subtitle "The agent reads each source

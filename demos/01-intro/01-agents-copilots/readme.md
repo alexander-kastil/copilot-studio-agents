@@ -73,7 +73,7 @@ The dividing line is scope and autonomy. When a task repeats, spans steps, or ne
 ## Where to Go Next
 
 1. [How Agents Work](../02-how-agents-work/readme.md): the agentic loop, the parts every agent is made of, and the patterns you will build with
-2. [Where to Build and What It Costs](../03-where-to-build/readme.md): how to choose where to build, and how it bills
+2. [Where to Build and What It Costs](../04-where-to-build/readme.md): how to choose where to build, and how it bills
 
 ---
 

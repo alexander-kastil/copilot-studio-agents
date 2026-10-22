@@ -34,7 +34,7 @@ gamma_prompt: >
 ## Content
 
 - **Concepts**: what copilots and agents are, and how every agent works
-- **Where to build**: the build paths and what Copilot Credits cost
+- **Decide before you build**: the agent harness, the build paths and what Copilot Credits cost
 - **Productivity surface**: Copilot Chat, Researcher, Analyst and SharePoint agents
 
 ## Speaker Notes
@@ -43,6 +43,6 @@ This slide opens the course. Before anyone touches Copilot Studio or Cowork, the
 
 Concepts: the first two topics fix the vocabulary (copilot, agent, assistant) and show how every agent works: a goal pursued in a loop, built from instructions, knowledge and tools.
 
-Where to build: the third topic places the build paths on one effort scale and shows how Copilot Credits pay for what agents do.
+Decide before you build: the third topic compares the four harnesses Copilot Studio runs agents on and how to choose one, and the fourth places the build paths on one effort scale and shows how Copilot Credits pay for what agents do.
 
-Productivity surface: the fourth topic tours Copilot Chat and the agents that come ready to use. An optional fifth topic prepares the class tenant with the licenses and credits each module needs.
+Productivity surface: the fifth topic tours Copilot Chat and the agents that come ready to use. An optional sixth topic prepares the class tenant with the licenses and credits each module needs.

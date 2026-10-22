@@ -13,7 +13,7 @@ visual-prompt: >
   Live screenshot, pool id 06-06-026, cropped above the email details: GH-Aurora Account Assistant in
   Preview with Debug mode on, the question about the most recent customer email, and the step list
   with Used tool: fetch, Used tool: retrieve and a second Used tool: fetch.
-order: 14
+order: 19
 source: demos/06-cs-gh-copilot/05-iq-grounding/demo-05-ground-with-iq.md
 gamma_prompt: >
   Slide titled "Proving grounding in the activity trace", subtitle "The same question, asked again after

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <style>svg { font-size: 28px; }</style>
+  <title id="t">Matching the harness to the weight of the task</title>
+  <desc id="d">A light task fits the Standard harness; a heavy task whose route changes from run to run earns the GitHub Copilot harness. In a shared solution Standard agents stay the responsive layer while a scheduled GitHub Copilot agent turns Excel workbooks into Dataverse tables and tidies SharePoint, and only validated output goes back.</desc>
+  <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker></defs>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <rect x="60" y="60" width="880" height="420" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="84" y="106" font-size="32" font-weight="700" fill="#24292f">Light task</text>
+  <text x="84" y="156" font-size="28" fill="#24292f">Works on a bounded set of data</text>
+  <text x="84" y="198" font-size="28" fill="#24292f">Uses a stable set of actions</text>
+  <text x="84" y="240" font-size="28" fill="#24292f">Has one main outcome</text>
+  <text x="84" y="282" font-size="28" fill="#24292f"></text>
+  <text x="84" y="324" font-size="28" fill="#24292f">Standard harness is enough:</text>
+  <text x="84" y="366" font-size="28" fill="#24292f">more reasoning only adds latency</text>
+  <text x="84" y="408" font-size="28" fill="#24292f">and Copilot Credits</text>
+  <rect x="980" y="60" width="880" height="420" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1004" y="106" font-size="32" font-weight="700" fill="#24292f">Heavy task</text>
+  <text x="1004" y="156" font-size="28" fill="#24292f">Runs longer, spans several systems</text>
+  <text x="1004" y="198" font-size="28" fill="#24292f">Loops over large files, several outputs</text>
+  <text x="1004" y="240" font-size="28" fill="#24292f">Route changes from run to run:</text>
+  <text x="1004" y="282" font-size="28" fill="#24292f">evidence from several sources,</text>
+  <text x="1004" y="324" font-size="28" fill="#24292f">documents to interpret, a result that</text>
+  <text x="1004" y="366" font-size="28" fill="#24292f">decides the next step, a failed step</text>
+  <text x="1004" y="408" font-size="28" fill="#24292f">recovered by another path</text>
+  <text x="960" y="545" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">The two harnesses can share one solution</text>
+  <rect x="60" y="580" width="520" height="300" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="84" y="626" font-size="32" font-weight="700" fill="#24292f">Standard agents</text>
+  <text x="84" y="676" font-size="28" fill="#24292f">High-volume Standard agents</text>
+  <text x="84" y="718" font-size="28" fill="#24292f">stay the responsive layer</text>
+  <text x="84" y="760" font-size="28" fill="#24292f">users talk to</text>
+  <rect x="700" y="580" width="1160" height="300" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="724" y="626" font-size="32" font-weight="700" fill="#24292f">GitHub Copilot agent</text>
+  <text x="724" y="676" font-size="28" fill="#24292f">Runs on a schedule</text>
+  <text x="724" y="718" font-size="28" fill="#24292f">Turns large Excel workbooks into Dataverse tables</text>
+  <text x="724" y="760" font-size="28" fill="#24292f">Tidies the SharePoint content the Standard agents search</text>
+  <path d="M700,730 L580,730" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <rect x="60" y="920" width="1800" height="110" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="84" y="966" font-size="30" fill="#24292f">Only validated output goes back into the shared data. Each agent keeps the kind it was created as.</text>
+</svg>

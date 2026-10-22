@@ -52,3 +52,5 @@ MCP connectors: a plugin's connectors are MCP servers that reach CRM data, ticke
 Connect sign-in: each user completes a one-time Connect sign-in before a connector works for them.
 
 Widgets and admin rollout: an MCP app returns a UI that renders in the conversation. IT admins can roll plugins out to the whole organization, and those plugins show Managed by your organization.
+
+Plugins button: message center item MC1484008 (2026-09-30) replaces the Agents, Agents & Skills and Customize buttons with one Plugins button as the rollout reaches your tenant. Until that change arrives, Cowork still shows Customize, and the Customize steps in this topic match your screen.

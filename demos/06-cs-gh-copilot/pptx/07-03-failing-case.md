@@ -14,7 +14,7 @@ visual-prompt: >
   which splits into four outcomes (fact is wrong or missing, refused too little or too much, wrong tool
   or no tool, lost the thread across turns), each with its fix (knowledge source, instructions, tool
   description, multi-turn conversation design), all ending in "Re-run the same test set".
-order: 20
+order: 25
 source: demos/06-cs-gh-copilot/07-evaluations/readme.md
 gamma_prompt: >
   Slide titled "From a failing case to a fix", subtitle "What went wrong names the component to change".
