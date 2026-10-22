@@ -70,6 +70,14 @@ Once a team has a working set of tools, rebuilding them in every agent wastes ti
 
 Adding components to a collection moves them out of the agent, and the agent then references them in the collection. Other authors can use the collection but cannot change the components inside it, and only the creator or a user with the system customizer or system admin role can edit it. Setting a primary agent restricts a collection to one agent. Exporting a collection produces a managed solution you can import into another environment; collections with connectors or environment variables travel better inside a solution you create yourself.
 
+## What the Live Build Taught
+
+**Credentials decide whether a tool runs at all.** A Teams post tool on end user credentials stopped the test chat at "Let's get you connected first", and **Retry** kept failing. **Maker-provided credentials** on the tool fixed it, and the **Publish** dialog then warns "Your agent runs tools that use the author's credentials."
+
+**The name and description are the routing contract.** A vague description makes the agent answer without calling the tool. Rename the tool on its settings page after **Add and configure**, because names from the wizard do not carry over.
+
+**Prefix every environment-level artifact you create.** Give agents, flows, prompts, connectors, tables and named connections a prefix such as `CS-`, so cleanup finds them. Topics, entities and knowledge inside an agent need none, because deleting the agent removes them.
+
 ## Hands-On Demo
 
 - [Give the Help Desk Agent Connector Tools](./demo-connector-tools.md): the presenter adds Office 365 Users and Outlook tools, fixes one input to the signed-in user, requires confirmation before mail goes out, watches the orchestrator chain the tools in one request, and moves them into a component collection.

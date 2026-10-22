@@ -56,7 +56,7 @@ Four settings on the **Generative AI** settings page change what the agent may s
 | Setting | What it does | Note |
 |---------|--------------|------|
 | **Allow ungrounded responses** | Lets the agent answer from the model's general knowledge when no source or tool was used | When off, a turn that used no source or tool is blocked and the Fallback topic runs |
-| Content moderation | Sets the filter from **Lowest** to **Highest**; the default is **High** | A moderation level set on a generative answers node takes precedence |
+| Content moderation | Sets the filter from **Lowest** to **Highest**; Learn names **High** as the default, but a new agent starts at **Low** | A moderation level set on a generative answers node takes precedence |
 | **Tenant graph grounding with semantic search** | Uses the Microsoft 365 semantic index for better SharePoint retrieval | Needs **Authenticate with Microsoft** and a Microsoft 365 Copilot license in the tenant; extra cost |
 | Official source | Marks a highly trusted source so the agent uses it without verification | Not compatible with generative orchestration |
 
@@ -67,6 +67,12 @@ With **Allow ungrounded responses** off, an answer counts as grounded only when 
 Suggested prompts are the starters a user sees on the agent's welcome page in Microsoft Teams or Microsoft Copilot Chat before the first message. You can configure up to 10 in the **Suggested prompts** section of the **Overview** page, each with a title and a prompt, and Copilot Studio may generate some from the agent's description and instructions. They don't appear in the test panel, so you only see them after publishing.
 
 Two channel details decide whether users see them at all. In Teams, the **Conversation Start** system topic opens the chat with the agent's introductory message and skips the welcome page, so turn it off for an agent published only to Teams; users can still open the Prompt Gallery. In Microsoft Copilot, chats always start from the welcome page, and updates can take time to appear because of caching.
+
+## What the Live Build Taught
+
+**A new agent can answer without any source until you switch off ungrounded responses.** **Allow ungrounded responses** starts On, so an answer can sound just as right as a grounded one. Open the citation before you trust it, because the cited file is what proves grounding.
+
+**Keep knowledge file names short.** Each file name becomes part of its component's schema name in the agent YAML. A long name failed to sync with `PropertyLengthTooLong`, because the agent's schema prefix pushed it past the limit.
 
 ## Hands-On Demo
 

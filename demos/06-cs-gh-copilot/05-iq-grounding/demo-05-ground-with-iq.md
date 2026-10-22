@@ -8,7 +8,7 @@ Duration: about 15 minutes.
 
 ## What you'll build
 
-- A GitHub Copilot agent named Aurora Provisions Account Assistant.
+- A GitHub Copilot agent named Aurora Account Assistant (agent names take at most 30 characters).
 - A before and after pair of replies to the same work question: one from general knowledge, one from your own mailbox.
 - A Work IQ (Preview) connection in the agent's Tools section.
 - A trace view that shows the Work IQ call and what it returned.
@@ -29,54 +29,58 @@ This demo applies [Grounding Agents with Work IQ, Foundry IQ, and Fabric IQ](rea
 
 The baseline comes first, so the audience sees what the agent does with no grounding. You create the agent from a short description, then ask about a real thread in your mailbox. The question is specific on purpose: a grounded answer must name your thread, and an ungrounded answer cannot.
 
-1. On the Copilot Studio home page, select the card for an agent powered by the GitHub Copilot harness.
-2. Name the agent Aurora Provisions Account Assistant, paste the description below into the creation dialog, and finish creation.
+1. On the Copilot Studio **Home** page, select the card **Agent** with the **GitHub Copilot** badge. The agent opens straight on the **Build** tab as **Untitled Agent**, with no creation dialog.
+2. Enter the name `Aurora Account Assistant`, paste the description below into the **Instructions** editor, and select the **Save** icon in the top bar.
 
 ```text
 You are the Aurora Provisions Account Assistant. You help Aurora Provisions account managers prepare for customer calls. Keep answers short and professional, and say which source you used.
 ```
 
-3. Open the **Preview** tab and send this question:
+3. Open the **Preview** tab, leave **Debug mode** on, and send this question:
 
 ```text
 What did the most recent customer email I received ask me to do, and by when?
 ```
 
-Expected: the reply does not name a sender, subject, or deadline from your mailbox. It either says it cannot see your email or gives a general answer. The trace shows no tool node, so any specific detail in the reply is a guess.
+Expected: a toast confirmed "Your agent has been saved." before the test. The reply does not name a sender, subject, or deadline from your mailbox; in the live run it said "I couldn't find any of your emails" and asked you to paste or upload the email. The step list above the reply, **Reasoned through your request**, shows reasoning but no **Used tool** line, so any specific detail in the reply would be a guess.
 
 ## Exercise 2: Add Work IQ from the Tools panel
 
 Work IQ gives the agent a tool that reads Microsoft 365 work context for the account you sign in with. Pick **Work IQ (Preview)** from the MCP list. The workload-specific tools sit beside it, and selecting one of them by mistake is the most common error in this step.
 
-1. Open the **Build** tab and select **Tools** in the components panel.
-2. Select **Add tool**, then select **MCP**.
-3. Select **Work IQ (Preview)**, expand **Connection**, select **Create new connection**, then select **Create**.
-4. Sign in with the presenter account, then select **Add and Configure**.
+1. Open the **Build** tab and select **+** next to **Tools** in the right panel. The **Add a tool** dialog has the tabs **Featured**, **MCP**, **Connectors** and **Workflows**.
+2. On the **MCP** tab, select **Work IQ (Preview)**. Its page reads "Work IQ (Preview) MCP server"; select **+ Add**.
+3. Select the new **Work IQ (Preview)** entry under **Tools** to open **Edit tool**. Under **Connection**, check the green check next to the presenter account; if no connection exists yet, open the list, select **Create new connection** and sign in with the presenter account.
+4. Leave **Tool permissions** on **Allow all**, select **Done**, then select the **Save** icon.
 
-Expected: Work IQ (Preview) appears in the Tools section of the Build tab as a connected tool.
+Expected: a toast reads "Work IQ (Preview) added", and Work IQ (Preview) appears under **Tools**. **Tool permissions** lists its 12 tools, among them **Retrieve**, **Fetch** and **Ask**. When the presenter account already has a Work IQ connection, the tool reuses it, so no sign-in appears.
 
 > **Warning:** Do not select Mail, Teams, OneDrive, SharePoint, or the other workload-specific tools. Learn says to use Work IQ (Preview) in their place, because those tools belong to a legacy experience with its own licensing.
 
 ## Exercise 3: Ask the same question with Work IQ
 
-The question stays identical to Exercise 1, so any change in the reply comes from the tool. The first send asks for consent, because Work IQ connects to Microsoft 365 services for the signed-in account.
+The question stays identical to Exercise 1, so any change in the reply comes from the tool. On a connection's first use, the agent asks for consent, because Work IQ connects to Microsoft 365 services for the signed-in account.
 
-1. Open the **Preview** tab, start a new conversation, and send the Exercise 1 question unchanged.
-2. When asked to allow Work IQ to connect and use services, select **Allow**.
+1. Open the **Preview** tab, select **New chat**, and send the Exercise 1 question unchanged.
+2. If you are asked to allow Work IQ to connect and use services, select **Allow**.
 3. Read the reply.
 
-Expected: the reply names the sender, subject, and deadline of your real email, and you can check each detail against your inbox. Same question, new content: that difference is what grounding adds.
+Expected: the step list shows **Used tool: retrieve** and several **Used tool: fetch** lines, and the reply names the subject and deadline of a real email, which you can check against your inbox. In the live run it ended with "Sources: your Outlook mailbox (inbox and Sent Items)." Same question, new content: that difference is what grounding adds.
+
+> **Tip:** "Most recent customer email" means whatever arrived last, and in the live run that was a test mail without a deadline, so the agent moved on to an older thread. On a mailbox full of test mails, name the customer or subject in the question.
 
 ## Exercise 4: Read the activity trace
 
-A reply that names your email could still come from memory, so the trace is the evidence. Each step the agent takes appears as a node in the trace, and expanding a node shows its input and output.
+A reply that names your email could still come from memory, so the trace is the evidence. The trace sits inline above the reply: each step the agent takes is a line, and expanding a line shows its input and output.
 
-1. Keep the **Preview** tab open. Confirm the **End user preview** toggle is off, so the trace panel stays visible beside the chat.
-2. Find the node for the Work IQ tool call in the trace and select it.
-3. Read the input the agent sent and the output the tool returned.
-4. Scroll to the end of the trace and find the green checkmark.
+1. Keep the **Preview** tab open and confirm that **Debug mode** is on; with it off, the **Used tool** lines stay but can't be expanded.
+2. Select **Used tool: retrieve** above the reply.
+3. Read the **Input** the agent sent (the `Email` capability and its search query) and the **Output** the tool returned, plus the **Latency**.
+4. Check the grey check-circle on each tool line.
 
-Expected: the Work IQ node's output contains the email your reply quoted, and the green checkmark shows that every tool call has finished. Point at both the reply and the node that supplied it.
+Expected: the **Output** of **retrieve** lists the email thread your reply quoted, and every tool line carries a check-circle, which shows that the call finished. Point at both the reply and the line that supplied it.
+
+> **Note:** **Monitor** shows "Monitor data starts after you publish" for a draft agent, so for this demo the Preview trace is the only place to read the calls.
 
 > **Tip:** Keep the Exercise 1 reply in a second window so the audience can compare the before and after side by side.
 
@@ -85,8 +89,11 @@ Expected: the Work IQ node's output contains the email your reply quoted, and th
 | Symptom | Likely cause | Fix |
 |---------|--------------|-----|
 | Work IQ (Preview) does not appear in the MCP list | The tenant is not set up for Work IQ, or your user is not on the usage-based billing plan | Ask an administrator to complete the one-time setup in Enable your tenant for Work IQ and assign your user to the billing plan |
+| Work IQ calls fail with `The caller has exhausted the AI credit quota for WorkIQ.` | The spending policy that covers you reached its monthly limit | Raise the limit as described in [Configure Copilot Credits for the Work IQ API](../../../setup/work-iq-credit-quota.md) |
 | The reply is still generic after you add Work IQ | Consent was not given, or the connection uses a different account | Confirm the connection under Tools, then send the question again and select **Allow** at the consent prompt |
-| The trace shows no Work IQ node | The agent answered from memory, or the question does not match the tool's scope | Ask about one specific thread from your mailbox, then send again |
+| The trace shows no **Used tool** line for Work IQ | The agent answered from memory, or the question does not match the tool's scope | Ask about one specific thread from your mailbox, then send again |
+| Tool lines can't be expanded | **Debug mode** is off | Turn on **Debug mode** at the top of **Preview** |
+| The agent name is cut off | Agent names take at most 30 characters | Use a shorter name such as `Aurora Account Assistant` |
 | A workload tool such as Mail appears in Tools | The wrong tool was added in Exercise 2 | Remove that tool from Tools and add Work IQ (Preview) |
 
 ## Summary

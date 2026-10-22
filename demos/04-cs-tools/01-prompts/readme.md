@@ -58,7 +58,7 @@ Two limits shape the design. You cannot edit the generated JSON schema directly,
 
 Language models are weak at arithmetic and at reading spreadsheets cell by cell. Code interpreter closes that gap: with it turned on, the prompt writes Python, runs it, and answers from the result. Typical uses are counting and averaging rows, processing Excel, Word, PowerPoint, and PDF files, and producing charts or files as output.
 
-Turning it on adds capabilities to the prompt itself: files become a supported output type, and Excel files become a supported input and output type. You enable it per prompt in the settings panel, and it works in prompts you add at agent or topic level.
+Turning it on adds capabilities to the prompt itself: files become a supported output type, and Excel files become a supported input and output type. You enable it per prompt in the settings panel, and it works in prompts you add at agent level or in an agent flow.
 
 Plan for its limits before a demo. Code interpreter analyzes one uploaded file per prompt run, returns one file per run, and does not answer follow-up questions about an uploaded file across turns. The agent must use user authentication, so an agent published with No authentication cannot run it. Code generation and execution are billed as premium text and generative AI tools.
 
@@ -78,6 +78,12 @@ Every Standard agent already uses a model through its orchestrator, so a prompt 
 ## The prompt tool in Standard and GitHub Copilot agents
 
 The prompt tool belongs to Standard agents. In GitHub Copilot agents (Learn: GitHub Copilot harness) the comparison table lists the prompt tool as replaced by skills, which package instructions for an agent in the open `SKILL.md` format. A prompt you build here does not move to a GitHub Copilot agent, because agents never move between harnesses. The GitHub Copilot approach is taught in [Agent Skills in Copilot Studio](../../06-cs-gh-copilot/03-agent-skills/readme.md).
+
+## What the Live Build Taught
+
+**The model breaks a JSON contract unless the instructions forbid the extras.** Answers came back wrapped in a code fence or with added sentences. Keep "Return only a JSON array" and "Return no other text" in the instructions, or set the output to JSON, and read the `text` field directly, since wrapping it in `JSON()` escapes the JSON a second time.
+
+**Build the prompt against a stub before the API exists.** The demo's **Set sample stock** node fills `Topic.foodStock` with a sample table, so you test the prompt first and swap that node for a connector call later.
 
 ## Hands-On Demo
 

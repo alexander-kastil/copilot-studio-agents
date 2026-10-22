@@ -61,7 +61,7 @@ beginDialog:
 
     - kind: SendActivity
       id: SendActivity_f1jV9V
-      activity: Hi {Topic.FirstName} {Topic.LastName}. You have 25 days of paid leave left
+      activity: Hi {Topic.FirstName} {Topic.LastName}. You have 25 days of paid leave left. Ask me to collect your employee reward next.
 
     - kind: SetVariable
       id: setVariable_B9DbqS

@@ -81,6 +81,12 @@ The **Test your agent** panel lets you chat with the draft before anyone else se
 
 Two habits save time from the first day. Test after every change, because the test panel always runs the latest draft while channels run the last published version. When an answer surprises you, read the activity map before you edit instructions, because the map tells you whether the wrong component was chosen or the right one returned the wrong content.
 
+## What the Live Build Taught
+
+**A model retirement warning appears only after you select the model.** **GPT-5.5 Chat** shows "will retire on 10/30/2026" under the model picker only once it is selected, so a guide written from documentation never mentions it. **GPT Chat Latest** always points to the current GPT chat model (`modelNameHint: GPT56Chat`). Check the model of every agent before a class or a release.
+
+**Create the agent in the portal, then build its content as code.** Building one agent by clicking in the portal took about 40 minutes. Clone the blank agent with the Copilot Studio extension for VS Code, write its instructions, knowledge, topics and entities as `.mcs.yml` files, and push them with **Apply**. **Apply** updates the live draft without publishing it, and **Get changes** overwrites uncommitted local edits, so commit first.
+
 ## Hands-On Demo
 
 - [Create a Standard IT Help Desk Agent](./demo-create-a-standard-agent.md): the presenter creates a Standard agent from a description, tightens its instructions, checks the model, and runs the same question under generative and classic orchestration to show the difference in the test panel.

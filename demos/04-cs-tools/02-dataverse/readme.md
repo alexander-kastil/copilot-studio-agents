@@ -70,6 +70,14 @@ The same habits that make a table easy for people make it easy for an agent. Giv
 
 Keep tables focused. A knowledge source takes up to 15 tables, but an agent answers more reliably over a few well-described tables than over a whole data model. When a question needs data from many tables or exact calculations, a prompt with Dataverse knowledge or a flow that queries the rows gives you more control over the result.
 
+## What the Live Build Taught
+
+**A flow becomes a tool only when it is published and keeps both its trigger and its Respond to the agent action.** **Add a tool** lists it under those conditions, and with **Asynchronous response** on, the topic reports a flow error. Check these before you debug the topic.
+
+**Convert dates to ISO with Power Fx in the topic.** Dataverse rejects the raw card dates, and a cloned flow wrote its date columns from inputs that did not exist, so both dates failed on every run. Build `Topic.departureDateIso` and `Topic.returnDateIso`, then map the columns from the flow's trigger inputs.
+
+**The table must live in the same environment as the agent and its flow.** Otherwise **Table name** does not offer it.
+
 ## Hands-On Demo
 
 - [Answer and Record Supplier Offers from Dataverse](./demo-dataverse-knowledge-and-records.md): the presenter adds the two offer tables as knowledge, teaches the agent their vocabulary with synonyms and a glossary term, asks comparison questions, and then records a new offer through a Dataverse connector tool that asks for confirmation.

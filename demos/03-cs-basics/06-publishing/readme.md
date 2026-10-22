@@ -1,6 +1,6 @@
 # Publishing to Teams & Copilot
 
-An agent that only answers in the test panel helps nobody. Publishing makes your latest draft the live version, and channels decide where people meet it: in a Teams chat, in Microsoft Copilot, on a SharePoint site, or on a web page. For most internal agents the first channel is Teams and Microsoft Copilot, because employees already work there and sign in with their Microsoft accounts.
+An agent that only answers in the test panel helps nobody. Publishing makes your latest draft the live version, and channels decide where people meet it: in a Teams chat, in Microsoft 365 Copilot, on a SharePoint site, or on a web page. For most internal agents the first channel is Microsoft 365 and Microsoft Teams, because employees already work there and sign in with their Microsoft accounts.
 
 This topic explains what publishing does, how the authentication setting decides which channels you can use, and how to reach users in Teams, Microsoft Copilot, SharePoint, and on a website. Advanced channels such as WhatsApp, mobile apps and Direct Line belong to [Using Advanced Channels: WhatsApp, Web & Direct Line](../../07-cs-maintaining/04-advanced-channels/readme.md), and moving agents between environments to [Application Lifecycle Management & Source Control](../../07-cs-maintaining/03-alm-source-control/readme.md).
 
@@ -14,19 +14,19 @@ Running conversations don't switch versions mid-session. The new version arrives
 
 ## Authentication decides your channels
 
-New agents use **Authenticate with Microsoft**, which signs users in with Microsoft Entra ID in Teams, Power Apps, and Microsoft Copilot with no setup. That default is right for internal agents, and it is also what SharePoint, Dataverse, and connector knowledge need to apply each user's permissions. The setting lives under **Settings**, **Security**, **Authentication**.
+New agents use **Authenticate with Microsoft**, which signs users in with Microsoft Entra ID in Teams, Power Apps, and Microsoft 365 Copilot with no setup. That default is right for internal agents, and it is also what SharePoint, Dataverse, and connector knowledge need to apply each user's permissions. The setting lives under **Settings**, **Security**, **Authentication**.
 
 | Option | Who can chat | What it opens up | What it costs |
 |--------|--------------|------------------|---------------|
-| **Authenticate with Microsoft** (default) | Signed-in users of your tenant | Teams, Microsoft Copilot, SharePoint, and user-permission knowledge | Only Microsoft channels are available |
+| **Authenticate with Microsoft** (default) | Signed-in users of your tenant | Teams, Microsoft 365 Copilot, SharePoint, and user-permission knowledge | Only Microsoft channels are available |
 | **Authenticate manually** | Users who sign in through the identity provider you configure | Other channels while keeping sign-in, plus the demo website | Setup of the identity provider |
 | **No authentication** | Anyone with the link | The demo website and the default web chat embed code | Tools can't use user credentials |
 
 ![The authentication model is chosen at publish time, with Authenticate with Microsoft (Entra ID) as the default. Teams and Microsoft 365 Copilot and SharePoint are the Microsoft channels; WhatsApp, a custom website, the demo website and the Direct Line API are advanced channels.](../../07-cs-maintaining/pptx/images/02-01-publish-channels.svg)
 
-## The Teams and Microsoft Copilot channel
+## The Microsoft 365 and Microsoft Teams channel
 
-After the first publish, select **Channels** on the top menu bar and open **Teams and Microsoft Copilot**. Keep **Make agent available in Microsoft Copilot** selected if the agent should also appear in Copilot Chat, then select **Add channel**. From there you can install the agent for yourself, copy an installation link, and choose who else finds it.
+After the first publish, select **Channels** on the top menu bar and open **Microsoft 365 and Microsoft Teams**. Keep **Make agent available in Microsoft 365 Copilot** selected if the agent should also appear in Copilot Chat, then select **Add channel**. From there you can install the agent for yourself, copy an installation link, and choose who else finds it.
 
 | Availability option | Who finds the agent | Approval |
 |---------------------|---------------------|----------|
@@ -57,11 +57,19 @@ Copilot Studio also builds agents that extend Microsoft Copilot Chat directly, o
 
 | Channel | Best for | Sign-in | Who controls the rollout |
 |---------|----------|---------|--------------------------|
-| Teams and Microsoft Copilot | Internal agents for employees | Microsoft Entra ID | You, then an administrator for the whole organization |
+| Microsoft 365 and Microsoft Teams | Internal agents for employees | Microsoft Entra ID | You, then an administrator for the whole organization |
 | SharePoint | An agent for one site's audience | Microsoft Entra ID | The site owner approves it in SharePoint |
 | Demo website | Feedback from teammates before release | None | You share the URL |
 | Custom website | Customers or partners on your own site | Your choice | Your web team and **Web channel security** |
 | Agent for Microsoft Copilot | Grounded answers inside Copilot Chat | Microsoft Entra ID | An administrator adds it to the catalog |
+
+## What the Live Build Taught
+
+**Force newest version moves ongoing Teams chats at once, so reserve it for fixes.** Without it, users wait for a new session or for `start over`. The option can interrupt conversations in progress, so use it only when users need the change now.
+
+**Sharing and listing are separate steps.** Sharing with a security group gives its members **End user access**, shown as **Viewer**. **Show in Built By Your Colleagues**, under **Show to my teammates and shared users**, lists the agent in Teams. The share is saved as `authorizedSecurityGroupIds` in `settings.mcs.yml`, so access is reviewable in source control.
+
+**Discovery lags the install.** A newly added agent can be missing from the **@** list in Microsoft 365 Copilot. If it is missing, open it from **Agents** > **More agents**.
 
 ## Hands-On Demo
 

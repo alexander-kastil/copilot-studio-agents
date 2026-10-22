@@ -91,6 +91,14 @@ A scripted conversation is judged by how it fails. Four mechanisms decide what u
 
 Close every resolved path deliberately. Redirecting to **End of Conversation** offers a satisfaction survey, while **Escalate** hands over to a person through a configured engagement hub, or tells the user how to reach one when no hub exists. Under generative orchestration, a topic can return its result as an output variable so the agent writes a reply that fits the conversation, and an answered-state output stops the orchestrator from answering the same request twice.
 
+## What the Live Build Taught
+
+**When a topic ends, the orchestrator decides what comes next.** A **No** to the last question can route to the **Escalate** system topic, which answers "Escalating to a representative is not currently configured". Give a topic that ends on a question a node after it when the answer should lead somewhere.
+
+**End a topic by naming the next thing the user can ask for.** CS-HR Buddy's Collect Employee Data message ends with "Ask me to collect your employee reward next.", which turns a finished topic into an invitation the orchestrator can route.
+
+**Confirm token names with the language server.** Learn rarely documents YAML tokens, and `DatePrebuiltEntity` and `DateTimePrebuiltEntity` both exist with different meanings. The language server in the Copilot Studio extension for VS Code settles a token: its diagnostics on a `.mcs.yml` file show whether it is valid.
+
 ## Hands-On Demo
 
 - [Build a Device Issue Topic with Custom Entities](./demo-build-a-slot-filling-topic.md): the presenter creates a closed list and a regex entity, builds a topic that collects a device, an asset tag, and an email address, shows proactive slot filling in the variables panel, and configures what happens after invalid answers.

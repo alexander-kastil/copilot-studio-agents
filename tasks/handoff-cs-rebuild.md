@@ -2,43 +2,48 @@
 
 Written 2026-10-21 at the end of a long session that ran out of context, updated by the second session at 21:45 and by the third session at about 22:55, before a compact. Start with section 0, then the plan in [todo.md](todo.md) (section "Rebuild the class environment as CS- agents"). Sections 1 to 8 are the first session's record; section 0 overrides them where they differ.
 
-## 0. Resume here (third session, 2026-10-21 22:55)
+## 0. Resume here (fourth session, 2026-10-21 23:58)
 
 ### Status (the owner's template, reproduce it exactly)
 
 | Module / topic | Agent | Demo run live | Guide text |
 | --- | --- | --- | --- |
 | 03/01 Standard agents | CS-Employee Onboarding Assistant | ✅ verified | ✅ updated |
-| 03/02 Knowledge | same | ◐ exercises 1-3 run, 4-5 not | ◐ citation line only |
+| 03/02 Knowledge | same | ✅ (sightseeing cites the Sightseeing site; ungrounded off sends the capital question to Fallback) | ✅ updated |
 | 03/03 Topics | CS-HR Buddy | ✅ | ✅ updated |
 | 03/04 Power Fx | CS-Travel Expense Refund | ✅ | ✅ updated |
 | 03/05 Adaptive Cards | CS-Food Stock Buddy | ✅ | ✅ updated |
-| 03/06 Publishing | CS-HR Buddy | ◐ agent ready, publish not run | not updated |
+| 03/06 Publishing | CS-HR Buddy | ✅ (Teams and M365 Copilot run, shared, republish after start over) | ✅ updated |
 | 04/01 Prompts | CS-Food Stock Buddy | ✅ | ✅ updated |
 | 04/02 Dataverse | CS-Travel Expense Refund | ✅ | ✅ updated |
 | 04/03 Connectors | CS-Travel Agent | ✅ (Teams post landed) | ✅ updated |
 | 04/04 Agent flows | CS-Health Advisor | ✅ (both branches, review mail, Teams post landed) | ✅ updated |
 | 04/05 REST API | CS-Food Stock Buddy | ✅ | ✅ updated |
 | 04/06 MCP | CS-Restaurant HR Manager | ✅ (shifts booked, mail sent) | ✅ updated |
-| 05/01 Autonomous | CS-Returns Agent | ◐ core tested, mail tool and trigger not built | not updated |
+| 05/01 Autonomous | CS-Returns Agent | ✅ (replay mailed the reply, published run on Activity) | ✅ updated |
 | 05/03 Multi-agent | CS-Business Travel Planner | ✅ (all 5 routes) | ✅ updated |
 | 05/05 Foundry agents | CS-Compliance Agent | ✅ (Foundry call after confirm, invalid mail stops) | ✅ updated |
-| 06/01-06/06 GitHub Copilot agents | GH- agents | ⏳ next batch | not updated |
+| 06/01 Build and ground | GH-Health Advisor | ✅ | ✅ updated (existing Northwind guide) |
+| 06/02 Reasoning trace | GH-Health Advisor | ✅ (step list replaces Get rationale; History replaces Monitor, which counts credits but lists no Preview sessions) | ✅ updated |
+| 06/03 Agent skills | GH-Health Advisor | ✅ (Download produced `doctor-appointment-request-drafter.md`) | ✅ updated |
+| 06/04 MCP and workflow | GH-Food Buddy | ✅ (agent and workflow published, end-to-end run succeeded) | ✅ updated (publish before the agent node) |
+| 06/05 Work IQ | GH-Aurora Account Assistant | ✅ | ✅ updated |
+| 06/06 Apps | Tasting Request Tracker (app, personal environment) | ✅ (owner fixed credits; built, refined twice, code view, published; Share dialog opened, nobody added) | ✅ updated |
 
-Nothing of the third session is committed: `git status` shows about 30 changed or new files (guides 03/01, 03/02, 04/04, 05/03, 05/05; agent folders CS-Health Advisor, CS-Business Travel Planner, CS-Compliance Agent, CS-Returns Agent; `tasks/lessons.md`, this file, `.time/`). Last commit `cd4e127`. A peer Claude session works in the same repo on a module 06 evaluations topic, so commit by pathspec only (claude-push skill).
+The third session's work is committed in `f56642f`. The fourth session's work is not committed: guides 03/06 and 05/01, the agent folders CS-Returns Agent (tool, trigger, workflow, instructions) and CS-HR Buddy (settings, Collect Employee Data), this file, `tasks/lessons.md` and `.time/`. A peer Claude session works in the same repo on a module 06 evaluations topic, so commit by pathspec only (claude-push skill).
 
 ### Agents (all 10 applied and tested)
 
 | Agent | AgentId | Schema | State |
 | --- | --- | --- | --- |
 | CS-Employee Onboarding Assistant | `bd42a7f9-6dcd-f111-a05a-7c1e528616d5` | `iits_CSEmployeeOnboardingAssistant` | live, first session |
-| CS-HR Buddy | `3124d03e-72cd-f111-a05a-7c1e528616d5` | `iits_CSHRBuddy` | tested, not published |
+| CS-HR Buddy | `3124d03e-72cd-f111-a05a-7c1e528616d5` | `iits_CSHRBuddy` | published, Microsoft 365 and Microsoft Teams channel, shared with Copilot Users |
 | CS-Travel Expense Refund | `362c599e-72cd-f111-a05a-7c1e528616d5` | `new_CSTravelExpenseRefund` | tested, published (connected to the planner) |
 | CS-Food Stock Buddy | `5c717ca7-72cd-f111-a05a-7c1e528616d5` | `iits_CSFoodStockBuddy` | tested |
 | CS-Travel Agent | `f073f6be-72cd-f111-a05a-7c1e528616d5` | `cr915_CSTravelAgent` | tested, published |
 | CS-Restaurant HR Manager | `d14ea3dc-72cd-f111-a05a-7c1e528616d5` | `iits_CSRestaurantHRManager` | tested |
 | CS-Health Advisor | `0092e2cb-83cd-f111-a05a-7c1e528616d5` | `iits_CSHealthAdvisor` | 04/04 tools wired, tested, published |
-| CS-Returns Agent | `ef2c30e4-83cd-f111-a05a-7c1e528616d5` | `cr915_CSReturnsAgent` | core applied and tested; no tool, no trigger |
+| CS-Returns Agent | `ef2c30e4-83cd-f111-a05a-7c1e528616d5` | `cr915_CSReturnsAgent` | CS-Work IQ Mail (maker credentials) and the shared mailbox trigger, published |
 | CS-Business Travel Planner | `8f9d08ee-83cd-f111-a05a-7c1e528616d5` | `iits_CSBusinessTravelPlanner` | applied, 5 routes tested |
 | CS-Compliance Agent | `23bdf5f8-83cd-f111-a05a-7c1e528616d5` | `iits_CSComplianceAgent` | Claude Sonnet 4.6 (`Sonnet46`), CS-Social Profiler wired, tested |
 
@@ -53,14 +58,34 @@ Nothing of the third session is committed: `git status` shows about 30 changed o
 - CS-Social Profiler on CS-Compliance Agent: external agent `iits_CSComplianceAgent.action.CS-SocialProfiler`, AgentId `social-profiler`, connection CS-Microsoft Foundry (Azure AI Foundry Agent Service, Entra user login, the owner signed in). Step 5 of the instructions references it as `{System.Bot.Components.Agents.'iits_CSComplianceAgent.action.CS-SocialProfiler'.DisplayName}`, which renders as a chip.
 - Foundry in swedencentral, resource group `rg-copilot-studio`: account `cs-copilot-studio-foundry` (AIServices, project management on), project `copilotstudio`, endpoint `https://cs-copilot-studio-foundry.services.ai.azure.com/api/projects/copilotstudio`, deployment `gpt-5.4-mini` (2026-03-17, GlobalStandard, 50K), prompt agent `social-profiler` with `web_search_preview` and the Activity Protocol plus BotServiceRbac on. Built with `az cognitiveservices account create` and `account project create` plus the Azure MCP foundry tools; the microsoft-foundry MCP server stays disconnected.
 - Browser screenshots for the slides: `C:\Users\AlexanderKastil\Downloads\cs-rebuild-screenshots` (25 files, 05/03 and 05/05).
+- Evaluation session (optional topic 05/07, 2026-10-21): CS-HR Agent `8a5a59ab-91cd-f111-a05a-7c1e528616d5`, created in the portal for the lab (lab 03/01 description and instructions, Microsoft Careers site, SharePoint HR Documents `copilot-demo/HRDocuments`, web search on, not cloned, not published) with the test set HR agent regression and three runs; on CS-Business Travel Planner the test set Travel planner routing with four runs. The planner's **Web Search** was off for runs 3 and 4 and is back on.
+
+### Live artifacts added by the fourth session
+
+- Shared mailbox **Help** `help@integrations.at` (created in the Microsoft 365 admin center, member Alexander Kastil with Full Access and Send as), because the address no longer existed in the tenant. It took about 15 minutes until the trigger could read its Inbox.
+- On CS-Returns Agent: MCP tool CS-Work IQ Mail (connector shown as **Mail (Preview)**, connection Alex Mail, **Maker-provided credentials**); trigger CS-When a new email arrives in a shared mailbox, flow `bdd8c6a7-95cd-f111-a05a-7c1e528616d5` (resource id `b6009624-83f9-a71f-21ba-d1cdb15bfef5`) on help@, folder typed as `Inbox`; instructions gained "Send that email to the customer with CS-Work IQ Mail." Published.
+- CS-HR Buddy published, channel **Microsoft 365 and Microsoft Teams** added, installed in Teams for the owner, shared with the security group Copilot Users (End user access, **Show in Built By Your Colleagues**); Collect Employee Data message ends with "Ask me to collect your employee reward next."
+- Test mails sent to help@: two "Return request for order 10482" (the first landed before the mailbox was readable and was never picked up) and one "Invoice address change". The agent mailed "Your wireless headphones return request" and "Re: Return request for order 10482" to alexander.kastil@integrations.at.
+- Screenshots folder now holds 50 files (03/06 and 05/01 added).
+
+### Live artifacts added by the fifth session (2026-10-22, module 06 in three Workflow lanes, `wf_001286df-a6a`)
+
+- GH-Health Advisor `627a3d8f-5bf6-4f59-97e9-6298eac93257` (GitHub Copilot agent, published, no channel, not shared): CS-Health Advisor's instructions, knowledge The Benefits of Intermittent Fasting.docx, Traveling with Health Issues.docx and company-doctor-hours.md (fictional, scratchpad `lane1/`), a reason line in the instructions, skill doctor-appointment-request-drafter (v2 SKILL.md in scratchpad `lane1/skill-v2`). The 06/02 and 06/03 changes are saved, not republished.
+- GH-Food Buddy `602b6390-3899-4481-a182-8ef712681178` (published in the tenant on the owner-delegated yes, no channel, not shared), tool and connection GH-Food MCP (`https://cs-food-catalog-api.azurewebsites.net/api/mcp`, auth None, 7 tools), workflow GH-Food Reorder Draft `flows/85f4b31a-eb72-ff83-a002-d7cdfd4715c7` (published, Version 5 live, input FoodItems, agent node calls GH-Food Buddy, output ReorderDraft; one run on 2026-10-22 01:42, not attached as a tool).
+- GH-Aurora Account Assistant `1ab5afb2-c032-4287-a50f-c6dd5647618f` (draft) with Work IQ (Preview) on the existing presenter connection. The 30-character name limit cut GH-Aurora Provisions Account Assistant.
+- 06/06: a first app-build conversation failed on "No usage quota is available for your account"; after the owner gave the personal environment credits, the app Tasting Request Tracker (`play.preview.managedapps.cloud.microsoft/apps/2e56a7c1-f0b6-4dda-9956-429b4e170fef`, personal environment, sample data kept local) was built, refined (priority, four statuses) and published. The app settings have no rename, so it carries no GH- prefix.
+- `demos/demo-check.md`: the owner's status table with module dividers; a peer session added Module 02 rows and the Tokens and Euros columns, and the cost workflow `wf_67ba0a5e-baa` fills Copilot Credits for modules 03 to 06.
+- Screenshots folder: 06-01 to 06-06 files added by the lanes.
 
 ### Next steps
 
+Start the next session by reading this section, then recreate a 5-minute status cron with the report skill (the fourth session deleted its cron 019c94e4 before the compact) and post the status table above on each tick. The learn loop after 05/01 and 03/06 ran: lessons in `tasks/lessons.md`, the copilot-studio skill gained a triggers-and-publishing recipe and a `flow-history.py` trigger check, and 1.20h went to `.time/`. Its delegation-router fix sits uncommitted in the integrations-marketplace repo and takes effect only after that change is committed and the plugin updated, which is the owner's call. Continue with step 3.
+
 Every guide edit starts by invoking `/class-authoring-plugin:create-class` with the Skill tool (repo hard rule: guides, readmes and labs under `demos/` and `labs/` are written on the main thread through that skill, never the docs-agent), followed by the brand-voice-copilot check (`python -I .claude/skills/brand-voice-copilot/scripts/check.py --paths <file>`) and `fence-lang.py` from the create-class scripts folder.
 
-1. **05/01, full run including publish** (owner answer: "Full run incl. publish"). On CS-Returns Agent add the Work IQ Mail (Preview) MCP tool, rename it CS-Work IQ Mail and set Maker-provided credentials; add the trigger **When a new email arrives in a shared mailbox (V2)** named CS-When a new email arrives in a shared mailbox on `help@integrations.at`, Inbox (taken from the original flow). Send the guide's test mail from alexander.kastil@integrations.at to help@ (the owner approved the full run), replay it, publish, send the invoice-address mail, and follow the **Activity** page. Use GPT Chat Latest, not GPT-5 Chat. Then update guide 05/01 and run a learn loop.
-2. 03/06: publish CS-HR Buddy along the guide, then update the guide.
-3. 03/02 exercises 4 (sightseeing) and 5 (dog question, ungrounded toggle) on CS-Employee Onboarding Assistant, then update the guide.
+1. Done (fourth session): **05/01, full run including publish** (owner answer: "Full run incl. publish"). On CS-Returns Agent add the Work IQ Mail (Preview) MCP tool, rename it CS-Work IQ Mail and set Maker-provided credentials; add the trigger **When a new email arrives in a shared mailbox (V2)** named CS-When a new email arrives in a shared mailbox on `help@integrations.at`, Inbox (taken from the original flow). Send the guide's test mail from alexander.kastil@integrations.at to help@ (the owner approved the full run), replay it, publish, send the invoice-address mail, and follow the **Activity** page. Use GPT Chat Latest, not GPT-5 Chat. Then update guide 05/01 and run a learn loop.
+2. Done (fourth session): 03/06, publish CS-HR Buddy along the guide, then update the guide.
+3. Done (fifth session, 2026-10-22): 03/02 exercises 4 (sightseeing) and 5 (dog question, ungrounded toggle) on CS-Employee Onboarding Assistant, guide updated (exercise 5 now adds the capital question, because the dog question stays grounded either way), learn loop started. **Allow ungrounded responses** is back on.
 4. Add the "(optional)" rows to the module **Hands-On Demos** tables and the topic readme bullets for the 15 guides; run `link-check.sh`, `fence-lang.py` and brand-voice-copilot.
 5. Commit all and push (claude-push, pathspec only) when the guides are done.
 6. Next batch: the module 06 demos as GH- agents (`demos/06-cs-gh-copilot/01` to `06`), planned in `tasks/todo.md` first.
@@ -88,7 +113,7 @@ Keep every browser screenshot sent in the chat for the slides: take it with `sav
 
 GitHub Copilot agents for module 06 (`demos/06-cs-gh-copilot`) get the GH- prefix; they are the next batch after this one (owner, third session).
 
-The status table follows the owner's template exactly: columns Module / topic, Agent, Demo run live, Guide text, one row per topic, short cells with ✅, ◐ and ⏳ (owner, third session: "I asked for a table and I gave you a template").
+The status table follows the owner's template exactly: columns Module / topic, Agent, Demo run live, Guide text, one row per topic, short cells with ✅, ◐ and ⏳ (owner, third session: "I asked for a table and I gave you a template"). A demo that works and whose guide is updated is ✅, even when a missing UI step was replaced; say "works, guide updated" first and the replacement second (owner, fifth session). The owner keeps the table in `demos/demo-check.md` with module dividers and Tokens, Euros and Copilot Credits columns.
 
 ## 1. Goal, in the owner's words
 

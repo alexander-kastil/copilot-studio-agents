@@ -63,6 +63,8 @@ flowchart LR
 
 If Cowork still does not appear, first check whether the user is in scope of a spending policy that selects Cowork. Then recheck licensing, the billing policy, and tenant enablement; rollout changes can take time to propagate.
 
+For a click-by-click admin checklist with the plugin settings and a verification run, see [Tenant setup: Copilot Cowork access and billing](../../../setup/cowork-tenant-setup.md).
+
 > **Frontier vs. general availability**: Cowork first shipped through the Frontier preview with agent-based access control. That control is deprecated: settings under **Agents** > **All agents** no longer affect who can use Cowork. Access is governed by usage-based billing.
 
 ---
@@ -122,7 +124,7 @@ For admins, the switch is the **Enhanced personalization** control. It is on by 
 
 **Auto** is the default, and it suits most work. Cowork picks the model for each task from the models your organization makes available, so you rarely need to change the **Model** dropdown. A model badge in the conversation shows which model produced each response.
 
-Reasoning effort sets how hard Cowork works on a task. The five levels are **Light**, **Medium** (default), **High**, **Extra High**, and **Max**, and you select them from the dropdown next to the model picker on the web, Windows, and macOS. Higher effort is more thorough but slower, and it uses more credits.
+Reasoning effort sets how hard Cowork works on a task. The five levels are **Light**, **Medium** (default), **High**, **Extra High**, and **Max**, and you select them from the dropdown next to the model picker on the web, Windows, and macOS. Higher effort is more thorough but slower, and it uses more credits. Each Hands-On Demo states the effort it needs, and none of them needs High or Max.
 
 Admins can turn off the Anthropic model family or build model profiles and assign them to spending policies; see [Human-in-the-Loop](../06-staying-in-control/readme.md).
 

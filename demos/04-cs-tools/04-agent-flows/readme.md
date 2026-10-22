@@ -126,6 +126,14 @@ Every action an agent flow executes consumes Copilot Studio capacity, billed as 
 
 When the prepaid capacity is used up, new agent flow runs are blocked while runs already in progress finish; the agent itself keeps answering. Power Automate cloud flows stay on Power Automate licensing and aren't affected. Administrators review consumption per flow in the Power Platform admin center under **Licensing** > **Copilot Studio**.
 
+## What the Live Build Taught
+
+**A prompt can be a flow step without being an agent tool.** Build it on the **Tools** page through **Add a tool** > **Add new Prompt**, add one **Text** input per value, then **Save** and **Cancel** at **Add and configure**. The flow calls `aibuilderpredict_customprompt`, passes inputs as `item/requestv2/<inputId>` and reads `body/responsev2/predictionOutput/text`.
+
+**Human review needs a channel and belongs after the response.** A **Request for information** step without a **Channel**, **Outlook** or **Teams** stops the flow from turning on, with `missing required property 'RequestForInformationInput/channel'`. Place it after **Respond to the agent** so the chat is not held.
+
+**A rerun create script duplicates flow rows.** Each agent flow is a row in the `workflows` table with `category 5`, so a rerun after a failure doubles them. Look each row up by name before you create it.
+
 ## Hands-On Demo
 
 - [Build an Agent Flow and Call It from an Agent](./demo-build-an-agent-flow.md): the presenter builds a ticket-logging flow with a prompt step and a confirmation email, adds it to the Contoso IT Help Desk agent as a tool, and traces the call in the activity map.

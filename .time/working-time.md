@@ -48,5 +48,12 @@
 | 2026-10-21 | 0.67 | 21:46 | 22:26 | Three more agents live, health advisor demo flows wired and tested, Foundry research agent provisioned |
 | 2026-10-21 | 0.22 | 22:26 | 22:39 | Business travel planner connected to its three specialists, every route verified, two demo guides updated |
 | 2026-10-21 | 0.23 | 22:39 | 22:53 | Compliance check connected to its Foundry research agent and verified, demo guides and handoff updated |
+| 2026-10-21 | 1.12 | 22:53 | 23:59 | Returns agent answers shared mailbox mail on its own, HR agent published to Teams and Microsoft 365 Copilot, both demo guides updated |
+| 2026-10-22 | 0.08 | 00:00 | 00:05 | Session close-out with the downloaded agent definitions reviewed and recorded |
+| 2026-10-22 | 0.30 | 00:15 | 00:33 | Onboarding assistant's sightseeing and ungrounded-answer exercises run live, knowledge demo guide updated |
+| 2026-10-22 | 1.33 | 00:33 | 01:53 | Six GitHub Copilot agent demos run live in parallel, three agents and a workflow built, all six demo guides corrected to the live product |
+| 2026-10-22 | 0.53 | 09:02 | 09:34 | App-building demo run live after the credit setup, demo status table with costs per demo |
+| 2026-10-22 | 0.08 | 09:10 | 10:14 | Eight Cowork demos run live in parallel, all demo guides corrected, run cost recorded per demo |
+| 2026-10-22 | 0.58 | 09:34 | 10:09 | Detailed cost record per demo, pending charges checked in the admin centers and Azure, with a scheduled recheck |
 
-**Total: 29.07h**
+**Total: 33.09h**

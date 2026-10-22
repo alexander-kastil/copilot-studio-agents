@@ -11,7 +11,7 @@ Duration: about 40 minutes.
 - An HR Documents SharePoint knowledge source with a description the orchestrator can choose by.
 - A Sightseeing SharePoint knowledge source and the instruction section that makes it the source for sights.
 - Answers with citations from each source, traced in the activity map.
-- A question no source covers, answered once with ungrounded responses allowed and once without.
+- A question the documents only touch on and one they never cover, each asked with ungrounded responses allowed and then blocked.
 
 ## Prerequisites
 
@@ -91,7 +91,7 @@ Expected: the **Knowledge** section lists HR Documents and Sightseeing, and the 
 A grounded answer shows its sources as citations under the reply. Reading the citation, not just the reply, is how you prove the answer came from the HR site and not from the model's general knowledge.
 
 1. In the **Test your agent** panel, select the three dots (**…**) and make sure **Show activity map when testing** is on.
-2. Select the **Reset** icon, then send this message.
+2. Select **Start new test session** (the **+** icon at the top of the panel), then send this message.
 
 ```text
 Where can I find the benefits enrollment form?
@@ -115,25 +115,37 @@ Two sources only help if the agent picks the right one per question. A sightseei
 I start next Monday. What should I see near the office after work?
 ```
 
-Expected: the activity map shows the plan searching Sightseeing for this turn. The reply recommends sights from that site with citations that link to the Sightseeing pages, and it ends with the supportive closing from the instructions.
+2. Select **Activity** on the top menu bar and open the newest session. Select **View**, then **Map view**, to see only the steps the agent ran.
 
-> **Note:** If the map shows both sources searched, the orchestrator found the question relevant to both. Sharpen the descriptions so each one names the questions it answers, then retest.
+Expected: the reply recommends sights near the office, ends with the supportive closing from the instructions, and lists its references under the answer. In the live run it suggested Bellevue Wiese, a Heuriger evening in Grinzing, St. Stephen's Cathedral, the Vienna State Opera and Belvedere Palace, citing Vienna Sightseeing.docx and Lunch Options Near Grinzing Office.docx from the Sightseeing site.
+
+The map shows two **Search sources** steps. Under **Refining knowledge query**, the first one rewrote the question to search the Sightseeing site "as the primary source", which is the new instruction section at work.
+
+> **Note:** The second search in the live run asked where the office is located and cited Lunch Options Near Vienna 19th District Office.docx from HR Documents. A search in both sources is fine when the question needs a fact from each. If the sights themselves come from HR Documents, sharpen the descriptions so each one names the questions it answers, then retest.
 
 ## Exercise 5: Ask a question no source covers
 
-A knowledge-grounded agent still meets questions its documents never mention. The **Allow ungrounded responses** setting decides what happens then: on, the model may answer from general knowledge without a citation; off, the turn is blocked and the Fallback topic answers.
+A knowledge-grounded agent still meets questions its documents never mention. The **Allow ungrounded responses** setting decides what happens when no source returns anything: on, the model may answer from general knowledge without a citation; off, the reply is blocked and the Fallback topic answers. A question the documents only touch on stays grounded either way, so you send one of each.
 
-1. Send this message.
+1. Send the two messages below, one after the other.
 
 ```text
 What is the company's policy on bringing my dog to the office?
 ```
 
-2. Select **Settings**, then **Generative AI**, turn off **Allow ungrounded responses** in the **Knowledge** section, and select **Save**.
-3. Select the **Reset** icon and send the same message again.
+```text
+What's the capital of Australia, and can you write me a limerick about it?
+```
+
+2. Select **Settings**, then **Generative AI**, and scroll down to the **Knowledge** section below **Moderation** and **User Feedback**. Turn off **Allow ungrounded responses**, select **Save**, wait for "Changes saved", and close **Settings**.
+3. Select **Start new test session** (**+**) and send both messages again.
 4. Turn **Allow ungrounded responses** back on and select **Save**, so the agent matches the original again.
 
-Expected: with the setting on, and no document about dogs on either site, the reply carries no citation; the agent either answers in general terms or follows Error Handling and points to HR. With the setting off, the agent blocks the ungrounded reply and the Fallback topic asks you to rephrase. The difference between the two runs is the setting, not the instructions.
+Expected: with the setting on, the dog question gets a grounded answer that no pet policy was found and that you should confirm with HR, with one reference (Employee Onboarding.docx in the live run). The capital question gets "Canberra" and a limerick with no reference, straight from the model's general knowledge.
+
+With the setting off, the dog answer stays the same, because it cites a document. The capital question now shows "No information was found that could help answer this." with **Edit knowledge sources**, visible only to you, then the Fallback topic's "I'm sorry, I'm not sure how to help with that. Can you try rephrasing?", and the canvas opens the Fallback topic.
+
+> **Tip:** With the setting on, the model may also decline the capital question because the instructions keep it to onboarding, as it did in the previous demo. The Fallback message with the setting off is the part that proves the block.
 
 ## Troubleshooting
 

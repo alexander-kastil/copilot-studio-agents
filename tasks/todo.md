@@ -20,15 +20,22 @@ Handoff with full context, state, proven procedures and traps: [handoff-cs-rebui
 - [ ] 04/02 and 04/03 guide fixes: the agent adds a second "Your claim … has already been…" message; the Teams tool needs ids (team as `groupId`, channel id), so the guide adds a step that gets them (Teams **Get link to channel**, or Graph) and puts them in the instructions
 - [ ] Guide fixes found live (fold in during phase 3): 03/03 the agent asks "Please choose your reward:" a second time after the first reward; 03/04 the agent repeats its instruction greeting after the recap, and the guide still quotes the pre-fix agent and knowledge descriptions ("refunding travel costs by taking the request and storing it", "Official resource on what counts as a business trip and which costs can be claimed"); 03/05 and 04/01 the card notes the demand as rows and adds "Your demand entry form is ready for submission."; 04/01 the button after Save is **Add and configure**, not "Add to agent"; 04/03 "May 12" asks for the year (2026 or 2027); 04/05 Solution defaults to Playground, every output needs a description, the wizard's CS- tool names do not carry over to the agent (rename each tool after **Add and configure**), the connection dialog has **Display name (optional)**, seeded ids are 1, 2, 3, 7, 9, 12, 13, 14, 16, the topic answer is followed by an extra stock list; 04/06 the button is **Add**, the connection dialog has a display name, **Ask the end user before running** adds **How do you want to ask the user?** and a required **Message to display**
 - [ ] Phase 3 guides: align each of the 15 guides with its pulled YAML and smoke test (fold in the live findings in the handoff), then link them as optional demos in the module Hands-On Demos tables and topic readmes; `link-check.sh`, `fence-lang.py`, brand-voice-copilot
-- [ ] Phase 4 (later): GH- agents for module 06 (GH-Health Advisor, GH-Food Buddy)
+- [ ] Phase 4: GH- batch for module 06 in three parallel browser lanes (owner, 2026-10-22: "parallelize this work with 3 agents each working on a demo in their own browser tab"). Runs as a Workflow, because the Chrome tools reach Workflow agents only; each lane owns one Chrome tab, runs live, saves screenshots and reports what worked. The main thread writes the guides with create-class afterwards.
+  - [x] Lane 1, GH-Health Advisor (06/01, then 06/02 and 06/03 on the same agent): GitHub Copilot agent with CS-Health Advisor's description, instructions and its two knowledge files; reasoning trace with a second source; one skill
+  - [x] Lane 2, GH-Food Buddy (06/04): GitHub Copilot agent with the Food MCP server `https://cs-food-catalog-api.azurewebsites.net/api/mcp` as tool GH-Food MCP and a GH- workflow whose agent node calls it
+  - [x] Lane 3, 06/05 and 06/06 (no agent to re-create): existing guides run as written with GH- names (GH-Aurora Account Assistant, 30-character limit); 06/06 blocked by the missing Copilot Credits pool for the personal environment
+  - [x] Existing guides 06/01 to 06/06 updated from the lane reports, status table in the handoff
+  - [ ] Learn loop
+  - [x] 06/06 rerun after the owner gave the personal environment Copilot Credits: built, refined, published, guide updated
+  - [ ] Copilot Credits per demo in `demos/demo-check.md` (cost workflow)
 - [ ] Phase 5 cleanup after the owner signs off: delete every unprefixed artifact `schema.json` lists, one confirmed batch at a time
 
 ## Standard-agent evaluation lab (2026-10-21)
 
 A tailored 3-day customer agenda runs evaluations on Standard agents (the customer dropped the GitHub Copilot agents block), but the only evaluation lab, `labs/06-cs-gh-copilot/07-evaluations/lab-01-evaluate-with-test-sets.md`, builds a GitHub Copilot agent and uses its Evaluate tab.
 
-- [ ] Write a 25-minute lab that evaluates the HR agent from the Basics labs on the Standard agent **Evaluation** page: a test set, a comparing grader (Compare meaning or Text similarity), a baseline run, one diagnosed fix, a second run; the topic readme `demos/06-cs-gh-copilot/07-evaluations/readme.md` already teaches both surfaces
-- [ ] Get the Standard agent test-set CSV template from the live product before authoring the companion CSV (see the evaluations lesson in `tasks/lessons.md`)
+- [x] Write a lab that evaluates the HR agent from the Basics labs on the Standard agent **Evaluation** page: `labs/05-cs-advanced/07-evaluations/lab-01-evaluate-the-hr-agent.md`, in the new optional topic `demos/05-cs-advanced/07-evaluations` (readme plus demo on CS-Business Travel Planner), run live 2026-10-21 on CS-HR Agent
+- [x] Get the Standard agent test-set CSV template from the live product before authoring the companion CSV: `EvaluationTemplate.csv`, columns `question`, `expectedResponse`
 
 ## Classic Copilot Studio teachings per topic (2026-10-21)
 
@@ -152,3 +159,11 @@ Module 05 demo and lab guides are planned in each topic readme and in the labs r
 - [x] `demos/03-copilot-studio/04-new-experience/03-evaluations/readme.md`: Content safety and abstention on the classic grader tables, fix the expected-answer claims, announced graders (Task Completion, Tool Accuracy, Safety, latency, Custom Graders Library, generated graders), Review panel evaluation warnings, Agent viewer role, agent node evaluation in workflows
 - [x] `labs/03-copilot-studio/04-new-experience/03-evaluations/lab-01-evaluate-with-test-sets.md`: Exercise 7 note on announced graders
 - [x] brand-voice-copilot check on both files
+
+## Pro insights from the 2026-10-21 live build (2026-10-22)
+
+- [x] Agent A: `## What the Live Build Taught` in 03/01, 03/02, 03/03, 03/04
+- [x] Agent B: 03/05, 03/06 (live channel name), 04/01, 04/02
+- [x] Agent C: 04/03, 04/04, 04/05, 04/06
+- [x] Agent D: 05/01, 05/03, 05/05
+- [x] Main thread: brand-voice check, fence-lang, link-check, read every section

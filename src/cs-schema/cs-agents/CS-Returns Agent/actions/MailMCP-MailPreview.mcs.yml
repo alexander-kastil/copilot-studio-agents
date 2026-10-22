@@ -1,0 +1,14 @@
+mcs.metadata:
+  componentName: Mail MCP - Mail (Preview)
+kind: TaskDialog
+modelDisplayName: CS-Work IQ Mail
+modelDescription: "Work IQ MCP server for Microsoft Outlook Mail operations. This feature is in preview and is part of the Work IQ tools, providing shared work intelligence and actions for agents. Availability and capabilities are subject to change. Learn more: https://aka.ms/AboutWorkIQ"
+action:
+  kind: InvokeExternalAgentTaskAction
+  connectionReference: cr915_CSReturnsAgent.shared_a365outlookmailmcp.7e4ceaad72584349968dc88587480051
+  connectionProperties:
+    mode: Maker
+
+  operationDetails:
+    kind: ModelContextProtocolMetadata
+    operationId: mcp_MailTools

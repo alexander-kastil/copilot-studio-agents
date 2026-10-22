@@ -78,6 +78,14 @@ Learn lists the connection to Microsoft Foundry agents as public preview, togeth
 
 A version pinned on the Foundry side keeps the specialist stable while its owners keep editing, and an unpinned agent serves every new version immediately. Agree with the developer team which of the two the help desk relies on.
 
+## What the Live Build Taught
+
+**A Foundry connection is bound to one project endpoint, so a new project needs its own connection.** The **Connection** list can preselect an older one. Choose **Create new connection**, enter a display name, **Microsoft Entra ID User Login** and the project endpoint, then complete the "Sign in to Microsoft Foundry" window and select **Add and configure**.
+
+**Validate input in Copilot Studio before the external call runs.** Ordered instructions ask one detail per turn and confirm them in a table before the Foundry call. An invalid email address stopped the run before any call was made, so put these checks in the instructions.
+
+**In YAML the Foundry agent is an action, so you can reference it in code.** It pulls as `actions/<FileName>.mcs.yml`, and the `{System.Bot.Components.Agents.'<schema>.action.<FileName>'.DisplayName}` reference renders as an agent chip, so the `/` insert can be done in code.
+
 ## Hands-On Demo
 
 - [Connect a Foundry Agent to the Help Desk](./demo-connect-a-foundry-agent.md): the presenter enables the Activity Protocol on the Contoso Device Specialist, connects it to the Contoso IT Help Desk, routes a device question to it, and watches a change on the Foundry side reach the help desk.

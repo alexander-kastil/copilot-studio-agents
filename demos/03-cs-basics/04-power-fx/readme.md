@@ -113,6 +113,12 @@ Formulas are configuration that someone else maintains, so write them for that p
 
 Guard every value a user may skip with `IsBlank` or `Coalesce`, because a blank in the middle of a calculation can fail, and an error during a conversation sends the user to the **On Error** system topic. Convert choices and entities with `Text` before comparing them; when a condition compares mismatched types, the **Fix type mismatch** button generates the conversion formula for you. Test each formula on its own in the test panel, using the **Variables** panel's **Test** tab to watch the result change.
 
+## What the Live Build Taught
+
+**Trace every computed variable to the node that consumes it.** A computed variable that no node passes on is dead code. One cloned expense agent calculated ISO date variables, then passed the raw `departureDate` and `returnDate` to its flow, so the formulas never reached the database.
+
+**Encode a value once, where it leaves the agent.** One agent stored `Global.orderDemand` as `JSON(...)` text, and the next topic called `JSON()` on it again, so the value was escaped twice. Store the record itself, and call `JSON()` only where the value leaves the agent.
+
 ## Hands-On Demo
 
 - [Calculate a Ticket Due Date with Power Fx](./demo-power-fx-in-a-topic.md): the presenter validates an issue description with a formula, maps a priority to service days with `Switch`, calculates a due date that skips weekends, and formats it for the user.

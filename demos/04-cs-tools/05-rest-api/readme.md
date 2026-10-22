@@ -70,6 +70,14 @@ The node suits quick, deterministic calls inside a designed conversation, such a
 | One call at a fixed step of a topic, response shaped by Power Fx | An HTTP request node |
 | A service that publishes an MCP server | An MCP tool, see [MCP Servers as Agent Tools](../06-mcp/readme.md) |
 
+## What the Live Build Taught
+
+**Design the stub in the API's shape before you swap it.** The prompt demo fills `Topic.foodStock` from a sample-stock node, and the connector call replaces that node, but the node refused to save the API's list into a variable of a different shape. Match that shape from the start, or let the node create a new variable and rename it.
+
+**An operation's description encodes call order.** The update tool's description tells the agent to look the id up with the list tool first; without that line, the agent guessed an id and got `Not Found`. One connector with real descriptions beats three connectors whose operations carry bare ones such as "Gets all food".
+
+**A free-tier web app starts cold.** Its first tool call can fail with a timeout while the app starts, so open the API once before you demo it.
+
 ## Hands-On Demo
 
 - [Call a Public API from a Topic and as a REST API Tool](./demo-rest-api-tool.md): the presenter calls a public holiday API with an HTTP request node in a topic, then describes the same endpoint in OpenAPI and adds it as a REST API tool the orchestrator chooses on its own.

@@ -60,7 +60,15 @@ A card waits for a submission, and users don't always cooperate. If a user types
 
 Submit buttons stay clickable after use, so a user can select a button on an earlier card while a later one is waiting. Give every submit action unique data, for example an `actionSubmitId` value that names the card and the action, and check it when you process the response. In a custom web chat, disable a card's inputs after its first submission.
 
-Validate inside the card where you can, because it saves a round trip. Inputs support `isRequired`, a `regex` pattern, and an `errorMessage`, so a malformed value is caught before the user submits. Keep labels short, use `Input.ChoiceSet` wherever the set of answers is known, and stay within schema 1.5 when Teams is a channel.
+Validate inside the card where you can, because it saves a round trip. Inputs support `isRequired`, a `regex` pattern, and an `errorMessage`, so most malformed values are caught before the user submits. Keep labels short, use `Input.ChoiceSet` wherever the set of answers is known, and stay within schema 1.5 when Teams is a channel.
+
+## What the Live Build Taught
+
+**A card input stores the typed value verbatim, with no entity extraction.** Replacing a Question node with a card trades away NLU and slot filling. Cards suit a multi-field form and are wrong for a single conversational value.
+
+**The Adaptive Card node is a three-part contract that must agree.** The input `id` in the JSON, the `output.binding` that maps it to a variable, and the `outputType.properties` that declares its type must match. The VS Code extension reports a break by name, such as `AdaptiveCardMissingActionSubmit`, so its messages double as a checklist.
+
+**Client-side input rules are hints.** Some clients ignore `min` on a number input, so check the value in the topic after submit, as the demo does when it filters out zero rows before the order.
 
 ## Hands-On Demo
 

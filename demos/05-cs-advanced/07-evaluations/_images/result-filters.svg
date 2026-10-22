@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+<title id="t">Which run results the Pass, Fail and All filters list</title>
+<desc id="d">A case lands under Pass only when every test method passed, and under Fail only when every test method failed; a case where the test methods disagree is listed under All only. Planner run 1 had 7 cases: Pass (5), Fail (1) for the refund claim, where both methods failed, and the canteen menu case under All only, with Answer quality Pass and Meaning match Fail 0. HR run 2 had 10 cases: Pass (7), Fail (1) for the stock tip question, where all three methods failed, and two cases under All only: the carbonara recipe with Answer quality Pass, Meaning match Fail 0 and Stays in scope Fail, and Sarbanes-Oxley with Answer quality Pass, Meaning match Pass and Stays in scope Fail. Read All after every run, because the disagreements are where the diagnosis starts.</desc>
+<rect width="1920" height="1080" fill="#ffffff"/>
+<defs>
+<style>
+svg{font-size:26px}
+.h{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#24292f;font-weight:600}
+.r{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#24292f}
+.s{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#57606a}
+.m{font-family:Consolas,'Cascadia Mono','Courier New',monospace;fill:#24292f}
+</style>
+<marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+</defs>
+<rect x="60" y="36" width="572" height="150" rx="16" fill="#e9f7ef" stroke="#1a7f37" stroke-width="2"/>
+<text class="h" x="88" y="84" font-size="32">Pass</text>
+<text class="r" x="88" y="126" font-size="26">a case lands here only when</text>
+<text class="r" x="88" y="160" font-size="26">every test method passed</text>
+<rect x="673" y="36" width="572" height="150" rx="16" fill="#fdecec" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="701" y="84" font-size="32">Fail</text>
+<text class="r" x="701" y="126" font-size="26">a case lands here only when</text>
+<text class="r" x="701" y="160" font-size="26">every test method failed</text>
+<rect x="1286" y="36" width="572" height="150" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text class="h" x="1314" y="84" font-size="32">All</text>
+<text class="r" x="1314" y="126" font-size="26">every case; a case where the test</text>
+<text class="r" x="1314" y="160" font-size="26">methods disagree is listed only here</text>
+<rect x="60" y="214" width="870" height="690" rx="20" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="88" y="258" font-size="30">Planner run 1</text>
+<text class="s" x="88" y="294" font-size="26">Travel planner routing, 7 cases</text>
+<rect x="84" y="330" width="822" height="556" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2" stroke-dasharray="10 8"/>
+<rect x="106" y="312" width="100" height="38" rx="19.0" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="156" y="340.1" font-size="26" text-anchor="middle">All</text>
+<rect x="108" y="366" width="474" height="150" rx="14" fill="#e9f7ef" stroke="#1a7f37" stroke-width="2"/>
+<text class="h" x="132" y="404" font-size="28">Pass (5)</text>
+<rect x="132" y="430" width="50" height="50" rx="8" fill="#ffffff" stroke="#1a7f37" stroke-width="2"/>
+<rect x="194" y="430" width="50" height="50" rx="8" fill="#ffffff" stroke="#1a7f37" stroke-width="2"/>
+<rect x="256" y="430" width="50" height="50" rx="8" fill="#ffffff" stroke="#1a7f37" stroke-width="2"/>
+<rect x="318" y="430" width="50" height="50" rx="8" fill="#ffffff" stroke="#1a7f37" stroke-width="2"/>
+<rect x="380" y="430" width="50" height="50" rx="8" fill="#ffffff" stroke="#1a7f37" stroke-width="2"/>
+<rect x="602" y="366" width="280" height="150" rx="14" fill="#fdecec" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="626" y="404" font-size="28">Fail (1)</text>
+<rect x="626" y="422" width="232" height="48" rx="8" fill="#ffffff" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="742" y="455" font-size="26" text-anchor="middle">Refund claim</text>
+<text class="s" x="626" y="502" font-size="26">both failed</text>
+<rect x="108" y="536" width="774" height="332" rx="14" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+<text class="r" x="132" y="576" font-size="28"><tspan class="h" font-size="28">Under All only</tspan><tspan class="s" font-size="26" dx="16">the test methods disagree</tspan></text>
+<rect x="134" y="600" width="722" height="170" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="156" y="642" font-size="28">Canteen menu</text>
+<text class="r" x="156" y="691" font-size="26">Answer quality</text>
+<rect x="726" y="662" width="110" height="40" rx="20.0" fill="#e9f7ef" stroke="#1a7f37" stroke-width="2"/>
+<text class="h" x="781" y="691.1" font-size="26" text-anchor="middle">Pass</text>
+<text class="r" x="156" y="741" font-size="26">Meaning match</text>
+<rect x="716" y="712" width="120" height="40" rx="20.0" fill="#fdecec" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="776" y="741.1" font-size="26" text-anchor="middle">Fail 0</text>
+<rect x="990" y="214" width="870" height="690" rx="20" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="1018" y="258" font-size="30">HR run 2</text>
+<text class="s" x="1018" y="294" font-size="26">HR agent regression, 10 cases</text>
+<rect x="1014" y="330" width="822" height="556" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2" stroke-dasharray="10 8"/>
+<rect x="1036" y="312" width="100" height="38" rx="19.0" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="1086" y="340.1" font-size="26" text-anchor="middle">All</text>
+<rect x="1038" y="366" width="474" height="150" rx="14" fill="#e9f7ef" stroke="#1a7f37" stroke-width="2"/>
+<text class="h" x="1062" y="404" font-size="28">Pass (7)</text>
+<rect x="1062" y="430" width="50" height="50" rx="8" fill="#ffffff" stroke="#1a7f37" stroke-width="2"/>
+<rect x="1124" y="430" width="50" height="50" rx="8" fill="#ffffff" stroke="#1a7f37" stroke-width="2"/>
+<rect x="1186" y="430" width="50" height="50" rx="8" fill="#ffffff" stroke="#1a7f37" stroke-width="2"/>
+<rect x="1248" y="430" width="50" height="50" rx="8" fill="#ffffff" stroke="#1a7f37" stroke-width="2"/>
+<rect x="1310" y="430" width="50" height="50" rx="8" fill="#ffffff" stroke="#1a7f37" stroke-width="2"/>
+<rect x="1372" y="430" width="50" height="50" rx="8" fill="#ffffff" stroke="#1a7f37" stroke-width="2"/>
+<rect x="1434" y="430" width="50" height="50" rx="8" fill="#ffffff" stroke="#1a7f37" stroke-width="2"/>
+<rect x="1532" y="366" width="280" height="150" rx="14" fill="#fdecec" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="1556" y="404" font-size="28">Fail (1)</text>
+<rect x="1556" y="422" width="232" height="48" rx="8" fill="#ffffff" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="1672" y="455" font-size="26" text-anchor="middle">Stock tip</text>
+<text class="s" x="1556" y="502" font-size="26">all three failed</text>
+<rect x="1038" y="536" width="774" height="332" rx="14" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+<text class="r" x="1062" y="576" font-size="28"><tspan class="h" font-size="28">Under All only</tspan><tspan class="s" font-size="26" dx="16">the test methods disagree</tspan></text>
+<rect x="1064" y="600" width="349" height="220" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="1086" y="642" font-size="28">Carbonara recipe</text>
+<text class="r" x="1086" y="691" font-size="26">Answer quality</text>
+<rect x="1303" y="662" width="90" height="40" rx="20.0" fill="#e9f7ef" stroke="#1a7f37" stroke-width="2"/>
+<text class="h" x="1348" y="691.1" font-size="26" text-anchor="middle">Pass</text>
+<text class="r" x="1086" y="741" font-size="26">Meaning match</text>
+<rect x="1293" y="712" width="100" height="40" rx="20.0" fill="#fdecec" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="1343" y="741.1" font-size="26" text-anchor="middle">Fail 0</text>
+<text class="r" x="1086" y="791" font-size="26">Stays in scope</text>
+<rect x="1303" y="762" width="90" height="40" rx="20.0" fill="#fdecec" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="1348" y="791.1" font-size="26" text-anchor="middle">Fail</text>
+<rect x="1437" y="600" width="349" height="220" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="1459" y="642" font-size="28">Sarbanes-Oxley</text>
+<text class="r" x="1459" y="691" font-size="26">Answer quality</text>
+<rect x="1676" y="662" width="90" height="40" rx="20.0" fill="#e9f7ef" stroke="#1a7f37" stroke-width="2"/>
+<text class="h" x="1721" y="691.1" font-size="26" text-anchor="middle">Pass</text>
+<text class="r" x="1459" y="741" font-size="26">Meaning match</text>
+<rect x="1676" y="712" width="90" height="40" rx="20.0" fill="#e9f7ef" stroke="#1a7f37" stroke-width="2"/>
+<text class="h" x="1721" y="741.1" font-size="26" text-anchor="middle">Pass</text>
+<text class="r" x="1459" y="791" font-size="26">Stays in scope</text>
+<rect x="1676" y="762" width="90" height="40" rx="20.0" fill="#fdecec" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="1721" y="791.1" font-size="26" text-anchor="middle">Fail</text>
+<rect x="60" y="924" width="1798" height="116" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="90" y="970" font-size="30">Read All after every run: the disagreements are where the diagnosis starts</text>
+<text class="s" x="90" y="1012" font-size="26">Pass and Fail list only the cases on which every test method agrees.</text>
+</svg>

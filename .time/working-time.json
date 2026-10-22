@@ -9,7 +9,9 @@
       "sessionId": "69c6c996-3b23-4313-babc-8b8b052e90b1",
       "branch": "okt-2026-update",
       "commits": [],
-      "surfaces": ["m365-pilot"],
+      "surfaces": [
+        "m365-pilot"
+      ],
       "files": [
         "assets/findings-okt-2026.md",
         "demos/02-cowork/readme.md",
@@ -40,13 +42,29 @@
         "admin center plugin upload path read live: Agents > Tools > Registry > Upload"
       ],
       "toolchain": {
-        "skills": ["create-class", "brand-voice-copilot", "copilot-cowork", "report-plugin:report", "learn-loop-plugin:claude-learn"],
-        "mcpServers": ["microsoft-learn", "claude-in-chrome", "claude_ai_Mermaid_Chart"],
-        "agents": ["subagent-delegation-plugin:fact-gatherer", "docs-agent", "fork"]
+        "skills": [
+          "create-class",
+          "brand-voice-copilot",
+          "copilot-cowork",
+          "report-plugin:report",
+          "learn-loop-plugin:claude-learn"
+        ],
+        "mcpServers": [
+          "microsoft-learn",
+          "claude-in-chrome",
+          "claude_ai_Mermaid_Chart"
+        ],
+        "agents": [
+          "subagent-delegation-plugin:fact-gatherer",
+          "docs-agent",
+          "fork"
+        ]
       },
       "industry": "technical training and enablement",
       "status": "Built and running in-house",
-      "catalogue": { "action": "none" }
+      "catalogue": {
+        "action": "none"
+      }
     },
     {
       "date": "2026-10-17",
@@ -55,7 +73,9 @@
       "sessionId": "ef287bc1-b8ca-409d-8f6a-17aa79567c99",
       "branch": "okt-2026-update",
       "commits": [],
-      "surfaces": ["m365-pilot"],
+      "surfaces": [
+        "m365-pilot"
+      ],
       "files": [
         "tasks/lessons.md"
       ],
@@ -76,13 +96,22 @@
         "four researcher reports merged in session; the user then redirected the research to new teachings only"
       ],
       "toolchain": {
-        "skills": ["create-class", "report-plugin:report", "learn-loop-plugin:claude-learn"],
+        "skills": [
+          "create-class",
+          "report-plugin:report",
+          "learn-loop-plugin:claude-learn"
+        ],
         "mcpServers": [],
-        "agents": ["subagent-delegation-plugin:fact-gatherer", "fork"]
+        "agents": [
+          "subagent-delegation-plugin:fact-gatherer",
+          "fork"
+        ]
       },
       "industry": "technical training and enablement",
       "status": "Built and running in-house",
-      "catalogue": { "action": "none" }
+      "catalogue": {
+        "action": "none"
+      }
     },
     {
       "date": "2026-10-18",
@@ -922,6 +951,436 @@
         ]
       },
       "industry": "technical training",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      }
+    },
+    {
+      "sessionId": "40163078-2413-4ae2-b23e-d7fe2695a197",
+      "branch": "v-3.0.0",
+      "commits": [],
+      "surfaces": [
+        "copilot-studio-agents"
+      ],
+      "industry": "technical training",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      },
+      "date": "2026-10-21",
+      "from": "22:53",
+      "to": "23:59",
+      "files": [
+        "src/cs-schema/cs-agents/CS-Returns Agent/",
+        "src/cs-schema/cs-agents/CS-HR Buddy/",
+        "demos/05-cs-advanced/01-autonomous-agents/demo-returns-agent-mailbox-trigger.md",
+        "demos/03-cs-basics/06-publishing/demo-publish-hr-buddy.md",
+        "tasks/handoff-cs-rebuild.md"
+      ],
+      "mechanism": {
+        "takes": "a policy-grounded Copilot Studio agent, a shared mailbox and an HR agent with sign-in and topics",
+        "does": "adds a Work IQ Mail MCP tool on maker credentials and a shared mailbox event trigger, names the send in the instructions, replays a real email, publishes and follows the autonomous run on the Activity page; publishes the HR agent to Microsoft 365 Copilot and Teams, shares it with a security group and rolls a change out with one publish",
+        "returns": "an agent that answers return emails by mail on its own, an HR agent live in Teams and Microsoft 365 Copilot for a pilot group, and both guides rewritten from the live run"
+      },
+      "portsAsIs": [
+        "an email-triggered autonomous Copilot Studio agent that replies through an MCP mail tool on maker credentials",
+        "publishing and sharing a Copilot Studio agent to Teams and Microsoft 365 Copilot for a security group"
+      ],
+      "perCustomer": [
+        "the shared mailbox, the policy document and the pilot security group"
+      ],
+      "evidence": [
+        "test chat Email sent with a policy citation and the reply Re: Return request for order 10482 in the sender's mailbox",
+        "Activity page Automated row Completed for the published trigger run",
+        "Teams run of the reward topic and the republished message after start over"
+      ],
+      "toolchain": {
+        "skills": [
+          "copilot-studio",
+          "claude-in-chrome",
+          "class-authoring-plugin:create-class",
+          "brand-voice-copilot",
+          "report-plugin:report",
+          "learn-loop-plugin:claude-learn",
+          "claude-learn-harvest",
+          "claude-learn-worktime"
+        ],
+        "mcpServers": [
+          "claude-in-chrome",
+          "claude_ai_Microsoft_365"
+        ],
+        "agents": [
+          "fork"
+        ]
+      }
+    },
+    {
+      "sessionId": "40163078-2413-4ae2-b23e-d7fe2695a197",
+      "branch": "v-3.0.0",
+      "commits": [],
+      "surfaces": [
+        "copilot-studio-agents"
+      ],
+      "industry": "technical training",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      },
+      "date": "2026-10-22",
+      "from": "00:00",
+      "to": "00:05",
+      "files": [
+        "tasks/lessons.md",
+        ".claude/rules/copilot-studio.md",
+        "~/.claude/skills/copilot-studio/references/triggers-and-publishing.md",
+        "~/.claude/skills/copilot-studio/scripts/flow-history.py"
+      ],
+      "mechanism": {
+        "takes": "the agent definitions pulled from Copilot Studio after portal builds and the original clones",
+        "does": "diffs them token by token to record what each portal action writes, scripts the trigger flow check against the Flow API and narrows the delegation router's aliases",
+        "returns": "a reference of the YAML and JSON behind MCP tools, triggers, publishing and sharing, a reusable trigger diagnosis script and lessons"
+      },
+      "portsAsIs": [
+        "verifying a Copilot Studio portal build from its pulled definitions"
+      ],
+      "perCustomer": [],
+      "evidence": [
+        "flow-history.py reproduced the three trigger runs read by hand",
+        "delegation plugin tests 39 pass"
+      ],
+      "toolchain": {
+        "skills": [
+          "copilot-studio",
+          "claude-in-chrome",
+          "class-authoring-plugin:create-class",
+          "brand-voice-copilot",
+          "report-plugin:report",
+          "learn-loop-plugin:claude-learn",
+          "claude-learn-harvest",
+          "claude-learn-worktime"
+        ],
+        "mcpServers": [
+          "claude-in-chrome",
+          "claude_ai_Microsoft_365"
+        ],
+        "agents": [
+          "fork"
+        ]
+      }
+    },
+    {
+      "sessionId": "40163078-2413-4ae2-b23e-d7fe2695a197",
+      "branch": "v-3.0.0",
+      "commits": [],
+      "surfaces": [
+        "copilot-studio-agents"
+      ],
+      "industry": "technical training",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      },
+      "date": "2026-10-22",
+      "from": "00:15",
+      "to": "00:33",
+      "files": [
+        "demos/03-cs-basics/02-knowledge/demo-onboarding-sharepoint-knowledge.md",
+        "tasks/lessons.md",
+        "~/.claude/skills/copilot-studio/references/test-panel-and-grounding.md",
+        "~/.claude/skills/copilot-studio/SKILL.md",
+        "integrations-marketplace/plugins/content/class-authoring-plugin/skills/create-class/scripts/link-check.sh"
+      ],
+      "mechanism": {
+        "takes": "a demo guide for a knowledge-grounded Copilot Studio agent and the live agent",
+        "does": "runs the guide's grounding exercises in the browser, toggles the ungrounded-answer switch, traces each answer's searches on the Activity page and maps cited files to their SharePoint sites",
+        "returns": "a guide rewritten from what the product did, slide screenshots, and a reference of what the grounding switch actually blocks"
+      },
+      "portsAsIs": [
+        "live verification of a grounding demo against the product, with the cited file mapped to its source site"
+      ],
+      "perCustomer": [
+        "the SharePoint sites and documents the agent is grounded in"
+      ],
+      "evidence": [
+        "dog question cited Employee Onboarding.docx with the switch on and off; capital question flipped from an ungrounded answer to the Fallback",
+        "link-check.sh over demos: 587 links, 0 broken after percent decoding"
+      ],
+      "toolchain": {
+        "skills": [
+          "copilot-studio",
+          "claude-in-chrome",
+          "class-authoring-plugin:create-class",
+          "brand-voice-copilot",
+          "report-plugin:report",
+          "learn-loop-plugin:claude-learn",
+          "claude-learn-worktime"
+        ],
+        "mcpServers": [
+          "claude-in-chrome",
+          "claude_ai_Microsoft_365"
+        ],
+        "agents": [
+          "fork"
+        ]
+      }
+    },
+    {
+      "sessionId": "40163078-2413-4ae2-b23e-d7fe2695a197",
+      "branch": "v-3.0.0",
+      "commits": [],
+      "surfaces": [
+        "copilot-studio-agents"
+      ],
+      "industry": "technical training",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      },
+      "date": "2026-10-22",
+      "from": "00:33",
+      "to": "01:53",
+      "files": [
+        "demos/06-cs-gh-copilot/01-standard-vs-github-copilot/demo-01-build-and-ground-an-agent.md",
+        "demos/06-cs-gh-copilot/02-unified-build-and-orchestrator/demo-02-trace-agent-reasoning.md",
+        "demos/06-cs-gh-copilot/03-agent-skills/demo-03-add-a-reusable-skill.md",
+        "demos/06-cs-gh-copilot/04-workflows-and-mcp/demo-04-connect-mcp-and-workflow.md",
+        "demos/06-cs-gh-copilot/05-iq-grounding/demo-05-ground-with-iq.md",
+        "demos/06-cs-gh-copilot/06-apps/demo-06-build-an-app.md",
+        "tasks/handoff-cs-rebuild.md",
+        "tasks/todo.md",
+        "tasks/lessons.md",
+        "~/.claude/skills/copilot-studio/references/github-copilot-agents-ui.md",
+        "~/.claude/skills/copilot-studio/references/environment-credits.md",
+        "~/.claude/skills/copilot-studio/SKILL.md",
+        "integrations-marketplace/plugins/content/class-authoring-plugin/skills/create-class/references/run-guide-browser.md",
+        "integrations-marketplace/plugins/orchestration/report-plugin/skills/report/SKILL.md"
+      ],
+      "mechanism": {
+        "takes": "a module of portal demo guides for GitHub Copilot agents in Copilot Studio and a tenant to run them in",
+        "does": "runs the guides live in parallel, one browser agent per lane in its own Chrome tab, each building its own prefixed agent, tool or workflow, saving slide screenshots and reporting exact UI labels, then rewrites every guide from the lane reports",
+        "returns": "run-verified demo guides, the live artifacts, a screenshot set for slides and a reference of the current UI"
+      },
+      "portsAsIs": [
+        "parallel live verification of browser demo guides, one agent and one tab per lane, with a structured per-exercise report",
+        "guide refresh from what the product did rather than from documentation"
+      ],
+      "perCustomer": [
+        "the tenant, its licences and credit setup",
+        "the agents and data each demo builds on"
+      ],
+      "evidence": [
+        "workflow wf_001286df-a6a: 3 lanes, 0 failed, about 40 to 60 minutes each",
+        "06/04 workflow published and run end to end in 17 s after the agent node was given a published agent",
+        "brand-voice and fence checks 0 findings on the six guides, link-check 116 links 0 broken"
+      ],
+      "toolchain": {
+        "skills": [
+          "copilot-studio",
+          "claude-in-chrome",
+          "class-authoring-plugin:create-class",
+          "brand-voice-copilot",
+          "workflow-authoring",
+          "report-plugin:report",
+          "learn-loop-plugin:claude-learn",
+          "claude-learn-worktime"
+        ],
+        "mcpServers": [
+          "claude-in-chrome",
+          "microsoft-learn"
+        ],
+        "agents": [
+          "subagent-delegation-plugin:fact-gatherer",
+          "fork",
+          "workflow lanes"
+        ]
+      }
+    },
+    {
+      "sessionId": "40163078-2413-4ae2-b23e-d7fe2695a197",
+      "branch": "v-3.0.0",
+      "commits": [],
+      "surfaces": [
+        "copilot-studio-agents"
+      ],
+      "industry": "technical training",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      },
+      "date": "2026-10-22",
+      "from": "09:02",
+      "to": "09:34",
+      "files": [
+        "demos/06-cs-gh-copilot/06-apps/demo-06-build-an-app.md",
+        "demos/06-cs-gh-copilot/02-unified-build-and-orchestrator/demo-02-trace-agent-reasoning.md",
+        "demos/demo-check.md",
+        "tasks/handoff-cs-rebuild.md",
+        "tasks/todo.md",
+        "tasks/lessons.md",
+        "~/.claude/skills/copilot-studio/references/github-copilot-agents-ui.md",
+        "~/.claude/skills/copilot-studio/references/environment-credits.md",
+        "~/.claude/skills/copilot-studio/SKILL.md",
+        "integrations-marketplace/plugins/orchestration/subagent-delegation-plugin/skills/claude-orchestration/references/delegation-boundaries.md"
+      ],
+      "mechanism": {
+        "takes": "a demo guide blocked by tenant credits, the owner's credit fix, and the course's demo status table",
+        "does": "runs the app-building demo live in the browser from description to published app, rewrites the guide from what the product did, and has a browser agent read the admin centers for the credits each demo run consumed",
+        "returns": "a run-verified app demo guide, a published sample app, and a status table with Copilot Credits per demo and the sources behind each figure"
+      },
+      "portsAsIs": [
+        "measuring what each demo or agent run cost from the Power Platform and Microsoft 365 admin centers",
+        "live run of a build-by-conversation app guide with the guide rewritten from the run"
+      ],
+      "perCustomer": [
+        "the tenant's credit setup and billing plans",
+        "which demos and agents are in the course"
+      ],
+      "evidence": [
+        "Tasting Request Tracker built, refined twice and published; published link showed the priority sections and four statuses",
+        "PPAC Manage Agents: 294.14 Copilot Credits billed across three GitHub Copilot agents and one workflow; Standard-agent test chats 0",
+        "brand-voice and fence checks 0 findings on the 06/06 guide, link-check 0 broken"
+      ],
+      "toolchain": {
+        "skills": [
+          "claude-in-chrome",
+          "class-authoring-plugin:create-class",
+          "brand-voice-copilot",
+          "workflow-authoring",
+          "learn-loop-plugin:claude-learn",
+          "claude-learn-worktime"
+        ],
+        "mcpServers": [
+          "claude-in-chrome",
+          "microsoft-learn"
+        ],
+        "agents": [
+          "fork",
+          "workflow agent"
+        ]
+      }
+    },
+    {
+      "sessionId": "40163078-2413-4ae2-b23e-d7fe2695a197",
+      "branch": "v-3.0.0",
+      "commits": [],
+      "surfaces": [
+        "copilot-studio-agents"
+      ],
+      "industry": "technical training",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      },
+      "date": "2026-10-22",
+      "from": "09:34",
+      "to": "10:09",
+      "files": [
+        "demos/copilot-studio-cost.json",
+        "demos/demo-check.md",
+        "tasks/lessons.md",
+        "~/.claude/skills/copilot-studio/references/environment-credits.md",
+        "~/.claude/skills/copilot-studio/SKILL.md",
+        "~/.claude/skills/azure/references/billing-invoice-amounts.md",
+        "~/.claude/skills/azure/SKILL.md"
+      ],
+      "mechanism": {
+        "takes": "the demo status table, the Copilot Studio, Microsoft 365 and Power Platform admin centers, and the Azure subscription behind the demos",
+        "does": "records every demo run's Copilot Credits, Work IQ, app and Azure costs per source in one JSON file, rereads the charges that had not posted with a browser agent and a read-only Cost Management and Azure Monitor query, and schedules a recheck that fills them in when they post",
+        "returns": "a detailed per-demo cost file with billed and non-billed credits, channel and session splits, token counts and a check history, plus a recheck that completes the pending values"
+      },
+      "portsAsIs": [
+        "per-demo or per-agent cost record across Copilot Credits, Work IQ API and Azure, with pending values tracked until they post"
+      ],
+      "perCustomer": [
+        "the tenant's billing plans and spending policies",
+        "which agents and resources the demos use"
+      ],
+      "evidence": [
+        "copilot-studio-cost.json: 21 demos, 294.14 Copilot Credits billed and 0.8 non-billed, totals match PPAC Manage Agents",
+        "second check: PPAC figures unchanged; Work IQ, app and Azure costs not posted (Azure usage only through 2026-10-21, partial)",
+        "Foundry 05/05: 2 requests, 14,076 tokens, estimated cost 0.0145 from Azure Monitor"
+      ],
+      "toolchain": {
+        "skills": [
+          "claude-in-chrome",
+          "workflow-authoring",
+          "azure",
+          "report-plugin:report",
+          "learn-loop-plugin:claude-learn",
+          "claude-learn-worktime"
+        ],
+        "mcpServers": [
+          "claude-in-chrome",
+          "microsoft-learn"
+        ],
+        "agents": [
+          "azure-expert",
+          "workflow agent",
+          "fork"
+        ]
+      }
+    },
+    {
+      "date": "2026-10-22",
+      "from": "09:10",
+      "to": "10:14",
+      "sessionId": "735a41cc-4cab-4e03-93f8-2b611e5a85ab",
+      "branch": "v-3.0.0",
+      "commits": [],
+      "surfaces": [
+        "demos/02-cowork"
+      ],
+      "files": [
+        "demos/demo-check.md",
+        "demos/cowork-cost.json",
+        "demos/02-cowork/01-intro/demo-01-quarterly-review.md",
+        "demos/02-cowork/06-staying-in-control/demo-01-follow-up.md",
+        "tasks/run-guide-browser/q3-review.md"
+      ],
+      "mechanism": {
+        "takes": "a folder of prompt-recipe guides for a browser-based AI assistant, plus the signed-in browser of the course owner",
+        "does": "runs each guide as a learner in its own browser tab through parallel agents, chaining guides that depend on each other's data, approves only actions that reach the owner alone, rewrites every guide section from what the live product did, and prices each agent from its transcript",
+        "returns": "run-verified guides, a progress and cost table with tokens, euros and pending vendor credits per guide, a detailed cost file, and a cleanup list of everything the runs created"
+      },
+      "portsAsIs": [
+        "parallel live verification of browser-run training guides, one agent and tab per guide",
+        "per-agent cost of an agent fleet from its transcripts, in tokens and euros"
+      ],
+      "perCustomer": [
+        "the product the guides teach and its tenant",
+        "which actions the owner allows the agents to approve"
+      ],
+      "evidence": [
+        "8 of 8 guides done, 0 restarts, 7 lanes of 14 to 36 minutes",
+        "cost: 116.4M tokens, USD 40.26, EUR 35.81; tool calls 872 equal to the workflow notice",
+        "brand-voice check: files=8 em_dash=0 mermaid_newline=0 over_cap=0; link check broken=0"
+      ],
+      "toolchain": {
+        "skills": [
+          "class-authoring-plugin:create-class",
+          "claude-in-chrome",
+          "workflow-authoring",
+          "report-plugin:report",
+          "claude-api",
+          "brand-voice-copilot",
+          "learn-loop-plugin:claude-learn",
+          "claude-learn-harvest",
+          "claude-learn-worktime",
+          "track-time"
+        ],
+        "mcpServers": [
+          "claude-in-chrome",
+          "claude_ai_Microsoft_365",
+          "claude_ai_Vouchers_AI",
+          "microsoft-learn"
+        ],
+        "agents": [
+          "workflow agent",
+          "fork"
+        ]
+      },
+      "industry": "corporate training, Microsoft 365 automation courses",
       "status": "Built and running in-house",
       "catalogue": {
         "action": "none"

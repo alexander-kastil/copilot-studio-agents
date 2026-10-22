@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+<title id="t">Four runs of the Travel planner routing test set on CS-Business Travel Planner</title>
+<desc id="d">The test set Travel planner routing (7 single-response cases) ran four times on CS-Business Travel Planner. With Web Search on, run 1 at 22:54 scored Answer quality 86% and Meaning match 71%, and run 2 at 23:02, with nothing changed, scored 71% and 86%. After one change, Web Search switched to Disabled, run 3 at 23:09 scored 71% and 86% and run 4 at 23:13 scored 57% and 86%. On the canteen case, run 1 answered with a full menu taken from public school web pages (Answer quality Pass, Meaning match Fail 0); run 2 said it couldn't find a reliable canteen menu because the search only surfaced unrelated public menus (Answer quality Fail, Not answered; Meaning match Pass 100); runs 3 and 4 said it couldn't find a published company canteen menu in the available organizational resources, with no web pages referenced (Answer quality Fail, Not answered; Meaning match Pass 100). The refund-claim case fails both methods in all four runs, because the response is only Expense Claim, the title of the specialist's Adaptive Card (Answer quality Fail, Meaning match Fail 25). Answer quality swings from run to run, while after the one change Meaning match holds at 86% and its last failure is the card case.</desc>
+<rect width="1920" height="1080" fill="#ffffff"/>
+<defs>
+<style>
+svg{font-size:26px}
+.h{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#24292f;font-weight:600}
+.r{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#24292f}
+.s{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#57606a}
+.m{font-family:Consolas,'Cascadia Mono','Courier New',monospace;fill:#24292f}
+</style>
+<marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+</defs>
+<text class="h" x="60" y="59" font-size="28">Travel planner routing</text>
+<text class="s" x="60" y="95" font-size="26">7 single-response cases</text>
+<text class="s" x="60" y="129" font-size="26">CS-Business Travel Planner</text>
+<rect x="410" y="24" width="694" height="52" rx="14" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text class="h" x="757" y="59" font-size="28" text-anchor="middle">Web Search on</text>
+<rect x="1164" y="24" width="694" height="52" rx="14" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="1511" y="59" font-size="28" text-anchor="middle">One change: Web Search switched to Disabled</text>
+<path d="M1110,50 H1157" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<text class="h" x="578.5" y="118" font-size="30" text-anchor="middle">Run 1</text>
+<text class="s" x="578.5" y="150" font-size="26" text-anchor="middle">22:54</text>
+<text class="h" x="935.5" y="118" font-size="30" text-anchor="middle">Run 2</text>
+<text class="s" x="935.5" y="150" font-size="26" text-anchor="middle">23:02, nothing changed</text>
+<text class="h" x="1332.5" y="118" font-size="30" text-anchor="middle">Run 3</text>
+<text class="s" x="1332.5" y="150" font-size="26" text-anchor="middle">23:09</text>
+<text class="h" x="1689.5" y="118" font-size="30" text-anchor="middle">Run 4</text>
+<text class="s" x="1689.5" y="150" font-size="26" text-anchor="middle">23:13</text>
+<text class="h" x="60" y="236" font-size="28">Evaluation summary</text>
+<rect x="60" y="258" width="34" height="34" rx="6" fill="#fbe3ae" stroke="#e0a534" stroke-width="2"/>
+<text class="r" x="108" y="285" font-size="28">Answer quality</text>
+<rect x="60" y="308" width="34" height="34" rx="6" fill="#c5dbfa" stroke="#4a83d4" stroke-width="2"/>
+<text class="r" x="108" y="335" font-size="28">Meaning match</text>
+<text class="s" x="108" y="369" font-size="26">pass score 50</text>
+<rect x="454" y="226.6" width="110" height="163.4" rx="4" fill="#fbe3ae" stroke="#e0a534" stroke-width="2"/>
+<text class="h" x="509" y="214.6" font-size="30" text-anchor="middle">86%</text>
+<rect x="594" y="255.1" width="110" height="134.9" rx="4" fill="#c5dbfa" stroke="#4a83d4" stroke-width="2"/>
+<text class="h" x="649" y="243.1" font-size="30" text-anchor="middle">71%</text>
+<rect x="811" y="255.1" width="110" height="134.9" rx="4" fill="#fbe3ae" stroke="#e0a534" stroke-width="2"/>
+<text class="h" x="866" y="243.1" font-size="30" text-anchor="middle">71%</text>
+<rect x="951" y="226.6" width="110" height="163.4" rx="4" fill="#c5dbfa" stroke="#4a83d4" stroke-width="2"/>
+<text class="h" x="1006" y="214.6" font-size="30" text-anchor="middle">86%</text>
+<rect x="1208" y="255.1" width="110" height="134.9" rx="4" fill="#fbe3ae" stroke="#e0a534" stroke-width="2"/>
+<text class="h" x="1263" y="243.1" font-size="30" text-anchor="middle">71%</text>
+<rect x="1348" y="226.6" width="110" height="163.4" rx="4" fill="#c5dbfa" stroke="#4a83d4" stroke-width="2"/>
+<text class="h" x="1403" y="214.6" font-size="30" text-anchor="middle">86%</text>
+<rect x="1565" y="281.7" width="110" height="108.3" rx="4" fill="#fbe3ae" stroke="#e0a534" stroke-width="2"/>
+<text class="h" x="1620" y="269.7" font-size="30" text-anchor="middle">57%</text>
+<rect x="1705" y="226.6" width="110" height="163.4" rx="4" fill="#c5dbfa" stroke="#4a83d4" stroke-width="2"/>
+<text class="h" x="1760" y="214.6" font-size="30" text-anchor="middle">86%</text>
+<line x1="410" y1="390" x2="1104" y2="390" stroke="#57606a" stroke-width="2"/>
+<line x1="1164" y1="390" x2="1858" y2="390" stroke="#57606a" stroke-width="2"/>
+<rect x="60" y="412" width="1798" height="42" rx="10" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text class="r" x="84" y="442" font-size="28"><tspan class="h" font-size="28">Canteen case</tspan><tspan class="r" font-size="28" dx="24">What is on the canteen menu today?</tspan><tspan class="s" font-size="26" dx="24">Expected: the planner has no access to the canteen menu and says so.</tspan></text>
+<text class="s" x="60" y="498" font-size="26">Response</text>
+<text class="r" x="60" y="644" font-size="26">Answer quality</text>
+<text class="r" x="60" y="696" font-size="26">Meaning match</text>
+<rect x="410" y="462" width="337" height="266" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="r" x="428" y="498" font-size="26">A full menu taken from</text>
+<text class="r" x="428" y="530" font-size="26">public school web pages</text>
+<rect x="443.5" y="614" width="270" height="42" rx="21.0" fill="#e9f7ef" stroke="#1a7f37" stroke-width="2"/>
+<text class="h" x="578.5" y="644.1" font-size="26" text-anchor="middle">Pass</text>
+<rect x="443.5" y="666" width="270" height="42" rx="21.0" fill="#fdecec" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="578.5" y="696.1" font-size="26" text-anchor="middle">Fail 0</text>
+<rect x="767" y="462" width="337" height="266" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="r" x="785" y="498" font-size="26">Couldn't find a reliable</text>
+<text class="r" x="785" y="530" font-size="26">canteen menu: the search</text>
+<text class="r" x="785" y="562" font-size="26">only surfaced unrelated</text>
+<text class="r" x="785" y="594" font-size="26">public menus</text>
+<rect x="800.5" y="614" width="270" height="42" rx="21.0" fill="#fdecec" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="935.5" y="644.1" font-size="26" text-anchor="middle">Fail: Not answered</text>
+<rect x="800.5" y="666" width="270" height="42" rx="21.0" fill="#e9f7ef" stroke="#1a7f37" stroke-width="2"/>
+<text class="h" x="935.5" y="696.1" font-size="26" text-anchor="middle">Pass 100</text>
+<rect x="1164" y="462" width="337" height="266" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="r" x="1182" y="498" font-size="26">Couldn't find a published</text>
+<text class="r" x="1182" y="530" font-size="26">company canteen menu in</text>
+<text class="r" x="1182" y="562" font-size="26">organizational resources</text>
+<text class="s" x="1182" y="594" font-size="26">no web pages referenced</text>
+<rect x="1197.5" y="614" width="270" height="42" rx="21.0" fill="#fdecec" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="1332.5" y="644.1" font-size="26" text-anchor="middle">Fail: Not answered</text>
+<rect x="1197.5" y="666" width="270" height="42" rx="21.0" fill="#e9f7ef" stroke="#1a7f37" stroke-width="2"/>
+<text class="h" x="1332.5" y="696.1" font-size="26" text-anchor="middle">Pass 100</text>
+<rect x="1521" y="462" width="337" height="266" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="r" x="1539" y="498" font-size="26">Couldn't find a published</text>
+<text class="r" x="1539" y="530" font-size="26">company canteen menu in</text>
+<text class="r" x="1539" y="562" font-size="26">organizational resources</text>
+<text class="s" x="1539" y="594" font-size="26">no web pages referenced</text>
+<rect x="1554.5" y="614" width="270" height="42" rx="21.0" fill="#fdecec" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="1689.5" y="644.1" font-size="26" text-anchor="middle">Fail: Not answered</text>
+<rect x="1554.5" y="666" width="270" height="42" rx="21.0" fill="#e9f7ef" stroke="#1a7f37" stroke-width="2"/>
+<text class="h" x="1689.5" y="696.1" font-size="26" text-anchor="middle">Pass 100</text>
+<rect x="60" y="746" width="1798" height="42" rx="10" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text class="r" x="84" y="776" font-size="28"><tspan class="h" font-size="28">Refund-claim case</tspan><tspan class="r" font-size="28" dx="24">In all four runs the response is only "Expense Claim", the title of the specialist's Adaptive Card</tspan></text>
+<text class="r" x="60" y="840" font-size="26">Answer quality</text>
+<text class="r" x="60" y="892" font-size="26">Meaning match</text>
+<rect x="410" y="796" width="337" height="122" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<rect x="443.5" y="810" width="270" height="42" rx="21.0" fill="#fdecec" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="578.5" y="840.1" font-size="26" text-anchor="middle">Fail</text>
+<rect x="443.5" y="862" width="270" height="42" rx="21.0" fill="#fdecec" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="578.5" y="892.1" font-size="26" text-anchor="middle">Fail 25</text>
+<rect x="767" y="796" width="337" height="122" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<rect x="800.5" y="810" width="270" height="42" rx="21.0" fill="#fdecec" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="935.5" y="840.1" font-size="26" text-anchor="middle">Fail</text>
+<rect x="800.5" y="862" width="270" height="42" rx="21.0" fill="#fdecec" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="935.5" y="892.1" font-size="26" text-anchor="middle">Fail 25</text>
+<rect x="1164" y="796" width="337" height="122" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<rect x="1197.5" y="810" width="270" height="42" rx="21.0" fill="#fdecec" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="1332.5" y="840.1" font-size="26" text-anchor="middle">Fail</text>
+<rect x="1197.5" y="862" width="270" height="42" rx="21.0" fill="#fdecec" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="1332.5" y="892.1" font-size="26" text-anchor="middle">Fail 25</text>
+<rect x="1521" y="796" width="337" height="122" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<rect x="1554.5" y="810" width="270" height="42" rx="21.0" fill="#fdecec" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="1689.5" y="840.1" font-size="26" text-anchor="middle">Fail</text>
+<rect x="1554.5" y="862" width="270" height="42" rx="21.0" fill="#fdecec" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="1689.5" y="892.1" font-size="26" text-anchor="middle">Fail 25</text>
+<rect x="60" y="940" width="1798" height="100" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="90" y="982" font-size="30">After one change, Meaning match holds at 86%, and its last failure is the card case</text>
+<text class="s" x="90" y="1020" font-size="26">Answer quality moves from run to run with or without a change: 86%, 71%, 71%, 57%</text>
+</svg>

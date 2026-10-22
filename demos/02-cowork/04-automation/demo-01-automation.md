@@ -2,6 +2,18 @@
 
 Teach Cowork your house status-report format once, then hand it a schedule so the report writes and sends itself every Friday without you lifting a finger.
 
+> **Reasoning effort:** Use **Medium** for Steps 1 and 2 (mapping the template and authoring the skill) and **Light** for the test run in Step 3 and the scheduling in Step 4. Set it with the effort slider next to the send arrow; the picker reads **Auto Medium** or **Auto Light**. Do not use High or Max. Each scheduled run consumes Copilot Credits every Friday, so pause or delete the task on the **Automations** page (**...** > **Pause** or **Delete**) after the demo unless you want it to keep running.
+
+## Run Cost
+
+| Token type | Tokens | Opus 5.5 (run) | Sonnet 5.5 (estimate) | Haiku 5.5 (estimate) |
+| --- | --- | --- | --- | --- |
+| Input | 194 | €0.00 | €0.00 | €0.00 |
+| Cache write | 301K | €1.34 | €0.67 | €0.11 |
+| Cache read | 16.3M | €2.90 | €2.90 | €0.68 |
+| Output | 50K | €0.90 | €0.45 | €0.10 |
+| **Total** | **16.6M** | **€5.13** | **€4.02** | **€0.90** |
+
 ## Related Topics
 
 This demo builds directly on [Scheduled Prompts & Event-Driven Tasks](./readme.md), where scheduling and recurring prompts are introduced, and on [Creating Custom Skills](../03-custom-skills/readme.md), which explains the custom `SKILL.md` file you author here. The scheduled send still respects the approval and governance model from [Human-in-the-Loop](../06-staying-in-control/readme.md), so automation never means unsupervised.
@@ -32,7 +44,7 @@ Point Cowork at the `demo-01-automation` folder.
 
 ## Load the demo files
 
-In Microsoft Copilot, select **Cowork** in the top toggle, start a new task, click **+**, and attach `weekly-status-template.docx` from the `demo-01-automation` folder. Keep it attached for the first steps.
+In Microsoft Copilot, select **Cowork** in the **Chat / Cowork / Code** switch, choose **New task**, click **+** > **Upload images and files**, and pick `weekly-status-template.docx` from the `demo-01-automation` folder. The file appears as a Word document chip above the composer; keep it attached for Step 1.
 
 ---
 
@@ -48,9 +60,9 @@ With the template attached, send this prompt:
 Read weekly-status-template.docx. This is our house format for the weekly regional status report. For each section, tell me where that content would come from in a normal week: which of my emails, meetings, or figures would fill it. Flag any section that needs a judgement call rather than just pulling data.
 ```
 
-**Finding:** A strong answer maps sections to real sources: revenue-versus-target to the latest figures, blockers to escalations in your inbox, next-week to your calendar. It should flag Highlights and Asks as judgement sections that need framing, not just data. If it only restates the headings, ask it which section is hardest to fill automatically and why.
+**Finding:** A strong answer maps sections to real sources: revenue versus target to the latest figures (in the class tenant, the Targets sheet of `q3-sales-by-region.xlsx` from the [quarterly review demo](../01-intro/demo-01-quarterly-review.md)), in progress and blockers to the regional notes or escalations in your inbox, next week to your calendar. It should flag Highlights, Blockers, Next week, and Asks as judgement sections that need framing, not just data, and say when no weekly feed sits behind the figures. If it only restates the headings, ask it which section is hardest to fill automatically and why.
 
-**Expected Outcome:** A source map that ties each template section to the emails, meetings, or figures that feed it, with the judgement-heavy sections flagged.
+**Expected Outcome:** A source map that ties each template section to the emails, meetings, or files that feed it, with the judgement-heavy sections flagged and any missing weekly data called out.
 
 ---
 
@@ -60,7 +72,7 @@ Read weekly-status-template.docx. This is our house format for the weekly region
 
 **Recipe:**
 
-Create a `SKILL.md` file in your OneDrive under `Documents/Cowork/skills/weekly-status-report/`, and paste this as its contents:
+Create a `SKILL.md` file in your OneDrive under `Documents/Cowork/Skills/weekly-status-report/`. In OneDrive on the web, open **My files** > **Documents** > **Cowork** > **Skills**, choose **Create or upload** > **Folder**, and name it `weekly-status-report`. Open the new folder, choose **Create or upload** > **Markdown document**, replace all of the sample text with the block below, and select **Save**. Then click the file name `Untitled` in the header and rename it to `SKILL`, so the file reads `SKILL.md`.
 
 ```text
 ---
@@ -83,11 +95,11 @@ Fill every section of the template in order:
 Keep the report to one page. Replace every bracketed placeholder. Save it as a Word document titled with the week ending date, then draft an email to Elena Varga with the report attached and hold it for my approval.
 ```
 
-**Finding:** Cowork makes a saved skill available in your next session, so start a new task after saving the file and check the skill is picked up. The `description` is what Cowork reads to decide when the skill applies, so confirm yours is specific and trigger-oriented rather than generic. If Cowork does not find the skill, verify the file is named exactly `SKILL.md` inside its own subfolder.
+**Finding:** Cowork picks up a skill saved to OneDrive after a short sync, which took about six minutes in testing. Reload **Customize** until `weekly-status-report` appears under **Added**, then start a new task, type `/`, and choose the **Skills** filter: it is listed under **Custom skills**. The `description` is what Cowork reads to decide when the skill applies, so confirm yours is specific and trigger-oriented rather than generic. If Cowork still does not find the skill, verify the file is named exactly `SKILL.md` inside its own subfolder.
 
 ![Three ways to create a skill all end in one folder, Documents/Cowork/skills, with one subfolder per skill and up to 50 custom skills. A task that was already open before the save does not list the new skill; the next new task discovers it at its start.](../pptx/images/03-01-create-a-skill.svg)
 
-**Expected Outcome:** A `SKILL.md` saved in your OneDrive skills folder that Cowork lists as an available custom skill in a new task.
+**Expected Outcome:** A `SKILL.md` saved in your OneDrive skills folder that Cowork lists under **Customize** > **Added** (its page reads "Created by you") and as `/weekly-status-report` under **Custom skills** in a new task.
 
 > You can hold up to 50 custom skills, and each can carry companion files. See [Creating Custom Skills](../03-custom-skills/readme.md#companion-files).
 
@@ -99,17 +111,23 @@ Keep the report to one page. Replace every bracketed placeholder. Save it as a W
 
 **Recipe:**
 
-In a new Cowork task, send:
+In a new Cowork task with the effort set to **Light**, send:
 
 ```
 Run my Weekly Regional Status Report skill for this week. Show me the finished report and the draft email before sending anything.
 ```
 
-**Finding:** Compare the output against `weekly-status-template.docx`: the sections should be in the same order, every bracketed placeholder should be gone, and the report should fit on one page. Read the Highlights and Asks sections closely, since those were the judgement calls flagged in Step 1. If a section is thin or a placeholder survived, refine the skill wording and run it again before moving on.
+Cowork loads the skill (the first step reads "Reviewed custom skill Weekly status report") and checks this week's sent mail, calendar, and figures. In a class tenant it finds no weekly figures and no mailbox for Elena Varga, so it stops before writing anything and asks how to go ahead. Reply with:
+
+```
+Build it from the Q3 material: q3-sales-by-region.xlsx and q3-regional-notes.docx in my OneDrive. Elena Varga has no mailbox in this tenant, so address the draft to me instead and hold it for my approval.
+```
+
+**Finding:** Open the Word document from the **Output** list in the **Workspace** panel and compare it against `weekly-status-template.docx`: the sections should be in the same order, every bracketed placeholder should be gone, and the report should fit on one page. Read the Highlights and Asks sections closely, since those were the judgement calls flagged in Step 1. The email card reads **Saved to drafts**: the draft starts "Hi Elena", carries the report, and waits in your Outlook Drafts folder until you tell Cowork to send it. If a section is thin or a placeholder survived, refine the skill wording and run it again before moving on.
 
 ![The run-and-tune loop: start a new task, run the skill by name, check the result against the template and the source, ask what misses, and fold the fixes into SKILL.md. Repeat until the skill fires without being named.](../pptx/images/03-03-run-and-tune.svg)
 
-**Expected Outcome:** A one-page status report matching the house format, plus a draft email to Elena held at an approval step, produced entirely from the skill.
+**Expected Outcome:** A one-page Word report titled with the week ending date, matching the house format and marked as built from the Q3 sources, plus a "Hi Elena" email addressed to you and saved to your Drafts folder; Cowork confirms "Nothing has been sent."
 
 ---
 
@@ -125,10 +143,12 @@ In the same task, send:
 Schedule my Weekly Regional Status Report skill to run every Friday at 3 PM. Each week it should produce the report and prepare the email to Elena, then hold the send for my approval rather than sending on its own. Add this to my scheduled prompts.
 ```
 
-**Finding:** Open the **Automations** page in the left navigation, select **Manage schedules**, and confirm the new recurring prompt is listed with a Friday 3 PM recurrence. If Cowork asks how to activate it, choose **Activate** so the first run lands on Friday (or **Activate and run now** to watch one run and its approval immediately). From there you can pause, edit, or delete it later. Note that scheduling the run does not schedule the send: the report is generated automatically, but the high-risk email still stops for your approval each week, so nothing reaches your manager unread.
+**Finding:** Cowork answers with a **Create recurring task?** card. Check that **Repeat** reads **Weekly**, **Friday**, **3:00 PM**, and read the **Description**: it is the prompt every run receives, including where to address the draft. Clear **Run once now** so the first run lands on Friday (leave it ticked to watch one run immediately), then select **Schedule**; Cowork confirms the first run date.
+
+Open **Automations** in the left navigation and confirm the task is listed under **Active** with "Every week on Friday at 3:00 PM" and its next run. Its **...** menu offers **Edit**, **Run now**, **Pause**, and **Delete**. Note that scheduling the run does not schedule the send: each run saves the email to your Drafts folder and never sends it on its own, so nothing reaches your manager unread.
 
 ![The run is automatic and the send waits for your approval: a schedule or trigger fires, Cowork prepares the send, and it is held for your approval before it leaves your workspace unless you pre-authorized it. Below, the guardrails: your permissions, rate limits, loop protection, and results only to you.](../pptx/images/04-03-automation-approvals.svg)
 
-**Expected Outcome:** A recurring prompt listed under **Automations** > **Manage schedules**, set to Friday 3 PM, that will generate the report each week and pause the email at the approval step.
+**Expected Outcome:** A recurring task listed under **Automations** > **Active**, set to every week on Friday at 3:00 PM, that will generate the report each week and leave the email in your Drafts folder. After the demo, choose **...** > **Pause**: the task moves under **Paused**, its toggle switches off, and no next run is shown.
 
 > Scheduling, recurrence, and how automation pairs with custom skills are covered in [Scheduled Prompts & Event-Driven Tasks](./readme.md#how-scheduling-works).

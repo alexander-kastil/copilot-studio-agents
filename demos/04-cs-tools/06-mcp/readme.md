@@ -93,6 +93,14 @@ builder.Services.AddMcpServer()
 
 Adding a capability means adding a method and restarting the server. Connected agents discover the new tool the next time they list the server's tools, which is the runtime contract from the table above in practice.
 
+## What the Live Build Taught
+
+**A redeploy can add tools to the agent unasked.** With **Allow all** on, the agent offered `assign_shift` as soon as the server added it. Turn **Allow all** off and disable tools the agent has no reason to call, such as `remove_employee` for a scheduling agent.
+
+**A tool that asks for confirmation needs a message.** Without a **Message to display**, the call fails with `This tool requires user confirmation, but no confirmation message has been set.`
+
+**A plausible answer is not a tool call.** When the reply names people missing from the server's data, the orchestrator answered without calling the server. The server's search semantics bound the agent too: while the deployed `search_employees` matched only single names, a full-name request returned an empty list and the agent refused to book.
+
 ## Hands-On Demo
 
 - [Connect the Help Desk Agent to the Microsoft Learn MCP Server](./demo-connect-an-mcp-server.md): the presenter adds the Microsoft Learn Docs MCP Server from the catalog, inspects its tools, restricts them with **Allow all**, routes Microsoft how-to questions to it in the instructions, and connects the same server a second time through the onboarding wizard.
