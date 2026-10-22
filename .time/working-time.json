@@ -1821,6 +1821,76 @@
       "catalogue": {
         "action": "none"
       }
+    },
+    {
+      "date": "2026-10-22",
+      "from": "20:34",
+      "to": "21:20",
+      "sessionId": "b89a5fdd-3433-4da2-9da3-d98167138c67",
+      "branch": "v-3.0.0",
+      "commits": [
+        "240bf57",
+        "integrations-marketplace ccfcf9c"
+      ],
+      "surfaces": [
+        "class decks",
+        "deck quality rules",
+        "delivery gate"
+      ],
+      "files": [
+        "C:/Users/AlexanderKastil/.claude/skills/create-pptx/scripts/normalize_cards.py",
+        "C:/Users/AlexanderKastil/.claude/skills/create-pptx/scripts/slide_quality.py",
+        "C:/Users/AlexanderKastil/.claude/skills/create-pptx/scripts/gamma_module.py",
+        "C:/Users/AlexanderKastil/.claude/skills/create-pptx/references/gamma-deck.md",
+        "D:/git-projects/integrations-marketplace/plugins/content/slide-quality-plugin/hooks/slide-quality.mjs",
+        "demos/*/pptx/*.quality.json",
+        "tasks/todo.md"
+      ],
+      "mechanism": {
+        "takes": "finished slide decks whose bullet lists are packed tight and whose screenshots are shown too small to read, plus the per-slide specs naming each screenshot's source file",
+        "does": "measures every slide against a stack of rules (paragraph and line spacing of bullet lists, the rendered text size of each screenshot from its source pixels and shown width), spaces lists so they fill the space beside their picture, grows or re-embeds cropped screenshots into the free column, writes a per-deck receipt, and a delivery guard refuses to copy a deck to the shared folder until a receipt newer than the deck reports zero problems",
+        "returns": "decks with airy text and readable screenshots, a receipt per deck, and a delivery that cannot ship a deck that failed or skipped the check"
+      },
+      "portsAsIs": [
+        "rule stack with one function per slide rule and a receipt",
+        "rendered text size of a screenshot from its source pixels",
+        "delivery guard keyed on a receipt newer than the artifact"
+      ],
+      "perCustomer": [
+        "the thresholds (8 pt screenshot text, bullet spacing)",
+        "the deck layout the rules measure",
+        "the delivery folder"
+      ],
+      "evidence": [
+        "normalize_cards.py: dense=15 on 01-intro before, tight=0 dense=0 on all 8 after",
+        "slide_quality.py: 30 of 34 screenshots under 9 pt, then dense=0 unreadable=0 problems=0 on all 8",
+        "slide-quality-plugin tests: 6 pass",
+        "gamma_deck.py deliver: 8 decks, PPTX and PDF byte-identical to the repo"
+      ],
+      "toolchain": {
+        "skills": [
+          "create-pptx",
+          "plugin-authoring",
+          "report-plugin:report",
+          "claude-push",
+          "learn-loop-plugin:claude-learn",
+          "claude-learn-harvest",
+          "claude-learn-worktime"
+        ],
+        "mcpServers": [
+          "subagent-delegation-plugin"
+        ],
+        "agents": [
+          "subagent-delegation-plugin:fact-gatherer",
+          "image-producer",
+          "fork"
+        ]
+      },
+      "industry": "professional training and consulting",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      }
     }
   ]
 }
