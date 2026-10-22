@@ -1,0 +1,17 @@
+mcs.metadata:
+  componentName: Food Inventory REST
+  description: Manages Food inventory / stock using REST
+kind: GptComponentMetadata
+instructions:
+gptCapabilities:
+  webBrowsing: true
+
+aISettings:
+  model:
+    kind: PreviewModels
+    modelNameHint: GPT41
+
+  extensionData:
+    lastUsedCustomModel: {}
+
+displayName: Food Inventory REST

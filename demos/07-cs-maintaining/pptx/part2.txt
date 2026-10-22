@@ -1,0 +1,83 @@
+Apply the Integrations House theme: Montserrat bold headings, Poppins body, #1B365D accent. Create exactly 7 cards, one per section below, in this order. Keep the card text exactly as given. The Image and Layout lines are instructions, never visible text. Use exactly the one image URL given for each card; do not generate or add any other images, icons or logos. Keep body text at the normal body size on every card; never shrink text to fit.
+
+# What a solution carries
+### And what you set up after deployment
+- A **custom solution** carries the agent and the objects it needs
+- **Environment variables** and **connection references** hold the settings that change per environment
+- **Deployment pipelines** promote in one click inside Copilot Studio; Azure DevOps or GitHub run pro-dev CI/CD
+- **Native Git integration** keeps a source of truth outside Dataverse
+- Deployed channels, authentication settings, sharing and Application Insights need **post-deployment steps**
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/07-cs-maintaining/03-02-solution-deployment.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Choosing an advanced channel
+### Reach beyond Microsoft 365, with its own sign-in limits
+- Advanced channels are **Standard-agent** channels and trade Microsoft sign-in for reach
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/07-cs-maintaining/04-01-advanced-channels.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Full-width diagram. Title and subtitle at the top, the provided diagram across the whole card width below them at its natural aspect ratio, never cropped, never a background, then the single bullet as one caption line under the diagram.
+
+---
+
+# Web channel security and Direct Line
+### The secret stays on the server, the client gets a token
+- **Require secured access** makes every client present a secret or a token
+- The **secret** lives only in server code; browsers and apps get a **token**
+- Two secrets work at once, so you **rotate without downtime**
+- The app starts a conversation, posts messages and reads replies over **Direct Line**
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/07-cs-maintaining/04-02-secured-access.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# The demo website
+### For testing with teammates, never for customers
+- Share the **demo website** with teammates to test each change, and keep its URL away from customers
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/07-cs-maintaining/04-03-demo-website.jpg?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Statement. Title at the top; the single bullet as one large sentence across the left two thirds; the provided image as a side accent in the right third, no text over it.
+
+---
+
+# Copilot Studio plugins for coding agents
+### One plugin per agent type, one active at a time
+
+```
+{
+  "enabledPlugins": {
+    "mcs-assistant@copilot-studio-plugin": false
+  }
+}
+```
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/07-cs-maintaining/05-01-two-plugins.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Split code. Title and subtitle at the top; left column a light grey panel holding the code block in a monospace font, exactly as given; right column the provided diagram as an inline content image at its natural aspect ratio, never cropped.
+
+---
+
+# Building and migrating from the terminal
+### The Grey Logistics IT Help Desk, cloned, extended, published and migrated
+- **Clone first**: the plugin works only on an agent that already exists in an environment
+- The **Advisor** ranks findings High, Medium and Low; the **Author** writes a validated VPN topic
+- **Pull before you push**: the push lands as a draft for the Test pane
+- **Publish**, then point test with "My VPN won't connect on my laptop"
+- **/mcs-assistant:migrate** builds GH-Grey Logistics IT Help Desk; the original stays unchanged
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/07-cs-maintaining/build-and-migrate-from-the-terminal-overview.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Takeaways
+### From a personal sandbox to production
+- Build in a **custom solution**, set as preferred, from the first component
+- **Publish** once to every channel and choose the **authentication model** with care
+- Promote with **pipelines and Git**, then finish the **post-deployment steps**
+- Let a **coding agent** author, validate and push the agent as files
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/07-cs-maintaining/06-01-takeaways.jpg?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Text on the left half on plain white, the photograph as a side accent filling the right half, no text over it.

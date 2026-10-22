@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">The Customize page: preferences, plugins and skills</title>
+  <desc id="d">The Customize page has three tabs. Preferences: custom instructions such as tone and formatting, up to 20 KB or about 3,000 English words, applied to every task. Plugins: a package of skills, connectors to external systems, or both; Microsoft plugins include Dynamics 365 and Fabric IQ, and partners such as Salesforce, Zendesk and Miro sit in Discover; Lab 03 builds a plugin package; choose plugins to connect tools and external systems. Skills: task instructions and behavior patterns; built-in skills such as Word, Excel, PowerPoint, PDF and Email plus your custom skills, activated from the conversation context; Lab 02 builds a custom skill; choose skills to shape behavior and task logic.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .page { font-size: 34px; font-weight: 700; }
+      .tab { font-size: 32px; font-weight: 700; }
+      .k { font-size: 28px; font-weight: 600; }
+      .kc { font-size: 28px; font-weight: 600; text-anchor: middle; }
+      .n { font-size: 28px; }
+      .nc { font-size: 28px; text-anchor: middle; }
+      .s { font-size: 28px; fill: #57606a; }
+      .sc { font-size: 28px; fill: #57606a; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <rect x="80" y="110" width="1760" height="860" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="page" x="120" y="172">Customize</text>
+
+  <g stroke="#8c959f" stroke-width="2">
+    <rect x="120" y="205" width="400" height="725" rx="20" fill="#eaf2ff"/>
+    <rect x="560" y="205" width="700" height="725" rx="20" fill="#f3edff"/>
+    <rect x="1300" y="205" width="500" height="725" rx="20" fill="#e9f7ef"/>
+  </g>
+
+  <text class="tab" x="150" y="268">Preferences</text>
+  <text class="n" x="150" y="336">Custom instructions</text>
+  <text class="n" x="150" y="374">such as tone</text>
+  <text class="n" x="150" y="412">and formatting</text>
+  <text class="k" x="150" y="490">Up to 20 KB</text>
+  <text class="s" x="150" y="528">about 3,000</text>
+  <text class="s" x="150" y="566">English words</text>
+
+  <text class="tab" x="590" y="268">Plugins</text>
+  <text class="n" x="590" y="330">A package of skills,</text>
+  <text class="n" x="590" y="368">connectors, or both</text>
+  <rect x="590" y="400" width="640" height="160" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="620" y="430" width="200" height="100" rx="14" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <rect x="850" y="430" width="350" height="100" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="kc" x="720" y="490">Skills</text>
+  <text class="kc" x="1025" y="472">Connectors to</text>
+  <text class="nc" x="1025" y="510">external systems</text>
+  <text class="n" x="590" y="612">Microsoft: Dynamics 365, Fabric IQ</text>
+  <text class="n" x="590" y="652">Discover: Salesforce, Zendesk, Miro</text>
+
+  <text class="tab" x="1330" y="268">Skills</text>
+  <text class="n" x="1330" y="330">Task instructions and</text>
+  <text class="n" x="1330" y="368">behavior patterns</text>
+  <text class="n" x="1330" y="436">Built-in: Word, Excel,</text>
+  <text class="n" x="1330" y="474">PowerPoint, PDF, Email</text>
+  <text class="n" x="1330" y="512">plus your custom skills</text>
+  <text class="s" x="1330" y="580">Activated from the</text>
+  <text class="s" x="1330" y="618">conversation context</text>
+
+  <g stroke="#8c959f" stroke-width="2" fill="#ffffff">
+    <rect x="590" y="690" width="400" height="56" rx="28"/>
+    <rect x="1330" y="690" width="400" height="56" rx="28"/>
+    <rect x="150" y="790" width="340" height="110" rx="16"/>
+    <rect x="590" y="790" width="640" height="110" rx="16"/>
+    <rect x="1330" y="790" width="440" height="110" rx="16"/>
+  </g>
+  <text class="sc" x="790" y="728">Lab 03: a plugin package</text>
+  <text class="sc" x="1530" y="728">Lab 02: a custom skill</text>
+  <text class="nc" x="320" y="836">Applies to</text>
+  <text class="nc" x="320" y="872">every task</text>
+  <text class="nc" x="910" y="836">Choose to connect tools</text>
+  <text class="nc" x="910" y="872">and external systems</text>
+  <text class="nc" x="1550" y="836">Choose to shape behavior</text>
+  <text class="nc" x="1550" y="872">and task logic</text>
+</svg>

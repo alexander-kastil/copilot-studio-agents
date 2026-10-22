@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Seven tool types one Copilot Studio agent can call</title>
+  <desc id="d">A Copilot Studio agent in the centre reaches seven tool types. On the left: a prompt action runs an AI Builder prompt to summarize, classify or extract; a connector reaches SharePoint, Outlook, Salesforce, SQL or a custom service; Dataverse reads and writes business records; the Document Processing managed agent handles invoices, contracts and receipts. On the right: an MCP server offers a shared, versioned toolset many agents can share; a REST API tool reaches any REST endpoint from an OpenAPI description; computer use drives websites and desktop apps that have no API.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse">
+      <path d="M0,0 L12,6 L0,12 z" fill="#8c959f"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <g stroke="#8c959f" stroke-width="2" fill="none" marker-end="url(#arrow)">
+      <line x1="770" y1="450" x2="634" y2="186"/>
+      <line x1="770" y1="490" x2="634" y2="402"/>
+      <line x1="770" y1="530" x2="634" y2="618"/>
+      <line x1="770" y1="570" x2="634" y2="834"/>
+      <line x1="1150" y1="460" x2="1286" y2="256"/>
+      <line x1="1150" y1="510" x2="1286" y2="510"/>
+      <line x1="1150" y1="560" x2="1286" y2="764"/>
+    </g>
+
+    <rect x="770" y="410" width="380" height="200" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="960" y="470" font-size="34" font-weight="700" fill="#24292f" text-anchor="middle">Copilot Studio</text>
+    <text x="960" y="514" font-size="34" font-weight="700" fill="#24292f" text-anchor="middle">agent</text>
+    <text x="960" y="568" font-size="28" fill="#57606a" text-anchor="middle">calls real systems</text>
+
+    <g fill="#eaf2ff" stroke="#8c959f" stroke-width="2">
+      <rect x="70" y="90" width="560" height="190" rx="14"/>
+      <rect x="70" y="306" width="560" height="190" rx="14"/>
+      <rect x="70" y="522" width="560" height="190" rx="14"/>
+      <rect x="70" y="738" width="560" height="190" rx="14"/>
+      <rect x="1290" y="160" width="560" height="190" rx="14"/>
+      <rect x="1290" y="415" width="560" height="190" rx="14"/>
+      <rect x="1290" y="670" width="560" height="190" rx="14"/>
+    </g>
+
+    <g font-size="32" font-weight="700" fill="#24292f">
+      <text x="104" y="148">Prompt action</text>
+      <text x="104" y="364">Connector</text>
+      <text x="104" y="580">Dataverse</text>
+      <text x="104" y="796">Document Processing</text>
+      <text x="1324" y="218">MCP server</text>
+      <text x="1324" y="473">REST API tool</text>
+      <text x="1324" y="728">Computer use</text>
+    </g>
+    <g font-size="28" fill="#57606a">
+      <text x="104" y="196">AI Builder prompt:</text>
+      <text x="104" y="238">summarize, classify, extract</text>
+      <text x="104" y="412">SharePoint, Outlook,</text>
+      <text x="104" y="454">Salesforce, SQL, or custom</text>
+      <text x="104" y="628">business records,</text>
+      <text x="104" y="670">read and write</text>
+      <text x="104" y="844">managed agent:</text>
+      <text x="104" y="886">invoices, contracts, receipts</text>
+      <text x="1324" y="266">shared, versioned toolset</text>
+      <text x="1324" y="308">that many agents can share</text>
+      <text x="1324" y="521">any REST endpoint from</text>
+      <text x="1324" y="563">an OpenAPI description</text>
+      <text x="1324" y="776">websites and desktop apps</text>
+      <text x="1324" y="818">that have no API</text>
+    </g>
+  </g>
+</svg>

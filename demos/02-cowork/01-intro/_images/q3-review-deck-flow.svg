@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">From three demo files to a gated send: the Q3 review flow</title>
+  <desc id="d">Three files feed one Cowork task: q2-review.pptx gives the structure, slide count and tone to match; q3-sales-by-region.xlsx gives every figure, targets and headcount; q3-regional-notes.docx gives the story and the leadership ask. In one working folder the task runs 1, a numbered plan that waits for go-ahead, 2, the plan steered and the deck built, 3, speaker notes saved in place. It produces the deck Aurora Northern Europe - Q3 Review with speaker notes, which goes into an email draft with the deck attached to your own address, then an approval step with a risk level and a Send button, then your inbox, standing in for Elena Varga. Dots travel from the files into the task, and the finished deck travels down the chain and waits at the approval step.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .h { font-size: 34px; font-weight: 700; text-anchor: middle; }
+      .t { font-size: 30px; font-weight: 600; }
+      .tc { font-size: 30px; font-weight: 600; text-anchor: middle; }
+      .s { font-size: 28px; fill: #57606a; }
+      .sc { font-size: 28px; fill: #57606a; text-anchor: middle; }
+      .code { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; }
+      .num { font-size: 28px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="560" y1="240" x2="680" y2="240"/>
+    <line x1="560" y1="540" x2="680" y2="540"/>
+    <line x1="560" y1="840" x2="680" y2="840"/>
+    <line x1="1220" y1="235" x2="1340" y2="235"/>
+    <line x1="1590" y1="320" x2="1590" y2="380"/>
+    <line x1="1590" y1="530" x2="1590" y2="590"/>
+    <line x1="1590" y1="760" x2="1590" y2="820"/>
+  </g>
+
+  <g fill="#24292f">
+    <circle r="14">
+      <animateMotion dur="10s" repeatCount="indefinite" path="M560,240 H680" calcMode="linear" keyTimes="0;0.12;1" keyPoints="0;1;1"/>
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.12;0.13;1" values="1;1;0;0"/>
+    </circle>
+    <circle r="14">
+      <animateMotion dur="10s" repeatCount="indefinite" path="M560,540 H680" calcMode="linear" keyTimes="0;0.12;1" keyPoints="0;1;1"/>
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.12;0.13;1" values="1;1;0;0"/>
+    </circle>
+    <circle r="14">
+      <animateMotion dur="10s" repeatCount="indefinite" path="M560,840 H680" calcMode="linear" keyTimes="0;0.12;1" keyPoints="0;1;1"/>
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.12;0.13;1" values="1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="10s" repeatCount="indefinite" path="M1220,235 H1590 V900" calcMode="linear" keyTimes="0;0.53;0.58;0.64;0.68;0.72;0.86;0.92;1" keyPoints="0;0;0.3575;0.3575;0.5700;0.7826;0.7826;1;1"/>
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.53;0.54;1" values="0;0;1;1"/>
+    </circle>
+  </g>
+
+  <g stroke="#8c959f" stroke-width="2" fill="#f6f8fa">
+    <rect x="80" y="150" width="480" height="180" rx="18"/>
+    <rect x="80" y="450" width="480" height="180" rx="18"/>
+    <rect x="80" y="750" width="480" height="180" rx="18"/>
+  </g>
+  <text class="code" x="110" y="212">q2-review.pptx</text>
+  <text class="s" x="110" y="262">Structure, slide count</text>
+  <text class="s" x="110" y="298">and tone to match</text>
+  <text class="code" x="110" y="512">q3-sales-by-region.xlsx</text>
+  <text class="s" x="110" y="562">Every figure,</text>
+  <text class="s" x="110" y="598">targets and headcount</text>
+  <text class="code" x="110" y="812">q3-regional-notes.docx</text>
+  <text class="s" x="110" y="862">The story and</text>
+  <text class="s" x="110" y="898">the leadership ask</text>
+
+  <rect x="680" y="150" width="540" height="780" rx="24" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="950" y="212">Cowork task</text>
+  <text class="sc" x="950" y="254">one working folder</text>
+  <g stroke="#8c959f" stroke-width="2" fill="#ffffff">
+    <rect x="720" y="290" width="460" height="170" rx="16"/>
+    <rect x="720" y="490" width="460" height="170" rx="16"/>
+    <rect x="720" y="690" width="460" height="170" rx="16"/>
+  </g>
+  <g fill="#24292f">
+    <circle cx="768" cy="375" r="26"/>
+    <circle cx="768" cy="575" r="26"/>
+    <circle cx="768" cy="775" r="26"/>
+  </g>
+  <text class="num" x="768" y="385">1</text>
+  <text class="num" x="768" y="585">2</text>
+  <text class="num" x="768" y="785">3</text>
+  <text class="t" x="814" y="362">Numbered plan</text>
+  <text class="s" x="814" y="406">waits for go-ahead</text>
+  <text class="t" x="814" y="562">Plan steered,</text>
+  <text class="s" x="814" y="606">deck built</text>
+  <text class="t" x="814" y="762">Speaker notes,</text>
+  <text class="s" x="814" y="806">saved in place</text>
+
+  <rect x="1340" y="150" width="500" height="170" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="tc" x="1590" y="205">Aurora Northern</text>
+  <text class="tc" x="1590" y="243">Europe - Q3 Review</text>
+  <text class="sc" x="1590" y="290">with speaker notes</text>
+
+  <rect x="1340" y="380" width="500" height="150" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="tc" x="1590" y="432">Email draft</text>
+  <text class="sc" x="1590" y="474">deck attached,</text>
+  <text class="sc" x="1590" y="510">to your own address</text>
+
+  <rect x="1340" y="590" width="500" height="170" rx="18" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+  <text class="tc" x="1590" y="652">Approval step</text>
+  <text class="sc" x="1590" y="696">risk level and</text>
+  <text class="sc" x="1590" y="732">a Send button</text>
+
+  <rect x="1340" y="820" width="500" height="160" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="tc" x="1590" y="878">Your inbox</text>
+  <text class="sc" x="1590" y="922">standing in for</text>
+  <text class="sc" x="1590" y="958">Elena Varga</text>
+
+  <g fill="none" stroke="#24292f" stroke-width="5">
+    <rect x="720" y="290" width="460" height="170" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.13;0.15;0.29;0.31;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="720" y="490" width="460" height="170" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.31;0.33;0.41;0.43;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="720" y="690" width="460" height="170" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.43;0.45;0.51;0.53;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="1340" y="150" width="500" height="170" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.58;0.60;0.65;0.67;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="1340" y="820" width="500" height="160" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.92;0.94;0.99;1" values="0;0;1;1;0"/>
+    </rect>
+  </g>
+  <rect x="1340" y="590" width="500" height="170" rx="18" fill="none" stroke="#e0a534" stroke-width="8" opacity="0">
+    <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.71;0.73;0.77;0.80;0.83;0.86;0.88;1" values="0;0;1;0.3;1;0.3;1;0;0"/>
+  </rect>
+</svg>

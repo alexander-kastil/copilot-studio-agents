@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">The six topics of Copilot Studio Basics and the agent each demo builds</title>
+  <desc id="d">Six numbered topic cards in delivery order, three per row, joined by arrows. 1 Standard Agents: Create and Configure, identity, structured instructions, model and orchestration, on CS-Employee Onboarding Assistant. 2 Knowledge Sources and Suggested Prompts, HR Documents and Sightseeing SharePoint sites with citations, on the same agent. 3 Topics, Entities and Variables, Collect Employee Data and a global variable, on CS-HR Buddy. 4 Power Fx: Formulas in Topics, a claim ID and two ISO dates from three formulas, on CS-Travel Expense Refund. 5 Adaptive Cards: Collect Structured Input, nine dishes on one card kept in Global.orderDemand, on CS-Food Stock Buddy. 6 Publishing to Teams and Copilot, Teams and Microsoft 365 Copilot, shared with a pilot group, on CS-HR Buddy.</desc>
+  <style>svg { font-size: 26px; }</style>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+
+    <path d="M608,270 L682,270" fill="none" stroke="#57606a" stroke-width="2.5" marker-end="url(#ah)"/>
+    <path d="M1238,270 L1312,270" fill="none" stroke="#57606a" stroke-width="2.5" marker-end="url(#ah)"/>
+    <path d="M1590,458 L1590,525 L330,525 L330,592" fill="none" stroke="#57606a" stroke-width="2.5" marker-end="url(#ah)"/>
+    <path d="M608,780 L682,780" fill="none" stroke="#57606a" stroke-width="2.5" marker-end="url(#ah)"/>
+    <path d="M1238,780 L1312,780" fill="none" stroke="#57606a" stroke-width="2.5" marker-end="url(#ah)"/>
+
+    <rect x="60" y="90" width="540" height="360" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <circle cx="112" cy="146" r="28" fill="#24292f"/>
+    <text x="112" y="157" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+    <text x="90" y="232" font-size="32" font-weight="700" fill="#24292f">Standard Agents:</text>
+    <text x="90" y="272" font-size="32" font-weight="700" fill="#24292f">Create &amp; Configure</text>
+    <text x="90" y="320" font-size="26" fill="#57606a">Identity, structured instructions,</text>
+    <text x="90" y="354" font-size="26" fill="#57606a">model and orchestration</text>
+    <rect x="86" y="380" width="488" height="48" rx="24" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="330" y="413" font-size="26" font-weight="600" fill="#24292f" text-anchor="middle">CS-Employee Onboarding Assistant</text>
+
+    <rect x="690" y="90" width="540" height="360" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <circle cx="742" cy="146" r="28" fill="#24292f"/>
+    <text x="742" y="157" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+    <text x="720" y="232" font-size="32" font-weight="700" fill="#24292f">Knowledge Sources &amp;</text>
+    <text x="720" y="272" font-size="32" font-weight="700" fill="#24292f">Suggested Prompts</text>
+    <text x="720" y="320" font-size="26" fill="#57606a">HR Documents and Sightseeing</text>
+    <text x="720" y="354" font-size="26" fill="#57606a">SharePoint sites with citations</text>
+    <rect x="716" y="380" width="488" height="48" rx="24" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="960" y="413" font-size="26" font-weight="600" fill="#24292f" text-anchor="middle">CS-Employee Onboarding Assistant</text>
+
+    <rect x="1320" y="90" width="540" height="360" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <circle cx="1372" cy="146" r="28" fill="#24292f"/>
+    <text x="1372" y="157" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+    <text x="1350" y="232" font-size="32" font-weight="700" fill="#24292f">Topics, Entities &amp;</text>
+    <text x="1350" y="272" font-size="32" font-weight="700" fill="#24292f">Variables</text>
+    <text x="1350" y="320" font-size="26" fill="#57606a">Collect Employee Data and</text>
+    <text x="1350" y="354" font-size="26" fill="#57606a">a global variable</text>
+    <rect x="1346" y="380" width="488" height="48" rx="24" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1590" y="413" font-size="26" font-weight="600" fill="#24292f" text-anchor="middle">CS-HR Buddy</text>
+
+    <rect x="60" y="600" width="540" height="360" rx="18" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <circle cx="112" cy="656" r="28" fill="#24292f"/>
+    <text x="112" y="667" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+    <text x="90" y="742" font-size="32" font-weight="700" fill="#24292f">Power Fx: Formulas</text>
+    <text x="90" y="782" font-size="32" font-weight="700" fill="#24292f">in Topics</text>
+    <text x="90" y="830" font-size="26" fill="#57606a">A claim ID and two ISO dates</text>
+    <text x="90" y="864" font-size="26" fill="#57606a">from three formulas</text>
+    <rect x="86" y="890" width="488" height="48" rx="24" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="330" y="923" font-size="26" font-weight="600" fill="#24292f" text-anchor="middle">CS-Travel Expense Refund</text>
+
+    <rect x="690" y="600" width="540" height="360" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <circle cx="742" cy="656" r="28" fill="#24292f"/>
+    <text x="742" y="667" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+    <text x="720" y="742" font-size="32" font-weight="700" fill="#24292f">Adaptive Cards: Collect</text>
+    <text x="720" y="782" font-size="32" font-weight="700" fill="#24292f">Structured Input</text>
+    <text x="720" y="830" font-size="26" fill="#57606a">Nine dishes on one card, kept</text>
+    <text x="720" y="864" font-size="26" fill="#57606a">in Global.orderDemand</text>
+    <rect x="716" y="890" width="488" height="48" rx="24" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="960" y="923" font-size="26" font-weight="600" fill="#24292f" text-anchor="middle">CS-Food Stock Buddy</text>
+
+    <rect x="1320" y="600" width="540" height="360" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <circle cx="1372" cy="656" r="28" fill="#24292f"/>
+    <text x="1372" y="667" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">6</text>
+    <text x="1350" y="742" font-size="32" font-weight="700" fill="#24292f">Publishing to Teams</text>
+    <text x="1350" y="782" font-size="32" font-weight="700" fill="#24292f">&amp; Copilot</text>
+    <text x="1350" y="830" font-size="26" fill="#57606a">Teams and Microsoft 365 Copilot,</text>
+    <text x="1350" y="864" font-size="26" fill="#57606a">shared with a pilot group</text>
+    <rect x="1346" y="890" width="488" height="48" rx="24" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1590" y="923" font-size="26" font-weight="600" fill="#24292f" text-anchor="middle">CS-HR Buddy</text>
+  </g>
+</svg>

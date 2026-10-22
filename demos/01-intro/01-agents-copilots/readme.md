@@ -16,30 +16,15 @@ These words get used loosely, so this course fixes their meaning up front.
 
 A useful way to hold it: every agent is a copilot with a narrower job and more autonomy. Microsoft 365 Copilot is the broad assistant across your apps. An agent you build in Copilot Studio is a focused copilot for one process, for example handling sales objections or answering HR policy questions.
 
+![Nested categories: assistant contains copilot, and copilot contains agent. Each step inward means a narrower job and more autonomy, from turn-by-turn answers to an agent that plans and acts toward a goal.](../pptx/images/01-01-vocabulary.svg)
+
 ---
 
 ## The Microsoft 365 Copilot Ecosystem
 
 Copilot is not one product, it is a layer that spans the platform. The pieces you will meet in this course sit at different levels, from the everyday chat experience up to the pro-code extensibility surface.
 
-```mermaid
-flowchart TB
-  subgraph Experiences["Where people work"]
-    Chat["Copilot Chat<br/>(web, Teams, apps)"]
-    Cowork["Copilot Cowork<br/>(agentic workspace)"]
-    InApp["In-app Copilot<br/>(Word, Excel, Outlook)"]
-  end
-  subgraph Build["Where makers build"]
-    Studio["Copilot Studio<br/>(low-code agents)"]
-    Agents["SharePoint &<br/>Agent Builder agents"]
-  end
-  subgraph Foundation["What grounds it"]
-    Graph["Microsoft Graph<br/>(your work content)"]
-    Tools["Tools, connectors<br/>& MCP servers"]
-  end
-  Experiences --> Foundation
-  Build --> Foundation
-```
+![Three layers of the Copilot ecosystem: where people work (Copilot Chat, Copilot Cowork, in-app Copilot) and where makers build (Copilot Studio, SharePoint and Agent Builder agents) both stand on what grounds it (Microsoft Graph and tools, connectors and MCP servers).](../pptx/images/01-02-copilot-ecosystem.svg)
 
 The experiences layer is what end users touch. The build layer is where makers and developers assemble agents. Both stand on a shared foundation: Microsoft Graph, which grounds Copilot in your emails, files, chats, and meetings, and the tools and connectors that let agents reach beyond Graph into other systems.
 
@@ -49,7 +34,9 @@ The experiences layer is what end users touch. The build layer is where makers a
 
 The step up from a copilot to an agent is autonomy: instead of answering one turn, an agent takes a goal and works a sequence of steps to reach it. An agent is a copilot given a goal, the tools to pursue it, and a loop to keep going until it is met.
 
-That shift, the three properties behind it, and the design patterns teams use to structure it are the subject of the [next topic on Agentic AI](../02-agentic-ai/readme.md). Here it is enough to place agents on the map above; the mechanics come next.
+![Copilot Chat answers one question at a time while you do the planning. Cowork takes the outcome you describe, breaks the goal into tasks, acts across Outlook, Teams, Word, Excel, and PowerPoint, and hands the result back for your review.](../../02-cowork/pptx/images/01-01-cowork-and-chat.svg)
+
+That shift, the parts behind it, and the design patterns teams use to structure it are the subject of the [next topic, How Agents Work](../02-how-agents-work/readme.md). Here it is enough to place agents on the map above; the mechanics come next.
 
 ---
 
@@ -65,6 +52,8 @@ The same agent concept shows up in several places, each suited to a different bu
 | Copilot Studio | Custom agents with topics, tools, and orchestration | Low-code makers, pro-code |
 
 You do not have to choose one path forever. A common pattern is to prototype in a no-code surface, then rebuild in Copilot Studio when the process needs custom tools, multi-agent orchestration, or governance.
+
+![A prototype in Agent Builder or a SharePoint agent is rebuilt in Copilot Studio when the process needs custom tools, multi-agent orchestration, or governance.](../pptx/images/01-03-where-agents-live.svg)
 
 ---
 
@@ -83,15 +72,14 @@ The dividing line is scope and autonomy. When a task repeats, spans steps, or ne
 
 ## Where to Go Next
 
-1. [Agentic AI & Design Patterns](../02-agentic-ai/readme.md): the goal-driven model and the patterns you will build with
-2. [How Agents Work: Knowledge, Prompting, Tools & MCP](../03-agent-anatomy/readme.md): the parts every agent is made of
-3. [Extensibility & Development Paths](../04-extensibility/readme.md): how to choose where to build
+1. [How Agents Work](../02-how-agents-work/readme.md): the agentic loop, the parts every agent is made of, and the patterns you will build with
+2. [Where to Build and What It Costs](../04-where-to-build/readme.md): how to choose where to build, and how it bills
 
 ---
 
 ## Links & Resources
 
 - [Microsoft 365 Copilot overview](https://learn.microsoft.com/microsoft-365/copilot/microsoft-365-copilot-overview)
-- [What are agents in Microsoft 365 Copilot](https://learn.microsoft.com/microsoft-365-copilot/extensibility/agents-overview)
-- [Microsoft 365 Copilot extensibility overview](https://learn.microsoft.com/microsoft-365-copilot/extensibility/)
+- [What are agents in Microsoft 365 Copilot](https://learn.microsoft.com/microsoft-365/copilot/extensibility/agents-overview)
+- [Microsoft 365 Copilot extensibility overview](https://learn.microsoft.com/microsoft-365/copilot/extensibility/)
 - [Microsoft Copilot Scenario Library](https://adoption.microsoft.com/en-us/scenario-library/)

@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">The Grey Logistics IT Help Desk in Copilot Studio reaches the Foundry device specialist over the Activity Protocol</title>
+  <desc id="d">Left, Copilot Studio: the Grey Logistics IT Help Desk lists Grey Logistics Device Specialist on its Agents page. Right, Microsoft Foundry: the agent grey-logistics-device-specialist, whose endpoint az rest --method patch opened with activity.json, adding the Activity Protocol while keeping responses and Entra, so it now lists activity, responses and a2a and the schemes Entra and BotServiceRbac. The connection carries the project endpoint and the Agent Id across the Activity Protocol. The question about a bulging work laptop battery reaches the Grey Logistics Device Specialist node: stop using and unplug it, hand it in today, the 3-year laptop warranty has run out. The question how do I share my calendar with a colleague in Outlook runs with no specialist node, and the help desk answers on its own. In Foundry the device team adds the rule Phones: iPhone 16 or Samsung Galaxy S25, replaced every 3 years, and pins the new version; the question which phone can I get as a Grey Logistics employee changes from no phone models on record to the iPhone 16 and the Samsung Galaxy S25, with nothing changed in Copilot Studio. Dots follow the device question across the bridge and the rule change back to the help desk.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      svg { font-size: 26px; }
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .h { font-size: 34px; font-weight: 700; text-anchor: middle; }
+      .hl { font-size: 34px; font-weight: 700; }
+      .t { font-size: 30px; font-weight: 600; }
+      .tc { font-size: 30px; font-weight: 600; text-anchor: middle; }
+      .s { font-size: 28px; fill: #57606a; }
+      .sc { font-size: 28px; fill: #57606a; text-anchor: middle; }
+      .b { font-size: 28px; }
+      .bc { font-size: 28px; text-anchor: middle; }
+      .bb { font-size: 28px; font-weight: 600; }
+      .bbc { font-size: 28px; font-weight: 600; text-anchor: middle; }
+      .code { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; }
+      .codec { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; text-anchor: middle; }
+      .mono { font-family: Consolas, 'Courier New', monospace; font-size: 26px; }
+      .monoc { font-family: Consolas, 'Courier New', monospace; font-size: 26px; text-anchor: middle; }
+      .num { font-size: 28px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .tag { font-size: 26px; font-weight: 600; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect x="40" y="60" width="720" height="960" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1160" y="60" width="720" height="960" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="70" y="112">Copilot Studio</text>
+  <text class="t" x="1190" y="112">Microsoft Foundry</text>
+  <rect x="60" y="140" width="680" height="190" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="tc" x="400" y="200">Grey Logistics IT Help Desk</text>
+  <text class="sc" x="400" y="244">Agents page:</text>
+  <text class="bbc" x="400" y="284">Grey Logistics Device Specialist</text>
+  <rect x="1180" y="140" width="680" height="190" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="codec" x="1520" y="196">grey-logistics-device-specialist</text>
+  <text class="monoc" x="1520" y="244">activity, responses, a2a</text>
+  <text class="monoc" x="1520" y="286">Entra, BotServiceRbac</text>
+  <line x1="740" y1="235" x2="1180" y2="235" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <text class="bbc" x="960" y="218">Activity Protocol</text>
+  <text class="sc" x="960" y="278">project endpoint, Agent Id</text>
+  <rect x="1180" y="390" width="680" height="170" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="mono" x="1210" y="440">az rest --method patch</text>
+  <text class="s" x="1210" y="484">activity.json adds the Activity Protocol,</text>
+  <text class="s" x="1210" y="522">keeps responses and Entra</text>
+  <line x1="1520" y1="390" x2="1520" y2="332" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <rect x="60" y="390" width="680" height="200" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="90" y="436">The battery on my work laptop is bulging.</text>
+  <text class="s" x="90" y="476">Grey Logistics Device Specialist node:</text>
+  <text class="b" x="90" y="514">stop using and unplug it, hand it in today,</text>
+  <text class="b" x="90" y="552">the 3-year laptop warranty has run out</text>
+  <rect x="60" y="620" width="680" height="160" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="90" y="666">How do I share my calendar with</text>
+  <text class="bb" x="90" y="704">a colleague in Outlook?</text>
+  <text class="s" x="90" y="746">no specialist node, the help desk answers</text>
+  <rect x="60" y="810" width="680" height="190" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="90" y="856">Which phone can I get as a</text>
+  <text class="bb" x="90" y="894">Grey Logistics employee?</text>
+  <text class="s" x="90" y="936">before: no phone models on record</text>
+  <text class="b" x="90" y="974">after: iPhone 16 and Samsung Galaxy S25</text>
+  <rect x="1180" y="810" width="680" height="190" rx="18" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+  <text class="b" x="1210" y="856">Phones: iPhone 16 or Samsung Galaxy S25,</text>
+  <text class="b" x="1210" y="894">replaced every 3 years</text>
+  <text class="s" x="1210" y="936">saved, then the new version</text>
+  <text class="s" x="1210" y="974">pinned in the Publish dropdown</text>
+  <line x1="1180" y1="905" x2="740" y2="905" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <text class="bbc" x="960" y="888">new version</text>
+  <text class="sc" x="960" y="946">nothing changed</text>
+  <text class="sc" x="960" y="984">in Copilot Studio</text>
+  <rect x="60" y="390" width="680" height="200" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.0857;0.0964;1" values="1;1;0;0"/>
+  </rect>
+  <rect x="60" y="140" width="680" height="190" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.0714;0.0821;0.1143;0.125;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M740,235 H1180" calcMode="linear" keyTimes="0;0.1143;0.1714;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.1143;0.125;0.1786;0.1893;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1180" y="140" width="680" height="190" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.1714;0.1821;0.2429;0.2536;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M1180,235 H740" calcMode="linear" keyTimes="0;0.2429;0.3;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.2429;0.2536;0.3071;0.3179;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="60" y="390" width="680" height="200" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.3;0.3107;0.4;0.4107;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="60" y="620" width="680" height="160" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.4143;0.425;0.5286;0.5393;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="1180" y="810" width="680" height="190" rx="18" fill="none" stroke="#e0a534" stroke-width="8" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.5429;0.5571;0.5857;0.6143;0.6429;0.6643;0.6714;1" values="0;0;1;0.3;1;0.3;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M1180,905 H740" calcMode="linear" keyTimes="0;0.6714;0.7286;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.6714;0.6821;0.7357;0.7464;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="60" y="810" width="680" height="190" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.7286;0.7393;0.9714;0.9821;1" values="0;0;1;1;0;0"/>
+  </rect>
+</svg>

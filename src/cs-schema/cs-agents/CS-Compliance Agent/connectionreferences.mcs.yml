@@ -1,0 +1,3 @@
+﻿connectionReferences:
+  - connectionReferenceLogicalName: iits_CSComplianceAgent.shared_azureagentservice.019a57cd85e146df8c949c331cbbc546
+    connectorId: /providers/Microsoft.PowerApps/apis/shared_azureagentservice

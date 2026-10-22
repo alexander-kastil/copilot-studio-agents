@@ -1,0 +1,126 @@
+Apply the Integrations House theme: Montserrat bold headings, Poppins body, #1B365D accent. Create exactly 10 cards, one per section below, in this order. Keep the card text exactly as given. The Image and Layout lines are instructions, never visible text. Use exactly the one image URL given for each card; do not generate or add any other images, icons or logos. Keep body text at the normal body size on every card; never shrink text to fit.
+
+# A prompt agent in Microsoft Foundry
+### Model, instructions and tools behind a stable endpoint
+- A **Foundry project** groups agents, files and tools inside an Azure subscription
+- A **prompt agent** is configuration only: a model, instructions and optional tools
+- Every saved change creates an **immutable version**; you pin the one the endpoint serves
+- The endpoint takes a **Microsoft Entra** sign-in; API keys aren't supported
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/05-cs-advanced/create-a-foundry-agent-overview.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Foundry agents and Copilot Studio agents
+### Who builds, where it runs and how it reaches users
+- The maker keeps the conversation, the channels and the routing; the developer team keeps the specialist's model, tools and versions
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/05-cs-advanced/04-02-foundry-and-copilot-studio.jpg?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Statement. Title at the top; the single bullet as one large sentence across the left two thirds; the provided image as a side accent in the right third, no text over it.
+
+---
+
+# Connecting a Foundry agent
+### The Activity Protocol on the Foundry side, a connection and an Agent Id in Copilot Studio
+
+```
+{
+  "agent_endpoint": {
+    "protocol_configuration": {
+      "responses": {},
+      "activity": {},
+      "a2a": {}
+    },
+    "authorization_schemes": [
+      { "type": "Entra" },
+      { "type": "BotServiceRbac" }
+    ]
+  }
+}
+```
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/05-cs-advanced/05-01-social-profiler-entry.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Split code. Title and subtitle at the top; left column a light grey panel holding the code block in a monospace font, exactly as given; right column the provided diagram as an inline content image at its natural aspect ratio, never cropped.
+
+---
+
+# Collect, confirm, then hand off
+### CS-Compliance Agent calls CS-Social Profiler only after the user confirms
+- **Claude Sonnet 4.6** runs CS-Compliance Agent, chosen for following long, ordered instructions
+- Numbered steps explain the check, collect name, email and company, then **confirm** them
+- New **step 5** calls CS-Social Profiler only after the user confirmed the details
+- **Error handling** asks again for invalid data, so a broken email address stops the check
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/05-cs-advanced/05-02-handoff-step.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# The Foundry call in the activity map
+### CS-Social Profiler runs once the details are confirmed
+- The **CS-Social Profiler** node appears only after "Yes, that's correct."
+- Its input carries the Agent Id **social-profiler**
+- The reply comes back in five sections, from **Person** to **Notes for the compliance check**
+- Each hop runs its own model, so expect more **latency** than for a tool
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/05-cs-advanced/05-03-background-check.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Voice agents
+### A phone menu that answers to speech and the keypad
+- **Basic** voice agents use classic orchestration; **real-time** voice agents use generative orchestration
+- DTMF keys map the keypad to the menu: 1 for Account, 2 for Device, 0 for a person
+- The **Speech & DTMF** chat mode tests a call in text, and `/DTMFkey 1` presses a key
+- A post-call topic runs on **End of conversation** and filters on `Conversation.EndReason`
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/05-cs-advanced/06-01-voice-agents.jpg?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Text on the left half on plain white, the photograph as a side accent filling the right half, no text over it.
+
+---
+
+# A routing test set for the travel planner
+### Seven cases, two test methods and two failing cases with different owners
+- The baseline run scored Answer quality 86% and Meaning match 71%, and its two failures had two different owners
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/05-cs-advanced/evaluate-the-travel-planner-overview.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Full-width diagram. Title and subtitle at the top, the provided diagram across the whole card width below them at its natural aspect ratio, never cropped, never a background, then the single bullet as one caption line under the diagram.
+
+---
+
+# What Answer quality misses
+### A confident answer from the wrong source can pass it
+- **Answer quality** judges the reply alone and never reads the expected response
+- The planner answered the canteen question with a full menu from public school web pages
+- Answer quality passed it; **Meaning match** scored it 0 against "has no access"
+- Pair Answer quality with a **comparing method** on cases with one right answer
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/05-cs-advanced/07-02-canteen-case.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Comparing runs before and after a change
+### One change, Web Search switched to Disabled, fixed the canteen case
+- Run the **unchanged agent twice** first: 86% and 71%, then 71% and 86%
+- The canteen case flipped on its own, and its activity listed **public web pages**
+- One change: **Web Search** switched to Disabled on the planner
+- **Meaning match** held at 86% in both later runs, while Answer quality moved to 71% and 57%
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/05-cs-advanced/planner-four-runs.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Takeaways
+### What to carry into the GitHub Copilot agents module
+- An unattended run has nobody to ask: the **instructions** carry the whole job, the tools use maker credentials
+- Put `reason` only on the step that has to **weigh several rules**
+- Route on **descriptions** that each claim one job, and prove every route in the activity map
+- Let developers own a **Foundry specialist** and connect it over the Activity Protocol
+- Gate changes on a **test set** with a comparing method, one change per run
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/05-cs-advanced/08-01-takeaways.jpg?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Text on the left half on plain white, the photograph as a side accent filling the right half, no text over it.

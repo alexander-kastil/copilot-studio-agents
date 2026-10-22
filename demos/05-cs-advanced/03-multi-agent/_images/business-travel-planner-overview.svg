@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">CS-Business Travel Planner routes each test message to the one specialist that owns it</title>
+  <desc id="d">Five test messages enter CS-Business Travel Planner, a Standard agent on GPT-5 Chat that routes on descriptions. Booking (Vienna to Budapest, May 12) goes to the connected agent CS-Travel Agent, which handles booking and sightseeing and suggests the Castle District and a Danube cruise. Health (a mild cold, travel tomorrow?) goes to CS-Health Advisor, the health check before the trip, which advises that traveling is reasonable while the symptoms stay mild. Allowance (the daily allowance in Austria) goes to CS-Travel Expense Refund, for claims and allowances, which answers 30 euros per 24 hours and 2.50 euros per commenced hour. Gym (a free gym in Budapest) goes to Work life balance Buddy, the child agent inside the planner that reads the gym document, which names the No Pain - No Gain gym in Budapest with up to three free one-day passes. Canteen (the canteen menu today) reaches no agent: Web Search runs, and the planner says it has no access to today's canteen menu. The three connected agents are published in the same environment. A dot carries each message in turn to the agent that answers it.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      svg { font-size: 26px; }
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .h { font-size: 34px; font-weight: 700; text-anchor: middle; }
+      .hl { font-size: 34px; font-weight: 700; }
+      .t { font-size: 30px; font-weight: 600; }
+      .tc { font-size: 30px; font-weight: 600; text-anchor: middle; }
+      .s { font-size: 28px; fill: #57606a; }
+      .sc { font-size: 28px; fill: #57606a; text-anchor: middle; }
+      .b { font-size: 28px; }
+      .bc { font-size: 28px; text-anchor: middle; }
+      .bb { font-size: 28px; font-weight: 600; }
+      .bbc { font-size: 28px; font-weight: 600; text-anchor: middle; }
+      .code { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; }
+      .codec { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; text-anchor: middle; }
+      .mono { font-family: Consolas, 'Courier New', monospace; font-size: 26px; }
+      .monoc { font-family: Consolas, 'Courier New', monospace; font-size: 26px; text-anchor: middle; }
+      .num { font-size: 28px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .tag { font-size: 26px; font-weight: 600; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <text class="s" x="60" y="136">Test messages</text>
+  <text class="s" x="1100" y="136">Connected agents, published in the same environment</text>
+  <line x1="480" y1="236" x2="580" y2="236" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <line x1="480" y1="400" x2="580" y2="400" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <line x1="480" y1="564" x2="580" y2="564" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <line x1="480" y1="728" x2="580" y2="728" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <line x1="480" y1="892" x2="580" y2="892" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <line x1="1000" y1="236" x2="1100" y2="236" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <line x1="1000" y1="400" x2="1100" y2="400" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <line x1="1000" y1="564" x2="1100" y2="564" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <line x1="980" y1="728" x2="1100" y2="728" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <line x1="980" y1="892" x2="1100" y2="892" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <rect x="60" y="166" width="420" height="140" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="90" y="224">Booking</text>
+  <text class="s" x="90" y="268">Vienna to Budapest, May 12</text>
+  <rect x="60" y="330" width="420" height="140" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="90" y="388">Health</text>
+  <text class="s" x="90" y="432">mild cold, travel tomorrow?</text>
+  <rect x="60" y="494" width="420" height="140" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="90" y="552">Allowance</text>
+  <text class="s" x="90" y="596">daily allowance in Austria</text>
+  <rect x="60" y="658" width="420" height="140" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="90" y="716">Gym</text>
+  <text class="s" x="90" y="760">free gym in Budapest</text>
+  <rect x="60" y="822" width="420" height="140" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="90" y="880">Canteen</text>
+  <text class="s" x="90" y="924">canteen menu today</text>
+  <rect x="580" y="166" width="420" height="796" rx="24" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="790" y="228">CS-Business</text>
+  <text class="h" x="790" y="274">Travel Planner</text>
+  <text class="sc" x="790" y="320">GPT-5 Chat</text>
+  <text class="sc" x="790" y="416">routes on</text>
+  <text class="sc" x="790" y="454">descriptions</text>
+  <rect x="600" y="664" width="380" height="128" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bbc" x="790" y="712">Work life balance Buddy</text>
+  <text class="sc" x="790" y="752">child agent, gym document</text>
+  <rect x="600" y="832" width="380" height="116" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2" stroke-dasharray="10 8"/>
+  <text class="bbc" x="790" y="878">Web Search</text>
+  <text class="sc" x="790" y="916">no agent node runs</text>
+  <rect x="1100" y="166" width="760" height="140" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1130" y="212">CS-Travel Agent</text>
+  <text class="s" x="1130" y="250">booking and sightseeing</text>
+  <text class="b" x="1130" y="286">Castle District and a Danube cruise</text>
+  <rect x="1100" y="330" width="760" height="140" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1130" y="376">CS-Health Advisor</text>
+  <text class="s" x="1130" y="414">health check before the trip</text>
+  <text class="b" x="1130" y="450">traveling is reasonable while symptoms stay mild</text>
+  <rect x="1100" y="494" width="760" height="140" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1130" y="540">CS-Travel Expense Refund</text>
+  <text class="s" x="1130" y="578">claims and allowances</text>
+  <text class="b" x="1130" y="614">€30 per 24 hours, €2.50 per commenced hour</text>
+  <rect x="1100" y="658" width="760" height="140" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1130" y="704">Gym answer</text>
+  <text class="b" x="1130" y="742">No Pain - No Gain gym in Budapest,</text>
+  <text class="b" x="1130" y="778">up to three free one-day passes</text>
+  <rect x="1100" y="822" width="760" height="140" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1130" y="868">Canteen answer</text>
+  <text class="b" x="1130" y="906">no access to today's canteen menu</text>
+  <g>
+  <rect x="60" y="166" width="420" height="140" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite" keyTimes="0;0.1867;0.1967;1" values="1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="15s" repeatCount="indefinite" path="M480,236 H580" calcMode="linear" keyTimes="0;0.04;1" keyPoints="0;1;1"/>
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite" keyTimes="0;0.0467;0.0567;1" values="1;1;0;0"/>
+  </circle>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="15s" repeatCount="indefinite" path="M1000,236 H1100" calcMode="linear" keyTimes="0;0.06;0.1;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite" keyTimes="0;0.06;0.07;0.1067;0.1167;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1100" y="166" width="760" height="140" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite" keyTimes="0;0.1;0.11;0.1867;0.1967;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="60" y="330" width="420" height="140" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite" keyTimes="0;0.2;0.21;0.3867;0.3967;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="15s" repeatCount="indefinite" path="M480,400 H580" calcMode="linear" keyTimes="0;0.2;0.24;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite" keyTimes="0;0.2;0.21;0.2467;0.2567;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="15s" repeatCount="indefinite" path="M1000,400 H1100" calcMode="linear" keyTimes="0;0.26;0.3;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite" keyTimes="0;0.26;0.27;0.3067;0.3167;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1100" y="330" width="760" height="140" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite" keyTimes="0;0.3;0.31;0.3867;0.3967;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="60" y="494" width="420" height="140" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite" keyTimes="0;0.4;0.41;0.5867;0.5967;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="15s" repeatCount="indefinite" path="M480,564 H580" calcMode="linear" keyTimes="0;0.4;0.44;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite" keyTimes="0;0.4;0.41;0.4467;0.4567;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="15s" repeatCount="indefinite" path="M1000,564 H1100" calcMode="linear" keyTimes="0;0.46;0.5;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite" keyTimes="0;0.46;0.47;0.5067;0.5167;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1100" y="494" width="760" height="140" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite" keyTimes="0;0.5;0.51;0.5867;0.5967;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="60" y="658" width="420" height="140" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite" keyTimes="0;0.6;0.61;0.7867;0.7967;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="15s" repeatCount="indefinite" path="M480,728 H580" calcMode="linear" keyTimes="0;0.6;0.64;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite" keyTimes="0;0.6;0.61;0.6467;0.6567;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="600" y="664" width="380" height="128" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite" keyTimes="0;0.6467;0.6567;0.7867;0.7967;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="15s" repeatCount="indefinite" path="M980,728 H1100" calcMode="linear" keyTimes="0;0.68;0.72;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite" keyTimes="0;0.68;0.69;0.7267;0.7367;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1100" y="658" width="760" height="140" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite" keyTimes="0;0.72;0.73;0.7867;0.7967;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="60" y="822" width="420" height="140" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite" keyTimes="0;0.8;0.81;0.9867;0.9967;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="15s" repeatCount="indefinite" path="M480,892 H580" calcMode="linear" keyTimes="0;0.8;0.84;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite" keyTimes="0;0.8;0.81;0.8467;0.8567;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="600" y="832" width="380" height="116" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite" keyTimes="0;0.8467;0.8567;0.9867;0.9967;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="15s" repeatCount="indefinite" path="M980,892 H1100" calcMode="linear" keyTimes="0;0.88;0.92;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite" keyTimes="0;0.88;0.89;0.9267;0.9367;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1100" y="822" width="760" height="140" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite" keyTimes="0;0.92;0.93;0.9867;0.9967;1" values="0;0;1;1;0;0"/>
+  </rect>
+  </g>
+</svg>

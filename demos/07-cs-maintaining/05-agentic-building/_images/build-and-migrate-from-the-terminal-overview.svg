@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Build and migrate from the terminal: what moves between Claude Code and Copilot Studio</title>
+  <desc id="d">On the left, Claude Code with the copilot-studio plugin active and mcs-assistant switched off; on the right, Copilot Studio in your demo environment. Exercise 2 asks Claude Code to clone the agent, and the Grey Logistics IT Help Desk Standard agent lands in src/cs-schema/agents/Grey Logistics IT Help Desk/ with agent.mcs.yml, topics/ and .mcs. Exercise 3 runs an Advisor review that ranks its findings High, Medium and Low with file and line. Exercise 4 authors a new VPN topic, a new .mcs.yml file that validates with no errors; every change lands as a file you can diff. Exercise 5 asks it to pull, then push, which creates a draft with the topic in the Topics list and the Test pane; after Publish, a point test sends My VPN won't connect on my laptop to the published agent, which returns the operating system question. Exercise 6 runs mcs-assistant:migrate, creates the empty GH-Grey Logistics IT Help Desk on the GitHub Copilot harness, writes MIGRATION-PLAN-&lt;id&gt;.md and, after you approve the plan, builds and pushes it while the original stays unchanged. Dots carry each command across, and the boxes light up in exercise order.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      svg { font-size: 28px; }
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .hl { font-size: 34px; font-weight: 700; }
+      .k { font-size: 28px; font-weight: 600; }
+      .s { font-size: 28px; fill: #57606a; }
+      .sc { font-size: 28px; fill: #57606a; text-anchor: middle; }
+      .code { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; }
+      .code26 { font-family: Consolas, 'Courier New', monospace; font-size: 26px; font-weight: 700; }
+      .codec26 { font-family: Consolas, 'Courier New', monospace; font-size: 26px; font-weight: 700; text-anchor: middle; }
+      .code26g { font-family: Consolas, 'Courier New', monospace; font-size: 26px; fill: #57606a; }
+      .term { font-family: Consolas, 'Courier New', monospace; font-size: 26px; font-weight: 700; fill: #ffffff; }
+      .num { font-size: 28px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <g transform="translate(0,15)">
+
+  <rect x="60" y="40" width="640" height="135" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="90" y="62" width="72" height="52" rx="8" fill="#24292f"/>
+  <text class="term" x="104" y="97">&gt;_</text>
+  <text class="hl" x="185" y="100">Claude Code</text>
+  <circle cx="126" cy="148" r="20" fill="#24292f"/>
+  <text class="num" x="126" y="158">1</text>
+  <rect x="185" y="125" width="230" height="42" rx="21" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+  <text class="codec26" x="300" y="155">copilot-studio</text>
+  <rect x="435" y="125" width="220" height="42" rx="21" fill="#ffffff" stroke="#8c959f" stroke-width="2" stroke-dasharray="8 6"/>
+  <text class="codec26" x="545" y="155">mcs-assistant</text>
+
+  <rect x="1220" y="40" width="640" height="135" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="hl" x="1250" y="100">Copilot Studio</text>
+  <text class="s" x="1250" y="148">your demo environment</text>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="1220" y1="300" x2="700" y2="300"/>
+    <line x1="700" y1="560" x2="1220" y2="560"/>
+    <line x1="1540" y1="595" x2="1540" y2="650"/>
+    <line x1="700" y1="740" x2="1220" y2="740"/>
+    <line x1="700" y1="915" x2="1220" y2="915"/>
+  </g>
+
+  <circle cx="850" cy="270" r="20" fill="#24292f"/>
+  <text class="num" x="850" y="280">2</text>
+  <text class="code26" x="882" y="280">clone</text>
+  <circle cx="830" cy="528" r="20" fill="#24292f"/>
+  <text class="num" x="830" y="538">5</text>
+  <text class="code26" x="862" y="538">pull, push</text>
+  <text class="sc" x="960" y="718">My VPN won't connect on my laptop</text>
+  <text class="sc" x="960" y="893">Standard to GitHub Copilot</text>
+  <text class="sc" x="960" y="405">every change lands</text>
+  <text class="sc" x="960" y="441">as a file you can diff</text>
+  <text class="k" x="1560" y="632">Publish</text>
+
+  <g stroke="#8c959f" stroke-width="2" fill="#f6f8fa">
+    <rect x="60" y="200" width="640" height="140" rx="18"/>
+    <rect x="60" y="365" width="640" height="100" rx="18"/>
+    <rect x="60" y="485" width="640" height="110" rx="18"/>
+    <rect x="60" y="650" width="640" height="140" rx="18"/>
+    <rect x="60" y="820" width="640" height="190" rx="18"/>
+  </g>
+  <g stroke="#8c959f" stroke-width="2" fill="#ffffff">
+    <rect x="1220" y="200" width="640" height="140" rx="18"/>
+    <rect x="1220" y="485" width="640" height="110" rx="18"/>
+    <rect x="1220" y="650" width="640" height="140" rx="18"/>
+  </g>
+  <rect x="1220" y="820" width="640" height="190" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+
+  <text class="code26g" x="90" y="245">src/cs-schema/agents/</text>
+  <text class="code" x="90" y="281">Grey Logistics IT Help Desk/</text>
+  <text class="s" x="90" y="321">agent.mcs.yml, topics/, .mcs</text>
+
+  <circle cx="110" cy="415" r="22" fill="#24292f"/>
+  <text class="num" x="110" y="425">3</text>
+  <text class="k" x="146" y="404">Advisor review</text>
+  <text class="s" x="146" y="446">High, Medium, Low with file and line</text>
+
+  <circle cx="110" cy="540" r="22" fill="#24292f"/>
+  <text class="num" x="110" y="550">4</text>
+  <text class="k" x="146" y="526">New VPN topic</text>
+  <text class="s" x="146" y="570">a new .mcs.yml file, no errors</text>
+
+  <text class="k" x="90" y="704">Point test</text>
+  <text class="s" x="90" y="746">to the published agent</text>
+
+  <circle cx="110" cy="866" r="22" fill="#24292f"/>
+  <text class="num" x="110" y="876">6</text>
+  <text class="code" x="146" y="876">mcs-assistant:migrate</text>
+  <text class="code26g" x="90" y="930">MIGRATION-PLAN-&lt;id&gt;.md</text>
+  <text class="s" x="90" y="972">after you approve the plan</text>
+
+  <text class="k" x="1250" y="262">Grey Logistics IT Help Desk</text>
+  <text class="s" x="1250" y="306">Standard agent</text>
+  <text class="k" x="1250" y="528">Draft</text>
+  <text class="s" x="1250" y="570">Topics list and Test pane</text>
+  <text class="k" x="1250" y="697">Published</text>
+  <text class="s" x="1250" y="737">returns the operating</text>
+  <text class="s" x="1250" y="771">system question</text>
+  <text class="k" x="1250" y="868">GH-Grey Logistics IT Help Desk</text>
+  <text class="s" x="1250" y="908">GitHub Copilot harness</text>
+  <text class="s" x="1250" y="950">created empty, built after you approve,</text>
+  <text class="s" x="1250" y="986">original unchanged</text>
+
+  <g fill="none" stroke="#24292f" stroke-width="5">
+    <rect x="60" y="40" width="640" height="135" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.01;0.015;0.065;0.07;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="60" y="200" width="640" height="140" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.13;0.135;0.195;0.20;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="60" y="365" width="640" height="100" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.20;0.205;0.275;0.28;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="60" y="485" width="640" height="110" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.28;0.285;0.355;0.36;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="1220" y="485" width="640" height="110" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.41;0.415;0.465;0.47;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="60" y="650" width="640" height="140" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.50;0.505;0.535;0.54;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="1220" y="650" width="640" height="140" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.59;0.595;0.675;0.68;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="60" y="820" width="640" height="190" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.70;0.705;0.775;0.78;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="1220" y="820" width="640" height="190" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.83;0.835;0.975;0.98;1" values="0;0;1;1;0;0"/>
+    </rect>
+  </g>
+
+  <g fill="#24292f">
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1220,300 H700" calcMode="linear" keyTimes="0;0.08;0.13;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.08;0.085;0.13;0.135;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M700,560 H1220" calcMode="linear" keyTimes="0;0.36;0.41;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.36;0.365;0.41;0.415;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1540,595 V650" calcMode="linear" keyTimes="0;0.47;0.50;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.47;0.475;0.50;0.505;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M700,740 H1220" calcMode="linear" keyTimes="0;0.54;0.59;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.54;0.545;0.59;0.595;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M700,915 H1220" calcMode="linear" keyTimes="0;0.78;0.83;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.78;0.785;0.83;0.835;1" values="0;0;1;1;0;0"/>
+    </circle>
+  </g>
+  </g>
+</svg>

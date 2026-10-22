@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Four moves in order become a three-part reply, with Reframe drawing on the reference file</title>
+  <desc id="d">The objection-handling method runs four moves in order: 1 Acknowledge the concern in one sentence, 2 Clarify with one question that exposes the real driver, 3 Reframe with a Northwind Traders value point, drawing the standard wording from references/objection-handling.md, and 4 Next step, proposing one concrete action. The reply, under 90 words, has three labelled parts: Acknowledge, one sentence; Clarify or reframe, one or two sentences, fed by moves 2 and 3; and Next step, one sentence with a clear ask.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <text x="580" y="110" font-size="30" font-weight="700" fill="#57606a">Four moves, in order</text>
+  <text x="1320" y="110" font-size="30" font-weight="700" fill="#57606a">Reply, under 90 words</text>
+
+  <rect x="580" y="140" width="500" height="180" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="615" y="210" font-size="32" font-weight="700" fill="#24292f">1  Acknowledge</text>
+  <text x="615" y="257" font-size="28" fill="#57606a">the concern in one sentence</text>
+
+  <rect x="580" y="360" width="500" height="180" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="615" y="425" font-size="32" font-weight="700" fill="#24292f">2  Clarify</text>
+  <text x="615" y="472" font-size="28" fill="#57606a">one question that exposes</text>
+  <text x="615" y="512" font-size="28" fill="#57606a">the real driver</text>
+
+  <rect x="580" y="580" width="500" height="180" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="615" y="645" font-size="32" font-weight="700" fill="#24292f">3  Reframe</text>
+  <text x="615" y="692" font-size="28" fill="#57606a">with a Northwind Traders</text>
+  <text x="615" y="732" font-size="28" fill="#57606a">value point</text>
+
+  <rect x="580" y="800" width="500" height="180" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="615" y="870" font-size="32" font-weight="700" fill="#24292f">4  Next step</text>
+  <text x="615" y="917" font-size="28" fill="#57606a">propose one concrete action</text>
+
+  <rect x="70" y="580" width="410" height="180" rx="18" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="100" y="640" font-size="28" font-family="Consolas, monospace" fill="#24292f">references/</text>
+  <text x="100" y="682" font-size="28" font-family="Consolas, monospace" fill="#24292f">objection-handling.md</text>
+  <text x="100" y="730" font-size="28" fill="#57606a">standard wording</text>
+  <line x1="480" y1="670" x2="576" y2="670" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="1320" y="140" width="520" height="180" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1355" y="215" font-size="32" font-weight="700" fill="#24292f">Acknowledge</text>
+  <text x="1355" y="262" font-size="28" fill="#57606a">one sentence</text>
+
+  <rect x="1320" y="360" width="520" height="400" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1355" y="545" font-size="32" font-weight="700" fill="#24292f">Clarify or reframe</text>
+  <text x="1355" y="592" font-size="28" fill="#57606a">one or two sentences</text>
+
+  <rect x="1320" y="800" width="520" height="180" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1355" y="875" font-size="32" font-weight="700" fill="#24292f">Next step</text>
+  <text x="1355" y="922" font-size="28" fill="#57606a">one sentence with a clear ask</text>
+
+  <line x1="1080" y1="230" x2="1316" y2="230" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <line x1="1080" y1="450" x2="1316" y2="450" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <line x1="1080" y1="670" x2="1316" y2="670" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <line x1="1080" y1="890" x2="1316" y2="890" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+</svg>

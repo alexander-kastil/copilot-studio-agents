@@ -1,0 +1,80 @@
+mcs.metadata:
+  componentName: Check Symptoms
+kind: AdaptiveDialog
+modelDescription: This topic captures symptoms that a patient is experiencing and provides a potential diagnosis. It can answer questions like I want to check my symptoms
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent: {}
+  actions:
+    - kind: SendActivity
+      id: sendActivity_8wdAHg
+      activity: _I’m happy to help you, I just need to capture some more details_
+
+    - kind: Question
+      id: question_vYxJMf
+      interruptionPolicy:
+        allowInterruption: true
+
+      variable: Topic.Age
+      prompt: How old are you
+      entity: AgePrebuiltEntity
+
+    - kind: Question
+      id: question_aM78CD
+      interruptionPolicy:
+        allowInterruption: true
+
+      variable: Topic.Gender
+      prompt: What is your gender
+      entity:
+        kind: ClosedListEntityReference
+        entityId: iits_CSHealthAdvisor.entity.Gender
+        selectedItems:
+          - Nsigur
+          - SWZCXk
+
+    - kind: Question
+      id: question_wl3tzv
+      interruptionPolicy:
+        allowInterruption: true
+
+      variable: Topic.UserSymptoms
+      prompt: _Describe to me the symptoms that you're having_
+      entity: StringPrebuiltEntity
+
+    - kind: InvokeFlowAction
+      id: invokeFlowAction_EdzBhH
+      input:
+        binding:
+          number: =Topic.Age
+          text: =Text(Topic.Gender)
+          text_1: =Topic.UserSymptoms
+
+      output:
+        binding:
+          outcome: Topic.Outcome
+
+      flowId: a547f81c-8acd-f111-a05a-7c1e528616d5
+
+    - kind: SendActivity
+      id: sendActivity_ACd2R2
+      activity: this is the outcome {Topic.Outcome}
+
+    - kind: ConditionGroup
+      id: conditionGroup_Xr7Kd2
+      conditions:
+        - id: conditionItem_seriousCondition
+          condition: =!("cleared for light work" in Topic.Outcome)
+          actions:
+            - kind: Question
+              id: question_Qm4vTb
+              interruptionPolicy:
+                allowInterruption: true
+
+              variable: init:Topic.TookDrugs
+              prompt: _Your condition looks serious. Did you take any drugs or medication?_
+              entity: BooleanPrebuiltEntity
+
+inputType: {}
+outputType: {}

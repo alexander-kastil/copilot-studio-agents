@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Estimate a ticket due date: four Power Fx formulas validate, map, move off a weekend and format</title>
+  <desc id="d">Grey Logistics IT Help Desk, topic Estimate a ticket due date, tested in Ex 5 with When will my ticket be done? Four stages, each a formula on the left and what the test shows on the right. Ex 1, validate the description: Len(Topic.issueDescription) &gt;= 20 as additional entity validation with a custom prompt; the answer broken brings back the prompt Please add a little more detail, at least a full sentence. Ex 2, map the priority to service days: slaDays is Switch(Text(Topic.priority), "High", 1, "Medium", 2, 5) for the priority question with High, Medium or Low; the Test tab shows High 1, Medium 2, Low 5. Ex 3, move the due date off a weekend: dueDate is DateAdd(Today(), Topic.slaDays); the Condition Weekday(Topic.dueDate) = 1 || Weekday(Topic.dueDate) = 7 sets dueDate to DateAdd(Topic.dueDate, If(Weekday(Topic.dueDate) = 7, 2, 1)); a week strip shows Saturday plus 2 and Sunday plus 1 landing on Monday, so the due date is never a Saturday or Sunday. Ex 4, format the date and reply: dueDateText is Text(Topic.dueDate, "dddd, mmmm d"), and the reply reads Thanks. Your {priority} ticket is due by {dueDateText}. The service desk will update you if anything changes. The stages light up in order, and dots move the weekend dates to Monday.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .h { font-size: 34px; font-weight: 700; }
+      .t { font-size: 30px; font-weight: 600; }
+      .tc { font-size: 30px; font-weight: 600; text-anchor: middle; }
+      .s { font-size: 28px; fill: #57606a; }
+      .l { font-size: 26px; fill: #57606a; }
+      .lc { font-size: 26px; text-anchor: middle; }
+      .q { font-size: 28px; }
+      .qc { font-size: 28px; text-anchor: middle; }
+      .code { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; }
+      .m { font-family: Consolas, 'Courier New', monospace; font-size: 26px; }
+      .bd { font-size: 26px; font-weight: 700; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="50" y="36" width="1820" height="100" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="74" y="100">Grey Logistics IT Help Desk</text>
+  <text class="l" x="580" y="78">Topic</text>
+  <text class="q" x="580" y="120">Estimate a ticket due date</text>
+  <rect x="1240" y="52" width="606" height="68" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1256" y="64" width="88" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="bd" x="1300" y="95">Ex 5</text>
+  <text class="q" x="1362" y="97">When will my ticket be done?</text>
+
+  <g stroke="#8c959f" stroke-width="2" fill="#ffffff">
+    <rect x="50" y="166" width="1080" height="180" rx="16"/>
+    <rect x="50" y="370" width="1080" height="180" rx="16"/>
+    <rect x="50" y="574" width="1080" height="250" rx="16"/>
+    <rect x="50" y="848" width="1080" height="180" rx="16"/>
+  </g>
+  <g stroke="#8c959f" stroke-width="2" fill="#e9f7ef">
+    <rect x="1210" y="166" width="660" height="180" rx="16"/>
+    <rect x="1210" y="370" width="660" height="180" rx="16"/>
+    <rect x="1210" y="574" width="660" height="250" rx="16"/>
+    <rect x="1210" y="848" width="660" height="180" rx="16"/>
+  </g>
+  <g fill="#fff6e5" stroke="#e0a534" stroke-width="2">
+    <rect x="74" y="186" width="88" height="44" rx="22"/>
+    <rect x="74" y="390" width="88" height="44" rx="22"/>
+    <rect x="74" y="594" width="88" height="44" rx="22"/>
+    <rect x="74" y="868" width="88" height="44" rx="22"/>
+  </g>
+  <text class="bd" x="118" y="217">Ex 1</text>
+  <text class="bd" x="118" y="421">Ex 2</text>
+  <text class="bd" x="118" y="625">Ex 3</text>
+  <text class="bd" x="118" y="899">Ex 4</text>
+
+  <text class="t" x="182" y="219">Validate the description</text>
+  <text class="m" x="74" y="280">Len(Topic.issueDescription) &gt;= 20</text>
+  <text class="s" x="74" y="324">Additional entity validation, custom prompt</text>
+
+  <text class="t" x="182" y="423">Map the priority to service days</text>
+  <text class="code" x="74" y="486">slaDays</text>
+  <text class="m" x="204" y="486">Switch(Text(Topic.priority), "High", 1, "Medium", 2, 5)</text>
+  <text class="s" x="74" y="530">from the question: High, Medium or Low</text>
+
+  <text class="t" x="182" y="627">Move the due date off a weekend</text>
+  <text class="code" x="74" y="690">dueDate</text>
+  <text class="m" x="214" y="690">DateAdd(Today(), Topic.slaDays)</text>
+  <text class="s" x="74" y="738">Condition</text>
+  <text class="m" x="214" y="738">Weekday(Topic.dueDate) = 1 || Weekday(Topic.dueDate) = 7</text>
+  <text class="code" x="74" y="786">dueDate</text>
+  <text class="m" x="214" y="786">DateAdd(Topic.dueDate, If(Weekday(Topic.dueDate) = 7, 2, 1))</text>
+
+  <text class="t" x="182" y="901">Format the date and reply</text>
+  <text class="code" x="74" y="964">dueDateText</text>
+  <text class="m" x="270" y="964">Text(Topic.dueDate, "dddd, mmmm d")</text>
+
+  <rect x="1234" y="188" width="146" height="52" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="q" x="1254" y="224">broken</text>
+  <text class="s" x="1400" y="224">brings back your prompt:</text>
+  <text class="q" x="1234" y="284">Please add a little more detail,</text>
+  <text class="q" x="1234" y="322">at least a full sentence</text>
+
+  <text class="s" x="1234" y="423">slaDays in the Test tab</text>
+  <g stroke="#8c959f" stroke-width="2" fill="#ffffff">
+    <rect x="1234" y="456" width="186" height="56" rx="16"/>
+    <rect x="1436" y="456" width="204" height="56" rx="16"/>
+    <rect x="1656" y="456" width="190" height="56" rx="16"/>
+  </g>
+  <text class="qc" x="1327" y="494">High: 1</text>
+  <text class="qc" x="1538" y="494">Medium: 2</text>
+  <text class="qc" x="1751" y="494">Low: 5</text>
+
+  <text class="s" x="1234" y="627">never a Saturday or Sunday</text>
+  <g stroke="#8c959f" stroke-width="2" fill="#ffffff">
+    <rect x="1228" y="680" width="72" height="56" rx="10"/>
+    <rect x="1306" y="680" width="72" height="56" rx="10"/>
+    <rect x="1384" y="680" width="72" height="56" rx="10"/>
+    <rect x="1462" y="680" width="72" height="56" rx="10"/>
+    <rect x="1540" y="680" width="72" height="56" rx="10"/>
+  </g>
+  <g stroke="#e0a534" stroke-width="2" fill="#fff6e5">
+    <rect x="1618" y="680" width="72" height="56" rx="10"/>
+    <rect x="1696" y="680" width="72" height="56" rx="10"/>
+  </g>
+  <rect x="1774" y="680" width="72" height="56" rx="10" fill="#ffffff" stroke="#24292f" stroke-width="3"/>
+  <text class="lc" x="1264" y="717">Mon</text>
+  <text class="lc" x="1342" y="717">Tue</text>
+  <text class="lc" x="1420" y="717">Wed</text>
+  <text class="lc" x="1498" y="717">Thu</text>
+  <text class="lc" x="1576" y="717">Fri</text>
+  <text class="lc" x="1654" y="717">Sat</text>
+  <text class="lc" x="1732" y="717">Sun</text>
+  <text class="lc" x="1810" y="717">Mon</text>
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <path d="M1654,680 Q1732,620 1810,680"/>
+    <path d="M1732,736 Q1771,796 1810,736"/>
+  </g>
+  <text class="tc" x="1732" y="632">+2</text>
+  <text class="tc" x="1771" y="806">+1</text>
+
+  <rect x="1234" y="864" width="612" height="148" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="q" x="1256" y="906">Thanks. Your {priority} ticket is due by</text>
+  <text class="q" x="1256" y="944">{dueDateText}. The service desk will</text>
+  <text class="q" x="1256" y="982">update you if anything changes.</text>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="1130" y1="256" x2="1210" y2="256"/>
+    <line x1="1130" y1="460" x2="1210" y2="460"/>
+    <line x1="1130" y1="699" x2="1210" y2="699"/>
+    <line x1="1130" y1="938" x2="1210" y2="938"/>
+  </g>
+
+  <g fill="none" stroke="#24292f" stroke-width="5">
+    <rect x="50" y="166" width="1080" height="180" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.02;0.10" values="0;1;0"/>
+    </rect>
+    <rect x="1210" y="166" width="660" height="180" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.14;0.22" values="0;1;0"/>
+    </rect>
+    <rect x="50" y="370" width="1080" height="180" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.24;0.30" values="0;1;0"/>
+    </rect>
+    <rect x="1210" y="370" width="660" height="180" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.33;0.42" values="0;1;0"/>
+    </rect>
+    <rect x="50" y="574" width="1080" height="250" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.44;0.52" values="0;1;0"/>
+    </rect>
+    <rect x="1210" y="574" width="660" height="250" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.55;0.72" values="0;1;0"/>
+    </rect>
+    <rect x="50" y="848" width="1080" height="180" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.74;0.82" values="0;1;0"/>
+    </rect>
+    <rect x="1210" y="848" width="660" height="180" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.85;0.97" values="0;1;0"/>
+    </rect>
+  </g>
+
+  <g fill="#24292f">
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1130,256 H1210" calcMode="linear" keyTimes="0;0.10;0.14;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.10;0.14" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1130,460 H1210" calcMode="linear" keyTimes="0;0.30;0.33;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.30;0.33" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1130,699 H1210" calcMode="linear" keyTimes="0;0.52;0.55;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.52;0.55" values="0;1;0"/>
+    </circle>
+    <circle r="12" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1654,680 Q1732,620 1810,680" calcMode="linear" keyTimes="0;0.58;0.64;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.58;0.64" values="0;1;0"/>
+    </circle>
+    <circle r="12" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1732,736 Q1771,796 1810,736" calcMode="linear" keyTimes="0;0.64;0.70;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.64;0.70" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1130,938 H1210" calcMode="linear" keyTimes="0;0.82;0.85;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.82;0.85" values="0;1;0"/>
+    </circle>
+  </g>
+</svg>

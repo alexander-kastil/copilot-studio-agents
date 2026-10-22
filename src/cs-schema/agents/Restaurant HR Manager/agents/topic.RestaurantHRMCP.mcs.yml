@@ -1,0 +1,15 @@
+mcs.metadata:
+  componentName: Restaurant HR MCP
+  description: Knows about employees and how they can be used in our restaurant
+kind: TaskDialog
+modelDisplayName: Restaurant HR MCP
+modelDescription: Knows about employees and how they can be used in our restaurant
+action:
+  kind: InvokeExternalAgentTaskAction
+  connectionReference: iits_restaurantHrManager.shared_iits-5frestaurant-20hr-20mcp-5f0af75e9cbdc7cbac.3e9f357bd1ee44dfa192244f5dc7bdaf
+  connectionProperties:
+    mode: Invoker
+
+  operationDetails:
+    kind: ModelContextProtocolMetadata
+    operationId: InvokeServer

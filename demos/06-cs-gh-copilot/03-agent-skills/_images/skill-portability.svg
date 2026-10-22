@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">One open SKILL.md moves between Claude Code, GitHub Copilot and a Copilot Studio agent</title>
+  <desc id="d">Claude Code and GitHub Copilot exchange the same SKILL.md or ZIP, in the open Agent Skills format, with Copilot Studio. In the agent's Skills panel on the Build tab the file comes in with Upload a skill and goes back out with Download; Create from blank types the name, description and instructions in the UI instead. The panel also offers Replace and Delete. Each agent holds its own copy, carried with it through solutions and ALM.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="80" y="170" width="420" height="150" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="290" y="258" text-anchor="middle" font-size="36" font-weight="700" fill="#24292f">Claude Code</text>
+
+  <rect x="80" y="600" width="420" height="150" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="290" y="688" text-anchor="middle" font-size="36" font-weight="700" fill="#24292f">GitHub Copilot</text>
+
+  <rect x="700" y="300" width="440" height="320" rx="18" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="920" y="385" text-anchor="middle" font-size="36" font-weight="700" font-family="Consolas, monospace" fill="#24292f">SKILL.md</text>
+  <text x="920" y="432" text-anchor="middle" font-size="28" fill="#57606a">or a ZIP</text>
+  <text x="920" y="510" text-anchor="middle" font-size="28" fill="#24292f">Agent Skills</text>
+  <text x="920" y="550" text-anchor="middle" font-size="28" fill="#24292f">open format</text>
+
+  <line x1="504" y1="248" x2="692" y2="378" stroke="#57606a" stroke-width="3" marker-start="url(#ah)" marker-end="url(#ah)"/>
+  <line x1="504" y1="672" x2="692" y2="542" stroke="#57606a" stroke-width="3" marker-start="url(#ah)" marker-end="url(#ah)"/>
+
+  <rect x="1380" y="170" width="460" height="560" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1610" y="245" text-anchor="middle" font-size="36" font-weight="700" fill="#24292f">Copilot Studio</text>
+  <text x="1610" y="290" text-anchor="middle" font-size="36" font-weight="700" fill="#24292f">agent</text>
+  <text x="1610" y="345" text-anchor="middle" font-size="28" fill="#57606a">Skills panel, Build tab</text>
+  <text x="1610" y="450" text-anchor="middle" font-size="28" fill="#24292f">each agent holds its own</text>
+  <text x="1610" y="488" text-anchor="middle" font-size="28" fill="#24292f">copy, carried with it</text>
+  <text x="1610" y="526" text-anchor="middle" font-size="28" fill="#24292f">through solutions and ALM</text>
+  <rect x="1420" y="600" width="180" height="70" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1510" y="646" text-anchor="middle" font-size="28" fill="#24292f">Replace</text>
+  <rect x="1620" y="600" width="180" height="70" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1710" y="646" text-anchor="middle" font-size="28" fill="#24292f">Delete</text>
+
+  <line x1="1140" y1="400" x2="1376" y2="400" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <text x="1260" y="380" text-anchor="middle" font-size="28" fill="#57606a">Upload a skill</text>
+  <line x1="1380" y1="580" x2="1144" y2="580" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <text x="1260" y="624" text-anchor="middle" font-size="28" fill="#57606a">Download</text>
+
+  <rect x="1380" y="830" width="460" height="170" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1610" y="885" text-anchor="middle" font-size="32" font-weight="700" fill="#24292f">Create from blank</text>
+  <text x="1610" y="932" text-anchor="middle" font-size="28" fill="#57606a">type name, description,</text>
+  <text x="1610" y="970" text-anchor="middle" font-size="28" fill="#57606a">instructions in the UI</text>
+  <line x1="1610" y1="830" x2="1610" y2="734" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+</svg>

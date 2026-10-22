@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">How generative orchestration routes a prompt to a topic or to knowledge</title>
+  <desc id="d">Two prompts from the labs enter generative orchestration, which understands the intent, reads the name and description of every topic and knowledge source, and picks the best one. What's your feedback for my role goes to the topic Collect user's role. How can we hire new people in our company goes to the knowledge sources HR Documents and Microsoft Careers site. Below, classic orchestration starts the topic whose 5 to 10 trigger phrases match the query most closely. Moving dots follow each prompt to its destination in turn.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="60" y="180" width="440" height="140" rx="24" fill="#eaf2ff" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" values="#e0a534;#8c959f" keyTimes="0;0.5" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="5;2" keyTimes="0;0.5" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+    </rect>
+    <text x="94" y="240" font-size="28" fill="#24292f">What's your feedback</text>
+    <text x="94" y="280" font-size="28" fill="#24292f">for my role?</text>
+
+    <rect x="60" y="440" width="440" height="140" rx="24" fill="#eaf2ff" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" values="#8c959f;#e0a534" keyTimes="0;0.5" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="2;5" keyTimes="0;0.5" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+    </rect>
+    <text x="94" y="500" font-size="28" fill="#24292f">How can we hire new people</text>
+    <text x="94" y="540" font-size="28" fill="#24292f">in our company?</text>
+
+    <rect x="640" y="150" width="460" height="410" rx="18" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <text x="676" y="232" font-size="32" font-weight="700" fill="#24292f">Generative</text>
+    <text x="676" y="274" font-size="32" font-weight="700" fill="#24292f">orchestration</text>
+    <g font-size="28" fill="#57606a">
+      <text x="676" y="346">Understands the intent,</text>
+      <text x="676" y="388">reads every name and</text>
+      <text x="676" y="430">description, picks the</text>
+      <text x="676" y="472">best topic or knowledge</text>
+    </g>
+
+    <rect x="1240" y="100" width="620" height="160" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" values="#8c959f;#e0a534;#8c959f" keyTimes="0;0.3;0.5" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="2;5;2" keyTimes="0;0.3;0.5" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+    </rect>
+    <text x="1276" y="156" font-size="30" font-weight="700" fill="#24292f">Topic: Collect user's role</text>
+    <text x="1276" y="200" font-size="28" fill="#57606a">collect user's role and</text>
+    <text x="1276" y="238" font-size="28" fill="#57606a">provide feedback</text>
+
+    <rect x="1240" y="300" width="620" height="160" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" values="#8c959f;#e0a534" keyTimes="0;0.8" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="2;5" keyTimes="0;0.8" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+    </rect>
+    <text x="1276" y="356" font-size="30" font-weight="700" fill="#24292f">Knowledge: HR Documents</text>
+    <text x="1276" y="400" font-size="28" fill="#57606a">policies, procedures, and rules</text>
+    <text x="1276" y="438" font-size="28" fill="#57606a">related to the HR department</text>
+
+    <rect x="1240" y="500" width="620" height="160" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" values="#8c959f;#e0a534" keyTimes="0;0.8" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="2;5" keyTimes="0;0.8" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+    </rect>
+    <text x="1276" y="556" font-size="30" font-weight="700" fill="#24292f">Knowledge: Microsoft Careers site</text>
+    <text x="1276" y="600" font-size="28" fill="#57606a">benefits, culture, diversity and</text>
+    <text x="1276" y="638" font-size="28" fill="#57606a">inclusion, and hiring tips</text>
+
+    <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+      <line x1="504" y1="250" x2="632" y2="300"/>
+      <line x1="504" y1="510" x2="632" y2="460"/>
+      <line x1="1104" y1="240" x2="1232" y2="180"/>
+      <line x1="1104" y1="380" x2="1232" y2="380"/>
+      <line x1="1104" y1="500" x2="1232" y2="580"/>
+    </g>
+
+    <rect x="60" y="760" width="1800" height="200" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="100" y="822" font-size="30" font-weight="700" fill="#24292f">Classic orchestration</text>
+    <text x="100" y="870" font-size="28" fill="#57606a">Starts the topic whose trigger phrases match the query most closely</text>
+    <text x="100" y="914" font-size="28" fill="#57606a">Each topic lists 5 to 10 trigger phrases instead of one description</text>
+
+    <g fill="#e0a534" stroke="#ffffff" stroke-width="3">
+      <circle cx="504" cy="250" r="14" opacity="0">
+        <animateMotion path="M0,0 L128,50" keyPoints="0;1;1" keyTimes="0;0.15;1" calcMode="linear" dur="10s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0" keyTimes="0;0.15" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1104" cy="240" r="14" opacity="0">
+        <animateMotion path="M0,0 L128,-60" keyPoints="0;0;1;1" keyTimes="0;0.15;0.3;1" calcMode="linear" dur="10s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.15;0.3" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="504" cy="510" r="14" opacity="0">
+        <animateMotion path="M0,0 L128,-50" keyPoints="0;0;1;1" keyTimes="0;0.5;0.65;1" calcMode="linear" dur="10s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.5;0.65" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1104" cy="380" r="14" opacity="0">
+        <animateMotion path="M0,0 L128,0" keyPoints="0;0;1;1" keyTimes="0;0.65;0.8;1" calcMode="linear" dur="10s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.65;0.8" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1104" cy="500" r="14" opacity="0">
+        <animateMotion path="M0,0 L128,80" keyPoints="0;0;1;1" keyTimes="0;0.65;0.8;1" calcMode="linear" dur="10s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.65;0.8" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+</svg>

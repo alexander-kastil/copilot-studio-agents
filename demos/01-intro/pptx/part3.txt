@@ -1,0 +1,86 @@
+Apply the Integrations House theme: Montserrat bold headings, Poppins body, #1B365D accent. Create exactly 7 cards, one per section below, in this order. Keep the card text exactly as given. The Image and Layout lines are instructions, never visible text. Use exactly the one image URL given for each card; do not generate or add any other images, icons or logos. Keep body text at the normal body size on every card; never shrink text to fit.
+
+# Spending limits
+### Guardrails set when you activate Copilot Credits
+- **Monthly spending limit**: the tenant's total ceiling for the billing period
+- **Per-user limit**: the most any one user can consume, at least 2,000 credits a month
+- **Alert thresholds** below the ceiling notify you before it is reached
+- Set them **at activation**, with numbers from the Copilot Credit Estimator
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/01-intro/03-03-spending-governance.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Productivity and SharePoint agents
+### Ready-to-use agents with nothing to build
+- **Researcher**: multi-step research across work content and the web, returned as a source-cited report
+- **Analyst**: reasons over your data to produce analysis, tables and charts
+- **SharePoint agent**: scoped to a whole site, specific folders or selected documents
+- It answers only from what the **person asking** already has permission to see
+- Created with **no code**, published to SharePoint and Microsoft 365 Copilot
+- **Copilot in OneDrive and SharePoint** works on the files: trends across spreadsheets, folder sorting, interactive HTML reports
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/01-intro/04-01-productivity-agents.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Agent Builder
+### Your own agent in Microsoft 365 Copilot, with no code
+- **Describe** the job in plain language, or configure each field by hand or from a template, then test on **Try it**
+- **Knowledge**: SharePoint, OneDrive, Teams chats, your email, public sites, uploaded files and Copilot connectors
+- **Share** it with people, or submit it to the org catalog for the Agent Store
+- **No actions**: copy the agent to Copilot Studio when it needs connectors or workflows
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/01-intro/05-02-agent-builder.jpg?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Text on the left half on plain white, the photograph as a side accent filling the right half, no text over it.
+
+---
+
+# Licenses and credit sources
+### Few seats, and credits charged where the work runs
+- **Per user**: a Microsoft 365 Copilot license, Copilot Studio access and a GitHub account
+- Everything else is **Copilot Credits** or an Azure resource on one subscription
+- Credits are charged **where the work runs**: agent environment, developer environment or tenant
+- Each maker's **personal developer environment** needs the billing plan too
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/01-intro/06-01-licenses-credits.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# What a Copilot license covers
+### The harness decides whether building draws credits
+- **Standard agents** run zero-rated for licensed users in Microsoft 365 channels
+- Their test chat costs nothing: every Standard agent demo ran at **0 credits**
+- **GitHub Copilot agents**, workflows and apps bill from the first build step
+- The Copilot Studio home page marks the paths that use **Copilot Credits**
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/01-intro/06-02-harness-credits.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Where a run's cost shows
+### Billed credits per agent in the Power Platform admin center
+- **Manage Agents** lists billed credits per agent, channel and feature
+- A GitHub Copilot agent: **169.72 credits** for five Preview sessions
+- One workflow run: **26.67 credits** on the workflow-agents channel
+- Work IQ API and Cowork costs show only in Microsoft 365 **Cost management**
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/01-intro/06-03-manage-agents.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Takeaways
+### What to carry into the Cowork module
+- Every agent is a copilot with a **narrower job and more autonomy**
+- An agent works toward a **goal** in a loop, and a person approves consequential actions
+- Fix a weak agent by naming its thin part: **instructions, knowledge or tools**
+- Choose the **harness** before you create the agent: it fixes behavior, features and billing
+- Take the **lowest-effort path** that meets the need, and set **Copilot Credit** limits before the first bill
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/01-intro/07-01-takeaways.jpg?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Text on the left half on plain white, the photograph as a side accent filling the right half, no text over it.

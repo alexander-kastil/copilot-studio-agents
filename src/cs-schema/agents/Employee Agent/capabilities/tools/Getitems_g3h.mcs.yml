@@ -1,0 +1,8 @@
+mcs.metadata:
+  componentName: Get items
+  description: Gets items from a SharePoint list.
+kind: ConnectorTool
+authMode: Invoker
+connectionReference: iits_employeeagent_i-gL4u.cr.shared_sharepointonline
+connectorId: /providers/Microsoft.PowerApps/apis/shared_sharepointonline
+operationId: GetItems

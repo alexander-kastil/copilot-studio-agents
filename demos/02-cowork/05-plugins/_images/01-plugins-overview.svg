@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">The plugins demo: the dietitian plugin's skills join the built-in Word in one Plugins list</title>
+  <desc id="d">Step 1 installs the dietitian plugin: manifest.json, the icon PNGs and the skills/ folder, zipped, then Customize, Add, Upload. Customize lists it under Added: dietitian, Created by The AI Career Lab, Enable dietitian switched on, with the skills clinical-nutrition and dietary-communication. In one task, + &gt; Upload images and files adds client-intake.docx under References in the Workspace panel. Step 2 drafts the assessment and dietitian (clinical-nutrition) appears under Plugins, Step 3 turns it into a handout and dietitian (dietary-communication) appears, and Step 4 compiles the packet with the built-in Word, so plugin and built-in skills share one list. The packet, Client Nutrition Packet - NUT-2041.docx, lands under Output with the line DRAFT ONLY. Not medical nutrition therapy. A registered dietitian must review and approve before any client use. Dots carry the install into Customize, the file into References, each prompt to its Plugins entry, and the compile and the disclaimer into Output.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      svg { font-size: 28px; }
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .t { font-size: 30px; font-weight: 600; }
+      .k { font-size: 28px; font-weight: 600; }
+      .r { font-size: 28px; }
+      .s { font-size: 28px; fill: #57606a; }
+      .code { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; }
+      .codec { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; text-anchor: middle; }
+      .kc { font-size: 28px; font-weight: 600; text-anchor: middle; }
+      .num { font-size: 28px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="1240" y="100" width="620" height="880" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="330" y1="490" x2="330" y2="540"/>
+    <line x1="1160" y1="260" x2="1270" y2="260"/>
+    <line x1="1160" y1="420" x2="1270" y2="420"/>
+    <line x1="1160" y1="510" x2="1270" y2="510"/>
+    <line x1="1160" y1="600" x2="1270" y2="600"/>
+    <line x1="1160" y1="880" x2="1270" y2="880"/>
+    <line x1="1790" y1="635" x2="1790" y2="820"/>
+  </g>
+
+  <rect x="60" y="100" width="540" height="390" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="110" cy="150" r="24" fill="#24292f"/>
+  <text class="num" x="110" y="160">1</text>
+  <text class="code" x="146" y="160">dietitian</text>
+  <g stroke="#8c959f" stroke-width="2" fill="#ffffff">
+    <rect x="90" y="190" width="480" height="56" rx="12"/>
+    <rect x="90" y="262" width="480" height="56" rx="12"/>
+    <rect x="90" y="334" width="480" height="56" rx="12"/>
+  </g>
+  <text class="codec" x="330" y="227">manifest.json</text>
+  <text class="kc" x="330" y="299">icon PNGs</text>
+  <text class="codec" x="330" y="371">skills/</text>
+  <text class="s" x="90" y="433">zip, then Customize &gt;</text>
+  <text class="s" x="90" y="467">Add &gt; Upload</text>
+
+  <rect x="60" y="540" width="540" height="440" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="s" x="90" y="590">Customize &gt; Added</text>
+  <text class="t" x="90" y="640">dietitian</text>
+  <text class="s" x="90" y="684">Created by The AI Career Lab</text>
+  <rect x="90" y="712" width="70" height="38" rx="19" fill="#24292f"/>
+  <circle cx="141" cy="731" r="14" fill="#ffffff"/>
+  <text class="k" x="178" y="741">Enable dietitian</text>
+  <text class="s" x="90" y="805">Skills</text>
+  <g stroke="#8c959f" stroke-width="2" fill="#f6f8fa">
+    <rect x="90" y="825" width="480" height="56" rx="12"/>
+    <rect x="90" y="895" width="480" height="56" rx="12"/>
+  </g>
+  <text class="codec" x="330" y="862">clinical-nutrition</text>
+  <text class="codec" x="330" y="932">dietary-communication</text>
+
+  <text class="s" x="680" y="205">+ &gt; Upload images and files</text>
+  <rect x="680" y="225" width="480" height="70" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="codec" x="920" y="270">client-intake.docx</text>
+  <g stroke="#8c959f" stroke-width="2" fill="#eaf2ff">
+    <rect x="680" y="385" width="480" height="70" rx="24"/>
+    <rect x="680" y="475" width="480" height="70" rx="24"/>
+    <rect x="680" y="565" width="480" height="70" rx="24"/>
+  </g>
+  <g fill="#24292f">
+    <circle cx="722" cy="420" r="22"/>
+    <circle cx="722" cy="510" r="22"/>
+    <circle cx="722" cy="600" r="22"/>
+  </g>
+  <text class="num" x="722" y="430">2</text>
+  <text class="num" x="722" y="520">3</text>
+  <text class="num" x="722" y="610">4</text>
+  <text class="k" x="760" y="430">Draft the assessment</text>
+  <text class="k" x="760" y="520">Turn it into a handout</text>
+  <text class="k" x="760" y="610">Compile the packet</text>
+
+  <rect x="680" y="790" width="480" height="180" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+  <text class="k" x="705" y="834">DRAFT ONLY. Not medical</text>
+  <text class="r" x="705" y="870">nutrition therapy. A registered</text>
+  <text class="r" x="705" y="906">dietitian must review and</text>
+  <text class="r" x="705" y="942">approve before any client use.</text>
+
+  <text class="t" x="1270" y="155">Workspace</text>
+  <text class="s" x="1270" y="207">References</text>
+  <text class="s" x="1270" y="362">Plugins</text>
+  <text class="s" x="1270" y="800">Output</text>
+  <g stroke="#8c959f" stroke-width="2" fill="#ffffff">
+    <rect x="1270" y="225" width="560" height="70" rx="12"/>
+    <rect x="1270" y="385" width="560" height="70" rx="12"/>
+    <rect x="1270" y="475" width="560" height="70" rx="12"/>
+    <rect x="1270" y="565" width="560" height="70" rx="12"/>
+    <rect x="1270" y="820" width="560" height="120" rx="12"/>
+  </g>
+  <text class="code" x="1295" y="270">client-intake.docx</text>
+  <text class="code" x="1295" y="430">dietitian (clinical-nutrition)</text>
+  <text class="code" x="1295" y="520">dietitian (dietary-communication)</text>
+  <text class="k" x="1295" y="610">Word</text>
+  <text class="s" x="1380" y="610">built-in</text>
+  <text class="s" x="1270" y="692">plugin and built-in skills</text>
+  <text class="s" x="1270" y="726">share one list</text>
+  <text class="code" x="1295" y="868">Client Nutrition Packet -</text>
+  <text class="code" x="1295" y="906">NUT-2041.docx</text>
+
+  <g fill="none" stroke="#24292f" stroke-width="5">
+    <rect x="60" y="100" width="540" height="390" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.01;0.015;0.075;0.08;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="60" y="540" width="540" height="440" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.11;0.115;0.195;0.20;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="680" y="225" width="480" height="70" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.20;0.205;0.235;0.24;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="1270" y="225" width="560" height="70" rx="12" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.27;0.275;0.305;0.31;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="680" y="385" width="480" height="70" rx="24" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.31;0.315;0.345;0.35;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="1270" y="385" width="560" height="70" rx="12" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.38;0.385;0.435;0.44;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="680" y="475" width="480" height="70" rx="24" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.44;0.445;0.475;0.48;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="1270" y="475" width="560" height="70" rx="12" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.51;0.515;0.565;0.57;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="680" y="565" width="480" height="70" rx="24" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.57;0.575;0.605;0.61;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="1270" y="565" width="560" height="70" rx="12" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.64;0.645;0.695;0.70;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="1270" y="820" width="560" height="120" rx="12" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.81;0.815;0.975;0.98;1" values="0;0;1;1;0;0"/>
+    </rect>
+  </g>
+  <rect x="680" y="790" width="480" height="180" rx="16" fill="none" stroke="#e0a534" stroke-width="8" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.74;0.745;0.775;0.78;1" values="0;0;1;1;0;0"/>
+  </rect>
+
+  <g fill="#24292f">
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M330,490 V540" calcMode="linear" keyTimes="0;0.08;0.11;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.08;0.085;0.11;0.115;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1160,260 H1270" calcMode="linear" keyTimes="0;0.24;0.27;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.24;0.245;0.27;0.275;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1160,420 H1270" calcMode="linear" keyTimes="0;0.35;0.38;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.35;0.355;0.38;0.385;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1160,510 H1270" calcMode="linear" keyTimes="0;0.48;0.51;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.48;0.485;0.51;0.515;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1160,600 H1270" calcMode="linear" keyTimes="0;0.61;0.64;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.61;0.615;0.64;0.645;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1790,635 V820" calcMode="linear" keyTimes="0;0.70;0.74;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.70;0.705;0.74;0.745;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1160,880 H1270" calcMode="linear" keyTimes="0;0.78;0.81;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.78;0.785;0.81;0.815;1" values="0;0;1;1;0;0"/>
+    </circle>
+  </g>
+</svg>

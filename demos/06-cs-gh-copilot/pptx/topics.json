@@ -1,0 +1,32 @@
+{
+  "topics": [
+    {
+      "title": "Standard vs. GitHub Copilot Agents",
+      "subtitle": "The New agent menu, coexistence and the one-way rule"
+    },
+    {
+      "title": "The Unified Build Surface and the New Orchestrator",
+      "subtitle": "Four tabs, one components panel and an always-on runtime"
+    },
+    {
+      "title": "Agent Skills in Copilot Studio",
+      "subtitle": "SKILL.md recipes that load when a request matches"
+    },
+    {
+      "title": "Tools, MCP, and the New Workflows Designer",
+      "subtitle": "Connectors, MCP servers and workflows with agent nodes"
+    },
+    {
+      "title": "Grounding Agents with Work IQ, Foundry IQ, and Fabric IQ",
+      "subtitle": "Sources that stay where they live, proven in the trace"
+    },
+    {
+      "title": "Building Apps in Copilot Studio",
+      "subtitle": "Describe, refine by conversation, publish and share"
+    },
+    {
+      "title": "Test and Evaluate Copilot Studio Agents",
+      "subtitle": "Test sets, General quality and a failing case to its fix"
+    }
+  ]
+}

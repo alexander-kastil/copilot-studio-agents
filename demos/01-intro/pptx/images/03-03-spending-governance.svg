@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Spending guardrails for pay-as-you-go</title>
+  <desc id="d">Each user's consumption is a column capped by the per-user limit, the most any one user can consume; the heaviest user stops at that limit. All usage adds up in the tenant total, whose top is the monthly spending limit, the tenant's total ceiling. Alert thresholds sit at set points below that ceiling, and the one already passed has raised its alert before the ceiling is reached.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="110" y="300" font-size="32" font-weight="700" fill="#24292f">Per-user limit</text>
+    <text x="110" y="342" font-size="28" fill="#57606a">The most any one user can consume</text>
+
+    <rect x="140" y="600" width="120" height="260" rx="8" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <rect x="330" y="700" width="120" height="160" rx="8" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <rect x="520" y="380" width="120" height="480" rx="8" fill="#eaf2ff" stroke="#57606a" stroke-width="3"/>
+    <rect x="710" y="540" width="120" height="320" rx="8" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <rect x="900" y="760" width="120" height="100" rx="8" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <line x1="110" y1="380" x2="1050" y2="380" stroke="#e0a534" stroke-width="4" stroke-dasharray="16 10"/>
+    <line x1="110" y1="860" x2="1050" y2="860" stroke="#8c959f" stroke-width="2"/>
+
+    <g fill="#8c959f">
+      <circle cx="200" cy="902" r="16"/>
+      <path d="M170,960 Q170,926 200,926 Q230,926 230,960 Z"/>
+      <circle cx="390" cy="902" r="16"/>
+      <path d="M360,960 Q360,926 390,926 Q420,926 420,960 Z"/>
+      <circle cx="580" cy="902" r="16"/>
+      <path d="M550,960 Q550,926 580,926 Q610,926 610,960 Z"/>
+      <circle cx="770" cy="902" r="16"/>
+      <path d="M740,960 Q740,926 770,926 Q800,926 800,960 Z"/>
+      <circle cx="960" cy="902" r="16"/>
+      <path d="M930,960 Q930,926 960,926 Q990,926 990,960 Z"/>
+    </g>
+
+    <line x1="1072" y1="700" x2="1238" y2="700" stroke="#57606a" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <text x="1380" y="130" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Monthly spending limit</text>
+    <text x="1380" y="172" font-size="28" fill="#57606a" text-anchor="middle">The tenant's total ceiling</text>
+    <rect x="1261" y="500" width="238" height="359" rx="10" fill="#eaf2ff"/>
+    <rect x="1260" y="220" width="240" height="640" rx="12" fill="none" stroke="#8c959f" stroke-width="2"/>
+    <line x1="1230" y1="220" x2="1530" y2="220" stroke="#e0a534" stroke-width="6"/>
+    <line x1="1262" y1="380" x2="1545" y2="380" stroke="#e0a534" stroke-width="3" stroke-dasharray="10 8"/>
+    <line x1="1262" y1="560" x2="1545" y2="560" stroke="#e0a534" stroke-width="3" stroke-dasharray="10 8"/>
+    <circle cx="1565" cy="380" r="13" fill="#ffffff" stroke="#e0a534" stroke-width="3"/>
+    <circle cx="1565" cy="560" r="13" fill="#e0a534" stroke="#e0a534" stroke-width="3"/>
+    <text x="1600" y="458" font-size="30" font-weight="700" fill="#24292f">Alert</text>
+    <text x="1600" y="498" font-size="30" font-weight="700" fill="#24292f">thresholds</text>
+  </g>
+</svg>

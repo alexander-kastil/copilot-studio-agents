@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">What happens when Agentic HR calls the Excel tool in Copilot Chat</title>
+  <desc id="d">A sequence between You, Copilot Chat running Agentic HR, and Excel Online (Business) with Candidates_Table. You send the prompt Show me the list of candidates for HR. Copilot Chat asks permission for the external API, you choose Allow once, Copilot Chat asks you to Sign in to Agentic HR and you sign in. Then the tool List HR candidates runs List rows present in a table, the rows of Candidates_Table come back, and you get the matching candidates.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#24292f">
+    <g stroke="#8c959f" stroke-width="2" stroke-dasharray="8 8">
+      <line x1="260" y1="170" x2="260" y2="1010"/>
+      <line x1="900" y1="170" x2="900" y2="1010"/>
+      <line x1="1560" y1="170" x2="1560" y2="1010"/>
+    </g>
+
+    <rect x="160" y="60" width="200" height="110" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="260" y="126" text-anchor="middle" font-weight="700">You</text>
+    <rect x="700" y="60" width="400" height="110" rx="14" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="900" y="108" text-anchor="middle" font-weight="700">Copilot Chat</text>
+    <text x="900" y="150" text-anchor="middle" fill="#57606a">Agentic HR</text>
+    <rect x="1340" y="60" width="440" height="110" rx="14" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="1560" y="108" text-anchor="middle" font-weight="700">Excel Online (Business)</text>
+    <text x="1560" y="150" text-anchor="middle" font-family="Consolas, monospace" fill="#57606a">Candidates_Table</text>
+
+    <g stroke="#57606a" stroke-width="3" marker-end="url(#ah)">
+      <line x1="260" y1="250" x2="892" y2="250"/>
+      <line x1="900" y1="350" x2="268" y2="350"/>
+      <line x1="260" y1="450" x2="892" y2="450"/>
+      <line x1="900" y1="550" x2="268" y2="550"/>
+      <line x1="260" y1="650" x2="892" y2="650"/>
+      <line x1="900" y1="760" x2="1552" y2="760"/>
+      <line x1="1560" y1="880" x2="908" y2="880"/>
+      <line x1="900" y1="970" x2="268" y2="970"/>
+    </g>
+    <g text-anchor="middle">
+      <text x="580" y="234">Show me the list of candidates for HR</text>
+      <text x="580" y="334">Asks permission for the external API</text>
+      <rect x="480" y="394" width="200" height="46" rx="23" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+      <text x="580" y="428">Allow once</text>
+      <text x="580" y="534">Sign in to Agentic HR</text>
+      <text x="580" y="634">Sign in</text>
+      <text x="1230" y="744" font-weight="700">Tool: List HR candidates</text>
+      <text x="1230" y="802" fill="#57606a">List rows present in a table</text>
+      <text x="1230" y="864">Rows of Candidates_Table</text>
+      <text x="580" y="954" font-weight="700">The matching candidates</text>
+    </g>
+  </g>
+
+  <g stroke="#ffffff" stroke-width="3">
+    <circle r="14" fill="#e0a534" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M260 250 L892 250" keyPoints="0;0;1;1" keyTimes="0;0.042;0.125;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.042;0.125"/>
+    </circle>
+    <circle r="14" fill="#e0a534" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M900 350 L268 350" keyPoints="0;0;1;1" keyTimes="0;0.15;0.233;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.15;0.233"/>
+    </circle>
+    <circle r="14" fill="#e0a534" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M260 450 L892 450" keyPoints="0;0;1;1" keyTimes="0;0.258;0.342;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.258;0.342"/>
+    </circle>
+    <circle r="14" fill="#e0a534" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M900 550 L268 550" keyPoints="0;0;1;1" keyTimes="0;0.367;0.45;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.367;0.45"/>
+    </circle>
+    <circle r="14" fill="#e0a534" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M260 650 L892 650" keyPoints="0;0;1;1" keyTimes="0;0.475;0.558;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.475;0.558"/>
+    </circle>
+    <circle r="14" fill="#e0a534" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M900 760 L1552 760" keyPoints="0;0;1;1" keyTimes="0;0.583;0.667;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.583;0.667"/>
+    </circle>
+    <circle r="14" fill="#2f855a" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1560 880 L908 880" keyPoints="0;0;1;1" keyTimes="0;0.692;0.775;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.692;0.775"/>
+    </circle>
+    <circle r="14" fill="#2f855a" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M900 970 L268 970" keyPoints="0;0;1;1" keyTimes="0;0.8;0.883;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.8;0.883"/>
+    </circle>
+  </g>
+</svg>

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">The run-and-tune loop for a custom skill</title>
+  <desc id="d">A loop of five steps: start a new task so discovery runs at its start; run the skill, first by name, then without naming it; check the result against the template and the source; ask Cowork which phrasings miss the skill and which instruction let weak output through; fold the fixes into SKILL.md and read the Skill Report. Repeat until the skill fires without being named.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="18" markerHeight="18" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <line x1="1180" y1="262" x2="1456" y2="370" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="1540" y1="543" x2="1422" y2="739" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="1122" y1="827" x2="801" y2="827" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="500" y1="742" x2="381" y2="546" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="440" y1="373" x2="735" y2="263" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+    <rect x="740" y="150" width="440" height="170" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <rect x="1358" y="373" width="440" height="170" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <rect x="1122" y="742" width="440" height="170" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <rect x="358" y="742" width="440" height="170" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <rect x="122" y="373" width="440" height="170" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+
+    <rect x="740" y="150" width="440" height="170" rx="18" fill="none" stroke="#e0a534" stroke-width="6" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.02;0.04;0.15;0.17;1" dur="10s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1358" y="373" width="440" height="170" rx="18" fill="none" stroke="#e0a534" stroke-width="6" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.22;0.24;0.35;0.37;1" dur="10s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1122" y="742" width="440" height="170" rx="18" fill="none" stroke="#e0a534" stroke-width="6" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.42;0.44;0.55;0.57;1" dur="10s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="358" y="742" width="440" height="170" rx="18" fill="none" stroke="#e0a534" stroke-width="6" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.62;0.64;0.75;0.77;1" dur="10s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="122" y="373" width="440" height="170" rx="18" fill="none" stroke="#e0a534" stroke-width="6" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.82;0.84;0.95;0.97;1" dur="10s" repeatCount="indefinite"/>
+    </rect>
+
+    <g text-anchor="middle">
+      <text x="960" y="222" font-size="30" font-weight="700" fill="#24292f">Start a new task</text>
+      <text x="960" y="267" font-size="28" fill="#57606a">discovery at its start</text>
+
+      <text x="1578" y="428" font-size="30" font-weight="700" fill="#24292f">Run the skill</text>
+      <text x="1578" y="473" font-size="28" fill="#57606a">by name first, then</text>
+      <text x="1578" y="513" font-size="28" fill="#57606a">without naming it</text>
+
+      <text x="1342" y="797" font-size="30" font-weight="700" fill="#24292f">Check the result</text>
+      <text x="1342" y="842" font-size="28" fill="#57606a">against the template</text>
+      <text x="1342" y="882" font-size="28" fill="#57606a">and the source</text>
+
+      <text x="578" y="797" font-size="30" font-weight="700" fill="#24292f">Ask what misses</text>
+      <text x="578" y="842" font-size="28" fill="#57606a">missed phrasings,</text>
+      <text x="578" y="882" font-size="28" fill="#57606a">the weak instruction</text>
+
+      <text x="342" y="428" font-size="30" font-weight="700" fill="#24292f">Fold the fixes in</text>
+      <text x="342" y="473" font-size="28" fill="#57606a">edit SKILL.md, read</text>
+      <text x="342" y="513" font-size="28" fill="#57606a">the Skill Report</text>
+
+      <text x="960" y="535" font-size="30" font-weight="700" fill="#24292f">Repeat until the skill</text>
+      <text x="960" y="577" font-size="30" font-weight="700" fill="#24292f">fires without being named</text>
+    </g>
+
+    <circle r="12" fill="#e0a534" opacity="0">
+      <animateMotion path="M1180,262 L1450,368" keyPoints="0;0;1;1" keyTimes="0;0.16;0.22;1" calcMode="linear" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.159;0.16;0.22;0.221;1" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="12" fill="#e0a534" opacity="0">
+      <animateMotion path="M1540,543 L1425,734" keyPoints="0;0;1;1" keyTimes="0;0.36;0.42;1" calcMode="linear" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.359;0.36;0.42;0.421;1" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="12" fill="#e0a534" opacity="0">
+      <animateMotion path="M1122,827 L808,827" keyPoints="0;0;1;1" keyTimes="0;0.56;0.62;1" calcMode="linear" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.559;0.56;0.62;0.621;1" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="12" fill="#e0a534" opacity="0">
+      <animateMotion path="M500,742 L385,553" keyPoints="0;0;1;1" keyTimes="0;0.76;0.82;1" calcMode="linear" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.759;0.76;0.82;0.821;1" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="12" fill="#e0a534" opacity="0">
+      <animateMotion path="M440,373 L728,266" keyPoints="0;0;1;1" keyTimes="0;0.96;0.995;1" calcMode="linear" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.959;0.96;0.995;1" dur="10s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

@@ -1,0 +1,58 @@
+mcs.metadata:
+  componentName: VPN won't connect
+  description: Helps employees whose VPN connection fails, with troubleshooting steps for Windows and macOS.
+kind: AdaptiveDialog
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent:
+    displayName: VPN won't connect
+    triggerQueries:
+      - My VPN won't connect
+      - I can't connect to the VPN
+      - VPN connection fails
+
+  actions:
+    - kind: Question
+      id: question_vpnOs1
+      variable: Topic.OperatingSystem
+      prompt: Which operating system do you use?
+      entity:
+        kind: EmbeddedEntity
+        definition:
+          kind: ClosedListEntity
+          optionSetName: VpnOperatingSystems
+          items:
+            - id: windows
+              displayName: Windows
+
+            - id: macos
+              displayName: macOS
+
+    - kind: ConditionGroup
+      id: conditionGroup_vpnOs2
+      conditions:
+        - id: conditionItem_vpnWin3
+          condition: =Topic.OperatingSystem = VpnOperatingSystems.windows
+          actions:
+            - kind: SendActivity
+              id: sendMessage_vpnWin4
+              activity: |-
+                Try these steps on Windows:
+                1. Check that your internet connection works by opening any website.
+                2. Disconnect from the VPN, restart the VPN client and connect again.
+                3. Open Settings, then Network and Internet, then VPN, remove the VPN profile and add it again.
+                4. Restart your computer and try once more.
+
+      elseActions:
+        - kind: SendActivity
+          id: sendMessage_vpnMac5
+          activity: |-
+            Try these steps on macOS:
+            1. Check that your internet connection works by opening any website.
+            2. Quit the VPN client completely, reopen it and connect again.
+            3. Open System Settings, then VPN, remove the VPN configuration and add it again.
+            4. Restart your Mac and try once more.
+
+inputType: {}
+outputType: {}

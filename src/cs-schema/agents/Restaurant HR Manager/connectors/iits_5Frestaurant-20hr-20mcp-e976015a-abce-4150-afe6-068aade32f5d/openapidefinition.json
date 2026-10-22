@@ -1,0 +1,30 @@
+﻿{
+  "swagger": "2.0",
+  "info": {
+    "title": "Restaurant HR MCP",
+    "description": "Knows about employees and how they can be used in our restaurant",
+    "version": "1.0.0"
+  },
+  "host": "hr-mcp-server-copilot.azurewebsites.net",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": "Immediate Response"
+          }
+        },
+        "x-ms-agentic-protocol": "mcp-streamable-1.0",
+        "operationId": "InvokeServer",
+        "summary": "Restaurant HR MCP",
+        "description": "Knows about employees and how they can be used in our restaurant"
+      }
+    }
+  },
+  "securityDefinitions": {},
+  "security": []
+}

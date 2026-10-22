@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Which Entra ID app registration each Security tab field belongs to</title>
+  <desc id="d">The Security tab of the HR-Services custom connector. Client ID, Client secret and the Redirect URL belong to the HR-Service-Consumer registration, which represents the custom connector, requests HR.Consume and holds the client secret. Tenant ID is your tenant. Resource URL, api://Client-Id-of-HR-Service-API, and the scope HR.Consume belong to the HR-Service-API registration, which represents the API itself and exposes HR.Consume. The consumer holds a delegated permission on HR.Consume.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse">
+      <path d="M0,0 L12,6 L0,12 z" fill="#8c959f"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="70" y="100" width="980" height="880" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="104" y="160" font-size="32" font-weight="700" fill="#24292f">HR-Services <tspan font-size="28" font-weight="400" fill="#57606a">custom connector, Security tab</tspan></text>
+
+    <rect x="94" y="196" width="932" height="116" rx="10" fill="#eaf2ff"/>
+    <rect x="94" y="324" width="932" height="116" rx="10" fill="#eaf2ff"/>
+    <rect x="94" y="452" width="932" height="116" rx="10" fill="#eaf2ff"/>
+    <rect x="94" y="580" width="932" height="116" rx="10" fill="#f6f8fa"/>
+    <rect x="94" y="708" width="932" height="116" rx="10" fill="#e9f7ef"/>
+    <rect x="94" y="836" width="932" height="116" rx="10" fill="#e9f7ef"/>
+
+    <g font-size="28" font-weight="700" fill="#24292f">
+      <text x="120" y="264">Client ID</text>
+      <text x="120" y="392">Client secret</text>
+      <text x="120" y="520">Redirect URL</text>
+      <text x="120" y="648">Tenant ID</text>
+      <text x="120" y="776">Resource URL</text>
+      <text x="120" y="904">Scope</text>
+    </g>
+    <g font-size="28" fill="#57606a">
+      <text x="380" y="264">client ID of HR-Service-Consumer</text>
+      <text x="380" y="392">secret value of HR-Service-Consumer</text>
+      <text x="380" y="506">shown after Create connector, added</text>
+      <text x="380" y="544">to HR-Service-Consumer as a Web platform</text>
+      <text x="380" y="648">your tenant ID</text>
+    </g>
+    <g font-family="Consolas, Menlo, monospace" font-size="28" fill="#24292f">
+      <text x="380" y="776">api://&lt;Client-Id-of-HR-Service-API&gt;</text>
+      <text x="380" y="904">HR.Consume</text>
+    </g>
+
+    <g stroke="#8c959f" stroke-width="2" fill="none">
+      <line x1="1026" y1="254" x2="1300" y2="220"/>
+      <line x1="1026" y1="382" x2="1300" y2="300"/>
+      <line x1="1026" y1="510" x2="1300" y2="380"/>
+      <line x1="1026" y1="766" x2="1300" y2="740"/>
+      <line x1="1026" y1="894" x2="1300" y2="830"/>
+    </g>
+    <g fill="#8c959f">
+      <circle cx="1026" cy="254" r="7"/>
+      <circle cx="1026" cy="382" r="7"/>
+      <circle cx="1026" cy="510" r="7"/>
+      <circle cx="1026" cy="766" r="7"/>
+      <circle cx="1026" cy="894" r="7"/>
+      <circle cx="1300" cy="220" r="7"/>
+      <circle cx="1300" cy="300" r="7"/>
+      <circle cx="1300" cy="380" r="7"/>
+      <circle cx="1300" cy="740" r="7"/>
+      <circle cx="1300" cy="830" r="7"/>
+    </g>
+
+    <rect x="1300" y="140" width="550" height="330" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <rect x="1300" y="640" width="550" height="300" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <g font-size="32" font-weight="700" fill="#24292f">
+      <text x="1336" y="204">HR-Service-Consumer</text>
+      <text x="1336" y="704">HR-Service-API</text>
+    </g>
+    <g font-size="28" fill="#57606a">
+      <text x="1336" y="262">app registration that</text>
+      <text x="1336" y="302">represents the connector,</text>
+      <text x="1336" y="342">requests <tspan font-family="Consolas, Menlo, monospace" fill="#24292f">HR.Consume</tspan> and</text>
+      <text x="1336" y="382">holds the client secret</text>
+      <text x="1336" y="762">app registration that</text>
+      <text x="1336" y="802">represents the API itself</text>
+      <text x="1336" y="842">and exposes <tspan font-family="Consolas, Menlo, monospace" fill="#24292f">HR.Consume</tspan></text>
+    </g>
+
+    <line x1="1450" y1="470" x2="1450" y2="634" stroke="#8c959f" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="1476" y="548" font-size="28" fill="#24292f">delegated permission</text>
+    <text x="1476" y="586" font-size="28" fill="#24292f" font-family="Consolas, Menlo, monospace">HR.Consume</text>
+  </g>
+</svg>

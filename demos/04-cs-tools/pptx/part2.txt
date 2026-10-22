@@ -1,0 +1,89 @@
+Apply the Integrations House theme: Montserrat bold headings, Poppins body, #1B365D accent. Create exactly 8 cards, one per section below, in this order. Keep the card text exactly as given. The Image and Layout lines are instructions, never visible text. Use exactly the one image URL given for each card; do not generate or add any other images, icons or logos. Keep body text at the normal body size on every card; never shrink text to fit.
+
+# How the agent fills tool inputs
+### Dynamically fill with AI or a custom value, per input
+- **Dynamically fill with AI** (the default) takes the value from the conversation or asks for it
+- A **custom value** is fixed: a value, a variable or a formula such as `System.User.Email`
+- The Teams tool keeps Post as, Post in and Post message request on dynamic filling
+- The orchestrator chooses the tool by its **name and description**, so rename it after Add and configure
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/04-cs-tools/03-02-fill-inputs.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Whose credentials a tool uses
+### End user credentials ask each person to connect once
+- **End user credentials** (the default): each person connects on first use and acts with their own access
+- **Maker-provided credentials** run every call with the author's access
+- Maker-provided credentials need an **authenticated channel**, and admins can turn them off
+- The Publish dialog then warns: "Your agent runs tools that use the author's credentials."
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/04-cs-tools/03-03-connect-to-continue.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# The Health Advisor's two agent flows
+### A prompt step classifies, a review step guards the post
+- **Check Symptoms** branches on the Outcome of CS-Summarize Patient Symptoms, and **CS-Post to teams** answers the agent at once, then waits for a reviewer
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/04-cs-tools/health-advisor-flows-overview.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Full-width diagram. Title and subtitle at the top, the provided diagram across the whole card width below them at its natural aspect ratio, never cropped, never a background, then the single bullet as one caption line under the diagram.
+
+---
+
+# A prompt step inside an agent flow
+### CS-Classify Patient Symptoms classifies, the topic branches
+- **Run a prompt** makes one model call at a fixed point in the flow
+- The prompt reads only its **instructions** and the age, gender and symptoms it is given
+- With 34, female and mild symptoms, the answer ends "Patient is cleared for light work and movement."
+- **Respond to the agent** returns that text as Outcome, and the topic branches on it
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/04-cs-tools/04-02-prompt-step.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# A reviewer before the Teams post
+### The agent gets its answer first, the post waits for a person
+- **Respond to the agent** sits right below the trigger, so the chat gets its answer at once
+- **Request for information** emails the reviewer a Posting Control request through Outlook
+- The flow posts to the Teams channel only after the reviewer selects **Submit**
+- An agent waits at most 100 seconds for a flow; the review step runs on after the response
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/04-cs-tools/04-03-reviewer-before-post.jpg?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Text on the left half on plain white, the photograph as a side accent filling the right half, no text over it.
+
+---
+
+# Live stock from the food catalog API
+### An OpenAPI file becomes CS-Food Catalog and three tools
+- The **REST API tool** wizard turns cs-food-catalog.json into the CS-Food Catalog custom connector
+- Three of seven operations become tools: CS-Gets all food, CS-Add food and CS-Update food stock quantity
+- UpdateFood, the two lookups and **Delete food item** stay out
+- Calculate order quantity now reads **CS-Gets all food** instead of Set sample stock
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/04-cs-tools/food-catalog-rest-connector-overview.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Tool descriptions the orchestrator routes on
+### A description can also set the call order
+- Each description names the **job**, the data and when to use the tool
+- "Look the dish up with CS-Gets all food first" sets the **call order**
+- Without that line the agent guessed an id and got **Not Found**
+- The wizard asks for a description of **every input and output** before Next turns on
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/04-cs-tools/05-02-tool-description.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Booking a delivery in one sentence
+### The orchestrator chains a lookup and an update
+- "We just received 12 portions of Schweinshaxe mit Kraut" makes the agent **look up the dish, then add 12 to its stock**: 24 portions on the seeded database
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/04-cs-tools/05-03-booking-delivery.jpg?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Statement. Title at the top; the single bullet as one large sentence across the left two thirds; the provided image as a side accent in the right third, no text over it.

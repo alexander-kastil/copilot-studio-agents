@@ -1,0 +1,7 @@
+mcs.metadata:
+  componentName: HR Documents
+  description: Human Resources related info
+kind: KnowledgeSourceConfiguration
+source:
+  kind: SharePointSearchSource
+  site: https://integrationsonline.sharepoint.com/sites/copilot-demo/HRDocuments

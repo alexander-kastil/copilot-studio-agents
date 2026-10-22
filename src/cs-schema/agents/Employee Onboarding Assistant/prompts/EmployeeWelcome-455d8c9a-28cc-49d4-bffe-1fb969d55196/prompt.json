@@ -1,0 +1,35 @@
+﻿{
+  "name": "Employee Welcome",
+  "instruction": "You are tasked with generating a personalized welcome message for an employee and providing a brief, mock explanation of their department.\n\n### Instructions:\n1. Use the provided EmployeeName to create a warm and friendly welcome message.\n2. Use the provided Department name to generate a short, plausible explanation or description of that department\u2019s role or function within a company.\n3. Combine both elements into a coherent and engaging message that feels personalized and informative.\n\n### Output Format:\nProvide the output as a natural language text message that includes:\n- A welcome greeting addressing the employee by name.\n- A brief explanation of the department they belong to.\n\nProvide the following inputs:\n\n-  {{EmployeeName}}   {{Department_20}} \n\n",
+  "model": "gpt-5-chat",
+  "modelParameters": {
+    "gptParameters": {
+      "temperature": 0
+    }
+  },
+  "inputs": [
+    {
+      "id": "EmployeeName",
+      "text": "EmployeeName",
+      "type": "text",
+      "quickTestValue": "Johanna Kurz"
+    },
+    {
+      "id": "Department_20",
+      "text": "Department ",
+      "type": "text",
+      "quickTestValue": "Marketing"
+    }
+  ],
+  "output": {
+    "formats": [
+      "text"
+    ]
+  },
+  "settings": {
+    "recordRetrievalLimit": 30,
+    "shouldPreserveRecordLinks": null,
+    "runtime": null
+  },
+  "version": "GptDynamicPrompt-2"
+}

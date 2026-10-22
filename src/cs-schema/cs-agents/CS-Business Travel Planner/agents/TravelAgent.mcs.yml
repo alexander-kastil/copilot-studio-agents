@@ -1,0 +1,11 @@
+mcs.metadata:
+  componentName: CS-Travel Agent
+  description: "Books business trips: collects the destination, the travel date and the number of travelers, and gives travel information and sightseeing tips for the destination. Does not handle health questions, expense claims or gym benefits."
+kind: TaskDialog
+modelDisplayName: CS-Travel Agent
+modelDescription: "Books business trips: collects the destination, the travel date and the number of travelers, and gives travel information and sightseeing tips for the destination. Does not handle health questions, expense claims or gym benefits."
+action:
+  kind: InvokeConnectedAgentTaskAction
+  botSchemaName: cr915_CSTravelAgent
+  historyType:
+    kind: ConversationHistory

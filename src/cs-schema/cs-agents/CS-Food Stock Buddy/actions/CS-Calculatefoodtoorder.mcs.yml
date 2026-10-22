@@ -1,0 +1,21 @@
+mcs.metadata:
+  componentName: CS-Calculate food to order
+kind: TaskDialog
+inputs:
+  - kind: AutomaticTaskInput
+    propertyName: foodDemand
+    name: foodDemand
+    shouldPromptUser: true
+
+  - kind: AutomaticTaskInput
+    propertyName: foodStock
+    name: foodStock
+    shouldPromptUser: true
+
+modelDisplayName: CS-Calculate food to order
+modelDescription: Calculate food to order
+action:
+  kind: InvokeAIBuilderModelTaskAction
+  aIModelId: ca34d1e4-0310-41f0-8210-1e36afa2b430
+
+outputMode: All

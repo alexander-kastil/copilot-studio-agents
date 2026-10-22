@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Publish decides the version, Share decides the people</title>
+  <desc id="d">A timeline of the maker's changes with two publish points. App users see the first published version until the maker publishes again, so changes made after publishing stay hidden until then. Share decides who the app users are: the people who can open and use the app.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+    <style>
+      .h{font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:34px;font-weight:600;fill:#24292f}
+      .p{font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:30px;font-weight:600;fill:#24292f}
+      .v{font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:30px;fill:#24292f}
+      .b{font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:28px;fill:#57606a}
+      .box{stroke:#8c959f;stroke-width:2}
+      .pill{fill:#fff6e5;stroke:#e0a534;stroke-width:3}
+      .track{stroke:#8c959f;stroke-width:4;fill:none}
+      .arrow{stroke:#57606a;stroke-width:3;fill:none}
+      .drop{stroke:#57606a;stroke-width:3;stroke-dasharray:10 8;fill:none}
+      .dot{fill:#ffffff;stroke:#57606a;stroke-width:3}
+    </style>
+  </defs>
+
+  <rect class="box" x="70" y="180" width="300" height="180" rx="22" fill="#eaf2ff"/>
+  <text class="h" x="110" y="258">Maker</text>
+  <text class="b" x="110" y="305">Builds and tests</text>
+
+  <line class="track" x1="400" y1="270" x2="700" y2="270"/>
+  <line class="track" x1="900" y1="270" x2="1205" y2="270"/>
+  <line class="track" x1="1495" y1="270" x2="1846" y2="270" marker-end="url(#ah)"/>
+
+  <circle class="dot" cx="480" cy="270" r="16"/>
+  <circle class="dot" cx="610" cy="270" r="16"/>
+  <circle class="dot" cx="1000" cy="270" r="16"/>
+  <circle class="dot" cx="1110" cy="270" r="16"/>
+  <text class="b" x="480" y="225" text-anchor="middle">Change</text>
+  <text class="b" x="610" y="225" text-anchor="middle">Change</text>
+  <text class="b" x="1000" y="225" text-anchor="middle">Change</text>
+  <text class="b" x="1110" y="225" text-anchor="middle">Change</text>
+
+  <rect class="pill" x="700" y="232" width="200" height="76" rx="38"/>
+  <text class="p" x="800" y="281" text-anchor="middle">Publish</text>
+  <rect class="pill" x="1205" y="232" width="290" height="76" rx="38"/>
+  <text class="p" x="1350" y="281" text-anchor="middle">Publish again</text>
+
+  <path d="M960,312 V332 H1150 V312" fill="none" stroke="#57606a" stroke-width="2"/>
+  <text class="b" x="1055" y="380" text-anchor="middle">Hidden from app users</text>
+  <text class="b" x="1055" y="418" text-anchor="middle">until you publish again</text>
+
+  <line class="drop" x1="800" y1="308" x2="800" y2="609" marker-end="url(#ah)"/>
+  <line class="drop" x1="1350" y1="308" x2="1350" y2="609" marker-end="url(#ah)"/>
+
+  <rect class="box" x="70" y="560" width="300" height="200" rx="22" fill="#e9f7ef"/>
+  <text class="h" x="110" y="630">App users</text>
+  <text class="b" x="110" y="680">The people you</text>
+  <text class="b" x="110" y="718">share with</text>
+
+  <rect x="400" y="615" width="390" height="90" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2" stroke-dasharray="10 8"/>
+  <text class="b" x="595" y="672" text-anchor="middle">Not published yet</text>
+  <rect class="box" x="800" y="615" width="540" height="90" rx="14" fill="#e9f7ef"/>
+  <text class="v" x="1070" y="672" text-anchor="middle">First published version</text>
+  <rect class="box" x="1350" y="615" width="500" height="90" rx="14" fill="#e9f7ef"/>
+  <text class="v" x="1600" y="672" text-anchor="middle">Latest published version</text>
+
+  <line class="arrow" x1="220" y1="840" x2="220" y2="766" marker-end="url(#ah)"/>
+  <rect class="pill" x="70" y="840" width="300" height="76" rx="38"/>
+  <text class="p" x="220" y="889" text-anchor="middle">Share</text>
+  <text class="b" x="400" y="889">Decides who can open and use the app</text>
+</svg>

@@ -1,0 +1,23 @@
+displayName: Health Agent v2
+schemaName: iits_healthagent_zXeueq
+accessControlPolicy: GroupMembership
+authenticationMode: Integrated
+authenticationTrigger: Always
+configuration:
+  recognizer:
+    kind: CLICopilotRecognizer
+
+  agentSettings:
+    model:
+      series: GPT5Chat
+
+    instructions:
+      segments:
+        - kind: StaticSegment
+          value: when the user reports healt issues run CheckSymptoms​.‌ If there are some parameters missing ask the user for it​‌
+
+    web:
+      enableWebSearch: false
+
+template: cliagent-1.0.0
+language: 1033

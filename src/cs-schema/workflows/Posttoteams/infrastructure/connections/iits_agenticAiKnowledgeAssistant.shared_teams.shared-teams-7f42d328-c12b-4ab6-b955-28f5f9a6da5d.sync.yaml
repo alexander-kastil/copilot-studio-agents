@@ -1,0 +1,3 @@
+connectionReferences:
+  - connectionReferenceLogicalName: iits_agenticAiKnowledgeAssistant.shared_teams.shared-teams-7f42d328-c12b-4ab6-b955-28f5f9a6da5d
+    connectorId: /providers/Microsoft.PowerApps/apis/shared_teams

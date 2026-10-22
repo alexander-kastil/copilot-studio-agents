@@ -1,0 +1,12 @@
+mcs.metadata:
+  componentName: CS-Post to teams
+kind: TaskDialog
+action:
+  kind: InvokeFlowTaskAction
+  flowId: 0afefe22-8acd-f111-a05a-7c1e528616d5
+  connectionProperties:
+    $kind: ConnectionProperties
+    diagnostics:
+    mode: Invoker
+
+outputMode: All

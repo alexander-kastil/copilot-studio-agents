@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+<title id="t">Two runs of the identical set with one change between them</title>
+<desc id="d">Run 1, the baseline, and Run 2 share the knowledge source Northwind sales reference, the Northwind regression set, the General quality test method and the user profile you confirmed. The one change is the Instructions, from agent-instructions-v1.txt to agent-instructions-v2.txt. Run 1 records a baseline Score and verdicts in the scorecard; Run 2 compares its Score to Run 1 and marks every case that flipped.</desc>
+<rect width="1920" height="1080" fill="#ffffff"/>
+<defs>
+<style>
+.h{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#24292f;font-weight:600}
+.r{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#24292f}
+.s{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#57606a}
+.c{font-family:Consolas,Menlo,monospace;fill:#24292f}
+.e{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#57606a;font-weight:600}
+</style>
+<marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+</defs>
+
+<rect x="560" y="70" width="590" height="84" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="855" y="124" font-size="32" text-anchor="middle">Run 1: the baseline</text>
+<rect x="1270" y="70" width="590" height="84" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="1565" y="124" font-size="32" text-anchor="middle">Run 2: after one change</text>
+
+<text class="h" x="80" y="245" font-size="30">Knowledge source</text>
+<rect x="560" y="180" width="590" height="110" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="r" x="855" y="245" font-size="28" text-anchor="middle">Northwind sales reference</text>
+<text class="e" x="1210" y="250" font-size="44" text-anchor="middle">=</text>
+<rect x="1270" y="180" width="590" height="110" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="r" x="1565" y="245" font-size="28" text-anchor="middle">Northwind sales reference</text>
+
+<text class="h" x="80" y="377" font-size="30">Test set</text>
+<rect x="560" y="312" width="590" height="110" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="r" x="855" y="377" font-size="28" text-anchor="middle">Northwind regression set</text>
+<text class="e" x="1210" y="382" font-size="44" text-anchor="middle">=</text>
+<rect x="1270" y="312" width="590" height="110" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="r" x="1565" y="377" font-size="28" text-anchor="middle">Northwind regression set</text>
+
+<text class="h" x="80" y="509" font-size="30">Test method</text>
+<rect x="560" y="444" width="590" height="110" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="r" x="855" y="509" font-size="28" text-anchor="middle">General quality</text>
+<text class="e" x="1210" y="514" font-size="44" text-anchor="middle">=</text>
+<rect x="1270" y="444" width="590" height="110" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="r" x="1565" y="509" font-size="28" text-anchor="middle">General quality</text>
+
+<text class="h" x="80" y="641" font-size="30">User profile</text>
+<rect x="560" y="576" width="590" height="110" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="r" x="855" y="641" font-size="28" text-anchor="middle">the profile you confirmed</text>
+<text class="e" x="1210" y="646" font-size="44" text-anchor="middle">=</text>
+<rect x="1270" y="576" width="590" height="110" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="r" x="1565" y="641" font-size="28" text-anchor="middle">the profile you confirmed</text>
+
+<text class="h" x="80" y="757" font-size="30">Instructions</text>
+<text class="s" x="80" y="795" font-size="28">the one change</text>
+<rect x="560" y="708" width="590" height="110" rx="14" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text class="c" x="855" y="773" font-size="28" text-anchor="middle">agent-instructions-v1.txt</text>
+<path d="M1158,763 H1262" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="1270" y="708" width="590" height="110" rx="14" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text class="c" x="1565" y="773" font-size="28" text-anchor="middle">agent-instructions-v2.txt</text>
+
+<text class="h" x="80" y="935" font-size="30">Result</text>
+<rect x="560" y="860" width="590" height="150" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="855" y="922" font-size="28" text-anchor="middle">Baseline Score</text>
+<text class="s" x="855" y="964" font-size="28" text-anchor="middle">verdicts in the scorecard</text>
+<text class="e" x="1210" y="945" font-size="30" text-anchor="middle">vs</text>
+<rect x="1270" y="860" width="590" height="150" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="1565" y="922" font-size="28" text-anchor="middle">Score compared to Run 1</text>
+<text class="s" x="1565" y="964" font-size="28" text-anchor="middle">every flipped case marked</text>
+</svg>

@@ -1,0 +1,49 @@
+mcs.metadata:
+  componentName: Computer use - Computer use
+kind: TaskDialog
+inputs:
+  - kind: AutomaticTaskInput
+    propertyName: clientName
+    name: ClientName
+    description: The client name exactly as it appears in the Client Name column, for example Fourth Coffee or Northwind Traders.
+
+modelDisplayName: CS-Look up portfolio
+modelDescription: Looks up the portfolio manager and portfolio value of a client in the Financial Portfolio Dashboard, a web app without an API. Use it when a user asks who manages a client's portfolio or what it is worth.
+action:
+  kind: InvokeComputerUsingAgentTaskAction
+  connectionReference: iits_CSContosoITHelpDesk.shared_computeroperator.06d475747a294d23a1ffa69158f872e5
+  connectionProperties:
+    mode: Maker
+
+  operationId: ComputerOperatorInvokeMcpCua
+  instructions: |-
+    1. Go to https://computerusedemos.blob.core.windows.net/web/Portfolio/index.html.
+    2. Find the row whose Client Name matches the ClientName input and record the Manager name and the Portfolio Value exactly as shown.
+    3. Return those two values as plain text in the form: Manager: <name>, Value: <value>.
+  inputType:
+    properties:
+      clientName:
+        displayName: ClientName
+        description: The client name exactly as it appears in the Client Name column, for example Fourth Coffee or Northwind Traders.
+        isRequired: true
+        type: String
+
+  model:
+    modelNameHint: sonnet4-5
+
+  initializeContext:
+    enforceHttps: true
+    requestForInformationInput:
+      assignedTo:
+        233a6446-c176-4ee3-8287-218af80bef74:
+          email: alexander.kastil@integrations.at
+          id: 233a6446-c176-4ee3-8287-218af80bef74
+
+      timeToCompleteInMinutes: 60
+      version: 2
+
+  allowlist:
+    websites:
+      - computerusedemos.blob.core.windows.net
+    desktopApps:
+      - Microsoft Edge

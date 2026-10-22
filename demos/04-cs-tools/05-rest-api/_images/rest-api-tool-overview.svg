@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">The Grey Logistics IT Help Desk reaches the Nager.Date holiday API from a topic and from a REST API tool</title>
+  <desc id="d">At the top, two sets of questions. Left, Exercise 1: "Which public holidays do we have this year?", answered with the country AT. Right, Exercise 4: "Is 8 December 2026 a public holiday in Austria?" and Exercise 5: "List the public holidays in Austria for 2027." Both reach the Grey Logistics IT Help Desk, which runs the topic at a fixed point and fills the tool inputs from the user's words. Left path, the Public holidays topic: 1, a Question node saves CountryCode; 2, Send HTTP request with GET builds its URL with Text(Year(Today())), so it covers the current year only; 3, a Message node answers "20 holidays this year: 2026-01-01 New Year's Day; ...". Right path, the Get public holidays REST API tool (preview): 1, public-holidays.json, an OpenAPI 2.0 file (Exercise 2); 2, the REST API wizard turns the GetPublicHolidays operation into the tool (Exercise 3); 3, Dynamically fill with AI sets year: 2027 and countryCode: AT. Both paths end at the Nager.Date public holiday API, which needs no key, at https://date.nager.at/api/v3/PublicHolidays/{year}/{countryCode}. A dot travels down the topic path first, then down the tool path.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .code { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; }
+      .cs { font-family: Consolas, 'Courier New', monospace; font-size: 26px; font-weight: 700; }
+      .csc { font-family: Consolas, 'Courier New', monospace; font-size: 26px; font-weight: 700; text-anchor: middle; }
+      .m { font-size: 28px; }
+      .num { font-size: 28px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .s { font-size: 28px; fill: #57606a; }
+      .se { font-size: 28px; fill: #57606a; text-anchor: end; }
+      .t { font-size: 30px; font-weight: 600; }
+      .tag { font-size: 26px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .tc { font-size: 30px; font-weight: 600; text-anchor: middle; }
+      .ts { font-size: 28px; font-weight: 600; }
+      .xm { font-size: 26px; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="60" y="390" width="840" height="440" rx="20" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1020" y="390" width="840" height="440" rx="20" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+
+  <polyline points="480,200 480,240" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <polyline points="480,340 480,390" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <polyline points="480,830 480,890" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <polyline points="1440,200 1440,240" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <polyline points="1440,340 1440,390" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <polyline points="1440,830 1440,890" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="60" y="50" width="840" height="150" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1020" y="50" width="840" height="150" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="60" y="240" width="1800" height="100" rx="20" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="84" y="462" width="792" height="76" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="84" y="554" width="792" height="122" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="160" y="618" width="304" height="44" rx="10" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <rect x="84" y="692" width="792" height="122" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1044" y="462" width="792" height="76" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1044" y="554" width="792" height="122" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1044" y="692" width="792" height="122" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1120" y="756" width="452" height="44" rx="10" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <rect x="60" y="890" width="1800" height="140" rx="20" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+
+  <rect x="84" y="72" width="78" height="38" rx="19" fill="#24292f"/>
+  <rect x="1044" y="72" width="78" height="38" rx="19" fill="#24292f"/>
+  <rect x="1044" y="132" width="78" height="38" rx="19" fill="#24292f"/>
+  <circle cx="124" cy="500" r="22" fill="#24292f"/>
+  <circle cx="124" cy="615" r="22" fill="#24292f"/>
+  <circle cx="124" cy="753" r="22" fill="#24292f"/>
+  <circle cx="1084" cy="500" r="22" fill="#24292f"/>
+  <rect x="1736" y="481" width="78" height="38" rx="19" fill="#24292f"/>
+  <circle cx="1084" cy="615" r="22" fill="#24292f"/>
+  <rect x="1736" y="573" width="78" height="38" rx="19" fill="#24292f"/>
+  <circle cx="1084" cy="753" r="22" fill="#24292f"/>
+
+  <text class="tag" x="123" y="99">Ex 1</text>
+  <text class="m" x="180" y="101">Which public holidays do we have this year?</text>
+  <text class="s" x="180" y="160">country: AT</text>
+  <text class="tag" x="1083" y="99">Ex 4</text>
+  <text class="m" x="1140" y="101">Is 8 December 2026 a public holiday in Austria?</text>
+  <text class="tag" x="1083" y="159">Ex 5</text>
+  <text class="m" x="1140" y="161">List the public holidays in Austria for 2027.</text>
+  <text class="tc" x="960" y="302">Grey Logistics IT Help Desk</text>
+  <text class="s" x="90" y="302">runs the topic at a fixed point</text>
+  <text class="se" x="1830" y="302">fills the tool inputs from the user's words</text>
+  <text class="t" x="84" y="438">Public holidays topic</text>
+  <text class="num" x="124" y="510">1</text>
+  <text class="ts" x="166" y="510">Question node</text>
+  <text class="cs" x="400" y="510">CountryCode</text>
+  <text class="num" x="124" y="625">2</text>
+  <text class="ts" x="166" y="600">Send HTTP request, GET</text>
+  <text class="cs" x="172" y="649">Text(Year(Today()))</text>
+  <text class="s" x="484" y="649">the current year only</text>
+  <text class="num" x="124" y="763">3</text>
+  <text class="ts" x="166" y="738">Message node</text>
+  <text class="xm" x="166" y="786">20 holidays this year: 2026-01-01 New Year's Day; ...</text>
+  <text class="t" x="1044" y="438">Get public holidays</text>
+  <text class="s" x="1360" y="438">REST API tool (preview)</text>
+  <text class="num" x="1084" y="510">1</text>
+  <text class="code" x="1126" y="510">public-holidays.json</text>
+  <text class="s" x="1460" y="510">OpenAPI 2.0</text>
+  <text class="tag" x="1775" y="508">Ex 2</text>
+  <text class="num" x="1084" y="625">2</text>
+  <text class="ts" x="1126" y="600">REST API wizard</text>
+  <text class="cs" x="1126" y="649">GetPublicHolidays</text>
+  <text class="s" x="1400" y="649">operation becomes the tool</text>
+  <text class="tag" x="1775" y="600">Ex 3</text>
+  <text class="num" x="1084" y="763">3</text>
+  <text class="ts" x="1126" y="738">Dynamically fill with AI</text>
+  <text class="cs" x="1132" y="787">year: 2027   countryCode: AT</text>
+  <text class="tc" x="960" y="946">Nager.Date public holiday API, no key</text>
+  <text class="csc" x="960" y="996">https://date.nager.at/api/v3/PublicHolidays/{year}/{countryCode}</text>
+
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M480,200 L480,240" calcMode="linear" keyTimes="0;0.04;1" keyPoints="0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.04;0.043;1" values="1;1;0;0"/>
+  </circle>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M480,340 L480,390" calcMode="linear" keyTimes="0;0.07;0.11;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.07;0.073;0.11;0.113;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="160" y="618" width="304" height="44" rx="10" fill="none" stroke="#e0a534" stroke-width="6" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.11;0.122;0.218;0.23;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M480,830 L480,890" calcMode="linear" keyTimes="0;0.23;0.28;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.23;0.233;0.28;0.283;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="60" y="890" width="1800" height="140" rx="20" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.28;0.292;0.348;0.36;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M1440,200 L1440,240" calcMode="linear" keyTimes="0;0.45;0.49;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.45;0.453;0.49;0.493;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M1440,340 L1440,390" calcMode="linear" keyTimes="0;0.52;0.56;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.52;0.523;0.56;0.563;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1120" y="756" width="452" height="44" rx="10" fill="none" stroke="#e0a534" stroke-width="6" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.56;0.572;0.668;0.68;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M1440,830 L1440,890" calcMode="linear" keyTimes="0;0.68;0.73;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.68;0.683;0.73;0.733;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="60" y="890" width="1800" height="140" rx="20" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.73;0.742;0.798;0.81;1" values="0;0;1;1;0;0"/>
+  </rect>
+</svg>

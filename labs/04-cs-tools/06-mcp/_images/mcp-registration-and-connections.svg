@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">One MCP tool registration, one connection per context</title>
+  <desc id="d">At the top, one MCP tool registration named HR MCP Server, a single definition in the Copilot Dev Camp environment with Authentication None. It is used from two contexts, each with its own per-user connection: the Copilot Studio test panel, where Not connected leads to Create a new connection, and Microsoft 365 Copilot, where Open connection manager leads to connect and Retry. Both connections reach the same HR MCP Server at https://human-resource-mcp.azurewebsites.net.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse">
+      <path d="M0,0 L12,6 L0,12 z" fill="#8c959f"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <g stroke="#8c959f" stroke-width="2" fill="none" marker-end="url(#arrow)">
+      <line x1="760" y1="290" x2="530" y2="414"/>
+      <line x1="1160" y1="290" x2="1390" y2="414"/>
+      <line x1="530" y1="680" x2="760" y2="794"/>
+      <line x1="1390" y1="680" x2="1160" y2="794"/>
+    </g>
+
+    <rect x="510" y="70" width="900" height="220" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="960" y="132" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">MCP tool registration <tspan font-family="Consolas, Menlo, monospace" font-size="30">HR MCP Server</tspan></text>
+    <text x="960" y="182" font-size="28" fill="#57606a" text-anchor="middle">one definition in the <tspan fill="#24292f" font-family="Consolas, Menlo, monospace">Copilot Dev Camp</tspan> environment</text>
+    <text x="960" y="232" font-size="28" fill="#57606a" text-anchor="middle">Authentication: None</text>
+
+    <rect x="140" y="420" width="780" height="260" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="176" y="484" font-size="32" font-weight="700" fill="#24292f">Copilot Studio test panel</text>
+    <rect x="176" y="514" width="708" height="134" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="206" y="566" font-size="28" font-weight="700" fill="#24292f">its own connection, per user</text>
+    <text x="206" y="614" font-size="28" fill="#57606a">Not connected, then Create a new connection</text>
+
+    <rect x="1000" y="420" width="780" height="260" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1036" y="484" font-size="32" font-weight="700" fill="#24292f">Microsoft 365 Copilot</text>
+    <rect x="1036" y="514" width="708" height="134" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1066" y="566" font-size="28" font-weight="700" fill="#24292f">its own connection, per user</text>
+    <text x="1066" y="614" font-size="28" fill="#57606a">Open connection manager, connect, Retry</text>
+
+    <rect x="510" y="800" width="900" height="180" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="960" y="862" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">HR MCP Server <tspan font-size="28" font-weight="400" fill="#57606a">Streamable HTTP</tspan></text>
+    <text x="960" y="918" font-size="28" fill="#24292f" text-anchor="middle" font-family="Consolas, Menlo, monospace">https://human-resource-mcp.azurewebsites.net</text>
+  </g>
+</svg>

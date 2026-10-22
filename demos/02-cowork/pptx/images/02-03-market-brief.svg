@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">From market research to a leadership PDF in four steps</title>
+  <desc id="d">Step 1 researches the outdoor market with the Deep Research skill and returns three or four cited trends. Step 2 holds the research against internal-positioning.docx and returns a gap analysis of where Aurora is aligned and where it is exposed. Step 3 writes a two-page Word brief in four sections. Step 4 adds three ranked moves, one marked Top pick, and the Word skill saves the brief and exports it as a PDF for leadership.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="18" markerHeight="18" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="80" y="120" width="380" height="120" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="270" y="170" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">The outdoor market</text>
+    <text x="270" y="214" font-size="28" fill="#57606a" text-anchor="middle">current trends</text>
+    <rect x="490" y="120" width="480" height="120" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="730" y="170" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Your own positioning</text>
+    <text x="730" y="214" font-size="28" font-family="Consolas, Menlo, monospace" fill="#57606a" text-anchor="middle">internal-positioning.docx</text>
+    <line x1="270" y1="240" x2="270" y2="317" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="730" y1="240" x2="730" y2="317" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+    <rect x="80" y="320" width="380" height="320" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <rect x="540" y="320" width="380" height="320" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <rect x="1000" y="320" width="380" height="320" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <rect x="1460" y="320" width="380" height="320" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+
+    <rect x="80" y="320" width="380" height="320" rx="18" fill="none" stroke="#e0a534" stroke-width="6" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.05;0.07;0.23;0.25;1" dur="10s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="540" y="320" width="380" height="320" rx="18" fill="none" stroke="#e0a534" stroke-width="6" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.27;0.29;0.43;0.45;1" dur="10s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1000" y="320" width="380" height="320" rx="18" fill="none" stroke="#e0a534" stroke-width="6" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.47;0.49;0.63;0.65;1" dur="10s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1460" y="320" width="380" height="320" rx="18" fill="none" stroke="#e0a534" stroke-width="6" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.67;0.69;0.85;0.87;1" dur="10s" repeatCount="indefinite"/>
+    </rect>
+
+    <circle cx="130" cy="375" r="30" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="130" y="386" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">1</text>
+    <text x="110" y="458" font-size="30" font-weight="700" fill="#24292f">Research</text>
+    <text x="110" y="498" font-size="30" font-weight="700" fill="#24292f">the market</text>
+    <rect x="110" y="560" width="240" height="52" rx="26" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <rect x="110" y="560" width="240" height="52" rx="26" fill="#fff6e5" stroke="#e0a534" stroke-width="4" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.07;0.09;0.23;0.25;1" dur="10s" repeatCount="indefinite"/>
+    </rect>
+    <text x="230" y="596" font-size="28" fill="#24292f" text-anchor="middle">Deep Research</text>
+
+    <circle cx="590" cy="375" r="30" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="590" y="386" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">2</text>
+    <text x="570" y="458" font-size="30" font-weight="700" fill="#24292f">Hold it against</text>
+    <text x="570" y="498" font-size="30" font-weight="700" fill="#24292f">your positioning</text>
+
+    <circle cx="1050" cy="375" r="30" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1050" y="386" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">3</text>
+    <text x="1030" y="458" font-size="30" font-weight="700" fill="#24292f">Write</text>
+    <text x="1030" y="498" font-size="30" font-weight="700" fill="#24292f">the brief</text>
+    <rect x="1030" y="560" width="130" height="52" rx="26" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <rect x="1030" y="560" width="130" height="52" rx="26" fill="#fff6e5" stroke="#e0a534" stroke-width="4" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.49;0.51;0.63;0.65;1" dur="10s" repeatCount="indefinite"/>
+    </rect>
+    <text x="1095" y="596" font-size="28" fill="#24292f" text-anchor="middle">Word</text>
+
+    <circle cx="1510" cy="375" r="30" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1510" y="386" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">4</text>
+    <text x="1490" y="458" font-size="30" font-weight="700" fill="#24292f">Recommend</text>
+    <text x="1490" y="498" font-size="30" font-weight="700" fill="#24292f">and export</text>
+    <rect x="1490" y="560" width="130" height="52" rx="26" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <rect x="1490" y="560" width="130" height="52" rx="26" fill="#fff6e5" stroke="#e0a534" stroke-width="4" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.69;0.71;0.76;0.78;1" dur="10s" repeatCount="indefinite"/>
+    </rect>
+    <text x="1555" y="596" font-size="28" fill="#24292f" text-anchor="middle">Word</text>
+    <line x1="1622" y1="586" x2="1675" y2="586" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <path d="M1678,560 H1778 L1798,580 V612 H1678 Z" fill="#ffffff" stroke="#8c959f" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M1678,560 H1778 L1798,580 V612 H1678 Z" fill="#fff6e5" stroke="#e0a534" stroke-width="4" stroke-linejoin="round" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.77;0.79;0.85;0.87;1" dur="10s" repeatCount="indefinite"/>
+    </path>
+    <text x="1738" y="596" font-size="28" fill="#24292f" text-anchor="middle">PDF</text>
+
+    <line x1="460" y1="480" x2="537" y2="480" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="920" y1="480" x2="997" y2="480" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="1380" y1="480" x2="1457" y2="480" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+    <line x1="270" y1="640" x2="270" y2="717" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="730" y1="640" x2="730" y2="717" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="1190" y1="640" x2="1190" y2="717" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="1650" y1="640" x2="1650" y2="717" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+    <rect x="80" y="720" width="380" height="180" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="270" y="796" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">3 or 4 trends</text>
+    <text x="270" y="842" font-size="28" fill="#57606a" text-anchor="middle">each one cited</text>
+    <rect x="540" y="720" width="380" height="180" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="730" y="796" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Gap analysis</text>
+    <text x="730" y="842" font-size="28" fill="#57606a" text-anchor="middle">aligned and exposed</text>
+    <rect x="1000" y="720" width="380" height="180" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="1190" y="796" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Two-page brief</text>
+    <text x="1190" y="842" font-size="28" fill="#57606a" text-anchor="middle">Word, four sections</text>
+    <rect x="1460" y="720" width="380" height="180" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="1650" y="782" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">3 ranked moves</text>
+    <text x="1650" y="826" font-size="28" fill="#57606a" text-anchor="middle">one marked Top pick</text>
+    <text x="1650" y="866" font-size="28" fill="#57606a" text-anchor="middle">plus the PDF</text>
+
+    <circle r="12" fill="#e0a534" opacity="0">
+      <animateMotion path="M460,480 L530,480" keyPoints="0;0;1;1" keyTimes="0;0.23;0.27;1" calcMode="linear" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.229;0.23;0.27;0.271;1" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="12" fill="#e0a534" opacity="0">
+      <animateMotion path="M920,480 L990,480" keyPoints="0;0;1;1" keyTimes="0;0.43;0.47;1" calcMode="linear" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.429;0.43;0.47;0.471;1" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="12" fill="#e0a534" opacity="0">
+      <animateMotion path="M1380,480 L1450,480" keyPoints="0;0;1;1" keyTimes="0;0.63;0.67;1" calcMode="linear" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.629;0.63;0.67;0.671;1" dur="10s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

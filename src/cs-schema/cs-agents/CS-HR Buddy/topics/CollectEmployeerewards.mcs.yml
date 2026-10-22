@@ -1,0 +1,63 @@
+mcs.metadata:
+  componentName: Collect Employee rewards
+kind: AdaptiveDialog
+modelDescription: "This tool can handle queries like these: collect employee rewards, claim my employee reward, redeem employee points, employee perks redemption"
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent:
+    triggerQueries:
+      - collect employee rewards
+      - claim my employee reward
+      - redeem employee points
+      - get my staff rewards
+      - employee reward collection
+      - how do I collect my rewards as an employee?
+      - pick up my employee bonus
+      - access my staff incentives
+      - employee perks redemption
+
+  actions:
+    - kind: ConditionGroup
+      id: ConditionGroup_checkEmployeeIdentified
+      conditions:
+        - id: ConditionItem_employeeNotIdentified
+          condition: =Not(Global.EmployeeIdentified)
+          actions:
+            - kind: BeginDialog
+              id: BeginDialog_collectEmployeeData
+              dialog: iits_CSHRBuddy.topic.CollectEmployeeData
+
+    - kind: Question
+      id: Question_L1omP9
+      variable: Topic.RewardChoice
+      prompt: "Please choose your reward:"
+      entity:
+        kind: EmbeddedEntity
+        definition:
+          kind: ClosedListEntity
+          optionSetName: RewardOptions
+          items:
+            - id: dinner
+              displayName: A free dinner
+
+            - id: theatre
+              displayName: A visit to theatre
+
+    - kind: ConditionGroup
+      id: ConditionGroup_3UEdyD
+      conditions:
+        - id: ConditionItem_yLTSZ2
+          condition: =Topic.RewardChoice = RewardOptions.dinner
+          actions:
+            - kind: SendActivity
+              id: SendActivity_6qlwmo
+              activity: The dinner voucher will be forwarded to you.
+
+      elseActions:
+        - kind: SendActivity
+          id: SendActivity_cKeGUj
+          activity: The tickets will be sent to you by post.
+
+inputType: {}
+outputType: {}

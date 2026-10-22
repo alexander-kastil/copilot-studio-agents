@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">From Copilot Studio to Copilot Chat, and back for every change</title>
+  <desc id="d">Five steps. In Copilot Studio: 1 create Agentic HR with details and knowledge, 2 publish and fill in the app manifest details, 3 copy the direct link to the agent app. In the company app store: 4 open the link and select Add on the first publish or Update now after a change. In Copilot Chat: 5 chat with Agentic HR from the agent list. A loop arrow leads from step 5 back to step 1: Exercise 2 adds a tool, publishes again and then uses Update now.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#24292f">
+    <g fill="#57606a" text-anchor="middle">
+      <text x="585" y="128">Copilot Studio</text>
+      <text x="1335" y="128">Company app store</text>
+      <text x="1710" y="128">Copilot Chat</text>
+    </g>
+    <g stroke="#8c959f" stroke-width="2" fill="none">
+      <path d="M60 172 V156 H1110 V172"/>
+      <path d="M1185 172 V156 H1485 V172"/>
+      <path d="M1560 172 V156 H1860 V172"/>
+    </g>
+
+    <g stroke="#8c959f" stroke-width="2">
+      <rect x="60" y="200" width="300" height="460" rx="16" fill="#eaf2ff"/>
+      <rect x="435" y="200" width="300" height="460" rx="16" fill="#eaf2ff"/>
+      <rect x="810" y="200" width="300" height="460" rx="16" fill="#eaf2ff"/>
+      <rect x="1185" y="200" width="300" height="460" rx="16" fill="#f3edff"/>
+      <rect x="1560" y="200" width="300" height="460" rx="16" fill="#e9f7ef"/>
+    </g>
+
+    <g fill="#ffffff" stroke="#8c959f" stroke-width="2">
+      <circle cx="210" cy="262" r="30"/>
+      <circle cx="585" cy="262" r="30"/>
+      <circle cx="960" cy="262" r="30"/>
+      <circle cx="1335" cy="262" r="30"/>
+      <circle cx="1710" cy="262" r="30"/>
+    </g>
+    <g font-weight="700" text-anchor="middle">
+      <text x="210" y="272">1</text>
+      <text x="585" y="272">2</text>
+      <text x="960" y="272">3</text>
+      <text x="1335" y="272">4</text>
+      <text x="1710" y="272">5</text>
+    </g>
+
+    <g font-size="32" font-weight="700" text-anchor="middle">
+      <text x="210" y="345">Create</text>
+      <text x="585" y="345">Publish</text>
+      <text x="960" y="345">Copy</text>
+      <text x="1335" y="345">Open the link</text>
+      <text x="1710" y="345">Chat</text>
+    </g>
+    <g fill="#57606a" text-anchor="middle">
+      <text x="210" y="405">Agentic HR with</text>
+      <text x="210" y="445">details and</text>
+      <text x="210" y="485">knowledge</text>
+      <text x="585" y="405">fill in the app</text>
+      <text x="585" y="445">manifest details</text>
+      <text x="960" y="405">the direct link</text>
+      <text x="960" y="445">to the agent app</text>
+      <text x="1710" y="405">Agentic HR in</text>
+      <text x="1710" y="445">the agent list</text>
+    </g>
+
+    <rect x="1235" y="380" width="200" height="58" rx="29" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="1335" y="419" text-anchor="middle" font-weight="700">Add</text>
+    <text x="1335" y="475" text-anchor="middle" fill="#57606a">first publish</text>
+    <rect x="1235" y="510" width="200" height="58" rx="29" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <text x="1335" y="549" text-anchor="middle" font-weight="700">Update now</text>
+    <text x="1335" y="605" text-anchor="middle" fill="#57606a">after a change</text>
+
+    <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+      <line x1="360" y1="430" x2="427" y2="430"/>
+      <line x1="735" y1="430" x2="802" y2="430"/>
+      <line x1="1110" y1="430" x2="1177" y2="430"/>
+      <line x1="1485" y1="430" x2="1552" y2="430"/>
+      <path d="M1710 660 V800 H210 V668"/>
+    </g>
+    <text x="960" y="870" text-anchor="middle">Exercise 2 adds a tool: publish again, then Update now</text>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+{
+  "topics": [
+    {
+      "title": "Meet Autopilot: Digital Teammates in Microsoft 365",
+      "subtitle": "What makes an agent a teammate"
+    },
+    {
+      "title": "Working with Autopilot: Goals, Memory & Long-Running Work",
+      "subtitle": "The brief, background work and approvals"
+    },
+    {
+      "title": "Agent Accounts: Give a Copilot Studio Agent Its Own Identity",
+      "subtitle": "From agent account to publish"
+    },
+    {
+      "title": "Proactive Teammates: Triggers, Email & Teams Mentions",
+      "subtitle": "What starts the agent's cycle"
+    },
+    {
+      "title": "Shared Memory, Licensing & Teammate Governance",
+      "subtitle": "What the tenant needs before anyone builds"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">A candidate PDF uploaded to SharePoint becomes an employee record and a confirmation email</title>
+  <desc id="d">A candidate PDF is uploaded to a SharePoint document library. The trigger, a Power Automate flow, fires on When a file is created (properties only) and runs Sends a prompt to the specified copilot for processing. The Autonomous HR Docs Processor extracts the candidate data, calls add_employee on the HR MCP server to create the employee record in its SQL database, and calls SendEmail on the Email Management MCP Server to send a confirmation with a recap.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="70" y="330" width="360" height="420" rx="20" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="250" y="420" text-anchor="middle" font-size="34" font-weight="700" fill="#24292f">SharePoint</text>
+  <text x="250" y="462" text-anchor="middle" font-size="28" fill="#57606a">document library</text>
+  <text x="250" y="574" text-anchor="middle" font-size="28" fill="#24292f">a candidate PDF</text>
+  <text x="250" y="612" text-anchor="middle" font-size="28" fill="#24292f">is uploaded</text>
+
+  <rect x="510" y="150" width="480" height="780" rx="22" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="750" y="212" text-anchor="middle" font-size="34" font-weight="700" fill="#24292f">Trigger</text>
+  <text x="750" y="254" text-anchor="middle" font-size="28" fill="#57606a">a Power Automate flow</text>
+  <rect x="550" y="300" width="400" height="220" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="750" y="398" text-anchor="middle" font-size="28" fill="#24292f">When a file is created</text>
+  <text x="750" y="438" text-anchor="middle" font-size="28" fill="#24292f">(properties only)</text>
+  <rect x="550" y="600" width="400" height="260" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="750" y="692" text-anchor="middle" font-size="28" fill="#24292f">Sends a prompt to the</text>
+  <text x="750" y="732" text-anchor="middle" font-size="28" fill="#24292f">specified copilot</text>
+  <text x="750" y="772" text-anchor="middle" font-size="28" fill="#24292f">for processing</text>
+
+  <rect x="1070" y="330" width="360" height="420" rx="20" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1250" y="420" text-anchor="middle" font-size="32" font-weight="700" fill="#24292f">Autonomous</text>
+  <text x="1250" y="462" text-anchor="middle" font-size="32" font-weight="700" fill="#24292f">HR Docs</text>
+  <text x="1250" y="504" text-anchor="middle" font-size="32" font-weight="700" fill="#24292f">Processor</text>
+  <text x="1250" y="580" text-anchor="middle" font-size="28" fill="#57606a">extracts the</text>
+  <text x="1250" y="618" text-anchor="middle" font-size="28" fill="#57606a">candidate data</text>
+
+  <rect x="1510" y="150" width="340" height="350" rx="20" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1680" y="222" text-anchor="middle" font-size="30" font-weight="700" fill="#24292f">HR MCP server</text>
+  <text x="1680" y="282" text-anchor="middle" font-size="28" font-family="Consolas, monospace" fill="#24292f">add_employee</text>
+  <text x="1680" y="364" text-anchor="middle" font-size="28" fill="#57606a">new employee record</text>
+  <text x="1680" y="402" text-anchor="middle" font-size="28" fill="#57606a">in a SQL database</text>
+
+  <rect x="1510" y="580" width="340" height="350" rx="20" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1680" y="652" text-anchor="middle" font-size="30" font-weight="700" fill="#24292f">Email Management</text>
+  <text x="1680" y="692" text-anchor="middle" font-size="30" font-weight="700" fill="#24292f">MCP Server</text>
+  <text x="1680" y="750" text-anchor="middle" font-size="28" font-family="Consolas, monospace" fill="#24292f">SendEmail</text>
+  <text x="1680" y="826" text-anchor="middle" font-size="28" fill="#57606a">confirmation email</text>
+  <text x="1680" y="864" text-anchor="middle" font-size="28" fill="#57606a">with a recap</text>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="432" y1="410" x2="546" y2="410"/>
+    <line x1="750" y1="522" x2="750" y2="596"/>
+    <line x1="952" y1="730" x2="1066" y2="680"/>
+    <line x1="1432" y1="450" x2="1506" y2="325"/>
+    <line x1="1432" y1="630" x2="1506" y2="755"/>
+  </g>
+
+  <g fill="none" stroke="#e0a534" stroke-width="6">
+    <rect x="542" y="292" width="416" height="236" rx="22" opacity="0">
+      <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.12;0.22" dur="8s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="542" y="592" width="416" height="276" rx="22" opacity="0">
+      <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.32;0.4" dur="8s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1062" y="322" width="376" height="436" rx="26" opacity="0">
+      <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.5;0.66" dur="8s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1502" y="142" width="356" height="366" rx="26" opacity="0">
+      <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.76;0.86" dur="8s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1502" y="572" width="356" height="366" rx="26" opacity="0">
+      <animate attributeName="opacity" calcMode="discrete" values="0;1" keyTimes="0;0.9" dur="8s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <g fill="#e0a534" stroke="#ffffff" stroke-width="3">
+    <circle r="14" cx="0" cy="0" opacity="1">
+      <animateMotion path="M432,410 L546,410" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.12;1" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" calcMode="discrete" values="1;0" keyTimes="0;0.12" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="14" cx="0" cy="0" opacity="0">
+      <animateMotion path="M750,522 L750,596" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.22;0.32;1" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.22;0.32" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="14" cx="0" cy="0" opacity="0">
+      <animateMotion path="M952,730 L1066,680" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.4;0.5;1" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.4;0.5" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="14" cx="0" cy="0" opacity="0">
+      <animateMotion path="M1432,450 L1506,325" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.66;0.76;1" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.66;0.76" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="14" cx="0" cy="0" opacity="0">
+      <animateMotion path="M1432,630 L1506,755" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.8;0.9;1" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.8;0.9" dur="8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

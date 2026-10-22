@@ -1,0 +1,12 @@
+mcs.metadata:
+  componentName: Create Run
+  description: Create Run
+kind: ConnectorTool
+authMode: Invoker
+connectionReference: iits_foodbody_D2IGed.cr.shared_azureagentservice
+connectorId: /providers/Microsoft.PowerApps/apis/shared_azureagentservice
+operationId: CreateRun
+toolInputs:
+  - name: ThreadId
+    displayName: echo-agent
+    description: Execute the echo agent

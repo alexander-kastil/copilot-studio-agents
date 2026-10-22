@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+<title id="t">How the agent fills the Send Account Follow-Up inputs</title>
+<desc id="d">The Sales Account Assistant fills accountName and followUpBody with AI from the conversation, while recipientEmail is pinned with Value to your own mailbox. The trigger passes the three Text inputs to Send an email (V2) as Subject, Body and To, and Respond to the agent returns status Follow-up sent to the assistant.</desc>
+<rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L16,8 L0,16 z" fill="#57606a"/></marker></defs>
+<text x="1360" y="100" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Send Account Follow-Up workflow</text>
+<rect x="80" y="280" width="260" height="680" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="210" y="350" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Sales</text>
+<text x="210" y="390" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Account</text>
+<text x="210" y="430" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Assistant</text>
+<text x="610" y="240" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">How is this filled?</text>
+<rect x="880" y="150" width="340" height="640" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<text x="1050" y="200" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">When an agent</text>
+<text x="1050" y="238" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">calls the flow</text>
+<rect x="1300" y="150" width="540" height="640" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text x="1570" y="220" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Send an email (V2)</text>
+<rect x="420" y="280" width="380" height="120" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<rect x="440" y="294" width="72" height="44" rx="22" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="476.0" y="325" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">AI</text>
+<text x="440" y="378" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="start">from the conversation</text>
+<rect x="900" y="280" width="300" height="120" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="1050" y="338" font-family="Consolas, Menlo, monospace" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">accountName</text>
+<text x="1050" y="378" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="middle">Text</text>
+<rect x="1320" y="280" width="500" height="120" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="1345" y="328" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#24292f" text-anchor="start">Subject</text>
+<text x="1345" y="374" font-family="Consolas, Menlo, monospace" font-size="28" font-weight="400" fill="#24292f" text-anchor="start">"Follow-up: " + accountName</text>
+<line x1="340" y1="340" x2="416" y2="340" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<line x1="800" y1="340" x2="896" y2="340" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<line x1="1200" y1="340" x2="1316" y2="340" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="420" y="460" width="380" height="120" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<rect x="440" y="474" width="72" height="44" rx="22" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="476.0" y="505" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">AI</text>
+<text x="440" y="558" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="start">from the conversation</text>
+<rect x="900" y="460" width="300" height="120" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="1050" y="518" font-family="Consolas, Menlo, monospace" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">followUpBody</text>
+<text x="1050" y="558" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="middle">Text</text>
+<rect x="1320" y="460" width="500" height="120" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="1345" y="508" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#24292f" text-anchor="start">Body</text>
+<text x="1345" y="554" font-family="Consolas, Menlo, monospace" font-size="28" font-weight="400" fill="#24292f" text-anchor="start">followUpBody</text>
+<line x1="340" y1="520" x2="416" y2="520" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<line x1="800" y1="520" x2="896" y2="520" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<line x1="1200" y1="520" x2="1316" y2="520" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="420" y="640" width="380" height="120" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<rect x="440" y="654" width="120" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text x="500.0" y="685" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">Value</text>
+<text x="440" y="738" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="start">your own mailbox</text>
+<rect x="900" y="640" width="300" height="120" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="1050" y="698" font-family="Consolas, Menlo, monospace" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">recipientEmail</text>
+<text x="1050" y="738" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="middle">Text</text>
+<rect x="1320" y="640" width="500" height="120" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="1345" y="688" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#24292f" text-anchor="start">To</text>
+<text x="1345" y="734" font-family="Consolas, Menlo, monospace" font-size="28" font-weight="400" fill="#24292f" text-anchor="start">recipientEmail</text>
+<line x1="800" y1="700" x2="896" y2="700" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<line x1="1200" y1="700" x2="1316" y2="700" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<line x1="1570" y1="790" x2="1570" y2="846" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="1300" y="850" width="540" height="120" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<text x="1570" y="898" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Respond to the agent</text>
+<text x="1570" y="942" font-family="Consolas, Menlo, monospace" font-size="28" font-weight="400" fill="#24292f" text-anchor="middle">status: Follow-up sent</text>
+<line x1="1300" y1="910" x2="344" y2="910" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<text x="820" y="890" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="600" fill="#24292f" text-anchor="middle">status returned to the agent</text>
+<rect x="70" y="270" width="280" height="700" rx="20" fill="none" stroke="#e0a534" stroke-width="8" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.0200;0.0340;0.0760;0.0900;1.0000" dur="10s" repeatCount="indefinite"/></rect>
+<circle r="14" cx="0" cy="0" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0795;0.0800;0.1800;0.1805;1" dur="10s" repeatCount="indefinite"/><animateMotion path="M340,340 L420,340" keyPoints="0;0;1;1" keyTimes="0;0.0800;0.1800;1" calcMode="linear" dur="10s" repeatCount="indefinite"/></circle>
+<circle r="14" cx="0" cy="0" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0795;0.0800;0.1800;0.1805;1" dur="10s" repeatCount="indefinite"/><animateMotion path="M340,520 L420,520" keyPoints="0;0;1;1" keyTimes="0;0.0800;0.1800;1" calcMode="linear" dur="10s" repeatCount="indefinite"/></circle>
+<rect x="410" y="630" width="400" height="140" rx="20" fill="none" stroke="#e0a534" stroke-width="8" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.1800;0.1960;0.2440;0.2600;1.0000" dur="10s" repeatCount="indefinite"/></rect>
+<circle r="14" cx="0" cy="0" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2595;0.2600;0.3600;0.3605;1" dur="10s" repeatCount="indefinite"/><animateMotion path="M800,340 L900,340" keyPoints="0;0;1;1" keyTimes="0;0.2600;0.3600;1" calcMode="linear" dur="10s" repeatCount="indefinite"/></circle>
+<circle r="14" cx="0" cy="0" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3595;0.3600;0.4600;0.4605;1" dur="10s" repeatCount="indefinite"/><animateMotion path="M1200,340 L1320,340" keyPoints="0;0;1;1" keyTimes="0;0.3600;0.4600;1" calcMode="linear" dur="10s" repeatCount="indefinite"/></circle>
+<circle r="14" cx="0" cy="0" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2595;0.2600;0.3600;0.3605;1" dur="10s" repeatCount="indefinite"/><animateMotion path="M800,520 L900,520" keyPoints="0;0;1;1" keyTimes="0;0.2600;0.3600;1" calcMode="linear" dur="10s" repeatCount="indefinite"/></circle>
+<circle r="14" cx="0" cy="0" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3595;0.3600;0.4600;0.4605;1" dur="10s" repeatCount="indefinite"/><animateMotion path="M1200,520 L1320,520" keyPoints="0;0;1;1" keyTimes="0;0.3600;0.4600;1" calcMode="linear" dur="10s" repeatCount="indefinite"/></circle>
+<circle r="14" cx="0" cy="0" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2595;0.2600;0.3600;0.3605;1" dur="10s" repeatCount="indefinite"/><animateMotion path="M800,700 L900,700" keyPoints="0;0;1;1" keyTimes="0;0.2600;0.3600;1" calcMode="linear" dur="10s" repeatCount="indefinite"/></circle>
+<circle r="14" cx="0" cy="0" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3595;0.3600;0.4600;0.4605;1" dur="10s" repeatCount="indefinite"/><animateMotion path="M1200,700 L1320,700" keyPoints="0;0;1;1" keyTimes="0;0.3600;0.4600;1" calcMode="linear" dur="10s" repeatCount="indefinite"/></circle>
+<rect x="1290" y="140" width="560" height="660" rx="20" fill="none" stroke="#e0a534" stroke-width="8" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.4600;0.4800;0.5400;0.5600;1.0000" dur="10s" repeatCount="indefinite"/></rect>
+<circle r="14" cx="0" cy="0" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5595;0.5600;0.6400;0.6405;1" dur="10s" repeatCount="indefinite"/><animateMotion path="M1570,790 L1570,850" keyPoints="0;0;1;1" keyTimes="0;0.5600;0.6400;1" calcMode="linear" dur="10s" repeatCount="indefinite"/></circle>
+<rect x="1290" y="840" width="560" height="140" rx="20" fill="none" stroke="#e0a534" stroke-width="8" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.6400;0.6520;0.6880;0.7000;1.0000" dur="10s" repeatCount="indefinite"/></rect>
+<circle r="14" cx="0" cy="0" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6995;0.7000;0.8600;0.8605;1" dur="10s" repeatCount="indefinite"/><animateMotion path="M1300,910 L340,910" keyPoints="0;0;1;1" keyTimes="0;0.7000;0.8600;1" calcMode="linear" dur="10s" repeatCount="indefinite"/></circle>
+<rect x="70" y="270" width="280" height="700" rx="20" fill="none" stroke="#e0a534" stroke-width="8" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.8600;0.8840;0.9560;0.9800;1.0000" dur="10s" repeatCount="indefinite"/></rect>
+</svg>

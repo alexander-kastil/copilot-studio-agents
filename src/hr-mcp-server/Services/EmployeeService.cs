@@ -100,6 +100,7 @@ public class EmployeeService(
         var matchingEmployees = employees.Where(c =>
             c.FirstName.ToLowerInvariant().Contains(searchTermLower) ||
             c.LastName.ToLowerInvariant().Contains(searchTermLower) ||
+            $"{c.FirstName} {c.LastName}".ToLowerInvariant().Contains(searchTermLower) ||
             c.Email.ToLowerInvariant().Contains(searchTermLower) ||
             c.CurrentRole.ToLowerInvariant().Contains(searchTermLower) ||
             c.Skills.Any(skill => skill.ToLowerInvariant().Contains(searchTermLower)) ||

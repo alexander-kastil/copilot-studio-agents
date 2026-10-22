@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Copilot Chat compared with Cowork: who does the planning</title>
+  <desc id="d">Two lanes. Copilot Chat, the AI thought partner: you do the planning, you ask one question, Chat answers that question, and you merge the text yourself, one question at a time. Cowork, the AI colleague who actually does the work: Cowork proposes the plan. You describe the outcome, Cowork plans by breaking the goal into tasks and selecting skills, Cowork acts across Outlook, Teams, Word, Excel and PowerPoint, and you review the documents and sent messages. A dot keeps circling between you and Chat, while a single dot passes once through the Cowork lane.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .lane { font-size: 36px; font-weight: 700; }
+      .t { font-size: 30px; font-weight: 600; text-anchor: middle; }
+      .n { font-size: 28px; }
+      .nc { font-size: 28px; text-anchor: middle; }
+      .s { font-size: 28px; fill: #57606a; }
+      .sc { font-size: 28px; fill: #57606a; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="80" y="130" width="1760" height="350" rx="24" fill="#f6f8fa"/>
+  <rect x="80" y="560" width="1760" height="390" rx="24" fill="#f6f8fa"/>
+
+  <text class="lane" x="120" y="250">Copilot Chat</text>
+  <text class="n" x="120" y="300">AI thought partner</text>
+  <text class="s" x="120" y="350">You do the planning</text>
+
+  <text class="lane" x="120" y="680">Cowork</text>
+  <text class="n" x="120" y="730">AI colleague who</text>
+  <text class="n" x="120" y="768">actually does the work</text>
+  <text class="s" x="120" y="830">Cowork proposes</text>
+  <text class="s" x="120" y="868">the plan</text>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="810" y1="275" x2="970" y2="275"/>
+    <line x1="970" y1="335" x2="810" y2="335"/>
+    <line x1="1240" y1="305" x2="1400" y2="305"/>
+    <line x1="810" y1="755" x2="870" y2="755"/>
+    <line x1="1140" y1="755" x2="1200" y2="755"/>
+    <line x1="1470" y1="755" x2="1530" y2="755"/>
+  </g>
+
+  <circle r="14" fill="#24292f">
+    <animateMotion dur="8s" repeatCount="indefinite" path="M810,275 H970 V335 H810 V275 H970 V335 H810 V275 H970 V335 H810 V275 H970 V335 H810 V275"/>
+  </circle>
+  <circle r="14" fill="#24292f">
+    <animateMotion dur="8s" repeatCount="indefinite" path="M675,755 H1665" calcMode="linear" keyTimes="0;0.12;0.40;0.52;0.80;0.90;1" keyPoints="0;0.3333;0.3333;0.6667;0.6667;1;1"/>
+  </circle>
+
+  <g stroke="#8c959f" stroke-width="2">
+    <rect x="540" y="200" width="270" height="210" rx="20" fill="#eaf2ff"/>
+    <rect x="970" y="200" width="270" height="210" rx="20" fill="#ffffff"/>
+    <rect x="1400" y="200" width="400" height="210" rx="20" fill="#eaf2ff"/>
+    <rect x="540" y="630" width="270" height="250" rx="20" fill="#eaf2ff"/>
+    <rect x="870" y="630" width="270" height="250" rx="20" fill="#e9f7ef"/>
+    <rect x="1200" y="630" width="270" height="250" rx="20" fill="#e9f7ef"/>
+    <rect x="1530" y="630" width="270" height="250" rx="20" fill="#eaf2ff"/>
+  </g>
+
+  <text class="t" x="675" y="295">You ask</text>
+  <text class="nc" x="675" y="335">one question</text>
+  <text class="t" x="1105" y="295">Chat answers</text>
+  <text class="nc" x="1105" y="335">that question</text>
+  <text class="t" x="1600" y="295">You merge</text>
+  <text class="nc" x="1600" y="335">the text yourself</text>
+  <text class="sc" x="890" y="455">one question at a time</text>
+
+  <text class="t" x="675" y="735">You describe</text>
+  <text class="t" x="675" y="775">the outcome</text>
+  <text class="t" x="1005" y="700">Cowork plans</text>
+  <text class="nc" x="1005" y="748">breaks the goal</text>
+  <text class="nc" x="1005" y="784">into tasks and</text>
+  <text class="nc" x="1005" y="820">selects skills</text>
+  <text class="t" x="1335" y="690">Cowork acts</text>
+  <text class="nc" x="1335" y="736">across Outlook,</text>
+  <text class="nc" x="1335" y="772">Teams, Word,</text>
+  <text class="nc" x="1335" y="808">Excel and</text>
+  <text class="nc" x="1335" y="844">PowerPoint</text>
+  <text class="t" x="1665" y="715">You review</text>
+  <text class="nc" x="1665" y="763">documents and</text>
+  <text class="nc" x="1665" y="799">sent messages</text>
+
+  <g fill="none" stroke="#24292f" stroke-width="5">
+    <rect x="540" y="630" width="270" height="250" rx="20" opacity="1">
+      <animate attributeName="opacity" dur="8s" repeatCount="indefinite" keyTimes="0;0.06;0.08;1" values="1;1;0;0"/>
+    </rect>
+    <rect x="870" y="630" width="270" height="250" rx="20" opacity="0">
+      <animate attributeName="opacity" dur="8s" repeatCount="indefinite" keyTimes="0;0.11;0.13;0.40;0.42;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="1200" y="630" width="270" height="250" rx="20" opacity="0">
+      <animate attributeName="opacity" dur="8s" repeatCount="indefinite" keyTimes="0;0.51;0.53;0.80;0.82;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="1530" y="630" width="270" height="250" rx="20" opacity="0">
+      <animate attributeName="opacity" dur="8s" repeatCount="indefinite" keyTimes="0;0.89;0.91;1" values="0;0;1;1"/>
+    </rect>
+  </g>
+</svg>

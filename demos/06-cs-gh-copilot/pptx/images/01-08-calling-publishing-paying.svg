@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <style>svg { font-size: 28px; }</style>
+  <title id="t">Calling, publishing and paying for a GitHub Copilot agent</title>
+  <desc id="d">Three columns: the Agent node of a workflow calls the agent while the Power Automate connector calls Standard agents only; the channels it publishes to; and Copilot Credits with a monthly limit that is not a per-run limit.</desc>
+  <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker></defs>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <rect x="40" y="250" width="580" height="430" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="64" y="296" font-size="32" font-weight="700" fill="#24292f">Calling it</text>
+  <text x="64" y="346" font-size="28" fill="#24292f">The Agent node of a Copilot Studio</text>
+  <text x="64" y="388" font-size="28" fill="#24292f">workflow calls the published agent</text>
+  <text x="64" y="430" font-size="28" fill="#24292f"></text>
+  <text x="64" y="472" font-size="28" fill="#24292f">The Microsoft Copilot Studio connector</text>
+  <text x="64" y="514" font-size="28" fill="#24292f">in Power Automate calls Standard</text>
+  <text x="64" y="556" font-size="28" fill="#24292f">agents only</text>
+  <rect x="670" y="250" width="580" height="430" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="694" y="296" font-size="32" font-weight="700" fill="#24292f">Publishing it</text>
+  <text x="694" y="346" font-size="28" fill="#24292f">Microsoft Teams</text>
+  <text x="694" y="388" font-size="28" fill="#24292f">Microsoft Copilot</text>
+  <text x="694" y="430" font-size="28" fill="#24292f">Demo website</text>
+  <text x="694" y="472" font-size="28" fill="#24292f">Web app</text>
+  <text x="694" y="514" font-size="28" fill="#24292f">MCP and A2A clients: preview</text>
+  <text x="694" y="556" font-size="28" fill="#24292f"></text>
+  <text x="694" y="598" font-size="28" fill="#24292f">Not yet: SharePoint, Native app,</text>
+  <text x="694" y="640" font-size="28" fill="#24292f">Email and the messaging channels</text>
+  <rect x="1300" y="250" width="580" height="430" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="1324" y="296" font-size="32" font-weight="700" fill="#24292f">Paying for it</text>
+  <text x="1324" y="346" font-size="28" fill="#24292f">Build, test, evaluate and run all</text>
+  <text x="1324" y="388" font-size="28" fill="#24292f">consume Copilot Credits</text>
+  <text x="1324" y="430" font-size="28" fill="#24292f"></text>
+  <text x="1324" y="472" font-size="28" fill="#24292f">A Microsoft 365 Copilot license does</text>
+  <text x="1324" y="514" font-size="28" fill="#24292f">not cover them</text>
+  <text x="1324" y="556" font-size="28" fill="#24292f"></text>
+  <text x="1324" y="598" font-size="28" fill="#24292f">Monthly limit stops the agent only</text>
+  <text x="1324" y="640" font-size="28" fill="#24292f">when Stop usage is on</text>
+  <rect x="40" y="720" width="1840" height="110" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="64" y="766" font-size="30" fill="#24292f">A monthly limit is not a per-run limit: cap calls and retries in the tool or workflow the agent calls.</text>
+</svg>

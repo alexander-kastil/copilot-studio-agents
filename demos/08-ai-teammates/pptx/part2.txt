@@ -1,0 +1,111 @@
+Apply the Integrations House theme: Montserrat bold headings, Poppins body, #1B365D accent. Create exactly 9 cards, one per section below, in this order. Keep the card text exactly as given. The Image and Layout lines are instructions, never visible text. Use exactly the one image URL given for each card; do not generate or add any other images, icons or logos. Keep body text at the normal body size on every card; never shrink text to fit.
+
+# Identity and preview limits
+### Decisions to settle before you publish
+- The **email address** starts with your alias, and the agent reports to you
+- In the preview neither can change, and the **address** stays fixed once you publish
+- **No external users** and **no co-authoring**: it writes new documents and leaves existing ones as they are
+- It replies only in conversations with up to **250 people**
+- It cannot read files labeled **Confidential** or **Internal Only**
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/08-ai-teammates/03-02-identity-tools-limits.jpg?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Text on the left half on plain white, the photograph as a side accent filling the right half, no text over it.
+
+---
+
+# Tool authentication
+### From the author's credentials to the agent's own
+- **Without an account**: an event trigger runs on the author's credentials, and Publish warns about it
+- **With an account**: the agent acts as itself, with its own scoped access rights
+- **Agent account** becomes the default authentication for every tool that supports it
+- **End-user authentication** still needs each person's consent through Go to Agent Management
+- Check which identity each tool uses and grant only the **access the job needs**
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/08-ai-teammates/03-03-tool-authentication.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Triggers, tools and instructions
+### Three pieces that start an agent's cycle
+- **Recurrence**: the schedule you set comes around
+- **Email**: a message arrives in the agent's mailbox
+- **A person**: someone @mentions it or sends it a task
+- Instructions alone don't create a **schedule** or grant access
+- Triggers for the **GitHub Copilot harness** were announced on October 15, 2026
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/08-ai-teammates/04-01-trigger-tools-instructions.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# The Cadence pattern
+### An execution-review agent from the Learn documentation
+- **Inputs**: an approved workstream tracker and a small internal reviewer group
+- Each **scheduled run** reads the tracker, finds blockers and creates a review document
+- A **new document** each cycle, because co-authoring is not supported
+- **Preserve uncertainty**: a missing reply does not mean the work is on track
+- **Stop and explain** when a source, connection or permission is missing
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/08-ai-teammates/04-02-cadence-pattern.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# How people hand it work
+### Teams, Outlook and comments in Office documents
+- Colleagues hand it work in Teams, Outlook and Office comments; the agent prepares, chases and summarizes, and people decide priorities and sign off
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/08-ai-teammates/04-03-handing-work.jpg?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Statement. Title at the top; the single bullet as one large sentence across the left two thirds; the provided image as a side accent in the right third, no text over it.
+
+---
+
+# Shared memory
+### One memory for everyone the agent works with
+- **One memory** across everyone it works with, even in one-to-one chats
+- **No privacy boundary**: a record about one person can come up with others
+- **Never kept**: personal details, secrets, judgments, sensitive categories and requests to forget
+- Anyone who interacts can **view or delete** saved memories; 28 days without interaction deletes them
+- **No opt-out** in the preview: share only what the whole team may know
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/08-ai-teammates/05-01-shared-memory.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Admin activation
+### Four steps, in order, before anyone builds
+- **Frontier enrollment** by a global admin, accepting the Agent 365 terms
+- **Copilot Studio (Frontier)** activated for the users or groups allowed to build
+- **Agent accounts** turned on for the environment in the Power Platform admin center
+- The environment's **release cycle** set to Early
+- In the **European Economic Area**, Teams presence needs a Teams license
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/08-ai-teammates/05-02-admin-activation.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Licensing for agent accounts
+### Three separate things to plan
+- **Maker license**: Microsoft 365 E5 with the Agent 365 add-on, or Microsoft 365 E7
+- **Frontier for AI Teammates**: one per agent with an account, from the tenant's pool
+- **Copilot Credits**: building, testing, evaluating and running the agent
+- **Agent 365** has been generally available per user since May 1, 2026
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/08-ai-teammates/05-03-licensing.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Takeaways
+### What to settle before a teammate joins the team
+- A **teammate** acts as itself, remembers for the team and starts without a prompt
+- **Autopilot** for users who describe a goal, agent accounts for makers who need tools and triggers
+- **Trigger, tools and instructions** must all be configured before an agent acts
+- **Shared memory** reaches everyone the agent works with
+- **Frontier enrollment and licenses** come before the class
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/08-ai-teammates/06-01-takeaways.jpg?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Text on the left half on plain white, the photograph as a side accent filling the right half, no text over it.

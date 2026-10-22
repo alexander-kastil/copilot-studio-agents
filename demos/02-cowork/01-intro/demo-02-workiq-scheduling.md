@@ -1,6 +1,20 @@
 # Schedule a Meeting Where Your Week Has Room
 
+![A Monday to Friday calendar from 09:00 to 17:00, read through Work IQ with nothing attached, rules out lunch, the block right after your longest meeting and late Friday, leaves your only long focus stretch intact, and turns one free hour into Agentic AI, booked through a Create calendar event? card and briefed through an Update event? card that links Agentic AI Prep.](./_images/02-workiq-scheduling-overview.svg)
+
 Let Cowork read your live week through Work IQ, reason about where a one-hour Agentic AI discussion actually fits, book it on your real calendar through the approval gate, and brief you for it from your own work data.
+
+> **Reasoning effort:** Use **Light** for Steps 1, 3 and 4: mapping the week, booking the meeting and writing the prep note are lookups and short writes. Use **Medium** for Step 2, where Cowork has to weigh and defend the slot. High or Max is not needed for a single calendar decision. Set it under **Auto Medium** next to the send arrow: the first stop of the **Effort** slider is Light, the second is Medium (the default).
+
+## Run Cost
+
+| Token type | Tokens | Opus 5.5 (run) | Sonnet 5.5 (estimate) | Haiku 5.5 (estimate) |
+| --- | --- | --- | --- | --- |
+| Input | 152 | €0.00 | €0.00 | €0.00 |
+| Cache write | 232K | €1.03 | €0.51 | €0.07 |
+| Cache read | 10.1M | €1.80 | €1.80 | €0.40 |
+| Output | 39K | €0.69 | €0.35 | €0.07 |
+| **Total** | **10.4M** | **€3.52** | **€2.66** | **€0.55** |
 
 ## Related Topics
 
@@ -22,7 +36,9 @@ Work IQ is the layer that grounds Cowork in your working life: your mail, meetin
 
 There is no companion folder for this demo. Everything Cowork reads comes from your own calendar, mail, and files through Work IQ, so run it in a week with real meetings on it. The meeting you book in Step 3 is real and stays on your calendar, so choose a week you are willing to commit the hour to.
 
-In Microsoft Copilot (copilot.cloud.microsoft), select **Cowork** in the top toggle next to Chat, start a new task. Do not attach anything.
+![Your calendar, mail, meetings, files, and people reach the Cowork task through Work IQ; mapping the week and defending a slot only read, while booking the Agentic AI meeting and attaching the prep note each pass an approval step.](./_images/workiq-scheduling-flow.svg)
+
+In Microsoft Copilot (copilot.cloud.microsoft), select **Cowork** in the **Chat | Cowork | Code** toggle at the top of the left pane, then select **New task**. Do not attach anything.
 
 ---
 
@@ -38,7 +54,7 @@ In the new task, with nothing attached, send:
 Without me giving you any files: how does the rest of my week look? Which days are heaviest, and where are my longest unbroken stretches of free time during working hours?
 ```
 
-**Finding:** Open your Outlook calendar next to the answer and check it: real meeting names, real times, gaps where you actually have gaps. This is Work IQ doing the grounding; nothing was attached, yet the answer is about your week. If Cowork asks you to provide a calendar export or answers generically, the grounding is not active in your tenant, and the setup section of [Getting Started with Cowork](./readme.md) is the place to fix that before continuing.
+**Finding:** Open your Outlook calendar next to the answer and check it: real meeting names, real times, gaps where you actually have gaps. This is Work IQ doing the grounding: a **View calendar** step (Outlook) runs above the answer, and nothing was attached, yet the answer is about your week. If Cowork asks you to provide a calendar export or answers generically, the grounding is not active in your tenant, and the setup section of [Getting Started with Cowork](./readme.md) is the place to fix that before continuing.
 
 **Recipe:**
 
@@ -64,7 +80,7 @@ In the same task, send:
 I need one hour this week for a working discussion on Agentic AI. Which of my free blocks is the best choice, and why? Consider what comes before and after each block, and tell me which blocks you would rule out even though they are technically free.
 ```
 
-**Finding:** Look for exclusions with reasons: a block right after your longest meeting ruled out for fatigue, a gap that would slice your only long focus stretch left intact, late Friday treated with suspicion. The recommendation should reference your real week, not scheduling folklore. If it just proposes the earliest gap, push back: ask what is wrong with the slot immediately after your heaviest meeting and let it reconsider.
+**Finding:** Look for exclusions with reasons: a block right after your longest meeting ruled out for fatigue, a gap that would slice your only long focus stretch left intact, late Friday treated with suspicion. The recommendation should reference your real week, not scheduling folklore; on a light week the ruled-out blocks come back as a table with reasons like short notice, lunch, and end of day, and Cowork says the before-and-after check cannot separate them. If it just proposes the earliest gap, push back: ask what is wrong with the slot immediately after your heaviest meeting and let it reconsider.
 
 **Recipe:**
 
@@ -82,6 +98,8 @@ Pick the single best one-hour slot this week for a working discussion on Agentic
 
 **Overview:** So far Cowork has only read. Creating an event writes to your real calendar, and a write is where the approval model shows up: the action carries a risk level and pauses for you. You are about to approve a real booking, which is exactly why the demo made Cowork defend the slot first.
 
+![The approval card with its risk level indicator and Show parameters. Approve once (Send, Post, or Create) approves that one action; More options, Approve All (n) and Cancel are the other choices.](../pptx/images/06-01-approval-model.svg)
+
 **Research / Planning / Discussion:**
 
 In the same task, send:
@@ -90,7 +108,7 @@ In the same task, send:
 Before you create this meeting: what exactly will you write to my calendar, and at what point will you stop and wait for my approval?
 ```
 
-**Finding:** The answer should enumerate the concrete event details it intends to write (title, day and time, duration, body) and state that it pauses for approval before the event is created. If it is vague about what it will write, do not proceed to the recipe yet; make it spell the event out first, because the approval step is only as good as your ability to check it.
+**Finding:** The answer should enumerate the concrete event details it intends to write (title, day and time, attendees, Teams link, body) and state that it pauses for approval before the event is created. If it is vague about what it will write, do not proceed to the recipe yet; make it spell the event out first, because the approval step is only as good as your ability to check it.
 
 **Recipe:**
 
@@ -100,7 +118,7 @@ In the same task, send:
 Create a one-hour meeting called "Agentic AI" on my calendar in the slot we chose, with just me as attendee. In the meeting body, add a three-point agenda: where agents could remove manual work from my week, what data they would need to do it, and which decisions should stay human-approved. Then book it.
 ```
 
-**Expected Outcome:** The create action is held at an approval step with a visible risk level even though the prompt said to book it. Check the day, time, and duration against the slot from Step 2, then approve. The "Agentic AI" meeting appears in your Outlook calendar this week with the agenda in its body.
+**Expected Outcome:** A **Create calendar event?** card with a **Medium risk** badge holds the write even though the prompt said to book it. The card shows the date and time, **Title**, **Attendees** (empty, because you are the only attendee) and the agenda body, all still editable; check the day, time, and duration against the slot from Step 2, then select **Save** and leave **Always allow Create event** under the arrow beside it unselected. The transcript records **Approved 1 action**, and the "Agentic AI" meeting appears in your Outlook calendar this week as a Teams meeting with the agenda in its body.
 
 ---
 
@@ -116,7 +134,7 @@ In the same task, send:
 Look across my recent emails, meetings, and files: what have I already read, written, or discussed that is relevant to a working session on Agentic AI? List what you find and one line on what each item contributes.
 ```
 
-**Finding:** The list should name real items from your tenant: a mail thread, a deck someone shared, a meeting where the topic came up. Honesty matters more than volume here; if your tenant has little on the topic, a short truthful list beats an invented rich one, and that behaviour is itself worth observing. Follow up on anything you do not recognize and ask where it came from.
+**Finding:** The list should name real items from your tenant: a mail thread, a deck someone shared, a meeting where the topic came up. Honesty matters more than volume here; if your tenant has little on the topic, a short truthful list beats an invented rich one, and that behaviour is itself worth observing. Follow up on anything you do not recognize and ask where it came from. The step lines above the answer show which sources it searched (Email, Teams, Calendar, Files), and the answer says when SharePoint sites were left out.
 
 **Recipe:**
 
@@ -126,6 +144,6 @@ In the same task, send:
 Create a one-page Word document called "Agentic AI Prep" with the three most relevant things you found in my own emails, meetings, and files, one line each on why they matter, followed by two questions I should answer during the session. Then attach the document to the Agentic AI meeting on my calendar.
 ```
 
-**Expected Outcome:** An `Agentic AI Prep.docx` in the task's working folder, and the calendar update that attaches it held at an approval step before the meeting changes. After you approve, opening the meeting in Outlook shows the prep note, and Thursday-you walks in briefed by your own data.
+**Expected Outcome:** `Agentic AI Prep.docx` appears under **Output** in the Workspace panel, and an **Update event?** card (**Medium risk**) holds the calendar change before the meeting changes. The card shows the agenda followed by a **Prep document: Agentic AI Prep** link: Cowork's calendar tools can edit the meeting but cannot add file attachments, so it links the document from your OneDrive instead and says so after you select **Update**. Opening the meeting in Outlook shows the link under the agenda, so you walk in briefed by your own data; for a true file attachment, add it to the meeting in Outlook yourself.
 
 > Approvals, risk levels, and how to steer a task mid-run are covered in [Human-in-the-Loop](../06-staying-in-control/readme.md).

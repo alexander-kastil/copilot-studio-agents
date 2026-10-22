@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">The Microsoft 365 Copilot ecosystem in three layers</title>
+  <desc id="d">Where people work: Copilot Chat on the web, in Teams and apps, Copilot Cowork as the agentic workspace, and in-app Copilot in Word, Excel and Outlook. Where makers build: Copilot Studio for low-code agents, and SharePoint and Agent Builder agents. Both layers stand on what grounds it: Microsoft Graph with your work content, and tools, connectors and MCP servers.</desc>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+
+  <rect x="80" y="80" width="860" height="560" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="112" y="140" font-size="32" font-weight="700" fill="#24292f">Where people work</text>
+  <rect x="110" y="175" width="800" height="130" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="142" y="230" font-size="32" font-weight="700" fill="#24292f">Copilot Chat</text>
+  <text x="142" y="274" font-size="28" fill="#57606a">(web, Teams, apps)</text>
+  <rect x="110" y="325" width="800" height="130" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="142" y="380" font-size="32" font-weight="700" fill="#24292f">Copilot Cowork</text>
+  <text x="142" y="424" font-size="28" fill="#57606a">(agentic workspace)</text>
+  <rect x="110" y="475" width="800" height="130" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="142" y="530" font-size="32" font-weight="700" fill="#24292f">In-app Copilot</text>
+  <text x="142" y="574" font-size="28" fill="#57606a">(Word, Excel, Outlook)</text>
+
+  <rect x="980" y="80" width="860" height="560" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="1012" y="140" font-size="32" font-weight="700" fill="#24292f">Where makers build</text>
+  <rect x="1010" y="250" width="800" height="130" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1042" y="305" font-size="32" font-weight="700" fill="#24292f">Copilot Studio</text>
+  <text x="1042" y="349" font-size="28" fill="#57606a">(low-code agents)</text>
+  <rect x="1010" y="400" width="800" height="130" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1042" y="478" font-size="32" font-weight="700" fill="#24292f">SharePoint &amp; Agent Builder agents</text>
+
+  <line x1="510" y1="642" x2="510" y2="714" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <line x1="1410" y1="642" x2="1410" y2="714" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+
+  <rect x="80" y="720" width="1760" height="280" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="112" y="780" font-size="32" font-weight="700" fill="#24292f">What grounds it</text>
+  <rect x="110" y="805" width="800" height="160" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="142" y="872" font-size="32" font-weight="700" fill="#24292f">Microsoft Graph</text>
+  <text x="142" y="916" font-size="28" fill="#57606a">(your work content)</text>
+  <rect x="1010" y="805" width="800" height="160" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1042" y="896" font-size="32" font-weight="700" fill="#24292f">Tools, connectors &amp; MCP servers</text>
+</svg>

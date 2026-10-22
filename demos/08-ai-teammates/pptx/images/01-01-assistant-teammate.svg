@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title id="t">Assistant and teammate compared</title>
+<desc id="d">An assistant such as Chat or Cowork acts as you with your permissions, keeps memory personal to you, works in your chat or task pane and starts when you send a prompt. A teammate such as Autopilot or an agent with an account acts as itself with its own scoped access, keeps memory for the process shared with the team, reaches people in Teams, Outlook, documents and through mentions, and starts from a goal, a schedule or an incoming signal.</desc>
+<rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#57606a"/></marker></defs>
+<rect x="420" y="80" width="700" height="120" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="450" y="133" font-size="34" font-weight="600" fill="#24292f">Assistant</text>
+<text x="450" y="177" font-size="28" fill="#57606a">Chat, Cowork</text>
+<rect x="1160" y="80" width="700" height="120" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<text x="1190" y="133" font-size="34" font-weight="600" fill="#24292f">Teammate</text>
+<text x="1190" y="177" font-size="28" fill="#57606a">Autopilot, agent account</text>
+<text x="90" y="325" font-size="32" font-weight="600" fill="#24292f">Identity</text>
+<rect x="420" y="230" width="700" height="170" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="450" y="305" font-size="30" fill="#24292f">Acts as you, with</text>
+<text x="450" y="347" font-size="30" fill="#24292f">your permissions</text>
+<rect x="1160" y="230" width="700" height="170" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="1190" y="305" font-size="30" fill="#24292f">Acts as itself, with</text>
+<text x="1190" y="347" font-size="30" fill="#24292f">its own scoped access</text>
+<text x="90" y="515" font-size="32" font-weight="600" fill="#24292f">Memory</text>
+<rect x="420" y="420" width="700" height="170" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="450" y="517" font-size="30" fill="#24292f">Personal to you</text>
+<rect x="1160" y="420" width="700" height="170" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="1190" y="495" font-size="30" fill="#24292f">Kept for the process,</text>
+<text x="1190" y="537" font-size="30" fill="#24292f">shared with the team</text>
+<text x="90" y="705" font-size="32" font-weight="600" fill="#24292f">Reach</text>
+<rect x="420" y="610" width="700" height="170" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="450" y="707" font-size="30" fill="#24292f">Your chat or task pane</text>
+<rect x="1160" y="610" width="700" height="170" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="1190" y="685" font-size="30" fill="#24292f">Teams, Outlook, documents</text>
+<text x="1190" y="727" font-size="30" fill="#24292f">and @mentions</text>
+<text x="90" y="895" font-size="32" font-weight="600" fill="#24292f">Start</text>
+<rect x="420" y="800" width="700" height="170" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="450" y="897" font-size="30" fill="#24292f">You send a prompt</text>
+<rect x="1160" y="800" width="700" height="170" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="1190" y="875" font-size="30" fill="#24292f">A goal, a schedule or</text>
+<text x="1190" y="917" font-size="30" fill="#24292f">an incoming signal</text>
+</svg>

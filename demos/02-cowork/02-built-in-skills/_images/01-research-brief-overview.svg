@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">The market brief demo: the outdoor market held against Aurora's own positioning</title>
+  <desc id="d">Step 1: Deep Research with Web Search returns four European outdoor market trends: sustainability claims and lifecycle transparency, growth of trail running, repairability and circular programmes, and direct-to-consumer versus wholesale. On the right, internal-positioning.docx holds Aurora's own positioning: missing sustainability metrics, a thin trail-running presence, the repairability programme with two-year free repairs, and fleece sizing returns. Step 2 lines them up: sustainability claims meet the missing metrics and trail running meets the thin presence, both exposed; repairability meets the repair programme, aligned; the fleece sizing returns are exposed on their own. Step 3 turns the comparison into AW26 Market Brief - Aurora Outdoor.docx, four sections over about two pages. Step 4 adds 5. Recommendations with three ranked moves and a Top pick, and exports AW26 Market Brief - Aurora Outdoor.pdf for leadership. Highlights run down the trends, dots carry each trend across to its verdict, then on to the Word brief, the recommendations and the PDF.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      svg { font-size: 28px; }
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .t { font-size: 30px; font-weight: 600; }
+      .k { font-size: 28px; font-weight: 600; }
+      .kc { font-size: 28px; font-weight: 600; text-anchor: middle; }
+      .s { font-size: 28px; fill: #57606a; }
+      .code { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; }
+      .num { font-size: 28px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <g stroke="#8c959f" stroke-width="2">
+    <rect x="60" y="70" width="600" height="690" rx="24" fill="#f6f8fa"/>
+    <rect x="720" y="70" width="480" height="690" rx="24" fill="#ffffff"/>
+    <rect x="1260" y="70" width="600" height="690" rx="24" fill="#f3edff"/>
+  </g>
+
+  <circle cx="110" cy="126" r="24" fill="#24292f"/>
+  <text class="num" x="110" y="136">1</text>
+  <text class="t" x="146" y="137">European outdoor market</text>
+  <text class="s" x="90" y="187">Deep Research, Web Search</text>
+
+  <circle cx="790" cy="126" r="24" fill="#24292f"/>
+  <text class="num" x="790" y="136">2</text>
+  <text class="t" x="826" y="137">Aligned or exposed</text>
+
+  <text class="code" x="1290" y="137">internal-positioning.docx</text>
+  <text class="s" x="1290" y="187">Aurora's own positioning</text>
+
+  <g stroke="#57606a" stroke-width="3" fill="none">
+    <line x1="630" y1="280" x2="870" y2="280"/>
+    <line x1="1050" y1="280" x2="1290" y2="280"/>
+    <line x1="630" y1="410" x2="870" y2="410"/>
+    <line x1="1050" y1="410" x2="1290" y2="410"/>
+    <line x1="630" y1="540" x2="870" y2="540"/>
+    <line x1="1050" y1="540" x2="1290" y2="540"/>
+    <line x1="1050" y1="670" x2="1290" y2="670"/>
+  </g>
+
+  <g stroke="#8c959f" stroke-width="2" fill="#ffffff">
+    <rect x="90" y="225" width="540" height="110" rx="16"/>
+    <rect x="90" y="355" width="540" height="110" rx="16"/>
+    <rect x="90" y="485" width="540" height="110" rx="16"/>
+    <rect x="90" y="615" width="540" height="110" rx="16"/>
+    <rect x="1290" y="225" width="540" height="110" rx="16"/>
+    <rect x="1290" y="355" width="540" height="110" rx="16"/>
+    <rect x="1290" y="485" width="540" height="110" rx="16"/>
+    <rect x="1290" y="615" width="540" height="110" rx="16"/>
+  </g>
+  <text class="k" x="120" y="270">Sustainability claims and</text>
+  <text class="k" x="120" y="306">lifecycle transparency</text>
+  <text class="k" x="120" y="420">Growth of trail running</text>
+  <text class="k" x="120" y="530">Repairability and</text>
+  <text class="k" x="120" y="566">circular programmes</text>
+  <text class="k" x="120" y="660">Direct-to-consumer</text>
+  <text class="k" x="120" y="696">versus wholesale</text>
+
+  <text class="k" x="1320" y="270">Missing sustainability</text>
+  <text class="k" x="1320" y="306">metrics</text>
+  <text class="k" x="1320" y="420">Thin trail-running presence</text>
+  <text class="k" x="1320" y="530">Repairability programme,</text>
+  <text class="k" x="1320" y="566">two-year free repairs</text>
+  <text class="k" x="1320" y="680">Fleece sizing returns</text>
+
+  <g stroke="#e0a534" stroke-width="3" fill="#fff6e5">
+    <rect x="870" y="252" width="180" height="56" rx="28"/>
+    <rect x="870" y="382" width="180" height="56" rx="28"/>
+    <rect x="870" y="642" width="180" height="56" rx="28"/>
+  </g>
+  <rect x="870" y="512" width="180" height="56" rx="28" fill="#e9f7ef" stroke="#57606a" stroke-width="3"/>
+  <text class="kc" x="960" y="290">Exposed</text>
+  <text class="kc" x="960" y="420">Exposed</text>
+  <text class="kc" x="960" y="550">Aligned</text>
+  <text class="kc" x="960" y="680">Exposed</text>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <path d="M960,760 V795 H350 V830"/>
+    <line x1="640" y1="920" x2="700" y2="920"/>
+    <line x1="1220" y1="920" x2="1280" y2="920"/>
+  </g>
+
+  <rect x="60" y="830" width="580" height="180" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="110" cy="880" r="24" fill="#24292f"/>
+  <text class="num" x="110" y="890">3</text>
+  <text class="code" x="146" y="890">AW26 Market Brief -</text>
+  <text class="code" x="146" y="928">Aurora Outdoor.docx</text>
+  <text class="s" x="146" y="980">four sections, about two pages</text>
+
+  <rect x="700" y="830" width="520" height="180" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="750" cy="880" r="24" fill="#24292f"/>
+  <text class="num" x="750" y="890">4</text>
+  <text class="k" x="786" y="890">5. Recommendations</text>
+  <text class="s" x="786" y="936">three moves, ranked</text>
+  <path transform="translate(800,975)" d="M0,-15 L3.82,-5.26 L14.27,-4.64 L6.18,2.01 L8.82,12.14 L0,6.5 L-8.82,12.14 L-6.18,2.01 L-14.27,-4.64 L-3.82,-5.26 Z" fill="#e0a534"/>
+  <text class="k" x="826" y="985">Top pick</text>
+
+  <rect x="1280" y="830" width="580" height="180" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="code" x="1310" y="890">AW26 Market Brief -</text>
+  <text class="code" x="1310" y="928">Aurora Outdoor.pdf</text>
+  <text class="s" x="1310" y="980">for leadership</text>
+
+  <g fill="none" stroke="#24292f" stroke-width="5">
+    <rect x="90" y="225" width="540" height="110" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.01;0.015;0.055;0.06;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="90" y="355" width="540" height="110" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.06;0.065;0.105;0.11;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="90" y="485" width="540" height="110" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.11;0.115;0.155;0.16;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="90" y="615" width="540" height="110" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.16;0.165;0.205;0.21;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="1290" y="225" width="540" height="110" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.26;0.265;0.305;0.31;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="1290" y="355" width="540" height="110" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.35;0.355;0.395;0.40;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="1290" y="485" width="540" height="110" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.44;0.445;0.485;0.49;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="1290" y="615" width="540" height="110" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.49;0.495;0.535;0.54;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="870" y="252" width="180" height="56" rx="28" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.26;0.265;0.305;0.31;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="870" y="382" width="180" height="56" rx="28" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.35;0.355;0.395;0.40;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="870" y="512" width="180" height="56" rx="28" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.44;0.445;0.485;0.49;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="870" y="642" width="180" height="56" rx="28" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.49;0.495;0.535;0.54;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="60" y="830" width="580" height="180" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.61;0.62;0.70;0.71;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="700" y="830" width="520" height="180" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.74;0.75;0.83;0.84;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="1280" y="830" width="580" height="180" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.87;0.88;0.97;0.98;1" values="0;0;1;1;0;0"/>
+    </rect>
+  </g>
+
+  <g fill="#24292f">
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M630,280 H870" calcMode="linear" keyTimes="0;0.22;0.26;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.22;0.225;0.26;0.265;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M630,410 H870" calcMode="linear" keyTimes="0;0.31;0.35;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.31;0.315;0.35;0.355;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M630,540 H870" calcMode="linear" keyTimes="0;0.40;0.44;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.40;0.405;0.44;0.445;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M960,760 V795 H350 V830" calcMode="linear" keyTimes="0;0.55;0.61;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.55;0.555;0.61;0.615;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M640,920 H700" calcMode="linear" keyTimes="0;0.71;0.74;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.71;0.715;0.74;0.745;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1220,920 H1280" calcMode="linear" keyTimes="0;0.84;0.87;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.84;0.845;0.87;0.875;1" values="0;0;1;1;0;0"/>
+    </circle>
+  </g>
+</svg>

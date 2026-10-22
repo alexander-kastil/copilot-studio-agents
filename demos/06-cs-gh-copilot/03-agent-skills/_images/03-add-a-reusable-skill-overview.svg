@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Six steps take the follow-up-email-drafter skill from the decision to a shared file</title>
+  <desc id="d">In the center, the SKILL.md of follow-up-email-drafter: YAML front matter with name: follow-up-email-drafter and the tightened description, Draft a follow-up email ONLY after a completed customer call, meeting, or demo, followed by the Markdown heading Follow-up email drafter. Around it, six steps on the Northwind Sales Assistant: 1, Decide: recurring, self-contained and needed only sometimes, so it is a skill. 2, Create from blank: Name, Description and the template Instructions. 3, Upload a skill: the SKILL.md saves at once and is Read-only. 4, Test in Preview: a follow-up request shows Used skill, a lead-time question stays quiet. 5, Replace: a tighter description, no second skill. 6, Download: follow-up-email-drafter.md, renamed to SKILL.md. Then share the file: upload it into another agent or check it into source control, in the same format as Claude Code and GitHub Copilot. A dot walks the loop from step 1 to the shared file.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      svg { font-size: 26px; }
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .h { font-size: 34px; font-weight: 700; text-anchor: middle; }
+      .hl { font-size: 34px; font-weight: 700; }
+      .t { font-size: 30px; font-weight: 600; }
+      .tc { font-size: 30px; font-weight: 600; text-anchor: middle; }
+      .s { font-size: 28px; fill: #57606a; }
+      .sc { font-size: 28px; fill: #57606a; text-anchor: middle; }
+      .b { font-size: 28px; }
+      .bc { font-size: 28px; text-anchor: middle; }
+      .bb { font-size: 28px; font-weight: 600; }
+      .bbc { font-size: 28px; font-weight: 600; text-anchor: middle; }
+      .code { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; }
+      .codec { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; text-anchor: middle; }
+      .mono { font-family: Consolas, 'Courier New', monospace; font-size: 26px; }
+      .monoc { font-family: Consolas, 'Courier New', monospace; font-size: 26px; text-anchor: middle; }
+      .num { font-size: 28px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .tag { font-size: 26px; font-weight: 600; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect x="60" y="60" width="520" height="210" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="116" cy="118" r="26" fill="#24292f"/>
+  <text class="num" x="116" y="128">1</text>
+  <text class="t" x="160" y="129">Decide</text>
+  <text class="s" x="100" y="188">recurring, self-contained,</text>
+  <text class="s" x="100" y="228">needed only sometimes</text>
+  <rect x="700" y="60" width="520" height="210" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="756" cy="118" r="26" fill="#24292f"/>
+  <text class="num" x="756" y="128">2</text>
+  <text class="t" x="800" y="129">Create from blank</text>
+  <text class="s" x="740" y="188">Name, Description and</text>
+  <text class="s" x="740" y="228">template Instructions</text>
+  <rect x="1340" y="60" width="520" height="210" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="1396" cy="118" r="26" fill="#24292f"/>
+  <text class="num" x="1396" y="128">3</text>
+  <text class="t" x="1440" y="129">Upload a skill</text>
+  <text class="s" x="1380" y="188">SKILL.md, saved at once,</text>
+  <text class="s" x="1380" y="228">Read-only</text>
+  <rect x="1340" y="810" width="520" height="210" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="1396" cy="868" r="26" fill="#24292f"/>
+  <text class="num" x="1396" y="878">4</text>
+  <text class="t" x="1440" y="879">Test in Preview</text>
+  <text class="s" x="1380" y="938">follow-up request: Used skill</text>
+  <text class="s" x="1380" y="978">lead-time question: stays quiet</text>
+  <rect x="700" y="810" width="520" height="210" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="756" cy="868" r="26" fill="#24292f"/>
+  <text class="num" x="756" y="878">5</text>
+  <text class="t" x="800" y="879">Replace</text>
+  <text class="s" x="740" y="938">tighter description,</text>
+  <text class="s" x="740" y="978">no second skill</text>
+  <rect x="60" y="810" width="520" height="210" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="116" cy="868" r="26" fill="#24292f"/>
+  <text class="num" x="116" y="878">6</text>
+  <text class="t" x="160" y="879">Download</text>
+  <text class="mono" x="100" y="938">follow-up-email-drafter.md</text>
+  <text class="s" x="100" y="978">renamed to SKILL.md</text>
+  <line x1="580" y1="165" x2="700" y2="165" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <line x1="1220" y1="165" x2="1340" y2="165" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <line x1="1600" y1="270" x2="1600" y2="810" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <line x1="1340" y1="915" x2="1220" y2="915" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <line x1="700" y1="915" x2="580" y2="915" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <line x1="320" y1="810" x2="320" y2="690" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <rect x="60" y="420" width="520" height="270" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="100" y="474">Share the file</text>
+  <text class="s" x="100" y="520">upload into another agent</text>
+  <text class="s" x="100" y="560">or check it into source control,</text>
+  <text class="s" x="100" y="600">same format as Claude Code</text>
+  <text class="s" x="100" y="640">and GitHub Copilot</text>
+  <path d="M700,330 H1170 L1220,380 V750 H700 Z" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <path d="M1170,330 V380 H1220" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="code" x="730" y="380">SKILL.md</text>
+  <text class="mono" x="730" y="436">---</text>
+  <text class="mono" x="730" y="480">name: follow-up-email-drafter</text>
+  <text class="mono" x="730" y="524">description: Draft a follow-up</text>
+  <text class="mono" x="730" y="568">email ONLY after a completed</text>
+  <text class="mono" x="730" y="612">customer call, meeting, or demo</text>
+  <text class="mono" x="730" y="656">---</text>
+  <text class="mono" x="730" y="700"># Follow-up email drafter</text>
+  <rect x="60" y="60" width="520" height="210" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.1;0.1107;1" values="1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M580,165 H700" calcMode="linear" keyTimes="0;0.1;0.1286;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.1;0.1107;0.1357;0.1464;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="700" y="60" width="520" height="210" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.1286;0.1393;0.2429;0.2536;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="716" y="452" width="488" height="172" rx="10" fill="none" stroke="#e0a534" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.1429;0.1536;0.2429;0.2536;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M1220,165 H1340" calcMode="linear" keyTimes="0;0.2429;0.2714;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.2429;0.2536;0.2786;0.2893;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1340" y="60" width="520" height="210" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.2714;0.2821;0.3714;0.3821;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="700" y="330" width="520" height="420" rx="4" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.2857;0.2964;0.3714;0.3821;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M1600,270 V810" calcMode="linear" keyTimes="0;0.3714;0.4286;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.3714;0.3821;0.4357;0.4464;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1340" y="810" width="520" height="210" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.4286;0.4393;0.5429;0.5536;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M1340,915 H1220" calcMode="linear" keyTimes="0;0.5429;0.5714;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.5429;0.5536;0.5786;0.5893;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="700" y="810" width="520" height="210" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.5714;0.5821;0.6857;0.6964;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="716" y="498" width="488" height="126" rx="10" fill="none" stroke="#e0a534" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.5857;0.5964;0.6857;0.6964;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M700,915 H580" calcMode="linear" keyTimes="0;0.6857;0.7143;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.6857;0.6964;0.7214;0.7321;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="60" y="810" width="520" height="210" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.7143;0.725;0.8143;0.825;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M320,810 V690" calcMode="linear" keyTimes="0;0.8143;0.8429;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.8143;0.825;0.85;0.8607;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="60" y="420" width="520" height="270" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.8429;0.8536;0.9857;0.9964;1" values="0;0;1;1;0;0"/>
+  </rect>
+</svg>

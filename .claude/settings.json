@@ -1,0 +1,16 @@
+{
+  "extraKnownMarketplaces": {
+    "skills-for-copilot-studio": {
+      "source": { "source": "github", "repo": "microsoft/skills-for-copilot-studio" },
+      "autoUpdate": true
+    },
+    "copilot-studio-plugin": {
+      "source": { "source": "github", "repo": "microsoft/copilot-studio-plugin" },
+      "autoUpdate": true
+    }
+  },
+  "enabledPlugins": {
+    "copilot-studio@skills-for-copilot-studio": true,
+    "mcs-assistant@copilot-studio-plugin": true
+  }
+}

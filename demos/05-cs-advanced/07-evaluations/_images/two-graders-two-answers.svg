@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+<title id="t">Two test methods grading two real answers to the canteen question</title>
+<desc id="d">Two real answers to the question What is on the canteen menu today, whose expected response is that the planner has no access to the canteen menu and says so, are graded by two test methods. Answer quality judges the reply alone (relevance, groundedness, completeness and abstention) and never reads the expected response. Meaning match compares the reply with the expected response, with a pass score of 50. The run 1 answer, a full menu from public school web pages, gets Answer quality Pass and Meaning match Fail 0. The run 2 answer, I couldn't find a reliable canteen menu, gets Answer quality Fail, Not answered, and Meaning match Pass 100. A confident wrong answer passes Answer quality and a correct refusal fails it; Meaning match, the comparing method, gets both right.</desc>
+<rect width="1920" height="1080" fill="#ffffff"/>
+<defs>
+<style>
+svg{font-size:26px}
+.h{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#24292f;font-weight:600}
+.r{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#24292f}
+.s{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#57606a}
+.m{font-family:Consolas,'Cascadia Mono','Courier New',monospace;fill:#24292f}
+</style>
+<marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+</defs>
+<rect x="60" y="36" width="1798" height="120" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text class="s" x="96" y="86" font-size="26">Question</text>
+<text class="h" x="340" y="86" font-size="30">What is on the canteen menu today?</text>
+<text class="s" x="96" y="132" font-size="26">Expected response</text>
+<text class="r" x="340" y="132" font-size="28">The planner has no access to the canteen menu and says so.</text>
+<rect x="560" y="180" width="620" height="172" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text class="h" x="590" y="226" font-size="32">Answer quality</text>
+<text class="s" x="590" y="266" font-size="26">judges the reply alone: relevance,</text>
+<text class="s" x="590" y="298" font-size="26">groundedness, completeness, abstention</text>
+<text class="s" x="590" y="330" font-size="26">never reads the expected response</text>
+<rect x="1240" y="180" width="618" height="172" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="1270" y="226" font-size="32">Meaning match</text>
+<text class="s" x="1270" y="266" font-size="26">compares the reply with the</text>
+<text class="s" x="1270" y="298" font-size="26">expected response</text>
+<text class="s" x="1270" y="330" font-size="26">pass score 50</text>
+<rect x="1606" y="198" width="230" height="44" rx="22.0" fill="#ffffff" stroke="#4a83d4" stroke-width="2"/>
+<text class="h" x="1721" y="229.1" font-size="26" text-anchor="middle">gets both right</text>
+<rect x="60" y="368" width="470" height="260" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text class="s" x="90" y="414" font-size="26">Run 1 answer</text>
+<text class="h" x="90" y="460" font-size="30">A full menu from public</text>
+<text class="h" x="90" y="498" font-size="30">school web pages</text>
+<rect x="90" y="534" width="360" height="46" rx="23.0" fill="#fdecec" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="270" y="566.1" font-size="26" text-anchor="middle">a confident wrong answer</text>
+<rect x="560" y="368" width="620" height="260" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<rect x="730" y="404" width="280" height="80" rx="40.0" fill="#e9f7ef" stroke="#1a7f37" stroke-width="2"/>
+<text class="h" x="870" y="458" font-size="40" text-anchor="middle">Pass</text>
+<text class="r" x="870" y="588" font-size="28" text-anchor="middle">passes a confident wrong answer</text>
+<rect x="1240" y="368" width="618" height="260" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<rect x="1409" y="404" width="280" height="80" rx="40.0" fill="#fdecec" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="1549" y="458" font-size="40" text-anchor="middle">Fail 0</text>
+<text class="h" x="1549" y="588" font-size="28" text-anchor="middle">catches the wrong answer</text>
+<rect x="60" y="644" width="470" height="260" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text class="s" x="90" y="690" font-size="26">Run 2 answer</text>
+<text class="h" x="90" y="736" font-size="30">"I couldn't find a reliable</text>
+<text class="h" x="90" y="774" font-size="30">canteen menu"</text>
+<rect x="90" y="810" width="360" height="46" rx="23.0" fill="#e9f7ef" stroke="#1a7f37" stroke-width="2"/>
+<text class="h" x="270" y="842.1" font-size="26" text-anchor="middle">a correct refusal</text>
+<rect x="560" y="644" width="620" height="260" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<rect x="730" y="680" width="280" height="80" rx="40.0" fill="#fdecec" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="870" y="734" font-size="40" text-anchor="middle">Fail</text>
+<text class="s" x="870" y="800" font-size="26" text-anchor="middle">Not answered</text>
+<text class="r" x="870" y="864" font-size="28" text-anchor="middle">fails a correct refusal</text>
+<rect x="1240" y="644" width="618" height="260" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<rect x="1409" y="680" width="280" height="80" rx="40.0" fill="#e9f7ef" stroke="#1a7f37" stroke-width="2"/>
+<text class="h" x="1549" y="734" font-size="40" text-anchor="middle">Pass 100</text>
+<text class="h" x="1549" y="864" font-size="28" text-anchor="middle">credits the correct refusal</text>
+<rect x="1228" y="168" width="642" height="748" rx="26" fill="none" stroke="#4a83d4" stroke-width="4"/>
+<rect x="60" y="940" width="1798" height="100" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="90" y="982" font-size="30">A confident wrong answer passes Answer quality, and a correct refusal fails it</text>
+<text class="s" x="90" y="1020" font-size="26">Meaning match compares each reply with the expected response and gets both right</text>
+</svg>

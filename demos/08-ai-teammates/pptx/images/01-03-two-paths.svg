@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title id="t">How the two paths to a teammate relate</title>
+<desc id="d">A business process that needs an owner raises the question who builds the teammate. When a user describes name, role and goal, the path leads to Autopilot (private preview). When a maker configures instructions, tools and triggers, it leads to a Copilot Studio agent with an agent account. Both paths lead to own identity, memory, Teams and Outlook presence, governed in Agent 365 and Entra.</desc>
+<rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#57606a"/></marker></defs>
+<rect x="710" y="40" width="500" height="120" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text x="960" y="92" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">A business process</text>
+<text x="960" y="132" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">that needs an owner</text>
+<path d="M760,300 L960,205 L1160,300 L960,395 Z" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text x="960" y="292" font-size="28" font-weight="600" fill="#24292f" text-anchor="middle">Who builds</text>
+<text x="960" y="330" font-size="28" font-weight="600" fill="#24292f" text-anchor="middle">the teammate?</text>
+<rect x="170" y="460" width="500" height="140" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+<text x="420" y="520" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">Autopilot</text>
+<text x="420" y="560" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">(private preview)</text>
+<rect x="1250" y="460" width="500" height="140" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<text x="1500" y="520" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">Copilot Studio agent</text>
+<text x="1500" y="560" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">with an agent account</text>
+<rect x="720" y="650" width="480" height="150" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="960" y="712" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">Own identity, memory,</text>
+<text x="960" y="752" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">Teams and Outlook presence</text>
+<rect x="760" y="860" width="400" height="120" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text x="960" y="912" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">Governed in</text>
+<text x="960" y="952" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">Agent 365 and Entra</text>
+<text x="740" y="232" font-size="28" fill="#57606a" text-anchor="end">A user describes</text>
+<text x="740" y="268" font-size="28" fill="#57606a" text-anchor="end">name, role, goal</text>
+<text x="1180" y="232" font-size="28" fill="#57606a">A maker configures</text>
+<text x="1180" y="268" font-size="28" fill="#57606a">instructions, tools, triggers</text>
+<path d="M960,160 L960,197" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M760,300 L420,300 L420,452" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M1160,300 L1500,300 L1500,452" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M420,600 L420,725 L712,725" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M1500,600 L1500,725 L1208,725" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M960,800 L960,852" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="710" y="40" width="500" height="120" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.0125;0.0375;0.0500;0.0750;1.0000" dur="8s" repeatCount="indefinite"/></rect>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M960,160 L960,197" dur="8s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.0625;0.1000;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0585;0.0625;0.1000;0.1060;1" dur="8s" repeatCount="indefinite"/></circle>
+<path d="M760,300 L960,205 L1160,300 L960,395 Z" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0938;0.1125;0.1375;0.1562;1" dur="8s" repeatCount="indefinite"/></path>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M760,300 L420,300 L420,452" dur="8s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.1500;0.2375;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1460;0.1500;0.2375;0.2435;1" dur="8s" repeatCount="indefinite"/></circle>
+<rect x="170" y="460" width="500" height="140" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.2250;0.2500;0.2750;0.3000;1.0000" dur="8s" repeatCount="indefinite"/></rect>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M420,600 L420,725 L712,725" dur="8s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.2875;0.3625;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2835;0.2875;0.3625;0.3685;1" dur="8s" repeatCount="indefinite"/></circle>
+<rect x="720" y="650" width="480" height="150" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.3500;0.3750;0.3875;0.4125;1.0000" dur="8s" repeatCount="indefinite"/></rect>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M960,800 L960,852" dur="8s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.4000;0.4375;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3960;0.4000;0.4375;0.4435;1" dur="8s" repeatCount="indefinite"/></circle>
+<rect x="760" y="860" width="400" height="120" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.4250;0.4500;0.4688;0.4938;1.0000" dur="8s" repeatCount="indefinite"/></rect>
+<rect x="710" y="40" width="500" height="120" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.5125;0.5375;0.5500;0.5750;1.0000" dur="8s" repeatCount="indefinite"/></rect>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M960,160 L960,197" dur="8s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.5625;0.6000;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5585;0.5625;0.6000;0.6060;1" dur="8s" repeatCount="indefinite"/></circle>
+<path d="M760,300 L960,205 L1160,300 L960,395 Z" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5938;0.6125;0.6375;0.6562;1" dur="8s" repeatCount="indefinite"/></path>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M1160,300 L1500,300 L1500,452" dur="8s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.6500;0.7375;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6460;0.6500;0.7375;0.7435;1" dur="8s" repeatCount="indefinite"/></circle>
+<rect x="1250" y="460" width="500" height="140" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.7250;0.7500;0.7750;0.8000;1.0000" dur="8s" repeatCount="indefinite"/></rect>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M1500,600 L1500,725 L1208,725" dur="8s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.7875;0.8625;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7835;0.7875;0.8625;0.8685;1" dur="8s" repeatCount="indefinite"/></circle>
+<rect x="720" y="650" width="480" height="150" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.8500;0.8750;0.8875;0.9125;1.0000" dur="8s" repeatCount="indefinite"/></rect>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M960,800 L960,852" dur="8s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.9000;0.9375;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.8960;0.9000;0.9375;0.9435;1" dur="8s" repeatCount="indefinite"/></circle>
+<rect x="760" y="860" width="400" height="120" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.9250;0.9500;0.9688;0.9938;1.0000" dur="8s" repeatCount="indefinite"/></rect>
+</svg>

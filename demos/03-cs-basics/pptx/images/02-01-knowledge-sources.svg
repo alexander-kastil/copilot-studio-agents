@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Knowledge source types grouped by who can see the content</title>
+  <desc id="d">The source types under Add knowledge, in four groups by who can see the content. Anyone, no sign-in needed: public website, pages under the URL you enter, through Grounding with Bing Search. Everyone who can chat with the agent: upload file, documents you upload, stored in Dataverse. Only what the signed-in user can open: SharePoint, a SharePoint URL searched through Microsoft Graph; Dataverse, up to 15 tables per source with synonyms and a glossary; unstructured data, SharePoint or OneDrive files and folders and connector content. Depends on the connection you configure: Azure AI Search, an existing search index; real-time connectors such as Dynamics 365, Salesforce, ServiceNow and Azure SQL. Below, every source gets a name and a description that generative orchestration reads to choose the source, as with the two SharePoint sites of the demo: HR Documents, This source provides any kind of Human Resources information, and Sightseeing, Recommended Sightseeing info.</desc>
+  <style>svg { font-size: 26px; }</style>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+
+    <rect x="60" y="60" width="420" height="110" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="90" y="106" font-size="30" font-weight="700" fill="#24292f">Anyone</text>
+    <text x="90" y="146" font-size="26" fill="#57606a">no sign-in needed</text>
+    <rect x="60" y="190" width="420" height="190" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="90" y="240" font-size="30" font-weight="700" fill="#24292f">Public website</text>
+    <text x="90" y="284" font-size="26" fill="#57606a">Pages under the URL you enter,</text>
+    <text x="90" y="318" font-size="26" fill="#57606a">through Grounding with</text>
+    <text x="90" y="352" font-size="26" fill="#57606a">Bing Search</text>
+
+    <rect x="520" y="60" width="420" height="110" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <text x="550" y="106" font-size="30" font-weight="700" fill="#24292f">Everyone who can</text>
+    <text x="550" y="146" font-size="26" fill="#57606a">chat with the agent</text>
+    <rect x="520" y="190" width="420" height="160" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="550" y="240" font-size="30" font-weight="700" fill="#24292f">Upload file</text>
+    <text x="550" y="284" font-size="26" fill="#57606a">Documents you upload,</text>
+    <text x="550" y="318" font-size="26" fill="#57606a">stored in Dataverse</text>
+
+    <rect x="980" y="60" width="420" height="110" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="1010" y="106" font-size="30" font-weight="700" fill="#24292f">Only what the</text>
+    <text x="1010" y="146" font-size="26" fill="#57606a">signed-in user can open</text>
+    <rect x="980" y="190" width="420" height="160" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1010" y="240" font-size="30" font-weight="700" fill="#24292f">SharePoint</text>
+    <text x="1010" y="284" font-size="26" fill="#57606a">A SharePoint URL, searched</text>
+    <text x="1010" y="318" font-size="26" fill="#57606a">through Microsoft Graph</text>
+    <rect x="980" y="370" width="420" height="160" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1010" y="420" font-size="30" font-weight="700" fill="#24292f">Dataverse</text>
+    <text x="1010" y="464" font-size="26" fill="#57606a">Up to 15 tables per source,</text>
+    <text x="1010" y="498" font-size="26" fill="#57606a">with synonyms and a glossary</text>
+    <rect x="980" y="550" width="420" height="160" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1010" y="600" font-size="30" font-weight="700" fill="#24292f">Unstructured data</text>
+    <text x="1010" y="644" font-size="26" fill="#57606a">SharePoint or OneDrive files</text>
+    <text x="1010" y="678" font-size="26" fill="#57606a">and folders, connector content</text>
+
+    <rect x="1440" y="60" width="420" height="110" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1470" y="106" font-size="30" font-weight="700" fill="#24292f">Depends on the</text>
+    <text x="1470" y="146" font-size="26" fill="#57606a">connection you configure</text>
+    <rect x="1440" y="190" width="420" height="160" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1470" y="240" font-size="30" font-weight="700" fill="#24292f">Azure AI Search</text>
+    <text x="1470" y="284" font-size="26" fill="#57606a">An existing search index</text>
+    <rect x="1440" y="370" width="420" height="190" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1470" y="420" font-size="30" font-weight="700" fill="#24292f">Real-time connectors</text>
+    <text x="1470" y="464" font-size="26" fill="#57606a">Live systems such as</text>
+    <text x="1470" y="498" font-size="26" fill="#57606a">Dynamics 365, Salesforce,</text>
+    <text x="1470" y="532" font-size="26" fill="#57606a">ServiceNow and Azure SQL</text>
+
+    <rect x="60" y="760" width="1800" height="260" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="100" y="830" font-size="30" font-weight="700" fill="#24292f">Name and description</text>
+    <text x="100" y="876" font-size="26" fill="#57606a">Generative orchestration reads</text>
+    <text x="100" y="910" font-size="26" fill="#57606a">each description to choose</text>
+    <text x="100" y="944" font-size="26" fill="#57606a">the source, as with the two</text>
+    <text x="100" y="978" font-size="26" fill="#57606a">SharePoint sites of the demo</text>
+    <rect x="560" y="805" width="680" height="170" rx="14" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="595" y="855" font-size="30" font-weight="700" fill="#24292f">HR Documents</text>
+    <text x="595" y="899" font-size="26" fill="#57606a">This source provides any kind</text>
+    <text x="595" y="933" font-size="26" fill="#57606a">of Human Resources information</text>
+    <rect x="1280" y="805" width="540" height="170" rx="14" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="1315" y="855" font-size="30" font-weight="700" fill="#24292f">Sightseeing</text>
+    <text x="1315" y="899" font-size="26" fill="#57606a">Recommended Sightseeing info</text>
+  </g>
+</svg>

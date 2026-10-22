@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Grey Logistics Help Hub routes an HR policy question to its child agent and answers other questions itself</title>
+  <desc id="d">Two test questions enter the parent agent Grey Logistics Help Hub. The parent checks whether the question is about HR policy. How many PTO days do I get goes to the child agent Grey Logistics HR Policy, which answers and hands control back. The Wi-Fi guest password policy question stays with the parent, which answers directly from its knowledge and tools.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <text x="80" y="212" font-size="28" font-weight="600" fill="#57606a">Ask first</text>
+  <rect x="80" y="230" width="560" height="170" rx="22" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="360" y="305" text-anchor="middle" font-size="30" fill="#24292f">“How many PTO days</text>
+  <text x="360" y="347" text-anchor="middle" font-size="30" fill="#24292f">do I get?”</text>
+
+  <text x="80" y="662" font-size="28" font-weight="600" fill="#57606a">Then ask</text>
+  <rect x="80" y="680" width="560" height="170" rx="22" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="360" y="755" text-anchor="middle" font-size="30" fill="#24292f">“What’s our Wi-Fi guest</text>
+  <text x="360" y="797" text-anchor="middle" font-size="30" fill="#24292f">password policy?”</text>
+
+  <rect x="760" y="110" width="1080" height="830" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="800" y="168" font-size="36" font-weight="700" fill="#24292f">Grey Logistics Help Hub</text>
+  <text x="800" y="208" font-size="28" fill="#57606a">parent agent, generative orchestration</text>
+
+  <rect x="810" y="440" width="340" height="200" rx="18" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="980" y="530" text-anchor="middle" font-size="30" font-weight="600" fill="#24292f">HR policy</text>
+  <text x="980" y="572" text-anchor="middle" font-size="30" font-weight="600" fill="#24292f">question?</text>
+
+  <rect x="1290" y="240" width="510" height="240" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1545" y="300" text-anchor="middle" font-size="32" font-weight="700" fill="#24292f">Grey Logistics HR Policy</text>
+  <text x="1545" y="342" text-anchor="middle" font-size="28" fill="#57606a">child agent</text>
+  <text x="1545" y="384" text-anchor="middle" font-size="28" fill="#24292f">benefits, PTO, holidays</text>
+  <text x="1545" y="426" text-anchor="middle" font-size="28" fill="#24292f">then hands control back</text>
+
+  <rect x="1290" y="620" width="510" height="240" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1545" y="690" text-anchor="middle" font-size="32" font-weight="700" fill="#24292f">Parent answers directly</text>
+  <text x="1545" y="736" text-anchor="middle" font-size="28" fill="#24292f">from its knowledge</text>
+  <text x="1545" y="778" text-anchor="middle" font-size="28" fill="#24292f">and tools</text>
+
+  <text x="1000" y="342" font-size="28" fill="#57606a">yes: delegate</text>
+  <text x="1000" y="722" font-size="28" fill="#57606a">no: answer directly</text>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="642" y1="315" x2="806" y2="500"/>
+    <line x1="642" y1="765" x2="806" y2="590"/>
+    <polyline points="980,438 980,360 1286,360"/>
+    <polyline points="980,642 980,740 1286,740"/>
+  </g>
+
+  <g fill="none" stroke="#e0a534" stroke-width="6">
+    <rect x="802" y="432" width="356" height="216" rx="24" opacity="0">
+      <animate attributeName="opacity" calcMode="discrete" values="0;1;0;1;0" keyTimes="0;0.1;0.16;0.6;0.66" dur="10s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1282" y="232" width="526" height="256" rx="24" opacity="0">
+      <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.26;0.38" dur="10s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1282" y="612" width="526" height="256" rx="24" opacity="0">
+      <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.76;0.96" dur="10s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <g fill="#e0a534" stroke="#ffffff" stroke-width="3">
+    <circle r="14" cx="0" cy="0" opacity="1">
+      <animateMotion path="M642,315 L806,500" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.1;1" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" calcMode="discrete" values="1;0" keyTimes="0;0.1" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="14" cx="0" cy="0" opacity="0">
+      <animateMotion path="M980,438 L980,360 L1286,360" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.16;0.26;1" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.16;0.26" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="14" cx="0" cy="0" opacity="0">
+      <animateMotion path="M1286,360 L980,360 L980,438" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.38;0.48;1" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.38;0.48" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="14" cx="0" cy="0" opacity="0">
+      <animateMotion path="M642,765 L806,590" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.5;0.6;1" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.5;0.6" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="14" cx="0" cy="0" opacity="0">
+      <animateMotion path="M980,642 L980,740 L1286,740" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.66;0.76;1" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.66;0.76" dur="10s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

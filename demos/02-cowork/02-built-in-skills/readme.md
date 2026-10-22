@@ -2,7 +2,7 @@
 
 > **Generally available**: part of [Getting Started with Cowork](../01-intro/readme.md). Last checked against Microsoft Learn on 2026-10-17.
 
-Skills are Cowork's specialized capabilities. As Cowork works on your task, it automatically loads the right skills and shows them in the **side panel**. Cowork still picks the skills itself from the task you describe, and you can narrow the set for a conversation with the **Sources** picker.
+Skills are Cowork's specialized capabilities. As Cowork works on your task, it automatically loads the right skills and lists them in the side panel, titled **Workspace**. Cowork picks the skills itself from the task you describe, and you can also call one by name.
 
 ---
 
@@ -35,18 +35,20 @@ Cowork applies your organization's brand template (fonts, colors, logos, and lay
 
 ## The Side Panel
 
-While Cowork runs, the **side panel** shows where the task stands and which files and skills are involved. Open or close it with the side panel toggle in the session view.
+While Cowork runs, the side panel on the right of the task, titled **Workspace**, shows where the task stands and which files and skills are involved. Open or close it with the side panel toggle in the session view.
 
 | Section | What you see |
 |---|---|
-| **Progress** | A progress bar showing the percentage of tasks complete, plus a step-by-step log of what Cowork is doing. |
-| **Input folder** | Files you provided as context for the session. |
-| **Output folder** | Files Cowork created, each with **Download** and **Preview**. |
-| **Skills** | Skills Cowork loaded during the session, shown as chips. |
+| **Steps** | The plan as a list of steps, each ticked when it is done. Long work runs as a background task with its own timer. |
+| **Output** | Files Cowork created. Select one to preview it or open it in Word, Excel, or PowerPoint. |
+| **References** | Files you attached, which stay available to every step of the task. |
+| **Plugins** | The skills Cowork loaded for the task, built-in ones such as **Word** or **Deep Research** and your own custom or plugin skills. |
 | **Schedule** | Scheduled prompts, with options to edit, pause, resume, or delete them. |
 | **Permissions** | Actions you approved with **don't ask again**, so you can review or revoke them. |
 
-The **Skills** chips show how Cowork decomposes a request: each skill that lights up is one step in its plan. Watching the chips is the fastest way to see that, for example, the **Excel** skill builds a spreadsheet before the **Email** skill sends it. When a step stalls or produces the wrong output, the chips tell you which skill to steer.
+The **Plugins** list shows how Cowork decomposes a request: each skill that appears is one part of its plan. In the market-brief demo, **Deep Research** and **Web Search** appear while Cowork researches, and **Word** joins them when it writes the brief. Long steps such as Deep Research run for a few minutes as a background task, and the step log above names the tool each step used, such as **View calendar**. When a step stalls or produces the wrong output, the list tells you which skill to steer.
+
+![Diagram of Cowork splitting a request into a plan: step 1, the Excel skill, builds the spreadsheet and step 2, the Email skill, sends it, while the matching Excel and Email chips light up in the Skills section of the side panel.](../pptx/images/02-01-side-panel.svg)
 
 ---
 
@@ -54,15 +56,17 @@ The **Skills** chips show how Cowork decomposes a request: each skill that light
 
 Built-in skills are only the starting point. You can also:
 
-- **Create custom skills** in **Customize** > **Skills**, or as a `SKILL.md` file in OneDrive (see [Creating Custom Skills](../03-custom-skills/readme.md))
-- **Upload a skill file**, or use a skill a colleague shares with you
+- **Create custom skills** with **Customize** > **Add** > **Create skill with Cowork**, or as a `SKILL.md` file in OneDrive (see [Creating Custom Skills](../03-custom-skills/readme.md))
+- **Upload a skill file** with **Customize** > **Add** > **Upload**, or use a skill a colleague shares with you
 - **Add plugin skills** from **Discover** (see [Extending Cowork with Plugins](../05-plugins/readme.md))
 - **Use admin-deployed plugins** rolled out by your IT organization
-- **Upload a plugin package** of your own from **Customize** > **Plugins**
+- **Upload a plugin package** of your own with the same **Customize** > **Add** > **Upload**
 
-Custom skills, uploaded skills, and plugin skills all appear as chips in the same **Skills** section and activate the same way. Cowork reads each description and loads the skill when the work calls for it, so you do not invoke a skill by name.
+Custom skills, uploaded skills, and plugin skills all appear in the same **Plugins** list and activate the same way. Cowork reads each description and loads the skill when the work calls for it, so you rarely need to name one. To call a skill on purpose, type `/` in the composer and pick it from the **Skills** tab, where your own skills sit under **Custom skills**.
 
-You can narrow the set per conversation: the conversation **Sources** picker opens the **Sources & Skills** panel, where you turn plugins on or off. In **Customize** > **Skills**, **Your skills** and **Built-in** list the skills available to you.
+![Diagram of six skill sources, from built-in skills to your own plugin package, all feeding one step where Cowork reads each description and loads the skill, which then appears as a chip in the same Skills section.](../pptx/images/02-02-skill-sources.svg)
+
+**Customize** lists everything you have added under **Added**, each skill or plugin with its own switch to turn it on or off, and **Discover** offers new plugins. You reach it from the left navigation or from **+** > **Customize** in the composer.
 
 ---
 

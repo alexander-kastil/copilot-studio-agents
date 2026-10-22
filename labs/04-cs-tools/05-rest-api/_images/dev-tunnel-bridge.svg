@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">How the hr-service dev tunnel lets Power Platform reach localhost:7071</title>
+  <desc id="d">The HR-Services custom connector runs in Power Platform in the cloud. Its calls go to the public HTTPS URL of the dev tunnel hr-service, ending in euw.devtunnels.ms, then to the devtunnel host hr-service process on your machine and on through port 7071 to the HR Service API started with npm start. Both processes keep running. Below, the four commands in order: devtunnel user login signs you in, devtunnel create hr-service -a --host-header unchanged creates the tunnel, devtunnel port create hr-service -p 7071 maps local port 7071, and devtunnel host hr-service hosts the tunnel and stays running. An animation sends one request from the connector to the API.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse">
+      <path d="M0,0 L12,6 L0,12 z" fill="#8c959f"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="70" y="80" width="580" height="520" rx="20" fill="#f6f8fa"/>
+    <rect x="1270" y="80" width="580" height="520" rx="20" fill="#f6f8fa"/>
+    <text x="100" y="134" font-size="30" font-weight="700" fill="#57606a">Cloud</text>
+    <text x="1300" y="134" font-size="30" font-weight="700" fill="#57606a">Your machine</text>
+
+    <g stroke="#8c959f" stroke-width="2" fill="none" marker-end="url(#arrow)">
+      <line x1="610" y1="360" x2="714" y2="360"/>
+      <line x1="1200" y1="320" x2="1304" y2="262"/>
+      <line x1="1555" y1="320" x2="1555" y2="394"/>
+    </g>
+
+    <rect x="110" y="260" width="500" height="200" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="140" y="324" font-size="32" font-weight="700" fill="#24292f">HR-Services</text>
+    <text x="140" y="370" font-size="28" fill="#57606a">custom connector</text>
+    <text x="140" y="412" font-size="28" fill="#57606a">in Power Platform</text>
+
+    <rect x="720" y="260" width="480" height="200" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <text x="750" y="314" font-size="32" font-weight="700" fill="#24292f">Dev tunnel <tspan font-family="Consolas, Menlo, monospace" font-size="28" font-weight="400">hr-service</tspan></text>
+    <text x="750" y="362" font-size="28" fill="#57606a">public HTTPS URL</text>
+    <text x="750" y="406" font-size="28" fill="#24292f" font-family="Consolas, Menlo, monospace">*.euw.devtunnels.ms</text>
+
+    <rect x="1310" y="180" width="500" height="140" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1340" y="238" font-size="28" font-weight="700" fill="#24292f" font-family="Consolas, Menlo, monospace">devtunnel host hr-service</text>
+    <text x="1340" y="284" font-size="28" fill="#57606a">keep running</text>
+    <text x="1580" y="368" font-size="28" fill="#57606a">port <tspan font-family="Consolas, Menlo, monospace" fill="#24292f">7071</tspan></text>
+
+    <rect x="1310" y="400" width="500" height="170" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="1340" y="454" font-size="32" font-weight="700" fill="#24292f">HR Service API</text>
+    <text x="1340" y="498" font-size="28" fill="#57606a"><tspan font-family="Consolas, Menlo, monospace" fill="#24292f">npm start</tspan> on <tspan font-family="Consolas, Menlo, monospace" fill="#24292f">localhost:7071</tspan></text>
+    <text x="1340" y="540" font-size="28" fill="#57606a">keep running</text>
+
+    <rect x="70" y="650" width="1780" height="340" rx="20" fill="#f6f8fa"/>
+    <g fill="#ffffff" stroke="#8c959f" stroke-width="2">
+      <circle cx="122" cy="706" r="24"/>
+      <circle cx="122" cy="782" r="24"/>
+      <circle cx="122" cy="858" r="24"/>
+      <circle cx="122" cy="934" r="24"/>
+    </g>
+    <g font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">
+      <text x="122" y="716">1</text>
+      <text x="122" y="792">2</text>
+      <text x="122" y="868">3</text>
+      <text x="122" y="944">4</text>
+    </g>
+    <g font-family="Consolas, Menlo, monospace" font-size="28" fill="#24292f">
+      <text x="168" y="716">devtunnel user login</text>
+      <text x="168" y="792">devtunnel create hr-service -a --host-header unchanged</text>
+      <text x="168" y="868">devtunnel port create hr-service -p 7071</text>
+      <text x="168" y="944">devtunnel host hr-service</text>
+    </g>
+    <g font-size="28" fill="#57606a">
+      <text x="1060" y="716">signs you in</text>
+      <text x="1060" y="792">creates the tunnel</text>
+      <text x="1060" y="868">maps local port 7071</text>
+      <text x="1060" y="944">hosts the tunnel, leave it running</text>
+    </g>
+
+    <rect x="1310" y="400" width="500" height="170" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0">
+      <animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.66;0.70;0.88;0.92;1"/>
+    </rect>
+    <g fill="#e0a534">
+      <circle r="14" opacity="0">
+        <animateMotion dur="6s" repeatCount="indefinite" path="M610,360 L720,360" keyPoints="0;0;1;1" keyTimes="0;0.05;0.22;1" calcMode="linear"/>
+        <animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.049;0.05;0.22;0.221;1"/>
+      </circle>
+      <circle r="14" opacity="0">
+        <animateMotion dur="6s" repeatCount="indefinite" path="M1200,320 L1310,258" keyPoints="0;0;1;1" keyTimes="0;0.28;0.45;1" calcMode="linear"/>
+        <animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.279;0.28;0.45;0.451;1"/>
+      </circle>
+      <circle r="14" opacity="0">
+        <animateMotion dur="6s" repeatCount="indefinite" path="M1555,320 L1555,400" keyPoints="0;0;1;1" keyTimes="0;0.50;0.66;1" calcMode="linear"/>
+        <animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.499;0.50;0.66;0.661;1"/>
+      </circle>
+    </g>
+  </g>
+</svg>

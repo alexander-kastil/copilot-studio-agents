@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title id="t">Which statements Cadence keeps in shared memory</title>
+<desc id="d">You tell Cadence a preference, a performance judgment and a phone number. The preference is kept, because shared memory holds details about people such as how someone prefers to receive updates. The performance judgment and the phone number are not kept, because shared memory never keeps judgments of performance or conduct or personal details such as personal phone numbers. You then list its shared memories and delete one; everyone who interacts with Cadence can view or delete them.</desc>
+<rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#57606a"/></marker></defs>
+<rect x="70" y="130" width="460" height="200" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="100" y="212" font-size="28" fill="#57606a">You tell Cadence</text>
+<text x="100" y="260" font-size="30" font-weight="600" fill="#24292f">A preference</text>
+<rect x="650" y="130" width="540" height="200" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<text x="680" y="195" font-size="32" font-weight="600" fill="#24292f">Kept</text>
+<text x="680" y="245" font-size="28" fill="#57606a">Details about people, such as</text>
+<text x="680" y="287" font-size="28" fill="#57606a">how someone prefers updates</text>
+<path d="M530,230 L642,230" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="70" y="400" width="460" height="200" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="100" y="462" font-size="28" fill="#57606a">You tell Cadence</text>
+<text x="100" y="510" font-size="30" font-weight="600" fill="#24292f">A performance</text>
+<text x="100" y="550" font-size="30" font-weight="600" fill="#24292f">judgment</text>
+<rect x="650" y="400" width="540" height="200" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text x="680" y="465" font-size="32" font-weight="600" fill="#24292f">Not kept</text>
+<text x="680" y="515" font-size="28" fill="#57606a">Judgments: assessments of</text>
+<text x="680" y="557" font-size="28" fill="#57606a">performance or conduct</text>
+<path d="M530,500 L642,500" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="70" y="670" width="460" height="200" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="100" y="752" font-size="28" fill="#57606a">You tell Cadence</text>
+<text x="100" y="800" font-size="30" font-weight="600" fill="#24292f">A phone number</text>
+<rect x="650" y="670" width="540" height="200" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text x="680" y="735" font-size="32" font-weight="600" fill="#24292f">Not kept</text>
+<text x="680" y="785" font-size="28" fill="#57606a">Personal details, such as</text>
+<text x="680" y="827" font-size="28" fill="#57606a">personal phone numbers</text>
+<path d="M530,770 L642,770" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="1310" y="130" width="540" height="330" rx="20" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+<text x="1340" y="192" font-size="32" font-weight="600" fill="#24292f">Cadence's shared</text>
+<text x="1340" y="232" font-size="32" font-weight="600" fill="#24292f">memories</text>
+<rect x="1340" y="290" width="480" height="120" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="1370" y="362" font-size="30" font-weight="600" fill="#24292f">The preference</text>
+<path d="M1190,300 L1302,300" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M1580,460 L1580,532" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="1310" y="540" width="540" height="330" rx="20" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text x="1340" y="600" font-size="28" font-weight="600" fill="#24292f">List its shared memories</text>
+<text x="1340" y="645" font-size="28" font-weight="600" fill="#24292f">Delete one saved memory</text>
+<text x="1340" y="725" font-size="28" fill="#57606a">Everyone who interacts with</text>
+<text x="1340" y="767" font-size="28" fill="#57606a">Cadence can view or delete</text>
+<text x="1340" y="809" font-size="28" fill="#57606a">its saved shared memories</text>
+<rect x="70" y="130" width="460" height="200" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.0222;0.0444;0.1000;0.1222;1.0000" dur="9s" repeatCount="indefinite"/></rect>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M530,230 L642,230" dur="9s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.0889;0.1444;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0849;0.0889;0.1444;0.1504;1" dur="9s" repeatCount="indefinite"/></circle>
+<rect x="650" y="130" width="540" height="200" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.1333;0.1556;0.2667;0.2889;1.0000" dur="9s" repeatCount="indefinite"/></rect>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M1190,300 L1302,300" dur="9s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.1889;0.2444;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1849;0.1889;0.2444;0.2504;1" dur="9s" repeatCount="indefinite"/></circle>
+<rect x="1340" y="290" width="480" height="120" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.2333;0.2556;0.3000;0.3222;1.0000" dur="9s" repeatCount="indefinite"/></rect>
+<rect x="70" y="400" width="460" height="200" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.3556;0.3778;0.4333;0.4556;1.0000" dur="9s" repeatCount="indefinite"/></rect>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M530,500 L642,500" dur="9s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.4222;0.4778;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4182;0.4222;0.4778;0.4838;1" dur="9s" repeatCount="indefinite"/></circle>
+<rect x="650" y="400" width="540" height="200" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.4667;0.4889;0.6000;0.6222;1.0000" dur="9s" repeatCount="indefinite"/></rect>
+<rect x="70" y="670" width="460" height="200" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.6889;0.7111;0.7667;0.7889;1.0000" dur="9s" repeatCount="indefinite"/></rect>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M530,770 L642,770" dur="9s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.7556;0.8111;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7516;0.7556;0.8111;0.8171;1" dur="9s" repeatCount="indefinite"/></circle>
+<rect x="650" y="670" width="540" height="200" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.8000;0.8222;0.9333;0.9556;1.0000" dur="9s" repeatCount="indefinite"/></rect>
+</svg>

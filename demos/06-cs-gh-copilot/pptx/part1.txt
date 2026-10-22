@@ -1,0 +1,100 @@
+Apply the Integrations House theme: Montserrat bold headings, Poppins body, #1B365D accent. Create exactly 9 cards, one per section below, in this order. Keep the card text exactly as given. The Image and Layout lines are instructions, never visible text. Use exactly the one image URL given for each card; do not generate or add any other images, icons or logos. Keep body text at the normal body size on every card; never shrink text to fit.
+
+# GitHub Copilot agents next to Standard agents
+### Build, ground, extend and test the second kind of agent
+- **Two kinds of agent** in one tenant: Standard and GitHub Copilot, chosen when you create the agent
+- **The Build tab**: skills, tools, MCP servers, workflows and IQ grounding in one place
+- **Beside the agent**: apps built from a description, and test sets that show whether the agent is any good
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/06-cs-gh-copilot/00-01-introduction.jpg?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Text on the left half on plain white, the photograph as a side accent filling the right half, no text over it.
+
+---
+
+# Overview
+### The path through the seven topics
+- Start with the **two kinds of agent**: how to choose, tell them apart, and what the new orchestrator does
+- On the **Build tab**: Agent Skills, then tools, MCP servers and the new workflows designer
+- **Ground** the agent with Work IQ, Foundry IQ and Fabric IQ
+- **Build an app** from a description, then **test and evaluate** the agent before it ships
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/06-cs-gh-copilot/00-02-module-path.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Choosing Standard or GitHub Copilot per agent
+### Both run in one tenant, and the choice is fixed at creation
+- **GitHub Copilot agents** since June 2026, running beside **Standard** agents in the same tenant
+- Each agent is **one kind**, fixed when you create it
+- **No conversion** in either direction, so decide before you invest
+- **Standard** for exact, auditable paths; **GitHub Copilot** for greenfield agents over Microsoft 365 data
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/06-cs-gh-copilot/01-01-experience-per-agent.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Telling Standard and GitHub Copilot apart
+### The navigation shows which one is open
+- **Standard**: Topics, Knowledge, Tools and Settings down the left
+- **GitHub Copilot**: Build, Preview, Evaluate and Monitor tabs across the top
+- **Topics** in the navigation always means a Standard agent
+- Check the badge in the **New agent** menu **before you create** an agent
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/06-cs-gh-copilot/01-02-telling-experiences-apart.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# The New agent menu
+### Where the kind of agent is decided
+- Pick **Agent** with the **GitHub Copilot** badge, or **Agent** with the **Standard** badge under **Other ways to build**, before the first instruction is written
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/06-cs-gh-copilot/01-03-new-agent-menu.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Full-width diagram. Title and subtitle at the top, the provided diagram across the whole card width below them at its natural aspect ratio, never cropped, never a background, then the single bullet as one caption line under the diagram.
+
+---
+
+# Matching the harness to the task
+### Light tasks stay Standard, heavy ones earn the GitHub Copilot harness
+- **Light task**: bounded data, stable actions, one main outcome, so the **Standard** harness is enough
+- **Heavy task**: longer, several systems, large files, a route that changes from run to run
+- On a simple task the **GitHub Copilot** harness adds reasoning, latency and **Copilot Credits**
+- In a shared solution, **Standard** agents stay the responsive layer and a scheduled **GitHub Copilot** agent curates the data
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/06-cs-gh-copilot/01-04-task-weight-harness.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Where each rule lives
+### Each requirement goes into the component that can carry it
+- Put each requirement in the component that can carry it: **Instructions**, **Knowledge**, **Tools**, **Skills**, **Workflows** or **Hooks**
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/06-cs-gh-copilot/01-05-where-each-rule-lives.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Full-width diagram. Title and subtitle at the top, the provided diagram across the whole card width below them at its natural aspect ratio, never cropped, never a background, then the single bullet as one caption line under the diagram.
+
+---
+
+# Bounding the agent's loop
+### The route is planned, the limits are set
+- The agent asks for missing inputs, plans, runs the steps it may run and checks its **evidence**
+- A safe gap means **replanning**, which never widens permissions or works around a denial
+- A denial, a failed safety rule or a reached **limit** stops the run as partial or blocked
+- The loop ends in a **draft with evidence**; a person or workflow takes the consequential step
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/06-cs-gh-copilot/bounded-execution-loop.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# What the harness leaves to you
+### Read-only tools, approval and credentials are design decisions
+- Give the agent **read-only tools** and keep write access behind a **workflow**
+- With **maker credentials** every user acts with the maker's permissions
+- A failing **hook** lets the agent continue; **Request for information** is Outlook only and first response wins
+- Everything the agent reads is **data**; files last **28 days**, memory is private
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/06-cs-gh-copilot/01-07-what-the-harness-leaves-to-you.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.

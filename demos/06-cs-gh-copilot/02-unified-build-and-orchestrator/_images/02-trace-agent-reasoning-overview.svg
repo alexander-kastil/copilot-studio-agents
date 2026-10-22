@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Reading the Northwind Sales Assistant's plan in Preview, in History and after a reason instruction</title>
+  <desc id="d">Left, the knowledge of the Northwind Sales Assistant: Search all websites, northwind-accounts with orders and support cases, and the product reference with lead times, both Ready. Center, the Preview tab with Debug mode on: the question For Around the Horn, what did they order last quarter, do they have any open support cases, and what is their standard lead time? opens a step list, Reasoned through your request, with Used tool: Searched knowledge for orders and support cases from northwind-accounts, Used tool: Searched knowledge for the lead time from the product reference, and Used skill: analyzing-markdown. The answer names Organic Green Tea with 1 case backordered, no open support cases and the Tier 2 lead time, citing both sources by number. Right, History shows the same turn after the fact: the Activity panel lists the Searched knowledge steps, the citations and the credits. An added instruction line, reason step by step: account tier, then orders and cases, then summarize, produces a new plan, Ran 2 events in parallel, with one Searched knowledge per part of the question. The animation runs the plan step by step, then the review in History and the reasoned rerun.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      svg { font-size: 26px; }
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .h { font-size: 34px; font-weight: 700; text-anchor: middle; }
+      .hl { font-size: 34px; font-weight: 700; }
+      .t { font-size: 30px; font-weight: 600; }
+      .tc { font-size: 30px; font-weight: 600; text-anchor: middle; }
+      .s { font-size: 28px; fill: #57606a; }
+      .sc { font-size: 28px; fill: #57606a; text-anchor: middle; }
+      .b { font-size: 28px; }
+      .bc { font-size: 28px; text-anchor: middle; }
+      .bb { font-size: 28px; font-weight: 600; }
+      .bbc { font-size: 28px; font-weight: 600; text-anchor: middle; }
+      .code { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; }
+      .codec { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; text-anchor: middle; }
+      .mono { font-family: Consolas, 'Courier New', monospace; font-size: 26px; }
+      .monoc { font-family: Consolas, 'Courier New', monospace; font-size: 26px; text-anchor: middle; }
+      .num { font-size: 28px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .tag { font-size: 26px; font-weight: 600; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect x="60" y="140" width="520" height="600" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="90" y="192">Knowledge</text>
+  <rect x="80" y="220" width="480" height="110" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2" stroke-dasharray="10 8"/>
+  <text class="bb" x="110" y="266">Search all websites</text>
+  <text class="s" x="110" y="304">default</text>
+  <rect x="80" y="380" width="480" height="140" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="code" x="110" y="428">northwind-accounts</text>
+  <text class="s" x="110" y="468">orders, support cases</text>
+  <text class="s" x="110" y="504">Ready</text>
+  <rect x="80" y="560" width="480" height="150" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="110" y="608">Product reference</text>
+  <text class="s" x="110" y="648">Tier 2 lead time</text>
+  <text class="s" x="110" y="684">Ready</text>
+  <rect x="660" y="60" width="700" height="960" rx="24" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="690" y="112">Preview</text>
+  <rect x="1110" y="80" width="230" height="46" rx="23" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="tag" x="1225" y="112">Debug mode on</text>
+  <rect x="760" y="145" width="580" height="186" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="784" y="188">For Around the Horn, what did they</text>
+  <text class="b" x="784" y="224">order last quarter, do they have any</text>
+  <text class="b" x="784" y="260">open support cases, and what is</text>
+  <text class="b" x="784" y="296">their standard lead time?</text>
+  <rect x="680" y="346" width="660" height="374" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="s" x="704" y="386">Reasoned through your request</text>
+  <rect x="700" y="412" width="620" height="86" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="724" y="448">Used tool: Searched knowledge</text>
+  <text class="s" x="724" y="484">orders, support cases</text>
+  <rect x="700" y="512" width="620" height="126" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="724" y="548">Used tool: Searched knowledge</text>
+  <text class="s" x="724" y="584">lead time</text>
+  <text class="s" x="724" y="620">Output: [3 results]</text>
+  <rect x="700" y="652" width="620" height="56" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="724" y="690">Used skill: analyzing-markdown</text>
+  <rect x="680" y="744" width="600" height="236" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="704" y="786">Organic Green Tea, 1 case backordered;</text>
+  <text class="b" x="704" y="826">no open support cases;</text>
+  <text class="b" x="704" y="866">Tier 2 lead time</text>
+  <text class="s" x="704" y="906">[1] northwind-accounts</text>
+  <text class="s" x="704" y="946">[2] product reference</text>
+  <line x1="560" y1="455" x2="700" y2="455" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <line x1="560" y1="575" x2="700" y2="575" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <rect x="1440" y="80" width="420" height="220" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1470" y="130">History</text>
+  <text class="s" x="1470" y="176">Activity panel lists the</text>
+  <text class="s" x="1470" y="216">Searched knowledge steps,</text>
+  <text class="s" x="1470" y="256">citations and credits</text>
+  <line x1="1360" y1="190" x2="1440" y2="190" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <rect x="1440" y="400" width="420" height="240" rx="18" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+  <text class="t" x="1470" y="450">Instructions</text>
+  <text class="b" x="1470" y="496">reason step by step:</text>
+  <text class="b" x="1470" y="536">account tier, then orders</text>
+  <text class="b" x="1470" y="576">and cases, then summarize</text>
+  <line x1="1650" y1="640" x2="1650" y2="740" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <rect x="1440" y="740" width="420" height="180" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="1470" y="790">Ran 2 events in parallel</text>
+  <text class="s" x="1470" y="836">one Searched knowledge</text>
+  <text class="s" x="1470" y="876">per part of the question</text>
+  <line x1="1440" y1="830" x2="1360" y2="830" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <rect x="760" y="145" width="580" height="186" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.0833;0.0958;1" values="1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M560,455 H700" calcMode="linear" keyTimes="0;0.0833;0.1333;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.0833;0.0958;0.1417;0.1542;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="700" y="412" width="620" height="86" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.1333;0.1458;0.2167;0.2292;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M560,575 H700" calcMode="linear" keyTimes="0;0.2167;0.2667;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.2167;0.2292;0.275;0.2875;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="700" y="512" width="620" height="126" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.2667;0.2792;0.35;0.3625;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="700" y="652" width="620" height="56" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.35;0.3625;0.4167;0.4292;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="680" y="744" width="600" height="236" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.4167;0.4292;0.5167;0.5292;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M1360,190 H1440" calcMode="linear" keyTimes="0;0.5167;0.5667;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.5167;0.5292;0.575;0.5875;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1440" y="80" width="420" height="220" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.5667;0.5792;0.6667;0.6792;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="1440" y="400" width="420" height="240" rx="18" fill="none" stroke="#e0a534" stroke-width="8" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.6667;0.6833;0.7167;0.75;0.7833;0.775;0.7833;1" values="0;0;1;0.3;1;0.3;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M1650,640 V740" calcMode="linear" keyTimes="0;0.7833;0.8167;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.7833;0.7958;0.825;0.8375;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1440" y="740" width="420" height="180" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.8167;0.8292;0.9;0.9125;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M1440,830 H1360" calcMode="linear" keyTimes="0;0.9;0.9417;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.9;0.9125;0.95;0.9625;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="680" y="744" width="600" height="236" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.9417;0.9542;0.9917;1;1" values="0;0;1;1;0;0"/>
+  </rect>
+</svg>

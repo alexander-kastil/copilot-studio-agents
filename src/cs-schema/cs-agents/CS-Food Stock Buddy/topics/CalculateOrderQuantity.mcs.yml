@@ -1,0 +1,66 @@
+mcs.metadata:
+  componentName: Calculate order quantity
+kind: AdaptiveDialog
+modelDescription: "Calculates order quantity based on demand and food in stock. Triggered with phrases like: Calculate quantity to order"
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent: {}
+  actions:
+    - kind: InvokeConnectorAction
+      id: invokeConnectorAction_3Jksdr
+      output:
+        kind: SingleVariableOutputBinding
+        variable: Topic.foodStock
+
+      connectionReference: iits_CSFoodStockBuddy.shared_iits-5fcs-2dfood-20catalog-5f0af75e9cbdc7cbac.758ce0d5cbd1414e93a57bd870350d65
+      connectionProperties:
+        mode: Invoker
+
+      operationId: GetFood
+
+    - kind: InvokeAIBuilderModelAction
+      id: invokeAIBuilderModelAction_vCWBmM
+      input:
+        binding:
+          foodDemand: =JSON(Global.orderDemand)
+          foodStock: =JSON(Topic.foodStock)
+
+      output:
+        binding:
+          predictionOutput: Topic.orderQuantityRecord
+
+      aIModelId: ca34d1e4-0310-41f0-8210-1e36afa2b430
+
+    - kind: SetVariable
+      id: setVariable_qdKDNh
+      variable: Topic.orderQuantityJSON
+      value: =Topic.orderQuantityRecord.text
+
+    - kind: SendActivity
+      id: sendActivity_5JUR91
+      activity: "Based on our current stock we have to order: {Topic.orderQuantityJSON}"
+
+inputType: {}
+outputType:
+  properties:
+    orderQuantityJSON:
+      displayName: orderQuantityJSON
+      description: The quantity to order as JSON
+      type: String
+
+    orderQuantityRecord:
+      displayName: orderQuantityRecord
+      description: The quantity to order as a record
+      type:
+        kind: Record
+        properties:
+          finishReason:
+            displayName: Finish Reason
+            order: 0
+            type: String
+
+          text:
+            displayName: Text
+            order: 1
+            type: String

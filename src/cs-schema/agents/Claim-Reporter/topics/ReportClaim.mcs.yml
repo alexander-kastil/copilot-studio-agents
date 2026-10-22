@@ -1,0 +1,15 @@
+mcs.metadata:
+  componentName: Report Claim
+kind: AdaptiveDialog
+modelDescription: when the user wants to report a claim
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent: {}
+  actions:
+    - kind: InvokeAIBuilderModelAction
+      id: invokeAIBuilderModelAction_vuq4hQ
+      aIModelId: fffe230c-fb92-480c-ad3f-0fc0cd4898e7
+
+inputType: {}
+outputType: {}

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">The Northwind Sales Assistant across Build, Preview, Evaluate and Monitor</title>
+  <desc id="d">Build, exercises 1 to 4: Instructions as You do and You do not lists, the northwind-reference Knowledge source and the Send an email Tool. Preview, exercise 5: a smoke test for a grounded, cited answer. Evaluate, exercises 6 to 9: the Northwind quality set with 5 test cases, the General quality test method that judges relevance and completeness, Run 1 as the baseline and Run 2 after the fix. A loop runs from Evaluate back to Build: a failing case drives one Instructions fix and the same set runs again in exercise 9. Monitor, exercise 10, confirms each answer used the Knowledge source and the off-topic turn called no tool.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="70" y="100" width="560" height="560" rx="22" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="350" y="170" font-size="46" font-weight="700" fill="#24292f" text-anchor="middle">Build</text>
+  <text x="350" y="215" font-size="28" fill="#57606a" text-anchor="middle">Exercises 1 to 4</text>
+
+  <rect x="1290" y="100" width="560" height="560" rx="22" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1570" y="170" font-size="46" font-weight="700" fill="#24292f" text-anchor="middle">Evaluate</text>
+  <text x="1570" y="215" font-size="28" fill="#57606a" text-anchor="middle">Exercises 6 to 9</text>
+
+  <g fill="#ffffff" stroke="#8c959f" stroke-width="2">
+    <rect x="110" y="245" width="480" height="110" rx="14"/>
+    <rect x="110" y="375" width="480" height="110" rx="14"/>
+    <rect x="110" y="505" width="480" height="110" rx="14"/>
+    <rect x="1330" y="245" width="480" height="110" rx="14"/>
+    <rect x="1330" y="375" width="480" height="110" rx="14"/>
+    <rect x="1330" y="505" width="480" height="110" rx="14"/>
+  </g>
+  <g font-size="30" font-weight="700" fill="#24292f">
+    <text x="140" y="290">Instructions</text>
+    <text x="140" y="420">Knowledge</text>
+    <text x="140" y="550">Tool</text>
+    <text x="1360" y="290">Northwind quality set</text>
+    <text x="1360" y="420">General quality</text>
+    <text x="1360" y="550">Run 1 baseline</text>
+  </g>
+  <g font-size="28" fill="#57606a">
+    <text x="140" y="332">You do / You do not</text>
+    <text x="140" y="462" font-family="Consolas, monospace">northwind-reference</text>
+    <text x="140" y="592">Send an email</text>
+    <text x="1360" y="332">5 test cases</text>
+    <text x="1360" y="462">relevance, completeness</text>
+    <text x="1360" y="592">Run 2 after the fix</text>
+  </g>
+
+  <rect x="760" y="230" width="400" height="310" rx="22" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="960" y="305" font-size="46" font-weight="700" fill="#24292f" text-anchor="middle">Preview</text>
+  <text x="960" y="350" font-size="28" fill="#57606a" text-anchor="middle">Exercise 5</text>
+  <text x="960" y="415" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Smoke test</text>
+  <g font-size="28" fill="#24292f" text-anchor="middle">
+    <text x="960" y="458">a grounded, cited</text>
+    <text x="960" y="496">answer</text>
+  </g>
+
+  <rect x="70" y="850" width="1780" height="140" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="110" y="912" font-size="40" font-weight="700" fill="#24292f">Monitor</text>
+  <text x="110" y="955" font-size="28" fill="#57606a">Exercise 10</text>
+  <g font-size="30" fill="#24292f">
+    <text x="420" y="912">Confirms each answer used the Knowledge source</text>
+    <text x="420" y="955">and the off-topic turn called no tool</text>
+  </g>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="638" y1="385" x2="752" y2="385"/>
+    <line x1="1168" y1="385" x2="1282" y2="385"/>
+    <line x1="1720" y1="668" x2="1720" y2="842"/>
+    <path d="M1420,668 V790 H350 V672"/>
+  </g>
+  <g font-size="30" fill="#24292f" text-anchor="middle">
+    <text x="885" y="722">A failing case drives one Instructions fix</text>
+    <text x="885" y="764">and the same set runs again (Exercise 9)</text>
+  </g>
+
+  <g fill="none" stroke="#24292f" stroke-width="6">
+    <rect x="60" y="90" width="580" height="580" rx="28" opacity="0">
+      <animate attributeName="opacity" values="1;0;1;0" keyTimes="0;0.15;0.62;0.7" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="750" y="220" width="420" height="330" rx="28" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.15;0.27" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1280" y="90" width="580" height="580" rx="28" opacity="0">
+      <animate attributeName="opacity" values="0;1;0;1;0" keyTimes="0;0.27;0.42;0.7;0.82" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="60" y="840" width="1800" height="160" rx="28" opacity="0">
+      <animate attributeName="opacity" values="0;1" keyTimes="0;0.82" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <circle r="14" cx="0" cy="0" fill="#24292f" opacity="0">
+    <animateMotion path="M1420,668 V790 H350 V672" keyPoints="0;0;1;1" keyTimes="0;0.42;0.62;1" calcMode="linear" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.42;0.62" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+  </circle>
+</svg>

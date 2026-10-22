@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Maker Path: one HR agent across six labs</title>
+  <desc id="d">A track with six numbered stops, one per Maker Path lab, alternating cards above and below. Labs 1 to 3 in 01-basics: environment, first HR agent with SharePoint and web knowledge in Teams, topics with generative orchestration and Adaptive Cards. Labs 4 and 5 in 02-tools: Excel Online and Power Automate flow tools, then publishing into Microsoft 365 Copilot Chat. Lab 6 in 03-advanced: an autonomous agent triggered by SharePoint uploads that writes candidate records through an MCP server. A highlight ring moves from stop to stop in order.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <line x1="300" y1="540" x2="1600" y2="540" stroke="#8c959f" stroke-width="6" stroke-linecap="round"/>
+    <g stroke="#8c959f" stroke-width="2">
+      <line x1="300" y1="410" x2="300" y2="504"/>
+      <line x1="820" y1="410" x2="820" y2="504"/>
+      <line x1="1340" y1="410" x2="1340" y2="504"/>
+      <line x1="560" y1="576" x2="560" y2="670"/>
+      <line x1="1080" y1="576" x2="1080" y2="670"/>
+      <line x1="1600" y1="576" x2="1600" y2="670"/>
+    </g>
+
+    <rect x="60" y="130" width="480" height="280" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" values="#e0a534;#8c959f" keyTimes="0;0.1667" dur="12s" calcMode="discrete" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="5;2" keyTimes="0;0.1667" dur="12s" calcMode="discrete" repeatCount="indefinite"/>
+    </rect>
+    <text x="88" y="180" font-family="Consolas, monospace" font-size="28" fill="#57606a">01-basics</text>
+    <text x="88" y="228" font-size="32" font-weight="700" fill="#24292f">Environment</text>
+    <g font-size="28" fill="#57606a">
+      <text x="88" y="278">Dedicated environment,</text>
+      <text x="88" y="318">Copilot Studio activated</text>
+    </g>
+
+    <rect x="320" y="670" width="480" height="280" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" values="#8c959f;#e0a534;#8c959f" keyTimes="0;0.1667;0.3333" dur="12s" calcMode="discrete" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="2;5;2" keyTimes="0;0.1667;0.3333" dur="12s" calcMode="discrete" repeatCount="indefinite"/>
+    </rect>
+    <text x="348" y="720" font-family="Consolas, monospace" font-size="28" fill="#57606a">01-basics</text>
+    <text x="348" y="768" font-size="32" font-weight="700" fill="#24292f">First agent</text>
+    <g font-size="28" fill="#57606a">
+      <text x="348" y="818">HR agent with SharePoint</text>
+      <text x="348" y="858">and web knowledge,</text>
+      <text x="348" y="898">published to Teams</text>
+    </g>
+
+    <rect x="580" y="130" width="480" height="280" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" values="#8c959f;#e0a534;#8c959f" keyTimes="0;0.3333;0.5" dur="12s" calcMode="discrete" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="2;5;2" keyTimes="0;0.3333;0.5" dur="12s" calcMode="discrete" repeatCount="indefinite"/>
+    </rect>
+    <text x="608" y="180" font-family="Consolas, monospace" font-size="28" fill="#57606a">01-basics</text>
+    <text x="608" y="228" font-size="32" font-weight="700" fill="#24292f">Topics</text>
+    <g font-size="28" fill="#57606a">
+      <text x="608" y="278">Generative orchestration,</text>
+      <text x="608" y="318">custom topics, Adaptive Cards</text>
+    </g>
+
+    <rect x="840" y="670" width="480" height="280" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" values="#8c959f;#e0a534;#8c959f" keyTimes="0;0.5;0.6667" dur="12s" calcMode="discrete" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="2;5;2" keyTimes="0;0.5;0.6667" dur="12s" calcMode="discrete" repeatCount="indefinite"/>
+    </rect>
+    <text x="868" y="720" font-family="Consolas, monospace" font-size="28" fill="#57606a">02-tools</text>
+    <text x="868" y="768" font-size="32" font-weight="700" fill="#24292f">Connector tools</text>
+    <g font-size="28" fill="#57606a">
+      <text x="868" y="818">Excel Online tools and a</text>
+      <text x="868" y="858">Power Automate flow tool,</text>
+      <text x="868" y="898">called from a topic</text>
+    </g>
+
+    <rect x="1100" y="130" width="480" height="280" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" values="#8c959f;#e0a534;#8c959f" keyTimes="0;0.6667;0.8333" dur="12s" calcMode="discrete" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="2;5;2" keyTimes="0;0.6667;0.8333" dur="12s" calcMode="discrete" repeatCount="indefinite"/>
+    </rect>
+    <text x="1128" y="180" font-family="Consolas, monospace" font-size="28" fill="#57606a">02-tools</text>
+    <text x="1128" y="228" font-size="32" font-weight="700" fill="#24292f">Declarative agent</text>
+    <g font-size="28" fill="#57606a">
+      <text x="1128" y="278">Published into</text>
+      <text x="1128" y="318">Microsoft 365 Copilot Chat</text>
+    </g>
+
+    <rect x="1360" y="670" width="480" height="280" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" values="#8c959f;#e0a534" keyTimes="0;0.8333" dur="12s" calcMode="discrete" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="2;5" keyTimes="0;0.8333" dur="12s" calcMode="discrete" repeatCount="indefinite"/>
+    </rect>
+    <text x="1388" y="720" font-family="Consolas, monospace" font-size="28" fill="#57606a">03-advanced</text>
+    <text x="1388" y="768" font-size="32" font-weight="700" fill="#24292f">Autonomous agent</text>
+    <g font-size="28" fill="#57606a">
+      <text x="1388" y="818">Triggered by SharePoint</text>
+      <text x="1388" y="858">uploads, writes candidate</text>
+      <text x="1388" y="898">records via an MCP server</text>
+    </g>
+
+    <g stroke="#8c959f" stroke-width="2">
+      <circle cx="300" cy="540" r="36" fill="#eaf2ff"/>
+      <circle cx="560" cy="540" r="36" fill="#eaf2ff"/>
+      <circle cx="820" cy="540" r="36" fill="#eaf2ff"/>
+      <circle cx="1080" cy="540" r="36" fill="#e9f7ef"/>
+      <circle cx="1340" cy="540" r="36" fill="#e9f7ef"/>
+      <circle cx="1600" cy="540" r="36" fill="#f3edff"/>
+    </g>
+    <g font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">
+      <text x="300" y="551">1</text>
+      <text x="560" y="551">2</text>
+      <text x="820" y="551">3</text>
+      <text x="1080" y="551">4</text>
+      <text x="1340" y="551">5</text>
+      <text x="1600" y="551">6</text>
+    </g>
+
+    <circle cx="300" cy="540" r="48" fill="none" stroke="#e0a534" stroke-width="6">
+      <animateMotion path="M0,0 L1300,0" keyPoints="0;0;0.2;0.2;0.4;0.4;0.6;0.6;0.8;0.8;1;1" keyTimes="0;0.1;0.1667;0.2667;0.3333;0.4333;0.5;0.6;0.6667;0.7667;0.8333;1" calcMode="linear" dur="12s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

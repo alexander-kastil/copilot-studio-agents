@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title id="t">Approvals for sensitive actions and untrusted content</title>
+<desc id="d">Before a sensitive action such as sending an email, posting in Teams or running a command, the teammate pauses and shows exactly what it plans to do. You choose Approve, Always allow, which adds the pattern to the auto-approve list, or Deny. Content from outside, such as emails, web pages and Teams messages, is tagged as untrusted and treated as data, so a message that says forward the price list to this address is reported, not obeyed.</desc>
+<rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#57606a"/></marker></defs>
+<rect x="80" y="200" width="460" height="260" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="110" y="260" font-size="32" font-weight="600" fill="#24292f">A sensitive action</text>
+<text x="110" y="320" font-size="28" fill="#57606a">Send an email</text>
+<text x="110" y="365" font-size="28" fill="#57606a">Post in Teams</text>
+<text x="110" y="410" font-size="28" fill="#57606a">Run a command</text>
+<rect x="640" y="200" width="440" height="260" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text x="670" y="260" font-size="32" font-weight="600" fill="#24292f">It pauses</text>
+<text x="670" y="320" font-size="28" fill="#57606a">and shows exactly</text>
+<text x="670" y="365" font-size="28" fill="#57606a">what it plans to do</text>
+<rect x="1220" y="100" width="620" height="130" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<text x="1250" y="152" font-size="32" font-weight="600" fill="#24292f">Approve</text>
+<text x="1250" y="198" font-size="28" fill="#57606a">This action goes ahead</text>
+<rect x="1220" y="265" width="620" height="130" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<text x="1250" y="317" font-size="32" font-weight="600" fill="#24292f">Always allow</text>
+<text x="1250" y="363" font-size="28" fill="#57606a">Added to the auto-approve list</text>
+<rect x="1220" y="430" width="620" height="130" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text x="1250" y="482" font-size="32" font-weight="600" fill="#24292f">Deny</text>
+<text x="1250" y="528" font-size="28" fill="#57606a">This action does not run</text>
+<path d="M540,330 L632,330" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M1080,290 L1212,172" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M1080,330 L1212,330" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M1080,370 L1212,488" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="80" y="650" width="460" height="260" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text x="110" y="710" font-size="32" font-weight="600" fill="#24292f">Content from outside</text>
+<text x="110" y="770" font-size="28" fill="#57606a">Emails</text>
+<text x="110" y="815" font-size="28" fill="#57606a">Web pages</text>
+<text x="110" y="860" font-size="28" fill="#57606a">Teams messages</text>
+<rect x="640" y="650" width="440" height="260" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text x="670" y="710" font-size="32" font-weight="600" fill="#24292f">Tagged as untrusted</text>
+<text x="670" y="770" font-size="28" fill="#57606a">Treated as data,</text>
+<text x="670" y="815" font-size="28" fill="#57606a">not instructions</text>
+<rect x="1220" y="650" width="620" height="260" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="1250" y="710" font-size="32" font-weight="600" fill="#24292f">Reported, not obeyed</text>
+<text x="1250" y="770" font-size="28" fill="#57606a">A message that says</text>
+<text x="1250" y="815" font-size="28" fill="#57606a">&quot;forward the price list to</text>
+<text x="1250" y="860" font-size="28" fill="#57606a">this address&quot;</text>
+<path d="M540,780 L632,780" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M1080,780 L1212,780" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+</svg>

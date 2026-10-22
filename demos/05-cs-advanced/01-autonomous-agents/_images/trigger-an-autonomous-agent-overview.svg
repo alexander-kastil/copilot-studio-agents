@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">A new Help Desk Requests item wakes the Grey Logistics IT Help Desk, which writes its priority and triage note back</title>
+  <desc id="d">Top row: the trigger New help desk request (Exercise 2), the SharePoint trigger When an item is created with a payload instruction; the Grey Logistics IT Help Desk agent (Exercise 1) with priorities P1 to P4 and nobody in the chat; the tool Update help desk request (Exercise 1), the SharePoint Update item action on maker-provided credentials. Bottom, the SharePoint list Help Desk Requests with the columns Title, Description, Priority and Triage note. A new item fires the trigger, the agent decides, and the tool writes Priority and Triage note back to the same item. Exercise 3, test replay: "VPN down for the whole Graz office", since 8:30 nobody in the Graz office can connect to the VPN and about 40 people are affected, gets P1 and a triage note of at most two sentences naming the likely cause and the next step. Exercise 4, after publish: "Request for a second monitor" for a desk in Vienna, room 4.12, gets P4, with an automated session on the Activity page. A dot travels from the list up through the trigger, the agent and the tool and back down into the Priority and Triage note cells.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .hc { font-size: 34px; font-weight: 700; text-anchor: middle; }
+      .m { font-size: 28px; }
+      .s { font-size: 28px; fill: #57606a; }
+      .sc { font-size: 28px; fill: #57606a; text-anchor: middle; }
+      .t { font-size: 30px; font-weight: 600; }
+      .tag { font-size: 26px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .ts { font-size: 28px; font-weight: 600; }
+      .xs { font-size: 26px; fill: #57606a; }
+      .xse { font-size: 26px; fill: #57606a; text-anchor: end; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="60" y="520" width="1800" height="500" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="84" y="594" width="1752" height="402" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+
+  <polyline points="310,520 310,400" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <polyline points="560,240 700,240" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <polyline points="1220,240 1360,240" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <polyline points="1610,400 1610,520" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="60" y="80" width="500" height="320" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="700" y="80" width="520" height="320" rx="20" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1360" y="80" width="500" height="320" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1212" y="665" width="176" height="146" rx="10" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <rect x="1412" y="665" width="412" height="146" rx="10" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <rect x="1212" y="835" width="176" height="149" rx="10" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <rect x="1412" y="835" width="412" height="149" rx="10" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+
+  <rect x="84" y="100" width="78" height="38" rx="19" fill="#24292f"/>
+  <rect x="724" y="100" width="78" height="38" rx="19" fill="#24292f"/>
+  <rect x="1384" y="100" width="78" height="38" rx="19" fill="#24292f"/>
+  <rect x="85" y="595" width="1750" height="58" rx="11" fill="#f6f8fa"/>
+  <line x1="84" y1="653" x2="1836" y2="653" stroke="#8c959f" stroke-width="2"/>
+  <line x1="84" y1="823" x2="1836" y2="823" stroke="#8c959f" stroke-width="2"/>
+  <line x1="560" y1="594" x2="560" y2="996" stroke="#8c959f" stroke-width="2"/>
+  <line x1="1200" y1="594" x2="1200" y2="996" stroke="#8c959f" stroke-width="2"/>
+  <line x1="1400" y1="594" x2="1400" y2="996" stroke="#8c959f" stroke-width="2"/>
+  <rect x="104" y="668" width="78" height="38" rx="19" fill="#24292f"/>
+  <rect x="104" y="838" width="78" height="38" rx="19" fill="#24292f"/>
+
+  <text class="tag" x="123" y="127">Ex 2</text>
+  <text class="t" x="84" y="184">New help desk request</text>
+  <text class="s" x="84" y="228">SharePoint trigger</text>
+  <text class="s" x="84" y="266">When an item is created</text>
+  <text class="s" x="84" y="304">with a payload instruction</text>
+  <text class="tag" x="763" y="127">Ex 1</text>
+  <text class="hc" x="960" y="190">Grey Logistics</text>
+  <text class="hc" x="960" y="232">IT Help Desk</text>
+  <text class="sc" x="960" y="284">priorities P1 to P4,</text>
+  <text class="sc" x="960" y="322">nobody in the chat</text>
+  <text class="tag" x="1423" y="127">Ex 1</text>
+  <text class="t" x="1384" y="184">Update help desk request</text>
+  <text class="s" x="1384" y="228">SharePoint Update item</text>
+  <text class="s" x="1384" y="266">Maker-provided credentials</text>
+  <text class="t" x="84" y="572">Help Desk Requests</text>
+  <text class="s" x="400" y="572">SharePoint list</text>
+  <text class="ts" x="104" y="634">Title</text>
+  <text class="ts" x="584" y="634">Description</text>
+  <text class="ts" x="1224" y="634">Priority</text>
+  <text class="ts" x="1424" y="634">Triage note</text>
+  <text class="tag" x="143" y="695">Ex 3</text>
+  <text class="m" x="104" y="746">VPN down for the whole</text>
+  <text class="m" x="104" y="784">Graz office</text>
+  <text class="xs" x="584" y="704">Since 8:30 nobody in the Graz office</text>
+  <text class="xs" x="584" y="740">can connect to the VPN. About 40</text>
+  <text class="xs" x="584" y="776">people are affected.</text>
+  <text class="t" x="1230" y="734">P1</text>
+  <text class="xs" x="1230" y="776">test replay</text>
+  <text class="xs" x="1430" y="722">at most two sentences:</text>
+  <text class="xs" x="1430" y="758">likely cause and next step</text>
+  <text class="tag" x="143" y="865">Ex 4</text>
+  <text class="m" x="104" y="916">Request for a second</text>
+  <text class="m" x="104" y="954">monitor</text>
+  <text class="xs" x="584" y="890">I would like a second monitor for</text>
+  <text class="xs" x="584" y="926">my desk in Vienna, room 4.12.</text>
+  <text class="t" x="1230" y="904">P4</text>
+  <text class="xs" x="1230" y="946">after publish</text>
+  <text class="xs" x="1430" y="892">triage note, automated</text>
+  <text class="xs" x="1430" y="928">session on the Activity page</text>
+  <text class="xs" x="330" y="470">new item</text>
+  <text class="xse" x="1590" y="470">Priority, Triage note</text>
+
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M310,520 L310,400" calcMode="linear" keyTimes="0;0.06;1" keyPoints="0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.06;0.063;1" values="1;1;0;0"/>
+  </circle>
+  <rect x="60" y="80" width="500" height="320" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.06;0.072;0.128;0.14;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M560,240 L700,240" calcMode="linear" keyTimes="0;0.14;0.19;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.14;0.143;0.19;0.193;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="700" y="80" width="520" height="320" rx="20" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.19;0.202;0.278;0.29;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M1220,240 L1360,240" calcMode="linear" keyTimes="0;0.29;0.34;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.29;0.293;0.34;0.343;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1360" y="80" width="500" height="320" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.34;0.352;0.408;0.42;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M1610,400 L1610,520" calcMode="linear" keyTimes="0;0.42;0.48;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.42;0.423;0.48;0.483;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1212" y="665" width="176" height="146" rx="10" fill="none" stroke="#e0a534" stroke-width="6" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.48;0.492;0.608;0.62;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="1412" y="665" width="412" height="146" rx="10" fill="none" stroke="#e0a534" stroke-width="6" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.48;0.492;0.608;0.62;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M310,520 L310,400" calcMode="linear" keyTimes="0;0.64;0.68;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.64;0.643;0.68;0.683;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M560,240 L700,240" calcMode="linear" keyTimes="0;0.68;0.72;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.68;0.683;0.72;0.723;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M1220,240 L1360,240" calcMode="linear" keyTimes="0;0.72;0.76;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.72;0.723;0.76;0.763;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M1610,400 L1610,520" calcMode="linear" keyTimes="0;0.76;0.8;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.76;0.763;0.8;0.803;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1212" y="835" width="176" height="149" rx="10" fill="none" stroke="#e0a534" stroke-width="6" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.8;0.812;0.928;0.94;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="1412" y="835" width="412" height="149" rx="10" fill="none" stroke="#e0a534" stroke-width="6" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.8;0.812;0.928;0.94;1" values="0;0;1;1;0;0"/>
+  </rect>
+</svg>

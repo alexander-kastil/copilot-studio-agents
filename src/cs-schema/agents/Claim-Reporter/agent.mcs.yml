@@ -1,0 +1,8 @@
+mcs.metadata:
+  componentName: Claim-Reporter
+kind: GptComponentMetadata
+instructions:
+gptCapabilities: {}
+aISettings:
+  model:
+    modelNameHint: GPT55Chat

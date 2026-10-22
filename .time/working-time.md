@@ -33,5 +33,35 @@
 | 2026-10-06 | 0.97 | 10:55 | 11:53 | October currency research for the Cowork and Copilot Studio modules |
 | 2026-10-17 | 0.91 | 19:58 | 20:53 | Cowork module and labs refreshed to the October product state |
 | 2026-10-17 | 0.17 | 20:27 | 21:03 | Copilot Studio module inventory and October update research |
+| 2026-10-18 | 1.07 | 21:16 | 22:20 | Teaching diagrams and slide deck outlines for all five course modules |
+| 2026-10-21 | 1.07 | 09:16 | 10:20 | Tailored three-day training agenda and customer reply draft |
+| 2026-10-21 | 0.08 | 10:29 | 10:34 | Formatting follow-up for the agenda reply draft |
+| 2026-10-21 | 0.08 | 10:53 | 10:58 | Session close-out with the updated learning and status-report tools installed |
+| 2026-10-21 | 0.67 | 11:42 | 12:22 | Course updated with Copilot Memory, Work IQ retrieval and OneDrive news |
+| 2026-10-21 | 0.12 | 12:22 | 12:29 | Session close-out with progress updates on the learning review |
+| 2026-10-21 | 0.08 | 12:50 | 12:55 | Session close-out with a safer way to append to the time log |
+| 2026-10-21 | 0.73 | 14:48 | 15:32 | Class schedule rebuilt with every lab, course story and website class page updated |
+| 2026-10-21 | 0.33 | 15:08 | 15:52 | Corrected three-day training agenda and apology reply for the customer |
+| 2026-10-21 | 0.38 | 17:12 | 17:35 | Copilot Studio agents inventoried, first two cloned into the course repo, safe cloning method recorded |
+| 2026-10-21 | 1.50 | 17:35 | 19:05 | Course agents and workflows copied into the repo with an inventory, 15 rebuild demos drafted, first rebuilt agent verified, plan and handoff written |
+| 2026-10-21 | 2.68 | 19:05 | 21:46 | Five course agents rebuilt with their tools, sample APIs deployed to Azure, eight demo guides aligned with the live product |
+| 2026-10-21 | 0.67 | 21:46 | 22:26 | Three more agents live, health advisor demo flows wired and tested, Foundry research agent provisioned |
+| 2026-10-21 | 0.22 | 22:26 | 22:39 | Business travel planner connected to its three specialists, every route verified, two demo guides updated |
+| 2026-10-21 | 0.23 | 22:39 | 22:53 | Compliance check connected to its Foundry research agent and verified, demo guides and handoff updated |
+| 2026-10-21 | 1.12 | 22:53 | 23:59 | Returns agent answers shared mailbox mail on its own, HR agent published to Teams and Microsoft 365 Copilot, both demo guides updated |
+| 2026-10-22 | 0.08 | 00:00 | 00:05 | Session close-out with the downloaded agent definitions reviewed and recorded |
+| 2026-10-22 | 0.30 | 00:15 | 00:33 | Onboarding assistant's sightseeing and ungrounded-answer exercises run live, knowledge demo guide updated |
+| 2026-10-22 | 1.33 | 00:33 | 01:53 | Six GitHub Copilot agent demos run live in parallel, three agents and a workflow built, all six demo guides corrected to the live product |
+| 2026-10-22 | 0.53 | 09:02 | 09:34 | App-building demo run live after the credit setup, demo status table with costs per demo |
+| 2026-10-22 | 0.08 | 09:10 | 10:14 | Eight Cowork demos run live in parallel, all demo guides corrected, run cost recorded per demo |
+| 2026-10-22 | 0.58 | 09:34 | 10:09 | Detailed cost record per demo, pending charges checked in the admin centers and Azure, with a scheduled recheck |
+| 2026-10-22 | 0.73 | 10:14 | 10:58 | Course teaching updated from the live demo runs, demo cost tables with model comparisons |
+| 2026-10-22 | 0.43 | 10:27 | 11:24 | Legacy web app automation demo run live, demo guide corrected to the live product, demo status updated |
+| 2026-10-22 | 0.37 | 11:25 | 12:40 | Animated overview pictures on every demo, default and optional demos per topic |
+| 2026-10-22 | 0.88 | 11:28 | 12:21 | Fictional company renamed to Grey Logistics across all demos and labs, terminal build-and-migrate demo run live and corrected, published as a new lab |
+| 2026-10-22 | 0.95 | 12:17 | 13:37 | Slide plans for all eight class decks with live demo screenshots, diagrams and photo briefs, ready for rendering and layout |
+| 2026-10-22 | 0.65 | 18:41 | 20:20 | Photos, diagrams and slide layout for all eight class decks, demo screenshots made readable, decks delivered to the class OneDrive folder |
+| 2026-10-22 | 1.00 | 18:44 | 19:44 | Copilot Studio, Cowork and Work IQ know-how bundled into one installable expert plugin, assistant routing extended to plugins, class repo tidied |
+| 2026-10-22 | 0.77 | 20:34 | 21:20 | Airier slide text and readable screenshots in all eight class decks, an automatic slide check before delivery, decks redelivered to the class OneDrive folder |
 
-**Total: 19.16h**
+**Total: 38.87h**

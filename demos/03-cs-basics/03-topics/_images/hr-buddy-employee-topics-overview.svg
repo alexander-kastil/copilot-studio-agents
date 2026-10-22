@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">CS-HR Buddy: the first reward request detours through Collect Employee Data, the second goes straight to the reward</title>
+  <desc id="d">Top, Ex 1: CS-HR Buddy with the description An HR Self service agent, the instruction Answer HR related topics, HR Documents as knowledge and orchestration Yes. Middle, Ex 4: the topic Collect Employee rewards. Two requests in the same conversation, Ex 5, enter its condition Not(Global.EmployeeIdentified). Request 1, claim my employee reward, finds the employee unknown, so a Redirect runs the topic Collect Employee Data below it, built in Ex 2 and Ex 3: four questions, Last name and First name as Person name, Department as multiple choice, Cost center as Number; the message Hi Johanna Kurz. You have 25 days of paid leave left; and Global.EmployeeIdentified set to true. The flow then returns to the question Please choose your reward:, and A free dinner answers The dinner voucher will be forwarded to you. Request 2, redeem employee points, finds the variable already true and goes straight to the question, and A visit to theatre answers The tickets will be sent to you by post. A dot follows request 1 through the detour, then request 2 along the short path.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .h { font-size: 34px; font-weight: 700; }
+      .t { font-size: 30px; font-weight: 600; }
+      .s { font-size: 28px; fill: #57606a; }
+      .sc { font-size: 28px; fill: #57606a; text-anchor: middle; }
+      .l { font-size: 26px; fill: #57606a; }
+      .q { font-size: 28px; }
+      .code { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; }
+      .mb { font-family: Consolas, 'Courier New', monospace; font-size: 26px; font-weight: 700; }
+      .bd { font-size: 26px; font-weight: 700; text-anchor: middle; }
+      .num { font-size: 26px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="50" y="40" width="1820" height="120" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="74" y="78" width="88" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="bd" x="118" y="109">Ex 1</text>
+  <text class="h" x="182" y="113">CS-HR Buddy</text>
+  <text class="l" x="440" y="88">Description</text>
+  <text class="q" x="440" y="132">An HR Self service agent</text>
+  <text class="l" x="820" y="88">Instructions</text>
+  <text class="q" x="820" y="132">Answer HR related topics</text>
+  <text class="l" x="1200" y="88">Knowledge</text>
+  <text class="q" x="1200" y="132">HR Documents</text>
+  <text class="l" x="1500" y="88">Orchestration</text>
+  <text class="q" x="1500" y="132">Yes</text>
+
+  <rect x="50" y="200" width="1820" height="380" rx="24" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="74" y="220" width="88" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="bd" x="118" y="251">Ex 4</text>
+  <text class="t" x="182" y="253">Collect Employee rewards</text>
+
+  <rect x="74" y="290" width="430" height="266" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="98" y="306" width="88" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="bd" x="142" y="337">Ex 5</text>
+  <text class="s" x="206" y="339">same conversation</text>
+  <circle cx="118" cy="410" r="20" fill="#24292f"/>
+  <circle cx="118" cy="490" r="20" fill="#24292f"/>
+  <text class="num" x="118" y="419">1</text>
+  <text class="num" x="118" y="499">2</text>
+  <text class="q" x="148" y="420">claim my employee reward</text>
+  <text class="q" x="148" y="500">redeem employee points</text>
+
+  <g stroke="#8c959f" stroke-width="2" fill="#ffffff">
+    <rect x="564" y="330" width="360" height="190" rx="16"/>
+    <rect x="1054" y="330" width="310" height="190" rx="16"/>
+    <rect x="1424" y="286" width="422" height="134" rx="16"/>
+    <rect x="1424" y="432" width="422" height="134" rx="16"/>
+  </g>
+  <text class="s" x="588" y="378">Condition</text>
+  <text class="code" x="588" y="430">Not(Global.</text>
+  <text class="code" x="588" y="470">EmployeeIdentified)</text>
+  <text class="sc" x="989" y="370">already</text>
+  <text class="sc" x="989" y="406">true</text>
+  <text class="s" x="1078" y="378">Question</text>
+  <text class="t" x="1078" y="430">Please choose</text>
+  <text class="t" x="1078" y="470">your reward:</text>
+  <text class="t" x="1448" y="326">A free dinner</text>
+  <text class="s" x="1448" y="366">The dinner voucher will</text>
+  <text class="s" x="1448" y="402">be forwarded to you.</text>
+  <text class="t" x="1448" y="472">A visit to theatre</text>
+  <text class="s" x="1448" y="512">The tickets will be sent</text>
+  <text class="s" x="1448" y="548">to you by post.</text>
+
+  <rect x="300" y="650" width="1320" height="390" rx="24" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <rect x="324" y="670" width="88" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="bd" x="368" y="701">Ex 2</text>
+  <text class="t" x="432" y="703">Collect Employee Data</text>
+  <g stroke="#8c959f" stroke-width="2" fill="#ffffff">
+    <rect x="324" y="730" width="300" height="130" rx="16"/>
+    <rect x="640" y="730" width="300" height="130" rx="16"/>
+    <rect x="956" y="730" width="300" height="130" rx="16"/>
+    <rect x="1272" y="730" width="300" height="130" rx="16"/>
+    <rect x="432" y="884" width="678" height="136" rx="16"/>
+  </g>
+  <rect x="1140" y="884" width="432" height="136" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="t" x="348" y="776">Last name</text>
+  <text class="s" x="348" y="826">Person name</text>
+  <text class="t" x="664" y="776">First name</text>
+  <text class="s" x="664" y="826">Person name</text>
+  <text class="t" x="980" y="776">Department</text>
+  <text class="s" x="980" y="826">multiple choice</text>
+  <text class="t" x="1296" y="776">Cost center</text>
+  <text class="s" x="1296" y="826">Number</text>
+  <rect x="324" y="930" width="88" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="bd" x="368" y="961">Ex 3</text>
+  <text class="q" x="456" y="938">Hi Johanna Kurz. You have 25 days of</text>
+  <text class="q" x="456" y="978">paid leave left</text>
+  <text class="mb" x="1164" y="938">Global.EmployeeIdentified</text>
+  <text class="mb" x="1164" y="978">= true</text>
+
+  <text class="s" x="760" y="625">Redirect</text>
+  <text class="s" x="1225" y="625">returns</text>
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="504" y1="425" x2="564" y2="425"/>
+    <line x1="924" y1="425" x2="1054" y2="425"/>
+    <line x1="1364" y1="400" x2="1424" y2="353"/>
+    <line x1="1364" y1="450" x2="1424" y2="499"/>
+    <line x1="744" y1="520" x2="744" y2="650"/>
+    <line x1="1209" y1="650" x2="1209" y2="520"/>
+  </g>
+
+  <g fill="none" stroke="#e0a534" stroke-width="4">
+    <rect x="88" y="386" width="410" height="48" rx="12" opacity="0">
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.01;0.78" values="0;1;0"/>
+    </rect>
+    <rect x="88" y="466" width="410" height="48" rx="12" opacity="0">
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.80;0.99" values="0;1;0"/>
+    </rect>
+  </g>
+  <g fill="none" stroke="#24292f" stroke-width="5">
+    <rect x="564" y="330" width="360" height="190" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.06;0.12;0.82;0.85" values="0;1;0;1;0"/>
+    </rect>
+    <rect x="324" y="730" width="300" height="130" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.17;0.23" values="0;1;0"/>
+    </rect>
+    <rect x="640" y="730" width="300" height="130" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.23;0.29" values="0;1;0"/>
+    </rect>
+    <rect x="956" y="730" width="300" height="130" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.29;0.35" values="0;1;0"/>
+    </rect>
+    <rect x="1272" y="730" width="300" height="130" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.35;0.41" values="0;1;0"/>
+    </rect>
+    <rect x="432" y="884" width="678" height="136" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.41;0.47" values="0;1;0"/>
+    </rect>
+    <rect x="1054" y="330" width="310" height="190" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.60;0.65;0.88;0.91" values="0;1;0;1;0"/>
+    </rect>
+    <rect x="1424" y="286" width="422" height="134" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.68;0.78" values="0;1;0"/>
+    </rect>
+    <rect x="1424" y="432" width="422" height="134" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.93;0.99" values="0;1;0"/>
+    </rect>
+  </g>
+  <rect x="1140" y="884" width="432" height="136" rx="16" fill="none" stroke="#e0a534" stroke-width="8" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.47;0.55" values="0;1;0"/>
+  </rect>
+
+  <g fill="#24292f">
+    <circle r="14" opacity="0">
+      <animateMotion dur="14s" repeatCount="indefinite" path="M504,425 H564" calcMode="linear" keyTimes="0;0.02;0.06;0.80;0.82;1" keyPoints="0;0;1;0;1;1"/>
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.02;0.06;0.80;0.82" values="0;1;0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="14s" repeatCount="indefinite" path="M744,520 V650" calcMode="linear" keyTimes="0;0.12;0.17;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.12;0.17" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="14s" repeatCount="indefinite" path="M1209,650 V520" calcMode="linear" keyTimes="0;0.55;0.60;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.55;0.60" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="14s" repeatCount="indefinite" path="M1364,400 L1424,353" calcMode="linear" keyTimes="0;0.65;0.68;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.65;0.68" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="14s" repeatCount="indefinite" path="M924,425 H1054" calcMode="linear" keyTimes="0;0.85;0.88;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.85;0.88" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="14s" repeatCount="indefinite" path="M1364,450 L1424,499" calcMode="linear" keyTimes="0;0.91;0.93;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.91;0.93" values="0;1;0"/>
+    </circle>
+  </g>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Companion files sit beside SKILL.md and are named in its instructions</title>
+  <desc id="d">Two skill folders from this module. In product-pitch, the SKILL.md names pitch-deck-structure.pptx, which sits in the same folder and holds the seven-card house structure. In meeting-prep, the SKILL.md names meeting-brief-template.docx, the house brief template beside it. Cowork reads the companion file whenever the skill runs. A skill can carry up to 20 companion files and 10 MB.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="18" markerHeight="18" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="100" y="120" width="820" height="730" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="136" y="176" font-size="30" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#24292f">product-pitch/</text>
+    <rect x="136" y="210" width="748" height="270" rx="14" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="168" y="256" font-size="28" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#24292f">SKILL.md</text>
+    <text x="168" y="306" font-size="28" font-style="italic" fill="#57606a">Produce a seven-card partner pitch deck</text>
+    <text x="168" y="350" font-size="28" font-style="italic" fill="#57606a">in the house structure defined by</text>
+    <rect x="160" y="364" width="420" height="42" rx="8" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <text x="168" y="394" font-size="28" font-family="Consolas, Menlo, monospace" fill="#24292f">pitch-deck-structure.pptx,</text>
+    <text x="168" y="438" font-size="28" font-style="italic" fill="#57606a">which sits in this skill folder.</text>
+    <line x1="336" y1="480" x2="336" y2="597" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <text x="366" y="530" font-size="28" fill="#57606a">read whenever</text>
+    <text x="366" y="568" font-size="28" fill="#57606a">the skill runs</text>
+    <rect x="136" y="600" width="748" height="200" rx="14" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <path d="M176,630 L246,630 L276,660 L276,770 L176,770 Z" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <path d="M246,630 L246,660 L276,660" fill="none" stroke="#8c959f" stroke-width="2"/>
+    <text x="310" y="690" font-size="28" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#24292f">pitch-deck-structure.pptx</text>
+    <text x="310" y="736" font-size="28" fill="#57606a">seven cards, house structure</text>
+
+    <rect x="1000" y="120" width="820" height="730" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="1036" y="176" font-size="30" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#24292f">meeting-prep/</text>
+    <rect x="1036" y="210" width="748" height="270" rx="14" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1068" y="256" font-size="28" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#24292f">SKILL.md</text>
+    <text x="1068" y="306" font-size="28" font-style="italic" fill="#57606a">Produce a one-page meeting brief</text>
+    <text x="1068" y="350" font-size="28" font-style="italic" fill="#57606a">in the house format defined by</text>
+    <rect x="1060" y="364" width="450" height="42" rx="8" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <text x="1068" y="394" font-size="28" font-family="Consolas, Menlo, monospace" fill="#24292f">meeting-brief-template.docx,</text>
+    <text x="1068" y="438" font-size="28" font-style="italic" fill="#57606a">which sits in this skill folder.</text>
+    <line x1="1236" y1="480" x2="1236" y2="597" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <text x="1266" y="530" font-size="28" fill="#57606a">read whenever</text>
+    <text x="1266" y="568" font-size="28" fill="#57606a">the skill runs</text>
+    <rect x="1036" y="600" width="748" height="200" rx="14" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <path d="M1076,630 L1146,630 L1176,660 L1176,770 L1076,770 Z" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <path d="M1146,630 L1146,660 L1176,660" fill="none" stroke="#8c959f" stroke-width="2"/>
+    <text x="1210" y="690" font-size="28" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#24292f">meeting-brief-template.docx</text>
+    <text x="1210" y="736" font-size="28" fill="#57606a">house brief template</text>
+
+    <rect x="100" y="900" width="1720" height="80" rx="40" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <text x="960" y="950" font-size="30" fill="#24292f" text-anchor="middle">Up to <tspan font-weight="700">20 companion files</tspan> and <tspan font-weight="700">10 MB</tspan> per skill, each named in the instructions</text>
+  </g>
+</svg>

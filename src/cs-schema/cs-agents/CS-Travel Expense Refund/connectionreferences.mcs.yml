@@ -1,0 +1,3 @@
+﻿connectionReferences:
+  - connectionReferenceLogicalName: iits_CSDataverse
+    connectorId: /providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps

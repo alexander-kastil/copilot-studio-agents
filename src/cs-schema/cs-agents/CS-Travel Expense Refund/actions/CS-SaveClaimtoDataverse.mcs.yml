@@ -1,0 +1,12 @@
+mcs.metadata:
+  componentName: CS-Save Claim to Dataverse
+kind: TaskDialog
+action:
+  kind: InvokeFlowTaskAction
+  flowId: 433e0b24-7ecd-f111-a05a-7c1e528616d5
+  connectionProperties:
+    $kind: ConnectionProperties
+    diagnostics:
+    mode: Invoker
+
+outputMode: All

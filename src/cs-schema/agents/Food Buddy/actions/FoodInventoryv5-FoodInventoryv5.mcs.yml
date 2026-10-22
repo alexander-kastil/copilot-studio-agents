@@ -1,0 +1,17 @@
+mcs.metadata:
+  componentName: Food Inventory v5 - Food Inventory v5
+kind: TaskDialog
+modelDescription: Returns every food item in the catalog with its price, current stock, minimum stock, picture and description.
+outputs:
+  - propertyName: Response
+
+action:
+  kind: InvokeConnectorTaskAction
+  connectionReference: iits_FoodBuddy.shared_iits-5ffood-20inventory-20v5-5f0af75e9cbdc7cbac.2329ba2fae504808ac11a168054d8986
+  connectionProperties:
+    mode: Invoker
+
+  operationId: ListFoodItems
+  aIPluginOperationExportKey: aiplugin.name=msdynaip_b5181d52-96ad-4446-a03c-25a034efdcdb,operationid=msdynaip_ListFoodItems
+
+outputMode: All

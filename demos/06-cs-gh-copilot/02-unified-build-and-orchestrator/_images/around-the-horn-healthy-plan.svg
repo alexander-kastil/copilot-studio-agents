@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">A healthy plan for the Around the Horn question</title>
+  <desc id="d">The multi-source question about Around the Horn splits into three parts. Orders last quarter comes from the northwind-accounts source: 12 cases Organic Green Tea (GT-220), 1 case backordered. Open support cases also comes from northwind-accounts: none. Standard lead time comes from the product reference, northwind-products: Tier 2 (growth), 5 business days.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="80" y="100" width="1760" height="170" rx="20" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <g font-size="34" font-style="italic" fill="#24292f" text-anchor="middle">
+    <text x="960" y="172">For Around the Horn, what did they order last quarter, do they have any</text>
+    <text x="960" y="224">open support cases, and what is their standard lead time?</text>
+  </g>
+
+  <g fill="#f3edff" stroke="#8c959f" stroke-width="2">
+    <rect x="80" y="360" width="560" height="120" rx="16"/>
+    <rect x="680" y="360" width="560" height="120" rx="16"/>
+    <rect x="1280" y="360" width="560" height="120" rx="16"/>
+  </g>
+  <g font-size="36" font-weight="700" fill="#24292f" text-anchor="middle">
+    <text x="360" y="433">Orders last quarter</text>
+    <text x="960" y="433">Open support cases</text>
+    <text x="1560" y="433">Standard lead time</text>
+  </g>
+
+  <rect x="80" y="570" width="1160" height="380" rx="22" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="660" y="630" font-size="34" font-weight="700" font-family="Consolas, monospace" fill="#24292f" text-anchor="middle">northwind-accounts</text>
+  <text x="660" y="675" font-size="28" fill="#57606a" text-anchor="middle">second knowledge source, added in Exercise 1</text>
+
+  <rect x="1280" y="570" width="560" height="380" rx="22" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1560" y="630" font-size="34" font-weight="700" fill="#24292f" text-anchor="middle">Product reference</text>
+  <text x="1560" y="675" font-size="28" font-family="Consolas, monospace" fill="#57606a" text-anchor="middle">northwind-products</text>
+
+  <g fill="#ffffff" stroke="#8c959f" stroke-width="2">
+    <rect x="110" y="710" width="500" height="210" rx="14"/>
+    <rect x="710" y="710" width="500" height="210" rx="14"/>
+    <rect x="1310" y="710" width="500" height="210" rx="14"/>
+  </g>
+  <g font-size="28" fill="#57606a" text-anchor="middle">
+    <text x="360" y="762">Around the Horn</text>
+    <text x="960" y="762">Around the Horn</text>
+    <text x="1560" y="762">Tier 2 (growth)</text>
+  </g>
+  <g font-size="30" fill="#24292f" text-anchor="middle">
+    <text x="360" y="815">12 cases Organic Green</text>
+    <text x="360" y="855">Tea (GT-220), 1 case</text>
+    <text x="360" y="895">backordered</text>
+  </g>
+  <text x="960" y="845" font-size="40" font-weight="700" fill="#24292f" text-anchor="middle">none</text>
+  <text x="1560" y="845" font-size="40" font-weight="700" fill="#24292f" text-anchor="middle">5 business days</text>
+
+  <g stroke="#57606a" stroke-width="3" marker-end="url(#ah)">
+    <line x1="360" y1="278" x2="360" y2="352"/>
+    <line x1="960" y1="278" x2="960" y2="352"/>
+    <line x1="1560" y1="278" x2="1560" y2="352"/>
+    <line x1="360" y1="488" x2="360" y2="562"/>
+    <line x1="960" y1="488" x2="960" y2="562"/>
+    <line x1="1560" y1="488" x2="1560" y2="562"/>
+  </g>
+</svg>

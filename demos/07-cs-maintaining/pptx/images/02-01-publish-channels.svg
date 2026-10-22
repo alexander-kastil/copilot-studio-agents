@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">One publish updates every connected channel</title>
+  <desc id="d">Your agent in Copilot Studio is published, which creates the live version. One publish updates every connected channel at once: the Microsoft channels Teams and Microsoft 365 Copilot and SharePoint, and the advanced channels WhatsApp, a custom website or embedded web app in an iframe, the prebuilt demo website for testing, and the Direct Line API for custom and mobile apps. Users see updated content after a new session starts. The authentication model is chosen at publish time: Authenticate with Microsoft (Entra ID) as the default, manual authentication, or no authentication, where anyone with the link can chat and tools that rely on user credentials are blocked.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <style>
+    text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+    .h { font-size: 36px; font-weight: 600; }
+    .b { font-size: 30px; font-weight: 600; }
+    .t { font-size: 28px; }
+    .s { font-size: 28px; fill: #57606a; }
+  </style>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="80" y="150" width="280" height="220" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="220" y="248" text-anchor="middle">Your agent</text>
+  <text class="s" x="220" y="290" text-anchor="middle">in Copilot Studio</text>
+  <line x1="362" y1="260" x2="396" y2="260" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <rect x="400" y="215" width="150" height="90" rx="45" fill="#fff6e5" stroke="#e0a534" stroke-width="3">
+    <animate attributeName="stroke-width" values="3;8;3" keyTimes="0;0.0833;0.25" calcMode="discrete" dur="6s" repeatCount="indefinite"/>
+  </rect>
+  <text class="b" x="475" y="271" text-anchor="middle">Publish</text>
+  <line x1="552" y1="260" x2="586" y2="260" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <rect x="590" y="150" width="400" height="220" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2">
+    <animate attributeName="stroke-width" values="2;6;2" keyTimes="0;0.25;0.3333" calcMode="discrete" dur="6s" repeatCount="indefinite"/>
+  </rect>
+  <text class="b" x="790" y="230" text-anchor="middle">Live version</text>
+  <text class="s" x="790" y="276" text-anchor="middle">One publish updates</text>
+  <text class="s" x="790" y="314" text-anchor="middle">every connected channel</text>
+
+  <rect x="80" y="410" width="910" height="80" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="110" y="460">Users see updated content after a new session starts</text>
+
+  <rect x="80" y="540" width="910" height="460" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="110" y="596">Authentication model, chosen at publish time</text>
+  <rect x="110" y="625" width="850" height="80" rx="12" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="140" y="675">Authenticate with Microsoft (Entra ID)</text>
+  <text class="s" x="930" y="675" text-anchor="end">Default</text>
+  <rect x="110" y="725" width="850" height="80" rx="12" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="140" y="775">Manual authentication</text>
+  <rect x="110" y="825" width="850" height="150" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="b" x="140" y="873">No authentication</text>
+  <text class="s" x="140" y="913">Anyone with the link can chat</text>
+  <text class="s" x="140" y="951">Blocks tools that rely on user credentials</text>
+
+  <path d="M 992 260 H 1080" fill="none" stroke="#57606a" stroke-width="3"/>
+  <path d="M 1080 180 V 885" fill="none" stroke="#57606a" stroke-width="3"/>
+  <line x1="1080" y1="180" x2="1166" y2="180" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <line x1="1080" y1="290" x2="1166" y2="290" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <line x1="1080" y1="480" x2="1166" y2="480" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <line x1="1080" y1="605" x2="1166" y2="605" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <line x1="1080" y1="745" x2="1166" y2="745" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <line x1="1080" y1="885" x2="1166" y2="885" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <text class="b" x="1170" y="112">Microsoft channels</text>
+  <rect x="1170" y="135" width="670" height="90" rx="12" fill="#eaf2ff" stroke="#8c959f" stroke-width="2">
+    <animate attributeName="stroke-width" values="2;6;2" keyTimes="0;0.5833;0.75" calcMode="discrete" dur="6s" repeatCount="indefinite"/>
+  </rect>
+  <text class="b" x="1200" y="191">Teams and Microsoft 365 Copilot</text>
+  <rect x="1170" y="245" width="670" height="90" rx="12" fill="#eaf2ff" stroke="#8c959f" stroke-width="2">
+    <animate attributeName="stroke-width" values="2;6;2" keyTimes="0;0.5833;0.75" calcMode="discrete" dur="6s" repeatCount="indefinite"/>
+  </rect>
+  <text class="b" x="1200" y="301">SharePoint</text>
+
+  <text class="b" x="1170" y="412">Advanced channels</text>
+  <rect x="1170" y="435" width="670" height="90" rx="12" fill="#f3edff" stroke="#8c959f" stroke-width="2">
+    <animate attributeName="stroke-width" values="2;6;2" keyTimes="0;0.5833;0.75" calcMode="discrete" dur="6s" repeatCount="indefinite"/>
+  </rect>
+  <text class="b" x="1200" y="491">WhatsApp</text>
+  <rect x="1170" y="545" width="670" height="120" rx="12" fill="#f3edff" stroke="#8c959f" stroke-width="2">
+    <animate attributeName="stroke-width" values="2;6;2" keyTimes="0;0.5833;0.75" calcMode="discrete" dur="6s" repeatCount="indefinite"/>
+  </rect>
+  <text class="b" x="1200" y="594">Custom website</text>
+  <text class="s" x="1200" y="636">or embedded web app (iframe)</text>
+  <rect x="1170" y="685" width="670" height="120" rx="12" fill="#f3edff" stroke="#8c959f" stroke-width="2">
+    <animate attributeName="stroke-width" values="2;6;2" keyTimes="0;0.5833;0.75" calcMode="discrete" dur="6s" repeatCount="indefinite"/>
+  </rect>
+  <text class="b" x="1200" y="734">Demo website</text>
+  <text class="s" x="1200" y="776">Prebuilt, for testing</text>
+  <rect x="1170" y="825" width="670" height="120" rx="12" fill="#f3edff" stroke="#8c959f" stroke-width="2">
+    <animate attributeName="stroke-width" values="2;6;2" keyTimes="0;0.5833;0.75" calcMode="discrete" dur="6s" repeatCount="indefinite"/>
+  </rect>
+  <text class="b" x="1200" y="874">Direct Line API</text>
+  <text class="s" x="1200" y="916">Custom and mobile apps</text>
+
+  <g fill="#e0a534" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.3333;0.5833" calcMode="discrete" dur="6s" repeatCount="indefinite"/>
+    <circle r="13"><animateMotion path="M 992 260 H 1080 V 180 H 1160" keyPoints="0;0;1;1" keyTimes="0;0.3333;0.5833;1" calcMode="linear" dur="6s" repeatCount="indefinite"/></circle>
+    <circle r="13"><animateMotion path="M 992 260 H 1080 V 290 H 1160" keyPoints="0;0;1;1" keyTimes="0;0.3333;0.5833;1" calcMode="linear" dur="6s" repeatCount="indefinite"/></circle>
+    <circle r="13"><animateMotion path="M 992 260 H 1080 V 480 H 1160" keyPoints="0;0;1;1" keyTimes="0;0.3333;0.5833;1" calcMode="linear" dur="6s" repeatCount="indefinite"/></circle>
+    <circle r="13"><animateMotion path="M 992 260 H 1080 V 605 H 1160" keyPoints="0;0;1;1" keyTimes="0;0.3333;0.5833;1" calcMode="linear" dur="6s" repeatCount="indefinite"/></circle>
+    <circle r="13"><animateMotion path="M 992 260 H 1080 V 745 H 1160" keyPoints="0;0;1;1" keyTimes="0;0.3333;0.5833;1" calcMode="linear" dur="6s" repeatCount="indefinite"/></circle>
+    <circle r="13"><animateMotion path="M 992 260 H 1080 V 885 H 1160" keyPoints="0;0;1;1" keyTimes="0;0.3333;0.5833;1" calcMode="linear" dur="6s" repeatCount="indefinite"/></circle>
+  </g>
+</svg>

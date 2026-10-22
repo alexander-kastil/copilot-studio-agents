@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">The HR agent's two Excel tools</title>
+  <desc id="d">Inside Copilot Studio, generative orchestration picks the tool List HR candidates, which reads Candidates_Table through Excel Online (Business), or the tool Insert new candidate for HR. The topic Add a new candidate to Excel also calls the insert tool. That tool is an agent flow: When an agent calls the flow, Add new candidate row, Respond to the agent. Both tools work on the same table in Sample-list-of-candidates.xlsx in a SharePoint Documents library.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#24292f">
+    <rect x="50" y="50" width="1130" height="980" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2" stroke-dasharray="10 8"/>
+    <text x="80" y="108" font-size="30" font-weight="700">HR agent in Copilot Studio</text>
+
+    <rect x="80" y="200" width="460" height="230" rx="14" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="310" y="275" text-anchor="middle" font-weight="700">Generative orchestration</text>
+    <text x="310" y="330" text-anchor="middle" fill="#57606a">chooses a tool from</text>
+    <text x="310" y="370" text-anchor="middle" fill="#57606a">its Description</text>
+
+    <rect x="80" y="600" width="460" height="260" rx="14" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="310" y="668" text-anchor="middle" font-weight="700">Topic: Add a new</text>
+    <text x="310" y="708" text-anchor="middle" font-weight="700">candidate to Excel</text>
+    <text x="310" y="770" text-anchor="middle" fill="#57606a">Ask with adaptive card</text>
+    <text x="310" y="810" text-anchor="middle" fill="#57606a">collects the candidate</text>
+
+    <rect id="tool1" x="610" y="150" width="540" height="300" rx="14" fill="#e9f7ef" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" dur="10s" repeatCount="indefinite" calcMode="discrete" values="#8c959f;#e0a534;#8c959f" keyTimes="0;0.11;0.17"/>
+      <animate attributeName="stroke-width" dur="10s" repeatCount="indefinite" calcMode="discrete" values="2;5;2" keyTimes="0;0.11;0.17"/>
+    </rect>
+    <text x="880" y="205" text-anchor="middle" fill="#57606a">Tool</text>
+    <text x="880" y="250" text-anchor="middle" font-weight="700">List HR candidates</text>
+    <text x="880" y="315" text-anchor="middle" fill="#57606a">Excel Online (Business)</text>
+    <text x="880" y="355" text-anchor="middle" fill="#57606a">List rows present in a table</text>
+    <text x="880" y="410" text-anchor="middle" fill="#57606a">inputs: Custom value</text>
+
+    <rect x="610" y="500" width="540" height="480" rx="14" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <text x="880" y="548" text-anchor="middle" fill="#57606a">Tool</text>
+    <text x="880" y="592" text-anchor="middle" font-weight="700">Insert new candidate for HR</text>
+    <text x="880" y="638" text-anchor="middle" fill="#57606a">Agent flow</text>
+
+    <rect x="640" y="668" width="480" height="64" rx="32" fill="#ffffff" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" dur="10s" repeatCount="indefinite" calcMode="discrete" values="#8c959f;#e0a534;#8c959f" keyTimes="0;0.58;0.64"/>
+      <animate attributeName="stroke-width" dur="10s" repeatCount="indefinite" calcMode="discrete" values="2;5;2" keyTimes="0;0.58;0.64"/>
+    </rect>
+    <text x="880" y="710" text-anchor="middle">When an agent calls the flow</text>
+    <line x1="880" y1="733" x2="880" y2="764" stroke="#57606a" stroke-width="2" marker-end="url(#ah)"/>
+    <rect x="640" y="768" width="480" height="64" rx="32" fill="#ffffff" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" dur="10s" repeatCount="indefinite" calcMode="discrete" values="#8c959f;#e0a534;#8c959f" keyTimes="0;0.64;0.77"/>
+      <animate attributeName="stroke-width" dur="10s" repeatCount="indefinite" calcMode="discrete" values="2;5;2" keyTimes="0;0.64;0.77"/>
+    </rect>
+    <text x="880" y="810" text-anchor="middle">Add new candidate row</text>
+    <line x1="880" y1="833" x2="880" y2="864" stroke="#57606a" stroke-width="2" marker-end="url(#ah)"/>
+    <rect x="640" y="868" width="480" height="64" rx="32" fill="#ffffff" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" dur="10s" repeatCount="indefinite" calcMode="discrete" values="#8c959f;#e0a534;#8c959f" keyTimes="0;0.82;0.88"/>
+      <animate attributeName="stroke-width" dur="10s" repeatCount="indefinite" calcMode="discrete" values="2;5;2" keyTimes="0;0.82;0.88"/>
+    </rect>
+    <text x="880" y="910" text-anchor="middle">Respond to the agent</text>
+
+    <rect x="1250" y="300" width="620" height="560" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="1560" y="358" text-anchor="middle" font-weight="700">SharePoint</text>
+    <text x="1560" y="400" text-anchor="middle" fill="#57606a">Documents library</text>
+    <rect x="1280" y="430" width="560" height="400" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1560" y="485" text-anchor="middle" font-family="Consolas, monospace">Sample-list-of-candidates.xlsx</text>
+    <text x="1560" y="540" text-anchor="middle" font-family="Consolas, monospace" fill="#57606a">Candidates_Table</text>
+    <rect x="1340" y="580" width="440" height="200" fill="#ffffff" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" dur="10s" repeatCount="indefinite" calcMode="discrete" values="#8c959f;#e0a534;#8c959f;#e0a534;#8c959f" keyTimes="0;0.25;0.31;0.77;0.82"/>
+      <animate attributeName="stroke-width" dur="10s" repeatCount="indefinite" calcMode="discrete" values="2;5;2;5;2" keyTimes="0;0.25;0.31;0.77;0.82"/>
+    </rect>
+    <rect x="1341" y="581" width="438" height="39" fill="#e9f7ef"/>
+    <rect x="1341" y="741" width="438" height="38" fill="#ffffff">
+      <animate attributeName="fill" dur="10s" repeatCount="indefinite" calcMode="discrete" values="#ffffff;#fff6e5;#ffffff" keyTimes="0;0.77;0.97"/>
+    </rect>
+    <g stroke="#8c959f" stroke-width="2">
+      <line x1="1340" y1="620" x2="1780" y2="620"/>
+      <line x1="1340" y1="660" x2="1780" y2="660"/>
+      <line x1="1340" y1="700" x2="1780" y2="700"/>
+      <line x1="1340" y1="740" x2="1780" y2="740"/>
+      <line x1="1450" y1="580" x2="1450" y2="780"/>
+      <line x1="1560" y1="580" x2="1560" y2="780"/>
+      <line x1="1670" y1="580" x2="1670" y2="780"/>
+    </g>
+
+    <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+      <line x1="540" y1="300" x2="604" y2="300"/>
+      <line x1="540" y1="410" x2="604" y2="560"/>
+      <line x1="540" y1="730" x2="604" y2="730"/>
+      <line x1="1150" y1="380" x2="1244" y2="380"/>
+      <line x1="1120" y1="800" x2="1244" y2="800"/>
+    </g>
+  </g>
+
+  <g stroke="#ffffff" stroke-width="3">
+    <circle r="14" fill="#e0a534" opacity="0">
+      <animateMotion dur="10s" repeatCount="indefinite" path="M540 300 L604 300" keyPoints="0;0;1;1" keyTimes="0;0.03;0.11;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.03;0.11"/>
+    </circle>
+    <circle r="14" fill="#e0a534" opacity="0">
+      <animateMotion dur="10s" repeatCount="indefinite" path="M1150 380 L1244 380" keyPoints="0;0;1;1" keyTimes="0;0.17;0.25;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.17;0.25"/>
+    </circle>
+    <circle r="14" fill="#2f855a" opacity="0">
+      <animateMotion dur="10s" repeatCount="indefinite" path="M1244 380 L1150 380" keyPoints="0;0;1;1" keyTimes="0;0.31;0.39;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.31;0.39"/>
+    </circle>
+    <circle r="14" fill="#2f855a" opacity="0">
+      <animateMotion dur="10s" repeatCount="indefinite" path="M604 300 L540 300" keyPoints="0;0;1;1" keyTimes="0;0.39;0.46;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.39;0.46"/>
+    </circle>
+    <circle r="14" fill="#e0a534" opacity="0">
+      <animateMotion dur="10s" repeatCount="indefinite" path="M540 730 L604 730" keyPoints="0;0;1;1" keyTimes="0;0.52;0.58;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.52;0.58"/>
+    </circle>
+    <circle r="14" fill="#e0a534" opacity="0">
+      <animateMotion dur="10s" repeatCount="indefinite" path="M1120 800 L1244 800" keyPoints="0;0;1;1" keyTimes="0;0.70;0.77;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.70;0.77"/>
+    </circle>
+    <circle r="14" fill="#2f855a" opacity="0">
+      <animateMotion dur="10s" repeatCount="indefinite" path="M604 730 L540 730" keyPoints="0;0;1;1" keyTimes="0;0.88;0.95;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.88;0.95"/>
+    </circle>
+  </g>
+</svg>

@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">CS-Employee Onboarding Assistant: each answer traced to its SharePoint document</title>
+  <desc id="d">Two SharePoint sites flank the agent. Left, HR Documents, added in Ex 1 with the description This source provides any kind of Human Resources information, holds Employee Onboarding.docx. Right, Sightseeing, added in Ex 2 with the description Recommended Sightseeing info, holds Vienna Sightseeing.docx and Lunch Options Near Grinzing Office.docx. In the middle, CS-Employee Onboarding Assistant, whose instructions now end with the section Sightseeing. Ex 3: Where can I find the benefits enrollment form? cites Employee Onboarding.docx. Ex 4: What should I see near the office after work? recommends Bellevue Wiese, Grinzing, St. Stephen's Cathedral, the Vienna State Opera and Belvedere Palace, citing both Sightseeing documents. Ex 5: the dog policy question finds no pet policy, tells you to confirm with HR, cites Employee Onboarding.docx and stays the same with ungrounded answers off. Bottom, Ex 5: What's the capital of Australia, and can you write me a limerick about it? gets Canberra and a limerick with no reference while ungrounded answers are on, and No information was found, then the Fallback topic, once they are off. Dashed citation lines run from each answer to its document, and a dot travels each line in turn.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .h { font-size: 34px; font-weight: 700; }
+      .t { font-size: 30px; font-weight: 600; }
+      .s { font-size: 28px; fill: #57606a; }
+      .q { font-size: 28px; }
+      .bd { font-size: 26px; font-weight: 700; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="50" y="40" width="520" height="822" rx="24" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <rect x="74" y="64" width="88" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="bd" x="118" y="95">Ex 1</text>
+  <text class="t" x="182" y="97">HR Documents</text>
+  <text class="s" x="74" y="150">SharePoint site</text>
+  <text class="s" x="74" y="200">This source provides any kind</text>
+  <text class="s" x="74" y="236">of Human Resources information</text>
+  <rect x="74" y="470" width="472" height="90" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="q" x="146" y="525">Employee Onboarding.docx</text>
+
+  <rect x="1350" y="40" width="520" height="822" rx="24" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1374" y="64" width="88" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="bd" x="1418" y="95">Ex 2</text>
+  <text class="t" x="1482" y="97">Sightseeing</text>
+  <text class="s" x="1374" y="150">SharePoint site</text>
+  <text class="s" x="1374" y="200">Recommended Sightseeing info</text>
+  <rect x="1374" y="430" width="472" height="80" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="q" x="1446" y="481">Vienna Sightseeing.docx</text>
+  <rect x="1374" y="540" width="472" height="110" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="q" x="1446" y="584">Lunch Options Near</text>
+  <text class="q" x="1446" y="622">Grinzing Office.docx</text>
+
+  <g fill="#ffffff" stroke="#57606a" stroke-width="2">
+    <path d="M96,494 H118 L128,504 V536 H96 Z"/>
+    <path d="M1396,449 H1418 L1428,459 V491 H1396 Z"/>
+    <path d="M1396,574 H1418 L1428,584 V616 H1396 Z"/>
+  </g>
+  <g fill="none" stroke="#57606a" stroke-width="2">
+    <path d="M118,494 V504 H128"/>
+    <path d="M1418,449 V459 H1428"/>
+    <path d="M1418,574 V584 H1428"/>
+  </g>
+
+  <rect x="630" y="40" width="660" height="140" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="660" y="98">CS-Employee Onboarding Assistant</text>
+  <text class="s" x="660" y="148">Instructions end with ## Sightseeing</text>
+
+  <g stroke="#8c959f" stroke-width="2" fill="#ffffff">
+    <rect x="630" y="210" width="660" height="160" rx="16"/>
+    <rect x="630" y="394" width="660" height="246" rx="16"/>
+    <rect x="630" y="664" width="660" height="198" rx="16"/>
+  </g>
+  <g fill="#fff6e5" stroke="#e0a534" stroke-width="2">
+    <rect x="654" y="228" width="88" height="44" rx="22"/>
+    <rect x="654" y="412" width="88" height="44" rx="22"/>
+    <rect x="654" y="682" width="88" height="44" rx="22"/>
+  </g>
+  <text class="bd" x="698" y="259">Ex 3</text>
+  <text class="bd" x="698" y="443">Ex 4</text>
+  <text class="bd" x="698" y="713">Ex 5</text>
+  <text class="q" x="762" y="258">Where can I find the</text>
+  <text class="q" x="762" y="296">benefits enrollment form?</text>
+  <text class="s" x="654" y="346">cites Employee Onboarding.docx</text>
+  <text class="q" x="762" y="442">What should I see near</text>
+  <text class="q" x="762" y="480">the office after work?</text>
+  <text class="s" x="654" y="532">Bellevue Wiese, Grinzing,</text>
+  <text class="s" x="654" y="570">St. Stephen's Cathedral, Vienna</text>
+  <text class="s" x="654" y="608">State Opera, Belvedere Palace</text>
+  <text class="q" x="762" y="712">What is the company's policy on</text>
+  <text class="q" x="762" y="750">bringing my dog to the office?</text>
+  <text class="s" x="654" y="800">No pet policy found, confirm with HR</text>
+  <text class="s" x="654" y="838">same answer with ungrounded off</text>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" stroke-dasharray="10 8" marker-end="url(#ah)">
+    <line x1="630" y1="300" x2="546" y2="500"/>
+    <line x1="630" y1="760" x2="546" y2="540"/>
+    <line x1="1290" y1="470" x2="1374" y2="470"/>
+    <line x1="1290" y1="595" x2="1374" y2="595"/>
+  </g>
+
+  <rect x="50" y="882" width="1820" height="164" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="74" y="902" width="88" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="bd" x="118" y="933">Ex 5</text>
+  <text class="q" x="182" y="934">What's the capital of Australia, and can</text>
+  <text class="q" x="182" y="972">you write me a limerick about it?</text>
+  <g stroke="#8c959f" stroke-width="2" fill="#ffffff">
+    <rect x="760" y="898" width="530" height="132" rx="16"/>
+    <rect x="1340" y="898" width="506" height="132" rx="16"/>
+  </g>
+  <text class="t" x="784" y="938">Ungrounded answers on</text>
+  <text class="s" x="784" y="976">Canberra and a limerick,</text>
+  <text class="s" x="784" y="1012">no reference</text>
+  <text class="t" x="1364" y="938">Ungrounded answers off</text>
+  <text class="s" x="1364" y="976">No information was found,</text>
+  <text class="s" x="1364" y="1012">then the Fallback topic</text>
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="694" y1="964" x2="760" y2="964"/>
+    <line x1="1290" y1="964" x2="1340" y2="964"/>
+  </g>
+
+  <g fill="none" stroke="#24292f" stroke-width="5">
+    <rect x="630" y="210" width="660" height="160" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.02;0.18" values="0;1;0"/>
+    </rect>
+    <rect x="74" y="470" width="472" height="90" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.10;0.18;0.54;0.62" values="0;1;0;1;0"/>
+    </rect>
+    <rect x="630" y="394" width="660" height="246" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.22;0.42" values="0;1;0"/>
+    </rect>
+    <rect x="1374" y="430" width="472" height="80" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.30;0.42" values="0;1;0"/>
+    </rect>
+    <rect x="1374" y="540" width="472" height="110" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.30;0.42" values="0;1;0"/>
+    </rect>
+    <rect x="630" y="664" width="660" height="198" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.46;0.62" values="0;1;0"/>
+    </rect>
+    <rect x="760" y="898" width="530" height="132" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.66;0.80" values="0;1;0"/>
+    </rect>
+    <rect x="1340" y="898" width="506" height="132" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.83;0.97" values="0;1;0"/>
+    </rect>
+  </g>
+
+  <g fill="#24292f">
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M630,300 L546,500" calcMode="linear" keyTimes="0;0.04;0.10;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.04;0.10" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1290,470 H1374" calcMode="linear" keyTimes="0;0.24;0.30;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.24;0.30" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1290,595 H1374" calcMode="linear" keyTimes="0;0.24;0.30;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.24;0.30" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M630,760 L546,540" calcMode="linear" keyTimes="0;0.48;0.54;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.48;0.54" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1290,964 H1340" calcMode="linear" keyTimes="0;0.80;0.83;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.80;0.83" values="0;1;0"/>
+    </circle>
+  </g>
+</svg>

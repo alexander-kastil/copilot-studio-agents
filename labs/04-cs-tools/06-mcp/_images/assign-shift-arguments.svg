@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">How one sentence becomes the four arguments of assign_shift</title>
+  <desc id="d">The prompt Assign John Smith to the bar shift on 2026-08-03 starting at 10 is split into four arguments: employeeName John Smith (full or partial name of the employee), position bar (position for the shift, for example bar, waiter, host, chef), date 2026-08-03 (date of the shift in yyyy-MM-dd format) and shiftStartHour 10 (hour 0 to 23 at which the 8-hour shift starts, defaults to 8). The agent sends them with tools/call to assign_shift, matched on its description Assigns an employee to an 8-hour shift by name, date, and position, and a breakpoint in AssignShift in Tools/HRTools.cs stops there with these values.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse">
+      <path d="M0,0 L12,6 L0,12 z" fill="#8c959f"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="320" y="100" width="1280" height="130" rx="30" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <g stroke="#8c959f" stroke-width="1.5">
+      <rect x="494.8" y="138" width="198.9" height="58" rx="8" fill="#eaf2ff"/>
+      <rect x="831.3" y="138" width="68.1" height="58" rx="8" fill="#f3edff"/>
+      <rect x="1074.2" y="138" width="198.9" height="58" rx="8" fill="#e9f7ef"/>
+      <rect x="1504.1" y="138" width="49.4" height="58" rx="8" fill="#fff6e5"/>
+    </g>
+    <g font-family="Consolas, Menlo, monospace" font-size="34" fill="#24292f">
+      <text x="370" y="178" textLength="112.1" lengthAdjust="spacingAndGlyphs">Assign</text>
+      <text x="500.8" y="178" textLength="186.9" lengthAdjust="spacingAndGlyphs" font-weight="700">John Smith</text>
+      <text x="706.4" y="178" textLength="112.1" lengthAdjust="spacingAndGlyphs">to the</text>
+      <text x="837.3" y="178" textLength="56.1" lengthAdjust="spacingAndGlyphs" font-weight="700">bar</text>
+      <text x="912.0" y="178" textLength="149.5" lengthAdjust="spacingAndGlyphs">shift on</text>
+      <text x="1080.2" y="178" textLength="186.9" lengthAdjust="spacingAndGlyphs" font-weight="700">2026-08-03</text>
+      <text x="1285.8" y="178" textLength="205.6" lengthAdjust="spacingAndGlyphs">starting at</text>
+      <text x="1510.1" y="178" textLength="37.4" lengthAdjust="spacingAndGlyphs" font-weight="700">10</text>
+    </g>
+
+    <g stroke="#8c959f" stroke-width="2" fill="none" marker-end="url(#arrow)">
+      <line x1="594" y1="230" x2="294" y2="324"/>
+      <line x1="865" y1="230" x2="756" y2="324"/>
+      <line x1="1174" y1="230" x2="1205" y2="324"/>
+      <line x1="1529" y1="230" x2="1646" y2="324"/>
+      <line x1="290" y1="600" x2="596" y2="714"/>
+      <line x1="750" y1="600" x2="857" y2="714"/>
+      <line x1="1210" y1="600" x2="1063" y2="714"/>
+      <line x1="1650" y1="600" x2="1324" y2="714"/>
+    </g>
+
+    <g stroke="#8c959f" stroke-width="2">
+      <rect x="90" y="330" width="400" height="270" rx="16" fill="#eaf2ff"/>
+      <rect x="550" y="330" width="400" height="270" rx="16" fill="#f3edff"/>
+      <rect x="1010" y="330" width="400" height="270" rx="16" fill="#e9f7ef"/>
+      <rect x="1450" y="330" width="400" height="270" rx="16" fill="#fff6e5"/>
+    </g>
+    <g font-family="Consolas, Menlo, monospace" font-size="30" font-weight="700" fill="#24292f">
+      <text x="118" y="384">employeeName</text>
+      <text x="578" y="384">position</text>
+      <text x="1038" y="384">date</text>
+      <text x="1478" y="384">shiftStartHour</text>
+    </g>
+    <g font-family="Consolas, Menlo, monospace" font-size="30" fill="#24292f">
+      <text x="118" y="430">"John Smith"</text>
+      <text x="578" y="430">"bar"</text>
+      <text x="1038" y="430">"2026-08-03"</text>
+      <text x="1478" y="430">10</text>
+    </g>
+    <g font-size="28" fill="#57606a">
+      <text x="118" y="486">Full or partial name</text>
+      <text x="118" y="524">of the employee</text>
+      <text x="578" y="486">Position for the shift</text>
+      <text x="578" y="524">(e.g. bar, waiter,</text>
+      <text x="578" y="562">host, chef)</text>
+      <text x="1038" y="486">Date of the shift in</text>
+      <text x="1038" y="524">yyyy-MM-dd format</text>
+      <text x="1478" y="486">Hour (0-23) at which</text>
+      <text x="1478" y="524">the 8-hour shift starts.</text>
+      <text x="1478" y="562">Defaults to 8</text>
+    </g>
+
+    <rect x="460" y="720" width="1000" height="260" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="960" y="782" font-size="32" fill="#57606a" text-anchor="middle" font-family="Consolas, Menlo, monospace">tools/call <tspan font-weight="700" fill="#24292f">assign_shift</tspan></text>
+    <text x="960" y="834" font-size="28" fill="#57606a" text-anchor="middle">matched on its description:</text>
+    <text x="960" y="874" font-size="28" fill="#24292f" text-anchor="middle">Assigns an employee to an 8-hour shift by name, date, and position</text>
+    <text x="960" y="940" font-size="28" fill="#57606a" text-anchor="middle">a breakpoint in <tspan font-family="Consolas, Menlo, monospace" fill="#24292f">AssignShift</tspan>, <tspan font-family="Consolas, Menlo, monospace" fill="#24292f">Tools/HRTools.cs</tspan>, stops here</text>
+  </g>
+</svg>

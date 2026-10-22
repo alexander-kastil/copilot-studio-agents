@@ -1,0 +1,7 @@
+mcs.metadata:
+  componentName: Sightseeing
+  description: all about food
+kind: KnowledgeSourceConfiguration
+source:
+  kind: SharePointKnowledgeSource
+  siteUrl: https://integrationsonline.sharepoint.com/sites/copilot-demo/Sightseeing

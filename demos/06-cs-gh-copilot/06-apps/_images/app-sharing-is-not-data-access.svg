@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Sharing the app is not sharing the data</title>
+  <desc id="d">An app user reaches connected data through three separate decisions. The maker shares the app, each user consents to the connection at first use, and the owner of the SharePoint site or Dataverse table grants access to the records. The app uses the signed-in user's identity to reach the data.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+    <style>
+      .h{font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:34px;font-weight:600;fill:#24292f}
+      .l{font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:32px;font-weight:600;fill:#24292f}
+      .b{font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:28px;fill:#57606a}
+      .q{font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:28px;font-style:italic;fill:#24292f}
+      .n{font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:30px;font-weight:700;fill:#24292f}
+      .box{stroke:#8c959f;stroke-width:2}
+      .gate{fill:#fff6e5;stroke:#e0a534;stroke-width:3}
+      .arrow{stroke:#57606a;stroke-width:3;fill:none}
+      .lead{stroke:#8c959f;stroke-width:2;stroke-dasharray:6 8;fill:none}
+      .hi{fill:none;stroke:#e0a534;stroke-width:7}
+    </style>
+  </defs>
+
+  <line class="arrow" x1="360" y1="540" x2="446" y2="540"/>
+  <line class="arrow" x1="492" y1="540" x2="576" y2="540" marker-end="url(#ah)"/>
+  <line class="arrow" x1="960" y1="540" x2="1086" y2="540"/>
+  <line class="arrow" x1="1132" y1="540" x2="1376" y2="540"/>
+  <line class="arrow" x1="1422" y1="540" x2="1516" y2="540" marker-end="url(#ah)"/>
+
+  <rect class="box" x="60" y="440" width="300" height="200" rx="22" fill="#eaf2ff"/>
+  <circle cx="125" cy="512" r="20" fill="#57606a"/>
+  <path d="M93,578 A32,32 0 0 1 157,578 Z" fill="#57606a"/>
+  <text class="h" x="175" y="554">App user</text>
+
+  <rect class="box" x="580" y="420" width="380" height="240" rx="22" fill="#f3edff"/>
+  <text class="h" x="620" y="485">App</text>
+  <text class="b" x="620" y="535">Uses the signed-in</text>
+  <text class="b" x="620" y="575">user's identity</text>
+  <text class="b" x="620" y="615">to reach the data</text>
+
+  <rect class="box" x="1520" y="420" width="350" height="240" rx="22" fill="#e9f7ef"/>
+  <text class="l" x="1555" y="485">Connected data</text>
+  <text class="b" x="1555" y="535">SharePoint list</text>
+  <text class="b" x="1555" y="575">or Dataverse table</text>
+
+  <rect class="gate" x="448" y="465" width="44" height="150" rx="22"/>
+  <text class="n" x="470" y="551" text-anchor="middle">1</text>
+  <rect class="gate" x="1088" y="465" width="44" height="150" rx="22"/>
+  <text class="n" x="1110" y="551" text-anchor="middle">2</text>
+  <rect class="gate" x="1378" y="465" width="44" height="150" rx="22"/>
+  <text class="n" x="1400" y="551" text-anchor="middle">3</text>
+
+  <line class="lead" x1="470" y1="620" x2="470" y2="680"/>
+  <text class="l" x="470" y="722" text-anchor="middle">Share the app</text>
+  <text class="b" x="470" y="767" text-anchor="middle">The maker decides,</text>
+  <text class="b" x="470" y="807" text-anchor="middle">within environment policy</text>
+  <text class="q" x="470" y="857" text-anchor="middle">Who can open and use the app?</text>
+
+  <line class="lead" x1="1110" y1="460" x2="1110" y2="350"/>
+  <text class="l" x="1110" y="192" text-anchor="middle">Consent to a connection</text>
+  <text class="b" x="1110" y="237" text-anchor="middle">Each user, at first use</text>
+  <text class="q" x="1110" y="287" text-anchor="middle">Has this person allowed the app</text>
+  <text class="q" x="1110" y="327" text-anchor="middle">to act on their account?</text>
+
+  <line class="lead" x1="1400" y1="620" x2="1400" y2="680"/>
+  <text class="l" x="1400" y="722" text-anchor="middle">Access the data</text>
+  <text class="b" x="1400" y="767" text-anchor="middle">The owner of the SharePoint</text>
+  <text class="b" x="1400" y="807" text-anchor="middle">site or Dataverse table decides</text>
+  <text class="q" x="1400" y="857" text-anchor="middle">Who can read or change the records?</text>
+
+  <rect class="hi" x="440" y="457" width="60" height="166" rx="30" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.125;0.225" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+  </rect>
+  <rect class="hi" x="574" y="414" width="392" height="252" rx="26" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.3;0.375" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+  </rect>
+  <rect class="hi" x="1080" y="457" width="60" height="166" rx="30" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.45;0.55" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+  </rect>
+  <rect class="hi" x="1370" y="457" width="60" height="166" rx="30" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.65;0.75" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+  </rect>
+  <rect class="hi" x="1514" y="414" width="362" height="252" rx="26" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.825;0.95" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+  </rect>
+
+  <circle cx="374" cy="540" r="13" fill="#0969da">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;0.125" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="374;432;432" keyTimes="0;0.125;1" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="506" cy="540" r="13" fill="#0969da" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.225;0.3" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="506;506;556;556" keyTimes="0;0.225;0.3;1" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="974" cy="540" r="13" fill="#0969da" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.375;0.45" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="974;974;1072;1072" keyTimes="0;0.375;0.45;1" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1146" cy="540" r="13" fill="#0969da" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.55;0.65" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="1146;1146;1362;1362" keyTimes="0;0.55;0.65;1" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1436" cy="540" r="13" fill="#0969da" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.75;0.825" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="1436;1436;1496;1496" keyTimes="0;0.75;0.825;1" dur="8s" repeatCount="indefinite"/>
+  </circle>
+</svg>

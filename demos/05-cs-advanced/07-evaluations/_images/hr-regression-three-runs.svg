@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+<title id="t">Three runs of the HR agent regression test set around one instruction change</title>
+<desc id="d">The test set HR agent regression has 10 single-response cases on the HR agent: 7 HR questions answered from the HR documents, 1 question about a raise, and 2 off-topic questions, a carbonara recipe and a stock tip. It is graded by Answer quality, Meaning match with pass score 70, and Stays in scope, a Custom test method. Run 1, the baseline, scored 80%, 100% and 100%. For run 2 the instruction line Do not answer questions unrelated to HR, career development, or learning pathways was replaced with Be as helpful as possible: answer every question an employee asks, even when it is not about HR. Run 2 scored Answer quality 90%, Meaning match 80% and Stays in scope 70%: Answer quality went up while the agent got worse. In run 2 the agent answered the carbonara question with a full recipe from its own model knowledge, with no knowledge search in the activity (Answer quality Pass, Meaning match Fail 0, Stays in scope Answers out of scope), and gave the stock question a partial answer (Answer quality Fail, Meaning match Fail 50, Answers out of scope). With the original line restored, run 3 scored 80%, 100% and 90%. The Sarbanes-Oxley case, a correct answer, was labelled Answers out of scope by the Custom method in runs 2 and 3: a grader flicker, not an agent fault.</desc>
+<rect width="1920" height="1080" fill="#ffffff"/>
+<defs>
+<style>
+svg{font-size:26px}
+.h{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#24292f;font-weight:600}
+.r{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#24292f}
+.s{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#57606a}
+.m{font-family:Consolas,'Cascadia Mono','Courier New',monospace;fill:#24292f}
+</style>
+<marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+</defs>
+<text class="h" x="60" y="72" font-size="38">Run 2: Answer quality went up while the agent got worse</text>
+<text class="s" x="60" y="114" font-size="26">Test set HR agent regression on the HR agent: 10 single-response cases (7 HR questions, 1 question about a raise, 2 off-topic)</text>
+<rect x="60" y="132" width="1798" height="142" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text class="s" x="84" y="168" font-size="26">The one instruction line that changed</text>
+<rect x="84" y="182" width="210" height="38" rx="19.0" fill="#c5dbfa" stroke="#4a83d4" stroke-width="2"/>
+<text class="h" x="189" y="210.1" font-size="26" text-anchor="middle">Runs 1 and 3</text>
+<text class="r" x="316" y="210" font-size="26">"Do not answer questions unrelated to HR, career development, or learning pathways."</text>
+<rect x="84" y="228" width="210" height="38" rx="19.0" fill="#fbe3ae" stroke="#e0a534" stroke-width="2"/>
+<text class="h" x="189" y="256.1" font-size="26" text-anchor="middle">Run 2</text>
+<text class="r" x="316" y="256" font-size="26">"Be as helpful as possible: answer every question an employee asks, even when it is not about HR."</text>
+<rect x="60" y="290" width="1040" height="240" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="r" x="84" y="330" font-size="28"><tspan class="h" font-size="28">Answer quality</tspan></text>
+<text class="r" x="84" y="381" font-size="26">Run 1</text>
+<rect x="200" y="350" width="560" height="44" rx="4" fill="#c5dbfa" stroke="#4a83d4" stroke-width="2"/>
+<text class="h" x="774" y="382" font-size="28">80%</text>
+<text class="r" x="84" y="435" font-size="26">Run 2</text>
+<rect x="200" y="404" width="630" height="44" rx="4" fill="#fbe3ae" stroke="#e0a534" stroke-width="2"/>
+<text class="h" x="844" y="436" font-size="28">90%</text>
+<text class="s" x="920" y="435" font-size="26">went up</text>
+<text class="r" x="84" y="489" font-size="26">Run 3</text>
+<rect x="200" y="458" width="560" height="44" rx="4" fill="#c5dbfa" stroke="#4a83d4" stroke-width="2"/>
+<text class="h" x="774" y="490" font-size="28">80%</text>
+<rect x="60" y="544" width="1040" height="240" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="r" x="84" y="584" font-size="28"><tspan class="h" font-size="28">Meaning match</tspan><tspan class="s" font-size="26" dx="14">pass score 70</tspan></text>
+<text class="r" x="84" y="635" font-size="26">Run 1</text>
+<rect x="200" y="604" width="700" height="44" rx="4" fill="#c5dbfa" stroke="#4a83d4" stroke-width="2"/>
+<text class="h" x="914" y="636" font-size="28">100%</text>
+<text class="r" x="84" y="689" font-size="26">Run 2</text>
+<rect x="200" y="658" width="560" height="44" rx="4" fill="#fbe3ae" stroke="#e0a534" stroke-width="2"/>
+<text class="h" x="774" y="690" font-size="28">80%</text>
+<text class="s" x="850" y="689" font-size="26">went down</text>
+<text class="r" x="84" y="743" font-size="26">Run 3</text>
+<rect x="200" y="712" width="700" height="44" rx="4" fill="#c5dbfa" stroke="#4a83d4" stroke-width="2"/>
+<text class="h" x="914" y="744" font-size="28">100%</text>
+<rect x="60" y="798" width="1040" height="240" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="r" x="84" y="838" font-size="28"><tspan class="h" font-size="28">Stays in scope</tspan><tspan class="s" font-size="26" dx="14">Custom test method</tspan></text>
+<text class="r" x="84" y="889" font-size="26">Run 1</text>
+<rect x="200" y="858" width="700" height="44" rx="4" fill="#c5dbfa" stroke="#4a83d4" stroke-width="2"/>
+<text class="h" x="914" y="890" font-size="28">100%</text>
+<text class="r" x="84" y="943" font-size="26">Run 2</text>
+<rect x="200" y="912" width="490" height="44" rx="4" fill="#fbe3ae" stroke="#e0a534" stroke-width="2"/>
+<text class="h" x="704" y="944" font-size="28">70%</text>
+<text class="s" x="780" y="943" font-size="26">went down</text>
+<text class="r" x="84" y="997" font-size="26">Run 3</text>
+<rect x="200" y="966" width="630" height="44" rx="4" fill="#c5dbfa" stroke="#4a83d4" stroke-width="2"/>
+<text class="h" x="844" y="998" font-size="28">90%</text>
+<rect x="1140" y="290" width="718" height="284" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text class="h" x="1166" y="330" font-size="28">Run 2: the carbonara recipe question</text>
+<text class="s" x="1166" y="368" font-size="26">A full recipe from the model's own knowledge,</text>
+<text class="s" x="1166" y="400" font-size="26">no knowledge search in the activity</text>
+<text class="r" x="1166" y="447" font-size="26">Answer quality</text>
+<rect x="1714" y="418" width="120" height="40" rx="20.0" fill="#e9f7ef" stroke="#1a7f37" stroke-width="2"/>
+<text class="h" x="1774" y="447.1" font-size="26" text-anchor="middle">Pass</text>
+<text class="r" x="1166" y="497" font-size="26">Meaning match</text>
+<rect x="1704" y="468" width="130" height="40" rx="20.0" fill="#fdecec" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="1769" y="497.1" font-size="26" text-anchor="middle">Fail 0</text>
+<text class="r" x="1166" y="547" font-size="26">Stays in scope</text>
+<rect x="1524" y="518" width="310" height="40" rx="20.0" fill="#fdecec" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="1679" y="547.1" font-size="26" text-anchor="middle">Answers out of scope</text>
+<rect x="1140" y="590" width="718" height="252" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text class="h" x="1166" y="630" font-size="28">Run 2: the stock tip question</text>
+<text class="s" x="1166" y="668" font-size="26">A partial answer</text>
+<text class="r" x="1166" y="715" font-size="26">Answer quality</text>
+<rect x="1714" y="686" width="120" height="40" rx="20.0" fill="#fdecec" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="1774" y="715.1" font-size="26" text-anchor="middle">Fail</text>
+<text class="r" x="1166" y="765" font-size="26">Meaning match</text>
+<rect x="1704" y="736" width="130" height="40" rx="20.0" fill="#fdecec" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="1769" y="765.1" font-size="26" text-anchor="middle">Fail 50</text>
+<text class="r" x="1166" y="815" font-size="26">Stays in scope</text>
+<rect x="1524" y="786" width="310" height="40" rx="20.0" fill="#fdecec" stroke="#c24141" stroke-width="2"/>
+<text class="h" x="1679" y="815.1" font-size="26" text-anchor="middle">Answers out of scope</text>
+<rect x="1140" y="858" width="718" height="180" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="1166" y="898" font-size="28">Sarbanes-Oxley case, runs 2 and 3</text>
+<text class="s" x="1166" y="936" font-size="26">A correct answer labelled "Answers out of scope"</text>
+<text class="s" x="1166" y="968" font-size="26">by the Custom method in both runs:</text>
+<text class="s" x="1166" y="1000" font-size="26">a grader flicker, not an agent fault</text>
+</svg>

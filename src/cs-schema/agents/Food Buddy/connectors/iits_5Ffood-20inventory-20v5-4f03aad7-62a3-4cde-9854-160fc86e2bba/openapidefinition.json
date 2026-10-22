@@ -1,0 +1,422 @@
+﻿{
+  "swagger": "2.0",
+  "host": "food-catalog-api.azurewebsites.net",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "definitions": {
+    "FoodDTO": {
+      "type": "object",
+      "description": "A new food item without an id.",
+      "required": [
+        "name",
+        "price"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "x-ms-summary": "Name",
+          "description": "The name of the food item."
+        },
+        "price": {
+          "type": "number",
+          "format": "double",
+          "x-ms-summary": "Price",
+          "description": "The unit price of the food item."
+        },
+        "inStock": {
+          "type": "integer",
+          "format": "int32",
+          "x-ms-summary": "In stock",
+          "description": "The number of units currently in stock."
+        },
+        "minStock": {
+          "type": "integer",
+          "format": "int32",
+          "x-ms-summary": "Minimum stock",
+          "description": "The stock level below which the item should be reordered."
+        },
+        "pictureUrl": {
+          "type": "string",
+          "x-ms-summary": "Picture URL",
+          "description": "The absolute URL of the item picture."
+        },
+        "description": {
+          "type": "string",
+          "x-ms-summary": "Description",
+          "description": "A short description of the food item."
+        }
+      }
+    },
+    "FoodItem": {
+      "type": "object",
+      "description": "A food item stored in the catalog.",
+      "required": [
+        "id",
+        "name",
+        "price"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int32",
+          "x-ms-summary": "Id",
+          "description": "The unique numeric id of the food item."
+        },
+        "name": {
+          "type": "string",
+          "x-ms-summary": "Name",
+          "description": "The name of the food item."
+        },
+        "price": {
+          "type": "number",
+          "format": "double",
+          "x-ms-summary": "Price",
+          "description": "The unit price of the food item."
+        },
+        "inStock": {
+          "type": "integer",
+          "format": "int32",
+          "x-ms-summary": "In stock",
+          "description": "The number of units currently in stock."
+        },
+        "minStock": {
+          "type": "integer",
+          "format": "int32",
+          "x-ms-summary": "Minimum stock",
+          "description": "The stock level below which the item should be reordered."
+        },
+        "pictureUrl": {
+          "type": "string",
+          "x-ms-summary": "Picture URL",
+          "description": "The absolute URL of the item picture."
+        },
+        "description": {
+          "type": "string",
+          "x-ms-summary": "Description",
+          "description": "A short description of the food item."
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Food",
+      "description": "Operations on the food catalog."
+    }
+  ],
+  "info": {
+    "title": "Food Inventory v5",
+    "description": "Read and maintain the food catalog: list all food items, look them up by name or id, add new items, update existing ones, adjust stock levels and delete items.",
+    "version": "v1"
+  },
+  "paths": {
+    "/Food": {
+      "get": {
+        "operationId": "ListFoodItems",
+        "summary": "List all food items",
+        "description": "Returns every food item in the catalog with its price, current stock, minimum stock, picture and description.",
+        "x-ms-visibility": "important",
+        "responses": {
+          "200": {
+            "description": "The complete list of food items.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/FoodItem"
+              }
+            }
+          },
+          "default": {
+            "description": "The operation failed."
+          }
+        },
+        "x-ms-openai-data": {
+          "openai-enabled": true,
+          "operations": [
+            {
+              "operationId": "ListFoodItems",
+              "x-ms-require-user-confirmation": false,
+              "summary": "List all food items",
+              "description": "Returns every food item in the catalog with its price, current stock, minimum stock, picture and description."
+            }
+          ]
+        }
+      },
+      "post": {
+        "operationId": "CreateFoodItem",
+        "summary": "Create a food item",
+        "description": "Adds a new food item to the catalog and returns the created item including its generated id.",
+        "x-ms-visibility": "important",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "x-ms-summary": "Food item",
+            "description": "The food item to create.",
+            "schema": {
+              "$ref": "#/definitions/FoodDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The created food item.",
+            "schema": {
+              "$ref": "#/definitions/FoodItem"
+            }
+          },
+          "default": {
+            "description": "The operation failed."
+          }
+        },
+        "x-ms-openai-data": {
+          "openai-enabled": true,
+          "operations": [
+            {
+              "operationId": "CreateFoodItem",
+              "x-ms-require-user-confirmation": false,
+              "summary": "Create a food item",
+              "description": "Adds a new food item to the catalog and returns the created item including its generated id."
+            }
+          ]
+        }
+      },
+      "put": {
+        "operationId": "UpdateFoodItem",
+        "summary": "Update a food item",
+        "description": "Replaces an existing food item. Supply the full item including its id.",
+        "x-ms-visibility": "important",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "x-ms-summary": "Food item",
+            "description": "The full food item to store, including its id.",
+            "schema": {
+              "$ref": "#/definitions/FoodItem"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The updated food item.",
+            "schema": {
+              "$ref": "#/definitions/FoodItem"
+            }
+          },
+          "default": {
+            "description": "The operation failed."
+          }
+        },
+        "x-ms-openai-data": {
+          "openai-enabled": true,
+          "operations": [
+            {
+              "operationId": "UpdateFoodItem",
+              "x-ms-require-user-confirmation": false,
+              "summary": "Update a food item",
+              "description": "Replaces an existing food item. Supply the full item including its id."
+            }
+          ]
+        }
+      }
+    },
+    "/Food/byname": {
+      "get": {
+        "operationId": "SearchFoodItemsByName",
+        "summary": "Search food items by name",
+        "description": "Returns the food items whose name matches the search text. Use this when the user names a food instead of an id.",
+        "x-ms-visibility": "important",
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "x-ms-summary": "Name",
+            "description": "The food name to search for, for example Banana.",
+            "x-ms-visibility": "important"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The matching food items.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/FoodItem"
+              }
+            }
+          },
+          "400": {
+            "description": "The name parameter is missing or empty."
+          },
+          "404": {
+            "description": "No food item matches the given name."
+          },
+          "default": {
+            "description": "The operation failed."
+          }
+        },
+        "x-ms-openai-data": {
+          "openai-enabled": true,
+          "operations": [
+            {
+              "operationId": "SearchFoodItemsByName",
+              "x-ms-require-user-confirmation": false,
+              "summary": "Search food items by name",
+              "description": "Returns the food items whose name matches the search text. Use this when the user names a food instead of an id."
+            }
+          ]
+        }
+      }
+    },
+    "/Food/{id}": {
+      "get": {
+        "operationId": "GetFoodItemById",
+        "summary": "Get a food item by id",
+        "description": "Returns a single food item identified by its numeric id.",
+        "x-ms-visibility": "important",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "x-ms-summary": "Food item id",
+            "description": "The numeric id of the food item."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested food item.",
+            "schema": {
+              "$ref": "#/definitions/FoodItem"
+            }
+          },
+          "default": {
+            "description": "The operation failed."
+          }
+        },
+        "x-ms-openai-data": {
+          "openai-enabled": true,
+          "operations": [
+            {
+              "operationId": "GetFoodItemById",
+              "x-ms-require-user-confirmation": false,
+              "summary": "Get a food item by id",
+              "description": "Returns a single food item identified by its numeric id."
+            }
+          ]
+        }
+      },
+      "delete": {
+        "operationId": "DeleteFoodItem",
+        "summary": "Delete a food item",
+        "description": "Permanently removes the food item with the given id from the catalog.",
+        "x-ms-visibility": "advanced",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "x-ms-summary": "Food item id",
+            "description": "The numeric id of the food item to delete."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The food item was deleted."
+          },
+          "default": {
+            "description": "The operation failed."
+          }
+        },
+        "x-ms-openai-data": {
+          "openai-enabled": true,
+          "operations": [
+            {
+              "operationId": "DeleteFoodItem",
+              "x-ms-require-user-confirmation": false,
+              "summary": "Delete a food item",
+              "description": "Permanently removes the food item with the given id from the catalog."
+            }
+          ]
+        }
+      }
+    },
+    "/Food/{id}/update-stock": {
+      "patch": {
+        "operationId": "UpdateFoodItemStock",
+        "summary": "Update the stock of a food item",
+        "description": "Sets the current stock level of the food item with the given id and returns the item.",
+        "x-ms-visibility": "important",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "x-ms-summary": "Food item id",
+            "description": "The numeric id of the food item."
+          },
+          {
+            "name": "amount",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "x-ms-summary": "Amount",
+            "description": "The new stock level for the food item.",
+            "x-ms-visibility": "important"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The food item with the updated stock level.",
+            "schema": {
+              "$ref": "#/definitions/FoodItem"
+            }
+          },
+          "404": {
+            "description": "No food item exists with the given id."
+          },
+          "default": {
+            "description": "The operation failed."
+          }
+        },
+        "x-ms-openai-data": {
+          "openai-enabled": true,
+          "operations": [
+            {
+              "operationId": "UpdateFoodItemStock",
+              "x-ms-require-user-confirmation": false,
+              "summary": "Update the stock of a food item",
+              "description": "Sets the current stock level of the food item with the given id and returns the item."
+            }
+          ]
+        }
+      }
+    }
+  },
+  "x-ms-openai-manifest": {
+    "humanName": "Food Inventory v5",
+    "modelDescription": "Read and maintain the food catalog: list all food items, look them up by name or id, add new items, update existing ones, adjust stock levels and delete items.",
+    "contactEmail": "",
+    "legalUrl": ""
+  }
+}

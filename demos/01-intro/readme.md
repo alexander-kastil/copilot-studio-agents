@@ -1,19 +1,27 @@
 # Introduction to Copilot Cowork & Copilot Studio
 
-This module builds the foundation for the whole course. Before you touch Copilot Studio or Cowork, you need a clear model of what agents and copilots are, the parts every agent is made of, how Microsoft lets you extend Copilot, and what to license and configure first. Get these four things right and everything in the later modules has somewhere to land.
+This module builds the foundation for the whole course. Before you touch Copilot Studio or Cowork, you need a clear model of what agents and copilots are, how every agent works, which harness runs it, and where to build one and what it costs. Get these right and everything in the later modules has somewhere to land.
 
-It is split into six focused topics: the first two establish the concepts, the middle three move from agent anatomy to environment setup, and the sixth tours the Copilot Chat productivity surface you will build on.
+It is split into five focused topics: the first two establish the concepts, the third and fourth are the decisions you make before you build (the harness, then the build path and its billing), and the fifth tours the Copilot Chat productivity surface you will build on. An optional sixth topic prepares the class tenant: the licenses each module needs, where Copilot Credits come from, and the errors that mean they are missing.
+
+![Five topic cards in three groups: topics 1 and 2 establish the concepts, topics 3 and 4 are the decisions before you build (the agent harness, then where to build and what it costs), and topic 5 tours the Copilot Chat productivity surface.](./pptx/images/00-02-module-path.svg)
 
 ## Topics
 
 | # | Topic | What you learn |
 |---|-------|----------------|
 | 1 | [Agents & Copilots for Microsoft 365](./01-agents-copilots/readme.md) | The vocabulary (copilot, agent, assistant), the Copilot ecosystem map, and where agents live in Microsoft 365 |
-| 2 | [Agentic AI & Design Patterns](./02-agentic-ai/readme.md) | The goal-driven agent model, business process before and after agents, and the multi-agent and human-in-the-loop patterns |
-| 3 | [How Agents Work: Knowledge, Prompting, Tools & MCP](./03-agent-anatomy/readme.md) | The three parts of every agent, prompt engineering, semantic index and RAG, and tools via the Model Context Protocol |
-| 4 | [Extensibility & Development Paths](./04-extensibility/readme.md) | The extensibility surface, a framework for choosing a build path, and how to envision a scenario before building |
-| 5 | [Licensing & Environment Setup](./05-licensing-setup/readme.md) | Full vs pay-as-you-go licensing, enabling PAYG for Copilot, Studio, and Cowork, spending governance, and the one-time tools setup |
-| 6 | [Copilot Chat & Productivity Agents](./06-chat-productivity/readme.md) | Copilot Chat free vs licensed, Copilot Tasks, the Frontier program, App Builder, and the prebuilt and SharePoint agents |
+| 2 | [How Agents Work](./02-how-agents-work/readme.md) | The agentic loop with Proceed, Confirm and Escalate, the agent, model and harness, semantic index and RAG, tools via the Model Context Protocol, and the design patterns |
+| 3 | [Agent Harnesses: Choose the Runtime](./03-agent-harnesses/readme.md) | What a harness decides, classic, generative and enhanced orchestration, the four harnesses of Copilot Studio, choosing one before you build, and the agent lifecycle |
+| 4 | [Where to Build and What It Costs](./04-where-to-build/readme.md) | The build paths from Agent Builder to Copilot Studio, Copilot Credits and their three billing routes, and spending limits |
+| 5 | [Copilot Chat & Productivity Agents](./05-chat-productivity/readme.md) | Researcher and Analyst, SharePoint agents, and building your own agent with Agent Builder |
+| 6 | [Prepare the Tenant: Licenses & Credits](./06-cost-license/readme.md) (optional) | The licenses per module, what a Copilot license covers, the three places credits come from, the errors that mean one is missing, and where a run's cost shows |
+
+## Hands-On Demos
+
+| Topic | Description |
+|-------|-------------|
+| [Agent Harnesses: Choose the Runtime](03-agent-harnesses/demo-choose-the-harness.md) | Find where each harness starts in Copilot Studio, read the harness of existing agents without spending credits, and decide the harness and control line for four help desk requests |
 
 ## Duration & Audience
 
@@ -23,7 +31,8 @@ This module opens a four-day, hands-on course on low-code Agentic AI with Copilo
 
 - A GitHub account
 - Basic knowledge of the Microsoft 365 platform
-- A Microsoft 365 tenant with Copilot, plus an Azure subscription for pay-as-you-go billing (see [Licensing & Environment Setup](./05-licensing-setup/readme.md))
+- A Microsoft 365 tenant with Copilot, plus an Azure subscription for pay-as-you-go billing (see [Where to Build and What It Costs](./04-where-to-build/readme.md))
+- Pre-class homework: [Manage email efficiently with Microsoft Outlook and Copilot Chat](https://aiskillsnavigator.microsoft.com/explore/search/module-b9259bdd701906b1bc10fd3eddc8505e6302469b923b591afaf7a03432c6fe97) on AI Skills Navigator (16 minutes)
 
 ## Links & Resources
 

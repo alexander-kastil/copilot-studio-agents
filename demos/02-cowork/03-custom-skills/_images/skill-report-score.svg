@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">How the Skill Report score adds up</title>
+  <desc id="d">Four dimensions worth 25 points each: Trigger clarity, the skill fires at the right time; Instruction specificity, it knows what to do; Scope boundaries, it stays in its purpose; Robustness, it handles unexpected input safely. Together they make one score from 0 to 100, which falls into a band: Poor below 50, Needs work 50 to 69, Good 70 to 84, Excellent 85 and above.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="80" y="90" width="1760" height="360" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <line x1="520" y1="90" x2="520" y2="450" stroke="#8c959f" stroke-width="2"/>
+    <line x1="960" y1="90" x2="960" y2="450" stroke="#8c959f" stroke-width="2"/>
+    <line x1="1400" y1="90" x2="1400" y2="450" stroke="#8c959f" stroke-width="2"/>
+
+    <g text-anchor="middle">
+      <text x="300" y="160" font-size="34" font-weight="700" fill="#24292f">25 points</text>
+      <text x="300" y="240" font-size="30" font-weight="700" fill="#24292f">Trigger clarity</text>
+      <text x="300" y="360" font-size="28" fill="#57606a">fires at the right time</text>
+
+      <text x="740" y="160" font-size="34" font-weight="700" fill="#24292f">25 points</text>
+      <text x="740" y="240" font-size="30" font-weight="700" fill="#24292f">Instruction</text>
+      <text x="740" y="280" font-size="30" font-weight="700" fill="#24292f">specificity</text>
+      <text x="740" y="360" font-size="28" fill="#57606a">knows what to do</text>
+
+      <text x="1180" y="160" font-size="34" font-weight="700" fill="#24292f">25 points</text>
+      <text x="1180" y="240" font-size="30" font-weight="700" fill="#24292f">Scope boundaries</text>
+      <text x="1180" y="360" font-size="28" fill="#57606a">stays in its purpose</text>
+
+      <text x="1620" y="160" font-size="34" font-weight="700" fill="#24292f">25 points</text>
+      <text x="1620" y="240" font-size="30" font-weight="700" fill="#24292f">Robustness</text>
+      <text x="1620" y="360" font-size="28" fill="#57606a">handles unexpected</text>
+      <text x="1620" y="400" font-size="28" fill="#57606a">input safely</text>
+    </g>
+
+    <path d="M80,470 L80,485 L1840,485 L1840,470" fill="none" stroke="#57606a" stroke-width="3"/>
+    <line x1="960" y1="485" x2="960" y2="505" stroke="#57606a" stroke-width="3"/>
+    <text x="960" y="552" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">one score from 0 to 100</text>
+
+    <rect x="80" y="590" width="880" height="230" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <rect x="960" y="590" width="352" height="230" fill="#fff6e5" stroke="#8c959f" stroke-width="2"/>
+    <rect x="1312" y="590" width="264" height="230" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <rect x="1576" y="590" width="264" height="230" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <g text-anchor="middle">
+      <text x="520" y="690" font-size="30" font-weight="700" fill="#24292f">Poor</text>
+      <text x="520" y="742" font-size="28" fill="#57606a">below 50</text>
+      <text x="1136" y="690" font-size="30" font-weight="700" fill="#24292f">Needs work</text>
+      <text x="1136" y="742" font-size="28" fill="#57606a">50-69</text>
+      <text x="1444" y="690" font-size="30" font-weight="700" fill="#24292f">Good</text>
+      <text x="1444" y="742" font-size="28" fill="#57606a">70-84</text>
+      <text x="1708" y="690" font-size="30" font-weight="700" fill="#24292f">Excellent</text>
+      <text x="1708" y="742" font-size="28" fill="#57606a">85+</text>
+    </g>
+
+    <g stroke="#57606a" stroke-width="3">
+      <line x1="80" y1="820" x2="80" y2="838"/>
+      <line x1="960" y1="820" x2="960" y2="838"/>
+      <line x1="1312" y1="820" x2="1312" y2="838"/>
+      <line x1="1576" y1="820" x2="1576" y2="838"/>
+      <line x1="1840" y1="820" x2="1840" y2="838"/>
+    </g>
+    <g font-size="28" fill="#57606a" text-anchor="middle">
+      <text x="80" y="878">0</text>
+      <text x="960" y="878">50</text>
+      <text x="1312" y="878">70</text>
+      <text x="1576" y="878">85</text>
+      <text x="1840" y="878">100</text>
+    </g>
+  </g>
+</svg>

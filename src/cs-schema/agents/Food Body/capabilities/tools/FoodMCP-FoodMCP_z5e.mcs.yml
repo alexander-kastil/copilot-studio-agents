@@ -1,0 +1,8 @@
+mcs.metadata:
+  componentName: Food MCP — Food MCP
+  description: An mcp that knows about food and other nice things
+kind: McpTool
+authMode: Invoker
+connectionReference: iits_foodbody_D2IGed.cr.shared_iits-5ffood-2.e68149809e6649cdb3134aff0bb12c4c
+connectorId: /providers/Microsoft.PowerApps/apis/shared_iits-5ffood-20mcp-5f0af75e9cbdc7cbac
+operationId: InvokeServer

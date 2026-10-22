@@ -1,0 +1,33 @@
+﻿jsonFileName: workflows/CS-Posttoteams-0afefe22-8acd-f111-a05a-7c1e528616d5/workflow.json
+workflowId: 0afefe22-8acd-f111-a05a-7c1e528616d5
+name: CS-Post to teams
+type: 1
+description: Answers the agent at once, asks a reviewer through Request for information and then posts the text to the travel desk channel in Teams.
+subprocess: false
+category: 5
+mode: 0
+scope: 4
+onDemand: false
+triggerOnCreate: false
+triggerOnDelete: false
+asyncAutodelete: false
+syncWorkflowLogOnFailure: false
+stateCode: 1
+statusCode: 2
+runAs: 1
+isTransacted: true
+introducedVersion: 1.0.0.0
+isCustomizable:
+  value: true
+  canBeChanged: true
+  managedPropertyLogicalName: iscustomizableanddeletable
+businessProcessType: 0
+isCustomProcessingStepAllowedForOtherPublishers:
+  value: true
+  canBeChanged: true
+  managedPropertyLogicalName: canbedeleted
+modernFlowType: 1
+primaryEntity: none
+connectionReferences:
+- iits_CSTeams
+- iits_CSHumanintheloop

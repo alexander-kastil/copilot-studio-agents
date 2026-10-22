@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Agent, harness and model as three stacked layers</title>
+  <desc id="d">Three layers are stacked. On top, the agent is what you design: instructions, knowledge and tools, plus skills and memory on the GitHub Copilot harness. In the middle, drawn widest with a thick border, the harness coordinates the work: when to call the model, what to send it, how to read the reply and which step runs next. A request enters the harness from the left, and an answer or action leaves it on the right. At the bottom, the model reasons and writes, and models differ in speed, cost and depth. Two-way arrows join the harness to the agent above and to the model below. A note under the stack says that the same model with a different harness makes a different agent.</desc>
+  <style>svg { font-size: 28px; }</style>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+
+  <rect x="460" y="60" width="1000" height="256" rx="20" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="960" y="120" font-size="34" font-weight="700" fill="#24292f" text-anchor="middle">Agent: what you design</text>
+  <rect x="591" y="146" width="230" height="60" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="706" y="186" font-size="28" fill="#24292f" text-anchor="middle">Instructions</text>
+  <rect x="845" y="146" width="230" height="60" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="960" y="186" font-size="28" fill="#24292f" text-anchor="middle">Knowledge</text>
+  <rect x="1099" y="146" width="230" height="60" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1214" y="186" font-size="28" fill="#24292f" text-anchor="middle">Tools</text>
+  <rect x="650" y="226" width="620" height="52" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2" stroke-dasharray="10 8"/>
+  <text x="960" y="262" font-size="28" fill="#57606a" text-anchor="middle">Skills and memory (GitHub Copilot harness)</text>
+
+  <line x1="960" y1="324" x2="960" y2="368" stroke="#57606a" stroke-width="3" marker-start="url(#ah)" marker-end="url(#ah)"/>
+
+  <rect x="380" y="376" width="1160" height="260" rx="20" fill="#f3edff" stroke="#57606a" stroke-width="5"/>
+  <text x="960" y="438" font-size="34" font-weight="700" fill="#24292f" text-anchor="middle">Harness: coordinates the work</text>
+  <circle cx="546" cy="504" r="7" fill="#57606a"/>
+  <text x="568" y="514" font-size="30" fill="#24292f">When to call the model</text>
+  <circle cx="1046" cy="504" r="7" fill="#57606a"/>
+  <text x="1068" y="514" font-size="30" fill="#24292f">What to send it</text>
+  <circle cx="546" cy="566" r="7" fill="#57606a"/>
+  <text x="568" y="576" font-size="30" fill="#24292f">How to read the reply</text>
+  <circle cx="1046" cy="566" r="7" fill="#57606a"/>
+  <text x="1068" y="576" font-size="30" fill="#24292f">Which step runs next</text>
+
+  <text x="218" y="482" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">Request</text>
+  <line x1="60" y1="506" x2="372" y2="506" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <text x="1702" y="482" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">Answer or action</text>
+  <line x1="1548" y1="506" x2="1856" y2="506" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+
+  <line x1="960" y1="644" x2="960" y2="688" stroke="#57606a" stroke-width="3" marker-start="url(#ah)" marker-end="url(#ah)"/>
+
+  <rect x="460" y="696" width="1000" height="170" rx="20" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="960" y="760" font-size="34" font-weight="700" fill="#24292f" text-anchor="middle">Model: reasons and writes</text>
+  <text x="960" y="814" font-size="28" fill="#57606a" text-anchor="middle">Differs in speed, cost and depth</text>
+
+  <rect x="570" y="930" width="780" height="80" rx="40" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="960" y="981" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Same model, different harness: a different agent</text>
+</svg>

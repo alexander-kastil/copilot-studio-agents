@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+<title id="t">What the demo builds: live Dataverse data and a follow-up workflow</title>
+<desc id="d">Exercise 1 attaches the Dataverse MCP server to the Northwind Sales Assistant, and Exercise 2 asks a live-data question in Preview. Exercises 3 and 4 build a workflow from a trigger that takes the account name, through an agent node that calls the same assistant, to a final node that returns the drafted follow-up. Exercise 5 tests it node by node and saves a version.</desc>
+<rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L16,8 L0,16 z" fill="#57606a"/></marker></defs>
+<rect x="70" y="590" width="1780" height="400" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<rect x="100" y="120" width="460" height="240" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<rect x="120" y="140" width="104" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text x="172.0" y="171" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">Ex 2</text>
+<text x="330" y="228" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Preview</text>
+<text x="330" y="274" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="middle">open support cases for</text>
+<text x="330" y="312" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="middle">North region accounts</text>
+<rect x="730" y="120" width="460" height="240" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="960" y="228" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Northwind Sales</text>
+<text x="960" y="268" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Assistant</text>
+<text x="960" y="314" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="middle">reads the description</text>
+<rect x="1360" y="120" width="460" height="240" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+<rect x="1380" y="140" width="104" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text x="1432.0" y="171" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">Ex 1</text>
+<text x="1590" y="228" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Dataverse MCP server</text>
+<text x="1590" y="274" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="middle">account, order and</text>
+<text x="1590" y="312" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="middle">support case records</text>
+<rect x="100" y="640" width="460" height="220" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<rect x="120" y="660" width="104" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text x="172.0" y="691" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">Ex 3</text>
+<text x="330" y="748" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Trigger</text>
+<text x="330" y="794" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="middle">input: account name</text>
+<rect x="730" y="640" width="460" height="220" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<rect x="750" y="660" width="104" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text x="802.0" y="691" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">Ex 4</text>
+<text x="960" y="748" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Agent node</text>
+<text x="960" y="794" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="middle">drafts the follow-up</text>
+<rect x="1360" y="640" width="460" height="220" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<rect x="1380" y="660" width="104" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text x="1432.0" y="691" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">Ex 4</text>
+<text x="1590" y="748" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Final node</text>
+<text x="1590" y="794" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="middle">returns the drafted</text>
+<text x="1590" y="832" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="middle">follow-up</text>
+<line x1="560" y1="240" x2="726" y2="240" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<line x1="1190" y1="240" x2="1356" y2="240" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<line x1="560" y1="750" x2="726" y2="750" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<line x1="1190" y1="750" x2="1356" y2="750" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<line x1="900" y1="640" x2="900" y2="364" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<line x1="1020" y1="360" x2="1020" y2="636" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<text x="880" y="482" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="600" fill="#24292f" text-anchor="end">calls the assistant</text>
+<text x="1040" y="482" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="600" fill="#24292f" text-anchor="start">language and live data</text>
+<rect x="100" y="902" width="104" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text x="152.0" y="933" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">Ex 5</text>
+<text x="220" y="934" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#24292f" text-anchor="start">Workflow: test node by node, then save a version</text>
+
+</svg>

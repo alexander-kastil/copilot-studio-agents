@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+<title id="t">What goes into a test set as a CSV file and what comes out of it</title>
+<desc id="d">Into a test set: the template link on the Data source panel downloads EvaluationTemplate.csv, whose comment lines state the limits, a maximum of 100 questions and a maximum of 500 characters per question including spaces, followed by the two columns question and expectedResponse. The conversation data type has its own EvalConversationTemplate.csv with the columns conversationNumber, question and response, where response is optional and not compared, and a limit of 8 question-and-answer pairs per conversation and 50 conversations. Test methods are not in the file: after import the test set has Answer quality by default, and you add the other test methods yourself. Out of a test set: Export test set in the test set menu downloads a file named after the set, for example HR agent regression.csv, which starts with the comment lines # Test set name: HR agent regression and # Test methods: GeneralQuality, CompareMeaning, Stays in scope, followed by the same two columns. GeneralQuality and CompareMeaning are Learn's old names for Answer quality and Meaning match, and the Custom method Stays in scope travels as its name only. The test methods travel only as a comment line, so add them again after you import the file elsewhere.</desc>
+<rect width="1920" height="1080" fill="#ffffff"/>
+<defs>
+<style>
+svg{font-size:26px}
+.h{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#24292f;font-weight:600}
+.r{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#24292f}
+.s{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#57606a}
+.m{font-family:Consolas,'Cascadia Mono','Courier New',monospace;fill:#24292f}
+</style>
+<marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+</defs>
+<rect x="60" y="30" width="1798" height="474" rx="20" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="90" y="76" font-size="32">Into a test set</text>
+<rect x="90" y="110" width="300" height="120" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="s" x="120" y="154" font-size="26">Data source panel</text>
+<text class="h" x="120" y="198" font-size="30">template link</text>
+<path d="M390,170 H463" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="470" y="100" width="790" height="180" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="496" y="140" font-size="28">EvaluationTemplate.csv</text>
+<text class="s" x="1234" y="140" font-size="26" text-anchor="end">single response</text>
+<text class="s" x="496" y="180" font-size="26">Comment lines: maximum of 100 questions, maximum 500</text>
+<text class="s" x="496" y="212" font-size="26">characters per question including spaces</text>
+<rect x="496" y="226" width="170" height="40" rx="8" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="m" x="581" y="254" font-size="26" text-anchor="middle">question</text>
+<rect x="680" y="226" width="290" height="40" rx="8" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="m" x="825" y="254" font-size="26" text-anchor="middle">expectedResponse</text>
+<rect x="470" y="300" width="790" height="190" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="496" y="340" font-size="28">EvalConversationTemplate.csv</text>
+<text class="s" x="1234" y="340" font-size="26" text-anchor="end">conversation</text>
+<rect x="496" y="358" width="320" height="40" rx="8" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="m" x="656" y="386" font-size="26" text-anchor="middle">conversationNumber</text>
+<rect x="830" y="358" width="170" height="40" rx="8" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="m" x="915" y="386" font-size="26" text-anchor="middle">question</text>
+<rect x="1014" y="358" width="170" height="40" rx="8" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="m" x="1099" y="386" font-size="26" text-anchor="middle">response</text>
+<text class="s" x="496" y="434" font-size="26">response is optional and not compared</text>
+<text class="s" x="496" y="468" font-size="26">8 question-and-answer pairs per conversation, 50 conversations</text>
+<path d="M1260,190 H1343" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M1260,395 H1343" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<text class="s" x="1302" y="302" font-size="26" text-anchor="middle">import</text>
+<rect x="1350" y="100" width="480" height="390" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="1376" y="146" font-size="30">Test set after import</text>
+<text class="r" x="1376" y="192" font-size="26">Test methods are not in the file.</text>
+<rect x="1376" y="220" width="230" height="44" rx="22.0" fill="#fbe3ae" stroke="#e0a534" stroke-width="2"/>
+<text class="h" x="1491" y="251.1" font-size="26" text-anchor="middle">Answer quality</text>
+<text class="s" x="1376" y="302" font-size="26">added by default after import</text>
+<text class="s" x="1376" y="350" font-size="26">Add the other test methods</text>
+<text class="s" x="1376" y="382" font-size="26">yourself.</text>
+<rect x="60" y="524" width="1798" height="360" rx="20" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="90" y="570" font-size="32">Out of a test set</text>
+<rect x="90" y="604" width="300" height="120" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="s" x="120" y="648" font-size="26">Test set menu</text>
+<text class="h" x="120" y="692" font-size="30">Export test set</text>
+<path d="M390,664 H463" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="470" y="596" width="960" height="268" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="496" y="636" font-size="28">HR agent regression.csv</text>
+<text class="s" x="1404" y="636" font-size="26" text-anchor="end">named &lt;set name&gt;.csv</text>
+<text class="m" x="496" y="686" font-size="26"># Test set name: HR agent regression</text>
+<rect x="484" y="702" width="932" height="44" rx="8" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text class="m" x="496" y="732" font-size="26"># Test methods: GeneralQuality, CompareMeaning, Stays in scope</text>
+<rect x="496" y="774" width="170" height="40" rx="8" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="m" x="581" y="802" font-size="26" text-anchor="middle">question</text>
+<rect x="680" y="774" width="290" height="40" rx="8" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="m" x="825" y="802" font-size="26" text-anchor="middle">expectedResponse</text>
+<text class="s" x="992" y="803" font-size="26">the same two columns</text>
+<line x1="1416" y1="724" x2="1446" y2="724" stroke="#e0a534" stroke-width="2"/>
+<rect x="1446" y="596" width="400" height="268" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text class="m" x="1472" y="634" font-size="26">GeneralQuality</text>
+<text class="r" x="1472" y="666" font-size="26">is Answer quality</text>
+<text class="m" x="1472" y="714" font-size="26">CompareMeaning</text>
+<text class="r" x="1472" y="746" font-size="26">is Meaning match</text>
+<text class="m" x="1472" y="794" font-size="26">Stays in scope</text>
+<text class="r" x="1472" y="826" font-size="26">a Custom method, name only</text>
+<rect x="60" y="904" width="1798" height="140" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="90" y="948" font-size="30">The test methods travel only as a comment line: add them again after you import the file elsewhere</text>
+<text class="s" x="90" y="988" font-size="26">GeneralQuality and CompareMeaning are Learn's old names for Answer quality and Meaning match.</text>
+<text class="s" x="90" y="1022" font-size="26">A Custom method travels as its name only.</text>
+</svg>

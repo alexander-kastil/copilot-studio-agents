@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">One run of the GH-Food Reorder Draft workflow</title>
+  <desc id="d">The whole run took 17 seconds and all three nodes succeeded. The trigger When an agent calls the flow takes the input FoodItems. The Agent node calls the published GH-Food Buddy and took 17.1 seconds; its Run Details show status Completed and the result Reorder list (catalog read only, no records changed). Respond to the agent took 0.01 seconds and returns the output ReorderDraft.</desc>
+  <style>svg { font-size: 28px; }</style>
+  <defs>
+    <marker id="ah" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="18" markerHeight="18" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+
+  <text x="960" y="150" font-size="38" font-weight="700" fill="#24292f" text-anchor="middle">Whole run: 17 s</text>
+  <line x1="100" y1="190" x2="1820" y2="190" stroke="#57606a" stroke-width="3"/>
+  <line x1="100" y1="188" x2="100" y2="228" stroke="#57606a" stroke-width="3"/>
+  <line x1="1820" y1="188" x2="1820" y2="228" stroke="#57606a" stroke-width="3"/>
+
+  <rect x="100" y="250" width="560" height="240" rx="20" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="380" y="335" font-size="34" font-weight="700" fill="#24292f" text-anchor="middle">When an agent calls the flow</text>
+  <text x="380" y="382" font-size="28" fill="#57606a" text-anchor="middle">trigger</text>
+  <rect x="340" y="410" width="80" height="52" rx="26" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <path d="M366,436 L376,447 L395,425" fill="none" stroke="#1a7f37" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <line x1="660" y1="370" x2="738" y2="370" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="740" y="250" width="440" height="240" rx="20" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="960" y="335" font-size="36" font-weight="700" fill="#24292f" text-anchor="middle">Agent</text>
+  <text x="960" y="382" font-size="28" fill="#57606a" text-anchor="middle">published GH-Food Buddy</text>
+  <rect x="870" y="410" width="180" height="52" rx="26" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <path d="M892,436 L902,447 L921,425" fill="none" stroke="#1a7f37" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="988" y="446" font-size="28" font-weight="600" fill="#24292f" text-anchor="middle">17.1 s</text>
+
+  <line x1="1180" y1="370" x2="1258" y2="370" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="1260" y="250" width="560" height="240" rx="20" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="1540" y="335" font-size="34" font-weight="700" fill="#24292f" text-anchor="middle">Respond to the agent</text>
+  <text x="1540" y="382" font-size="28" fill="#57606a" text-anchor="middle">returns the output</text>
+  <rect x="1450" y="410" width="180" height="52" rx="26" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <path d="M1472,436 L1482,447 L1501,425" fill="none" stroke="#1a7f37" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="1568" y="446" font-size="28" font-weight="600" fill="#24292f" text-anchor="middle">0.01 s</text>
+
+  <line x1="380" y1="568" x2="380" y2="494" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <rect x="160" y="570" width="440" height="84" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="380" y="622" font-size="30" fill="#24292f" text-anchor="middle"><tspan fill="#57606a">Input </tspan><tspan font-family="Consolas, monospace" font-weight="700">FoodItems</tspan></text>
+
+  <line x1="1540" y1="490" x2="1540" y2="566" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <rect x="1300" y="570" width="480" height="84" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1540" y="622" font-size="30" fill="#24292f" text-anchor="middle"><tspan fill="#57606a">Output </tspan><tspan font-family="Consolas, monospace" font-weight="700">ReorderDraft</tspan></text>
+
+  <line x1="960" y1="490" x2="960" y2="570" stroke="#8c959f" stroke-width="3" stroke-dasharray="10 8"/>
+  <rect x="640" y="570" width="640" height="360" rx="20" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="672" y="626" font-size="32" font-weight="700" fill="#24292f">Run Details</text>
+  <rect x="672" y="650" width="576" height="76" rx="12" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="698" y="698" font-size="28" fill="#57606a">status</text>
+  <text x="810" y="699" font-size="30" font-weight="700" fill="#24292f">Completed</text>
+  <rect x="672" y="746" width="576" height="160" rx="12" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="698" y="792" font-size="28" fill="#57606a">result</text>
+  <text x="698" y="836" font-size="30" fill="#24292f">Reorder list (catalog read only,</text>
+  <text x="698" y="878" font-size="30" fill="#24292f">no records changed)</text>
+</svg>

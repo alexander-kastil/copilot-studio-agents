@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Two prompt tools: triage in a fixed JSON shape, backlog figures from code interpreter</title>
+  <desc id="d">Grey Logistics IT Help Desk sits in the middle and picks the right prompt from each tool's description. In the top lane, the request Triage this one: a new hire cannot sign in to Teams, the account was created yesterday goes to the Triage help desk ticket prompt from Exercises 1 to 3: a Prompt assistant draft with a Ticket text input, Output JSON and Temperature 0. It returns the same JSON shape with the keys category, priority, summary and nextStep, here an Access or Password category. In the bottom lane, the request Here is last week's ticket log. Which category takes longest to fix, and how many tickets were high priority?, with the CSV pasted below, goes to the Analyze ticket backlog prompt from Exercise 4, which has code interpreter turned on, a Ticket log input, and runs Python for exact counts and averages. Its table lists Hardware 2 tickets at 27.0 average hours, Network 3 at 5.0, Software 2 at 2.5 and Password 3 at 1.0, with an overall average of 7.7 hours and 3 tickets with priority High. A dot runs each request through the agent into its tool, and the Hardware row lights up at the end.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <g transform="translate(0,30)">
+  <defs>
+    <style>
+      svg { font-size: 28px; }
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .h { font-size: 34px; font-weight: 700; }
+      .t { font-size: 30px; font-weight: 600; }
+      .b { font-size: 28px; }
+      .bb { font-size: 28px; font-weight: 700; }
+      .s { font-size: 28px; fill: #57606a; }
+      .m { font-family: Consolas, 'Courier New', monospace; font-size: 26px; }
+      .p { font-size: 26px; font-weight: 700; }
+      .c { text-anchor: middle; }
+      .e { text-anchor: end; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="540" y1="220" x2="600" y2="220"/>
+    <line x1="540" y1="720" x2="600" y2="720"/>
+    <line x1="880" y1="240" x2="960" y2="240"/>
+    <line x1="880" y1="730" x2="960" y2="730"/>
+    <line x1="1340" y1="240" x2="1400" y2="240"/>
+    <line x1="1340" y1="730" x2="1400" y2="730"/>
+  </g>
+
+  <rect x="60" y="120" width="480" height="200" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="84" y="170">Triage this one: a new hire</text>
+  <text class="b" x="84" y="210">cannot sign in to Teams, the</text>
+  <text class="b" x="84" y="250">account was created</text>
+  <text class="b" x="84" y="290">yesterday.</text>
+
+  <rect x="60" y="590" width="480" height="260" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="84" y="640">Here is last week's ticket</text>
+  <text class="b" x="84" y="680">log. Which category takes</text>
+  <text class="b" x="84" y="720">longest to fix, and how many</text>
+  <text class="b" x="84" y="760">tickets were high priority?</text>
+  <text class="s" x="84" y="812">with the CSV pasted below</text>
+
+  <rect x="600" y="80" width="280" height="880" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t c" x="740" y="440">Grey Logistics</text>
+  <text class="t c" x="740" y="480">IT Help Desk</text>
+  <text class="s c" x="740" y="540">picks the right</text>
+  <text class="s c" x="740" y="578">prompt from</text>
+  <text class="s c" x="740" y="616">each tool's</text>
+  <text class="s c" x="740" y="654">description</text>
+
+  <rect x="960" y="80" width="380" height="320" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="986" y="142">Triage help desk</text>
+  <text class="t" x="986" y="180">ticket</text>
+  <text class="s" x="986" y="232">Ticket text input</text>
+  <text class="s" x="986" y="272">Output: JSON</text>
+  <text class="s" x="986" y="312">Temperature 0</text>
+  <text class="s" x="986" y="352">Prompt assistant draft</text>
+
+  <rect x="1400" y="80" width="460" height="320" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="1426" y="136">Same JSON shape</text>
+  <g fill="#f6f8fa" stroke="#8c959f" stroke-width="2">
+    <rect x="1426" y="156" width="196" height="50" rx="12"/>
+    <rect x="1636" y="156" width="196" height="50" rx="12"/>
+    <rect x="1426" y="218" width="196" height="50" rx="12"/>
+    <rect x="1636" y="218" width="196" height="50" rx="12"/>
+  </g>
+  <text class="m" x="1446" y="190">category</text>
+  <text class="m" x="1656" y="190">priority</text>
+  <text class="m" x="1446" y="252">summary</text>
+  <text class="m" x="1656" y="252">nextStep</text>
+  <text class="s" x="1426" y="320">returns an Access or</text>
+  <text class="s" x="1426" y="358">Password category</text>
+
+  <rect x="960" y="500" width="380" height="460" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="986" y="562">Analyze ticket</text>
+  <text class="t" x="986" y="600">backlog</text>
+  <rect x="986" y="626" width="270" height="54" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+  <text class="bb" x="1006" y="663">code interpreter</text>
+  <text class="s" x="986" y="732">Ticket log input</text>
+  <text class="s" x="986" y="782">runs Python for</text>
+  <text class="s" x="986" y="820">exact counts and</text>
+  <text class="s" x="986" y="858">averages</text>
+
+  <rect x="1400" y="500" width="460" height="460" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="p e" x="1836" y="546">Average</text>
+  <text class="p" x="1426" y="580">Category</text>
+  <text class="p e" x="1680" y="580">Tickets</text>
+  <text class="p e" x="1836" y="580">hours</text>
+  <line x1="1416" y1="596" x2="1844" y2="596" stroke="#d0d7de" stroke-width="2"/>
+  <rect x="1416" y="604" width="428" height="46" rx="8" fill="#fff6e5"/>
+  <text class="bb" x="1426" y="638">Hardware</text>
+  <text class="bb e" x="1680" y="638">2</text>
+  <text class="bb e" x="1836" y="638">27.0</text>
+  <text class="b" x="1426" y="684">Network</text>
+  <text class="b e" x="1680" y="684">3</text>
+  <text class="b e" x="1836" y="684">5.0</text>
+  <text class="b" x="1426" y="728">Software</text>
+  <text class="b e" x="1680" y="728">2</text>
+  <text class="b e" x="1836" y="728">2.5</text>
+  <text class="b" x="1426" y="772">Password</text>
+  <text class="b e" x="1680" y="772">3</text>
+  <text class="b e" x="1836" y="772">1.0</text>
+  <line x1="1416" y1="796" x2="1844" y2="796" stroke="#d0d7de" stroke-width="2"/>
+  <text class="s" x="1426" y="846">Overall average 7.7 hours</text>
+  <text class="s" x="1426" y="888">3 tickets with priority High</text>
+
+  <g fill="#fff6e5" stroke="#e0a534" stroke-width="2">
+    <rect x="84" y="100" width="92" height="40" rx="20"/>
+    <rect x="84" y="570" width="92" height="40" rx="20"/>
+    <rect x="984" y="60" width="140" height="40" rx="20"/>
+    <rect x="984" y="480" width="92" height="40" rx="20"/>
+  </g>
+  <text class="p c" x="130" y="129">Ex 5</text>
+  <text class="p c" x="130" y="599">Ex 5</text>
+  <text class="p c" x="1054" y="89">Ex 1 to 3</text>
+  <text class="p c" x="1030" y="509">Ex 4</text>
+
+  <g fill="#24292f">
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M540,220 H600" calcMode="linear" keyTimes="0;0.02;0.08;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.02;0.08" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M880,240 H960" calcMode="linear" keyTimes="0;0.14;0.20;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.14;0.20" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1340,240 H1400" calcMode="linear" keyTimes="0;0.30;0.36;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.30;0.36" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M540,720 H600" calcMode="linear" keyTimes="0;0.50;0.56;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.50;0.56" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M880,730 H960" calcMode="linear" keyTimes="0;0.62;0.68;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.62;0.68" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1340,730 H1400" calcMode="linear" keyTimes="0;0.78;0.84;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.78;0.84" values="0;1;0"/>
+    </circle>
+  </g>
+
+  <g fill="none" stroke="#24292f" stroke-width="5">
+    <rect x="600" y="80" width="280" height="880" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.08;0.14;0.56;0.62" values="0;1;0;1;0"/>
+    </rect>
+    <rect x="960" y="80" width="380" height="320" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.20;0.30" values="0;1;0"/>
+    </rect>
+    <rect x="1400" y="80" width="460" height="320" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.36;0.46" values="0;1;0"/>
+    </rect>
+    <rect x="960" y="500" width="380" height="460" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.68;0.78" values="0;1;0"/>
+    </rect>
+  </g>
+  <rect x="1416" y="604" width="428" height="46" rx="8" fill="none" stroke="#e0a534" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.84;0.98" values="0;1;0"/>
+  </rect>
+  </g>
+</svg>

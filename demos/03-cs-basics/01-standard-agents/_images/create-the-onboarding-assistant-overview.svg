@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">CS-Employee Onboarding Assistant answers an off-topic question, gets structured instructions, then declines it</title>
+  <desc id="d">Left, Ex 1: the blank agent, before any instructions, answers What's the capital of Australia, and can you write me a limerick about it? with Canberra and the limerick, because nothing yet tells it what its job is; the reply is kept on screen for Ex 5. Centre, the agent CS-Employee Onboarding Assistant with the description Helps new employees complete onboarding. Ex 2 adds structured instructions with the sections Purpose, General Guidelines, Skills, Step-by-step Instructions, Error Handling, Interaction Examples, Nonstandard Terms and Follow-up and Closing. Ex 3 picks GPT Chat Latest as the primary model. Ex 4 sets where answers come from: orchestration Yes, web search off, ungrounded answers on, semantic search on, moderation Low. Right, Ex 5 proves the scope: the first-week checklist returns tasks with how-to lines and ends with the supportive closing; the benefits enrollment form question finds no SharePoint source yet, so the agent points you to HR; the capital question is declined and the reply ends with the closing line. While each test lights up, the instruction section behind it lights up too.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .h { font-size: 34px; font-weight: 700; }
+      .t { font-size: 30px; font-weight: 600; }
+      .s { font-size: 28px; fill: #57606a; }
+      .se { font-size: 28px; fill: #57606a; text-anchor: end; }
+      .q { font-size: 28px; }
+      .m { font-family: Consolas, 'Courier New', monospace; font-size: 26px; }
+      .bd { font-size: 26px; font-weight: 700; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="50" y="100" width="420" height="910" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="74" y="124" width="88" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="bd" x="118" y="155">Ex 1</text>
+  <text class="t" x="182" y="157">Off-topic baseline</text>
+  <text class="s" x="74" y="210">before any instructions</text>
+  <rect x="74" y="280" width="372" height="200" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="q" x="98" y="328">What's the capital of</text>
+  <text class="q" x="98" y="366">Australia, and can you</text>
+  <text class="q" x="98" y="404">write me a limerick</text>
+  <text class="q" x="98" y="442">about it?</text>
+  <rect x="74" y="560" width="372" height="220" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="98" y="612">Canberra,</text>
+  <text class="s" x="98" y="654">and the limerick,</text>
+  <text class="s" x="98" y="692">because nothing yet</text>
+  <text class="s" x="98" y="730">tells it what its job is</text>
+  <text class="s" x="74" y="860">kept on screen for Ex 5</text>
+
+  <rect x="540" y="100" width="720" height="910" rx="24" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="570" y="162">CS-Employee Onboarding Assistant</text>
+  <text class="s" x="570" y="206">Helps new employees complete onboarding</text>
+  <g stroke="#8c959f" stroke-width="2" fill="#ffffff">
+    <rect x="570" y="236" width="660" height="400" rx="16"/>
+    <rect x="570" y="660" width="660" height="80" rx="16"/>
+    <rect x="570" y="764" width="660" height="226" rx="16"/>
+  </g>
+  <g fill="#fff6e5" stroke="#e0a534" stroke-width="2">
+    <rect x="594" y="256" width="88" height="44" rx="22"/>
+    <rect x="594" y="678" width="88" height="44" rx="22"/>
+    <rect x="594" y="782" width="88" height="44" rx="22"/>
+  </g>
+  <text class="bd" x="638" y="287">Ex 2</text>
+  <text class="bd" x="638" y="709">Ex 3</text>
+  <text class="bd" x="638" y="813">Ex 4</text>
+  <text class="t" x="702" y="289">Structured instructions</text>
+  <g fill="#f6f8fa">
+    <rect x="594" y="312" width="612" height="34" rx="8"/>
+    <rect x="594" y="350" width="612" height="34" rx="8"/>
+    <rect x="594" y="388" width="612" height="34" rx="8"/>
+    <rect x="594" y="426" width="612" height="34" rx="8"/>
+    <rect x="594" y="464" width="612" height="34" rx="8"/>
+    <rect x="594" y="502" width="612" height="34" rx="8"/>
+    <rect x="594" y="540" width="612" height="34" rx="8"/>
+    <rect x="594" y="578" width="612" height="34" rx="8"/>
+  </g>
+  <text class="m" x="610" y="337"># Purpose</text>
+  <text class="m" x="610" y="375">## General Guidelines</text>
+  <text class="m" x="610" y="413">## Skills</text>
+  <text class="m" x="610" y="451">## Step-by-step Instructions</text>
+  <text class="m" x="610" y="489">## Error Handling</text>
+  <text class="m" x="610" y="527">## Interaction Examples</text>
+  <text class="m" x="610" y="565">## Nonstandard Terms</text>
+  <text class="m" x="610" y="603">## Follow-up and Closing</text>
+  <text class="t" x="702" y="711">GPT Chat Latest</text>
+  <text class="se" x="1206" y="711">primary model</text>
+  <text class="t" x="702" y="815">Where answers come from</text>
+  <text class="s" x="594" y="874">Orchestration: Yes</text>
+  <text class="s" x="904" y="874">Web search: off</text>
+  <text class="s" x="594" y="918">Semantic search: on</text>
+  <text class="s" x="904" y="918">Moderation: Low</text>
+  <text class="s" x="594" y="962">Ungrounded answers: on</text>
+
+  <rect x="1330" y="100" width="540" height="910" rx="24" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1354" y="124" width="88" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="bd" x="1398" y="155">Ex 5</text>
+  <text class="t" x="1462" y="157">Prove the scope</text>
+  <g stroke="#8c959f" stroke-width="2" fill="#eaf2ff">
+    <rect x="1354" y="190" width="492" height="94" rx="16"/>
+    <rect x="1354" y="470" width="492" height="94" rx="16"/>
+    <rect x="1354" y="750" width="492" height="132" rx="16"/>
+  </g>
+  <g stroke="#8c959f" stroke-width="2" fill="#ffffff">
+    <rect x="1354" y="296" width="492" height="94" rx="16"/>
+    <rect x="1354" y="576" width="492" height="94" rx="16"/>
+    <rect x="1354" y="894" width="492" height="94" rx="16"/>
+  </g>
+  <text class="q" x="1378" y="228">Give me a checklist of onboarding</text>
+  <text class="q" x="1378" y="266">tasks for my first week.</text>
+  <text class="s" x="1378" y="334">Tasks with how-to lines,</text>
+  <text class="s" x="1378" y="372">ends with the supportive closing</text>
+  <text class="q" x="1378" y="508">Where can I find the benefits</text>
+  <text class="q" x="1378" y="546">enrollment form?</text>
+  <text class="s" x="1378" y="614">No SharePoint source yet,</text>
+  <text class="s" x="1378" y="652">so it points you to HR</text>
+  <text class="q" x="1378" y="788">What's the capital of Australia,</text>
+  <text class="q" x="1378" y="826">and can you write me a</text>
+  <text class="q" x="1378" y="864">limerick about it?</text>
+  <text class="s" x="1378" y="932">Declined, and the reply ends</text>
+  <text class="s" x="1378" y="970">with the closing line</text>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="260" y1="480" x2="260" y2="560"/>
+    <line x1="470" y1="670" x2="540" y2="670"/>
+    <line x1="1260" y1="560" x2="1330" y2="560"/>
+  </g>
+
+  <g fill="none" stroke="#24292f" stroke-width="5">
+    <rect x="74" y="560" width="372" height="220" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.02;0.12" values="0;1;0"/>
+    </rect>
+    <rect x="570" y="236" width="660" height="400" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.16;0.30" values="0;1;0"/>
+    </rect>
+    <rect x="570" y="660" width="660" height="80" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.30;0.38" values="0;1;0"/>
+    </rect>
+    <rect x="570" y="764" width="660" height="226" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.38;0.48" values="0;1;0"/>
+    </rect>
+    <rect x="1354" y="296" width="492" height="94" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.52;0.66" values="0;1;0"/>
+    </rect>
+    <rect x="1354" y="576" width="492" height="94" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.66;0.80" values="0;1;0"/>
+    </rect>
+    <rect x="1354" y="894" width="492" height="94" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.80;0.96" values="0;1;0"/>
+    </rect>
+  </g>
+  <g fill="none" stroke="#e0a534" stroke-width="4">
+    <rect x="594" y="426" width="612" height="34" rx="8" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.52;0.66" values="0;1;0"/>
+    </rect>
+    <rect x="594" y="464" width="612" height="34" rx="8" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.66;0.80" values="0;1;0"/>
+    </rect>
+    <rect x="594" y="578" width="612" height="34" rx="8" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.52;0.66;0.80;0.96" values="0;1;0;1;0"/>
+    </rect>
+  </g>
+
+  <g fill="#24292f">
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M470,670 H540" calcMode="linear" keyTimes="0;0.12;0.16;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.12;0.16" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1260,560 H1330" calcMode="linear" keyTimes="0;0.48;0.52;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.48;0.52" values="0;1;0"/>
+    </circle>
+  </g>
+</svg>

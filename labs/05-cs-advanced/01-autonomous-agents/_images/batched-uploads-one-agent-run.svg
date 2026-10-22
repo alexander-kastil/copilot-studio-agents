@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Two PDFs uploaded at once run as one flow run and one agent instance that calls add_employee once per file</title>
+  <desc id="d">Resume PDF 1 and Resume PDF 2 are uploaded at once. Power Automate starts one flow run for both files, which triggers one agent instance, listed as Automated in the agent's Activity. That instance processes the files one by one and calls add_employee for PDF 1 and then for PDF 2.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <text x="240" y="130" text-anchor="middle" font-size="30" font-weight="600" fill="#57606a">uploaded at once</text>
+  <text x="700" y="130" text-anchor="middle" font-size="30" font-weight="600" fill="#57606a">Power Automate</text>
+  <text x="1200" y="130" text-anchor="middle" font-size="30" font-weight="600" fill="#57606a">Copilot Studio</text>
+  <text x="1675" y="130" text-anchor="middle" font-size="30" font-weight="600" fill="#57606a">one by one</text>
+
+  <rect x="70" y="200" width="340" height="200" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="240" y="311" text-anchor="middle" font-size="30" font-weight="700" fill="#24292f">Resume PDF 1</text>
+  <rect x="70" y="700" width="340" height="200" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="240" y="811" text-anchor="middle" font-size="30" font-weight="700" fill="#24292f">Resume PDF 2</text>
+
+  <rect x="520" y="380" width="360" height="340" rx="20" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="700" y="534" text-anchor="middle" font-size="36" font-weight="700" fill="#24292f">1 flow run</text>
+  <text x="700" y="592" text-anchor="middle" font-size="28" fill="#57606a">for both files</text>
+
+  <rect x="990" y="380" width="420" height="340" rx="20" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1200" y="534" text-anchor="middle" font-size="34" font-weight="700" fill="#24292f">1 agent instance</text>
+  <text x="1200" y="592" text-anchor="middle" font-size="28" fill="#57606a">Automated in Activity</text>
+
+  <rect x="1500" y="200" width="350" height="200" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1675" y="290" text-anchor="middle" font-size="30" font-family="Consolas, monospace" fill="#24292f">add_employee</text>
+  <text x="1675" y="340" text-anchor="middle" font-size="28" fill="#57606a">for PDF 1</text>
+  <rect x="1500" y="700" width="350" height="200" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1675" y="790" text-anchor="middle" font-size="30" font-family="Consolas, monospace" fill="#24292f">add_employee</text>
+  <text x="1675" y="840" text-anchor="middle" font-size="28" fill="#57606a">for PDF 2</text>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="412" y1="300" x2="516" y2="470"/>
+    <line x1="412" y1="800" x2="516" y2="630"/>
+    <line x1="882" y1="550" x2="986" y2="550"/>
+    <line x1="1412" y1="470" x2="1496" y2="300"/>
+    <line x1="1412" y1="630" x2="1496" y2="800"/>
+  </g>
+
+  <g fill="none" stroke="#e0a534" stroke-width="6">
+    <rect x="512" y="372" width="376" height="356" rx="26" opacity="0">
+      <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.12;0.25" dur="8s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="982" y="372" width="436" height="356" rx="26" opacity="0">
+      <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.35;0.95" dur="8s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1492" y="192" width="366" height="216" rx="24" opacity="0">
+      <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.55;0.68" dur="8s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1492" y="692" width="366" height="216" rx="24" opacity="0">
+      <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.78;0.92" dur="8s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <g fill="#e0a534" stroke="#ffffff" stroke-width="3">
+    <circle r="14" cx="0" cy="0" opacity="1">
+      <animateMotion path="M412,300 L516,470" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.12;1" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" calcMode="discrete" values="1;0" keyTimes="0;0.12" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="14" cx="0" cy="0" opacity="1">
+      <animateMotion path="M412,800 L516,630" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.12;1" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" calcMode="discrete" values="1;0" keyTimes="0;0.12" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="14" cx="0" cy="0" opacity="0">
+      <animateMotion path="M882,550 L986,550" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.25;0.35;1" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.25;0.35" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="14" cx="0" cy="0" opacity="0">
+      <animateMotion path="M1412,470 L1496,300" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.45;0.55;1" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.45;0.55" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="14" cx="0" cy="0" opacity="0">
+      <animateMotion path="M1412,630 L1496,800" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.68;0.78;1" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.68;0.78" dur="8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

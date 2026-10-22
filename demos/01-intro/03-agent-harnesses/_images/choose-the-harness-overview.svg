@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Choose the harness: the presenter walks four exercises in Copilot Studio without creating an agent</title>
+  <desc id="d">The presenter walks four exercises in order. Ex 1 finds where each harness starts on Home: under Optimize your business processes, which uses Copilot Credits, the Agent, Workflow and App (preview) cards each carry the GitHub Copilot badge; under Other ways to build, Customer Assist Agent carries the Customer conversation badge, and Agent and Agent flows carry the Standard badge. Ex 2 reads the harness of an existing agent in the Powered by column of the Agents list: a CS- agent shows Standard, included with your Microsoft 365 Copilot license, and a GH- agent shows GitHub Copilot, where Copilot Credits are used as you create and edit it. Ex 3 compares one job on two harnesses: CS-Grey Logistics IT Help Desk runs the topic VPN won't connect on GPT Chat Latest, and GH-Grey Logistics IT Help Desk uses the skill vpn-wont-connect on Claude Sonnet 4.6. Ex 4 decides the harness for four requests: VPN drops every morning goes to Standard, Missing inventory items to GitHub Copilot, First-class rail policy to Copilot chat, and Where is my shipment to Customer Conversation. The result: no agent created, no Copilot Credits used. A dot carries the flow from one exercise to the next while each exercise lights up in turn.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .t { font-size: 30px; font-weight: 600; }
+      .bd { font-size: 28px; font-weight: 700; text-anchor: middle; }
+      .g { font-size: 28px; font-weight: 700; }
+      .n { font-size: 28px; font-weight: 600; text-anchor: middle; }
+      .b { font-size: 28px; text-anchor: middle; }
+      .bh { font-size: 28px; font-weight: 600; text-anchor: middle; }
+      .sh { font-size: 28px; font-weight: 600; fill: #57606a; text-anchor: middle; }
+      .s { font-size: 28px; fill: #57606a; }
+      .v { font-size: 28px; }
+      .p { font-size: 30px; font-weight: 700; text-anchor: middle; }
+      .k { fill: #57606a; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="30" y="104" width="170" height="120" rx="16" fill="#f6f8fa" stroke="#57606a" stroke-width="3"/>
+  <text class="p" x="115" y="175">Presenter</text>
+
+  <rect x="250" y="28" width="1640" height="272" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="274" y="48" width="96" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="bd" x="322" y="80">Ex 1</text>
+  <text class="t" x="390" y="81">Find where each harness starts</text>
+  <rect x="274" y="108" width="790" height="172" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="g" x="298" y="146">Optimize your business processes</text>
+  <rect x="758" y="118" width="277" height="40" rx="20" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="896.5" y="148">Uses Copilot Credits</text>
+  <g fill="#ffffff" stroke="#8c959f" stroke-width="2">
+    <rect x="298" y="168" width="240" height="98" rx="12"/>
+    <rect x="549" y="168" width="240" height="98" rx="12"/>
+    <rect x="800" y="168" width="240" height="98" rx="12"/>
+  </g>
+  <text class="n" x="418" y="202">Agent</text>
+  <text class="n" x="669" y="202">Workflow</text>
+  <text class="n" x="920" y="202">App (preview)</text>
+  <g fill="#eaf2ff" stroke="#8c959f" stroke-width="2">
+    <rect x="309" y="214" width="218" height="40" rx="20"/>
+    <rect x="560" y="214" width="218" height="40" rx="20"/>
+    <rect x="811" y="214" width="218" height="40" rx="20"/>
+  </g>
+  <text class="b" x="418" y="244">GitHub Copilot</text>
+  <text class="b" x="669" y="244">GitHub Copilot</text>
+  <text class="b" x="920" y="244">GitHub Copilot</text>
+
+  <rect x="1080" y="108" width="786" height="172" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="g" x="1104" y="146">Other ways to build</text>
+  <g fill="#ffffff" stroke="#8c959f" stroke-width="2">
+    <rect x="1104" y="168" width="340" height="98" rx="12"/>
+    <rect x="1454" y="168" width="189" height="98" rx="12"/>
+    <rect x="1653" y="168" width="189" height="98" rx="12"/>
+  </g>
+  <text class="n" x="1274" y="202">Customer Assist Agent</text>
+  <text class="n" x="1548.5" y="202">Agent</text>
+  <text class="n" x="1747.5" y="202">Agent flows</text>
+  <rect x="1114" y="214" width="320" height="40" rx="20" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <rect x="1478.5" y="214" width="140" height="40" rx="20" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1677.5" y="214" width="140" height="40" rx="20" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="1274" y="244">Customer conversation</text>
+  <text class="b" x="1548.5" y="244">Standard</text>
+  <text class="b" x="1747.5" y="244">Standard</text>
+
+  <rect x="30" y="350" width="900" height="332" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="54" y="370" width="96" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="bd" x="102" y="402">Ex 2</text>
+  <text class="t" x="170" y="403">Read the harness of an existing agent</text>
+  <text class="sh" x="362.5" y="458">Powered by</text>
+  <g fill="#ffffff" stroke="#8c959f" stroke-width="2">
+    <rect x="54" y="472" width="852" height="88" rx="14"/>
+    <rect x="54" y="570" width="852" height="88" rx="14"/>
+  </g>
+  <text class="g" x="78" y="526">CS- agent</text>
+  <rect x="250" y="496" width="225" height="40" rx="20" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="362.5" y="526">Standard</text>
+  <text class="s" x="500" y="508">Included with your</text>
+  <text class="s" x="500" y="544">Microsoft 365 Copilot license</text>
+  <text class="g" x="78" y="624">GH- agent</text>
+  <rect x="250" y="594" width="225" height="40" rx="20" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="362.5" y="624">GitHub Copilot</text>
+  <text class="s" x="500" y="606">Copilot Credits are used</text>
+  <text class="s" x="500" y="642">as you create and edit it</text>
+
+  <rect x="990" y="350" width="900" height="332" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1014" y="370" width="96" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="bd" x="1062" y="402">Ex 3</text>
+  <text class="t" x="1130" y="403">Compare one job on two harnesses</text>
+  <g fill="#ffffff" stroke="#8c959f" stroke-width="2">
+    <rect x="1014" y="430" width="418" height="232" rx="16"/>
+    <rect x="1448" y="430" width="418" height="232" rx="16"/>
+  </g>
+  <text class="g" x="1038" y="468">CS-Grey Logistics</text>
+  <text class="g" x="1038" y="504">IT Help Desk</text>
+  <rect x="1038" y="520" width="140" height="40" rx="20" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="1108" y="550">Standard</text>
+  <text class="v" x="1038" y="602"><tspan class="k">Topic:</tspan> VPN won't connect</text>
+  <text class="v" x="1038" y="642"><tspan class="k">Model:</tspan> GPT Chat Latest</text>
+  <text class="g" x="1472" y="468">GH-Grey Logistics</text>
+  <text class="g" x="1472" y="504">IT Help Desk</text>
+  <rect x="1472" y="520" width="225" height="40" rx="20" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="1584.5" y="550">GitHub Copilot</text>
+  <text class="v" x="1472" y="602"><tspan class="k">Skill:</tspan> vpn-wont-connect</text>
+  <text class="v" x="1472" y="642"><tspan class="k">Model:</tspan> Claude Sonnet 4.6</text>
+
+  <rect x="30" y="732" width="1060" height="320" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="54" y="752" width="96" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="bd" x="102" y="784">Ex 4</text>
+  <text class="t" x="170" y="785">Decide the harness for four requests</text>
+  <g fill="#ffffff" stroke="#8c959f" stroke-width="2">
+    <rect x="54" y="812" width="520" height="48" rx="12"/>
+    <rect x="54" y="868" width="520" height="48" rx="12"/>
+    <rect x="54" y="924" width="520" height="48" rx="12"/>
+    <rect x="54" y="980" width="520" height="48" rx="12"/>
+  </g>
+  <text class="v" x="78" y="846">VPN drops every morning</text>
+  <text class="v" x="78" y="902">Missing inventory items</text>
+  <text class="v" x="78" y="958">First-class rail policy</text>
+  <text class="v" x="78" y="1014">Where is my shipment</text>
+  <rect x="682" y="812" width="384" height="48" rx="24" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <rect x="682" y="868" width="384" height="48" rx="24" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="682" y="924" width="384" height="48" rx="24" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="682" y="980" width="384" height="48" rx="24" fill="#fff6e5" stroke="#e0a534" stroke-width="2" stroke-dasharray="10 8"/>
+  <text class="bh" x="874" y="846">Standard</text>
+  <text class="bh" x="874" y="902">GitHub Copilot</text>
+  <text class="bh" x="874" y="958">Copilot chat</text>
+  <text class="bh" x="874" y="1014">Customer Conversation</text>
+
+  <rect x="1150" y="842" width="740" height="100" rx="20" fill="#f6f8fa" stroke="#57606a" stroke-width="3"/>
+  <text class="p" x="1520" y="903">No agent created, no Copilot Credits used</text>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="200" y1="164" x2="250" y2="164"/>
+    <line x1="480" y1="300" x2="480" y2="350"/>
+    <line x1="930" y1="516" x2="990" y2="516"/>
+    <line x1="1040" y1="682" x2="1040" y2="732"/>
+    <line x1="1090" y1="892" x2="1150" y2="892"/>
+    <line x1="586" y1="836" x2="682" y2="836"/>
+    <line x1="586" y1="892" x2="682" y2="892"/>
+    <line x1="586" y1="948" x2="682" y2="948"/>
+    <line x1="586" y1="1004" x2="682" y2="1004"/>
+  </g>
+
+  <g fill="none" stroke="#24292f" stroke-width="5">
+    <rect x="30" y="104" width="170" height="120" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="18s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.01;0.05" values="0;1;0"/>
+    </rect>
+    <rect x="250" y="28" width="1640" height="272" rx="24" opacity="0">
+      <animate attributeName="opacity" dur="18s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.08;0.26" values="0;1;0"/>
+    </rect>
+    <rect x="30" y="350" width="900" height="332" rx="24" opacity="0">
+      <animate attributeName="opacity" dur="18s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.29;0.45" values="0;1;0"/>
+    </rect>
+    <rect x="990" y="350" width="900" height="332" rx="24" opacity="0">
+      <animate attributeName="opacity" dur="18s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.48;0.64" values="0;1;0"/>
+    </rect>
+    <rect x="30" y="732" width="1060" height="320" rx="24" opacity="0">
+      <animate attributeName="opacity" dur="18s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.67;0.83" values="0;1;0"/>
+    </rect>
+    <rect x="1150" y="842" width="740" height="100" rx="20" opacity="0">
+      <animate attributeName="opacity" dur="18s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.86;0.99" values="0;1;0"/>
+    </rect>
+  </g>
+
+  <g fill="#24292f">
+    <circle r="14" opacity="0">
+      <animateMotion dur="18s" repeatCount="indefinite" path="M200,164 H250" calcMode="linear" keyTimes="0;0.05;0.08;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="18s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.05;0.08" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="18s" repeatCount="indefinite" path="M480,300 V350" calcMode="linear" keyTimes="0;0.26;0.29;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="18s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.26;0.29" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="18s" repeatCount="indefinite" path="M930,516 H990" calcMode="linear" keyTimes="0;0.45;0.48;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="18s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.45;0.48" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="18s" repeatCount="indefinite" path="M1040,682 V732" calcMode="linear" keyTimes="0;0.64;0.67;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="18s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.64;0.67" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="18s" repeatCount="indefinite" path="M1090,892 H1150" calcMode="linear" keyTimes="0;0.83;0.86;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="18s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.83;0.86" values="0;1;0"/>
+    </circle>
+  </g>
+</svg>

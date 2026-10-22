@@ -1,0 +1,96 @@
+Apply the Integrations House theme: Montserrat bold headings, Poppins body, #1B365D accent. Create exactly 7 cards, one per section below, in this order. Keep the card text exactly as given. The Image and Layout lines are instructions, never visible text. Use exactly the one image URL given for each card; do not generate or add any other images, icons or logos. Keep body text at the normal body size on every card; never shrink text to fit.
+
+# Producing a market brief
+### Deep Research, your positioning, then a Word brief and a PDF
+- **Deep Research** surveys the European outdoor market in a background task of about four minutes
+- `internal-positioning.docx` turns the trends into an **aligned and exposed** gap analysis
+- The **Word** skill writes AW26 Market Brief - Aurora Outdoor in four sections
+- **Recommendations** rank three moves and mark one Top pick
+- One background task saves the `.docx` and exports the **PDF** for leadership
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/02-cowork/02-03-market-brief.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Three ways to create a skill
+### Every path ends in one OneDrive folder
+- **Guided flow**: Customize > Add > Create skill with Cowork
+- **Ask in chat**: describe the task you repeat
+- **Write it yourself**: a `SKILL.md` in its own folder under `Documents/Cowork/Skills/`
+- Cowork **discovers** your skills at the start of each conversation, up to 50
+- **Upload** a `.md`, `.zip` or `.skill` file and share it with specific users
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/02-cowork/03-01-create-a-skill.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Anatomy of a SKILL.md
+### A YAML header plus plain-language instructions
+- The **name** matches its folder, and the **description** is what Cowork reads to decide when the skill applies
+- **Companion files** sit beside `SKILL.md`, up to 20 files and 10 MB, each named in the instructions
+
+```
+---
+name: product-pitch
+description: Turns a market brief, research report, or product document into a wholesale partner pitch deck in Aurora Outdoor house structure, with every claim traced back to a named source. Use whenever I say build a pitch, pitch this to partners, turn this brief into a deck, or name a range or season to pitch.
+---
+
+Produce a seven-card partner pitch deck in the house structure defined by pitch-deck-structure.pptx, which sits in this skill folder.
+```
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/02-cowork/companion-files.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Split code. Title and subtitle at the top; left column a light grey panel holding the code block in a monospace font, exactly as given; right column the provided diagram as an inline content image at its natural aspect ratio, never cropped.
+
+---
+
+# Running and tuning a skill
+### From the first run to a skill that triggers on its own
+- **Run it by name** in a new task, then check every claim against the source
+- Ask which phrasings **miss the skill** and which instruction let weak claims through
+- Cowork folds the fixes into `SKILL.md` through an **Edit file?** card at Medium risk
+- The **Skill Report** scores the skill out of 100; 70 counts as ready to share
+- Done when it **fires without being named** and saves Aurora Trail Capsule AW26.pptx
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/02-cowork/03-03-trail-capsule-deck.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Schedules and triggers
+### Repeat a prompt on a cadence or when something happens
+- A **schedule** repeats a prompt daily, weekly, monthly or at a set time, up to 25 of them
+- A **trigger** starts the task when an email, a Teams channel message or a Teams chat message arrives
+- The **Automations** page offers Add, templates such as Daily briefing, and the filters Scheduled, Triggers and Paused
+- Each automation has an **Enable** switch and a ... menu to edit, run now, pause or delete it
+- The **custom skill** decides how the work is done; the schedule or trigger decides when
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/02-cowork/04-01-schedules-and-triggers.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Good candidates for automation
+### Recurring reports and incoming messages
+- Every weekday at 8 AM, a **Daily Briefing** of meetings, priority emails and newly shared documents
+- Every Friday at 4 PM, a Word **status report** on your week for your manager
+- On the first of the month, a one-page **digest** of the Marketing Teams channel
+- When your manager emails about supplier delays, a **summary and draft reply** for your review
+- When you are @mentioned in the Aurora Outdoor Operations channel, a **one-line summary** by email
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/02-cowork/04-02-automation-candidates.jpg?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Text on the left half on plain white, the photograph as a side accent filling the right half, no text over it.
+
+---
+
+# Approvals in automated tasks
+### The weekly status report runs every Friday; the send waits for you
+- **Create recurring task?** sets the name, Weekly, Friday, 3:00 PM, and a new conversation per run
+- The **Description** is the prompt every run receives, including where the draft goes
+- **Run once now** is ticked by default; clear it so the first run waits for Friday
+- Each run leaves the report under Output and a **Hi Elena** email in your Drafts folder
+- **Scheduling the run does not approve the send**: nothing leaves until you say so
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/02-cowork/04-03-recurring-task-card.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.

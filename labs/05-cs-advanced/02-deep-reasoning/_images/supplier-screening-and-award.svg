@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Ten suppliers screened against R1 to R4, then the 12,000 case award split under R5 to R7</title>
+  <desc id="d">Rules R1 to R4 screen out six of the ten suppliers: Rhinevale Botanicals and Kestrel Highland Tea on ISO 9001 expiry, Meridian Tea Co. and Lowfield Commodity Group on on-time delivery, Harbor Leaf Trading and Lowfield Commodity Group on open incidents, and Alpen Blattwerk on price. Four suppliers stay eligible. The award gives Silverpine Estates 6,800 cases, 56.7 percent and under the 60 percent cap, and Cascade Organics 5,200 cases, 43.3 percent, in a different region.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <text x="80" y="122" font-size="30" font-weight="600" fill="#57606a">Ten suppliers screened against R1 to R4</text>
+  <text x="1110" y="122" font-size="30" font-weight="600" fill="#57606a">Four eligible, awarded under R5 to R7</text>
+
+  <rect x="80" y="160" width="930" height="180" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="104" y="200" width="110" height="100" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="159" y="263" text-anchor="middle" font-size="36" font-weight="700" fill="#24292f">R1</text>
+  <text x="250" y="212" font-size="30" font-weight="600" fill="#24292f">ISO 9001 valid on 2026-04-01</text>
+  <text x="250" y="260" font-size="28" fill="#57606a">Rhinevale Botanicals, expires 2026-01-15</text>
+  <text x="250" y="302" font-size="28" fill="#57606a">Kestrel Highland Tea, expires 2026-03-10</text>
+
+  <rect x="80" y="360" width="930" height="180" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="104" y="400" width="110" height="100" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="159" y="463" text-anchor="middle" font-size="36" font-weight="700" fill="#24292f">R2</text>
+  <text x="250" y="412" font-size="30" font-weight="600" fill="#24292f">On-time delivery 95.0% or higher</text>
+  <text x="250" y="460" font-size="28" fill="#57606a">Meridian Tea Co., 93.4%</text>
+  <text x="250" y="502" font-size="28" fill="#57606a">Lowfield Commodity Group, 94.1%</text>
+
+  <rect x="80" y="560" width="930" height="180" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="104" y="600" width="110" height="100" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="159" y="663" text-anchor="middle" font-size="36" font-weight="700" fill="#24292f">R3</text>
+  <text x="250" y="612" font-size="30" font-weight="600" fill="#24292f">No open major or critical incident</text>
+  <text x="250" y="660" font-size="28" fill="#57606a">Harbor Leaf Trading, INC-2214 critical</text>
+  <text x="250" y="702" font-size="28" fill="#57606a">Lowfield Commodity Group, INC-2231 major</text>
+
+  <rect x="80" y="760" width="930" height="180" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="104" y="800" width="110" height="100" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="159" y="863" text-anchor="middle" font-size="36" font-weight="700" fill="#24292f">R4</text>
+  <text x="250" y="812" font-size="30" font-weight="600" fill="#24292f">Landed price index 108 or lower</text>
+  <text x="250" y="860" font-size="28" fill="#57606a">Alpen Blattwerk, index 112</text>
+
+  <rect x="1110" y="160" width="730" height="360" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1150" y="218" font-size="30" font-weight="600" fill="#24292f">Eligible after R1 to R4</text>
+  <text x="1150" y="276" font-size="28" fill="#24292f">Silverpine Estates, EU</text>
+  <text x="1800" y="276" text-anchor="end" font-size="28" font-weight="700" fill="#24292f">primary</text>
+  <text x="1150" y="332" font-size="28" fill="#24292f">Cascade Organics, Americas</text>
+  <text x="1800" y="332" text-anchor="end" font-size="28" font-weight="700" fill="#24292f">secondary</text>
+  <text x="1150" y="388" font-size="28" fill="#57606a">Coastline Naturals, Americas</text>
+  <text x="1800" y="388" text-anchor="end" font-size="28" fill="#57606a">not selected</text>
+  <text x="1150" y="444" font-size="28" fill="#57606a">Terra Verde Farms, Americas</text>
+  <text x="1800" y="444" text-anchor="end" font-size="28" fill="#57606a">not selected</text>
+
+  <rect x="1110" y="560" width="730" height="380" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1150" y="612" font-size="30" font-weight="600" fill="#24292f">Award of 12,000 cases</text>
+  <path d="M1150,680 L1150,668 L1546,668 L1546,680" fill="none" stroke="#e0a534" stroke-width="3"/>
+  <text x="1348" y="654" text-anchor="middle" font-size="28" fill="#57606a">R5 cap: 7,200 cases (60%)</text>
+  <rect x="1150" y="690" width="374" height="110" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1524" y="690" width="286" height="110" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1337" y="734" text-anchor="middle" font-size="28" fill="#24292f">Silverpine Estates</text>
+  <text x="1337" y="776" text-anchor="middle" font-size="30" font-weight="700" fill="#24292f">6,800</text>
+  <text x="1667" y="734" text-anchor="middle" font-size="28" fill="#24292f">Cascade Organics</text>
+  <text x="1667" y="776" text-anchor="middle" font-size="30" font-weight="700" fill="#24292f">5,200</text>
+  <text x="1337" y="842" text-anchor="middle" font-size="28" fill="#57606a">56.7%, EU</text>
+  <text x="1667" y="842" text-anchor="middle" font-size="28" fill="#57606a">43.3%, Americas</text>
+  <text x="1150" y="900" font-size="28" fill="#24292f">R6: secondary in a different region</text>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="1014" y1="350" x2="1106" y2="350"/>
+    <line x1="1475" y1="522" x2="1475" y2="556"/>
+  </g>
+</svg>

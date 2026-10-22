@@ -1,0 +1,17 @@
+mcs.metadata:
+  componentName: Work life balance Buddy
+  schemaName: iits_CSBusinessTravelPlanner.agent.Agent
+kind: AgentDialog
+beginDialog:
+  kind: OnToolSelected
+  id: main
+  description: Provides information about employee benefits on business trips, like free gyms the employee can use after work.
+
+settings:
+  instructions: |-
+    Provide information about employee benefits on business trips based on your knowledge
+    Knows about free gyms to workout as an employee
+    Specialized in the cities of Vienna and Budapest
+
+inputType: {}
+outputType: {}

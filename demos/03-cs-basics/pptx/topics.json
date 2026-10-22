@@ -1,0 +1,28 @@
+{
+  "topics": [
+    {
+      "title": "Standard Agents: Create & Configure",
+      "subtitle": "Identity, instructions, model, orchestration and the test panel"
+    },
+    {
+      "title": "Knowledge Sources & Suggested Prompts",
+      "subtitle": "Source types, citations and ungrounded answers"
+    },
+    {
+      "title": "Topics, Entities & Variables",
+      "subtitle": "Nodes, entities, slot filling and variable scopes"
+    },
+    {
+      "title": "Power Fx: Formulas in Topics",
+      "subtitle": "Where formulas run and the functions makers use most"
+    },
+    {
+      "title": "Adaptive Cards: Collect Structured Input",
+      "subtitle": "Card JSON, schema versions and outputs as variables"
+    },
+    {
+      "title": "Publishing to Teams & Copilot",
+      "subtitle": "Channels, authentication and who can use the agent"
+    }
+  ]
+}

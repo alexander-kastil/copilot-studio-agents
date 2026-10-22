@@ -1,0 +1,3 @@
+connectionReferences:
+  - connectionReferenceLogicalName: iits_foodbody_D2IGed.cr.shared_azureagentservice
+    connectorId: /providers/Microsoft.PowerApps/apis/shared_azureagentservice

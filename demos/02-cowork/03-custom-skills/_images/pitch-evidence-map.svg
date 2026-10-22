@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Which evidence fills which pitch card</title>
+  <desc id="d">The seven cards of pitch-deck-structure.pptx in order: Title and promise, The shift, The gap, The product, Why Aurora, The offer, Next step. From aw26-market-brief.docx, the trends with named sources fill The shift, the cited segment-growth figure fills The gap, and the repair programme with its pillar fills Why Aurora. The admitted gaps and the thin-wholesale-base risk stay internal. The product and The offer wait for your input on pricing, order tiers, assortment and terms.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="18" markerHeight="18" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="100" y="125" font-size="28" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#24292f">aw26-market-brief.docx</text>
+    <text x="760" y="125" font-size="28" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#24292f">pitch-deck-structure.pptx</text>
+
+    <rect x="100" y="160" width="520" height="130" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="132" y="214" font-size="30" font-weight="700" fill="#24292f">Trends</text>
+    <text x="132" y="258" font-size="28" fill="#57606a">with named sources</text>
+    <rect x="100" y="320" width="520" height="130" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="132" y="374" font-size="30" font-weight="700" fill="#24292f">Segment growth</text>
+    <text x="132" y="418" font-size="28" fill="#57606a">the cited figure</text>
+    <rect x="100" y="480" width="520" height="130" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="132" y="534" font-size="30" font-weight="700" fill="#24292f">Repair programme</text>
+    <text x="132" y="578" font-size="28" fill="#57606a">and its pillar</text>
+    <rect x="100" y="790" width="520" height="150" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2" stroke-dasharray="10 8"/>
+    <text x="132" y="842" font-size="30" font-weight="700" fill="#24292f">Stays internal</text>
+    <text x="132" y="884" font-size="28" fill="#57606a">admitted gaps,</text>
+    <text x="132" y="922" font-size="28" fill="#57606a">thin-wholesale-base risk</text>
+
+    <rect x="760" y="150" width="560" height="96" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <rect x="760" y="266" width="560" height="96" rx="14" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <rect x="760" y="382" width="560" height="96" rx="14" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <rect x="760" y="498" width="560" height="96" rx="14" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <rect x="760" y="614" width="560" height="96" rx="14" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <rect x="760" y="730" width="560" height="96" rx="14" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <rect x="760" y="846" width="560" height="96" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <g font-size="30" font-weight="700" fill="#24292f">
+      <text x="792" y="209"><tspan fill="#57606a">1</tspan><tspan x="836">Title and promise</tspan></text>
+      <text x="792" y="325"><tspan fill="#57606a">2</tspan><tspan x="836">The shift</tspan></text>
+      <text x="792" y="441"><tspan fill="#57606a">3</tspan><tspan x="836">The gap</tspan></text>
+      <text x="792" y="557"><tspan fill="#57606a">4</tspan><tspan x="836">The product</tspan></text>
+      <text x="792" y="673"><tspan fill="#57606a">5</tspan><tspan x="836">Why Aurora</tspan></text>
+      <text x="792" y="789"><tspan fill="#57606a">6</tspan><tspan x="836">The offer</tspan></text>
+      <text x="792" y="905"><tspan fill="#57606a">7</tspan><tspan x="836">Next step</tspan></text>
+    </g>
+
+    <rect x="1420" y="530" width="410" height="275" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <text x="1450" y="586" font-size="30" font-weight="700" fill="#24292f">Your input</text>
+    <text x="1450" y="632" font-size="28" fill="#57606a">pricing, order tiers,</text>
+    <text x="1450" y="674" font-size="28" fill="#57606a">assortment, terms</text>
+    <text x="1450" y="730" font-size="28" font-style="italic" fill="#57606a">placeholders until</text>
+    <text x="1450" y="770" font-size="28" font-style="italic" fill="#57606a">you supply it</text>
+
+    <line x1="620" y1="225" x2="757" y2="312" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="620" y1="385" x2="757" y2="428" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="620" y1="545" x2="757" y2="660" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="1420" y1="600" x2="1323" y2="548" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="1420" y1="740" x2="1323" y2="778" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  </g>
+</svg>

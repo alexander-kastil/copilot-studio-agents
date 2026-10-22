@@ -1,0 +1,30 @@
+﻿{
+  "swagger": "2.0",
+  "info": {
+    "title": "Food MCP",
+    "description": "An mcp that knows about food and other nice things",
+    "version": "1.0.0"
+  },
+  "host": "food-catalog-api.azurewebsites.net",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/api/mcp": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": "Immediate Response"
+          }
+        },
+        "x-ms-agentic-protocol": "mcp-streamable-1.0",
+        "operationId": "InvokeServer",
+        "summary": "Food MCP",
+        "description": "An mcp that knows about food and other nice things"
+      }
+    }
+  },
+  "securityDefinitions": {},
+  "security": []
+}

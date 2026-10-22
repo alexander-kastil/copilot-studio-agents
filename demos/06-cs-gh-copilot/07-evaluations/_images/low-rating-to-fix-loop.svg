@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+<title id="t">The loop from a low rating to a fix</title>
+<desc id="d">A loop of five steps: a signal such as low CSAT or a thumbs-down, open the session transcript, read the activity map, fix knowledge, instructions, or tools, re-run the test set, and back to the signal. A highlight steps around the loop in order.</desc>
+<rect width="1920" height="1080" fill="#ffffff"/>
+<defs>
+<style>
+.h{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#24292f;font-weight:600}
+</style>
+<marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+</defs>
+
+<rect x="740" y="90" width="440" height="150" rx="18" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<rect x="1280" y="335" width="440" height="130" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<rect x="1080" y="815" width="440" height="130" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+<rect x="400" y="815" width="440" height="130" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<rect x="200" y="335" width="440" height="130" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+
+<g class="h" font-size="30" text-anchor="middle">
+<text x="960" y="140">Signal:</text>
+<text x="960" y="178">low CSAT or</text>
+<text x="960" y="216">thumbs-down</text>
+<text x="1500" y="392">Open the</text>
+<text x="1500" y="430">session transcript</text>
+<text x="1300" y="872">Read the</text>
+<text x="1300" y="910">activity map</text>
+<text x="620" y="872">Fix knowledge,</text>
+<text x="620" y="910">instructions, or tools</text>
+<text x="420" y="392">Re-run the</text>
+<text x="420" y="430">test set</text>
+</g>
+
+<g fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)">
+<path d="M1180,165 H1500 V329"/>
+<path d="M1400,465 V809"/>
+<path d="M1080,880 H846"/>
+<path d="M520,815 V471"/>
+<path d="M420,335 V165 H734"/>
+</g>
+
+<g fill="none" stroke="#e0a534" stroke-width="7">
+<rect x="733" y="83" width="454" height="164" rx="24"><animate attributeName="opacity" values="1;0" keyTimes="0;0.2" calcMode="discrete" dur="7.5s" repeatCount="indefinite"/></rect>
+<rect x="1273" y="328" width="454" height="144" rx="24" opacity="0"><animate attributeName="opacity" values="0;1;0" keyTimes="0;0.2;0.4" calcMode="discrete" dur="7.5s" repeatCount="indefinite"/></rect>
+<rect x="1073" y="808" width="454" height="144" rx="24" opacity="0"><animate attributeName="opacity" values="0;1;0" keyTimes="0;0.4;0.6" calcMode="discrete" dur="7.5s" repeatCount="indefinite"/></rect>
+<rect x="393" y="808" width="454" height="144" rx="24" opacity="0"><animate attributeName="opacity" values="0;1;0" keyTimes="0;0.6;0.8" calcMode="discrete" dur="7.5s" repeatCount="indefinite"/></rect>
+<rect x="193" y="328" width="454" height="144" rx="24" opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0;0.8" calcMode="discrete" dur="7.5s" repeatCount="indefinite"/></rect>
+</g>
+</svg>

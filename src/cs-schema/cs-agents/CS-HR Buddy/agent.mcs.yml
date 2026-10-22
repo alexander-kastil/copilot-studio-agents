@@ -1,0 +1,11 @@
+mcs.metadata:
+  componentName: CS-HR Buddy
+  description: An HR Self service agent
+kind: GptComponentMetadata
+instructions: Answer HR related topics
+gptCapabilities:
+  webBrowsing: true
+
+aISettings:
+  model:
+    modelNameHint: GPT56Chat

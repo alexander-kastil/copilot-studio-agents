@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Which connector input points at which level of the Products library</title>
+  <desc id="d">The Product Support SharePoint site holds the Products document library, which holds five files at its top level: Aurora-X1-Datasheet.pdf, Aurora-X1-Troubleshooting.docx, Nimbus-500-Manual.pdf, Nimbus-500-Warranty.docx and ProductInventory.xlsx. The workbook holds the Stock table on sheet Inventory, range A1:E13 with 12 data rows. The SharePoint List folder tool needs two inputs, Site Address set to the site URL and File Identifier set to Products, and returns all five files. The Excel List rows present in a table tool needs four: Location set to the same site, Document Library set to Products, File set to ProductInventory.xlsx and Table set to Stock.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <g fill="#f6f8fa">
+      <rect x="60" y="190" width="1800" height="130" rx="12"/>
+      <rect x="60" y="336" width="1800" height="130" rx="12"/>
+      <rect x="60" y="482" width="1800" height="314" rx="12"/>
+      <rect x="60" y="812" width="1800" height="130" rx="12"/>
+    </g>
+
+    <text x="860" y="118" font-size="32" font-weight="700" fill="#24292f">SharePoint tool</text>
+    <text x="860" y="160" font-size="28" fill="#57606a">List folder</text>
+    <text x="1380" y="118" font-size="32" font-weight="700" fill="#24292f">Excel tool</text>
+    <text x="1380" y="160" font-size="28" fill="#57606a">List rows present in a table</text>
+
+    <g fill="none" stroke="#8c959f" stroke-width="2">
+      <path d="M130,306 L130,401 L160,401"/>
+      <path d="M190,452 L190,639 L220,639"/>
+      <path d="M250,782 L250,877 L280,877"/>
+    </g>
+
+    <g stroke="#8c959f" stroke-width="2" fill="#ffffff">
+      <rect x="100" y="204" width="640" height="102" rx="12"/>
+      <rect x="160" y="350" width="580" height="102" rx="12"/>
+      <rect x="220" y="496" width="580" height="286" rx="12"/>
+      <rect x="280" y="826" width="520" height="102" rx="12"/>
+    </g>
+    <rect x="232" y="716" width="556" height="54" rx="8" fill="#e9f7ef"/>
+
+    <text x="130" y="267" font-size="32" font-weight="700" fill="#24292f">SharePoint site <tspan font-size="28" font-weight="400" fill="#57606a">Product Support</tspan></text>
+    <text x="190" y="394" font-size="32" font-weight="700" fill="#24292f" font-family="Consolas, Menlo, monospace">Products</text>
+    <text x="190" y="432" font-size="28" fill="#57606a">document library</text>
+    <g font-family="Consolas, Menlo, monospace" font-size="28" fill="#24292f">
+      <text x="250" y="544">Aurora-X1-Datasheet.pdf</text>
+      <text x="250" y="596">Aurora-X1-Troubleshooting.docx</text>
+      <text x="250" y="648">Nimbus-500-Manual.pdf</text>
+      <text x="250" y="700">Nimbus-500-Warranty.docx</text>
+      <text x="250" y="752" font-weight="700">ProductInventory.xlsx</text>
+    </g>
+    <text x="310" y="870" font-size="32" font-weight="700" fill="#24292f" font-family="Consolas, Menlo, monospace">Stock <tspan font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a">table on sheet Inventory</tspan></text>
+    <text x="310" y="910" font-size="28" fill="#57606a">A1:E13, 12 data rows</text>
+
+    <g stroke="#8c959f" stroke-width="2">
+      <rect x="840" y="204" width="480" height="102" rx="12" fill="#eaf2ff"/>
+      <rect x="840" y="350" width="480" height="102" rx="12" fill="#eaf2ff"/>
+      <rect x="1360" y="204" width="480" height="102" rx="12" fill="#e9f7ef"/>
+      <rect x="1360" y="350" width="480" height="102" rx="12" fill="#e9f7ef"/>
+      <rect x="1360" y="690" width="480" height="102" rx="12" fill="#e9f7ef"/>
+      <rect x="1360" y="826" width="480" height="102" rx="12" fill="#e9f7ef"/>
+    </g>
+    <rect x="840" y="588" width="480" height="102" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2" stroke-dasharray="10 8"/>
+
+    <g font-size="28" font-weight="700" fill="#24292f">
+      <text x="870" y="246">Site Address</text>
+      <text x="870" y="392">File Identifier</text>
+      <text x="1390" y="246">Location</text>
+      <text x="1390" y="392">Document Library</text>
+      <text x="1390" y="732">File</text>
+      <text x="1390" y="868">Table</text>
+    </g>
+    <g font-size="28" fill="#57606a">
+      <text x="870" y="288">the site URL</text>
+      <text x="1390" y="288">the same site</text>
+      <text x="870" y="630">returns all five files</text>
+      <text x="870" y="672">at the top level</text>
+    </g>
+    <g font-family="Consolas, Menlo, monospace" font-size="28" fill="#24292f">
+      <text x="870" y="434">Products</text>
+      <text x="1390" y="434">Products</text>
+      <text x="1390" y="774">ProductInventory.xlsx</text>
+      <text x="1390" y="910">Stock</text>
+    </g>
+  </g>
+</svg>

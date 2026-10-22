@@ -1,0 +1,479 @@
+﻿{
+  "properties": {
+    "connectionReferences": {
+      "shared_m365copilotv2": {
+        "api": {
+          "name": "shared_m365copilotv2"
+        },
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedm365copilotv2_f1b99714"
+        },
+        "runtimeSource": "embedded",
+        "connectionName": "228bd2eadb64468db3e101e7c74e498a"
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        },
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "type": "Request",
+          "kind": "Skills",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "title": "Age",
+                  "type": "string",
+                  "x-ms-content-hint": "TEXT",
+                  "x-ms-dynamically-added": true,
+                  "description": "What is your age"
+                },
+                "text_1": {
+                  "title": "Symptombs",
+                  "type": "string",
+                  "x-ms-content-hint": "TEXT",
+                  "x-ms-dynamically-added": true,
+                  "description": "What is the issue with you"
+                }
+              },
+              "required": [
+                "text",
+                "text_1"
+              ]
+            }
+          },
+          "metadata": {
+            "associatedData": {
+              "graph": {
+                "name": "CheckSymptombs",
+                "nodes": [
+                  {
+                    "id": "start-e5aaec7f-60ff-480b-bab2-bee44c136348",
+                    "name": "When an agent calls the flow",
+                    "type": "start",
+                    "version": 1,
+                    "position": {
+                      "x": 80,
+                      "y": 24.13336181640625
+                    },
+                    "data": {
+                      "config": {
+                        "triggerType": "connector",
+                        "connector": {
+                          "apiName": "Skills",
+                          "operationName": "When_an_agent_calls_the_flow",
+                          "displayName": "When an agent calls the flow",
+                          "kind": "Skills",
+                          "inputs": {
+                            "schema": {
+                              "type": "object",
+                              "properties": {
+                                "text": {
+                                  "title": "Age",
+                                  "type": "string",
+                                  "x-ms-content-hint": "TEXT",
+                                  "x-ms-dynamically-added": true,
+                                  "description": "What is your age"
+                                },
+                                "text_1": {
+                                  "title": "Symptombs",
+                                  "type": "string",
+                                  "x-ms-content-hint": "TEXT",
+                                  "x-ms-dynamically-added": true,
+                                  "description": "What is the issue with you"
+                                }
+                              },
+                              "required": [
+                                "text",
+                                "text_1"
+                              ]
+                            }
+                          }
+                        }
+                      },
+                      "outcomes": [
+                        {
+                          "id": "default",
+                          "label": "Default",
+                          "outcomeSchema": {
+                            "type": "object",
+                            "properties": {},
+                            "required": []
+                          }
+                        }
+                      ]
+                    },
+                    "measured": {
+                      "width": 261,
+                      "height": 66
+                    },
+                    "selected": false,
+                    "dragging": false
+                  },
+                  {
+                    "id": "builtinFunction-3cd1d7e5-94ae-48d7-b746-ea8b64029812",
+                    "name": "Respond to the agent",
+                    "type": "builtinFunction",
+                    "version": 1,
+                    "position": {
+                      "x": 726,
+                      "y": 372.13336181640625
+                    },
+                    "data": {
+                      "config": {
+                        "operationId": "response",
+                        "operationName": "response",
+                        "displayName": "Respond to the agent",
+                        "category": "request",
+                        "categoryDisplayName": "Request",
+                        "iconUri": "",
+                        "brandColor": "",
+                        "parameters": {
+                          "schema": {
+                            "type": "object",
+                            "properties": {},
+                            "required": []
+                          }
+                        },
+                        "description": "Respond to the calling agent with typed outputs.",
+                        "kind": "Skills"
+                      },
+                      "outcomes": [
+                        {
+                          "id": "default",
+                          "label": "Default",
+                          "outcomeSchema": {
+                            "type": "object",
+                            "description": "Function output"
+                          }
+                        }
+                      ]
+                    },
+                    "measured": {
+                      "width": 240,
+                      "height": 66
+                    },
+                    "selected": false,
+                    "dragging": false
+                  },
+                  {
+                    "id": "m365Copilot-32fabbff-4df2-4419-88b4-acfbd9a48b5c",
+                    "name": "M365 Copilot",
+                    "type": "m365Copilot",
+                    "version": 1,
+                    "position": {
+                      "x": 416,
+                      "y": 195
+                    },
+                    "data": {
+                      "config": {
+                        "apiName": "shared_m365copilotv2",
+                        "displayName": "M365 Copilot",
+                        "operationName": "StartChat",
+                        "parameters": {
+                          "body/timezone": "America/New_York",
+                          "body/preferAsync": true,
+                          "body/message": "Analyze the patients health issues based on age gender and symtoms @{triggerBody()?[\u0027text\u0027]}@{triggerBody()?[\u0027text_1\u0027]}. \n\nUse this classification if the patient should be advised to stay in bed or just reduce activiy:\n\nHas stable vital signs (e.g., heart rate, blood pressure within normal range).\nDemonstrates adequate muscle strength and joint mobility (can sit, stand, walk short distances).\nShows no signs of deep vein thrombosis (DVT) (no calf pain, swelling, or warmth).\nIs mentally alert and emotionally stable (no signs of depression or confusion).\nCan perform basic activities of daily living (ADLs) with minimal or moderate assistance.\nHas no acute pain or only mild discomfort that does not limit movement.\nExhibits normal bowel and respiratory function (no constipation, shallow breathing, or secretion pooling).\n\nIf the pacient experiences mild conditions you do not have to mention the classification\n\nBesides your general recommendation the analysis should end with: Patient is cleared for light work and movement. Encourage gentle mobility, hydration, and diversional activities. Monitor for fatigue or discomfort. Or a clear instruction to stay in bed or at least reduce movement until further medical examination. "
+                        },
+                        "connectionName": "shared_m365copilotv2",
+                        "operationType": "OpenApiConnection",
+                        "iconUri": "https://static.powerapps.com/resource/ppcr/releases/v1.0.1811/1.0.1811.4721/m365copilotv2/icon.png",
+                        "parametersSchema": {
+                          "type": "object",
+                          "properties": {
+                            "body": {
+                              "type": "object",
+                              "properties": {
+                                "message": {
+                                  "type": "string",
+                                  "title": "Message",
+                                  "description": "What would you like M365 Copilot to do?",
+                                  "x-ms-property-name-alias": "body/message"
+                                },
+                                "timezone": {
+                                  "type": "string",
+                                  "title": "Time Zone",
+                                  "description": "The IANA time zone identifier for the user\u0027s location (e.g. America/New_York, Europe/London, Asia/Tokyo)",
+                                  "default": "America/New_York",
+                                  "enum": [
+                                    "Etc/GMT\u002B12",
+                                    "Etc/GMT\u002B11",
+                                    "Pacific/Pago_Pago",
+                                    "Pacific/Honolulu",
+                                    "Pacific/Marquesas",
+                                    "America/Anchorage",
+                                    "America/Los_Angeles",
+                                    "America/Tijuana",
+                                    "America/Denver",
+                                    "America/Phoenix",
+                                    "America/Chicago",
+                                    "America/Mexico_City",
+                                    "America/Regina",
+                                    "America/New_York",
+                                    "America/Toronto",
+                                    "America/Bogota",
+                                    "America/Lima",
+                                    "America/Halifax",
+                                    "America/Caracas",
+                                    "America/St_Johns",
+                                    "America/Sao_Paulo",
+                                    "America/Argentina/Buenos_Aires",
+                                    "Atlantic/South_Georgia",
+                                    "Atlantic/Azores",
+                                    "Atlantic/Cape_Verde",
+                                    "UTC",
+                                    "Europe/London",
+                                    "Africa/Lagos",
+                                    "Europe/Berlin",
+                                    "Europe/Paris",
+                                    "Europe/Rome",
+                                    "Europe/Warsaw",
+                                    "Africa/Cairo",
+                                    "Europe/Athens",
+                                    "Europe/Bucharest",
+                                    "Europe/Helsinki",
+                                    "Europe/Istanbul",
+                                    "Africa/Johannesburg",
+                                    "Asia/Jerusalem",
+                                    "Europe/Moscow",
+                                    "Asia/Baghdad",
+                                    "Africa/Nairobi",
+                                    "Asia/Tehran",
+                                    "Asia/Dubai",
+                                    "Asia/Baku",
+                                    "Asia/Kabul",
+                                    "Asia/Karachi",
+                                    "Asia/Tashkent",
+                                    "Asia/Kolkata",
+                                    "Asia/Colombo",
+                                    "Asia/Kathmandu",
+                                    "Asia/Almaty",
+                                    "Asia/Dhaka",
+                                    "Asia/Yangon",
+                                    "Asia/Bangkok",
+                                    "Asia/Jakarta",
+                                    "Asia/Ho_Chi_Minh",
+                                    "Asia/Shanghai",
+                                    "Asia/Hong_Kong",
+                                    "Asia/Singapore",
+                                    "Asia/Taipei",
+                                    "Australia/Perth",
+                                    "Asia/Seoul",
+                                    "Asia/Tokyo",
+                                    "Australia/Darwin",
+                                    "Australia/Adelaide",
+                                    "Australia/Sydney",
+                                    "Australia/Brisbane",
+                                    "Pacific/Guam",
+                                    "Pacific/Noumea",
+                                    "Pacific/Auckland",
+                                    "Pacific/Fiji",
+                                    "Pacific/Tongatapu",
+                                    "Pacific/Apia",
+                                    "Pacific/Kiritimati"
+                                  ],
+                                  "x-ms-property-name-alias": "body/timezone"
+                                },
+                                "agentId": {
+                                  "type": "string",
+                                  "title": "Agent",
+                                  "x-ms-dynamic-list": {
+                                    "operationId": "GetAgents",
+                                    "parameters": {},
+                                    "itemsPath": "agents",
+                                    "itemValuePath": "id",
+                                    "itemTitlePath": "name"
+                                  },
+                                  "description": "The unique identifier of the Copilot agent to chat with",
+                                  "x-ms-property-name-alias": "body/agentId"
+                                },
+                                "preferAsync": {
+                                  "type": "boolean",
+                                  "title": "Prefer Async",
+                                  "description": "Whether to prefer asynchronous processing for the chat request",
+                                  "default": true,
+                                  "x-ms-property-name-alias": "body/preferAsync"
+                                },
+                                "isConversationVisible": {
+                                  "type": "boolean",
+                                  "title": "Is Conversation Visible",
+                                  "description": "Whether the conversation appears in the user\u0027s Copilot conversation history. Defaults to false (hidden) when omitted.",
+                                  "x-ms-property-name-alias": "body/isConversationVisible"
+                                }
+                              },
+                              "required": [
+                                "message"
+                              ],
+                              "x-ms-property-name-alias": "body"
+                            }
+                          },
+                          "required": [
+                            "body"
+                          ]
+                        }
+                      },
+                      "outcomes": [
+                        {
+                          "id": "default",
+                          "label": "Default",
+                          "outcomeSchema": {
+                            "type": "object",
+                            "properties": {
+                              "body": {
+                                "type": "object",
+                                "properties": {
+                                  "conversationId": {
+                                    "type": "string",
+                                    "title": "Conversation ID",
+                                    "description": "The unique identifier of the conversation",
+                                    "x-ms-property-name-alias": "body/conversationId"
+                                  },
+                                  "response": {
+                                    "type": "string",
+                                    "title": "Response",
+                                    "description": "The response from the Copilot agent",
+                                    "x-ms-property-name-alias": "body/response"
+                                  },
+                                  "citations": {
+                                    "type": "array",
+                                    "title": "Citations",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "seeMoreUrl": {
+                                          "type": "string",
+                                          "title": "See More URL",
+                                          "description": "URL to see more information for this citation",
+                                          "x-ms-property-name-alias": "seeMoreUrl"
+                                        },
+                                        "type": {
+                                          "type": "string",
+                                          "title": "Type",
+                                          "description": "The type of citation (e.g. People, Event)",
+                                          "x-ms-property-name-alias": "type"
+                                        }
+                                      },
+                                      "required": []
+                                    },
+                                    "description": "Citations referenced in the response",
+                                    "x-ms-property-name-alias": "body/citations"
+                                  }
+                                },
+                                "additionalProperties": true,
+                                "required": [],
+                                "x-ms-property-name-alias": "body"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "measured": {
+                      "width": 240,
+                      "height": 66
+                    },
+                    "dragging": false
+                  }
+                ],
+                "edges": [
+                  {
+                    "id": "edge-start-e5aaec7f-60ff-480b-bab2-bee44c136348-m365Copilot-32fabbff-4df2-4419-88b4-acfbd9a48b5c",
+                    "source": "start-e5aaec7f-60ff-480b-bab2-bee44c136348",
+                    "target": "m365Copilot-32fabbff-4df2-4419-88b4-acfbd9a48b5c"
+                  },
+                  {
+                    "id": "edge-m365Copilot-32fabbff-4df2-4419-88b4-acfbd9a48b5c-builtinFunction-3cd1d7e5-94ae-48d7-b746-ea8b64029812",
+                    "source": "m365Copilot-32fabbff-4df2-4419-88b4-acfbd9a48b5c",
+                    "target": "builtinFunction-3cd1d7e5-94ae-48d7-b746-ea8b64029812"
+                  }
+                ],
+                "connectionReferences": {
+                  "shared_m365copilotv2": {
+                    "api": {
+                      "name": "shared_m365copilotv2"
+                    },
+                    "connection": {
+                      "connectionReferenceLogicalName": "new_sharedm365copilotv2_f1b99714"
+                    },
+                    "runtimeSource": "embedded",
+                    "connectionName": "228bd2eadb64468db3e101e7c74e498a"
+                  }
+                }
+              },
+              "nodeActionMapping": {
+                "m365Copilot-32fabbff-4df2-4419-88b4-acfbd9a48b5c": [
+                  "M365_Copilot"
+                ],
+                "builtinFunction-3cd1d7e5-94ae-48d7-b746-ea8b64029812": [
+                  "Respond_to_the_agent"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "actions": {
+        "M365_Copilot": {
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "body/timezone": "America/New_York",
+              "body/preferAsync": true,
+              "body/message": "Analyze the patients health issues based on age gender and symtoms @{triggerBody()?[\u0027text\u0027]}@{triggerBody()?[\u0027text_1\u0027]}. \n\nUse this classification if the patient should be advised to stay in bed or just reduce activiy:\n\nHas stable vital signs (e.g., heart rate, blood pressure within normal range).\nDemonstrates adequate muscle strength and joint mobility (can sit, stand, walk short distances).\nShows no signs of deep vein thrombosis (DVT) (no calf pain, swelling, or warmth).\nIs mentally alert and emotionally stable (no signs of depression or confusion).\nCan perform basic activities of daily living (ADLs) with minimal or moderate assistance.\nHas no acute pain or only mild discomfort that does not limit movement.\nExhibits normal bowel and respiratory function (no constipation, shallow breathing, or secretion pooling).\n\nIf the pacient experiences mild conditions you do not have to mention the classification\n\nBesides your general recommendation the analysis should end with: Patient is cleared for light work and movement. Encourage gentle mobility, hydration, and diversional activities. Monitor for fatigue or discomfort. Or a clear instruction to stay in bed or at least reduce movement until further medical examination. "
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_m365copilotv2",
+              "connectionName": "shared_m365copilotv2",
+              "operationId": "StartChat"
+            }
+          },
+          "metadata": {
+            "description": "M365 Copilot",
+            "nodeId": "m365Copilot-32fabbff-4df2-4419-88b4-acfbd9a48b5c"
+          }
+        },
+        "Respond_to_the_agent": {
+          "type": "Response",
+          "kind": "Skills",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {},
+              "required": []
+            },
+            "statusCode": 200
+          },
+          "runAfter": {
+            "M365_Copilot": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "description": "Respond to the agent",
+            "nodeId": "builtinFunction-3cd1d7e5-94ae-48d7-b746-ea8b64029812"
+          }
+        }
+      },
+      "outputs": {},
+      "metadata": {
+        "telemetryMetadata": {
+          "creationSource": "WorkflowDesigner",
+          "modifiedSources": "WorkflowDesigner"
+        }
+      }
+    }
+  },
+  "schemaVersion": "1.0.0.0"
+}

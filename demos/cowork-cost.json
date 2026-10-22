@@ -1,0 +1,592 @@
+{
+  "run": {
+    "date": "2026-10-22",
+    "workflow_run": "wf_1f99cd2b-5bb",
+    "lanes": 7,
+    "guides": 8,
+    "agent_model": "claude-opus-5-5",
+    "launched_local": "09:16",
+    "tenant_user": "alexander.kastil@integrations.at"
+  },
+  "pricing": {
+    "source": "Anthropic first-party API rates for Claude Opus 5.5 (claude-api skill, cached 2026-10-06)",
+    "usd_per_million_tokens": {
+      "input": 4.0,
+      "cache_write_5m": 5.0,
+      "cache_write_1h": 8.0,
+      "cache_read": 0.2,
+      "output": 20.0
+    },
+    "usd_per_eur": 1.124505,
+    "exchange_rate_date": "2026-10-22",
+    "exchange_rate_source": "Vouchers AI get_exchange_rate",
+    "estimate_rate_cards_usd_per_million_tokens": {
+      "sonnet-5-5": {
+        "input": 2.0,
+        "cache_write_5m": 2.5,
+        "cache_write_1h": 4.0,
+        "cache_read": 0.2,
+        "output": 10.0
+      },
+      "haiku-5-5_prompt_up_to_100k": {
+        "input": 0.1,
+        "cache_write_5m": 0.125,
+        "cache_write_1h": 0.2,
+        "cache_read": 0.01,
+        "output": 0.5
+      },
+      "haiku-5-5_prompt_over_100k": {
+        "input": 0.5,
+        "cache_write_5m": 0.625,
+        "cache_write_1h": 1.0,
+        "cache_read": 0.05,
+        "output": 2.5
+      },
+      "method": "same per-request token counts as the Opus 5.5 run, priced per request; Haiku 5.5 rate card chosen per request by prompt length (input + cache write + cache read)"
+    }
+  },
+  "totals": {
+    "tokens": {
+      "input": 1374,
+      "cache_write_5m": 2009423,
+      "cache_write_1h": 0,
+      "cache_read": 114017966,
+      "output": 370378,
+      "total": 116399141
+    },
+    "usd": 40.26,
+    "eur": 35.81,
+    "cost_by_model": {
+      "opus-5-5": {
+        "usd": 40.26,
+        "eur": 35.81
+      },
+      "sonnet-5-5": {
+        "usd": 31.53,
+        "eur": 28.04
+      },
+      "haiku-5-5": {
+        "usd": 6.99,
+        "eur": 6.22
+      }
+    }
+  },
+  "lanes": [
+    {
+      "lane": "q3-review",
+      "agent_id": "a7984cdfe25458953",
+      "guides": [
+        "demos/02-cowork/01-intro/demo-01-quarterly-review.md"
+      ],
+      "started_utc": "2026-10-22T07:16:42.534Z",
+      "finished_utc": "2026-10-22T07:44:00.563Z",
+      "duration_min": 27.3,
+      "model_turns": 95,
+      "tool_calls": 131,
+      "tokens": {
+        "input": 190,
+        "cache_write_5m": 320266,
+        "cache_write_1h": 0,
+        "cache_read": 15893068,
+        "output": 54973,
+        "total": 16268497
+      },
+      "usd": {
+        "input": 0.0008,
+        "cache_write_5m": 1.6013,
+        "cache_write_1h": 0.0,
+        "cache_read": 3.1786,
+        "output": 1.0995,
+        "total": 5.88
+      },
+      "eur": 5.23,
+      "requests_over_100k_prompt": 76,
+      "cost_by_model": {
+        "opus-5-5": {
+          "usd": {
+            "input": 0.0008,
+            "cache_write_5m": 1.6013,
+            "cache_write_1h": 0.0,
+            "cache_read": 3.1786,
+            "output": 1.0995,
+            "total": 5.88
+          },
+          "eur": 5.23,
+          "basis": "actual"
+        },
+        "sonnet-5-5": {
+          "usd": {
+            "input": 0.0004,
+            "cache_write_5m": 0.8007,
+            "cache_write_1h": 0.0,
+            "cache_read": 3.1786,
+            "output": 0.5497,
+            "total": 4.53
+          },
+          "eur": 4.03,
+          "basis": "estimate"
+        },
+        "haiku-5-5": {
+          "usd": {
+            "input": 0.0001,
+            "cache_write_5m": 0.1267,
+            "cache_write_1h": 0.0,
+            "cache_read": 0.7352,
+            "output": 0.126,
+            "total": 0.99
+          },
+          "eur": 0.88,
+          "basis": "estimate"
+        }
+      }
+    },
+    {
+      "lane": "workiq-scheduling",
+      "agent_id": "ab3308de87698eedd",
+      "guides": [
+        "demos/02-cowork/01-intro/demo-02-workiq-scheduling.md"
+      ],
+      "started_utc": "2026-10-22T07:16:43.335Z",
+      "finished_utc": "2026-10-22T07:30:47.554Z",
+      "duration_min": 14.1,
+      "model_turns": 76,
+      "tool_calls": 92,
+      "tokens": {
+        "input": 152,
+        "cache_write_5m": 231579,
+        "cache_write_1h": 0,
+        "cache_read": 10124648,
+        "output": 38944,
+        "total": 10395323
+      },
+      "usd": {
+        "input": 0.0006,
+        "cache_write_5m": 1.1579,
+        "cache_write_1h": 0.0,
+        "cache_read": 2.0249,
+        "output": 0.7789,
+        "total": 3.96
+      },
+      "eur": 3.52,
+      "requests_over_100k_prompt": 58,
+      "cost_by_model": {
+        "opus-5-5": {
+          "usd": {
+            "input": 0.0006,
+            "cache_write_5m": 1.1579,
+            "cache_write_1h": 0.0,
+            "cache_read": 2.0249,
+            "output": 0.7789,
+            "total": 3.96
+          },
+          "eur": 3.52,
+          "basis": "actual"
+        },
+        "sonnet-5-5": {
+          "usd": {
+            "input": 0.0003,
+            "cache_write_5m": 0.5789,
+            "cache_write_1h": 0.0,
+            "cache_read": 2.0249,
+            "output": 0.3894,
+            "total": 2.99
+          },
+          "eur": 2.66,
+          "basis": "estimate"
+        },
+        "haiku-5-5": {
+          "usd": {
+            "input": 0.0001,
+            "cache_write_5m": 0.0843,
+            "cache_write_1h": 0.0,
+            "cache_read": 0.4505,
+            "output": 0.0827,
+            "total": 0.62
+          },
+          "eur": 0.55,
+          "basis": "estimate"
+        }
+      }
+    },
+    {
+      "lane": "research-brief",
+      "agent_id": "aab58b8592a3d6739",
+      "guides": [
+        "demos/02-cowork/02-built-in-skills/demo-01-research-brief.md"
+      ],
+      "started_utc": "2026-10-22T07:16:43.336Z",
+      "finished_utc": "2026-10-22T07:38:53.859Z",
+      "duration_min": 22.2,
+      "model_turns": 75,
+      "tool_calls": 93,
+      "tokens": {
+        "input": 150,
+        "cache_write_5m": 220816,
+        "cache_write_1h": 0,
+        "cache_read": 9902563,
+        "output": 37642,
+        "total": 10161171
+      },
+      "usd": {
+        "input": 0.0006,
+        "cache_write_5m": 1.1041,
+        "cache_write_1h": 0.0,
+        "cache_read": 1.9805,
+        "output": 0.7528,
+        "total": 3.84
+      },
+      "eur": 3.41,
+      "requests_over_100k_prompt": 58,
+      "cost_by_model": {
+        "opus-5-5": {
+          "usd": {
+            "input": 0.0006,
+            "cache_write_5m": 1.1041,
+            "cache_write_1h": 0.0,
+            "cache_read": 1.9805,
+            "output": 0.7528,
+            "total": 3.84
+          },
+          "eur": 3.41,
+          "basis": "actual"
+        },
+        "sonnet-5-5": {
+          "usd": {
+            "input": 0.0003,
+            "cache_write_5m": 0.552,
+            "cache_write_1h": 0.0,
+            "cache_read": 1.9805,
+            "output": 0.3764,
+            "total": 2.91
+          },
+          "eur": 2.59,
+          "basis": "estimate"
+        },
+        "haiku-5-5": {
+          "usd": {
+            "input": 0.0001,
+            "cache_write_5m": 0.0767,
+            "cache_write_1h": 0.0,
+            "cache_read": 0.4429,
+            "output": 0.0813,
+            "total": 0.6
+          },
+          "eur": 0.53,
+          "basis": "estimate"
+        }
+      }
+    },
+    {
+      "lane": "product-pitch-skill",
+      "agent_id": "a9519be8a347a7000",
+      "guides": [
+        "demos/02-cowork/03-custom-skills/demo-01-product-pitch-skill.md"
+      ],
+      "started_utc": "2026-10-22T07:16:43.336Z",
+      "finished_utc": "2026-10-22T07:45:49.301Z",
+      "duration_min": 29.1,
+      "model_turns": 120,
+      "tool_calls": 149,
+      "tokens": {
+        "input": 240,
+        "cache_write_5m": 326460,
+        "cache_write_1h": 0,
+        "cache_read": 22019454,
+        "output": 65992,
+        "total": 22412146
+      },
+      "usd": {
+        "input": 0.001,
+        "cache_write_5m": 1.6323,
+        "cache_write_1h": 0.0,
+        "cache_read": 4.4039,
+        "output": 1.3198,
+        "total": 7.36
+      },
+      "eur": 6.54,
+      "requests_over_100k_prompt": 102,
+      "cost_by_model": {
+        "opus-5-5": {
+          "usd": {
+            "input": 0.001,
+            "cache_write_5m": 1.6323,
+            "cache_write_1h": 0.0,
+            "cache_read": 4.4039,
+            "output": 1.3198,
+            "total": 7.36
+          },
+          "eur": 6.54,
+          "basis": "actual"
+        },
+        "sonnet-5-5": {
+          "usd": {
+            "input": 0.0005,
+            "cache_write_5m": 0.8161,
+            "cache_write_1h": 0.0,
+            "cache_read": 4.4039,
+            "output": 0.6599,
+            "total": 5.88
+          },
+          "eur": 5.23,
+          "basis": "estimate"
+        },
+        "haiku-5-5": {
+          "usd": {
+            "input": 0.0001,
+            "cache_write_5m": 0.1418,
+            "cache_write_1h": 0.0,
+            "cache_read": 1.0439,
+            "output": 0.1531,
+            "total": 1.34
+          },
+          "eur": 1.19,
+          "basis": "estimate"
+        }
+      }
+    },
+    {
+      "lane": "followup-then-meeting-prep",
+      "agent_id": "a2214ca18bf2e286b",
+      "guides": [
+        "demos/02-cowork/06-staying-in-control/demo-01-follow-up.md",
+        "demos/02-cowork/03-custom-skills/demo-02-meeting-prep-skill.md"
+      ],
+      "started_utc": "2026-10-22T07:16:43.336Z",
+      "finished_utc": "2026-10-22T07:52:24.876Z",
+      "duration_min": 35.7,
+      "model_turns": 129,
+      "tool_calls": 167,
+      "tokens": {
+        "input": 258,
+        "cache_write_5m": 337156,
+        "cache_write_1h": 0,
+        "cache_read": 25265709,
+        "output": 77454,
+        "total": 25680577
+      },
+      "usd": {
+        "input": 0.001,
+        "cache_write_5m": 1.6858,
+        "cache_write_1h": 0.0,
+        "cache_read": 5.0531,
+        "output": 1.5491,
+        "total": 8.29
+      },
+      "eur": 7.37,
+      "requests_over_100k_prompt": 115,
+      "cost_by_model": {
+        "opus-5-5": {
+          "usd": {
+            "input": 0.001,
+            "cache_write_5m": 1.6858,
+            "cache_write_1h": 0.0,
+            "cache_read": 5.0531,
+            "output": 1.5491,
+            "total": 8.29
+          },
+          "eur": 7.37,
+          "basis": "actual"
+        },
+        "sonnet-5-5": {
+          "usd": {
+            "input": 0.0005,
+            "cache_write_5m": 0.8429,
+            "cache_write_1h": 0.0,
+            "cache_read": 5.0531,
+            "output": 0.7745,
+            "total": 6.67
+          },
+          "eur": 5.93,
+          "basis": "estimate"
+        },
+        "haiku-5-5": {
+          "usd": {
+            "input": 0.0001,
+            "cache_write_5m": 0.1481,
+            "cache_write_1h": 0.0,
+            "cache_read": 1.2199,
+            "output": 0.183,
+            "total": 1.55
+          },
+          "eur": 1.38,
+          "basis": "estimate"
+        }
+      }
+    },
+    {
+      "lane": "weekly-status-automation",
+      "agent_id": "adb7bb3605a4d7873",
+      "guides": [
+        "demos/02-cowork/04-automation/demo-01-automation.md"
+      ],
+      "started_utc": "2026-10-22T07:16:43.337Z",
+      "finished_utc": "2026-10-22T07:38:47.186Z",
+      "duration_min": 22.1,
+      "model_turns": 97,
+      "tool_calls": 122,
+      "tokens": {
+        "input": 194,
+        "cache_write_5m": 300686,
+        "cache_write_1h": 0,
+        "cache_read": 16295362,
+        "output": 50469,
+        "total": 16646711
+      },
+      "usd": {
+        "input": 0.0008,
+        "cache_write_5m": 1.5034,
+        "cache_write_1h": 0.0,
+        "cache_read": 3.2591,
+        "output": 1.0094,
+        "total": 5.77
+      },
+      "eur": 5.13,
+      "requests_over_100k_prompt": 81,
+      "cost_by_model": {
+        "opus-5-5": {
+          "usd": {
+            "input": 0.0008,
+            "cache_write_5m": 1.5034,
+            "cache_write_1h": 0.0,
+            "cache_read": 3.2591,
+            "output": 1.0094,
+            "total": 5.77
+          },
+          "eur": 5.13,
+          "basis": "actual"
+        },
+        "sonnet-5-5": {
+          "usd": {
+            "input": 0.0004,
+            "cache_write_5m": 0.7517,
+            "cache_write_1h": 0.0,
+            "cache_read": 3.2591,
+            "output": 0.5047,
+            "total": 4.52
+          },
+          "eur": 4.02,
+          "basis": "estimate"
+        },
+        "haiku-5-5": {
+          "usd": {
+            "input": 0.0001,
+            "cache_write_5m": 0.1269,
+            "cache_write_1h": 0.0,
+            "cache_read": 0.766,
+            "output": 0.1155,
+            "total": 1.01
+          },
+          "eur": 0.9,
+          "basis": "estimate"
+        }
+      }
+    },
+    {
+      "lane": "dietitian-plugin",
+      "agent_id": "a0ea238f527b53020",
+      "guides": [
+        "demos/02-cowork/05-plugins/demo-01-plugins.md"
+      ],
+      "started_utc": "2026-10-22T07:16:43.337Z",
+      "finished_utc": "2026-10-22T07:39:36.070Z",
+      "duration_min": 22.9,
+      "model_turns": 95,
+      "tool_calls": 118,
+      "tokens": {
+        "input": 190,
+        "cache_write_5m": 272460,
+        "cache_write_1h": 0,
+        "cache_read": 14517162,
+        "output": 44904,
+        "total": 14834716
+      },
+      "usd": {
+        "input": 0.0008,
+        "cache_write_5m": 1.3623,
+        "cache_write_1h": 0.0,
+        "cache_read": 2.9034,
+        "output": 0.8981,
+        "total": 5.16
+      },
+      "eur": 4.59,
+      "requests_over_100k_prompt": 80,
+      "cost_by_model": {
+        "opus-5-5": {
+          "usd": {
+            "input": 0.0008,
+            "cache_write_5m": 1.3623,
+            "cache_write_1h": 0.0,
+            "cache_read": 2.9034,
+            "output": 0.8981,
+            "total": 5.16
+          },
+          "eur": 4.59,
+          "basis": "actual"
+        },
+        "sonnet-5-5": {
+          "usd": {
+            "input": 0.0004,
+            "cache_write_5m": 0.6812,
+            "cache_write_1h": 0.0,
+            "cache_read": 2.9034,
+            "output": 0.449,
+            "total": 4.03
+          },
+          "eur": 3.59,
+          "basis": "estimate"
+        },
+        "haiku-5-5": {
+          "usd": {
+            "input": 0.0001,
+            "cache_write_5m": 0.1084,
+            "cache_write_1h": 0.0,
+            "cache_read": 0.6789,
+            "output": 0.1008,
+            "total": 0.89
+          },
+          "eur": 0.79,
+          "basis": "estimate"
+        }
+      }
+    }
+  ],
+  "copilot_credits": {
+    "per_task": "not available: Cowork Usage details is account-wide and the admin center splits credits by service and user only",
+    "admin_center_cost_management": [
+      {
+        "read_local": "2026-10-22 09:1x",
+        "when": "before the run",
+        "month_to_date": {
+          "Work IQ": 500,
+          "Copilot Studio": 0,
+          "Cowork": 0
+        },
+        "policy": "All Users Policy, 5,000 credits monthly limit, pay-as-you-go, 500 used (10%)"
+      },
+      {
+        "read_local": "2026-10-22 09:55",
+        "when": "after the run",
+        "month_to_date": {
+          "Work IQ": 500,
+          "Copilot Studio": 0,
+          "Cowork": 0
+        },
+        "note": "Cowork usage from the run not booked yet; totals arrive with a delay"
+      }
+    ],
+    "admin_center_cowork_overview_before_run": {
+      "active_users": 1,
+      "tasks_completed": 1,
+      "monthly_credits_spent": 0,
+      "usage_tab_last_updated": "2026-10-21"
+    },
+    "cowork_usage_details_after_run": {
+      "cowork_usage_limit_remaining": "90%",
+      "credits_spent_over_time": "No credit usage in this period",
+      "note": "Credit totals may be delayed while recent activity is processed",
+      "limits_reset": "2026-11-01",
+      "scope": "account-wide, shared by all lanes"
+    },
+    "usd_per_credit_pay_as_you_go": 0.01
+  }
+}

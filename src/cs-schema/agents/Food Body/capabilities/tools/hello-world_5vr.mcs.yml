@@ -1,0 +1,13 @@
+mcs.metadata:
+  componentName: hello-world
+kind: WorkflowTool
+workflowId: a8b4b290-0b20-fd6b-3c85-36dd5c86304c
+toolInputs:
+  - name: text
+    displayName: Test
+    description: Please enter your input
+
+connectionProperties:
+  $kind: ConnectionProperties
+  diagnostics:
+  mode: Invoker

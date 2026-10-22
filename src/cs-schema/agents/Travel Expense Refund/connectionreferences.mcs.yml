@@ -1,0 +1,5 @@
+﻿connectionReferences:
+  - connectionReferenceLogicalName: cr915_expensepilot.shared_workiqsharepoint.shared-workiqsharepo-addf0531-7cd0-446a-9d61-6fb315ad13ce
+    connectorId: /providers/Microsoft.PowerApps/apis/shared_workiqsharepoint
+  - connectionReferenceLogicalName: new_sharedcommondataserviceforapps_5d5bd
+    connectorId: /providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps

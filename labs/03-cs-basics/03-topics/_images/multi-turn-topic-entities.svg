@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Multi-turn topic: capture four answers, then reuse them</title>
+  <desc id="d">Four Ask a question nodes in turn order: First name, Last name and Current role identify the User's entire response, E-mail identifies the Email entity and asks again when the input is invalid; each stores a string variable. A Send a message recap inserts the four variables with the {x} command. Then Ask a question: Is it ok for you to insert this new candidate?, a Yes or No branch with a thumbs up or thumbs down message, and End current topic. The questions light up in turn, the e-mail loop turns, and the four values drop into the recap.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+    <marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="60" y="120" width="405" height="360" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" values="#e0a534;#8c959f" keyTimes="0;0.1875" dur="8s" calcMode="discrete" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="5;2" keyTimes="0;0.1875" dur="8s" calcMode="discrete" repeatCount="indefinite"/>
+    </rect>
+    <rect x="525" y="120" width="405" height="360" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" values="#8c959f;#e0a534;#8c959f" keyTimes="0;0.1875;0.375" dur="8s" calcMode="discrete" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="2;5;2" keyTimes="0;0.1875;0.375" dur="8s" calcMode="discrete" repeatCount="indefinite"/>
+    </rect>
+    <rect x="990" y="120" width="405" height="360" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" values="#8c959f;#e0a534;#8c959f" keyTimes="0;0.375;0.5625" dur="8s" calcMode="discrete" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="2;5;2" keyTimes="0;0.375;0.5625" dur="8s" calcMode="discrete" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1455" y="120" width="405" height="360" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" values="#8c959f;#e0a534;#8c959f" keyTimes="0;0.5625;0.75" dur="8s" calcMode="discrete" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="2;5;2" keyTimes="0;0.5625;0.75" dur="8s" calcMode="discrete" repeatCount="indefinite"/>
+    </rect>
+
+    <g font-size="28" fill="#57606a">
+      <text x="88" y="172">Ask a question</text>
+      <text x="553" y="172">Ask a question</text>
+      <text x="1018" y="172">Ask a question</text>
+      <text x="1483" y="172">Ask a question</text>
+      <text x="88" y="276">Identify</text>
+      <text x="553" y="276">Identify</text>
+      <text x="1018" y="276">Identify</text>
+      <text x="1483" y="276">Identify</text>
+      <text x="88" y="408">Variable: string</text>
+      <text x="553" y="408">Variable: string</text>
+      <text x="1018" y="408">Variable: string</text>
+      <text x="1483" y="408">Variable: string</text>
+      <text x="1018" y="452">Invalid: asks again</text>
+    </g>
+    <g font-size="32" font-weight="700" fill="#24292f">
+      <text x="88" y="222">First name</text>
+      <text x="553" y="222">Last name</text>
+      <text x="1018" y="222">E-mail</text>
+      <text x="1483" y="222">Current role</text>
+    </g>
+    <g fill="#ffffff" stroke="#8c959f" stroke-width="2">
+      <rect x="84" y="296" width="357" height="58" rx="12"/>
+      <rect x="549" y="296" width="357" height="58" rx="12"/>
+      <rect x="1014" y="296" width="357" height="58" rx="12" fill="#fff6e5" stroke="#e0a534"/>
+      <rect x="1479" y="296" width="357" height="58" rx="12"/>
+    </g>
+    <g font-size="28" fill="#24292f">
+      <text x="104" y="335">User's entire response</text>
+      <text x="569" y="335">User's entire response</text>
+      <text x="1034" y="335" font-weight="700">Email</text>
+      <text x="1499" y="335">User's entire response</text>
+    </g>
+    <g>
+      <path d="M1352,442 A18,18 0 1,1 1334,424" fill="none" stroke="#e0a534" stroke-width="4"/>
+      <path d="M1330,414 L1346,424 L1330,434 z" fill="#e0a534"/>
+      <animateTransform attributeName="transform" type="rotate" values="0 1334 442;0 1334 442;720 1334 442;720 1334 442" keyTimes="0;0.375;0.5625;1" dur="8s" repeatCount="indefinite"/>
+    </g>
+
+    <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+      <line x1="469" y1="300" x2="519" y2="300"/>
+      <line x1="934" y1="300" x2="984" y2="300"/>
+      <line x1="1399" y1="300" x2="1449" y2="300"/>
+    </g>
+    <g stroke="#57606a" stroke-width="3" stroke-dasharray="10 7" fill="none" marker-end="url(#ab)">
+      <line x1="262" y1="484" x2="262" y2="572"/>
+      <line x1="727" y1="484" x2="727" y2="572"/>
+      <line x1="1192" y1="484" x2="1192" y2="572"/>
+      <line x1="1657" y1="484" x2="1657" y2="572"/>
+    </g>
+
+    <rect x="60" y="580" width="1800" height="130" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" values="#8c959f;#e0a534" keyTimes="0;0.85" dur="8s" calcMode="discrete" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="2;5" keyTimes="0;0.85" dur="8s" calcMode="discrete" repeatCount="indefinite"/>
+    </rect>
+    <text x="100" y="634" font-size="30" font-weight="700" fill="#24292f">Send a message: recap</text>
+    <text x="100" y="680" font-size="28" fill="#57606a">The {x} command inserts the four variables into one message</text>
+
+    <rect x="60" y="800" width="700" height="180" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="94" y="862" font-size="30" font-weight="700" fill="#24292f">Ask a question</text>
+    <text x="94" y="910" font-size="28" fill="#57606a">Is it ok for you to insert this new candidate?</text>
+
+    <rect x="860" y="800" width="520" height="180" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="894" y="862" font-size="30" font-weight="700" fill="#24292f">Yes or No branch</text>
+    <text x="894" y="910" font-size="28" fill="#57606a">Thumbs up or thumbs down</text>
+
+    <rect x="1480" y="800" width="380" height="180" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="1514" y="900" font-size="30" font-weight="700" fill="#24292f">End current topic</text>
+
+    <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+      <line x1="410" y1="714" x2="410" y2="792"/>
+      <line x1="764" y1="890" x2="852" y2="890"/>
+      <line x1="1384" y1="890" x2="1472" y2="890"/>
+    </g>
+
+    <g fill="#e0a534" stroke="#ffffff" stroke-width="3">
+      <circle cx="262" cy="484" r="13" opacity="0">
+        <animateMotion path="M0,0 L0,88" keyPoints="0;0;1;1" keyTimes="0;0.75;0.85;1" calcMode="linear" dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.75;0.85" dur="8s" calcMode="discrete" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="727" cy="484" r="13" opacity="0">
+        <animateMotion path="M0,0 L0,88" keyPoints="0;0;1;1" keyTimes="0;0.75;0.85;1" calcMode="linear" dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.75;0.85" dur="8s" calcMode="discrete" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1192" cy="484" r="13" opacity="0">
+        <animateMotion path="M0,0 L0,88" keyPoints="0;0;1;1" keyTimes="0;0.75;0.85;1" calcMode="linear" dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.75;0.85" dur="8s" calcMode="discrete" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1657" cy="484" r="13" opacity="0">
+        <animateMotion path="M0,0 L0,88" keyPoints="0;0;1;1" keyTimes="0;0.75;0.85;1" calcMode="linear" dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.75;0.85" dur="8s" calcMode="discrete" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+</svg>

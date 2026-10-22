@@ -1,0 +1,28 @@
+{
+  "topics": [
+    {
+      "title": "Agents & Copilots for Microsoft 365",
+      "subtitle": "The vocabulary, the ecosystem map and the step to an agent"
+    },
+    {
+      "title": "How Agents Work",
+      "subtitle": "The agentic loop, the three parts of every agent and the design patterns"
+    },
+    {
+      "title": "Agent Harnesses: Choose the Runtime",
+      "subtitle": "The four harnesses of Copilot Studio and how to choose one"
+    },
+    {
+      "title": "Where to Build and What It Costs",
+      "subtitle": "The build paths and how Copilot Credits pay for them"
+    },
+    {
+      "title": "Copilot Chat & Productivity Agents",
+      "subtitle": "Researcher, Analyst, SharePoint agents and Agent Builder"
+    },
+    {
+      "title": "Prepare the Tenant: Licenses & Credits",
+      "subtitle": "Optional: the licenses, credit sources and costs behind each module"
+    }
+  ]
+}

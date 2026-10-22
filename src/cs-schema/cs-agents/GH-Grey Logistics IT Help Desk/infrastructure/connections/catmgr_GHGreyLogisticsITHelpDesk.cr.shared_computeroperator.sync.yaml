@@ -1,0 +1,3 @@
+connectionReferences:
+  - connectionReferenceLogicalName: catmgr_GHGreyLogisticsITHelpDesk.cr.shared_computeroperator
+    connectorId: /providers/Microsoft.PowerApps/apis/shared_computeroperator

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">The four harnesses in Copilot Studio side by side</title>
+  <desc id="d">Four cards compare the harnesses of Copilot Studio. GitHub Copilot reasons toward a goal: it plans, recovers and works with files, has skills and memory, publishes internally or externally, bills Copilot Credits and is taught in module 6. Standard follows the paths you define with topics, trigger phrases and branches and classic or generative orchestration; it publishes internally or externally, uses standard licensing and is taught in modules 3 to 5. Copilot chat extends Copilot Chat for employees with your organization's knowledge and each user's own permissions; it publishes to internal teams, bills by consumption or through a Microsoft 365 Copilot license and works like Agent Builder agents. Customer Conversation, marked as preview, serves customers by chat and phone with sub-agents that hand over to a person, plus skills and memory; it publishes to website chat or a phone number, bills Copilot Credits and is not built in this class. A banner below says the harness is chosen once, at creation: a Standard agent never becomes a GitHub Copilot agent, or back.</desc>
+  <style>svg { font-size: 28px; }</style>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+
+  <rect x="40" y="56" width="440" height="796" rx="20" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="68" y="118" font-size="32" font-weight="700" fill="#24292f">GitHub Copilot</text>
+  <text x="68" y="168" font-size="28" font-weight="600" fill="#24292f">Reasons toward a goal</text>
+  <rect x="64" y="234" width="392" height="92" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="260" y="272" font-size="28" fill="#24292f" text-anchor="middle">Plans, recovers,</text>
+  <text x="260" y="308" font-size="28" fill="#24292f" text-anchor="middle">works with files</text>
+  <rect x="64" y="342" width="392" height="92" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="260" y="398" font-size="28" fill="#24292f" text-anchor="middle">Skills and memory</text>
+  <text x="68" y="492" font-size="28" fill="#57606a">Publishes to</text>
+  <text x="68" y="530" font-size="28" font-weight="600" fill="#24292f">Internal or external</text>
+  <text x="68" y="622" font-size="28" fill="#57606a">Billing</text>
+  <text x="68" y="660" font-size="28" font-weight="600" fill="#24292f">Copilot Credits</text>
+  <rect x="64" y="746" width="168" height="66" rx="33" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="148" y="789" font-size="28" fill="#24292f" text-anchor="middle">Module 6</text>
+
+  <rect x="506" y="56" width="440" height="796" rx="20" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="534" y="118" font-size="32" font-weight="700" fill="#24292f">Standard</text>
+  <text x="534" y="168" font-size="28" font-weight="600" fill="#24292f">Follows the paths you define</text>
+  <rect x="530" y="234" width="392" height="92" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="726" y="272" font-size="28" fill="#24292f" text-anchor="middle">Topics, trigger</text>
+  <text x="726" y="308" font-size="28" fill="#24292f" text-anchor="middle">phrases, branches</text>
+  <rect x="530" y="342" width="392" height="92" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="726" y="380" font-size="28" fill="#24292f" text-anchor="middle">Classic or generative</text>
+  <text x="726" y="416" font-size="28" fill="#24292f" text-anchor="middle">orchestration</text>
+  <text x="534" y="492" font-size="28" fill="#57606a">Publishes to</text>
+  <text x="534" y="530" font-size="28" font-weight="600" fill="#24292f">Internal or external</text>
+  <text x="534" y="622" font-size="28" fill="#57606a">Billing</text>
+  <text x="534" y="660" font-size="28" font-weight="600" fill="#24292f">Standard licensing</text>
+  <rect x="530" y="746" width="236" height="66" rx="33" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="648" y="789" font-size="28" fill="#24292f" text-anchor="middle">Modules 3 to 5</text>
+
+  <rect x="972" y="56" width="440" height="796" rx="20" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1000" y="118" font-size="32" font-weight="700" fill="#24292f">Copilot chat</text>
+  <text x="1000" y="168" font-size="28" font-weight="600" fill="#24292f">Extends Copilot Chat</text>
+  <text x="1000" y="204" font-size="28" font-weight="600" fill="#24292f">for employees</text>
+  <rect x="996" y="234" width="392" height="92" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1192" y="272" font-size="28" fill="#24292f" text-anchor="middle">Your organization's</text>
+  <text x="1192" y="308" font-size="28" fill="#24292f" text-anchor="middle">knowledge</text>
+  <rect x="996" y="342" width="392" height="92" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1192" y="380" font-size="28" fill="#24292f" text-anchor="middle">Each user's own</text>
+  <text x="1192" y="416" font-size="28" fill="#24292f" text-anchor="middle">permissions</text>
+  <text x="1000" y="492" font-size="28" fill="#57606a">Publishes to</text>
+  <text x="1000" y="530" font-size="28" font-weight="600" fill="#24292f">Internal teams</text>
+  <text x="1000" y="622" font-size="28" fill="#57606a">Billing</text>
+  <text x="1000" y="660" font-size="28" font-weight="600" fill="#24292f">Consumption or</text>
+  <text x="1000" y="696" font-size="28" font-weight="600" fill="#24292f">Microsoft 365 Copilot license</text>
+  <rect x="996" y="746" width="365" height="66" rx="33" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1178.5" y="789" font-size="28" fill="#24292f" text-anchor="middle">Like Agent Builder agents</text>
+
+  <rect x="1438" y="56" width="440" height="796" rx="20" fill="#fff6e5" stroke="#e0a534" stroke-width="2" stroke-dasharray="14 10"/>
+  <text x="1466" y="118" font-size="32" font-weight="700" fill="#24292f">Customer Conversation</text>
+  <text x="1466" y="168" font-size="28" font-weight="600" fill="#24292f">Serves customers by</text>
+  <text x="1466" y="204" font-size="28" font-weight="600" fill="#24292f">chat and phone</text>
+  <rect x="1462" y="234" width="392" height="92" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1658" y="272" font-size="28" fill="#24292f" text-anchor="middle">Sub-agents with a</text>
+  <text x="1658" y="308" font-size="28" fill="#24292f" text-anchor="middle">handover to a person</text>
+  <rect x="1462" y="342" width="392" height="92" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1658" y="398" font-size="28" fill="#24292f" text-anchor="middle">Skills and memory</text>
+  <text x="1466" y="492" font-size="28" fill="#57606a">Publishes to</text>
+  <text x="1466" y="530" font-size="28" font-weight="600" fill="#24292f">Website chat or</text>
+  <text x="1466" y="566" font-size="28" font-weight="600" fill="#24292f">phone number</text>
+  <text x="1466" y="622" font-size="28" fill="#57606a">Billing</text>
+  <text x="1466" y="660" font-size="28" font-weight="600" fill="#24292f">Copilot Credits</text>
+  <rect x="1462" y="746" width="307" height="66" rx="33" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1615.5" y="789" font-size="28" fill="#24292f" text-anchor="middle">Not built in this class</text>
+  <rect x="1704" y="36" width="150" height="40" rx="20" fill="#ffffff" stroke="#e0a534" stroke-width="2"/>
+  <text x="1779" y="66" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">Preview</text>
+
+  <rect x="40" y="892" width="1838" height="120" rx="20" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="959" y="962" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">Chosen once, at creation: a Standard agent never becomes a GitHub Copilot agent, or back</text>
+</svg>

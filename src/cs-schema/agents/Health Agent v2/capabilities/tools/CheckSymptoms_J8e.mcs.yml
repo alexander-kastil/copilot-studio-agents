@@ -1,0 +1,11 @@
+mcs.metadata:
+  componentName: CheckSymptoms
+kind: WorkflowTool
+workflowId: 9a815bdf-dc44-7e16-c7e4-620180cdec53
+toolInputs:
+  - name: text
+
+  - name: text_1
+
+toolOutputs:
+  - name: text

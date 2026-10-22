@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Build, test, pin and call grey-logistics-device-specialist in Microsoft Foundry</title>
+  <desc id="d">Inside the Foundry project: 1, the prompt agent grey-logistics-device-specialist is built from the gpt-5-mini model and instructions that cover standard laptops, warranty, battery, lost or stolen devices and device questions only. 2, the Playground tests it: a bulging Surface Laptop 7 battery gets stop using it, unplug it, IT desk today; the follow-up still under warranty after 30 months gets covered by the 3-year warranty, 2 business days to replace; a Teams password question gets outside my scope. 3, Version 2 adds loaner laptops for up to 10 business days and is pinned to receive 100 percent of the traffic; the agent endpoint, Responses protocol, is live from creation and serves the pinned version. 4, outside the portal, az rest sends the question which laptop does a new engineer receive, and when is it replaced, signed with a Microsoft Entra token for the Foundry User role and no API key, and the output text names the Dell Precision 5690, replaced every 4 years. A dot follows the steps from build to call.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      svg { font-size: 26px; }
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .h { font-size: 34px; font-weight: 700; text-anchor: middle; }
+      .hl { font-size: 34px; font-weight: 700; }
+      .t { font-size: 30px; font-weight: 600; }
+      .tc { font-size: 30px; font-weight: 600; text-anchor: middle; }
+      .s { font-size: 28px; fill: #57606a; }
+      .sc { font-size: 28px; fill: #57606a; text-anchor: middle; }
+      .b { font-size: 28px; }
+      .bc { font-size: 28px; text-anchor: middle; }
+      .bb { font-size: 28px; font-weight: 600; }
+      .bbc { font-size: 28px; font-weight: 600; text-anchor: middle; }
+      .code { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; }
+      .codec { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; text-anchor: middle; }
+      .mono { font-family: Consolas, 'Courier New', monospace; font-size: 26px; }
+      .monoc { font-family: Consolas, 'Courier New', monospace; font-size: 26px; text-anchor: middle; }
+      .num { font-size: 28px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .tag { font-size: 26px; font-weight: 600; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect x="40" y="110" width="1400" height="880" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="70" y="162">Foundry project</text>
+  <text class="s" x="1500" y="162">outside the portal</text>
+  <circle cx="86" cy="230" r="26" fill="#24292f"/>
+  <text class="num" x="86" y="240">1</text>
+  <text class="t" x="126" y="241">Build an agent</text>
+  <circle cx="506" cy="230" r="26" fill="#24292f"/>
+  <text class="num" x="506" y="240">2</text>
+  <text class="t" x="546" y="241">Playground</text>
+  <circle cx="1066" cy="230" r="26" fill="#24292f"/>
+  <text class="num" x="1066" y="240">3</text>
+  <text class="t" x="1106" y="241">Pin a version</text>
+  <circle cx="1526" cy="230" r="26" fill="#24292f"/>
+  <text class="num" x="1526" y="240">4</text>
+  <text class="t" x="1566" y="241">Call the endpoint</text>
+  <rect x="60" y="290" width="360" height="670" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="codec" x="240" y="342">grey-logistics-</text>
+  <text class="codec" x="240" y="380">device-specialist</text>
+  <text class="sc" x="240" y="422">prompt agent</text>
+  <rect x="80" y="460" width="320" height="120" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="s" x="100" y="506">Model</text>
+  <text class="code" x="100" y="548">gpt-5-mini</text>
+  <rect x="80" y="610" width="320" height="330" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="s" x="100" y="656">Instructions</text>
+  <text class="b" x="100" y="702">standard laptops</text>
+  <text class="b" x="100" y="754">warranty, battery</text>
+  <text class="b" x="100" y="806">lost or stolen device</text>
+  <text class="b" x="100" y="858">device questions only</text>
+  <line x1="420" y1="610" x2="480" y2="610" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <line x1="980" y1="610" x2="1040" y2="610" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <rect x="480" y="290" width="500" height="670" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="600" y="308" width="360" height="100" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="622" y="350">My Surface Laptop 7</text>
+  <text class="b" x="622" y="386">battery is bulging</text>
+  <rect x="500" y="422" width="380" height="100" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="522" y="464">Stop using it, unplug it,</text>
+  <text class="b" x="522" y="500">IT desk today</text>
+  <rect x="600" y="536" width="360" height="100" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="622" y="578">Still under warranty</text>
+  <text class="b" x="622" y="614">after 30 months?</text>
+  <rect x="500" y="650" width="380" height="100" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="522" y="692">Covered: 3-year warranty,</text>
+  <text class="b" x="522" y="728">2 business days to replace</text>
+  <rect x="600" y="764" width="360" height="100" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="622" y="806">How do I reset my</text>
+  <text class="b" x="622" y="842">Teams password?</text>
+  <rect x="500" y="878" width="380" height="64" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="522" y="920">Outside my scope.</text>
+  <rect x="1040" y="290" width="340" height="150" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="1064" y="334">Version 1</text>
+  <text class="s" x="1064" y="370">device rules</text>
+  <rect x="1060" y="390" width="360" height="210" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="1084" y="436">Version 2</text>
+  <text class="b" x="1084" y="474">+ loaner laptops,</text>
+  <text class="b" x="1084" y="510">up to 10 business days</text>
+  <rect x="1080" y="530" width="320" height="52" rx="26" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+  <text class="tag" x="1240" y="565">100 percent of traffic</text>
+  <rect x="1040" y="660" width="380" height="240" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="tc" x="1230" y="742">Agent endpoint</text>
+  <text class="sc" x="1230" y="786">Responses protocol</text>
+  <text class="sc" x="1230" y="826">live from creation</text>
+  <line x1="1230" y1="660" x2="1230" y2="602" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <rect x="1500" y="290" width="360" height="160" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="1524" y="336">Microsoft Entra token</text>
+  <text class="s" x="1524" y="376">Foundry User role</text>
+  <text class="s" x="1524" y="414">no API key</text>
+  <rect x="1500" y="500" width="360" height="220" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="mono" x="1524" y="546">az rest --method post</text>
+  <text class="b" x="1524" y="590">Which laptop does a new</text>
+  <text class="b" x="1524" y="628">engineer receive, and</text>
+  <text class="b" x="1524" y="666">when is it replaced?</text>
+  <rect x="1500" y="780" width="360" height="160" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="1524" y="830">Dell Precision 5690</text>
+  <text class="s" x="1524" y="872">replaced every 4 years</text>
+  <line x1="1500" y1="690" x2="1420" y2="690" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <line x1="1420" y1="860" x2="1500" y2="860" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <rect x="60" y="290" width="360" height="670" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.1333;0.1458;1" values="1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M420,610 H480" calcMode="linear" keyTimes="0;0.1333;0.175;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.1333;0.1458;0.1833;0.1958;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="600" y="308" width="360" height="100" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.1833;0.1958;0.2208;0.2333;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="500" y="422" width="380" height="100" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.2208;0.2333;0.2583;0.2708;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="600" y="536" width="360" height="100" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.2583;0.2708;0.2958;0.3083;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="500" y="650" width="380" height="100" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.2958;0.3083;0.3333;0.3458;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="600" y="764" width="360" height="100" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.3333;0.3458;0.3708;0.3833;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="500" y="878" width="380" height="64" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.3708;0.3833;0.4083;0.4208;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M980,610 H1040" calcMode="linear" keyTimes="0;0.4083;0.45;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.4083;0.4208;0.4583;0.4708;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1060" y="390" width="360" height="210" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.4583;0.4708;0.5833;0.5958;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M1500,690 H1420" calcMode="linear" keyTimes="0;0.5833;0.625;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.5833;0.5958;0.6333;0.6458;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1040" y="660" width="380" height="240" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.625;0.6375;0.725;0.7375;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M1230,660 V602" calcMode="linear" keyTimes="0;0.6417;0.675;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.6417;0.6542;0.6833;0.6958;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M1420,860 H1500" calcMode="linear" keyTimes="0;0.725;0.7667;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.725;0.7375;0.775;0.7875;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1500" y="780" width="360" height="160" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.7667;0.7792;0.9833;0.9958;1" values="0;0;1;1;0;0"/>
+  </rect>
+</svg>

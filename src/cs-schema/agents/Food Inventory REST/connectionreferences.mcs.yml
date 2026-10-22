@@ -1,0 +1,3 @@
+﻿connectionReferences:
+  - connectionReferenceLogicalName: iits_footInventory.shared_iits-5fcopilot-2dfood-2dcatalog-5f0af75e9cbdc7cbac.645218e9d08a42358bd8aed755efa5da
+    connectorId: /providers/Microsoft.PowerApps/apis/shared_iits-5fcopilot-2dfood-2dcatalog-5f0af75e9cbdc7cbac

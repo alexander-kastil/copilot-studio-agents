@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+<title id="t">The seven Travel planner routing cases and the agent the Details panel names for each</title>
+<desc id="d">Each of the seven cases of the test set Travel planner routing is answered by the agent the Details panel names. Vienna to Budapest booking and evening sights in Budapest go to CS-Travel Agent, a connected agent. Mild cold, should I travel goes to CS-Health Advisor, a connected agent. Official daily allowance in Austria and claim a refund for my train ticket go to CS-Travel Expense Refund, a connected agent, which answers the refund claim with its Expense Claim Adaptive Card. Free gym in Budapest goes to Work life balance Buddy, a child agent. Canteen menu today goes to no agent: the planner answers itself, and with Web Search on the answer comes from public web pages. The Tool use test method's Select tools picker lists the planner's 13 topics and no connected or child agents, so routes are read in the Details panel and not graded by Tool use.</desc>
+<rect width="1920" height="1080" fill="#ffffff"/>
+<defs>
+<style>
+svg{font-size:26px}
+.h{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#24292f;font-weight:600}
+.r{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#24292f}
+.s{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#57606a}
+.m{font-family:Consolas,'Cascadia Mono','Courier New',monospace;fill:#24292f}
+</style>
+<marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+</defs>
+<text class="h" x="60" y="70" font-size="34">CS-Business Travel Planner</text>
+<text class="s" x="60" y="112" font-size="26">Test set Travel planner routing: 7 single-response cases</text>
+<text class="h" x="60" y="162" font-size="28">Test case</text>
+<text class="h" x="820" y="162" font-size="28">Agent the Details panel names</text>
+<rect x="60" y="180" width="640" height="88" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<circle cx="106" cy="224" r="24" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="106" y="233" font-size="26" text-anchor="middle">1</text>
+<text class="r" x="148" y="234" font-size="28">Vienna to Budapest booking</text>
+<path d="M700,224 H813" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="60" y="280" width="640" height="88" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<circle cx="106" cy="324" r="24" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="106" y="333" font-size="26" text-anchor="middle">2</text>
+<text class="r" x="148" y="334" font-size="28">Evening sights in Budapest</text>
+<path d="M700,324 H813" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="60" y="380" width="640" height="88" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<circle cx="106" cy="424" r="24" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="106" y="433" font-size="26" text-anchor="middle">3</text>
+<text class="r" x="148" y="434" font-size="28">Mild cold, should I travel?</text>
+<path d="M700,424 H813" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="60" y="480" width="640" height="88" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<circle cx="106" cy="524" r="24" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="106" y="533" font-size="26" text-anchor="middle">4</text>
+<text class="r" x="148" y="534" font-size="28">Official daily allowance in Austria</text>
+<path d="M700,524 H813" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="60" y="580" width="640" height="88" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<circle cx="106" cy="624" r="24" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="106" y="633" font-size="26" text-anchor="middle">5</text>
+<text class="r" x="148" y="634" font-size="28">Claim a refund for my train ticket</text>
+<path d="M700,624 H813" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="60" y="680" width="640" height="88" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<circle cx="106" cy="724" r="24" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="106" y="733" font-size="26" text-anchor="middle">6</text>
+<text class="r" x="148" y="734" font-size="28">Free gym in Budapest</text>
+<path d="M700,724 H813" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="60" y="780" width="640" height="88" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<circle cx="106" cy="824" r="24" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text class="h" x="106" y="833" font-size="26" text-anchor="middle">7</text>
+<text class="r" x="148" y="834" font-size="28">Canteen menu today</text>
+<path d="M700,824 H813" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="820" y="180" width="560" height="188" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text class="s" x="850" y="268" font-size="26">Connected agents</text>
+<text class="h" x="850" y="304" font-size="30">CS-Travel Agent</text>
+<rect x="820" y="380" width="560" height="88" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text class="s" x="850" y="418" font-size="26">Connected agents</text>
+<text class="h" x="850" y="454" font-size="30">CS-Health Advisor</text>
+<rect x="820" y="480" width="560" height="188" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text class="s" x="850" y="568" font-size="26">Connected agents</text>
+<text class="h" x="850" y="604" font-size="30">CS-Travel Expense Refund</text>
+<rect x="820" y="680" width="560" height="88" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+<text class="s" x="850" y="718" font-size="26">Child agents</text>
+<text class="h" x="850" y="754" font-size="30">Work life balance Buddy</text>
+<rect x="820" y="780" width="560" height="88" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2" stroke-dasharray="10 8"/>
+<text class="s" x="850" y="818" font-size="26">No agent listed</text>
+<text class="h" x="850" y="854" font-size="30">The planner answers itself</text>
+<text class="s" x="1410" y="616" font-size="26">On this case it answers with its</text>
+<text class="r" x="1410" y="650" font-size="26">Expense Claim Adaptive Card</text>
+<text class="s" x="1410" y="816" font-size="26">With Web Search on, the answer</text>
+<text class="r" x="1410" y="850" font-size="26">comes from public web pages</text>
+<rect x="60" y="900" width="1798" height="140" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text class="h" x="90" y="944" font-size="30">Read each route in the Details panel</text>
+<text class="s" x="90" y="984" font-size="26">The Tool use test method's Select tools picker lists the planner's 13 topics and no connected or child agents,</text>
+<text class="s" x="90" y="1018" font-size="26">so Tool use does not grade these routes.</text>
+</svg>

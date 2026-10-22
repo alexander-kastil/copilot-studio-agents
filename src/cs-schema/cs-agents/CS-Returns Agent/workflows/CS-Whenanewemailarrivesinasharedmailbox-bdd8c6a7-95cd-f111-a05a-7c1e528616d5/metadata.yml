@@ -1,0 +1,33 @@
+﻿jsonFileName: workflows/CS-Whenanewemailarrivesinasharedmailbox-bdd8c6a7-95cd-f111-a05a-7c1e528616d5/workflow.json
+workflowId: bdd8c6a7-95cd-f111-a05a-7c1e528616d5
+name: CS-When a new email arrives in a shared mailbox
+type: 1
+description: 'Trigger your agent with certain message upon event: When a new email arrives in a shared mailbox (V2).'
+subprocess: false
+category: 5
+mode: 0
+scope: 4
+onDemand: false
+triggerOnCreate: false
+triggerOnDelete: false
+asyncAutodelete: false
+syncWorkflowLogOnFailure: false
+stateCode: 1
+statusCode: 2
+runAs: 1
+isTransacted: true
+introducedVersion: 1.0.0.0
+isCustomizable:
+  value: true
+  canBeChanged: true
+  managedPropertyLogicalName: iscustomizableanddeletable
+businessProcessType: 0
+isCustomProcessingStepAllowedForOtherPublishers:
+  value: true
+  canBeChanged: true
+  managedPropertyLogicalName: canbedeleted
+modernFlowType: 0
+primaryEntity: none
+connectionReferences:
+- iits_sharedmicrosoftcopilotstudio_4afe9
+- iits_sharedoffice365_8c122

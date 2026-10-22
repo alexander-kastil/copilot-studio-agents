@@ -1,0 +1,7 @@
+mcs.metadata:
+  componentName: Sightseeing
+  description: Provides Travel Information
+kind: KnowledgeSourceConfiguration
+source:
+  kind: SharePointSearchSource
+  site: https://integrationsonline.sharepoint.com/sites/copilot-demo/Sightseeing

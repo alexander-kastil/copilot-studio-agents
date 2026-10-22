@@ -1,0 +1,21 @@
+﻿{
+  "connectorid": "134b94e4-ba03-4d2f-b38a-b5f60776c52d",
+  "name": "iits_5Fcs-2Dfood-20catalog",
+  "displayname": "CS-Food Catalog",
+  "description": "The canteen\u0027s food catalog. It lists every dish with its price, current stock and minimum stock, adds new dishes, and changes how many portions of a dish are in stock. Use it for questions about food in stock, deliveries, spoiled portions and new dishes.",
+  "connectorinternalid": "shared_iits-5Fcs-2Dfood-20catalog-5F0af75e9cbdc7cbac",
+  "openapidefinition": "connectors/iits_5Fcs-2Dfood-20catalog-134b94e4-ba03-4d2f-b38a-b5f60776c52d/openapidefinition.json",
+  "connectionparameters": "connectors/iits_5Fcs-2Dfood-20catalog-134b94e4-ba03-4d2f-b38a-b5f60776c52d/connectionparameters.json",
+  "connectionparametersets": null,
+  "policytemplateinstances": "connectors/iits_5Fcs-2Dfood-20catalog-134b94e4-ba03-4d2f-b38a-b5f60776c52d/policytemplateinstances.json",
+  "iconbrandcolor": null,
+  "iconblob": "connectors/iits_5Fcs-2Dfood-20catalog-134b94e4-ba03-4d2f-b38a-b5f60776c52d/iconblob.png",
+  "connectortype": 1,
+  "statecode": 0,
+  "statuscode": 1,
+  "ismanaged": false,
+  "componentstate": 0,
+  "createdon": "2026-10-21T18:05:18Z",
+  "modifiedon": "2026-10-21T18:05:22Z",
+  "versionnumber": 26498874
+}

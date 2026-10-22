@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Every skill source ends in the same Skills section</title>
+  <desc id="d">Six sources of skills: built-in skills, custom skills you create with Cowork or write as a SKILL.md in OneDrive, a skill file you upload through Customize, Add, Upload or get from a colleague, plugin skills from Discover, admin-deployed plugins, and your own plugin package through the same Upload. All of them feed one step: Cowork reads each description and loads the skill when the work calls for it, so you do not name it. To call one by name, type / in the composer and pick it from the Skills tab. The skills appear as chips in one Skills section.</desc>
+  <style>svg { font-size: 26px; }</style>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="18" markerHeight="18" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="80" y="115" width="780" height="120" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="112" y="165" font-size="30" font-weight="700" fill="#24292f">Built-in skills</text>
+    <text x="112" y="207" font-size="28" fill="#57606a">ship with Cowork</text>
+
+    <rect x="80" y="261" width="780" height="120" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="112" y="311" font-size="30" font-weight="700" fill="#24292f">Custom skills</text>
+    <text x="112" y="353" font-size="28" fill="#57606a">Create skill with Cowork, or SKILL.md in OneDrive</text>
+
+    <rect x="80" y="407" width="780" height="120" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="112" y="457" font-size="30" font-weight="700" fill="#24292f">Uploaded skill file</text>
+    <text x="112" y="499" font-size="28" fill="#57606a">Customize &gt; Add &gt; Upload, or shared with you</text>
+
+    <rect x="80" y="553" width="780" height="120" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="112" y="603" font-size="30" font-weight="700" fill="#24292f">Plugin skills</text>
+    <text x="112" y="645" font-size="28" fill="#57606a">from Discover</text>
+
+    <rect x="80" y="699" width="780" height="120" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="112" y="749" font-size="30" font-weight="700" fill="#24292f">Admin-deployed plugins</text>
+    <text x="112" y="791" font-size="28" fill="#57606a">rolled out by your IT organization</text>
+
+    <rect x="80" y="845" width="780" height="120" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="112" y="895" font-size="30" font-weight="700" fill="#24292f">Your own plugin package</text>
+    <text x="112" y="937" font-size="28" fill="#57606a">the same Customize &gt; Add &gt; Upload</text>
+
+    <line x1="860" y1="175" x2="997" y2="340" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="860" y1="321" x2="997" y2="396" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="860" y1="467" x2="997" y2="452" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="860" y1="613" x2="997" y2="508" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="860" y1="759" x2="997" y2="564" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="860" y1="905" x2="997" y2="620" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+    <rect x="1000" y="290" width="400" height="380" rx="18" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+    <text x="1200" y="364" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Cowork reads</text>
+    <text x="1200" y="406" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">each description</text>
+    <text x="1200" y="478" font-size="28" fill="#57606a" text-anchor="middle">and loads the skill</text>
+    <text x="1200" y="518" font-size="28" fill="#57606a" text-anchor="middle">when the work</text>
+    <text x="1200" y="558" font-size="28" fill="#57606a" text-anchor="middle">calls for it</text>
+    <text x="1200" y="620" font-size="28" font-style="italic" fill="#57606a" text-anchor="middle">you do not name it</text>
+
+    <rect x="1000" y="720" width="400" height="170" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="1200" y="772" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Call one by name</text>
+    <text x="1200" y="818" font-size="28" fill="#57606a" text-anchor="middle">type / in the composer</text>
+    <text x="1200" y="858" font-size="28" fill="#57606a" text-anchor="middle">pick it from the Skills tab</text>
+
+    <line x1="1400" y1="480" x2="1517" y2="480" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="1400" y1="805" x2="1517" y2="805" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+    <rect x="1520" y="290" width="320" height="600" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="1552" y="344" font-size="30" font-weight="700" fill="#24292f">Skills</text>
+    <rect x="1560" y="384" width="240" height="56" rx="28" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1680" y="422" font-size="28" fill="#24292f" text-anchor="middle">built-in</text>
+    <rect x="1560" y="494" width="240" height="56" rx="28" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1680" y="532" font-size="28" fill="#24292f" text-anchor="middle">custom</text>
+    <rect x="1560" y="604" width="240" height="56" rx="28" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1680" y="642" font-size="28" fill="#24292f" text-anchor="middle">uploaded</text>
+    <rect x="1560" y="714" width="240" height="56" rx="28" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1680" y="752" font-size="28" fill="#24292f" text-anchor="middle">plugin</text>
+  </g>
+</svg>

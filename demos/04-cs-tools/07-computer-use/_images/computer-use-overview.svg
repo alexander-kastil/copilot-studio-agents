@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">CS-Grey Logistics IT Help Desk reads one web app and fills another with computer use, fenced to one HTTPS site</title>
+  <desc id="d">Left, the CS-Grey Logistics IT Help Desk agent. Exercise 4: the question "Who manages the Fourth Coffee portfolio, and what is it worth?" gets the reply "Fourth Coffee's portfolio is managed by Yhlas Geldiyew and is worth $190,000,000." Exercises 1 and 2: the computer use tool CS-Look up portfolio takes the input ClientName, runs on Claude Sonnet 4.5 and counts 4 actions, 20 Copilot Credits. Exercise 5: CS-Register inventory items fills five fields twice. Right, inside a dashed fence (Exercise 3): Only allow specific websites and desktop apps, computerusedemos.blob.core.windows.net as a Website with Enforce HTTPS, and Microsoft Edge as a Desktop app for the Hosted browser. Inside the fence, the Financial Portfolio Dashboard table with Client Name, Manager and Portfolio Value shows Fourth Coffee, Yhlas Geldiyew, $190,000,000 and Northwind Traders, Niklas Gasper, $95,000,000. Below it, the Product Inventory Update form with Product Name, Product ID, Quantity, Price and Supplier, and its Inventory Items list with Rear Derailleur, RD-4821, 50, 42.75, Tailspin Toys and Pedal Set, PD-1738, 80, 19.99, Northwind Traders. A dot goes from each tool into its web app; the Fourth Coffee row lights up, then each form field in turn.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .cs { font-family: Consolas, 'Courier New', monospace; font-size: 26px; font-weight: 700; }
+      .hc { font-size: 34px; font-weight: 700; text-anchor: middle; }
+      .m { font-size: 28px; }
+      .s { font-size: 28px; fill: #57606a; }
+      .t { font-size: 30px; font-weight: 600; }
+      .tag { font-size: 26px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .ts { font-size: 28px; font-weight: 600; }
+      .xm { font-size: 26px; }
+      .xs { font-size: 26px; fill: #57606a; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="60" y="60" width="560" height="960" rx="24" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="700" y="40" width="1170" height="1000" rx="24" fill="#ffffff" stroke="#e0a534" stroke-width="3" stroke-dasharray="14 10"/>
+
+  <polyline points="620,560 760,560" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <polyline points="620,900 760,900" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="84" y="196" width="512" height="284" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="84" y="500" width="512" height="270" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="84" y="790" width="512" height="206" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="760" y="220" width="1060" height="390" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="760" y="640" width="1060" height="370" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="790" y="742" width="220" height="50" rx="8" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1030" y="742" width="170" height="50" rx="8" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1220" y="742" width="130" height="50" rx="8" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1370" y="742" width="130" height="50" rx="8" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1520" y="742" width="270" height="50" rx="8" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+
+  <rect x="104" y="214" width="78" height="38" rx="19" fill="#24292f"/>
+  <rect x="104" y="518" width="107" height="38" rx="19" fill="#24292f"/>
+  <rect x="104" y="808" width="78" height="38" rx="19" fill="#24292f"/>
+  <rect x="724" y="62" width="78" height="38" rx="19" fill="#24292f"/>
+  <path d="M761,272 V236 Q761,221 776,221 H1804 Q1819,221 1819,236 V272 Z" fill="#f6f8fa"/>
+  <line x1="760" y1="272" x2="1820" y2="272" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="790" cy="246" r="7" fill="#8c959f"/>
+  <circle cx="814" cy="246" r="7" fill="#8c959f"/>
+  <circle cx="838" cy="246" r="7" fill="#8c959f"/>
+  <line x1="780" y1="330" x2="1800" y2="330" stroke="#8c959f" stroke-width="2"/>
+  <rect x="790" y="350" width="200" height="16" rx="8" fill="#d8dee4"/>
+  <rect x="1130" y="350" width="180" height="16" rx="8" fill="#d8dee4"/>
+  <rect x="1470" y="350" width="150" height="16" rx="8" fill="#d8dee4"/>
+  <rect x="790" y="500" width="200" height="16" rx="8" fill="#d8dee4"/>
+  <rect x="1130" y="500" width="180" height="16" rx="8" fill="#d8dee4"/>
+  <rect x="1470" y="500" width="150" height="16" rx="8" fill="#d8dee4"/>
+  <rect x="776" y="384" width="1028" height="70" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <path d="M761,692 V656 Q761,641 776,641 H1804 Q1819,641 1819,656 V692 Z" fill="#f6f8fa"/>
+  <line x1="760" y1="692" x2="1820" y2="692" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="790" cy="666" r="7" fill="#8c959f"/>
+  <circle cx="814" cy="666" r="7" fill="#8c959f"/>
+  <circle cx="838" cy="666" r="7" fill="#8c959f"/>
+  <rect x="780" y="858" width="1020" height="56" rx="8" fill="#f6f8fa"/>
+  <rect x="780" y="922" width="1020" height="56" rx="8" fill="#f6f8fa"/>
+
+  <text class="hc" x="340" y="122">CS-Grey Logistics</text>
+  <text class="hc" x="340" y="164">IT Help Desk</text>
+  <text class="tag" x="143" y="241">Ex 4</text>
+  <text class="m" x="104" y="294">Who manages the Fourth Coffee</text>
+  <text class="m" x="104" y="332">portfolio, and what is it worth?</text>
+  <text class="s" x="104" y="384">Fourth Coffee's portfolio is</text>
+  <text class="s" x="104" y="420">managed by Yhlas Geldiyew</text>
+  <text class="s" x="104" y="456">and is worth $190,000,000.</text>
+  <text class="tag" x="157.5" y="545">Ex 1, 2</text>
+  <text class="t" x="104" y="600">CS-Look up portfolio</text>
+  <text class="s" x="104" y="644">input ClientName</text>
+  <text class="s" x="104" y="682">Claude Sonnet 4.5</text>
+  <text class="s" x="104" y="720">4 actions, 20 Copilot Credits</text>
+  <text class="tag" x="143" y="835">Ex 5</text>
+  <text class="t" x="104" y="890">CS-Register inventory items</text>
+  <text class="s" x="104" y="934">fills five fields twice</text>
+  <text class="tag" x="763" y="89">Ex 3</text>
+  <text class="t" x="820" y="91">Only allow specific websites and desktop apps</text>
+  <text class="cs" x="724" y="140">computerusedemos.blob.core.windows.net</text>
+  <text class="s" x="1290" y="140">Website, Enforce HTTPS</text>
+  <text class="s" x="724" y="182">Microsoft Edge, Desktop app, for the Hosted browser</text>
+  <text class="ts" x="876" y="257">Financial Portfolio Dashboard</text>
+  <text class="s" x="790" y="314">Client Name</text>
+  <text class="s" x="1130" y="314">Manager</text>
+  <text class="s" x="1470" y="314">Portfolio Value</text>
+  <text class="ts" x="790" y="428">Fourth Coffee</text>
+  <text class="ts" x="1130" y="428">Yhlas Geldiyew</text>
+  <text class="ts" x="1470" y="428">$190,000,000</text>
+  <text class="m" x="790" y="576">Northwind Traders</text>
+  <text class="m" x="1130" y="576">Niklas Gasper</text>
+  <text class="m" x="1470" y="576">$95,000,000</text>
+  <text class="ts" x="876" y="677">Product Inventory Update</text>
+  <text class="xs" x="790" y="728">Product Name</text>
+  <text class="xm" x="802" y="776">Pedal Set</text>
+  <text class="xs" x="1030" y="728">Product ID</text>
+  <text class="xm" x="1042" y="776">PD-1738</text>
+  <text class="xs" x="1220" y="728">Quantity</text>
+  <text class="xm" x="1232" y="776">80</text>
+  <text class="xs" x="1370" y="728">Price</text>
+  <text class="xm" x="1382" y="776">19.99</text>
+  <text class="xs" x="1520" y="728">Supplier</text>
+  <text class="xm" x="1532" y="776">Northwind Traders</text>
+  <text class="s" x="790" y="842">Inventory Items</text>
+  <text class="xm" x="802" y="895">Rear Derailleur</text>
+  <text class="xm" x="1042" y="895">RD-4821</text>
+  <text class="xm" x="1232" y="895">50</text>
+  <text class="xm" x="1382" y="895">42.75</text>
+  <text class="xm" x="1532" y="895">Tailspin Toys</text>
+  <text class="xm" x="802" y="959">Pedal Set</text>
+  <text class="xm" x="1042" y="959">PD-1738</text>
+  <text class="xm" x="1232" y="959">80</text>
+  <text class="xm" x="1382" y="959">19.99</text>
+  <text class="xm" x="1532" y="959">Northwind Traders</text>
+
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M620,560 L760,560" calcMode="linear" keyTimes="0;0.02;0.09;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.02;0.023;0.09;0.093;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="760" y="220" width="1060" height="390" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.09;0.102;0.148;0.16;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="776" y="384" width="1028" height="70" rx="12" fill="none" stroke="#e0a534" stroke-width="6" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.16;0.172;0.21;0.26;0.31;0.348;0.36;1" values="0;0;1;0.35;1;0.35;1;0;0"/>
+  </rect>
+  <rect x="84" y="500" width="512" height="270" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.36;0.372;0.428;0.44;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M620,900 L760,900" calcMode="linear" keyTimes="0;0.48;0.55;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.48;0.483;0.55;0.553;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="790" y="742" width="220" height="50" rx="8" fill="none" stroke="#24292f" stroke-width="4" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.56;0.572;0.598;0.61;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="1030" y="742" width="170" height="50" rx="8" fill="none" stroke="#24292f" stroke-width="4" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.61;0.622;0.648;0.66;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="1220" y="742" width="130" height="50" rx="8" fill="none" stroke="#24292f" stroke-width="4" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.66;0.672;0.698;0.71;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="1370" y="742" width="130" height="50" rx="8" fill="none" stroke="#24292f" stroke-width="4" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.71;0.722;0.748;0.76;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="1520" y="742" width="270" height="50" rx="8" fill="none" stroke="#24292f" stroke-width="4" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.76;0.772;0.798;0.81;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="780" y="858" width="1020" height="120" rx="8" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.82;0.832;0.928;0.94;1" values="0;0;1;1;0;0"/>
+  </rect>
+</svg>

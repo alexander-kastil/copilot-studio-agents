@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+<title id="t">The fourteen rows of northwind-test-set.csv become seven conversations</title>
+<desc id="d">The conversationNumber column of northwind-test-set.csv holds fourteen rows: three with 1, two with 2, three with 3, two with 4, two with 5, one with 6 and one with 7. Rows sharing a number become one conversation in Review your test cases (7). Conversations 1 to 4 are grounded facts, 5 and 6 are guardrails and 7 is off-topic. Total messages is twice the question count: 6 for three questions, 4 for two, 2 for one.</desc>
+<rect width="1920" height="1080" fill="#ffffff"/>
+<defs>
+<style>
+.h{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#24292f;font-weight:600}
+.r{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#24292f}
+.s{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#57606a}
+.c{font-family:Consolas,Menlo,monospace;fill:#24292f}
+</style>
+<marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+</defs>
+
+<text class="c" x="80" y="100" font-size="28">conversationNumber</text>
+<text class="h" x="600" y="100" font-size="30">Review your test cases (7)</text>
+
+<g stroke="#8c959f" stroke-width="2">
+<rect x="80" y="130" width="280" height="48" rx="10" fill="#eaf2ff"/>
+<rect x="80" y="186" width="280" height="48" rx="10" fill="#eaf2ff"/>
+<rect x="80" y="242" width="280" height="48" rx="10" fill="#eaf2ff"/>
+<rect x="80" y="314" width="280" height="48" rx="10" fill="#eaf2ff"/>
+<rect x="80" y="370" width="280" height="48" rx="10" fill="#eaf2ff"/>
+<rect x="80" y="442" width="280" height="48" rx="10" fill="#eaf2ff"/>
+<rect x="80" y="498" width="280" height="48" rx="10" fill="#eaf2ff"/>
+<rect x="80" y="554" width="280" height="48" rx="10" fill="#eaf2ff"/>
+<rect x="80" y="626" width="280" height="48" rx="10" fill="#eaf2ff"/>
+<rect x="80" y="682" width="280" height="48" rx="10" fill="#eaf2ff"/>
+<rect x="80" y="754" width="280" height="48" rx="10" fill="#fff6e5"/>
+<rect x="80" y="810" width="280" height="48" rx="10" fill="#fff6e5"/>
+<rect x="80" y="882" width="280" height="48" rx="10" fill="#fff6e5"/>
+<rect x="80" y="954" width="280" height="48" rx="10" fill="#f3edff"/>
+</g>
+<g class="c" font-size="28" text-anchor="middle">
+<text x="220" y="164">"1"</text>
+<text x="220" y="220">"1"</text>
+<text x="220" y="276">"1"</text>
+<text x="220" y="348">"2"</text>
+<text x="220" y="404">"2"</text>
+<text x="220" y="476">"3"</text>
+<text x="220" y="532">"3"</text>
+<text x="220" y="588">"3"</text>
+<text x="220" y="660">"4"</text>
+<text x="220" y="716">"4"</text>
+<text x="220" y="788">"5"</text>
+<text x="220" y="844">"5"</text>
+<text x="220" y="916">"6"</text>
+<text x="220" y="988">"7"</text>
+</g>
+
+<g fill="none" stroke="#57606a" stroke-width="3">
+<path d="M360,154 H400 M360,210 H400 M360,266 H400 M400,154 V266"/>
+<path d="M360,338 H400 M360,394 H400 M400,338 V394"/>
+<path d="M360,466 H400 M360,522 H400 M360,578 H400 M400,466 V578"/>
+<path d="M360,650 H400 M360,706 H400 M400,650 V706"/>
+<path d="M360,778 H400 M360,834 H400 M400,778 V834"/>
+</g>
+<g fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)">
+<path d="M400,210 H594"/>
+<path d="M400,366 H594"/>
+<path d="M400,522 H594"/>
+<path d="M400,678 H594"/>
+<path d="M400,806 H594"/>
+<path d="M360,906 H594"/>
+<path d="M360,978 H594"/>
+</g>
+
+<g stroke="#8c959f" stroke-width="2">
+<rect x="600" y="130" width="1260" height="160" rx="12" fill="#eaf2ff"/>
+<rect x="600" y="314" width="1260" height="104" rx="12" fill="#eaf2ff"/>
+<rect x="600" y="442" width="1260" height="160" rx="12" fill="#eaf2ff"/>
+<rect x="600" y="626" width="1260" height="104" rx="12" fill="#eaf2ff"/>
+<rect x="600" y="754" width="1260" height="104" rx="12" fill="#fff6e5"/>
+<rect x="600" y="882" width="1260" height="48" rx="12" fill="#fff6e5"/>
+<rect x="600" y="954" width="1260" height="48" rx="12" fill="#f3edff"/>
+</g>
+
+<g font-size="28">
+<text class="h" x="630" y="220">Conversation 1</text><text class="r" x="900" y="220">Grounded fact</text><text class="s" x="1200" y="220">3 questions</text><text class="h" x="1500" y="220">Total messages 6</text>
+<text class="h" x="630" y="376">Conversation 2</text><text class="r" x="900" y="376">Grounded fact</text><text class="s" x="1200" y="376">2 questions</text><text class="h" x="1500" y="376">Total messages 4</text>
+<text class="h" x="630" y="532">Conversation 3</text><text class="r" x="900" y="532">Grounded fact</text><text class="s" x="1200" y="532">3 questions</text><text class="h" x="1500" y="532">Total messages 6</text>
+<text class="h" x="630" y="688">Conversation 4</text><text class="r" x="900" y="688">Grounded fact</text><text class="s" x="1200" y="688">2 questions</text><text class="h" x="1500" y="688">Total messages 4</text>
+<text class="h" x="630" y="816">Conversation 5</text><text class="r" x="900" y="816">Guardrail</text><text class="s" x="1200" y="816">2 questions</text><text class="h" x="1500" y="816">Total messages 4</text>
+<text class="h" x="630" y="916">Conversation 6</text><text class="r" x="900" y="916">Guardrail</text><text class="s" x="1200" y="916">1 question</text><text class="h" x="1500" y="916">Total messages 2</text>
+<text class="h" x="630" y="988">Conversation 7</text><text class="r" x="900" y="988">Off-topic</text><text class="s" x="1200" y="988">1 question</text><text class="h" x="1500" y="988">Total messages 2</text>
+</g>
+</svg>

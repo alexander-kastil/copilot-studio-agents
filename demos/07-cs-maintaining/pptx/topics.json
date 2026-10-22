@@ -1,0 +1,9 @@
+{
+  "topics": [
+    {"title": "Environments, Solutions & the Admin Center", "subtitle": "Environment types, solutions and Dataverse"},
+    {"title": "Publishing Agents & Microsoft Channels", "subtitle": "Publish, authentication, Teams and SharePoint"},
+    {"title": "Application Lifecycle Management & Source Control", "subtitle": "Solutions, pipelines and Git"},
+    {"title": "Using Advanced Channels: WhatsApp, Web & Direct Line", "subtitle": "Optional: websites, Direct Line and WhatsApp"},
+    {"title": "Agentic Building: Copilot Studio Plugins for Coding Agents", "subtitle": "Build and migrate agents from the terminal"}
+  ]
+}

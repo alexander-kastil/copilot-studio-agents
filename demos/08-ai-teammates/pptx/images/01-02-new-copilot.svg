@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title id="t">The new Copilot: Home, Code and Autopilot</title>
+<desc id="d">Home is the new starting point where Chat and Cowork come together, and Copilot routes each request to Chat, Cowork or Code. Code builds an app, tracker, dashboard or automation from a description in a sandbox that can be hosted in your tenant. Autopilot takes a name, a role and a goal and works in your tenant with its own identity, memory, computer and workspace, built on Microsoft IQ.</desc>
+<rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#57606a"/></marker></defs>
+<rect x="70" y="265" width="250" height="100" rx="50" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text x="195" y="326" font-size="30" fill="#24292f" text-anchor="middle">Your request</text>
+<rect x="370" y="90" width="850" height="380" rx="20" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="410" y="150" font-size="36" font-weight="600" fill="#24292f">Home</text>
+<text x="410" y="192" font-size="28" fill="#57606a">The new starting point</text>
+<rect x="420" y="255" width="300" height="120" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="570" y="307" font-size="28" fill="#24292f" text-anchor="middle">Copilot routes</text>
+<text x="570" y="345" font-size="28" fill="#24292f" text-anchor="middle">each request</text>
+<rect x="860" y="200" width="320" height="80" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="1020" y="251" font-size="32" font-weight="600" fill="#24292f" text-anchor="middle">Chat</text>
+<rect x="860" y="350" width="320" height="80" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="1020" y="401" font-size="32" font-weight="600" fill="#24292f" text-anchor="middle">Cowork</text>
+<rect x="1300" y="90" width="550" height="380" rx="20" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<text x="1340" y="150" font-size="36" font-weight="600" fill="#24292f">Code</text>
+<text x="1340" y="205" font-size="28" fill="#57606a">Describe an app, tracker,</text>
+<text x="1340" y="245" font-size="28" fill="#57606a">dashboard or automation</text>
+<text x="1340" y="300" font-size="28" fill="#57606a">Powered by the same</text>
+<text x="1340" y="340" font-size="28" fill="#57606a">technology as GitHub Copilot</text>
+<text x="1340" y="395" font-size="28" fill="#57606a">Runs in a sandbox that can</text>
+<text x="1340" y="435" font-size="28" fill="#57606a">be hosted in your tenant</text>
+<path d="M320,315 L414,315" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M720,285 L852,243" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M720,345 L852,387" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M720,315 L1292,315" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="70" y="540" width="1780" height="450" rx="20" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+<text x="110" y="605" font-size="36" font-weight="600" fill="#24292f">Autopilot</text>
+<text x="110" y="650" font-size="28" fill="#57606a">A persistent, proactive and personal agent that keeps working even when you're not</text>
+<rect x="110" y="690" width="420" height="260" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="145" y="742" font-size="28" fill="#57606a">You give it</text>
+<text x="145" y="800" font-size="32" font-weight="600" fill="#24292f">A name</text>
+<text x="145" y="850" font-size="32" font-weight="600" fill="#24292f">A role</text>
+<text x="145" y="900" font-size="32" font-weight="600" fill="#24292f">A goal</text>
+<text x="650" y="742" font-size="28" fill="#57606a">It lives in your tenant with its own</text>
+<rect x="650" y="770" width="260" height="90" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="780" y="826" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">Identity</text>
+<rect x="950" y="770" width="260" height="90" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="1080" y="826" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">Memory</text>
+<rect x="1250" y="770" width="260" height="90" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="1380" y="826" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">Computer</text>
+<rect x="1550" y="770" width="260" height="90" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="1680" y="826" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">Workspace</text>
+<rect x="650" y="880" width="1160" height="70" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="680" y="926" font-size="28" fill="#24292f">Built on Microsoft IQ; permissions, audit and governance behind every action</text>
+<path d="M530,815 L644,815" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M320,315 L414,315" dur="9s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.0222;0.0889;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0182;0.0222;0.0889;0.0949;1" dur="9s" repeatCount="indefinite"/></circle>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M720,285 L852,243" dur="9s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.1444;0.2444;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1404;0.1444;0.2444;0.2504;1" dur="9s" repeatCount="indefinite"/></circle>
+<rect x="860" y="200" width="320" height="80" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.2333;0.2556;0.3000;0.3222;1.0000" dur="9s" repeatCount="indefinite"/></rect>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M320,315 L414,315" dur="9s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.3556;0.4222;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3516;0.3556;0.4222;0.4282;1" dur="9s" repeatCount="indefinite"/></circle>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M720,345 L852,387" dur="9s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.4778;0.5778;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4738;0.4778;0.5778;0.5838;1" dur="9s" repeatCount="indefinite"/></circle>
+<rect x="860" y="350" width="320" height="80" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.5667;0.5889;0.6333;0.6556;1.0000" dur="9s" repeatCount="indefinite"/></rect>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M320,315 L414,315" dur="9s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.6889;0.7556;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6849;0.6889;0.7556;0.7616;1" dur="9s" repeatCount="indefinite"/></circle>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M720,315 L1292,315" dur="9s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.8111;0.9111;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.8071;0.8111;0.9111;0.9171;1" dur="9s" repeatCount="indefinite"/></circle>
+<rect x="1300" y="90" width="550" height="380" rx="20" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.9000;0.9222;0.9667;0.9889;1.0000" dur="9s" repeatCount="indefinite"/></rect>
+<rect x="420" y="255" width="300" height="120" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0;1;1;0;0;1;1;0;0" keyTimes="0.0000;0.0889;0.1111;0.1333;0.1556;0.4222;0.4444;0.4667;0.4889;0.7556;0.7778;0.8000;0.8222;1.0000" dur="9s" repeatCount="indefinite"/></rect>
+</svg>

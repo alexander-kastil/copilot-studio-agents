@@ -1,0 +1,17 @@
+mcs.metadata:
+  componentName: Copilot-Food-Catalog - Gets all food
+kind: TaskDialog
+modelDisplayName: Gets all food
+modelDescription: Gets all food
+outputs:
+  - propertyName: Response
+
+action:
+  kind: InvokeConnectorTaskAction
+  connectionReference: iits_footInventory.shared_iits-5fcopilot-2dfood-2dcatalog-5f0af75e9cbdc7cbac.645218e9d08a42358bd8aed755efa5da
+  connectionProperties:
+    mode: Invoker
+
+  operationId: GetFood
+
+outputMode: All

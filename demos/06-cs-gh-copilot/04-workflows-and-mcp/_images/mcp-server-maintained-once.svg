@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+<title id="t">One MCP server keeps every connected agent current</title>
+<desc id="d">An MCP server is maintained once. A new tool or an updated one on the server reaches every connected agent over the Streamable transport, so no agent needs a republish. The animation shows the change travelling from the server to each agent.</desc>
+<rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L16,8 L0,16 z" fill="#57606a"/></marker></defs>
+<rect x="160" y="140" width="600" height="800" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+<text x="460" y="222" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="38" font-weight="700" fill="#24292f" text-anchor="middle">MCP server</text>
+<text x="460" y="268" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="middle">maintained once</text>
+<rect x="260" y="350" width="400" height="100" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="460" y="411" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">tool</text>
+<rect x="260" y="480" width="400" height="100" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="460" y="541" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">tool</text>
+<rect x="260" y="610" width="400" height="100" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text x="460" y="671" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">updated tool</text>
+<rect x="260" y="740" width="400" height="100" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text x="460" y="801" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">new tool</text>
+<line x1="760" y1="400" x2="1256" y2="235" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<line x1="760" y1="540" x2="1256" y2="540" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<line x1="760" y1="680" x2="1256" y2="845" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<text x="1010" y="522" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Streamable transport</text>
+<text x="1010" y="592" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="middle">no republish</text>
+<rect x="1260" y="140" width="500" height="190" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="1290" y="204" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#24292f" text-anchor="start">Agent</text>
+<rect x="1565" y="166" width="175" height="50" rx="25" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<path d="M1585,192 l10,10 l18,-20" fill="none" stroke="#24292f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1622" y="201" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="600" fill="#24292f" text-anchor="start">current</text>
+<rect x="1290" y="240" width="215" height="60" rx="10" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text x="1397" y="280" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#24292f" text-anchor="middle">updated tool</text>
+<rect x="1525" y="240" width="160" height="60" rx="10" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text x="1605" y="280" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#24292f" text-anchor="middle">new tool</text>
+<rect x="1260" y="445" width="500" height="190" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="1290" y="509" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#24292f" text-anchor="start">Agent</text>
+<rect x="1565" y="471" width="175" height="50" rx="25" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<path d="M1585,497 l10,10 l18,-20" fill="none" stroke="#24292f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1622" y="506" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="600" fill="#24292f" text-anchor="start">current</text>
+<rect x="1290" y="545" width="215" height="60" rx="10" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text x="1397" y="585" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#24292f" text-anchor="middle">updated tool</text>
+<rect x="1525" y="545" width="160" height="60" rx="10" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text x="1605" y="585" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#24292f" text-anchor="middle">new tool</text>
+<rect x="1260" y="750" width="500" height="190" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="1290" y="814" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#24292f" text-anchor="start">Agent</text>
+<rect x="1565" y="776" width="175" height="50" rx="25" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<path d="M1585,802 l10,10 l18,-20" fill="none" stroke="#24292f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1622" y="811" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="600" fill="#24292f" text-anchor="start">current</text>
+<rect x="1290" y="850" width="215" height="60" rx="10" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text x="1397" y="890" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#24292f" text-anchor="middle">updated tool</text>
+<rect x="1525" y="850" width="160" height="60" rx="10" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text x="1605" y="890" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#24292f" text-anchor="middle">new tool</text>
+<rect x="248" y="598" width="424" height="124" rx="20" fill="none" stroke="#e0a534" stroke-width="8" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.0375;0.0800;0.2075;0.2500;1.0000" dur="8s" repeatCount="indefinite"/></rect>
+<rect x="248" y="728" width="424" height="124" rx="20" fill="none" stroke="#e0a534" stroke-width="8" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.0375;0.0800;0.2075;0.2500;1.0000" dur="8s" repeatCount="indefinite"/></rect>
+<circle r="14" cx="0" cy="0" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2495;0.2500;0.5500;0.5505;1" dur="8s" repeatCount="indefinite"/><animateMotion path="M760,400 L1256,235" keyPoints="0;0;1;1" keyTimes="0;0.2500;0.5500;1" calcMode="linear" dur="8s" repeatCount="indefinite"/></circle>
+<circle r="14" cx="0" cy="0" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2495;0.2500;0.5500;0.5505;1" dur="8s" repeatCount="indefinite"/><animateMotion path="M760,540 L1256,540" keyPoints="0;0;1;1" keyTimes="0;0.2500;0.5500;1" calcMode="linear" dur="8s" repeatCount="indefinite"/></circle>
+<circle r="14" cx="0" cy="0" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2495;0.2500;0.5500;0.5505;1" dur="8s" repeatCount="indefinite"/><animateMotion path="M760,680 L1256,845" keyPoints="0;0;1;1" keyTimes="0;0.2500;0.5500;1" calcMode="linear" dur="8s" repeatCount="indefinite"/></circle>
+<rect x="1250" y="130" width="520" height="210" rx="24" fill="none" stroke="#e0a534" stroke-width="8" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.5625;0.6200;0.7925;0.8500;1.0000" dur="8s" repeatCount="indefinite"/></rect>
+<rect x="1250" y="435" width="520" height="210" rx="24" fill="none" stroke="#e0a534" stroke-width="8" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.5625;0.6200;0.7925;0.8500;1.0000" dur="8s" repeatCount="indefinite"/></rect>
+<rect x="1250" y="740" width="520" height="210" rx="24" fill="none" stroke="#e0a534" stroke-width="8" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.5625;0.6200;0.7925;0.8500;1.0000" dur="8s" repeatCount="indefinite"/></rect>
+</svg>

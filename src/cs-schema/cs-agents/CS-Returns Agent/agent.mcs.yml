@@ -1,0 +1,14 @@
+mcs.metadata:
+  componentName: CS-Returns Agent
+  description: An autonomous agent dealing with returns
+kind: GptComponentMetadata
+instructions: |-
+  You are a helpful agent helping customers with their returns. Understand the needs of the customer and then respond with an email that uses <p> and <br> tags and is in accordance with our return policies. Send that email to the customer with CS-Work IQ Mail.
+
+  You do not deal with other topics
+gptCapabilities:
+  webBrowsing: true
+
+aISettings:
+  model:
+    modelNameHint: GPT56Chat

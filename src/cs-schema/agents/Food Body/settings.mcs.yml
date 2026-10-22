@@ -1,0 +1,23 @@
+displayName: Food Body
+schemaName: iits_foodbody_D2IGed
+accessControlPolicy: GroupMembership
+authenticationMode: Integrated
+authenticationTrigger: Always
+configuration:
+  recognizer:
+    kind: CLICopilotRecognizer
+
+  agentSettings:
+    model:
+      series: GPT5Chat
+
+    instructions:
+      segments:
+        - kind: StaticSegment
+          value: You are an agent that is knowledgabe about food. Only anser questions on this topic​‌
+
+    web:
+      enableWebSearch: true
+
+template: cliagent-1.0.0
+language: 1033
