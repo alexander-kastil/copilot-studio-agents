@@ -10,7 +10,7 @@ This topic teaches prebuilt connector tools in Copilot Studio's Standard agents 
 
 A Power Platform connector is a wrapper around an API, built so Copilot Studio, Power Automate, Power Apps, and Azure Logic Apps can all call the same service. Prebuilt connectors come in two kinds: standard connectors such as SharePoint are included in every Copilot Studio plan, and premium connectors are available in select plans. Custom connectors wrap any API that has no prebuilt connector, and they are taught in [Custom Connectors & REST APIs](../05-rest-api/readme.md).
 
-Each connector exposes actions, and in Copilot Studio each action you add becomes a tool. You can add a connector tool at agent level from the Tools page, call it inside a topic, or add some connectors as a knowledge source (that last option is in preview). A maker adds a tool in a few clicks: **Tools**, **Add a tool**, **Connector**, pick the service and the action, create or select a connection, then **Add and configure**.
+Each connector exposes actions, and in Copilot Studio each action you add becomes a tool. You can add a connector tool at agent level from the Tools page, call it inside a topic, or add some connectors as a knowledge source (that last option is in preview). A maker adds a tool in a few clicks: **Tools**, **Add a tool**, **Connector**, pick the service and the action, create or select a connection, then **Add and configure**. Give everything you create at environment level a prefix such as `CS-` (agents, flows, prompts, connectors, tables, and named connections), so cleanup finds it; topics, entities, and knowledge inside an agent go when the agent is deleted.
 
 | Connector example | Typical action as a tool | Help desk use |
 |-------------------|--------------------------|---------------|
@@ -21,7 +21,7 @@ Each connector exposes actions, and in Copilot Studio each action you add become
 
 ## How the orchestrator picks a tool
 
-With generative orchestration on, which is the default for new agents, the agent decides at runtime which tool, topic, or knowledge source answers a request. It weighs the tool's name and description, the conversation so far, the user's intent, the inputs and outputs the tool needs, and the tools it already used in the conversation. The description carries most of the weight, so write what the tool does and when to use it in the words your users type.
+With generative orchestration on, which is the default for new agents, the agent decides at runtime which tool, topic, or knowledge source answers a request. It weighs the tool's name and description, the conversation so far, the user's intent, the inputs and outputs the tool needs, and the tools it already used in the conversation. The description carries most of the weight, so write what the tool does and when to use it in the words your users type. A vague description makes the agent answer without calling the tool, and names typed in the wizard don't carry over, so rename the tool on its settings page after **Add and configure**.
 
 The orchestrator also fills the inputs. By default every input is set to Dynamically fill with AI: the agent pulls the value from the conversation, and when it cannot find one it generates a question to ask the user. You never author a question node for those inputs. When a value must never come from the user, set Fill using to Custom value and enter a fixed value, a variable, or a Power Fx formula such as `System.User.Email`.
 
@@ -54,6 +54,8 @@ Every connector call runs as someone, and that choice decides what data the agen
 
 Maker-provided credentials need an authenticated channel, and administrators can turn the option off for an environment in the Power Platform admin center. Plan with that in mind before you build an agent around shared credentials.
 
+The credential choice can also decide whether a tool runs at all. A Teams post tool on end user credentials stopped the test chat at "Let's get you connected first", and **Retry** kept failing until the tool was switched to **Maker-provided credentials**. The **Publish** dialog then warns "Your agent runs tools that use the author's credentials."
+
 ## One action or several steps
 
 A connector tool runs one action. When a request needs several actions in a fixed order, such as generate a ticket number, write the ticket, and email the requester, those steps belong in an agent flow that the agent calls as one tool; agent flows are taught in [Agent Flows: Deterministic Automation](../04-agent-flows/readme.md).
@@ -69,14 +71,6 @@ Topic-level calls and agent-level tools coexist. Clear **Allow agent to decide d
 Once a team has a working set of tools, rebuilding them in every agent wastes time and drifts. A component collection packages agent components, including topics, knowledge, tools, child agents, MCP servers, connectors, flows, and entities, so several agents can use them. You create a collection from an agent's **Settings** > **Component collections**, or from the Component collections workspace on the side bar.
 
 Adding components to a collection moves them out of the agent, and the agent then references them in the collection. Other authors can use the collection but cannot change the components inside it, and only the creator or a user with the system customizer or system admin role can edit it. Setting a primary agent restricts a collection to one agent. Exporting a collection produces a managed solution you can import into another environment; collections with connectors or environment variables travel better inside a solution you create yourself.
-
-## What the Live Build Taught
-
-**Credentials decide whether a tool runs at all.** A Teams post tool on end user credentials stopped the test chat at "Let's get you connected first", and **Retry** kept failing. **Maker-provided credentials** on the tool fixed it, and the **Publish** dialog then warns "Your agent runs tools that use the author's credentials."
-
-**The name and description are the routing contract.** A vague description makes the agent answer without calling the tool. Rename the tool on its settings page after **Add and configure**, because names from the wizard do not carry over.
-
-**Prefix every environment-level artifact you create.** Give agents, flows, prompts, connectors, tables and named connections a prefix such as `CS-`, so cleanup finds them. Topics, entities and knowledge inside an agent need none, because deleting the agent removes them.
 
 ## Hands-On Demo
 

@@ -75,7 +75,9 @@ A tool that only a child agent should call can be hidden from the parent's plann
 
 A connected agent is another published Copilot Studio agent in the same environment that allows connections under **Settings** > **Let other agents connect to and use this one**. On the main agent's **Agents** page you select **Add an agent**, choose **Copilot Studio** under **Connect to an external agent**, and pick it from the list. The connected agent keeps its own orchestration, tools, knowledge and model.
 
-The description you see after connecting is a local copy that you control, and changes to the other agent's own description don't sync. Clear **Pass conversation history to this agent** when the connected agent should receive only the task, which keeps conversation details inside the main agent. Changes to a connected agent reach the main agent only after the connected agent is published again.
+The description you see after connecting is a local copy that you control, and changes to the other agent's own description don't sync. Clear **Pass conversation history to this agent** when the connected agent should receive only the task, which keeps conversation details inside the main agent. Changes to a connected agent reach the main agent only after the connected agent is published again. Publish the specialists before the parent, because a parent can connect only to a published agent with that setting on, and a specialist that runs on maker credentials carries them into every parent that connects it.
+
+In the parent's instructions, name each connected or child agent with a reference. The `/` insert writes one such as `{System.Bot.Components.Agents.'<schema>.InvokeConnectedAgentTaskAction.<FileName>'.DisplayName}`, which renders as an agent chip, and with those chips all five routes of the travel planner reached the right agent.
 
 ## Routing patterns that hold up
 
@@ -96,13 +98,7 @@ Learn's multi-agent guidance condenses into a checklist. Most failures in a mult
 
 Routing everything through the parent is one valid design; a child can also answer the user directly when that is a deliberate choice. What every design has to prevent is the parent answering a request the subagent already handled.
 
-## What the Live Build Taught
-
-**Publish the specialists first, because a parent can connect only to a published agent.** Each one needs **Let other agents connect to and use this one** switched on, and the parent is published last. A specialist that runs on maker credentials carries them into every parent that connects it.
-
-**Name connected and child agents by reference in the parent's instructions.** A reference such as `{System.Bot.Components.Agents.'<schema>.InvokeConnectedAgentTaskAction.<FileName>'.DisplayName}` renders as an agent chip, and with those chips all five routes of the travel planner reached the right agent.
-
-**An evaluation's tool use method cannot grade a route to a connected or child agent.** Its **Select tools** picker lists only the agent's own tools. Read the case **Details** panel instead and gate on **Meaning match**, which held steady while Answer quality moved 86, 71, 71 and 57.
+An evaluation's tool use method can't grade a route to a connected or child agent, because its **Select tools** picker lists only the agent's own tools. Read each case's **Details** panel instead and gate on **Meaning match**, which held steady in the travel planner's runs while Answer quality moved from 86 to 57.
 
 ## Hands-On Demo
 

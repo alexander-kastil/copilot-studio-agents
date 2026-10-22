@@ -56,9 +56,9 @@ OAuth 2.0 lets each user sign in and grant consent; it comes in three variants: 
 
 ## Controlling what the agent may call
 
-All tools on a server are on by default, with the **Allow all** toggle on. Turn it off to switch individual tools on and off, so an agent that only reads can never call a server's delete tool. With **Allow all** off, tools the server adds later stay off until you turn them on, which keeps runtime discovery from widening the agent's reach silently.
+All tools on a server are on by default, with the **Allow all** toggle on. Turn it off to switch individual tools on and off, so an agent that only reads can never call a server's delete tool. With **Allow all** off, tools the server adds later stay off until you turn them on, which keeps runtime discovery from widening the agent's reach silently. With it on, a redeploy widens the agent at once: the HR agent offered `assign_shift` as soon as the server added it, so turn **Allow all** off and disable tools the agent has no reason to call, such as `remove_employee` for a scheduling agent.
 
-Governance comes from the connector layer. Copilot Studio reaches MCP servers through Power Platform connectors, so a data policy that blocks a connector also blocks the server and its tools. Each user also needs a connection the first time the agent calls a server that requires sign-in, in the test pane and in every channel.
+Governance comes from the connector layer. Copilot Studio reaches MCP servers through Power Platform connectors, so a data policy that blocks a connector also blocks the server and its tools. Each user also needs a connection the first time the agent calls a server that requires sign-in, in the test pane and in every channel. A tool that asks the user for confirmation needs a **Message to display**; without one the call fails with `This tool requires user confirmation, but no confirmation message has been set.`
 
 ![One MCP tool registration used from the Copilot Studio test panel and from Microsoft 365 Copilot, each with its own per-user connection to the same HR MCP Server.](../../../labs/04-cs-tools/06-mcp/_images/mcp-registration-and-connections.svg)
 
@@ -93,13 +93,7 @@ builder.Services.AddMcpServer()
 
 Adding a capability means adding a method and restarting the server. Connected agents discover the new tool the next time they list the server's tools, which is the runtime contract from the table above in practice.
 
-## What the Live Build Taught
-
-**A redeploy can add tools to the agent unasked.** With **Allow all** on, the agent offered `assign_shift` as soon as the server added it. Turn **Allow all** off and disable tools the agent has no reason to call, such as `remove_employee` for a scheduling agent.
-
-**A tool that asks for confirmation needs a message.** Without a **Message to display**, the call fails with `This tool requires user confirmation, but no confirmation message has been set.`
-
-**A plausible answer is not a tool call.** When the reply names people missing from the server's data, the orchestrator answered without calling the server. The server's search semantics bound the agent too: while the deployed `search_employees` matched only single names, a full-name request returned an empty list and the agent refused to book.
+Check that an answer really came from the server. When a reply names people missing from the server's data, the orchestrator answered without calling it, and the activity map shows no tool call. The server's search semantics bind the agent too: while the deployed `search_employees` matched only single names, a full-name request returned an empty list and the agent refused to book.
 
 ## Hands-On Demo
 

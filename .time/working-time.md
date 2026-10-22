@@ -55,5 +55,7 @@
 | 2026-10-22 | 0.53 | 09:02 | 09:34 | App-building demo run live after the credit setup, demo status table with costs per demo |
 | 2026-10-22 | 0.08 | 09:10 | 10:14 | Eight Cowork demos run live in parallel, all demo guides corrected, run cost recorded per demo |
 | 2026-10-22 | 0.58 | 09:34 | 10:09 | Detailed cost record per demo, pending charges checked in the admin centers and Azure, with a scheduled recheck |
+| 2026-10-22 | 0.73 | 10:14 | 10:58 | Course teaching updated from the live demo runs, demo cost tables with model comparisons |
+| 2026-10-22 | 0.43 | 10:27 | 11:24 | Legacy web app automation demo run live, demo guide corrected to the live product, demo status updated |
 
-**Total: 33.09h**
+**Total: 34.25h**

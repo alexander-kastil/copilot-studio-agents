@@ -32,7 +32,7 @@ You rarely start from an empty page. Prompt assistant (formerly Create a prompt 
 
 A prompt can also read business data. In the Knowledge section of the input menu you select a Dataverse table, and the prompt answers over those rows at runtime. Learn notes that agents configured for anonymous users cannot use Dataverse tables as knowledge in a prompt.
 
-You test while you author. You type a sample value for each input, select Test, and read the response next to your instructions. Only when the test output has the shape you want do you save the prompt and add it to the agent.
+You test while you author. You type a sample value for each input, select Test, and read the response next to your instructions. Only when the test output has the shape you want do you save the prompt and add it to the agent. When the data source doesn't exist yet, feed the prompt a stub: the demo's **Set sample stock** node fills `Topic.foodStock` with a sample table, so you test the prompt first and swap that node for a connector call later.
 
 ## Models and settings
 
@@ -53,6 +53,8 @@ Leave temperature at 0 for extraction, classification, and anything a later step
 When the output feeds another tool, a flow, or a condition, switch the output to JSON in the top-right corner of the editor. In Auto detected mode the format follows whatever your latest test returned; once you edit the JSON example, the format becomes Custom and stays fixed. Saving the prompt locks the format, so an agent, flow, or app that calls the prompt always receives the same fields.
 
 Two limits shape the design. You cannot edit the generated JSON schema directly, only the example it is built from. A format without field keys, such as a bare list of strings, is not supported, so wrap values in objects with named fields.
+
+With text output, the model wraps JSON in a code fence or adds sentences unless the instructions forbid it, so keep "Return only a JSON array" and "Return no other text" in them. Read the result's `text` field directly, because wrapping it in `JSON()` escapes the JSON a second time.
 
 ## Code interpreter
 
@@ -78,12 +80,6 @@ Every Standard agent already uses a model through its orchestrator, so a prompt 
 ## The prompt tool in Standard and GitHub Copilot agents
 
 The prompt tool belongs to Standard agents. In GitHub Copilot agents (Learn: GitHub Copilot harness) the comparison table lists the prompt tool as replaced by skills, which package instructions for an agent in the open `SKILL.md` format. A prompt you build here does not move to a GitHub Copilot agent, because agents never move between harnesses. The GitHub Copilot approach is taught in [Agent Skills in Copilot Studio](../../06-cs-gh-copilot/03-agent-skills/readme.md).
-
-## What the Live Build Taught
-
-**The model breaks a JSON contract unless the instructions forbid the extras.** Answers came back wrapped in a code fence or with added sentences. Keep "Return only a JSON array" and "Return no other text" in the instructions, or set the output to JSON, and read the `text` field directly, since wrapping it in `JSON()` escapes the JSON a second time.
-
-**Build the prompt against a stub before the API exists.** The demo's **Set sample stock** node fills `Topic.foodStock` with a sample table, so you test the prompt first and swap that node for a connector call later.
 
 ## Hands-On Demo
 

@@ -105,19 +105,13 @@ Inputs from Adaptive Cards, connectors, and flows often arrive as records or tab
 Concat(Topic.selectedApps, Value, ", ")
 ```
 
-When an API returns JSON as a string, prefer the **Parse value** node: it takes a sample of the JSON and produces a typed record with IntelliSense in later formulas. `ParseJSON` in a formula returns a dynamic value whose fields have no fixed type, so you convert each field you use with `Text` or `Value`.
+When an API returns JSON as a string, prefer the **Parse value** node: it takes a sample of the JSON and produces a typed record with IntelliSense in later formulas. `ParseJSON` in a formula returns a dynamic value whose fields have no fixed type, so you convert each field you use with `Text` or `Value`. Going the other way, call `JSON()` once, where a value leaves the agent. Store the record itself in a variable such as `Global.orderDemand`, because a second `JSON()` on text that already holds JSON escapes it twice.
 
 ## Habits that keep formulas readable
 
-Formulas are configuration that someone else maintains, so write them for that person. Put one calculation in each **Set variable value** node and give the variable a name that says what it holds, such as `slaDays` or `dueDateText`, so the canvas reads as a sequence of steps.
+Formulas are configuration that someone else maintains, so write them for that person. Put one calculation in each **Set variable value** node and give the variable a name that says what it holds, such as `slaDays` or `dueDateText`, so the canvas reads as a sequence of steps. Then trace every computed variable to the node that consumes it, because a variable no node passes on is dead code: an expense agent that calculated ISO dates but passed the raw `departureDate` and `returnDate` to its flow never got the formulas into the database.
 
 Guard every value a user may skip with `IsBlank` or `Coalesce`, because a blank in the middle of a calculation can fail, and an error during a conversation sends the user to the **On Error** system topic. Convert choices and entities with `Text` before comparing them; when a condition compares mismatched types, the **Fix type mismatch** button generates the conversion formula for you. Test each formula on its own in the test panel, using the **Variables** panel's **Test** tab to watch the result change.
-
-## What the Live Build Taught
-
-**Trace every computed variable to the node that consumes it.** A computed variable that no node passes on is dead code. One cloned expense agent calculated ISO date variables, then passed the raw `departureDate` and `returnDate` to its flow, so the formulas never reached the database.
-
-**Encode a value once, where it leaves the agent.** One agent stored `Global.orderDemand` as `JSON(...)` text, and the next topic called `JSON()` on it again, so the value was escaped twice. Store the record itself, and call `JSON()` only where the value leaves the agent.
 
 ## Hands-On Demo
 

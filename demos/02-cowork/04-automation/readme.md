@@ -13,9 +13,9 @@ Instead of asking for the same report every week, you hand Cowork the recipe onc
 1. **Write the prompt** as you normally would, describing the full outcome.
 2. **Set a recurrence** (daily, weekly, monthly, or a specific time).
 3. **Cowork runs it automatically** at each interval and delivers the result.
-4. **Manage schedules** on the **Automations** page (left navigation). **Runs** shows each past or upcoming run. **Manage schedules** lets you edit, pause, resume, or delete a schedule. **Create** defines a schedule directly, and the side panel **Schedule** section works during a session.
+4. **Manage automations** on the **Automations** page (left navigation). **Add** creates one directly, suggested templates such as **Daily briefing** and **Weekly wrap** start from a ready-made prompt, and the filters **All**, **Scheduled**, **Triggers**, and **Paused** sort the list. Each automation shows its recurrence and next run, an **Enable** switch, and a **...** menu with **Edit**, **Run now**, **Pause** or **Resume**, and **Delete**.
 
-When you activate a draft schedule, choose **Activate and run now** to run it immediately and watch its approvals, or **Activate** so the first run waits for the next scheduled time. You can have up to 25 scheduled prompts.
+When you ask for a schedule in chat, Cowork proposes a **Create recurring task?** card with the name, the recurrence (for example **Weekly**, **Friday**, **3:00 PM**), **Run in** (a new conversation for each run), and a description of the job. Its **Run once now** checkbox is ticked by default: leave it ticked to watch a first run and its approvals straight away, or clear it so the first run waits for the schedule, then select **Schedule**. Pausing an automation turns its **Enable** switch off and moves it under **Paused**, where it keeps its settings and does not run until you resume it. You can have up to 25 scheduled prompts.
 
 ---
 
@@ -54,7 +54,7 @@ They pair well but solve different problems. A [custom skill](../03-custom-skill
 
 ## Automation Still Stops for Approval
 
-By default, scheduled and event-driven tasks prepare any send, post, or change to a shared system and hold it for your approval (draft-and-approve). You can pre-authorize actions when you create a task, which trades control for speed. Scheduling the run alone does not approve the send.
+By default, scheduled and event-driven tasks prepare any send, post, or change to a shared system and hold it for your approval (draft-and-approve). A weekly status report, for example, lands as a Word document in the task's **Output** and as an email in your Outlook Drafts folder, and nothing is sent until you tell Cowork to send it. You can pre-authorize actions when you create a task, which trades control for speed. Scheduling the run alone does not approve the send.
 
 Tasks run with your permissions and see only what you can see. They are rate-limited and guarded against triggering themselves in a loop. Results go only to you unless you approve otherwise.
 

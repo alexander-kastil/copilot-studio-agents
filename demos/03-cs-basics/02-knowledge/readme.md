@@ -14,7 +14,7 @@ Every new agent gets a system topic called **Conversational boosting** that cont
 
 ## The knowledge source types
 
-When you select **Add knowledge**, the dialog offers the following source types. After adding one, you give it a unique name and a description. Learn asks for a description that is as detailed as possible, because generative orchestration uses it to decide which source to search.
+When you select **Add knowledge**, the dialog offers the following source types. After adding one, you give it a unique name and a description. Learn asks for a description that is as detailed as possible, because generative orchestration uses it to decide which source to search. Keep uploaded file names short: each name becomes part of the knowledge component's schema name in the agent's YAML, and a long one fails to sync with `PropertyLengthTooLong`.
 
 | Source | What the agent searches | Who can see the content |
 |--------|-------------------------|-------------------------|
@@ -55,24 +55,18 @@ Four settings on the **Generative AI** settings page change what the agent may s
 
 | Setting | What it does | Note |
 |---------|--------------|------|
-| **Allow ungrounded responses** | Lets the agent answer from the model's general knowledge when no source or tool was used | When off, a turn that used no source or tool is blocked and the Fallback topic runs |
+| **Allow ungrounded responses** | Lets the agent answer from the model's general knowledge when no source or tool was used | On for a new agent; when off, a turn that used no source or tool is blocked and the Fallback topic runs |
 | Content moderation | Sets the filter from **Lowest** to **Highest**; Learn names **High** as the default, but a new agent starts at **Low** | A moderation level set on a generative answers node takes precedence |
 | **Tenant graph grounding with semantic search** | Uses the Microsoft 365 semantic index for better SharePoint retrieval | Needs **Authenticate with Microsoft** and a Microsoft 365 Copilot license in the tenant; extra cost |
 | Official source | Marks a highly trusted source so the agent uses it without verification | Not compatible with generative orchestration |
 
-With **Allow ungrounded responses** off, an answer counts as grounded only when it carries an in-text citation. Instructions that tell the model to omit sources, or force a rigid output format such as JSON, can suppress those citations and make answers disappear intermittently. An instruction that asks the agent to always cite its sources keeps citations consistent.
+With **Allow ungrounded responses** off, an answer counts as grounded only when it carries an in-text citation. Instructions that tell the model to omit sources, or force a rigid output format such as JSON, can suppress those citations and make answers disappear intermittently. An instruction that asks the agent to always cite its sources keeps citations consistent. While the setting is on, an ungrounded answer sounds just as right as a grounded one, so open the citation before you trust it: the cited file is what proves grounding.
 
 ## Suggested prompts
 
 Suggested prompts are the starters a user sees on the agent's welcome page in Microsoft Teams or Microsoft Copilot Chat before the first message. You can configure up to 10 in the **Suggested prompts** section of the **Overview** page, each with a title and a prompt, and Copilot Studio may generate some from the agent's description and instructions. They don't appear in the test panel, so you only see them after publishing.
 
 Two channel details decide whether users see them at all. In Teams, the **Conversation Start** system topic opens the chat with the agent's introductory message and skips the welcome page, so turn it off for an agent published only to Teams; users can still open the Prompt Gallery. In Microsoft Copilot, chats always start from the welcome page, and updates can take time to appear because of caching.
-
-## What the Live Build Taught
-
-**A new agent can answer without any source until you switch off ungrounded responses.** **Allow ungrounded responses** starts On, so an answer can sound just as right as a grounded one. Open the citation before you trust it, because the cited file is what proves grounding.
-
-**Keep knowledge file names short.** Each file name becomes part of its component's schema name in the agent YAML. A long name failed to sync with `PropertyLengthTooLong`, because the agent's schema prefix pushed it past the limit.
 
 ## Hands-On Demo
 

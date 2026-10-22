@@ -10,7 +10,7 @@
 | 02/03 Meeting prep skill | meeting-prep | ✅ | ✅ | in 02/06 lane | in 02/06 lane | – |
 | 02/04 Weekly status automation | weekly-status-report | ✅ | ✅ | 16.6M | €5.13 | – |
 | 02/05 Plugins | dietitian | ✅ | ✅ | 14.8M | €4.59 | – |
-| 02/06 Follow-up package | Cowork | ✅ | ◐ | 25.7M | €7.37 | – |
+| 02/06 Follow-up package | Cowork | ✅ | ✅ | 25.7M | €7.37 | – |
 | **Module 03: Copilot Studio Basics** | | | | | | |
 | 03/01 Standard agents | CS-Employee Onboarding Assistant | ✅ | ✅ | | | 0 CC [1] |
 | 03/02 Knowledge | CS-Employee Onboarding Assistant | ✅ | ✅ | | | incl. above |
@@ -25,6 +25,7 @@
 | 04/04 Agent flows | CS-Health Advisor | ✅ | ✅ | | | 0 CC + 0.8 CC non-billed [2] |
 | 04/05 REST API | CS-Food Stock Buddy | ✅ | ✅ | | €0 Azure F1 [3] | incl. above |
 | 04/06 MCP | CS-Restaurant HR Manager | ✅ | ✅ | | €0 Azure F1 [3] | 0 CC [1] |
+| 04/07 Computer use | CS-Contoso IT Help Desk | ✅ | ✅ | | | 0 CC so far [9] |
 | **Module 05: Advanced Copilot Studio Agents** | | | | | | |
 | 05/01 Autonomous | CS-Returns Agent | ✅ | ✅ | | | 0 CC + Work IQ n/a [4] |
 | 05/03 Multi-agent | CS-Business Travel Planner | ✅ | ✅ | | | 0 CC [1] |
@@ -47,6 +48,7 @@ Notes on the Copilot Credits and Euros columns:
 6. All five Preview sessions ran on Oct 22 between 00:43 and 01:08 local time, so they cannot be split by date. PPAC bills 169.72 CC and Monitor shows 169.7. Preview History lists 47.25, 42.35, 33.5, 25.55 and 25.69 CC per session (174.34 in total).
 7. GH-Food Buddy bills 51.67 CC: Preview 20.19, M365 agents SDK client 17.63, and the autonomous run started by the workflow 13.85. The workflow charge is PPAC entry b652e447 (channel workflow-agents, feature Workflows, 26.67 CC billed). That ID is not in Dataverse, so it is attributed to GH-Food Reorder Draft, the only workflow created and run in the window (Oct 22, 01:42).
 8. App build and run credits are not posted yet. The PPAC agent list (refreshed Oct 21) has no App row, and Microsoft 365 Cost management lists no Copilot Managed Runtime usage.
+9. Run on Oct 22 in the default environment on the hosted browser: five **Test directly** runs (one with the CUA model, four with Claude Sonnet 4.5) and one test chat run. The agent's Monitor page showed 0 Copilot credits right after the runs. The map view of the test chat run counts 4 actions, which is 20 CC at the documented 5 credits per step if PPAC bills it later.
 
 ## How the cost was measured
 

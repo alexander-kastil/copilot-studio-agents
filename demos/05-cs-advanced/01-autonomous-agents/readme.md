@@ -34,7 +34,7 @@ Payload instructions and agent instructions do different jobs. The agent's instr
 
 ## Instructions for a run nobody watches
 
-An unattended run has nobody to answer a clarifying question, so the instructions have to make every decision explicit. Name the tool to call, say which payload field fills which input, and state what to do when data is missing. Learn's guidance adds that fewer than 15 tools or topics in one consecutive sequence run more reliably, and that a stubborn tool call can move into an agent flow that the agent calls instead.
+An unattended run has nobody to answer a clarifying question, so the instructions have to make every decision explicit. Name the tool to call, say which payload field fills which input, and state what to do when data is missing. Learn's guidance adds that fewer than 15 tools or topics in one consecutive sequence run more reliably, and that a stubborn tool call can move into an agent flow that the agent calls instead. Without the sentence "Send that email to the customer with CS-Work IQ Mail.", a triggered run in the demo wrote its reply only into the chat.
 
 Authentication is part of the same problem. If a tool asks the user to sign in, an autonomous run stops, because nobody is there to sign in. Every action in an autonomous path has to use working maker authentication, and the instructions can tell the agent never to request credentials.
 
@@ -44,7 +44,7 @@ On a connector tool, that setting lives on the tool's page under **Details** > *
 
 Before you publish, a trigger still records each event, but its flow run fails at the agent call, so nothing gets answered; that gives you a safe test loop. You cause the event once, select the test trigger icon next to the trigger on the **Overview** page, pick the recorded instance and select **Start testing**. The test pane then runs the agent on that payload, and the activity map shows which tools it chose and whether an input was missing.
 
-After you publish, the agent reacts to every event, and each run appears on the **Activity** page as an automated session. Events that arrive close together can share one run: in the lab, several files uploaded at once start one flow run and one agent session that processes them one after another.
+After you publish, the agent reacts to every event, and each run appears on the **Activity** page as an automated session. Events that arrive close together can share one run: in the lab, several files uploaded at once start one flow run and one agent session that processes them one after another. A trigger never backfills, so mail that arrived before it existed is never answered. A new shared mailbox needed about 15 minutes before its trigger could read the Inbox, so create it well before the session.
 
 ![Two resume PDFs uploaded at once start one flow run and one agent instance, which calls add_employee for the first file and then for the second.](../../../labs/05-cs-advanced/01-autonomous-agents/_images/batched-uploads-one-agent-run.svg)
 
@@ -64,7 +64,7 @@ Event triggers can only use the agent author's credentials. Before you publish, 
 | Narrow trigger parameters | Filter the event, such as one list or one folder, so unrelated events never start a run |
 | Validate the input | Check that the event is authentic and expected before the agent acts on it |
 | Human approval for high-stakes actions | Route sensitive steps through an approval in an agent flow |
-| Audit | Review the **Activity** page and keep logs of what each run did |
+| Audit | Review the **Activity** page, whose **Last step** column names the tool each run used, such as `SendEmailWithAttachments`, and keep logs of what each run did |
 
 Administrators can block event triggers for an environment through data policies, and they can watch resource use in the Power Platform admin center.
 
@@ -73,14 +73,6 @@ Administrators can block event triggers for an environment through data policies
 Every trigger payload counts as a message to the agent, whether or not a person is involved. A **Recurrence** trigger set to every ten minutes therefore sends 144 messages a day before the agent has done anything useful. The steps the agent then takes are billed as agent actions, which the billing table rates at 5 Copilot Credits each.
 
 Frequent triggers also count against service quotas, and an agent that exceeds them can be throttled. Keep recurrence intervals as long as the business allows, and track how many triggers are active in an environment.
-
-## What the Live Build Taught
-
-**A trigger payload carries no intent, so the instructions must supply it.** Without the sentence "Send that email to the customer with CS-Work IQ Mail.", the triggered run wrote its reply only into the chat. Name the tool and the action in every agent instruction a trigger runs.
-
-**A trigger never backfills, so mail that arrived earlier is never answered.** A new shared mailbox needed about 15 minutes before its trigger could read the Inbox, so create it well before the session.
-
-**Unattended runs leave an audit trail on the Activity page.** The **Last step** column names the tool each run used, such as `SendEmailWithAttachments`, so check it to confirm the expected tool ran.
 
 ## Hands-On Demo
 

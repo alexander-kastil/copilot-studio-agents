@@ -17,7 +17,7 @@ Actions come in four families, and a single flow usually mixes them.
 | Built-in tools | Control structures and data operations | Loops, conditions, date and time functions, child flows |
 | Connectors | Reads or writes another service | Office 365 Outlook **Send an email (V2)**, SharePoint, a custom connector |
 
-Agent flows live in solutions, so they get drafts, versioning, export and import like any other Power Platform component. The designer records a version history in Dataverse each time you save, and the **Flow checker** lists every error that blocks publishing.
+Agent flows live in solutions, so they get drafts, versioning, export and import like any other Power Platform component. The designer records a version history in Dataverse each time you save, and the **Flow checker** lists every error that blocks publishing. Each agent flow is a row in the Dataverse `workflows` table with `category` 5, so a script that creates flows through the Web API must look each one up by name first, because a rerun after a failure creates duplicates.
 
 ## Deterministic versus generative work
 
@@ -87,6 +87,10 @@ A flow can still use a model, as long as the model does one bounded job at a fix
 
 Human review uses the same pattern. A **Request information** action pauses the run and sends the reviewer an Outlook email with the inputs you defined, and every input becomes a parameter that later actions can read. Multistage approvals can combine human stages with AI approval stages that approve or reject against your criteria and record a rationale.
 
+A **Request information** step needs its **Channel**, **Outlook** or **Teams**: without one the flow doesn't turn on and reports `missing required property 'RequestForInformationInput/channel'`. Place the step after **Respond to the agent**, so the chat isn't held while the reviewer answers.
+
+A saved prompt can serve a flow without becoming an agent tool. Build it on the **Tools** page through **Add a tool** > **Add new Prompt**, add one **Text** input per value, select **Save**, then **Cancel** at **Add and configure**. The flow calls it through the `aibuilderpredict_customprompt` operation, passes each input as `item/requestv2/<inputId>`, and reads the answer from `body/responsev2/predictionOutput/text`.
+
 The prompt node belongs to the standard harness. Workflows on the GitHub Copilot harness replace it with an agent node, which the [Tools, MCP, and the New Workflows Designer](../../06-cs-gh-copilot/04-workflows-and-mcp/readme.md) topic covers.
 
 ## Building, testing and publishing a flow
@@ -125,14 +129,6 @@ Every action an agent flow executes consumes Copilot Studio capacity, billed as 
 | Through **When an agent calls the flow** for a user licensed for Microsoft 365 Copilot | No charge under the included usage rules |
 
 When the prepaid capacity is used up, new agent flow runs are blocked while runs already in progress finish; the agent itself keeps answering. Power Automate cloud flows stay on Power Automate licensing and aren't affected. Administrators review consumption per flow in the Power Platform admin center under **Licensing** > **Copilot Studio**.
-
-## What the Live Build Taught
-
-**A prompt can be a flow step without being an agent tool.** Build it on the **Tools** page through **Add a tool** > **Add new Prompt**, add one **Text** input per value, then **Save** and **Cancel** at **Add and configure**. The flow calls `aibuilderpredict_customprompt`, passes inputs as `item/requestv2/<inputId>` and reads `body/responsev2/predictionOutput/text`.
-
-**Human review needs a channel and belongs after the response.** A **Request for information** step without a **Channel**, **Outlook** or **Teams** stops the flow from turning on, with `missing required property 'RequestForInformationInput/channel'`. Place it after **Respond to the agent** so the chat is not held.
-
-**A rerun create script duplicates flow rows.** Each agent flow is a row in the `workflows` table with `category 5`, so a rerun after a failure doubles them. Look each row up by name before you create it.
 
 ## Hands-On Demo
 

@@ -24,6 +24,8 @@ A custom connector is a Power Platform connector you define for your own API. Yo
 
 Because the connector lives in the environment, the same definition serves a Copilot Studio agent, a Power Automate flow, and a Power Apps canvas app. Each operation you add to an agent becomes one tool with its own name, description, and inputs, exactly like a prebuilt connector action. For the agent to use it, the connector needs view and share permissions for the organization.
 
+An operation's description can also carry call order. The food connector's update operation tells the agent to look the id up with the list operation first, and without that line the agent guessed an id and got `Not Found`. One connector whose operations have real descriptions beats three connectors whose operations carry bare ones such as "Gets all food".
+
 The import path is strict about the format. Custom connectors import OpenAPI 2.0 (formerly Swagger) definitions, and Learn states that OpenAPI 3.0 definitions are not supported by this import. When the API only publishes 3.0, convert it first or use the REST API tool, which translates v3 for you.
 
 ## Securing a custom connector with Microsoft Entra ID
@@ -70,13 +72,7 @@ The node suits quick, deterministic calls inside a designed conversation, such a
 | One call at a fixed step of a topic, response shaped by Power Fx | An HTTP request node |
 | A service that publishes an MCP server | An MCP tool, see [MCP Servers as Agent Tools](../06-mcp/readme.md) |
 
-## What the Live Build Taught
-
-**Design the stub in the API's shape before you swap it.** The prompt demo fills `Topic.foodStock` from a sample-stock node, and the connector call replaces that node, but the node refused to save the API's list into a variable of a different shape. Match that shape from the start, or let the node create a new variable and rename it.
-
-**An operation's description encodes call order.** The update tool's description tells the agent to look the id up with the list tool first; without that line, the agent guessed an id and got `Not Found`. One connector with real descriptions beats three connectors whose operations carry bare ones such as "Gets all food".
-
-**A free-tier web app starts cold.** Its first tool call can fail with a timeout while the app starts, so open the API once before you demo it.
+Two habits keep the first real call clean. When a connector call replaces a stub, such as the sample-stock node that fills `Topic.foodStock` in the prompt demo, give the stub the API's shape from the start, because the node refuses to save the API's list into a variable of a different shape; otherwise let the node create a new variable and rename it. An API on a free-tier web app starts cold, so its first tool call can time out while the app starts: open the API once before you demo it.
 
 ## Hands-On Demo
 

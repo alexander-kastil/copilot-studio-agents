@@ -10,7 +10,7 @@ This topic explains what publishing does, how the authentication setting decides
 
 You edit a draft; users talk to the published version. Selecting **Publish** and confirming copies the current draft to every channel the agent is connected to, which can take a few minutes. Until you publish again, edits stay in the draft and users keep the old behavior.
 
-Running conversations don't switch versions mid-session. The new version arrives when a new session starts, and in most channels a session ends after 30 minutes of inactivity. In Teams, where conversations persist, typing `start over` resets the session at once; otherwise the update can take up to an hour to reach a user.
+Running conversations don't switch versions mid-session. The new version arrives when a new session starts, and in most channels a session ends after 30 minutes of inactivity. In Teams, where conversations persist, typing `start over` resets the session at once; otherwise the update can take up to an hour to reach a user. **Force newest version** moves ongoing Teams chats to the new version at once, and because it can interrupt conversations in progress, keep it for fixes users need now.
 
 ## Authentication decides your channels
 
@@ -26,7 +26,7 @@ New agents use **Authenticate with Microsoft**, which signs users in with Micros
 
 ## The Microsoft 365 and Microsoft Teams channel
 
-After the first publish, select **Channels** on the top menu bar and open **Microsoft 365 and Microsoft Teams**. Keep **Make agent available in Microsoft 365 Copilot** selected if the agent should also appear in Copilot Chat, then select **Add channel**. From there you can install the agent for yourself, copy an installation link, and choose who else finds it.
+After the first publish, select **Channels** on the top menu bar and open **Microsoft 365 and Microsoft Teams**. Keep **Make agent available in Microsoft 365 Copilot** selected if the agent should also appear in Copilot Chat, then select **Add channel**. From there you can install the agent for yourself, copy an installation link, and choose who else finds it. A newly added agent can take a while to show in the **@** list of Microsoft 365 Copilot; until then, open it from **Agents** > **More agents**.
 
 | Availability option | Who finds the agent | Approval |
 |---------------------|---------------------|----------|
@@ -36,6 +36,8 @@ After the first publish, select **Channels** on the top menu bar and open **Micr
 | Download as a .zip | Whoever the administrator or you upload the app package for | Follows your tenant's app policies |
 
 A new admin approval is only needed when you change the agent's details, such as its name, icon, or descriptions. Content changes reach approved users every time you publish. Learn's advice for a rollout is to publish for yourself first, test the published version in Teams, share with a small group, and submit to the organization last.
+
+Sharing and listing are separate steps. Sharing the agent with a security group gives its members **End user access**, shown as **Viewer**, and **Show in Built By Your Colleagues** under **Show to my teammates and shared users** is what lists it in Teams. The share is saved as `authorizedSecurityGroupIds` in the agent's `settings.mcs.yml`, so access is reviewable in source control.
 
 Two Teams behaviors surprise makers. The **Conversation Start** topic runs only once per user in Teams, the first time they add the agent, because Teams reuses the same conversation. Teams also renders at most six suggested actions in a question and shows the satisfaction survey as text only.
 
@@ -62,14 +64,6 @@ Copilot Studio also builds agents that extend Microsoft Copilot Chat directly, o
 | Demo website | Feedback from teammates before release | None | You share the URL |
 | Custom website | Customers or partners on your own site | Your choice | Your web team and **Web channel security** |
 | Agent for Microsoft Copilot | Grounded answers inside Copilot Chat | Microsoft Entra ID | An administrator adds it to the catalog |
-
-## What the Live Build Taught
-
-**Force newest version moves ongoing Teams chats at once, so reserve it for fixes.** Without it, users wait for a new session or for `start over`. The option can interrupt conversations in progress, so use it only when users need the change now.
-
-**Sharing and listing are separate steps.** Sharing with a security group gives its members **End user access**, shown as **Viewer**. **Show in Built By Your Colleagues**, under **Show to my teammates and shared users**, lists the agent in Teams. The share is saved as `authorizedSecurityGroupIds` in `settings.mcs.yml`, so access is reviewable in source control.
-
-**Discovery lags the install.** A newly added agent can be missing from the **@** list in Microsoft 365 Copilot. If it is missing, open it from **Agents** > **More agents**.
 
 ## Hands-On Demo
 

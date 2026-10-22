@@ -34,11 +34,13 @@ Copilot Studio supports Adaptive Cards schema 1.6 and earlier, but the channel d
 
 ## From card inputs to variables
 
-When you save a card in an **Adaptive Card** node, Copilot Studio creates output variables from the inputs in the JSON, one per `id`, with a matching type. If the generated variables are wrong, for example a number read as text, you fix the list and the types with **Edit Schema** in the **Adaptive Card node properties** panel. After the user selects a submit button, the variables hold what they entered and the topic continues with the next node.
+When you save a card in an **Adaptive Card** node, Copilot Studio creates output variables from the inputs in the JSON, one per `id`, with a matching type. If the generated variables are wrong, for example a number read as text, you fix the list and the types with **Edit Schema** in the **Adaptive Card node properties** panel. After the user selects a submit button, the variables hold what they entered and the topic continues with the next node. A card input stores exactly what the user typed, with no entity extraction or slot filling, so a card suits a multi-field form and a **Question** node stays the better choice for a single conversational value.
 
 ![The six card inputs become topic variables, and a Formula Card binds them into the Candidate Summary, turning the two table variables into text with Text and Concat.](../../../labs/03-cs-basics/05-adaptive-cards/_images/adaptive-card-round-trip.svg)
 
 A multi-select `Input.ChoiceSet` returns several values, so treat its variable as a list and turn it into text with Power Fx before you show it. The previous topic, [Power Fx: Formulas in Topics](../04-power-fx/readme.md), covers the formulas that do this.
+
+In the topic's YAML, an **Adaptive Card** node is a three-part contract: the input `id` in the JSON, the `output.binding` that maps it to a variable, and the `outputType.properties` that declares its type must match. The Copilot Studio extension for VS Code reports a break by name, such as `AdaptiveCardMissingActionSubmit`, so its messages double as a checklist.
 
 ## Dynamic cards with Power Fx
 
@@ -60,15 +62,7 @@ A card waits for a submission, and users don't always cooperate. If a user types
 
 Submit buttons stay clickable after use, so a user can select a button on an earlier card while a later one is waiting. Give every submit action unique data, for example an `actionSubmitId` value that names the card and the action, and check it when you process the response. In a custom web chat, disable a card's inputs after its first submission.
 
-Validate inside the card where you can, because it saves a round trip. Inputs support `isRequired`, a `regex` pattern, and an `errorMessage`, so most malformed values are caught before the user submits. Keep labels short, use `Input.ChoiceSet` wherever the set of answers is known, and stay within schema 1.5 when Teams is a channel.
-
-## What the Live Build Taught
-
-**A card input stores the typed value verbatim, with no entity extraction.** Replacing a Question node with a card trades away NLU and slot filling. Cards suit a multi-field form and are wrong for a single conversational value.
-
-**The Adaptive Card node is a three-part contract that must agree.** The input `id` in the JSON, the `output.binding` that maps it to a variable, and the `outputType.properties` that declares its type must match. The VS Code extension reports a break by name, such as `AdaptiveCardMissingActionSubmit`, so its messages double as a checklist.
-
-**Client-side input rules are hints.** Some clients ignore `min` on a number input, so check the value in the topic after submit, as the demo does when it filters out zero rows before the order.
+Validate inside the card where you can, because it saves a round trip. Inputs support `isRequired`, a `regex` pattern, and an `errorMessage`, so most malformed values are caught before the user submits. Keep labels short, use `Input.ChoiceSet` wherever the set of answers is known, and stay within schema 1.5 when Teams is a channel. Treat these rules as hints, because some clients ignore `min` on a number input: check the value again in the topic after submit, as the demo does when it drops rows with a quantity of zero before the order.
 
 ## Hands-On Demo
 

@@ -59,7 +59,7 @@ flowchart LR
 2. **Create a spending policy.** On the **Configuration** page, select **+ Add spending policy**. Under **Scope user and group**, choose **Specific groups** and select your pilot group. Under **Select agents and services**, select **Cowork**. Set the limits, keeping a per-user limit so one person cannot drain the whole budget, choose the billing method, and optionally assign a model profile.
 3. **Decide on Anthropic models.** Under **Copilot** > **Settings** > **View All** > **AI providers operating as Microsoft subprocessors**, choose whether the Anthropic family stays on. Turning it off does not block Cowork access, because **Auto** picks from the remaining models. See [Optimize Copilot configuration settings](https://learn.microsoft.com/microsoft-365/copilot/optimize-microsoft-365-configuration-settings#recommended-copilot-tenant-settings).
 4. **Set discovery.** Turn on the **AI experiences enabled by usage-based billing** setting so licensed users can find Cowork. The setting controls visibility only. If Cowork is discoverable but billing is not enabled, users can request access, and admins approve the request.
-5. **Users verify access.** A pilot user opens [copilot.cloud.microsoft](https://copilot.cloud.microsoft), selects **Cowork** in the top toggle next to Chat, starts a task, approves an action when Cowork asks, and finds the task under **My tasks**.
+5. **Users verify access.** A pilot user opens [copilot.cloud.microsoft](https://copilot.cloud.microsoft), selects **Cowork** in the **Chat** | **Cowork** | **Code** toggle at the top of the left pane, starts a task, approves an action when Cowork asks, and finds the task under **My tasks**.
 
 If Cowork still does not appear, first check whether the user is in scope of a spending policy that selects Cowork. Then recheck licensing, the billing policy, and tenant enablement; rollout changes can take time to propagate.
 
@@ -71,7 +71,7 @@ For a click-by-click admin checklist with the plugin settings and a verification
 
 ## Where to Access Cowork
 
-- **Browser**: [copilot.cloud.microsoft](https://copilot.cloud.microsoft) (Microsoft Copilot; select **Cowork** in the top toggle next to Chat)
+- **Browser**: [copilot.cloud.microsoft](https://copilot.cloud.microsoft) (Microsoft Copilot; select **Cowork** in the **Chat** | **Cowork** | **Code** toggle at the top of the left pane)
 - **Outlook and Teams**: Cowork also works inside both apps.
 - **Desktop**: Microsoft Copilot app for Windows and macOS
 - **Mobile**: Microsoft Copilot app for iPhone and Android. Custom skills are not available on mobile.
@@ -81,7 +81,7 @@ For a click-by-click admin checklist with the plugin settings and a verification
 ## How a Typical Interaction Works
 
 1. **Describe your task**: Use natural language. Example: *"Send a meeting recap to my team and attach the notes from today."*
-2. **Watch Cowork work**: It breaks your request into steps and works through them visibly, one by one.
+2. **Watch Cowork work**: It breaks your request into steps and works through them visibly, one by one; each step line names the tool it used, such as **View calendar** when it reads your week.
 3. **Steer at any time**: Interrupt, add context, or redirect during execution.
 4. **Approve before sensitive actions**: Before sending an email or posting in Teams, Cowork pauses and asks for your go-ahead. Risk level (medium or high) is shown on each action.
 5. **Review the results**: Download documents, confirm sent messages, or ask for changes.
@@ -113,18 +113,18 @@ For admins, the switch is the **Enhanced personalization** control. It is on by 
 
 | Model | Use it for |
 |---|---|
-| **Auto** | For most day-to-day work. |
-| **GPT 5.5 (Frontier)** | Capable model for medium effort work. |
-| **GPT 5.6 Sol** | Intelligent and efficient for hard work. |
-| **GPT 5.6 Terra** | Balanced effort for common tasks. |
+| **Auto** | Best model for the task. |
+| **GPT 6.1 Sol** | Intelligent and efficient for hard work. |
 | **GPT 6 Astra** | Latest model for tough problems. |
-| **Opus 5** | For complex, high stakes work. |
-| **Claude Sonnet 5** | For everyday tasks and fast responses such as drafting, quick lookups, and day-to-day work. |
-| **Claude Fable 5.1** | Most advanced model for ambitious work. |
+| **GPT 5.5** | Capable model for medium effort work. |
+| **Opus 5.5** | For complex, high stakes work. |
+| **Sonnet 5.5** | Efficient for everyday tasks. |
 
-**Auto** is the default, and it suits most work. Cowork picks the model for each task from the models your organization makes available, so you rarely need to change the **Model** dropdown. A model badge in the conversation shows which model produced each response.
+**Auto** is the default, and it suits most work. Cowork picks the model for each task from the models your organization makes available, so you rarely need to change the model. The list changes as Microsoft ships models and as your admin turns families on or off: the table shows the picker of the class tenant on 22 October 2026, and Claude Fable 5 (Preview) appears only after an admin turns it on. A model badge in the conversation shows which model produced each response.
 
-Reasoning effort sets how hard Cowork works on a task. The five levels are **Light**, **Medium** (default), **High**, **Extra High**, and **Max**, and you select them from the dropdown next to the model picker on the web, Windows, and macOS. Higher effort is more thorough but slower, and it uses more credits. Each Hands-On Demo states the effort it needs, and none of them needs High or Max.
+Reasoning effort sets how hard Cowork works on a task. One button next to the send arrow holds both choices and reads, for example, **Auto Medium**: it opens an **Effort** slider with five stops from **Faster** to **Smarter** (**Light**, **Medium**, **High**, **Extra High**, and **Max**) and a row that opens the model list. Higher effort is more thorough but slower, and it uses more credits. The picker keeps your last choice on that device, so check it before each task; each Hands-On Demo states the effort it needs, and none of them needs High or Max.
+
+Cowork shows no credit figure per task. In a task, **...** > **Usage details** shows your Cowork usage limit as a bar with the share left, the date the limit resets, and the credits spent over time, all for your whole account, and recent activity can take a while to appear. Admins see consumption per service and per user under **Copilot** > **Cost management** > **Consumption** in the Microsoft 365 admin center.
 
 Admins can turn off the Anthropic model family or build model profiles and assign them to spending policies; see [Human-in-the-Loop](../06-staying-in-control/readme.md).
 
@@ -144,24 +144,25 @@ Cowork's capabilities span five areas: communication, documents, calendar, resea
 - Create Word documents, Excel spreadsheets, PowerPoint presentations, and PDFs from scratch
 - Edit existing documents shared in the conversation
 - Edit an existing Word, Excel, or PowerPoint file in place in OneDrive or SharePoint; its version history stays available
-- Find output files in the side panel **Output folder** and your OneDrive **Cowork** folder; **Download All** zips up to 50 files and 500 MB
+- Find output files under **Output** in the task's **Workspace** panel and in OneDrive under `Documents/Cowork/Tasks/<task>/output`; **Download All** zips up to 50 files and 500 MB
 - Create and reorganize SharePoint and OneDrive folders
 
 ### Calendar & Meetings
 - Schedule meetings using natural language (*"Set up a 30-minute check-in with Alex tomorrow at 2 PM"*)
 - Manage your calendar: add events, resolve conflicts, decline meetings with a reason
+- Link a prep document into an event; Cowork adds it as a OneDrive link in the body, because its calendar tools cannot attach files
 - Get meeting intelligence and briefings to prepare for upcoming conversations
 - Start your day with a **Daily Briefing** of what's ahead
 
 ### Research
 - Search across your organization for documents, messages, and people
-- Perform **Deep Research** that synthesizes information from multiple sources into a report
+- Perform **Deep Research** that synthesizes information from multiple sources into a report; it runs as a background task of a few minutes and cites each source
 - Browse SharePoint and OneDrive to pull in the files you need
 - Run browser tasks in Microsoft Edge with your existing sign-ins (an admin must turn on browser access first)
 
 ### Automation
 - Run prompts on a recurring schedule (weekly reports, daily briefings)
-- Manage schedules on the **Automations** page: **Runs** shows each run, and **Manage schedules** lets you edit, pause, resume, or delete them
+- Manage them on the **Automations** page: each automation has an **Enable** switch and a **...** menu to edit, run now, pause or resume, and delete it
 - Start a task when an email or a Teams message arrives
 
 Automation is covered in detail in [Scheduled Prompts & Event-Driven Tasks](../04-automation/readme.md), and connecting external systems in [Extending Cowork with Plugins](../05-plugins/readme.md).
@@ -170,7 +171,7 @@ Automation is covered in detail in [Scheduled Prompts & Event-Driven Tasks](../0
 
 ## How Cowork Gets Things Done: Skills
 
-Behind every capability is a **skill**. As Cowork works on your task, it automatically loads the right skills and shows them in the side panel; you never pick one manually. Built-in skills cover common office tasks, and you can add your own. See [Understanding Skills](../02-built-in-skills/readme.md) for the built-in catalog and the side panel, and [Creating Custom Skills](../03-custom-skills/readme.md) for authoring your own.
+Behind every capability is a **skill**. As Cowork works on your task, it automatically loads the right skills and lists them under **Plugins** in the task's **Workspace** panel, so you rarely pick one yourself. Built-in skills cover common office tasks, and you can add your own. See [Understanding Skills](../02-built-in-skills/readme.md) for the built-in catalog and the side panel, and [Creating Custom Skills](../03-custom-skills/readme.md) for authoring your own.
 
 ---
 

@@ -51,13 +51,17 @@ The steps run on the main agent's **Agents** page. You select **Add an agent**, 
 | **Description** | What the specialist covers and what it excludes | The planner's main signal for when to call it |
 | **Agent Id** | The identifier of the Foundry agent | Selects the agent inside the project |
 
-You can test right after adding the agent. If the first call fails with the 400 error about activity, go back to the Foundry side and enable the Activity Protocol.
+You can test right after adding the agent. If the first call fails with the 400 error about activity, go back to the Foundry side and enable the Activity Protocol. A connection is bound to one project endpoint, so a new project needs its own connection, and the **Connection** list can preselect an older one. Choose **Create new connection**, enter a display name, **Microsoft Entra ID User Login** and the project endpoint, complete the "Sign in to Microsoft Foundry" window, then select **Add and configure**.
+
+In the agent's YAML the Foundry agent is an action: it pulls as `actions/<FileName>.mcs.yml`, and the reference `{System.Bot.Components.Agents.'<schema>.action.<FileName>'.DisplayName}` renders as an agent chip, so the `/` insert into the instructions can also be written in code.
 
 ## How orchestration routes to it
 
 A connected Foundry agent is one more choice for the generative orchestrator, chosen by its description like a tool, a topic or a connected Copilot Studio agent. Under classic orchestration, connected agents aren't available. The description you enter in Copilot Studio is the one that counts: write it to name the domain, the typical questions and what the specialist doesn't cover, and keep it distinct from every other tool and agent on the main agent.
 
 The multi-agent rules from the routing topic apply unchanged. The main agent should stay the only voice the user hears, the Foundry agent's instructions should keep it inside its domain, and tests should include questions no specialist covers. Each call adds a hop with its own model run, so expect more latency than for a tool, and expect Learn's known limitation that citations aren't always kept when an answer comes back from another agent.
+
+Validate the input in Copilot Studio before the external call runs. Ordered instructions in the demo ask for one detail per turn and confirm them in a table before the Foundry call, so an invalid email address stopped the run before any call was made.
 
 ## Authentication and access
 
@@ -77,14 +81,6 @@ Learn lists the connection to Microsoft Foundry agents as public preview, togeth
 | Observability and oversight | Copilot Studio's activity map and Foundry's tracing together let you follow a request end to end |
 
 A version pinned on the Foundry side keeps the specialist stable while its owners keep editing, and an unpinned agent serves every new version immediately. Agree with the developer team which of the two the help desk relies on.
-
-## What the Live Build Taught
-
-**A Foundry connection is bound to one project endpoint, so a new project needs its own connection.** The **Connection** list can preselect an older one. Choose **Create new connection**, enter a display name, **Microsoft Entra ID User Login** and the project endpoint, then complete the "Sign in to Microsoft Foundry" window and select **Add and configure**.
-
-**Validate input in Copilot Studio before the external call runs.** Ordered instructions ask one detail per turn and confirm them in a table before the Foundry call. An invalid email address stopped the run before any call was made, so put these checks in the instructions.
-
-**In YAML the Foundry agent is an action, so you can reference it in code.** It pulls as `actions/<FileName>.mcs.yml`, and the `{System.Bot.Components.Agents.'<schema>.action.<FileName>'.DisplayName}` reference renders as an agent chip, so the `/` insert can be done in code.
 
 ## Hands-On Demo
 

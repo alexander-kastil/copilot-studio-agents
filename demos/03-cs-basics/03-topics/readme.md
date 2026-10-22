@@ -13,7 +13,7 @@ A topic is one portion of a conversation, drawn on an authoring canvas as a chai
 | System topics | Conversation Start, Conversational boosting, Fallback, Escalate, On Error, Multiple Topics Matched, End of Conversation, Reset Conversation, Sign in | Edit and turn off, never delete or create |
 | Custom topics | The predefined Greeting, Goodbye, Start Over, Thank you topics, and every topic you add | Create, edit, and delete freely |
 
-You can also open any topic in the code editor, which shows it as YAML. That view is useful for copying a topic between agents, but Learn notes that designing a complex topic entirely in the code editor isn't fully supported.
+You can also open any topic in the code editor, which shows it as YAML. That view is useful for copying a topic between agents, but Learn notes that designing a complex topic entirely in the code editor isn't fully supported. When you write topic YAML outside the portal, check each token with the language server of the Copilot Studio extension for VS Code: Learn rarely documents the literal tokens, and look-alikes such as `DatePrebuiltEntity` and `DateTimePrebuiltEntity` both exist with different meanings.
 
 ## How a topic gets triggered
 
@@ -91,13 +91,7 @@ A scripted conversation is judged by how it fails. Four mechanisms decide what u
 
 Close every resolved path deliberately. Redirecting to **End of Conversation** offers a satisfaction survey, while **Escalate** hands over to a person through a configured engagement hub, or tells the user how to reach one when no hub exists. Under generative orchestration, a topic can return its result as an output variable so the agent writes a reply that fits the conversation, and an answered-state output stops the orchestrator from answering the same request twice.
 
-## What the Live Build Taught
-
-**When a topic ends, the orchestrator decides what comes next.** A **No** to the last question can route to the **Escalate** system topic, which answers "Escalating to a representative is not currently configured". Give a topic that ends on a question a node after it when the answer should lead somewhere.
-
-**End a topic by naming the next thing the user can ask for.** CS-HR Buddy's Collect Employee Data message ends with "Ask me to collect your employee reward next.", which turns a finished topic into an invitation the orchestrator can route.
-
-**Confirm token names with the language server.** Learn rarely documents YAML tokens, and `DatePrebuiltEntity` and `DateTimePrebuiltEntity` both exist with different meanings. The language server in the Copilot Studio extension for VS Code settles a token: its diagnostics on a `.mcs.yml` file show whether it is valid.
+Once a topic ends, the orchestrator decides what comes next. A **No** to a topic's last question can route to the **Escalate** system topic, which answers "Escalating to a representative is not currently configured" when no hub exists, so give a topic that ends on a question a node after it whenever the answer should lead somewhere. Ending the last message with the next thing the user can ask for, as CS-HR Buddy does with "Ask me to collect your employee reward next.", turns a finished topic into a request the orchestrator can route.
 
 ## Hands-On Demo
 

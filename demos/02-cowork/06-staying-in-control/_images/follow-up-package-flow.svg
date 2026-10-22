@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
   <title id="t">The four steps of the follow-up package and where each one is held</title>
-  <desc id="d">Both files, partner-meeting-notes.docx and partnership-proposal-draft.docx, stay attached for every step. Step 1 reconciles the notes against the draft: each open term and its decision, plus the new fleece fit item. Step 2 closes every open term: proposal v1.0 saved as a new file, draft untouched, held for your go-ahead. Step 3 drafts the follow-up email to Markus Lind with v1.0 attached: high risk, external recipient. Step 4 books the follow-up call, a 30-minute invite to Markus Lind next week: medium risk, others' calendars.</desc>
+  <desc id="d">Both files, partner-meeting-notes.docx and partnership-proposal-draft.docx, stay attached for every step. Step 1 reconciles the notes against the draft: each open term and its decision, plus the new fleece fit item. Step 2 closes every open term: proposal v1.0 saved as a new file, draft untouched, held for your go-ahead. Step 3 drafts the follow-up email to Markus Lind with v1.0 attached: saved to Outlook Drafts, not sent. Step 4 books the follow-up call, a 30-minute invite to Markus Lind next week: medium risk, others' calendars.</desc>
   <defs>
     <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
@@ -73,9 +73,9 @@
       <text x="730" y="905">Held for your</text>
       <text x="730" y="948">go-ahead</text>
     </g>
-    <rect x="985" y="840" width="410" height="150" rx="20" fill="#fdecec" stroke="#c24141" stroke-width="3"/>
-    <text x="1190" y="905" font-size="34" font-weight="700" fill="#24292f" text-anchor="middle">High risk</text>
-    <text x="1190" y="952" font-size="28" fill="#57606a" text-anchor="middle">External recipient</text>
+    <rect x="985" y="840" width="410" height="150" rx="20" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="1190" y="905" font-size="34" font-weight="700" fill="#24292f" text-anchor="middle">Saved to drafts</text>
+    <text x="1190" y="952" font-size="28" fill="#57606a" text-anchor="middle">Not sent</text>
     <rect x="1445" y="840" width="410" height="150" rx="20" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
     <text x="1650" y="905" font-size="34" font-weight="700" fill="#24292f" text-anchor="middle">Medium risk</text>
     <text x="1650" y="952" font-size="28" fill="#57606a" text-anchor="middle">Others' calendars</text>

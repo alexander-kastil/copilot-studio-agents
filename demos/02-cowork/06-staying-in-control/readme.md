@@ -8,12 +8,12 @@ Cowork acts on your behalf, but never behind your back. It asks for approval bef
 
 ## The Approval Model
 
-Before Cowork does anything that leaves a mark (sending an email, posting in Teams, saving a file), it pauses and asks.
+Before Cowork does anything that leaves your workspace or changes what you already have (sending an email, posting in Teams, booking or changing a meeting, editing an existing file), it pauses and asks. New files in the task's **Output** and an email saved to your Drafts folder need no approval, so a prompt that ends with "do not send" stops at a draft. The card names the action as a question, such as **Send draft?**, **Create calendar event?**, **Update event?**, or **Edit file?**, and shows what it will write: the recipients, subject, and body of a mail, or the title, time, attendees, and body of an event.
 
 ![The approval card with its risk level indicator and Show parameters, and its four choices: Approve once approves one action, More options also skips similar prompts for the session, Approve All (n) releases every pending approval, and Cancel skips the action while Cowork carries on.](../pptx/images/06-01-approval-model.svg)
 
-- **Approve once**: The action button (for example **Send**, **Post**, or **Create**) approves that one action.
-- **More options**: The dropdown next to the action button approves and skips similar prompts for the rest of the session. For email and Teams, choose **Only to** a specific recipient, **Only to** a specific domain's recipients, or **Always allow**. For other actions, choose **Approve & don't ask again**.
+- **Approve once**: The action button (for example **Send**, **Save**, **Update**, or **Schedule**) approves that one action, and the task then shows **Approved 1 action**.
+- **More options**: The arrow next to the action button approves and skips similar prompts for the rest of the session, for example **Always allow Create event**. For email and Teams, choose **Only to** a specific recipient, **Only to** a specific domain's recipients, or **Always allow**. For other actions, choose **Approve & don't ask again**.
 - **Approve All (n)**: When several approvals are pending, releases every one of them.
 - **Cancel**: Skips the action, and Cowork carries on with the rest.
 - **Show parameters**: Reveals the technical details of the action.
@@ -26,10 +26,10 @@ Before Cowork does anything that leaves a mark (sending an email, posting in Tea
 
 | Risk | Examples | What it means |
 |---|---|---|
-| **Medium** | Saving or reorganizing files, scheduling a meeting | Changes your content or others' calendars |
-| **High** | Sending email, posting in Teams, external communication | Leaves your workspace and reaches other people |
+| **Medium** | Editing or overwriting a file, deleting an attachment, creating or updating a calendar event, sending mail to yourself | Changes your content or your calendar |
+| **High** | Sending email to other people, posting in Teams, external communication | Leaves your workspace and reaches other people |
 
-The examples show the typical split; the risk indicator on the approval card is the authority.
+The examples show the typical split; the risk indicator on the approval card is the authority. The recipient moves the level: sending the review deck to your own address showed **Medium risk** on its **Send draft?** card. Some cards carry no indicator at all, such as **Create recurring task?** when you schedule a prompt.
 
 ---
 
@@ -75,14 +75,14 @@ Control does not stop at the individual. Admins decide whether Cowork is availab
 
   ![Spending guardrails for pay-as-you-go: a per-user limit caps what any one user can consume, and the monthly spending limit caps the tenant total, with alert thresholds set below it.](../../01-intro/pptx/images/03-03-spending-governance.svg)
 
-- **Reporting**: The Cowork usage report in the Microsoft 365 admin center shows active users, total tasks, scheduled versus user-initiated tasks, per-user details, and CSV export; its **Value** tab requires Frontier enrollment. Copilot Analytics in Viva Insights adds Cowork adoption and impact dashboards.
+- **Reporting**: The Cowork usage report in the Microsoft 365 admin center shows active users, total tasks, scheduled versus user-initiated tasks, per-user details, and CSV export; its **Value** tab requires Frontier enrollment. The report refreshes once a day, so today's tasks show up tomorrow. **Copilot** > **Cost management** > **Consumption** splits Copilot Credits by policy, user, and service, never by task, and recent Cowork usage can take hours to be booked there. Copilot Analytics in Viva Insights adds Cowork adoption and impact dashboards.
 - **Microsoft Purview**: Purview supports Cowork for DSPM, auditing, sensitivity labels, DLP, Insider Risk Management, Communication Compliance, eDiscovery, and Data Lifecycle Management. Data classification and Compliance Manager are not supported.
 
 ---
 
 ## Hands-On Demo
 
-- [Turn a Partner Meeting into a Follow-Up Package](./demo-01-follow-up.md): watch the approval gate and risk levels in action as Cowork edits a proposal, emails an external partner, and books a follow-up call, each held for your go-ahead.
+- [Turn a Partner Meeting into a Follow-Up Package](./demo-01-follow-up.md): watch the approval gate and risk levels in action as Cowork builds a v1.0 proposal, saves the partner email as a draft, and books the follow-up call through a medium-risk approval.
 
 ---
 

@@ -20,7 +20,7 @@ Built-in skills handle common office tasks and [custom skills](../03-custom-skil
 
 ## Where Plugins Fit
 
-Cowork draws skills from five sources, and every one of them surfaces in the same side panel and activates the same way: automatically, based on the task.
+Cowork draws skills from five sources, and every one of them surfaces in the same **Plugins** list of the side panel and activates the same way: automatically, based on the task.
 
 ![Five sources feed the Cowork side panel: built-in skills, custom skills from Customize or OneDrive, plugins from Discover, admin-deployed plugins, and skills that are shared or uploaded.](../pptx/images/05-02-where-plugins-fit.svg)
 
@@ -58,22 +58,22 @@ Cowork converts a Claude plugin package when you upload it, and `wiqd` imports a
 
 ## Installing a Plugin
 
-1. Select **+** > **Customize** > **Plugins**.
+1. Open **Customize** in the left navigation, or select **+** > **Customize** in the composer.
 2. Select a card in **Discover** and review the publisher, skills and connectors on its detail page.
 3. Select **Add**.
-4. Turn the plugin on or off per conversation in the **Sources & Skills** panel.
+4. Turn the plugin on or off with its switch under **Added**.
 
 On mobile, select **+** > **Skills** instead.
 
-A plugin is packaged as a Microsoft 365 app: a `manifest.json`, `color.png`, `outline.png` and a `skills/` folder of `SKILL.md` folders, the same Microsoft 365 app format as Teams apps. Each skill uses the open `SKILL.md` format you author for [custom skills](../03-custom-skills/readme.md), which is why a plugin's skills behave identically to the ones you write yourself, once installed.
+A plugin is packaged as a Microsoft 365 app: a `manifest.json`, `color.png`, `outline.png` and a `skills/` folder of `SKILL.md` folders, the same Microsoft 365 app format as Teams apps. Each skill uses the open `SKILL.md` format you author for [custom skills](../03-custom-skills/readme.md), which is why a plugin's skills behave identically to the ones you write yourself, once installed. When a task uses one, the step log reads **Reviewed custom skill** with the plugin and skill name, such as `dietitian (clinical-nutrition)`, and the skill joins the **Plugins** list in the task's **Workspace** panel.
 
 ---
 
 ## Building and Sharing Your Own Plugin
 
-Select **Upload plugin** under **Customize** > **Plugins** and pick a `.zip` package. A Claude or other compatible plugin package is converted automatically, including its bundled skills and connectors.
+Select **Add** > **Upload** on the **Customize** page and pick a `.zip` package with `manifest.json` at its root; the **Upload a skill or plugin** dialog takes `.md`, `.zip`, or `.skill` files. A Claude or other compatible plugin package is converted automatically, including its bundled skills and connectors.
 
-The **Share** dialog then offers **Only you** or **Specific users in your organization**. Sharing with specific people needs no admin, while publishing to the whole organization waits for admin approval.
+A **Publish** dialog then asks who gets the plugin under **This plugin will be available to**: **Only you** or **Specific users in your organization**. Sharing with specific people needs no admin, while publishing to the whole organization waits for admin approval. The plugin then appears under **Added** with its publisher, its skills, and an **Enable** switch.
 
 ![Four widening steps of reach for an uploaded plugin: Only you and Specific users in your organization need no admin, the whole organization waits for admin approval, and a public store listing goes through Partner Center.](../pptx/images/05-03-sharing-a-plugin.svg)
 
@@ -93,13 +93,13 @@ Public store listings are submitted through Partner Center.
 
 ## Community Plugins
 
-Beyond the official Microsoft 365 plugins, the community publishes ready-to-install Cowork plugins. The [awesome-copilot-cowork-plugins](https://github.com/alexclowe/awesome-copilot-cowork-plugins) repository collects packaged plugins you can upload through **Customize** > **Plugins** > **Upload plugin**, each a manifest plus its agent skills. The hands-on demo uses the `dietitian` plugin from that repository to show how an external, domain-specific plugin drops into Cowork and starts producing expert output.
+Beyond the official Microsoft 365 plugins, the community publishes ready-to-install Cowork plugins. The [awesome-copilot-cowork-plugins](https://github.com/alexclowe/awesome-copilot-cowork-plugins) repository collects packaged plugins you can upload through **Customize** > **Add** > **Upload**, each a manifest plus its agent skills. The hands-on demo uses the `dietitian` plugin from that repository to show how an external, domain-specific plugin drops into Cowork and starts producing expert output.
 
 ---
 
 ## Hands-On Demo
 
-- [Extend Cowork with a Community Plugin](./demo-01-plugins.md): install the `dietitian` plugin from the awesome-copilot-cowork-plugins repository, confirm its two skills appear in the side panel, and produce a client nutrition assessment and education handout that mix the plugin's expertise with Cowork's built-in Word skill.
+- [Extend Cowork with a Community Plugin](./demo-01-plugins.md): install the `dietitian` plugin from the awesome-copilot-cowork-plugins repository, confirm its two skills appear in the **Plugins** list of the Workspace panel, and produce a client nutrition assessment and education handout that mix the plugin's expertise with Cowork's built-in Word skill.
 
 ---
 

@@ -1385,6 +1385,122 @@
       "catalogue": {
         "action": "none"
       }
+    },
+    {
+      "date": "2026-10-22",
+      "from": "10:14",
+      "to": "10:58",
+      "sessionId": "735a41cc-4cab-4e03-93f8-2b611e5a85ab",
+      "branch": "v-3.0.0",
+      "commits": [],
+      "surfaces": [
+        "demos"
+      ],
+      "files": [
+        "demos/02-cowork/01-intro/readme.md",
+        "demos/02-cowork/06-staying-in-control/readme.md",
+        "demos/03-cs-basics/01-standard-agents/readme.md",
+        "demos/04-cs-tools/06-mcp/readme.md",
+        "demos/05-cs-advanced/03-multi-agent/readme.md",
+        "demos/cowork-cost.json"
+      ],
+      "mechanism": {
+        "takes": "the findings of automated live runs of course demos (real UI labels, approval behaviour, product limits) and the run transcripts",
+        "does": "folds each finding into the concept section of the topic text it corrects instead of a separate lessons block, and prices every demo run per token type with per-request estimates for cheaper models",
+        "returns": "topic texts that match the live product and a per-guide model cost table next to a detailed cost record"
+      },
+      "portsAsIs": [
+        "fold live-run findings into the teaching in place",
+        "per-request cost estimate on another rate card, including a long-prompt tier"
+      ],
+      "perCustomer": [
+        "the product the course teaches",
+        "the class tenant the demos ran in"
+      ],
+      "evidence": [
+        "brand-voice check: 85 files, 0 issues",
+        "link check: 194 files, 592 links, 0 broken",
+        "wf-cost --compare reproduced Sonnet 5.5 USD 31.53 and Haiku 5.5 USD 6.99 on the run"
+      ],
+      "toolchain": {
+        "skills": [
+          "class-authoring-plugin:create-class",
+          "brand-voice-copilot",
+          "claude-api",
+          "report-plugin:report",
+          "learn-loop-plugin:claude-learn",
+          "claude-in-chrome"
+        ],
+        "mcpServers": [
+          "claude-in-chrome",
+          "microsoft-learn"
+        ],
+        "agents": [
+          "fork"
+        ]
+      },
+      "industry": "corporate training",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      }
+    },
+    {
+      "date": "2026-10-22",
+      "from": "10:27",
+      "to": "11:24",
+      "sessionId": "25a523e7-ddd1-415b-8d57-f912e587f892",
+      "branch": "v-3.0.0",
+      "commits": [],
+      "surfaces": [
+        "demos"
+      ],
+      "files": [
+        "demos/04-cs-tools/07-computer-use/demo-computer-use.md",
+        "demos/demo-check.md",
+        "tasks/run-guide-browser/computer-use.md"
+      ],
+      "mechanism": {
+        "takes": "a step-by-step demo guide for a screen automation tool plus a live product tenant and the maker's signed-in browser",
+        "does": "runs every exercise as a learner would, picks the tenant that supports the feature, compares two models on reading accuracy against the page, and rewrites each step, default and expected result from what the product actually showed",
+        "returns": "a run-verified guide, a status row with step-based credit figures, slide screenshots and a reusable product reference for the next run"
+      },
+      "portsAsIs": [
+        "live guide run in the maker's own browser with a per-step ledger",
+        "model comparison on exact-text extraction before a guide names a model",
+        "credit estimate from the run's action count while billing has not posted"
+      ],
+      "perCustomer": [
+        "the product the course teaches",
+        "the tenant and environment the demo runs in"
+      ],
+      "evidence": [
+        "five direct test runs and one chat run finished on the hosted browser",
+        "CUA returned a misread manager name, Claude Sonnet 4.5 the exact row",
+        "brand-voice check: 1 file, 0 issues; fence check: 0 untagged fences"
+      ],
+      "toolchain": {
+        "skills": [
+          "class-authoring-plugin:create-class",
+          "brand-voice-copilot",
+          "copilot-studio",
+          "learn-loop-plugin:claude-learn",
+          "claude-learn-worktime",
+          "track-time"
+        ],
+        "mcpServers": [
+          "claude-in-chrome",
+          "microsoft-learn"
+        ],
+        "agents": [
+          "fork"
+        ]
+      },
+      "industry": "corporate training",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      }
     }
   ]
 }

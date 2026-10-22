@@ -8,11 +8,11 @@
 
 ## Three Ways to Create Custom Skills
 
-Pick the path that fits your work. Each one ends as a `SKILL.md` in its own folder under `Documents/Cowork/skills/`.
+Pick the path that fits your work. Each one ends as a `SKILL.md` in its own folder under `Documents/Cowork/Skills/`.
 
 | Path | How it works |
 | --- | --- |
-| Guided flow | Select **Customize** > **Skills** > **Add** > **Create new**. Cowork starts a guided conversation and saves the result. |
+| Guided flow | Select **Customize** > **Add** > **Create skill with Cowork**. Cowork starts a guided conversation and saves the result. |
 | Ask in chat | Describe the task you repeat and ask Cowork to build a skill for it. |
 | Write it yourself | Place a `SKILL.md` file inside a subfolder of your OneDrive, as shown below. |
 
@@ -22,14 +22,14 @@ For the hand-written path, the folder looks like this:
 OneDrive/
   Documents/
     Cowork/
-      skills/
+      Skills/
         weekly-report/
           SKILL.md
         meeting-prep/
           SKILL.md
 ```
 
-Cowork **automatically discovers** your custom skills at the start of each conversation. You can create up to **50 custom skills**. Because discovery happens per conversation, a skill you just added shows up in the next new task, not the one you already have open.
+Cowork **automatically discovers** your custom skills at the start of each conversation. You can create up to **50 custom skills**. Because discovery happens per conversation, a skill you just added shows up in the next new task, while a task you already have open keeps the skill list it started with. A skill written straight into OneDrive can take several minutes to sync: reload **Customize** until it appears under **Added**, or type `/` in a new task and look under **Custom skills** on the **Skills** tab.
 
 ![Diagram of the guided flow, asking in chat, and writing a SKILL.md yourself all ending in Documents/Cowork/skills/, where the next new task discovers the skills at its start while a task already open does not list them.](../pptx/images/03-01-create-a-skill.svg)
 
@@ -37,7 +37,7 @@ Cowork **automatically discovers** your custom skills at the start of each conve
 
 ## Uploading and Sharing Skills
 
-To add a skill someone else wrote, select the arrow next to **Add** in **Customize** > **Skills**, then **Upload skill**. Cowork accepts these formats:
+To add a skill someone else wrote, select **Customize** > **Add** > **Upload**. The **Upload a skill or plugin** dialog closes as soon as you pick the file, the skill appears under **Added**, and Cowork stores it in OneDrive under `Documents/Cowork/Skills/<name>/` with its companion files beside `SKILL.md`. Cowork accepts these formats:
 
 | Format | Limit |
 | --- | --- |
@@ -88,7 +88,7 @@ Each skill folder can hold supporting material next to the `SKILL.md`: reference
 
 ## Reading the Skill Report
 
-Cowork scores every skill you create or update automatically, and the **Skill Report** it returns gives the verdict first. The score runs from 0 to 100 across four 25-point dimensions: **Trigger clarity** (fires at the right time), **Instruction specificity** (knows what to do), **Scope boundaries** (stays in its purpose), and **Robustness** (handles unexpected input safely). The score falls into one of four bands: **Excellent** (85+), **Good** (70-84), **Needs work** (50-69), or **Poor** (below 50).
+Cowork scores every skill you create or update automatically, and the **Skill Report** it returns gives the verdict first. When Cowork edits a skill for you in a task, the score arrives in the chat, for example 66 out of 100 against a pass mark of 70 for sharing, with the weakest area named. The score runs from 0 to 100 across four 25-point dimensions: **Trigger clarity** (fires at the right time), **Instruction specificity** (knows what to do), **Scope boundaries** (stays in its purpose), and **Robustness** (handles unexpected input safely). The score falls into one of four bands: **Excellent** (85+), **Good** (70-84), **Needs work** (50-69), or **Poor** (below 50).
 
 ![Diagram of the Skill Report score: four dimensions worth 25 points each add up to one score from 0 to 100, which falls into the bands Poor, Needs work, Good, or Excellent.](./_images/skill-report-score.svg)
 
@@ -99,7 +99,9 @@ Cowork scores every skill you create or update automatically, and the **Skill Re
 | The skill is too broad | It fires when it should not. |
 | Two skills compete for the same requests | Both fire; add an explicit handoff between them. |
 
-A low **Trigger clarity** score usually means the description needs the trigger phrases you would actually type, so tune the description first. Then start a new task and check that the skill fires without being named.
+A low **Trigger clarity** score usually means the description needs the trigger phrases you would actually type, so tune the description first. Then start a new task and check that the skill fires without being named: the step log reads **Reviewed custom skill** with its name.
+
+To change a skill, ask Cowork in a task to apply your fixes, or select **Edit instructions** on the skill's **Customize** page, which opens a task for the edit. Before it overwrites `SKILL.md`, Cowork shows an **Edit file?** or **Copy file** card at **Medium risk** with the proposed changes.
 
 ![Diagram of the run-and-tune loop: start a new task, run the skill, check the result against the template and the source, ask what misses, and fold the fixes in, repeating until the skill fires without being named.](../pptx/images/03-03-run-and-tune.svg)
 

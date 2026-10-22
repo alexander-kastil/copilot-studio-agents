@@ -48,6 +48,8 @@ A third start is an agent template. The **Agents** page offers templates such as
 | **Create blank agent** | Only the name you enter | You already know the instructions and sources |
 | Agent template | A complete, working agent for one scenario | Your scenario matches a template closely |
 
+A larger agent is faster to build as code once it exists. Create it blank in the portal, clone it with the Copilot Studio extension for VS Code, write its instructions, knowledge, topics, and entities as `.mcs.yml` files, and push them with **Apply**. **Apply** updates the agent's draft without publishing it, and **Get changes** overwrites uncommitted local edits, so commit before you pull.
+
 ## The Overview page
 
 After provisioning, the agent opens on its **Overview** page, the hub for its identity. The **Details** section holds the name, icon, and description, and the **Instructions** section holds the natural-language guidance for its behavior. Further down you find the **Model** choice, the suggested prompts, and the agent's knowledge.
@@ -59,6 +61,8 @@ Instructions tell the agent what its job is, what tone to use, and where its bou
 ### Model
 
 The **Model** section is a dropdown that sets the primary model for the agent's orchestration. Learn's availability table lists GPT Chat Latest as the default model, alongside general models such as GPT-4.1 and GPT-5 Chat. Preview and experimental models appear only after an administrator allows them, and external models such as Anthropic's need two separate administrator actions before a maker can select them.
+
+A model's retirement date shows under the picker only once the model is selected: **GPT-5.5 Chat** shows "will retire on 10/30/2026". **GPT Chat Latest** always points to the current GPT chat model (`modelNameHint: GPT56Chat` in the agent's YAML), so it moves forward on its own. Check the model of every agent before a class or a release.
 
 ## The orchestration setting
 
@@ -80,12 +84,6 @@ Several features in later topics only work with generative orchestration, includ
 The **Test your agent** panel lets you chat with the draft before anyone else sees it. For an agent with generative orchestration, the activity map shows the orchestrator's plan in real time: which topic, tool, or knowledge source it selected and what it passed in. Close the activity map and turn on tracking between topics when you want to follow a classic conversation node by node.
 
 Two habits save time from the first day. Test after every change, because the test panel always runs the latest draft while channels run the last published version. When an answer surprises you, read the activity map before you edit instructions, because the map tells you whether the wrong component was chosen or the right one returned the wrong content.
-
-## What the Live Build Taught
-
-**A model retirement warning appears only after you select the model.** **GPT-5.5 Chat** shows "will retire on 10/30/2026" under the model picker only once it is selected, so a guide written from documentation never mentions it. **GPT Chat Latest** always points to the current GPT chat model (`modelNameHint: GPT56Chat`). Check the model of every agent before a class or a release.
-
-**Create the agent in the portal, then build its content as code.** Building one agent by clicking in the portal took about 40 minutes. Clone the blank agent with the Copilot Studio extension for VS Code, write its instructions, knowledge, topics and entities as `.mcs.yml` files, and push them with **Apply**. **Apply** updates the live draft without publishing it, and **Get changes** overwrites uncommitted local edits, so commit first.
 
 ## Hands-On Demo
 

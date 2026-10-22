@@ -30,7 +30,7 @@ Each step follows the same pattern:
 
 You have just come off a discovery call with Fjallbryggan Retail, a Nordic chain that wants to stock Aurora Outdoor for the AW26 season. You promised a revised proposal within a week and a follow-up call.
 
-![The four demo steps with both files attached throughout: reconcile, close the open terms into proposal v1.0, draft the email to Markus Lind, and book the follow-up call. The proposal is held for your go-ahead, the email at high risk, and the invite at medium risk.](./_images/follow-up-package-flow.svg)
+![The four demo steps with both files attached throughout: reconcile, close the open terms into proposal v1.0, draft the email to Markus Lind, and book the follow-up call. The proposal is held for your go-ahead, the email is saved to Drafts without being sent, and the invite waits at medium risk.](./_images/follow-up-package-flow.svg)
 
 ---
 
@@ -129,4 +129,4 @@ Markus is not in my directory yet, so book the slot you proposed on my own calen
 
 **Expected Outcome:** A 30-minute mid-morning Teams meeting titled "Aurora x Fjallbryggan - proposal review" on your calendar next week, created only after you approved the medium-risk card, with the v1.0 agenda in the body and ready to forward to Markus.
 
-> Why sending an email is high risk while scheduling is medium is explained in [Human-in-the-Loop](./readme.md#risk-levels).
+> How risk levels decide which actions stop for your approval is explained in [Human-in-the-Loop](./readme.md#risk-levels).

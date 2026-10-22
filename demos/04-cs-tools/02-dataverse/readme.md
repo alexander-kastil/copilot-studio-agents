@@ -42,6 +42,10 @@ Knowledge reads data and tools change it. When a user asks the agent to record s
 
 Write tools deserve two safeguards. Turn on **Ask the end user before running**, so the user sees the values before a row is created or changed. Keep the default end user credentials, so Dataverse applies the user's own security role to every write.
 
+A write can also run through an agent flow. The flow becomes a tool only when it is published and keeps both its trigger and its **Respond to the agent** action, which is when **Add a tool** lists it, and with **Asynchronous response** on, the topic reports a flow error, so check these before you debug the topic. The table must also live in the same environment as the agent and its flow, or the flow's **Table name** doesn't offer it.
+
+Dates need converting before they reach a row. Dataverse rejects the raw dates an Adaptive Card returns, so build ISO values such as `Topic.departureDateIso` and `Topic.returnDateIso` with Power Fx in the topic, pass them to the flow, and map the table's date columns from the flow's trigger inputs.
+
 The Dataverse MCP Server (preview) takes a broader approach: one tool on the agent exposes a set of operations, including `list_tables`, `describe_table`, `read_query`, `search`, `create_record`, and `update_record`. Access follows Dataverse role-based access control, so the agent can act only within the user's permissions. An administrator must allow the Microsoft Copilot Studio MCP client for the environment before the server appears under **Model Context Protocol** in **Add a tool**. Because the server also offers schema operations such as `create_table` and `delete_table`, turn off every tool your scenario does not need.
 
 ## The sample tables
@@ -69,14 +73,6 @@ Dataverse adds a unique identifier column to every table automatically, so you n
 The same habits that make a table easy for people make it easy for an agent. Give every column a display name and a description in plain language, because the knowledge source reads table metadata as well as your synonyms. Use Yes/no and choice columns for states, so "available" means one thing.
 
 Keep tables focused. A knowledge source takes up to 15 tables, but an agent answers more reliably over a few well-described tables than over a whole data model. When a question needs data from many tables or exact calculations, a prompt with Dataverse knowledge or a flow that queries the rows gives you more control over the result.
-
-## What the Live Build Taught
-
-**A flow becomes a tool only when it is published and keeps both its trigger and its Respond to the agent action.** **Add a tool** lists it under those conditions, and with **Asynchronous response** on, the topic reports a flow error. Check these before you debug the topic.
-
-**Convert dates to ISO with Power Fx in the topic.** Dataverse rejects the raw card dates, and a cloned flow wrote its date columns from inputs that did not exist, so both dates failed on every run. Build `Topic.departureDateIso` and `Topic.returnDateIso`, then map the columns from the flow's trigger inputs.
-
-**The table must live in the same environment as the agent and its flow.** Otherwise **Table name** does not offer it.
 
 ## Hands-On Demo
 
