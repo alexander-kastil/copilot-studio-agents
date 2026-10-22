@@ -1,5 +1,7 @@
 # Connect Your Travel Specialists Behind One Front Door
 
+![Five test messages (booking, health, allowance, gym, canteen) go into CS-Business Travel Planner, which routes each one to CS-Travel Agent, CS-Health Advisor, CS-Travel Expense Refund, its child agent Work life balance Buddy or Web Search, and each route shows the answer the guide expects.](./_images/business-travel-planner-overview.svg)
+
 An employee planning a business trip should not have to know that booking, a health check and the expense claim live in three different agents. When each specialist has its own chat, people pick the wrong one, repeat themselves, and give up. In this demo you build CS-Business Travel Planner, connect the specialists you built in modules 3 and 4, give it a child agent for gym benefits, and trace every question to the agent that answered it.
 
 What you practice here: composing a parent agent from connected agents and a child agent, routing on descriptions, and proving each route in the activity map.

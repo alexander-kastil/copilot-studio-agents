@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Grey Logistics IT Help Desk: set up in three steps, then the same VPN question under two orchestration modes</title>
+  <desc id="d">Grey Logistics IT Help Desk is a Standard agent set up in three steps. Ex 1 creates it from a description, which generates a name, a description and instructions. Ex 2 sets the name and five instruction rules: workplace IT only, never passwords or codes. Ex 3 keeps the default model, orchestration Yes and Allow ungrounded responses on. Ex 4 tests under generative orchestration, read in the activity map: My VPN keeps disconnecting every few minutes returns numbered steps and a hint to open a ticket, and Which restaurant near the office do you recommend for lunch gets a polite refusal that points back to workplace IT. Ex 5 tests under classic orchestration, read in the topic tracking view: the same VPN question goes to Conversational boosting, then Fallback asks to rephrase, and Hello is matched by the trigger phrases of the Greeting topic. The setup steps light up in order, then a dot carries each prompt to its result.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .h { font-size: 34px; font-weight: 700; }
+      .t { font-size: 30px; font-weight: 600; }
+      .s { font-size: 28px; fill: #57606a; }
+      .se { font-size: 28px; fill: #57606a; text-anchor: end; }
+      .q { font-size: 28px; }
+      .bd { font-size: 26px; font-weight: 700; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="50" y="110" width="620" height="860" rx="24" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="90" y="178">Grey Logistics IT Help Desk</text>
+  <text class="s" x="90" y="222">Standard agent</text>
+  <g stroke="#8c959f" stroke-width="2" fill="#ffffff">
+    <rect x="90" y="262" width="540" height="210" rx="16"/>
+    <rect x="90" y="496" width="540" height="210" rx="16"/>
+    <rect x="90" y="730" width="540" height="210" rx="16"/>
+  </g>
+  <g fill="#fff6e5" stroke="#e0a534" stroke-width="2">
+    <rect x="114" y="286" width="88" height="44" rx="22"/>
+    <rect x="114" y="520" width="88" height="44" rx="22"/>
+    <rect x="114" y="754" width="88" height="44" rx="22"/>
+  </g>
+  <text class="bd" x="158" y="317">Ex 1</text>
+  <text class="bd" x="158" y="551">Ex 2</text>
+  <text class="bd" x="158" y="785">Ex 3</text>
+  <text class="t" x="222" y="319">From a description</text>
+  <text class="s" x="114" y="380">Generated name, description</text>
+  <text class="s" x="114" y="420">and instructions</text>
+  <text class="t" x="222" y="553">Name and five rules</text>
+  <text class="s" x="114" y="614">Workplace IT only,</text>
+  <text class="s" x="114" y="654">never passwords or codes</text>
+  <text class="t" x="222" y="787">Model and orchestration</text>
+  <text class="s" x="114" y="848">Default model, orchestration Yes,</text>
+  <text class="s" x="114" y="888">Allow ungrounded responses on</text>
+
+  <rect x="730" y="110" width="1140" height="420" rx="24" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <rect x="760" y="134" width="88" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="bd" x="804" y="165">Ex 4</text>
+  <text class="t" x="868" y="167">Generative orchestration: Yes</text>
+  <text class="se" x="1840" y="167">activity map</text>
+
+  <rect x="730" y="560" width="1140" height="410" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="760" y="584" width="88" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="bd" x="804" y="615">Ex 5</text>
+  <text class="t" x="868" y="617">Classic orchestration: No</text>
+  <text class="se" x="1840" y="617">topic tracking view</text>
+
+  <g stroke="#8c959f" stroke-width="2" fill="#eaf2ff">
+    <rect x="760" y="206" width="490" height="136" rx="16"/>
+    <rect x="760" y="366" width="490" height="136" rx="16"/>
+    <rect x="760" y="656" width="490" height="136" rx="16"/>
+    <rect x="760" y="812" width="490" height="136" rx="16"/>
+  </g>
+  <g stroke="#8c959f" stroke-width="2" fill="#ffffff">
+    <rect x="1330" y="206" width="510" height="136" rx="16"/>
+    <rect x="1330" y="366" width="510" height="136" rx="16"/>
+    <rect x="1330" y="656" width="510" height="136" rx="16"/>
+    <rect x="1330" y="812" width="510" height="136" rx="16"/>
+  </g>
+  <text class="q" x="788" y="262">My VPN keeps disconnecting</text>
+  <text class="q" x="788" y="302">every few minutes.</text>
+  <text class="q" x="788" y="422">Which restaurant near the office</text>
+  <text class="q" x="788" y="462">do you recommend for lunch?</text>
+  <text class="q" x="788" y="712">My VPN keeps disconnecting</text>
+  <text class="q" x="788" y="752">every few minutes.</text>
+  <text class="q" x="788" y="890">Hello</text>
+
+  <text class="t" x="1358" y="262">Numbered steps</text>
+  <text class="s" x="1358" y="304">and a hint to open a ticket</text>
+  <text class="t" x="1358" y="422">Polite refusal</text>
+  <text class="s" x="1358" y="464">that points back to workplace IT</text>
+  <text class="t" x="1358" y="712">Conversational boosting,</text>
+  <text class="s" x="1358" y="754">then Fallback asks to rephrase</text>
+  <text class="t" x="1358" y="868">Greeting topic</text>
+  <text class="s" x="1358" y="910">matched by trigger phrases</text>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="670" y1="320" x2="730" y2="320"/>
+    <line x1="670" y1="765" x2="730" y2="765"/>
+    <line x1="1250" y1="274" x2="1330" y2="274"/>
+    <line x1="1250" y1="434" x2="1330" y2="434"/>
+    <line x1="1250" y1="724" x2="1330" y2="724"/>
+    <line x1="1250" y1="880" x2="1330" y2="880"/>
+  </g>
+
+  <g fill="none" stroke="#24292f" stroke-width="5">
+    <rect x="90" y="262" width="540" height="210" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.02;0.12" values="0;1;0"/>
+    </rect>
+    <rect x="90" y="496" width="540" height="210" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.12;0.22" values="0;1;0"/>
+    </rect>
+    <rect x="90" y="730" width="540" height="210" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.22;0.32" values="0;1;0"/>
+    </rect>
+    <rect x="1330" y="206" width="510" height="136" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.42;0.52" values="0;1;0"/>
+    </rect>
+    <rect x="1330" y="366" width="510" height="136" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.58;0.66" values="0;1;0"/>
+    </rect>
+    <rect x="1330" y="656" width="510" height="136" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.75;0.84" values="0;1;0"/>
+    </rect>
+    <rect x="1330" y="812" width="510" height="136" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.88;0.98" values="0;1;0"/>
+    </rect>
+  </g>
+
+  <g fill="#24292f">
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M670,320 H730" calcMode="linear" keyTimes="0;0.32;0.36;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.32;0.36" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1250,274 H1330" calcMode="linear" keyTimes="0;0.36;0.42;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.36;0.42" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1250,434 H1330" calcMode="linear" keyTimes="0;0.52;0.58;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.52;0.58" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M670,765 H730" calcMode="linear" keyTimes="0;0.66;0.70;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.66;0.70" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1250,724 H1330" calcMode="linear" keyTimes="0;0.70;0.75;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.70;0.75" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1250,880 H1330" calcMode="linear" keyTimes="0;0.84;0.88;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.84;0.88" values="0;1;0"/>
+    </circle>
+  </g>
+</svg>

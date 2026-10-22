@@ -75,7 +75,7 @@ Voice is billed per minute in Copilot Credits, with the core agent activity in t
 
 ## Hands-On Demo
 
-- [Build a Voice Menu and a Post-Call Action](./demo-voice-agent.md): the presenter turns on basic voice for the Contoso IT Help Desk, builds a keypad and speech menu with a transfer, tests it in the **Speech & DTMF** chat mode, and adds a post-call action topic for caller hang-ups.
+- [Build a Voice Menu and a Post-Call Action](./demo-voice-agent.md): the presenter turns on basic voice for the Grey Logistics IT Help Desk, builds a keypad and speech menu with a transfer, tests it in the **Speech & DTMF** chat mode, and adds a post-call action topic for caller hang-ups.
 
 ## Key Topics covered in this module
 

@@ -130,9 +130,10 @@ Every action an agent flow executes consumes Copilot Studio capacity, billed as 
 
 When the prepaid capacity is used up, new agent flow runs are blocked while runs already in progress finish; the agent itself keeps answering. Power Automate cloud flows stay on Power Automate licensing and aren't affected. Administrators review consumption per flow in the Power Platform admin center under **Licensing** > **Copilot Studio**.
 
-## Hands-On Demo
+## Hands-On Demos
 
-- [Build an Agent Flow and Call It from an Agent](./demo-build-an-agent-flow.md): the presenter builds a ticket-logging flow with a prompt step and a confirmation email, adds it to the Contoso IT Help Desk agent as a tool, and traces the call in the activity map.
+- [Rebuild the Health Advisor with Two Agent Flows](./demo-health-advisor-flows.md): the presenter rebuilds CS-Health Advisor with one agent flow that classifies symptoms through a prompt, a topic that branches on its outcome, and a second flow that waits for a reviewer before it posts to Teams.
+- [Build an Agent Flow and Call It from an Agent](./demo-build-an-agent-flow.md) (optional): the presenter builds a ticket-logging flow with a prompt step and a confirmation email, adds it to the Grey Logistics IT Help Desk agent as a tool, and traces the call in the activity map.
 
 ## Key Topics covered in this module
 

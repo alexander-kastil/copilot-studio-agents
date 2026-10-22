@@ -1,5 +1,7 @@
 # Run a New Hire Background Check Through a Foundry Agent
 
+![CS-Compliance Agent on Claude Sonnet 4.6 runs its five instruction steps, collects Jana Novak's details, and calls CS-Social Profiler in Microsoft Foundry for the five answer sections only after the confirmation step, while a second run with jana.novak(at)example stops at data collection.](./_images/compliance-agent-foundry-overview.svg)
+
 Before a new hire starts, HR checks who the person is, but the research behind that check lives with a data team that built it in Microsoft Foundry. Rebuilding their research in Copilot Studio would split it into two versions, and asking HR to use a second tool means the check gets skipped. In this demo you build CS-Compliance Agent, which collects and confirms the person's details and hands them to the social-profiler agent in Foundry for the actual research.
 
 What you practice here: writing structured instructions that collect and confirm data before a hand-off, choosing an external model, and calling a Foundry agent as an external agent.

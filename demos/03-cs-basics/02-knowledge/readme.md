@@ -68,9 +68,10 @@ Suggested prompts are the starters a user sees on the agent's welcome page in Mi
 
 Two channel details decide whether users see them at all. In Teams, the **Conversation Start** system topic opens the chat with the agent's introductory message and skips the welcome page, so turn it off for an agent published only to Teams; users can still open the Prompt Gallery. In Microsoft Copilot, chats always start from the welcome page, and updates can take time to appear because of caching.
 
-## Hands-On Demo
+## Hands-On Demos
 
-- [Ground the Help Desk Agent in Public Content](./demo-ground-with-knowledge.md): the presenter adds two public website sources with distinct descriptions, shows citations and the activity map, compares grounded and ungrounded behavior, turns on web search, and adds suggested prompts.
+- [Ground the Onboarding Assistant in Two SharePoint Sites](./demo-onboarding-sharepoint-knowledge.md): the presenter adds the HR Documents and Sightseeing SharePoint sites as knowledge with descriptions the orchestrator chooses by, traces each answer to its citation, and compares answers with ungrounded responses allowed and blocked.
+- [Ground the Help Desk Agent in Public Content](./demo-ground-with-knowledge.md) (optional): the presenter adds two public website sources with distinct descriptions, shows citations and the activity map, compares grounded and ungrounded behavior, turns on web search, and adds suggested prompts.
 
 ## Hands-On Lab
 

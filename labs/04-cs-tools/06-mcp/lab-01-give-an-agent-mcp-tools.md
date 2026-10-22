@@ -194,7 +194,7 @@ If Copilot Studio asks you to **Open connection manager**, connect there and sel
 Try a tool that takes arguments:
 
 ```text
-Add an employee with firstname John, lastname Smith, email john.smith@contoso.com,
+Add an employee with firstname John, lastname Smith, email john.smith@greylogistics.com,
 role Software Engineer, spoken languages English and Spanish, skills React and Node.js
 ```
 
@@ -209,7 +209,7 @@ Assign John Smith to the bar shift on 2026-08-03 starting at 10
 Other prompts worth trying:
 
 ```text
-Update the employee with email john.smith@contoso.com to speak also French
+Update the employee with email john.smith@greylogistics.com to speak also French
 ```
 
 ```text
@@ -217,7 +217,7 @@ Search for employees with skill Project Management
 ```
 
 ```text
-Remove employee john.smith@contoso.com
+Remove employee john.smith@greylogistics.com
 ```
 
 ---

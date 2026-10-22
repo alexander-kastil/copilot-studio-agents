@@ -1,5 +1,7 @@
 # Publish the Help Desk Agent to Teams and SharePoint
 
+![One publish of the Grey Logistics IT Help Desk draft reaches Teams, Microsoft Copilot and an IT SharePoint site, where the new instruction ends answers with "Still stuck? Open a ticket in the service desk portal.", and the agent is then shown to teammates in Built with Power Platform.](./_images/publish-to-teams-and-copilot-overview.svg)
+
 The help desk agent works in the test panel, but employees look for help in Teams, in Microsoft Copilot, and on the IT SharePoint site. Each of those needs the agent published, connected, and shared with the right people, and a change made next week has to reach all of them without a second setup. In this demo you take the agent live in three places and push one change through all of them.
 
 What you practice here: publishing a Standard agent, connecting Microsoft channels, and rolling a change out to every connected channel.
@@ -8,14 +10,14 @@ Duration: about 40 minutes.
 
 ## What you'll build
 
-- A published Contoso IT Help Desk agent with the default **Authenticate with Microsoft** setting.
+- A published Grey Logistics IT Help Desk agent with the default **Authenticate with Microsoft** setting.
 - The agent installed for yourself in Teams and available in Microsoft Copilot, with its suggested prompts on the welcome page.
 - The agent deployed to an IT SharePoint site.
 - A republished change that reaches Teams after a `start over`, and a teammate share through the **Built with Power Platform** section.
 
 ## Prerequisites
 
-- A Standard agent such as Contoso IT Help Desk from the earlier demos, with **Authenticate with Microsoft** under **Settings**, **Security**, **Authentication**, and suggested prompts configured on the **Overview** page.
+- A Standard agent such as Grey Logistics IT Help Desk from the earlier demos, with **Authenticate with Microsoft** under **Settings**, **Security**, **Authentication**, and suggested prompts configured on the **Overview** page.
 - A SharePoint site where you have write access, for example an IT team site.
 - Power Platform apps allowed in Teams for your tenant; an administrator manages this in the Teams admin center.
 
@@ -42,7 +44,7 @@ The **Teams and Microsoft Copilot** channel serves both places from one configur
 OneDrive shows a red X on some files. What does it mean?
 ```
 
-5. Open Microsoft Copilot Chat, find Contoso IT Help Desk in the agents list, and open it.
+5. Open Microsoft Copilot Chat, find Grey Logistics IT Help Desk in the agents list, and open it.
 
 Expected: the agent answers in Teams with the same grounding and citations you saw in the test panel. In Copilot Chat, the agent's welcome page shows the suggested prompts you configured, which the test panel never displays.
 

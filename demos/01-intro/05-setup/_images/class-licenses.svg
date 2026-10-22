@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 2008" width="1920" height="2008" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Licenses for this class, by module</title>
+  <desc id="d">A matrix of the licenses this class needs: one row per license, one column for each of the eight modules, and a cost column. A filled dot means the license is needed in the module; a ring means it is needed only for an optional topic or step. Module 8, AI Teammates, is optional. Per user: Microsoft 365 with Microsoft 365 Copilot is needed in modules 1, 2 and 8 and is paid per user, monthly or annual. Copilot Studio access, through a Copilot license, the free user license or a trial, is needed in modules 3 to 8 and is free or included. A GitHub account is a class prerequisite for all eight modules and is free. Claude Code or GitHub Copilot CLI is needed in module 7 and comes with a Claude or GitHub Copilot plan. Copilot Credits, about $0.01 each: a billing plan on the agent environment, set in the Power Platform admin center, is needed in modules 4, 5, 6 and 8, and in module 7 only for an optional topic or step; it is pay-as-you-go. A billing plan on each maker's personal environment, for apps, is needed in module 6 and is pay-as-you-go. A Microsoft 365 spending policy for Cowork, the Work IQ API and app runtime is needed in modules 2, 5 and 6, up to a monthly limit. Azure: an Azure subscription and resource group with Owner or Contributor rights is needed in modules 2, 4, 5, 6 and 8, and in module 7 only for an optional topic or step; it costs Azure usage, and the F1 tier is free. A Microsoft Foundry project is needed in module 5, and in module 6 only for an optional topic or step, and costs Azure usage. Azure Communication Services is needed only for an optional topic or step in modules 5 and 7 and costs Azure usage. Optional topics and module: a Microsoft Fabric semantic model is needed only for an optional topic or step in module 6 and requires workspace access. Dynamics 365 Contact Center is needed only for an optional topic or step in module 5 and requires a Contact Center license. Agent 365, a maker license and Frontier for AI Teammates are needed in module 8, with a 30-day trial, then about $15 to $18. Autopilot preview, with Intune and a GitHub Copilot seat, is needed in module 8 and is by invitation only.</desc>
+  <rect width="1920" height="2008" fill="#ffffff"/>
+  <text x="24" y="72" font-size="40" font-weight="700" fill="#24292f">Licenses for this class, by module</text>
+  <circle cx="1190" cy="58" r="17" fill="#e0a534"/>
+  <text x="1221" y="66" font-size="24" fill="#24292f">needed in the module</text>
+  <circle cx="1516" cy="58" r="14.5" fill="#ffffff" stroke="#e0a534" stroke-width="5"/>
+  <text x="1547" y="66" font-size="24" fill="#24292f">only for an optional topic or step</text>
+  <rect x="447" y="104" width="112" height="92" rx="14" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="503" y="158.5" font-size="24" font-weight="700" fill="#24292f" text-anchor="middle">1 Intro</text>
+  <rect x="565" y="104" width="128" height="92" rx="14" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="629" y="158.5" font-size="24" font-weight="700" fill="#24292f" text-anchor="middle">2 Cowork</text>
+  <rect x="699" y="104" width="112" height="92" rx="14" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="755" y="158.5" font-size="24" font-weight="700" fill="#24292f" text-anchor="middle">3 Basics</text>
+  <rect x="817" y="104" width="112" height="92" rx="14" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="873" y="158.5" font-size="24" font-weight="700" fill="#24292f" text-anchor="middle">4 Tools</text>
+  <rect x="935" y="104" width="150" height="92" rx="14" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1010" y="158.5" font-size="24" font-weight="700" fill="#24292f" text-anchor="middle">5 Advanced</text>
+  <rect x="1091" y="104" width="180" height="92" rx="14" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1181" y="143.5" font-size="24" font-weight="700" fill="#24292f" text-anchor="middle">6 GitHub</text>
+  <text x="1181" y="173.5" font-size="24" font-weight="700" fill="#24292f" text-anchor="middle">Copilot agents</text>
+  <rect x="1277" y="104" width="178" height="92" rx="14" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1366" y="158.5" font-size="24" font-weight="700" fill="#24292f" text-anchor="middle">7 Maintaining</text>
+  <rect x="1461" y="104" width="200" height="92" rx="14" fill="#eaf2ff" stroke="#8c959f" stroke-width="2" stroke-dasharray="10 6"/>
+  <text x="1561" y="143.5" font-size="24" font-weight="700" fill="#24292f" text-anchor="middle">8 AI Teammates</text>
+  <text x="1561" y="173.5" font-size="24" fill="#57606a" text-anchor="middle">(optional)</text>
+  <rect x="1667" y="104" width="229" height="92" rx="14" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1781.5" y="158.5" font-size="24" font-weight="700" fill="#24292f" text-anchor="middle">Cost</text>
+  <rect x="24" y="216" width="1872" height="470" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="44" y="259" font-size="28" font-weight="700" fill="#24292f">Per user</text>
+  <rect x="447" y="280" width="112" height="396" rx="8" fill="#f6f8fa"/>
+  <rect x="565" y="280" width="128" height="396" rx="8" fill="#f6f8fa"/>
+  <rect x="699" y="280" width="112" height="396" rx="8" fill="#f6f8fa"/>
+  <rect x="817" y="280" width="112" height="396" rx="8" fill="#f6f8fa"/>
+  <rect x="935" y="280" width="150" height="396" rx="8" fill="#f6f8fa"/>
+  <rect x="1091" y="280" width="180" height="396" rx="8" fill="#f6f8fa"/>
+  <rect x="1277" y="280" width="178" height="396" rx="8" fill="#f6f8fa"/>
+  <rect x="1461" y="280" width="200" height="396" rx="8" fill="#f6f8fa"/>
+  <line x1="40" y1="280" x2="1880" y2="280" stroke="#8c959f" stroke-width="2"/>
+  <text x="44" y="321" font-size="26" font-weight="700" fill="#24292f">Microsoft 365 with</text>
+  <text x="44" y="353" font-size="26" font-weight="700" fill="#24292f">Microsoft 365 Copilot</text>
+  <circle cx="503" cy="328" r="17" fill="#e0a534"/>
+  <circle cx="629" cy="328" r="17" fill="#e0a534"/>
+  <circle cx="1561" cy="328" r="17" fill="#e0a534"/>
+  <text x="1684" y="320.5" font-size="24" fill="#24292f">Per user, monthly</text>
+  <text x="1684" y="352.5" font-size="24" fill="#24292f">or annual</text>
+  <line x1="40" y1="376" x2="1880" y2="376" stroke="#8c959f" stroke-width="1.5" stroke-opacity="0.45"/>
+  <text x="44" y="417" font-size="26" font-weight="700" fill="#24292f">Copilot Studio access</text>
+  <text x="44" y="448.5" font-size="24" fill="#57606a">Copilot license, free user</text>
+  <text x="44" y="480.5" font-size="24" fill="#57606a">license or trial</text>
+  <circle cx="755" cy="440" r="17" fill="#e0a534"/>
+  <circle cx="873" cy="440" r="17" fill="#e0a534"/>
+  <circle cx="1010" cy="440" r="17" fill="#e0a534"/>
+  <circle cx="1181" cy="440" r="17" fill="#e0a534"/>
+  <circle cx="1366" cy="440" r="17" fill="#e0a534"/>
+  <circle cx="1561" cy="440" r="17" fill="#e0a534"/>
+  <text x="1684" y="448.5" font-size="24" fill="#24292f">Free or included</text>
+  <line x1="40" y1="504" x2="1880" y2="504" stroke="#8c959f" stroke-width="1.5" stroke-opacity="0.45"/>
+  <text x="44" y="551" font-size="26" font-weight="700" fill="#24292f">GitHub account</text>
+  <rect x="456" y="518" width="1196" height="48" rx="24" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="1054" y="550.5" font-size="24" font-weight="700" fill="#24292f" text-anchor="middle">Class prerequisite</text>
+  <text x="1684" y="550.5" font-size="24" fill="#24292f">Free</text>
+  <line x1="40" y1="580" x2="1880" y2="580" stroke="#8c959f" stroke-width="1.5" stroke-opacity="0.45"/>
+  <text x="44" y="621" font-size="26" font-weight="700" fill="#24292f">Claude Code or</text>
+  <text x="44" y="653" font-size="26" font-weight="700" fill="#24292f">GitHub Copilot CLI</text>
+  <circle cx="1366" cy="628" r="17" fill="#e0a534"/>
+  <text x="1684" y="620.5" font-size="24" fill="#24292f">Claude or GitHub</text>
+  <text x="1684" y="652.5" font-size="24" fill="#24292f">Copilot plan</text>
+  <rect x="24" y="704" width="1872" height="426" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="44" y="747" font-size="28" font-weight="700" fill="#24292f">Copilot Credits, about $0.01 each</text>
+  <rect x="447" y="768" width="112" height="352" rx="8" fill="#f6f8fa"/>
+  <rect x="565" y="768" width="128" height="352" rx="8" fill="#f6f8fa"/>
+  <rect x="699" y="768" width="112" height="352" rx="8" fill="#f6f8fa"/>
+  <rect x="817" y="768" width="112" height="352" rx="8" fill="#f6f8fa"/>
+  <rect x="935" y="768" width="150" height="352" rx="8" fill="#f6f8fa"/>
+  <rect x="1091" y="768" width="180" height="352" rx="8" fill="#f6f8fa"/>
+  <rect x="1277" y="768" width="178" height="352" rx="8" fill="#f6f8fa"/>
+  <rect x="1461" y="768" width="200" height="352" rx="8" fill="#f6f8fa"/>
+  <line x1="40" y1="768" x2="1880" y2="768" stroke="#8c959f" stroke-width="2"/>
+  <text x="44" y="809" font-size="26" font-weight="700" fill="#24292f">Billing plan on the</text>
+  <text x="44" y="841" font-size="26" font-weight="700" fill="#24292f">agent environment</text>
+  <text x="44" y="872.5" font-size="24" fill="#57606a">Power Platform admin center</text>
+  <circle cx="873" cy="832" r="17" fill="#e0a534"/>
+  <circle cx="1010" cy="832" r="17" fill="#e0a534"/>
+  <circle cx="1181" cy="832" r="17" fill="#e0a534"/>
+  <circle cx="1366" cy="832" r="14.5" fill="#ffffff" stroke="#e0a534" stroke-width="5"/>
+  <circle cx="1561" cy="832" r="17" fill="#e0a534"/>
+  <text x="1684" y="840.5" font-size="24" fill="#24292f">Pay-as-you-go</text>
+  <line x1="40" y1="896" x2="1880" y2="896" stroke="#8c959f" stroke-width="1.5" stroke-opacity="0.45"/>
+  <text x="44" y="937" font-size="26" font-weight="700" fill="#24292f">Billing plan on each maker's</text>
+  <text x="44" y="969" font-size="26" font-weight="700" fill="#24292f">personal environment</text>
+  <text x="44" y="1000.5" font-size="24" fill="#57606a">Apps</text>
+  <circle cx="1181" cy="960" r="17" fill="#e0a534"/>
+  <text x="1684" y="968.5" font-size="24" fill="#24292f">Pay-as-you-go</text>
+  <line x1="40" y1="1024" x2="1880" y2="1024" stroke="#8c959f" stroke-width="1.5" stroke-opacity="0.45"/>
+  <text x="44" y="1065" font-size="26" font-weight="700" fill="#24292f">Microsoft 365 spending policy</text>
+  <text x="44" y="1096.5" font-size="24" fill="#57606a">Cowork, Work IQ API, app runtime</text>
+  <circle cx="629" cy="1072" r="17" fill="#e0a534"/>
+  <circle cx="1010" cy="1072" r="17" fill="#e0a534"/>
+  <circle cx="1181" cy="1072" r="17" fill="#e0a534"/>
+  <text x="1684" y="1080.5" font-size="24" fill="#24292f">Monthly limit</text>
+  <rect x="24" y="1148" width="1872" height="354" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="44" y="1191" font-size="28" font-weight="700" fill="#24292f">Azure</text>
+  <rect x="447" y="1212" width="112" height="280" rx="8" fill="#f6f8fa"/>
+  <rect x="565" y="1212" width="128" height="280" rx="8" fill="#f6f8fa"/>
+  <rect x="699" y="1212" width="112" height="280" rx="8" fill="#f6f8fa"/>
+  <rect x="817" y="1212" width="112" height="280" rx="8" fill="#f6f8fa"/>
+  <rect x="935" y="1212" width="150" height="280" rx="8" fill="#f6f8fa"/>
+  <rect x="1091" y="1212" width="180" height="280" rx="8" fill="#f6f8fa"/>
+  <rect x="1277" y="1212" width="178" height="280" rx="8" fill="#f6f8fa"/>
+  <rect x="1461" y="1212" width="200" height="280" rx="8" fill="#f6f8fa"/>
+  <line x1="40" y1="1212" x2="1880" y2="1212" stroke="#8c959f" stroke-width="2"/>
+  <text x="44" y="1253" font-size="26" font-weight="700" fill="#24292f">Azure subscription and</text>
+  <text x="44" y="1285" font-size="26" font-weight="700" fill="#24292f">resource group</text>
+  <text x="44" y="1316.5" font-size="24" fill="#57606a">Owner or Contributor</text>
+  <circle cx="629" cy="1276" r="17" fill="#e0a534"/>
+  <circle cx="873" cy="1276" r="17" fill="#e0a534"/>
+  <circle cx="1010" cy="1276" r="17" fill="#e0a534"/>
+  <circle cx="1181" cy="1276" r="17" fill="#e0a534"/>
+  <circle cx="1366" cy="1276" r="14.5" fill="#ffffff" stroke="#e0a534" stroke-width="5"/>
+  <circle cx="1561" cy="1276" r="17" fill="#e0a534"/>
+  <text x="1684" y="1268.5" font-size="24" fill="#24292f">Azure usage,</text>
+  <text x="1684" y="1300.5" font-size="24" fill="#24292f">F1 tier free</text>
+  <line x1="40" y1="1340" x2="1880" y2="1340" stroke="#8c959f" stroke-width="1.5" stroke-opacity="0.45"/>
+  <text x="44" y="1387" font-size="26" font-weight="700" fill="#24292f">Microsoft Foundry project</text>
+  <circle cx="1010" cy="1378" r="17" fill="#e0a534"/>
+  <circle cx="1181" cy="1378" r="14.5" fill="#ffffff" stroke="#e0a534" stroke-width="5"/>
+  <text x="1684" y="1386.5" font-size="24" fill="#24292f">Azure usage</text>
+  <line x1="40" y1="1416" x2="1880" y2="1416" stroke="#8c959f" stroke-width="1.5" stroke-opacity="0.45"/>
+  <text x="44" y="1463" font-size="26" font-weight="700" fill="#24292f">Azure Communication Services</text>
+  <circle cx="1010" cy="1454" r="14.5" fill="#ffffff" stroke="#e0a534" stroke-width="5"/>
+  <circle cx="1366" cy="1454" r="14.5" fill="#ffffff" stroke="#e0a534" stroke-width="5"/>
+  <text x="1684" y="1462.5" font-size="24" fill="#24292f">Azure usage</text>
+  <rect x="24" y="1520" width="1872" height="458" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="44" y="1563" font-size="28" font-weight="700" fill="#24292f">Optional topics and module</text>
+  <rect x="447" y="1584" width="112" height="384" rx="8" fill="#f6f8fa"/>
+  <rect x="565" y="1584" width="128" height="384" rx="8" fill="#f6f8fa"/>
+  <rect x="699" y="1584" width="112" height="384" rx="8" fill="#f6f8fa"/>
+  <rect x="817" y="1584" width="112" height="384" rx="8" fill="#f6f8fa"/>
+  <rect x="935" y="1584" width="150" height="384" rx="8" fill="#f6f8fa"/>
+  <rect x="1091" y="1584" width="180" height="384" rx="8" fill="#f6f8fa"/>
+  <rect x="1277" y="1584" width="178" height="384" rx="8" fill="#f6f8fa"/>
+  <rect x="1461" y="1584" width="200" height="384" rx="8" fill="#f6f8fa"/>
+  <line x1="40" y1="1584" x2="1880" y2="1584" stroke="#8c959f" stroke-width="2"/>
+  <text x="44" y="1625" font-size="26" font-weight="700" fill="#24292f">Microsoft Fabric</text>
+  <text x="44" y="1657" font-size="26" font-weight="700" fill="#24292f">semantic model</text>
+  <circle cx="1181" cy="1632" r="14.5" fill="#ffffff" stroke="#e0a534" stroke-width="5"/>
+  <text x="1684" y="1640.5" font-size="24" fill="#24292f">Workspace access</text>
+  <line x1="40" y1="1680" x2="1880" y2="1680" stroke="#8c959f" stroke-width="1.5" stroke-opacity="0.45"/>
+  <text x="44" y="1737" font-size="26" font-weight="700" fill="#24292f">Dynamics 365 Contact Center</text>
+  <circle cx="1010" cy="1728" r="14.5" fill="#ffffff" stroke="#e0a534" stroke-width="5"/>
+  <text x="1684" y="1720.5" font-size="24" fill="#24292f">Contact Center</text>
+  <text x="1684" y="1752.5" font-size="24" fill="#24292f">license</text>
+  <line x1="40" y1="1776" x2="1880" y2="1776" stroke="#8c959f" stroke-width="1.5" stroke-opacity="0.45"/>
+  <text x="44" y="1817" font-size="26" font-weight="700" fill="#24292f">Agent 365, maker license,</text>
+  <text x="44" y="1849" font-size="26" font-weight="700" fill="#24292f">Frontier for AI Teammates</text>
+  <circle cx="1561" cy="1824" r="17" fill="#e0a534"/>
+  <text x="1684" y="1816.5" font-size="24" fill="#24292f">Trial 30 days, then</text>
+  <text x="1684" y="1848.5" font-size="24" fill="#24292f">about $15 to $18</text>
+  <line x1="40" y1="1872" x2="1880" y2="1872" stroke="#8c959f" stroke-width="1.5" stroke-opacity="0.45"/>
+  <text x="44" y="1913" font-size="26" font-weight="700" fill="#24292f">Autopilot preview: Intune,</text>
+  <text x="44" y="1945" font-size="26" font-weight="700" fill="#24292f">GitHub Copilot seat</text>
+  <circle cx="1561" cy="1920" r="17" fill="#e0a534"/>
+  <text x="1684" y="1928.5" font-size="24" fill="#24292f">Invitation only</text>
+</svg>

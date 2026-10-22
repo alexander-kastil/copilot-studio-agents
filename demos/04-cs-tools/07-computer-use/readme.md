@@ -6,7 +6,7 @@ This topic teaches the computer use tool in Copilot Studio's Standard agents (Le
 
 ## How computer use works
 
-Computer use runs a Computer-Using Agent (CUA) model, which combines vision with reasoning to operate a graphical interface. Each run is a loop: the tool takes a screenshot, analyzes it to decide the next action, performs the action, and repeats until the task is done. Screenshots and reasoning steps are kept in the run history, so you can review every decision afterwards.
+Computer use runs a computer-using model, which combines vision with reasoning to operate a graphical interface; Microsoft calls this a Computer-Using Agent (CUA), and OpenAI's model of that name is one of several you can pick. Each run is a loop: the tool takes a screenshot, analyzes it to decide the next action, performs the action, and repeats until the task is done. Screenshots and reasoning steps are kept in the run history: on the agent's **Activity** tab, a session's **Map view** shows a session replay, the list of steps and a summary with the number of actions, so you can review every decision afterwards.
 
 Because the model reads the screen, it adapts when a button moves or a page is redesigned, where a recorded script would break. You describe the task in plain language, with no code and no selectors. The tool needs generative orchestration, because the orchestrator decides when to call it from its name and description.
 
@@ -26,29 +26,29 @@ A bring-your-own machine needs Power Automate for desktop version 2.61.132.25266
 
 ## Configuring a computer use tool
 
-You add the tool from **Tools** > **Add a tool** > **New tool** > **Computer use**, write the instructions (templates help you start), and select **Add and configure**. Four fields are required: **Name**, **Description**, **Model**, and **Instructions**. The rest decide whose access the run uses and where it may go.
+You add the tool from **Tools** > **Add a tool** with the **Add new Computer use** card. Its first dialog asks only for the instructions (templates for invoice processing, data entry and data extraction help you start), and **Add and configure** opens the configuration page, where **Name**, **Description**, **Model** and **Instructions** are the four required fields. A new tool starts with the name Computer use and a generic description, so replace both: the orchestrator picks the tool by them. The rest decide whose access the run uses and where it may go.
 
 | Setting | What it controls |
 |---------|------------------|
-| Inputs | Values that change per run, such as a customer name to look up, combined with the instructions at execution time |
-| Machine | The target machine; **Manage machines** opens Power Automate |
+| Inputs | Values that change per run, such as a customer name to look up, combined with the instructions at execution time; the orchestrator fills them (**Dynamically fill with AI**) |
+| Machine | The target machine; where the environment offers it, the hosted browser comes preselected with a ready connection, and **Manage machines** opens Power Automate |
 | Credentials to use | **Maker-provided credentials** (default, suited to autonomous agents) or **End user credentials** (each user needs access to the machine) |
-| Human supervision | Who receives an Outlook review request when the run needs confirmation or more information, and how long the request stays open |
+| Human supervision | Who receives an Outlook review request when the run needs confirmation or more information, and how long the request stays open; the maker is the preset reviewer |
 | Stored credentials | Usernames and passwords for websites or desktop apps, kept in Power Platform internal storage or in your Azure Key Vault |
-| Access control | An allow list of websites and desktop apps the tool may act on |
-| Enforce HTTPS | Restricts the tool to sites whose URL starts with `https://` |
+| Access control | An allow list of websites and desktop apps the tool may act on; with the hosted browser, adding a website also adds Microsoft Edge as a desktop app |
+| Enforce HTTPS | Restricts the tool to sites whose URL starts with `https://`; on by default for a new tool |
 
 One warning deserves a slide of its own. With maker-provided credentials, anyone you share the agent with acts with the author's access on the configured machine. Use a dedicated machine account with least privilege, and prefer end user credentials for conversational agents.
 
 ## Writing instructions that work
 
-The instructions decide how reliably the tool finishes. Learn's advice reads like briefing a new colleague: name every website by its full URL and every app by its exact name, state actions you want explicitly (including "submit without asking"), break complex navigation into small steps, and use a numbered list for longer tasks. Testing is built in: **Test** shows the reasoning log on the left and a live preview of the machine on the right, and **Stop testing** halts every action immediately.
+The instructions decide how reliably the tool finishes. Learn's advice reads like briefing a new colleague: name every website by its full URL and every app by its exact name, state actions you want explicitly (including "submit without asking"), break complex navigation into small steps, and use a numbered list for longer tasks. Testing is built in: **Test directly** asks for a value per input, then opens a test window with the reasoning messages on the left and a live **Preview** of the machine on the right, and **Cancel test** halts the run; **Test in agent chat** runs the same tool through the orchestrator.
 
 For data extraction, say exactly what to return. The tool can return plain values or a JSON object you describe field by field, which makes the output easy to pass on. When another tool must use the extracted data, for example to email it, say so in the agent instructions and add both tools to the agent.
 
 ## Models and cost
 
-Computer use is billed per step through the Agent action feature. A step can include several low-level actions such as clicking, typing, and navigating; each step consumes 5 Copilot Credits with a standard model and 15 with a premium model. A four-step time-sheet run therefore costs 20 credits with a standard model and 60 with a premium one.
+Computer use is billed per step through the Agent action feature. A step can include several low-level actions such as clicking, typing, and navigating; each step consumes 5 Copilot Credits with a standard model and 15 with a premium model. A four-step time-sheet run therefore costs 20 credits with a standard model and 60 with a premium one. To price a real run, read **Number of actions** in the session's map view: the demo's portfolio lookup took 4, which is 20 credits.
 
 | Model | Provider | Tier | Status | Credits per step |
 |-------|----------|------|--------|------------------|
@@ -59,6 +59,8 @@ Computer use is billed per step through the Agent action feature. A step can inc
 | Claude Opus 4.6 | Anthropic | Premium | Experimental | 15 |
 
 Anthropic models work only after an administrator turns on access to external models for the environment. Shorter instructions that reach the goal in fewer steps cost less, which is one more reason to write precise ones.
+
+Learn's list and the picker can differ: in the class environment the **Model** list offered CUA, Claude Sonnet 4.5 (preselected), Claude Sonnet 4.6 and Claude Opus 4.6, but no GPT-6 Sol, so check the list in your own environment. The model also decides how accurately the tool reads the screen. In the demo run CUA zoomed into the portfolio table until the Manager column was cut off and returned "Yhlas Galdiyew" for "Yhlas Geldiyew", while Claude Sonnet 4.5 read the name exactly.
 
 ## Guardrails
 

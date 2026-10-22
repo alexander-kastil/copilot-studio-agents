@@ -1,5 +1,7 @@
 # Add and Tune an Agent Skill
 
+![The SKILL.md of follow-up-email-drafter sits in the center while six steps run around it (decide, create from blank, upload, test in Preview, replace, download), ending with the file shared to another agent.](./_images/03-add-a-reusable-skill-overview.svg)
+
 Northwind Traders sellers write a follow-up email after every customer call, and each one looks a little different. In this demo you package that follow-up recipe as a reusable Agent Skill for the Northwind Sales Assistant, so the agent drafts consistent, on-brand notes only when a request actually calls for one. You use the open `SKILL.md` format shared with Claude Code and GitHub Copilot, then test, refine, and download it to share.
 
 ## What you'll build

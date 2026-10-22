@@ -1,0 +1,5 @@
+mcs.metadata:
+  componentName: vpn-wont-connect
+  schemaName: catmgr_GHGreyLogisticsITHelpDesk.skill.vpnwontconnect_EMS
+kind: InlineAgentSkill
+skillFolderName: vpn-wont-connect

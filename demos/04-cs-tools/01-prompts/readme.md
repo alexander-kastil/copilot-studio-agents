@@ -81,9 +81,10 @@ Every Standard agent already uses a model through its orchestrator, so a prompt 
 
 The prompt tool belongs to Standard agents. In GitHub Copilot agents (Learn: GitHub Copilot harness) the comparison table lists the prompt tool as replaced by skills, which package instructions for an agent in the open `SKILL.md` format. A prompt you build here does not move to a GitHub Copilot agent, because agents never move between harnesses. The GitHub Copilot approach is taught in [Agent Skills in Copilot Studio](../../06-cs-gh-copilot/03-agent-skills/readme.md).
 
-## Hands-On Demo
+## Hands-On Demos
 
-- [Triage and Analyze Help Desk Tickets with Prompt Tools](./demo-prompt-tool-with-code-interpreter.md): the presenter drafts a triage prompt with Prompt assistant, locks its output to JSON, then builds a second prompt whose code interpreter computes backlog statistics that a model alone would guess.
+- [Calculate the Canteen Order with a Prompt](./demo-food-order-prompt.md): the presenter gives CS-Food Stock Buddy a prompt that takes the demand and the stock as JSON and returns the quantity to order per dish, called from a topic that passes both values without asking the user.
+- [Triage and Analyze Help Desk Tickets with Prompt Tools](./demo-prompt-tool-with-code-interpreter.md) (optional): the presenter drafts a triage prompt with Prompt assistant, locks its output to JSON, then builds a second prompt whose code interpreter computes backlog statistics that a model alone would guess.
 
 ## Hands-On Lab
 

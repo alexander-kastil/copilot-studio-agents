@@ -1,5 +1,7 @@
 # Ground an Agent in Your Work Context with Work IQ
 
+![Work IQ (Preview) is picked on the MCP tab instead of the legacy workload tools, and the Aurora Account Assistant's question travels by retrieve and fetch through Work IQ to your Outlook mailbox and back as a reply naming the subject and deadline of a real email.](./_images/05-ground-with-iq-overview.svg)
+
 A seller who asks an agent about yesterday's customer email gets a confident answer only when the agent can read that email. Without a grounding tool, the agent answers from general knowledge, and the reply can sound right while naming nothing from your mailbox. In this demo you ask the same question before and after you add Work IQ, then open the activity trace to show the call that made the difference.
 
 What you practice here: adding a grounding tool to an agent and proving the grounding in the activity trace.

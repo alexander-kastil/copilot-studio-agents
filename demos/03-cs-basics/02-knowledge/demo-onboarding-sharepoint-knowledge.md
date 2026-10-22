@@ -1,5 +1,7 @@
 # Ground the Onboarding Assistant in Two SharePoint Sites
 
+![CS-Employee Onboarding Assistant traces the benefits, sightseeing and dog-policy answers to their documents on the HR Documents and Sightseeing SharePoint sites, while the capital question gets Canberra with ungrounded answers on and the Fallback topic with them off.](./_images/onboarding-sharepoint-knowledge-overview.svg)
+
 The onboarding assistant from the last demo has good manners but no documents: it tells new employees to contact HR because it can't find a single form. The answers it needs already live on two SharePoint sites, one for HR documents and one for sightseeing tips. In this demo you add both sites as knowledge, write the descriptions the agent picks them by, and trace every answer back to its source through the citations.
 
 What you practice here: grounding a Standard agent in SharePoint with source descriptions that steer generative orchestration, and checking each answer against its citation.

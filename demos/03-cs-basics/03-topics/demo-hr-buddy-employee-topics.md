@@ -1,5 +1,7 @@
 # Identify an Employee Once and Reuse It Across HR Topics
 
+![In CS-HR Buddy, the first reward request redirects through Collect Employee Data, which sets Global.EmployeeIdentified to true, and the second request goes straight to the dinner or theatre reward.](./_images/hr-buddy-employee-topics-overview.svg)
+
 An HR self-service agent that asks for a name, a department and a cost center in every conversation wears people out, and one that never asks can't tell who wants a reward. HR Buddy solves this with two topics: one collects the employee's data and remembers that the employee is known, the other checks that memory and sends unknown employees through the first topic before it hands out a reward. In this demo you rebuild both topics in a fresh agent, CS-HR Buddy, and watch the second topic skip its detour once the employee is identified.
 
 What you practice here: collecting values with prebuilt entities and multiple choice options, sharing state between topics with a global variable, and redirecting to another topic on a Power Fx condition.

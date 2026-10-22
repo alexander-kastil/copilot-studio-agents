@@ -1,5 +1,7 @@
 # Turn a Partner Meeting into a Follow-Up Package
 
+![partner-meeting-notes.docx and partnership-proposal-draft.docx are reconciled so each [OPEN] term gives way to the agreed position and a fleece quality note is added, producing partnership-proposal-v1.0.docx, an email to Markus Lind saved to drafts and not sent, and the Aurora x Fjallbryggan - proposal review call held at a Create calendar event? card at Medium risk.](./_images/01-follow-up-overview.svg)
+
 Give Cowork your raw meeting notes and a half-finished proposal, and let it reconcile the two, close every open term, draft the follow-up email, and book the next call.
 
 > **Reasoning effort:** Use **Medium** for Steps 1 and 2, where Cowork reconciles the notes against the draft and closes the open terms. Use **Light** for the email in Step 3 and the booking in Step 4. Set it in the **Auto Medium** picker beside the send arrow: Medium is the default, and Light is the leftmost stop on the **Faster** to **Smarter** slider. High or Max is not needed for this package.

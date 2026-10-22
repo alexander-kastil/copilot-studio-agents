@@ -1,5 +1,7 @@
 # Save Expense Claims to Dataverse
 
+![CS-Travel Expense Refund maps seven topic variables to the inputs of the CS-Save Claim to Dataverse agent flow, which adds the Salzburg claim as a row in the CS-Travel Expense Claims table and responds to the agent with a confirmation.](./_images/expense-claims-in-dataverse-overview.svg)
+
 A travel claim that lives only in a chat transcript can't be approved, paid, or reported on. Today someone copies each claim from the conversation into a list by hand. In this demo CS-Travel Expense Refund writes every submitted claim as a row in its own Dataverse table, through an agent flow the topic calls with the values its Power Fx formulas prepared.
 
 What you practice here: storing structured conversation data in a Dataverse table through an agent flow called from a topic, with each flow input mapped to a topic variable.
@@ -137,7 +139,7 @@ I want to submit a travel expense claim
 2. Fill in the card with these values and select **Submit Claim**.
 
 ```text
-Email Address: alex@contoso.com
+Email Address: alex@greylogistics.com
 Destination: Salzburg
 Departure Date: 2026-11-10
 Return Date: 2026-11-12

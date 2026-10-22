@@ -25,7 +25,7 @@
 | 04/04 Agent flows | CS-Health Advisor | ✅ | ✅ | | | 0 CC + 0.8 CC non-billed [2] |
 | 04/05 REST API | CS-Food Stock Buddy | ✅ | ✅ | | €0 Azure F1 [3] | incl. above |
 | 04/06 MCP | CS-Restaurant HR Manager | ✅ | ✅ | | €0 Azure F1 [3] | 0 CC [1] |
-| 04/07 Computer use | CS-Contoso IT Help Desk | ✅ | ✅ | | | 0 CC so far [9] |
+| 04/07 Computer use | CS-Grey Logistics IT Help Desk | ✅ | ✅ | | | 0 CC so far [9] |
 | **Module 05: Advanced Copilot Studio Agents** | | | | | | |
 | 05/01 Autonomous | CS-Returns Agent | ✅ | ✅ | | | 0 CC + Work IQ n/a [4] |
 | 05/03 Multi-agent | CS-Business Travel Planner | ✅ | ✅ | | | 0 CC [1] |
@@ -37,6 +37,8 @@
 | 06/04 MCP and workflow | GH-Food Buddy | ✅ | ✅ | | | 51.7 CC + 26.7 CC workflow [7] |
 | 06/05 Work IQ | GH-Aurora Account Assistant | ✅ | ✅ | | | 46.1 CC + Work IQ n/a [4] |
 | 06/06 Apps | Tasting Request Tracker (app) | ✅ | ✅ | | | n/a [8] |
+| **Module 07: Publishing & Maintaining Copilot Studio Agents** | | | | | | |
+| 07/05 Agentic building | CS-Grey Logistics IT Help Desk, GH-Grey Logistics IT Help Desk | ✅ | ✅ | | | |
 
 Notes on the Copilot Credits and Euros columns:
 

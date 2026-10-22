@@ -1,5 +1,7 @@
 # Collect a Canteen Order Demand on an Adaptive Card
 
+![The Submit Demand card in CS-Food Stock Buddy takes a quantity for each of nine dishes, stores all nine as numbers in Global.orderDemand and confirms only the three dishes above 0: Wiener Schnitzel 40, Pizza Napoli 30 and Green Curry 25.](./_images/food-demand-card-overview.svg)
+
 The canteen manager sends the week's demand as a chat message ("about 40 schnitzel, plenty of curry"), and someone retypes it into the order. A question per dish would take nine turns and still return free text. In this demo you build CS-Food Stock Buddy and give it one card where the manager types a number per dish, and the agent keeps the demand as structured data for the order calculation that follows.
 
 What you practice here: collecting many typed values in one submit with an Adaptive Card node and turning its outputs into a record that other topics can use.

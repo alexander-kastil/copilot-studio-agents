@@ -1,5 +1,7 @@
 # Build a Voice Menu and a Post-Call Action
 
+![On a phone keypad, keys 1, 2 and 0 drive the IT phone menu of the Grey Logistics IT Hotline to the Account, Device and Person transfer branches, and a post-call actions chain sends an email when Conversation.EndReason is CUSTOMER_HANGUP.](./_images/voice-agent-overview.svg)
+
 A caller who rings the IT hotline wants one of three things: help with an account, help with a device, or a person. A chat agent reads well on a screen but sounds wrong on the phone, ignores the keypad, and forgets the call the moment the caller hangs up. In this demo you turn a Standard agent (Learn: standard harness) into a basic voice agent with a spoken and keypad menu, test it without a phone, and add a topic that reports every call a caller ended by hanging up.
 
 What you practice here: authoring for the Speech & DTMF modality and acting on the End of conversation activity with a condition on `Conversation.EndReason`.
@@ -8,7 +10,7 @@ Duration: about 30 minutes.
 
 ## What you'll build
 
-- A Standard agent named Contoso IT Hotline with basic voice turned on and the three voice system topics added.
+- A Standard agent named Grey Logistics IT Hotline with basic voice turned on and the three voice system topics added.
 - An IT phone menu topic whose options answer to speech and to the keys 1, 2 and 0, with a transfer to a person on 0.
 - A simulated call in the test panel's **Speech & DTMF** chat mode.
 - A post-call action topic that emails the help desk when a caller hangs up.
@@ -16,7 +18,7 @@ Duration: about 30 minutes.
 ## Prerequisites
 
 - An environment where **Get new features early** is off, because basic voice agents aren't available in early release cycle environments.
-- A Standard agent named Contoso IT Hotline, created from the **New agent** dropdown on the home page: under **Other ways to build**, select **Agent** with the **Standard** badge. On its **Settings** page, under **Generative AI** > **Orchestration**, set **Use generative AI orchestration for your agent's responses?** to **No**, because basic voice agents use classic orchestration.
+- A Standard agent named Grey Logistics IT Hotline, created from the **New agent** dropdown on the home page: under **Other ways to build**, select **Agent** with the **Standard** badge. On its **Settings** page, under **Generative AI** > **Orchestration**, set **Use generative AI orchestration for your agent's responses?** to **No**, because basic voice agents use classic orchestration.
 - An Office 365 Outlook mailbox that can receive the post-call email.
 
 ## Exercise 1: Turn the agent into a basic voice agent
@@ -44,7 +46,7 @@ help desk
 2. Add a **Message** node with this text:
 
 ```text
-Welcome to the Contoso IT hotline.
+Welcome to the Grey Logistics IT hotline.
 ```
 
 3. Add a **Question** node with this question and **Multiple choice options** as the entity:
@@ -88,7 +90,7 @@ When a call ends, Copilot Studio sends an **End of conversation** activity, whet
 5. Set **To** to the help desk mailbox, the subject to the text below followed by the system variable **Conversation.EndReason**, and save the topic.
 
 ```text
-Contoso IT hotline call ended:
+Grey Logistics IT hotline call ended:
 ```
 
 Expected: the topic saves without errors, and its trigger shows **An activity occurs** with **End of conversation** and the `CUSTOMER_HANGUP` condition. The email itself is sent only on a real call over the **Telephony** channel when a caller hangs up; a transfer to the external number or to Contact Center doesn't send it.
@@ -106,7 +108,7 @@ Expected: the topic saves without errors, and its trigger shows **An activity oc
 
 ## Summary
 
-You built Contoso IT Hotline, a basic voice agent with a spoken and keypad menu, a transfer to a person, and a post-call report for calls the caller ended. You can now:
+You built Grey Logistics IT Hotline, a basic voice agent with a spoken and keypad menu, a transfer to a person, and a post-call report for calls the caller ended. You can now:
 
 - Turn on basic voice and recognize the voice system topics it adds
 - Map DTMF keys to the options of a multiple-choice question and transfer a call

@@ -1,6 +1,8 @@
 # Connect the Help Desk Agent to the Microsoft Learn MCP Server
 
-Half the questions the Contoso IT Help Desk receives are "how do I" questions about Microsoft products, and the answers change every month. Copying Microsoft's documentation into knowledge files would be stale the week after. In this demo the agent connects to the Microsoft Learn MCP Server, a public server that searches and fetches the current documentation, and you control which of its tools the agent may call.
+![The Grey Logistics IT Help Desk sends the passkey question to the Microsoft Learn MCP Server through a catalog connection and a wizard connection, with Allow all off so only microsoft_docs_search and microsoft_docs_fetch stay on.](./_images/connect-an-mcp-server-overview.svg)
+
+Half the questions the Grey Logistics IT Help Desk receives are "how do I" questions about Microsoft products, and the answers change every month. Copying Microsoft's documentation into knowledge files would be stale the week after. In this demo the agent connects to the Microsoft Learn MCP Server, a public server that searches and fetches the current documentation, and you control which of its tools the agent may call.
 
 What you practice here: adding an MCP server as a tool, routing questions to it, and restricting the tools it exposes.
 
@@ -8,14 +10,14 @@ Duration: about 30 minutes.
 
 ## What you'll build
 
-- The Microsoft Learn Docs MCP Server from the catalog, connected to the Contoso IT Help Desk agent.
+- The Microsoft Learn Docs MCP Server from the catalog, connected to the Grey Logistics IT Help Desk agent.
 - An instruction that routes Microsoft product questions to the server.
 - A tool selection with **Allow all** off, so the agent can search and read documentation but not request code samples.
 - A second connection to the same server through the MCP onboarding wizard, built from the URL alone.
 
 ## Prerequisites
 
-- A Standard agent named Contoso IT Help Desk (on the home page, open the **New agent** dropdown and select **Agent** with the **Standard** badge under **Other ways to build**) with generative orchestration on, which MCP requires (it is the default for new agents).
+- A Standard agent named Grey Logistics IT Help Desk (on the home page, open the **New agent** dropdown and select **Agent** with the **Standard** badge under **Other ways to build**) with generative orchestration on, which MCP requires (it is the default for new agents).
 - Network access to `https://learn.microsoft.com/api/mcp`. The server needs no sign-in and has no charge; opening the URL in a browser returns an error by design, because it only answers MCP clients.
 
 ## Exercise 1: Add the server from the catalog
@@ -99,7 +101,7 @@ Expected: the wizard tool's settings page lists the same tools you saw in Exerci
 
 ## Summary
 
-You connected the Contoso IT Help Desk agent to a live documentation source over MCP, routed the right questions to it, and limited the tools it may call. You can now:
+You connected the Grey Logistics IT Help Desk agent to a live documentation source over MCP, routed the right questions to it, and limited the tools it may call. You can now:
 
 - Add an MCP server from the catalog and read the tools it publishes
 - Route questions to a server with instructions and verify the routing in the activity map

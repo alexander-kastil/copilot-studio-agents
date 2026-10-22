@@ -85,9 +85,10 @@ The **Test your agent** panel lets you chat with the draft before anyone else se
 
 Two habits save time from the first day. Test after every change, because the test panel always runs the latest draft while channels run the last published version. When an answer surprises you, read the activity map before you edit instructions, because the map tells you whether the wrong component was chosen or the right one returned the wrong content.
 
-## Hands-On Demo
+## Hands-On Demos
 
-- [Create a Standard IT Help Desk Agent](./demo-create-a-standard-agent.md): the presenter creates a Standard agent from a description, tightens its instructions, checks the model, and runs the same question under generative and classic orchestration to show the difference in the test panel.
+- [Create the CS-Employee Onboarding Assistant](./demo-create-the-onboarding-assistant.md): the presenter re-creates the Employee Onboarding Assistant as a Standard agent with structured instructions, GPT Chat Latest and the original answer settings, then asks the same off-topic question before and after the instructions to show that it stays inside its job.
+- [Create a Standard IT Help Desk Agent](./demo-create-a-standard-agent.md) (optional): the presenter creates a Standard agent from a description, tightens its instructions, checks the model, and runs the same question under generative and classic orchestration to show the difference in the test panel.
 
 ## Hands-On Lab
 

@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Deep reasoning on the ranking step puts the overdue ticket first in the Grey Logistics IT Help Desk backlog</title>
+  <desc id="d">Left, the backlog at "It is Tuesday 10:00": nine tickets, T-101 printer on floor 3 jams, T-102 new hire needs a laptop, T-103 board member cannot open Outlook, T-104 sales rep cannot sign in to the CRM, T-105 suspicious email that one person clicked, T-106 Visio license request, T-107 shared drive slow for 12 people, T-108 developer laptop won't boot, T-109 a monitor flickers. Middle, the Grey Logistics IT Help Desk with step 4 using reason (Exercise 2): Deep reasoning (preview) weighs priority, the board rule, the deadline and the clock. Above it, Exercise 4: "How do I connect my phone to the guest Wi-Fi?" runs with no deep reasoning node. Below it, Exercise 1: the default model often lists T-105 first, misses that T-109 is overdue, or leaves T-103 at P3. Right, Exercise 3, the order by the instructions: 1, T-109, P3, overdue by one hour; 2, T-105, P1, security incident suspected; 3, T-104, P2, no workaround; 4, T-108, P2, laptop won't boot; 5, T-103, P3 to P2 under the board rule; 6, T-107, P3, the marketing team can still use it; 7, T-101, P3, the floor 2 printer works; then the two P4 requests T-102 and T-106. A dot carries the backlog through step 4 to the ordered list, where the three traps T-109, T-103 and T-107 light up in turn.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .cs { font-family: Consolas, 'Courier New', monospace; font-size: 26px; font-weight: 700; }
+      .hc { font-size: 34px; font-weight: 700; text-anchor: middle; }
+      .m { font-size: 28px; }
+      .num { font-size: 28px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .s { font-size: 28px; fill: #57606a; }
+      .t { font-size: 30px; font-weight: 600; }
+      .tag { font-size: 26px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .ts { font-size: 28px; font-weight: 600; }
+      .xm { font-size: 26px; }
+      .xs { font-size: 26px; fill: #57606a; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="60" y="70" width="540" height="940" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1240" y="70" width="620" height="940" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+
+  <polyline points="600,545 680,545" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <polyline points="1160,545 1240,545" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <polyline points="920,280 920,320" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="84" y="192" width="492" height="78" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="84" y="282" width="492" height="78" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="84" y="372" width="492" height="78" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="84" y="462" width="492" height="78" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="84" y="552" width="492" height="78" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="84" y="642" width="492" height="78" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="84" y="732" width="492" height="78" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="84" y="822" width="492" height="78" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="84" y="912" width="492" height="78" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="680" y="70" width="480" height="210" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="680" y="320" width="480" height="450" rx="20" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="704" y="450" width="432" height="296" rx="16" fill="#f3edff" stroke="#8250df" stroke-width="3"/>
+  <rect x="680" y="810" width="480" height="200" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+  <rect x="1264" y="150" width="572" height="96" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+  <rect x="1264" y="256" width="572" height="96" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1264" y="362" width="572" height="96" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1264" y="468" width="572" height="96" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1264" y="574" width="572" height="96" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+  <rect x="1264" y="680" width="572" height="96" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+  <rect x="1264" y="786" width="572" height="96" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1264" y="892" width="572" height="96" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+
+  <rect x="704" y="90" width="78" height="38" rx="19" fill="#24292f"/>
+  <rect x="724" y="468" width="78" height="38" rx="19" fill="#24292f"/>
+  <rect x="704" y="830" width="78" height="38" rx="19" fill="#24292f"/>
+  <rect x="1264" y="92" width="78" height="38" rx="19" fill="#24292f"/>
+  <circle cx="1306" cy="198" r="24" fill="#24292f"/>
+  <circle cx="1306" cy="304" r="24" fill="#24292f"/>
+  <circle cx="1306" cy="410" r="24" fill="#24292f"/>
+  <circle cx="1306" cy="516" r="24" fill="#24292f"/>
+  <circle cx="1306" cy="622" r="24" fill="#24292f"/>
+  <circle cx="1306" cy="728" r="24" fill="#24292f"/>
+  <circle cx="1306" cy="834" r="24" fill="#24292f"/>
+  <rect x="1276" y="916" width="68" height="48" rx="24" fill="#24292f"/>
+
+  <text class="t" x="84" y="124">It is Tuesday 10:00</text>
+  <text class="s" x="84" y="166">nine tickets in the backlog</text>
+  <text class="cs" x="104" y="240">T-101</text>
+  <text class="xm" x="204" y="240">Printer on floor 3 jams</text>
+  <text class="cs" x="104" y="330">T-102</text>
+  <text class="xm" x="204" y="330">New hire needs a laptop</text>
+  <text class="cs" x="104" y="420">T-103</text>
+  <text class="xm" x="204" y="420">Board member, no Outlook</text>
+  <text class="cs" x="104" y="510">T-104</text>
+  <text class="xm" x="204" y="510">Sales rep, no CRM sign-in</text>
+  <text class="cs" x="104" y="600">T-105</text>
+  <text class="xm" x="204" y="600">Suspicious email, clicked</text>
+  <text class="cs" x="104" y="690">T-106</text>
+  <text class="xm" x="204" y="690">Visio license request</text>
+  <text class="cs" x="104" y="780">T-107</text>
+  <text class="xm" x="204" y="780">Shared drive slow for 12</text>
+  <text class="cs" x="104" y="870">T-108</text>
+  <text class="xm" x="204" y="870">Developer laptop won't boot</text>
+  <text class="cs" x="104" y="960">T-109</text>
+  <text class="xm" x="204" y="960">A monitor flickers</text>
+  <text class="tag" x="743" y="117">Ex 4</text>
+  <text class="m" x="704" y="172">How do I connect my phone</text>
+  <text class="m" x="704" y="210">to the guest Wi-Fi?</text>
+  <text class="s" x="704" y="256">no deep reasoning node</text>
+  <text class="hc" x="920" y="380">Grey Logistics</text>
+  <text class="hc" x="920" y="422">IT Help Desk</text>
+  <text class="tag" x="763" y="495">Ex 2</text>
+  <text class="t" x="724" y="552">Step 4 with reason</text>
+  <text class="s" x="724" y="596">Deep reasoning (preview)</text>
+  <text class="xs" x="724" y="646">weighs priority, the board rule,</text>
+  <text class="xs" x="724" y="682">the deadline and the clock</text>
+  <text class="tag" x="743" y="857">Ex 1</text>
+  <text class="t" x="800" y="860">Default model</text>
+  <text class="s" x="704" y="912">often lists T-105 first, misses</text>
+  <text class="s" x="704" y="946">that T-109 is overdue, or</text>
+  <text class="s" x="704" y="980">leaves T-103 at P3</text>
+  <text class="tag" x="1303" y="119">Ex 3</text>
+  <text class="t" x="1360" y="122">Order by the instructions</text>
+  <text class="num" x="1306" y="208">1</text>
+  <text class="cs" x="1366" y="190">T-109</text>
+  <text class="ts" x="1600" y="190">P3</text>
+  <text class="s" x="1366" y="230">overdue by one hour</text>
+  <text class="num" x="1306" y="314">2</text>
+  <text class="cs" x="1366" y="296">T-105</text>
+  <text class="ts" x="1600" y="296">P1</text>
+  <text class="s" x="1366" y="336">security incident suspected</text>
+  <text class="num" x="1306" y="420">3</text>
+  <text class="cs" x="1366" y="402">T-104</text>
+  <text class="ts" x="1600" y="402">P2</text>
+  <text class="s" x="1366" y="442">no workaround</text>
+  <text class="num" x="1306" y="526">4</text>
+  <text class="cs" x="1366" y="508">T-108</text>
+  <text class="ts" x="1600" y="508">P2</text>
+  <text class="s" x="1366" y="548">laptop won't boot</text>
+  <text class="num" x="1306" y="632">5</text>
+  <text class="cs" x="1366" y="614">T-103</text>
+  <text class="ts" x="1600" y="614">P3 to P2</text>
+  <text class="s" x="1366" y="654">board rule</text>
+  <text class="num" x="1306" y="738">6</text>
+  <text class="cs" x="1366" y="720">T-107</text>
+  <text class="ts" x="1600" y="720">P3</text>
+  <text class="s" x="1366" y="760">marketing can still use it</text>
+  <text class="num" x="1306" y="844">7</text>
+  <text class="cs" x="1366" y="826">T-101</text>
+  <text class="ts" x="1600" y="826">P3</text>
+  <text class="s" x="1366" y="866">the floor 2 printer works</text>
+  <text class="tag" x="1310" y="949">8, 9</text>
+  <text class="cs" x="1366" y="932">T-102, T-106</text>
+  <text class="ts" x="1600" y="932">P4</text>
+  <text class="s" x="1366" y="972">equipment and software requests</text>
+
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M600,545 L680,545" calcMode="linear" keyTimes="0;0.06;1" keyPoints="0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.06;0.063;1" values="1;1;0;0"/>
+  </circle>
+  <rect x="704" y="450" width="432" height="296" rx="16" fill="none" stroke="#8250df" stroke-width="7" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.06;0.072;0.11;0.16;0.21;0.248;0.26;1" values="0;0;1;0.35;1;0.35;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M1160,545 L1240,545" calcMode="linear" keyTimes="0;0.26;0.32;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.26;0.263;0.32;0.323;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1264" y="150" width="572" height="96" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.34;0.352;0.448;0.46;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="1264" y="574" width="572" height="96" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.46;0.472;0.568;0.58;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="1264" y="680" width="572" height="96" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.58;0.592;0.688;0.7;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M920,280 L920,320" calcMode="linear" keyTimes="0;0.76;0.8;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.76;0.763;0.8;0.803;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="680" y="320" width="480" height="450" rx="20" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.8;0.812;0.888;0.9;1" values="0;0;1;1;0;0"/>
+  </rect>
+</svg>

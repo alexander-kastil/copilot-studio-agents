@@ -1,5 +1,7 @@
 # Answer Return Requests from a Shared Mailbox with an Autonomous Agent
 
+![A return request email goes into the shared mailbox, fires the CS-When a new email arrives in a shared mailbox trigger, and CS-Returns Agent checks returns-policy.docx and replies through CS-Work IQ Mail that the 14-day return window has passed.](./_images/returns-agent-mailbox-trigger-overview.svg)
+
 Return requests land in a shared help mailbox and wait until someone opens each one, looks up the returns policy and types a reply. In this demo you rebuild the Returns Agent as CS-Returns Agent, which wakes up for every new email, checks the request against the returns policy and answers by mail, with nobody in the chat.
 
 What you practice here: turning a policy-grounded agent into an autonomous one with a mailbox event trigger and a mail tool that runs on maker credentials.

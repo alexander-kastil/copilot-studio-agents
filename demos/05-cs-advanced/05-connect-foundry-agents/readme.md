@@ -47,7 +47,7 @@ The steps run on the main agent's **Agents** page. You select **Add an agent**, 
 | Field | What to enter | Why it matters |
 | --- | --- | --- |
 | Connection | The Foundry project endpoint, `https://<resource>.services.ai.azure.com/api/projects/<project>` | Tells Copilot Studio which project hosts the agent |
-| **Name** | A short, distinct name such as Contoso Device Specialist | Appears in the activity map and helps routing |
+| **Name** | A short, distinct name such as Grey Logistics Device Specialist | Appears in the activity map and helps routing |
 | **Description** | What the specialist covers and what it excludes | The planner's main signal for when to call it |
 | **Agent Id** | The identifier of the Foundry agent | Selects the agent inside the project |
 
@@ -82,9 +82,10 @@ Learn lists the connection to Microsoft Foundry agents as public preview, togeth
 
 A version pinned on the Foundry side keeps the specialist stable while its owners keep editing, and an unpinned agent serves every new version immediately. Agree with the developer team which of the two the help desk relies on.
 
-## Hands-On Demo
+## Hands-On Demos
 
-- [Connect a Foundry Agent to the Help Desk](./demo-connect-a-foundry-agent.md): the presenter enables the Activity Protocol on the Contoso Device Specialist, connects it to the Contoso IT Help Desk, routes a device question to it, and watches a change on the Foundry side reach the help desk.
+- [Run a New Hire Background Check Through a Foundry Agent](./demo-compliance-agent-foundry.md): the presenter builds CS-Compliance Agent on Claude Sonnet 4.6, has it collect and confirm a new hire's details, hands them to the social-profiler agent in Microsoft Foundry, and shows the check stop on an invalid email address.
+- [Connect a Foundry Agent to the Help Desk](./demo-connect-a-foundry-agent.md) (optional): the presenter enables the Activity Protocol on the Grey Logistics Device Specialist, connects it to the Grey Logistics IT Help Desk, routes a device question to it, and watches a change on the Foundry side reach the help desk.
 
 ## Key Topics covered in this module
 

@@ -1,5 +1,7 @@
 # Calculate the Canteen Order with a Prompt
 
+![CS-Food Stock Buddy passes Global.orderDemand and the Set sample stock table as JSON to the CS-Calculate food to order prompt, which applies demand + minStock - inStock and returns 16 Wiener Schnitzel, 8 Pizza Napoli and 12 Green Curry.](./_images/food-order-prompt-overview.svg)
+
 CS-Food Stock Buddy now knows what the canteen needs, but someone still holds the demand against the stock list and works out what to buy. In this demo you give the agent a prompt that takes the demand and the stock as JSON and returns the quantity to order per dish, and a topic that feeds it both values without asking the user. The stock is a sample table for now; the REST API demo later swaps it for the live food catalog.
 
 What you practice here: passing structured topic data to a prompt as text inputs with `JSON()` and using the prompt's answer in the conversation.

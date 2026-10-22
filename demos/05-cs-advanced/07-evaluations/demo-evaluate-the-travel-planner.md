@@ -1,5 +1,7 @@
 # Find the Wrong Answer Behind a Passing Score
 
+![The Travel planner routing test set, graded by Answer quality and Meaning match and run twice, splits into two failing cases: the canteen answer is an agent problem fixed by turning off Web Search, and the refund-claim card is a test-case problem that stays in the set.](./_images/evaluate-the-travel-planner-overview.svg)
+
 CS-Business Travel Planner routes every travel question to a specialist, and in the multi-agent demo each route looked right when you tried it once. One try does not tell you what happens on the next run, or which answers came from a specialist and which from the open web. In this demo you put the planner on a routing test set, catch an answer that one grader passed and another failed, trace it to the setting that caused it, and prove the fix with two more runs.
 
 What you practice here: grading an orchestrated agent with a test set, reading each case's route and activity, and separating an agent problem from a test-case problem before you change anything.

@@ -1,5 +1,7 @@
 # Prepare a Travel Expense Claim with Power Fx
 
+![CS-Travel Expense Refund turns the filled Expense Claim card into a claimID and two ISO timestamps with three Power Fx formulas, and the recap shows the values an agent flow later writes to Dataverse.](./_images/expense-claim-power-fx-overview.svg)
+
 An expense claim collected on a card is still raw input: no claim number, and dates in a format a database column won't take as a timestamp. Without formulas, someone fixes each claim by hand before it can be stored. In this demo you rebuild the expense pilot as CS-Travel Expense Refund and let three Power Fx formulas turn the card input into a claim that is ready to save.
 
 What you practice here: deriving new values from collected input with Power Fx in **Set variable value** nodes, and checking every result in the **Test** tab of the **Variables** panel.
@@ -200,7 +202,7 @@ I want to submit a travel expense claim
 4. Fill in the card with these values and select **Submit Claim**.
 
 ```text
-Email Address: alex@contoso.com
+Email Address: alex@greylogistics.com
 Destination: Vienna
 Departure Date: 2026-11-03
 Return Date: 2026-11-05

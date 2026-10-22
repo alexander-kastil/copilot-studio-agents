@@ -1,6 +1,8 @@
 # Create a Device Specialist Agent in Microsoft Foundry
 
-The Contoso IT team gets the same device questions every day: which laptop a new hire receives, whether a broken docking station is still under warranty, what to do with a swollen battery. The help desk agent in Copilot Studio shouldn't own those rules, because the device team changes them and wants to manage them in one place. In this demo you build that specialist as a prompt agent in Microsoft Foundry, test it, pin a version, and call its endpoint the way other services will.
+![Inside a Foundry project, grey-logistics-device-specialist is built from gpt-5-mini and device instructions, tested in the Playground, and Version 2 is pinned to 100 percent of traffic; outside the portal, az rest with a Microsoft Entra token calls the endpoint and gets back the Dell Precision 5690, replaced every 4 years.](./_images/create-a-foundry-agent-overview.svg)
+
+The Grey Logistics IT team gets the same device questions every day: which laptop a new hire receives, whether a broken docking station is still under warranty, what to do with a swollen battery. The help desk agent in Copilot Studio shouldn't own those rules, because the device team changes them and wants to manage them in one place. In this demo you build that specialist as a prompt agent in Microsoft Foundry, test it, pin a version, and call its endpoint the way other services will.
 
 What you practice here: defining a Foundry prompt agent from a model and instructions, and reading the version and endpoint that make it callable from outside the portal.
 
@@ -8,7 +10,7 @@ Duration: about 30 minutes.
 
 ## What you'll build
 
-- A prompt agent named `contoso-device-specialist` in a Foundry project, running on a deployed gpt-5-mini model.
+- A prompt agent named `grey-logistics-device-specialist` in a Foundry project, running on a deployed gpt-5-mini model.
 - Instructions that hold the device rules and keep the agent to its domain.
 - A tested conversation in the playground, including a follow-up that relies on conversation history.
 - A pinned agent version and a response from the agent's endpoint, called with the Azure CLI.
@@ -24,12 +26,12 @@ Duration: about 30 minutes.
 A prompt agent is pure configuration: a model, instructions and optional tools. The name you give it now is permanent and becomes part of the agent's endpoint, so pick it once.
 
 1. In your project, select **Build**, select the arrow next to **New agent**, and select **Build an agent**.
-2. In **Agent name**, enter `contoso-device-specialist` and select **Create**. The agent opens on the **Playground** tab.
+2. In **Agent name**, enter `grey-logistics-device-specialist` and select **Create**. The agent opens on the **Playground** tab.
 3. In the **Model** section, select your gpt-5-mini deployment.
 4. In the **Instructions** section, paste this text and save the agent:
 
 ```text
-You are the Contoso Device Specialist. You answer questions about Contoso company laptops, docking stations and phones.
+You are the Grey Logistics Device Specialist. You answer questions about Grey Logistics company laptops, docking stations and phones.
 Standard laptops: Surface Laptop 7 for office staff, Dell Precision 5690 for engineering. Laptops are replaced every 4 years.
 Warranty: 3 years on laptops, 2 years on docking stations and phones. A broken device under warranty is replaced within 2 business days.
 Battery: a swollen or bulging battery is a safety risk. Tell the user to stop using the device, unplug it immediately and hand it in at the IT desk the same day.
@@ -103,7 +105,7 @@ Copilot Studio, applications and other agents never open the playground; they ca
 3. Run this command, with your project endpoint in place of the placeholder:
 
 ```bash
-az rest --method post --resource https://ai.azure.com --url "<project-endpoint>/agents/contoso-device-specialist/endpoint/protocols/openai/responses?api-version=v1" --body @request.json
+az rest --method post --resource https://ai.azure.com --url "<project-endpoint>/agents/grey-logistics-device-specialist/endpoint/protocols/openai/responses?api-version=v1" --body @request.json
 ```
 
 Expected: the command returns a JSON response whose output text names the Dell Precision 5690 and the 4-year replacement cycle. The request needed no API key: the Azure CLI signed it with your Microsoft Entra token, which works because your account holds a Foundry role on the project.
@@ -119,11 +121,11 @@ Expected: the command returns a JSON response whose output text names the Dell P
 
 ## Summary
 
-You built the Contoso Device Specialist as a Microsoft Foundry prompt agent and called it the way other services will. You can now:
+You built the Grey Logistics Device Specialist as a Microsoft Foundry prompt agent and called it the way other services will. You can now:
 
 - Create a prompt agent from a deployed model and instructions in the Foundry portal
 - Test answers, conversation history and scope boundaries in the playground
 - Explain how versions and the stable endpoint relate, and pin the version callers receive
 - Call an agent's Responses endpoint with Microsoft Entra authentication
 
-The next topic connects this specialist to the Contoso IT Help Desk in Copilot Studio: [Foundry Agents in Copilot Studio](../05-connect-foundry-agents/readme.md).
+The next topic connects this specialist to the Grey Logistics IT Help Desk in Copilot Studio: [Foundry Agents in Copilot Studio](../05-connect-foundry-agents/readme.md).

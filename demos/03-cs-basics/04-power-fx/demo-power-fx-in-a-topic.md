@@ -1,5 +1,7 @@
 # Calculate a Ticket Due Date with Power Fx
 
+![Four Power Fx formulas in Estimate a ticket due date validate the description, map the priority to slaDays, move a weekend due date to Monday and format the reply, each shown next to its test result.](./_images/power-fx-in-a-topic-overview.svg)
+
 Employees ask the help desk when their ticket will be done, and the honest answer depends on the priority and on whether the date lands on a weekend. Without formulas, a topic needs a branch for every priority and another for every weekday, and the canvas turns into a maze. In this demo four short Power Fx formulas replace those branches: one validates the request, one maps the priority to service days, one moves the date off a weekend, and one formats it for the user.
 
 What you practice here: putting calculation and validation logic into Power Fx formulas in **Question**, **Set variable value**, and **Condition** nodes.
@@ -15,7 +17,7 @@ Duration: about 40 minutes.
 
 ## Prerequisites
 
-- A Standard agent, such as Contoso IT Help Desk from the earlier demos, with either orchestration mode.
+- A Standard agent, such as Grey Logistics IT Help Desk from the earlier demos, with either orchestration mode.
 - Copilot Studio uses US-style numbers in formulas: the comma separates arguments in every formula below, whatever your browser language.
 
 ## Exercise 1: Collect the priority and validate the description

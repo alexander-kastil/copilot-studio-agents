@@ -1,6 +1,8 @@
 # Answer and Record Supplier Offers from Dataverse
 
-The Contoso IT Help Desk buys docks, monitors, and headsets from several suppliers, and the offers sit in two Dataverse tables. Today a technician opens the tables, filters, and compares prices by hand, then keys in each new offer. In this demo the help desk agent answers comparison questions straight from the tables and records a new offer after the user confirms it.
+![Grey Logistics IT Help Desk answers supplier offer questions from the Offer Request Details table, using the column words quoted price, lead time and can ship, and records the new offer OR-1004 in Offer Requests after the user confirms.](./_images/dataverse-knowledge-and-records-overview.svg)
+
+The Grey Logistics IT Help Desk buys docks, monitors, and headsets from several suppliers, and the offers sit in two Dataverse tables. Today a technician opens the tables, filters, and compares prices by hand, then keys in each new offer. In this demo the help desk agent answers comparison questions straight from the tables and records a new offer after the user confirms it.
 
 What you practice here: grounding an agent in Dataverse tables, teaching it the business meaning of columns, and writing a row through a tool that asks first.
 
@@ -15,7 +17,7 @@ Duration: about 30 minutes.
 ## Prerequisites
 
 - A Power Platform environment with Dataverse, where you have the Environment Maker role and Dataverse search is turned on (ask your administrator if **Dataverse** cannot be added as knowledge).
-- A Standard agent named Contoso IT Help Desk in that environment (on the home page, open the **New agent** dropdown and select **Agent** with the **Standard** badge under **Other ways to build**), with generative orchestration on and **Authenticate with Microsoft** under **Settings** > **Security** > **Authentication** (both are defaults).
+- A Standard agent named Grey Logistics IT Help Desk in that environment (on the home page, open the **New agent** dropdown and select **Agent** with the **Standard** badge under **Other ways to build**), with generative orchestration on and **Authenticate with Microsoft** under **Settings** > **Security** > **Authentication** (both are defaults).
 - The two sample tables and their rows, created before the session in [Power Apps](https://make.powerapps.com) under **Tables** > **New table** > **Set advanced properties**. Use the column list in the [topic readme](./readme.md#the-sample-tables); name the tables Offer Request and Offer Request Detail, and create `offerId` as a **Lookup** column on Offer Request Detail that points to Offer Request.
 
 Rows for Offer Request:
@@ -140,7 +142,7 @@ Expected: the agent shows OR-1004, supplier 42, and 60 for confirmation before i
 
 ## Summary
 
-You grounded the Contoso IT Help Desk agent in two related Dataverse tables, taught it the business vocabulary of their columns, and gave it a confirmed write path for new offers. You can now:
+You grounded the Grey Logistics IT Help Desk agent in two related Dataverse tables, taught it the business vocabulary of their columns, and gave it a confirmed write path for new offers. You can now:
 
 - Add Dataverse tables as a knowledge source with a description the orchestrator routes on
 - Use synonyms and glossary terms to map user language to columns and rules

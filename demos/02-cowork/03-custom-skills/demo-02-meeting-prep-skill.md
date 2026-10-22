@@ -1,5 +1,7 @@
 # Build a Reusable Meeting-Prep Skill
 
+![The one-page Meeting Brief - Markus Lind - 30 October 2026.docx has eight sections tagged data, judgement or mixed, fed by the invite and directory, the call notes and v1.0 proposal, and your judgement, with no emails from Markus Lind found, and it is shaped by the meeting-prep skill and its template, run by name and then found without being named.](./_images/02-meeting-prep-skill-overview.svg)
+
 Author a custom `SKILL.md` that turns Cowork into a repeatable meeting-brief writer, tune its description so Cowork discovers it, then run and refine it until every brief comes out in house format.
 
 > **Reasoning effort:** Use **Light** for this demo, set in the **Auto Medium** picker beside the send arrow, where Light is the leftmost stop on the **Faster** to **Smarter** slider. Step 2 has no prompt, because you author the file yourself. Switch to **Medium** for the first run in Step 3 only if the brief comes out thin. A one-page meeting brief from a template never needs High or Max.

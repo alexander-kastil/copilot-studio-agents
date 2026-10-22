@@ -1,5 +1,7 @@
 # Create the CS-Employee Onboarding Assistant
 
+![The blank CS-Employee Onboarding Assistant answers the off-topic capital question; after structured instructions, GPT Chat Latest and its answer settings, it gives the first-week checklist, points the benefits question to HR and declines the capital question with the closing line.](./_images/create-the-onboarding-assistant-overview.svg)
+
 New employees ask HR the same questions in their first weeks: where the benefits form is, what to do first, who to ask. An agent with no identity and no rules answers those questions and every other question too, in whatever tone it likes. In this demo you re-create the Employee Onboarding Assistant as a Standard agent with structured instructions, a chosen model and deliberate answer settings, then prove in the test panel that it stays inside its job.
 
 What you practice here: turning a blank Standard agent into a scoped assistant with a description, structured instructions, a chosen model and generative orchestration settings.

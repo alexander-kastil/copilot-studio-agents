@@ -1,5 +1,18 @@
 # Todo
 
+## Grey Logistics and the 07/05 terminal run (2026-10-22)
+
+- [x] Replace Contoso with Grey Logistics in every file under `demos/` and `labs/` (readmes, guides, SVGs, CSV)
+- [x] Rename the live CS-Contoso IT Help Desk to CS-Grey Logistics IT Help Desk (Overview, Details)
+- [x] Exercise 1: both plugins installed at project scope (a headless session loaded neither before `claude plugin install --scope project`), `mcs-assistant` disabled in `.claude/settings.local.json`
+- [x] Owner sign-ins: the plugin's browser login (`manage-agent.bundle.js list-envs`) and `pac auth create` for Integrations e. U. (default), which takes the Dataverse URL, not the `Default-` ID
+- [x] Run 07/05 Exercises 2 to 5 (`/copilot-studio:copilot-studio-manage` is not a slash command: the plugin exposes only `/copilot-studio:create-eval`; agents are `copilot-studio:Copilot Studio Manage` and siblings) with headless `claude -p` sessions from the repo root, the guide's prompts verbatim, portal checks and Publish in Chrome
+- [x] Install the Power Platform CLI .NET tool (2.14.1; the MSI 2.3.2 still wins on the PowerShell PATH, Git Bash finds 2.14.1)
+- [x] Run Exercise 6: GH-Grey Logistics IT Help Desk (`d3b8dc10-e2a6-410d-8a40-abc6d56eeccf`) pushed with the VPN skill; the two computer-use actions stay legacy actions
+- [x] Exercise 5 step 4, the point test (returned the operating system question with Windows and macOS): owner signs in with `eval-api.bundle.js auth` and the existing public client CopilotstudioClient (`5b37e805-a278-4aa1-bac6-24e09971b615`)
+- [x] Fold what the run proves into the guide and the topic readme's sub-agent table, brand-voice-copilot, add the row to `demos/demo-check.md`
+- [x] Copy the guide to `labs/07-cs-maintaining/05-agentic-building/lab-01-build-and-migrate-from-the-terminal.md`, link it from the topic readme and `labs/readme.md`
+
 ## Rebuild the class environment as CS- agents (2026-10-21)
 
 Handoff with full context, state, proven procedures and traps: [handoff-cs-rebuild.md](handoff-cs-rebuild.md). Goal: a fresh, consolidated class environment in **Integrations e. U. (default)** where every Standard agent and every environment-level tool carries the `CS-` prefix (GitHub Copilot agents `GH-`), built from the clones in `src/cs-schema/agents/`, plus 15 optional rebuild demos for modules 03 to 05 that are run-verified against it. Anything without a prefix is deleted after success.

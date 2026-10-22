@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">CS-Returns Agent answers each return request in the shared mailbox by email, with nobody in the chat</title>
+  <desc id="d">The picture is a clockwise loop. Exercise 5: your second mailbox sends "Return request for order 10482" from Maria Huber about wireless headphones bought 20 days ago. The email lands in the shared mailbox for returns, in its Inbox, which your account has full access to. Exercise 4: the trigger CS-When a new email arrives in a shared mailbox, a flow that checks once a minute, sends it to the agent with Use content from Body. Exercise 1: CS-Returns Agent handles returns only and replies as an email with &lt;p&gt; and &lt;br&gt; tags; Exercise 2: it searches returns-policy.docx from SharePoint, its only knowledge source. Exercise 3: it sends the answer with CS-Work IQ Mail, the Mail (Preview) Mail MCP server, on maker-provided credentials. The reply "Re: Return request for order 10482" explains that the 14-day return window has passed and arrives back in your second mailbox. Exercise 6: an "Invoice address change" email gets the answer that the agent only handles returns, and no reply email went out. A dot travels the whole loop from the request to the reply.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .code { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; }
+      .h { font-size: 34px; font-weight: 700; }
+      .m { font-size: 28px; }
+      .s { font-size: 28px; fill: #57606a; }
+      .t { font-size: 30px; font-weight: 600; }
+      .tag { font-size: 26px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <polyline points="560,230 700,230" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <polyline points="1160,230 1300,230" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <polyline points="1580,370 1580,480" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <polyline points="1160,545 1300,545" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <polyline points="1300,860 1160,860" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <polyline points="700,860 560,860" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <polyline points="310,720 310,370" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="60" y="90" width="500" height="280" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="700" y="90" width="460" height="280" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1300" y="90" width="560" height="280" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1300" y="480" width="560" height="520" rx="20" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1324" y="740" width="512" height="236" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="700" y="440" width="460" height="210" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="700" y="720" width="460" height="280" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <rect x="60" y="720" width="500" height="280" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+
+  <rect x="84" y="110" width="78" height="38" rx="19" fill="#24292f"/>
+  <rect x="1324" y="110" width="78" height="38" rx="19" fill="#24292f"/>
+  <rect x="1324" y="500" width="78" height="38" rx="19" fill="#24292f"/>
+  <rect x="1344" y="758" width="78" height="38" rx="19" fill="#24292f"/>
+  <rect x="724" y="460" width="78" height="38" rx="19" fill="#24292f"/>
+  <rect x="724" y="740" width="78" height="38" rx="19" fill="#24292f"/>
+
+  <text class="tag" x="123" y="137">Ex 5</text>
+  <text class="t" x="84" y="194">Your second mailbox</text>
+  <text class="m" x="84" y="240">Return request for order 10482</text>
+  <text class="s" x="84" y="284">Maria Huber, wireless</text>
+  <text class="s" x="84" y="320">headphones, 20 days ago</text>
+  <text class="t" x="724" y="194">Shared mailbox</text>
+  <text class="s" x="724" y="240">for returns, Inbox folder,</text>
+  <text class="s" x="724" y="278">your account has</text>
+  <text class="s" x="724" y="316">full access</text>
+  <text class="tag" x="1363" y="137">Ex 4</text>
+  <text class="t" x="1324" y="194">CS-When a new email arrives</text>
+  <text class="t" x="1324" y="232">in a shared mailbox</text>
+  <text class="s" x="1324" y="280">flow checks once a minute,</text>
+  <text class="s" x="1324" y="318">Use content from Body</text>
+  <text class="tag" x="1363" y="527">Ex 1</text>
+  <text class="h" x="1324" y="586">CS-Returns Agent</text>
+  <text class="s" x="1324" y="632">returns only, replies as an email</text>
+  <text class="s" x="1324" y="670">with &lt;p&gt; and &lt;br&gt; tags</text>
+  <text class="tag" x="1383" y="785">Ex 6</text>
+  <text class="m" x="1344" y="840">Invoice address change</text>
+  <text class="s" x="1344" y="884">only handles returns,</text>
+  <text class="s" x="1344" y="922">no reply email went out</text>
+  <text class="tag" x="763" y="487">Ex 2</text>
+  <text class="code" x="724" y="544">returns-policy.docx</text>
+  <text class="s" x="724" y="590">SharePoint document,</text>
+  <text class="s" x="724" y="626">the only knowledge source</text>
+  <text class="tag" x="763" y="767">Ex 3</text>
+  <text class="t" x="724" y="824">CS-Work IQ Mail</text>
+  <text class="s" x="724" y="870">Mail (Preview), Mail MCP,</text>
+  <text class="s" x="724" y="908">maker-provided credentials</text>
+  <text class="t" x="84" y="790">Re: Return request</text>
+  <text class="t" x="84" y="828">for order 10482</text>
+  <text class="s" x="84" y="880">the 14-day return window</text>
+  <text class="s" x="84" y="918">has passed</text>
+
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M560,230 L700,230" calcMode="linear" keyTimes="0;0.06;1" keyPoints="0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.06;0.063;1" values="1;1;0;0"/>
+  </circle>
+  <rect x="700" y="90" width="460" height="280" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.06;0.072;0.108;0.12;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M1160,230 L1300,230" calcMode="linear" keyTimes="0;0.12;0.18;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.12;0.123;0.18;0.183;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1300" y="90" width="560" height="280" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.18;0.192;0.248;0.26;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M1580,370 L1580,480" calcMode="linear" keyTimes="0;0.26;0.32;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.26;0.263;0.32;0.323;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1300" y="480" width="560" height="520" rx="20" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.32;0.332;0.448;0.46;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M1160,545 L1300,545" calcMode="linear" keyTimes="0;0.34;0.4;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.34;0.343;0.4;0.403;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="700" y="440" width="460" height="210" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.34;0.352;0.408;0.42;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M1300,860 L1160,860" calcMode="linear" keyTimes="0;0.46;0.52;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.46;0.463;0.52;0.523;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="700" y="720" width="460" height="280" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.52;0.532;0.588;0.6;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M700,860 L560,860" calcMode="linear" keyTimes="0;0.6;0.66;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.6;0.603;0.66;0.663;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="60" y="720" width="500" height="280" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.66;0.672;0.748;0.76;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M310,720 L310,370" calcMode="linear" keyTimes="0;0.76;0.84;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.76;0.763;0.84;0.843;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="60" y="90" width="500" height="280" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.84;0.852;0.928;0.94;1" values="0;0;1;1;0;0"/>
+  </rect>
+</svg>

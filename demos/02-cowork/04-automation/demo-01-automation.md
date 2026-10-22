@@ -1,5 +1,7 @@
 # Automate a Weekly Status Report
 
+![On a timeline, the weekly-status-report skill runs once by hand with nothing sent, a Create recurring task? card schedules it for Weekly, Friday, 3:00 PM under Automations > Active, each Friday run leaves a one-page Word report and a Hi Elena email saved to drafts, and ... > Pause ends it after the demo.](./_images/01-automation-overview.svg)
+
 Teach Cowork your house status-report format once, then hand it a schedule so the report writes and sends itself every Friday without you lifting a finger.
 
 > **Reasoning effort:** Use **Medium** for Steps 1 and 2 (mapping the template and authoring the skill) and **Light** for the test run in Step 3 and the scheduling in Step 4. Set it with the effort slider next to the send arrow; the picker reads **Auto Medium** or **Auto Light**. Do not use High or Max. Each scheduled run consumes Copilot Credits every Friday, so pause or delete the task on the **Automations** page (**...** > **Pause** or **Delete**) after the demo unless you want it to keep running.

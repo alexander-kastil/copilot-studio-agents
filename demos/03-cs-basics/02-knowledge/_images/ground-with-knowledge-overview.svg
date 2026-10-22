@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Grey Logistics IT Help Desk: every question lands on the source its description names</title>
+  <desc id="d">Grey Logistics IT Help Desk, where the orchestrator picks a source by its name and description. Four columns are the places an answer can come from: Windows support and Microsoft 365 apps support, both added in Ex 1 as public websites; No source, where Allow ungrounded responses decides, in Ex 3; and Web Search over all public sites Bing indexes, in Ex 4. Four questions step across the columns. Ex 2: Windows Hello face sign-in stopped working after an update lands on Windows support with numbered citations, and OneDrive shows a red X on some files in File Explorer lands on Microsoft 365 apps support with numbered citations. Ex 3: How many vacation days does a new Grey Logistics employee get finds no source; with ungrounded responses on there are no citations, with them off the Fallback topic answers. Ex 4: How do I pair a Logitech MX Master 3S mouse over Bluetooth is answered by web search from the manufacturer's support site. Ex 5 adds five suggested prompts for Teams and Copilot Chat: Fix Windows Hello, OneDrive sync errors, Outlook keeps asking for my password, Teams camera not working, Pair a Bluetooth mouse. A dot carries each question to its column in turn.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .h { font-size: 34px; font-weight: 700; }
+      .t { font-size: 30px; font-weight: 600; }
+      .tc { font-size: 30px; font-weight: 600; text-anchor: middle; }
+      .s { font-size: 28px; fill: #57606a; }
+      .q { font-size: 28px; }
+      .bd { font-size: 26px; font-weight: 700; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="50" y="50" width="560" height="280" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="80" y="118">Grey Logistics IT Help Desk</text>
+  <text class="s" x="80" y="186">The orchestrator picks a source</text>
+  <text class="s" x="80" y="224">by its name and description</text>
+
+  <rect x="670" y="50" width="285" height="280" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <rect x="970" y="50" width="285" height="280" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1270" y="50" width="285" height="280" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1570" y="50" width="285" height="280" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <g fill="#fff6e5" stroke="#e0a534" stroke-width="2">
+    <rect x="694" y="74" width="88" height="44" rx="22"/>
+    <rect x="994" y="74" width="88" height="44" rx="22"/>
+    <rect x="1294" y="74" width="88" height="44" rx="22"/>
+    <rect x="1594" y="74" width="88" height="44" rx="22"/>
+  </g>
+  <text class="bd" x="738" y="105">Ex 1</text>
+  <text class="bd" x="1038" y="105">Ex 1</text>
+  <text class="bd" x="1338" y="105">Ex 3</text>
+  <text class="bd" x="1638" y="105">Ex 4</text>
+  <text class="t" x="694" y="170">Windows support</text>
+  <text class="s" x="694" y="222">sign-in, VPN,</text>
+  <text class="s" x="694" y="258">Windows Hello,</text>
+  <text class="s" x="694" y="294">Windows Update</text>
+  <text class="t" x="994" y="170">Microsoft 365</text>
+  <text class="t" x="994" y="206">apps support</text>
+  <text class="s" x="994" y="258">Outlook, Teams,</text>
+  <text class="s" x="994" y="294">OneDrive, sharing</text>
+  <text class="t" x="1294" y="170">No source</text>
+  <text class="s" x="1294" y="222">Allow ungrounded</text>
+  <text class="s" x="1294" y="258">responses decides</text>
+  <text class="t" x="1594" y="170">Web Search</text>
+  <text class="s" x="1594" y="222">all public sites</text>
+  <text class="s" x="1594" y="258">Bing indexes</text>
+
+  <g stroke="#8c959f" stroke-width="2" fill="#eaf2ff">
+    <rect x="50" y="360" width="560" height="116" rx="16"/>
+    <rect x="50" y="494" width="560" height="116" rx="16"/>
+    <rect x="50" y="628" width="560" height="116" rx="16"/>
+    <rect x="50" y="762" width="560" height="116" rx="16"/>
+  </g>
+  <g fill="#fff6e5" stroke="#e0a534" stroke-width="2">
+    <rect x="70" y="396" width="88" height="44" rx="22"/>
+    <rect x="70" y="530" width="88" height="44" rx="22"/>
+    <rect x="70" y="664" width="88" height="44" rx="22"/>
+    <rect x="70" y="798" width="88" height="44" rx="22"/>
+  </g>
+  <text class="bd" x="114" y="427">Ex 2</text>
+  <text class="bd" x="114" y="561">Ex 2</text>
+  <text class="bd" x="114" y="695">Ex 3</text>
+  <text class="bd" x="114" y="829">Ex 4</text>
+  <text class="q" x="176" y="408">Windows Hello face sign-in</text>
+  <text class="q" x="176" y="446">stopped working after an update.</text>
+  <text class="q" x="176" y="542">OneDrive shows a red X on</text>
+  <text class="q" x="176" y="580">some files in File Explorer.</text>
+  <text class="q" x="176" y="676">How many vacation days does a</text>
+  <text class="q" x="176" y="714">new Grey Logistics employee get?</text>
+  <text class="q" x="176" y="810">How do I pair a Logitech MX</text>
+  <text class="q" x="176" y="848">Master 3S mouse over Bluetooth?</text>
+
+  <rect x="670" y="360" width="285" height="116" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <rect x="970" y="494" width="285" height="116" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1270" y="628" width="285" height="116" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1570" y="762" width="285" height="116" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="tc" x="812" y="410">Numbered</text>
+  <text class="tc" x="812" y="448">citations</text>
+  <text class="tc" x="1112" y="544">Numbered</text>
+  <text class="tc" x="1112" y="582">citations</text>
+  <text class="tc" x="1412" y="678">On: no citations</text>
+  <text class="tc" x="1412" y="716">Off: Fallback</text>
+  <text class="tc" x="1712" y="812">Manufacturer's</text>
+  <text class="tc" x="1712" y="850">support site</text>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="610" y1="418" x2="670" y2="418"/>
+    <line x1="610" y1="552" x2="970" y2="552"/>
+    <line x1="610" y1="686" x2="1270" y2="686"/>
+    <line x1="610" y1="820" x2="1570" y2="820"/>
+  </g>
+
+  <rect x="50" y="896" width="1805" height="148" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="74" y="914" width="88" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="bd" x="118" y="945">Ex 5</text>
+  <text class="t" x="182" y="947">Suggested prompts</text>
+  <text class="s" x="74" y="1004">for Teams and Copilot Chat</text>
+  <g stroke="#8c959f" stroke-width="2" fill="#ffffff">
+    <rect x="500" y="912" width="259" height="50" rx="25"/>
+    <rect x="773" y="912" width="289" height="50" rx="25"/>
+    <rect x="1076" y="912" width="511" height="50" rx="25"/>
+    <rect x="500" y="976" width="363" height="50" rx="25"/>
+    <rect x="877" y="976" width="319" height="50" rx="25"/>
+  </g>
+  <text class="q" x="516" y="947">Fix Windows Hello</text>
+  <text class="q" x="789" y="947">OneDrive sync errors</text>
+  <text class="q" x="1092" y="947">Outlook keeps asking for my password</text>
+  <text class="q" x="516" y="1011">Teams camera not working</text>
+  <text class="q" x="893" y="1011">Pair a Bluetooth mouse</text>
+
+  <g fill="none" stroke="#24292f" stroke-width="5">
+    <rect x="670" y="50" width="285" height="280" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.06;0.18" values="0;1;0"/>
+    </rect>
+    <rect x="670" y="360" width="285" height="116" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.06;0.18" values="0;1;0"/>
+    </rect>
+    <rect x="970" y="50" width="285" height="280" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.28;0.38" values="0;1;0"/>
+    </rect>
+    <rect x="970" y="494" width="285" height="116" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.28;0.38" values="0;1;0"/>
+    </rect>
+    <rect x="1270" y="50" width="285" height="280" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.50;0.62" values="0;1;0"/>
+    </rect>
+    <rect x="1270" y="628" width="285" height="116" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.50;0.62" values="0;1;0"/>
+    </rect>
+    <rect x="1570" y="50" width="285" height="280" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.76;0.86" values="0;1;0"/>
+    </rect>
+    <rect x="1570" y="762" width="285" height="116" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.76;0.86" values="0;1;0"/>
+    </rect>
+    <rect x="50" y="896" width="1805" height="148" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.88;0.98" values="0;1;0"/>
+    </rect>
+  </g>
+
+  <g fill="#24292f">
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M610,418 H670" calcMode="linear" keyTimes="0;0.02;0.06;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.02;0.06" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M610,552 H970" calcMode="linear" keyTimes="0;0.20;0.28;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.20;0.28" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M610,686 H1270" calcMode="linear" keyTimes="0;0.40;0.50;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.40;0.50" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M610,820 H1570" calcMode="linear" keyTimes="0;0.64;0.76;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.64;0.76" values="0;1;0"/>
+    </circle>
+  </g>
+</svg>

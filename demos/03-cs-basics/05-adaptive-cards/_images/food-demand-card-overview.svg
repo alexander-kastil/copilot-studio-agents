@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">CS-Food Stock Buddy: nine dishes on one card become a global demand record</title>
+  <desc id="d">CS-Food Stock Buddy runs the Submit Demand topic. Its Adaptive Card, Please enter your demand, has the header row Enter required quantity and Quantity and nine dish rows with a number field: Wiener Schnitzel 40, Kaiserschmarrn 0, Germknödel 0, Weisswurst mit Brezn 0, Schweinshaxe mit Kraut 0, Pizza Napoli 30, Arancini Napoletana 0, Pad Ka Prao 0 and Green Curry 25, then a Submit Demand button. Each row leaves the card as one of nine outputs of type Number, bound to topic variables such as Topic.qtyWienerSchnitzel. All nine go into Global.orderDemand, a global variable any topic can access, which holds WienerSchnitzel 40, PizzaNapoli 30, GreenCurry 25 and six more dishes at 0 for the order calculation that follows. Topic.orderDemandClean keeps only rows with Quantity above 0 as compact JSON, so the agent answers Your demand was successfully noted with exactly three entries: WienerSchnitzel 40, PizzaNapoli 30 and GreenCurry 25. Dots travel from the nine rows into the outputs, then to the global record and through the filter to the confirmation.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      svg { font-size: 28px; }
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .h { font-size: 34px; font-weight: 700; }
+      .t { font-size: 30px; font-weight: 600; }
+      .b { font-size: 28px; }
+      .bb { font-size: 28px; font-weight: 700; }
+      .s { font-size: 28px; fill: #57606a; }
+      .m { font-family: Consolas, 'Courier New', monospace; font-size: 26px; }
+      .mb { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; }
+      .p { font-size: 26px; font-weight: 700; }
+      .w { fill: #ffffff; }
+      .c { text-anchor: middle; }
+      .e { text-anchor: end; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+    <marker id="as" viewBox="0 0 12 12" refX="12" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#8c959f"/>
+    </marker>
+  </defs>
+
+  <rect x="60" y="50" width="640" height="120" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="90" y="112">CS-Food Stock Buddy</text>
+  <text class="s" x="90" y="152">Submit Demand topic</text>
+
+  <g stroke="#8c959f" stroke-width="2" fill="none" marker-end="url(#as)">
+    <line x1="700" y1="371" x2="770" y2="371"/>
+    <line x1="700" y1="433" x2="770" y2="433"/>
+    <line x1="700" y1="495" x2="770" y2="495"/>
+    <line x1="700" y1="557" x2="770" y2="557"/>
+    <line x1="700" y1="619" x2="770" y2="619"/>
+    <line x1="700" y1="681" x2="770" y2="681"/>
+    <line x1="700" y1="743" x2="770" y2="743"/>
+    <line x1="700" y1="805" x2="770" y2="805"/>
+    <line x1="700" y1="867" x2="770" y2="867"/>
+  </g>
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="1070" y1="362" x2="1140" y2="362"/>
+    <line x1="1070" y1="655" x2="1140" y2="655"/>
+    <line x1="1500" y1="740" x2="1500" y2="790"/>
+  </g>
+
+  <rect x="60" y="210" width="640" height="790" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="90" y="270">Please enter your demand</text>
+  <text class="bb" x="90" y="322">Enter required quantity</text>
+  <text class="bb e" x="670" y="322">Quantity</text>
+  <g class="b">
+    <text x="90" y="380">Wiener Schnitzel</text>
+    <text x="90" y="442">Kaiserschmarrn</text>
+    <text x="90" y="504">Germknödel</text>
+    <text x="90" y="566">Weisswurst mit Brezn</text>
+    <text x="90" y="628">Schweinshaxe mit Kraut</text>
+    <text x="90" y="690">Pizza Napoli</text>
+    <text x="90" y="752">Arancini Napoletana</text>
+    <text x="90" y="814">Pad Ka Prao</text>
+    <text x="90" y="876">Green Curry</text>
+  </g>
+  <g fill="#ffffff" stroke="#8c959f" stroke-width="2">
+    <rect x="540" y="410" width="130" height="46" rx="8"/>
+    <rect x="540" y="472" width="130" height="46" rx="8"/>
+    <rect x="540" y="534" width="130" height="46" rx="8"/>
+    <rect x="540" y="596" width="130" height="46" rx="8"/>
+    <rect x="540" y="720" width="130" height="46" rx="8"/>
+    <rect x="540" y="782" width="130" height="46" rx="8"/>
+  </g>
+  <g fill="#fff6e5" stroke="#e0a534" stroke-width="3">
+    <rect x="540" y="348" width="130" height="46" rx="8"/>
+    <rect x="540" y="658" width="130" height="46" rx="8"/>
+    <rect x="540" y="844" width="130" height="46" rx="8"/>
+  </g>
+  <text class="bb e" x="650" y="381">40</text>
+  <text class="s e" x="650" y="443">0</text>
+  <text class="s e" x="650" y="505">0</text>
+  <text class="s e" x="650" y="567">0</text>
+  <text class="s e" x="650" y="629">0</text>
+  <text class="bb e" x="650" y="691">30</text>
+  <text class="s e" x="650" y="753">0</text>
+  <text class="s e" x="650" y="815">0</text>
+  <text class="bb e" x="650" y="877">25</text>
+  <rect x="90" y="916" width="580" height="56" rx="8" fill="#24292f"/>
+  <text class="bb w c" x="380" y="954">Submit Demand</text>
+
+  <rect x="770" y="320" width="300" height="598" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t c" x="920" y="520">Nine outputs</text>
+  <text class="s c" x="920" y="562">type Number,</text>
+  <text class="s c" x="920" y="618">bound to topic</text>
+  <text class="s c" x="920" y="656">variables such as</text>
+  <text class="m c" x="920" y="706">Topic.qty</text>
+  <text class="m c" x="920" y="742">WienerSchnitzel</text>
+
+  <rect x="1140" y="210" width="720" height="305" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="mb" x="1170" y="272">Global.orderDemand</text>
+  <text class="s" x="1170" y="314">Global (any topic can access)</text>
+  <text class="m" x="1170" y="366">WienerSchnitzel: 40</text>
+  <text class="m" x="1170" y="404">PizzaNapoli: 30</text>
+  <text class="m" x="1170" y="442">GreenCurry: 25</text>
+  <text class="s" x="1170" y="486">all nine dishes, six of them at 0</text>
+  <text class="s" x="1540" y="366">for the order</text>
+  <text class="s" x="1540" y="404">calculation that</text>
+  <text class="s" x="1540" y="442">follows</text>
+
+  <rect x="1140" y="570" width="720" height="170" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="mb" x="1170" y="632">Topic.orderDemandClean</text>
+  <text class="b" x="1170" y="676">keeps rows with <tspan class="mb">Quantity &gt; 0</tspan></text>
+  <text class="s" x="1170" y="714">as compact JSON</text>
+
+  <rect x="1140" y="790" width="720" height="210" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="1170" y="850">Your demand was successfully noted:</text>
+  <text class="m" x="1170" y="898">[{"Name":"WienerSchnitzel","Quantity":40},</text>
+  <text class="m" x="1184" y="936">{"Name":"PizzaNapoli","Quantity":30},</text>
+  <text class="m" x="1184" y="974">{"Name":"GreenCurry","Quantity":25}]</text>
+
+  <g fill="#fff6e5" stroke="#e0a534" stroke-width="2">
+    <rect x="84" y="30" width="92" height="40" rx="20"/>
+    <rect x="186" y="30" width="92" height="40" rx="20"/>
+    <rect x="84" y="190" width="92" height="40" rx="20"/>
+    <rect x="186" y="190" width="160" height="40" rx="20"/>
+    <rect x="794" y="300" width="92" height="40" rx="20"/>
+    <rect x="1164" y="190" width="92" height="40" rx="20"/>
+    <rect x="1164" y="550" width="92" height="40" rx="20"/>
+    <rect x="1164" y="770" width="92" height="40" rx="20"/>
+  </g>
+  <text class="p c" x="130" y="59">Ex 1</text>
+  <text class="p c" x="232" y="59">Ex 2</text>
+  <text class="p c" x="130" y="219">Ex 3</text>
+  <text class="p c" x="266" y="219">Ex 6 test</text>
+  <text class="p c" x="840" y="329">Ex 4</text>
+  <text class="p c" x="1210" y="219">Ex 5</text>
+  <text class="p c" x="1210" y="579">Ex 5</text>
+  <text class="p c" x="1210" y="799">Ex 6</text>
+
+  <g>
+    <circle r="12" fill="#e0a534" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M700,371 H770" calcMode="linear" keyTimes="0;0.03;0.12;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.03;0.12" values="0;1;0"/>
+    </circle>
+    <circle r="10" fill="#8c959f" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M700,433 H770" calcMode="linear" keyTimes="0;0.03;0.12;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.03;0.12" values="0;1;0"/>
+    </circle>
+    <circle r="10" fill="#8c959f" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M700,495 H770" calcMode="linear" keyTimes="0;0.03;0.12;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.03;0.12" values="0;1;0"/>
+    </circle>
+    <circle r="10" fill="#8c959f" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M700,557 H770" calcMode="linear" keyTimes="0;0.03;0.12;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.03;0.12" values="0;1;0"/>
+    </circle>
+    <circle r="10" fill="#8c959f" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M700,619 H770" calcMode="linear" keyTimes="0;0.03;0.12;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.03;0.12" values="0;1;0"/>
+    </circle>
+    <circle r="12" fill="#e0a534" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M700,681 H770" calcMode="linear" keyTimes="0;0.03;0.12;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.03;0.12" values="0;1;0"/>
+    </circle>
+    <circle r="10" fill="#8c959f" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M700,743 H770" calcMode="linear" keyTimes="0;0.03;0.12;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.03;0.12" values="0;1;0"/>
+    </circle>
+    <circle r="10" fill="#8c959f" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M700,805 H770" calcMode="linear" keyTimes="0;0.03;0.12;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.03;0.12" values="0;1;0"/>
+    </circle>
+    <circle r="12" fill="#e0a534" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M700,867 H770" calcMode="linear" keyTimes="0;0.03;0.12;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.03;0.12" values="0;1;0"/>
+    </circle>
+    <circle r="14" fill="#24292f" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1070,362 H1140" calcMode="linear" keyTimes="0;0.21;0.28;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.21;0.28" values="0;1;0"/>
+    </circle>
+    <circle r="14" fill="#24292f" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1070,655 H1140" calcMode="linear" keyTimes="0;0.45;0.52;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.45;0.52" values="0;1;0"/>
+    </circle>
+    <circle r="14" fill="#24292f" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1500,740 V790" calcMode="linear" keyTimes="0;0.62;0.68;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.62;0.68" values="0;1;0"/>
+    </circle>
+  </g>
+
+  <g fill="none" stroke-width="5">
+    <rect x="770" y="320" width="300" height="598" rx="16" stroke="#24292f" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.12;0.21" values="0;1;0"/>
+    </rect>
+    <rect x="1140" y="210" width="720" height="305" rx="16" stroke="#24292f" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.28;0.43" values="0;1;0"/>
+    </rect>
+    <rect x="1140" y="570" width="720" height="170" rx="16" stroke="#24292f" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.52;0.62" values="0;1;0"/>
+    </rect>
+    <rect x="1140" y="790" width="720" height="210" rx="16" stroke="#e0a534" stroke-width="7" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.68;0.96" values="0;1;0"/>
+    </rect>
+  </g>
+</svg>

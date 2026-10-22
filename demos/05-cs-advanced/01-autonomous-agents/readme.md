@@ -74,9 +74,10 @@ Every trigger payload counts as a message to the agent, whether or not a person 
 
 Frequent triggers also count against service quotas, and an agent that exceeds them can be throttled. Keep recurrence intervals as long as the business allows, and track how many triggers are active in an environment.
 
-## Hands-On Demo
+## Hands-On Demos
 
-- [Trigger an Autonomous Agent from a SharePoint List](./demo-trigger-an-autonomous-agent.md): the presenter adds a SharePoint item-created trigger to the Contoso IT Help Desk agent, tests it with a recorded event, reads the payload and the plan in the activity map, and opens the flow behind the trigger.
+- [Answer Return Requests from a Shared Mailbox with an Autonomous Agent](./demo-returns-agent-mailbox-trigger.md): the presenter rebuilds CS-Returns Agent on the returns policy, adds a mail tool on maker credentials and a shared-mailbox trigger, and follows a replayed and a published run on the **Activity** page.
+- [Trigger an Autonomous Agent from a SharePoint List](./demo-trigger-an-autonomous-agent.md) (optional): the presenter adds a SharePoint item-created trigger to the Grey Logistics IT Help Desk agent, tests it with a recorded event, reads the payload and the plan in the activity map, and opens the flow behind the trigger.
 
 ## Hands-On Lab
 

@@ -1,5 +1,7 @@
 # Extend Cowork with a Community Plugin
 
+![The dietitian plugin package is uploaded to Customize, then in one task's Workspace panel client-intake.docx sits under References while dietitian (clinical-nutrition), dietitian (dietary-communication) and the built-in Word join one Plugins list, ending in Client Nutrition Packet - NUT-2041.docx with the DRAFT ONLY line.](./_images/01-plugins-overview.svg)
+
 Install a real community plugin, the `dietitian` plugin, and combine its two clinical skills with Cowork's built-in Word skill to produce a client nutrition packet.
 
 > **Reasoning effort:** Use **Medium** for Step 2, because the assessment involves calculations and lab interpretation. Use **Light** for the handout in Step 3, the compile in Step 4 and the walkthrough in Step 5. Do not raise it to High or Max to make clinical output more trustworthy; the dietitian review is the control, not the effort level.

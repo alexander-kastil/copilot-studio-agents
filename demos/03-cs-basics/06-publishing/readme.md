@@ -65,9 +65,10 @@ Copilot Studio also builds agents that extend Microsoft Copilot Chat directly, o
 | Custom website | Customers or partners on your own site | Your choice | Your web team and **Web channel security** |
 | Agent for Microsoft Copilot | Grounded answers inside Copilot Chat | Microsoft Entra ID | An administrator adds it to the catalog |
 
-## Hands-On Demo
+## Hands-On Demos
 
-- [Publish the Help Desk Agent to Teams and SharePoint](./demo-publish-to-teams-and-copilot.md): the presenter publishes the agent, installs it in Teams and finds it in Microsoft Copilot, deploys it to a SharePoint site, republishes a change, and shares it with teammates through the availability options.
+- [Publish CS-HR Buddy to Teams and Microsoft Copilot](./demo-publish-hr-buddy.md): the presenter turns on Microsoft sign-in and agent connections, publishes CS-HR Buddy to the Microsoft 365 and Microsoft Teams channel, tests it in Teams, shares it with a security group, and rolls out a change with one republish.
+- [Publish the Help Desk Agent to Teams and SharePoint](./demo-publish-to-teams-and-copilot.md) (optional): the presenter publishes the agent, installs it in Teams and finds it in Microsoft Copilot, deploys it to a SharePoint site, republishes a change, and shares it with teammates through the availability options.
 
 ## Hands-On Lab
 

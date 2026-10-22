@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">CS-Food Stock Buddy turns demand and stock into order quantities with a prompt</title>
+  <desc id="d">Two inputs feed the prompt CS-Calculate food to order. Global.orderDemand from Submit Demand holds WienerSchnitzel 40, PizzaNapoli 30, GreenCurry 25 and six more dishes at 0. The Set sample stock node holds Topic.foodStock, nine rows with inStock and minStock, such as Wiener Schnitzel 30 and 6, Pizza Napoli 28 and 6, Green Curry 17 and 4. The topic passes JSON(Global.orderDemand) as foodDemand and JSON(Topic.foodStock) as foodStock. The prompt tool, described as Calculate food to order, applies orderQuantity = demand + minStock - inStock, never below 0, and returns only a JSON array. The agent answers Based on our current stock we have to order: Wiener Schnitzel 40 + 6 - 30 = 16, Pizza Napoli 30 + 6 - 28 = 8, Green Curry 25 + 4 - 17 = 12, inserted as Topic.orderQuantityJSON. Along the bottom, without the topic, the message Calculate food to order: we need 10 Pad Ka Prao, we have 5 in stock and keep at least 2 lets the orchestrator fill the tool inputs from the message, which gives 10 + 2 - 5 = 7, or ask a question for the missing values. Dots carry both inputs into the prompt and the result to the answer, where each dish lights up in turn.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      svg { font-size: 28px; }
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .h { font-size: 34px; font-weight: 700; }
+      .t { font-size: 30px; font-weight: 600; }
+      .b { font-size: 28px; }
+      .bb { font-size: 28px; font-weight: 700; }
+      .s { font-size: 28px; fill: #57606a; }
+      .m { font-family: Consolas, 'Courier New', monospace; font-size: 26px; }
+      .ms { font-family: Consolas, 'Courier New', monospace; font-size: 26px; fill: #57606a; }
+      .mb { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; }
+      .p { font-size: 26px; font-weight: 700; }
+      .big { font-size: 46px; font-weight: 700; }
+      .c { text-anchor: middle; }
+      .e { text-anchor: end; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="560" y1="340" x2="660" y2="340"/>
+    <line x1="560" y1="640" x2="660" y2="640"/>
+    <line x1="1160" y1="440" x2="1260" y2="440"/>
+    <line x1="820" y1="945" x2="900" y2="945"/>
+    <line x1="1400" y1="945" x2="1480" y2="945"/>
+  </g>
+
+  <rect x="60" y="80" width="500" height="300" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="mb" x="90" y="142">Global.orderDemand</text>
+  <text class="s" x="90" y="184">from Submit Demand</text>
+  <text class="m" x="90" y="238">WienerSchnitzel: 40</text>
+  <text class="m" x="90" y="276">PizzaNapoli: 30</text>
+  <text class="m" x="90" y="314">GreenCurry: 25</text>
+  <text class="s" x="90" y="356">six more dishes at 0</text>
+
+  <rect x="60" y="440" width="500" height="360" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="90" y="502">Set sample stock</text>
+  <text class="mb" x="90" y="544">Topic.foodStock</text>
+  <text class="p e" x="394" y="598">inStock</text>
+  <text class="p e" x="536" y="598">minStock</text>
+  <text class="b" x="90" y="644">Wiener Schnitzel</text>
+  <text class="b e" x="394" y="644">30</text>
+  <text class="b e" x="536" y="644">6</text>
+  <text class="b" x="90" y="686">Pizza Napoli</text>
+  <text class="b e" x="394" y="686">28</text>
+  <text class="b e" x="536" y="686">6</text>
+  <text class="b" x="90" y="728">Green Curry</text>
+  <text class="b e" x="394" y="728">17</text>
+  <text class="b e" x="536" y="728">4</text>
+  <text class="s" x="90" y="772">and six more rows</text>
+
+  <rect x="660" y="80" width="500" height="720" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="690" y="142">CS-Calculate food</text>
+  <text class="h" x="690" y="186">to order</text>
+  <text class="s" x="690" y="228">prompt tool, described as</text>
+  <text class="bb" x="690" y="266">Calculate food to order</text>
+  <rect x="690" y="290" width="440" height="100" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="mb" x="712" y="330">foodDemand</text>
+  <text class="ms" x="712" y="370">JSON(Global.orderDemand)</text>
+  <rect x="690" y="420" width="440" height="140" rx="12" fill="#fff6e5"/>
+  <text class="m" x="712" y="464">orderQuantity =</text>
+  <text class="m" x="712" y="504">demand + minStock - inStock</text>
+  <text class="s" x="712" y="542">never below 0</text>
+  <rect x="690" y="590" width="440" height="100" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="mb" x="712" y="630">foodStock</text>
+  <text class="ms" x="712" y="670">JSON(Topic.foodStock)</text>
+  <text class="s" x="690" y="752">returns only a JSON array</text>
+
+  <rect x="1260" y="80" width="600" height="720" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="1290" y="140">CS-Food Stock Buddy</text>
+  <text class="t" x="1290" y="184">Based on our current stock</text>
+  <text class="t" x="1290" y="222">we have to order:</text>
+  <g fill="#ffffff" stroke="#8c959f" stroke-width="2">
+    <rect x="1290" y="244" width="540" height="114" rx="12"/>
+    <rect x="1290" y="372" width="540" height="114" rx="12"/>
+    <rect x="1290" y="500" width="540" height="114" rx="12"/>
+  </g>
+  <text class="bb" x="1316" y="286">Wiener Schnitzel</text>
+  <text class="m" x="1316" y="334">40 + 6 - 30 =</text>
+  <text class="big e" x="1800" y="336">16</text>
+  <text class="bb" x="1316" y="414">Pizza Napoli</text>
+  <text class="m" x="1316" y="462">30 + 6 - 28 =</text>
+  <text class="big e" x="1800" y="464">8</text>
+  <text class="bb" x="1316" y="542">Green Curry</text>
+  <text class="m" x="1316" y="590">25 + 4 - 17 =</text>
+  <text class="big e" x="1800" y="592">12</text>
+  <text class="s" x="1290" y="680">inserted as</text>
+  <text class="m" x="1290" y="720">Topic.orderQuantityJSON</text>
+
+  <rect x="60" y="850" width="1800" height="190" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="90" y="875" width="730" height="140" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="112" y="930">Calculate food to order: we need 10 Pad Ka</text>
+  <text class="b" x="112" y="970">Prao, we have 5 in stock and keep at least 2.</text>
+  <rect x="900" y="875" width="500" height="140" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="925" y="930">CS-Calculate food to order</text>
+  <text class="s" x="925" y="972">inputs filled from the message</text>
+  <rect x="1480" y="875" width="350" height="140" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="mb" x="1505" y="922">10 + 2 - 5 = 7</text>
+  <text class="s" x="1505" y="962">or a question for</text>
+  <text class="s" x="1505" y="998">the missing values</text>
+
+  <g fill="#fff6e5" stroke="#e0a534" stroke-width="2">
+    <rect x="84" y="420" width="92" height="40" rx="20"/>
+    <rect x="684" y="60" width="92" height="40" rx="20"/>
+    <rect x="786" y="60" width="92" height="40" rx="20"/>
+    <rect x="564" y="282" width="92" height="40" rx="20"/>
+    <rect x="564" y="582" width="92" height="40" rx="20"/>
+    <rect x="1284" y="60" width="92" height="40" rx="20"/>
+    <rect x="84" y="830" width="92" height="40" rx="20"/>
+  </g>
+  <text class="p c" x="130" y="449">Ex 3</text>
+  <text class="p c" x="730" y="89">Ex 1</text>
+  <text class="p c" x="832" y="89">Ex 2</text>
+  <text class="p c" x="610" y="311">Ex 4</text>
+  <text class="p c" x="610" y="611">Ex 4</text>
+  <text class="p c" x="1330" y="89">Ex 5</text>
+  <text class="p c" x="130" y="859">Ex 5</text>
+
+  <g fill="#24292f">
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M560,340 H660" calcMode="linear" keyTimes="0;0.03;0.12;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.03;0.12" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M560,640 H660" calcMode="linear" keyTimes="0;0.03;0.12;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.03;0.12" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1160,440 H1260" calcMode="linear" keyTimes="0;0.26;0.33;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.26;0.33" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M820,945 H900" calcMode="linear" keyTimes="0;0.72;0.78;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.72;0.78" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1400,945 H1480" calcMode="linear" keyTimes="0;0.82;0.88;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.82;0.88" values="0;1;0"/>
+    </circle>
+  </g>
+
+  <g fill="none" stroke="#e0a534" stroke-width="6">
+    <rect x="690" y="420" width="440" height="140" rx="12" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.12;0.26" values="0;1;0"/>
+    </rect>
+    <rect x="1290" y="244" width="540" height="114" rx="12" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.33;0.45" values="0;1;0"/>
+    </rect>
+    <rect x="1290" y="372" width="540" height="114" rx="12" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.45;0.57" values="0;1;0"/>
+    </rect>
+    <rect x="1290" y="500" width="540" height="114" rx="12" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.57;0.69" values="0;1;0"/>
+    </rect>
+    <rect x="1480" y="875" width="350" height="140" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.88;0.98" values="0;1;0"/>
+    </rect>
+  </g>
+</svg>

@@ -1,6 +1,8 @@
 # Route Requests to Child and Connected Agents
 
-A help desk agent that knows everything about passwords, software licenses, hardware and the network ends up with dozens of overlapping topics and tools, and its planner starts picking the wrong one. Splitting it into specialists only helps when the main agent routes to them cleanly and still speaks with one voice. In this demo the Contoso IT Help Desk hands account problems to a child agent and licensing questions to a connected agent, and you trace every route in the activity map.
+![A sequence diagram shows the Grey Logistics IT Help Desk sending the lockout to its child agent Account Access and only the task to the connected Grey Logistics Software Licensing, collecting both sets of findings and giving the user one combined reply, with the canteen and Account Access switched off tests below.](./_images/route-to-child-and-connected-agents-overview.svg)
+
+A help desk agent that knows everything about passwords, software licenses, hardware and the network ends up with dozens of overlapping topics and tools, and its planner starts picking the wrong one. Splitting it into specialists only helps when the main agent routes to them cleanly and still speaks with one voice. In this demo the Grey Logistics IT Help Desk hands account problems to a child agent and licensing questions to a connected agent, and you trace every route in the activity map.
 
 What you practice here: designing a parent that routes on descriptions, delegates to a child and a connected agent, and stays the only voice the user hears.
 
@@ -8,18 +10,18 @@ Duration: about 30 minutes.
 
 ## What you'll build
 
-- Parent instructions for the Contoso IT Help Desk that define the routing pattern and the single-responder rule.
+- Parent instructions for the Grey Logistics IT Help Desk that define the routing pattern and the single-responder rule.
 - A child agent named Account Access inside the help desk agent.
-- A connection to Contoso Software Licensing, a separate published agent.
+- A connection to Grey Logistics Software Licensing, a separate published agent.
 - A set of test messages that prove each route, a combined route, and a request outside every domain.
 
 ## Prerequisites
 
-- A Standard agent (Learn: standard harness) named Contoso IT Help Desk, created from the **New agent** dropdown on the home page: under **Other ways to build**, select **Agent** with the **Standard** badge. Keep generative orchestration on (the default for new agents).
-- A second Standard agent named Contoso Software Licensing in the same environment. Paste the instructions below on its **Overview** page, turn on **Let other agents connect to and use this one** on its **Settings** page, and publish it.
+- A Standard agent (Learn: standard harness) named Grey Logistics IT Help Desk, created from the **New agent** dropdown on the home page: under **Other ways to build**, select **Agent** with the **Standard** badge. Keep generative orchestration on (the default for new agents).
+- A second Standard agent named Grey Logistics Software Licensing in the same environment. Paste the instructions below on its **Overview** page, turn on **Let other agents connect to and use this one** on its **Settings** page, and publish it.
 
 ```text
-You are Contoso Software Licensing. You answer questions about which software Contoso employees can get and how to get it.
+You are Grey Logistics Software Licensing. You answer questions about which software Grey Logistics employees can get and how to get it.
 Standard software, available to every employee at no cost: Microsoft 365 apps, Teams, Edge, Adobe Acrobat Reader.
 Licensed on request with manager approval: Visio Plan 2, Project Plan 3, Adobe Acrobat Pro. Approval takes one business day.
 Not available: games, unapproved browser extensions.
@@ -30,14 +32,14 @@ When another agent calls you, return your answer as findings for that agent.
 
 A parent that only knows "there are subagents" produces duplicate or partial replies. Learn's multi-agent guidance asks the parent to state who answers the user, which specialist covers what, and what happens when nobody does, in directive language.
 
-1. Open Contoso IT Help Desk and check **Settings** > **Generative AI** > **Orchestration**: **Use generative AI orchestration for your agent's responses?** must be **Yes**.
+1. Open Grey Logistics IT Help Desk and check **Settings** > **Generative AI** > **Orchestration**: **Use generative AI orchestration for your agent's responses?** must be **Yes**.
 2. On the **Overview** page, replace the instructions with this text:
 
 ```text
-You are the Contoso IT Help Desk, the front door for IT questions at Contoso.
+You are the Grey Logistics IT Help Desk, the front door for IT questions at Grey Logistics.
 You are the ONLY agent that communicates with the user. Child and connected agents return findings to you; combine them into one reply.
 Route account lockouts, password resets and multifactor sign-in problems to Account Access.
-Route questions about software licenses and software requests to Contoso Software Licensing.
+Route questions about software licenses and software requests to Grey Logistics Software Licensing.
 If a request matches no specialist and you cannot answer it yourself, say so in one sentence and offer to log a ticket. NEVER guess.
 ```
 
@@ -51,13 +53,13 @@ Account problems are one narrow task the help desk team owns itself, which makes
 2. Name it `Account Access`, keep **The agent chooses - Based on description**, and paste this description:
 
 ```text
-Handles account lockouts, password resets and multifactor authentication sign-in problems for Contoso employees. Does not handle software, hardware or network questions.
+Handles account lockouts, password resets and multifactor authentication sign-in problems for Grey Logistics employees. Does not handle software, hardware or network questions.
 ```
 
 3. Paste these instructions and select **Save**:
 
 ```text
-You are a subagent of the Contoso IT Help Desk. Do NOT reply to the user directly; return your findings to the parent agent.
+You are a subagent of the Grey Logistics IT Help Desk. Do NOT reply to the user directly; return your findings to the parent agent.
 Lockouts: accounts unlock automatically after 30 minutes, or immediately through the self-service portal at https://aka.ms/sspr.
 Password resets: use the self-service portal at https://aka.ms/sspr. A new password needs at least 14 characters.
 Multifactor sign-in problems: re-register the authenticator app at https://aka.ms/mysecurityinfo.
@@ -76,11 +78,11 @@ Expected: the activity map shows an Account Access node, and the reply mentions 
 
 Licensing belongs to another team that publishes its own agent, so the help desk connects to it and uses the rules where that team maintains them. The description you write on the help desk side is a local copy that only the planner of this agent reads.
 
-1. On the **Agents** page, select **Add an agent**, then select **Copilot Studio** under **Connect to an external agent** and pick Contoso Software Licensing.
+1. On the **Agents** page, select **Add an agent**, then select **Copilot Studio** under **Connect to an external agent** and pick Grey Logistics Software Licensing.
 2. Replace the description with this text:
 
 ```text
-Answers questions about software licenses at Contoso: which software is standard, which needs manager approval, and how to request it. Does not handle account, password or hardware problems.
+Answers questions about software licenses at Grey Logistics: which software is standard, which needs manager approval, and how to request it. Does not handle account, password or hardware problems.
 ```
 
 3. Clear **Pass conversation history to this agent** so the licensing agent receives only the task, then save.
@@ -96,9 +98,9 @@ Can I get a Visio license?
 I'm locked out of my account, and once I'm back in I also need Project for my new role.
 ```
 
-Expected: the first message shows a Contoso Software Licensing node and a reply about manager approval and one business day. The second shows Account Access and Contoso Software Licensing in sequence in the same plan, followed by one combined reply.
+Expected: the first message shows a Grey Logistics Software Licensing node and a reply about manager approval and one business day. The second shows Account Access and Grey Logistics Software Licensing in sequence in the same plan, followed by one combined reply.
 
-> **Note:** A connected agent only reflects changes after it is published again. If the licensing answers look outdated, publish Contoso Software Licensing and retest.
+> **Note:** A connected agent only reflects changes after it is published again. If the licensing answers look outdated, publish Grey Logistics Software Licensing and retest.
 
 ## Exercise 4: Test outside every domain and switch a specialist off
 
@@ -120,14 +122,14 @@ Expected: the canteen question calls no agent node in the activity map, and the 
 
 | Symptom | Likely cause | Fix |
 | --- | --- | --- |
-| Contoso Software Licensing doesn't appear under **Copilot Studio** | It isn't published, lives in another environment, or doesn't allow connections | Publish it in the same environment and turn on **Let other agents connect to and use this one** |
+| Grey Logistics Software Licensing doesn't appear under **Copilot Studio** | It isn't published, lives in another environment, or doesn't allow connections | Publish it in the same environment and turn on **Let other agents connect to and use this one** |
 | Two messages arrive for one question | A subagent replies to the user and the parent repeats it | Keep the "do NOT reply to the user directly" line in the subagent instructions and the ONLY rule in the parent |
 | The licensing question goes to Account Access | Descriptions overlap or name the same words | Tighten both descriptions and state what each one excludes |
 | The **Agents** page or child agent options are missing | Generative orchestration is off | Set **Use generative AI orchestration for your agent's responses?** to **Yes** |
 
 ## Summary
 
-You split the Contoso IT Help Desk into a child agent and a connected specialist and kept the help desk as the one voice the user hears. You can now:
+You split the Grey Logistics IT Help Desk into a child agent and a connected specialist and kept the help desk as the one voice the user hears. You can now:
 
 - Write parent instructions that define routing, the single-responder rule and the fallback
 - Create a child agent whose description drives routing and whose instructions declare its role

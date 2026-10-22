@@ -8,7 +8,9 @@ Copilot Cowork, the agentic experience for everyday knowledge workers, follows. 
 
 Copilot Studio Basics teaches you to create and configure Standard agents, ground them with knowledge, and build conversations with topics, entities, variables, Power Fx, and Adaptive Cards before you publish to Teams and Copilot. You then give agents tools: prompts with Code Interpreter, Dataverse, connectors, Agent Flows, REST APIs, MCP servers, and Computer Use for apps without an API. Advanced topics add autonomous agents with event triggers, deep reasoning, multi-agent routing, and Microsoft Foundry agents, with voice agents as an option.
 
-GitHub Copilot agents come next, built side by side with the Standard agents of the earlier modules: the unified Build surface and its orchestrator, Agent Skills in the open SKILL.md format, tools, MCP, and the Workflows designer, grounding with Work IQ, Foundry IQ, and Fabric IQ, building apps, and testing agents with evaluations. You then publish and maintain what you build: environments and solutions, Microsoft channels, ALM, and source control.
+GitHub Copilot agents come next, built side by side with the Standard agents of the earlier modules: the unified Build surface and its orchestrator, Agent Skills in the open SKILL.md format, tools, MCP, and the Workflows designer, grounding with Work IQ, Foundry IQ, and Fabric IQ, building apps, and testing agents with evaluations. 
+
+You then publish and maintain what you build: environments and solutions, Microsoft channels, ALM, and source control. Finally you hand the authoring itself to a coding agent: Claude Code with the Copilot Studio plugins clones an agent to `.mcs.yml` files, adds and validates a topic, publishes and tests it, and migrates a Standard agent to the GitHub Copilot harness, all from the terminal and every change a file you can diff.
 
 An optional forward look hands whole processes to AI teammates: Autopilot, and agent accounts that give a Copilot Studio agent its own identity, mailbox, and Teams presence, made proactive with triggers and governed through shared memory and licensing.
 
@@ -36,6 +38,7 @@ An optional forward look hands whole processes to AI teammates: Autopilot, and a
 - How Agents Work
 - Where to Build and What It Costs
 - Copilot Chat & Productivity Agents
+- Prepare the Tenant: Licenses & Credits (optional)
 
 ### Module 2: Microsoft 365 Copilot Cowork
 
@@ -95,6 +98,7 @@ An optional forward look hands whole processes to AI teammates: Autopilot, and a
 - Exporting & Importing Agents between Environments
 - Deployment Pipelines & Source Control integration
 - Using Advanced Channels: WhatsApp, Web & Direct Line (optional)
+- Agentic Building: Copilot Studio Plugins for Coding Agents
 
 ### Module 8: AI Teammates: Autopilot & Agent Accounts (Optional)
 
@@ -108,7 +112,7 @@ An optional forward look hands whole processes to AI teammates: Autopilot, and a
 
 | Day | Clock          | Length | Deliverable                                                                                                                                                          | Description                                                                                                                                                               |
 | --- | -------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | 09:00 to 09:35 | 35m    | [Introduction to Copilot Cowork & Copilot Studio](01-intro/readme.md)                                                                                                | Agents and copilots, how agents work, where to build and what it costs, Copilot Chat and productivity agents (4 topics, 0 demos)                                          |
+| 1   | 09:00 to 09:35 | 35m    | [Introduction to Copilot Cowork & Copilot Studio](01-intro/readme.md)                                                                                                | Agents and copilots, how agents work, where to build and what it costs, Copilot Chat and productivity agents (4 topics, 0 demos, 1 optional)                              |
 | 1   | 09:35 to 09:50 | 15m    | [Lab: Introduction to Developing AI Agents and Copilots for Microsoft 365](../labs/01-intro/readme.md)                                                               | An agent built with Agent Builder, and a SharePoint agent built and shared in Teams (Analyst, Researcher, and Workflows are optional)                                     |
 | 1   | 09:50 to 10:40 | 50m    | [Microsoft 365 Copilot Cowork](02-cowork/readme.md)                                                                                                                  | Getting started with Cowork, built-in skills and the side panel (2 topics, 3 demos)                                                                                       |
 | 1   | 10:40 to 10:55 | 15m    | Break                                                                                                                                                                |                                                                                                                                                                           |

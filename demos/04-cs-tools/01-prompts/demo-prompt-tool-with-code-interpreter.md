@@ -1,6 +1,8 @@
 # Triage and Analyze Help Desk Tickets with Prompt Tools
 
-A help desk agent that triages tickets in its own words gives a different shape of answer every time, and nobody downstream can rely on it. Ask the same agent for the average resolution time of last week's tickets and it guesses a number. In this demo you give the Contoso IT Help Desk agent two prompt tools: one that returns every triage in the same JSON shape, and one whose code interpreter calculates exact backlog figures.
+![Grey Logistics IT Help Desk sends a triage request to the Triage help desk ticket prompt, which returns category, priority, summary and nextStep as JSON, and a ticket log question to the Analyze ticket backlog prompt, whose code interpreter shows Hardware at 27.0 hours and 3 high-priority tickets.](./_images/prompt-tool-with-code-interpreter-overview.svg)
+
+A help desk agent that triages tickets in its own words gives a different shape of answer every time, and nobody downstream can rely on it. Ask the same agent for the average resolution time of last week's tickets and it guesses a number. In this demo you give the Grey Logistics IT Help Desk agent two prompt tools: one that returns every triage in the same JSON shape, and one whose code interpreter calculates exact backlog figures.
 
 What you practice here: turning a recurring model task into a prompt tool with a fixed output, and moving arithmetic into code interpreter.
 
@@ -15,7 +17,7 @@ Duration: about 40 minutes.
 ## Prerequisites
 
 - A Copilot Studio environment where you can create agents, with Copilot Credits available for prompts.
-- A Standard agent named Contoso IT Help Desk (on the home page, open the **New agent** dropdown and select **Agent** with the **Standard** badge under **Other ways to build**). Generative orchestration stays on, which is the default for new agents.
+- A Standard agent named Grey Logistics IT Help Desk (on the home page, open the **New agent** dropdown and select **Agent** with the **Standard** badge under **Other ways to build**). Generative orchestration stays on, which is the default for new agents.
 - Under **Settings** > **Security** > **Authentication**, the agent uses **Authenticate with Microsoft**, the default for new agents. Code interpreter needs user authentication.
 
 ## Exercise 1: Draft a triage prompt with Prompt assistant
@@ -33,7 +35,7 @@ Classify an IT help desk ticket into a category and a priority and summarize it 
 4. Point out the draft, then replace the instructions with the tested version below. Where the last line says to insert the input, type `/`, select **Text**, and name the input `Ticket text`.
 
 ```text
-You triage IT help desk tickets for Contoso.
+You triage IT help desk tickets for Grey Logistics.
 
 Read the ticket below and classify it.
 - category: one of Password, Network, Hardware, Software, Access
@@ -104,7 +106,7 @@ Ask a model for the average of ten numbers and it often produces a plausible wro
 3. Paste these instructions and insert a Text input named `Ticket log` where marked:
 
 ```text
-You analyze Contoso IT help desk ticket logs.
+You analyze Grey Logistics IT help desk ticket logs.
 
 The ticket log below is CSV with the columns id, category, priority, hours_to_resolve.
 Use code to calculate every figure:
@@ -183,7 +185,7 @@ Expected: the first request runs Analyze ticket backlog and the answer names Har
 
 ## Summary
 
-You built two prompt tools for the Contoso IT Help Desk agent: a triage prompt with a fixed JSON output and a backlog prompt that calculates with code interpreter. You can now:
+You built two prompt tools for the Grey Logistics IT Help Desk agent: a triage prompt with a fixed JSON output and a backlog prompt that calculates with code interpreter. You can now:
 
 - Draft a prompt with Prompt assistant and replace it with tested instructions
 - Add inputs, test with sample data, and lock the output format to JSON

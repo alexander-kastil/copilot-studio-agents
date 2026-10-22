@@ -74,9 +74,10 @@ The node suits quick, deterministic calls inside a designed conversation, such a
 
 Two habits keep the first real call clean. When a connector call replaces a stub, such as the sample-stock node that fills `Topic.foodStock` in the prompt demo, give the stub the API's shape from the start, because the node refuses to save the API's list into a variable of a different shape; otherwise let the node create a new variable and rename it. An API on a free-tier web app starts cold, so its first tool call can time out while the app starts: open the API once before you demo it.
 
-## Hands-On Demo
+## Hands-On Demos
 
-- [Call a Public API from a Topic and as a REST API Tool](./demo-rest-api-tool.md): the presenter calls a public holiday API with an HTTP request node in a topic, then describes the same endpoint in OpenAPI and adds it as a REST API tool the orchestrator chooses on its own.
+- [Give the Canteen Agent Live Stock from a REST API](./demo-food-catalog-rest-connector.md): the presenter turns the food catalog's OpenAPI file into the CS-Food Catalog custom connector, gives CS-Food Stock Buddy three tools from it, and replaces the sample stock with the live list.
+- [Call a Public API from a Topic and as a REST API Tool](./demo-rest-api-tool.md) (optional): the presenter calls a public holiday API with an HTTP request node in a topic, then describes the same endpoint in OpenAPI and adds it as a REST API tool the orchestrator chooses on its own.
 
 ## Hands-On Lab
 

@@ -1,0 +1,6 @@
+mcs.metadata:
+  componentName: Computer Operator connection
+  description: Connection reference for the Computer Operator connector used by the computer-use tools.
+connectionReferences:
+  - connectionReferenceLogicalName: catmgr_GHGreyLogisticsITHelpDesk.cr.shared_computeroperator
+    connectorId: /providers/Microsoft.PowerApps/apis/shared_computeroperator

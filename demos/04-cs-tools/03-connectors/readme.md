@@ -72,9 +72,10 @@ Once a team has a working set of tools, rebuilding them in every agent wastes ti
 
 Adding components to a collection moves them out of the agent, and the agent then references them in the collection. Other authors can use the collection but cannot change the components inside it, and only the creator or a user with the system customizer or system admin role can edit it. Setting a primary agent restricts a collection to one agent. Exporting a collection produces a managed solution you can import into another environment; collections with connectors or environment variables travel better inside a solution you create yourself.
 
-## Hands-On Demo
+## Hands-On Demos
 
-- [Give the Help Desk Agent Connector Tools](./demo-connector-tools.md): the presenter adds Office 365 Users and Outlook tools, fixes one input to the signed-in user, requires confirmation before mail goes out, watches the orchestrator chain the tools in one request, and moves them into a component collection.
+- [Post Trip Summaries to Teams with a Connector Tool](./demo-travel-agent-teams-tool.md): the presenter rebuilds the Travel Agent as CS-Travel Agent, collects a booking in a topic, and adds one Microsoft Teams action as a tool whose inputs the agent fills from the conversation to post a trip summary to a channel.
+- [Give the Help Desk Agent Connector Tools](./demo-connector-tools.md) (optional): the presenter adds Office 365 Users and Outlook tools, fixes one input to the signed-in user, requires confirmation before mail goes out, watches the orchestrator chain the tools in one request, and moves them into a component collection.
 
 ## Hands-On Lab
 

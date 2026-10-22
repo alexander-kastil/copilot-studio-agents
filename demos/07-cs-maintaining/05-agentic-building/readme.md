@@ -30,12 +30,14 @@ The plugin ships four sub-agents, 31 skills and 15 design patterns, each pattern
 
 ![Skills for Copilot Studio architecture: Claude Code, GitHub Copilot CLI and VS Code feed one SessionStart hook that routes to the Author, Manage, Test and Advisor sub-agents, which use authoring, ALM, testing and shared skills that run against the local workspace, bundled Node scripts, reference schemas and Copilot Studio.](./_images/skills-for-copilot-studio-architecture.svg)
 
-| Command | Does |
+| Sub-agent | Does |
 | --- | --- |
-| `/copilot-studio:copilot-studio-manage` | Clone, pull, push, publish, list environments and agents |
-| `/copilot-studio:copilot-studio-author` | Create and edit topics, nodes, actions, knowledge, child agents, variables, triggers and Adaptive Cards |
-| `/copilot-studio:copilot-studio-test` | Evaluations against the draft; point tests and Copilot Studio Kit batch suites against the published agent |
-| `/copilot-studio:copilot-studio-advisor` | Design guidance from the pattern library, agent review and troubleshooting; it advises and hands building to the Author |
+| `copilot-studio:Copilot Studio Manage` | Clone, pull, push, publish, list environments and agents |
+| `copilot-studio:Copilot Studio Author` | Create and edit topics, nodes, actions, knowledge, child agents, variables, triggers and Adaptive Cards |
+| `copilot-studio:Copilot Studio Test` | Evaluations against the draft; point tests and Copilot Studio Kit batch suites against the published agent |
+| `copilot-studio:Copilot Studio Advisor` | Design guidance from the pattern library, agent review and troubleshooting; it advises and hands building to the Author |
+
+In Claude Code you reach these sub-agents through the router. You ask in plain language, such as "Clone my Copilot Studio agent Grey Logistics IT Help Desk", and the router picks the sub-agent, or you name one with `@`. The plugin's only slash command is `/copilot-studio:create-eval`; every other skill is called by the model.
 
 The skills group into 11 authoring, 2 ALM, 10 testing and 7 shared skills, plus `create-eval`, which writes eval scenarios for the plugin itself. Two testing skills, `chat-with-agent` and `directline-chat`, are deprecated; use `detect-mode` with `chat-directline` or `chat-sdk` instead. The repo's `evals` folder tests the plugin's own routing, for example that "create a topic for password reset" in an empty folder answers with "clone" and writes no YAML.
 
@@ -165,7 +167,7 @@ Start a new Claude Code session after you change the file.
 ## Verify and update
 
 1. Run `/plugin`: both marketplaces and both plugins are listed, with the one you turned off shown as disabled.
-2. Type `/copilot-studio:` or `/mcs-assistant:` and check that the commands above appear. Typing `@` lists the sub-agents, such as `copilot-studio:copilot-studio-manage`.
+2. Type `/mcs-assistant:` and check that `migrate` and `chat` appear. Typing `@` lists the sub-agents, such as `copilot-studio:Copilot Studio Manage`.
 3. Run `node --version` and `pac`: Node.js 18 or later, PAC CLI 2.9.3 or later.
 
 | Tool | How to update |
@@ -191,6 +193,10 @@ Once an agent is a set of files, every change can be diffed, reviewed in a pull 
 ## Hands-On Demo
 
 - [Build and migrate an agent from the terminal](./demo-build-and-migrate-from-the-terminal.md)
+
+## Hands-On Lab
+
+- [Build and Migrate an Agent from the Terminal](../../../labs/07-cs-maintaining/05-agentic-building/lab-01-build-and-migrate-from-the-terminal.md)
 
 ## Links & Resources
 

@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Aurora Account Assistant reads your Outlook mailbox through Work IQ (Preview)</title>
+  <desc id="d">Left, the Add a tool dialog on the MCP tab: Work IQ (Preview), an MCP server with 12 tools such as Retrieve, Fetch and Ask, is picked, and the toast reads Work IQ (Preview) added; the workload tools Mail, Teams, OneDrive and SharePoint belong to a legacy experience and are not picked. Work IQ (Preview) goes onto Aurora Account Assistant, a GitHub Copilot agent. The question What did the most recent customer email I received ask me to do, and by when? goes to the agent, which calls Work IQ with retrieve. On first use the consent prompt is answered with Allow. Work IQ sends the Email capability and its query to your Outlook mailbox for the signed-in account and gets the email thread back, and the agent pulls it in with fetch. The reply names the subject and deadline of a real email and ends with Sources: your Outlook mailbox (inbox and Sent Items). The animation adds the tool, then follows the question through retrieve and fetch to the reply.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      svg { font-size: 26px; }
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .h { font-size: 34px; font-weight: 700; text-anchor: middle; }
+      .hl { font-size: 34px; font-weight: 700; }
+      .t { font-size: 30px; font-weight: 600; }
+      .tc { font-size: 30px; font-weight: 600; text-anchor: middle; }
+      .s { font-size: 28px; fill: #57606a; }
+      .sc { font-size: 28px; fill: #57606a; text-anchor: middle; }
+      .b { font-size: 28px; }
+      .bc { font-size: 28px; text-anchor: middle; }
+      .bb { font-size: 28px; font-weight: 600; }
+      .bbc { font-size: 28px; font-weight: 600; text-anchor: middle; }
+      .code { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; }
+      .codec { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; text-anchor: middle; }
+      .mono { font-family: Consolas, 'Courier New', monospace; font-size: 26px; }
+      .monoc { font-family: Consolas, 'Courier New', monospace; font-size: 26px; text-anchor: middle; }
+      .num { font-size: 28px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .tag { font-size: 26px; font-weight: 600; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect x="60" y="60" width="500" height="710" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="90" y="114">Add a tool, MCP tab</text>
+  <rect x="80" y="150" width="460" height="170" rx="18" fill="#e9f7ef" stroke="#1a7f37" stroke-width="3"/>
+  <text class="bb" x="110" y="198">Work IQ (Preview)</text>
+  <text class="s" x="110" y="238">MCP server, 12 tools:</text>
+  <text class="s" x="110" y="276">Retrieve, Fetch, Ask</text>
+  <circle cx="490" cy="196" r="24" fill="#ffffff" stroke="#1a7f37" stroke-width="4"/>
+  <path d="M478,197 L487,206 L503,186" fill="none" stroke="#1a7f37" stroke-width="4"/>
+  <rect x="80" y="370" width="460" height="230" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2" stroke-dasharray="10 8"/>
+  <text class="bb" x="110" y="420">Mail, Teams, OneDrive,</text>
+  <text class="bb" x="110" y="458">SharePoint</text>
+  <text class="s" x="110" y="504">workload tools from a</text>
+  <text class="s" x="110" y="544">legacy experience</text>
+  <rect x="80" y="650" width="460" height="90" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="110" y="706">Work IQ (Preview) added</text>
+  <rect x="640" y="60" width="600" height="230" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="668" y="112">What did the most recent customer</text>
+  <text class="b" x="668" y="152">email I received ask me to do,</text>
+  <text class="b" x="668" y="192">and by when?</text>
+  <text class="s" x="668" y="256">Preview, New chat</text>
+  <line x1="940" y1="290" x2="940" y2="400" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <rect x="700" y="400" width="480" height="260" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="940" y="460">Aurora Account</text>
+  <text class="h" x="940" y="504">Assistant</text>
+  <text class="sc" x="940" y="552">GitHub Copilot agent</text>
+  <text class="sc" x="940" y="596">Tools: Work IQ (Preview)</text>
+  <path d="M540,235 H610 V560 H700" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <rect x="640" y="760" width="600" height="250" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="668" y="810">Reply</text>
+  <text class="b" x="668" y="852">names the subject and deadline</text>
+  <text class="b" x="668" y="890">of a real email</text>
+  <text class="s" x="668" y="928">Sources: your Outlook mailbox</text>
+  <text class="s" x="668" y="966">(inbox and Sent Items)</text>
+  <line x1="940" y1="660" x2="940" y2="760" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <rect x="1340" y="300" width="520" height="220" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1370" y="352">Work IQ (Preview)</text>
+  <text class="s" x="1370" y="396">MCP server</text>
+  <text class="s" x="1370" y="436">first use: Allow</text>
+  <text class="s" x="1370" y="476">the signed-in account</text>
+  <rect x="1340" y="700" width="520" height="170" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1370" y="752">Your Outlook mailbox</text>
+  <text class="s" x="1370" y="796">inbox and Sent Items</text>
+  <text class="s" x="1370" y="836">the email thread</text>
+  <line x1="1180" y1="430" x2="1340" y2="430" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <text class="monoc" x="1260" y="414">retrieve</text>
+  <line x1="1340" y1="500" x2="1180" y2="500" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <text class="monoc" x="1260" y="548">fetch</text>
+  <line x1="1600" y1="520" x2="1600" y2="700" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <text class="s" x="1350" y="620">Email capability</text>
+  <line x1="1720" y1="700" x2="1720" y2="520" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <text class="s" x="1740" y="620">thread</text>
+  <rect x="80" y="150" width="460" height="170" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.1;0.1107;1" values="1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M540,235 H610 V560 H700" calcMode="linear" keyTimes="0;0.0857;0.1571;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.0857;0.0964;0.1643;0.175;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="80" y="650" width="460" height="90" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.1;0.1107;0.1857;0.1964;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="700" y="400" width="480" height="260" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.1571;0.1679;0.2286;0.2393;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="640" y="60" width="600" height="230" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.2286;0.2393;0.3;0.3107;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M940,290 V400" calcMode="linear" keyTimes="0;0.2857;0.3214;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.2857;0.2964;0.3286;0.3393;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M1180,430 H1340" calcMode="linear" keyTimes="0;0.3286;0.3714;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.3286;0.3393;0.3786;0.3893;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1340" y="300" width="520" height="220" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.3714;0.3821;0.4429;0.4536;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M1600,520 V700" calcMode="linear" keyTimes="0;0.4429;0.4857;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.4429;0.4536;0.4929;0.5036;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1340" y="700" width="520" height="170" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.4857;0.4964;0.5571;0.5679;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M1720,700 V520" calcMode="linear" keyTimes="0;0.5571;0.6;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.5571;0.5679;0.6071;0.6179;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M1340,500 H1180" calcMode="linear" keyTimes="0;0.6071;0.65;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.6071;0.6179;0.6571;0.6679;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M940,660 V760" calcMode="linear" keyTimes="0;0.6643;0.7;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.6643;0.675;0.7071;0.7179;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="640" y="760" width="600" height="250" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.7;0.7107;0.9857;0.9964;1" values="0;0;1;1;0;0"/>
+  </rect>
+</svg>

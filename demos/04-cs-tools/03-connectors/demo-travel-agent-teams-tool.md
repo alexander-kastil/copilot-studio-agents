@@ -1,5 +1,7 @@
 # Post Trip Summaries to Teams with a Connector Tool
 
+![CS-Travel Agent collects Vienna, May 12 and 2 people in the Book Trip topic, then, after Allow on the Connect to continue card, the CS-Post message in a chat or channel tool posts the trip summary to the General channel of your team under your name.](./_images/travel-agent-teams-tool-overview.svg)
+
 A trip request that stays in the chat helps nobody, because the travel desk works in a Teams channel and never sees it. In this demo you rebuild the Travel Agent as CS-Travel Agent, let it collect a booking, and give it one prebuilt Teams action it can call on its own. You finish with a trip summary in a Teams channel, posted by the agent with values it read from the conversation.
 
 What you practice here: adding one action of a prebuilt connector as a tool, letting generative orchestration fill its inputs from the conversation, and choosing whose credentials it runs with.

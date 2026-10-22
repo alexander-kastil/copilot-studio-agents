@@ -1,5 +1,7 @@
 # Create a Standard IT Help Desk Agent
 
+![Grey Logistics IT Help Desk is set up in three steps, then the same VPN question runs under generative orchestration (numbered steps) and classic orchestration (Conversational boosting, then Fallback), beside the lunch refusal and the Greeting topic.](./_images/create-a-standard-agent-overview.svg)
+
 A help desk team asked for an agent, and the first draft answers anything anyone types, including questions it has no business answering. The fix is not more content: it is the identity, instructions, model, and orchestration setting you choose before any knowledge goes in. In this demo you create a Standard agent from a short description, tighten what it may do, and watch how the same question travels through generative and classic orchestration.
 
 What you practice here: setting the identity, boundaries, and orchestration of a Standard agent and proving each setting in the test panel.
@@ -8,7 +10,7 @@ Duration: about 40 minutes.
 
 ## What you'll build
 
-- A Standard agent named Contoso IT Help Desk, created from a natural-language description.
+- A Standard agent named Grey Logistics IT Help Desk, created from a natural-language description.
 - Instructions that limit it to workplace IT and forbid handling secrets.
 - A checked model and orchestration setting on the **Overview** and **Settings** pages.
 - Two test runs of the same question, one per orchestration mode, read in the activity map and the topic tracking view.
@@ -26,7 +28,7 @@ Describing the agent in plain words gives you a complete first draft in one step
 2. On the **Home** page, open the **New agent** dropdown and select **Agent** with the **Standard** badge under **Other ways to build**, then paste the following description into the box where you describe your agent, and submit it.
 
 ```text
-An IT help desk agent for Contoso employees. It answers questions about Windows sign-in, VPN access, Microsoft 365 apps, and hardware requests, gives step-by-step fixes, and tells people to open a ticket with the service desk when it can't solve the issue.
+An IT help desk agent for Grey Logistics employees. It answers questions about Windows sign-in, VPN access, Microsoft 365 apps, and hardware requests, gives step-by-step fixes, and tells people to open a ticket with the service desk when it can't solve the issue.
 ```
 
 3. Wait until provisioning finishes and the **Overview** page appears.
@@ -38,11 +40,11 @@ Expected: the **Overview** page shows a generated name, a description, and instr
 
 Generated instructions describe a helpful agent but rarely say what it must refuse. A help desk agent needs explicit scope and an explicit rule about secrets, because the orchestrator follows the instructions when it decides how to answer.
 
-1. In the **Details** section, select **Edit**, change the name to `Contoso IT Help Desk`, and save.
+1. In the **Details** section, select **Edit**, change the name to `Grey Logistics IT Help Desk`, and save.
 2. In the **Instructions** section, select **Edit**, replace the generated text with the following instructions, and select **Save**.
 
 ```text
-You are the Contoso IT Help Desk agent for employees.
+You are the Grey Logistics IT Help Desk agent for employees.
 - Answer questions about Windows sign-in, VPN access, Microsoft 365 apps, and hardware requests.
 - Give numbered steps that the employee can follow on their own device.
 - Never ask for, store, or repeat passwords, one-time codes, or recovery keys.
@@ -50,7 +52,7 @@ You are the Contoso IT Help Desk agent for employees.
 - Politely decline questions that are not about workplace IT.
 ```
 
-Expected: the **Details** section shows Contoso IT Help Desk, and the **Instructions** section shows the five rules exactly as pasted.
+Expected: the **Details** section shows Grey Logistics IT Help Desk, and the **Instructions** section shows the five rules exactly as pasted.
 
 > **Tip:** Type a slash (`/`) inside the instructions to insert a reference to a tool, topic, variable, or Power Fx expression. You use this later in the module, once the agent has topics and tools to name.
 
@@ -114,7 +116,7 @@ Expected: with classic orchestration no custom topic has trigger phrases about V
 
 ## Summary
 
-You built a Standard Contoso IT Help Desk agent with deliberate scope and verified each setting in the test panel. You can now:
+You built a Standard Grey Logistics IT Help Desk agent with deliberate scope and verified each setting in the test panel. You can now:
 
 - create a Standard agent from a description and refine what Copilot Studio generated
 - write instructions that state scope, refusals, and handling of secrets

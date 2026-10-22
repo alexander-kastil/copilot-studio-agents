@@ -1,5 +1,7 @@
 # Schedule Restaurant Staff Through an HR MCP Server
 
+![A sequence diagram in which CS-Restaurant HR Manager finds Sofia Fernandez and Luca Rossi through CS-HR MCP Server, books two assign_shift calls only after the user confirms, and sends the Staff Schedule email with CS-Send an email.](./_images/restaurant-hr-mcp-overview.svg)
+
 A restaurant manager plans every week's shifts from a staff list that lives in the HR system, so each plan starts with an export and ends with a copy that is out of date by Friday. Pasting that list into an agent only moves the problem. In this demo you rebuild the Restaurant HR Manager as a fresh Standard agent that reads the team and books shifts through the restaurant's own HR MCP server, then sends the finished schedule by email.
 
 What you practice here: connecting your own MCP server through the onboarding wizard, letting structured instructions decide when its tools read and when they write, and adding the connector tool an instruction needs.

@@ -65,7 +65,7 @@ Deep reasoning helps when a step has to weigh evidence. It doesn't help a step t
 
 ## Hands-On Demo
 
-- [Prioritize a Ticket Backlog with Deep Reasoning](./demo-deep-reasoning.md): the presenter asks the Contoso IT Help Desk to order a ticket backlog against SLA rules, first on the default model, then with `reason` on the ranking step, and compares the plans in the activity map.
+- [Prioritize a Ticket Backlog with Deep Reasoning](./demo-deep-reasoning.md): the presenter asks the Grey Logistics IT Help Desk to order a ticket backlog against SLA rules, first on the default model, then with `reason` on the ranking step, and compares the plans in the activity map.
 
 ## Hands-On Lab
 

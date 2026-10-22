@@ -1,5 +1,7 @@
 # Schedule a Meeting Where Your Week Has Room
 
+![A Monday to Friday calendar from 09:00 to 17:00, read through Work IQ with nothing attached, rules out lunch, the block right after your longest meeting and late Friday, leaves your only long focus stretch intact, and turns one free hour into Agentic AI, booked through a Create calendar event? card and briefed through an Update event? card that links Agentic AI Prep.](./_images/02-workiq-scheduling-overview.svg)
+
 Let Cowork read your live week through Work IQ, reason about where a one-hour Agentic AI discussion actually fits, book it on your real calendar through the approval gate, and brief you for it from your own work data.
 
 > **Reasoning effort:** Use **Light** for Steps 1, 3 and 4: mapping the week, booking the meeting and writing the prep note are lookups and short writes. Use **Medium** for Step 2, where Cowork has to weigh and defend the slot. High or Max is not needed for a single calendar decision. Set it under **Auto Medium** next to the send arrow: the first stop of the **Effort** slider is Light, the second is Medium (the default).

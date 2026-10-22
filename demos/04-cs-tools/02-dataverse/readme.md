@@ -2,7 +2,7 @@
 
 Most business answers live in table rows: which supplier offered the lowest price, how many units are on order, when a delivery is due. Microsoft Dataverse is the data store behind Power Platform, and it is often where those rows already sit. A Copilot Studio agent can use Dataverse in two directions: it reads tables as knowledge to answer questions, and it changes rows through tools when a user asks it to act.
 
-This topic covers both directions in Copilot Studio's Standard agents (Learn: standard harness). You learn what a Dataverse knowledge source needs before it works, how synonyms and glossary terms teach the agent your column names, which tools read and write rows, and how to design tables an agent can understand. The demo uses two small procurement tables, OfferRequests and OfferRequestDetails, which the Contoso IT Help Desk uses to compare hardware offers from suppliers.
+This topic covers both directions in Copilot Studio's Standard agents (Learn: standard harness). You learn what a Dataverse knowledge source needs before it works, how synonyms and glossary terms teach the agent your column names, which tools read and write rows, and how to design tables an agent can understand. The demo uses two small procurement tables, OfferRequests and OfferRequestDetails, which the Grey Logistics IT Help Desk uses to compare hardware offers from suppliers.
 
 ## Two ways an agent uses Dataverse
 
@@ -74,9 +74,10 @@ The same habits that make a table easy for people make it easy for an agent. Giv
 
 Keep tables focused. A knowledge source takes up to 15 tables, but an agent answers more reliably over a few well-described tables than over a whole data model. When a question needs data from many tables or exact calculations, a prompt with Dataverse knowledge or a flow that queries the rows gives you more control over the result.
 
-## Hands-On Demo
+## Hands-On Demos
 
-- [Answer and Record Supplier Offers from Dataverse](./demo-dataverse-knowledge-and-records.md): the presenter adds the two offer tables as knowledge, teaches the agent their vocabulary with synonyms and a glossary term, asks comparison questions, and then records a new offer through a Dataverse connector tool that asks for confirmation.
+- [Save Expense Claims to Dataverse](./demo-expense-claims-in-dataverse.md): the presenter creates the CS-Travel Expense Claims table and an agent flow that adds a row, calls the flow from the claim topic of CS-Travel Expense Refund, and opens the saved row in Power Apps.
+- [Answer and Record Supplier Offers from Dataverse](./demo-dataverse-knowledge-and-records.md) (optional): the presenter adds the two offer tables as knowledge, teaches the agent their vocabulary with synonyms and a glossary term, asks comparison questions, and then records a new offer through a Dataverse connector tool that asks for confirmation.
 
 ## Key Topics covered in this module
 

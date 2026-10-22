@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Request software: one Adaptive Card collects three values for the Grey Logistics IT Help Desk</title>
+  <desc id="d">In the test panel of Grey Logistics IT Help Desk the user sends I need to request software. The Request software topic runs its Ask with Adaptive Card node, which shows one card: a heading written in Power Fx that reads Hi, display name, which software do you need, a Software dropdown set to Microsoft Visio, a Needed by date field, a Business justification box and a Submit request button. Submitting the card returns three outputs, software, neededBy and justification, and a message repeats them: Thanks. Your request for software, needed by neededBy, is recorded with this justification. Three cases run along the bottom: submitting with the date empty shows Pick the date you need the software and sends nothing; replying asdf brings back the retry prompt Please use the form above and select Submit request, or type cancel to stop; asking How do I fix a OneDrive sync error lets another topic or knowledge answer, then the card is sent again. A dot travels from the message to the card, then from Submit request to the outputs and the message.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      svg { font-size: 28px; }
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .h { font-size: 34px; font-weight: 700; }
+      .t { font-size: 30px; font-weight: 600; }
+      .b { font-size: 28px; }
+      .bb { font-size: 28px; font-weight: 700; }
+      .s { font-size: 28px; fill: #57606a; }
+      .mb { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; }
+      .p { font-size: 26px; font-weight: 700; }
+      .w { fill: #ffffff; }
+      .c { text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="280" y1="387" x2="280" y2="433"/>
+    <line x1="280" y1="557" x2="280" y2="603"/>
+    <line x1="500" y1="665" x2="600" y2="665"/>
+    <path d="M1200,730 H1250 V255 H1300"/>
+    <line x1="1580" y1="400" x2="1580" y2="450"/>
+  </g>
+
+  <rect x="60" y="110" width="440" height="275" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="90" y="175">Grey Logistics</text>
+  <text class="t" x="90" y="213">IT Help Desk</text>
+  <rect x="100" y="240" width="370" height="115" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="125" y="287">I need to request</text>
+  <text class="b" x="125" y="327">software</text>
+
+  <rect x="60" y="435" width="440" height="120" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="s" x="90" y="480">Topic</text>
+  <text class="t" x="90" y="525">Request software</text>
+
+  <rect x="60" y="605" width="440" height="120" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="s" x="90" y="650">Node</text>
+  <text class="bb" x="90" y="695">Ask with Adaptive Card</text>
+
+  <rect x="600" y="110" width="600" height="670" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="624" y="138" width="552" height="114" rx="10" fill="#fff6e5"/>
+  <text class="h" x="648" y="186">Hi &lt;display name&gt;, which</text>
+  <text class="h" x="648" y="229">software do you need?</text>
+  <text class="bb" x="640" y="300">Software</text>
+  <rect x="640" y="316" width="520" height="60" rx="8" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="662" y="356">Microsoft Visio</text>
+  <path d="M1120,340 l12,12 l12,-12" fill="none" stroke="#57606a" stroke-width="3"/>
+  <text class="bb" x="640" y="430">Needed by</text>
+  <rect x="640" y="446" width="520" height="60" rx="8" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1114" y="460" width="32" height="32" rx="4" fill="none" stroke="#57606a" stroke-width="3"/>
+  <line x1="1114" y1="470" x2="1146" y2="470" stroke="#57606a" stroke-width="3"/>
+  <text class="bb" x="640" y="562">Business justification</text>
+  <rect x="640" y="578" width="520" height="104" rx="8" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="640" y="702" width="520" height="56" rx="8" fill="#24292f"/>
+  <text class="bb w c" x="900" y="740">Submit request</text>
+
+  <rect x="1300" y="110" width="560" height="290" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1330" y="172">Card outputs</text>
+  <g fill="#ffffff" stroke="#8c959f" stroke-width="2">
+    <rect x="1330" y="196" width="340" height="50" rx="12"/>
+    <rect x="1330" y="260" width="340" height="50" rx="12"/>
+    <rect x="1330" y="324" width="340" height="50" rx="12"/>
+  </g>
+  <text class="mb" x="1352" y="230">software</text>
+  <text class="mb" x="1352" y="294">neededBy</text>
+  <text class="mb" x="1352" y="358">justification</text>
+
+  <rect x="1300" y="450" width="560" height="330" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1330" y="512">Message</text>
+  <text class="b" x="1330" y="558">Thanks. Your request for</text>
+  <text class="b" x="1330" y="598"><tspan class="mb">{software}</tspan>, needed by</text>
+  <text class="b" x="1330" y="638"><tspan class="mb">{neededBy}</tspan>, is recorded with</text>
+  <text class="b" x="1330" y="678">this justification:</text>
+  <text class="b" x="1330" y="718"><tspan class="mb">{justification}</tspan></text>
+
+  <g stroke="#8c959f" stroke-width="2" fill="#f6f8fa">
+    <rect x="60" y="830" width="573" height="210" rx="16"/>
+    <rect x="673" y="830" width="573" height="210" rx="16"/>
+    <rect x="1286" y="830" width="574" height="210" rx="16"/>
+  </g>
+  <text class="t" x="90" y="890">Submit with the date empty</text>
+  <text class="b" x="90" y="938">Pick the date you need</text>
+  <text class="b" x="90" y="976">the software.</text>
+  <text class="s" x="90" y="1014">The card sends nothing.</text>
+  <text class="t" x="703" y="890">Reply <tspan class="mb">asdf</tspan>, get the retry prompt</text>
+  <text class="b" x="703" y="938">Please use the form above and</text>
+  <text class="b" x="703" y="976">select Submit request, or type</text>
+  <text class="b" x="703" y="1014">"cancel" to stop.</text>
+  <text class="t" x="1316" y="890">How do I fix a OneDrive</text>
+  <text class="t" x="1316" y="928">sync error?</text>
+  <text class="s" x="1316" y="976">Another topic or knowledge answers,</text>
+  <text class="s" x="1316" y="1014">then the card is sent again.</text>
+
+  <g fill="#fff6e5" stroke="#e0a534" stroke-width="2">
+    <rect x="84" y="90" width="92" height="40" rx="20"/>
+    <rect x="624" y="90" width="92" height="40" rx="20"/>
+    <rect x="730" y="90" width="214" height="40" rx="20"/>
+    <rect x="1324" y="90" width="92" height="40" rx="20"/>
+    <rect x="1324" y="430" width="92" height="40" rx="20"/>
+    <rect x="84" y="810" width="92" height="40" rx="20"/>
+    <rect x="697" y="810" width="92" height="40" rx="20"/>
+    <rect x="1310" y="810" width="92" height="40" rx="20"/>
+  </g>
+  <text class="p c" x="130" y="119">Ex 3</text>
+  <text class="p c" x="670" y="119">Ex 1</text>
+  <text class="p c" x="837" y="119">Ex 4 Power Fx</text>
+  <text class="p c" x="1370" y="119">Ex 2</text>
+  <text class="p c" x="1370" y="459">Ex 3</text>
+  <text class="p c" x="130" y="839">Ex 3</text>
+  <text class="p c" x="743" y="839">Ex 5</text>
+  <text class="p c" x="1356" y="839">Ex 5</text>
+
+  <g fill="#24292f">
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M280,387 V433" calcMode="linear" keyTimes="0;0.02;0.08;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.02;0.08" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M280,557 V603" calcMode="linear" keyTimes="0;0.10;0.15;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.10;0.15" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M500,665 H600" calcMode="linear" keyTimes="0;0.17;0.24;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.17;0.24" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1200,730 H1250 V255 H1300" calcMode="linear" keyTimes="0;0.52;0.64;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.52;0.64" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1580,400 V450" calcMode="linear" keyTimes="0;0.72;0.78;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.72;0.78" values="0;1;0"/>
+    </circle>
+  </g>
+
+  <g fill="none" stroke-width="5">
+    <rect x="624" y="138" width="552" height="114" rx="10" stroke="#e0a534" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.25;0.34" values="0;1;0"/>
+    </rect>
+    <rect x="630" y="276" width="540" height="416" rx="12" stroke="#24292f" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.34;0.45" values="0;1;0"/>
+    </rect>
+    <rect x="636" y="698" width="528" height="64" rx="10" stroke="#e0a534" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.45;0.53" values="0;1;0"/>
+    </rect>
+    <rect x="1300" y="110" width="560" height="290" rx="16" stroke="#24292f" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.64;0.72" values="0;1;0"/>
+    </rect>
+    <rect x="1300" y="450" width="560" height="330" rx="16" stroke="#24292f" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.78;0.96" values="0;1;0"/>
+    </rect>
+  </g>
+</svg>

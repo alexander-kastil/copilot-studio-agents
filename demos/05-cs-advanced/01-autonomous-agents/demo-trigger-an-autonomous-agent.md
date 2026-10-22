@@ -1,6 +1,8 @@
 # Trigger an Autonomous Agent from a SharePoint List
 
-Requests that people file in a SharePoint list sit untouched until someone on the help desk opens the list, reads each one and sets a priority. The first hour of every outage goes to that triage. In this demo the Contoso IT Help Desk agent reads each new request the moment it is created, sets its priority and writes a triage note back to the list, with nobody in the chat.
+![A new item in the Help Desk Requests SharePoint list fires the New help desk request trigger, and the Grey Logistics IT Help Desk uses Update help desk request to write P1 and a triage note back for the VPN outage and P4 for the monitor request.](./_images/trigger-an-autonomous-agent-overview.svg)
+
+Requests that people file in a SharePoint list sit untouched until someone on the help desk opens the list, reads each one and sets a priority. The first hour of every outage goes to that triage. In this demo the Grey Logistics IT Help Desk agent reads each new request the moment it is created, sets its priority and writes a triage note back to the list, with nobody in the chat.
 
 What you practice here: turning a chat agent into an autonomous one with an event trigger, a payload instruction and a tool that runs on maker credentials.
 
@@ -17,7 +19,7 @@ Duration: about 30 minutes.
 
 - A SharePoint site where you can create a list. Create a blank list named `Help Desk Requests` with three extra columns: `Description` (Multiple lines of text), `Priority` (Single line of text) and `Triage note` (Multiple lines of text).
 - An environment where solution-aware cloud flow sharing is turned on and data policies allow event triggers.
-- A Standard agent (Learn: standard harness) named Contoso IT Help Desk, created from the **New agent** dropdown on the home page: under **Other ways to build**, select **Agent** with the **Standard** badge. Keep generative orchestration on (the default for new agents).
+- A Standard agent (Learn: standard harness) named Grey Logistics IT Help Desk, created from the **New agent** dropdown on the home page: under **Other ways to build**, select **Agent** with the **Standard** badge. Keep generative orchestration on (the default for new agents).
 
 ## Exercise 1: Set boundaries and a tool that works without a user
 
@@ -26,7 +28,7 @@ An autonomous run has nobody to ask, so the agent's instructions carry the bound
 1. On the agent's **Overview** page, replace the instructions with this text:
 
 ```text
-You are the Contoso IT Help Desk. When you act on a new help desk request, work without waiting for user input, never invent details the request does not contain, and never ask anyone for credentials.
+You are the Grey Logistics IT Help Desk. When you act on a new help desk request, work without waiting for user input, never invent details the request does not contain, and never ask anyone for credentials.
 Priorities: P1 when many people cannot work or a security incident is suspected. P2 when one person cannot work at all. P3 when one person can work with a workaround. P4 for questions and requests for equipment or software.
 ```
 
@@ -108,7 +110,7 @@ Expected: the flow shows the SharePoint trigger followed by **Sends a prompt to 
 
 ## Summary
 
-You turned the Contoso IT Help Desk agent into an autonomous agent that triages every new SharePoint request with nobody in the chat. You can now:
+You turned the Grey Logistics IT Help Desk agent into an autonomous agent that triages every new SharePoint request with nobody in the chat. You can now:
 
 - Separate general boundaries in the agent instructions from per-trigger payload instructions
 - Configure a connector tool with maker-provided credentials for unattended runs

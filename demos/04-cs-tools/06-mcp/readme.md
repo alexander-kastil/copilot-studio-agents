@@ -95,9 +95,10 @@ Adding a capability means adding a method and restarting the server. Connected a
 
 Check that an answer really came from the server. When a reply names people missing from the server's data, the orchestrator answered without calling it, and the activity map shows no tool call. The server's search semantics bind the agent too: while the deployed `search_employees` matched only single names, a full-name request returned an empty list and the agent refused to book.
 
-## Hands-On Demo
+## Hands-On Demos
 
-- [Connect the Help Desk Agent to the Microsoft Learn MCP Server](./demo-connect-an-mcp-server.md): the presenter adds the Microsoft Learn Docs MCP Server from the catalog, inspects its tools, restricts them with **Allow all**, routes Microsoft how-to questions to it in the instructions, and connects the same server a second time through the onboarding wizard.
+- [Schedule Restaurant Staff Through an HR MCP Server](./demo-restaurant-hr-mcp.md): the presenter rebuilds CS-Restaurant HR Manager, connects the repository's HR MCP server through the onboarding wizard, finds staff by role and language, books two shifts after a confirmation, and mails the schedule with an Outlook tool.
+- [Connect the Help Desk Agent to the Microsoft Learn MCP Server](./demo-connect-an-mcp-server.md) (optional): the presenter adds the Microsoft Learn Docs MCP Server from the catalog, inspects its tools, restricts them with **Allow all**, routes Microsoft how-to questions to it in the instructions, and connects the same server a second time through the onboarding wizard.
 
 ## Hands-On Lab
 

@@ -1,0 +1,37 @@
+mcs.metadata:
+  componentName: Computer use - Computer use
+kind: TaskDialog
+modelDisplayName: CS-Register inventory items
+modelDescription: Enters product records into the Product Inventory Update web app, which has no API. Use it when a user asks to register, add or enter inventory items.
+action:
+  kind: InvokeComputerUsingAgentTaskAction
+  connectionReference: iits_CSContosoITHelpDesk.shared_computeroperator.06d475747a294d23a1ffa69158f872e5
+  connectionProperties:
+    mode: Maker
+
+  operationId: ComputerOperatorInvokeMcpCua
+  instructions: |-
+    1. Go to https://computerusedemos.blob.core.windows.net/web/Adventure/index.html.
+    2. Submit a new entry for each of the following items, filling Product Name, Product ID, Quantity, Price and Supplier in that order:
+       Rear Derailleur, RD-4821, 50, 42.75, Tailspin Toys
+       Pedal Set, PD-1738, 80, 19.99, Northwind Traders
+    3. After both entries, confirm that both items appear under Inventory Items. No confirmation from me is needed before submitting.
+  model:
+    modelNameHint: sonnet4-5
+
+  initializeContext:
+    enforceHttps: true
+    requestForInformationInput:
+      assignedTo:
+        233a6446-c176-4ee3-8287-218af80bef74:
+          email: alexander.kastil@integrations.at
+          id: 233a6446-c176-4ee3-8287-218af80bef74
+
+      timeToCompleteInMinutes: 60
+      version: 2
+
+  allowlist:
+    websites:
+      - computerusedemos.blob.core.windows.net
+    desktopApps:
+      - Microsoft Edge

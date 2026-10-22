@@ -1,5 +1,7 @@
 # Trace the Agentic Reasoning Loop
 
+![Two knowledge sources feed the Searched knowledge steps in the Preview step list for the Around the Horn question, History shows the same turn after the fact, and a reason step by step instruction turns the plan into Ran 2 events in parallel.](./_images/02-trace-agent-reasoning-overview.svg)
+
 When a Northwind Traders seller asks one question that needs several facts at once (what an account ordered, whether they have an open case, and what their lead time is), the assistant should plan the work and pull from every relevant source in a single turn instead of answering half the question. In this demo you give the Northwind Sales Assistant a second knowledge source, ask a genuinely multi-source question, and then open the orchestrator's plan so you can see, trust, and debug how it reached the answer. You leave with an agent that reasons across sources and the skill to inspect that reasoning whenever an answer looks wrong.
 
 ## What you'll build

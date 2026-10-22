@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">The Q3 review demo: what you decide and what Cowork does</title>
+  <desc id="d">Two lanes across the four steps, with q3-sales-by-region.xlsx, q3-regional-notes.docx and q2-review.pptx under References. In Step 1 you brief the outcome and ask for the plan before any file, and Cowork answers with a numbered plan, paused on your go-ahead. In Step 2 you steer the plan, the returns theme first and the ask last, and Cowork builds the deck with the Q2 deck's six slides. In Step 3 you ask for speaker notes saved in place, and Cowork saves them over the same file. In Step 4 you ask for the email to your own address, Cowork holds the Send draft? card at Medium risk with Cancel and Send, you select Send on the card, once per irreversible action, and Cowork records Approved 1 action with the email in your inbox. From Step 2 on, one deck sits under Output: Aurora Northern Europe - Q3 Review.pptx, saved in place, then attached. A dot moves back and forth between the lanes and pauses on the plan and on the approval card.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      svg { font-size: 28px; }
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .h { font-size: 34px; font-weight: 700; text-anchor: middle; }
+      .tc { font-size: 30px; font-weight: 600; text-anchor: middle; }
+      .k { font-size: 28px; font-weight: 600; }
+      .sc { font-size: 28px; fill: #57606a; text-anchor: middle; }
+      .s { font-size: 28px; fill: #57606a; }
+      .step { font-size: 28px; font-weight: 700; fill: #57606a; text-anchor: middle; }
+      .code { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="240" y="100" width="1610" height="80" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="k" x="270" y="151">References</text>
+  <text class="code" x="470" y="151">q3-sales-by-region.xlsx</text>
+  <text class="code" x="870" y="151">q3-regional-notes.docx</text>
+  <text class="code" x="1255" y="151">q2-review.pptx</text>
+
+  <text class="step" x="383" y="232">Step 1</text>
+  <text class="step" x="714" y="232">Step 2</text>
+  <text class="step" x="1045" y="232">Step 3</text>
+  <text class="step" x="1541" y="232">Step 4</text>
+  <g stroke="#8c959f" stroke-width="2">
+    <line x1="240" y1="250" x2="526" y2="250"/>
+    <line x1="571" y1="250" x2="857" y2="250"/>
+    <line x1="902" y1="250" x2="1188" y2="250"/>
+    <line x1="1233" y1="250" x2="1850" y2="250"/>
+  </g>
+
+  <rect x="50" y="270" width="1820" height="240" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="50" y="590" width="1820" height="240" rx="24" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="145" y="378">You</text>
+  <text class="sc" x="145" y="422">Regional</text>
+  <text class="sc" x="145" y="456">Manager</text>
+  <text class="h" x="145" y="698">Cowork</text>
+  <text class="sc" x="145" y="742">one task</text>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="383" y1="485" x2="383" y2="615"/>
+    <line x1="714" y1="485" x2="714" y2="615"/>
+    <line x1="1045" y1="485" x2="1045" y2="615"/>
+    <line x1="1376" y1="485" x2="1376" y2="615"/>
+    <line x1="1707" y1="485" x2="1707" y2="615"/>
+    <line x1="486" y1="615" x2="611" y2="485"/>
+    <line x1="817" y1="615" x2="942" y2="485"/>
+    <line x1="1148" y1="615" x2="1273" y2="485"/>
+    <line x1="1479" y1="615" x2="1604" y2="485"/>
+    <line x1="714" y1="805" x2="714" y2="875"/>
+  </g>
+
+  <g stroke="#8c959f" stroke-width="2" fill="#ffffff">
+    <rect x="240" y="295" width="286" height="190" rx="16"/>
+    <rect x="571" y="295" width="286" height="190" rx="16"/>
+    <rect x="902" y="295" width="286" height="190" rx="16"/>
+    <rect x="1233" y="295" width="286" height="190" rx="16"/>
+    <rect x="1564" y="295" width="286" height="190" rx="16"/>
+    <rect x="240" y="615" width="286" height="190" rx="16"/>
+    <rect x="571" y="615" width="286" height="190" rx="16"/>
+    <rect x="902" y="615" width="286" height="190" rx="16"/>
+    <rect x="1564" y="615" width="286" height="190" rx="16"/>
+  </g>
+  <rect x="1233" y="615" width="286" height="190" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+
+  <text class="tc" x="383" y="348">Brief the</text>
+  <text class="tc" x="383" y="386">outcome</text>
+  <text class="sc" x="383" y="432">plan before</text>
+  <text class="sc" x="383" y="466">any file</text>
+
+  <text class="tc" x="714" y="348">Steer</text>
+  <text class="tc" x="714" y="386">the plan</text>
+  <text class="sc" x="714" y="432">returns first,</text>
+  <text class="sc" x="714" y="466">the ask last</text>
+
+  <text class="tc" x="1045" y="348">Ask for</text>
+  <text class="tc" x="1045" y="386">speaker notes</text>
+  <text class="sc" x="1045" y="432">save in place,</text>
+  <text class="sc" x="1045" y="466">no copy</text>
+
+  <text class="tc" x="1376" y="348">Ask for</text>
+  <text class="tc" x="1376" y="386">the email</text>
+  <text class="sc" x="1376" y="432">to your own</text>
+  <text class="sc" x="1376" y="466">address</text>
+
+  <text class="tc" x="1707" y="348">Select Send</text>
+  <text class="tc" x="1707" y="386">on the card</text>
+  <text class="sc" x="1707" y="432">once per</text>
+  <text class="sc" x="1707" y="466">irreversible action</text>
+
+  <text class="tc" x="383" y="668">Numbered</text>
+  <text class="tc" x="383" y="706">plan</text>
+  <text class="sc" x="383" y="752">paused on your</text>
+  <text class="sc" x="383" y="786">go-ahead</text>
+
+  <text class="tc" x="714" y="668">Builds</text>
+  <text class="tc" x="714" y="706">the deck</text>
+  <text class="sc" x="714" y="752">the Q2 deck's</text>
+  <text class="sc" x="714" y="786">six slides</text>
+
+  <text class="tc" x="1045" y="668">Adds speaker</text>
+  <text class="tc" x="1045" y="706">notes</text>
+  <text class="sc" x="1045" y="752">saved over</text>
+  <text class="sc" x="1045" y="786">the same file</text>
+
+  <text class="tc" x="1376" y="668">Holds the</text>
+  <text class="tc" x="1376" y="706">Send draft? card</text>
+  <text class="sc" x="1376" y="752">Medium risk,</text>
+  <text class="sc" x="1376" y="786">Cancel or Send</text>
+
+  <text class="tc" x="1707" y="668">Approved</text>
+  <text class="tc" x="1707" y="706">1 action</text>
+  <text class="sc" x="1707" y="752">email in</text>
+  <text class="sc" x="1707" y="786">your inbox</text>
+
+  <rect x="571" y="875" width="1279" height="80" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="k" x="600" y="926">Output</text>
+  <text class="code" x="730" y="926">Aurora Northern Europe - Q3 Review.pptx</text>
+  <text class="s" x="1384" y="926">saved in place, then attached</text>
+
+  <g fill="#24292f">
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M383,485 V615" calcMode="linear" keyTimes="0;0.07;0.11;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.07;0.075;0.11;0.115;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M486,615 L611,485" calcMode="linear" keyTimes="0;0.19;0.23;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.19;0.195;0.23;0.235;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M714,485 V615" calcMode="linear" keyTimes="0;0.29;0.33;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.29;0.295;0.33;0.335;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M714,805 V875" calcMode="linear" keyTimes="0;0.37;0.40;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.37;0.375;0.40;0.405;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M817,615 L942,485" calcMode="linear" keyTimes="0;0.41;0.45;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.41;0.415;0.45;0.455;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1045,485 V615" calcMode="linear" keyTimes="0;0.51;0.55;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.51;0.515;0.55;0.555;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1148,615 L1273,485" calcMode="linear" keyTimes="0;0.61;0.65;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.61;0.615;0.65;0.655;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1376,485 V615" calcMode="linear" keyTimes="0;0.70;0.74;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.70;0.705;0.74;0.745;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1479,615 L1604,485" calcMode="linear" keyTimes="0;0.83;0.86;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.83;0.835;0.86;0.865;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1707,485 V615" calcMode="linear" keyTimes="0;0.89;0.92;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.89;0.895;0.92;0.925;1" values="0;0;1;1;0;0"/>
+    </circle>
+  </g>
+
+  <g fill="none" stroke="#24292f" stroke-width="5">
+    <rect x="240" y="295" width="286" height="190" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.01;0.02;0.06;0.07;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="240" y="615" width="286" height="190" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.11;0.12;0.18;0.19;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="571" y="295" width="286" height="190" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.23;0.24;0.28;0.29;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="571" y="615" width="286" height="190" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.33;0.34;0.40;0.41;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="571" y="875" width="1279" height="80" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.40;0.41;0.46;0.47;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="902" y="295" width="286" height="190" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.45;0.46;0.50;0.51;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="902" y="615" width="286" height="190" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.55;0.56;0.60;0.61;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="1233" y="295" width="286" height="190" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.65;0.66;0.69;0.70;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="1564" y="295" width="286" height="190" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.86;0.865;0.885;0.89;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="1564" y="615" width="286" height="190" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.92;0.93;0.98;0.99;1" values="0;0;1;1;0;0"/>
+    </rect>
+  </g>
+  <rect x="1233" y="615" width="286" height="190" rx="16" fill="none" stroke="#e0a534" stroke-width="8" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.74;0.75;0.77;0.79;0.81;0.82;0.83;1" values="0;0;1;0.3;1;0.3;1;0;0"/>
+  </rect>
+</svg>

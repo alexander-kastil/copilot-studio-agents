@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">CS-Food Stock Buddy reads and books live stock through three tools of the CS-Food Catalog connector</title>
+  <desc id="d">Exercise 1: the OpenAPI 2.0 file cs-food-catalog.json, which describes seven operations on /Food, goes through the REST API tool wizard and becomes the CS-Food Catalog custom connector. Exercise 2: three operations become selected tools, CS-Gets all food from Gets all food, CS-Add food from Add food and CS-Update food stock quantity from Update food stock quantity, while UpdateFood, Search food by name, GetFoodByID and Delete food item stay out. Exercise 3: CS-Food Stock Buddy calls the three tools over the connection CS-Food Catalog. Exercise 4: the Calculate order quantity topic reads CS-Gets all food instead of Set sample stock. The connector calls food-catalog-api-dev, REST under /Food, seeded with nine dishes: Wiener Schnitzel 30 portions against a minimum of 6. Exercise 5: "We just received 12 portions of Schweinshaxe mit Kraut." takes two tool calls and raises its stock from 12 to 24, an amount of -2 takes Pad Ka Prao from 18 to 16, and CS-Add food adds Apfelstrudel with 15 portions. A dot travels from the agent through CS-Gets all food to the API, then through CS-Update food stock quantity to the Schweinshaxe mit Kraut row.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .code { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; }
+      .cse { font-family: Consolas, 'Courier New', monospace; font-size: 26px; font-weight: 700; text-anchor: end; }
+      .hc { font-size: 34px; font-weight: 700; text-anchor: middle; }
+      .m { font-size: 28px; }
+      .s { font-size: 28px; fill: #57606a; }
+      .sc { font-size: 28px; fill: #57606a; text-anchor: middle; }
+      .tag { font-size: 26px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .te { font-size: 30px; font-weight: 600; text-anchor: end; }
+      .ts { font-size: 28px; font-weight: 600; }
+      .xm { font-size: 26px; }
+      .xs { font-size: 26px; fill: #57606a; }
+      .xsc { font-size: 26px; fill: #57606a; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="740" y="60" width="580" height="960" rx="24" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="60" y="400" width="460" height="620" rx="20" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1400" y="100" width="460" height="780" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+
+  <polyline points="520,210 740,210" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <polyline points="520,440 740,440" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <polyline points="1320,300 1400,300" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="60" y="90" width="460" height="240" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="765" y="250" width="530" height="110" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="765" y="375" width="530" height="110" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="765" y="500" width="530" height="110" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="765" y="686" width="530" height="70" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2" stroke-dasharray="8 6"/>
+  <rect x="765" y="768" width="530" height="70" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2" stroke-dasharray="8 6"/>
+  <rect x="765" y="850" width="530" height="70" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2" stroke-dasharray="8 6"/>
+  <rect x="765" y="932" width="530" height="70" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2" stroke-dasharray="8 6"/>
+  <rect x="84" y="500" width="412" height="220" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="84" y="744" width="412" height="252" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1425" y="330" width="410" height="112" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1425" y="460" width="410" height="112" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1425" y="590" width="410" height="112" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1425" y="720" width="410" height="112" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+
+  <rect x="84" y="110" width="78" height="38" rx="19" fill="#24292f"/>
+  <rect x="764" y="196" width="78" height="38" rx="19" fill="#24292f"/>
+  <circle cx="806" cy="305" r="20" fill="#1a7f37"/>
+  <path d="M797,306 L803,313 L816,298" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="806" cy="430" r="20" fill="#1a7f37"/>
+  <path d="M797,431 L803,438 L816,423" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="806" cy="555" r="20" fill="#1a7f37"/>
+  <path d="M797,556 L803,563 L816,548" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="104" y="518" width="78" height="38" rx="19" fill="#24292f"/>
+  <rect x="104" y="762" width="78" height="38" rx="19" fill="#24292f"/>
+
+  <text class="tag" x="123" y="137">Ex 1</text>
+  <text class="code" x="84" y="200">cs-food-catalog.json</text>
+  <text class="s" x="84" y="246">OpenAPI 2.0 file,</text>
+  <text class="s" x="84" y="284">seven operations on /Food</text>
+  <text class="hc" x="1030" y="122">CS-Food Catalog</text>
+  <text class="sc" x="1030" y="164">custom connector</text>
+  <text class="tag" x="803" y="223">Ex 2</text>
+  <text class="s" x="868" y="224">Selected tools</text>
+  <text class="ts" x="842" y="296">CS-Gets all food</text>
+  <text class="s" x="842" y="338">Gets all food</text>
+  <text class="ts" x="842" y="421">CS-Add food</text>
+  <text class="s" x="842" y="463">Add food</text>
+  <text class="ts" x="842" y="546">CS-Update food stock quantity</text>
+  <text class="s" x="842" y="588">Update food stock quantity</text>
+  <text class="s" x="790" y="662">stay out</text>
+  <text class="s" x="790" y="731">UpdateFood</text>
+  <text class="s" x="790" y="813">Search food by name</text>
+  <text class="s" x="790" y="895">GetFoodByID</text>
+  <text class="s" x="790" y="977">Delete food item</text>
+  <text class="hc" x="290" y="470">CS-Food Stock Buddy</text>
+  <text class="tag" x="143" y="545">Ex 4</text>
+  <text class="ts" x="104" y="600">Calculate order quantity</text>
+  <text class="xs" x="104" y="642">reads CS-Gets all food</text>
+  <text class="xs" x="104" y="676">instead of Set sample stock</text>
+  <text class="tag" x="143" y="789">Ex 5</text>
+  <text class="xm" x="104" y="844">We just received 12 portions</text>
+  <text class="xm" x="104" y="880">of Schweinshaxe mit Kraut.</text>
+  <text class="s" x="104" y="928">two tool calls</text>
+  <text class="s" x="104" y="966">for one sentence</text>
+  <text class="hc" x="1630" y="168">food-catalog-api-dev</text>
+  <text class="sc" x="1630" y="210">REST under /Food</text>
+  <text class="sc" x="1630" y="248">seeded with nine dishes</text>
+  <text class="s" x="1450" y="310">dish</text>
+  <text class="cse" x="1810" y="310">inStock</text>
+  <text class="m" x="1450" y="376">Wiener Schnitzel</text>
+  <text class="s" x="1450" y="418">minimum 6</text>
+  <text class="te" x="1810" y="418">30</text>
+  <text class="m" x="1450" y="506">Schweinshaxe mit Kraut</text>
+  <text class="s" x="1450" y="548">amount 12</text>
+  <text class="te" x="1810" y="548">12 → 24</text>
+  <text class="m" x="1450" y="636">Pad Ka Prao</text>
+  <text class="s" x="1450" y="678">amount -2</text>
+  <text class="te" x="1810" y="678">18 → 16</text>
+  <text class="m" x="1450" y="766">Apfelstrudel</text>
+  <text class="s" x="1450" y="808">CS-Add food</text>
+  <text class="te" x="1810" y="808">15</text>
+  <text class="xsc" x="630" y="158">REST API tool</text>
+  <text class="xsc" x="630" y="190">wizard</text>
+  <text class="xsc" x="630" y="388">connection</text>
+  <text class="xsc" x="630" y="420">CS-Food Catalog</text>
+
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M520,210 L740,210" calcMode="linear" keyTimes="0;0.06;1" keyPoints="0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.06;0.063;1" values="1;1;0;0"/>
+  </circle>
+  <rect x="765" y="250" width="530" height="360" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.06;0.072;0.128;0.14;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M520,440 L740,440" calcMode="linear" keyTimes="0;0.18;0.24;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.18;0.183;0.24;0.243;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="765" y="250" width="530" height="110" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.24;0.252;0.308;0.32;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M1320,300 L1400,300" calcMode="linear" keyTimes="0;0.32;0.37;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.32;0.323;0.37;0.373;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1425" y="460" width="410" height="112" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.37;0.382;0.438;0.45;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M520,440 L740,440" calcMode="linear" keyTimes="0;0.48;0.54;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.48;0.483;0.54;0.543;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="765" y="500" width="530" height="110" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.54;0.552;0.608;0.62;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="14s" repeatCount="indefinite" path="M1320,300 L1400,300" calcMode="linear" keyTimes="0;0.62;0.67;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.62;0.623;0.67;0.673;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1425" y="460" width="410" height="112" rx="16" fill="none" stroke="#e0a534" stroke-width="8" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.67;0.682;0.718;0.765;0.812;0.848;0.86;1" values="0;0;1;0.35;1;0.35;1;0;0"/>
+  </rect>
+</svg>

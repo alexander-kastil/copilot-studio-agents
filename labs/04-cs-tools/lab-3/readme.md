@@ -59,7 +59,7 @@ The [setup](./setup) folder creates the `Products` library and uploads all five 
 ```powershell
 cd setup
 $env:PNP_CLIENT_ID = "<your client id>"
-./Provision-ProductSupport.ps1 -SiteUrl "https://contoso.sharepoint.com/sites/product-support"
+./Provision-ProductSupport.ps1 -SiteUrl "https://greylogistics.sharepoint.com/sites/product-support"
 ```
 
 ### Or create it by hand
@@ -78,7 +78,7 @@ Skip to Step 2 if you already have a site you can use.
 Product Support
 ```
 
-4. Check the site address that SharePoint proposes underneath the name, for example `https://contoso.sharepoint.com/sites/ProductSupport`. Copy it now, this is the **Site Address** input the connector needs.
+4. Check the site address that SharePoint proposes underneath the name, for example `https://greylogistics.sharepoint.com/sites/ProductSupport`. Copy it now, this is the **Site Address** input the connector needs.
 5. Select **Next**, leave the privacy and language defaults, select **Create site**, then skip adding members.
 
 Expected: the new site opens on its Home page, with **Documents** already listed in the left navigation.
@@ -98,7 +98,7 @@ Products
 4. Optionally set **Description** to `Product support material for the Product Support Assistant`.
 5. Leave **Show in site navigation** checked, then select **Create**.
 
-Expected: the empty `Products` library opens, and `Products` now appears in the left navigation under **Documents**. The address bar reads something like `https://contoso.sharepoint.com/sites/ProductSupport/Products`.
+Expected: the empty `Products` library opens, and `Products` now appears in the left navigation under **Documents**. The address bar reads something like `https://greylogistics.sharepoint.com/sites/ProductSupport/Products`.
 
 > **Warning:** The name must be exactly `Products`, with a capital P and no trailing space. You type this string into the connector's **File Identifier** input in Exercise 3, and SharePoint matches it literally. Renaming the library later changes its display name but not its internal URL, which then no longer matches what you typed.
 

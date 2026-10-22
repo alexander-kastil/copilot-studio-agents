@@ -86,7 +86,7 @@ The two meet when a Copilot Studio agent connects a Foundry agent as a specialis
 
 ## Hands-On Demo
 
-- [Create a Device Specialist Agent in Microsoft Foundry](./demo-create-a-foundry-agent.md): the presenter creates the Contoso Device Specialist prompt agent in the Foundry portal, tests it in the playground, pins a version, and calls its endpoint from the command line.
+- [Create a Device Specialist Agent in Microsoft Foundry](./demo-create-a-foundry-agent.md): the presenter creates the Grey Logistics Device Specialist prompt agent in the Foundry portal, tests it in the playground, pins a version, and calls its endpoint from the command line.
 
 ## Key Topics covered in this module
 

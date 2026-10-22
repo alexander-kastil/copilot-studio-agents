@@ -93,9 +93,10 @@ Close every resolved path deliberately. Redirecting to **End of Conversation** o
 
 Once a topic ends, the orchestrator decides what comes next. A **No** to a topic's last question can route to the **Escalate** system topic, which answers "Escalating to a representative is not currently configured" when no hub exists, so give a topic that ends on a question a node after it whenever the answer should lead somewhere. Ending the last message with the next thing the user can ask for, as CS-HR Buddy does with "Ask me to collect your employee reward next.", turns a finished topic into a request the orchestrator can route.
 
-## Hands-On Demo
+## Hands-On Demos
 
-- [Build a Device Issue Topic with Custom Entities](./demo-build-a-slot-filling-topic.md): the presenter creates a closed list and a regex entity, builds a topic that collects a device, an asset tag, and an email address, shows proactive slot filling in the variables panel, and configures what happens after invalid answers.
+- [Identify an Employee Once and Reuse It Across HR Topics](./demo-hr-buddy-employee-topics.md): the presenter rebuilds HR Buddy's two topics in CS-HR Buddy, collects the employee's data with prebuilt entities and choices, sets a global variable, and shows the rewards topic detour through the employee questions only until the employee is known.
+- [Build a Device Issue Topic with Custom Entities](./demo-build-a-slot-filling-topic.md) (optional): the presenter creates a closed list and a regex entity, builds a topic that collects a device, an asset tag, and an email address, shows proactive slot filling in the variables panel, and configures what happens after invalid answers.
 
 ## Hands-On Lab
 

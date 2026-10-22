@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">The help desk agent reads supplier offers from Dataverse and records a new one after you confirm</title>
+  <desc id="d">Two Dataverse tables sit at the top. Offer Request Details lists productName, offeredPrice, deliveryDurationDays, isAvailable and offerId, and Exercise 3 adds the words users say: quoted price, lead time and can ship. Its rows are USB-C Dock 169.00, 5 days, Yes, OR-1001; 27-inch Monitor 229.00, 10 days, Yes, OR-1001; USB-C Dock 175.00, 3 days, Yes, OR-1002; Wireless Headset 89.00, 7 days, Yes, OR-1002; and 27-inch Monitor 239.00, 4 days, No, OR-1003. Offer Requests lists requestId, supplierId and transportationCost: OR-1001, 17, 120.00; OR-1002, 23, 0.00; OR-1003, 31, 85.50; and the new row OR-1004, 42, 60. Reading down on the left, Grey Logistics IT Help Desk answers from the knowledge source: Which supplier offered the cheapest USB-C dock, and how many days does delivery take? with OR-1001, supplier 17, 169.00, 5 delivery days, citing the Dataverse source, and Which offers for the 27-inch monitor can ship, and what is the quoted price and lead time? with OR-1001 at 229.00, 10-day lead time; OR-1003 cannot ship. Writing up on the right, the Record offer request tool on Microsoft Dataverse Add a new row takes Record a new offer OR-1004 from supplier 42 with a transportation cost of 60, asks the end user before running with OR-1004, supplier 42, 60 and a Confirm button, sets timestamp to Now(), and creates the row after you confirm. Highlights pair each answer with its rows, then a dot carries the confirmed offer up into the new row.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <g transform="translate(0,30)">
+  <defs>
+    <style>
+      svg { font-size: 28px; }
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .t { font-size: 30px; font-weight: 600; }
+      .b { font-size: 28px; }
+      .bb { font-size: 28px; font-weight: 700; }
+      .s { font-size: 28px; fill: #57606a; }
+      .sy { font-size: 26px; fill: #57606a; }
+      .m { font-family: Consolas, 'Courier New', monospace; font-size: 26px; }
+      .p { font-size: 26px; font-weight: 700; }
+      .w { fill: #ffffff; }
+      .c { text-anchor: middle; }
+      .e { text-anchor: end; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="620" y1="500" x2="620" y2="560"/>
+    <line x1="1545" y1="480" x2="1545" y2="420"/>
+  </g>
+  <text class="s" x="640" y="540">knowledge source, cited in answers</text>
+  <text class="s" x="1565" y="462">after you confirm</text>
+
+  <rect x="60" y="60" width="1120" height="440" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="62" y="62" width="1116" height="60" rx="14" fill="#eaf2ff"/>
+  <line x1="60" y1="122" x2="1180" y2="122" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="90" y="104">Offer Request Details</text>
+  <text class="m" x="90" y="162">productName</text>
+  <text class="m" x="345" y="162">offeredPrice</text>
+  <text class="m" x="545" y="162">deliveryDurationDays</text>
+  <text class="m" x="860" y="162">isAvailable</text>
+  <text class="m" x="1045" y="162">offerId</text>
+  <text class="sy" x="345" y="198">quoted price</text>
+  <text class="sy" x="545" y="198">lead time</text>
+  <text class="sy" x="860" y="198">can ship</text>
+  <line x1="72" y1="212" x2="1168" y2="212" stroke="#d0d7de" stroke-width="2"/>
+  <g fill="#fff6e5">
+    <rect x="72" y="218" width="1096" height="48" rx="8"/>
+    <rect x="72" y="274" width="1096" height="48" rx="8"/>
+  </g>
+  <g class="b">
+    <text x="90" y="252">USB-C Dock</text>
+    <text x="345" y="252">169.00</text>
+    <text x="545" y="252">5</text>
+    <text x="860" y="252">Yes</text>
+    <text x="1045" y="252">OR-1001</text>
+    <text x="90" y="308">27-inch Monitor</text>
+    <text x="345" y="308">229.00</text>
+    <text x="545" y="308">10</text>
+    <text x="860" y="308">Yes</text>
+    <text x="1045" y="308">OR-1001</text>
+    <text x="90" y="364">USB-C Dock</text>
+    <text x="345" y="364">175.00</text>
+    <text x="545" y="364">3</text>
+    <text x="860" y="364">Yes</text>
+    <text x="1045" y="364">OR-1002</text>
+    <text x="90" y="420">Wireless Headset</text>
+    <text x="345" y="420">89.00</text>
+    <text x="545" y="420">7</text>
+    <text x="860" y="420">Yes</text>
+    <text x="1045" y="420">OR-1002</text>
+    <text x="90" y="476">27-inch Monitor</text>
+    <text x="345" y="476">239.00</text>
+    <text x="545" y="476">4</text>
+    <text x="860" y="476">No</text>
+    <text x="1045" y="476">OR-1003</text>
+  </g>
+
+  <rect x="1230" y="60" width="630" height="360" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1232" y="62" width="626" height="60" rx="14" fill="#eaf2ff"/>
+  <line x1="1230" y1="122" x2="1860" y2="122" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1260" y="104">Offer Requests</text>
+  <text class="m" x="1260" y="162">requestId</text>
+  <text class="m" x="1410" y="162">supplierId</text>
+  <text class="m e" x="1836" y="162">transportationCost</text>
+  <line x1="1242" y1="178" x2="1848" y2="178" stroke="#d0d7de" stroke-width="2"/>
+  <rect x="1242" y="352" width="606" height="48" rx="8" fill="#e9f7ef" stroke="#2da44e" stroke-width="2"/>
+  <g class="b">
+    <text x="1260" y="218">OR-1001</text>
+    <text x="1410" y="218">17</text>
+    <text x="1836" y="218" class="e">120.00</text>
+    <text x="1260" y="274">OR-1002</text>
+    <text x="1410" y="274">23</text>
+    <text x="1836" y="274" class="e">0.00</text>
+    <text x="1260" y="330">OR-1003</text>
+    <text x="1410" y="330">31</text>
+    <text x="1836" y="330" class="e">85.50</text>
+  </g>
+  <text class="bb" x="1260" y="386">OR-1004</text>
+  <text class="bb" x="1410" y="386">42</text>
+  <text class="bb e" x="1836" y="386">60</text>
+
+  <rect x="60" y="560" width="1120" height="430" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="90" y="612">Grey Logistics IT Help Desk</text>
+  <rect x="90" y="640" width="550" height="150" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="112" y="682">Which supplier offered the cheapest</text>
+  <text class="b" x="112" y="722">USB-C dock, and how many days does</text>
+  <text class="b" x="112" y="762">delivery take?</text>
+  <rect x="680" y="640" width="470" height="150" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="702" y="682">OR-1001, supplier 17,</text>
+  <text class="b" x="702" y="722">169.00, 5 delivery days</text>
+  <text class="s" x="702" y="762">cites the Dataverse source</text>
+  <rect x="90" y="820" width="550" height="150" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="112" y="862">Which offers for the 27-inch</text>
+  <text class="b" x="112" y="902">monitor can ship, and what is the</text>
+  <text class="b" x="112" y="942">quoted price and lead time?</text>
+  <rect x="680" y="820" width="470" height="150" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="702" y="862">OR-1001 at 229.00,</text>
+  <text class="b" x="702" y="902">10-day lead time;</text>
+  <text class="b" x="702" y="942">OR-1003 cannot ship</text>
+
+  <rect x="1230" y="480" width="630" height="480" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1260" y="540">Record offer request</text>
+  <text class="s" x="1260" y="580">Microsoft Dataverse: Add a new row</text>
+  <rect x="1260" y="600" width="570" height="140" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="1282" y="642">Record a new offer OR-1004 from</text>
+  <text class="b" x="1282" y="682">supplier 42 with a transportation</text>
+  <text class="b" x="1282" y="722">cost of 60.</text>
+  <rect x="1260" y="760" width="570" height="180" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+  <text class="bb" x="1282" y="802">Ask the end user before running</text>
+  <text class="b" x="1282" y="846">OR-1004, supplier 42, 60</text>
+  <rect x="1282" y="866" width="150" height="50" rx="10" fill="#24292f"/>
+  <text class="bb w c" x="1357" y="900">Confirm</text>
+  <text class="s" x="1456" y="900">timestamp: Now()</text>
+
+  <g fill="#fff6e5" stroke="#e0a534" stroke-width="2">
+    <rect x="90" y="174" width="92" height="36" rx="18"/>
+    <rect x="84" y="540" width="140" height="40" rx="20"/>
+    <rect x="1254" y="460" width="92" height="40" rx="20"/>
+  </g>
+  <text class="p c" x="136" y="201">Ex 3</text>
+  <text class="p c" x="154" y="569">Ex 1 to 3</text>
+  <text class="p c" x="1300" y="489">Ex 4</text>
+
+  <g fill="#24292f">
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M620,500 V560" calcMode="linear" keyTimes="0;0.03;0.10;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.03;0.10" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M620,500 V560" calcMode="linear" keyTimes="0;0.31;0.38;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.31;0.38" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1545,480 V420" calcMode="linear" keyTimes="0;0.78;0.84;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.78;0.84" values="0;1;0"/>
+    </circle>
+  </g>
+
+  <g fill="none" stroke="#e0a534" stroke-width="5">
+    <rect x="72" y="218" width="1096" height="48" rx="8" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.10;0.30" values="0;1;0"/>
+    </rect>
+    <rect x="680" y="640" width="470" height="150" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.12;0.30" values="0;1;0"/>
+    </rect>
+    <rect x="72" y="274" width="1096" height="48" rx="8" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.38;0.56" values="0;1;0"/>
+    </rect>
+    <rect x="680" y="820" width="470" height="150" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.40;0.56" values="0;1;0"/>
+    </rect>
+    <rect x="1260" y="760" width="570" height="180" rx="16" stroke-width="8" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.66;0.78" values="0;1;0"/>
+    </rect>
+  </g>
+  <g fill="none" stroke="#24292f" stroke-width="5">
+    <rect x="1260" y="600" width="570" height="140" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.60;0.66" values="0;1;0"/>
+    </rect>
+    <rect x="1242" y="352" width="606" height="48" rx="8" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.84;0.98" values="0;1;0"/>
+    </rect>
+  </g>
+  </g>
+</svg>

@@ -1,6 +1,8 @@
 # Build an Agent Flow and Call It from an Agent
 
-When a help desk agent logs tickets by improvising each step, two identical requests can end up with different priorities and one of them without a confirmation email. A ticket needs the same rules every time. In this demo you build the ticket-logging sequence once as an agent flow and let the Contoso IT Help Desk agent call it as a tool.
+![The Grey Logistics IT Help Desk calls the Log help desk ticket agent flow from the test pane, where the trigger, Run a prompt, Send an email (V2) and Respond to the agent return Priority P2 for the VPN ticket and P4 for the monitor request.](./_images/build-an-agent-flow-overview.svg)
+
+When a help desk agent logs tickets by improvising each step, two identical requests can end up with different priorities and one of them without a confirmation email. A ticket needs the same rules every time. In this demo you build the ticket-logging sequence once as an agent flow and let the Grey Logistics IT Help Desk agent call it as a tool.
 
 What you practice here: wrapping a fixed business sequence in an agent flow and handing it to the orchestrator as a tool.
 
@@ -11,15 +13,15 @@ Duration: about 30 minutes.
 - An agent flow named Log help desk ticket that starts with the **When an agent calls the flow** trigger and takes two text inputs.
 - A **Run a prompt** step that sorts each ticket into priority P1 to P4.
 - A confirmation email to the requester and a **Respond to the agent** step that returns the priority.
-- The flow attached to the Contoso IT Help Desk agent as a tool, with its call visible in the activity map.
+- The flow attached to the Grey Logistics IT Help Desk agent as a tool, with its call visible in the activity map.
 
 ## Prerequisites
 
 - A Copilot Studio environment where you can create agents and agent flows, and an Office 365 Outlook mailbox for the confirmation email.
-- A Standard agent named Contoso IT Help Desk: on the Copilot Studio home page open the **New agent** dropdown, select **Agent** with the **Standard** badge under **Other ways to build**, create the agent, keep generative orchestration on (the default for new agents), and paste these instructions on the **Overview** page:
+- A Standard agent named Grey Logistics IT Help Desk: on the Copilot Studio home page open the **New agent** dropdown, select **Agent** with the **Standard** badge under **Other ways to build**, create the agent, keep generative orchestration on (the default for new agents), and paste these instructions on the **Overview** page:
 
 ```text
-You are the Contoso IT Help Desk. Help employees with IT problems and log tickets for issues you cannot solve in the conversation. Before you log a ticket, make sure you know a short summary of the issue and the requester's email address. After a ticket is logged, tell the user the priority it received.
+You are the Grey Logistics IT Help Desk. Help employees with IT problems and log tickets for issues you cannot solve in the conversation. Before you log a ticket, make sure you know a short summary of the issue and the requester's email address. After a ticket is logged, tell the user the priority it received.
 ```
 
 ## Exercise 1: Start a flow that an agent can call
@@ -53,7 +55,7 @@ Ticket:
 3. Save the prompt. Below it, add the Office 365 Outlook action **Send an email (V2)**. Set **To** to the `RequesterEmail` token, the subject to the text below, and the body to the `IssueSummary` token followed by the prompt's text output.
 
 ```text
-Contoso IT Help Desk: your ticket is logged
+Grey Logistics IT Help Desk: your ticket is logged
 ```
 
 4. Add the **Respond to the agent** action with one text output named `Priority`, set to the prompt's text output. In its settings, under **Networking**, check that **Asynchronous response** is **Off**.
@@ -73,7 +75,7 @@ Expected: a green checkmark on every card, `P1` in the output of the **Run a pro
 
 A published flow with the right trigger and response shows up in the agent's tool picker. Its name and description are now everything the orchestrator knows about it, so the description says what the flow does, which inputs it needs and what it does not do.
 
-1. Open the Contoso IT Help Desk agent and go to the **Tools** page.
+1. Open the Grey Logistics IT Help Desk agent and go to the **Tools** page.
 2. Select **Add a tool**, select **Flow**, select **Log help desk ticket** and select **Add and configure**.
 3. Replace the description with this text and select **Save**:
 
@@ -116,7 +118,7 @@ Expected: the activity map shows a **Log help desk ticket** node with `IssueSumm
 
 ## Summary
 
-You built Log help desk ticket, an agent flow that classifies, confirms and responds in the same order on every run, and gave it to the Contoso IT Help Desk agent as a tool. You can now:
+You built Log help desk ticket, an agent flow that classifies, confirms and responds in the same order on every run, and gave it to the Grey Logistics IT Help Desk agent as a tool. You can now:
 
 - Build an agent flow with the **When an agent calls the flow** trigger and a **Respond to the agent** action
 - Place one bounded model call inside a fixed sequence with **Run a prompt**

@@ -1,0 +1,27 @@
+mcs.metadata:
+  componentName: Register inventory items
+  description: Enters the two fixed product records into the Product Inventory Update web app, which has no API. Use it when a user asks to register, add or enter inventory items.
+kind: TaskDialog
+modelDisplayName: Register inventory items
+modelDescription: "Enters the two fixed product records into the Product Inventory Update web app, which has no API. Use it when a user asks to register, add or enter inventory items."
+action:
+  kind: InvokeComputerUsingAgentTaskAction
+  connectionReference: catmgr_GHGreyLogisticsITHelpDesk.cr.shared_computeroperator
+  connectionProperties:
+    mode: Maker
+  operationId: ComputerOperatorInvokeMcpCua
+  instructions: |-
+    1. Go to https://computerusedemos.blob.core.windows.net/web/Adventure/index.html.
+    2. Submit a new entry for each of the following items, filling Product Name, Product ID, Quantity, Price and Supplier in that order:
+       Rear Derailleur, RD-4821, 50, 42.75, Tailspin Toys
+       Pedal Set, PD-1738, 80, 19.99, Northwind Traders
+    3. After both entries, confirm that both items appear under Inventory Items. No confirmation from me is needed before submitting.
+  model:
+    modelNameHint: sonnet4-5
+  initializeContext:
+    enforceHttps: true
+  allowlist:
+    websites:
+      - computerusedemos.blob.core.windows.net
+    desktopApps:
+      - Microsoft Edge

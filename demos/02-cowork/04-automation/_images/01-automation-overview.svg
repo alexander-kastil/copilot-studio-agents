@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">The weekly status report demo: one run by hand, then every Friday at 3:00 PM</title>
+  <desc id="d">Steps 1 and 2 map the template to its sources and write the weekly-status-report skill, a SKILL.md in OneDrive. Along a timeline, Step 3 runs it once by hand, built from the Q3 material with the draft addressed to you, and Cowork confirms Nothing has been sent. Step 4 answers a Create recurring task? card set to Weekly, Friday, 3:00 PM with a Schedule button, and Automations lists it under Active as Every week on Friday at 3:00 PM. Each following Friday at 3:00 PM the run produces a one-page Word report and a Hi Elena email saved to drafts; each run saves the email to Drafts and never sends it. After the demo, ... &gt; Pause moves the task under Paused. A ring moves along the timeline and stops at each run.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      svg { font-size: 28px; }
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .k { font-size: 28px; font-weight: 600; }
+      .kc { font-size: 28px; font-weight: 600; text-anchor: middle; }
+      .s { font-size: 28px; fill: #57606a; }
+      .sc { font-size: 28px; fill: #57606a; text-anchor: middle; }
+      .code { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; }
+      .num { font-size: 28px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .btn { font-size: 28px; font-weight: 600; fill: #ffffff; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="60" y="80" width="640" height="180" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="110" cy="125" r="24" fill="#24292f"/>
+  <text class="num" x="110" y="135">1</text>
+  <text class="k" x="146" y="135">Map the template to its sources</text>
+  <circle cx="110" cy="185" r="24" fill="#24292f"/>
+  <text class="num" x="110" y="195">2</text>
+  <text class="code" x="146" y="195">weekly-status-report</text>
+  <text class="s" x="146" y="240">skill, a SKILL.md in OneDrive</text>
+
+  <rect x="470" y="300" width="1390" height="70" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="k" x="500" y="345">Automations &gt; Active</text>
+  <text class="s" x="830" y="345">Every week on Friday at 3:00 PM</text>
+
+  <text class="kc" x="920" y="425">Friday 3:00 PM</text>
+  <text class="kc" x="1200" y="425">Friday 3:00 PM</text>
+  <text class="kc" x="1480" y="425">Friday 3:00 PM</text>
+  <text class="sc" x="1750" y="425">after the demo</text>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="260" y1="260" x2="260" y2="436"/>
+    <line x1="1766" y1="460" x2="1850" y2="460"/>
+    <line x1="920" y1="650" x2="920" y2="690"/>
+    <line x1="1200" y1="650" x2="1200" y2="690"/>
+    <line x1="1480" y1="650" x2="1480" y2="690"/>
+  </g>
+  <g stroke="#57606a" stroke-width="3">
+    <line x1="120" y1="460" x2="236" y2="460"/>
+    <line x1="284" y1="460" x2="586" y2="460"/>
+    <line x1="634" y1="460" x2="904" y2="460"/>
+    <line x1="936" y1="460" x2="1184" y2="460"/>
+    <line x1="1216" y1="460" x2="1464" y2="460"/>
+    <line x1="1496" y1="460" x2="1734" y2="460"/>
+  </g>
+  <g stroke="#8c959f" stroke-width="2">
+    <line x1="260" y1="484" x2="260" y2="520"/>
+    <line x1="610" y1="484" x2="610" y2="520"/>
+    <line x1="920" y1="476" x2="920" y2="520"/>
+    <line x1="1200" y1="476" x2="1200" y2="520"/>
+    <line x1="1480" y1="476" x2="1480" y2="520"/>
+    <line x1="1750" y1="476" x2="1750" y2="520"/>
+  </g>
+
+  <circle cx="260" cy="460" r="24" fill="#24292f"/>
+  <text class="num" x="260" y="470">3</text>
+  <circle cx="610" cy="460" r="24" fill="#24292f"/>
+  <text class="num" x="610" y="470">4</text>
+  <g fill="#ffffff" stroke="#24292f" stroke-width="3">
+    <circle cx="920" cy="460" r="16"/>
+    <circle cx="1200" cy="460" r="16"/>
+    <circle cx="1480" cy="460" r="16"/>
+    <circle cx="1750" cy="460" r="16"/>
+  </g>
+
+  <rect x="80" y="520" width="360" height="240" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="k" x="105" y="575">Run once by hand</text>
+  <text class="s" x="105" y="625">built from the Q3</text>
+  <text class="s" x="105" y="659">material, draft to you</text>
+  <text class="s" x="105" y="720">Nothing has been sent.</text>
+
+  <rect x="470" y="520" width="280" height="280" rx="18" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+  <text class="k" x="495" y="575">Create recurring</text>
+  <text class="k" x="495" y="611">task?</text>
+  <text class="s" x="495" y="661">Weekly, Friday,</text>
+  <text class="s" x="495" y="695">3:00 PM</text>
+  <rect x="495" y="722" width="160" height="50" rx="10" fill="#24292f"/>
+  <text class="btn" x="575" y="757">Schedule</text>
+
+  <g stroke="#8c959f" stroke-width="2" fill="#e9f7ef">
+    <rect x="790" y="520" width="260" height="130" rx="18"/>
+    <rect x="1070" y="520" width="260" height="130" rx="18"/>
+    <rect x="1350" y="520" width="260" height="130" rx="18"/>
+  </g>
+  <g stroke="#e0a534" stroke-width="3" fill="#fff6e5">
+    <rect x="790" y="690" width="260" height="150" rx="18"/>
+    <rect x="1070" y="690" width="260" height="150" rx="18"/>
+    <rect x="1350" y="690" width="260" height="150" rx="18"/>
+  </g>
+  <text class="kc" x="920" y="575">One-page</text>
+  <text class="kc" x="920" y="611">Word report</text>
+  <text class="kc" x="1200" y="575">One-page</text>
+  <text class="kc" x="1200" y="611">Word report</text>
+  <text class="kc" x="1480" y="575">One-page</text>
+  <text class="kc" x="1480" y="611">Word report</text>
+  <text class="kc" x="920" y="742">Hi Elena</text>
+  <text class="sc" x="920" y="784">Saved to</text>
+  <text class="sc" x="920" y="818">drafts</text>
+  <text class="kc" x="1200" y="742">Hi Elena</text>
+  <text class="sc" x="1200" y="784">Saved to</text>
+  <text class="sc" x="1200" y="818">drafts</text>
+  <text class="kc" x="1480" y="742">Hi Elena</text>
+  <text class="sc" x="1480" y="784">Saved to</text>
+  <text class="sc" x="1480" y="818">drafts</text>
+  <text class="sc" x="1200" y="900">each run saves the email to Drafts and never sends it</text>
+
+  <rect x="1640" y="520" width="220" height="240" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="kc" x="1750" y="575">... &gt; Pause</text>
+  <text class="sc" x="1750" y="625">moves under</text>
+  <text class="sc" x="1750" y="659">Paused</text>
+
+  <circle r="27" fill="none" stroke="#e0a534" stroke-width="5" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M260,460 H1750" calcMode="linear" keyTimes="0;0.10;0.16;0.28;0.36;0.46;0.52;0.62;0.68;0.78;0.84;1" keyPoints="0;0;0.2349;0.2349;0.4430;0.4430;0.6309;0.6309;0.8188;0.8188;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.01;0.015;0.985;0.99;1" values="0;0;1;1;0;0"/>
+  </circle>
+
+  <g fill="none" stroke="#24292f" stroke-width="5">
+    <rect x="80" y="520" width="360" height="240" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.015;0.02;0.095;0.10;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="470" y="300" width="1390" height="70" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.28;0.285;0.355;0.36;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="790" y="520" width="260" height="130" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.36;0.365;0.455;0.46;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="790" y="690" width="260" height="150" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.40;0.405;0.455;0.46;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="1070" y="520" width="260" height="130" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.52;0.525;0.615;0.62;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="1070" y="690" width="260" height="150" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.56;0.565;0.615;0.62;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="1350" y="520" width="260" height="130" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.68;0.685;0.775;0.78;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="1350" y="690" width="260" height="150" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.72;0.725;0.775;0.78;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="1640" y="520" width="220" height="240" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.84;0.845;0.975;0.98;1" values="0;0;1;1;0;0"/>
+    </rect>
+  </g>
+  <rect x="470" y="520" width="280" height="280" rx="18" fill="none" stroke="#e0a534" stroke-width="8" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.16;0.17;0.19;0.21;0.23;0.25;0.28;1" values="0;0;1;0.3;1;0.3;1;0;0"/>
+  </rect>
+</svg>

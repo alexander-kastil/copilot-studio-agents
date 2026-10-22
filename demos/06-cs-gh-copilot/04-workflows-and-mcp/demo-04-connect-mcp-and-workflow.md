@@ -1,5 +1,7 @@
 # Connect an MCP Server and Automate with a Workflow
 
+![Live records from the Microsoft Dataverse MCP Server rise through the published Northwind Sales Assistant into a Preview answer about North region support cases and into the Northwind Follow-up Draft workflow, which runs from AccountName Alpine Ski House through the Agent node to FollowUp.](./_images/04-connect-mcp-and-workflow-overview.svg)
+
 Northwind Traders sellers can now ask the Sales Assistant about products and pricing, but the assistant still cannot see live account records: which orders are open, which support cases are unresolved, which accounts sit in which region. In this demo you give the Northwind Sales Assistant live Dataverse data through a prebuilt Microsoft MCP server, then automate a repeatable post-call follow-up with a workflow that hands a drafting step to the agent. You go from an agent that only knows your documents to one that reads live records and drives a saved, testable follow-up process.
 
 ## What you'll build

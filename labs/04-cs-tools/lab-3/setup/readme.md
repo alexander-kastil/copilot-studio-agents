@@ -40,7 +40,7 @@ $env:PNP_CLIENT_ID = "<client id from the registration>"
 To target a different site:
 
 ```powershell
-./Provision-ProductSupport.ps1 -SiteUrl "https://contoso.sharepoint.com/sites/product-support"
+./Provision-ProductSupport.ps1 -SiteUrl "https://greylogistics.sharepoint.com/sites/product-support"
 ```
 
 Expected: one `uploaded <name>` line per file, then a summary block showing the three input values the lab asks for and a file count of 5.

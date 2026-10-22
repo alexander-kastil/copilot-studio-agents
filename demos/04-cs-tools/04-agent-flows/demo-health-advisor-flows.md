@@ -1,5 +1,7 @@
 # Rebuild the Health Advisor with Two Agent Flows
 
+![CS-Health Advisor's Check Symptoms topic calls CS-Summarize Patient Symptoms and branches on the Outcome, while its Post to teams topic calls CS-Post to teams, which answers the agent at once, waits for a reviewer and then posts to a Teams channel.](./_images/health-advisor-flows-overview.svg)
+
 A health first responder that judges symptoms freely gives two employees with the same complaint two different answers, and anything it posts to a team channel goes out before a person has seen it. The classification belongs in one fixed step, and the post belongs behind a human check. In this demo you rebuild the Health Advisor as CS-Health Advisor: one agent flow classifies the symptoms with a prompt, the topic branches on its outcome, and a second flow asks a reviewer before it posts to Teams.
 
 What you practice here: calling agent flows from topics with bound inputs and outputs, branching a conversation on a flow result, and putting a human review step in front of an action.

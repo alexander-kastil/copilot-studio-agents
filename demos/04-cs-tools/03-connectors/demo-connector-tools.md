@@ -1,6 +1,8 @@
 # Give the Help Desk Agent Connector Tools
 
-An employee tells the help desk agent that a laptop screen cracked, and today the agent can only explain the loaner policy. Someone still has to look up the manager, find the right colleague, and send the email. In this demo the Contoso IT Help Desk agent gets three prebuilt connector tools that do that work, chains them from one sentence, and then hands them to a component collection so the next agent can reuse them.
+![From one request, Grey Logistics IT Help Desk runs Find a colleague and Get my manager, then Send help desk email after the user confirms, and the three tools are packaged in the Help Desk Notifications component collection.](./_images/connector-tools-overview.svg)
+
+An employee tells the help desk agent that a laptop screen cracked, and today the agent can only explain the loaner policy. Someone still has to look up the manager, find the right colleague, and send the email. In this demo the Grey Logistics IT Help Desk agent gets three prebuilt connector tools that do that work, chains them from one sentence, and then hands them to a component collection so the next agent can reuse them.
 
 What you practice here: adding prebuilt connector actions as tools, controlling how their inputs are filled, and letting generative orchestration chain them.
 
@@ -16,7 +18,7 @@ Duration: about 40 minutes.
 ## Prerequisites
 
 - A Copilot Studio environment where you can create agents.
-- A Standard agent named Contoso IT Help Desk (on the home page, open the **New agent** dropdown and select **Agent** with the **Standard** badge under **Other ways to build**) with generative orchestration on (the default) and **Authenticate with Microsoft** under **Settings** > **Security** > **Authentication** (the default).
+- A Standard agent named Grey Logistics IT Help Desk (on the home page, open the **New agent** dropdown and select **Agent** with the **Standard** badge under **Other ways to build**) with generative orchestration on (the default) and **Authenticate with Microsoft** under **Settings** > **Security** > **Authentication** (the default).
 - A Microsoft 365 account with an Outlook mailbox and a manager set in Microsoft Entra ID, plus the name of one colleague in the same tenant. Check both before the session: a demo account without a manager breaks Exercise 1.
 
 ## Exercise 1: Look up the user's manager with a connector tool
@@ -123,7 +125,7 @@ Tools that look up a user's manager, find colleagues in the directory and send h
 2. Select **Next**, select the three tools, and keep the dependencies that are selected automatically. Select **Next**, then **Create**.
 3. On the side bar, select the three dots (**…**) > **Component collections** and open Help Desk Notifications.
 
-Expected: the collection lists the three tools and their connections, and Contoso IT Help Desk appears as a connected agent; the agent's **Tools** page still lists the tools, now provided by the collection.
+Expected: the collection lists the three tools and their connections, and Grey Logistics IT Help Desk appears as a connected agent; the agent's **Tools** page still lists the tools, now provided by the collection.
 
 ## Troubleshooting
 
@@ -137,7 +139,7 @@ Expected: the collection lists the three tools and their connections, and Contos
 
 ## Summary
 
-You gave the Contoso IT Help Desk agent three prebuilt connector tools, chained them from a single request, and moved them into a reusable component collection. You can now:
+You gave the Grey Logistics IT Help Desk agent three prebuilt connector tools, chained them from a single request, and moved them into a reusable component collection. You can now:
 
 - Add a connector action as a tool and fix an input with a Power Fx custom value
 - Leave an input to the orchestrator and let it ask only when a value is missing

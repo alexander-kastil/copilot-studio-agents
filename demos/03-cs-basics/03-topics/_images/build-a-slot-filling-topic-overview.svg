@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Report a device issue: one message fills two slots, the topic asks only for the email</title>
+  <desc id="d">Grey Logistics IT Help Desk under classic orchestration. Ex 4 sends My notebook CT-104233 has a cracked screen. The word notebook goes to the Device type entity from Ex 1, a closed list with smart matching where notebook maps to laptop. CT-104233 goes to the Asset tag entity from Ex 2, the regular expression (?i)CT-\d{6}. The third entity, Email, is prebuilt. In the Ex 3 topic Report a device issue, three questions are each bound to an entity: deviceType and assetTag are filled at once with laptop and CT-104233, and contactEmail is asked, then answered with alex@greylogistics.com. The recap reads: Thanks. I logged a laptop issue for asset CT-104233. The service desk will contact you at alex@greylogistics.com. At the side, Ex 5: My monitor stopped working, then I can't find a sticker answered twice; Repeat once sends the custom retry prompt That doesn't look like an asset tag; assetTag becomes unknown as the default entity value, the topic moves on to the email question, and the recap names asset unknown. Dots carry the two words into their entities and slots, then each step of the invalid path lights up.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .mg { font-size: 36px; }
+      .hl { font-weight: 700; }
+      .t { font-size: 30px; font-weight: 600; }
+      .s { font-size: 28px; fill: #57606a; }
+      .q { font-size: 28px; }
+      .v { font-size: 28px; font-weight: 600; }
+      .code { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; }
+      .bd { font-size: 26px; font-weight: 700; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="50" y="40" width="1240" height="120" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="74" y="78" width="88" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="bd" x="118" y="109">Ex 4</text>
+  <text class="mg" x="190" y="112">My <tspan class="hl">notebook</tspan> <tspan class="hl">CT-104233</tspan> has a cracked screen</text>
+  <g fill="#e0a534">
+    <rect x="250" y="122" width="163" height="6" rx="3"/>
+    <rect x="423" y="122" width="182" height="6" rx="3"/>
+  </g>
+
+  <g stroke="#8c959f" stroke-width="2" fill="#ffffff">
+    <rect x="50" y="220" width="396" height="180" rx="16"/>
+    <rect x="472" y="220" width="396" height="180" rx="16"/>
+    <rect x="894" y="220" width="396" height="180" rx="16"/>
+  </g>
+  <g fill="#fff6e5" stroke="#e0a534" stroke-width="2">
+    <rect x="74" y="238" width="88" height="44" rx="22"/>
+    <rect x="496" y="238" width="88" height="44" rx="22"/>
+  </g>
+  <text class="bd" x="118" y="269">Ex 1</text>
+  <text class="bd" x="540" y="269">Ex 2</text>
+  <text class="t" x="182" y="271">Device type</text>
+  <text class="s" x="74" y="326">closed list, smart matching</text>
+  <text class="s" x="74" y="364">notebook maps to laptop</text>
+  <text class="t" x="604" y="271">Asset tag</text>
+  <text class="s" x="496" y="326">regular expression</text>
+  <text class="code" x="496" y="366">(?i)CT-\d{6}</text>
+  <text class="t" x="918" y="271">Email</text>
+  <text class="s" x="918" y="326">prebuilt entity</text>
+
+  <rect x="50" y="450" width="1240" height="294" rx="24" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <g stroke="#8c959f" stroke-width="2">
+    <rect x="74" y="474" width="348" height="166" rx="16" fill="#e9f7ef"/>
+    <rect x="496" y="474" width="348" height="166" rx="16" fill="#e9f7ef"/>
+    <rect x="918" y="474" width="348" height="166" rx="16" fill="#ffffff"/>
+  </g>
+  <text class="code" x="98" y="518">deviceType</text>
+  <text class="v" x="98" y="566">laptop</text>
+  <text class="s" x="98" y="614">filled at once</text>
+  <text class="code" x="520" y="518">assetTag</text>
+  <text class="v" x="520" y="566">CT-104233</text>
+  <text class="s" x="520" y="614">filled at once</text>
+  <text class="code" x="942" y="518">contactEmail</text>
+  <text class="v" x="942" y="566">alex@greylogistics.com</text>
+  <text class="s" x="942" y="614">asked, then answered</text>
+  <rect x="74" y="676" width="88" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="bd" x="118" y="707">Ex 3</text>
+  <text class="t" x="182" y="709">Report a device issue</text>
+  <text class="s" x="520" y="709">three questions, each bound to an entity</text>
+
+  <rect x="50" y="800" width="1240" height="180" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="74" y="848">Recap</text>
+  <text class="q" x="74" y="898">Thanks. I logged a laptop issue for asset CT-104233.</text>
+  <text class="q" x="74" y="940">The service desk will contact you at alex@greylogistics.com.</text>
+
+  <rect x="1350" y="40" width="520" height="960" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1374" y="64" width="88" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="bd" x="1418" y="95">Ex 5</text>
+  <text class="t" x="1482" y="97">Invalid answers</text>
+  <g stroke="#8c959f" stroke-width="2" fill="#eaf2ff">
+    <rect x="1374" y="140" width="472" height="82" rx="16"/>
+    <rect x="1374" y="262" width="472" height="128" rx="16"/>
+  </g>
+  <rect x="1374" y="430" width="472" height="200" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1374" y="670" width="472" height="130" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1374" y="840" width="472" height="130" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="q" x="1398" y="191">My monitor stopped working</text>
+  <text class="q" x="1398" y="312">I can't find a sticker</text>
+  <text class="s" x="1398" y="356">answered twice</text>
+  <text class="t" x="1398" y="476">Repeat once</text>
+  <text class="s" x="1398" y="518">custom retry prompt:</text>
+  <text class="s" x="1398" y="556">That doesn't look like</text>
+  <text class="s" x="1398" y="594">an asset tag.</text>
+  <text class="code" x="1398" y="724">assetTag = unknown</text>
+  <text class="s" x="1398" y="770">default entity value</text>
+  <text class="s" x="1398" y="886">moves on to the email question,</text>
+  <text class="t" x="1398" y="930">recap names asset unknown</text>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="331" y1="134" x2="260" y2="220"/>
+    <line x1="514" y1="134" x2="640" y2="220"/>
+    <line x1="248" y1="400" x2="248" y2="474"/>
+    <line x1="670" y1="400" x2="670" y2="474"/>
+    <line x1="1092" y1="400" x2="1092" y2="474"/>
+    <line x1="670" y1="744" x2="670" y2="800"/>
+    <line x1="1610" y1="222" x2="1610" y2="262"/>
+    <line x1="1610" y1="390" x2="1610" y2="430"/>
+    <line x1="1610" y1="630" x2="1610" y2="670"/>
+    <line x1="1610" y1="800" x2="1610" y2="840"/>
+  </g>
+
+  <g fill="none" stroke="#24292f" stroke-width="5">
+    <rect x="50" y="220" width="396" height="180" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.02;0.10" values="0;1;0"/>
+    </rect>
+    <rect x="472" y="220" width="396" height="180" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.10;0.18" values="0;1;0"/>
+    </rect>
+    <rect x="50" y="450" width="1240" height="294" rx="24" opacity="0">
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.18;0.26" values="0;1;0"/>
+    </rect>
+    <rect x="50" y="40" width="1240" height="120" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.26;0.35" values="0;1;0"/>
+    </rect>
+    <rect x="74" y="474" width="348" height="166" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.41;0.52" values="0;1;0"/>
+    </rect>
+    <rect x="496" y="474" width="348" height="166" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.41;0.52" values="0;1;0"/>
+    </rect>
+    <rect x="918" y="474" width="348" height="166" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.56;0.62" values="0;1;0"/>
+    </rect>
+    <rect x="50" y="800" width="1240" height="180" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.65;0.72" values="0;1;0"/>
+    </rect>
+    <rect x="1374" y="140" width="472" height="82" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.74;0.79" values="0;1;0"/>
+    </rect>
+    <rect x="1374" y="262" width="472" height="128" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.79;0.84" values="0;1;0"/>
+    </rect>
+    <rect x="1374" y="430" width="472" height="200" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.84;0.89" values="0;1;0"/>
+    </rect>
+    <rect x="1374" y="670" width="472" height="130" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.89;0.94" values="0;1;0"/>
+    </rect>
+    <rect x="1374" y="840" width="472" height="130" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.94;0.99" values="0;1;0"/>
+    </rect>
+  </g>
+
+  <g fill="#24292f">
+    <circle r="14" opacity="0">
+      <animateMotion dur="14s" repeatCount="indefinite" path="M331,134 L260,220" calcMode="linear" keyTimes="0;0.30;0.35;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.30;0.35" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="14s" repeatCount="indefinite" path="M514,134 L640,220" calcMode="linear" keyTimes="0;0.30;0.35;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.30;0.35" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="14s" repeatCount="indefinite" path="M248,400 V474" calcMode="linear" keyTimes="0;0.35;0.41;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.35;0.41" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="14s" repeatCount="indefinite" path="M670,400 V474" calcMode="linear" keyTimes="0;0.35;0.41;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.35;0.41" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="14s" repeatCount="indefinite" path="M1092,400 V474" calcMode="linear" keyTimes="0;0.52;0.56;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.52;0.56" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="14s" repeatCount="indefinite" path="M670,744 V800" calcMode="linear" keyTimes="0;0.62;0.65;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="14s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.62;0.65" values="0;1;0"/>
+    </circle>
+  </g>
+</svg>

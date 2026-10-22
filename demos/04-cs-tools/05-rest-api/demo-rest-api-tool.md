@@ -1,6 +1,8 @@
 # Call a Public API from a Topic and as a REST API Tool
 
-The Contoso IT Help Desk schedules laptop rollouts across countries and keeps landing them on public holidays, because the agent has no calendar data. A free public holiday API exists, but no prebuilt connector wraps it. In this demo you call the API twice: first from a topic with an HTTP request node, then as a REST API tool built from an OpenAPI description, and you compare what each path can and cannot do.
+![The Grey Logistics IT Help Desk reaches the Nager.Date holiday API in two ways: a Public holidays topic whose HTTP request covers only the current year, and a Get public holidays REST API tool that takes year 2027 and countryCode AT from the question.](./_images/rest-api-tool-overview.svg)
+
+The Grey Logistics IT Help Desk schedules laptop rollouts across countries and keeps landing them on public holidays, because the agent has no calendar data. A free public holiday API exists, but no prebuilt connector wraps it. In this demo you call the API twice: first from a topic with an HTTP request node, then as a REST API tool built from an OpenAPI description, and you compare what each path can and cannot do.
 
 What you practice here: calling a REST API without a connector, and choosing between a topic-level HTTP call and an orchestrator-level REST API tool.
 
@@ -14,7 +16,7 @@ Duration: about 40 minutes.
 
 ## Prerequisites
 
-- A Standard agent named Contoso IT Help Desk (on the home page, open the **New agent** dropdown and select **Agent** with the **Standard** badge under **Other ways to build**) with generative orchestration on (the default for new agents).
+- A Standard agent named Grey Logistics IT Help Desk (on the home page, open the **New agent** dropdown and select **Agent** with the **Standard** badge under **Other ways to build**) with generative orchestration on (the default for new agents).
 - Network access to the Nager.Date public holiday API, which needs no key. Before the session, open `https://date.nager.at/api/v3/PublicHolidays/2026/AT` in a browser and check that it returns JSON.
 - A text editor to save one JSON file.
 

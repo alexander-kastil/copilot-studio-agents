@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">The product pitch skill demo: from a market brief to a checked partner deck</title>
+  <desc id="d">Steps 1 and 2 find the pitch in aw26-market-brief.docx and map each of the seven cards to its evidence. Step 3 authors the product-pitch skill: SKILL.md with pitch-deck-structure.pptx beside it, listed as /product-pitch. Step 4 runs it by name with the brief attached, Run my Product Pitch skill for the AW26 trail-running capsule, and checks every claim in a claim table that marks it supported, overstated or unsupported; you approve before anything is saved. Step 5 tunes the skill with a sharper description and tighter evidence rules through an Edit file? card at Medium risk. A new prompt that never names the skill, I need a partner deck for the AW26 trail-running capsule, shows Reviewed custom skill Product pitch, passes the claim table, and saves Aurora Trail Capsule AW26.pptx: seven cards where market claims name their source and commercial cards stay placeholders. A dot runs the first named run, the tuning loop back into the skill, then the unnamed run through the claim table to the saved deck.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      svg { font-size: 28px; }
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .k { font-size: 28px; font-weight: 600; }
+      .kc { font-size: 28px; font-weight: 600; text-anchor: middle; }
+      .s { font-size: 28px; fill: #57606a; }
+      .sc { font-size: 28px; fill: #57606a; text-anchor: middle; }
+      .code { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; }
+      .codec26 { font-family: Consolas, 'Courier New', monospace; font-size: 26px; font-weight: 700; text-anchor: middle; }
+      .num { font-size: 28px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="720" y1="215" x2="720" y2="300"/>
+    <line x1="440" y1="470" x2="500" y2="470"/>
+    <line x1="950" y1="470" x2="1020" y2="470"/>
+    <line x1="1410" y1="470" x2="1480" y2="470"/>
+    <line x1="1215" y1="640" x2="1215" y2="730"/>
+    <path d="M1020,835 H690 V640"/>
+    <line x1="560" y1="730" x2="560" y2="640"/>
+  </g>
+
+  <rect x="60" y="80" width="890" height="135" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="110" cy="120" r="24" fill="#24292f"/>
+  <text class="num" x="110" y="130">1</text>
+  <text class="k" x="146" y="130">Find the pitch in the brief</text>
+  <circle cx="110" cy="177" r="24" fill="#24292f"/>
+  <text class="num" x="110" y="187">2</text>
+  <text class="k" x="146" y="187">Map each of the seven cards to its evidence</text>
+
+  <rect x="60" y="300" width="380" height="340" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="75" y="325" width="350" height="60" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="codec26" x="250" y="364">aw26-market-brief.docx</text>
+  <rect x="75" y="410" width="350" height="210" rx="24" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="kc" x="250" y="460">Run my Product</text>
+  <text class="kc" x="250" y="496">Pitch skill</text>
+  <text class="sc" x="250" y="548">AW26 trail-running</text>
+  <text class="sc" x="250" y="582">capsule</text>
+
+  <rect x="500" y="300" width="450" height="340" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="545" cy="350" r="24" fill="#24292f"/>
+  <text class="num" x="545" y="360">3</text>
+  <text class="code" x="581" y="360">product-pitch</text>
+  <g stroke="#8c959f" stroke-width="2" fill="#ffffff">
+    <rect x="525" y="390" width="400" height="56" rx="12"/>
+    <rect x="525" y="466" width="400" height="56" rx="12"/>
+  </g>
+  <text class="codec26" x="725" y="427">SKILL.md</text>
+  <text class="codec26" x="725" y="503">pitch-deck-structure.pptx</text>
+  <text class="sc" x="725" y="596">listed as /product-pitch</text>
+
+  <rect x="1020" y="300" width="390" height="340" rx="18" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+  <circle cx="1065" cy="350" r="24" fill="#24292f"/>
+  <text class="num" x="1065" y="360">4</text>
+  <text class="k" x="1101" y="360">Claim table</text>
+  <circle cx="1070" cy="415" r="11" fill="#e9f7ef" stroke="#57606a" stroke-width="2"/>
+  <circle cx="1070" cy="465" r="11" fill="#e0a534"/>
+  <circle cx="1070" cy="515" r="11" fill="#8c959f"/>
+  <text class="s" x="1096" y="425">supported</text>
+  <text class="s" x="1096" y="475">overstated</text>
+  <text class="s" x="1096" y="525">unsupported</text>
+  <text class="s" x="1050" y="578">you approve before</text>
+  <text class="s" x="1050" y="612">anything is saved</text>
+
+  <rect x="1480" y="300" width="380" height="340" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="code" x="1505" y="352">Aurora Trail</text>
+  <text class="code" x="1505" y="388">Capsule AW26.pptx</text>
+  <text class="k" x="1505" y="442">Seven cards</text>
+  <text class="s" x="1505" y="480">market claims name</text>
+  <text class="s" x="1505" y="514">their source,</text>
+  <text class="s" x="1505" y="550">commercial cards</text>
+  <text class="s" x="1505" y="584">stay placeholders</text>
+
+  <rect x="60" y="730" width="580" height="210" rx="24" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="k" x="90" y="785">I need a partner deck for the</text>
+  <text class="k" x="90" y="821">AW26 trail-running capsule</text>
+  <text class="s" x="90" y="875">Reviewed custom skill</text>
+  <text class="s" x="90" y="909">Product pitch</text>
+
+  <rect x="1020" y="730" width="390" height="210" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="1065" cy="780" r="24" fill="#24292f"/>
+  <text class="num" x="1065" y="790">5</text>
+  <text class="k" x="1101" y="790">Tune the skill</text>
+  <text class="s" x="1050" y="838">sharper description,</text>
+  <text class="s" x="1050" y="872">tighter evidence rules</text>
+  <text class="s" x="1050" y="914">Edit file?, Medium risk</text>
+
+  <g fill="none" stroke="#24292f" stroke-width="5">
+    <rect x="60" y="80" width="890" height="135" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.01;0.015;0.075;0.08;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="500" y="300" width="450" height="340" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.11;0.115;0.195;0.20;0.73;0.735;0.765;0.77;1" values="0;0;1;1;0;0;1;1;0;0"/>
+    </rect>
+    <rect x="75" y="410" width="350" height="210" rx="24" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.20;0.205;0.255;0.26;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="1020" y="730" width="390" height="210" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.48;0.485;0.565;0.57;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="60" y="730" width="580" height="210" rx="24" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.63;0.635;0.695;0.70;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="1480" y="300" width="380" height="340" rx="18" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.90;0.905;0.985;0.99;1" values="0;0;1;1;0;0"/>
+    </rect>
+  </g>
+  <rect x="1020" y="300" width="390" height="340" rx="18" fill="none" stroke="#e0a534" stroke-width="8" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.34;0.35;0.37;0.39;0.41;0.43;0.45;0.80;0.81;0.83;0.85;0.86;0.87;1" values="0;0;1;0.3;1;0.3;1;0;0;1;0.3;1;1;0;0"/>
+  </rect>
+
+  <g fill="#24292f">
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M720,215 V300" calcMode="linear" keyTimes="0;0.08;0.11;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.08;0.085;0.11;0.115;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M440,470 H500" calcMode="linear" keyTimes="0;0.26;0.29;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.26;0.265;0.29;0.295;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M950,470 H1020" calcMode="linear" keyTimes="0;0.31;0.34;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.31;0.315;0.34;0.345;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1215,640 V730" calcMode="linear" keyTimes="0;0.45;0.48;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.45;0.455;0.48;0.485;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1020,835 H690 V640" calcMode="linear" keyTimes="0;0.57;0.63;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.57;0.575;0.63;0.635;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M560,730 V640" calcMode="linear" keyTimes="0;0.70;0.73;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.70;0.705;0.73;0.735;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M950,470 H1020" calcMode="linear" keyTimes="0;0.77;0.80;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.77;0.775;0.80;0.805;1" values="0;0;1;1;0;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1410,470 H1480" calcMode="linear" keyTimes="0;0.87;0.90;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.87;0.875;0.90;0.905;1" values="0;0;1;1;0;0"/>
+    </circle>
+  </g>
+</svg>

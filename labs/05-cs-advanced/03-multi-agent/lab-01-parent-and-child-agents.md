@@ -18,22 +18,22 @@
 
 ## Scenario
 
-- **Parent**: “Contoso Help Hub” — Front door that answers general questions and routes specialized queries.
-- **Child**: “Contoso HR Policy” — Answers HR policy questions only (benefits, PTO, holidays) and then hands control back to the parent automatically.
+- **Parent**: “Grey Logistics Help Hub” — Front door that answers general questions and routes specialized queries.
+- **Child**: “Grey Logistics HR Policy” — Answers HR policy questions only (benefits, PTO, holidays) and then hands control back to the parent automatically.
 
 ---
 
 ## Step 1 — Create the Parent Agent
 
-1. Open **Copilot Studio** → **Create agent** → Name: **Contoso Help Hub**.
+1. Open **Copilot Studio** → **Create agent** → Name: **Grey Logistics Help Hub**.
 2. Provide a short **Description** and **Instructions**.
 3. Ensure **Generative orchestration** is ON.
 4. (Optional) Add general **Knowledge** sources.
 
 **Recommended Parent Instructions:**
 
-You are Contoso Help Hub. Act as a front door:
-• If the user asks about HR policy (benefits, PTO, holidays, leave eligibility, country-specific HR rules), delegate to the “Contoso HR Policy” agent.
+You are Grey Logistics Help Hub. Act as a front door:
+• If the user asks about HR policy (benefits, PTO, holidays, leave eligibility, country-specific HR rules), delegate to the “Grey Logistics HR Policy” agent.
 • Otherwise, answer directly using your knowledge and tools.
 • Keep answers concise; cite sources when available.
 • If unsure, ask a clarifying question rather than guessing.
@@ -42,8 +42,8 @@ Step 2 — Add a Child agent inside the parent
 
 You can create child agents directly from the parent’s Agents page. Child agents are lightweight sub‑agents that live within the parent. [Add other...lot Studio]
 
-In Contoso Help Hub, go to Agents → Add an agent → Create an agent. [Add other...lot Studio]
-Name: Contoso HR Policy.
+In Grey Logistics Help Hub, go to Agents → Add an agent → Create an agent. [Add other...lot Studio]
+Name: Grey Logistics HR Policy.
 When will this be used?
 
 - Leave as The agent chooses and write a precise Description (recommended), or select a specific behavior if offered.
@@ -53,21 +53,21 @@ When will this be used?
 
 In Instructions for the child, paste:
 
-You are Contoso HR Policy.
+You are Grey Logistics HR Policy.
 • Answer only HR policy questions (benefits, PTO/leave, holidays, eligibility).
 • If the query isn't about HR policy, return the conversation to the parent.
 • Keep answers scoped and link to HR documents where possible.
 
 Step 3 — Test the routing (Parent → Child → Parent)
 
-Open the Test pane for Contoso Help Hub (the parent). Ask:
+Open the Test pane for Grey Logistics Help Hub (the parent). Ask:
 “How many PTO days do I get?”
-Expected: Parent routes to Contoso HR Policy; the child answers. [Orchestrat...lot Studio]
+Expected: Parent routes to Grey Logistics HR Policy; the child answers. [Orchestrat...lot Studio]
 Then ask a non‑HR question, e.g.:
 “What’s our Wi‑Fi guest password policy?”
 Expected: Control is back with the Parent and it answers from its knowledge.
 
-![Contoso Help Hub checks each question: the PTO question is delegated to the child agent Contoso HR Policy, which answers and hands control back, while the Wi-Fi guest password question is answered by the parent directly.](./_images/parent-child-routing.svg)
+![Grey Logistics Help Hub checks each question: the PTO question is delegated to the child agent Grey Logistics HR Policy, which answers and hands control back, while the Wi-Fi guest password question is answered by the parent directly.](./_images/parent-child-routing.svg)
 
 Step 4 — Make routing bullet‑proof
 
@@ -80,7 +80,7 @@ If you already have an HR agent elsewhere (another team/environment) and want re
 From the Parent → Agents → Add an agent → Connect an existing agent → pick the HR agent.
 (If your UI presents it) consider whether to pass conversation history when connecting; keep privacy in mind. (Community walkthroughs show this option when connecting agents.) [Add other...lot Studio], [Setting Up...lot Studio]
 
-![A child agent lives inside Contoso Help Hub and is published with it; a connected agent is an existing HR agent in another team or environment with its own ALM, reached from the parent.](./_images/child-versus-connected-agent.svg)
+![A child agent lives inside Grey Logistics Help Hub and is published with it; a connected agent is an existing HR agent in another team or environment with its own ALM, reached from the parent.](./_images/child-versus-connected-agent.svg)
 
 Step 6 — Publish and validate
 

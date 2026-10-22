@@ -1,5 +1,7 @@
 # Publish CS-HR Buddy to Teams and Microsoft Copilot
 
+![CS-HR Buddy gets Authenticate with Microsoft and the connect setting, is published to the Microsoft 365 and Microsoft Teams channel, runs the employee reward conversation in Teams and Microsoft 365 Copilot, is shared with the HR pilot group and picks up a change after one more publish and start over.](./_images/publish-hr-buddy-overview.svg)
+
 HR Buddy only helps when employees can reach it where they already work, and only the right employees: an HR agent that answers anyone with a link, or that keeps last week's behavior after a fix, causes more questions than it answers. The original HR Buddy runs in Teams and Microsoft Copilot with Microsoft sign-in, and its settings let other agents connect to it. In this demo you give CS-HR Buddy the same setup, test it in Teams, share it with a group, and push a change through with one publish.
 
 What you practice here: preparing a Standard agent's sign-in and connection settings, publishing it to the Microsoft 365 and Microsoft Teams channel, controlling who can chat with it, and rolling out a change.

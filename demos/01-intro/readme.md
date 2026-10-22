@@ -2,7 +2,7 @@
 
 This module builds the foundation for the whole course. Before you touch Copilot Studio or Cowork, you need a clear model of what agents and copilots are, how every agent works, and where to build one and what it costs. Get these three things right and everything in the later modules has somewhere to land.
 
-It is split into four focused topics: the first two establish the concepts, the third maps the build paths and their billing, and the fourth tours the Copilot Chat productivity surface you will build on.
+It is split into four focused topics: the first two establish the concepts, the third maps the build paths and their billing, and the fourth tours the Copilot Chat productivity surface you will build on. An optional fifth topic prepares the class tenant: the licenses each module needs, where Copilot Credits come from, and the errors that mean they are missing.
 
 ![Four topic cards in three groups: topics 1 and 2 establish the concepts, topic 3 maps where to build and what it costs, and topic 4 tours the Copilot Chat productivity surface.](./pptx/images/00-02-module-path.svg)
 
@@ -14,6 +14,7 @@ It is split into four focused topics: the first two establish the concepts, the 
 | 2 | [How Agents Work](./02-how-agents-work/readme.md) | The agentic loop, the three parts of every agent, semantic index and RAG, tools via the Model Context Protocol, and the design patterns |
 | 3 | [Where to Build and What It Costs](./03-where-to-build/readme.md) | The build paths from Agent Builder to Copilot Studio, Copilot Credits and their three billing routes, and spending limits |
 | 4 | [Copilot Chat & Productivity Agents](./04-chat-productivity/readme.md) | Researcher and Analyst, SharePoint agents, and building your own agent with Agent Builder |
+| 5 | [Prepare the Tenant: Licenses & Credits](./05-setup/readme.md) (optional) | The licenses per module, what a Copilot license covers, the three places credits come from, the errors that mean one is missing, and where a run's cost shows |
 
 ## Duration & Audience
 

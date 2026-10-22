@@ -1,5 +1,7 @@
 # Turn a Market Brief into a Repeatable Product Pitch
 
+![aw26-market-brief.docx and a named prompt run the product-pitch skill (SKILL.md plus pitch-deck-structure.pptx) into a claim table you approve, Step 5 tunes the skill through an Edit file? card, and an unnamed prompt for the AW26 trail-running capsule then saves Aurora Trail Capsule AW26.pptx with sourced market claims and placeholder commercial cards.](./_images/01-product-pitch-skill-overview.svg)
+
 Author a custom `SKILL.md` that converts a research brief into a partner-ready pitch deck in your house structure, then run and tune it until every pitch is backed by evidence rather than adjectives.
 
 > **Reasoning effort:** Use **Medium** for Steps 1 to 4: mapping the brief to the pitch structure, authoring the skill and running it need real reasoning over evidence. Use **Light** for the description and wording tweaks in Step 5. High or Max is not needed; if a pitch card lacks evidence, fix the skill instructions rather than raising the effort.

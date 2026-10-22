@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Live Dataverse records rise through the Northwind Sales Assistant into a Preview answer and a workflow run</title>
+  <desc id="d">At the bottom, the Microsoft Dataverse MCP Server holds account, order and support case records, read live; over the Streamable transport, server changes need no republish. In the middle, the published Northwind Sales Assistant calls it when the Server description matches the question. Top left, Preview: the question Which open support cases do we have for accounts in the North region? shows a Used tool line that expands to Output and Latency, and the answer lists open support cases for North region accounts. Top right, the workflow Northwind Follow-up Draft: the trigger takes AccountName, Alpine Ski House, the Agent node calls the assistant and takes about 17 seconds, and Respond to the agent returns FollowUp; Version history marks the published version LIVE. Dots carry the records up into the Preview answer, then through the workflow run.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      svg { font-size: 26px; }
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .h { font-size: 34px; font-weight: 700; text-anchor: middle; }
+      .hl { font-size: 34px; font-weight: 700; }
+      .t { font-size: 30px; font-weight: 600; }
+      .tc { font-size: 30px; font-weight: 600; text-anchor: middle; }
+      .s { font-size: 28px; fill: #57606a; }
+      .sc { font-size: 28px; fill: #57606a; text-anchor: middle; }
+      .b { font-size: 28px; }
+      .bc { font-size: 28px; text-anchor: middle; }
+      .bb { font-size: 28px; font-weight: 600; }
+      .bbc { font-size: 28px; font-weight: 600; text-anchor: middle; }
+      .code { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; }
+      .codec { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; text-anchor: middle; }
+      .mono { font-family: Consolas, 'Courier New', monospace; font-size: 26px; }
+      .monoc { font-family: Consolas, 'Courier New', monospace; font-size: 26px; text-anchor: middle; }
+      .num { font-size: 28px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .tag { font-size: 26px; font-weight: 600; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect x="60" y="50" width="840" height="400" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="90" y="102">Preview</text>
+  <rect x="200" y="126" width="680" height="112" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="224" y="170">Which open support cases do we have</text>
+  <text class="b" x="224" y="208">for accounts in the North region?</text>
+  <rect x="90" y="258" width="790" height="68" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="114" y="302">Used tool</text>
+  <text class="s" x="262" y="302">expands to Output and Latency</text>
+  <rect x="90" y="346" width="790" height="80" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="114" y="396">open support cases for North region accounts</text>
+  <rect x="1020" y="50" width="840" height="400" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1050" y="102">Northwind Follow-up Draft</text>
+  <text class="s" x="1444" y="102">workflow</text>
+  <rect x="1040" y="130" width="260" height="200" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="1060" y="176">Trigger</text>
+  <text class="mono" x="1060" y="222">AccountName</text>
+  <text class="b" x="1060" y="266">Alpine Ski House</text>
+  <rect x="1340" y="130" width="200" height="200" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bbc" x="1440" y="176">Agent</text>
+  <text class="sc" x="1440" y="222">about</text>
+  <text class="sc" x="1440" y="260">17 seconds</text>
+  <rect x="1580" y="130" width="260" height="200" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="1600" y="176">Respond to</text>
+  <text class="bb" x="1600" y="212">the agent</text>
+  <text class="mono" x="1600" y="266">FollowUp</text>
+  <line x1="1300" y1="230" x2="1340" y2="230" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <line x1="1540" y1="230" x2="1580" y2="230" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <text class="s" x="1464" y="404">Version history: LIVE</text>
+  <rect x="60" y="540" width="1800" height="160" rx="24" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="960" y="606">Northwind Sales Assistant</text>
+  <text class="sc" x="960" y="654">published, calls the server when the Server description matches</text>
+  <rect x="60" y="800" width="1800" height="190" rx="24" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="960" y="856">Microsoft Dataverse MCP Server</text>
+  <text class="sc" x="960" y="902">account, order and support case records, read live</text>
+  <text class="sc" x="960" y="944">Streamable transport: server changes need no republish</text>
+  <line x1="960" y1="800" x2="960" y2="702" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <text class="bb" x="984" y="760">live records</text>
+  <line x1="480" y1="540" x2="480" y2="428" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <text class="bb" x="504" y="500">answer</text>
+  <line x1="1440" y1="540" x2="1440" y2="332" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <text class="bb" x="1240" y="500">drafted text</text>
+  <rect x="200" y="126" width="680" height="112" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.0833;0.0958;1" values="1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M960,800 V702" calcMode="linear" keyTimes="0;0.0833;0.1417;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.0833;0.0958;0.15;0.1625;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M480,540 V428" calcMode="linear" keyTimes="0;0.15;0.2083;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.15;0.1625;0.2167;0.2292;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="90" y="346" width="790" height="80" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.2083;0.2208;0.3333;0.3458;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="1040" y="130" width="260" height="200" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.35;0.3625;0.4333;0.4458;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M1300,230 H1340" calcMode="linear" keyTimes="0;0.4167;0.4417;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.4167;0.4292;0.45;0.4625;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1340" y="130" width="200" height="200" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.4417;0.4542;0.6333;0.6458;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M960,800 V702" calcMode="linear" keyTimes="0;0.4667;0.525;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.4667;0.4792;0.5333;0.5458;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M1440,540 V332" calcMode="linear" keyTimes="0;0.5333;0.6083;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.5333;0.5458;0.6167;0.6292;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M1540,230 H1580" calcMode="linear" keyTimes="0;0.6333;0.6583;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.6333;0.6458;0.6667;0.6792;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1580" y="130" width="260" height="200" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.6583;0.6708;0.9833;0.9958;1" values="0;0;1;1;0;0"/>
+  </rect>
+</svg>

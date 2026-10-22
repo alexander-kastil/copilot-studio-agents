@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Keys 1, 2 and 0 drive the IT phone menu of the Grey Logistics IT Hotline, and a hang-up sends a post-call email</title>
+  <desc id="d">Grey Logistics IT Hotline is a basic voice agent that adds the system topics Silence detection, Speech unrecognized and Unknown dial pad press. A caller says I need help, which starts the IT phone menu topic. It plays Welcome to the Grey Logistics IT hotline, then asks about account, device or a person, and reads the options as Press 1 or say Account, Press 2 or say Device, Press 0 or say Person. On a phone keypad the keys 1, 2 and 0 are marked; the test panel simulates them with /DTMFkey 1. Account answers: unlock or reset at aka.ms/sspr, at least 14 characters. Device answers: bulging battery, stop using it and bring it to the IT desk today. Person transfers the conversation to +15555550123. Below, the Post-call actions topic: when a caller hangs up on a real Telephony call, the End of conversation activity fires, the condition Conversation.EndReason is CUSTOMER_HANGUP holds, and Send an email (V2) mails the help desk mailbox. The animation presses 1, 2 and 0 in turn, then runs the hang-up chain.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      svg { font-size: 26px; }
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .h { font-size: 34px; font-weight: 700; text-anchor: middle; }
+      .hl { font-size: 34px; font-weight: 700; }
+      .t { font-size: 30px; font-weight: 600; }
+      .tc { font-size: 30px; font-weight: 600; text-anchor: middle; }
+      .s { font-size: 28px; fill: #57606a; }
+      .sc { font-size: 28px; fill: #57606a; text-anchor: middle; }
+      .b { font-size: 28px; }
+      .bc { font-size: 28px; text-anchor: middle; }
+      .bb { font-size: 28px; font-weight: 600; }
+      .bbc { font-size: 28px; font-weight: 600; text-anchor: middle; }
+      .code { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; }
+      .codec { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; text-anchor: middle; }
+      .mono { font-family: Consolas, 'Courier New', monospace; font-size: 26px; }
+      .monoc { font-family: Consolas, 'Courier New', monospace; font-size: 26px; text-anchor: middle; }
+      .num { font-size: 28px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .tag { font-size: 26px; font-weight: 600; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect x="60" y="40" width="460" height="772" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="tc" x="290" y="108">Caller</text>
+  <text class="sc" x="290" y="150">Speech &amp; DTMF</text>
+  <circle cx="160" cy="250" r="50" fill="#24292f"/>
+  <text class="h" x="160" y="262" style="fill: #ffffff;">1</text>
+  <circle cx="290" cy="250" r="50" fill="#24292f"/>
+  <text class="h" x="290" y="262" style="fill: #ffffff;">2</text>
+  <circle cx="420" cy="250" r="50" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="420" y="262" style="fill: #8c959f;">3</text>
+  <circle cx="160" cy="380" r="50" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="160" y="392" style="fill: #8c959f;">4</text>
+  <circle cx="290" cy="380" r="50" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="290" y="392" style="fill: #8c959f;">5</text>
+  <circle cx="420" cy="380" r="50" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="420" y="392" style="fill: #8c959f;">6</text>
+  <circle cx="160" cy="510" r="50" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="160" y="522" style="fill: #8c959f;">7</text>
+  <circle cx="290" cy="510" r="50" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="290" y="522" style="fill: #8c959f;">8</text>
+  <circle cx="420" cy="510" r="50" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="420" y="522" style="fill: #8c959f;">9</text>
+  <circle cx="160" cy="640" r="50" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="160" y="652" style="fill: #8c959f;">*</text>
+  <circle cx="290" cy="640" r="50" fill="#24292f"/>
+  <text class="h" x="290" y="652" style="fill: #ffffff;">0</text>
+  <circle cx="420" cy="640" r="50" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="420" y="652" style="fill: #8c959f;">#</text>
+  <text class="monoc" x="290" y="752">/DTMFkey 1</text>
+  <rect x="600" y="40" width="660" height="772" rx="24" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="930" y="106">IT phone menu</text>
+  <text class="sc" x="930" y="148">trigger: I need help</text>
+  <rect x="630" y="170" width="600" height="105" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="660" y="214">Welcome to the Grey Logistics</text>
+  <text class="b" x="660" y="252">IT hotline.</text>
+  <line x1="930" y1="275" x2="930" y2="303" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <rect x="630" y="305" width="600" height="492" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="660" y="350">Question: account, device or person</text>
+  <rect x="650" y="372" width="560" height="130" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="702" cy="437" r="28" fill="#24292f"/>
+  <text class="num" x="702" y="447">1</text>
+  <text class="b" x="750" y="447">Press 1 or say Account</text>
+  <rect x="650" y="512" width="560" height="130" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="702" cy="577" r="28" fill="#24292f"/>
+  <text class="num" x="702" y="587">2</text>
+  <text class="b" x="750" y="587">Press 2 or say Device</text>
+  <rect x="650" y="652" width="560" height="130" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="702" cy="717" r="28" fill="#24292f"/>
+  <text class="num" x="702" y="727">0</text>
+  <text class="b" x="750" y="727">Press 0 or say Person</text>
+  <rect x="1340" y="50" width="520" height="260" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1370" y="98">Grey Logistics IT Hotline</text>
+  <text class="s" x="1370" y="138">basic voice, system topics:</text>
+  <text class="b" x="1370" y="184">Silence detection</text>
+  <text class="b" x="1370" y="224">Speech unrecognized</text>
+  <text class="b" x="1370" y="264">Unknown dial pad press</text>
+  <rect x="1340" y="372" width="520" height="130" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="1370" y="412">Account</text>
+  <text class="s" x="1370" y="450">unlock or reset at aka.ms/sspr,</text>
+  <text class="s" x="1370" y="486">at least 14 characters</text>
+  <line x1="1210" y1="437" x2="1340" y2="437" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <rect x="1340" y="512" width="520" height="130" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="1370" y="552">Device</text>
+  <text class="s" x="1370" y="590">bulging battery: stop using it,</text>
+  <text class="s" x="1370" y="626">bring it to the IT desk today</text>
+  <line x1="1210" y1="577" x2="1340" y2="577" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <rect x="1340" y="652" width="520" height="130" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="1370" y="692">Person</text>
+  <text class="s" x="1370" y="730">Transfer conversation</text>
+  <text class="mono" x="1370" y="766">+15555550123</text>
+  <line x1="1210" y1="717" x2="1340" y2="717" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <line x1="520" y1="577" x2="630" y2="577" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <rect x="60" y="830" width="1800" height="220" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="90" y="878">Post-call actions</text>
+  <rect x="90" y="900" width="360" height="125" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="114" y="950">Caller hangs up</text>
+  <text class="s" x="114" y="990">real Telephony call</text>
+  <line x1="450" y1="962" x2="510" y2="962" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <rect x="510" y="900" width="380" height="125" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="534" y="950">End of conversation</text>
+  <text class="s" x="534" y="990">An activity occurs</text>
+  <line x1="890" y1="962" x2="950" y2="962" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <rect x="950" y="900" width="480" height="125" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="mono" x="974" y="950">Conversation.EndReason</text>
+  <text class="mono" x="974" y="990">is CUSTOMER_HANGUP</text>
+  <line x1="1430" y1="962" x2="1490" y2="962" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <rect x="1490" y="900" width="350" height="125" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+  <text class="bb" x="1514" y="950">Send an email (V2)</text>
+  <text class="s" x="1514" y="990">to the help desk mailbox</text>
+  <rect x="630" y="170" width="600" height="105" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.0563;0.0656;1" values="1;1;0;0"/>
+  </rect>
+  <circle cx="160" cy="250" r="60" fill="none" stroke="#e0a534" stroke-width="8" opacity="0">
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.0625;0.0719;0.2625;0.2719;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="16s" repeatCount="indefinite" path="M520,577 H630" calcMode="linear" keyTimes="0;0.0813;0.1125;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.0813;0.0906;0.1187;0.1281;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="650" y="372" width="560" height="130" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.1125;0.1219;0.2625;0.2719;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="16s" repeatCount="indefinite" path="M1210,437 H1340" calcMode="linear" keyTimes="0;0.1437;0.175;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.1437;0.1531;0.1812;0.1906;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1340" y="372" width="520" height="130" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.175;0.1844;0.2625;0.2719;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle cx="290" cy="250" r="60" fill="none" stroke="#e0a534" stroke-width="8" opacity="0">
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.275;0.2844;0.475;0.4844;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="16s" repeatCount="indefinite" path="M520,577 H630" calcMode="linear" keyTimes="0;0.2938;0.325;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.2938;0.3031;0.3313;0.3406;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="650" y="512" width="560" height="130" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.325;0.3344;0.475;0.4844;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="16s" repeatCount="indefinite" path="M1210,577 H1340" calcMode="linear" keyTimes="0;0.3563;0.3875;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.3563;0.3656;0.3938;0.4031;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1340" y="512" width="520" height="130" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.3875;0.3969;0.475;0.4844;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle cx="290" cy="640" r="60" fill="none" stroke="#e0a534" stroke-width="8" opacity="0">
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.4875;0.4969;0.6875;0.6969;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="16s" repeatCount="indefinite" path="M520,577 H630" calcMode="linear" keyTimes="0;0.5062;0.5375;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.5062;0.5156;0.5437;0.5531;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="650" y="652" width="560" height="130" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.5375;0.5469;0.6875;0.6969;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="16s" repeatCount="indefinite" path="M1210,717 H1340" calcMode="linear" keyTimes="0;0.5687;0.6;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.5687;0.5781;0.6062;0.6156;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1340" y="652" width="520" height="130" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.6;0.6094;0.6875;0.6969;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="90" y="900" width="360" height="125" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.7125;0.7219;0.775;0.7844;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="16s" repeatCount="indefinite" path="M450,962 H510" calcMode="linear" keyTimes="0;0.75;0.775;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.75;0.7594;0.7812;0.7906;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="510" y="900" width="380" height="125" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.7812;0.7906;0.8438;0.8531;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="16s" repeatCount="indefinite" path="M890,962 H950" calcMode="linear" keyTimes="0;0.8187;0.8438;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.8187;0.8281;0.85;0.8594;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="950" y="900" width="480" height="125" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.85;0.8594;0.9125;0.9219;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="16s" repeatCount="indefinite" path="M1430,962 H1490" calcMode="linear" keyTimes="0;0.8875;0.9125;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.8875;0.8969;0.9188;0.9281;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1490" y="900" width="350" height="125" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.9188;0.9281;1" values="0;0;1;1"/>
+  </rect>
+</svg>

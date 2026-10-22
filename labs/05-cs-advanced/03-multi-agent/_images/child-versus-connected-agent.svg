@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
   <title id="t">A child agent lives inside the parent; a connected agent stays in its own team or environment</title>
-  <desc id="d">On the left, the child agent Contoso HR Policy is created from the parent's Agents page and lives inside Contoso Help Hub, so it is published with the parent. On the right, Contoso Help Hub connects to an existing HR agent that belongs to another team or environment, which gives reuse and separate ALM, and you choose whether to pass conversation history.</desc>
+  <desc id="d">On the left, the child agent Grey Logistics HR Policy is created from the parent's Agents page and lives inside Grey Logistics Help Hub, so it is published with the parent. On the right, Grey Logistics Help Hub connects to an existing HR agent that belongs to another team or environment, which gives reuse and separate ALM, and you choose whether to pass conversation history.</desc>
   <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
   <defs>
     <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto">
@@ -13,10 +13,10 @@
   <text x="110" y="190" font-size="28" fill="#57606a">Agents, Add an agent, Create an agent</text>
 
   <rect x="120" y="235" width="760" height="470" rx="20" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
-  <text x="160" y="292" font-size="30" font-weight="700" fill="#24292f">Contoso Help Hub</text>
+  <text x="160" y="292" font-size="30" font-weight="700" fill="#24292f">Grey Logistics Help Hub</text>
   <text x="160" y="332" font-size="28" fill="#57606a">parent</text>
   <rect x="200" y="380" width="600" height="270" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
-  <text x="500" y="470" text-anchor="middle" font-size="32" font-weight="700" fill="#24292f">Contoso HR Policy</text>
+  <text x="500" y="470" text-anchor="middle" font-size="32" font-weight="700" fill="#24292f">Grey Logistics HR Policy</text>
   <text x="500" y="514" text-anchor="middle" font-size="28" fill="#57606a">child agent</text>
   <text x="500" y="558" text-anchor="middle" font-size="28" fill="#24292f">lives within the parent</text>
 
@@ -32,7 +32,7 @@
   <text x="1030" y="190" font-size="28" fill="#57606a">Agents, Add an agent, Connect an existing agent</text>
 
   <rect x="1030" y="380" width="300" height="270" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
-  <text x="1180" y="470" text-anchor="middle" font-size="30" font-weight="700" fill="#24292f">Contoso</text>
+  <text x="1180" y="470" text-anchor="middle" font-size="30" font-weight="700" fill="#24292f">Grey Logistics</text>
   <text x="1180" y="510" text-anchor="middle" font-size="30" font-weight="700" fill="#24292f">Help Hub</text>
   <text x="1180" y="556" text-anchor="middle" font-size="28" fill="#57606a">parent</text>
 

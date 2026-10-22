@@ -1,5 +1,7 @@
 # Produce a Competitive Market Brief
 
+![Four European outdoor market trends from Deep Research are held against internal-positioning.docx, showing sustainability claims and trail running as exposed, repairability as aligned and fleece sizing returns as exposed on their own, and they feed AW26 Market Brief - Aurora Outdoor.docx, a 5. Recommendations section with a Top pick, and the PDF for leadership.](./_images/01-research-brief-overview.svg)
+
 Send Cowork out to research the outdoor market, hold its findings up against your own positioning document, and come back with a decision-ready brief, shipped as a PDF for leadership.
 
 > **Reasoning effort:** Use **Medium** (default). Deep Research already does the long search and reading, so Medium is enough to compare the findings with the positioning document and write the brief. This is the most credit-intensive demo in the set, so do not raise it to High or Max. Go to **High** only if Step 2 or Step 4 comes back generic after one retry.

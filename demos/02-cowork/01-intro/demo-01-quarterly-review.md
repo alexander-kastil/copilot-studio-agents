@@ -1,5 +1,7 @@
 # Compile a Q3 Business Review Deck
 
+![Two lanes, You and Cowork, run across the four steps: you brief the outcome, steer the plan, ask for speaker notes and the email, and select Send, while Cowork returns a numbered plan, builds the deck, saves the notes in place, holds the Send draft? card at Medium risk and records Approved 1 action, with one Aurora Northern Europe - Q3 Review.pptx under Output.](./_images/01-quarterly-review-overview.svg)
+
 Hand Cowork three files holding a quarter of raw numbers, manager notes, and last quarter's deck, then steer one brief from a visible plan to a boardroom-ready PowerPoint and a gated send to your VP.
 
 > **Reasoning effort:** Use **Medium** (default; the picker next to the send arrow reads **Auto Medium**). Reading the workbook, the notes and last quarter's deck and building a new deck is standard document work that Medium plans and builds well. Switch to **Light** (the leftmost stop on the picker's Faster to Smarter slider) for the deck edits in Step 3 and the send in Step 4. High or Max adds wait time and Copilot Credits without a better deck here.

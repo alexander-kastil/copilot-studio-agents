@@ -1,0 +1,225 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">CS-Travel Expense Refund saves each claim as a row through an agent flow</title>
+  <desc id="d">Three columns map one claim from left to right. The Submit Refund Request topic of CS-Travel Expense Refund passes seven topic variables, Topic.claimID, Topic.email, Topic.destination, Topic.comment, Topic.amount, Topic.departureDateIso and Topic.returnDateIso, to the agent flow CS-Save Claim to Dataverse. Its trigger, When an agent calls the flow, has the inputs ClaimId, EMail, Destination and Comment as Text, Comment optional, Amount as Number, and Departure Date and Return Date as Text. Add a new row writes them into the CS-Travel Expense Claims table: Claim ID, Email Address alex@greylogistics.com, Destination Salzburg, Comment Customer workshop, two nights, Amount 318.40, Departure Date 10 November 2026 and Return Date 12 November 2026. Respond to the agent, with Asynchronous response off, hands back to the topic, which answers Thanks. Claim, claim ID, for Salzburg is saved: 318.4 from 2026-11-10T00:00:00Z to 2026-11-12T00:00:00Z. Dots carry each value across the three columns, then down to Respond to the agent and back to the confirmation.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <g transform="translate(0,70)">
+  <defs>
+    <style>
+      svg { font-size: 28px; }
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .t { font-size: 30px; font-weight: 600; }
+      .b { font-size: 28px; }
+      .bb { font-size: 28px; font-weight: 700; }
+      .s { font-size: 28px; fill: #57606a; }
+      .sy { font-size: 26px; fill: #57606a; }
+      .v { font-size: 26px; }
+      .m { font-family: Consolas, 'Courier New', monospace; font-size: 26px; }
+      .p { font-size: 26px; font-weight: 700; }
+      .c { text-anchor: middle; }
+      .e { text-anchor: end; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+    <marker id="as" viewBox="0 0 12 12" refX="12" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="500" y1="125" x2="600" y2="125"/>
+    <line x1="1100" y1="125" x2="1180" y2="125"/>
+    <line x1="1520" y1="706" x2="1520" y2="760"/>
+    <line x1="1180" y1="830" x2="1100" y2="830"/>
+  </g>
+  <g stroke="#57606a" stroke-width="2" fill="none" marker-end="url(#as)">
+    <line x1="500" y1="258" x2="600" y2="258"/>
+    <line x1="1100" y1="258" x2="1180" y2="258"/>
+    <line x1="500" y1="328" x2="600" y2="328"/>
+    <line x1="1100" y1="328" x2="1180" y2="328"/>
+    <line x1="500" y1="398" x2="600" y2="398"/>
+    <line x1="1100" y1="398" x2="1180" y2="398"/>
+    <line x1="500" y1="468" x2="600" y2="468"/>
+    <line x1="1100" y1="468" x2="1180" y2="468"/>
+    <line x1="500" y1="538" x2="600" y2="538"/>
+    <line x1="1100" y1="538" x2="1180" y2="538"/>
+    <line x1="500" y1="608" x2="600" y2="608"/>
+    <line x1="1100" y1="608" x2="1180" y2="608"/>
+    <line x1="500" y1="678" x2="600" y2="678"/>
+    <line x1="1100" y1="678" x2="1180" y2="678"/>
+  </g>
+
+  <rect x="60" y="50" width="440" height="150" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="90" y="112">CS-Travel Expense Refund</text>
+  <text class="s" x="90" y="156">Submit Refund Request topic</text>
+  <rect x="600" y="50" width="500" height="150" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="630" y="112">CS-Save Claim to Dataverse</text>
+  <text class="s" x="630" y="156">When an agent calls the flow</text>
+  <rect x="1180" y="50" width="680" height="150" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1210" y="112">CS-Travel Expense Claims</text>
+  <text class="s" x="1210" y="156">Add a new row</text>
+
+  <rect x="60" y="230" width="440" height="56" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="m" x="84" y="267">Topic.claimID</text>
+  <rect x="600" y="230" width="500" height="56" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="624" y="268">ClaimId</text>
+  <text class="sy e" x="1076" y="267">Text</text>
+  <rect x="1180" y="230" width="680" height="56" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="1204" y="268">Claim ID</text>
+  <text class="sy" x="1440" y="267">&lt;claim ID&gt;</text>
+
+  <rect x="60" y="300" width="440" height="56" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="m" x="84" y="337">Topic.email</text>
+  <rect x="600" y="300" width="500" height="56" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="624" y="338">EMail</text>
+  <text class="sy e" x="1076" y="337">Text</text>
+  <rect x="1180" y="300" width="680" height="56" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="1204" y="338">Email Address</text>
+  <text class="v" x="1440" y="337">alex@greylogistics.com</text>
+
+  <rect x="60" y="370" width="440" height="56" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="m" x="84" y="407">Topic.destination</text>
+  <rect x="600" y="370" width="500" height="56" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="624" y="408">Destination</text>
+  <text class="sy e" x="1076" y="407">Text</text>
+  <rect x="1180" y="370" width="680" height="56" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="1204" y="408">Destination</text>
+  <text class="v" x="1440" y="407">Salzburg</text>
+
+  <rect x="60" y="440" width="440" height="56" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="m" x="84" y="477">Topic.comment</text>
+  <rect x="600" y="440" width="500" height="56" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="624" y="478">Comment</text>
+  <text class="sy e" x="1076" y="477">Text, optional</text>
+  <rect x="1180" y="440" width="680" height="56" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="1204" y="478">Comment</text>
+  <text class="v" x="1440" y="477">Customer workshop, two nights</text>
+
+  <rect x="60" y="510" width="440" height="56" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="m" x="84" y="547">Topic.amount</text>
+  <rect x="600" y="510" width="500" height="56" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="624" y="548">Amount</text>
+  <text class="sy e" x="1076" y="547">Number</text>
+  <rect x="1180" y="510" width="680" height="56" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="1204" y="548">Amount</text>
+  <text class="v" x="1440" y="547">318.40</text>
+
+  <rect x="60" y="580" width="440" height="56" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="m" x="84" y="617">Topic.departureDateIso</text>
+  <rect x="600" y="580" width="500" height="56" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="624" y="618">Departure Date</text>
+  <text class="sy e" x="1076" y="617">Text</text>
+  <rect x="1180" y="580" width="680" height="56" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="1204" y="618">Departure Date</text>
+  <text class="v" x="1440" y="617">10 November 2026</text>
+
+  <rect x="60" y="650" width="440" height="56" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="m" x="84" y="687">Topic.returnDateIso</text>
+  <rect x="600" y="650" width="500" height="56" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="624" y="688">Return Date</text>
+  <text class="sy e" x="1076" y="687">Text</text>
+  <rect x="1180" y="650" width="680" height="56" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="1204" y="688">Return Date</text>
+  <text class="v" x="1440" y="687">12 November 2026</text>
+
+  <rect x="1180" y="760" width="680" height="140" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1210" y="818">Respond to the agent</text>
+  <text class="s" x="1210" y="862">Asynchronous response off</text>
+
+  <rect x="60" y="760" width="1040" height="140" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="90" y="818">Thanks. Claim &lt;claim ID&gt; for Salzburg is saved: 318.4</text>
+  <text class="b" x="90" y="860">from 2026-11-10T00:00:00Z to 2026-11-12T00:00:00Z.</text>
+
+  <g fill="#fff6e5" stroke="#e0a534" stroke-width="2">
+    <rect x="84" y="30" width="92" height="40" rx="20"/>
+    <rect x="624" y="30" width="92" height="40" rx="20"/>
+    <rect x="1204" y="30" width="92" height="40" rx="20"/>
+    <rect x="1306" y="30" width="92" height="40" rx="20"/>
+    <rect x="84" y="740" width="92" height="40" rx="20"/>
+  </g>
+  <text class="p c" x="130" y="59">Ex 4</text>
+  <text class="p c" x="670" y="59">Ex 2</text>
+  <text class="p c" x="1250" y="59">Ex 1</text>
+  <text class="p c" x="1352" y="59">Ex 3</text>
+  <text class="p c" x="130" y="769">Ex 5</text>
+
+  <g fill="#24292f">
+    <circle r="11" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M500,258 H600" calcMode="linear" keyTimes="0;0.03;0.09;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.03;0.09" values="0;1;0"/>
+    </circle>
+    <circle r="11" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1100,258 H1180" calcMode="linear" keyTimes="0;0.20;0.26;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.20;0.26" values="0;1;0"/>
+    </circle>
+    <circle r="11" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M500,328 H600" calcMode="linear" keyTimes="0;0.05;0.11;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.05;0.11" values="0;1;0"/>
+    </circle>
+    <circle r="11" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1100,328 H1180" calcMode="linear" keyTimes="0;0.22;0.28;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.22;0.28" values="0;1;0"/>
+    </circle>
+    <circle r="11" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M500,398 H600" calcMode="linear" keyTimes="0;0.07;0.13;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.07;0.13" values="0;1;0"/>
+    </circle>
+    <circle r="11" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1100,398 H1180" calcMode="linear" keyTimes="0;0.24;0.30;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.24;0.30" values="0;1;0"/>
+    </circle>
+    <circle r="11" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M500,468 H600" calcMode="linear" keyTimes="0;0.09;0.15;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.09;0.15" values="0;1;0"/>
+    </circle>
+    <circle r="11" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1100,468 H1180" calcMode="linear" keyTimes="0;0.26;0.32;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.26;0.32" values="0;1;0"/>
+    </circle>
+    <circle r="11" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M500,538 H600" calcMode="linear" keyTimes="0;0.11;0.17;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.11;0.17" values="0;1;0"/>
+    </circle>
+    <circle r="11" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1100,538 H1180" calcMode="linear" keyTimes="0;0.28;0.34;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.28;0.34" values="0;1;0"/>
+    </circle>
+    <circle r="11" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M500,608 H600" calcMode="linear" keyTimes="0;0.13;0.19;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.13;0.19" values="0;1;0"/>
+    </circle>
+    <circle r="11" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1100,608 H1180" calcMode="linear" keyTimes="0;0.30;0.36;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.30;0.36" values="0;1;0"/>
+    </circle>
+    <circle r="11" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M500,678 H600" calcMode="linear" keyTimes="0;0.15;0.21;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.15;0.21" values="0;1;0"/>
+    </circle>
+    <circle r="11" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1100,678 H1180" calcMode="linear" keyTimes="0;0.32;0.38;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.32;0.38" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1520,706 V760" calcMode="linear" keyTimes="0;0.48;0.54;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.48;0.54" values="0;1;0"/>
+    </circle>
+    <circle r="14" opacity="0">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M1180,830 H1100" calcMode="linear" keyTimes="0;0.60;0.66;1" keyPoints="0;0;1;1"/>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.60;0.66" values="0;1;0"/>
+    </circle>
+  </g>
+
+  <g fill="none" stroke="#24292f" stroke-width="5">
+    <rect x="1180" y="50" width="680" height="150" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.40;0.48" values="0;1;0"/>
+    </rect>
+    <rect x="1180" y="760" width="680" height="140" rx="16" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.54;0.60" values="0;1;0"/>
+    </rect>
+  </g>
+  <rect x="60" y="760" width="1040" height="140" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.66;0.97" values="0;1;0"/>
+  </rect>
+  </g>
+</svg>

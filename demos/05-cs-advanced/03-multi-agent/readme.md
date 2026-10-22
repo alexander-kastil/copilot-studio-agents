@@ -50,7 +50,7 @@ A single agent with many components eventually confuses its own planner. Learn's
 
 Copilot Studio offers two kinds of agents that a main agent can call, and you can mix them in one solution.
 
-![A child agent lives inside Contoso Help Hub and is published with it; a connected agent is an existing HR agent in another team or environment with its own ALM, reached from the parent.](../../../labs/05-cs-advanced/03-multi-agent/_images/child-versus-connected-agent.svg)
+![A child agent lives inside Grey Logistics Help Hub and is published with it; a connected agent is an existing HR agent in another team or environment with its own ALM, reached from the parent.](../../../labs/05-cs-advanced/03-multi-agent/_images/child-versus-connected-agent.svg)
 
 | Question | Child agent | Connected agent |
 | --- | --- | --- |
@@ -83,7 +83,7 @@ In the parent's instructions, name each connected or child agent with a referenc
 
 Learn's multi-agent guidance condenses into a checklist. Most failures in a multi-agent design are duplicate replies, a subagent that talks to the user when it should report back, or a parent that delegates a request no subagent can answer.
 
-![Contoso Help Hub checks each question: the PTO question is delegated to the child agent Contoso HR Policy, which answers and hands control back, while the Wi-Fi guest password question is answered by the parent directly.](../../../labs/05-cs-advanced/03-multi-agent/_images/parent-child-routing.svg)
+![Grey Logistics Help Hub checks each question: the PTO question is delegated to the child agent Grey Logistics HR Policy, which answers and hands control back, while the Wi-Fi guest password question is answered by the parent directly.](../../../labs/05-cs-advanced/03-multi-agent/_images/parent-child-routing.svg)
 
 | Rule | What to write or test |
 | --- | --- |
@@ -100,13 +100,14 @@ Routing everything through the parent is one valid design; a child can also answ
 
 An evaluation's tool use method can't grade a route to a connected or child agent, because its **Select tools** picker lists only the agent's own tools. Read each case's **Details** panel instead and gate on **Meaning match**, which held steady in the travel planner's runs while Answer quality moved from 86 to 57.
 
-## Hands-On Demo
+## Hands-On Demos
 
-- [Route Requests to Child and Connected Agents](./demo-route-to-child-and-connected-agents.md): the presenter splits the Contoso IT Help Desk into an account-access child agent and a connected software-licensing agent, traces each route in the activity map, and tests a request that matches no specialist.
+- [Connect Your Travel Specialists Behind One Front Door](./demo-business-travel-planner.md): the presenter builds CS-Business Travel Planner, connects CS-Travel Agent, CS-Health Advisor and CS-Travel Expense Refund, adds a child agent for gym benefits, and traces each question to the agent that answered it.
+- [Route Requests to Child and Connected Agents](./demo-route-to-child-and-connected-agents.md) (optional): the presenter splits the Grey Logistics IT Help Desk into an account-access child agent and a connected software-licensing agent, traces each route in the activity map, and tests a request that matches no specialist.
 
 ## Hands-On Lab
 
-- [Route Work from a Parent Agent to a Child Agent](../../../labs/05-cs-advanced/03-multi-agent/lab-01-parent-and-child-agents.md): learners build a Contoso Help Hub parent that routes HR policy questions to a child agent, sharpen the routing, and compare the child with a connected agent.
+- [Route Work from a Parent Agent to a Child Agent](../../../labs/05-cs-advanced/03-multi-agent/lab-01-parent-and-child-agents.md): learners build a Grey Logistics Help Hub parent that routes HR policy questions to a child agent, sharpen the routing, and compare the child with a connected agent.
 
 ## Key Topics covered in this module
 

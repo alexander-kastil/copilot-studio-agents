@@ -1,6 +1,8 @@
 # Prioritize a Ticket Backlog with Deep Reasoning
 
-A help desk lead who asks an agent which ticket to work on next gets a confident ordered list, and it is easy to miss that the list sorted by priority alone and skipped an overdue ticket. Ordering a backlog means applying several rules at once: priority, an exception for the executive board, deadlines and the clock. In this demo you give the Contoso IT Help Desk that job twice, once on the default model and once with `reason` on the ranking step, and compare both plans in the activity map.
+![The nine-ticket backlog passes through step 4 with reason and comes out in instruction order with overdue T-109 first, T-103 raised to P2 by the board rule and T-107 kept at P3, next to the default model's typical misses and a Wi-Fi question that runs without deep reasoning.](./_images/deep-reasoning-overview.svg)
+
+A help desk lead who asks an agent which ticket to work on next gets a confident ordered list, and it is easy to miss that the list sorted by priority alone and skipped an overdue ticket. Ordering a backlog means applying several rules at once: priority, an exception for the executive board, deadlines and the clock. In this demo you give the Grey Logistics IT Help Desk that job twice, once on the default model and once with `reason` on the ranking step, and compare both plans in the activity map.
 
 What you practice here: scoping deep reasoning to the one instruction step that has to weigh several rules, and proving the scope in the activity map.
 
@@ -8,7 +10,7 @@ Duration: about 30 minutes.
 
 ## What you'll build
 
-- Prioritization instructions for the Contoso IT Help Desk with five numbered steps.
+- Prioritization instructions for the Grey Logistics IT Help Desk with five numbered steps.
 - A baseline answer for a nine-ticket backlog on the default model.
 - The same answer with **Deep reasoning (preview)** on and `reason` on step 4, with its reasoning node in the activity map.
 - A check that a simple question still runs on the fast path.
@@ -16,7 +18,7 @@ Duration: about 30 minutes.
 ## Prerequisites
 
 - An environment in the United States or in the EU outside the United Kingdom, where deep reasoning is available.
-- A Standard agent (Learn: standard harness) named Contoso IT Help Desk, created from the **New agent** dropdown on the home page: under **Other ways to build**, select **Agent** with the **Standard** badge. Keep generative orchestration on (the default for new agents), and leave **Deep reasoning (preview)** off.
+- A Standard agent (Learn: standard harness) named Grey Logistics IT Help Desk, created from the **New agent** dropdown on the home page: under **Other ways to build**, select **Agent** with the **Standard** badge. Keep generative orchestration on (the default for new agents), and leave **Deep reasoning (preview)** off.
 
 ## Exercise 1: Record a baseline on the default model
 
@@ -25,7 +27,7 @@ A baseline shows what the fast model makes of the rules before anything changes.
 1. On the **Overview** page, replace the instructions with this text:
 
 ```text
-You are the Contoso IT Help Desk. When asked to prioritize a ticket backlog, follow these steps:
+You are the Grey Logistics IT Help Desk. When asked to prioritize a ticket backlog, follow these steps:
 1. Assign each ticket a priority. P1: more than 10 people cannot work, or a security incident is suspected. P2: one person cannot work at all. P3: a workaround exists. P4: requests for equipment, software or information.
 2. Apply the board rule: a ticket from a member of the executive board moves up one priority level, to at most P1.
 3. Compute each deadline from the submission time: P1 1 hour, P2 4 hours, P3 24 hours, P4 72 hours.
@@ -105,7 +107,7 @@ Expected: the answer arrives quickly and the activity map shows no deep reasonin
 
 ## Summary
 
-You gave the Contoso IT Help Desk a multi-rule prioritization task and measured what deep reasoning changed. You can now:
+You gave the Grey Logistics IT Help Desk a multi-rule prioritization task and measured what deep reasoning changed. You can now:
 
 - Turn on **Deep reasoning (preview)** for an agent with generative orchestration
 - Force the reasoning model for one instruction step with the `reason` keyword

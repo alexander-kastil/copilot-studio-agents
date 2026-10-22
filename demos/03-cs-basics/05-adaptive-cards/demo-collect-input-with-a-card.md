@@ -1,5 +1,7 @@
 # Collect a Software Request with an Adaptive Card
 
+![Grey Logistics IT Help Desk runs the Request software topic, whose Adaptive Card collects Software, Needed by and Business justification, passes software, neededBy and justification to a confirmation message, and handles an empty date, the reply asdf and a OneDrive question.](./_images/collect-input-with-a-card-overview.svg)
+
 A software request needs the product, the date it's needed, and a business reason, and asking for them in three chat turns feels slow and invites half answers. One card shows all three fields at once, checks that none is empty, and returns clean variables to the topic. In this demo you build that card from JSON, confirm the values it returns, personalize it with Power Fx, and see how it behaves when a user types something else.
 
 What you practice here: collecting several values in one interactive Adaptive Card and controlling how the card behaves inside a conversation.
@@ -15,7 +17,7 @@ Duration: about 40 minutes.
 
 ## Prerequisites
 
-- A Standard agent, such as Contoso IT Help Desk from the earlier demos, with either orchestration mode.
+- A Standard agent, such as Grey Logistics IT Help Desk from the earlier demos, with either orchestration mode.
 - Teams as the target channel, so the card uses schema version 1.5.
 
 ## Exercise 1: Build the card from JSON

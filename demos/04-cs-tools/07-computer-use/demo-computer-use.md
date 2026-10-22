@@ -1,6 +1,8 @@
 # Read and Fill a Legacy Web App with Computer Use
 
-Departments keep asking the Contoso IT Help Desk for lookups and data entry in old web apps that have no API, and a technician does each one by hand. In this demo the help desk agent does that work itself with computer use: it reads values from one web app, types records into another, and stays inside the boundaries you set. Microsoft hosts two sample web apps for computer use, and they stand in for the legacy apps here.
+![CS-Grey Logistics IT Help Desk uses CS-Look up portfolio to read Fourth Coffee's manager and value from the Financial Portfolio Dashboard and CS-Register inventory items to fill the Product Inventory Update form, both fenced to computerusedemos.blob.core.windows.net.](./_images/computer-use-overview.svg)
+
+Departments keep asking the Grey Logistics IT Help Desk for lookups and data entry in old web apps that have no API, and a technician does each one by hand. In this demo the help desk agent does that work itself with computer use: it reads values from one web app, types records into another, and stays inside the boundaries you set. Microsoft hosts two sample web apps for computer use, and they stand in for the legacy apps here.
 
 What you practice here: describing a screen task in plain language, parameterizing it with inputs, and fencing it with access control.
 
@@ -15,7 +17,7 @@ Duration: about 40 minutes.
 
 ## Prerequisites
 
-- A Standard agent named CS-Contoso IT Help Desk (on the **Home** page, select **Other ways to build**, then **Agent** with the **Standard** badge under **Build with standard orchestration**) with generative orchestration on, which computer use requires (it is the default for new agents).
+- A Standard agent named CS-Grey Logistics IT Help Desk (on the **Home** page, select **Other ways to build**, then **Agent** with the **Standard** badge under **Build with standard orchestration**) with generative orchestration on, which computer use requires (it is the default for new agents).
 - A machine for computer use: the hosted browser (preview), which the tool selects with a ready connection when your environment offers it, or a Windows machine registered in Power Automate with Power Automate for desktop 2.61.132.25266 or later and **Enable for computer use** turned on.
 - Copilot Credits in the environment: each step of a run consumes 5 credits with a standard model.
 - Before the session, open both sample apps in a browser to check they load: `https://computerusedemos.blob.core.windows.net/web/Portfolio/index.html` and `https://computerusedemos.blob.core.windows.net/web/Adventure/index.html`.
@@ -140,7 +142,7 @@ Expected: the preview shows the tool filling the five fields twice and submittin
 
 ## Summary
 
-You gave the CS-Contoso IT Help Desk agent two computer use tools that read from and write to web apps without an API, made one of them reusable with an input, and fenced both to a single HTTPS site. You can now:
+You gave the CS-Grey Logistics IT Help Desk agent two computer use tools that read from and write to web apps without an API, made one of them reusable with an input, and fenced both to a single HTTPS site. You can now:
 
 - Write computer use instructions a model can follow step by step
 - Parameterize a computer use tool with inputs the orchestrator fills

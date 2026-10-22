@@ -1,5 +1,7 @@
 # Ground the Help Desk Agent in Public Content
 
+![Four help desk questions land in turn on Windows support, Microsoft 365 apps support, no source (citations or Fallback) and Web Search, above the five suggested prompts for Teams and Copilot Chat.](./_images/ground-with-knowledge-overview.svg)
+
 The help desk agent from the previous topic answers from the model's general knowledge, so its VPN advice is plausible and cites nothing anyone can check. Employees and the service desk need answers they can trace to a real support page. In this demo you add public knowledge sources with descriptions that steer the agent, prove the grounding with citations and the activity map, and decide what happens when no source knows the answer.
 
 What you practice here: adding knowledge sources whose names and descriptions steer the orchestrator, then controlling grounded and ungrounded answers.
@@ -15,7 +17,7 @@ Duration: about 40 minutes.
 
 ## Prerequisites
 
-- A Standard agent with generative orchestration turned on. If you skipped the previous demo, create an agent named Contoso IT Help Desk from **New agent**, **Agent** with the **Standard** badge, with the description "An IT help desk agent that answers Windows and Microsoft 365 questions for employees."
+- A Standard agent with generative orchestration turned on. If you skipped the previous demo, create an agent named Grey Logistics IT Help Desk from **New agent**, **Agent** with the **Standard** badge, with the description "An IT help desk agent that answers Windows and Microsoft 365 questions for employees."
 - **Allow ungrounded responses** turned on in **Settings**, **Generative AI**, **Knowledge**, so you can see the difference when you turn it off.
 
 ## Exercise 1: Add two public websites with distinct descriptions
@@ -75,7 +77,7 @@ Some teams prefer no answer over an answer nobody can verify. Turning off **Allo
 1. Ask a question that neither support site covers, with **Allow ungrounded responses** still on.
 
 ```text
-How many vacation days does a new Contoso employee get?
+How many vacation days does a new Grey Logistics employee get?
 ```
 
 2. Go to **Settings**, **Generative AI**, **Knowledge**, turn off **Allow ungrounded responses**, and select **Save**.

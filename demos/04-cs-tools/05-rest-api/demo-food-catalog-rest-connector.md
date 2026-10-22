@@ -1,5 +1,7 @@
 # Give the Canteen Agent Live Stock from a REST API
 
+![The cs-food-catalog.json file becomes the CS-Food Catalog connector, three of whose seven operations become tools that CS-Food Stock Buddy uses to read live stock from food-catalog-api-dev and raise Schweinshaxe mit Kraut from 12 to 24 portions.](./_images/food-catalog-rest-connector-overview.svg)
+
 CS-Food Stock Buddy calculates the canteen's order from a sample stock table that never changes, so every order is wrong as soon as a delivery arrives. The food catalog API already knows the real stock, and its OpenAPI file describes everything it can do. In this demo you turn that file into the CS-Food Catalog custom connector, give the agent three tools from it, and replace the sample stock with the live list.
 
 What you practice here: turning an OpenAPI description into a custom connector, choosing which operations an agent may call, and writing tool descriptions the orchestrator routes on.

@@ -1,5 +1,7 @@
 # Build a Device Issue Topic with Custom Entities
 
+!["My notebook CT-104233 has a cracked screen" fills deviceType and assetTag at once through the Device type and Asset tag entities, so Report a device issue asks only for the email, while an invalid asset tag gets one retry and becomes unknown.](./_images/build-a-slot-filling-topic-overview.svg)
+
 When an employee reports a broken device, the service desk needs three facts every time: which device, its asset tag, and a contact address. Free text gives you "my notebook", "the dock", and "ct-104233" in every possible spelling, and a ticket built from that needs a person to clean it up. In this demo you build a classic topic that turns those messages into clean values, skips questions the user already answered, and decides what happens when an answer never becomes valid.
 
 What you practice here: collecting structured values in a topic with prebuilt and custom entities, proactive slot filling, and deliberate reprompt behavior.
@@ -15,7 +17,7 @@ Duration: about 40 minutes.
 
 ## Prerequisites
 
-- A Standard agent, such as Contoso IT Help Desk from the earlier demos, switched to classic orchestration: **Settings**, **Generative AI**, **Orchestration**, set **Use generative AI orchestration for your agent's responses?** to **No**, then **Save**. Classic orchestration triggers the topic from its phrases, which is what this demo shows.
+- A Standard agent, such as Grey Logistics IT Help Desk from the earlier demos, switched to classic orchestration: **Settings**, **Generative AI**, **Orchestration**, set **Use generative AI orchestration for your agent's responses?** to **No**, then **Save**. Classic orchestration triggers the topic from its phrases, which is what this demo shows.
 
 ## Exercise 1: Create the Device type closed list entity
 
@@ -113,7 +115,7 @@ Users rarely answer one question at a time. Proactive slot filling reads every e
 My notebook CT-104233 has a cracked screen
 ```
 
-3. Answer the email question with a test address such as `alex@contoso.com`.
+3. Answer the email question with a test address such as `alex@greylogistics.com`.
 
 Expected: the topic starts, the tracking view jumps straight to the email question, and the **Test** tab shows `deviceType` set to laptop (from the synonym "notebook") and `assetTag` set to CT-104233 before you answered anything. The recap message names all three values.
 

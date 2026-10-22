@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">CS-Compliance Agent collects, confirms, and only then calls CS-Social Profiler in Microsoft Foundry</title>
+  <desc id="d">CS-Compliance Agent runs on Claude Sonnet 4.6 and follows five instruction steps. 1, Initiate Interaction: it explains the purpose of the check and asks for the full name first. 2, Collect Data: one per turn, Jana Novak, jana.novak@example.com and Fabrikam Consulting, with the email format validated. 3, Confirm Details: it repeats all three in a table, and the user answers Yes, that's correct. 4, Prepare Data for Handoff: structured for the social research agent. 5, Run the Background Check: only after the user confirmed the details it calls CS-Social Profiler, the social-profiler agent in Microsoft Foundry on gpt-5.4-mini with Web search, which answers in five sections: Person, Company, Email domain check, Public sources, Notes for the compliance check. In a second run the email jana.novak(at)example fails at step 2: the agent says the format looks invalid, asks for a corrected address, and no CS-Social Profiler node appears. The animation steps through the confirmed run, then the run that stops.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      svg { font-size: 26px; }
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .h { font-size: 34px; font-weight: 700; text-anchor: middle; }
+      .hl { font-size: 34px; font-weight: 700; }
+      .t { font-size: 30px; font-weight: 600; }
+      .tc { font-size: 30px; font-weight: 600; text-anchor: middle; }
+      .s { font-size: 28px; fill: #57606a; }
+      .sc { font-size: 28px; fill: #57606a; text-anchor: middle; }
+      .b { font-size: 28px; }
+      .bc { font-size: 28px; text-anchor: middle; }
+      .bb { font-size: 28px; font-weight: 600; }
+      .bbc { font-size: 28px; font-weight: 600; text-anchor: middle; }
+      .code { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; }
+      .codec { font-family: Consolas, 'Courier New', monospace; font-size: 28px; font-weight: 700; text-anchor: middle; }
+      .mono { font-family: Consolas, 'Courier New', monospace; font-size: 26px; }
+      .monoc { font-family: Consolas, 'Courier New', monospace; font-size: 26px; text-anchor: middle; }
+      .num { font-size: 28px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .tag { font-size: 26px; font-weight: 600; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect x="60" y="50" width="1060" height="980" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="hl" x="100" y="112">CS-Compliance Agent</text>
+  <rect x="790" y="78" width="300" height="52" rx="26" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="tag" x="940" y="114">Claude Sonnet 4.6</text>
+  <rect x="100" y="160" width="980" height="150" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="150" cy="235" r="26" fill="#24292f"/>
+  <text class="num" x="150" y="245">1</text>
+  <text class="t" x="200" y="210">Initiate Interaction</text>
+  <text class="s" x="200" y="252">explains the purpose of the check,</text>
+  <text class="s" x="200" y="288">asks for the full name first</text>
+  <rect x="100" y="332" width="980" height="150" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="150" cy="407" r="26" fill="#24292f"/>
+  <text class="num" x="150" y="417">2</text>
+  <text class="t" x="200" y="382">Collect Data</text>
+  <rect x="100" y="504" width="980" height="150" rx="18" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+  <circle cx="150" cy="579" r="26" fill="#24292f"/>
+  <text class="num" x="150" y="589">3</text>
+  <text class="t" x="200" y="554">Confirm Details</text>
+  <text class="s" x="200" y="596">repeats all three in a table,</text>
+  <text class="s" x="200" y="632">“Yes, that's correct.”</text>
+  <rect x="100" y="676" width="980" height="150" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="150" cy="751" r="26" fill="#24292f"/>
+  <text class="num" x="150" y="761">4</text>
+  <text class="t" x="200" y="726">Prepare Data for Handoff</text>
+  <text class="s" x="200" y="768">structured for the social research agent</text>
+  <rect x="100" y="848" width="980" height="150" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="150" cy="923" r="26" fill="#24292f"/>
+  <text class="num" x="150" y="933">5</text>
+  <text class="t" x="200" y="898">Run the Background Check</text>
+  <text class="s" x="200" y="940">calls CS-Social Profiler only after</text>
+  <text class="s" x="200" y="976">the user confirmed the details</text>
+  <text class="s" x="410" y="382">one per turn, email format validated</text>
+  <rect x="200" y="408" width="170" height="50" rx="25" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bc" x="285" y="443">Jana Novak</text>
+  <rect x="386" y="408" width="350" height="50" rx="25" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="monoc" x="561" y="443">jana.novak@example.com</text>
+  <rect x="752" y="408" width="280" height="50" rx="25" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bc" x="892" y="443">Fabrikam Consulting</text>
+  <rect x="1220" y="300" width="640" height="230" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2" stroke-dasharray="12 10"/>
+  <text class="t" x="1250" y="346">Second run</text>
+  <text class="mono" x="1250" y="388">jana.novak(at)example</text>
+  <text class="b" x="1250" y="430">format looks invalid, asks for</text>
+  <text class="b" x="1250" y="466">a corrected address</text>
+  <text class="s" x="1250" y="504">no CS-Social Profiler node</text>
+  <line x1="1080" y1="407" x2="1220" y2="407" stroke="#57606a" stroke-width="3" fill="none" stroke-dasharray="12 8" marker-end="url(#ah)"/>
+  <rect x="1220" y="560" width="640" height="230" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1250" y="606">Five answer sections</text>
+  <text class="b" x="1250" y="648">Person, Company,</text>
+  <text class="b" x="1250" y="684">Email domain check,</text>
+  <text class="b" x="1250" y="720">Public sources,</text>
+  <text class="b" x="1250" y="756">Notes for the compliance check</text>
+  <rect x="1220" y="848" width="640" height="150" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1250" y="894">CS-Social Profiler</text>
+  <text class="s" x="1250" y="934">social-profiler in Microsoft Foundry</text>
+  <text class="s" x="1250" y="970">gpt-5.4-mini, Web search</text>
+  <line x1="1080" y1="923" x2="1220" y2="923" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <line x1="1540" y1="848" x2="1540" y2="792" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <rect x="100" y="160" width="980" height="150" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.075;0.0844;1" values="1;1;0;0"/>
+  </rect>
+  <rect x="100" y="332" width="980" height="150" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.075;0.0844;0.15;0.1594;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="100" y="504" width="980" height="150" rx="18" fill="none" stroke="#e0a534" stroke-width="8" opacity="0">
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.15;0.1625;0.1937;0.2188;0.2437;0.2688;0.275;1" values="0;0;1;0.3;1;0.3;1;0;0"/>
+  </rect>
+  <rect x="100" y="676" width="980" height="150" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.275;0.2844;0.3375;0.3469;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="100" y="848" width="980" height="150" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.3375;0.3469;0.4;0.4094;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="16s" repeatCount="indefinite" path="M1080,923 H1220" calcMode="linear" keyTimes="0;0.4;0.4375;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.4;0.4094;0.4437;0.4531;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1220" y="848" width="640" height="150" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.4375;0.4469;0.5125;0.5219;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="1220" y="560" width="640" height="230" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.5125;0.5219;0.625;0.6344;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="100" y="160" width="980" height="150" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.65;0.6594;0.7;0.7094;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="100" y="332" width="980" height="150" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.7;0.7094;0.775;0.7844;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="16s" repeatCount="indefinite" path="M1080,407 H1220" calcMode="linear" keyTimes="0;0.775;0.8125;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.775;0.7844;0.8187;0.8281;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1220" y="300" width="640" height="230" rx="18" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.8125;0.8219;0.9875;0.9969;1" values="0;0;1;1;0;0"/>
+  </rect>
+</svg>

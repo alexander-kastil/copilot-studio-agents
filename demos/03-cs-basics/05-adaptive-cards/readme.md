@@ -64,9 +64,10 @@ Submit buttons stay clickable after use, so a user can select a button on an ear
 
 Validate inside the card where you can, because it saves a round trip. Inputs support `isRequired`, a `regex` pattern, and an `errorMessage`, so most malformed values are caught before the user submits. Keep labels short, use `Input.ChoiceSet` wherever the set of answers is known, and stay within schema 1.5 when Teams is a channel. Treat these rules as hints, because some clients ignore `min` on a number input: check the value again in the topic after submit, as the demo does when it drops rows with a quantity of zero before the order.
 
-## Hands-On Demo
+## Hands-On Demos
 
-- [Collect a Software Request with an Adaptive Card](./demo-collect-input-with-a-card.md): the presenter builds a software request card from JSON, checks the generated variables, confirms the submission in a message, makes the card greet the user with Power Fx, and shows what happens when a user types a message while the card waits.
+- [Collect a Canteen Order Demand on an Adaptive Card](./demo-food-demand-card.md): the presenter builds CS-Food Stock Buddy with one card where the canteen manager types a number per dish, binds the nine typed outputs to variables, and keeps the demand in `Global.orderDemand` for the order calculation.
+- [Collect a Software Request with an Adaptive Card](./demo-collect-input-with-a-card.md) (optional): the presenter builds a software request card from JSON, checks the generated variables, confirms the submission in a message, makes the card greet the user with Power Fx, and shows what happens when a user types a message while the card waits.
 
 ## Hands-On Lab
 
