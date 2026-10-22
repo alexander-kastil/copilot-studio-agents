@@ -7,26 +7,27 @@ layout: content
 visual-weight: 1/2
 visual-type: photo
 media-source: nano-banana
+subject: people-talk
 media-file: demos/07-cs-maintaining/pptx/images/03-01-alm-three-environments.jpg
 visual-prompt: >
   ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych, no
-  collage. In a bright team area, a release lead and two makers, two women and one man in their late
-  twenties to mid thirties in modern work-casual clothes, stand in front of a large wall display showing
-  three soft blurred columns of shapes, the first two glowing mint green and the third turning green;
-  the release lead points at the third column, one maker holds an open laptop, all three smile. The
-  group and the display stand on the right half of the frame; the left half is a calm white wall with a
-  green plant. Modern, light, bright and friendly: high-key natural daylight, white and light-oak
-  contemporary interior, soft pastel accents in light blue, mint and lavender, green plants, 2020s
-  design. Screens show only soft blurred shapes and colours, never readable UI. 16:9 landscape,
-  contemporary editorial photography. Avoid: readable text, logos, watermarks, dark or moody lighting,
-  vintage or retro decor, grime, clutter, extra people, sticky notes with writing.
-order: 7
+  collage. In the bright Grey Logistics IT team room, a Power Platform maker and a solution architect,
+  a woman in her early thirties and a man in his late twenties in modern work-casual clothes, stand at
+  a white wall planning board with three columns of plain square sticky notes in light blue, lavender
+  and mint; she moves one lavender note into the mint column while he nods and smiles. The sticky notes
+  show only colour fields, with no letters, words or numbers anywhere. Modern, light, bright and
+  friendly: high-key natural daylight, soft pastel accents in light blue, mint and lavender, green
+  plants, 2020s design. 16:9 landscape, contemporary editorial photography. Avoid: readable text,
+  logos, watermarks, dark or moody lighting, vintage or retro decor, grime, clutter, extra people,
+  writing on the board.
+order: 8
 source: demos/07-cs-maintaining/03-alm-source-control/readme.md
 gamma_prompt: >
   Slide titled "ALM for Copilot Studio agents", subtitle "Development, test and production, always in
-  solutions". Five short bullets on the left half on plain white, the provided photograph of a release
-  lead and two makers in front of a wall display as a side accent on the right half. Use exactly the
-  one image given for this card; do not generate or add any other images, icons or logos.
+  solutions". Five short bullets on the left half on plain white, the provided photograph of a maker
+  and a solution architect moving a note across a three-column planning board as a side accent on the
+  right half. Use exactly the one image given for this card; do not generate or add any other images,
+  icons or logos.
 ---
 
 # ALM for Copilot Studio agents

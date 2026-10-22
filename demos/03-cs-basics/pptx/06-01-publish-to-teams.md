@@ -5,31 +5,19 @@ title: "Publishing to channels"
 subtitle: "From the agent editor to a chat in Microsoft Teams"
 layout: diagram
 visual-weight: 1/2
-visual-type: photo
+visual-type: svg
 media-source: opus-svg
 media-file: demos/03-cs-basics/pptx/images/06-01-publish-to-teams.svg
-visual-prompt: >
-  Hand-written SVG, viewBox 0 0 1920 1080, white background, Segoe UI, Helvetica, Arial, sans-serif,
-  borders #8c959f 2px, text #24292f and #57606a, minimum 28px type, no heading inside the image, no
-  arrow crossing a box or a label. U-shaped sequence of five stages. Top row left to right: grey
-  #f6f8fa "Agent editor" (edits stay in the editor until you publish), arrow "Publish", blue #eaf2ff
-  "Published" (registered in the Power Platform environment, not in a channel yet), arrow "Channels",
-  green #e9f7ef "Teams + Microsoft 365" (channel added on the Channels tab). Down arrow to green
-  "Availability options" with three rows: Copy link (amber #fff6e5, highlighted), Download a ZIP
-  package, Teams app store. Arrow "Copy link" left to a blue "Microsoft Teams" box (paste the link,
-  Add, then Open) holding a user bubble "How can we hire new people in our company?" and an agent
-  bubble "AI generated", "HR answer with references to the documents". Animated with SMIL, 10 second
-  loop: the stages light up in order while an amber dot travels each arrow. Complete and readable at t=0.
-order: 5
-source: demos/03-cs-basics/readme.md
+order: 17
+source: demos/03-cs-basics/06-publishing/readme.md
 gamma_prompt: >
   Slide titled "Publishing to channels", subtitle "From the agent editor to a chat in Microsoft Teams".
-  Layout: Two columns. Left column: four short bullets on publishing, channels, availability options
-  and default authentication. Right column, wider than the left: the provided diagram of five stages
-  from the agent editor through publish, the Teams + Microsoft 365 channel and the availability options
-  to a chat in Microsoft Teams, as an inline content image at its natural 16:9 aspect ratio, never
-  cropped, never used as a background or side accent. Use exactly the one image given for this card;
-  do not generate or add any other images, icons or logos.
+  Layout: Two columns. Left column: four short bullets on publishing, the channel, availability options
+  and authentication. Right column, wider than the left: the provided diagram of five stages from the
+  agent editor through publish, the Teams + Microsoft 365 channel and the availability options to a chat
+  in Microsoft Teams, as an inline content image at its natural 16:9 aspect ratio, never cropped, never
+  used as a background or side accent. Use exactly the one image given for this card; do not generate or
+  add any other images, icons or logos.
   Theme: Integrations House (themeId idege54tfobdv2k), Montserrat bold headings, Poppins body, #1B365D accent.
 ---
 
@@ -37,19 +25,19 @@ gamma_prompt: >
 
 ## Content
 
-- **Publish** makes your edits go live and registers the agent in its environment
-- A **channel** brings it to users: Teams, Microsoft 365 Copilot or a custom website
-- Share it from the availability options by link, ZIP package or the **Teams app store**
-- Default Microsoft authentication allows Teams, Microsoft 365 Copilot and SharePoint
+- **Publish** copies the draft to every channel the agent is connected to
+- The **Microsoft 365 and Microsoft Teams** channel is added after the first publish
+- **Availability options** decide who finds the agent: link, shared users, the org, or a .zip
+- **Authenticate with Microsoft** opens Teams, Microsoft 365 Copilot and SharePoint
 
 ## Speaker Notes
 
-The last step of the basics puts the agent where colleagues already work. Walk the diagram from the editor to the Teams chat.
+An agent that only answers in the test panel helps nobody. Walk the diagram from the editor to the Teams chat.
 
-Publish: publishing is what makes edits go live, and it registers the agent in the Power Platform environment. On its own it does not make the agent available in any channel yet.
+Publish: selecting Publish copies the current draft to every connected channel, which can take a few minutes. Until you publish again, edits stay in the draft and users keep the old behavior.
 
-Channel: on the Channels tab you add a target such as Teams + Microsoft 365. The teaching names Microsoft Teams, Microsoft 365 Copilot and a custom website as typical channels.
+Channel: after the first publish, open Channels and the Microsoft 365 and Microsoft Teams tile. Keep Make agent available in Microsoft 365 Copilot selected, so one channel serves Teams and Copilot Chat.
 
-Availability options: copy a link to open the agent in Teams, download a ZIP package for the Teams app store, or make it available there for the whole organization or selected users. The lab uses the link, then Add and Open in Teams.
+Availability options: a share link needs no approval, Show to my teammates and shared users lists the agent in the Built with Power Platform section, and Show to everyone in my org needs an administrator to approve. The app can also be downloaded as a .zip.
 
-Authentication: with the default Microsoft authentication the agent relies on Microsoft Entra ID. That limits it to the Teams and Microsoft 365 Copilot and SharePoint channels.
+Authentication: new agents use Authenticate with Microsoft, which signs users in with Microsoft Entra ID in Teams, Power Apps and Microsoft 365 Copilot with no setup. It is also what SharePoint and Dataverse knowledge need to apply each user's permissions.

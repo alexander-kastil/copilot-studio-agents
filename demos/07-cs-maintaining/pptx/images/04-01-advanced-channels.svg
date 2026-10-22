@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Choosing an advanced channel</title>
+  <desc id="d">Four advanced channels compared. Demo website: for testing with teammates and stakeholders, no authentication, never share the URL with customers. Live website with the embed code or the Web Chat sample: a public help agent on your site, no authentication for the embed code, turn on secured access and use tokens. Mobile or custom app over Direct Line: an agent inside your own app, the secret on the server and a token in the client, needs developer work and token refresh. WhatsApp: existing connections to customers on WhatsApp, no authentication or manual, no new connections after October 23, 2026, with card and file limits.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <style>
+    svg { font-size: 27px; }
+    text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+    .r { font-size: 30px; font-weight: 600; fill: #57606a; }
+    .b { font-size: 32px; font-weight: 600; }
+    .t { font-size: 27px; }
+    .s { font-size: 26px; fill: #57606a; }
+  </style>
+  <text class="r" x="60" y="409">Use it for</text>
+  <text class="r" x="60" y="609">Authentication</text>
+  <text class="r" x="60" y="839">Watch out for</text>
+  <rect x="320" y="120" width="376" height="170" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="344" y="190">Demo website</text>
+  <text class="s" x="344" y="232">Prebuilt, for testing</text>
+  <rect x="320" y="310" width="376" height="180" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="344" y="390">Testing with teammates</text>
+  <text class="t" x="344" y="428">and stakeholders</text>
+  <rect x="320" y="510" width="376" height="180" rx="14" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="t" x="344" y="609">No authentication</text>
+  <rect x="320" y="710" width="376" height="240" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="344" y="820">Never share the URL</text>
+  <text class="t" x="344" y="858">with customers</text>
+  <rect x="708" y="120" width="376" height="170" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="732" y="190">Live website</text>
+  <text class="s" x="732" y="232">Embed or Web Chat sample</text>
+  <rect x="708" y="310" width="376" height="180" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="732" y="390">A public help agent</text>
+  <text class="t" x="732" y="428">on your site</text>
+  <rect x="708" y="510" width="376" height="180" rx="14" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="t" x="732" y="590">No authentication</text>
+  <text class="t" x="732" y="628">for the embed code</text>
+  <rect x="708" y="710" width="376" height="240" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="732" y="820">Turn on secured access</text>
+  <text class="t" x="732" y="858">and use tokens</text>
+  <rect x="1096" y="120" width="376" height="170" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="1120" y="190">Mobile or custom app</text>
+  <text class="s" x="1120" y="232">Direct Line</text>
+  <rect x="1096" y="310" width="376" height="180" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1120" y="390">An agent inside</text>
+  <text class="t" x="1120" y="428">your own app</text>
+  <rect x="1096" y="510" width="376" height="180" rx="14" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1120" y="590">Secret on the server,</text>
+  <text class="t" x="1120" y="628">token in the client</text>
+  <rect x="1096" y="710" width="376" height="240" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1120" y="820">Needs developer work;</text>
+  <text class="t" x="1120" y="858">refresh tokens</text>
+  <rect x="1484" y="120" width="376" height="170" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="1508" y="190">WhatsApp</text>
+  <text class="s" x="1508" y="232">QR code opens the chat</text>
+  <rect x="1484" y="310" width="376" height="180" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1508" y="390">Existing connections to</text>
+  <text class="t" x="1508" y="428">customers on WhatsApp</text>
+  <rect x="1484" y="510" width="376" height="180" rx="14" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="t" x="1508" y="590">No authentication</text>
+  <text class="t" x="1508" y="628">or manual</text>
+  <rect x="1484" y="710" width="376" height="240" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1508" y="801">No new connections</text>
+  <text class="t" x="1508" y="839">after October 23, 2026;</text>
+  <text class="t" x="1508" y="877">card and file limits</text>
+</svg>

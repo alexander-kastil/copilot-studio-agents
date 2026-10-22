@@ -2,53 +2,42 @@
 slide: "02-02"
 topic: 02-publishing-channels
 title: "Authentication and channel choice"
-subtitle: "What turns a working agent into a safely shared one"
-layout: content
+subtitle: "The Channels page of a published agent"
+layout: diagram
 visual-weight: 1/2
-visual-type: photo
-media-source: nano-banana
-media-file: demos/07-cs-maintaining/pptx/images/02-02-authentication-channels.jpg
+visual-type: screenshot
+media-source: existing
+media-file: demos/07-cs-maintaining/pptx/images/02-02-channels-authentication.png
+photo-link: demos/07-cs-maintaining/pptx/images/02-02-channels-authentication.png
 visual-prompt: >
-  ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych, no
-  collage. In a bright glass-walled meeting room, a Power Platform maker and an IT security colleague,
-  a man and a woman in their early thirties in modern work-casual clothes, sit at a round white table
-  and agree on how the agent will be shared: the maker holds a smartphone in one hand and points at an
-  open laptop with the other, the colleague nods and smiles. The two people sit on the right half of
-  the frame; the left half shows the clear glass wall and soft daylight beyond it. Modern, light, bright
-  and friendly: high-key natural daylight, white and light-oak contemporary interior, soft pastel
-  accents in light blue, mint and lavender, green plants, 2020s design. Screens show only soft blurred
-  shapes and colours, never readable UI. 16:9 landscape, contemporary editorial photography. Avoid:
-  readable text, logos, watermarks, dark or moody lighting, vintage or retro decor, grime, clutter,
-  extra people, writing on the glass.
+  Screenshot (pool 05-01-033, native crop 834x417): the Channels page of the published CS-HR Buddy
+  with the Microsoft authentication banner, the published status and the channel tiles.
 order: 6
 source: demos/07-cs-maintaining/02-publishing-channels/readme.md
 gamma_prompt: >
-  Slide titled "Authentication and channel choice", subtitle "What turns a working agent into a safely
-  shared one". Five short bullets on the left half on plain white, the provided photograph of a maker
-  and a security colleague in a glass meeting room as a side accent on the right half. Use exactly the
-  one image given for this card; do not generate or add any other images, icons or logos.
+  Slide titled "Authentication and channel choice", subtitle "The Channels page of a published agent".
+  Left: four bullets. Right, wider: the provided screenshot of the Copilot Studio Channels page with
+  its authentication banner and channel tiles, never cropped. Use exactly the one image given for this
+  card; do not generate or add any other images, icons or logos.
 ---
 
 # Authentication and channel choice
 
 ## Content
 
-- **Authenticate with Microsoft** (Entra ID) is the default
-- **Manual authentication** and **No authentication** are the other two options
+- **Published agent status** shows who published and when
+- With **Microsoft authentication**, only Teams and Microsoft 365 and SharePoint are available
+- Other channels need **manual** or **No authentication**
 - No authentication lets anyone with the link chat and blocks tools that rely on **user credentials**
-- Each channel has its own **connection steps** and its own availability
-- Some channels differ between **Standard** and **GitHub Copilot** agents
 
 ## Speaker Notes
 
-The authentication model is chosen at publish time, and it is not cosmetic. Together with the channel choice, it decides whether a working agent is also a safely shared one.
+This is the Channels page of CS-HR Buddy right after its publish in the module 3 demo. It shows how the authentication choice decides which channels you can connect.
 
-Authenticate with Microsoft: Entra ID is the default model, selected unless you change it.
+Published agent status: the page names who published the live version and when. Nothing appears in a channel before that first publish.
 
-Manual and No authentication: these are the two alternatives. No authentication comes with a caution for open access.
+Microsoft authentication: the banner says it plainly, only Teams and Microsoft 365 and SharePoint channels are available. That is the right setting for an internal HR agent whose users always sign in.
 
-No authentication: anyone with the link can chat with the agent, and tools that rely on user credentials are blocked.
+Other channels: the tiles with the corner mark need manual authentication or No authentication. Each channel has its own connection steps, and some differ between Standard and GitHub Copilot agents.
 
-Connection steps: each channel has its own steps to connect and its own availability. Check them per channel before you promise a channel to users.
-
-Standard and GitHub Copilot agents: some channels differ between the two agent types, so the steps you see depend on which one the agent uses.
+No authentication: anyone with the link can chat with the agent, and tools that rely on user credentials stop working. Choose it only for an agent that is meant to be open.

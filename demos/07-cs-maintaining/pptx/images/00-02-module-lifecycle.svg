@@ -1,8 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
-  <title id="t">The lifecycle of a Copilot Studio agent, mapped to the four topics</title>
-  <desc id="d">Topic 1, environments and solutions: development where makers build, test where changes are validated and production where agents reach real users, each with Dataverse holding a solution that carries the agent and its components. Topic 3: deployment pipelines move the solution from development to test to production. Topic 2: production publishes the agent to the channels where people work, such as Microsoft Teams, SharePoint, WhatsApp, websites and custom apps. Topic 4: governance runs across all of it with environment-level data loss prevention, Microsoft Purview compliance and admin controls that stop agents multiplying unchecked.</desc>
+  <title id="t">The lifecycle of a Copilot Studio agent, mapped to the five topics</title>
+  <desc id="d">Topic 1, environments and solutions: development where makers build, test where changes are validated and production where agents reach real users, each with Dataverse holding a solution that carries the agent and its components. Topic 3: deployment pipelines move the solution from development to test to production. Production publishes the agent to the channels where people work: topic 2 covers the Microsoft channels Microsoft Teams, Microsoft 365 Copilot and SharePoint, topic 4 the advanced channels websites, Direct Line and WhatsApp. Topic 5: a coding agent with the copilot-studio and mcs-assistant plugins clones the agent from development and pushes it back as .mcs.yml files.</desc>
   <rect width="1920" height="1080" fill="#ffffff"/>
   <style>
+    svg { font-size: 28px; }
     text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
     .h { font-size: 36px; font-weight: 600; }
     .b { font-size: 30px; font-weight: 600; }
@@ -21,9 +22,7 @@
   <text class="b" x="160" y="105">Environments and solutions</text>
   <path d="M 80 146 V 132 H 1260 V 146" fill="none" stroke="#8c959f" stroke-width="2"/>
 
-  <rect x="1400" y="72" width="64" height="44" rx="22" fill="#24292f"/>
-  <text class="n" x="1432" y="104" text-anchor="middle">02</text>
-  <text class="b" x="1480" y="105">Publishing to channels</text>
+  <text class="b" x="1400" y="105">Publishing to channels</text>
   <path d="M 1400 146 V 132 H 1840 V 146" fill="none" stroke="#8c959f" stroke-width="2"/>
 
   <rect x="80" y="150" width="360" height="410" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
@@ -77,33 +76,46 @@
   <text class="s" x="1330" y="335" text-anchor="middle">Publish</text>
   <line x1="1262" y1="355" x2="1394" y2="355" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
 
-  <rect x="1400" y="150" width="440" height="410" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2">
+  <rect x="1400" y="150" width="440" height="552" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2">
     <animate attributeName="stroke-width" values="2;6" keyTimes="0;0.85" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
   </rect>
-  <text class="h" x="1430" y="205">Channels</text>
-  <text class="s" x="1430" y="245">where people work</text>
-  <rect x="1430" y="275" width="380" height="58" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
-  <text class="t" x="1455" y="314">Microsoft Teams</text>
-  <rect x="1430" y="345" width="380" height="58" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
-  <text class="t" x="1455" y="384">SharePoint</text>
-  <rect x="1430" y="415" width="380" height="58" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
-  <text class="t" x="1455" y="454">WhatsApp</text>
-  <rect x="1430" y="485" width="380" height="58" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
-  <text class="t" x="1455" y="524">Websites and custom apps</text>
+  <text class="h" x="1430" y="200">Channels</text>
+  <text class="s" x="1430" y="238">where people work</text>
 
-  <rect x="80" y="710" width="1760" height="300" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
-  <rect x="120" y="738" width="64" height="44" rx="22" fill="#24292f"/>
-  <text class="n" x="152" y="770" text-anchor="middle">04</text>
-  <text class="h" x="204" y="772">Governance runs across all of it</text>
-  <rect x="120" y="808" width="533" height="166" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
-  <text class="t" x="386" y="882" text-anchor="middle">Environment-level</text>
-  <text class="t" x="386" y="922" text-anchor="middle">data loss prevention</text>
-  <rect x="693" y="808" width="533" height="166" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
-  <text class="t" x="960" y="882" text-anchor="middle">Microsoft Purview</text>
-  <text class="t" x="960" y="922" text-anchor="middle">compliance</text>
-  <rect x="1266" y="808" width="533" height="166" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
-  <text class="t" x="1532" y="882" text-anchor="middle">Admin controls that stop</text>
-  <text class="t" x="1532" y="922" text-anchor="middle">agents multiplying unchecked</text>
+  <rect x="1430" y="262" width="60" height="38" rx="19" fill="#24292f"/>
+  <text class="n" x="1460" y="291" text-anchor="middle">02</text>
+  <text class="b" x="1504" y="292">Microsoft channels</text>
+  <rect x="1430" y="312" width="380" height="54" rx="10" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1455" y="349">Microsoft Teams</text>
+  <rect x="1430" y="376" width="380" height="54" rx="10" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1455" y="413">Microsoft 365 Copilot</text>
+  <rect x="1430" y="440" width="380" height="54" rx="10" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1455" y="477">SharePoint</text>
+
+  <rect x="1430" y="514" width="60" height="38" rx="19" fill="#24292f"/>
+  <text class="n" x="1460" y="543" text-anchor="middle">04</text>
+  <text class="b" x="1504" y="544">Advanced channels</text>
+  <rect x="1430" y="564" width="380" height="54" rx="10" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1455" y="601">Websites and Direct Line</text>
+  <rect x="1430" y="628" width="380" height="54" rx="10" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1455" y="665">WhatsApp</text>
+
+  <line x1="170" y1="742" x2="170" y2="566" stroke="#57606a" stroke-width="3" marker-start="url(#ah)" marker-end="url(#ah)"/>
+  <text class="s" x="192" y="690">clone, push</text>
+
+  <rect x="80" y="748" width="1760" height="282" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="120" y="772" width="64" height="44" rx="22" fill="#24292f"/>
+  <text class="n" x="152" y="804" text-anchor="middle">05</text>
+  <text class="h" x="204" y="806">Agentic building from the terminal</text>
+  <rect x="120" y="840" width="533" height="150" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="386" y="905" text-anchor="middle">copilot-studio plugin</text>
+  <text class="s" x="386" y="945" text-anchor="middle">Standard agents</text>
+  <rect x="693" y="840" width="533" height="150" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="960" y="905" text-anchor="middle">mcs-assistant plugin</text>
+  <text class="s" x="960" y="945" text-anchor="middle">GitHub Copilot agents, migration</text>
+  <rect x="1266" y="840" width="533" height="150" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="1532" y="905" text-anchor="middle">The agent as .mcs.yml files</text>
+  <text class="s" x="1532" y="945" text-anchor="middle">clone, validate, pull, push</text>
 
   <circle cx="0" cy="0" r="14" fill="#e0a534" opacity="0">
     <animateMotion path="M 260 566 V 610 H 620 V 572" keyPoints="0;0;1;1" keyTimes="0;0.125;0.3125;1" calcMode="linear" dur="8s" repeatCount="indefinite"/>

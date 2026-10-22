@@ -1,51 +1,39 @@
 ---
 slide: "01-02"
 topic: 01-environments-solutions
-title: "Custom solutions"
-subtitle: "Set your preferred solution before you build"
-layout: content
-visual-weight: 1/2
-visual-type: photo
-media-source: nano-banana
-media-file: demos/07-cs-maintaining/pptx/images/01-02-custom-solutions.jpg
-visual-prompt: >
-  ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych, no
-  collage. At a shared light-oak desk beside a large bright window, two Power Platform makers in their
-  late twenties, a woman and a man in modern work-casual clothes, sit side by side setting up a new
-  project before they start building: the woman types on an open laptop while the man points at its
-  screen and smiles, a notebook with blank pages and a coffee cup on the desk. The two people sit on the
-  right half of the frame; the left half is soft window light and a green plant. Modern, light, bright
-  and friendly: high-key natural daylight, white and light-oak contemporary interior, soft pastel
-  accents in light blue, mint and lavender, green plants, 2020s design. Screens show only soft blurred
-  shapes and colours, never readable UI. 16:9 landscape, contemporary editorial photography. Avoid:
-  readable text, logos, watermarks, dark or moody lighting, vintage or retro decor, grime, clutter,
-  extra people, writing in the notebook.
+title: "Unmanaged developer environments"
+subtitle: "Creation ends November 15, 2026; suspension follows on December 15"
+layout: diagram-full
+visual-weight: full
+visual-type: svg
+media-source: opus-svg
+media-file: demos/07-cs-maintaining/pptx/images/01-02-developer-environments.svg
 order: 4
 source: demos/07-cs-maintaining/01-environments-solutions/readme.md
 gamma_prompt: >
-  Slide titled "Custom solutions", subtitle "Set your preferred solution before you build". Four short
-  bullets on the left half on plain white, the provided photograph of two makers setting up a project
-  at a window desk as a side accent on the right half. Use exactly the one image given for this card;
-  do not generate or add any other images, icons or logos.
+  Slide titled "Unmanaged developer environments", subtitle "Creation ends November 15, 2026;
+  suspension follows on December 15". The provided diagram across the full card width: a three-date
+  timeline above two lanes of actions for admins and makers and a strip of environments that are not
+  affected, with one caption line below. Use exactly the one image given for this card; do not
+  generate or add any other images, icons or logos.
 ---
 
-# Custom solutions
+# Unmanaged developer environments
 
 ## Content
 
-- New agents land in the **default solution** automatically, fine for a quick build
-- Create a **custom solution** for anything you plan to promote
-- Set it as your **preferred solution** so new components are captured as you build
-- Give it a **custom publisher and prefix**
+- Export your solutions or move to a **managed environment** before December 15, 2026
 
 ## Speaker Notes
 
-The previous slide showed where an agent lives. This one is about the solution it lands in, and why that choice is made before the first component exists.
+Microsoft is retiring unmanaged developer environments, including the ones the free Power Apps Developer Plan creates on sign-up. The developer type stays, but only as a managed environment, one per user.
 
-Default solution: agents created in Copilot Studio land there automatically. That is fine for a quick build, but not for anything you plan to promote.
+The dates: creation of unmanaged developer environments ends on November 15, 2026. Suspension starts on December 15, 2026, and deletion of suspended environments on January 15, 2027.
 
-Custom solution: to export, import and manage agents across environments, you create a custom solution of your own.
+Admins: they filter Manage, Environments to Type Developer and Managed No and use Last activity to spot the ones in use. For each one still needed they enable Managed Environments, which needs premium licensing, or move its solutions to a sandbox.
 
-Preferred solution: set the custom solution as your preferred solution, so every new component is captured in it as you build. Getting this right early is what makes clean deployments possible later.
+Default environment routing: admins turn it on so every maker gets a managed developer environment of their own.
 
-Custom publisher and prefix: create the custom solution with a publisher and prefix of your own. Managed versus unmanaged is the other solution choice; it comes back when you import in the ALM topic.
+Makers: export the solutions from your developer environment before December 15, 2026. This is one more reason to build in a custom solution from the start, and a standard trial environment still lets you try premium capabilities.
+
+Not affected: managed developer environments, including the routed ones, and production, sandbox, trial and default environments.

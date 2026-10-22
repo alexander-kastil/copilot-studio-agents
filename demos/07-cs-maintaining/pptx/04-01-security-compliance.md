@@ -1,55 +1,38 @@
 ---
 slide: "04-01"
-topic: 04-governance-compliance
-title: "Security and compliance controls"
-subtitle: "Guardrails on what agents can see and do"
-layout: content
-visual-weight: 1/2
-visual-type: photo
-media-source: nano-banana
-media-file: demos/07-cs-maintaining/pptx/images/04-01-security-compliance.jpg
-visual-prompt: >
-  ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych, no
-  collage. In a bright operations corner with a long white desk and two large monitors, a Power
-  Platform admin and a compliance officer, a woman and a man in their early thirties in modern
-  work-casual clothes, review policy settings together: the admin sits and works the keyboard while the
-  compliance officer stands beside her holding a blank tablet and points at one of the monitors, both
-  relaxed and smiling. The two people and the monitors are on the right half of the frame; the left half
-  is a bright white wall and a tall green plant. Modern, light, bright and friendly: high-key natural
-  daylight, white and light-oak contemporary interior, soft pastel accents in light blue, mint and
-  lavender, green plants, 2020s design. Screens show only soft blurred shapes and colours, never
-  readable UI. 16:9 landscape, contemporary editorial photography. Avoid: readable text, logos,
-  watermarks, dark or moody lighting, vintage or retro decor, grime, clutter, extra people, text on the
-  tablet, badges or lanyards with text.
-order: 9
-source: demos/07-cs-maintaining/04-governance-compliance/readme.md
+topic: 04-advanced-channels
+title: "Choosing an advanced channel"
+subtitle: "Reach beyond Microsoft 365, with its own sign-in limits"
+layout: diagram-full
+visual-weight: full
+visual-type: svg
+media-source: opus-svg
+media-file: demos/07-cs-maintaining/pptx/images/04-01-advanced-channels.svg
+order: 10
+source: demos/07-cs-maintaining/04-advanced-channels/readme.md
 gamma_prompt: >
-  Slide titled "Security and compliance controls", subtitle "Guardrails on what agents can see and do".
-  Five short bullets on the left half on plain white, the provided photograph of an admin and a
-  compliance officer reviewing settings at two monitors as a side accent on the right half. Use exactly
-  the one image given for this card; do not generate or add any other images, icons or logos.
+  Slide titled "Choosing an advanced channel", subtitle "Reach beyond Microsoft 365, with its own
+  sign-in limits". The provided comparison diagram of four channels across the full card width, rows
+  for use, authentication and what to watch, with one caption line below. Use exactly the one image
+  given for this card; do not generate or add any other images, icons or logos.
 ---
 
-# Security and compliance controls
+# Choosing an advanced channel
 
 ## Content
 
-- **Copilot Studio settings** at tenant, environment and agent level
-- **Geographic data residency**
-- **Data loss prevention** and connector governance limit which systems an agent can reach
-- **Microsoft Purview**: sensitivity labels that agents respect, and unified audit logs
-- **DLP for Microsoft 365 Copilot** and retention policies
+- Advanced channels are **Standard-agent** channels and trade Microsoft sign-in for reach
 
 ## Speaker Notes
 
-Every agent that connects to enterprise data is a new surface for oversharing and compliance risk. This slide lists the guardrails that limit what agents can see and do.
+This optional topic is for agents that must reach people outside Microsoft 365: on a public website, inside your own app or on a phone messenger. Each channel brings its own authentication limits.
 
-Copilot Studio settings: compliance and security settings exist at three levels, the tenant, the environment and the individual agent.
+Demo website: every published agent gets one for testing with teammates and stakeholders. Learn is explicit that its URL never goes to customers.
 
-Geographic data residency: it sits with the Copilot Studio compliance and security settings.
+Live website: the embed code on the Web channel only appears with No authentication, because an anonymous visitor cannot sign in. Turn on secured access and use tokens.
 
-Data loss prevention and connector governance: environment-level DLP and connector rules limit which systems an agent can reach.
+Mobile or custom app: the app talks to the agent over the Direct Line API. That is developer work, with the secret on the server and a token in the client.
 
-Microsoft Purview: agents respect sensitivity labels, and unified audit logs record what happened.
+WhatsApp: it runs through Azure Communication Services and accepts only No authentication or manual authentication. Agents connected before October 23, 2026 keep working; no new connection can be set up after that date.
 
-DLP for Microsoft 365 Copilot and retention: Purview adds DLP for Microsoft 365 Copilot and retention policies on top.
+Agent types: everything here applies to Standard agents. GitHub Copilot agents publish to Microsoft 365, Teams and a website today.

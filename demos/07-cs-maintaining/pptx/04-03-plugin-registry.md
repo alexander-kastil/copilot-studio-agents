@@ -1,50 +1,44 @@
 ---
 slide: "04-03"
-topic: 04-governance-compliance
-title: "The plugin registry"
-subtitle: "One place to discover, publish and govern plugins"
-layout: diagram
-visual-weight: 1/2
+topic: 04-advanced-channels
+title: "The demo website"
+subtitle: "For testing with teammates, never for customers"
+layout: statement
+visual-weight: 1/3
 visual-type: photo
-media-source: opus-svg
-media-file: demos/07-cs-maintaining/pptx/images/04-03-plugin-registry.svg
+media-source: nano-banana
+subject: people-at-work
+media-file: demos/07-cs-maintaining/pptx/images/04-03-demo-website.jpg
 visual-prompt: >
-  Hand-written SVG, viewBox 0 0 1920 1080, white background, Segoe UI, 2px #8c959f borders, text
-  #24292f and #57606a, pastel fills, no heading inside the image, minimum 28px type. Top: a grey band
-  "Plugins from every publisher" holding a row of six simple plugin tokens (rounded squares, each
-  with a small puzzle-piece mark). Below, left: a white box "Publisher categories" with three purple
-  tiles, Microsoft, Your organization, Certified external publishers. Centre: a blue box "Tools
-  registry" (Agents > Tools > Registry; One inventory of plugins, skills, MCP servers and connectors).
-  Right: a white box "User access" with three green tiles, Per-plugin user scope, Request access,
-  Block. Bottom, across the full width: a grey-blue strip "Agent 365 Tooling Gateway" with the caption
-  "Tool toggles enforced at runtime". Arrows: the band down to the publisher box and down to the
-  registry, the publisher box to the registry, the registry to the user access box, the user access
-  box down to the gateway strip. SMIL animation, 8 s loop: a dot runs publisher categories, registry,
-  user access and then the gateway, each box highlighting as it arrives.
-order: 11
-source: demos/07-cs-maintaining/04-governance-compliance/readme.md
+  ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych, no
+  collage. At a white standing desk by a tall window in the bright Grey Logistics IT team room, a Power
+  Platform maker in his early thirties turns a plain laptop with no logo on its lid toward a colleague
+  from the IT help desk team, a woman in her late twenties in modern work-casual clothes, who types a
+  test question into it; its display faces the camera and glows with a soft blur of chat bubbles in
+  light blue and white, and both smile. Modern, light, bright and friendly: high-key natural daylight,
+  white and light-oak contemporary interior, soft pastel accents in light blue, mint and lavender,
+  green plants, 2020s design. Screens show only soft blurred shapes and colours, never readable UI.
+  16:9 landscape, contemporary editorial photography. Avoid: readable text, logos, watermarks, dark or
+  moody lighting, vintage or retro decor, grime, clutter, extra people, rear of the laptop.
+order: 12
+source: demos/07-cs-maintaining/04-advanced-channels/readme.md
 gamma_prompt: >
-  Slide titled "The plugin registry", subtitle "One place to discover, publish and govern plugins".
-  Left: three bullets. Right, wider: the provided diagram of plugins from every publisher passing
-  publisher categories into the tools registry, then per-plugin user access, with the Agent 365 Tooling
-  Gateway enforcing tool toggles at runtime. Use exactly the one image given for this card; do not
-  generate or add any other images, icons or logos.
+  Slide titled "The demo website", subtitle "For testing with teammates, never for customers". One
+  large statement sentence across the left two thirds, the provided photograph of a maker and a help
+  desk colleague testing the agent on a laptop as a side accent in the right third. Use exactly the one
+  image given for this card; do not generate or add any other images, icons or logos.
 ---
 
-# The plugin registry
+# The demo website
 
 ## Content
 
-- The **tools registry** inventories plugins, skills, MCP servers and connectors; the **agent registry** inventories agents
-- **Agent and plugin access** limits which publisher categories a plugin can come from, and each plugin has its own **user scope**
-- Admins **approve access requests**, **block** plugins and MCP servers, and toggle **individual tools** through the Agent 365 Tooling Gateway
+- Share the **demo website** with teammates to test each change, and keep its URL away from customers
 
 ## Speaker Notes
 
-Agents are only part of what Copilot uses. Plugins package skills, connectors, agents and MCP server settings, and the plugin registry is where a tenant governs them.
+Every published agent gets a prebuilt demo website, and it exists for testing. This slide keeps it in that role.
 
-Publisher categories and user scope: Agent and plugin access in the admin center sets which publisher categories a plugin can come from. Each plugin then has its own user scope, so a plugin can reach all users, no users, or specific users and groups.
+Testing with teammates: on the Demo website panel under Channels you set a welcome message and a few conversation starters, share the URL with teammates, and change the message whenever you want them to test something new.
 
-Requests and blocks: a user who needs a plugin selects Request access, and an admin approves or rejects it under Tools, Requests. Blocking a plugin also blocks the agents it includes, and blocking an MCP server disables all of its tools.
-
-Tool toggles: for MCP servers registered in Agent 365, an admin turns each tool on or off, and the Agent 365 Tooling Gateway enforces that setting at runtime.
+Never for customers: Learn is explicit that the demo site is not for production and that its URL never goes to customers. A live website embeds the agent with the Web channel's code or the Web Chat sample instead.

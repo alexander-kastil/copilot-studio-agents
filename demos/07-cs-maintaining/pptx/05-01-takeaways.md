@@ -1,49 +1,43 @@
 ---
 slide: "05-01"
-topic: 07-cs-maintaining
-title: "Takeaways"
-subtitle: "From a personal sandbox to production"
-layout: content
+topic: 05-agentic-building
+title: "Copilot Studio plugins for coding agents"
+subtitle: "One plugin per agent type, one active at a time"
+layout: split-code
 visual-weight: 1/2
-visual-type: photo
-media-source: nano-banana
-media-file: demos/07-cs-maintaining/pptx/images/05-01-takeaways.jpg
-visual-prompt: >
-  ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych, no
-  collage. In a bright office lounge with light sofas and a low light-oak coffee table, a small team of
-  four, two women and two men in their late twenties to mid thirties in modern work-casual clothes,
-  gather around an open laptop on the table that shows soft blurred chat bubbles; one colleague types a
-  question to the agent while the others lean in and smile, coffee cups in hand. The group sits on the
-  right half of the frame; the left half is a bright window wall with green plants. Modern, light,
-  bright and friendly: high-key natural daylight, white and light-oak contemporary interior, soft pastel
-  accents in light blue, mint and lavender, green plants, 2020s design. Screens show only soft blurred
-  shapes and colours, never readable UI. 16:9 landscape, contemporary editorial photography. Avoid:
-  readable text, logos, watermarks, dark or moody lighting, vintage or retro decor, grime, clutter,
-  extra people, printed cups or cushions with text.
-order: 9
-source: demos/07-cs-maintaining/readme.md
+visual-type: svg
+media-source: opus-svg
+media-file: demos/07-cs-maintaining/pptx/images/05-01-two-plugins.svg
+order: 13
+source: demos/07-cs-maintaining/05-agentic-building/readme.md
 gamma_prompt: >
-  Closing slide titled "Takeaways", subtitle "From a personal sandbox to production". Four
-  short lines on the left half on plain white, the provided photograph of a team using the agent in a
-  bright lounge as a side accent on the right half, no text over the photo. Use exactly the one image
-  given for this card; do not generate or add any other images, icons or logos.
+  Slide titled "Copilot Studio plugins for coding agents", subtitle "One plugin per agent type, one
+  active at a time". Left: a light grey panel with the settings.local.json code block exactly as
+  given. Right: the provided diagram of the copilot-studio and mcs-assistant plugins between the
+  coding agent and Copilot Studio. Use exactly the one image given for this card; do not generate or
+  add any other images, icons or logos.
 ---
 
-# Takeaways
+# Copilot Studio plugins for coding agents
 
 ## Content
 
-- Build in a **custom solution**, set as preferred, from the first component
-- **Publish** once to every channel and choose the **authentication model** with care
-- Promote with **pipelines and Git**, then finish the **post-deployment steps**
+```json
+{
+  "enabledPlugins": {
+    "mcs-assistant@copilot-studio-plugin": false
+  }
+}
+```
 
 ## Speaker Notes
 
-Close the module with the habits that take an agent from a personal sandbox to a production environment.
+Topic 3 put agents under source control; this topic hands the authoring itself to a coding agent. Microsoft publishes two open-source plugins, and the class needs both.
 
-Custom solution: create it and set it as your preferred solution before you build, so every component is captured and the agent can move between environments.
+copilot-studio: it targets Standard agents in modules 3 to 5 and reaches Copilot Studio through the VS Code Copilot Studio extension. A session hook routes every request to one of four sub-agents, Manage, Author, Test and Advisor, which use 31 skills.
 
-Publish and authenticate: one publish updates every connected channel, and the authentication model decides who can chat with the agent and which tools still work.
+mcs-assistant: it targets GitHub Copilot agents in module 6 through the Power Platform CLI 2.9.3 or later. Its migrate command moves a Standard agent to the GitHub Copilot harness, and chat tests a published agent from the terminal.
 
-Pipelines and Git: promote the solution through development, test and production with pipelines and source control, then set up channels, authentication, sharing and Application Insights in the target.
+One plugin per module: the migrate command warns that the two may conflict. Keep both installed and turn off the one the current module doesn't need in .claude/settings.local.json, as in the code on the left, then start a new session.
 
+Sharp edges: both plugins are experimental and the YAML schema can change without notice, so review generated YAML before you push it.

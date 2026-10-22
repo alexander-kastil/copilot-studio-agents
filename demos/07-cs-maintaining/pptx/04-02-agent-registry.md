@@ -1,48 +1,40 @@
 ---
 slide: "04-02"
-topic: 04-governance-compliance
-title: "The agent registry"
-subtitle: "One place to see and act on every agent"
+topic: 04-advanced-channels
+title: "Web channel security and Direct Line"
+subtitle: "The secret stays on the server, the client gets a token"
 layout: diagram
 visual-weight: 1/2
-visual-type: photo
+visual-type: svg
 media-source: opus-svg
-media-file: demos/07-cs-maintaining/pptx/images/04-02-agent-registry.svg
-visual-prompt: >
-  Hand-written SVG, viewBox 0 0 1920 1080, white background, Segoe UI, 2px #8c959f borders, text
-  #24292f and #57606a, pastel fills, no heading inside the image, minimum 28px type. Top: a grey band
-  "Every agent" (across the tenant) holding a row of ten simple agent tokens, one amber token labelled
-  "At risk". Below, left: a white box "Agents-at-risk signals" with three purple tiles, Microsoft
-  Defender, Microsoft Entra, Microsoft Purview. Centre: a blue box "Agent registry" (Microsoft 365 admin
-  center and Agent 365; One place to see and act on the whole estate). Right: a white box "Governance
-  actions" with three green tiles, Block, Reassign, Delete. Arrows: the band down to the signals box
-  and down to the registry, the signals box to the registry, the registry to the actions box, the
-  actions box up to the band. SMIL animation, 8 s loop: a dot runs signals, registry, actions and back
-  to the at-risk agent, each box highlighting as it arrives.
-order: 10
-source: demos/07-cs-maintaining/04-governance-compliance/readme.md
+media-file: demos/07-cs-maintaining/pptx/images/04-02-secured-access.svg
+order: 11
+source: demos/07-cs-maintaining/04-advanced-channels/readme.md
 gamma_prompt: >
-  Slide titled "The agent registry", subtitle "One place to see and act on every agent". Left: three
-  bullets. Right, wider: the provided diagram of every agent flowing into the agent registry, with risk
-  signals from Defender, Entra and Purview on one side and the actions block, reassign and delete on
-  the other. Use exactly the one image given for this card; do not generate or add any other images,
-  icons or logos.
+  Slide titled "Web channel security and Direct Line", subtitle "The secret stays on the server, the
+  client gets a token". Left: four bullets. Right, wider: the provided diagram of an app asking a
+  server for a token, the server exchanging a Direct Line secret, and the app talking to the agent over
+  the Direct Line API. Use exactly the one image given for this card; do not generate or add any other
+  images, icons or logos.
 ---
 
-# The agent registry
+# Web channel security and Direct Line
 
 ## Content
 
-- The **agent registry** in the Microsoft 365 admin center and Agent 365 shows every agent
-- **Agents-at-risk** signals come from Defender, Entra and Purview
-- Admins **block, reassign or delete** an agent from the registry
+- **Require secured access** makes every client present a secret or a token
+- The **secret** lives only in server code; browsers and apps get a **token**
+- Two secrets work at once, so you **rotate without downtime**
+- The app starts a conversation, posts messages and reads replies over **Direct Line**
 
 ## Speaker Notes
 
-Guardrails limit what each agent can do; the agent registry is how admins see the whole estate at once.
+Without further settings, anyone who knows an agent's ID can reach it through the demo and custom website channels. This slide shows how to close that door.
 
-Every agent: the registry in the Microsoft 365 admin center and Agent 365 lists every agent in the tenant, one place to see and act on all of them.
+Require secured access: it sits under Settings, Security, Web channel security. Every client must then present a Direct Line secret or a token generated from it, and the switch takes up to two hours to propagate, so plan it before a launch.
 
-Agents at risk: Defender, Entra and Purview send the signals that mark an agent as at risk, so the registry shows where to look first.
+Secret and token: a secret belongs only in server code. Your service exchanges it for a token that is valid for one conversation and expires unless it is refreshed.
 
-Governance actions: from the registry an admin blocks, reassigns or deletes an agent, acting on the whole estate from one place.
+Two secrets: both work at the same time, so you move clients to the second secret and then regenerate the first.
+
+Direct Line: an app requests a token, starts a conversation, posts the user's messages and reads the agent's replies. For new apps, Learn also points to the Microsoft 365 Agents SDK client, which connects with the user's own sign-in.

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Developer environments become managed only</title>
+  <desc id="d">Timeline: on November 15, 2026 creation ends, so a Power Apps Developer Plan sign-up no longer creates a developer environment and no tool creates an unmanaged one. On December 15, 2026 suspension starts for existing unmanaged developer environments, whose apps, flows, agents and data become unavailable. On January 15, 2027 deletion of suspended unmanaged developer environments starts. Before December 15, 2026 admins find the affected environments under Manage, Environments, filtered to Type Developer and Managed No, enable Managed Environments or move their solutions to a sandbox, and turn on default environment routing. Makers export their solutions, build in a custom solution from the start, and use a standard trial environment to try premium capabilities. Managed developer, production, sandbox, trial and default environments are not affected.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <style>
+    svg { font-size: 26px; }
+    text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+    .d { font-size: 34px; font-weight: 700; }
+    .h { font-size: 34px; font-weight: 600; }
+    .b { font-size: 32px; font-weight: 600; }
+    .t { font-size: 26px; }
+    .s { font-size: 26px; fill: #57606a; }
+  </style>
+  <line x1="90" y1="210" x2="1830" y2="210" stroke="#8c959f" stroke-width="4"/>
+  <text class="d" x="330" y="165" text-anchor="middle">November 15, 2026</text>
+  <circle cx="330" cy="210" r="16" fill="#e0a534" stroke="#ffffff" stroke-width="4"/>
+  <rect x="60" y="250" width="540" height="220" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="b" x="90" y="300">Creation ends</text>
+  <text class="t" x="90" y="348">No developer environment from a</text>
+  <text class="t" x="90" y="386">Developer Plan sign-up, and no new</text>
+  <text class="t" x="90" y="424">unmanaged one from any tool</text>
+  <text class="d" x="960" y="165" text-anchor="middle">December 15, 2026</text>
+  <circle cx="960" cy="210" r="16" fill="#e0a534" stroke="#ffffff" stroke-width="4"/>
+  <rect x="690" y="250" width="540" height="220" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="b" x="720" y="300">Suspension starts</text>
+  <text class="t" x="720" y="348">Unmanaged developer environments</text>
+  <text class="t" x="720" y="386">are suspended: their apps, flows,</text>
+  <text class="t" x="720" y="424">agents and data become unavailable</text>
+  <text class="d" x="1590" y="165" text-anchor="middle">January 15, 2027</text>
+  <circle cx="1590" cy="210" r="16" fill="#e0a534" stroke="#ffffff" stroke-width="4"/>
+  <rect x="1320" y="250" width="540" height="220" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="b" x="1350" y="300">Deletion starts</text>
+  <text class="t" x="1350" y="348">Suspended unmanaged developer</text>
+  <text class="t" x="1350" y="386">environments are deleted</text>
+  <rect x="60" y="530" width="870" height="400" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="90" y="584">Admins</text>
+  <text class="s" x="900" y="584" text-anchor="end">before December 15, 2026</text>
+  <rect x="90" y="610" width="810" height="92" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="115" y="649">Find them under Manage &gt; Environments:</text>
+  <text class="t" x="115" y="685">Type Developer, Managed No, Last activity</text>
+  <rect x="90" y="714" width="810" height="92" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="115" y="753">Enable Managed Environments, or move</text>
+  <text class="t" x="115" y="789">their solutions to a sandbox</text>
+  <rect x="90" y="818" width="810" height="92" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="115" y="857">Turn on default environment routing:</text>
+  <text class="t" x="115" y="893">a managed developer environment per maker</text>
+  <rect x="990" y="530" width="870" height="400" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="1020" y="584">Makers</text>
+  <text class="s" x="1830" y="584" text-anchor="end">before December 15, 2026</text>
+  <rect x="1020" y="610" width="810" height="92" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1045" y="649">Export the solutions from your</text>
+  <text class="t" x="1045" y="685">developer environment</text>
+  <rect x="1020" y="714" width="810" height="92" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1045" y="753">Build in a custom solution from the start:</text>
+  <text class="t" x="1045" y="789">one export and one import move the agent</text>
+  <rect x="1020" y="818" width="810" height="92" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1045" y="857">Try premium capabilities without a</text>
+  <text class="t" x="1045" y="893">license in a standard trial environment</text>
+  <rect x="60" y="960" width="1800" height="76" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="960" y="1007" text-anchor="middle">Not affected: managed developer environments, including routed ones, and production, sandbox, trial and default environments</text>
+</svg>

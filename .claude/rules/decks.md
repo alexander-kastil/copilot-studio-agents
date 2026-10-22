@@ -35,7 +35,7 @@ Facts for the global create-pptx skill (`references/gamma-deck.md`) and the `/cr
 
 - Footer: `Automate Business Processes with Copilot Studio and Copilot Cowork` (the class readme title).
 - Gamma template: Professsional Process Review, `g_dnrfhnxxzj9ligv`. Theme: Integrations House, `idege54tfobdv2k`, for `generate` only: `generate_from_template` refuses a saved theme, so template calls pass no `themeId`.
-- The repo is private, so images publish to Media Creator (`gamma_deck.py publish-media`), not to raw GitHub.
+- The repo is private, so images go to the storage account before Gamma: container `slide-production` in `integrationsmediacreator`, prefix `copilot-studio-agents/<module>/`, read through a 12-hour user delegation SAS (`gamma_deck.py prompt --base-url ... --url-suffix "?$SAS"`), per gamma-deck Step 4.
 
 ## Delivery
 

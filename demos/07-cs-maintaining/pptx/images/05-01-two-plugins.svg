@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Two Copilot Studio plugins for coding agents</title>
+  <desc id="d">Claude Code, GitHub Copilot CLI or VS Code load two plugins. copilot-studio from the skills-for-copilot-studio marketplace serves Standard agents in modules 3 to 5 with the Manage, Author, Test and Advisor sub-agents, 31 skills and 15 design patterns, version 1.0.11, an experimental research project; it reaches Copilot Studio through the VS Code Copilot Studio extension. mcs-assistant from the copilot-studio-plugin marketplace serves GitHub Copilot agents in module 6 with the migrate and chat commands, version 1.0.2, work in progress; it reaches Copilot Studio through the Power Platform CLI 2.9.3 or later.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <style>
+    svg { font-size: 28px; }
+    text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+    .h { font-size: 34px; font-weight: 600; }
+    .m { font-family: Consolas, 'Courier New', monospace; font-size: 40px; font-weight: 700; }
+    .c { font-family: Consolas, 'Courier New', monospace; font-size: 30px; }
+    .t { font-size: 30px; }
+    .s { font-size: 27px; fill: #57606a; }
+  </style>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="460" y="50" width="1000" height="110" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="960" y="117" text-anchor="middle">Claude Code, GitHub Copilot CLI or VS Code</text>
+
+  <path d="M 700 162 V 205 H 490 V 246" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <path d="M 1220 162 V 205 H 1430 V 246" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="80" y="252" width="820" height="510" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="m" x="115" y="320">copilot-studio</text>
+  <text class="s" x="115" y="362">from skills-for-copilot-studio</text>
+  <rect x="115" y="392" width="750" height="64" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="140" y="435">Standard agents, modules 3 to 5</text>
+  <rect x="115" y="468" width="750" height="64" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="140" y="511">Manage, Author, Test, Advisor</text>
+  <rect x="115" y="544" width="750" height="64" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="140" y="587">31 skills, 15 design patterns</text>
+  <text class="s" x="115" y="668">Version 1.0.11, an experimental</text>
+  <text class="s" x="115" y="704">research project</text>
+
+  <rect x="1020" y="252" width="820" height="510" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="m" x="1055" y="320">mcs-assistant</text>
+  <text class="s" x="1055" y="362">from copilot-studio-plugin</text>
+  <rect x="1055" y="392" width="750" height="64" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1080" y="435">GitHub Copilot agents, module 6</text>
+  <rect x="1055" y="468" width="750" height="64" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="c" x="1080" y="510">/mcs-assistant:migrate</text>
+  <rect x="1055" y="544" width="750" height="64" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="c" x="1080" y="586">/mcs-assistant:chat</text>
+  <text class="s" x="1055" y="668">Version 1.0.2, work in progress</text>
+
+  <path d="M 490 764 V 840 H 700 V 894" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <path d="M 1430 764 V 840 H 1220 V 894" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <text class="s" x="512" y="815">VS Code Copilot Studio extension</text>
+  <text class="s" x="1408" y="815" text-anchor="end">Power Platform CLI 2.9.3 or later</text>
+
+  <rect x="460" y="900" width="1000" height="120" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="960" y="955" text-anchor="middle">Copilot Studio</text>
+  <text class="s" x="960" y="995" text-anchor="middle">the agent in your environment</text>
+</svg>
