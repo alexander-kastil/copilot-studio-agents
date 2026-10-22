@@ -11,9 +11,9 @@ media-source: nano-banana
 media-file: demos/05-cs-advanced/pptx/images/04-02-foundry-and-copilot-studio.jpg
 visual-prompt: >
   ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych, no
-  collage. In a bright meeting corner of a modern logistics company office, a Power Platform maker, a
-  woman in her early thirties, and a developer from the AI team, a man in his late twenties, both in
-  modern work-casual clothes, sit across a small light-oak table and agree on a hand-off: she points at
+  collage. In a bright meeting corner of a modern logistics company office, a Power Platform maker who
+  builds the IT help desk agent, a woman in her early thirties, and a developer from the device team,
+  a man in his late twenties, both in modern work-casual clothes, sit across a small light-oak table and agree on a hand-off: she points at
   a sheet of paper on the table showing only two hand-drawn boxes joined by one arrow, with no letters,
   words or numbers anywhere, and he nods and smiles. Their notebooks are closed beside them. Both people
   are centred in the frame. Modern, light, bright and friendly: high-key natural daylight, soft pastel

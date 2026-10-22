@@ -13,7 +13,7 @@ visual-prompt: >
   ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych, no
   collage. In a bright finance team room, a finance lead in her mid thirties and two colleagues, a man
   and a woman in their late twenties in modern work-casual clothes, sit around a round light-oak table
-  with the printed weekly budget review in front of them; the finance lead signs off on its last page
+  with the printed weekly review in front of them; the finance lead signs off on its last page
   with a pen while both colleagues nod and smile. The pages show only pastel bar charts and faint grey
   lines, with no letters, words or numbers anywhere. The three people are centred in the frame. Modern,
   light, bright and friendly: high-key natural daylight, soft pastel accents in light blue, mint and

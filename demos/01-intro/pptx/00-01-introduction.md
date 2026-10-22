@@ -11,12 +11,15 @@ media-file: demos/01-intro/pptx/images/00-01-introduction.jpg
 subject: people-talk
 visual-prompt: >
   ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych, no
-  collage. A Power Platform maker, a woman in her early thirties, and an HR team lead, a man in his mid
-  thirties, both in modern work-casual clothes, stand at a light-oak high table in a bright HR office and
-  decide which steps of a new hire's first week an agent could take on. Between them lies one printed
-  onboarding plan that shows only pastel colour blocks and faint grey lines, with no letters, words or
-  numbers anywhere; she points at one block, he nods, and both smile. People centred in the frame. Modern, light, bright and friendly: high-key natural daylight, soft
-  pastel accents in light blue, mint and lavender, green plants, 2020s design. 2:3 portrait,
+  collage. A Power Platform maker, a man in his early thirties, and a colleague from the Grey Logistics
+  IT help desk team, a woman in her late twenties, both in modern work-casual clothes, sit side by side
+  at a long light-oak table in the bright help desk area and decide which agent each request the help
+  desk collected calls for, before anyone builds one. Between them lies one printed decision record that
+  shows only a grid of pastel cells and faint grey lines, with no letters, words or numbers anywhere,
+  with a pen and a plain grey headset with no logo on it beside it; she points at one row of the grid,
+  he nods, and both smile. People centred in the frame. Modern, light, bright and friendly: high-key
+  natural daylight, soft pastel accents in light blue, mint and lavender, green plants, 2020s design.
+  2:3 portrait,
   contemporary editorial photography. Avoid: readable text, logos, watermarks, extra people, dark or
   moody lighting, vintage or retro decor, grime, clutter.
 order: 1
@@ -24,8 +27,8 @@ source: demos/01-intro/readme.md
 gamma_prompt: >
   Title slide "Introduction to Copilot Cowork and Copilot Studio" with subtitle "The foundation for the
   whole course". Side-accent layout: title, subtitle and three bullets on the left half on plain white,
-  the provided photograph of a maker and an HR team lead planning an onboarding agent at a high table
-  filling the right half, no text over the photo. Use exactly the one image given for this card; do not
+  the provided photograph of a maker and a help desk colleague at a table, deciding which agent each
+  help desk request calls for, filling the right half, no text over the photo. Use exactly the one image given for this card; do not
   generate or add any other images, icons or logos.
 ---
 

@@ -11,11 +11,11 @@ media-source: nano-banana
 media-file: demos/03-cs-basics/pptx/images/00-01-copilot-studio.jpg
 visual-prompt: >
   ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych, no
-  collage. A Power Platform maker in her early thirties and an HR generalist in his late twenties, both
-  in modern work-casual clothes, sit side by side at a light-oak table in a bright HR office and sketch
+  collage. A Power Platform maker in her early thirties and a colleague from HR in his late twenties,
+  both in modern work-casual clothes, sit side by side at a light-oak table in a bright HR office and sketch
   the questions new employees ask in their first week: a large sheet of paper lies between them with
   rows of mint, lavender and light-blue sticky notes that show only faint grey lines, with no letters,
-  words or numbers anywhere. She points at one note while he laughs; their laptops stay closed at the
+  words or numbers anywhere. She points at one note while he laughs; their closed laptops lie at the
   edge of the table. People centred in the frame. Modern, light, bright and friendly: high-key natural
   daylight, soft pastel accents in light blue, mint and lavender, green plants, 2020s design. 2:3
   portrait, people centred, contemporary editorial photography. Avoid: readable text, letters or numbers

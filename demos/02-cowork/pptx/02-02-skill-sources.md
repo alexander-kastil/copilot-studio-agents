@@ -5,20 +5,30 @@ title: "Where skills come from"
 subtitle: "Built-in, custom and plugin skills load the same way"
 layout: diagram
 visual-weight: 1/2
-visual-type: screenshot
-media-source: existing
-media-file: demos/02-cowork/pptx/images/02-02-customize-page.png
-photo-link: demos/02-cowork/pptx/images/02-02-customize-page.png
+visual-type: diagram
+media-source: opus-svg
+media-file: demos/02-cowork/pptx/images/02-02-skill-sources.svg
 visual-prompt: >
-  Screenshot from the custom-skills demo run (pool 02-03-013): the Customize page with the Add button,
-  Added (6) holding product-pitch, weekly-status-report and dietitian, and the Discover cards below.
+  Hand-written SVG, viewBox 0 0 1920 1080, white background, Segoe UI, 2px #8c959f borders, text
+  #24292f and #57606a, pastel fills, no heading inside the image. Six source boxes stacked on the
+  left: grey "Built-in skills, ship with Cowork"; blue "Custom skills, Create skill with Cowork, or
+  SKILL.md in OneDrive" and "Uploaded skill file, Customize > Add > Upload, or shared with you";
+  purple "Plugin skills, from Discover", "Admin-deployed plugins, rolled out by your IT organization"
+  and "Your own plugin package, the same Customize > Add > Upload". All six arrows converge on an
+  amber box "Cowork reads each description and loads the skill when the work calls for it, you do
+  not name it"; below it a grey box "Call one by name, type / in the composer, pick it from the
+  Skills tab". Both point to a green "Skills" box with the chips built-in, custom, uploaded and
+  plugin. Static. Replaces the Customize page screenshot (pool 02-03-013), whose content column is
+  only 500 px wide and cannot be read at half a slide.
 order: 7
 source: demos/02-cowork/02-built-in-skills/readme.md
 gamma_prompt: >
   Slide titled "Where skills come from", subtitle "Built-in, custom and plugin skills load the same
   way". Left column: five short bullets on creating, uploading and adding skills and plugins. Right
-  column: the provided screenshot of the Cowork Customize page with its Added list and Discover cards,
-  as an inline content image at its natural aspect ratio, never cropped. White background. Use exactly
+  column, wider than the left: the provided diagram of six skill sources converging on one step where
+  Cowork reads each description, with a second path for calling a skill by name, ending in a single
+  Skills section, at its natural 16:9 aspect ratio, never cropped. White background, calm pastel
+  accents. Use exactly
   the one image given for this card; do not generate or add any other images, icons or logos.
 ---
 
@@ -34,7 +44,7 @@ gamma_prompt: >
 
 ## Speaker Notes
 
-Built-in skills are only the starting point. The screenshot is the Customize page of the class tenant after the demos, with the custom skills product-pitch and weekly-status-report and the dietitian plugin under Added, and Discover below.
+Built-in skills are only the starting point. The diagram shows the six ways a skill reaches Cowork and the two ways it gets loaded: Cowork matches its description, or you call it by name.
 
 Create: Customize > Add > Create skill with Cowork starts a guided conversation, and you can also write a SKILL.md into OneDrive yourself. The next topic teaches both.
 

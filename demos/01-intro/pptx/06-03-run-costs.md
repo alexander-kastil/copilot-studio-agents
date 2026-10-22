@@ -10,10 +10,11 @@ media-source: existing
 media-file: demos/01-intro/pptx/images/06-03-manage-agents.png
 photo-link: demos/01-intro/pptx/images/06-03-manage-agents.png
 visual-prompt: >
-  Live screenshot (pool cost-023): the Copilot Studio Agents page in the Power Platform admin center with
-  billed credits per channel and feature: GH-Food Buddy (Autonomous 13.85, pva-published-engine-direct
-  17.63, pva-studio 20.19), GH-Health Advisor (pva-studio 169.72) and a workflow (workflow-agents,
-  Workflows, 26.67).
+  Live screenshot (pool cost-023), cropped at native size to the per-agent table of the Copilot Studio
+  Agents page in the Power Platform admin center (x 56 to 700, y 318 to 692): the Channel, Billable
+  features, Copilot credits and Billed credit columns for GH-Food Buddy (Autonomous 13.85,
+  pva-published-engine-direct 17.63, pva-studio 20.19), GH-Health Advisor (pva-studio 169.72) and a
+  workflow (workflow-agents, Workflows, 26.67).
 order: 20
 source: demos/01-intro/06-cost-license/readme.md
 gamma_prompt: >
@@ -35,7 +36,7 @@ gamma_prompt: >
 
 ## Speaker Notes
 
-Every demo in this class was run live and its cost read back from the portals, and no portal shows all of it. This is the Agents page under Copilot Studio in the Power Platform admin center, known as Manage Agents, after the class runs.
+Every demo in this class was run live and its cost read back from the portals, and no portal shows all of it. The screenshot is the per-agent table of the Agents page under Copilot Studio in the Power Platform admin center, known as Manage Agents, after the class runs.
 
 Manage Agents: it is the per-agent source of truth, split by channel and billable feature, and an agent appears there only after it has billed credits. Copilot Studio usage posts within hours.
 

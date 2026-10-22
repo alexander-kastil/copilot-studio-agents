@@ -1,0 +1,110 @@
+Apply the Integrations House theme: Montserrat bold headings, Poppins body, #1B365D accent. Create exactly 10 cards, one per section below, in this order. Keep the card text exactly as given. The Image and Layout lines are instructions, never visible text. Use exactly the one image URL given for each card; do not generate or add any other images, icons or logos. Keep body text at the normal body size on every card; never shrink text to fit.
+
+# Copilot Studio Basics
+### A working, grounded agent in Teams, built without code
+- Create a **Standard agent** and set its instructions, model and orchestration
+- Ground it in **knowledge** and shape its conversations with topics, Power Fx and Adaptive Cards
+- **Publish** it to Teams and Microsoft 365 Copilot
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/03-cs-basics/00-01-copilot-studio.jpg?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Text on the left half on plain white, the photograph as a side accent filling the right half, no text over it.
+
+---
+
+# Overview
+### Six topics, four agents rebuilt in the demos
+- Create **CS-Employee Onboarding Assistant** and ground it in two SharePoint sites
+- Build **CS-HR Buddy** topics that identify an employee once
+- Turn a travel claim into values ready to save with **Power Fx**
+- Collect a canteen demand on one **Adaptive Card**
+- Publish CS-HR Buddy to **Teams and Microsoft 365 Copilot**
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/03-cs-basics/00-02-basics-path.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Parts of an agent
+### The HR Agent built in labs 01 to 03
+- Every agent lives in a Power Platform **environment** with its Dataverse database and solutions
+- Name, description and **instructions** set its identity and tone
+- **Knowledge** grounds its answers in websites, SharePoint, files or Dataverse
+- **Topics** carry the conversations you want to control precisely
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/03-cs-basics/01-01-agent-parts.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Creating a Standard agent
+### Create blank agent for CS-Employee Onboarding Assistant
+- Three starts: **describe** the agent, **Create blank agent**, or an agent template
+- A blank agent needs only a **name**
+- **Agent settings** show language, solution and schema name; the demo keeps the defaults
+- The agent stays in the **environment** selected before you create it
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/03-cs-basics/01-02-name-your-agent.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Instructions, model and answer settings
+### The same off-topic question before and after
+- Structured **instructions**, GPT Chat Latest and deliberate answer settings keep CS-Employee Onboarding Assistant on onboarding questions
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/03-cs-basics/create-the-onboarding-assistant-overview.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Full-width diagram. Title and subtitle at the top, the provided diagram across the whole card width below them at its natural aspect ratio, never cropped, never a background, then the single bullet as one caption line under the diagram.
+
+---
+
+# Knowledge source types
+### What the agent searches and who can see the content
+- **Add knowledge** offers websites, files, SharePoint, Dataverse, Azure AI Search and connectors
+- SharePoint and Dataverse answer within the **signed-in user's** permissions
+- An **uploaded file** can answer everyone who chats with the agent
+- Each source gets a **name and description** the orchestrator chooses by
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/03-cs-basics/02-01-knowledge-sources.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Answers with citations
+### The sightseeing question answered from SharePoint
+- The question: what to see near the office after work
+- The **Sightseeing** source and one instruction section steer it to the Sightseeing site
+- Five suggestions, each with a numbered **citation**
+- **3 references** under the answer link to the documents
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/03-cs-basics/02-02-sightseeing-answer.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Grounded and ungrounded answers
+### What Allow ungrounded responses changes
+- An ungrounded answer sounds just as right as a grounded one, so open the **citation**: the cited file proves grounding
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/03-cs-basics/02-03-ungrounded-answers.jpg?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Statement. Title at the top; the single bullet as one large sentence across the left two thirds; the provided image as a side accent in the right third, no text over it.
+
+---
+
+# Topics and generative answers
+### How orchestration picks a topic or knowledge for each prompt
+- A **topic** runs a fixed path of nodes: questions, messages, conditions, redirects
+- **Knowledge** with generative answers covers open-ended questions over your content
+- Generative orchestration picks a topic by its **description**
+- Classic orchestration starts the topic whose **trigger phrases** match most closely
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/03-cs-basics/03-01-topics-or-knowledge.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Sharing state between topics
+### CS-HR Buddy identifies an employee once
+- Collect Employee Data sets **Global.EmployeeIdentified**, so the rewards topic detours through it only until the employee is known
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/03-cs-basics/hr-buddy-employee-topics-overview.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Full-width diagram. Title and subtitle at the top, the provided diagram across the whole card width below them at its natural aspect ratio, never cropped, never a background, then the single bullet as one caption line under the diagram.

@@ -10,9 +10,11 @@ media-source: existing
 media-file: demos/06-cs-gh-copilot/pptx/images/02-02-plan-in-preview.png
 photo-link: demos/06-cs-gh-copilot/pptx/images/02-02-plan-in-preview.png
 visual-prompt: >
-  Live screenshot, pool id 06-01-027: GH-Health Advisor in Preview with Debug mode on, answering the
-  fever and business trip question. The step list shows the thought, Ran 2 events in parallel and an
-  expanded Used tool: Searched knowledge with its three uploaded sources, the Input query and the Output.
+  Live screenshot, pool id 06-01-026 (1568x765), native crop 468,56,1132,388 saved at 664x332, the
+  mouse pointer painted out of the blank space right of the step list (06-01-027 has it over the text):
+  GH-Health Advisor in Preview with Debug mode on, the fever and business trip question, and the step
+  list with Thought for 3 seconds, the thought about looking up both at the same time, Ran 2 events in
+  parallel, Small files; I'll read them directly, and Reasoned through your request.
 order: 12
 source: demos/06-cs-gh-copilot/02-unified-build-and-orchestrator/demo-02-trace-agent-reasoning.md
 gamma_prompt: >
@@ -27,7 +29,7 @@ gamma_prompt: >
 
 ## Content
 
-- With **Debug mode** on, the step list shows **Ran 2 events in parallel**, one **Searched knowledge** per part of the question
+- With **Debug mode** on, the step list shows the plan, then **Ran 2 events in parallel**: one knowledge search per part of the question
 
 ```text
 When an employee mentions a trip and a symptom, reason step by step:
@@ -43,6 +45,6 @@ The instruction: the code block is the line added to the agent's Instructions in
 
 The plan: asked "I have a fever and I am supposed to travel abroad for business next week", the agent first thought it should look up travelling with health issues and the company doctor hours at the same time. It then ran two knowledge searches in parallel instead of one undifferentiated pass.
 
-The evidence: expanding Used tool: Searched knowledge shows the sources it could search (company-doctor-hours.md, Traveling with Health Issues.docx and The Benefits of Intermittent Fasting.docx), the query it ran and the number of results. A second source is what gives the planner something to route across.
+The evidence: expanding Ran 2 events in parallel and then Used tool: Searched knowledge shows the sources it could search (company-doctor-hours.md, Traveling with Health Issues.docx and The Benefits of Intermittent Fasting.docx), the query it ran and the number of results. A second source is what gives the planner something to route across.
 
 After the fact: History keeps every Preview session with its activity and credits, so a colleague's question from yesterday can be debugged today.

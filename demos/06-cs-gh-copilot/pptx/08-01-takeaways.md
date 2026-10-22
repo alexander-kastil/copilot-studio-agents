@@ -12,21 +12,22 @@ subject: people-talk
 visual-prompt: >
   ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych, no
   collage. A Northwind Traders seller, a man in his early thirties in modern work-casual clothes, stands
-  at the counter of a bright delicatessen that buys from Northwind and talks with the shop owner, a
-  woman in her late thirties, both smiling at the start of a relaxed customer meeting; on the counter
-  between them stand a case of glass cold brew bottles and a small plain tin of green tea with blank
-  kraft labels, shelves of jars softly blurred behind them. Modern, light, bright and friendly: high-key
-  natural daylight, soft pastel accents in light blue, mint and lavender, green plants, 2020s design.
-  2:3 portrait, people centred, contemporary editorial photography. Avoid: readable text, readable
-  labels on jars, bottles, tins or shelves, logos, watermarks, extra people, dark or moody lighting,
-  vintage or retro decor, grime, clutter.
+  at the counter of a bright, modern delicatessen that is a Northwind account and talks with his
+  customer there, a woman in her late thirties; he explains calmly with an open hand while she nods and
+  smiles, relieved, at the start of a relaxed customer meeting. On the counter between them stand two
+  plain brown 5 kg bags of dark roast beans from her last order, with blank kraft labels, shelves of
+  jars softly blurred behind them. Modern, light, bright and friendly: high-key natural daylight, soft
+  pastel accents in light blue, mint and lavender, green plants, 2020s design. 2:3 portrait, people
+  centred, contemporary editorial photography. Avoid: readable text, readable labels on bags, jars or
+  shelves, logos, watermarks, extra people, dark or moody lighting, vintage or retro decor, grime,
+  clutter.
 order: 26
 source: demos/06-cs-gh-copilot/readme.md
 gamma_prompt: >
   Closing slide titled "Takeaways", subtitle "What to carry into publishing and maintaining". Side-accent
   layout: five bullets on the left half on plain white, the provided photograph of a seller talking with
-  a delicatessen owner at her counter filling the right half, no text over it. Use exactly the one image
-  given for this card; do not generate or add any other images, icons or logos.
+  his delicatessen customer at the counter filling the right half, no text over it. Use exactly the one
+  image given for this card; do not generate or add any other images, icons or logos.
 ---
 
 # Takeaways

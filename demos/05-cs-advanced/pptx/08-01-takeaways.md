@@ -11,11 +11,13 @@ media-source: nano-banana
 media-file: demos/05-cs-advanced/pptx/images/08-01-takeaways.jpg
 visual-prompt: >
   ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych, no
-  collage. A glass wall in a bright meeting room after an agent design session, nobody in frame: one
-  large mint sticky note on the left with hand-drawn marker arrows fanning out to four smaller
-  light-blue and lavender sticky notes on the right, every note showing only faint grey lines with no
-  letters, words or numbers anywhere; a marker lies on the ledge below, a green plant and soft daylight
-  behind the glass. The notes are centred in the frame. Modern, light, bright and friendly: high-key
+  collage. A glass wall in a bright meeting room, nobody in frame, with the routing plan of a business
+  travel planner sketched in sticky notes: one large mint sticky note at the top carrying a small
+  hand-drawn suitcase, and hand-drawn marker arrows fanning down from it to a row of four smaller
+  light-blue and lavender sticky notes, each carrying one simple hand-drawn pictogram: a train, a
+  heart, a coin and a dumbbell. The notes show only these drawings, with no letters, words or numbers
+  anywhere; a marker lies on the ledge below, a green plant and soft daylight behind the glass. The
+  notes are centred in the frame. Modern, light, bright and friendly: high-key
   natural daylight, soft pastel accents in light blue, mint and lavender, green plants, 2020s design.
   2:3 portrait, subject centred, contemporary editorial photography. Avoid: readable text, letters,
   words or numbers on the notes, logos, watermarks, people, dark or moody lighting, vintage or retro
@@ -25,8 +27,8 @@ source: demos/05-cs-advanced/readme.md
 gamma_prompt: >
   Closing slide titled "Takeaways", subtitle "What to carry into the GitHub Copilot agents module".
   Side-accent layout: title, subtitle and five bullets on the left half on plain white, the provided
-  photograph of one sticky note fanning out to four on a glass wall filling the right half, no text
-  over it. Use exactly the one image given for this card; do not generate or add any other images,
+  photograph of a travel planner's routing sketched in sticky notes on a glass wall, one note fanning
+  out to four, filling the right half, no text over it. Use exactly the one image given for this card; do not generate or add any other images,
   icons or logos.
   Theme: Integrations House (themeId idege54tfobdv2k), Montserrat bold headings, Poppins body, #1B365D accent.
 ---

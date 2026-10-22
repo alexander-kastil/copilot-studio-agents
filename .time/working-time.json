@@ -1698,6 +1698,129 @@
       "catalogue": {
         "action": "none"
       }
+    },
+    {
+      "date": "2026-10-22",
+      "from": "18:44",
+      "to": "19:44",
+      "sessionId": "5ba8a31a-7a53-40f6-a179-d86113850b1d",
+      "branch": "v-3.0.0",
+      "commits": [],
+      "surfaces": [
+        "class tooling"
+      ],
+      "files": [
+        "D:/git-projects/integrations-marketplace/plugins/experts/copilot-work-iq/agents/copilot-studio-expert.md",
+        "D:/git-projects/integrations-marketplace/plugins/experts/copilot-work-iq/skills/copilot-credits/SKILL.md",
+        "D:/git-projects/integrations-marketplace/plugins/orchestration/subagent-delegation-plugin/hooks/register.ts",
+        ".claude/rules/copilot-studio.md"
+      ],
+      "mechanism": {
+        "takes": "product know-how spread over personal skill folders, repository copies and partial notes, plus an assistant router that only discovers specialists kept in local folders",
+        "does": "packages one product domain as a versioned, installable plugin with a specialist assistant and four routed knowledge packs, retires every duplicate copy except the ones course material names, and teaches the router to discover specialists shipped inside installed plugins",
+        "returns": "one installable source of truth per domain that every repository on the machine loads and routes work to"
+      },
+      "portsAsIs": [
+        "plugin-packaged specialist with routed knowledge packs",
+        "plugin-aware specialist discovery in the router",
+        "retirement of duplicate copies guarded by a scan of course material"
+      ],
+      "perCustomer": [
+        "the product domain and its knowledge",
+        "the repositories whose demos keep their own copies"
+      ],
+      "evidence": [
+        "claude plugin validate: passed for copilot-work-iq",
+        "tests: 41 pass in subagent-delegation-plugin",
+        "headless init lists copilot-work-iq:copilot-studio-expert and four copilot-work-iq skills",
+        "headless smoke run of the expert listed the topics of CS-HR Buddy read-only",
+        "32 moved files identical to their sources, 11 differ only by repointed links"
+      ],
+      "toolchain": {
+        "skills": [
+          "learn-loop-plugin:claude-learn",
+          "mod-authoring",
+          "claude-learn-worktime",
+          "track-time"
+        ],
+        "mcpServers": [],
+        "agents": [
+          "subagent-delegation-plugin:fact-gatherer",
+          "fork"
+        ]
+      },
+      "industry": "professional training and consulting",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      }
+    },
+    {
+      "date": "2026-10-22",
+      "from": "18:41",
+      "to": "20:20",
+      "sessionId": "2104e49c-a8a5-478a-9ce5-589442591e51",
+      "branch": "v-3.0.0",
+      "commits": [],
+      "surfaces": [
+        "class decks"
+      ],
+      "files": [
+        "C:/Users/AlexanderKastil/.claude/skills/create-pptx/scripts/repo_decks.py",
+        "C:/Users/AlexanderKastil/.claude/skills/create-pptx/scripts/gamma_module.py",
+        "C:/Users/AlexanderKastil/.claude/skills/create-pptx/scripts/check_specs.py",
+        "D:/git-projects/integrations-marketplace/plugins/content/photo-mix-guard-plugin/hooks/photo-mix-guard.mjs",
+        "demos/pptx/portraits.json",
+        "tasks/handoff-decks.md"
+      ],
+      "mechanism": {
+        "takes": "per-slide specs for eight course modules with photo briefs, diagrams and live demo screenshots, plus a template in a hosted slide tool",
+        "does": "re-crops screenshots to one readable focal part, checks every photo brief against the course's own business case, renders all photos in one batch job and rejects any with printed words or logos at full size, uploads the images behind a short-lived private link, has the slide tool lay out the cards without generating any image, then repairs its layout slips locally and adds intro, overview, dividers and speaker notes",
+        "returns": "one finished deck and PDF per module in the trainer's shared folder, every card carrying exactly the image chosen for it"
+      },
+      "portsAsIs": [
+        "spec-driven deck pipeline with one batch photo render",
+        "full-size photo check for printed words and logos",
+        "private image hosting behind an expiring link for a hosted slide tool",
+        "local repair of the slide tool's framed photo cards and code panels"
+      ],
+      "perCustomer": [
+        "the course content and running examples",
+        "the slide template and house fonts",
+        "the delivery folder"
+      ],
+      "evidence": [
+        "repo_decks.py deliver: delivered=8 differs=0 missing=0",
+        "finish per module: cards_off=0 tight=0 unmatched=0 missing=0",
+        "Media Creator batch: 44 of 44 succeeded, 6 redone after the full-size check",
+        "prep: bad_urls=0 on all 20 parts",
+        "photo-mix-guard-plugin tests: 7 pass"
+      ],
+      "toolchain": {
+        "skills": [
+          "create-repo-pptx",
+          "create-pptx",
+          "report-plugin:report",
+          "learn-loop-plugin:claude-learn",
+          "claude-learn-worktime",
+          "track-time"
+        ],
+        "mcpServers": [
+          "claude_ai_Gamma",
+          "claude_ai_Media_Creator",
+          "subagent-delegation-plugin"
+        ],
+        "agents": [
+          "image-producer",
+          "general-purpose",
+          "fork"
+        ]
+      },
+      "industry": "professional training and consulting",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      }
     }
   ]
 }

@@ -13,8 +13,8 @@ visual-prompt: >
   ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych, no
   collage. The IT desk of a modern logistics company office early on a weekday morning, before anyone
   has arrived: a long light-oak service counter with three closed silver laptops and two docking
-  stations lined up neatly, ready to be handed back, a low shelf behind it with plain white boxes of
-  loaner laptops, tall windows letting in soft morning daylight, green plants. The counter is centred
+  stations lined up neatly, ready to be handed back, a low shelf behind it with
+  loaner laptops shut in plain white boxes, tall windows letting in soft morning daylight, green plants. The counter is centred
   in the frame. Modern, light, bright and friendly: high-key natural daylight, soft pastel accents in
   light blue, mint and lavender, green plants, 2020s design. 2:3 portrait, subject centred,
   contemporary editorial photography. Avoid: readable text, labels, stickers or signs with text, logos

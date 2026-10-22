@@ -11,12 +11,13 @@ subject: trace
 media-file: demos/07-cs-maintaining/pptx/images/06-01-takeaways.jpg
 visual-prompt: >
   ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych, no
-  collage. The bright Grey Logistics IT team room late in the afternoon, nobody in frame: on a white
-  wall planning board every plain square sticky note now sits in the mint column, while the light-blue
-  and lavender columns beside it are empty; below the board a light-oak desk holds two coffee mugs, a
-  headset and a green plant in soft daylight. The sticky notes show only colour fields, with no
-  letters, words or numbers anywhere. Modern, light, bright and friendly: high-key natural daylight,
-  soft pastel accents in light blue, mint and lavender, green plants, 2020s design. 16:9 landscape,
+  collage. The bright Grey Logistics IT team room on a sunny afternoon, nobody in frame: on a white wall
+  planning board divided by two thin vertical lines into three unlabelled columns, every plain square mint
+  sticky note now sits in the right-hand column, while the two columns beside it are empty; the board
+  carries no headings, labels, letters or words anywhere; below the board a light-oak desk holds two plain
+  white coffee mugs and a green plant in soft daylight. The sticky notes show only colour fields, with no
+  letters, words or numbers anywhere. Modern, light, bright and friendly: high-key natural daylight, soft
+  pastel accents in light blue, mint and lavender, green plants, 2020s design. 16:9 landscape,
   contemporary editorial photography. Avoid: readable text, logos, watermarks, dark or moody lighting,
   vintage or retro decor, grime, clutter, people, writing on the board.
 order: 15

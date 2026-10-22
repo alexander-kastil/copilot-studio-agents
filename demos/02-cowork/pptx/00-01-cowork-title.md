@@ -13,9 +13,9 @@ visual-prompt: >
   ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych,
   no collage. The regional manager for Northern Europe at a Nordic outdoor-gear retailer, a woman in
   her early thirties in modern work-casual clothes, stands at a light-oak standing desk in the bright
-  regional office and types one short request into an open laptop, relaxed and smiling, a cup of
-  coffee in her other hand. Behind her, softly out of focus, an open sample rail holds mid-layer
-  fleeces and trail jackets in muted pastel colours with plain tags. Modern, light, bright and
+  regional office and types one short request into a plain light-grey laptop with no logo on its
+  lid, relaxed and smiling, a cup of coffee in her other hand. Beside the laptop lies a neatly
+  folded mid-layer fleece in a muted pastel colour with a plain tag. Modern, light, bright and
   friendly: high-key natural daylight, white and light-oak contemporary interior, soft pastel accents
   in light blue, mint and lavender, green plants, 2020s design. Screens show only soft blurred shapes
   and colours, never readable UI. 16:9 landscape, contemporary editorial photography. Avoid: readable

@@ -11,14 +11,14 @@ media-file: demos/02-cowork/pptx/images/05-03-sharing-a-plugin.jpg
 subject: hands-artefact
 visual-prompt: >
   ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych,
-  no collage. Close view of the hands of a registered dietitian at a bright consultation desk, one
+  no collage. Close view, hands only, of the hands of a registered dietitian at a bright consultation desk, one
   hand holding a pen and ticking a line on a printed client nutrition packet, the other resting on
   the page; the pages show only a small mint table, colour fields and faint grey lines, with no
-  letters, words or numbers anywhere. Beside the packet stand a bowl of fresh vegetables and a glass
-  of water. Modern, light, bright and friendly: high-key natural daylight, soft pastel accents in
-  light blue, mint and lavender, green plants, 2020s design. 16:9 landscape, contemporary editorial
-  photography. Avoid: readable text, logos, watermarks, faces, dark or moody lighting, vintage or
-  retro decor, grime, clutter.
+  letters, words or numbers anywhere. Beside the packet stand a glass of water and a nested set of
+  plain white measuring cups and spoons. Modern, light, bright and friendly: high-key natural
+  daylight, soft pastel accents in light blue, mint and lavender, green plants, 2020s design. 16:9
+  landscape, contemporary editorial photography. Avoid: readable text, logos, watermarks, faces, dark
+  or moody lighting, vintage or retro decor, grime, clutter.
 order: 17
 source: demos/02-cowork/05-plugins/demo-01-plugins.md
 gamma_prompt: >

@@ -10,9 +10,12 @@ media-source: existing
 media-file: demos/06-cs-gh-copilot/pptx/images/03-02-skill-activation.png
 photo-link: demos/06-cs-gh-copilot/pptx/images/03-02-skill-activation.png
 visual-prompt: >
-  Live screenshot, pool id 06-01-034: GH-Health Advisor in Preview, the step list opening with Used
-  skill: doctor-appointment-request-drafter, followed by the drafted appointment request in the skill's
-  response format (subject, greeting, request, details, two slots, sign-off).
+  Live screenshot, pool id 06-01-036 (1568x765), native crop 466,236,1136,650 saved at 670x414 (06-01-034
+  has the mouse pointer over the reply): GH-Health Advisor in Preview answering "Please draft an
+  appointment request to the company doctor: I need a pre-travel check before my business trip to
+  Singapore on 3 November." The step list opens with Used skill: doctor-appointment-request-drafter and
+  the agent's date reasoning; the reply gives the booking deadline, the two slots Friday 23 October and
+  Monday 26 October, and the start of the markdown draft with its subject line.
 order: 14
 source: demos/06-cs-gh-copilot/03-agent-skills/demo-03-add-a-reusable-skill.md
 gamma_prompt: >
@@ -47,7 +50,7 @@ The previous slide showed how a skill loads on demand; this one shows the test t
 
 The description: it is the only part of the skill the runtime sees until a request matches, so it carries the words an employee actually types. This is the tightened version that went back in with Replace, and it names what the skill must not handle as well.
 
-The match: asked to book a pre-travel check, the step list opens with Used skill: doctor-appointment-request-drafter. The reply follows the skill's response format: subject line, greeting, the request, the details and two consultation slots.
+The match: asked to draft an appointment request for a pre-travel check, the step list opens with Used skill: doctor-appointment-request-drafter. The reply names the booking deadline and two consultation slots, then starts the draft in the skill's response format with its subject line.
 
 The near miss: a plain question, such as the consultation hours, must answer from knowledge with no Used skill line. When a skill fires too often or never, change the description before you touch the instructions.
 

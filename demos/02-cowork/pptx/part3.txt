@@ -1,0 +1,82 @@
+Apply the Integrations House theme: Montserrat bold headings, Poppins body, #1B365D accent. Create exactly 7 cards, one per section below, in this order. Keep the card text exactly as given. The Image and Layout lines are instructions, never visible text. Use exactly the one image URL given for each card; do not generate or add any other images, icons or logos. Keep body text at the normal body size on every card; never shrink text to fit.
+
+# What plugins add
+### Skills and connectors that reach beyond Microsoft 365
+- Skills with **specialized expertise**: financial analysis, legal research, clinical or HR knowledge
+- **MCP connectors** reach CRM data, ticketing systems and third-party APIs
+- Each user completes a one-time **Connect** sign-in
+- An **MCP app** returns an interactive widget into the conversation
+- Plugins your admin rolls out show **Managed by your organization**
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/02-cowork/05-01-what-plugins-add.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Where plugins fit
+### The dietitian plugin's skills beside the built-in Word skill
+- **Upload** the dietitian package under Customize > Add > Upload and publish it to Only you
+- Its skills **clinical-nutrition** and **dietary-communication** draft the assessment and the client handout
+- Each loads with a **Reviewed custom skill** step and joins **Plugins** next to the built-in Word
+- **Word** compiles both drafts into Client Nutrition Packet - NUT-2041, the DRAFT ONLY line on top
+- Sharing with specific people needs **no admin**; the whole organization waits for admin approval
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/02-cowork/05-02-nutrition-packet.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Reviewing plugin output
+### The plugin drafts; the dietitian decides
+- A registered dietitian reviews and approves every packet before any of it reaches a client
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/02-cowork/05-03-sharing-a-plugin.jpg?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Statement. Title at the top; the single bullet as one large sentence across the left two thirds; the provided image as a side accent in the right third, no text over it.
+
+---
+
+# The approval model
+### Cowork pauses before anything that leaves your workspace
+- The card names the action as a question, here **Create calendar event?**, and shows what it will write
+- **Save** approves this one action, and the task records Approved 1 action
+- The arrow beside it offers **Always allow Create event** for the rest of the session
+- **Medium risk** changes your content or calendar; **high risk** reaches other people
+- New files in Output and saved drafts need **no approval**
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/02-cowork/06-01-calendar-approval-card.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Steering an active task
+### Pause, resume or cancel while Cowork works
+- **Pause (soft)** finishes the current step, then pauses
+- **Pause (hard)** stops immediately, mid-step
+- **Resume** continues a paused task, Cancel clears the current one
+- **Queued messages** sent while Cowork works can redirect it
+- Rate responses and previewed documents with **thumbs up or down**, or comment inline
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/02-cowork/06-02-steering-tasks.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Governance for admins
+### Where each Cowork control lives
+- A **spending policy** grants access; browsing, plugins and reporting each have their own place in the admin center
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/02-cowork/06-03-admin-controls.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Full-width diagram. Title and subtitle at the top, the provided diagram across the whole card width below them at its natural aspect ratio, never cropped, never a background, then the single bullet as one caption line under the diagram.
+
+---
+
+# Takeaways
+### From a first task to staying in control
+- **Describe the outcome**, and Cowork plans and acts across Microsoft 365
+- A **spending policy** that selects Cowork grants access, metered in Copilot Credits
+- **Skills** load on their own, and a `SKILL.md` teaches Cowork one of your recurring jobs
+- **Schedules, triggers and plugins** make the work recurring and bring in outside expertise
+- **You approve** every send, booking and file edit before it leaves your workspace
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/02-cowork/07-01-takeaways.jpg?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Text on the left half on plain white, the photograph as a side accent filling the right half, no text over it.

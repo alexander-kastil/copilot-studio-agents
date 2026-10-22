@@ -1,0 +1,115 @@
+Apply the Integrations House theme: Montserrat bold headings, Poppins body, #1B365D accent. Create exactly 9 cards, one per section below, in this order. Keep the card text exactly as given. The Image and Layout lines are instructions, never visible text. Use exactly the one image URL given for each card; do not generate or add any other images, icons or logos. Keep body text at the normal body size on every card; never shrink text to fit.
+
+# Calling, publishing and paying
+### How a GitHub Copilot agent joins an automation and what it costs
+- The **Agent** node calls it, **Teams** and the **Web app** publish it, **Copilot Credits** pay for it, and the monthly limit is no per-run limit
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/06-cs-gh-copilot/01-08-calling-publishing-paying.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Full-width diagram. Title and subtitle at the top, the provided diagram across the whole card width below them at its natural aspect ratio, never cropped, never a background, then the single bullet as one caption line under the diagram.
+
+---
+
+# The enhanced orchestration runtime
+### How one question becomes a plan across sources and tools
+- **Build tab**: Instructions, Knowledge, Tools and Skills sit in one components panel
+- **Always on**: every GitHub Copilot agent runs this runtime; there is no setting to pick
+- **Multi-step plans**: one question can draw on several knowledge sources and tools and come back as one answer
+- **Deep reasoning**: applied on its own to complex tasks, or forced with the keyword `reason` in an instruction
+- **Visible plan**: the step list in Preview shows each step, and History keeps every Preview session
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/06-cs-gh-copilot/02-01-orchestration-runtime.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Reading the plan in Preview
+### A reason instruction turns one question into parallel searches
+- With **Debug mode** on, the step list shows the plan, then **Ran 2 events in parallel**: one knowledge search per part of the question
+
+```
+When an employee mentions a trip and a symptom, reason step by step:
+first check whether the symptom allows travel, then look up the
+company doctor's consultation hours and booking rules, then summarize.
+```
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/06-cs-gh-copilot/02-02-plan-in-preview.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Split code. Title and subtitle at the top; left column a light grey panel holding the code block in a monospace font, exactly as given; right column the provided diagram as an inline content image at its natural aspect ratio, never cropped.
+
+---
+
+# Agent skills
+### A SKILL.md recipe that loads when a request matches its description
+- **SKILL.md**: YAML front matter with a name and a description, then Markdown instructions
+- **On demand**: only names and descriptions stay in context; the full instructions load on a match
+- **Description**: the runtime activates a skill from it alone, so it carries the caller's words
+- **Portable**: the same open format as Claude Code and GitHub Copilot, uploaded or downloaded in the Skills panel
+- **With tools**: a skill has no live connection of its own, but it can direct the agent to use a tool
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/06-cs-gh-copilot/03-01-agent-skills.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Testing a skill in Preview
+### The description decides when the skill fires
+- **Used skill** in the step list proves the match; a near-miss question must stay quiet
+
+```
+---
+name: doctor-appointment-request-drafter
+description: Draft an appointment request to the company doctor
+  ONLY when the employee explicitly asks to book, request, or
+  schedule an appointment, a pre-travel check, or a fit-to-travel
+  note. Do not use for general health questions, symptom advice,
+  fasting or nutrition questions, travel advice, or questions
+  about consultation hours.
+---
+```
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/06-cs-gh-copilot/03-02-skill-activation.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Split code. Title and subtitle at the top; left column a light grey panel holding the code block in a monospace font, exactly as given; right column the provided diagram as an inline content image at its natural aspect ratio, never cropped.
+
+---
+
+# Connectors, MCP servers and workflows
+### Which tool fits which job
+- **Connector**: one action against one service, such as sending one email
+- **MCP server**: one connection to a shared set of tools; its description tells the orchestrator when to call it
+- **Workflow**: a repeated multi-step process, tested node by node and versioned in the new designer
+- **Agent node**: a workflow step that hands a task to your agent and passes the result on
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/06-cs-gh-copilot/04-01-connectors-mcp-workflows.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Adding an MCP server
+### One connection, every tool the server exposes
+- **Add a tool**, MCP tab for a prebuilt server, or **Model Context Protocol** for your own
+- Server name, **description**, URL and authentication: None, API key or OAuth 2.0
+- **Edit tool** lists every tool the server exposes under **Tool permissions**
+- The orchestrator calls the server on its own when a question matches the description
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/06-cs-gh-copilot/04-02-mcp-edit-tool.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# A workflow with an agent node
+### Fixed steps around one call to your agent
+- Trigger, **Agent** node and **Respond to the agent** ran in 17 seconds; the agent node called the published GH-Food Buddy
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/06-cs-gh-copilot/04-03-workflow-run.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Full-width diagram. Title and subtitle at the top, the provided diagram across the whole card width below them at its natural aspect ratio, never cropped, never a background, then the single bullet as one caption line under the diagram.
+
+---
+
+# Grounding with Work IQ, Foundry IQ and Fabric IQ
+### The agent reads each source where it lives
+- **Work IQ** reads your Microsoft 365 email, meetings, chats and files
+- **Foundry IQ** answers over a knowledge base a team tunes in Microsoft Foundry
+- **Fabric IQ** answers data questions from a semantic model in Microsoft Fabric
+- Copilot Studio holds only the **connection**; each source stays with its owner
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/06-cs-gh-copilot/05-01-iq-grounding.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.

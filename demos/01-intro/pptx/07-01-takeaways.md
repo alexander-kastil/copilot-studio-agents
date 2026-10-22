@@ -11,8 +11,8 @@ media-file: demos/01-intro/pptx/images/07-01-takeaways.jpg
 subject: trace
 visual-prompt: >
   ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych, no
-  collage. A whiteboard wall in a bright meeting room next to an HR office, just after a planning
-  session for an onboarding agent, nobody in frame. On the board a hand-drawn circle of four curved
+  collage. A whiteboard wall in a bright meeting room, just after a team planned its onboarding
+  agent before building it, nobody in frame. On the board a hand-drawn circle of four curved
   arrows in blue marker, three stacked boxes beside it in green marker and a short row of pastel sticky
   notes, drawn only with arrows, circles and boxes, with no letters, words or numbers anywhere. Two
   markers and an eraser rest on the ledge, a light-oak table with pushed-back chairs in the foreground.

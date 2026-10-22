@@ -10,10 +10,11 @@ media-source: existing
 media-file: demos/02-cowork/pptx/images/04-03-recurring-task-card.png
 photo-link: demos/02-cowork/pptx/images/04-03-recurring-task-card.png
 visual-prompt: >
-  Screenshot from the automation demo run (pool 02-04-025): the Create recurring task? card for the
-  Weekly Regional Status Report, Northern Europe, set to Weekly, Friday, 3:00 PM in a new
-  conversation, with the start of its Description; cropped above the line naming the recipient
-  address.
+  Screenshot from the automation demo run (pool 02-04-025, 1152x882), native crop 0,0,1152,689: the
+  Create recurring task? card for the Weekly Regional Status Report, Northern Europe, set to Weekly,
+  Friday, 3:00 PM in a new conversation, and its Description down to the line that writes the draft
+  to Elena Varga with the salutation Hi Elena; cropped above the line naming the recipient address,
+  so Run once now and Schedule stay outside the crop.
 order: 14
 source: demos/02-cowork/04-automation/demo-01-automation.md
 gamma_prompt: >

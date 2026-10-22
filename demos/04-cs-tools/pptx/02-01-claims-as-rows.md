@@ -11,21 +11,21 @@ subject: hands-artefact
 media-file: demos/04-cs-tools/pptx/images/02-01-claims-as-rows.jpg
 visual-prompt: >
   ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych,
-  no collage. On a light-oak desk by a bright window, two hands lay a train ticket and a folded hotel
-  receipt from a two-night customer workshop trip side by side, ready to be filed with a claim; a pen
-  rests beside them and a small green plant stands at the edge of the desk. Both papers show only faint
-  grey lines, with no letters, words or numbers anywhere. Modern, light, bright and friendly: high-key
-  natural daylight, soft pastel accents in light blue, mint and lavender, green plants, 2020s design.
-  16:9 landscape, contemporary editorial photography. Avoid: readable text, logos, watermarks, extra
-  people, printed words or numbers on tickets, receipts or the pen, dark or moody lighting, vintage or
-  retro decor, grime, clutter.
+  no collage. On a light-oak desk by a bright window lies a printed list of travel claims laid out as a
+  long table of even rows; one hand holds the sheet flat while the other runs a pen along a single row,
+  checking that claim off. The sheet shows only faint grey lines and soft light-blue colour fields, with
+  no letters, words or numbers anywhere; a small green plant stands at the edge of the desk. Modern,
+  light, bright and friendly: high-key natural daylight, soft pastel accents in light blue, mint and
+  lavender, green plants, 2020s design. 16:9 landscape, contemporary editorial photography. Avoid:
+  readable text, logos, watermarks, extra people, printed words or numbers on the sheet or the pen, dark
+  or moody lighting, vintage or retro decor, grime, clutter.
 order: 5
 source: demos/04-cs-tools/02-dataverse/readme.md
 gamma_prompt: >
   Statement card titled "Travel claims as Dataverse rows", subtitle "Business records the agent reads
   and writes". One large sentence across the left two thirds about writing every claim as a table row.
-  The provided photograph of hands laying out trip receipts as a side accent in the right third, no text
-  over it. Use exactly the one image given for this card; do not generate or add any other images,
+  The provided photograph of hands checking off one row on a printed list of travel claims as a side
+  accent in the right third, no text over it. Use exactly the one image given for this card; do not generate or add any other images,
   icons or logos.
 ---
 

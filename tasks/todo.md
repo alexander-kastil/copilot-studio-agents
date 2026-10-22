@@ -28,7 +28,7 @@ Source: Learn training module `explore-copilot-studio-agent-harnesses` units 2 t
 
 ## Rebuild the class environment as CS- agents (2026-10-21)
 
-Handoff with full context, state, proven procedures and traps: [handoff-cs-rebuild.md](handoff-cs-rebuild.md). Goal: a fresh, consolidated class environment in **Integrations e. U. (default)** where every Standard agent and every environment-level tool carries the `CS-` prefix (GitHub Copilot agents `GH-`), built from the clones in `src/cs-schema/agents/`, plus 15 optional rebuild demos for modules 03 to 05 that are run-verified against it. Anything without a prefix is deleted after success.
+Goal: a fresh, consolidated class environment in **Integrations e. U. (default)** where every Standard agent and every environment-level tool carries the `CS-` prefix (GitHub Copilot agents `GH-`), built from the clones in `src/cs-schema/agents/`, plus 15 optional rebuild demos for modules 03 to 05 that are run-verified against it. Anything without a prefix is deleted after success.
 
 - [x] Clone every agent and standalone workflow with the VS Code extension into `src/cs-schema/` and generate `src/cs-schema/schema.json`
 - [x] Sort out the incomplete duplicates locally (Food Stock Agent, Onboarding Agent, Profile Agent; still live in the environment)
@@ -45,12 +45,12 @@ Handoff with full context, state, proven procedures and traps: [handoff-cs-rebui
 - [ ] 04/06 guide fixes: CS-Send an email needs a **Message to display** (typed, then click outside the editor before **Save**), otherwise the tool fails with "no confirmation message has been set"; with **Send specific response** the mail went out while the message was shown, before the user answered, so test **Send an adaptive card** as the blocking confirmation
 - [ ] 04/02 and 04/03 guide fixes: the agent adds a second "Your claim … has already been…" message; the Teams tool needs ids (team as `groupId`, channel id), so the guide adds a step that gets them (Teams **Get link to channel**, or Graph) and puts them in the instructions
 - [ ] Guide fixes found live (fold in during phase 3): 03/03 the agent asks "Please choose your reward:" a second time after the first reward; 03/04 the agent repeats its instruction greeting after the recap, and the guide still quotes the pre-fix agent and knowledge descriptions ("refunding travel costs by taking the request and storing it", "Official resource on what counts as a business trip and which costs can be claimed"); 03/05 and 04/01 the card notes the demand as rows and adds "Your demand entry form is ready for submission."; 04/01 the button after Save is **Add and configure**, not "Add to agent"; 04/03 "May 12" asks for the year (2026 or 2027); 04/05 Solution defaults to Playground, every output needs a description, the wizard's CS- tool names do not carry over to the agent (rename each tool after **Add and configure**), the connection dialog has **Display name (optional)**, seeded ids are 1, 2, 3, 7, 9, 12, 13, 14, 16, the topic answer is followed by an extra stock list; 04/06 the button is **Add**, the connection dialog has a display name, **Ask the end user before running** adds **How do you want to ask the user?** and a required **Message to display**
-- [ ] Phase 3 guides: align each of the 15 guides with its pulled YAML and smoke test (fold in the live findings in the handoff), then link them as optional demos in the module Hands-On Demos tables and topic readmes; `link-check.sh`, `fence-lang.py`, brand-voice-copilot
+- [ ] Phase 3 guides: align each of the 15 guides with its pulled YAML and smoke test (fold in the live findings, now in the `copilot-work-iq:copilot-studio` leaves), then link them as optional demos in the module Hands-On Demos tables and topic readmes; `link-check.sh`, `fence-lang.py`, brand-voice-copilot
 - [ ] Phase 4: GH- batch for module 06 in three parallel browser lanes (owner, 2026-10-22: "parallelize this work with 3 agents each working on a demo in their own browser tab"). Runs as a Workflow, because the Chrome tools reach Workflow agents only; each lane owns one Chrome tab, runs live, saves screenshots and reports what worked. The main thread writes the guides with create-class afterwards.
   - [x] Lane 1, GH-Health Advisor (06/01, then 06/02 and 06/03 on the same agent): GitHub Copilot agent with CS-Health Advisor's description, instructions and its two knowledge files; reasoning trace with a second source; one skill
   - [x] Lane 2, GH-Food Buddy (06/04): GitHub Copilot agent with the Food MCP server `https://cs-food-catalog-api.azurewebsites.net/api/mcp` as tool GH-Food MCP and a GH- workflow whose agent node calls it
   - [x] Lane 3, 06/05 and 06/06 (no agent to re-create): existing guides run as written with GH- names (GH-Aurora Account Assistant, 30-character limit); 06/06 blocked by the missing Copilot Credits pool for the personal environment
-  - [x] Existing guides 06/01 to 06/06 updated from the lane reports, status table in the handoff
+  - [x] Existing guides 06/01 to 06/06 updated from the lane reports
   - [ ] Learn loop
   - [x] 06/06 rerun after the owner gave the personal environment Copilot Credits: built, refined, published, guide updated
   - [ ] Copilot Credits per demo in `demos/demo-check.md` (cost workflow)
@@ -197,3 +197,7 @@ Module 05 demo and lab guides are planned in each topic readme and in the labs r
 ## Open from the overview SVG run (2026-10-22)
 
 - [ ] `demos/05-cs-advanced/02-deep-reasoning/demo-deep-reasoning.md` Exercise 1 Expected lists T-102 before T-106, but by the guide's own deadline rules T-106 (Thursday 08:00) comes before T-102 (Thursday 18:30); fix the order, then rank the two in `_images/deep-reasoning-overview.svg`, which shows them as "8, 9" unordered.
+
+## Open from the plugin consolidation (2026-10-22)
+
+- [ ] `demos/01-intro/06-cost-license/readme.md:145` and `setup/readme.md:36` say the matching skills live in `.claude/skills/`, but `cowork-setup` is a global skill, so a student who clones the repo does not get it; copy it into the repo or reword both lines.

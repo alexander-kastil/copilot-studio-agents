@@ -11,20 +11,21 @@ subject: hands-artefact
 media-file: demos/04-cs-tools/pptx/images/05-03-booking-delivery.jpg
 visual-prompt: >
   ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych,
-  no collage. In the brightly lit walk-in cold room of a modern staff canteen kitchen, two hands in the
-  sleeves of a white chef jacket slide a freshly delivered crate of vacuum-packed meat portions onto a
-  stainless steel shelf beside neatly stacked steel containers; daylight falls in through the open door
-  behind. Clean, tidy surfaces. Modern, light, bright and friendly: high-key natural daylight, soft pastel
-  accents in light blue, mint and lavender, green plants, 2020s design. 16:9 landscape, contemporary
-  editorial photography. Avoid: readable text, logos, watermarks, extra people, labels or printing on
-  the packs, the crate or the containers, dark or moody lighting, vintage or retro decor, grime, clutter.
+  no collage. In the bright kitchen of a modern staff canteen, two hands in the sleeves of a white chef
+  jacket slide a just-delivered tray of Schweinshaxe mit Kraut portions, each a roast pork knuckle on
+  sauerkraut in its own steel container under a clear lid, onto the stainless steel stock shelf beside
+  neatly stacked steel containers; a tall window lets in bright daylight. Clean, tidy surfaces. Modern,
+  light, bright and friendly: high-key natural daylight, soft pastel accents in light blue, mint and
+  lavender, green plants, 2020s design. 16:9 landscape, contemporary editorial photography. Avoid:
+  readable text, logos, watermarks, extra people, labels or printing on the lids, the tray or the
+  containers, dark or moody lighting, vintage or retro decor, grime, clutter.
 order: 16
 source: demos/04-cs-tools/05-rest-api/demo-food-catalog-rest-connector.md
 gamma_prompt: >
   Statement card titled "Booking a delivery in one sentence", subtitle "The orchestrator chains a lookup
   and an update". One large sentence across the left two thirds about the delivery booked from one chat
-  message. The provided photograph of hands shelving a delivered crate in a canteen cold room as a side
-  accent in the right third, no text over it. Use exactly the one image given for this card; do not
+  message. The provided photograph of hands shelving a delivery of Schweinshaxe mit Kraut portions in a
+  canteen kitchen as a side accent in the right third, no text over it. Use exactly the one image given for this card; do not
   generate or add any other images, icons or logos.
 ---
 

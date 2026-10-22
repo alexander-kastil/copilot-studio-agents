@@ -10,9 +10,10 @@ media-source: existing
 media-file: demos/06-cs-gh-copilot/pptx/images/05-02-work-iq-trace.png
 photo-link: demos/06-cs-gh-copilot/pptx/images/05-02-work-iq-trace.png
 visual-prompt: >
-  Live screenshot, pool id 06-06-026, cropped above the email details: GH-Aurora Account Assistant in
-  Preview with Debug mode on, the question about the most recent customer email, and the step list
-  with Used tool: fetch, Used tool: retrieve and a second Used tool: fetch.
+  Live screenshot, pool id 06-06-026 (1537x784), native crop 518,62,1178,440 saved at 660x378, cut
+  above the email details: GH-Aurora Account Assistant in Preview with Debug mode on, the question about
+  the most recent customer email, and the step list with Used tool: fetch, Used tool: retrieve and a
+  second Used tool: fetch.
 order: 19
 source: demos/06-cs-gh-copilot/05-iq-grounding/demo-05-ground-with-iq.md
 gamma_prompt: >

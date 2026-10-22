@@ -10,9 +10,10 @@ media-source: existing
 media-file: demos/02-cowork/pptx/images/06-01-calendar-approval-card.png
 photo-link: demos/02-cowork/pptx/images/06-01-calendar-approval-card.png
 visual-prompt: >
-  Screenshot from the Work IQ scheduling demo run (pool 02-01-023): the Create calendar event? card
-  at Medium risk for the one-hour Agentic AI session with its three-point agenda, Cancel and Save,
-  and the Always allow Create event option open under the arrow.
+  Screenshot from the Work IQ scheduling demo run (pool 02-01-023, 1098x714), native crop
+  0,12,1098,632: the Create calendar event? card at Medium risk for the one-hour Agentic AI session,
+  with an empty Attendees field, its three-point agenda, Cancel and Save, and the Always allow Create
+  event option open under the arrow.
 order: 18
 source: demos/02-cowork/06-staying-in-control/readme.md
 gamma_prompt: >

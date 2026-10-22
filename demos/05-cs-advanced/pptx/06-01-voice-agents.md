@@ -12,13 +12,14 @@ media-file: demos/05-cs-advanced/pptx/images/06-01-voice-agents.jpg
 visual-prompt: >
   ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych, no
   collage. Close-up on a light-oak desk in a bright office: one hand holds the lifted handset of a plain
-  white desk phone without a display just out of frame on its coiled cord, while the index finger of
-  the other hand presses the 1 key of the phone's keypad; the keys carry only their standard digits. A
-  green plant and a window with soft daylight are softly out of focus behind. The hands and the keypad
-  are centred in the frame. Modern, light, bright and friendly: high-key natural daylight, soft pastel
-  accents in light blue, mint and lavender, green plants, 2020s design. 2:3 portrait, hands centred,
-  contemporary editorial photography. Avoid: readable text other than the keypad digits, logos,
-  watermarks, faces, extra people, dark or moody lighting, vintage or retro decor, grime, clutter.
+  white desk phone without a display just out of frame on its coiled cord, while the index finger of the
+  other hand presses the 1 key of the phone's keypad; the keys carry only their standard digits, and the
+  phone body carries no letters, labels or printing anywhere else. A green plant and a window with soft
+  daylight are softly out of focus behind. The hands and the keypad are centred in the frame. Modern,
+  light, bright and friendly: high-key natural daylight, soft pastel accents in light blue, mint and
+  lavender, green plants, 2020s design. 2:3 portrait, hands centred, contemporary editorial photography.
+  Avoid: readable text other than the keypad digits, logos, watermarks, faces, extra people, dark or moody
+  lighting, vintage or retro decor, grime, clutter.
 order: 16
 source: demos/05-cs-advanced/06-voice/readme.md
 gamma_prompt: >

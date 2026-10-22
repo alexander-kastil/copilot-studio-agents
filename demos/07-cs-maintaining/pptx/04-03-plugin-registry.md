@@ -13,13 +13,14 @@ visual-prompt: >
   ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych, no
   collage. At a white standing desk by a tall window in the bright Grey Logistics IT team room, a Power
   Platform maker in his early thirties turns a plain laptop with no logo on its lid toward a colleague
-  from the IT help desk team, a woman in her late twenties in modern work-casual clothes, who types a
-  test question into it; its display faces the camera and glows with a soft blur of chat bubbles in
-  light blue and white, and both smile. Modern, light, bright and friendly: high-key natural daylight,
-  white and light-oak contemporary interior, soft pastel accents in light blue, mint and lavender,
-  green plants, 2020s design. Screens show only soft blurred shapes and colours, never readable UI.
-  16:9 landscape, contemporary editorial photography. Avoid: readable text, logos, watermarks, dark or
-  moody lighting, vintage or retro decor, grime, clutter, extra people, rear of the laptop.
+  from the IT help desk team, a woman in her late twenties in modern work-casual clothes, who types a test
+  question into it; the camera looks past their shoulders at the open screen, which shows a soft blur of
+  light-blue and white chat bubbles; nothing floats in the air above the laptop, its lid is plain silver
+  with no logo, and both smile. Modern, light, bright and friendly: high-key natural daylight, white and
+  light-oak contemporary interior, soft pastel accents in light blue, mint and lavender, green plants,
+  2020s design. Screens show only soft blurred shapes and colours, never readable UI. 16:9 landscape,
+  contemporary editorial photography. Avoid: readable text, logos, watermarks, dark or moody lighting,
+  vintage or retro decor, grime, clutter, extra people, rear of the laptop.
 order: 12
 source: demos/07-cs-maintaining/04-advanced-channels/readme.md
 gamma_prompt: >

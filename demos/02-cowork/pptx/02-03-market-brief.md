@@ -5,20 +5,29 @@ title: "Producing a market brief"
 subtitle: "Deep Research, your positioning, then a Word brief and a PDF"
 layout: diagram
 visual-weight: 1/2
-visual-type: screenshot
-media-source: existing
-media-file: demos/02-cowork/pptx/images/02-03-market-brief-pdf.png
-photo-link: demos/02-cowork/pptx/images/02-03-market-brief-pdf.png
+visual-type: diagram
+media-source: opus-svg
+media-file: demos/02-cowork/pptx/images/02-03-market-brief.svg
 visual-prompt: >
-  Screenshot from the research-brief demo run (pool 02-02-007): Cowork's closing summary with the
-  Top pick beside the AW26 Market Brief - Aurora Outdoor PDF open in the preview.
+  Hand-written SVG, viewBox 0 0 1920 1080, white background, Segoe UI, 2px #8c959f borders, text
+  #24292f and #57606a, pastel fills, no heading inside the image. Two inputs at the top: grey "The
+  outdoor market, current trends" over step 1 and purple "Your own positioning,
+  internal-positioning.docx" over step 2. Four numbered blue steps left to right: "1 Research the
+  market" with a Deep Research chip, "2 Hold it against your positioning", "3 Write the brief" with a
+  Word chip, "4 Recommend and export" with a Word chip handing over to a PDF file. Under each step a
+  green output: "3 or 4 trends, each one cited", "Gap analysis, aligned and exposed", "Two-page
+  brief, Word, four sections", "3 ranked moves, one marked Top pick, plus the PDF". SMIL animation,
+  10 s loop: the steps light up in order, each with its chip, and a dot travels between them; the
+  first frame is complete. Replaces the PDF preview screenshot (pool 02-02-007), whose page is only
+  520 px wide and cannot be read at half a slide.
 order: 8
 source: demos/02-cowork/02-built-in-skills/demo-01-research-brief.md
 gamma_prompt: >
   Slide titled "Producing a market brief", subtitle "Deep Research, your positioning, then a Word
   brief and a PDF". Left column: five short bullets, one per step of the demo. Right column, wider
-  than the left: the provided screenshot of the finished market brief PDF beside the Cowork task, as
-  an inline content image at its natural aspect ratio, never cropped. White background. Use exactly
+  than the left: the provided diagram of four steps from market research to a leadership PDF, each
+  with the built-in skill it uses and the output it produces, at its natural 16:9 aspect ratio, never
+  cropped. White background, calm pastel accents. Use exactly
   the one image given for this card; do not generate or add any other images, icons or logos.
 ---
 
@@ -34,7 +43,7 @@ gamma_prompt: >
 
 ## Speaker Notes
 
-This slide shows the topic's demo, which prepares Aurora Outdoor's AW26 brand planning. The screenshot is the end of the run: Cowork's summary on the left and the PDF for leadership in the preview.
+This slide shows the topic's demo, which prepares Aurora Outdoor's AW26 brand planning. The diagram follows its four prompts, with the skill each one uses and what it returns.
 
 Deep Research: the first prompt asks for the trends shaping premium outdoor brands, each with its source. The chat reads Working on 1 background task, and Deep Research and Web Search appear under Plugins.
 

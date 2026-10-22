@@ -10,9 +10,10 @@ media-source: existing
 media-file: demos/06-cs-gh-copilot/pptx/images/04-02-mcp-edit-tool.png
 photo-link: demos/06-cs-gh-copilot/pptx/images/04-02-mcp-edit-tool.png
 visual-prompt: >
-  Live screenshot, pool id 06-04-022: the Edit tool dialog of GH-Food Buddy for its MCP server, with
-  the connection GH-Food MCP, Authentication End user account and Tool permissions listing seven food
-  catalog tools under Allow all.
+  Live screenshot, pool id 06-04-022 (1568x765), native crop 436,40,1134,472 saved at 698x432, inside
+  the dialog borders: the Edit tool dialog of GH-Food Buddy's MCP server, with the connection GH-Food
+  MCP, Authentication End user account and Tool permissions listing seven food catalog tools under
+  Allow all.
 order: 16
 source: demos/06-cs-gh-copilot/04-workflows-and-mcp/demo-04-connect-mcp-and-workflow.md
 gamma_prompt: >

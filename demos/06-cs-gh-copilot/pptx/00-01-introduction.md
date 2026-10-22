@@ -14,8 +14,8 @@ visual-prompt: >
   collage. Two Northwind Traders sellers, a woman and a man in their early thirties in modern
   work-casual clothes, stand at a light-oak counter in a bright sales office in the morning and talk
   through the customer calls of the day over coffee. On the counter sit the products they sell: a
-  plain brown bag of dark roast coffee beans, a small plain tin of green tea and a glass bottle of
-  cold brew concentrate, all with blank kraft labels. She points at the bottle while he nods and
+  plain brown 5 kg bag of dark roast beans, a small plain tin of organic green tea and a glass bottle
+  of cold brew concentrate, all with blank kraft labels. She points at the bottle while he nods and
   smiles. Modern, light, bright and friendly: high-key natural daylight, soft pastel accents in light
   blue, mint and lavender, green plants, 2020s design. 2:3 portrait, people centred, contemporary
   editorial photography. Avoid: readable text, readable labels on bags, tins, bottles or cups, logos,

@@ -16,7 +16,7 @@ Send Cowork out to research the outdoor market, hold its findings up against you
 | Output | 38K | €0.67 | €0.33 | €0.07 |
 | **Total** | **10.2M** | **€3.41** | **€2.59** | **€0.53** |
 
-![Diagram of the four demo steps: research the market with Deep Research, hold the findings against internal-positioning.docx, write the two-page Word brief, then add three ranked moves while the Word skill hands over to the PDF skill.](../pptx/images/02-03-market-brief.svg)
+![Diagram of the four demo steps: research the market with Deep Research, hold the findings against internal-positioning.docx, write the two-page Word brief, then add three ranked moves, one marked Top pick, and export the brief as a PDF.](../pptx/images/02-03-market-brief.svg)
 
 ## Related Topics
 

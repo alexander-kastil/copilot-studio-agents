@@ -60,5 +60,7 @@
 | 2026-10-22 | 0.37 | 11:25 | 12:40 | Animated overview pictures on every demo, default and optional demos per topic |
 | 2026-10-22 | 0.88 | 11:28 | 12:21 | Fictional company renamed to Grey Logistics across all demos and labs, terminal build-and-migrate demo run live and corrected, published as a new lab |
 | 2026-10-22 | 0.95 | 12:17 | 13:37 | Slide plans for all eight class decks with live demo screenshots, diagrams and photo briefs, ready for rendering and layout |
+| 2026-10-22 | 0.65 | 18:41 | 20:20 | Photos, diagrams and slide layout for all eight class decks, demo screenshots made readable, decks delivered to the class OneDrive folder |
+| 2026-10-22 | 1.00 | 18:44 | 19:44 | Copilot Studio, Cowork and Work IQ know-how bundled into one installable expert plugin, assistant routing extended to plugins, class repo tidied |
 
-**Total: 36.45h**
+**Total: 38.10h**

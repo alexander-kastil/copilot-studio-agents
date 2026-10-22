@@ -1,0 +1,123 @@
+Apply the Integrations House theme: Montserrat bold headings, Poppins body, #1B365D accent. Create exactly 10 cards, one per section below, in this order. Keep the card text exactly as given. The Image and Layout lines are instructions, never visible text. Use exactly the one image URL given for each card; do not generate or add any other images, icons or logos. Keep body text at the normal body size on every card; never shrink text to fit.
+
+# The rewards detour in the test chat
+### The first reward request runs the employee questions
+- A reward request from an unknown employee runs **Collect Employee Data** first
+- The cost center is recognized as a **Number**
+- The paid leave message confirms the employee
+- The redirect returns to **Please choose your reward:**
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/03-cs-basics/03-03-employee-detour.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Power Fx in a topic
+### Three formulas turn the expense card into a claim ready to save
+- Formulas run wherever a node takes a value: **Set variable value**, Condition, Question
+- `Text(GUID())` gives every claim its own **claimID**
+- `& "T00:00:00Z"` turns each card date into an **ISO timestamp**
+- Name variables with their **scope prefix**, separate arguments with commas
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/03-cs-basics/expense-claim-power-fx-overview.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# The claim recap
+### The values an agent flow receives next
+- **Submit Claim** fills one topic variable per card input
+- The recap starts with the **claimID**, a 36-character GUID
+- Both dates arrive as **ISO timestamps** ending in T00:00:00Z
+- A second test run gets a **different claimID**
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/03-cs-basics/04-02-claim-recap.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Canteen demand on one card
+### CS-Food Stock Buddy collects nine dishes in one submit
+- One **Adaptive Card** replaces nine questions: the canteen manager types a number per dish and submits once
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/03-cs-basics/05-01-canteen-demand.jpg?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Statement. Title at the top; the single bullet as one large sentence across the left two thirds; the provided image as a side accent in the right third, no text over it.
+
+---
+
+# From card inputs to variables
+### Input id, binding and type must agree
+- Each input **id** becomes a typed output bound to a topic variable
+- `Global.orderDemand` keeps all nine numbers for the order calculation
+
+```
+output:
+  binding:
+    qty.WienerSchnitzel: Topic.qtyWienerSchnitzel
+    qty.PizzaNapoli: Topic.qtyPizzaNapoli
+    qty.GreenCurry: Topic.qtyGreenCurry
+outputType:
+  properties:
+    qty.WienerSchnitzel: Number
+```
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/03-cs-basics/food-demand-card-overview.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Split code. Title and subtitle at the top; left column a light grey panel holding the code block in a monospace font, exactly as given; right column the provided diagram as an inline content image at its natural aspect ratio, never cropped.
+
+---
+
+# Submitting the demand
+### 40 schnitzel, 30 pizza and 25 curry in one submit
+- Each dish row has a **number field** that starts at 0
+- Pizza Napoli 30 and Green Curry 25 typed, the other rows left at 0
+- **Submit Demand** sends every row in one step
+- The confirmation lists only the **three dishes** above 0
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/03-cs-basics/05-03-demand-confirmed.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Publishing to channels
+### From the agent editor to a chat in Microsoft Teams
+- **Publish** copies the draft to every channel the agent is connected to
+- The **Microsoft 365 and Microsoft Teams** channel is added after the first publish
+- **Availability options** decide who finds the agent: link, shared users, the org, or a .zip
+- **Authenticate with Microsoft** opens Teams, Microsoft 365 Copilot and SharePoint
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/03-cs-basics/06-01-publish-to-teams.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# CS-HR Buddy in Teams
+### The republished message after start over
+- The published agent runs the same **topics** in a Teams chat
+- The department options appear as **buttons**
+- After **Publish** and `start over`, the message ends with the new sentence
+- Start over also clears **Global.EmployeeIdentified**
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/03-cs-basics/06-02-teams-republish.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Two columns. Left column: the bullets. Right column, wider than the left: the provided diagram as an inline content image at its natural 16:9 aspect ratio, scaled to fit the column, never cropped, never used as a background or side accent.
+
+---
+
+# Draft and published version
+### Who sees which version, and who may chat
+- You edit a draft, colleagues chat with the **published** version, and sharing decides who may chat at all
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/03-cs-basics/06-03-published-version.jpg?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Statement. Title at the top; the single bullet as one large sentence across the left two thirds; the provided image as a side accent in the right third, no text over it.
+
+---
+
+# Takeaways
+### What the tools module builds on
+- Write **instructions** that state the job, the limits and how a conversation ends
+- Give every knowledge source and topic a **description** the orchestrator can choose by
+- Trust an answer once its **citation** opens the source
+- Keep fixed paths in **topics**, logic in **Power Fx** and multi-field input on **Adaptive Cards**
+- Users chat with the **published** version, and only once you share it
+
+Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/03-cs-basics/07-01-takeaways.jpg?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
+Layout: Text on the left half on plain white, the photograph as a side accent filling the right half, no text over it.

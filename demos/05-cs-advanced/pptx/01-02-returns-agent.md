@@ -11,22 +11,23 @@ media-source: nano-banana
 media-file: demos/05-cs-advanced/pptx/images/01-02-returns-agent.jpg
 visual-prompt: >
   ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych, no
-  collage. A still life on a light-oak packing bench in the bright returns room of a web shop: a pair
-  of matte white unbranded wireless earbuds, the left earbud lying outside its open charging case,
-  beside a small opened plain kraft-paper shipping box with crinkled paper fill and a roll of plain
-  brown packing tape. Soft daylight from a window on the left, a green plant softly out of focus
-  behind. The earbuds and the box are centred in the frame. Modern, light, bright and friendly:
-  high-key natural daylight, soft pastel accents in light blue, mint and lavender, green plants, 2020s
-  design. 2:3 portrait, subject centred, contemporary editorial photography. Avoid: readable text,
-  shipping labels with text, logos or brand marks on the earbuds, case or box, watermarks, people,
-  hands, dark or moody lighting, vintage or retro decor, grime, clutter.
+  collage. A still life on a light-oak table by a window: a pair of matte white unbranded wireless
+  in-ear headphones from a web shop order, the right earbud seated in its open charging case and the
+  left earbud lying on the table outside it, beside the small opened plain kraft-paper shipping box
+  they arrived in, with crinkled paper fill. Soft daylight from the window on the left, a green plant
+  softly out of focus behind. The headphones and the box are centred in the frame. Modern, light,
+  bright and friendly: high-key natural daylight, soft pastel accents in light blue, mint and
+  lavender, green plants, 2020s design. 2:3 portrait, subject centred, contemporary editorial
+  photography. Avoid: readable text, shipping labels with text, logos or brand marks on the
+  headphones, case or box, watermarks, people, hands, dark or moody lighting, vintage or retro decor,
+  grime, clutter.
 order: 4
 source: demos/05-cs-advanced/01-autonomous-agents/demo-returns-agent-mailbox-trigger.md
 gamma_prompt: >
   Slide titled "CS-Returns Agent on a shared mailbox", subtitle "Every new return request gets an
   answer by mail". Side-accent layout: title, subtitle and five bullets on the left half on plain
-  white, the provided photograph of returned wireless earbuds beside an opened shipping box filling
-  the right half, no text over it. Use exactly the one image given for this card; do not generate or
+  white, the provided photograph of wireless headphones with the left earbud outside its charging case
+  beside an opened web shop box filling the right half, no text over it. Use exactly the one image given for this card; do not generate or
   add any other images, icons or logos.
   Theme: Integrations House (themeId idege54tfobdv2k), Montserrat bold headings, Poppins body, #1B365D accent.
 ---

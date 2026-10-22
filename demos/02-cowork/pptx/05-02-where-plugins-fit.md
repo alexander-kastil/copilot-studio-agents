@@ -10,9 +10,10 @@ media-source: existing
 media-file: demos/02-cowork/pptx/images/05-02-nutrition-packet.png
 photo-link: demos/02-cowork/pptx/images/05-02-nutrition-packet.png
 visual-prompt: >
-  Screenshot from the plugins demo run (pool 02-05-016): the top of Client Nutrition Packet -
-  NUT-2041 in the Word preview, with the bold DRAFT ONLY line under the title and Part 1, the
-  internal clinical assessment, built from fictional training data.
+  Screenshot from the plugins demo run (pool 02-05-016, 940x431), native crop 0,0,832,431 without the
+  grey margin on the right: the top of Client Nutrition Packet - NUT-2041 in the Word preview, with
+  the DRAFT header line, the bold DRAFT ONLY line under the title and Part 1, the internal clinical
+  assessment, built from fictional training data.
 order: 16
 source: demos/02-cowork/05-plugins/demo-01-plugins.md
 gamma_prompt: >

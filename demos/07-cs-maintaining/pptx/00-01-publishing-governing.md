@@ -11,20 +11,22 @@ subject: place
 media-file: demos/07-cs-maintaining/pptx/images/00-01-publishing-maintaining.jpg
 visual-prompt: >
   ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych, no
-  collage. The bright open-plan office where the employees of Grey Logistics work, early in the
-  morning before anyone arrives: rows of light-oak desks with white chairs pushed in, green plants
-  between them, a small IT help desk corner with a headset resting on a white desk, and tall windows
-  letting in soft morning daylight; nobody in frame. Modern, light, bright and friendly: high-key
-  natural daylight, soft pastel accents in light blue, mint and lavender, green plants, 2020s design.
-  16:9 landscape, contemporary editorial photography. Avoid: readable text, logos, watermarks, dark or
-  moody lighting, vintage or retro decor, grime, clutter, people, signs, posters.
+  collage. The bright open-plan office where the employees of Grey Logistics already work, on a busy
+  weekday morning: a long aisle runs into the centre of the frame between rows of light-oak desks
+  with white chairs and green plants, and along it, far off and softly out of focus, employees in
+  modern work-casual clothes sit at their desks or talk in pairs under tall windows full of soft
+  daylight. The aisle and the desks are centred in the frame, and nobody stands close to the camera.
+  Modern, light, bright and friendly: high-key natural daylight, soft pastel accents in light blue,
+  mint and lavender, green plants, 2020s design. 16:9 landscape, contemporary editorial photography.
+  Avoid: readable text, logos, watermarks, dark or moody lighting, vintage or retro decor, grime,
+  clutter, signs, posters, faces close to the camera.
 order: 1
 source: demos/07-cs-maintaining/readme.md
 gamma_prompt: >
   Title slide "Publishing & Maintaining Copilot Studio Agents" with subtitle "Everything that happens
   after the agent works on your screen" and three short bold-theme lines. Side-accent layout: title,
   subtitle and lines on the left half on plain white, the provided photograph of the bright Grey
-  Logistics office filling the right half, no text over the photo. Use exactly the one image given for
+  Logistics office where the employees work filling the right half, no text over the photo. Use exactly the one image given for
   this card; do not generate or add any other images, icons or logos.
 ---
 

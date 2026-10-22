@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">The New agent menu on the Agents page</title>
+  <desc id="d">The New agent button opens a menu with two sections. Under Optimize your business processes, Agent with the GitHub Copilot badge creates an agent to take actions and answer questions. Under Other ways to build, Customer Assist Agent is listed first, then Agent with the Standard badge, which creates an agent with predefined rules and flows.</desc>
+  <style>svg { font-size: 28px; }</style>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+
+  <rect x="1250" y="40" width="570" height="120" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="1460" y="122" font-size="56" font-weight="700" fill="#24292f" text-anchor="middle">New agent</text>
+  <line x1="1690" y1="58" x2="1690" y2="142" stroke="#8c959f" stroke-width="2"/>
+  <path d="M1735,88 L1755,110 L1775,88" fill="none" stroke="#24292f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="100" y="200" width="1720" height="840" rx="24" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+
+  <text x="150" y="282" font-size="46" fill="#57606a">Optimize your business processes</text>
+  <rect x="140" y="312" width="1640" height="230" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="190" y="412" font-size="70" font-weight="700" fill="#24292f">Agent</text>
+  <rect x="420" y="356" width="470" height="76" rx="38" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="655" y="410" font-size="48" fill="#24292f" text-anchor="middle">GitHub Copilot</text>
+  <text x="190" y="500" font-size="48" fill="#57606a">Create an agent to take actions and answer questions.</text>
+
+  <text x="150" y="622" font-size="46" fill="#57606a">Other ways to build</text>
+  <text x="190" y="702" font-size="52" fill="#57606a">Customer Assist Agent</text>
+  <rect x="140" y="742" width="1640" height="230" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="190" y="842" font-size="70" font-weight="700" fill="#24292f">Agent</text>
+  <rect x="420" y="786" width="300" height="76" rx="38" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="570" y="840" font-size="48" fill="#24292f" text-anchor="middle">Standard</text>
+  <text x="190" y="930" font-size="48" fill="#57606a">Create an agent with predefined rules and flows.</text>
+</svg>

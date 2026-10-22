@@ -11,12 +11,12 @@ media-file: demos/01-intro/pptx/images/05-02-agent-builder.jpg
 subject: people-at-work
 visual-prompt: >
   ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych,
-  no collage. An HR coordinator, a man in his late twenties in modern work-casual clothes, sits at a
-  light-oak desk in a bright HR office and types a short plain-language description of an onboarding
-  helper for new team members into his laptop. Beside the laptop lie a printed first-week checklist that
-  shows only pastel colour blocks and faint grey lines, with no letters, words or numbers anywhere, and a
-  coffee cup. The laptop display faces him at a slight angle and glows with a soft blur of light blue
-  and mint; he looks at it with a focused, pleased expression. Person centred in the frame. Modern,
+  no collage. A maker, a woman in her late twenties in modern work-casual clothes, sits at a light-oak
+  desk in a bright team office and types a short plain-language description of an agent that onboards
+  new team members into her laptop. Beside the laptop lie a few printed pages from the team's onboarding
+  files that show only pastel colour blocks and faint grey lines, with no letters, words or numbers
+  anywhere, and a coffee cup. The laptop display faces her at a slight angle and glows with a soft blur
+  of light blue and mint; she looks at it with a focused, pleased expression. Person centred in the frame. Modern,
   light, bright and friendly: high-key natural daylight, white and light-oak contemporary interior, soft
   pastel accents in light blue, mint and lavender, green plants, 2020s design. Screens show only soft
   blurred shapes and colours, never readable UI. 2:3 portrait, contemporary editorial photography.
@@ -26,7 +26,7 @@ order: 17
 source: demos/01-intro/05-chat-productivity/readme.md
 gamma_prompt: >
   Slide titled "Agent Builder", subtitle "Your own agent in Microsoft 365 Copilot, with no code". Four
-  bullets on the left half on plain white, the provided photograph of an HR coordinator typing the
+  bullets on the left half on plain white, the provided photograph of a maker typing the
   description of an onboarding agent into a laptop as a side accent filling the right half, no text over
   it. Use exactly the one image given for this card; do not generate or add any other images, icons or
   logos.

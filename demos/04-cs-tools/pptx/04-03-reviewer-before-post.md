@@ -11,10 +11,10 @@ subject: people-at-work
 media-file: demos/04-cs-tools/pptx/images/04-03-reviewer-before-post.jpg
 visual-prompt: >
   ONE single continuous photograph taken with one camera in one moment: no split screen, no diptych,
-  no collage. In a bright modern office, a team lead in her early thirties in modern work-casual clothes
-  sits at a light-oak desk by a tall window and reads a short review request on her laptop, one hand on
-  the trackpad as she decides, with a calm, attentive look; a white mug and a green plant stand beside
-  the laptop. Modern, light, bright and friendly: high-key natural daylight, white and light-oak
+  no collage. In a bright modern office, the reviewer, a woman in her early thirties in modern
+  work-casual clothes, sits at a light-oak desk by a tall window and reads the review request email in
+  her inbox on her laptop, one hand on the trackpad as she decides whether to submit it, with a calm,
+  attentive look; a white mug and a green plant stand beside the laptop. Modern, light, bright and friendly: high-key natural daylight, white and light-oak
   contemporary interior, soft pastel accents in light blue, mint and lavender, green plants, 2020s
   design. Screens show only soft blurred shapes and colours, never readable UI. 16:9 landscape,
   contemporary editorial photography. Avoid: readable text, logos, watermarks, extra people, writing on
@@ -24,8 +24,8 @@ source: demos/04-cs-tools/04-agent-flows/demo-health-advisor-flows.md
 gamma_prompt: >
   Content card titled "A reviewer before the Teams post", subtitle "The agent gets its answer first, the
   post waits for a person". Four short bullets on the left half on plain white about the order of
-  Respond to the agent and Request for information. The provided photograph of a team lead reading a
-  review request on her laptop fills the right half as a side accent, no text over it. Use exactly the
+  Respond to the agent and Request for information. The provided photograph of the reviewer reading the
+  review request email on her laptop fills the right half as a side accent, no text over it. Use exactly the
   one image given for this card; do not generate or add any other images, icons or logos.
 ---
 
