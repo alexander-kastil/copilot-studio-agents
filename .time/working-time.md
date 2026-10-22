@@ -59,5 +59,6 @@
 | 2026-10-22 | 0.43 | 10:27 | 11:24 | Legacy web app automation demo run live, demo guide corrected to the live product, demo status updated |
 | 2026-10-22 | 0.37 | 11:25 | 12:40 | Animated overview pictures on every demo, default and optional demos per topic |
 | 2026-10-22 | 0.88 | 11:28 | 12:21 | Fictional company renamed to Grey Logistics across all demos and labs, terminal build-and-migrate demo run live and corrected, published as a new lab |
+| 2026-10-22 | 0.95 | 12:17 | 13:37 | Slide plans for all eight class decks with live demo screenshots, diagrams and photo briefs, ready for rendering and layout |
 
-**Total: 35.50h**
+**Total: 36.45h**

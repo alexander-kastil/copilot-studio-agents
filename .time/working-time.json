@@ -1638,6 +1638,66 @@
       "catalogue": {
         "action": "none"
       }
+    },
+    {
+      "date": "2026-10-22",
+      "from": "12:17",
+      "to": "13:37",
+      "sessionId": "d527e1e7-0a54-4afa-8981-6c23d1ebe261",
+      "branch": "v-3.0.0",
+      "commits": [],
+      "surfaces": [
+        "demos"
+      ],
+      "files": [
+        "demos/*/pptx/*.md",
+        "demos/pptx/portraits.json",
+        ".claude/rules/decks.md",
+        "tasks/handoff-decks.md"
+      ],
+      "mechanism": {
+        "takes": "a course repository with module readmes and demo guides, plus the browser screenshots earlier agent sessions took while running those demos, kept only inside the session transcripts",
+        "does": "pulls the screenshots out of the transcripts into deduplicated per-topic pools with contact sheets and captions, then one image agent per module writes a slide spec per slide that pairs the teaching text with a cropped live screenshot, a hand-drawn SVG diagram or a photo brief, checked by a spec linter for layout and photo variety",
+        "returns": "per-module slide specs with speaker notes, cropped screenshots, diagrams and photo prompts ready for batch photo rendering and template layout, plus a resume file for a paused run"
+      },
+      "portsAsIs": [
+        "screenshot harvesting from agent session transcripts",
+        "one image agent per module writing slide specs from course sources",
+        "pause and resume of a fan-out through a per-row handoff file"
+      ],
+      "perCustomer": [
+        "the course modules and demo guides",
+        "the running business examples in the photo briefs"
+      ],
+      "evidence": [
+        "check_specs.py over all eight modules: specs=154 problems=0 photo_mix=0 layout_mix=0",
+        "transcript_screenshots.py reproduced the hand pools: raw=1321 kept=659"
+      ],
+      "toolchain": {
+        "skills": [
+          "create-pptx",
+          "create-class",
+          "report",
+          "humanizer",
+          "marketing-psychology",
+          "claude-learn",
+          "claude-learn-harvest",
+          "claude-learn-worktime",
+          "track-time"
+        ],
+        "mcpServers": [
+          "claude_ai_Gamma"
+        ],
+        "agents": [
+          "image-producer",
+          "fork"
+        ]
+      },
+      "industry": "corporate training, low-code agent development",
+      "status": "Built and running in-house",
+      "catalogue": {
+        "action": "none"
+      }
     }
   ]
 }
