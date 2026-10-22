@@ -1,5 +1,20 @@
 # Todo
 
+## Airy body text and readable screenshots on the deck cards (2026-10-22, done)
+
+Scan of 01, 03, 05, 08 (79 content cards): every body is 14 pt, line spacing 117%, no space before or after a paragraph; on 48 side-diagram cards `normalize_cards.py` centres the list on the diagram, so a short list floats 98 to 142 pt under the subtitle.
+
+- [x] `normalize_cards.py` pass 2: line spacing 125%, space after each bullet scaled 10 to 18 pt so the block grows toward the diagram height, then place as today; `tight` stays 0
+- [x] Post check in the same script: `DENSE slide=N` line and `dense=N` (multi-bullet body under 125% or under 10 pt spacing, or block under 60% of the side diagram with room left), exit 1 so `gamma_module.py finish` stops; `--check` measures without saving
+- [x] 01-intro: check found 15 dense cards, normalized, `clean --skip 4`, recheck `dense=0`
+- [x] Rule stack `scripts/slide_quality.py --deck [--fix]`: one function per rule, each prints its flagged slides and `<rule>=N`, writes the receipt `<deck>.quality.json` (counts plus deck mtime)
+  - rule `dense`: the `normalize_cards.py --check` measurement
+  - rule `unreadable`: every `visual-type: screenshot` card; text line height in the spec's `media-file` times shown width over native width; flag under 8 pt (8.7 pt reads at 1280 px, 5.6 does not). Fix ladder: crop to the printed `crop<=WxH`, `--fix` re-embeds and grows into the free column (at most 1.5 pt per pixel), then the wide layout or a new 2x capture
+- [x] Mod `slide-quality-plugin` (integrations-marketplace, content): holds `gamma_deck.py deliver` and `repo_decks.py deliver` when the receipt is missing, older than the deck, or any rule is above 0; 6 tests pass; installed
+- [x] Fast path rows 7c and 9b and the Step 7 paragraph in `references/gamma-deck.md`; `gamma_module.py finish` runs the check last
+- [x] All 8 decks: normalize, 30 of 34 screenshots under 9 pt, 15 grown in place, 15 cropped (image-producer) and re-embedded, `clean --skip 4`, `problems=0`
+- [ ] New captures where a crop had to drop something a bullet names: 01 06-03 (Billed credit column), 02 06-01 (Always allow pop-up), 04 07-02 (browser table), 06 02-02 and 05-02 (Debug mode toggle), 06 03-02 (reply and slots), 07 02-02 (authentication banner); their spec `visual-prompt` crop boxes still name the old crops
+
 ## Agent harnesses in Module 1 (2026-10-22, approved without the lab)
 
 Source: Learn training module `explore-copilot-studio-agent-harnesses` units 2 to 6, checked against Learn `harnesses-overview` (four harnesses, the training module names three) and the live Copilot Studio menus.
