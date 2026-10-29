@@ -12,12 +12,12 @@ Tenant requirements and one-time admin setup for the class: Copilot Credits, spe
 | 4 | [SharePoint Team Site](./04-sharepoint-site.md) | One team site where all class accounts can create lists for lab 06-6 (German) |
 | 5 | [Work IQ aktivieren](./05-work-iq-aktivieren.md) | The one-time Work IQ service principal for lab 06-5 (German) |
 | 6 | [Cowork Plugin hochladen und freigeben](./06-cowork-plugin-upload.md) | Uploading and approving the lab 02-3 plugin in the Microsoft 365 admin center (German) |
-| 7 | [Copilot Cowork access and billing](./cowork-tenant-setup.md) | Copilot license, usage-based billing, a spending policy that selects Cowork, discovery, Anthropic models, plugins and browser use |
-| 8 | [Copilot Credits for GitHub Copilot agents and Work IQ](./tenant-credit-setup.md) | Power Platform billing plans for the agent environment, the Microsoft 365 spending policy, the Work IQ service principal and cost guardrails |
-| 9 | [Apps in Copilot Studio](./copilot-studio-apps-setup.md) | The `No usage quota is available for your account` error, billing the maker's personal developer environment, and runtime coverage through Copilot Managed Runtime |
-| 10 | [Configure Copilot Credits for the Work IQ API](./work-iq-credit-quota.md) | The `exhausted the AI credit quota for WorkIQ` error and how to raise the spending policy limit |
-| 11 | [Copilot Studio plugins for coding agents](../demos/07-cs-maintaining/05-agentic-building/readme.md#install) | The two Microsoft plugins for Claude Code, GitHub Copilot CLI and VS Code: `copilot-studio` for Standard agents and `mcs-assistant` for GitHub Copilot agents, their two marketplaces, the Power Platform CLI prerequisite and switching plugins per module |
-| 12 | [AI Teammates: Autopilot and agent accounts](./ai-teammates-setup.md) | Module 8 readiness: Frontier and Agent 365 licensing from the cheapest option up, the 30-day Agent 365 trial and how to avoid it converting to paid, and the activation order |
+| 7 | [Copilot Cowork access and billing](./07-cowork-tenant-setup.md) | Copilot license, usage-based billing, a spending policy that selects Cowork, discovery, Anthropic models, plugins and browser use |
+| 8 | [Copilot Credits for GitHub Copilot agents and Work IQ](./08-tenant-credit-setup.md) | Power Platform billing plans for the agent environment, the Microsoft 365 spending policy, the Work IQ service principal and cost guardrails |
+| 9 | [Apps in Copilot Studio](./09-copilot-studio-apps-setup.md) | The `No usage quota is available for your account` error, billing the maker's personal developer environment, and runtime coverage through Copilot Managed Runtime |
+| 10 | [Configure Copilot Credits for the Work IQ API](./10-work-iq-credit-quota.md) | The `exhausted the AI credit quota for WorkIQ` error and how to raise the spending policy limit |
+| 11 | [AI Teammates: Autopilot and agent accounts](./11-ai-teammates-setup.md) | Module 8 readiness: Frontier and Agent 365 licensing from the cheapest option up, the 30-day Agent 365 trial and how to avoid it converting to paid, and the activation order |
+| 12 | [Copilot Studio plugins for coding agents](../demos/07-cs-maintaining/05-agentic-building/readme.md#install) | The two Microsoft plugins for Claude Code, GitHub Copilot CLI and VS Code: `copilot-studio` for Standard agents and `mcs-assistant` for GitHub Copilot agents, their two marketplaces, the Power Platform CLI prerequisite and switching plugins per module |
 
 ## Booking terms: monthly or annual
 

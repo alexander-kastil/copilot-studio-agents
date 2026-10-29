@@ -10,7 +10,7 @@ Duration: about 20 minutes.
 
 ---
 
-Setup: sign in to Copilot Studio, open the **Home** page, and confirm that the **App (preview)** tile with the **GitHub Copilot** badge appears. New apps are created in your personal environment, and building one consumes Copilot Credits from the start, so an administrator must make credits available to that environment before the session; without them, the first message stops with "No usage quota is available for your account, so this request couldn't be completed." [Tenant setup: Apps in Copilot Studio](../../../setup/copilot-studio-apps-setup.md) covers the admin side.
+Setup: sign in to Copilot Studio, open the **Home** page, and confirm that the **App (preview)** tile with the **GitHub Copilot** badge appears. New apps are created in your personal environment, and building one consumes Copilot Credits from the start, so an administrator must make credits available to that environment before the session; without them, the first message stops with "No usage quota is available for your account, so this request couldn't be completed." [Tenant setup: Apps in Copilot Studio](../../../setup/09-copilot-studio-apps-setup.md) covers the admin side.
 
 ## What you'll build
 
@@ -95,7 +95,7 @@ Expected: in step 1, the open count drops by one and **Completed** rises by one.
 | Symptom | Likely cause | Fix |
 |---------|--------------|-----|
 | No **App (preview)** tile on the **Home** page | Apps aren't offered in this environment, or an administrator turned app creation off | Switch to an environment that offers GitHub Copilot agents and apps; if the tile is still missing, ask your administrator |
-| "No usage quota is available for your account, so this request couldn't be completed." and the banner "Your organization hasn't set up a pool of credits yet." | Your personal environment, where apps are built, has no Copilot Credits | An administrator adds that personal developer environment to a pay-as-you-go billing plan or allocates prepaid credits to it, as described in [Tenant setup: Apps in Copilot Studio](../../../setup/copilot-studio-apps-setup.md) |
+| "No usage quota is available for your account, so this request couldn't be completed." and the banner "Your organization hasn't set up a pool of credits yet." | Your personal environment, where apps are built, has no Copilot Credits | An administrator adds that personal developer environment to a pay-as-you-go billing plan or allocates prepaid credits to it, as described in [Tenant setup: Apps in Copilot Studio](../../../setup/09-copilot-studio-apps-setup.md) |
 | The preview stays empty or the agent keeps asking questions | The description is too broad | Answer the follow-up questions in one message, or start with a smaller app and add to it |
 | Changes disappear after the app reloads | The app is using sample data, which can reset | Expected for sample data; the lab connects a real list so changes persist |
 | The **Share** choice you expect is missing | Environment or administrator policy hides it | Use the share method that appears, or ask your administrator which methods the environment allows |

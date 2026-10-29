@@ -101,7 +101,7 @@ Building, testing, evaluating and running a GitHub Copilot agent all consume Cop
 ## Hands-On Demo
 
 - [Build and Ground Your First GitHub Copilot Agent](./demo-01-build-and-ground-an-agent.md): the maker creates a Northwind Sales Assistant from the **New agent** menu, scopes it with Instructions, grounds it on a product document, and verifies a cited answer in Preview.
-- [Tenant setup: Copilot Credits for GitHub Copilot agents and Work IQ](../../../setup/tenant-credit-setup.md): the one-time admin steps that give the environment and Work IQ the Copilot Credits every demo in this module consumes.
+- [Tenant setup: Copilot Credits for GitHub Copilot agents and Work IQ](../../../setup/08-tenant-credit-setup.md): the one-time admin steps that give the environment and Work IQ the Copilot Credits every demo in this module consumes.
 
 ## Hands-On Lab
 

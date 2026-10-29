@@ -91,7 +91,7 @@ Expected: the **Output** of **retrieve** lists the email thread your reply quote
 | Symptom | Likely cause | Fix |
 |---------|--------------|-----|
 | Work IQ (Preview) does not appear in the MCP list | The tenant is not set up for Work IQ, or your user is not on the usage-based billing plan | Ask an administrator to complete the one-time setup in Enable your tenant for Work IQ and assign your user to the billing plan |
-| Work IQ calls fail with `The caller has exhausted the AI credit quota for WorkIQ.` | The spending policy that covers you reached its monthly limit | Raise the limit as described in [Configure Copilot Credits for the Work IQ API](../../../setup/work-iq-credit-quota.md) |
+| Work IQ calls fail with `The caller has exhausted the AI credit quota for WorkIQ.` | The spending policy that covers you reached its monthly limit | Raise the limit as described in [Configure Copilot Credits for the Work IQ API](../../../setup/10-work-iq-credit-quota.md) |
 | The reply is still generic after you add Work IQ | Consent was not given, or the connection uses a different account | Confirm the connection under Tools, then send the question again and select **Allow** at the consent prompt |
 | The trace shows no **Used tool** line for Work IQ | The agent answered from memory, or the question does not match the tool's scope | Ask about one specific thread from your mailbox, then send again |
 | Tool lines can't be expanded | **Debug mode** is off | Turn on **Debug mode** at the top of **Preview** |
