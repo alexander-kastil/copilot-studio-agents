@@ -21,3 +21,9 @@ credentials.json
 labs/copilot-dev-camp/
 
 .claude/settings.local.json
+
+# Local working folders
+.time/
+agent-instructions/
+tasks/
+*cost.json

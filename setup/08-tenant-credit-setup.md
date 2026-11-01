@@ -45,7 +45,7 @@ If you bought Copilot Credit capacity packs, use **Manage Copilot Credits**, sel
 
 ## 2. Power Platform: give the apps environment credits
 
-Apps in Copilot Studio (preview) are never built in the environment you build agents in. Copilot Studio routes every maker to a **personal developer environment**, which needs its own credit source, otherwise the build fails with `No usage quota is available for your account`. Follow [Tenant setup: Apps in Copilot Studio](./copilot-studio-apps-setup.md) to find that environment, add it to the same billing plan, and check runtime coverage.
+Apps in Copilot Studio (preview) are never built in the environment you build agents in. Copilot Studio routes every maker to a **personal developer environment**, which needs its own credit source, otherwise the build fails with `No usage quota is available for your account`. Follow [Tenant setup: Apps in Copilot Studio](./09-copilot-studio-apps-setup.md) to find that environment, add it to the same billing plan, and check runtime coverage.
 
 ## 3. Microsoft 365: spending policy for Work IQ
 
@@ -106,9 +106,9 @@ Cancelling (Microsoft Customer Agreement billing account): a prorated refund is 
 
 ## Related setup guides
 
-- [Apps in Copilot Studio](./copilot-studio-apps-setup.md)
-- [Configure Copilot Credits for the Work IQ API](./work-iq-credit-quota.md)
-- [Copilot Cowork access and billing](./cowork-tenant-setup.md)
+- [Apps in Copilot Studio](./09-copilot-studio-apps-setup.md)
+- [Configure Copilot Credits for the Work IQ API](./10-work-iq-credit-quota.md)
+- [Copilot Cowork access and billing](./07-cowork-tenant-setup.md)
 
 ## References
 

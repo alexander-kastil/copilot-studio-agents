@@ -71,7 +71,7 @@ Status tells you what you can promise a customer. Learn marks Work IQ and Fabric
 | Foundry IQ | No preview label on the Learn article; general availability announced October 2026 | Usage-based billing applies to using, building, testing, and evaluating agents. |
 | Fabric IQ | Preview | Usage-based billing applies to using, building, testing, and evaluating agents. |
 
-The legacy workload tools, such as Mail and Teams, appear in the same tool catalog but run on the standard harness with standard licensing. They are a different path, so choose Work IQ (Preview) when the goal is grounding in Microsoft 365 context. Work IQ is the most accessible of the three in a class tenant, but it still needs the one-time tenant setup. The admin steps are in [Tenant setup: Copilot Credits](../../../setup/tenant-credit-setup.md), and [Configure Copilot Credits for the Work IQ API](../../../setup/work-iq-credit-quota.md) fixes the quota error.
+The legacy workload tools, such as Mail and Teams, appear in the same tool catalog but run on the standard harness with standard licensing. They are a different path, so choose Work IQ (Preview) when the goal is grounding in Microsoft 365 context. Work IQ is the most accessible of the three in a class tenant, but it still needs the one-time tenant setup. The admin steps are in [Tenant setup: Copilot Credits](../../../setup/08-tenant-credit-setup.md), and [Configure Copilot Credits for the Work IQ API](../../../setup/10-work-iq-credit-quota.md) fixes the quota error.
 
 ## Choosing between the three
 

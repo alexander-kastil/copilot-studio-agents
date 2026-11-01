@@ -63,7 +63,7 @@ flowchart LR
 
 If Cowork still does not appear, first check whether the user is in scope of a spending policy that selects Cowork. Then recheck licensing, the billing policy, and tenant enablement; rollout changes can take time to propagate.
 
-For a click-by-click admin checklist with the plugin settings and a verification run, see [Tenant setup: Copilot Cowork access and billing](../../../setup/cowork-tenant-setup.md).
+For a click-by-click admin checklist with the plugin settings and a verification run, see [Tenant setup: Copilot Cowork access and billing](../../../setup/07-cowork-tenant-setup.md).
 
 > **Frontier vs. general availability**: Cowork first shipped through the Frontier preview with agent-based access control. That control is deprecated: settings under **Agents** > **All agents** no longer affect who can use Cowork. Access is governed by usage-based billing.
 

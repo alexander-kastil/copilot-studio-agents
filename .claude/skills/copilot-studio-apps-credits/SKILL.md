@@ -12,7 +12,7 @@ Use this skill when:
 - App users are warned or blocked when they run a published app.
 - The user asks why apps can't be built in the default or agent environment.
 
-The full guide is `setup/copilot-studio-apps-setup.md`. For agent environments see the `copilot-studio-credits` skill; for Microsoft 365 spending policies see `work-iq-credits` and `cowork-setup`.
+The full guide is `setup/09-copilot-studio-apps-setup.md`. For agent environments see the `copilot-studio-credits` skill; for Microsoft 365 spending policies see `work-iq-credits` and `cowork-setup`.
 
 ## Facts
 
