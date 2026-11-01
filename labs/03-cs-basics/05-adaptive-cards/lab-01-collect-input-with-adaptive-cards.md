@@ -29,7 +29,7 @@ Imagine that you want to create yet another topic to collect the following infor
 
 Specifically, spoken languages and skills are multi-select lists of values.
 
-So open the **Topics** tab, and disable the topic that you created in Exercise 3 to avoid any overlapping of trigger conditions. Then, create a new topic following the instructions provided in Exercise 2 Step 1. The **Trigger** description for the topic could be:
+So open the **Topics** tab and, under **Custom**, switch **Enabled** off for the multi-turn topic `Register a new candidate` from the topics lab, to avoid any overlapping of trigger conditions. Then create a new topic with **Add a topic** > **From blank**, and enter the trigger text in the **Describe what the topic does** box:
 
 ```txt
 This topic helps to collect information about a new candidate to process. Trigger sentences can be: 
@@ -134,7 +134,9 @@ Now add a new action of type **Ask with adaptive card**, 1️⃣ select the body
 }
 ```
 
-Once you updated the JSON of the adaptive card, Copilot Studio renders the preview of the card in the UI of the topic designer, as you can see in the following screenshot. Copilot Studio also automatically defines a set of topic-level variables to collect the values provided by the user.
+In the **Adaptive card designer** dialog, select **Save** and then **Close**: **Save** alone leaves the dialog open.
+
+Once you updated the JSON of the adaptive card, Copilot Studio renders the preview of the card in the UI of the topic designer, as you can see in the following screenshot. Copilot Studio also automatically defines a set of topic-level variables to collect the values provided by the user: **Outputs (7)**, the six card inputs plus `actionSubmitId`. `spoken_languages` and `skills` are of type `table`, the other four are `string`.
 
 ![The interface of the topic when adding an **Ask with adaptive card** action, with the side panel open and a proper JSON of the adaptive card defined. On the designer there is a preview of the actual adaptive card and a list of output arguments to collect the values provided by the user.](./_images/create-topic-adaptive-card-02.png)
 
@@ -179,11 +181,11 @@ It is very important that, when pasting the JSON of the adaptive card, you have 
 
 ![The **Send a message** action configured to render an adaptive card. In the side panel on the right side there is the JSON of the adaptive card. In the body of the action there is a preview of the adaptive card.](./_images/create-topic-adaptive-card-04.png)
 
-Now, select the drop down with **JSON Card** and switch to **Formula Card** in order to replace the static values with the actual variables defined in the current Topic.
+Now, open the **Format** drop-down, which shows **JSON card**, and select **Formula** (it then reads **Formula card**) in order to replace the static values with the actual variables defined in the current Topic.
 
 ![The **Send a message** action configured to render an adaptive card. In the side panel on the right side there is the JSON of the adaptive card. In the body of the action there is a preview of the adaptive card.](./_images/create-topic-adaptive-card-05.png)
 
-Select the button to expand the editor and you can start replacing the static values with formulas that will refer to the actual value of the topic-level variables.
+Select **Expand code editor** to open the **Card Content** dialog, and you can start replacing the static values with formulas that will refer to the actual value of the topic-level variables.
 
 ![The side panel of the **Send a message** action while editing the adaptive card JSON in **Formula card** mode. There is a button to expand the editor.](./_images/create-topic-adaptive-card-06.png)
 

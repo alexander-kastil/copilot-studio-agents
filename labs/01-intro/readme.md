@@ -1,8 +1,8 @@
 # Introduction to Developing AI Agents and Copilots for Microsoft 365
 
-Hands-on labs for [Module 1](../../demos/01-intro/readme.md). The essential labs follow [Copilot Chat & Productivity Agents](../../demos/01-intro/05-chat-productivity/readme.md): build an agent with Agent Builder, then build and share a SharePoint agent. The optional labs come after them: put Analyst and Researcher to work, use shared agents, and try Workflows.
+Hands-on labs for [Module 1](../../demos/01-intro/readme.md). The essential labs follow [Copilot Chat & Productivity Agents](../../demos/01-intro/05-chat-productivity/readme.md): build an agent with Agent Builder, then build and share a SharePoint agent. The optional labs come after them: put Analyst and Researcher to work and use shared agents.
 
-![The lab path: the Agent Builder and SharePoint agent labs first. The optional labs follow: Analyst and Researcher, which need a Microsoft Copilot license, then Share and use agents, and Workflows, which also needs Frontier program access.](./_images/lab-path.svg)
+![The lab path: the Agent Builder and SharePoint agent labs first. The optional labs follow: Analyst and Researcher, which need a Microsoft Copilot license, then Share and use agents.](./_images/lab-path.svg)
 
 ## Agents & SharePoint Agents
 
@@ -24,10 +24,6 @@ Hands-on labs for [Module 1](../../demos/01-intro/readme.md). The essential labs
 
 [Lab 05: Share and Use SharePoint Agents](./lab-05-share-and-use-agents.md) (optional)
 
-> Note: Workflows is a Frontier agent, available only to users with a Microsoft Copilot license who have been granted access to the Microsoft Frontier program.
-
-[Lab 06: Get Started with Workflows in Microsoft Copilot](./lab-06-workflows.md) (optional)
-
 ## Sources
 
 The lab content is adapted from these originals:
@@ -37,4 +33,3 @@ The lab content is adapted from these originals:
 - Lab 03: [Analyst Agent](https://learn.microsoft.com/en-us/training/modules/explore-prebuilt-microsoft-365-copilot-agents/3-exercise-analyst-agent), Microsoft Learn
 - Lab 04: [Researcher Agent](https://learn.microsoft.com/en-us/training/modules/explore-prebuilt-microsoft-365-copilot-agents/4-examine-researcher-agent), Microsoft Learn
 - Lab 05: [Share and use agents](https://learn.microsoft.com/en-us/training/modules/use-no-code-agents-sharepoint/), Microsoft Learn
-- Lab 06: [Get started with Workflows in Microsoft 365 Copilot](https://support.microsoft.com/en-us/topic/get-started-with-workflows-in-microsoft-365-copilot-frontier-8c6aba25-db31-443d-8319-bc79747b280a), Microsoft Support

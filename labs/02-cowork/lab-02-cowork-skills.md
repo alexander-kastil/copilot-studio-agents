@@ -1,5 +1,7 @@
 # Lab 02: Build Your First Cowork Skill
 
+> **Proposal: run this lab on a cheaper model.** In the Cowork model picker (**Model and generation settings**), choose **Sonnet 5.5** ("Efficient for everyday tasks") instead of **Auto**, and set **Effort level** to **Light** instead of **Medium (default)**. A test run of the setup lab finished every Cowork task at that setting. If your tenant has turned off Anthropic models, choose **GPT 5.5** instead.
+
 In this lab you learn how to build custom Agent Skills for Copilot Cowork, how to manage skills in the product, and how to publish your own skills.
 
 At a high level, an Agent Skill is a structured instruction file that teaches Cowork when and how to execute a specific domain workflow. Skills are not generic prompts. They include intent signals, execution guidance, and output expectations so Cowork can reliably select and run the right behavior for a given request.

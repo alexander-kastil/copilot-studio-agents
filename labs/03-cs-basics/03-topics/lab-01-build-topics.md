@@ -83,7 +83,7 @@ Select the **+** button in the middle of the screen to add new actions or steps 
 - Add a condition: to add branches to the topic based on comparison between variables and/or constant values.
 - Variable management: to manage variables, which can be scoped at topic level, global, system, or environment.
 - Topic management: to manage the lifecycle of the current topic.
-- Add an tool: to consume external tools like Power Automate flows, custom connectors, MCP tools, etc.
+- Add a tool: to consume external tools like Power Automate flows, custom connectors, MCP tools, etc.
 - Add an agent: to add an agent in a multi-agent scenario.
 - Advanced: to provide advanced capabilities like consuming an external HTTP REST API, using generative answers, sending events or activities, etc.
 
@@ -96,7 +96,7 @@ What is your role?
 ```
 
 Notice that by default Copilot Studio assigns a `Multiple choice options` data type to the collected input, as highlighted in the **Identify** configuration field.
-Select the **+ New option** command just below the **Identify** configuration field and add one by one the following three values:
+Select the **New option** command just below the **Identify** configuration field and add one by one the following three values:
 
 - Candidate
 - Employee
@@ -112,8 +112,10 @@ For example, you can rename the variable to `UserRole`. You can see how the acti
 
 ### Step 3: Providing feedback to the user
 
-Now select the **+** button in the middle of the screen to **Add a condition**. In the branch on the left side, select the **Select a variable** option, and select the **userRole** variable that you created in the previous step. Then select the value for the condition, so that the condition will be like `userRole is equal to Candidate`.
-Repeat the previous instructions two more times to provide conditions for `userRole is equal to Employee` and `userRole is equal to HR staff member`. Leave the last condition for `All other conditions`.
+Now select the **+** button in the middle of the screen to **Add a condition**. In the branch on the left side, select the **Select a variable** option, and select the **UserRole** variable that you created in the previous step (the condition card shows it as **UserRole choice**).
+
+The condition value box starts out blank: open it and pick the option from the dropdown, so that the condition will be like `UserRole is equal to Candidate`.
+Repeat the previous instructions two more times to provide conditions for `UserRole is equal to Employee` and `UserRole is equal to HR staff member`. Leave the last condition for `All other conditions`.
 
 Inside each branch, you can specify some custom logic to provide a specialized feedback to the user. To do so, select the **+** command below each of the **Condition** branches and add one action of type **Send a message**. You can eventually add more than one action to each branch.
 
@@ -138,7 +140,7 @@ how to learn more about your growth mindset.
 As an HR staff member, you can manage the list of candidates and all the hiring procedures.
 ```
 
-For the `All other conditions` branch, you can configure a **Redirect** action, available under the **Topic management** group, to fallback to the System Topic with name **Fallback**.
+For the `All other conditions` branch, you can add **Go to another topic**, available under the **Topic management** group, and select the System Topic **Fallback** in the **Select a topic** pane.
 
 ![The condition branches with messages sent to the user for each option and a redirection to the **Fallback** topic in case the user did not provide any of the supported options.](./_images/create-topic-single-turn-06.png)
 
@@ -152,15 +154,17 @@ To properly complete the flow of the custom topic, add a new action of type **En
 
 ### Step 5: Testing the current topic
 
-You are now ready to save and test the topic. Select the **Save** button in the upper right corner of the designer, provide a name for the topic through the dialog window that will appear, and select the **Save** button again.
+You are now ready to save and test the topic. Enter a name for the topic in the **Topic name** box in the designer header, then select the **Save** button in the upper right corner of the designer. A **Topic Saved!** banner confirms it.
 
-![The dialog window to assign a name to the topic and to save it.](./_images/create-topic-single-turn-08.png)
+![The earlier dialog window to assign a name to the topic and to save it.](./_images/create-topic-single-turn-08.png)
 
 For example, name the topic as `Collect user's role`. Now open the test panel by selecting the **Test** command in the upper right corner of the designer. Type the following prompt:
 
 ```txt
-What's your feedback for my role?
+Collect user's role and provide feedback
 ```
+
+A looser wording such as "What's your feedback for my role?" can be answered from the knowledge sources instead of this topic.
 
 The agent will prompt you to choose a role and, based on your selection, you will get a specific feedback like illustrated in the following screenshot.
 
@@ -193,7 +197,15 @@ register a new candidate, create a new candidate, add a new candidate.
 
 Then, for each of the above information fields, you need to prompt the user with an action of type **Ask a question**. However, in this exercise the value of the answer will vary depending on the requested field. For example: first name, last name, and current role will be simple text fields., while the e-mail field will need to be a valid e-mail.
 
-So for the first name, last name, and current role fields you can select the **Identify** property of the **Ask a question** action and you can select **User's entire response** as the actual entity type. This will get the text value provided by the user as the actual collected value. The variable type will be automatically updated to be a `string` by Copilot Studio. Give a meaningful name to each of the variables holding the values provided by the user.
+So for the first name, last name, and current role fields you can select the **Identify** property of the **Ask a question** action and you can select **User's entire response** as the actual entity type. This will get the text value provided by the user as the actual collected value. The variable type will be automatically updated to be a `string` by Copilot Studio. Give a meaningful name to each of the variables holding the values provided by the user, for example `FirstName`, `LastName`, `Email` and `CurrentRole`. The questions can read:
+
+```txt
+What is the candidate's first name?
+What is the candidate's last name?
+What is the candidate's e-mail?
+What is the candidate's current role?
+```
+
 In the following screenshot you can see how the first name input action can be defined. You can do the same for last name and current job role.
 
 ![The **Ask a question** action configured to collect the candidate's first name and store it into a variable of type string, accepting any value provided by the user.](./_images/create-topic-multi-turn-01.png)
@@ -212,6 +224,12 @@ To add variables to the message, simply select the **{x}** command in the toolba
 ![The action **Send a message** with the insert variable command highlighted and the list of variables available in the current topic.](./_images/create-topic-multi-turn-03.png)
 
 You can insert variables defined in the current topic, system variables, or environment variables.
+For example:
+
+```txt
+Candidate: {FirstName} {LastName}, e-mail {Email}, current role {CurrentRole}.
+```
+
 Once you have configured the recap message with all the variables, it should look like the following screenshot.
 
 ![The action **Send a message** with all the referenced variables.](./_images/create-topic-multi-turn-04.png)

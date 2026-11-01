@@ -1,5 +1,7 @@
 # Lab 01: Copilot Cowork Setup and Extensibility
 
+> **Proposal: run this lab on a cheaper model.** In the Cowork model picker (**Model and generation settings**), choose **Sonnet 5.5** ("Efficient for everyday tasks") instead of **Auto**, and set **Effort level** to **Light** instead of **Medium (default)**. A test run of the setup lab finished every Cowork task at that setting. If your tenant has turned off Anthropic models, choose **GPT 5.5** instead.
+
 In this lab you learn what Copilot Cowork is, how to prepare your tenant for Cowork, and which extensibility options are available to tailor Cowork to your organization's needs.
 
 At a high level, Cowork can orchestrate multi-step work across Microsoft 365, including communication, calendar tasks, document creation, research, and automation. Cowork interacts with Microsoft 365 through Work IQ, which is part of the Microsoft IQ Platform. Unlike a pure Q&A experience, Cowork can move from intent to action while keeping the user in control.
@@ -40,7 +42,7 @@ At organizational level, Cowork exists to help teams turn intent into consistent
 
 In this exercise you configure the core tenant prerequisites required to enable Cowork safely.
 
-![A pilot user with a Copilot license reaches Cowork through a spending policy under Copilot > Cost Management that selects Cowork; Anthropic models, Frontier, the discovery setting and Agents > All agents each have their own job.](../../demos/02-cowork/pptx/images/01-02-cowork-access.svg)
+![A pilot user with a Copilot license reaches Cowork through a spending policy under Copilot > Cost management that selects Cowork; Anthropic models, Frontier, the discovery setting and Agents > All agents each have their own job.](../../demos/02-cowork/pptx/images/01-02-cowork-access.svg)
 
 ### Step 1: Validate prerequisites
 
@@ -51,7 +53,7 @@ Review [Get started with Copilot Cowork](https://learn.microsoft.com/en-us/micro
 - Users have an active Microsoft 365 Copilot license
 - Cowork is available in your tenant
 - Usage-based billing is enabled for Cowork
-- A spending policy that selects **Cowork** covers your pilot users. A limit of one credit is enough to grant access. A Global or Billing administrator creates the policy under **Copilot** > **Cost Management** > **Configuration**; an AI or License administrator can edit it but not create it.
+- A spending policy that selects **Cowork** covers your pilot users. A limit of one credit is enough to grant access. A Global or Billing administrator creates the policy under **Copilot** > **Cost management** > **Configuration**; an AI or License administrator can edit it but not create it.
 - Supported client/browser access is available (web, desktop app, mobile)
 - Optional: Frontier enrollment, needed only for the **App** skill and the **GPT 5.5 (Frontier)** model
 
@@ -59,7 +61,7 @@ Review [Get started with Copilot Cowork](https://learn.microsoft.com/en-us/micro
 
 ### Step 2: Configure Copilot Credits and usage-based billing
 
-In the Microsoft 365 admin center, go to **Copilot** > **Cost Management** and select **Get Started** the first time to activate usage-based billing. Then configure your billing strategy based on [Usage-Based Billing and Cost Management for Copilot Credits](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits).
+In the Microsoft 365 admin center, go to **Copilot** > **Cost management** and select **Get Started** the first time to activate usage-based billing. Then configure your billing strategy based on [Usage-Based Billing and Cost Management for Copilot Credits](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits).
 
 Define at least:
 
@@ -77,7 +79,7 @@ Assign a pilot group, ask pilot users to open Cowork, and validate that they can
 
 - Start conversations
 - Run at least one task requiring approval
-- See past work under **My tasks** and scheduled work under **Automations**
+- See past work under **Recent** and scheduled work under **Automations**
 
 If users cannot access Cowork, check whether they are in scope of a spending policy that selects **Cowork**, then recheck licensing, billing configuration, and tenant-level enablement.
 
@@ -99,9 +101,9 @@ Notice that Cowork is oriented around delegated execution: you describe an outco
 
 In the left navigation you find these core options:
 
-- **My tasks**: find previous tasks and reopen past work quickly.
+- **Recent**: find previous tasks and reopen past work quickly.
 - **Automations**: review and manage scheduled prompts and event-driven tasks. **Runs** shows each run, and **Manage schedules** lets you edit, pause, resume, or delete them.
-- **Customize**: manage plugins, skills, and your preferences for your Cowork experience.
+- **Plugins**: manage plugins, with the tabs **Chat** and **Cowork** and the views **Added** and **Discover**. Your preferences for every task sit under **Settings** > **Personalization** > **Customize Copilot**.
 
 To start a new task, type in the chat input on the Cowork home page.
 
@@ -135,18 +137,18 @@ Schedule a 30-minute project sync with my team tomorrow and send a confirmation 
 
 ![Copilot interface showing a draft Outlook meeting titled Project Sync with attendees and a short agenda, ready to send.](./_images/cowork-task-approval-01.png)
 
-Verify that Cowork requests explicit approval before the sensitive action is executed.
+Verify that Cowork requests explicit approval before the sensitive action is executed: creating the calendar event shows a **Create calendar event?** card with **Cancel** and **Save**. A Teams message to your own chat is sent without an approval card.
 
 ## Exercise 4: Explore Cowork extensibility options
 
 This lab series focuses on the Cowork extensibility model. In this exercise you compare the main extensibility options and review the plugins and skills already available.
 
-### Step 1: Open the Customize experience
+### Step 1: Find plugins, skills and preferences
 
-In Cowork, select **Customize** from the left navigation. You find three tabs:
+Cowork no longer has a single **Customize** page. You find the three building blocks here:
 
-- **Preferences**: custom instructions that Cowork applies to every task, such as tone and formatting. You can write up to 20 KB (about 3,000 English words).
-- **Plugins**: installed, discoverable, and shared plugins
+- **Preferences**: custom instructions that Cowork applies to every task, such as tone and formatting, under **Settings** > **Personalization** > **Customize Copilot**. You can write up to 20 KB (about 3,000 English words).
+- **Plugins**: select **Plugins** in the left navigation and the **Cowork** tab; **Added** lists installed plugins and **Discover** the catalog
 - **Skills**: built-in skills and your custom skills
 
 Before continuing, keep this simple comparison in mind:
@@ -155,7 +157,7 @@ Before continuing, keep this simple comparison in mind:
 - **Plugins** are packages that contain skills, connectors to external systems, or both.
 - Choose **Skills** when you need to shape behavior and task logic. Choose **Plugins** when you need to connect tools, systems, or specialized packaged functionality.
 
-![The Customize page with its three tabs: Preferences apply custom instructions to every task, Plugins package skills and connectors to external systems, and Skills hold task instructions that Cowork activates from the conversation context.](./_images/lab-01-customize-extensibility-map.svg)
+![The earlier Customize page with its three tabs: Preferences apply custom instructions to every task, Plugins package skills and connectors to external systems, and Skills hold task instructions that Cowork activates from the conversation context.](./_images/lab-01-customize-extensibility-map.svg)
 
 Cowork already includes a rich set of built-in skills such as Word, Excel, PowerPoint, PDF, Email, Scheduling, Calendar Management, Meetings, Daily Briefing, Enterprise Search, Deep Research, Communications, and Adaptive Cards. These skills are automatically activated by Cowork based on the conversation context, and you can see which ones were used in the **Skills** section of the side panel.
 
@@ -170,7 +172,7 @@ The Microsoft plugins currently included in Cowork are:
 - **Business Applications in Work IQ**
 - Role-based plugins for Legal, Sales, Service, and Education
 
-Beyond these Microsoft plugins, a growing partner catalog is available in the **Discover** grid on **Customize** > **Plugins**, with partners such as Salesforce, Zendesk, monday.com, Miro, Moody's, and LSEG.
+Beyond these Microsoft plugins, a growing partner catalog is available in the **Discover** grid on **Plugins** > **Cowork**, with partners such as Salesforce, Zendesk, monday.com, Miro, Moody's, and LSEG.
 
 ## Summary
 

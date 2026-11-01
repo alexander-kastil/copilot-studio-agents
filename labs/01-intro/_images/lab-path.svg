@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
   <title id="t">The module 1 lab path</title>
-  <desc id="d">First the Agents and SharePoint Agents labs: Making agents with Agent Builder and Understanding and Building SharePoint Agents on Copilot Camp, with exercises MAB, MAB1, MSA, MSA1 and MSA2. All later labs are optional: the Productivity Agents labs Analyst Agent and Researcher Agent on Microsoft Learn, which need a Microsoft Copilot license, then Share and use agents on Microsoft Learn, and Get started with Workflows in Microsoft 365 Copilot on Microsoft Support, which also needs Microsoft Frontier program access.</desc>
+  <desc id="d">First the Agents and SharePoint Agents labs: Making agents with Agent Builder and Understanding and Building SharePoint Agents on Copilot Camp, with exercises MAB, MAB1, MSA, MSA1 and MSA2. All later labs are optional: the Productivity Agents labs Analyst Agent and Researcher Agent on Microsoft Learn, which need a Microsoft Copilot license, then Share and use agents on Microsoft Learn.</desc>
   <defs>
     <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
       <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
@@ -62,10 +62,4 @@
   <text x="460" y="900" font-size="30" font-weight="700" fill="#24292f">Share and use agents</text>
   <text x="460" y="942" font-size="28" fill="#57606a">Microsoft Learn</text>
 
-  <rect x="1090" y="820" width="720" height="170" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2" stroke-dasharray="12 8"/>
-  <circle cx="1160" cy="905" r="38" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
-  <text x="1160" y="917" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">6</text>
-  <text x="1230" y="880" font-size="30" font-weight="700" fill="#24292f">Get started with Workflows</text>
-  <text x="1230" y="918" font-size="30" font-weight="700" fill="#24292f">in Microsoft 365 Copilot</text>
-  <text x="1230" y="960" font-size="28" fill="#57606a">Microsoft Support, needs Frontier access</text>
 </svg>

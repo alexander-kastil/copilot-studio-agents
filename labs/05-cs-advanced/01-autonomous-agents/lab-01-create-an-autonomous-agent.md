@@ -101,7 +101,7 @@ In this exercise you are going to create the autonomous agent in Microsoft Copil
 
 Open a browser and, using the work account of your target Microsoft 365 tenant, go to [https://copilotstudio.microsoft.com](https://copilotstudio.microsoft.com) to start using Microsoft Copilot Studio.
 
-Select the `Copilot Dev Camp` environment that you created in previous labs, then from the middle of the home page of Copilot Studio select **Create an agent** to create a new agent.
+Select the `Copilot Dev Camp` environment prepared for you, then from the middle of the home page of Copilot Studio select **Create an agent** to create a new agent.
 
 Configure your autonomous agent with the following settings:
 

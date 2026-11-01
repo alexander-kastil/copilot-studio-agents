@@ -10,17 +10,17 @@ In this exercise you learn the sharing options for agents in Copilot Chat, share
 
 Sharing an agent ensures that all relevant team members who have the necessary permissions can use its capabilities. Team members can then find answers and perform tasks without leaving the agent's SharePoint or Copilot Chat environment. Sharing also helps maintain consistency across the team, because everyone receives the same guidance from one centralized source. This reduces the risk of errors and discrepancies, provided the shared users have access to the same knowledge sources.
 
-When you share an agent in Copilot Chat, you must select the sharing option that is appropriate for the agent. The following table lists the available sharing options.
+When you share an agent in Copilot Chat, the **Share** dialog offers these choices:
 
-| **Sharing option** | **Description** |
-| --- | --- |
-| Anyone in your organization | Anyone in your organization can use the sharing link to use the agent. |
-| Specific users in your organization | Specific user groups can use the sharing link to use the agent. These user groups must be specified through the names or emails of individuals, security groups, or Microsoft 365 groups in your tenant's Microsoft directory. |
-| Only you | Only the author of the agent can use the agent. No one else can use the sharing link. This sharing option is selected by default. |
+- **Add a name, group, or email**: specific people, security groups or Microsoft 365 groups in your tenant can use the agent.
+- **Org-wide sharing for chat access**: anyone in your organization can use the agent.
+- Nobody added and the toggle off: only you, the author, can use the agent. This is the default.
+
+**Copy chat link** copies the link to the agent.
 
 These sharing options don't apply to SharePoint agents. Instead, SharePoint relies on an approval process by the site owner or site administrator to make an agent available to site members and site visitors. The sharing and approval processes for agents in Copilot Chat and SharePoint are designed to fit the specific needs and workflows of each platform.
 
-Both Copilot Chat and SharePoint agents can only return information from knowledge sources that the shared users can access. For Copilot Chat agents that contain knowledge sources from SharePoint files and folders, Microsoft recommends that you share the agent with specific users in your organization through security groups. Doing so automatically shares the files with users, so the agent can return responses from those sources.
+Both Copilot Chat and SharePoint agents can only return information from knowledge sources that the shared users can access. For Copilot Chat agents that contain knowledge sources from SharePoint files and folders, Microsoft recommends that you share the agent with specific people or groups in your organization through security groups. Doing so automatically shares the files with users, so the agent can return responses from those sources.
 
 > **Note:** When you share an agent in Copilot Chat or approve an agent for sharing in SharePoint, the people who can use the shared agent can't edit it. This restriction maintains the integrity and functionality of the agent, ensuring that only the owner can modify its settings or behavior.
 
@@ -40,18 +40,18 @@ Unlike sharing an agent in SharePoint, no approval from an administrator is requ
 
 > **Note:** Users you share your agent with must have a Microsoft 365 Copilot license or access through a metered Copilot Chat environment configured by their organization.
 
-After you select the **Create** button, Microsoft Copilot creates the agent and returns a dialog box that enables you to share the agent. You can copy the link and email it to users, or you can select **Change sharing settings** to choose the sharing setting you want.
+After you select the **Create** button, Microsoft Copilot creates the agent and shows the dialog **Your agent was created successfully!** with the commands **Share** and **Start chat**. Select **Share** to open the **Share** dialog.
 
 ![Screenshot of the dialog box that appears after you successfully create an agent in Copilot Chat. The window enables you to share the agent.](./_images/lab-05-share-and-use-agents-01.png)
 
-![Screenshot of the Share window that appears when you select the Change sharing settings option.](./_images/lab-05-share-and-use-agents-02.png)
+![Screenshot of the earlier Share window with its three sharing options.](./_images/lab-05-share-and-use-agents-02.png)
 
-> **Caution:** When the Share option is set to **Specific users in your organization**, the search results might include [distribution groups](https://learn.microsoft.com/en-us/microsoft-365/admin/create-groups/compare-groups). Sharing an agent with a distribution group can cause the share to fail.
+> **Caution:** When you search in **Add a name, group, or email**, the search results might include [distribution groups](https://learn.microsoft.com/en-us/microsoft-365/admin/create-groups/compare-groups). Sharing an agent with a distribution group can cause the share to fail.
 
 You can still share an agent once it's live. Choose one of the following two ways to do so.
 
 1. Sign in to **Microsoft Copilot** with your work or school account. The **Microsoft Copilot Chat** page appears by default.
-2. If the agent that you want to share appears in the list of pinned and unpinned agents, hover over the agent, select the ellipsis (**More**) icon that appears, and select **Share** in the drop-down menu. If the agent doesn't appear in that list, select **All agents** in the navigation pane. In the list of **Your Agents**, select the ellipsis icon for that agent, and select **Share** in the drop-down menu.
+2. Select **Plugins** in the left side panel and open the **Chat** tab. Select **Manage all**, then **More options** beside the agent and **Edit**, and select **Share** next to the **Update** button.
 
 ![Screenshot of the navigation pane on the Microsoft Copilot home page showing the Share option highlighted for an agent.](./_images/lab-05-share-and-use-agents-03.png)
 
@@ -82,47 +82,17 @@ If the sharing of a file or folder fails, the agent itself is still shared with 
 
 When a user's access to the agent is removed, it doesn't affect their access to the shared files or folders. Use file permission management in SharePoint to manage a user's access to those files and folders.
 
-![Screenshot showing a list of knowledge source files and folders that can be shared.](./_images/lab-05-share-and-use-agents-06.png)
+### Step 3: Set an agent as the site default
 
-### Step 3: Approve an agent for a SharePoint site
+SharePoint agents no longer need an approval step. A site owner picks the agent that opens by default in the site's Copilot pane:
 
-In SharePoint, after a user creates an agent for a site, the site's owner or administrator must approve the agent to make it available for other site members and site visitors to use. The site owner or admin can also set an agent as the default agent for the site. The default agent is the first agent that loads when site visitors launch the chat pane.
+1. Go to the home page of the site and select the gear icon (**Settings**).
+2. Select **Site AI**.
+3. Open the **Main agent** dropdown, pick your agent, and select **Save**.
 
-One of the primary reasons for requiring approval is to ensure the agent aligns with the site's purpose. The approval process also ensures that the agent respects the existing security settings and permissions within SharePoint, so that users only see content they're allowed to access. Approval also lets the site owner or admin verify that the information the agent provides is relevant and accurate.
+The Copilot pane of the site now opens with your agent. A new .agent file can take a while to appear in the dropdown, because SharePoint first has to index it.
 
-The approval process involves four steps that the site owner or admin performs:
-
-1. **Creation and submission**. The person who created the agent submits it for approval.
-2. **Review by site owner or admin**. The site owner or admin verifies that the agent respects the existing security settings and permissions within SharePoint.
-3. **Relevance and accuracy check**. The site owner or admin ensures that the information the agent provides is accurate and relevant to the site's purpose.
-4. **Approval or rejection**. If approved, the agent can be found by all site visitors by navigating to **Site Assets > Copilots > Approved**. If rejected, the site owner or admin should give feedback to the agent's creator to make any necessary adjustments.
-
-Approved agents are always available from the agent picker for site members and visitors. Approved agents can also be told apart from the agents that are recommended for a user. A site owner or admin performs the following steps to approve an agent:
-
-1. From the agent picker, select the agent that you want to approve, then select the ellipsis (the three dots) next to the agent.
-2. From the drop-down menu that appears, select **Set as approved**.
-
-![Screenshot showing the Set as approved drop-down menu option for an agent in SharePoint.](./_images/lab-05-share-and-use-agents-07.png)
-
-3. In the **Set this as an approved agent for this site** dialog box that appears, select **OK**.
-
-![Screenshot showing the dialog box titled Set this as an approved agent for this site.](./_images/lab-05-share-and-use-agents-08.png)
-
-The agent is now approved, and all site visitors can find it by navigating to **Site Assets > Copilots > Approved**.
-
-> **Note:** When a site admin or owner creates an agent for a SharePoint site, the agent is automatically approved. The site owner or admin has the necessary permissions and authority to create and approve agents without the normal approval steps. The agent is therefore available to other site members or visitors as soon as it is created.
-
-### Step 4: Set an agent as the site default
-
-A site owner or administrator can make an approved agent the default agent for a SharePoint site.
-
-1. From the agent picker, select the approved agent that you want to use as the default.
-2. Select the ellipsis next to the agent.
-3. Select **Set as site default**.
-
-![Screenshot showing the Set as site default drop-down menu option for an agent in SharePoint.](./_images/lab-05-share-and-use-agents-09.png)
-
-> **Note:** A SharePoint site's ready-made agent is always considered approved and can be reset as the default agent for a site.
+To share a SharePoint agent with people, open its .agent file and select **Share** in the agent pane: it is a regular file share (**Add people**, **Change** for who can access the link, **Copy link**).
 
 ### Troubleshoot sharing errors
 
@@ -163,9 +133,9 @@ Perform the following steps to add a SharePoint or Copilot Chat agent to a Teams
 
 > **Note:** You can't share the ready-made agent that comes with a SharePoint site.
 
-4. Select the **ellipsis** icon (the three dots) that appears next to the agent you want to share. In the drop-down menu that appears, select **Add to Teams**.
+4. In the pane of a SharePoint agent, select the **ellipsis** icon (the three dots) and then **Copy link for Teams**. In the dialog **Choose who can access the file link**, select **Copy link**. For an agent in Copilot Chat, the agent's **More** menu offers **Add to Teams** instead.
 
-![Screenshot showing a SharePoint site and the drop-down menu with the Add to Teams option highlighted.](./_images/lab-05-share-and-use-agents-10.jpeg)
+![Screenshot of the earlier SharePoint drop-down menu with the Add to Teams option highlighted.](./_images/lab-05-share-and-use-agents-10.jpeg)
 
 5. After you send the share link in a group chat or meeting within Teams, the system prompts you to add the agent to the conversation. Select **Add to this chat**.
 
@@ -197,10 +167,10 @@ When you visit a SharePoint site, page, or document library, or when you use Mic
 
 Your site administrator might also have configured agents that are tailored to specific projects and teams. These agents give more focused assistance based on a defined set of sites, pages, files, or chat contexts that are relevant to your work. Here are three examples of prompts that users might enter in a SharePoint or Copilot Chat agent.
 
-A recruitment specialist in Contoso's HR department wants to screen candidates for a warehouse manager position in the plastics division. They can ask the agent to create a table based on the resumes in the document library, with each candidate's names, experiences, education, skills, and contact information. They can also ask a specific question about these documents:
+An HR employee wants to know how the company hires new people. They ask the HR agent from the SharePoint agents lab, which answers from the HR documents in the library:
 
 ```text
-Which of these candidates worked in warehouse management and in the plastics industry?
+What is the hiring process?
 ```
 
 A new sales rep at Adatum Corporation wants to use product proposals and performance overviews to understand the company's product lines. Doing so lets the rep communicate the benefits of Adatum's products to potential customers:
@@ -228,34 +198,28 @@ Keep the following considerations in mind when you interact with agents:
 
 ![Screenshot of a SharePoint site with the Chat pane open for an agent and the Copilot button highlighted.](./_images/lab-05-share-and-use-agents-13.png)
 
-3. Select the dropdown arrow next to the current agent to see the agents that are approved for the site, along with a personalized list of agents based on your recent activity. Select the agent you want to use from the dropdown list. Select **Show more** to expand the list if more agents are available.
+3. The pane opens with the site's main agent, which you set in Exercise 1. To use another SharePoint agent, select its .agent file in the document library.
 4. Use the prompt to ask questions. Start by selecting from the **Starter Prompts** or by writing your own. You can ask the agent to summarize documents, give you the point of contact for a project, and tell you the latest updates. Ask follow-up questions if needed.
 
 ### Step 2: Use an agent in Copilot Chat
 
 1. Sign in to **Microsoft Copilot** with your work or school account. The **Microsoft Copilot Chat** page appears by default.
 
-The navigation pane on the side of the page displays the agents under the **Chat > Agents** section. The list is broken down into pinned and unpinned agents. Pinned agents appear first, followed by the most recently used agents.
+Agents now appear as plugins: select **Plugins** in the navigation pane, open the **Chat** tab and then **Added** to see your agents. Pinned agents also appear in the navigation pane. Pinned agents appear first, followed by the most recently used agents.
 
-Due to space considerations, only five pinned and unpinned agents are displayed. If you have five or more pinned agents, no unpinned, recently used agents are displayed. The list changes dynamically based on usage.
+2. Select the agent you want to use from **Plugins** > **Chat** > **Added**, or from the pinned agents in the navigation pane.
 
-2. Select the agent you want to use from any of the agents in your agent pane, whether pinned or unpinned. If the agent doesn't appear in the list, select **All agents** in the navigation pane. This option opens the **Agent Store**, which displays your agents, the prebuilt agents that you used, and the prebuilt agents created by Microsoft.
+![Screenshot of the earlier Agent Store window, which appeared when you selected All agents in the navigation pane of the Microsoft Copilot home page.](./_images/lab-05-share-and-use-agents-14.png)
 
-![Screenshot of the Agent Store window, which appears when you select All agents in the navigation pane of the Microsoft Copilot home page.](./_images/lab-05-share-and-use-agents-14.png)
-
-3. When you select an agent, the agent's name appears in the middle of the page, along with any Starter Prompts defined for it. Prebuilt agents created by Microsoft include Starter Prompts. Each custom agent that you create in Copilot Chat can have optional Starter Prompts. Begin your chat by selecting a Starter Prompt or writing your own prompt. Ask follow-up questions as needed.
+3. When you select an agent, the agent's name appears in the middle of the page, along with any Starter Prompts defined for it. A starter prompt only fills the prompt box, so select **Send** afterwards. Prebuilt agents created by Microsoft include Starter Prompts. Each custom agent that you create in Copilot Chat can have optional Starter Prompts. Begin your chat by selecting a Starter Prompt or writing your own prompt. Ask follow-up questions as needed.
 
 ### Step 3: Pin and unpin an agent in Copilot Chat
 
-1. To pin an agent in the navigation pane on the Microsoft Copilot home page, select the **Pin** icon next to an unpinned agent.
+1. To pin an agent, select **More options** on the agent tile in **Plugins** > **Chat** > **Added**, and select **Pin**. The agent then appears in the navigation pane.
 
 ![Screenshot of the Microsoft Copilot navigation pane showing the menu for an agent with the Pin icon highlighted.](./_images/lab-05-share-and-use-agents-15.png)
 
-2. If the unpinned agent you want to pin doesn't appear in the navigation pane, select **All agents** in the navigation pane. In the list of **Your Agents**, select the ellipsis icon for that agent, and select **Pin** in the drop-down menu.
-
-![Screenshot of the Agent Store window showing the menu for an agent with the Pin option highlighted.](./_images/lab-05-share-and-use-agents-16.png)
-
-3. To unpin an agent, select the **Unpin** icon next to the pinned agent.
+2. To unpin an agent, select **More** on the pinned agent in the navigation pane, and select **Unpin**.
 
 ### Step 4: Refer to specific files in your chat
 

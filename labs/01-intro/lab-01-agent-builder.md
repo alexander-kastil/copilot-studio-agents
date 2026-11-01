@@ -19,9 +19,9 @@ In this exercise you create the Gardener agent from a natural language descripti
 
 ### Step 1: Describe your agent
 
-Open the [Microsoft 365 Copilot chat home page](https://www.microsoft365.com/copilot){target=_blank} and select **New agent** in the left side panel, where the list of available agents is.
+Open the [Microsoft 365 Copilot chat home page](https://www.microsoft365.com/copilot), select **Plugins** in the left side panel, open the **Chat** tab, and select **New agent** in the upper right corner. **Agent Builder** opens with the prompt box **Message Agent Builder**.
 
-![Microsoft 365 Copilot Chat with the New agent command highlighted in the left side panel.](./_images/lab-01-agent-builder-02.png)
+![The earlier Microsoft 365 Copilot Chat with the New agent command in the left side panel.](./_images/lab-01-agent-builder-02.png)
 
 Agent Builder opens and you can start defining the custom agent. You can choose a template to start from, or you can describe the agent in natural language. You can also select the **Configure** option to set up the agent by hand, but you do that later in this lab. Provide the following initial description:
 
@@ -32,7 +32,7 @@ providing detailed instructions and advice about the best practices for home gar
 
 ![Agent Builder with a textbox at the lower left for instructions to the builder, and a preview of the agent on the right.](./_images/lab-01-agent-builder-03.png)
 
-Agent Builder then asks for the name of the new agent. Provide the name *Gardener*. While you talk with Agent Builder, the preview on the right side shows the agent itself, including suggested conversation starters. If Agent Builder asks you to refine the instructions further, provide the following sentence.
+Agent Builder does not always ask for the name or for refinements, so give the name in your first message: add the sentence `Name the agent Gardener.` to the description above. While you talk with Agent Builder, the preview on the right side shows the agent itself, including suggested conversation starters. Send the following refinement as one message, with the send arrow (pressing Enter in a follow-up message does not send it).
 
 ```text
 Suggest ways to keep plants and flowers shining and gorgeous
@@ -55,15 +55,15 @@ Agent Builder creates the new agent from the instructions you provided.
 
 ### Step 2: Test the agent
 
-When the agent is ready, a popup dialog shows a command to **Go to agent** and another command to **Share** the agent with other people in your organization.
+When the agent is ready, the dialog **Your agent was created successfully!** shows the commands **Start chat** and **Share**.
 
 ![The dialog confirming the new Gardener agent, with a command to go to the agent and a command to share it.](./_images/lab-01-agent-builder-06.png)
 
-Select the **Go to agent** button. The user experience of the new agent opens.
+Select **Start chat**. The user experience of the new agent opens.
 
 ![The Gardener agent with its name at the top, a set of generated conversation starters, and a textbox for a new prompt.](./_images/lab-01-agent-builder-07.png)
 
-Select the first suggested prompt and observe the response from the agent. Your agent is now ready.
+Select the first suggested prompt, which fills the prompt box, then send it and observe the response from the agent. Your agent is now ready.
 
 ![The Gardener agent answering the first suggested prompt, with the list of available agents and recent chats on the right.](./_images/lab-01-agent-builder-08.png)
 
@@ -71,7 +71,7 @@ Select the first suggested prompt and observe the response from the agent. Your 
 
 In this exercise you add a custom icon to the agent and define the rules of the plant and flower guessing game.
 
-Select **New chat** in the upper left corner of the Microsoft 365 Copilot Chat user interface. Select **All agents** in the left side of the screen. Hover over the **Gardener** agent, select the **...** beside its name, and select **Edit** in the contextual menu to configure the agent.
+Select **Plugins** in the left side panel and open the **Chat** tab (the page remembers the last tab you used). Select **Manage all**, then **More options** beside **Gardener**, and select **Edit** to configure the agent.
 
 ![Agent Builder when editing an existing agent, with the Edit command in the contextual menu of the agent.](./_images/lab-01-agent-builder-09.png)
 
@@ -93,15 +93,15 @@ The dialog starts with the **Configure** panel active. The descriptions you prov
 
 Select the edit button beside the default icon of the agent.
 
-A dialog opens where you can change the icon and the background color of the icon. You can download a sample icon from [the lab repository](https://github.com/microsoft/copilot-camp/blob/main/src/make/agent-builder/color.png) and upload it as the custom icon. You can also set the background color to the RGB value #F1F1F1.
+A dialog opens where you can change the icon and the background color of the icon. The dialog has the tabs **Generate**, **Browse** and **Upload**. On **Upload**, you can use the [sample icon](./lab-01-agent-builder/color.png) as the custom icon. You can also set the background color to the RGB value #F1F1F1.
 
 ![The dialog to update the icon and background color of the agent, with a button to upload an icon and a button to set the background color. Save and cancel buttons are in the lower right corner.](./_images/lab-01-agent-builder-11.png)
 
-Select the **Apply** command when you are done.
+Select **Apply** when you are done, then **Close**.
 
 ### Step 2: Define the guess plant/flower game rules
 
-While you are still editing the agent settings, replace the content of the **Instructions** field with the following text.
+While you are still editing the agent settings, select **Edit instructions** (the pencil button) and replace the instructions with the following text.
 
 ```text
 You are an expert gardener and you help users to maintain and improve their home garden
@@ -125,7 +125,7 @@ game or another round of the game.
 
 ![The agent settings dialog with the updated instructions and the Update button highlighted.](./_images/lab-01-agent-builder-12.png)
 
-Select the **Update** button in the upper right corner of the configuration dialog. The update takes a while. When it finishes, select **Go to agent** and send the agent a request. The agent engages you in the game.
+Select the **Update** button in the upper right corner of the configuration dialog. The update takes a while. When the dialog **Your agent was updated successfully!** appears, select **Start chat** and send the agent a request. The agent engages you in the game.
 
 ![The updated Gardener agent with its new icon and the closing sentence that invites the user to play the game.](./_images/lab-01-agent-builder-13.png)
 
@@ -154,11 +154,11 @@ Copy the absolute URL of the site, for example `https://xyz.sharepoint.com/sites
 
 ### Step 2: Add support for SharePoint Online documents
 
-Go back to the list of agents, edit the **Gardener** agent, and scroll to the **Knowledge** section of the configuration. Paste the URL of the SharePoint Online site into the field for a SharePoint knowledge base and press **ENTER**, or select the suggested site collection. You can also select the **Sites** button and search for the site in your tenant.
+Go back to the list of agents, edit the **Gardener** agent, and scroll to the **Knowledge** section of the configuration. Under **Knowledge**, select **Cloud files** > **Add cloud file source**, paste the URL of the SharePoint Online site and press **ENTER**, or select the suggested site collection. You can also select the **Sites** button and search for the site in your tenant.
 
 ![The agent configuration dialog with the Knowledge section and the SharePoint URL field highlighted.](./_images/lab-01-agent-builder-15.png)
 
-The new SharePoint site appears in the list of knowledge bases for the **Gardener** agent. Select **Update** and interact with the agent again. The answers are more specialized because they draw on the knowledge base you provided.
+The new SharePoint site appears in the list of knowledge bases for the **Gardener** agent. Select **Update** and interact with the agent again. The answers are more specialized because they draw on the knowledge base you provided. A new site can take several minutes until search indexes its files; if the answers cite none of the documents, wait and ask again in a new chat.
 
 ## Exercise 4: Add finishing touches to the agent
 
@@ -166,11 +166,11 @@ In this exercise you enable image generation for the **Gardener** agent and shar
 
 ### Step 1: Add support for image generation
 
-Edit the **Gardener** agent again, scroll down in the configuration panel to the **Capabilities** section, and enable the option **Create images**. Then update the agent.
+Image generation is on by default in Agent Builder, so there is no **Capabilities** option to enable any more.
 
-![The agent configuration dialog with the Capabilities section and the Create images option selected and highlighted.](./_images/lab-01-agent-builder-16.png)
+![The earlier agent configuration dialog with the Capabilities section and the Create images option.](./_images/lab-01-agent-builder-16.png)
 
-After the update, select **Go to agent** and provide the following prompt.
+Select **Start chat** and provide the following prompt.
 
 ```text
 Generate the image of a dozen of red roses
@@ -184,15 +184,9 @@ The agent answers with a generated image of red roses.
 
 Edit the agent one last time. In the upper right corner, next to the **Update** button, select **Share**.
 
-A sharing dialog opens. You can share the agent with any of these targets:
+The dialog **Share "Gardener"** opens. Enter a colleague in **Add a name, group, or email**, or turn on **Org-wide sharing for chat access** to share with everyone in your organization; your own row shows **Can edit**. Select **Copy chat link** and give the link to the users you shared the agent with.
 
-- Anyone in your organization
-- Specific users in your organization, through security groups
-- Only you
-
-Select the option to share with specific users, provide the email address of the sharing target, and select **Apply** to confirm the sharing settings. When the sharing process ends, a dialog shows a URL. Copy the URL and give it to the users you shared the agent with.
-
-![The sharing panel with the options Anyone in your organization, Specific users in your organization through security groups, and Only you, plus a Save button and the agent URL.](./_images/lab-01-agent-builder-18.png)
+![The earlier sharing panel with the options Anyone in your organization, Specific users in your organization through security groups, and Only you, plus a Save button and the agent URL.](./_images/lab-01-agent-builder-18.png)
 
 ## Resources
 

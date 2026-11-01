@@ -6,17 +6,10 @@ Labs have been designed to be completed with only a Microsoft Copilot Studio tri
 
 For this lab you need:
 
-A computer with internet access.
-
-Be able to log into the provided Microsoft tenant (some companies enforce users to only connect to their company tenant) or your own enterprise tenant with a Copilot Studio User License (or trial)
-
-Generative AI should be set to “classic” (in Settings, Generative AI)
-
-Complete Lab 04
-
-Access to an active ServiceNow instance (URL, login and password) – don’t forget to wake the instance if you use a trial
-
-Authentication must be set to “Authenticate with Microsoft” (in Settings, Security, Authentication)
+- A computer with internet access.
+- Access to the provided Microsoft tenant (some companies enforce users to only connect to their company tenant) or your own enterprise tenant with a Copilot Studio User License (or trial).
+- An agent with the topic **Check Ticket Status**, which stores the ticket JSON in the variable `SNTicketInfo` and ends with a message that shows an Adaptive Card. A ServiceNow instance is not needed when the topic sets `SNTicketInfo` from sample JSON.
+- Authentication set to "Authenticate with Microsoft" (in Settings, Security, Authentication).
 
 ## AI Builder prompts
 
@@ -32,52 +25,68 @@ Custom prompts give makers the freedom to instruct the GPT model to behave in a 
 
 ![In the Check Ticket Status topic, a Prompt node passes SNTicketInfo to the Ticket Details input of the AI Builder prompt Ticket customer communication (GPT4o) and saves the output as PersonalizedMessage, which a Message node shows as PersonalizedMessage.text.](./_images/ticket-prompt-data-flow.svg)
 
-Go to Topics, and open Check Ticket Status.
-
-After the last message that contained an Adaptive Card, add another node with the (+) button.
-Choose Call an action and select Create a prompt.
+1. Go to **Topics**, and open **Check Ticket Status**.
+2. After the last message that contains an Adaptive Card, add another node with the (+) button. Choose **Add a tool**, and in the **Add a tool** panel select **New prompt**.
 
 ![Image](_images/image_2.png)
 
-Give it a name
+3. The **Prompt name** field in the dialog title is prefilled with "Custom prompt" and a date. Clear it and enter:
 
+```text
 Ticket customer communication
+```
 
-Add an Input, called
+4. Select **Add content** > **Text** to add an input, and rename **Text input** to the name below. **Add content** inserts the input into the instructions straight away.
 
+```text
 Ticket Details
+```
 
-In the Prompt, paste the below instructions
+5. In the instructions, paste the prompt instructions. Under the `## Ticket details` section, type **/** or use **Add content** and pick the existing **Ticket Details** input.
 
-Under the ## Ticket details section, use the Insert button to select the Details input.
+```text
+Write a short, friendly message to the customer about the status of their support ticket. Mention the ticket number, the current state, who is working on it and the latest comment.
 
-Under Settings, choose Model GPT4o
+## Ticket details
+```
+6. Open the **Model** dropdown in the **Instructions** header and choose **GPT-4.1**. The list no longer offers GPT-4o.
+7. Test your prompt by pasting the sample JSON payload in the input sample data and selecting **Test prompt**.
 
-Test your prompt by pasting the ServiceNow Sample JSON Payload below in the input sample data and selecting Test prompt.
+```json
+{
+  "number": "INC0010042",
+  "short_description": "VPN connection drops every hour",
+  "state": "In Progress",
+  "priority": "2 - High",
+  "assigned_to": "Maria Keller",
+  "opened_by": "Alex Berger",
+  "opened_at": "2026-10-28 09:14:00",
+  "comments": "We have reproduced the issue and are testing a new VPN client build."
+}
+```
 
 ![Image](_images/image_3.png)
 
-Select Save custom prompt
-
-The prompt should be directly added to your topic once you save it. If this is not the case need to click on the (+) icon, Call an action and select your newly created prompt.
+8. Save the prompt. It is added to your topic once you save it. If this is not the case, select the (+) icon, **Add a tool**, and select your newly created prompt.
 
 ![Image](_images/image_4.png)
 
-Select the SNTicketInfo variable for the Details input.
-
-Create a variable for the generated output:
-
-PersonalizedMessage
+9. Select the `SNTicketInfo` variable for the **Ticket Details** input.
+10. In the Prompt node, under **Outputs**, select the variable for **predictionOutput** > **Create a new variable**, then rename it to `PersonalizedMessage` in **Variable properties**. The output is a record, which is why the next step uses `.text`.
 
 ![Image](_images/image_5.png)
 
-Add a Message node and insert the PersonalizedMessage.text variable.
+11. Select **Add node** (+) > **Send a message**, then **Insert variable** > `PersonalizedMessage.text`.
 
 ![Image](_images/image_6.png)
 
-Save
+12. Save the topic, open the test pane, and ask:
 
-Test
+```text
+What is the status of my ticket?
+```
+
+Expected: the agent answers with a personalized message about the ticket, for example "Hello Alex, Your support ticket INC0010042 ..." with Maria Keller as the person working on it.
 
 ![Image](_images/image_7.png)
 

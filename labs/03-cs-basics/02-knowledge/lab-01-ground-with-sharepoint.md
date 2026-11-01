@@ -26,7 +26,7 @@ Copy the absolute url of the site. For example: `https://xyz.sharepoint.com/site
 
 ![The **Overview** tab of the agent with the **+ Add knowledge** button highlighted.](./_images/make-agent-spo-knowledge-01.png)
 
-From the **Overview** tab of the agent that you made before, scroll to the **Knowledge** section. You will find the website that you configured in Step 1 of Exercise 1. Select **+ Add knowledge** to add the SharePoint site and its documents as an additional knowledge source.
+From the **Overview** tab of the agent that you made before, scroll to the **Knowledge** section. You will find the website that you configured in the previous lab. Select **+ Add knowledge** to add the SharePoint site and its documents as an additional knowledge source.
 
 ![The dialog to configure additional knowledge for the agent. Options are public websites, SharePoint, Dataverse, or other advanced data sources.](./_images/make-agent-spo-knowledge-02.png)
 
@@ -41,9 +41,9 @@ From the dialog window that pops up you can add additional knowledge sources lik
 
 Select **SharePoint** and, in the dialog popping up, provide the URL of the site where you uploaded the files and select **Add**. You can also browse for the document library you are looking for, selecting the **Browse items** command just beside the URL textbox.
 
-![The dialog to add a SharePoint data source. There is a **Browse files** button to search for specific files, a textbox to provide the URL of a site, and an **Add** button.](./_images/make-agent-spo-knowledge-03.png)
+![The dialog to add a SharePoint data source. There is a **Browse items** button to search for specific files, a textbox to provide the URL of a site, and an **Add** button.](./_images/make-agent-spo-knowledge-03.png)
 
-When you configure a SharePoint data source, you also need to specify a **Name** and a **Description**. It is fundamental to provide a meaningful name and description. In fact, Copilot Studio will be able to better understand what's inside the data source and, when in the upcoming labs you will enable generative orchestration, it will be possible to identify the right data source to use when answering to users' prompts via generative AI. For this exercise you can use the following values:
+When you configure a SharePoint data source, you also need to specify a **Name** and a **Description**: after you select **Add**, both appear as editable boxes in the table row under the URL. It is fundamental to provide a meaningful name and description. In fact, Copilot Studio will be able to better understand what's inside the data source and, when in the upcoming labs you will enable generative orchestration, it will be possible to identify the right data source to use when answering to users' prompts via generative AI. In the table row under the URL, replace the Name and Description with these values:
 
 - Name: 
 
@@ -64,6 +64,8 @@ Select the **Add to agent** button in the lower part of the screen and wait for 
 When the knowledge base will be updated, in the **Overview** tab you will see both the public website and the SharePoint Online site.
 
 ![The **Knowledge** section of the **Overview** page with two data sources: the website and the SharePoint Online site.](./_images/make-agent-spo-knowledge-05.png)
+
+> **Tip:** Newly uploaded files can take several minutes to be indexed. If the answer cites no SharePoint document, wait and ask again in a new test session.
 
 > **Important:** When configuring SharePoint Online sites as the knowledge base for an agent in Copilot Studio, users will only be able to get answers and content from documents that they have access to. The security and the access control are guaranteed by the Microsoft 365 security infrastructure and Copilot Studio agents access documents on behalf of the current user.
 
@@ -87,7 +89,7 @@ Now, for the sake of completeness, try to provide the following prompt to the ag
 How can I cook spaghetti alla carbonara?
 ```
 
-You will notice that, despite spaghetti alla carbonara is always a good choice 🍝, the agent will not give you back an answer. In fact, by default the agent will stick with the instructions and knowledge sources that you configured for it. It is a specialized agent, fully focused on HR-related content.
+You will notice that, despite spaghetti alla carbonara is always a good choice 🍝, the agent will decline to answer. In fact, by default the agent will stick with the instructions and knowledge sources that you configured for it. It is a specialized agent, fully focused on HR-related content.
 
 ![The agent refusing to cover topics not defined in its list of instructions or knowledge bases.](./_images/make-agent-spo-knowledge-07.png)
 

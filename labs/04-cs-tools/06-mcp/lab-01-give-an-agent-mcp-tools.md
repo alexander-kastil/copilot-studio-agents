@@ -93,7 +93,7 @@ In the **Tools** section, select **List Tools**. All six tools appear, each with
 
 Select `list_employees`, then **Run tool**. A green **Success** message and a JSON employee collection come back.
 
-Now select `search_employees`, enter a `searchTerm` such as `Alice`, and run it. The **History** section keeps every request and response, which is the fastest way to see what the agent will send later.
+Now select `search_employees`, enter a `searchTerm` such as `Marie`, and run it. The **History** section keeps every request and response, which is the fastest way to see what the agent will send later.
 
 > **Checkpoint:** six tools listed, `list_employees` returning data. If the connection fails here, it will fail in Copilot Studio too, so fix it before moving on.
 
@@ -103,13 +103,15 @@ Now select `search_employees`, enter a `searchTerm` such as `Alice`, and run it.
 
 ### Step 1: Create it
 
-Open [Copilot Studio](https://copilotstudio.microsoft.com), switch to your `Copilot Dev Camp` environment, and select **Create an agent**.
+Open [Copilot Studio](https://copilotstudio.microsoft.com), switch to your `Copilot Dev Camp` environment. On the home page, under **Other ways to build**, select **Agent** with the **Standard** badge. The **Name your agent** dialog asks only for the name; enter it and confirm.
 
 - **Name:**
 
 ```text
 HR Employee Management
 ```
+
+Then, on the **Overview** page, select **Edit** in **Details** and **Instructions**, fill in the values below, and select **Save** for each:
 
 - **Description:**
 
@@ -129,9 +131,9 @@ languages, current role, and contact details.
 When assigning a shift, confirm the employee name, the date, and the position back to the user.
 ```
 
-- **Model:** GPT-5 Chat
+- **Model:** GPT-5 Chat (the model dropdown defaults to GPT Chat Latest)
 
-Select **Create**, then **Publish**.
+Select **Publish**.
 
 Notice what the instructions do not contain: any mention of tool names. Orchestration matches intent against the tool descriptions the server publishes, so the instructions set behaviour and tone while the server supplies capability.
 
@@ -154,17 +156,15 @@ Select **Save**.
 
 ### Step 1: Register the server as a tool
 
-In your agent, go to **Tools** and select **+ Add a tool**.
+In your agent, go to **Tools** and select **Add tool**. In the **Add tool** dialog, select the **Add new MCP** card.
 
-Choose the **Model Context Protocol** group. This lists the MCP servers already available in the environment. Select **+ New tool**, then **Model Context Protocol** in the dialog that follows.
-
-Configure the server:
+Configure the server in the **Add a Model Context Protocol server** form:
 
 | Field | Value |
 | --- | --- |
-| Name | `HR MCP Server` |
-| Description | `Allows managing the list of employees and their shifts for the HR department` |
-| URL | `https://human-resource-mcp.azurewebsites.net` |
+| Server name | `HR MCP Server` |
+| Server description | `Allows managing the list of employees and their shifts for the HR department` |
+| Server URL | `https://human-resource-mcp.azurewebsites.net` |
 | Authentication | None |
 
 Select **Create**.
@@ -173,13 +173,13 @@ Authentication is `None` because this server is open for the class. In productio
 
 ### Step 2: Connect
 
-Copilot Studio creates the tool and then asks for a connection, showing **Not connected**. Select that status, then **Create a new connection**, and follow the prompts.
+Copilot Studio creates the tool and then asks for a connection, showing **Not connected**. Select that status, then **Create new connection**, then **Create** (the display name is optional).
 
 Registering a server and connecting to it are two separate acts. The registration is a definition in the environment; the connection is per user, and this is why you connect again later in Microsoft 365 Copilot.
 
 ![One MCP tool registration in the Copilot Dev Camp environment, used from the Copilot Studio test panel and from Microsoft 365 Copilot, each with its own per-user connection to the same HR MCP Server.](./_images/mcp-registration-and-connections.svg)
 
-Once connected, select **Add and configure**. The details page lists all six tools now available to the agent.
+Once connected, select **Add**. Select the tool in the **Tools** list to open its details page, which lists all six tools now available to the agent.
 
 ### Step 3: Test in the agent
 
@@ -213,7 +213,7 @@ Update the employee with email john.smith@greylogistics.com to speak also French
 ```
 
 ```text
-Search for employees with skill Project Management
+Search for employees with skill Wine Pairing
 ```
 
 ```text
@@ -224,14 +224,14 @@ Remove employee john.smith@greylogistics.com
 
 ## Exercise 4: Publish to Microsoft 365 Copilot
 
-Select **Channels**, then **Teams and Microsoft 365 Copilot**. Tick **Make agent available in Microsoft 365 Copilot**, select **Add channel**, close the panel, and select **Publish** again.
+Select **Channels**, then the **Microsoft 365 and Microsoft Teams** card. Select **Add channel**, tick **Make agent available in Microsoft 365 Copilot**, select **Save**, and select **Publish** again.
 
-Reopen the channel and select **See agent in Microsoft 365**, then **Add** and **Open**.
+Then select **See agent in Microsoft 365**, then **Add**.
 
 Run a prompt such as:
 
 ```text
-Search for employee Alice
+Search for employee Marie
 ```
 
 You are prompted to open the connection manager again. That is expected: the connection you created in the maker portal belongs to that context, and Microsoft 365 Copilot is a different one. Connect, retry, and the agent answers with the matching employee.

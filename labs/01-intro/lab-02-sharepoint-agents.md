@@ -60,7 +60,7 @@ Go back to the SharePoint site that you just created and, in the **Documents** w
 
 ![The home page of the site with the Documents web part and the 'See all' link highlighted.](./_images/lab-02-sharepoint-agents-08.png)
 
-Select **Upload** in the command bar and then select **Files**.
+Select **Create or upload** in the command bar and then select **Files upload**.
 
 ![The command bar of the document library with the 'Upload' menu expanded and the 'Files' option selected.](./_images/lab-02-sharepoint-agents-09.png)
 
@@ -74,23 +74,23 @@ In this exercise you create the initial version of the Custom SharePoint agent f
 
 ### Step 1: Create the agent
 
-Select the **AI actions** command, then select the **Create an agent** command in the command bar.
+Select the files, then open the **Copilot** chevron in the toolbar and select **Create an agent**.
 
 ![The SharePoint Online interface of a document library and the "Create an agent" command highlighted in the command bar.](./_images/lab-02-sharepoint-agents-11.png)
 
 > **Important: selected files and folders set the agent's scope.** If you do not select any file in the library and you select **Create an agent**, the agent targets the whole content of the current document library. If you explicitly select files or sub-folders in the library and then select **Create an agent**, the agent targets only the selected content. You cannot select more than 20 items for a specific agent. If you select more than 20 items, you see an error message like *"Sources limit exceeded. The maximum number of sources you can add is 20. Remove XX sources to save this copilot."* and you cannot create the agent.
 
-A dialog window shows up with a recap of the selected content. From there you can go straight to the agent, for testing purposes, or edit the agent you just created.
+The dialog **Create your new agent** opens, with the tabs **Overview**, **Sources** and **Behavior**.
 
-![The SharePoint Online interface when creating a Custom SharePoint agent on top of a document library. There is a recap of the selected content and a couple of buttons to "Open agent" or to "Edit" the agent.](./_images/lab-02-sharepoint-agents-12.png)
+![The SharePoint Online interface when creating a Custom SharePoint agent on top of a document library. This earlier version shows a recap of the selected content and a couple of buttons to "Open agent" or to "Edit" the agent.](./_images/lab-02-sharepoint-agents-12.png)
 
 > **Note: permissions.** To create a Custom SharePoint agent, you need contribute permissions on the target library or site. Under the cover of the agent, a new **.agent** file is created, and users need proper permissions to do so.
 
-Select the **Create** command to create the agent and start using it.
+Select **Create agent** to create the agent and start using it.
 
 ![The dialog confirming that a new Custom SharePoint agent was created. There is a command to "Chat with agent" and another one to "Share agent".](./_images/lab-02-sharepoint-agents-13.png)
 
-A new dialog window shows up. Select **Chat with agent** to open a new browser tab in Microsoft 365 Copilot Chat and interact with the new agent. Feel free to ask the agent about the content of the documents in the knowledge base. For example, you can use the following prompt:
+The dialog **Your agent is ready to use** shows up. Select **Chat with agent** to open the agent in a side panel on the right and interact with it. Feel free to ask the agent about the content of the documents in the knowledge base. For example, you can use the following prompt:
 
 ```text
 What are the hiring procedures of our company?
@@ -100,7 +100,7 @@ When you are done with the new agent in the Microsoft 365 Copilot Chat, close th
 
 ### Step 2: Test the agent
 
-You see a new file with the **.agent** extension in the current document library. Select the **...** menu of the file and select **Preview** to interact with the agent from within the SharePoint Online user experience. A full screen dialog shows up, and you can write prompts to interact with the agent.
+You see a new file with the **.agent** extension in the current document library. Select the file and, in the toolbar, select **Open** > **Open in side pane** to interact with the agent from within SharePoint Online, or **Open in M365 Copilot** for the full experience.
 
 ![The SharePoint Online interface showing the new Custom SharePoint agent. There are suggested starter prompts at the top of the page and a textarea to write a prompt in the lower part of the screen.](./_images/lab-02-sharepoint-agents-14.png)
 
@@ -140,7 +140,7 @@ A new dialog window shows up and lets you manage the following settings:
 
 The dialog also shows a live updating preview of the agent, which you can use to test your changes on the fly.
 
-On the first tab of the editing dialog, **Overview**, update the icon of the agent with the [following image file](https://github.com/microsoft/copilot-camp/blob/main/src/make/sharepoint-agents/HR-SP-Agent.png). Then update the **Purpose** to the following text.
+On the first tab of the editing dialog, **Overview**, update the icon of the agent with the [following image file](./lab-02-sharepoint-agents/HR-SP-Agent.png). Then update the **Purpose** to the following text.
 
 ```text
 This is an agent supporting users to find information, policies, and rules based on the HR department knowledge base
@@ -158,9 +158,9 @@ Select **Remove this site and all contents** to remove an already selected site.
 
 ### Step 2: Update the instructions
 
-On the **Behavior** tab of the configuration dialog, you can configure an initial **Welcome messaging** for your agent. You can also configure up to three **Starter prompts**, which are presented to users when they start a conversation with the agent.
+On the **Behavior** tab of the configuration dialog, you can configure an initial **Welcome messaging** for your agent. You can also configure up to three starter prompts (**Starter prompt 1** to **3**), which are presented to users when they start a conversation with the agent.
 
-Most importantly, you can configure the **Agent instructions** field to fine tune the tone, behavior, limitations, rules, and more for the agent. This is where you configure the system settings or prompt for your agent. The more accurate you are in this field, the better results you get back from the agent. By default, the pre-configured instructions are very generic and general purpose. The default value is:
+Most importantly, you can configure the **Instructions for agent** field to fine tune the tone, behavior, limitations, rules, and more for the agent. This is where you configure the system settings or prompt for your agent. The more accurate you are in this field, the better results you get back from the agent. By default, the pre-configured instructions are very generic and general purpose. The default value is:
 
 ```text
 Provide accurate information about the content in the selected files and reply in a formal tone.
@@ -198,7 +198,7 @@ You can write instructions up to 8000 characters long, so use as much detail as 
 
 ### Step 3: Test the agent
 
-Once you have updated the agent icon, purpose, and instructions, select the agent and interact with it again.
+Select **Save and close** in the **Edit agent** dialog; the dialog **Changes to your agent are saved** confirms it. Once you have updated the agent icon, purpose, and instructions, select the agent and interact with it again.
 
 For example, provide the following prompts:
 
@@ -226,31 +226,14 @@ If you do not like the ready-made agent and want to use a custom agent of your o
 
 ### Step 1: Approve and promote the agent
 
-Go to the home page of your site and select the Copilot command to open the side panel.
+Agents no longer need an approval step: you pick the site default directly in the site settings.
 
-When you open the Copilot panel, you get the default ready-made agent. You can select any other agent that you created by selecting the dropdown beside the name of the agent and choosing another agent.
+1. Go to the home page of your site and select the gear icon (**Settings**).
+2. Select **Site AI**.
+3. Open the **Main agent** dropdown, select **Search for an agent**, and pick your agent.
+4. Select **Save**.
 
-![The Copilot side panel rendering the ready-made agent for a site. There is the dropdown to select the agent to use, which allows selecting the "HR agent" created before.](./_images/lab-02-sharepoint-agents-22.png)
-
-To make your custom agent the default one, go back to the document library where you created the agent and open it. Select the **...** menu in the upper right corner of the agent dialog, and select **Set as approved**.
-
-![The command panel of an agent when selected, allows to edit the agent, set the agent as approved, delete the Copilot history, or read the conversation history with the agent.](./_images/lab-02-sharepoint-agents-23.png)
-
-Setting an agent as approved requires you to be a site owner and to confirm the action. An approved agent moves to the **Site Assets** library, in a dedicated subfolder named **Copilots**.
-
-![The confirmation request dialog to approve an agent. The dialog explains that the agent, once approved, will be moved to the Site Assets library of the site.](./_images/lab-02-sharepoint-agents-24.png)
-
-When the approval process is complete, you see a confirmation dialog, and the .agent file disappears from the current document library.
-
-![The dialog confirming that the agent was approved. The dialog provides a link to the new location of the approved agent.](./_images/lab-02-sharepoint-agents-25.png)
-
-The agent now shows up in the list of agents **Approved for this site**.
-
-![The list of agents approved for the current site, showing the custom agent in the list of approved ones.](./_images/lab-02-sharepoint-agents-26.png)
-
-Select the **...** menu beside the name of the agent and select **Set as site default** in the context menu. Confirm that you want the agent to become the default one. You get a confirmation dialog at the end of the promotion process. Your custom agent now shows up as the first and default one when you select the Copilot icon in the suite bar of your site.
-
-![The commands to promote an agent to be the site default one, once it has been approved.](./_images/lab-02-sharepoint-agents-27.png)
+A new .agent file can take a while to show up in the search, because SharePoint first has to index it. If your agent is not found, try again a few minutes later. Your custom agent then shows up as the default one when you select the Copilot icon in the suite bar of your site.
 
 ## Exercise 5: Share the agent
 
@@ -258,7 +241,7 @@ In this exercise you share your Custom SharePoint agent with others, either with
 
 ### Step 1: Share the agent with people
 
-Because every Custom SharePoint agent is a file, you can share it with other people. Whether the agent is local to a document library or approved and promoted at site level, select the **...** menu beside the agent name and select **Share**.
+Because every Custom SharePoint agent is a file, you can share it with other people. Whether the agent is local to a document library or approved and promoted at site level, open the agent in the side pane, select its **...** menu and select **Share**. The dialog **Share "HR agent.agent"** has the field **Add a name, group, or email** and the buttons **Copy link** and **Close**; **Send** appears once you add a person.
 
 ![The context menu of a Custom SharePoint agent with the option to "Share" the agent highlighted.](./_images/lab-02-sharepoint-agents-28.png)
 
@@ -270,15 +253,15 @@ The sharing link brings target users straight to the agent dialog, so they can i
 
 ### Step 2: Share the agent via Microsoft Teams
 
-You can also share the agent via Microsoft Teams. Select the **...** menu beside the agent name and select **Copy link for Teams**.
+You can also share the agent via Microsoft Teams. In the agent's side pane, select **...** and then **Copy link for Teams**.
 
 ![The context menu of a Custom SharePoint agent with the option to "Copy link for Teams" for the agent highlighted.](./_images/lab-02-sharepoint-agents-30.png)
 
-This generates a sharing link for the agent file and copies it to the clipboard. The confirmation message shows that the generated link is ready to be pasted into any group chat in Microsoft Teams.
+The dialog **Choose who can access the file link** opens, with **Change**, **Add more people** and **Copy link**. Select **Copy link** to copy the link, ready to be pasted into any group chat in Microsoft Teams.
 
-![The confirmation dialog for the request to get a link for Teams for the agent. There is a clear text stating that you need to "Paste this link in a Teams group chat to add this agent" in Microsoft Teams.](./_images/lab-02-sharepoint-agents-31.png)
+![The earlier confirmation dialog for the request to get a link for Teams for the agent. There is a clear text stating that you need to "Paste this link in a Teams group chat to add this agent" in Microsoft Teams.](./_images/lab-02-sharepoint-agents-31.png)
 
-In the dialog, you can select the **Settings** link to configure who can access the sharing link and set an optional expiration date for the link. Under the cover, a regular sharing link of SharePoint Online is created.
+Select **Change** to configure who can access the sharing link. Under the cover, a regular sharing link of SharePoint Online is created.
 
 Paste the link into a group chat to see what happens.
 

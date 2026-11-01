@@ -1,69 +1,21 @@
 # Create Your First Copilot Studio Agent
 
-In this lab, you'll set up a Power Platform environment, activate Microsoft Copilot Studio, and create the HR agent that the following labs extend.
+In this lab, you'll activate Microsoft Copilot Studio in the Power Platform environment prepared for you, and create the HR agent that the following labs extend.
 Copilot Studio is part of the Microsoft Power Platform offering and requires dedicated licensing, accordingly to the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 
 > **Set up your development environment for Microsoft 365 Copilot and Microsoft Copilot Studio:** This lab currently assumes you already have a developer tenant to setup. You can reference off to the
-> [page here](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/prerequisites) that explains the current way you can get a tenant. It also assumes that you have a user account that is a Power Platform administrator, in order to being able to create a new Power Platform environment.
+> [page here](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/prerequisites) that explains the current way you can get a tenant. The class prepares a Power Platform environment for every student.
 
 In this lab you will learn:
 
-- How to create a dedicated environment for your labs
 - How to setup and configure Microsoft Copilot Studio
 - How to create a Standard agent and test it
 - How to configure a custom icon for your agent
 
 > **Disclaimer:** These samples and labs are intended for instructive and demonstration purposes and are not intended for use in production. Do not put them into production without upgrading them to production quality.
 
-## Exercise 1 : Creating a Power Platform environment
-
-With the Power Platform, you can create different environments and easily switch between them accordingly to your needs.
-An environment stores apps, flows, data, agents, etc. and each environment is completely isolated from any other environment.
-You can learn more about Power Platform environments reading this [overview document](https://learn.microsoft.com/en-us/power-platform/admin/environments-overview).
-
-![The Power Platform admin center creates the Copilot Dev Camp environment in Exercise 1 and Copilot Studio selects it in Exercise 2; any other environment stays isolated.](./_images/power-platform-environment-setup.svg)
-
-> **Power Platform administrative rights:** In order to proceed with the steps illustrated in this Exercise, you need a user account that is a Power Platform administrator in your target tenant. If you don't have such an account, ask to a Power Plaform administrator to create the environment for you and to give you access to that new environment.
-
-### Step 1: Creating a new Power Platform environment
-
-To play with these labs you are going to create a new dedicated environment, so that at the end of this training path you can simply delete it and get rid of all the related resources and settings. Here follow the instructions to create an environment, step by step:
-
-- Open a browser and, using the work account of your target Microsoft 365 tenant, go to [https://admin.powerplatform.com](https://admin.powerplatform.com).
-
-- Go to the 1️⃣ **Manage** section, select the 2️⃣ **Environments** panel and select 3️⃣ **+ New** to open the 4️⃣ **New environment** pane
-
-![The user interface of the Microsoft Power Platform Admin center to create a new environment.](./_images/new-environment-01.png)
-
-- Specify a unique name for the environment. For example, you could use "Copilot Dev Camp".
-- Leave the default value (off) for the **Make this a Managed Environment** setting.
-- Leave the **Group** setting blank
-- Choose a **Region** accordingly to your needs.
-- Leave the default value (off) for the **Get new features early** setting.
-- Choose **Trial** for the **Type** setting.
-
-> **Understanding the environment types:** A **Trial** environment is fully functional for 30 days and then gets deleted automatically, which fits a class. New unmanaged **Developer** environments can't be created from November 15, 2026. [Here](https://learn.microsoft.com/en-gb/microsoft-copilot-studio/environments-first-run-experience#trial-environments) you can find additional information about **Trial** environments. Moreover, [here](https://learn.microsoft.com/en-us/power-platform/admin/environments-overview#power-platform-environment-types) you can find a detailed explanation of all the available environment types.
-
-- Leave all the other settings as they are.
-- Select **Next**.
-- Choose a **Language** and a **Currency**, or leave the default ones.
-
-![The user interface of the Microsoft Power Platform Admin center to configure language, currency and final settings for a new environment.](./_images/new-environment-02.png)
-
-- Leave all the other settings as they are and select **Save** to create the actual environment.
-
-The new environment will take a while to be ready, as you can notice from the list of environments in the Power Platform Admin center.
-
-![The list of environment with the new one in "Preparing" status and a green box informing you that the new environment is preparing.](./_images/new-environment-03.png)
-
-Once the new environment will be ready, the list of environments will show the information accordingly.
-
-![The list of environment with the new one in "Ready" status and a green box informing you that the new environment was successfully created.](./_images/new-environment-04.png)
-
-> **Tip:** To learn more about setting up your environment for Microsoft Copilot Studio, you can refer to [Agent Academy - Recruit - Mission 00: Course Setup](https://microsoft.github.io/agent-academy/recruit/00-course-setup/).
-
-## Exercise 2 : Microsoft Copilot Studio
+## Exercise 1 : Microsoft Copilot Studio
 
 In order to use Microsoft Copilot Studio you need to have a valid license and you need to activate it in the target tenant where you want to use it.
 
@@ -82,15 +34,15 @@ To activate Copilot Studio follow these steps:
 > **Copilot Studio free trial period:** You can get additional information about the free trial license for Copilot Studio by reading
 > [this document](https://learn.microsoft.com/en-us/microsoft-copilot-studio/sign-up-individual).
 
-- Select the 1️⃣ **Environment** section in the upper right corner of the screen and choose the environment 2️⃣ that you created in Exercise 1.
+- Select the environment name at the bottom of the left navigation (**Switch environment**) and, in the **Switch environment** dialog, choose the environment prepared for you. The following screenshot shows the earlier picker in the upper right corner of the screen.
 
 ![The user interface of Copilot Studio when selecting a target environment. There are all the available environments in the upper right corner of the screen and you can choose the one to target.](./_images/new-environment-05.png)
 
-- Copilot Studio will reload and you will then be ready to start using it in the new environment.
+- Copilot Studio will reload and you will then be ready to start using it in that environment.
 
 Now you are all set to create your first agent with Copilot Studio.
 
-## Exercise 3 : Creating an agent with Copilot Studio
+## Exercise 2 : Creating an agent with Copilot Studio
 
 In this exercise you are going to create a new agent using Generative AI and describing what you are looking for. You are also going to configure a custom icon for the agent and to test the agent.
 
@@ -102,11 +54,11 @@ On the home page, open the dropdown next to **New agent** and, under **Other way
 
 ![The home page of Microsoft Copilot Studio with the **Create an agent** command highlighted to create a new agent.](./_images/make-agent-01a.png)
 
-You can achieve the same result also selecting **Agents** on the left side of the screen and then selecting **+ Create blank agent** in the upper right side of the screen.
+You can achieve the same result also selecting **Agents** on the left side of the screen and then selecting **New agent**. The following screenshot shows the earlier **Agents** page, where the same start was **+ Create blank agent**.
 
 ![The "Agents" page of Microsoft Copilot Studio with the **Create blank agent** command highlighted to create a new agent.](./_images/make-agent-01b.png)
 
-After waiting a little while, you will be redirected to the page from which you can configure a newly created agent. From here you can configure all the settings of your agent, like for example:
+A **Name your agent** dialog asks for the name first: enter "HR Agent" and confirm. After waiting a little while, you will be redirected to the page from which you can configure a newly created agent. From here you can configure all the settings of your agent, like for example:
 
 - Name
 - Icon
@@ -123,7 +75,7 @@ After waiting a little while, you will be redirected to the page from which you 
 
 ![The home page of a new agent in Microsoft Copilot Studio with all the options to define Name, Icon, Description, Model selection, Triggers, Instructions, etc..](./_images/make-agent-03a.png)
 
-Select the **Edit** command in the upper right corner of the **Details** section and give the name "HR Agent" to your custom agent. Then, provide the following value for the **Description** field:
+Select the **Edit** command in the upper right corner of the **Details** section. The name already shows "HR Agent" from the dialog. Provide the following value for the **Description** field:
 
 ```txt
 You help employees to find information about HR related policies
@@ -132,7 +84,7 @@ You help employees to find information about HR related policies
 ![The section to edit "Name" and "Description" for the newly created agent.](./_images/make-agent-04a.png)
 
 Select the **Save** command in the upper right corner of the **Details** section, when you are done with the changes.
-Now, leave the suggested model as **GPT-4.1 (Default)** and select the **Edit** command in the upper right corner of the **Instructions** section. Provide the following content for the instructions:
+Now, leave the suggested model as it is (**GPT Chat Latest** at the time of writing) and select the **Edit** command in the upper right corner of the **Instructions** section. Provide the following content for the instructions:
 
 ```txt
 - Provide employees with clear, accurate information about HR policies and procedures.
@@ -151,9 +103,9 @@ Select **Save** in the upper right corner of the **Instructions** section.
 
 Scroll down to the **Knowledge** section and select the **+ Add knowledge** command to add an initial data source for your agent.
 
-![The dialog to add knowledge to the agent with the "Public website" option highlighted.](./_images/make-agent-06a.png)
+![The dialog to add knowledge to the agent with the "Public websites" option highlighted.](./_images/make-agent-06a.png)
 
-Then select **Public website** and provide the following URL in the dialog that will show up:
+Then select **Public websites** and provide the following URL in the dialog that will show up:
 
 ```txt
 https://careers.microsoft.com/
@@ -189,11 +141,11 @@ Let's start changing the icon of the agent by selecting the **Edit** button in t
 
 ![The **Details** panel of the agent in edit mode, where it is possible to update the Name, the icon, the description, and the instructions for the agent.](./_images/make-agent-04a.png)
 
-Select the **Change icon** button to show a dialog from where you can upload a custom icon. If you like, you can use the [following icon](https://raw.githubusercontent.com/microsoft/copilot-camp/refs/heads/main/src/make/copilot-studio/HR-agent-color.png).
+Select the **Change icon** button to show a dialog from where you can upload a custom icon. If you like, you can use the [following icon](./lab-01-create-your-first-agent/HR-agent-color.png): select **Change icon** in the dialog and pick the PNG file.
 
 ![The **Details** panel of the agent in edit mode, where it is possible to update the Name, the icon, the description, and the instructions for the agent.](./_images/make-agent-change-icon-07.png)
 
-Once you are done with the upload of the new icon, select the **Save** button.
+Once you are done with the upload of the new icon, select **Save** in the **Change icon** dialog. The icon is saved right away and the **Details** section leaves edit mode.
 
 ### Step 3: Testing the agent
 

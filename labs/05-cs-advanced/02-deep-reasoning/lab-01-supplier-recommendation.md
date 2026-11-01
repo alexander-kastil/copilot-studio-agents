@@ -2,7 +2,7 @@
 
 Sourcing decisions are the kind of work an agent usually gets almost right: it reads the scorecard, picks the supplier with the best numbers, and quietly ignores the certificate that expires two weeks before the contract starts. The cost of "almost right" here is a twelve month contract awarded to a vendor who was never eligible. In this lab you build an Aurora Provisions sourcing advisor that has to screen ten suppliers against four disqualifying rules, respect a volume cap, and split an award across two regions, and you make it work the problem step by step instead of pattern matching an answer.
 
-You will run the same hard question twice, once on the default model and once with deep reasoning switched on and the reason keyword placed on a single instruction step, then open the activity map to see the reasoning node the run produced. Budget 20 to 25 minutes.
+You will run the same hard question twice, once with no instructions, where the agent decides on its own whether to reason, and once with the reason keyword placed on a single instruction step, then open the activity map to see the reasoning node the run produced. Budget 20 to 25 minutes.
 
 ## What you'll build
 
@@ -40,7 +40,7 @@ You advise the Aurora Provisions sourcing team on annual supply contracts. You s
 ```
 
 3. Create the agent, then open **Settings** for it.
-4. Under the generative AI or orchestration section, turn on **Generative orchestration**.
+4. On the **Advanced** page of **Settings**, turn on **Generative orchestration** (it then shows **Yes**).
 
 Expected: the agent opens with generative orchestration enabled, and the setting persists after you leave and return to **Settings**. No topics were authored; the planner is what will do the work.
 
@@ -50,7 +50,7 @@ Expected: the agent opens with generative orchestration enabled, and the setting
 
 With deep reasoning on, the agent decides for itself which steps deserve the slower model, and you can force the decision with a keyword. The model behind it is Azure OpenAI o3, which trades response time for logical, step-by-step problem solving. This is a per-agent switch, not a per-environment one, so an agent that does simple lookups keeps running on the fast default.
 
-1. Stay in **Settings** for the Sourcing Advisor.
+1. Stay on the **Advanced** page of **Settings** for the Sourcing Advisor.
 2. Turn on **Deep reasoning (preview)**.
 3. Read the preview notice, including the note that data may be processed outside your region, and confirm.
 4. Return to the agent overview.
@@ -84,11 +84,13 @@ Supplier incident log with severity, open or closed status, and detail for each 
 
 Expected: three sources listed on the **Knowledge** page with a ready status and your descriptions visible. The agent can now reach every fact the decision needs, and every fact that will trip it up.
 
+> **Tip:** Web Search is on by default and adds public web results to the lookups. Turn off **Web Search** on the **Overview** page to keep answers grounded on the three files.
+
 > **Tip:** Write each description as "what is in it, and when to use it". A description that only names the file is the most common reason a perfectly good knowledge source never gets searched.
 
 ## Exercise 4: Establish the baseline
 
-Before switching anything on in the prompt, capture what the agent does unaided. This is the measurement the rest of the lab is judged against, and skipping it is how teams end up believing a feature helped without evidence. Ask the full question with no instructions in place, so the agent answers the way a fast general model does.
+Before switching anything on in the prompt, capture what the agent does unaided. This is the measurement the rest of the lab is judged against, and skipping it is how teams end up believing a feature helped without evidence. Ask the full question with no instructions in place, so the agent decides on its own how to answer.
 
 1. Open the **Test your agent** panel.
 2. Send this message:
@@ -99,7 +101,7 @@ We need to award the 2026 organic green tea leaf contract. Which supplier or sup
 
 3. Note three things: which suppliers it recommends, whether it names any supplier it ruled out, and how long the answer takes.
 
-Expected: a fluent recommendation that leans on the strongest scorecard numbers, typically Harbor Leaf Trading or Rhinevale Botanicals, delivered in a couple of seconds. In most runs the answer misses at least one of the disqualifications, the 60 percent concentration cap, or the different-region rule, and it rarely lists the excluded suppliers with the rule that excluded them. Keep this answer open in the transcript, you will compare against it in Exercise 6.
+Expected: deep reasoning is already on, so the agent may decide by itself that the question is hard and call **Reason with advanced model**. In a test run the baseline took about 30 seconds, used that reasoning step, and already named Silverpine Estates and Cascade Organics with the exclusions. Without the reasoning step, the answer leans on the strongest scorecard numbers and misses at least one disqualification, the 60 percent cap, or the different-region rule. Keep this answer open in the transcript, you will compare against it in Exercise 6.
 
 > **Note:** The baseline is model-dependent and will not be identical for every learner. What matters is not which supplier it named but whether it screened at all: count how many of the four eligibility rules the answer visibly applied.
 
@@ -141,7 +143,7 @@ Now the comparison. Same question, same knowledge, same agent, with the only dif
 We need to award the 2026 organic green tea leaf contract. Which supplier or suppliers should get it, and in what volumes?
 ```
 
-3. Wait for the response; it takes visibly longer than the baseline.
+3. Wait for the response; with the reasoning step it takes about half a minute or more.
 4. Grade the answer against the marking scheme below.
 
 The policy and the data admit one correct outcome:
@@ -158,7 +160,7 @@ The policy and the data admit one correct outcome:
 
 ![Rules R1 to R4 screen out six of the ten suppliers; of the four eligible, Silverpine Estates gets 6,800 cases under the 60 percent cap and Cascade Organics, in a different region, gets 5,200.](./_images/supplier-screening-and-award.svg)
 
-Expected: the deep reasoning answer names Silverpine Estates as primary and a different-region secondary, and it shows its screening rather than asserting a winner. Compare it against the Exercise 4 transcript: the baseline named a supplier, this answer defends one. If it still misses an exclusion, sharpen step 4 to name the rule numbers explicitly and run once more.
+Expected: the deep reasoning answer names Silverpine Estates as primary and a different-region secondary, and it shows its screening rather than asserting a winner. Compare it against the Exercise 4 transcript: the instruction makes the reasoning step and the excluded-supplier table repeatable instead of left to the agent's judgment. If it still misses an exclusion, sharpen step 4 to name the rule numbers explicitly and run once more.
 
 > **Tip:** A supplier with an open incident of severity minor, Kestrel Highland Tea, is deliberately in the data. An answer that excludes it under R3 is over-applying the rule, which is a different failure from missing an exclusion and worth pointing out in a review.
 
@@ -166,9 +168,9 @@ Expected: the deep reasoning answer names Silverpine Estates as primary and a di
 
 An answer you cannot trace is an answer you cannot defend, and a sourcing recommendation will be questioned. The activity map draws the plan the orchestrator built, with one node per step, and it renders a distinct node wherever a deep reasoning model ran. Opening that node is how you confirm the slow model ran where you meant it to and not on the whole conversation.
 
-1. In the **Test your agent** panel, select the three dots (**…**) and turn on **Show activity map when testing**.
+1. The activity map appears in the **Test your agent** panel. If it does not, select the three dots (**…**) and select **Show activity map when testing**.
 2. Re-send the award question so a fresh map is generated.
-3. When the map appears, find the deep reasoning node and select it to expand it.
+3. When the map appears, find the deep reasoning node (**Reason with advanced model**) and select it to expand it.
 4. Read the reasoning steps, the data the model used, and the result it returned.
 5. Open the **Activity** page for the agent and select the same activity to see the map alongside the transcript.
 
@@ -193,7 +195,7 @@ What is Terra Verde Farms' on-time delivery percentage?
 Re-run the award assuming Harbor Leaf Trading closes incident INC-2214 before the contract start date. What changes?
 ```
 
-Expected: the lookup answers in about the same time as the Exercise 4 baseline, with a knowledge node and no deep reasoning node in the map. The re-run question produces a reasoning node again and a changed recommendation, since Harbor Leaf Trading becomes eligible and outranks Silverpine Estates on on-time delivery, while the 60 percent cap still forces a split with a different-region secondary. You now have an agent that reasons only where reasoning pays.
+Expected: the lookup answers in a few seconds, with a knowledge node and no deep reasoning node in the map. The re-run question produces a reasoning node again and a changed recommendation, since Harbor Leaf Trading becomes eligible and outranks Silverpine Estates on on-time delivery, while the 60 percent cap still forces a split with a different-region secondary. You now have an agent that reasons only where reasoning pays.
 
 ## Troubleshooting
 
