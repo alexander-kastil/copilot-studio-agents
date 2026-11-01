@@ -39,14 +39,12 @@ Prices are US list prices from partner sources; check the euro price and the ter
 
 ## Admin skills
 
-The matching skills in `.claude/skills/` run the same checks read-only and ask before every billing change:
+The matching skills run the same checks read-only and ask before every billing change. `copilot-credits` ships in the `copilot-studio` plugin of the integrations marketplace:
 
 | Skill | Use it for |
 | --- | --- |
 | `cowork-setup` | Cowork access and billing |
-| `copilot-studio-credits` | Agent environments, billing plans and Azure budgets |
-| `work-iq-credits` | Work IQ quota errors |
-| `copilot-studio-apps-credits` | App build and runtime credits |
+| `copilot-credits` | Agent environments, billing plans and Azure budgets; Work IQ quota errors; app build and runtime credits |
 
 ## Scripts
 

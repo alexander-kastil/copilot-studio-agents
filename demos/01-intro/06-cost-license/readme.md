@@ -142,14 +142,14 @@ Only the person who builds the agents needs a paid license, so test the cheapest
 
 ## Admin Guides, Skills and Scripts
 
-The setup guides hold the clicks; the matching skills in `.claude/skills/` run the same checks read-only and ask before every billing change.
+The setup guides hold the clicks; the matching skills run the same checks read-only and ask before every billing change. `copilot-credits` ships in the `copilot-studio` plugin of the integrations marketplace.
 
 | Guide | Skill | Covers |
 |---|---|---|
 | [Copilot Cowork access and billing](../../../setup/07-cowork-tenant-setup.md) | `cowork-setup` | Usage-based billing, a spending policy that selects Cowork, discovery, Anthropic models, plugins and browser use |
-| [Copilot Credits for GitHub Copilot agents and Work IQ](../../../setup/08-tenant-credit-setup.md) | `copilot-studio-credits` | Billing plans for the agent environment, the Work IQ service principal and cost guardrails |
-| [Configure Copilot Credits for the Work IQ API](../../../setup/10-work-iq-credit-quota.md) | `work-iq-credits` | The Work IQ quota error and raising the spending policy limit |
-| [Apps in Copilot Studio](../../../setup/09-copilot-studio-apps-setup.md) | `copilot-studio-apps-credits` | The personal developer environment and runtime coverage through Copilot Managed Runtime |
+| [Copilot Credits for GitHub Copilot agents and Work IQ](../../../setup/08-tenant-credit-setup.md) | `copilot-credits` | Billing plans for the agent environment, the Work IQ service principal and cost guardrails |
+| [Configure Copilot Credits for the Work IQ API](../../../setup/10-work-iq-credit-quota.md) | `copilot-credits` | The Work IQ quota error and raising the spending policy limit |
+| [Apps in Copilot Studio](../../../setup/09-copilot-studio-apps-setup.md) | `copilot-credits` | The personal developer environment and runtime coverage through Copilot Managed Runtime |
 | [AI Teammates: Autopilot and agent accounts](../../../setup/11-ai-teammates-setup.md) | | Frontier and Agent 365 licensing from the cheapest option up |
 | [Copilot Studio plugins for coding agents](../../07-cs-maintaining/05-agentic-building/readme.md#install) | | The two Microsoft plugins for Claude Code, GitHub Copilot CLI and VS Code, and the Power Platform CLI they need |
 

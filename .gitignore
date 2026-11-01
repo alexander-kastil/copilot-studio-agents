@@ -27,3 +27,6 @@ labs/copilot-dev-camp/
 agent-instructions/
 tasks/
 *cost.json
+
+# Claude Code session files: time ledger, personal settings, scheduler lock
+.claude/scheduled_tasks.lock
