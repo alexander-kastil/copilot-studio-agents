@@ -1,0 +1,527 @@
+{
+  "title": "Copilot Studio demo run costs, modules 03 to 06",
+  "measuredOn": "2026-10-22",
+  "demoRunWindow": {
+    "from": "2026-10-21",
+    "to": "2026-10-22"
+  },
+  "environment": {
+    "name": "Integrations e. U. (default)",
+    "id": "Default-d92b247e-90e0-4469-a129-6a32866c0d0a",
+    "tenantId": "d92b247e-90e0-4469-a129-6a32866c0d0a"
+  },
+  "units": {
+    "CC": "Copilot Credits",
+    "EUR": "Euro, as billed in Azure"
+  },
+  "sources": [
+    {
+      "id": "ppac-manage-agents",
+      "name": "Power Platform admin center > Licensing > Copilot Studio > Manage Agents",
+      "scope": "billed and non-billed credits per agent, channel and billable feature, month to date",
+      "dataAsOf": "2026-10-21"
+    },
+    {
+      "id": "cs-monitor",
+      "name": "Copilot Studio agent > Monitor > Overview > Total credits used",
+      "scope": "per agent, Last 7 days (2026-10-16 to 2026-10-22)"
+    },
+    {
+      "id": "cs-history",
+      "name": "Copilot Studio GitHub Copilot agent > Preview > History > Credits",
+      "scope": "per Preview session"
+    },
+    {
+      "id": "m365-cost-management",
+      "name": "Microsoft 365 admin center > Copilot > Cost management",
+      "scope": "consumption by service (Work IQ API, Copilot Studio, Copilot Managed Runtime), month to date",
+      "dataAsOf": "2026-10-21"
+    },
+    {
+      "id": "azure-cost-management",
+      "name": "Azure Cost Management (az CLI, read only)",
+      "scope": "resource group rg-copilot-studio, subscription cd091145-5ea2-4703-ba5d-41063b1d4308, 2026-10-01 to 2026-10-22"
+    },
+    {
+      "id": "azure-monitor",
+      "name": "Azure Monitor metrics (az CLI, read only)",
+      "scope": "Foundry deployment gpt-5.4-mini on cs-copilot-studio-foundry"
+    }
+  ],
+  "demos": [
+    {
+      "topic": "03/01",
+      "title": "Standard agents",
+      "agent": "CS-Employee Onboarding Assistant",
+      "agentType": "standard",
+      "copilotCredits": {
+        "billed": 0,
+        "nonBilled": 0
+      },
+      "eur": null,
+      "tokens": null,
+      "status": "measured",
+      "sources": [
+        "cs-monitor",
+        "ppac-manage-agents"
+      ],
+      "note": "Standard agents ran in the test chat, which consumes no Copilot Credits; Monitor shows 0 and the agent is not in the PPAC list. Also covers 03/02."
+    },
+    {
+      "topic": "03/02",
+      "title": "Knowledge",
+      "agent": "CS-Employee Onboarding Assistant",
+      "agentType": "standard",
+      "includedIn": "03/01"
+    },
+    {
+      "topic": "03/03",
+      "title": "Topics",
+      "agent": "CS-HR Buddy",
+      "agentType": "standard",
+      "copilotCredits": {
+        "billed": 0,
+        "nonBilled": 0
+      },
+      "eur": null,
+      "tokens": null,
+      "status": "measured",
+      "sources": [
+        "cs-monitor",
+        "ppac-manage-agents"
+      ],
+      "note": "Also covers 03/06; the 2 published sessions from 03/06 (Teams, Microsoft 365 Copilot) still show 0 CC."
+    },
+    {
+      "topic": "03/04",
+      "title": "Power Fx",
+      "agent": "CS-Travel Expense Refund",
+      "agentType": "standard",
+      "copilotCredits": {
+        "billed": 0,
+        "nonBilled": 0
+      },
+      "eur": null,
+      "tokens": null,
+      "status": "measured",
+      "sources": [
+        "cs-monitor",
+        "ppac-manage-agents"
+      ],
+      "note": "Also covers 04/02."
+    },
+    {
+      "topic": "03/05",
+      "title": "Adaptive Cards",
+      "agent": "CS-Food Stock Buddy",
+      "agentType": "standard",
+      "copilotCredits": {
+        "billed": 0,
+        "nonBilled": 0
+      },
+      "eur": null,
+      "tokens": null,
+      "status": "measured",
+      "sources": [
+        "cs-monitor",
+        "ppac-manage-agents"
+      ],
+      "note": "Also covers 04/01 and 04/05."
+    },
+    {
+      "topic": "03/06",
+      "title": "Publishing",
+      "agent": "CS-HR Buddy",
+      "agentType": "standard",
+      "includedIn": "03/03"
+    },
+    {
+      "topic": "04/01",
+      "title": "Prompts",
+      "agent": "CS-Food Stock Buddy",
+      "agentType": "standard",
+      "includedIn": "03/05"
+    },
+    {
+      "topic": "04/02",
+      "title": "Dataverse",
+      "agent": "CS-Travel Expense Refund",
+      "agentType": "standard",
+      "includedIn": "03/04"
+    },
+    {
+      "topic": "04/03",
+      "title": "Connectors",
+      "agent": "CS-Travel Agent",
+      "agentType": "standard",
+      "copilotCredits": {
+        "billed": 0,
+        "nonBilled": 0
+      },
+      "eur": null,
+      "tokens": null,
+      "status": "measured",
+      "sources": [
+        "cs-monitor",
+        "ppac-manage-agents"
+      ]
+    },
+    {
+      "topic": "04/04",
+      "title": "Agent flows",
+      "agent": "CS-Health Advisor",
+      "agentType": "standard",
+      "copilotCredits": {
+        "billed": 0,
+        "nonBilled": 0.8,
+        "items": [
+          {
+            "name": "CS-Summarize Patient Symptoms",
+            "kind": "agent flow",
+            "ppacId": "5bbc183e",
+            "model": "gpt-4.1-mini",
+            "feature": "GptPowerPrompt",
+            "billed": 0,
+            "nonBilled": 0.8
+          }
+        ]
+      },
+      "eur": null,
+      "tokens": null,
+      "status": "measured",
+      "sources": [
+        "cs-monitor",
+        "ppac-manage-agents"
+      ]
+    },
+    {
+      "topic": "04/05",
+      "title": "REST API",
+      "agent": "CS-Food Stock Buddy",
+      "agentType": "standard",
+      "includedIn": "03/05",
+      "azure": {
+        "resource": "cs-food-catalog-api (App Service, plan cs-copilot-studio-plan, F1)",
+        "eur": 0,
+        "note": "F1 is a free tier; Azure Cost Management has no rows for rg-copilot-studio in October."
+      },
+      "sources": [
+        "azure-cost-management"
+      ]
+    },
+    {
+      "topic": "04/06",
+      "title": "MCP",
+      "agent": "CS-Restaurant HR Manager",
+      "agentType": "standard",
+      "copilotCredits": {
+        "billed": 0,
+        "nonBilled": 0
+      },
+      "azure": {
+        "resource": "cs-hr-mcp-server (App Service, plan cs-copilot-studio-plan, F1)",
+        "eur": 0
+      },
+      "tokens": null,
+      "status": "measured",
+      "sources": [
+        "cs-monitor",
+        "ppac-manage-agents",
+        "azure-cost-management"
+      ]
+    },
+    {
+      "topic": "05/01",
+      "title": "Autonomous agents",
+      "agent": "CS-Returns Agent",
+      "agentType": "standard",
+      "copilotCredits": {
+        "billed": 0,
+        "nonBilled": 0
+      },
+      "workIqApi": {
+        "credits": null,
+        "status": "not posted yet",
+        "lastCheck": "2026-10-22",
+        "detail": "Microsoft 365 Cost management shows Work IQ API 0 credits on 2026-10-21 and no entry for 2026-10-22; no per-agent or per-tool breakdown exists, so 05/01 and 06/05 can only be split by day once posted (05/01 ran 2026-10-21, 06/05 on 2026-10-22)."
+      },
+      "eur": null,
+      "tokens": null,
+      "status": "partial",
+      "sources": [
+        "cs-monitor",
+        "m365-cost-management"
+      ],
+      "note": "One autonomous trigger run shows 0 CC on Monitor. The CS-Work IQ Mail calls are billed as Work IQ API credits, which had not posted for 2026-10-21 at measurement time."
+    },
+    {
+      "topic": "05/03",
+      "title": "Multi-agent",
+      "agent": "CS-Business Travel Planner",
+      "agentType": "standard",
+      "copilotCredits": {
+        "billed": 0,
+        "nonBilled": 0
+      },
+      "eur": null,
+      "tokens": null,
+      "status": "measured",
+      "sources": [
+        "cs-monitor",
+        "ppac-manage-agents"
+      ]
+    },
+    {
+      "topic": "05/05",
+      "title": "Foundry agents",
+      "agent": "CS-Compliance Agent",
+      "agentType": "standard",
+      "copilotCredits": {
+        "billed": 0,
+        "nonBilled": 0
+      },
+      "azure": {
+        "resource": "cs-copilot-studio-foundry, deployment gpt-5.4-mini (GlobalStandard), prompt agent social-profiler",
+        "eur": null,
+        "status": "not posted yet",
+        "requests": 2,
+        "requestTimeUtc": "2026-10-21T20:00:00Z",
+        "inputTokens": 13017,
+        "outputTokens": 1059,
+        "totalTokens": 14076,
+        "lastCheck": "2026-10-22",
+        "latestPostedUsageDate": "2026-10-21 (partial)",
+        "foundryModelEstimatedCost": {
+          "value": 0.01452825,
+          "unit": "not stated by the metric",
+          "source": "Azure Monitor metric FoundryModelEstimatedCost, 2026-10-21"
+        },
+        "expected": "well under 0.02 EUR for the model; the App Service F1 plan is free"
+      },
+      "status": "partial",
+      "sources": [
+        "cs-monitor",
+        "azure-cost-management",
+        "azure-monitor"
+      ],
+      "note": "The rg-copilot-studio resources were created 2026-10-21 between 17:39 and 20:05 UTC; Azure Cost Management had no rows for them yet."
+    },
+    {
+      "topic": "06/01",
+      "title": "Build and ground",
+      "agent": "GH-Health Advisor",
+      "agentType": "githubCopilot",
+      "agentId": "627a3d8f-5bf6-4f59-97e9-6298eac93257",
+      "copilotCredits": {
+        "billed": 169.72,
+        "nonBilled": 0,
+        "monitorTotal": 169.7,
+        "previewSessions": [
+          {
+            "localTime": "2026-10-22T00:43",
+            "credits": 47.25
+          },
+          {
+            "localTime": "2026-10-22T00:50",
+            "credits": 42.35
+          },
+          {
+            "localTime": "2026-10-22T00:55",
+            "credits": 33.5
+          },
+          {
+            "localTime": "2026-10-22T01:03",
+            "credits": 25.55
+          },
+          {
+            "localTime": "2026-10-22T01:08",
+            "credits": 25.69
+          }
+        ],
+        "previewSessionsTotal": 174.34
+      },
+      "eur": null,
+      "tokens": null,
+      "status": "measured",
+      "sources": [
+        "ppac-manage-agents",
+        "cs-monitor",
+        "cs-history"
+      ],
+      "note": "Covers 06/01, 06/02 and 06/03, all run on one agent within 25 minutes, so the sessions can't be split by demo. History per-session credits add up to 174.34, slightly above the 169.72 billed."
+    },
+    {
+      "topic": "06/02",
+      "title": "Reasoning trace",
+      "agent": "GH-Health Advisor",
+      "agentType": "githubCopilot",
+      "includedIn": "06/01"
+    },
+    {
+      "topic": "06/03",
+      "title": "Agent skills",
+      "agent": "GH-Health Advisor",
+      "agentType": "githubCopilot",
+      "includedIn": "06/01"
+    },
+    {
+      "topic": "06/04",
+      "title": "MCP and workflow",
+      "agent": "GH-Food Buddy",
+      "agentType": "githubCopilot",
+      "agentId": "602b6390-3899-4481-a182-8ef712681178",
+      "copilotCredits": {
+        "billed": 78.34,
+        "nonBilled": 0,
+        "items": [
+          {
+            "name": "GH-Food Buddy",
+            "kind": "agent",
+            "billed": 51.67,
+            "byChannel": {
+              "preview": 20.19,
+              "m365AgentsSdkClient": 17.63,
+              "autonomous": 13.85
+            },
+            "monitorTotal": 51.67
+          },
+          {
+            "name": "GH-Food Reorder Draft",
+            "kind": "workflow",
+            "flowId": "85f4b31a-eb72-ff83-a002-d7cdfd4715c7",
+            "ppacId": "b652e447",
+            "channel": "workflow-agents",
+            "feature": "Workflows",
+            "billed": 26.67,
+            "attribution": "by timing: the only workflow created and run in the window (2026-10-22 01:42); b652e447 is not in Dataverse and the workflow's own run history shows no credits"
+          }
+        ]
+      },
+      "eur": null,
+      "tokens": null,
+      "status": "measured",
+      "sources": [
+        "ppac-manage-agents",
+        "cs-monitor"
+      ]
+    },
+    {
+      "topic": "06/05",
+      "title": "Work IQ",
+      "agent": "GH-Aurora Account Assistant",
+      "agentType": "githubCopilot",
+      "agentId": "1ab5afb2-c032-4287-a50f-c6dd5647618f",
+      "copilotCredits": {
+        "billed": 46.08,
+        "nonBilled": 0,
+        "monitorTotal": 0,
+        "previewSessions": [
+          {
+            "credits": 35.79
+          },
+          {
+            "credits": 10.3
+          }
+        ]
+      },
+      "workIqApi": {
+        "credits": null,
+        "status": "not posted yet",
+        "lastCheck": "2026-10-22",
+        "detail": "Microsoft 365 Cost management shows Work IQ API 0 credits on 2026-10-21 and no entry for 2026-10-22; no per-agent or per-tool breakdown exists, so 05/01 and 06/05 can only be split by day once posted (05/01 ran 2026-10-21, 06/05 on 2026-10-22)."
+      },
+      "eur": null,
+      "tokens": null,
+      "status": "partial",
+      "sources": [
+        "ppac-manage-agents",
+        "cs-history",
+        "m365-cost-management"
+      ],
+      "note": "The agent is a draft, so Monitor shows 0. Work IQ API credits for the retrieve and fetch calls had not posted at measurement time."
+    },
+    {
+      "topic": "06/06",
+      "title": "Apps",
+      "agent": "Tasting Request Tracker (app, personal environment)",
+      "agentType": "app",
+      "copilotCredits": {
+        "billed": null,
+        "nonBilled": null,
+        "status": "not posted yet",
+        "lastCheck": "2026-10-22",
+        "detail": "PPAC Licensing > Copilot Studio > Environments lists the personal developer environment \"Integrations Apps\" (a6036299-a498-ebae-9d72-406cd205d749, Developer, managed, pay-as-you-go) with 0 consumed and \"No data to display\" month to date; Manage Agents has no App entry; Microsoft 365 Cost management shows no Copilot Managed Runtime usage."
+      },
+      "eur": null,
+      "tokens": null,
+      "status": "not measured",
+      "sources": [
+        "ppac-manage-agents",
+        "m365-cost-management"
+      ],
+      "note": "Built, refined twice and published on 2026-10-22 after the owner gave the personal environment credits. No App row in PPAC yet, no Copilot Managed Runtime usage in Microsoft 365 Cost management, and the personal developer environment showed no data."
+    }
+  ],
+  "totals": {
+    "copilotCreditsBilled": 294.14,
+    "copilotCreditsNonBilled": 0.8,
+    "billedByItem": {
+      "GH-Health Advisor": 169.72,
+      "GH-Food Buddy": 51.67,
+      "GH-Aurora Account Assistant": 46.08,
+      "GH-Food Reorder Draft (workflow, by timing)": 26.67
+    },
+    "eurMeasured": 0,
+    "note": "Month-to-date PPAC figures; PPAC lists no other agents this month, so no old unprefixed agent had to be excluded."
+  },
+  "context": {
+    "workIqApiThisMonth": {
+      "credits": 500,
+      "byDay": {
+        "2026-10-01": 427,
+        "2026-10-06": 1,
+        "2026-10-07": 72
+      },
+      "note": "Booked before the demo runs; nothing on 2026-10-21, 2026-10-22 not posted yet.",
+      "userView": {
+        "user": "Alexander Kastil",
+        "credits": 522,
+        "limit": 5000,
+        "policy": "All Users Policy, pay-as-you-go (Microsoft 365 Default Subscription)",
+        "lastActivity": "2026-10-21",
+        "byDay": {
+          "2026-10-01": 427,
+          "2026-10-06": 1,
+          "2026-10-07": 94,
+          "2026-10-21": 0
+        },
+        "note": "22 credits more than the service view on 2026-10-07; the page does not name the service behind them."
+      }
+    },
+    "m365CostManagementCopilotStudio": 0,
+    "environmentConsumptionGrid": "empty for October 2026",
+    "ppacSummaryTopUser": {
+      "user": "Alexander Kastil",
+      "credits": 294.94,
+      "agents": 5
+    }
+  },
+  "notMeasured": [
+    "Work IQ API credits for 05/01 and 06/05 (not posted yet)",
+    "Azure cost for 05/05 Foundry calls (not posted yet; token counts recorded)",
+    "Copilot Credits for the 06/06 app build (not posted yet)",
+    "Per-demo split inside GH-Health Advisor (06/01 to 06/03 ran in one 25-minute window)"
+  ],
+  "checks": [
+    {
+      "date": "2026-10-22",
+      "round": 1,
+      "result": "Copilot Studio agent and workflow credits measured; Work IQ API, Azure and app credits not posted"
+    },
+    {
+      "date": "2026-10-22",
+      "round": 2,
+      "result": "PPAC month-to-date figures unchanged (169.72, 51.67, 46.08, 26.67, 0.80); Work IQ API, Azure (latest posted usage 2026-10-21, partial) and app credits still not posted"
+    }
+  ]
+}
