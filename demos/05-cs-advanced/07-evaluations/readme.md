@@ -2,7 +2,7 @@
 
 An advanced Standard agent has many moving parts: a planner that picks between topics, tools, knowledge and other agents, connected agents that each run their own logic, and settings such as web search that quietly change where an answer comes from. Any of them can break a reply that worked yesterday, and none of them tells you when it does. Evaluation turns "it seemed fine when I tried it" into a repeatable score you can compare before and after every change. This topic teaches the **Evaluation** tab of a Standard agent: test sets, test methods, the user profile, reading a run, and finding the component behind a failing case.
 
-The GitHub Copilot agents of module 6 have their own **Evaluate** tab with a narrower feature set, covered in [Test and Evaluate Copilot Studio Agents](../../06-cs-gh-copilot/07-evaluations/readme.md). Everything here applies to Standard agents (Learn: standard harness). The **Evaluation** page carries the banner "This AI feature is currently in preview", so check the controls in your tenant before class.
+The Microsoft Copilot harness agents of module 6 have their own **Evaluate** tab with a narrower feature set, covered in [Test and Evaluate Copilot Studio Agents](../../06-cs-copilot-harness/07-evaluations/readme.md). Everything here applies to Standard agents (Learn: standard harness). The **Evaluation** page carries the banner "This AI feature is currently in preview", so check the controls in your tenant before class.
 
 ## Why chat-pane testing stops working
 
@@ -136,13 +136,13 @@ The filters above the table count whole cases. A case appears under **Pass** onl
 
 ![Pass and Fail list only the cases where every test method agrees, so read All after every run, because the cases where the methods disagree are where the diagnosis starts.](./_images/result-filters.svg)
 
-![The four outcomes of one test case: Invalid and Error are about the run or the case and are cleared first; Pass and Fail are verdicts about the agent's answer and are interpreted second.](../../06-cs-gh-copilot/07-evaluations/_images/four-outcomes-two-owners.svg)
+![The four outcomes of one test case: Invalid and Error are about the run or the case and are cleared first; Pass and Fail are verdicts about the agent's answer and are interpreted second.](../../06-cs-copilot-harness/07-evaluations/_images/four-outcomes-two-owners.svg)
 
 ## From a failing case to a fix
 
 Most failures land in one of four buckets, and the bucket names the fix. A wrong or missing fact is a knowledge problem, a missing refusal is an instructions problem, a wrong route or wrong tool is a description problem, and a conversation that loses the thread is a multi-turn design problem.
 
-![A failing test case sorted by what went wrong: a wrong or missing fact means fix the knowledge source, refusing too little or too much means fix the instructions, a wrong tool or no tool means fix the tool description, and losing the thread across turns means fix the multi-turn conversation design; every fix ends in a re-run of the same test set.](../../06-cs-gh-copilot/07-evaluations/_images/failing-case-to-fix.svg)
+![A failing test case sorted by what went wrong: a wrong or missing fact means fix the knowledge source, refusing too little or too much means fix the instructions, a wrong tool or no tool means fix the tool description, and losing the thread across turns means fix the multi-turn conversation design; every fix ends in a re-run of the same test set.](../../06-cs-copilot-harness/07-evaluations/_images/failing-case-to-fix.svg)
 
 A fifth bucket belongs to you: the case itself. When a connected agent answers with an Adaptive Card, a single-response run records only the card's title, so "I want to claim a refund" came back as "Expense Claim" and failed both methods. The agent did the right thing; the case asked a text grader to judge a form. Test that step in a conversation set or in the specialist's own evaluation, and keep the planner's case for the route.
 

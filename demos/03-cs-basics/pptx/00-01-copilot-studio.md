@@ -48,4 +48,4 @@ Standard agent: you create one in an environment, give it an identity and instru
 
 Knowledge and conversations: knowledge grounds the answers with citations, and topics, entities, variables, Power Fx and Adaptive Cards shape the conversations you want to control.
 
-Publish: the goal is a working, grounded agent in Teams by the end, built without writing code. Everything here carries over to GitHub Copilot agents, which reuse the same concepts under a consolidated Build surface.
+Publish: the goal is a working, grounded agent in Teams by the end, built without writing code. Everything here carries over to Microsoft Copilot harness agents, which reuse the same concepts under a consolidated Build surface.

@@ -22,19 +22,11 @@ setup/                               tenant, Cowork, credit and AI teammates set
 tasks/                               todo.md, lessons.md
 ```
 
-Module and topic numbers are two-digit, in delivery order; do not reorganize them. Copilot Studio spans `03-cs-basics` to `07-cs-maintaining`: Standard agents in 03 to 05, GitHub Copilot agents in 06. Every topic has a teaching readme, a Hands-On Demo and a Hands-On Lab, filed inside its `NN-<topic>/` folder; lab numbering restarts at `lab-01` per topic. A doc that shows a slide diagram embeds that slide's file by relative path; a diagram no slide uses sits in `_images/` beside the doc.
+Module and topic numbers are two-digit, in delivery order; do not reorganize them. Copilot Studio spans `03-cs-basics` to `07-cs-maintaining`: Standard agents in 03 to 05, Microsoft Copilot harness agents in 06. Every topic has a teaching readme, a Hands-On Demo and a Hands-On Lab, filed inside its `NN-<topic>/` folder; lab numbering restarts at `lab-01` per topic. A doc that shows a slide diagram embeds that slide's file by relative path; a diagram no slide uses sits in `_images/` beside the doc.
 
 ## Harness
 
-Orchestration runs in the integrations-marketplace mods (`D:\git-projects\integrations-marketplace`), and the house rules in `~/.claude/CLAUDE.md` apply as they stand; this file repeats neither.
-
-- `subagent-delegation-plugin`: routes work to the owning agent (owners in `.claude/rules/`), sends fact gathering to the Haiku fact-gatherer, bounds every brief, keeps the agent ledger.
-- `learn-loop-plugin`: runs `claude-learn` once a session goes idle.
-- `report-plugin`: starts a status cron when an agent or workflow runs long.
-- `intent-guard-plugin`: holds destructive commands nobody asked for.
-- `ask-check-plugin`: stops questions the conversation already settled and unrequested findings.
-- `write-gate-plugin`: holds a writer's finish until the humanize and marketing-psychology passes ran.
-- `harness-plugin`: guards this file's shape, halts a run on `AGENT_STOP`, redirects it with `STEER.md`; `fix-constitution` realigns the repo.
+Orchestration runs in the installed plugins and the house rules in `~/.claude/CLAUDE.md` apply as they stand; this file repeats neither.
 
 ## Hard Rules
 

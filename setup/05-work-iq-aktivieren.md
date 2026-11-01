@@ -1,6 +1,6 @@
 # Work IQ aktivieren (Lab 06-5)
 
-In Lab 06-5 fügen die TN einem GitHub Copilot Agent in Copilot Studio das Tool **Work IQ (Preview)** hinzu. Es erscheint nur, wenn der Tenant einmalig für Work IQ eingerichtet ist und die Accounts in einer Spending Policy mit Work IQ stehen.
+In Lab 06-5 fügen die TN einem Microsoft Copilot Harness Agent in Copilot Studio das Tool **Work IQ (Preview)** hinzu. Es erscheint nur, wenn der Tenant einmalig für Work IQ eingerichtet ist und die Accounts in einer Spending Policy mit Work IQ stehen.
 
 **Rolle:** Global Administrator (einmalig, Schritt 1)
 
@@ -32,7 +32,7 @@ Die Spending Policy aus [Anleitung 02](./02-spending-policy-m365.md) muss **Work
 
 ## Prüfen
 
-Als ein Kurs-Account in Copilot Studio: einen GitHub Copilot Agent öffnen, **Tools** > **Add a tool** > **MCP**. **Work IQ (Preview)** steht in der Liste.
+Als ein Kurs-Account in Copilot Studio: einen Microsoft Copilot Harness Agent öffnen, **Tools** > **Add a tool** > **MCP**. **Work IQ (Preview)** steht in der Liste.
 
 | Symptom | Ursache |
 | --- | --- |

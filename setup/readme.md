@@ -1,6 +1,6 @@
 # Setup
 
-Tenant requirements and one-time admin setup for the class: Copilot Credits, spending policies and billing plans for Copilot Cowork, GitHub Copilot agents, Work IQ and Apps in Copilot Studio. Run these before the session, because several demos stop at the first message when credits are missing.
+Tenant requirements and one-time admin setup for the class: Copilot Credits, spending policies and billing plans for Copilot Cowork, Microsoft Copilot harness agents, Work IQ and Apps in Copilot Studio. Run these before the session, because several demos stop at the first message when credits are missing.
 
 ## Setup guides
 
@@ -13,11 +13,11 @@ Tenant requirements and one-time admin setup for the class: Copilot Credits, spe
 | 5 | [Work IQ aktivieren](./05-work-iq-aktivieren.md) | The one-time Work IQ service principal for lab 06-5 (German) |
 | 6 | [Cowork Plugin hochladen und freigeben](./06-cowork-plugin-upload.md) | Uploading and approving the lab 02-3 plugin in the Microsoft 365 admin center (German) |
 | 7 | [Copilot Cowork access and billing](./07-cowork-tenant-setup.md) | Copilot license, usage-based billing, a spending policy that selects Cowork, discovery, Anthropic models, plugins and browser use |
-| 8 | [Copilot Credits for GitHub Copilot agents and Work IQ](./08-tenant-credit-setup.md) | Power Platform billing plans for the agent environment, the Microsoft 365 spending policy, the Work IQ service principal and cost guardrails |
+| 8 | [Copilot Credits for Microsoft Copilot harness agents and Work IQ](./08-tenant-credit-setup.md) | Power Platform billing plans for the agent environment, the Microsoft 365 spending policy, the Work IQ service principal and cost guardrails |
 | 9 | [Apps in Copilot Studio](./09-copilot-studio-apps-setup.md) | The `No usage quota is available for your account` error, billing the maker's personal developer environment, and runtime coverage through Copilot Managed Runtime |
 | 10 | [Configure Copilot Credits for the Work IQ API](./10-work-iq-credit-quota.md) | The `exhausted the AI credit quota for WorkIQ` error and how to raise the spending policy limit |
 | 11 | [AI Teammates: Autopilot and agent accounts](./11-ai-teammates-setup.md) | Module 8 readiness: Frontier and Agent 365 licensing from the cheapest option up, the 30-day Agent 365 trial and how to avoid it converting to paid, and the activation order |
-| 12 | [Copilot Studio plugins for coding agents](../demos/07-cs-maintaining/05-agentic-building/readme.md#install) | The two Microsoft plugins for Claude Code, GitHub Copilot CLI and VS Code: `copilot-studio` for Standard agents and `mcs-assistant` for GitHub Copilot agents, their two marketplaces, the Power Platform CLI prerequisite and switching plugins per module |
+| 12 | [Copilot Studio plugins for coding agents](../demos/07-cs-maintaining/05-agentic-building/readme.md#install) | The two Microsoft plugins for Claude Code, GitHub Copilot CLI and VS Code: `copilot-studio` for Standard agents and `mcs-assistant` for Microsoft Copilot harness agents, their two marketplaces, the Power Platform CLI prerequisite and switching plugins per module |
 
 ## Booking terms: monthly or annual
 
@@ -39,14 +39,12 @@ Prices are US list prices from partner sources; check the euro price and the ter
 
 ## Admin skills
 
-The matching skills in `.claude/skills/` run the same checks read-only and ask before every billing change:
+The matching skills run the same checks read-only and ask before every billing change. `copilot-credits` ships in the `copilot-studio` plugin of the integrations marketplace:
 
 | Skill | Use it for |
 | --- | --- |
 | `cowork-setup` | Cowork access and billing |
-| `copilot-studio-credits` | Agent environments, billing plans and Azure budgets |
-| `work-iq-credits` | Work IQ quota errors |
-| `copilot-studio-apps-credits` | App build and runtime credits |
+| `copilot-credits` | Agent environments, billing plans and Azure budgets; Work IQ quota errors; app build and runtime credits |
 
 ## Scripts
 

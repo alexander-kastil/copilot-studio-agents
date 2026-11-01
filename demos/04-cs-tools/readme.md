@@ -4,7 +4,7 @@ A grounded agent can answer questions; a tooled agent can act. This module moves
 
 ![A Copilot Studio agent in the centre reaching the tool types of this module, each labelled with what it reaches.](pptx/images/00-01-tool-types.svg)
 
-Adding a tool is a configuration task in the agent's **Tools** area. Tools, MCP and workflows return for GitHub Copilot agents in [Tools, MCP, and the New Workflows Designer](../06-cs-gh-copilot/04-workflows-and-mcp/readme.md), so the concepts carry straight across.
+Adding a tool is a configuration task in the agent's **Tools** area. Tools, MCP and workflows return for Microsoft Copilot harness agents in [Tools, MCP, and the New Workflows Designer](../06-cs-copilot-harness/04-workflows-and-mcp/readme.md), so the concepts carry straight across.
 
 ## Topics
 

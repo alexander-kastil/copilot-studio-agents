@@ -1,6 +1,6 @@
 # Billing Plan im Power Platform Admin Center
 
-GitHub Copilot Agents, Workflows und Apps in Copilot Studio (alle Labs in Modul 06) verbrauchen Copilot Credits ab dem ersten Build, Preview und Test. Die Microsoft 365 Copilot Lizenz deckt das nicht ab. Abgerechnet wird pro Environment, über einen Pay-as-you-go Billing Plan oder eine Prepaid-Zuteilung. Developer- und Trial-Environments werden seit 1. September 2026 abgerechnet.
+Microsoft Copilot Harness Agents, Workflows und Apps in Copilot Studio (alle Labs in Modul 06) verbrauchen Copilot Credits ab dem ersten Build, Preview und Test. Die Microsoft 365 Copilot Lizenz deckt das nicht ab. Abgerechnet wird pro Environment, über einen Pay-as-you-go Billing Plan oder eine Prepaid-Zuteilung. Developer- und Trial-Environments werden seit 1. September 2026 abgerechnet.
 
 **Rolle:** Power Platform Administrator oder Global Administrator
 
@@ -43,4 +43,4 @@ Pay-as-you-go hat kein hartes Limit. Ein Azure Budget warnt, stoppt aber nichts:
 
 1. **See details** am Billing Plan listet alle Pod-Environments und die fünf persönlichen Environments unter *Target environments*.
 2. **Licensing** > **Copilot Studio** > **Environments** zeigt bei allen **Pay-as-you-go: Yes**. Diese Ansicht kann einige Minuten hinterherhinken.
-3. Als ein Kurs-Account: einen GitHub Copilot Agent anlegen und eine Preview-Frage stellen. In der App-Kachel die erste Nachricht erneut senden, der Build startet. Die Test-App danach löschen, damit Lab 06-6 leer beginnt.
+3. Als ein Kurs-Account: einen Microsoft Copilot Harness Agent anlegen und eine Preview-Frage stellen. In der App-Kachel die erste Nachricht erneut senden, der Build startet. Die Test-App danach löschen, damit Lab 06-6 leer beginnt.

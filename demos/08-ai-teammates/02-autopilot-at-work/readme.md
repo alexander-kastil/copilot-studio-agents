@@ -40,7 +40,7 @@ Content that arrives from outside (emails, web pages, Teams messages) is tagged 
 
 ## Skills, Sub-Agents and Memory
 
-Scout ships with skills for Word, Excel, PowerPoint, Loop, and building HTML dashboards. You add your own by placing a `SKILL.md` folder in the skills directory, the same open format you used in [Cowork](../../02-cowork/03-custom-skills/readme.md) and [Copilot Studio](../../06-cs-gh-copilot/03-agent-skills/readme.md). For larger jobs it launches sub-agents for research, review, or long-running tasks, and it remembers preferences and decisions across conversations.
+Scout ships with skills for Word, Excel, PowerPoint, Loop, and building HTML dashboards. You add your own by placing a `SKILL.md` folder in the skills directory, the same open format you used in [Cowork](../../02-cowork/03-custom-skills/readme.md) and [Copilot Studio](../../06-cs-copilot-harness/03-agent-skills/readme.md). For larger jobs it launches sub-agents for research, review, or long-running tasks, and it remembers preferences and decisions across conversations.
 
 ## Files as a Shared Workspace (Roadmap)
 

@@ -33,7 +33,7 @@ gamma_prompt: >
 
 ## Speaker Notes
 
-The demo hands three jobs on the Grey Logistics IT Help Desk agent to Claude Code: a review, a new topic and a move to the GitHub Copilot harness. Every change lands as a file you can diff.
+The demo hands three jobs on the Grey Logistics IT Help Desk agent to Claude Code: a review, a new topic and a move to the Microsoft Copilot harness. Every change lands as a file you can diff.
 
 Clone first: the plugin can't create an agent, so you clone the existing one into src/cs-schema/agents and commit the clone.
 

@@ -106,7 +106,7 @@ Cancelling (Microsoft Customer Agreement billing account): a prorated refund is 
 
 ## Related setup guides
 
-- [Copilot Credits for GitHub Copilot agents and Work IQ](./08-tenant-credit-setup.md)
+- [Copilot Credits for Microsoft Copilot harness agents and Work IQ](./08-tenant-credit-setup.md)
 - [Copilot Cowork access and billing](./07-cowork-tenant-setup.md)
 
 ## References

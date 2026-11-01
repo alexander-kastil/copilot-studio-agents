@@ -77,9 +77,9 @@ Every Standard agent already uses a model through its orchestrator, so a prompt 
 | A model from Microsoft Foundry for one task | A prompt |
 | General reasoning, tool selection, and light formatting | The orchestrator |
 
-## The prompt tool in Standard and GitHub Copilot agents
+## The prompt tool in Standard and Microsoft Copilot harness agents
 
-The prompt tool belongs to Standard agents. In GitHub Copilot agents (Learn: GitHub Copilot harness) the comparison table lists the prompt tool as replaced by skills, which package instructions for an agent in the open `SKILL.md` format. A prompt you build here does not move to a GitHub Copilot agent, because agents never move between harnesses. The GitHub Copilot approach is taught in [Agent Skills in Copilot Studio](../../06-cs-gh-copilot/03-agent-skills/readme.md).
+The prompt tool belongs to Standard agents. In Microsoft Copilot harness agents (Learn: GitHub Copilot harness) the comparison table lists the prompt tool as replaced by skills, which package instructions for an agent in the open `SKILL.md` format. A prompt you build here does not move to a Microsoft Copilot harness agent, because agents never move between harnesses. The GitHub Copilot approach is taught in [Agent Skills in Copilot Studio](../../06-cs-copilot-harness/03-agent-skills/readme.md).
 
 ## Hands-On Demos
 

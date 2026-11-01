@@ -30,7 +30,7 @@ gamma_prompt: >
 ## Content
 
 - **Manage Agents** lists billed credits per agent, channel and feature
-- A GitHub Copilot agent: **169.72 credits** for five Preview sessions
+- A Microsoft Copilot harness agent: **169.72 credits** for five Preview sessions
 - One workflow run: **26.67 credits** on the workflow-agents channel
 - Work IQ API and Cowork costs show only in Microsoft 365 **Cost management**
 
@@ -40,7 +40,7 @@ Every demo in this class was run live and its cost read back from the portals, a
 
 Manage Agents: it is the per-agent source of truth, split by channel and billable feature, and an agent appears there only after it has billed credits. Copilot Studio usage posts within hours.
 
-GitHub Copilot agent: GH-Health Advisor shows 169.72 credits on the pva-studio channel, the cost of five Preview sessions. Per-session detail stays in Preview, History, because the Monitor page counts Preview credits without listing the sessions.
+Microsoft Copilot harness agent: GH-Health Advisor shows 169.72 credits on the pva-studio channel, the cost of five Preview sessions. Per-session detail stays in Preview, History, because the Monitor page counts Preview credits without listing the sessions.
 
 Workflow: one workflow run billed 26.67 credits, listed under the workflow-agents channel with the Workflows feature.
 

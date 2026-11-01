@@ -26,50 +26,50 @@
   ],
   "harnesses": {
     "standard": "Classic UI. Environment-wide Tools page (Prompt, Agent flow, Computer use, Model Context Protocol, Custom connector, REST API); topics, entities and prompts.",
-    "githubCopilot": "New UI. No environment-wide Tools page: tools are added per agent under Build > components panel > Tools > Add a tool (Featured, MCP, Connectors, Workflows). No prompt tool, no topics."
+    "microsoftCopilot": "New UI. No environment-wide Tools page: tools are added per agent under Build > components panel > Tools > Add a tool (Featured, MCP, Connectors, Workflows). No prompt tool, no topics."
   },
   "locations": {
     "instructions": {
       "disk": {
         "standard": "agents/<agent>/agent.mcs.yml (instructions)",
-        "githubCopilot": "agents/<agent>/settings.mcs.yml (instructions)"
+        "microsoftCopilot": "agents/<agent>/settings.mcs.yml (instructions)"
       },
       "ui": {
         "standard": "Classic UI (Home > ... > Open classic experience): agent > Overview > Instructions",
-        "githubCopilot": "New UI: agent > Build > Instructions"
+        "microsoftCopilot": "New UI: agent > Build > Instructions"
       },
       "scope": "agent"
     },
     "settings": {
       "disk": {
         "standard": "agents/<agent>/settings.mcs.yml",
-        "githubCopilot": "agents/<agent>/settings.mcs.yml, agents/<agent>/settings/"
+        "microsoftCopilot": "agents/<agent>/settings.mcs.yml, agents/<agent>/settings/"
       },
       "ui": {
         "standard": "Classic UI (Home > ... > Open classic experience): agent > Settings",
-        "githubCopilot": "New UI: agent > ... (designer toolbar) > Settings"
+        "microsoftCopilot": "New UI: agent > ... (designer toolbar) > Settings"
       },
       "scope": "agent"
     },
     "knowledge": {
       "disk": {
         "standard": "agents/<agent>/knowledge/*.mcs.yml (KnowledgeSourceConfiguration), uploaded files in knowledge/files/",
-        "githubCopilot": "agents/<agent>/capabilities/knowledge/*.mcs.yml (KnowledgeSourceConfiguration)"
+        "microsoftCopilot": "agents/<agent>/capabilities/knowledge/*.mcs.yml (KnowledgeSourceConfiguration)"
       },
       "ui": {
         "standard": "Classic UI (Home > ... > Open classic experience): agent > Knowledge > Add knowledge",
-        "githubCopilot": "New UI: agent > Build > components panel > Knowledge > Add knowledge"
+        "microsoftCopilot": "New UI: agent > Build > components panel > Knowledge > Add knowledge"
       },
       "scope": "agent; the SharePoint site, website, file or Dataverse table stays where it is"
     },
     "topic": {
       "disk": {
         "standard": "agents/<agent>/topics/*.mcs.yml (AdaptiveDialog)",
-        "githubCopilot": null
+        "microsoftCopilot": null
       },
       "ui": {
         "standard": "Classic UI (Home > ... > Open classic experience): agent > Topics",
-        "githubCopilot": null
+        "microsoftCopilot": null
       },
       "scope": "agent",
       "newHarness": "No topics: the Build tab is natural-language first. Move the logic into instructions, a skill, or a workflow added as a tool."
@@ -77,11 +77,11 @@
     "entity": {
       "disk": {
         "standard": "agents/<agent>/entities/*.mcs.yml (ClosedListEntity)",
-        "githubCopilot": null
+        "microsoftCopilot": null
       },
       "ui": {
         "standard": "Classic UI (Home > ... > Open classic experience): agent > Settings > Entities",
-        "githubCopilot": null
+        "microsoftCopilot": null
       },
       "scope": "agent",
       "newHarness": "No entities: they only feed Question nodes in topics."
@@ -89,11 +89,11 @@
     "tool.connector": {
       "disk": {
         "standard": "agents/<agent>/actions/*.mcs.yml (TaskDialog, action.kind InvokeConnectorTaskAction)",
-        "githubCopilot": "agents/<agent>/capabilities/tools/*.mcs.yml (ConnectorTool)"
+        "microsoftCopilot": "agents/<agent>/capabilities/tools/*.mcs.yml (ConnectorTool)"
       },
       "ui": {
         "standard": "Classic UI (Home > ... > Open classic experience): agent > Tools > Add a tool > Connector",
-        "githubCopilot": "New UI: agent > Build > components panel > Tools > Add a tool > Connectors"
+        "microsoftCopilot": "New UI: agent > Build > components panel > Tools > Add a tool > Connectors"
       },
       "scope": "agent association; the connector and its connection reference are environment level",
       "newHarness": "Connector tool: pick the same connector from the Connectors tab of Add a tool."
@@ -101,11 +101,11 @@
     "tool.customConnector": {
       "disk": {
         "standard": "agents/<agent>/actions/*.mcs.yml (InvokeConnectorTaskAction) plus the definition in agents/<agent>/connectors/<connector>/",
-        "githubCopilot": "agents/<agent>/capabilities/tools/*.mcs.yml (ConnectorTool) plus agents/<agent>/connectors/<connector>/"
+        "microsoftCopilot": "agents/<agent>/capabilities/tools/*.mcs.yml (ConnectorTool) plus agents/<agent>/connectors/<connector>/"
       },
       "ui": {
         "standard": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Custom connector or REST API, then agent > Tools > Add a tool",
-        "githubCopilot": "New UI: agent > Build > components panel > Tools > Add a tool > Connectors"
+        "microsoftCopilot": "New UI: agent > Build > components panel > Tools > Add a tool > Connectors"
       },
       "scope": "agent association; the custom connector is environment level",
       "newHarness": "Connector tool on the same custom connector; build new ones on the classic Tools page or in Power Apps > Custom connectors."
@@ -113,11 +113,11 @@
     "tool.mcp": {
       "disk": {
         "standard": "agents/<agent>/actions/*.mcs.yml or agents/<agent>/agents/topic.<name>.mcs.yml (TaskDialog, InvokeExternalAgentTaskAction with ModelContextProtocolMetadata), server definition in agents/<agent>/connectors/<connector>/",
-        "githubCopilot": "agents/<agent>/capabilities/tools/*.mcs.yml (McpTool)"
+        "microsoftCopilot": "agents/<agent>/capabilities/tools/*.mcs.yml (McpTool)"
       },
       "ui": {
         "standard": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Model Context Protocol, or agent > Tools > Add a tool > Model Context Protocol",
-        "githubCopilot": "New UI: agent > Build > components panel > Tools > Add a tool > Model Context Protocol (MCP) tab to pick an existing server, or Add a tool > Add > Model Context Protocol (MCP) to register a new one"
+        "microsoftCopilot": "New UI: agent > Build > components panel > Tools > Add a tool > Model Context Protocol (MCP) tab to pick an existing server, or Add a tool > Add > Model Context Protocol (MCP) to register a new one"
       },
       "scope": "agent association; the MCP server is an environment-level connector",
       "newHarness": "MCP tool: pick the same server from the MCP tab of Add a tool."
@@ -125,11 +125,11 @@
     "tool.prompt": {
       "disk": {
         "standard": "agents/<agent>/actions/*.mcs.yml (TaskDialog, InvokeAIBuilderModelTaskAction aIModelId), prompt text in agents/<agent>/prompts/<name>-<aIModelId>/prompt.json",
-        "githubCopilot": null
+        "microsoftCopilot": null
       },
       "ui": {
         "standard": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Prompt, or agent > Tools > Add a tool > Prompt",
-        "githubCopilot": null
+        "microsoftCopilot": null
       },
       "scope": "environment (AI Builder prompt), usable by standard agents and their topics only",
       "newHarness": "No prompt tool. Reusable instructions become a skill; one AI call inside a process becomes a prompt node in a workflow added as a workflow tool; a separate specialist becomes a connected agent."
@@ -137,11 +137,11 @@
     "tool.connectedAgent": {
       "disk": {
         "standard": "agents/<agent>/agents/<name>.mcs.yml (TaskDialog, InvokeConnectedAgentTaskAction botSchemaName)",
-        "githubCopilot": null
+        "microsoftCopilot": null
       },
       "ui": {
         "standard": "Classic UI (Home > ... > Open classic experience): agent > Agents > Add an agent > Copilot Studio agent",
-        "githubCopilot": "New UI: agent > Build > Connected agents"
+        "microsoftCopilot": "New UI: agent > Build > Connected agents"
       },
       "scope": "agent association; the connected agent is its own environment-level agent",
       "newHarness": "Connected agent."
@@ -149,11 +149,11 @@
     "tool.foundryAgent": {
       "disk": {
         "standard": "agents/<agent>/actions/*.mcs.yml (TaskDialog, InvokeExternalAgentTaskAction with ActivityProtocolMetadata over shared_azureagentservice)",
-        "githubCopilot": "agents/<agent>/capabilities/tools/*.mcs.yml (ConnectorTool on shared_azureagentservice)"
+        "microsoftCopilot": "agents/<agent>/capabilities/tools/*.mcs.yml (ConnectorTool on shared_azureagentservice)"
       },
       "ui": {
         "standard": "Classic UI (Home > ... > Open classic experience): agent > Agents > Add an agent > Microsoft Foundry",
-        "githubCopilot": "New UI: agent > Build > components panel > Tools > Add a tool > Connectors (Azure AI Agent Service)"
+        "microsoftCopilot": "New UI: agent > Build > components panel > Tools > Add a tool > Connectors (Azure AI Agent Service)"
       },
       "scope": "agent association; the agent itself lives in a Microsoft Foundry project",
       "newHarness": "Connector tool on the Azure AI Agent Service connector, or a connected agent."
@@ -161,11 +161,11 @@
     "tool.workflow": {
       "disk": {
         "standard": "called from a topic (InvokeFlowAction flowId); definition in agents/<agent>/workflows/<name>-<id>/ and workflows/<name>/",
-        "githubCopilot": "agents/<agent>/capabilities/tools/*.mcs.yml (WorkflowTool workflowId); definition in agents/<agent>/workflows/<name>-<id>/ and workflows/<name>/"
+        "microsoftCopilot": "agents/<agent>/capabilities/tools/*.mcs.yml (WorkflowTool workflowId); definition in agents/<agent>/workflows/<name>-<id>/ and workflows/<name>/"
       },
       "ui": {
         "standard": "Classic UI (Home > ... > Open classic experience): Tools page > New tool > Agent flow, or a topic > Call an action; listed on the Workflows page",
-        "githubCopilot": "New UI: agent > Build > components panel > Tools > Add a tool > Workflows tab to pick an existing workflow, or Add a tool > Add > Workflow to create one; listed on the Workflows page"
+        "microsoftCopilot": "New UI: agent > Build > components panel > Tools > Add a tool > Workflows tab to pick an existing workflow, or Add a tool > Add > Workflow to create one; listed on the Workflows page"
       },
       "scope": "environment; any agent can add it from the Workflows page",
       "newHarness": "Workflow tool."
@@ -173,11 +173,11 @@
     "childAgent": {
       "disk": {
         "standard": "agents/<agent>/agents/<name>/agent.mcs.yml (AgentDialog) plus its knowledge/",
-        "githubCopilot": null
+        "microsoftCopilot": null
       },
       "ui": {
         "standard": "Classic UI (Home > ... > Open classic experience): agent > Agents > Add an agent > New child agent",
-        "githubCopilot": null
+        "microsoftCopilot": null
       },
       "scope": "agent (lives inside the parent)",
       "newHarness": "A skill, or a connected agent when it needs its own knowledge."
@@ -185,11 +185,11 @@
     "trigger": {
       "disk": {
         "standard": "agents/<agent>/trigger/*.mcs.yml (ExternalTriggerConfiguration, WorkflowExternalTrigger flowId) plus the trigger flow in agents/<agent>/workflows/",
-        "githubCopilot": null
+        "microsoftCopilot": null
       },
       "ui": {
         "standard": "Classic UI (Home > ... > Open classic experience): agent > Overview > Triggers > Add trigger",
-        "githubCopilot": "New UI: agent > Triggers"
+        "microsoftCopilot": "New UI: agent > Triggers"
       },
       "scope": "agent; the trigger flow is an environment-level cloud flow",
       "newHarness": "Trigger (preview)."
@@ -197,11 +197,11 @@
     "connectionReference": {
       "disk": {
         "standard": "agents/<agent>/connectionreferences.mcs.yml",
-        "githubCopilot": "agents/<agent>/infrastructure/connections/*.sync.yaml"
+        "microsoftCopilot": "agents/<agent>/infrastructure/connections/*.sync.yaml"
       },
       "ui": {
         "standard": "Classic UI (Home > ... > Open classic experience): agent > Settings > Connection settings; Solutions > Connection references",
-        "githubCopilot": "Solutions > Connection references"
+        "microsoftCopilot": "Solutions > Connection references"
       },
       "scope": "environment (solution component)"
     },
@@ -627,14 +627,14 @@
     {
       "name": "Employee Agent",
       "folder": "agents/Employee Agent",
-      "harness": "githubCopilot",
+      "harness": "microsoftCopilot",
       "portalStatus": "Draft",
       "lastModified": "2026-07-22",
       "agentId": "519a99e2-214c-4287-a02d-7a5db857f0aa",
       "schemaName": "iits_employeeagent_i-gL4u",
       "extensionAttached": true,
       "description": null,
-      "whatItDoes": "GitHub Copilot agent with empty instructions and one SharePoint Get items tool. No site or list is set in the clone, so it has no defined job yet.",
+      "whatItDoes": "Microsoft Copilot harness agent with empty instructions and one SharePoint Get items tool. No site or list is set in the clone, so it has no defined job yet.",
       "maturity": "stub",
       "gaps": [
         "empty instructions",
@@ -736,14 +736,14 @@
     {
       "name": "Food Body",
       "folder": "agents/Food Body",
-      "harness": "githubCopilot",
+      "harness": "microsoftCopilot",
       "portalStatus": "Draft",
       "lastModified": "2026-08-12",
       "agentId": "9c9f13d6-2f1d-48cd-a51a-c88d3f1cab0a",
       "schemaName": "iits_foodbody_D2IGed",
       "extensionAttached": true,
       "description": null,
-      "whatItDoes": "GitHub Copilot experiment about food: the Food MCP tool, a hello-world echo workflow, an echo-agent run on the Azure AI Agent Service, and the Sightseeing SharePoint site labelled all about food.",
+      "whatItDoes": "Microsoft Copilot harness experiment about food: the Food MCP tool, a hello-world echo workflow, an echo-agent run on the Azure AI Agent Service, and the Sightseeing SharePoint site labelled all about food.",
       "maturity": "stub",
       "gaps": [
         "template leftovers (hello-world, echo-agent)",
@@ -1276,14 +1276,14 @@
     {
       "name": "Health Agent v2",
       "folder": "agents/Health Agent v2",
-      "harness": "githubCopilot",
+      "harness": "microsoftCopilot",
       "portalStatus": "Draft",
       "lastModified": "2026-07-22",
       "agentId": "e3625bee-9b13-4241-9d13-44b87da69f0f",
       "schemaName": "iits_healthagent_zXeueq",
       "extensionAttached": true,
       "description": null,
-      "whatItDoes": "GitHub Copilot rebuild of the Health Advisor symptom check: one instruction line that runs the CheckSymptoms workflow, which classifies age and symptoms with a Microsoft 365 Copilot prompt.",
+      "whatItDoes": "Microsoft Copilot harness rebuild of the Health Advisor symptom check: one instruction line that runs the CheckSymptoms workflow, which classifies age and symptoms with a Microsoft 365 Copilot prompt.",
       "maturity": "partial",
       "gaps": [
         "one-line instructions",

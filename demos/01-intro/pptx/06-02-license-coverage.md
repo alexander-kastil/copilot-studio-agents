@@ -30,7 +30,7 @@ gamma_prompt: >
 
 - **Standard agents** run zero-rated for licensed users in Microsoft 365 channels
 - Their test chat costs nothing: every Standard agent demo ran at **0 credits**
-- **GitHub Copilot agents**, workflows and apps bill from the first build step
+- **Microsoft Copilot harness agents**, workflows and apps bill from the first build step
 - The Copilot Studio home page marks the paths that use **Copilot Credits**
 
 ## Speaker Notes
@@ -41,6 +41,6 @@ Standard agents: classic answers, generative answers and Microsoft Graph groundi
 
 Test chat at zero: answers, actions and Graph grounding in a Standard agent's test chat aren't counted, which is why every Standard agent demo in this class ran at 0 credits.
 
-GitHub Copilot harness: it charges for model tokens, tools and the harness itself from the first build step, including authoring, Preview, tests and evaluations. Plan its credits before module 6 begins.
+Microsoft Copilot harness: it charges for model tokens, tools and the harness itself from the first build step, including authoring, Preview, tests and evaluations. Plan its credits before module 6 begins.
 
-The credits label: the home page puts Agent, Workflow and App, all on the GitHub Copilot harness, under the label Uses Copilot Credits, and moves standard orchestration to Other ways to build. Computer use and the Work IQ API are never covered by the license, and Cowork needs the license plus a spending policy.
+The credits label: the home page puts Agent, Workflow and App, all on the Microsoft Copilot harness, under the label Uses Copilot Credits, and moves standard orchestration to Other ways to build. Computer use and the Work IQ API are never covered by the license, and Cowork needs the license plus a spending policy.

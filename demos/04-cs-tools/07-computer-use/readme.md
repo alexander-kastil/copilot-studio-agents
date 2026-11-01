@@ -10,7 +10,7 @@ Computer use runs a computer-using model, which combines vision with reasoning t
 
 Because the model reads the screen, it adapts when a button moves or a page is redesigned, where a recorded script would break. You describe the task in plain language, with no code and no selectors. The tool needs generative orchestration, because the orchestrator decides when to call it from its name and description.
 
-Computer use fits autonomous agents best, running tasks in the background without a user waiting. You can also call it in a conversation, where the tool shares its reasoning messages and screenshots of the machine in the chat. Learn lists computer use as planned for agents on the GitHub Copilot harness, so today it is a Standard agent capability.
+Computer use fits autonomous agents best, running tasks in the background without a user waiting. You can also call it in a conversation, where the tool shares its reasoning messages and screenshots of the machine in the chat. Learn lists computer use as planned for agents on the Microsoft Copilot harness, so today it is a Standard agent capability.
 
 ## Where computer use runs
 

@@ -1,12 +1,12 @@
-# Tenant setup: Copilot Credits for GitHub Copilot agents and Work IQ
+# Tenant setup: Copilot Credits for Microsoft Copilot harness agents and Work IQ
 
-How to prepare a Microsoft 365 / Power Platform tenant so that agents, workflows and apps built with the **GitHub Copilot harness** in Copilot Studio, and **Work IQ** grounding, have the Copilot Credits they need.
+How to prepare a Microsoft 365 / Power Platform tenant so that agents, workflows and apps built with the **Microsoft Copilot harness** in Copilot Studio, and **Work IQ** grounding, have the Copilot Credits they need.
 
 ## What consumes credits
 
 | Feature | Covered by a Microsoft 365 Copilot license? | Billed through |
 |---|---|---|
-| GitHub Copilot harness agents, workflows, apps | No. Billing starts when you start building: authoring, Preview, tests and evaluations all consume credits | Power Platform: the environment's prepaid allocation or its pay-as-you-go billing plan |
+| Microsoft Copilot harness agents, workflows, apps | No. Billing starts when you start building: authoring, Preview, tests and evaluations all consume credits | Power Platform: the environment's prepaid allocation or its pay-as-you-go billing plan |
 | Work IQ (Preview) tool and Work IQ API / MCP | No | Microsoft 365 admin center: a Copilot Credits spending policy that includes **Work IQ API** |
 | Standard harness agents | Yes, in Microsoft 365 channels for licensed users | Power Platform, otherwise |
 
@@ -25,7 +25,7 @@ Credits are charged to the **environment** where the agent runs, not to the make
 3. On **Summary**, check **Prepaid capacity**. If *Copilot Credits capacity* shows 0 purchased, the environment must use pay-as-you-go.
 4. Open the **Environments** tab. For your environment, check the columns **Pay-as-you-go**, **Allocated capacity** and **Draw from tenant**.
    - Pay-as-you-go **Yes**: the environment is billable. Continue with step 2.
-   - Pay-as-you-go **No** and no allocation: GitHub Copilot harness work is blocked there.
+   - Pay-as-you-go **No** and no allocation: Microsoft Copilot harness work is blocked there.
 
 ### Link the environment to a billing plan (if needed)
 
@@ -89,7 +89,7 @@ Keep the limit well above a single build or preview session, or the agent stops 
 ## 6. Verify
 
 1. In Copilot Studio, confirm the environment switcher shows the environment you configured.
-2. Create a GitHub Copilot agent and run one Preview question.
+2. Create a Microsoft Copilot harness agent and run one Preview question.
 3. Add **Work IQ (Preview)** from Tools > MCP and ask a question about one of your mails.
 4. Next day: **Licensing > Copilot Studio > Environments** shows pay-as-you-go consumption for the environment; Microsoft 365 **Cost management > Overview** shows Work IQ consumption.
 
@@ -112,7 +112,7 @@ Cancelling (Microsoft Customer Agreement billing account): a prorated refund is 
 
 ## References
 
-- Manage costs for agents powered by the GitHub Copilot harness: https://learn.microsoft.com/power-platform/admin/manage-usage-github-copilot-harness
+- Manage costs for agents powered by the Microsoft Copilot harness: https://learn.microsoft.com/power-platform/admin/manage-usage-github-copilot-harness
 - Manage Copilot Credits and capacity for Copilot Studio: https://learn.microsoft.com/power-platform/admin/manage-copilot-studio-copilot-credits-capacity
 - Overview of usage-based billing: https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/billing-credit-overview
 - Copilot Managed Runtime licensing FAQ: https://learn.microsoft.com/microsoft-365/admin/manage/apps/licensing-faq

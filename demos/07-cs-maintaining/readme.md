@@ -10,7 +10,7 @@ Building an agent is only half the job; this module covers everything that happe
 | 2 | [Publishing Agents & Microsoft Channels](./02-publishing-channels/readme.md) | Publishing an agent, choosing an authentication model, and connecting it to Teams, Microsoft 365 Copilot and SharePoint |
 | 3 | [Application Lifecycle Management & Source Control](./03-alm-source-control/readme.md) | Moving agents across environments with solutions, deployment pipelines, and Git-based source control |
 | 4 | [Using Advanced Channels: WhatsApp, Web & Direct Line](./04-advanced-channels/readme.md) (optional) | The demo and live website, web channel security, Direct Line for custom apps, and WhatsApp with its limits |
-| 5 | [Agentic Building: Copilot Studio Plugins for Coding Agents](./05-agentic-building/readme.md) | Authoring, validating, pushing and testing agents from Claude Code with the `copilot-studio` and `mcs-assistant` plugins, and migrating a Standard agent to the GitHub Copilot harness |
+| 5 | [Agentic Building: Copilot Studio Plugins for Coding Agents](./05-agentic-building/readme.md) | Authoring, validating, pushing and testing agents from Claude Code with the `copilot-studio` and `mcs-assistant` plugins, and migrating a Standard agent to the Microsoft Copilot harness |
 
 ## The Lifecycle at a Glance
 

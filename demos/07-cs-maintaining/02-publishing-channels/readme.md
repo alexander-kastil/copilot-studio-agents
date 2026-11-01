@@ -14,7 +14,7 @@ WhatsApp, websites, the demo website and the Direct Line API for custom apps are
 
 ## Why it matters
 
-Each channel has its own connection steps and its own availability, and some channels differ between Standard agents and GitHub Copilot agents. The authentication choice decides who can reach the agent: selecting No authentication lets anyone with the link chat with the agent and blocks tools that rely on user credentials. Choosing the right channel and auth model is what turns a working agent into a safely shared one.
+Each channel has its own connection steps and its own availability, and some channels differ between Standard agents and Microsoft Copilot harness agents. The authentication choice decides who can reach the agent: selecting No authentication lets anyone with the link chat with the agent and blocks tools that rely on user credentials. Choosing the right channel and auth model is what turns a working agent into a safely shared one.
 
 ## Links & Resources
 

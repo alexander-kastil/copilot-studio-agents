@@ -2,7 +2,7 @@
 
 Basics build a Standard agent that answers, and tools let it act; this module makes it run on its own and work with other agents. You move from an agent a person chats with to one that wakes on an event, routes work to other agents, reasons through a hard problem, and hands specialized work to a Microsoft Foundry agent built by developers. Voice closes the module as an optional topic.
 
-The shift underneath all of this is generative orchestration: the planning layer that reads a request, picks the right tools, knowledge and agents, and executes a multi-step plan. Autonomous behavior, multi-agent handoffs and deep reasoning all depend on it, and GitHub Copilot agents run the same idea always on ([The Unified Build Surface and the New Orchestrator](../06-cs-gh-copilot/02-unified-build-and-orchestrator/readme.md)).
+The shift underneath all of this is generative orchestration: the planning layer that reads a request, picks the right tools, knowledge and agents, and executes a multi-step plan. Autonomous behavior, multi-agent handoffs and deep reasoning all depend on it, and Microsoft Copilot harness agents run the same idea always on ([The Unified Build Surface and the New Orchestrator](../06-cs-copilot-harness/02-unified-build-and-orchestrator/readme.md)).
 
 ![Chat, an event trigger and voice hand a request to generative orchestration, which reads it, picks tools, knowledge and agents, and executes a multi-step plan using tools, knowledge, other agents, a deep reasoning model and agent flows.](pptx/images/00-01-generative-orchestration.svg)
 

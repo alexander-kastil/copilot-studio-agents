@@ -115,7 +115,7 @@ Layout: Two columns. Left column: the bullets. Right column, wider than the left
 ---
 
 # Takeaways
-### What to carry into the GitHub Copilot agents module
+### What to carry into the Microsoft Copilot harness agents module
 - An unattended run has nobody to ask: the **instructions** carry the whole job, the tools use maker credentials
 - Put `reason` only on the step that has to **weigh several rules**
 - Route on **descriptions** that each claim one job, and prove every route in the activity map

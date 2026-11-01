@@ -84,7 +84,7 @@ Expected: the **Knowledge** section lists returns-policy.docx. The answer applie
 
 ## Exercise 3: Give the agent a mail tool that works without a user
 
-The agent must send its answer itself, so it needs a mail tool, and a trigger run has no signed-in user to lend credentials. The Work IQ Mail (Preview) MCP server brings the Outlook mail tools as one tool entry; Learn lists such workload-specific Work IQ tools as the standard-harness option, while the unified Work IQ (Preview) belongs to the GitHub Copilot harness.
+The agent must send its answer itself, so it needs a mail tool, and a trigger run has no signed-in user to lend credentials. The Work IQ Mail (Preview) MCP server brings the Outlook mail tools as one tool entry; Learn lists such workload-specific Work IQ tools as the standard-harness option, while the unified Work IQ (Preview) belongs to the Microsoft Copilot harness.
 
 The clone stores the tool as an MCP call:
 

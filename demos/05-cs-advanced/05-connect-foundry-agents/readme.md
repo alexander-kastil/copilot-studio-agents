@@ -38,7 +38,7 @@ You enable it with the Foundry REST API or the Python SDK; the Foundry portal do
 }
 ```
 
-The body goes to the agent with `PATCH {project-endpoint}/agents/{agent-name}?api-version=v1` and the content type `application/merge-patch+json`. After the update the portal still lists only **Responses** and **A2A** under **Endpoints**; Learn calls this omission expected. Learn's page for the GitHub Copilot harness names a second route: publishing the Foundry agent to Microsoft 365 or Teams turns on the Activity Protocol and `BotServiceRbac` automatically.
+The body goes to the agent with `PATCH {project-endpoint}/agents/{agent-name}?api-version=v1` and the content type `application/merge-patch+json`. After the update the portal still lists only **Responses** and **A2A** under **Endpoints**; Learn calls this omission expected. Learn's page for the Microsoft Copilot harness names a second route: publishing the Foundry agent to Microsoft 365 or Teams turns on the Activity Protocol and `BotServiceRbac` automatically.
 
 ## Connecting the agent in Copilot Studio
 
@@ -67,7 +67,7 @@ Validate the input in Copilot Studio before the external call runs. Ordered inst
 
 Copilot Studio reaches the agent through the connection you created with the project endpoint, and the Foundry endpoint accepts only Microsoft Entra ID and Azure Bot Service authorization; API keys aren't supported. Under the `Entra` scheme a caller needs at least the **Foundry Agent Consumer** role on the project or agent. The `BotServiceRbac` scheme, which the Activity Protocol request above adds, lets only identities with the Azure permissions to call the agent in Foundry invoke it.
 
-Plan access with the project owner before the demo or the rollout: who signs in to create the connection, which role that account holds, and whether end users need access of their own. Learn's GitHub Copilot harness page states that the connection authenticates with the user's Microsoft Entra ID sign-in.
+Plan access with the project owner before the demo or the rollout: who signs in to create the connection, which role that account holds, and whether end users need access of their own. Learn's Microsoft Copilot harness page states that the connection authenticates with the user's Microsoft Entra ID sign-in.
 
 ## Preview limits and responsibilities
 

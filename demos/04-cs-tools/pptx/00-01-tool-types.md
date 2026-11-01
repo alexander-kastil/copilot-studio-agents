@@ -46,6 +46,6 @@ This module moves a Standard agent from reading knowledge to calling real system
 
 A tooled agent acts: it runs a prompt, writes a Dataverse row, posts to Teams, calls an API or an MCP server, or drives a user interface that has no API. Each tool type has a job it does best.
 
-Seven tool types: the module takes them in delivery order, one topic each. Tools, MCP and workflows come back for GitHub Copilot agents in module 06, so the concepts carry straight across.
+Seven tool types: the module takes them in delivery order, one topic each. Tools, MCP and workflows come back for Microsoft Copilot harness agents in module 06, so the concepts carry straight across.
 
 One real job per demo: CS-Food Stock Buddy calculates the canteen order first and later reads live stock from an API. The other demos run on CS-Travel Expense Refund, CS-Travel Agent, CS-Health Advisor, CS-Restaurant HR Manager and CS-Grey Logistics IT Help Desk.

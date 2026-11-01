@@ -15,7 +15,7 @@ Both are Frontier previews as of October 2026. Autopilot is in private preview w
 | 1 | [Meet Autopilot: Digital Teammates in Microsoft 365](./01-meet-autopilot/readme.md) | What makes an agent a teammate, Autopilot (previously Scout) in the new Copilot with Home and Code, and where it sits beside Chat, Cowork, and Copilot Studio agents |
 | 2 | [Working with Autopilot: Goals, Memory & Long-Running Work](./02-autopilot-at-work/readme.md) | Name, role, and goal, background modes, approvals and permissions, skills, and the Scout documentation that describes how the agent works |
 | 3 | [Agent Accounts: Give a Copilot Studio Agent Its Own Identity](./03-agent-accounts/readme.md) | The maker flow from Agent account to Publish, what the account provisions, tool authentication, and the preview limitations |
-| 4 | [Proactive Teammates: Triggers, Email & Teams Mentions](./04-proactive-teammates/readme.md) | Email and schedule triggers on the GitHub Copilot harness, @mentions in Teams, Outlook, and Office comments, and the Cadence execution-review agent |
+| 4 | [Proactive Teammates: Triggers, Email & Teams Mentions](./04-proactive-teammates/readme.md) | Email and schedule triggers on the Microsoft Copilot harness, @mentions in Teams, Outlook, and Office comments, and the Cadence execution-review agent |
 | 5 | [Shared Memory, Licensing & Teammate Governance](./05-memory-governance/readme.md) | How shared memory works and what it never keeps, the Frontier for AI Teammates license pool, admin activation, and Agent 365 controls |
 
 ## How the Two Paths Relate
@@ -30,7 +30,7 @@ This module extends the four-day course for Power Platform makers, solution arch
 
 ## Prerequisites
 
-- The Copilot Studio module, in particular [GitHub Copilot Agents in Copilot Studio](../06-cs-gh-copilot/readme.md), because agent accounts and triggers run on the GitHub Copilot harness
+- The Copilot Studio module, in particular [Microsoft Copilot Harness Agents in Copilot Studio](../06-cs-copilot-harness/readme.md), because agent accounts and triggers run on the Microsoft Copilot harness
 - A Microsoft 365 tenant enrolled in the Frontier program, with the admin steps in [topic 5](./05-memory-governance/readme.md) completed before the class
 - For agent accounts: an early release environment and a maker license (Microsoft 365 E5 with the Agent 365 add-on, or Microsoft 365 E7)
 

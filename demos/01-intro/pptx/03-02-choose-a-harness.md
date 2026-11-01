@@ -17,7 +17,7 @@ visual-prompt: >
   chat". Question 2 "Customers by website chat or phone, with a person to hand over to?" Yes to dashed amber
   #fff6e5 card "Customer Conversation". Question 3 "Must every conversation follow paths a maker defines?"
   Yes to green #e9f7ef card "Standard". Question 4 "Plans across tools and files, needs memory, recovers
-  from failed steps?" Yes to blue #eaf2ff card "GitHub Copilot", and its "No" arrow ends in a second, smaller
+  from failed steps?" Yes to blue #eaf2ff card "Microsoft Copilot", and its "No" arrow ends in a second, smaller
   green card "Standard". On the far right, one grey #f6f8fa side note "Then check: where do users reach it,
   and which billing fits?". Along the bottom, one wide grey #f6f8fa bar "Mixed needs: decide by the dominant
   job. Agents and workflows combine; each agent runs on one harness."
@@ -44,6 +44,6 @@ Copilot Chat first: when the requirement is grounded answers for employees insid
 
 Customers second: when customers reach the agent through a website or a phone number and need a person behind it, the Customer Conversation harness fits.
 
-Fixed paths third: when every conversation must follow questions and branches a maker controls, the standard harness fits. When the work plans across several tools and files, needs memory or must recover from a failed step, the GitHub Copilot harness fits; otherwise Standard is the simpler choice.
+Fixed paths third: when every conversation must follow questions and branches a maker controls, the standard harness fits. When the work plans across several tools and files, needs memory or must recover from a failed step, the Microsoft Copilot harness fits; otherwise Standard is the simpler choice.
 
 Then check where users reach the agent and which billing model the organization accepts. A requirement that mixes answers goes by its dominant job, and a solution can combine several agents and workflows, each on one harness.

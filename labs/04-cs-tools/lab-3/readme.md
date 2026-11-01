@@ -36,7 +36,7 @@ flowchart LR
 - Permission to create a SharePoint site, or an existing site where you may add a document library.
 - A site named `Product Support` holding a document library named `Products`, filled with the five files from the [assets](./assets) folder. Build it with the scripts in [setup](./setup) or by hand, both covered below.
 
-![Classic Copilot Studio lists Topics, Knowledge, Actions and Settings down the left, while the new experience shows Build, Preview, Evaluate and Monitor tabs across the top, with Instructions, Knowledge, Tools and Skills in the Build tab's components panel.](../../../demos/06-cs-gh-copilot/pptx/images/01-02-telling-experiences-apart.svg)
+![Classic Copilot Studio lists Topics, Knowledge, Actions and Settings down the left, while the new experience shows Build, Preview, Evaluate and Monitor tabs across the top, with Instructions, Knowledge, Tools and Skills in the Build tab's components panel.](../../../demos/06-cs-copilot-harness/pptx/images/01-02-telling-experiences-apart.svg)
 
 > **Note:** The new agent experience is a production-ready preview. Some connector configuration screens still open the shared tool details page that the classic experience uses, so a few panes in this lab look like classic Copilot Studio even though you author on the **Build** tab. That is expected and does not break anything.
 

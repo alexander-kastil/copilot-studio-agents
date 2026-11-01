@@ -28,7 +28,7 @@ Three parts shape how an agent behaves, and you write only one of them. The agen
 
 Because the harness owns that sequence, two agents with the same model and the same instructions can behave differently on different harnesses. Copilot Studio offers four harnesses, and [Agent Harnesses: Choose the Runtime](../03-agent-harnesses/readme.md) shows how to pick one before you build.
 
-![Three layers: the agent you design (instructions, knowledge and tools, plus skills and memory on the GitHub Copilot harness), the harness that decides when to call the model, what to send, how to read the reply and which step runs next, and the model that reasons and writes. A request enters the harness and an answer or action leaves it, and the same model behind a different harness makes a different agent.](../pptx/images/02-06-agent-model-harness.svg)
+![Three layers: the agent you design (instructions, knowledge and tools, plus skills and memory on the Microsoft Copilot harness), the harness that decides when to call the model, what to send, how to read the reply and which step runs next, and the model that reasons and writes. A request enters the harness and an answer or action leaves it, and the same model behind a different harness makes a different agent.](../pptx/images/02-06-agent-model-harness.svg)
 
 ---
 

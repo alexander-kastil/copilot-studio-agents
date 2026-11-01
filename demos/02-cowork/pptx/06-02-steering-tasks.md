@@ -18,7 +18,7 @@ visual-prompt: >
   immediately, mid-step. Resume continues the task." Cancel lane: a stop square at the press point,
   the rest dashed and labelled "Cleared", "Clears the current task." SMIL animation, 8 second loop: a
   progress bar runs to each stop point, holds, and continues on Resume in both pause lanes.
-order: 19
+order: 20
 source: demos/02-cowork/06-staying-in-control/readme.md
 gamma_prompt: >
   Slide titled "Steering an active task", subtitle "Pause, resume or cancel while Cowork works". Left

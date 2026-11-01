@@ -2,7 +2,7 @@
 slide: "08-01"
 topic: 05-cs-advanced
 title: "Takeaways"
-subtitle: "What to carry into the GitHub Copilot agents module"
+subtitle: "What to carry into the Microsoft Copilot harness agents module"
 layout: content
 visual-weight: 1/2
 visual-type: photo
@@ -25,7 +25,7 @@ visual-prompt: >
 order: 20
 source: demos/05-cs-advanced/readme.md
 gamma_prompt: >
-  Closing slide titled "Takeaways", subtitle "What to carry into the GitHub Copilot agents module".
+  Closing slide titled "Takeaways", subtitle "What to carry into the Microsoft Copilot harness agents module".
   Side-accent layout: title, subtitle and five bullets on the left half on plain white, the provided
   photograph of a travel planner's routing sketched in sticky notes on a glass wall, one note fanning
   out to four, filling the right half, no text over it. Use exactly the one image given for this card; do not generate or add any other images,
@@ -53,4 +53,4 @@ Reason on one step: the ticket backlog put reason on the ranking step only, and 
 
 Descriptions and routes: the travel planner's descriptions each claim one job and name what they exclude, and the activity map showed each question landing in exactly one specialist.
 
-Foundry and test sets: the developer team keeps the Foundry specialist's model, tools and versions, and a test set with Meaning match caught the answer Answer quality passed. GitHub Copilot agents in module 6 run the same orchestration idea always on.
+Foundry and test sets: the developer team keeps the Foundry specialist's model, tools and versions, and a test set with Meaning match caught the answer Answer quality passed. Microsoft Copilot harness agents in module 6 run the same orchestration idea always on.

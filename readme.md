@@ -9,7 +9,7 @@ This repository contains the content for the **Automate Business Processes with 
 - [Copilot Studio Basics](demos/03-cs-basics/readme.md)
 - [Extending Copilot Studio Agents with Tools](demos/04-cs-tools/readme.md)
 - [Advanced Copilot Studio Agents](demos/05-cs-advanced/readme.md)
-- [GitHub Copilot Agents in Copilot Studio](demos/06-cs-gh-copilot/readme.md)
+- [Microsoft Copilot Harness Agents in Copilot Studio](demos/06-cs-copilot-harness/readme.md)
 - [Publishing & Maintaining Copilot Studio Agents](demos/07-cs-maintaining/readme.md)
 - [AI Teammates: Autopilot & Agent Accounts](demos/08-ai-teammates/readme.md)
 

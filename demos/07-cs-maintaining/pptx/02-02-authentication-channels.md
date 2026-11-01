@@ -38,6 +38,6 @@ Published agent status: the page names who published the live version and when. 
 
 Microsoft authentication: the banner says it plainly, only Teams and Microsoft 365 and SharePoint channels are available. That is the right setting for an internal HR agent whose users always sign in.
 
-Other channels: the tiles with the corner mark need manual authentication or No authentication. Each channel has its own connection steps, and some differ between Standard and GitHub Copilot agents.
+Other channels: the tiles with the corner mark need manual authentication or No authentication. Each channel has its own connection steps, and some differ between Standard and Microsoft Copilot harness agents.
 
 No authentication: anyone with the link can chat with the agent, and tools that rely on user credentials stop working. Choose it only for an agent that is meant to be open.

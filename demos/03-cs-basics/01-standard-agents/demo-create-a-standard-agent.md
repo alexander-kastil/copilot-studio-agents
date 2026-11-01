@@ -109,7 +109,7 @@ Expected: with classic orchestration no custom topic has trigger phrases about V
 
 | Symptom | Likely cause | Fix |
 |---------|--------------|-----|
-| The agent opens with **Build**, **Preview**, **Evaluate**, and **Monitor** tabs | The agent was created as a GitHub Copilot agent | Create it again from **New agent**, **Agent** with the **Standard** badge; agents never move between harnesses |
+| The agent opens with **Build**, **Preview**, **Evaluate**, and **Monitor** tabs | The agent was created as a Microsoft Copilot harness agent | Create it again from **New agent**, **Agent** with the **Standard** badge; agents never move between harnesses |
 | Every answer is replaced by the Fallback message | **Allow ungrounded responses** is off and the agent has no knowledge or tools | Turn it on for this demo, as in Exercise 3 |
 | The orchestration question is missing from **Settings** | An administrator turned off generative orchestration for the environment | Use another environment, or demo classic orchestration only |
 | The test panel still answers with old instructions | The conversation started before you saved | Start a new conversation in the test panel |

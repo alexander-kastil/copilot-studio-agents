@@ -18,7 +18,7 @@ Apps run on **Copilot Managed Runtime**, and building and running them are bille
 
 | Activity | Billed through | Managed in |
 |---|---|---|
-| Building, previewing and testing an app | Copilot Credits on the maker's **personal developer environment** (GitHub Copilot harness, billed from the first message) | Power Platform admin center |
+| Building, previewing and testing an app | Copilot Credits on the maker's **personal developer environment** (Microsoft Copilot harness, billed from the first message) | Power Platform admin center |
 | Running a published app | Copilot Credits **per user**, service **Copilot Managed Runtime** (0.1 credit per API call, such as launching the app or reading a record) | Microsoft 365 admin center, Copilot > Cost management |
 
 - Users with a **Power Apps Premium** license run apps without consuming credits. Power Apps use rights included in Microsoft 365 or Dynamics 365 don't count.
@@ -107,7 +107,7 @@ Cancelling (Microsoft Customer Agreement billing account): a prorated refund is 
 
 ## Related setup guides
 
-- [Copilot Credits for GitHub Copilot agents and Work IQ](./08-tenant-credit-setup.md)
+- [Copilot Credits for Microsoft Copilot harness agents and Work IQ](./08-tenant-credit-setup.md)
 - [Configure Copilot Credits for the Work IQ API](./10-work-iq-credit-quota.md)
 - [Copilot Cowork access and billing](./07-cowork-tenant-setup.md)
 

@@ -50,6 +50,6 @@ Goal and approval: an agent plans, acts, observes and adjusts until the outcome 
 
 Name the thin part: confident but wrong answers, off-topic replies and no access to current data each point to one of instructions, knowledge or tools.
 
-Harness first: the standard, GitHub Copilot, Copilot chat and Customer Conversation harnesses run the same agent design differently, and an agent can't move from one to another, so the harness is decided before the build starts.
+Harness first: the standard, Microsoft Copilot, Copilot chat and Customer Conversation harnesses run the same agent design differently, and an agent can't move from one to another, so the harness is decided before the build starts.
 
 Lowest-effort path and limits: start with Agent Builder, a SharePoint agent or a Cowork skill, and move to Copilot Studio when a tool call, a channel or a multi-step process requires it. Agents bill in Copilot Credits, so set monthly and per-user limits at activation; the Cowork module builds on this next.

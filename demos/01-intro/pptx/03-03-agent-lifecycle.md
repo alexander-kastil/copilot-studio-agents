@@ -41,7 +41,7 @@ gamma_prompt: >
 
 The course itself follows this loop, so this slide doubles as a map of the modules ahead.
 
-Create and build: you name the purpose, pick the harness, then add instructions, knowledge, tools, the model and the boundaries. Standard agents are built from module 3, GitHub Copilot agents in module 6.
+Create and build: you name the purpose, pick the harness, then add instructions, knowledge, tools, the model and the boundaries. Standard agents are built from module 3, Microsoft Copilot harness agents in module 6.
 
 Test: a test chat or Preview answers one question once. An evaluation runs the same set of cases every time, so two versions of an agent are compared on the same evidence; modules 5 and 6 each have an evaluations topic.
 

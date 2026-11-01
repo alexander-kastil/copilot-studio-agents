@@ -25,7 +25,7 @@ Everyone who interacts with the agent can view or delete its saved shared memori
 
 ## Shared Memory Versus Personal Memory
 
-An agent without an account can remember too, through the **Memory** toggle in the components panel on the **Build** tab of the GitHub Copilot harness. That memory is personal: each user gets a separate store, and one person's context is never shared with another. The October 15, 2026 announcement presents it as business process memory, rolling out through the Frontier program, while the Learn page labels it a production-ready preview. Choose the memory model before the build path, because it decides who benefits from what one person explains.
+An agent without an account can remember too, through the **Memory** toggle in the components panel on the **Build** tab of the Microsoft Copilot harness. That memory is personal: each user gets a separate store, and one person's context is never shared with another. The October 15, 2026 announcement presents it as business process memory, rolling out through the Frontier program, while the Learn page labels it a production-ready preview. Choose the memory model before the build path, because it decides who benefits from what one person explains.
 
 | | Personal memory (Memory toggle) | Shared memory (agent account) |
 |---|---|---|
