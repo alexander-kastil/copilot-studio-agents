@@ -18,13 +18,19 @@
 - Where to Build and What It Costs: a "What the Model Costs in Cowork" section and slide with the November 2026 Cowork models, reasoning effort levels and what drives a task's credits
 - Module 01 labs: five external labs (Agent Builder, SharePoint agents, Analyst, Researcher, share and use agents) migrated into `labs/01-intro` as local guides with their screenshots and sample files; the readme links the local copies and lists the originals as sources
 - Module 02 deck gets the Import a Claude plugin slide at the end of the plugins topic.
-- Run lab 05/02 deep reasoning: Lab 05/02 ran end to end
+- Lab run record `labs/02-cowork/cowork-lab-cost.json` for the module 02 Cowork labs: exercises run, model and effort, and the Copilot Credits per task, still marked not yet available
+- Update labs
 
 ### Changed
 
 - Module 02 deck slide 20 (Anatomy of a SKILL.md) drops the companion-files picture and splits 50:50, bullets left and the SKILL.md code right.
 - Exclude all pptx folders and the assets folder from git: `.gitignore` ignores `pptx/` and `/assets/`, and their files stay on disk
+- Module 02 Cowork labs name a cheaper model that does the job as a proposal note on top of each lab guide
+- The first Copilot Studio lab skips the environment exercise, since the environments are pre-created for students
+- The Workflows lab is removed from module 01 and from the lab tests
 
 ### Fixed
 
+- Module 02 Cowork lab guides corrected from the live runs
+- Module 03 to 05 lab guides fixed where a live run found an error
 - Module 01 Agent Builder lab re-run: all screenshots retaken at 1280 width, two new ones for the SharePoint source and the Share menu, and the guide steps and image texts matched to the current UI

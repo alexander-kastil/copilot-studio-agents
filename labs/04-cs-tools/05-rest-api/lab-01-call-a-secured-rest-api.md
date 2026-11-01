@@ -39,7 +39,7 @@ An API never holds the secret of its own caller. Keeping the two registrations s
 ## Prerequisites
 
 - A Microsoft 365 tenant where you can register Entra ID applications
-- A Power Platform environment with Copilot Studio (the labs assume an environment named `Copilot Dev Camp`)
+- A Power Platform environment with Copilot Studio (the environment prepared for you)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [REST Client extension](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) for Visual Studio Code
 - [Node.js v22 or higher](https://nodejs.org/en) and the [Azure Functions Core Tools](https://learn.microsoft.com/azure/azure-functions/functions-run-local)
@@ -178,7 +178,7 @@ devtunnel host hr-service
 
 > If you get `Request not permitted. Unauthorized tunnel creation access`, the tunnel name is taken. Pick a unique one, for example `hr-service-<yourname>`, and use it in all three commands.
 
-Copy the **Connect via browser** URL from the output and keep it. Leave this terminal running for the rest of the lab. If it drops, restart it with `devtunnel host hr-service`; the URL stays the same.
+Copy the **Connect via browser** URL for port 7071 from the output and keep it. Its host name has the form `<tunnel-id>-7071.euw.devtunnels.ms`, where the tunnel id is a generated value such as `npjls4nf`, not the tunnel name you chose. Leave this terminal running for the rest of the lab. If it drops, restart it with `devtunnel host hr-service`; the URL stays the same.
 
 Use `http/ht-service-dev-tunnel.http` to check the tunnel, replacing the host in that file with your own. You should still see 401, now coming through the public URL.
 
@@ -188,7 +188,7 @@ Use `http/ht-service-dev-tunnel.http` to check the tunnel, replacing the host in
 
 ### Step 1: Import the OpenAPI file
 
-Go to [Power Automate](https://make.powerautomate.com) and switch to the `Copilot Dev Camp` environment with the environment picker in the top right corner. Navigate to **More**, **Discover all**, then **Custom connectors**.
+Go to [Power Automate](https://make.powerautomate.com) and switch to the environment prepared for you with the environment picker in the top right corner. Navigate to **More**, **Discover all**, then **Custom connectors**.
 
 Select **+ New custom connector**, then **Import an OpenAPI file**. Name the connector `HR-Services` and browse to [`hr-service-swagger.json`](./hr-service-swagger.json) in this lab folder. Select **Continue**.
 
@@ -202,16 +202,17 @@ Use that file, not `hr-service/src/openapi.json`. The service ships an OpenAPI 3
 
 The `host` value in the file is the placeholder `your-tunnel-id-7071.euw.devtunnels.ms`, so you have to correct it. On the **General** tab:
 
-- **Host:** the host name of your dev tunnel URL, with no `https://` prefix and no trailing slash, for example `hr-service-abc123.euw.devtunnels.ms`
-- **Base URL:** `/`
+- **Host:** the host name of your dev tunnel URL, with no `https://` prefix and no trailing slash, for example `npjls4nf-7071.euw.devtunnels.ms`
+- **Base URL:** leave `/`, as imported from the file
 
 ### Step 3: Configure OAuth 2.0
 
-Select **Security** at the bottom of the page. Choose **OAuth 2.0** as the authentication type and **Azure Active Directory** as the identity provider, then fill in:
+Select **Security** at the bottom of the page. Choose **OAuth 2.0** as the authentication type and **Azure Active Directory** as the identity provider; the **Resource URL** field appears only after you pick the identity provider. Then fill in:
 
 | Field | Value |
 | --- | --- |
 | Client ID | Client ID of **HR-Service-Consumer** |
+| Secret options | **Use client secret** (default) |
 | Client secret | The secret value from **HR-Service-Consumer** |
 | Authorization URL | Leave the default |
 | Tenant ID | Your tenant ID |
@@ -223,7 +224,7 @@ The Resource URL is the field people get wrong. It identifies the API being call
 
 ![The Security tab fields of the HR-Services connector linked to their app registration: Client ID, Client secret and Redirect URL to HR-Service-Consumer, Resource URL and Scope to HR-Service-API.](./_images/connector-security-fields.svg)
 
-Select **Create connector** in the top right corner.
+Select **Create connector**.
 
 ### Step 4: Close the loop with a redirect URL
 
@@ -237,7 +238,7 @@ This is what lets Entra hand the authorization code back to Power Platform after
 
 Open the **Definition** tab and confirm the four operations imported from the specification. You do not need to change anything here.
 
-Switch to the **Test** tab, select **+ New connection**, and sign in when prompted. Once the connection exists, select the `getCandidates` operation and select **Test operation**.
+Switch to the **5. Test** tab, select **+ New connection**, and sign in when prompted. The redirect URL from Step 4 must already be on the consumer app, or the sign-in fails. Once the connection exists, select the `getCandidates` operation and select **Test operation**.
 
 A 200 response with the candidate list means the full chain works. Check the Visual Studio Code terminal: it now logs `Token is valid for user <username>` instead of the earlier skip message.
 
@@ -249,19 +250,19 @@ A 200 response with the candidate list means the full chain works. Check the Vis
 
 Open [Copilot Studio](https://copilotstudio.microsoft.com) in the same environment and edit your `Agentic HR` agent from the previous lab. Go to **Tools** (or **Actions**, depending on your release) and select **+ Add a tool**.
 
-Choose the **Custom connector** group, search for `HR-Services`, and select the `Get all candidates` operation. Confirm the connection when asked, then configure:
+Search for `HR-Services`, select **See all**, select the **Get all candidates** operation, then **Add and configure**. Configure:
 
 | Field | Value |
 | --- | --- |
 | Name | `Get all candidates` |
-| Description | `Lists all the HR candidates from an external system` |
-| Authentication | User authentication |
+| Description | Replace the text prefilled from the specification with `Lists all the HR candidates from an external system` |
+| **Additional details** > **Credentials to use** | **End user credentials** (default) |
 
-Select **Add action**.
+Select **Save**.
 
 The description is not documentation. Generative orchestration reads it to decide whether this action matches the user's intent, so a vague description means the agent will not pick the tool.
 
-If you added an equivalent action in an earlier lab, disable it now: select the three dots next to it and toggle **Status** to `Off`. Two tools that claim to do the same thing make orchestration unpredictable.
+If you added an equivalent tool in an earlier lab, such as **List HR candidates** from the connectors lab, disable it now with its **Enabled** switch in the **Tools** list. Two tools that claim to do the same thing make orchestration unpredictable.
 
 ### Step 2: Publish and run it
 
