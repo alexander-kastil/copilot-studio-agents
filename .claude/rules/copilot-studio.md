@@ -40,7 +40,7 @@ The `microsoft-agents:copilot-studio` skill holds the generic rules. These are t
 
 ## Terminal runs with the Microsoft plugins (07/05)
 
-- CS-Grey Logistics IT Help Desk (`481983ea-f2cd-f111-a05a-7c1e528616d5`, schema `iits_CSContosoITHelpDesk` from its earlier name) and its migrated GitHub Copilot copy GH-Grey Logistics IT Help Desk (`d3b8dc10-e2a6-410d-8a40-abc6d56eeccf`, solution `catmgr_GHGreyLogisticsITHelpDesk`) live in `src/cs-schema/cs-agents/`, with `MIGRATION-PLAN-a7c41e9d.md` beside them.
+- CS-Grey Logistics IT Help Desk (`481983ea-f2cd-f111-a05a-7c1e528616d5`, schema `iits_CSContosoITHelpDesk` from its earlier name) and its migrated Microsoft Copilot harness copy GH-Grey Logistics IT Help Desk (`d3b8dc10-e2a6-410d-8a40-abc6d56eeccf`, solution `catmgr_GHGreyLogisticsITHelpDesk`) live in `src/cs-schema/cs-agents/`, with `MIGRATION-PLAN-a7c41e9d.md` beside them.
 - Point tests of integrated-auth agents use the public client app CopilotstudioClient (`5b37e805-a278-4aa1-bac6-24e09971b615`): `eval-api.bundle.js auth --workspace <agent folder> --client-id 5b37e805-a278-4aa1-bac6-24e09971b615`.
 - The PAC profile for this environment is created with the Dataverse URL `https://orgaa1e572d.crm4.dynamics.com/`; the `Default-` ID is rejected. Both plugins are installed at project scope; `.claude/settings.local.json` picks the active one per module.
 - What the plugins really expose, the sign-ins and the migration traps: `microsoft-agents:copilot-studio` `references/terminal-plugins.md`.

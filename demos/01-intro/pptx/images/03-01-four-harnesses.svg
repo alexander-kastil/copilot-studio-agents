@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
   <title id="t">The four harnesses in Copilot Studio side by side</title>
-  <desc id="d">Four cards compare the harnesses of Copilot Studio. GitHub Copilot reasons toward a goal: it plans, recovers and works with files, has skills and memory, publishes internally or externally, bills Copilot Credits and is taught in module 6. Standard follows the paths you define with topics, trigger phrases and branches and classic or generative orchestration; it publishes internally or externally, uses standard licensing and is taught in modules 3 to 5. Copilot chat extends Copilot Chat for employees with your organization's knowledge and each user's own permissions; it publishes to internal teams, bills by consumption or through a Microsoft 365 Copilot license and works like Agent Builder agents. Customer Conversation, marked as preview, serves customers by chat and phone with sub-agents that hand over to a person, plus skills and memory; it publishes to website chat or a phone number, bills Copilot Credits and is not built in this class. A banner below says the harness is chosen once, at creation: a Standard agent never becomes a GitHub Copilot agent, or back.</desc>
+  <desc id="d">Four cards compare the harnesses of Copilot Studio. Microsoft Copilot reasons toward a goal: it plans, recovers and works with files, has skills and memory, publishes internally or externally, bills Copilot Credits and is taught in module 6. Standard follows the paths you define with topics, trigger phrases and branches and classic or generative orchestration; it publishes internally or externally, uses standard licensing and is taught in modules 3 to 5. Copilot chat extends Copilot Chat for employees with your organization's knowledge and each user's own permissions; it publishes to internal teams, bills by consumption or through a Microsoft 365 Copilot license and works like Agent Builder agents. Customer Conversation, marked as preview, serves customers by chat and phone with sub-agents that hand over to a person, plus skills and memory; it publishes to website chat or a phone number, bills Copilot Credits and is not built in this class. A banner below says the harness is chosen once, at creation: a Standard agent never becomes a Microsoft Copilot harness agent, or back.</desc>
   <style>svg { font-size: 28px; }</style>
   <rect width="1920" height="1080" fill="#ffffff"/>
 
   <rect x="40" y="56" width="440" height="796" rx="20" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
-  <text x="68" y="118" font-size="32" font-weight="700" fill="#24292f">GitHub Copilot</text>
+  <text x="68" y="118" font-size="32" font-weight="700" fill="#24292f">Microsoft Copilot</text>
   <text x="68" y="168" font-size="28" font-weight="600" fill="#24292f">Reasons toward a goal</text>
   <rect x="64" y="234" width="392" height="92" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
   <text x="260" y="272" font-size="28" fill="#24292f" text-anchor="middle">Plans, recovers,</text>
@@ -73,5 +73,5 @@
   <text x="1779" y="66" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">Preview</text>
 
   <rect x="40" y="892" width="1838" height="120" rx="20" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
-  <text x="959" y="962" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">Chosen once, at creation: a Standard agent never becomes a GitHub Copilot agent, or back</text>
+  <text x="959" y="962" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">Chosen once, at creation: a Standard agent never becomes a Microsoft Copilot harness agent, or back</text>
 </svg>

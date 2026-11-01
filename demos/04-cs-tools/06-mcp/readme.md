@@ -2,7 +2,7 @@
 
 Every connector and REST API tool you add is described by hand, per agent, and stays frozen until someone edits it. The Model Context Protocol (MCP) moves that description to the service: an MCP server publishes its own tools, with names, descriptions, inputs, and outputs, and every agent that connects discovers them when it runs. Change a tool on the server and every connected agent sees the change without being republished.
 
-This topic teaches MCP in Copilot Studio's Standard agents (Learn: standard harness). You learn what a server can expose, how runtime discovery differs from a connector's design-time contract, the three ways to connect a server, which transport and authentication options Copilot Studio supports, how to limit what an agent may call, and how the repository's own HR MCP server builds its tools from code. The GitHub Copilot agent counterpart is part of [Tools, MCP, and the New Workflows Designer](../../06-cs-gh-copilot/04-workflows-and-mcp/readme.md).
+This topic teaches MCP in Copilot Studio's Standard agents (Learn: standard harness). You learn what a server can expose, how runtime discovery differs from a connector's design-time contract, the three ways to connect a server, which transport and authentication options Copilot Studio supports, how to limit what an agent may call, and how the repository's own HR MCP server builds its tools from code. The Microsoft Copilot harness agent counterpart is part of [Tools, MCP, and the New Workflows Designer](../../06-cs-copilot-harness/04-workflows-and-mcp/readme.md).
 
 ## What an MCP server gives an agent
 

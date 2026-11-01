@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
   <title id="t">Path through the Copilot Studio module</title>
-  <desc id="d">Four numbered topic cards in delivery order. Topics 1 to 3 (Basics, Tools, Advanced) build Standard agents; topic 4 covers GitHub Copilot agents, which shipped in June 2026. An arrow from topic 4 leads to module 04, which covers publishing, ALM and governance for the agents built here.</desc>
+  <desc id="d">Four numbered topic cards in delivery order. Topics 1 to 3 (Basics, Tools, Advanced) build Standard agents; topic 4 covers Microsoft Copilot harness agents, which shipped in June 2026. An arrow from topic 4 leads to module 04, which covers publishing, ALM and governance for the agents built here.</desc>
   <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
   <defs>
     <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
@@ -10,7 +10,7 @@
   <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
     <text x="728" y="140" font-size="28" fill="#57606a" text-anchor="middle">Standard agents</text>
     <path d="M60,190 L60,172 L1396,172 L1396,190" fill="none" stroke="#8c959f" stroke-width="2"/>
-    <text x="1652" y="140" font-size="28" fill="#57606a" text-anchor="middle">GitHub Copilot agents</text>
+    <text x="1652" y="140" font-size="28" fill="#57606a" text-anchor="middle">Microsoft Copilot harness agents</text>
     <path d="M1446,190 L1446,172 L1858,172 L1858,190" fill="none" stroke="#8c959f" stroke-width="2"/>
 
     <rect x="60" y="220" width="412" height="540" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
@@ -55,7 +55,7 @@
     <rect x="1446" y="220" width="412" height="540" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
     <circle cx="1510" cy="290" r="34" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
     <text x="1510" y="301" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">4</text>
-    <text x="1476" y="384" font-size="34" font-weight="700" fill="#24292f">GitHub Copilot</text>
+    <text x="1476" y="384" font-size="34" font-weight="700" fill="#24292f">Microsoft Copilot</text>
     <text x="1476" y="426" font-size="34" font-weight="700" fill="#24292f">Agents</text>
     <g font-size="28" fill="#57606a">
       <text x="1476" y="494">Unified Build surface</text>

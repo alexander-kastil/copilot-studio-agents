@@ -91,7 +91,7 @@ A **Request information** step needs its **Channel**, **Outlook** or **Teams**: 
 
 A saved prompt can serve a flow without becoming an agent tool. Build it on the **Tools** page through **Add a tool** > **Add new Prompt**, add one **Text** input per value, select **Save**, then **Cancel** at **Add and configure**. The flow calls it through the `aibuilderpredict_customprompt` operation, passes each input as `item/requestv2/<inputId>`, and reads the answer from `body/responsev2/predictionOutput/text`.
 
-The prompt node belongs to the standard harness. Workflows on the GitHub Copilot harness replace it with an agent node, which the [Tools, MCP, and the New Workflows Designer](../../06-cs-gh-copilot/04-workflows-and-mcp/readme.md) topic covers.
+The prompt node belongs to the standard harness. Workflows on the Microsoft Copilot harness replace it with an agent node, which the [Tools, MCP, and the New Workflows Designer](../../06-cs-copilot-harness/04-workflows-and-mcp/readme.md) topic covers.
 
 ## Building, testing and publishing a flow
 
@@ -115,7 +115,7 @@ Express mode brings hard limits: a run must finish within two minutes, stay unde
 
 A cloud flow that already does the job doesn't need rebuilding. You open its detail page in Power Automate, make sure it sits in a solution in the environment that should pay for it, select **Edit**, change the plan to **Copilot Studio** and confirm. From then on the flow counts against Copilot Studio capacity, leaves Power Automate licensing behind, and can be managed in Copilot Studio.
 
-The conversion is one way and can't be reversed, because the billing changes with it. It also only produces an agent flow: a cloud flow can't be converted to the new workflow format of the GitHub Copilot harness.
+The conversion is one way and can't be reversed, because the billing changes with it. It also only produces an agent flow: a cloud flow can't be converted to the new workflow format of the Microsoft Copilot harness.
 
 ## Billing and capacity
 

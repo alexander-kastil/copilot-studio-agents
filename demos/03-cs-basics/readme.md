@@ -4,13 +4,13 @@ Copilot Studio is Microsoft's low-code platform for building agents, and this mo
 
 ![The HR Agent built in the labs: instructions, knowledge, topics and orchestration settings in a Power Platform environment, grounded in the Microsoft Careers site and SharePoint HR Documents, and published to Microsoft Teams.](pptx/images/01-01-agent-parts.svg)
 
-Standard agents are the ones many clients run in production today: you pick **Agent** with the **Standard** badge under **Other ways to build** in the **New agent** menu. Everything here transfers to [GitHub Copilot Agents in Copilot Studio](../06-cs-gh-copilot/readme.md), which reuses the same concepts under a consolidated Build surface.
+Standard agents are the ones many clients run in production today: you pick **Agent** with the **Standard** badge under **Other ways to build** in the **New agent** menu. Everything here transfers to [Microsoft Copilot Harness Agents in Copilot Studio](../06-cs-copilot-harness/readme.md), which reuses the same concepts under a consolidated Build surface.
 
 ## Topics
 
 | Topic | What it teaches |
 |-------|-----------------|
-| [Standard Agents: Create & Configure](01-standard-agents/readme.md) | Standard versus GitHub Copilot agents, creating and opening a Standard agent, identity, instructions, model, the orchestration setting and the test panel |
+| [Standard Agents: Create & Configure](01-standard-agents/readme.md) | Standard versus Microsoft Copilot harness agents, creating and opening a Standard agent, identity, instructions, model, the orchestration setting and the test panel |
 | [Knowledge Sources & Suggested Prompts](02-knowledge/readme.md) | Every knowledge source type, how generative answers use them, Bing Custom Search and web search, and suggested prompts for Teams and Microsoft 365 Copilot |
 | [Topics, Entities & Variables](03-topics/readme.md) | System and custom topics, trigger phrases versus generative routing, nodes, prebuilt and custom entities, slot filling, variable scopes and conversation design |
 | [Power Fx: Formulas in Topics](04-power-fx/readme.md) | Where formulas run in a topic, the functions makers use most, data types and tables, and real formula syntax |

@@ -35,7 +35,7 @@ gamma_prompt: >
 - **Email**: a message arrives in the agent's mailbox
 - **A person**: someone @mentions it or sends it a task
 - Instructions alone don't create a **schedule** or grant access
-- Triggers for the **GitHub Copilot harness** were announced on October 15, 2026
+- Triggers for the **Microsoft Copilot harness** were announced on October 15, 2026
 
 ## Speaker Notes
 
@@ -49,4 +49,4 @@ A person: someone @mentions it or sends it a task. It fits ad hoc questions, ass
 
 Three pieces: writing "every Monday, prepare the review" into the instructions does nothing until a recurrence trigger exists and the tools can reach the sources. Treat trigger, tools and instructions as three separate pieces of configuration.
 
-GitHub Copilot harness: Microsoft announced triggers for agents on it on October 15, 2026. The rollout runs through the Frontier program, alongside agent accounts and business process memory.
+Microsoft Copilot harness: Microsoft announced triggers for agents on it on October 15, 2026. The rollout runs through the Frontier program, alongside agent accounts and business process memory.

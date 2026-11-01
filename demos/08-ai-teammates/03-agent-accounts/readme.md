@@ -17,7 +17,7 @@ Two identities are created. Agent 365 provisions and governs the account, which 
 
 ## Build It: From Agent Account to Publish
 
-Agent accounts live in Copilot Studio Preview, on an environment that uses the early release cycle, and run on the [GitHub Copilot harness](../../06-cs-gh-copilot/02-unified-build-and-orchestrator/readme.md). You add the account to a new agent before you publish it for the first time. The account becomes active only when you publish.
+Agent accounts live in Copilot Studio Preview, on an environment that uses the early release cycle, and run on the [Microsoft Copilot harness](../../06-cs-copilot-harness/02-unified-build-and-orchestrator/readme.md). You add the account to a new agent before you publish it for the first time. The account becomes active only when you publish.
 
 1. Open Copilot Studio Preview and switch to the early release environment.
 2. Create a new agent, give it a name, description, and instructions, and do not save it yet.

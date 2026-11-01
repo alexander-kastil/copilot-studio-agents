@@ -22,7 +22,7 @@ setup/                               tenant, Cowork, credit and AI teammates set
 tasks/                               todo.md, lessons.md
 ```
 
-Module and topic numbers are two-digit, in delivery order; do not reorganize them. Copilot Studio spans `03-cs-basics` to `07-cs-maintaining`: Standard agents in 03 to 05, GitHub Copilot agents in 06. Every topic has a teaching readme, a Hands-On Demo and a Hands-On Lab, filed inside its `NN-<topic>/` folder; lab numbering restarts at `lab-01` per topic. A doc that shows a slide diagram embeds that slide's file by relative path; a diagram no slide uses sits in `_images/` beside the doc.
+Module and topic numbers are two-digit, in delivery order; do not reorganize them. Copilot Studio spans `03-cs-basics` to `07-cs-maintaining`: Standard agents in 03 to 05, Microsoft Copilot harness agents in 06. Every topic has a teaching readme, a Hands-On Demo and a Hands-On Lab, filed inside its `NN-<topic>/` folder; lab numbering restarts at `lab-01` per topic. A doc that shows a slide diagram embeds that slide's file by relative path; a diagram no slide uses sits in `_images/` beside the doc.
 
 ## Harness
 

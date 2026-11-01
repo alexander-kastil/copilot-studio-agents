@@ -43,7 +43,7 @@ Two products deliver the teammate model today. This slide shows who builds each 
 
 Autopilot: the ready-made teammate a user sets up in Copilot. The user describes a name, a role and a goal.
 
-Agent account: the build path for a maker who needs control over instructions, tools and triggers. It runs in Copilot Studio on the GitHub Copilot harness.
+Agent account: the build path for a maker who needs control over instructions, tools and triggers. It runs in Copilot Studio on the Microsoft Copilot harness.
 
 Identity: both end in the same place, an identity that admins govern like any other member of the organization. Agent 365 and Entra carry that governance.
 

@@ -14,7 +14,7 @@ visual-prompt: >
   0,12,1098,632: the Create calendar event? card at Medium risk for the one-hour Agentic AI session,
   with an empty Attendees field, its three-point agenda, Cancel and Save, and the Always allow Create
   event option open under the arrow.
-order: 18
+order: 19
 source: demos/02-cowork/06-staying-in-control/readme.md
 gamma_prompt: >
   Slide titled "The approval model", subtitle "Cowork pauses before anything that leaves your

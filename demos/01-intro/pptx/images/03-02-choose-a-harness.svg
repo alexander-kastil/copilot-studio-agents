@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
   <title id="t">Four questions that choose the harness</title>
-  <desc id="d">Four questions run from top to bottom, and the first Yes names the harness. Question 1 asks whether the agent extends Copilot Chat for employees; Yes leads to Copilot chat. Question 2 asks whether customers reach it by website chat or phone, with a person to hand over to; Yes leads to Customer Conversation. Question 3 asks whether every conversation must follow paths a maker defines; Yes leads to Standard. Question 4 asks whether the work plans across tools and files, needs memory and recovers from failed steps; Yes leads to GitHub Copilot, and No leads to Standard. A side note says to check next where users reach the agent and which billing fits. A bar along the bottom says that mixed needs are decided by the dominant job: agents and workflows combine, and each agent runs on one harness.</desc>
+  <desc id="d">Four questions run from top to bottom, and the first Yes names the harness. Question 1 asks whether the agent extends Copilot Chat for employees; Yes leads to Copilot chat. Question 2 asks whether customers reach it by website chat or phone, with a person to hand over to; Yes leads to Customer Conversation. Question 3 asks whether every conversation must follow paths a maker defines; Yes leads to Standard. Question 4 asks whether the work plans across tools and files, needs memory and recovers from failed steps; Yes leads to Microsoft Copilot, and No leads to Standard. A side note says to check next where users reach the agent and which billing fits. A bar along the bottom says that mixed needs are decided by the dominant job: agents and workflows combine, and each agent runs on one harness.</desc>
   <style>svg { font-size: 28px; }</style>
   <defs>
     <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
@@ -62,7 +62,7 @@
   <rect x="1080" y="416" width="400" height="112" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
   <text x="1280" y="483" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Standard</text>
   <rect x="1080" y="592" width="400" height="112" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
-  <text x="1280" y="659" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">GitHub Copilot</text>
+  <text x="1280" y="659" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Microsoft Copilot</text>
 
   <rect x="60" y="768" width="240" height="72" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
   <text x="180" y="814" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Standard</text>

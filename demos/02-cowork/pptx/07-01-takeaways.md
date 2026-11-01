@@ -20,7 +20,7 @@ visual-prompt: >
   accents in light blue, mint and lavender, green plants, 2020s design. 16:9 landscape, contemporary
   editorial photography. Avoid: readable text, logos, watermarks, extra people, dark or moody
   lighting, vintage or retro decor, grime, clutter.
-order: 21
+order: 22
 source: demos/02-cowork/readme.md
 gamma_prompt: >
   Content card titled "Takeaways", subtitle "From a first task to staying in control". Five short

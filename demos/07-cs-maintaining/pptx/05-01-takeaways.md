@@ -36,7 +36,7 @@ Topic 3 put agents under source control; this topic hands the authoring itself t
 
 copilot-studio: it targets Standard agents in modules 3 to 5 and reaches Copilot Studio through the VS Code Copilot Studio extension. A session hook routes every request to one of four sub-agents, Manage, Author, Test and Advisor, which use 31 skills.
 
-mcs-assistant: it targets GitHub Copilot agents in module 6 through the Power Platform CLI 2.9.3 or later. Its migrate command moves a Standard agent to the GitHub Copilot harness, and chat tests a published agent from the terminal.
+mcs-assistant: it targets Microsoft Copilot harness agents in module 6 through the Power Platform CLI 2.9.3 or later. Its migrate command moves a Standard agent to the Microsoft Copilot harness, and chat tests a published agent from the terminal.
 
 One plugin per module: the migrate command warns that the two may conflict. Keep both installed and turn off the one the current module doesn't need in .claude/settings.local.json, as in the code on the left, then start a new session.
 

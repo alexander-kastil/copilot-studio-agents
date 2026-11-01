@@ -14,7 +14,7 @@ Requirements, costs and readiness for [Module 8: AI Teammates](../demos/08-ai-te
 | Environment on the **Early** release cycle | Agent accounts | ✅ Integrationsonline (Early, on a pay-as-you-go billing plan) |
 | Autopilot (Scout): Frontier, an Intune policy, the admin attestation form, a GitHub Copilot Business or Enterprise seat | Topics 1 and 2 | ❌ Private preview by invitation; Business Standard has no Intune |
 
-Copilot Credits are not the blocker. Agents with accounts bill per environment like any GitHub Copilot agent, and Integrationsonline is already on a pay-as-you-go plan. Work IQ calls bill through the Microsoft 365 spending policy.
+Copilot Credits are not the blocker. Agents with accounts bill per environment like any Microsoft Copilot harness agent, and Integrationsonline is already on a pay-as-you-go plan. Work IQ calls bill through the Microsoft 365 spending policy.
 
 ## What each topic needs
 
@@ -22,7 +22,7 @@ Copilot Credits are not the blocker. Agents with accounts bill per environment l
 |---|---|---|
 | 1 and 2 Autopilot | Hand Autopilot a process | Not possible; the trial doesn't help either |
 | 3 Agent accounts | Create the Cadence agent with an account | Not possible |
-| 4 Proactive teammates | Cadence on a schedule, replies and @mentions | Not possible as planned; only a trigger on a normal GitHub Copilot agent, not yet verified in the tenant |
+| 4 Proactive teammates | Cadence on a schedule, replies and @mentions | Not possible as planned; only a trigger on a normal Microsoft Copilot harness agent, not yet verified in the tenant |
 | 5 Shared memory | Read the teammate's memory | Not possible as planned; only the personal **Memory** toggle as a contrast |
 
 All demos and labs in Module 8 are still marked *Planned*, so this is a planning decision, not a broken class.
@@ -75,7 +75,7 @@ Cancelling (Microsoft Customer Agreement billing account): a prorated refund is 
 
 ## Related setup guides
 
-- [Copilot Credits for GitHub Copilot agents and Work IQ](./08-tenant-credit-setup.md)
+- [Copilot Credits for Microsoft Copilot harness agents and Work IQ](./08-tenant-credit-setup.md)
 - [Apps in Copilot Studio](./09-copilot-studio-apps-setup.md)
 - [Copilot Cowork access and billing](./07-cowork-tenant-setup.md)
 

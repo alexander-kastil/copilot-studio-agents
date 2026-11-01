@@ -16,9 +16,9 @@ Because the harness owns that sequence, it also fixes what an agent can do at al
 |---|---|---|---|
 | Classic | Standard | A trigger phrase you wrote matches a topic, and the topic runs its fixed path | [Standard Agents: Create & Configure](../../03-cs-basics/01-standard-agents/readme.md#the-orchestration-setting) |
 | Generative | Standard | The orchestrator reads the descriptions of your topics, tools, knowledge and agents and picks the ones that fit the request | [Generative Orchestration & Multi-Agent Routing](../../05-cs-advanced/03-multi-agent/readme.md) |
-| Enhanced | GitHub Copilot | The agent breaks the goal into steps, runs one, checks the result, then continues, changes course, asks the user or stops | [The Unified Build Surface and the New Orchestrator](../../06-cs-gh-copilot/02-unified-build-and-orchestrator/readme.md) |
+| Enhanced | Microsoft Copilot | The agent breaks the goal into steps, runs one, checks the result, then continues, changes course, asks the user or stops | [The Unified Build Surface and the New Orchestrator](../../06-cs-copilot-harness/02-unified-build-and-orchestrator/readme.md) |
 
-A Standard agent lets you choose classic or generative orchestration; a GitHub Copilot agent always plans with enhanced orchestration. A planning agent still hands fixed steps to a workflow: when a transaction must pass the same validation and approval every time, the agent gathers the inputs and calls the workflow once they are complete.
+A Standard agent lets you choose classic or generative orchestration; a Microsoft Copilot harness agent always plans with enhanced orchestration. A planning agent still hands fixed steps to a workflow: when a transaction must pass the same validation and approval every time, the agent gathers the inputs and calls the workflow once they are complete.
 
 ---
 
@@ -28,20 +28,20 @@ Microsoft's harness overview lists four harnesses. The Learn training module on 
 
 | Harness | Pick it when | What it adds | Publishes to | Billing | In this course |
 |---|---|---|---|---|---|
-| GitHub Copilot | The work is a multistep process whose path depends on what each step returns | Planning and recovery from failed steps, Word, Excel, PowerPoint and PDF files, skills, memory | Internal teams or external customers | Copilot Credits from the first build step | [Module 6](../../06-cs-gh-copilot/readme.md) |
+| Microsoft Copilot | The work is a multistep process whose path depends on what each step returns | Planning and recovery from failed steps, Word, Excel, PowerPoint and PDF files, skills, memory | Internal teams or external customers | Copilot Credits from the first build step | [Module 6](../../06-cs-copilot-harness/readme.md) |
 | Standard | Every request must follow the paths and rules a maker defined | Topics, trigger phrases, branches, agent flows, classic or generative orchestration | Internal teams or external customers | Standard Copilot Studio licensing, no extra credits for Microsoft 365 Copilot users in Microsoft 365 | Modules [3](../../03-cs-basics/readme.md) to [5](../../05-cs-advanced/readme.md) |
 | Copilot chat | Employees should get grounded answers inside the Copilot Chat they already use | Your organization's knowledge in Microsoft 365 Copilot Chat, retrieved with each user's own permissions | Internal teams | Consumption-based or included in a Microsoft 365 Copilot license | The same kind of declarative agent that [Agent Builder](../05-chat-productivity/readme.md#agent-builder) builds |
 | Customer Conversation (preview) | Customers reach the agent through website chat or a phone number and need a person when it can't help | Sub-agents for focused intents, each with an escalation path to a human representative, plus skills and memory | Website chat or a phone number | Copilot Credits | Not built here; [Voice Agents](../../05-cs-advanced/06-voice/readme.md) builds voice on Standard agents |
 
-![Four harness cards: GitHub Copilot reasons toward a goal and bills Copilot Credits, Standard follows the topics and paths you define, Copilot chat extends Microsoft 365 Copilot Chat for employees, and Customer Conversation serves customers over chat and voice with a handover to a person. A banner below says the harness is chosen once, when the agent is created.](../pptx/images/03-01-four-harnesses.svg)
+![Four harness cards: Microsoft Copilot reasons toward a goal and bills Copilot Credits, Standard follows the topics and paths you define, Copilot chat extends Microsoft 365 Copilot Chat for employees, and Customer Conversation serves customers over chat and voice with a handover to a person. A banner below says the harness is chosen once, when the agent is created.](../pptx/images/03-01-four-harnesses.svg)
 
-The name GitHub Copilot harness points to technology the harness shares with GitHub Copilot. The agents run in Copilot Studio under its privacy, security and data residency commitments, and customer data isn't sent to the GitHub Copilot service.
+Until October 2026 the Microsoft Copilot harness was called the GitHub Copilot harness, because it shares technology with GitHub Copilot; the rename changes no capability or billing. The agents run in Copilot Studio under its privacy, security and data residency commitments, and customer data isn't sent to the GitHub Copilot service.
 
 ---
 
 ## Choose Before You Build
 
-The harness is fixed at creation. A Standard agent can't be converted into a GitHub Copilot agent or back, so changing your mind means building the agent again. Answer five questions before you open a builder:
+The harness is fixed at creation. A Standard agent can't be converted into a Microsoft Copilot harness agent or back, so changing your mind means building the agent again. Answer five questions before you open a builder:
 
 1. Should the agent live inside Microsoft 365 Copilot Chat for employees, or be an agent of its own?
 2. Who reaches it, and where: employees in Teams and Copilot, or customers on a website or a phone line?
@@ -49,14 +49,14 @@ The harness is fixed at creation. A Standard agent can't be converted into a Git
 4. Does the work span several tools, files or earlier conversations, and must it recover when a step fails?
 5. Which billing fits: Copilot Credits per use, or the licenses your users already hold?
 
-![A decision path for choosing a harness: extend Copilot Chat for employees leads to the Copilot chat harness; customers by chat or phone with a handover to a person lead to Customer Conversation; fixed paths a maker defines lead to Standard; planning across tools and files with memory and recovery leads to GitHub Copilot, otherwise Standard. A side note asks where users reach the agent and which billing fits.](../pptx/images/03-02-choose-a-harness.svg)
+![A decision path for choosing a harness: extend Copilot Chat for employees leads to the Copilot chat harness; customers by chat or phone with a handover to a person lead to Customer Conversation; fixed paths a maker defines lead to Standard; planning across tools and files with memory and recovery leads to Microsoft Copilot, otherwise Standard. A side note asks where users reach the agent and which billing fits.](../pptx/images/03-02-choose-a-harness.svg)
 
 When a requirement mixes answers, decide by the dominant job and the control it needs. A solution can combine several agents and workflows, but each agent runs on exactly one harness.
 
 | Requirement | Harness | Deciding answer |
 |---|---|---|
 | An IT help desk that asks for the asset tag, checks the warranty date and offers exactly three return options | Standard | Fixed questions and branches a maker controls |
-| A buyer's assistant that compares a quarter of supplier quotes in Excel, drafts a PowerPoint summary and asks the buyer about outliers | GitHub Copilot | Files and several steps whose order depends on the data |
+| A buyer's assistant that compares a quarter of supplier quotes in Excel, drafts a PowerPoint summary and asks the buyer about outliers | Microsoft Copilot | Files and several steps whose order depends on the data |
 | HR policy answers for employees inside Copilot Chat, from the HR SharePoint site | Copilot chat | Extends Copilot Chat; each employee sees only what they may open |
 | A parcel line customers call, handing over to a dispatcher when a delivery is lost | Customer Conversation | Customers by phone, with a person behind the agent |
 
@@ -72,13 +72,13 @@ Every agent goes through the same five stages, whichever harness runs it: create
 
 | Stage | What you do | Where this course teaches it |
 |---|---|---|
-| Create | Name the purpose and pick the harness | [Module 3](../../03-cs-basics/readme.md) for Standard agents, [module 6](../../06-cs-gh-copilot/readme.md) for GitHub Copilot agents |
+| Create | Name the purpose and pick the harness | [Module 3](../../03-cs-basics/readme.md) for Standard agents, [module 6](../../06-cs-copilot-harness/readme.md) for Microsoft Copilot harness agents |
 | Build | Write instructions, add knowledge and tools, pick the model, set boundaries | Modules 3 to 6 |
-| Test | Try requests in the test chat or Preview, then run an evaluation set | [Test and Evaluate Standard Agents](../../05-cs-advanced/07-evaluations/readme.md), [Test and Evaluate Copilot Studio Agents](../../06-cs-gh-copilot/07-evaluations/readme.md) |
+| Test | Try requests in the test chat or Preview, then run an evaluation set | [Test and Evaluate Standard Agents](../../05-cs-advanced/07-evaluations/readme.md), [Test and Evaluate Copilot Studio Agents](../../06-cs-copilot-harness/07-evaluations/readme.md) |
 | Publish | Release the agent to its channels | [Publishing to Teams & Copilot](../../03-cs-basics/06-publishing/readme.md), [module 7](../../07-cs-maintaining/readme.md) |
-| Monitor | Review real conversations, tasks and credits | The **Monitor** tab, used from [module 6](../../06-cs-gh-copilot/readme.md) on |
+| Monitor | Review real conversations, tasks and credits | The **Monitor** tab, used from [module 6](../../06-cs-copilot-harness/readme.md) on |
 
-A test chat shows one answer to one question. An evaluation runs a fixed set of cases, so two versions of an agent can be compared on the same evidence, and Monitor shows what real users did after the publish. The screens differ by harness: a Standard agent spreads the stages across tabs such as **Overview**, **Topics**, **Activity**, **Evaluation** and **Monitor**, while a GitHub Copilot agent groups them into **Build**, **Preview**, **Evaluate** and **Monitor**.
+A test chat shows one answer to one question. An evaluation runs a fixed set of cases, so two versions of an agent can be compared on the same evidence, and Monitor shows what real users did after the publish. The screens differ by harness: a Standard agent spreads the stages across tabs such as **Overview**, **Topics**, **Activity**, **Evaluation** and **Monitor**, while a Microsoft Copilot harness agent groups them into **Build**, **Preview**, **Evaluate** and **Monitor**.
 
 ---
 

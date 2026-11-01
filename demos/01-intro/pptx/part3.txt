@@ -54,7 +54,7 @@ Layout: Two columns. Left column: the bullets. Right column, wider than the left
 ### The harness decides whether building draws credits
 - **Standard agents** run zero-rated for licensed users in Microsoft 365 channels
 - Their test chat costs nothing: every Standard agent demo ran at **0 credits**
-- **GitHub Copilot agents**, workflows and apps bill from the first build step
+- **Microsoft Copilot harness agents**, workflows and apps bill from the first build step
 - The Copilot Studio home page marks the paths that use **Copilot Credits**
 
 Image: https://integrationsmediacreator.blob.core.windows.net/slide-production/copilot-studio-agents/01-intro/06-02-harness-credits.png?se=2026-10-23T05%3A45Z&sp=r&sv=2026-04-06&sr=c&skoid=233a6446-c176-4ee3-8287-218af80bef74&sktid=d92b247e-90e0-4469-a129-6a32866c0d0a&skt=2026-10-22T17%3A45%3A45Z&ske=2026-10-23T05%3A45%3A00Z&sks=b&skv=2026-04-06&sig=d0y%2BcVsG691lKFiScr6fTGJzCyCa4a8a%2Bi5%2BlzO/RBk%3D
@@ -65,7 +65,7 @@ Layout: Two columns. Left column: the bullets. Right column, wider than the left
 # Where a run's cost shows
 ### Billed credits per agent in the Power Platform admin center
 - **Manage Agents** lists billed credits per agent, channel and feature
-- A GitHub Copilot agent: **169.72 credits** for five Preview sessions
+- A Microsoft Copilot harness agent: **169.72 credits** for five Preview sessions
 - One workflow run: **26.67 credits** on the workflow-agents channel
 - Work IQ API and Cowork costs show only in Microsoft 365 **Cost management**
 

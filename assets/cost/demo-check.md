@@ -30,7 +30,7 @@
 | 05/01 Autonomous | CS-Returns Agent | ✅ | ✅ | | | 0 CC + Work IQ n/a [4] |
 | 05/03 Multi-agent | CS-Business Travel Planner | ✅ | ✅ | | | 0 CC [1] |
 | 05/05 Foundry agents | CS-Compliance Agent | ✅ | ✅ | 14.1K [5] | n/a [5] | 0 CC [1] |
-| **Module 06: GitHub Copilot Agents in Copilot Studio** | | | | | | |
+| **Module 06: Microsoft Copilot Harness Agents in Copilot Studio** | | | | | | |
 | 06/01 Build and ground | GH-Health Advisor | ✅ | ✅ | | | 169.7 CC [6] |
 | 06/02 Reasoning trace | GH-Health Advisor | ✅ | ✅ | | | incl. above |
 | 06/03 Agent skills | GH-Health Advisor | ✅ | ✅ | | | incl. above |

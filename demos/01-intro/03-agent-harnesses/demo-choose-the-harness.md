@@ -9,13 +9,13 @@ A help desk team asks for "an agent" and gets the wrong one: a scripted bot for 
 ## What you'll build
 
 - A map of where each harness starts in Copilot Studio.
-- A side-by-side reading of one help desk job built on the standard harness and on the GitHub Copilot harness.
+- A side-by-side reading of one help desk job built on the standard harness and on the Microsoft Copilot harness.
 - A harness decision record for four Grey Logistics help desk requests: the harness, the deciding answer, and what the agent may do alone, confirm first or hand to a person.
 
 ## Prerequisites
 
-- Maker access to a Copilot Studio environment that holds at least one Standard agent and one GitHub Copilot agent. In the class environment, **CS-Grey Logistics IT Help Desk** and **GH-Grey Logistics IT Help Desk** do the same job on the two harnesses.
-- Nothing to install. The demo creates no agent and sends no message to a GitHub Copilot agent, so it uses no Copilot Credits.
+- Maker access to a Copilot Studio environment that holds at least one Standard agent and one Microsoft Copilot harness agent. In the class environment, **CS-Grey Logistics IT Help Desk** and **GH-Grey Logistics IT Help Desk** do the same job on the two harnesses.
+- Nothing to install. The demo creates no agent and sends no message to a Microsoft Copilot harness agent, so it uses no Copilot Credits.
 
 ## Exercise 1: Find where each harness starts
 
@@ -60,9 +60,9 @@ Expected: the tabs **Overview**, **Knowledge**, **Tools**, **Agents**, **Topics*
 
 2. Go back to **Agents** and open **GH-Grey Logistics IT Help Desk**. Stay on **Build**.
 
-Expected: the tabs **Build**, **Preview**, **Evaluate** and **Monitor**, the **Instructions** in the middle, and a right panel with **Model** (**Claude Sonnet 4.6**), **Channels**, **Skills** (**vpn-wont-connect**), **Tools**, **Knowledge**, **Connected agents** and a **Memory** switch. The same VPN rule here uses the skill `vpn-wont-connect`: the standard harness routes to a topic the maker drew, the GitHub Copilot harness to a skill the agent applies as it plans.
+Expected: the tabs **Build**, **Preview**, **Evaluate** and **Monitor**, the **Instructions** in the middle, and a right panel with **Model** (**Claude Sonnet 4.6**), **Channels**, **Skills** (**vpn-wont-connect**), **Tools**, **Knowledge**, **Connected agents** and a **Memory** switch. The same VPN rule here uses the skill `vpn-wont-connect`: the standard harness routes to a topic the maker drew, the Microsoft Copilot harness to a skill the agent applies as it plans.
 
-> **Warning:** Don't open **Preview** on the GitHub Copilot agent during this demo. Every message there bills Copilot Credits.
+> **Warning:** Don't open **Preview** on the Microsoft Copilot harness agent during this demo. Every message there bills Copilot Credits.
 
 ## Exercise 4: Decide the harness for four requests
 
@@ -84,7 +84,7 @@ Expected: a decision record like this one.
 | Request | Harness | Deciding answer | Proceed | Confirm | Escalate |
 |---|---|---|---|---|---|
 | VPN drops every morning | Standard | The same checks every time, in a maker's order | Show the next check | Open a help desk ticket | Reset the user's network account |
-| Missing inventory items | GitHub Copilot | Two files, and the next step depends on what the comparison finds | Read both exports | Save the comparison workbook to the team site | Write off the missing stock |
+| Missing inventory items | Microsoft Copilot | Two files, and the next step depends on what the comparison finds | Read both exports | Save the comparison workbook to the team site | Write off the missing stock |
 | First-class rail policy | Copilot chat | Employees, inside Copilot Chat, from SharePoint they may open | Answer with a link to the policy | | Approve an exception to the policy |
 | Where is my shipment | Customer Conversation | Customers by phone, with a person behind the agent | Read the tracking status | Change the delivery address | Hand a lost parcel to a dispatcher |
 
@@ -94,9 +94,9 @@ The control line doesn't replace platform security: sign-in, permissions and dat
 
 | Symptom | Likely cause | Fix |
 |---|---|---|
-| **Home** shows no **GitHub Copilot** cards | The environment doesn't offer GitHub Copilot agents | Switch to an environment whose **New agent** menu offers **Agent** with the **GitHub Copilot** badge |
-| An agent opens with a layout you didn't expect | It runs on the other harness: **Topics** among the tabs means Standard, **Build**, **Preview**, **Evaluate** and **Monitor** mean GitHub Copilot | Read **Powered by** in the Agents list before you open the agent |
-| Credits appear for the demo agent afterwards | A message was sent in **Preview** of the GitHub Copilot agent | Read the GitHub Copilot agent on **Build** only |
+| **Home** shows no **GitHub Copilot** cards | The environment doesn't offer Microsoft Copilot harness agents | Switch to an environment whose **New agent** menu offers **Agent** with the **GitHub Copilot** badge |
+| An agent opens with a layout you didn't expect | It runs on the other harness: **Topics** among the tabs means Standard, **Build**, **Preview**, **Evaluate** and **Monitor** mean Microsoft Copilot | Read **Powered by** in the Agents list before you open the agent |
+| Credits appear for the demo agent afterwards | A message was sent in **Preview** of the Microsoft Copilot harness agent | Read the Microsoft Copilot harness agent on **Build** only |
 | No card for the Copilot chat harness | Those agents aren't created from the **New agent** menu | Use the **Microsoft Copilot** page in Copilot Studio, or Agent Builder in Microsoft 365 Copilot |
 
 ## Summary
@@ -104,7 +104,7 @@ The control line doesn't replace platform security: sign-in, permissions and dat
 You mapped where Copilot Studio asks for the harness and turned four requests into a written harness decision. You can now:
 
 - find the harness of any agent in the **Powered by** column before you change or rebuild it
-- tell a Standard agent from a GitHub Copilot agent by its tabs and its routing
+- tell a Standard agent from a Microsoft Copilot harness agent by its tabs and its routing
 - pick a harness with the five questions and set a Proceed, Confirm and Escalate line for its actions
 
 [Where to Build and What It Costs](../04-where-to-build/readme.md) shows how each choice bills.

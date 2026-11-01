@@ -91,6 +91,22 @@ Public store listings are submitted through Partner Center.
 
 ---
 
+## Importing a Claude Plugin
+
+Many teams already keep their skills in a Claude Code plugin. The `wiqd plugin import` command reads a Claude, Cursor or Open Plugin folder and turns it into a Microsoft 365 plugin project, which WIQD then validates, provisions, packages and shares like a plugin it created itself. Skills use the same `SKILL.md` format on both sides and are copied as they are, and the MCP servers in `.mcp.json` become the plugin's connectors.
+
+![A Claude plugin folder passes through the wiqd plugin import command into a Microsoft 365 plugin: plugin.json becomes manifest.json, the skills are copied as they are and .mcp.json becomes the connectors, while commands, agents and hooks are marked not converted.](../pptx/images/05-04-import-a-claude-plugin.svg)
+
+```powershell
+wiqd plugin import --path <claude-plugin-folder> --privacy-url <privacy-url> --terms-url <terms-url> --website-url <website-url>
+```
+
+The Microsoft 365 manifest requires a privacy and a terms link, so the first import needs both. The website link is needed when the plugin's `plugin.json` names no homepage or author; without it the import stops with `developer.websiteUrl could not be resolved`. Microsoft Learn says an imported project cannot yet be provisioned, packaged or shared, but in the course tenant on 2026-10-21 (WIQD 0.19.0) all three ran, as [Exercise 7 of the lab](../../../labs/02-cowork/lab-03-cowork-plugins.md#exercise-7-write-once-run-in-claude-and-copilot) shows.
+
+> **Important:** Only skills and MCP servers make the trip. Slash commands (`commands/`), sub-agents (`agents/`) and hooks (`hooks/`) are not yet supported in the Microsoft 365 manifest, and `settings.json` and `bin/` do not apply, so the import leaves all of them behind. A Claude harness built mostly from commands, agents and hooks arrives in Cowork as its skills and connectors only.
+
+---
+
 ## Community Plugins
 
 Beyond the official Microsoft 365 plugins, the community publishes ready-to-install Cowork plugins. The [awesome-copilot-cowork-plugins](https://github.com/alexclowe/awesome-copilot-cowork-plugins) repository collects packaged plugins you can upload through **Customize** > **Add** > **Upload**, each a manifest plus its agent skills. The hands-on demo uses the `dietitian` plugin from that repository to show how an external, domain-specific plugin drops into Cowork and starts producing expert output.

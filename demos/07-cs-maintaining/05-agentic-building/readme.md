@@ -1,26 +1,26 @@
 # Agentic Building: Copilot Studio Plugins for Coding Agents
 
-Topic 3 put agents under source control; this topic hands the authoring itself to a coding agent. Microsoft publishes two open-source plugins that let Claude Code, GitHub Copilot CLI and VS Code clone a Copilot Studio agent to `.mcs.yml` files, edit it, validate it, push it back and test it from the terminal. The class needs both: one for the Standard agents of modules 3 to 5, one for the GitHub Copilot agents of module 6.
+Topic 3 put agents under source control; this topic hands the authoring itself to a coding agent. Microsoft publishes two open-source plugins that let Claude Code, GitHub Copilot CLI and VS Code clone a Copilot Studio agent to `.mcs.yml` files, edit it, validate it, push it back and test it from the terminal. The class needs both: one for the Standard agents of modules 3 to 5, one for the Microsoft Copilot harness agents of module 6.
 
 ## What this topic covers
 
 - The two plugins, which agent type each one targets, and their two marketplaces
 - How `copilot-studio` is wired: one entry point, four sub-agents, 31 skills
 - The local, draft and published lifecycle, and the rules that keep a push from failing
-- `mcs-assistant` for GitHub Copilot agents, including migrating a Standard agent
+- `mcs-assistant` for Microsoft Copilot harness agents, including migrating a Standard agent
 - Installing both plugins, switching between them per module, and keeping them current
 - The sharp edges of research-grade tooling
 
 ## The two plugins
 
-| | Standard agents | GitHub Copilot agents |
+| | Standard agents | Microsoft Copilot harness agents |
 | --- | --- | --- |
 | Plugin | `copilot-studio@skills-for-copilot-studio` | `mcs-assistant@copilot-studio-plugin` |
 | Repo | [microsoft/skills-for-copilot-studio](https://github.com/microsoft/skills-for-copilot-studio) | [microsoft/copilot-studio-plugin](https://github.com/microsoft/copilot-studio-plugin) |
-| Agent type | Standard harness (classic orchestration) | GitHub Copilot harness (agentic loop), plus migration from Standard |
+| Agent type | Standard harness (classic orchestration) | Microsoft Copilot harness (agentic loop), plus migration from Standard |
 | Reaches Copilot Studio through | VS Code Copilot Studio extension | Power Platform CLI (`pac`) 2.9.3 or later |
 | Status on 22 Oct 2026 | Version 1.0.11, marked as an experimental research project | Version 1.0.2, work in progress, support through GitHub Issues only |
-| Used in | [03-cs-basics](../../03-cs-basics/readme.md), [04-cs-tools](../../04-cs-tools/readme.md), [05-cs-advanced](../../05-cs-advanced/readme.md) | [06-cs-gh-copilot](../../06-cs-gh-copilot/readme.md) |
+| Used in | [03-cs-basics](../../03-cs-basics/readme.md), [04-cs-tools](../../04-cs-tools/readme.md), [05-cs-advanced](../../05-cs-advanced/readme.md) | [06-cs-copilot-harness](../../06-cs-copilot-harness/readme.md) |
 
 Both plugins come from the Microsoft Copilot Studio CAT team and are MIT licensed. Each repo is its own marketplace, so you add two marketplaces and install one plugin from each. Both warn that the YAML schema can change without notice, so review generated YAML before you push it to an environment.
 
@@ -58,14 +58,14 @@ Your agent lives in a Power Platform environment, not on your laptop. The plugin
 
 Clone, pull and push run through `LanguageServerHost`, a binary inside the Copilot Studio VS Code extension. The extension must be installed, but VS Code doesn't have to be running.
 
-## mcs-assistant: GitHub Copilot agents
+## mcs-assistant: Microsoft Copilot harness agents
 
 `mcs-assistant` works through `pac copilot` and covers the full lifecycle, including creating, publishing and deleting agents. Its skills are `create-agent`, `clone-agent`, `pull-agent`, `push-agent`, `publish-agent`, `delete-agent`, `add-knowledge` and `add-skill`, run by the sub-agents `copilot-studio-architect`, `copilot-studio-describer`, `copilot-studio-init` and `copilot-studio-manage`.
 
 | Command | Does |
 | --- | --- |
-| `/mcs-assistant:migrate` | Migrates a Standard agent to a GitHub Copilot agent, cloning it first when it isn't local; writes a resumable `MIGRATION-PLAN-<id>.md` next to the agent folder |
-| `/mcs-assistant:chat` | Chats with a published GitHub Copilot agent from the terminal to test it |
+| `/mcs-assistant:migrate` | Migrates a Standard agent to a Microsoft Copilot harness agent, cloning it first when it isn't local; writes a resumable `MIGRATION-PLAN-<id>.md` next to the agent folder |
+| `/mcs-assistant:chat` | Chats with a published Microsoft Copilot harness agent from the terminal to test it |
 
 `chat` signs in with a public client app registration in Microsoft Entra ID: platform **Mobile and desktop applications**, redirect URI `http://localhost`, delegated permission **Power Platform API > CopilotStudio.Copilots.Invoke**. The agent must be published first, otherwise the chat stops with a 404.
 
@@ -152,7 +152,7 @@ Modules 3 to 5, Standard agents:
 }
 ```
 
-Module 6, GitHub Copilot agents and migration:
+Module 6, Microsoft Copilot harness agents and migration:
 
 ```json
 {

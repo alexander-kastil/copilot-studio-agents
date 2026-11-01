@@ -35,4 +35,4 @@ Mobile or custom app: the app talks to the agent over the Direct Line API. That 
 
 WhatsApp: it runs through Azure Communication Services and accepts only No authentication or manual authentication. Agents connected before October 23, 2026 keep working; no new connection can be set up after that date.
 
-Agent types: everything here applies to Standard agents. GitHub Copilot agents publish to Microsoft 365, Teams and a website today.
+Agent types: everything here applies to Standard agents. Microsoft Copilot harness agents publish to Microsoft 365, Teams and a website today.

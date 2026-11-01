@@ -20,7 +20,7 @@ visual-prompt: >
   "Reports and Microsoft Purview": Cowork usage report with active users, total tasks, scheduled
   versus user-initiated and CSV export, refreshed once a day; Purview with auditing, sensitivity
   labels, DLP and eDiscovery.
-order: 20
+order: 21
 source: demos/02-cowork/06-staying-in-control/readme.md
 gamma_prompt: >
   Slide titled "Governance for admins", subtitle "Where each Cowork control lives". The provided

@@ -15,7 +15,7 @@ visual-prompt: >
   code: fastest to ship" on the left to "Code: most control" on the right. Green #e9f7ef card "Agent
   Builder & SharePoint agents" (No code; grounded Q&A over sites and files) with pill "Module 1";
   green #e9f7ef card "Cowork skills & plugins" (No code; recurring knowledge work) with pill "Module
-  2"; blue #eaf2ff card "Copilot Studio" (Low code; four harnesses: GitHub Copilot, standard,
+  2"; blue #eaf2ff card "Copilot Studio" (Low code; four harnesses: Microsoft Copilot, standard,
   Copilot chat, Customer Conversation) with a thick border and pill "Most of this course"; grey #f6f8fa card "Pro-code"
   (Agents Toolkit, Agents SDK, Microsoft Foundry) with pill "Out of scope here". Each card drops a
   line to a dot on the axis. Below the axis, one wide purple #f3edff bar "Serves every path" holding

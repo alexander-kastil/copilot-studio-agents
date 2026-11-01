@@ -4,7 +4,7 @@ An agent with an account has a name and a mailbox, but instructions alone do not
 
 ## Triggers Start the Cycle
 
-On October 15, 2026, Microsoft announced triggers for agents on the GitHub Copilot harness. When configured, an external signal (such as an email) or a set cadence starts an agent's cycle, so the agent runs a shared process without anyone opening a chat. The rollout runs through the Frontier program, alongside agent accounts and business process memory.
+On October 15, 2026, Microsoft announced triggers for agents on the Microsoft Copilot harness. When configured, an external signal (such as an email) or a set cadence starts an agent's cycle, so the agent runs a shared process without anyone opening a chat. The rollout runs through the Frontier program, alongside agent accounts and business process memory.
 
 The Learn example puts the rule plainly: instructions alone don't create a schedule or grant access. Writing "every Monday, prepare the review" in the instructions does nothing until a recurrence trigger exists and the tools can reach the sources. Treat the trigger, the tools, and the instructions as three separate pieces of configuration that must all be present.
 

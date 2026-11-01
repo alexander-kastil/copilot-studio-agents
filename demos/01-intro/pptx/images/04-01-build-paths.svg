@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
   <title id="t">Four build paths on one build-effort scale</title>
-  <desc id="d">The four build paths are ordered by build effort. Agent Builder and SharePoint agents need no code and answer grounded questions over sites and files; they come in module 1. Cowork skills and plugins need no code and take on recurring knowledge work; they come in module 2. Copilot Studio is low code with four harnesses (GitHub Copilot, standard, Copilot chat and Customer Conversation) and is most of this course. Pro-code with the Agents Toolkit, the Agents SDK and Microsoft Foundry is out of scope here. The scale runs from no code, fastest to ship, to code, most control. Below it one bar serves every path: Copilot connectors for external content, MCP servers for tools, and plugins as one installable package.</desc>
+  <desc id="d">The four build paths are ordered by build effort. Agent Builder and SharePoint agents need no code and answer grounded questions over sites and files; they come in module 1. Cowork skills and plugins need no code and take on recurring knowledge work; they come in module 2. Copilot Studio is low code with four harnesses (Microsoft Copilot, standard, Copilot chat and Customer Conversation) and is most of this course. Pro-code with the Agents Toolkit, the Agents SDK and Microsoft Foundry is out of scope here. The scale runs from no code, fastest to ship, to code, most control. Below it one bar serves every path: Copilot connectors for external content, MCP servers for tools, and plugins as one installable package.</desc>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
       <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
@@ -30,7 +30,7 @@
     <text x="1180" y="162" font-size="34" font-weight="700" fill="#24292f">Copilot Studio</text>
     <text x="1180" y="250" font-size="30" font-weight="600" fill="#24292f">Low code</text>
     <text x="1180" y="292" font-size="28" fill="#57606a">Four harnesses:</text>
-    <text x="1180" y="328" font-size="28" fill="#57606a">GitHub Copilot,</text>
+    <text x="1180" y="328" font-size="28" fill="#57606a">Microsoft Copilot,</text>
     <text x="1180" y="364" font-size="28" fill="#57606a">standard, Copilot chat,</text>
     <text x="1180" y="400" font-size="28" fill="#57606a">Customer Conversation</text>
     <rect x="1020" y="430" width="320" height="66" rx="33" fill="#ffffff" stroke="#57606a" stroke-width="3"/>

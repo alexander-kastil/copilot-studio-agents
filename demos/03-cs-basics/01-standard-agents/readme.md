@@ -13,10 +13,10 @@ A harness is the runtime between your agent's configuration and the model. It de
 | Harness | Learn describes it as | Typical fit |
 |---------|-----------------------|-------------|
 | Standard harness (Standard agents) | Rule-based agents and structured, repeatable conversations that follow the topics and paths you define | A help desk that answers common questions and routes simple requests through a workflow |
-| GitHub Copilot harness (GitHub Copilot agents) | Reasoning-heavy agents that break a goal into steps, recover from failed steps, and create Word, Excel, PowerPoint, and PDF files | A multistep business process such as matching invoices to purchase orders |
+| Microsoft Copilot harness (Microsoft Copilot harness agents) | Reasoning-heavy agents that break a goal into steps, recover from failed steps, and create Word, Excel, PowerPoint, and PDF files | A multistep business process such as matching invoices to purchase orders |
 | Copilot chat harness | Agents that extend Microsoft Copilot Chat with enterprise knowledge | An onboarding agent that answers from SharePoint inside Copilot Chat |
 
-An agent never moves between harnesses: you choose once, at creation. Learn states that standard harness agents remain fully supported alongside GitHub Copilot agents, which is why this module teaches Standard agents first. GitHub Copilot agents are covered in [GitHub Copilot Agents in Copilot Studio](../../06-cs-gh-copilot/readme.md).
+An agent never moves between harnesses: you choose once, at creation. Learn states that standard harness agents remain fully supported alongside Microsoft Copilot harness agents, which is why this module teaches Standard agents first. Microsoft Copilot harness agents are covered in [Microsoft Copilot Harness Agents in Copilot Studio](../../06-cs-copilot-harness/readme.md).
 
 ## Creating and opening a Standard agent
 

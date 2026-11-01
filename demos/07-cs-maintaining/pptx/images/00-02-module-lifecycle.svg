@@ -112,7 +112,7 @@
   <text class="s" x="386" y="945" text-anchor="middle">Standard agents</text>
   <rect x="693" y="840" width="533" height="150" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
   <text class="b" x="960" y="905" text-anchor="middle">mcs-assistant plugin</text>
-  <text class="s" x="960" y="945" text-anchor="middle">GitHub Copilot agents, migration</text>
+  <text class="s" x="960" y="945" text-anchor="middle" style="font-size:25px">Microsoft Copilot harness agents, migration</text>
   <rect x="1266" y="840" width="533" height="150" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
   <text class="b" x="1532" y="905" text-anchor="middle">The agent as .mcs.yml files</text>
   <text class="s" x="1532" y="945" text-anchor="middle">clone, validate, pull, push</text>

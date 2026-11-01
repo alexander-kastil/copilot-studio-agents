@@ -187,7 +187,7 @@ Expected: the checklist reply lists tasks with a line each on how to complete th
 
 | Symptom | Likely cause | Fix |
 |---------|--------------|-----|
-| The agent opens with **Build**, **Preview** and **Evaluate** tabs | It was created as a GitHub Copilot agent outside the classic experience | Open the classic experience and create it again from **Agents**, **Create blank agent** |
+| The agent opens with **Build**, **Preview** and **Evaluate** tabs | It was created as a Microsoft Copilot harness agent outside the classic experience | Open the classic experience and create it again from **Agents**, **Create blank agent** |
 | The agent still answers off-topic questions | **Allow ungrounded responses** is on, so the model may use its general knowledge | Keep it on to match the original, or turn it off and retest to show the stricter behavior |
 | **Tenant graph grounding with semantic search** can't be turned on | The agent doesn't use **Authenticate with Microsoft** | Set authentication back to **Authenticate with Microsoft** in **Settings** |
 | The test panel answers with the old behavior | The conversation started before the last **Save** | Select the **Reset** icon and send the message again |

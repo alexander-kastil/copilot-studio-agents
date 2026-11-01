@@ -1,10 +1,10 @@
 # Build and Migrate an Agent from the Terminal
 
-![With Claude Code on the left and Copilot Studio on the right, the Grey Logistics IT Help Desk agent is cloned into src/cs-schema/agents, reviewed by the Advisor with High, Medium and Low findings, given a validated VPN topic, pulled and pushed as a draft, published and point tested, then migrated by mcs-assistant:migrate into GH-Grey Logistics IT Help Desk on the GitHub Copilot harness while the original stays unchanged.](../../../demos/07-cs-maintaining/05-agentic-building/_images/build-and-migrate-from-the-terminal-overview.svg)
+![With Claude Code on the left and Copilot Studio on the right, the Grey Logistics IT Help Desk agent is cloned into src/cs-schema/agents, reviewed by the Advisor with High, Medium and Low findings, given a validated VPN topic, pulled and pushed as a draft, published and point tested, then migrated by mcs-assistant:migrate into GH-Grey Logistics IT Help Desk on the Microsoft Copilot harness while the original stays unchanged.](../../../demos/07-cs-maintaining/05-agentic-building/_images/build-and-migrate-from-the-terminal-overview.svg)
 
-The Grey Logistics IT Help Desk agent from module 3 needs a new topic, a review and, eventually, a move to the GitHub Copilot harness. In the portal that is an afternoon of clicking that nobody can replay. In this lab you hand all three jobs to Claude Code with the two Copilot Studio plugins, and every change lands as a file you can diff.
+The Grey Logistics IT Help Desk agent from module 3 needs a new topic, a review and, eventually, a move to the Microsoft Copilot harness. In the portal that is an afternoon of clicking that nobody can replay. In this lab you hand all three jobs to Claude Code with the two Copilot Studio plugins, and every change lands as a file you can diff.
 
-What you practice here: the clone, author, validate, pull, push, publish and test loop with `copilot-studio`, then a Standard-to-GitHub-Copilot migration with `mcs-assistant`.
+What you practice here: the clone, author, validate, pull, push, publish and test loop with `copilot-studio`, then a Standard-to-Microsoft-Copilot migration with `mcs-assistant`.
 
 Duration: about 60 minutes.
 
@@ -14,7 +14,7 @@ Duration: about 60 minutes.
 - An Advisor review of the agent, with one finding applied.
 - A new VPN troubleshooting topic, validated, pushed as a draft and published.
 - A point test against the published agent.
-- A migrated copy, `GH-Grey Logistics IT Help Desk`, on the GitHub Copilot harness.
+- A migrated copy, `GH-Grey Logistics IT Help Desk`, on the Microsoft Copilot harness.
 
 ## Prerequisites
 
@@ -134,7 +134,7 @@ Expected: pull and push both return `status: ok`, and the push validates every f
 
 > **Note:** A push over stale files fails with `ConcurrencyVersionMismatch`; run pull and push again. A point test of an agent with Microsoft Entra ID authentication goes through the Copilot Studio SDK and needs a public client app registration (redirect URI `http://localhost`, **Allow public client flows** on, delegated permission **Power Platform API** > **CopilotStudio.Copilots.Invoke**) plus a browser sign-in. Claude walks you through both with the plugin's `test-auth` skill.
 
-## Exercise 6: Migrate the agent to the GitHub Copilot harness
+## Exercise 6: Migrate the agent to the Microsoft Copilot harness
 
 `mcs-assistant` migrates a Standard agent into a new agent in the same environment, so the original stays untouched. It creates the empty target agent, describes the source agent and asks you to approve a migration plan. Only then does it convert the supported actions into tools, build the new agent and push it.
 
@@ -172,7 +172,7 @@ pac auth create --environment https://<your-org>.crm.dynamics.com/
 8. Confirm the pull into the new agent folder when Claude asks before the push. If the push fails with `A record with the specified key values does not exist in connectionreference entity`, the plan uses a connector that has no connection reference in the environment yet. Ask Claude to create it for the existing connection, or to skip the tool, and push again.
 9. Open the migrated agent in Copilot Studio, check that **Skills** lists the VPN skill, then select **Preview** and send `My VPN won't connect on my laptop`.
 
-Expected: a new folder `GH-Grey Logistics IT Help Desk` next to the source agent, a `MIGRATION-PLAN-<id>.md` file in the parent folder that records each step, and a new GitHub Copilot agent of that name in your environment with the migrated instructions and the VPN topic turned into the skill `vpn-wont-connect`. In **Preview**, the step list shows **Used skill vpn-wont-connect** and the agent asks for Windows or macOS. The original Standard agent is unchanged.
+Expected: a new folder `GH-Grey Logistics IT Help Desk` next to the source agent, a `MIGRATION-PLAN-<id>.md` file in the parent folder that records each step, and a new Microsoft Copilot harness agent of that name in your environment with the migrated instructions and the VPN topic turned into the skill `vpn-wont-connect`. In **Preview**, the step list shows **Used skill vpn-wont-connect** and the agent asks for Windows or macOS. The original Standard agent is unchanged.
 
 > **Note:** If `pac` prints a version below 2.9.3 although you installed the .NET tool, an older MSI install of the Power Platform CLI comes first on your PATH. Uninstall **Microsoft Power Platform CLI** under **Settings** > **Apps**, or move `%USERPROFILE%\.dotnet\tools` to the front of your PATH.
 

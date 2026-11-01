@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
   <title id="t">Build and migrate from the terminal: what moves between Claude Code and Copilot Studio</title>
-  <desc id="d">On the left, Claude Code with the copilot-studio plugin active and mcs-assistant switched off; on the right, Copilot Studio in your demo environment. Exercise 2 asks Claude Code to clone the agent, and the Grey Logistics IT Help Desk Standard agent lands in src/cs-schema/agents/Grey Logistics IT Help Desk/ with agent.mcs.yml, topics/ and .mcs. Exercise 3 runs an Advisor review that ranks its findings High, Medium and Low with file and line. Exercise 4 authors a new VPN topic, a new .mcs.yml file that validates with no errors; every change lands as a file you can diff. Exercise 5 asks it to pull, then push, which creates a draft with the topic in the Topics list and the Test pane; after Publish, a point test sends My VPN won't connect on my laptop to the published agent, which returns the operating system question. Exercise 6 runs mcs-assistant:migrate, creates the empty GH-Grey Logistics IT Help Desk on the GitHub Copilot harness, writes MIGRATION-PLAN-&lt;id&gt;.md and, after you approve the plan, builds and pushes it while the original stays unchanged. Dots carry each command across, and the boxes light up in exercise order.</desc>
+  <desc id="d">On the left, Claude Code with the copilot-studio plugin active and mcs-assistant switched off; on the right, Copilot Studio in your demo environment. Exercise 2 asks Claude Code to clone the agent, and the Grey Logistics IT Help Desk Standard agent lands in src/cs-schema/agents/Grey Logistics IT Help Desk/ with agent.mcs.yml, topics/ and .mcs. Exercise 3 runs an Advisor review that ranks its findings High, Medium and Low with file and line. Exercise 4 authors a new VPN topic, a new .mcs.yml file that validates with no errors; every change lands as a file you can diff. Exercise 5 asks it to pull, then push, which creates a draft with the topic in the Topics list and the Test pane; after Publish, a point test sends My VPN won't connect on my laptop to the published agent, which returns the operating system question. Exercise 6 runs mcs-assistant:migrate, creates the empty GH-Grey Logistics IT Help Desk on the Microsoft Copilot harness, writes MIGRATION-PLAN-&lt;id&gt;.md and, after you approve the plan, builds and pushes it while the original stays unchanged. Dots carry each command across, and the boxes light up in exercise order.</desc>
   <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
   <defs>
     <style>
@@ -53,7 +53,7 @@
   <text class="num" x="830" y="538">5</text>
   <text class="code26" x="862" y="538">pull, push</text>
   <text class="sc" x="960" y="718">My VPN won't connect on my laptop</text>
-  <text class="sc" x="960" y="893">Standard to GitHub Copilot</text>
+  <text class="sc" x="960" y="893">Standard to Microsoft Copilot</text>
   <text class="sc" x="960" y="405">every change lands</text>
   <text class="sc" x="960" y="441">as a file you can diff</text>
   <text class="k" x="1560" y="632">Publish</text>
@@ -103,7 +103,7 @@
   <text class="s" x="1250" y="737">returns the operating</text>
   <text class="s" x="1250" y="771">system question</text>
   <text class="k" x="1250" y="868">GH-Grey Logistics IT Help Desk</text>
-  <text class="s" x="1250" y="908">GitHub Copilot harness</text>
+  <text class="s" x="1250" y="908">Microsoft Copilot harness</text>
   <text class="s" x="1250" y="950">created empty, built after you approve,</text>
   <text class="s" x="1250" y="986">original unchanged</text>
 

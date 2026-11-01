@@ -13,7 +13,7 @@ visual-prompt: >
   borders #8c959f 2px, headings #24292f, secondary text #57606a, minimum 28px type, no heading inside
   the image. Three stacked horizontal layers. Top: blue #eaf2ff card "Agent: what you design" with
   three chips "Instructions", "Knowledge", "Tools" and a smaller dashed chip "Skills and memory
-  (GitHub Copilot harness)". Middle, the widest and with a thick border: purple #f3edff card "Harness:
+  (Microsoft Copilot harness)". Middle, the widest and with a thick border: purple #f3edff card "Harness:
   coordinates the work" with four short lines "When to call the model", "What to send it", "How to read
   the reply", "Which step runs next". Bottom: green #e9f7ef card "Model: reasons and writes" with the line
   "Differs in speed, cost and depth". On the left, an arrow labelled "Request" enters the harness; on the

@@ -28,7 +28,7 @@
     },
     {
       "id": "cs-history",
-      "name": "Copilot Studio GitHub Copilot agent > Preview > History > Credits",
+      "name": "Copilot Studio Microsoft Copilot harness agent > Preview > History > Credits",
       "scope": "per Preview session"
     },
     {
@@ -310,7 +310,7 @@
       "topic": "06/01",
       "title": "Build and ground",
       "agent": "GH-Health Advisor",
-      "agentType": "githubCopilot",
+      "agentType": "microsoftCopilot",
       "agentId": "627a3d8f-5bf6-4f59-97e9-6298eac93257",
       "copilotCredits": {
         "billed": 169.72,
@@ -354,21 +354,21 @@
       "topic": "06/02",
       "title": "Reasoning trace",
       "agent": "GH-Health Advisor",
-      "agentType": "githubCopilot",
+      "agentType": "microsoftCopilot",
       "includedIn": "06/01"
     },
     {
       "topic": "06/03",
       "title": "Agent skills",
       "agent": "GH-Health Advisor",
-      "agentType": "githubCopilot",
+      "agentType": "microsoftCopilot",
       "includedIn": "06/01"
     },
     {
       "topic": "06/04",
       "title": "MCP and workflow",
       "agent": "GH-Food Buddy",
-      "agentType": "githubCopilot",
+      "agentType": "microsoftCopilot",
       "agentId": "602b6390-3899-4481-a182-8ef712681178",
       "copilotCredits": {
         "billed": 78.34,
@@ -409,7 +409,7 @@
       "topic": "06/05",
       "title": "Work IQ",
       "agent": "GH-Aurora Account Assistant",
-      "agentType": "githubCopilot",
+      "agentType": "microsoftCopilot",
       "agentId": "1ab5afb2-c032-4287-a50f-c6dd5647618f",
       "copilotCredits": {
         "billed": 46.08,

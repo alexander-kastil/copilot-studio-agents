@@ -17,7 +17,7 @@ Few of the licenses this class needs are per-user seats. Every learner needs a M
 | A GitHub account | Every learner | Class prerequisite | Free |
 | Claude Code or GitHub Copilot CLI | Every learner in [Agentic Building](../../07-cs-maintaining/05-agentic-building/readme.md) | 7 | A Claude plan or a GitHub Copilot plan |
 | A Power Platform billing plan with the **Copilot Studio** meter on the agent environment | The tenant | 4 (computer use), 5 (autonomous runs), 6 (from the first build step), 8; channels outside Microsoft 365 in 7 | Copilot Credits pay-as-you-go, about $0.01 each |
-| The same billing plan on each maker's personal developer environment | Every maker who builds an app | 6 ([Building Apps](../../06-cs-gh-copilot/06-apps/readme.md)) | Copilot Credits pay-as-you-go |
+| The same billing plan on each maker's personal developer environment | Every maker who builds an app | 6 ([Building Apps](../../06-cs-copilot-harness/06-apps/readme.md)) | Copilot Credits pay-as-you-go |
 | A Microsoft 365 spending policy that selects Cowork, the Work IQ API and Copilot Managed Runtime | The tenant | 2 (Cowork), 5 and 6 (Work IQ API), 6 (published apps) | Copilot Credits up to a monthly limit |
 | An Azure subscription and resource group with Owner or Contributor rights | The tenant admin | Pays every pay-as-you-go route; hosts the sample REST API and MCP server in 4 | Azure usage; the sample services ran on the free App Service F1 tier |
 | A Microsoft Foundry project | The instructor | 5 ([Foundry agents](../../05-cs-advanced/04-foundry-agents/readme.md)); Foundry IQ in 6 is optional | Azure usage for the model deployment |
@@ -40,11 +40,11 @@ A Microsoft 365 Copilot license covers Microsoft's own Copilot experiences and t
 | Standard agents (modules 3 to 5) | Yes, in Microsoft 365 channels | The user has no Copilot license, or the agent runs in a channel outside Microsoft 365 |
 | Agent flows, prompts and workflows | Yes, inside a Standard agent used by a licensed user | In all other cases, including runs an autonomous agent starts; test runs aren't billed |
 | Computer use | No | Every step, 5 credits on a standard model and 15 on a premium one |
-| GitHub Copilot agents, workflows and apps (module 6) | No | From the first build step: authoring, Preview, tests and evaluations all bill |
+| Microsoft Copilot harness agents, workflows and apps (module 6) | No | From the first build step: authoring, Preview, tests and evaluations all bill |
 | Work IQ API and the Work IQ MCP server | No | Every call, through a Microsoft 365 spending policy |
 | Cowork (module 2) | Needs the license plus a spending policy | Every task, through a Microsoft 365 spending policy |
 
-The test chat of a Standard agent costs nothing: its answers, actions and Graph grounding aren't counted, which is why every Standard agent demo in this class ran at 0 credits. The GitHub Copilot harness is the opposite. It charges for model tokens, tools and the harness itself from the moment you start building, so plan its credits before module 6 begins.
+The test chat of a Standard agent costs nothing: its answers, actions and Graph grounding aren't counted, which is why every Standard agent demo in this class ran at 0 credits. The Microsoft Copilot harness is the opposite. It charges for model tokens, tools and the harness itself from the moment you start building, so plan its credits before module 6 begins.
 
 ---
 
@@ -54,7 +54,7 @@ Copilot Credits are charged to the place where the work runs, whoever builds it.
 
 | Where the work runs | What runs there | Credit source | Set up in |
 |---|---|---|---|
-| The agent environment | Standard and GitHub Copilot agents, agent flows, workflows, computer use | A pay-as-you-go billing plan with the **Copilot Studio** meter, or an allocation of prepaid credits | Power Platform admin center, **Licensing** > **Copilot Studio** |
+| The agent environment | Standard and Microsoft Copilot harness agents, agent flows, workflows, computer use | A pay-as-you-go billing plan with the **Copilot Studio** meter, or an allocation of prepaid credits | Power Platform admin center, **Licensing** > **Copilot Studio** |
 | The maker's personal developer environment | Building and previewing apps (module 6) | The same billing plan, with this environment added as a target | Power Platform admin center, **Licensing** > **Billing Plans** |
 | The Microsoft 365 tenant | Cowork, the Work IQ API, Copilot Managed Runtime for published apps | A spending policy that selects each service | Microsoft 365 admin center, **Copilot** > **Cost management** |
 
@@ -73,8 +73,8 @@ Most setup problems in this class surface as one of a handful of messages. Each 
 | `No usage quota is available for your account, so this request couldn't be completed.` and the banner *Your organization hasn't set up a pool of credits yet.* | The maker's personal developer environment has no credits, so the app build stops | Add that environment to the billing plan: [Apps in Copilot Studio](../../../setup/09-copilot-studio-apps-setup.md) |
 | `The caller has exhausted the AI credit quota for WorkIQ.` | The spending policy that covers the user reached its monthly limit; retries don't help until the 1st of the next month | Raise the policy limit: [Configure Copilot Credits for the Work IQ API](../../../setup/10-work-iq-credit-quota.md) |
 | *Spending limits for this policy are below the required minimum* | The policy limit is below the minimum the admin center calculates | Raise the limit to at least the minimum shown |
-| Work IQ (Preview) is missing from the MCP list | The tenant has no Work IQ service principal yet | Create it once as a Global Administrator: [Copilot Credits for GitHub Copilot agents and Work IQ](../../../setup/08-tenant-credit-setup.md#4-work-iq-one-time-tenant-setup) |
-| A GitHub Copilot agent won't build or preview | The environment shows Pay-as-you-go **No** and has no allocation | Link the environment to a billing plan: [Copilot Credits for GitHub Copilot agents and Work IQ](../../../setup/08-tenant-credit-setup.md) |
+| Work IQ (Preview) is missing from the MCP list | The tenant has no Work IQ service principal yet | Create it once as a Global Administrator: [Copilot Credits for Microsoft Copilot harness agents and Work IQ](../../../setup/08-tenant-credit-setup.md#4-work-iq-one-time-tenant-setup) |
+| A Microsoft Copilot harness agent won't build or preview | The environment shows Pay-as-you-go **No** and has no allocation | Link the environment to a billing plan: [Copilot Credits for Microsoft Copilot harness agents and Work IQ](../../../setup/08-tenant-credit-setup.md) |
 | An agent stops in the middle of a session | Its per-agent limit with **Stop usage** is lower than one build or preview session | Raise the limit in **Licensing** > **Copilot Studio** > **Manage Agents** |
 | Cowork doesn't appear next to Chat | The user isn't in a spending policy that selects Cowork, the policy is at its limit, or the Copilot license is missing | Check the policy and the license: [Copilot Cowork access and billing](../../../setup/07-cowork-tenant-setup.md) |
 | No **Agent account** button in Copilot Studio | The tenant has no Agent 365 enrollment and no Frontier for AI Teammates licenses | Follow the cheapest-first order in [AI Teammates: Autopilot and agent accounts](../../../setup/11-ai-teammates-setup.md) |
@@ -88,7 +88,7 @@ Every demo in this class was run live and its cost read back from the portals, a
 | What you ran | Where its credits show | What the class run measured |
 |---|---|---|
 | A Standard agent in the test chat | The agent's **Monitor** page | 0 credits for every Standard agent demo |
-| A GitHub Copilot agent in **Preview** | **Preview** > **History** per session, and **Manage Agents** in the Power Platform admin center | 169.7 credits for five Preview sessions of one agent |
+| A Microsoft Copilot harness agent in **Preview** | **Preview** > **History** per session, and **Manage Agents** in the Power Platform admin center | 169.7 credits for five Preview sessions of one agent |
 | A workflow | **Manage Agents**, channel workflow-agents, feature Workflows | 26.67 credits for one workflow run |
 | A computer use run | The session's **Map view** counts the actions | 4 actions, which is 20 credits at 5 per step |
 | A Work IQ API call | Microsoft 365 **Cost management**, per service and per user only | No split per agent or per tool, so split by day |
@@ -134,7 +134,7 @@ Prices are US list prices from partner sources, so check the euro price and the 
 
 ## Readiness for the AI Teammates Module
 
-The optional [AI Teammates](../../08-ai-teammates/readme.md) module is the one the class tenant can't run live yet, and money for credits isn't the reason. Agents with an account bill like any GitHub Copilot agent, but creating one needs Agent 365, a **Microsoft 365 Frontier for AI Teammates** license per agent, and a maker license, and the admin center reports that the Frontier early access to Agent 365 has ended. Autopilot is a private preview by invitation, with an Intune policy and a GitHub Copilot Business or Enterprise seat on top.
+The optional [AI Teammates](../../08-ai-teammates/readme.md) module is the one the class tenant can't run live yet, and money for credits isn't the reason. Agents with an account bill like any Microsoft Copilot harness agent, but creating one needs Agent 365, a **Microsoft 365 Frontier for AI Teammates** license per agent, and a maker license, and the admin center reports that the Frontier early access to Agent 365 has ended. Autopilot is a private preview by invitation, with an Intune policy and a GitHub Copilot Business or Enterprise seat on top.
 
 Only the person who builds the agents needs a paid license, so test the cheapest path first and stop at the first one that brings back the **Agent account** button: the free 30-day Agent 365 trial (turn recurring billing off right after you start it), then one Business Premium seat with the Agent 365 add-on, then the documented Microsoft 365 E5 with Agent 365. [AI Teammates: Autopilot and agent accounts](../../../setup/11-ai-teammates-setup.md) has the prices, the trial trap and the activation order.
 
@@ -147,7 +147,7 @@ The setup guides hold the clicks; the matching skills run the same checks read-o
 | Guide | Skill | Covers |
 |---|---|---|
 | [Copilot Cowork access and billing](../../../setup/07-cowork-tenant-setup.md) | `cowork-setup` | Usage-based billing, a spending policy that selects Cowork, discovery, Anthropic models, plugins and browser use |
-| [Copilot Credits for GitHub Copilot agents and Work IQ](../../../setup/08-tenant-credit-setup.md) | `copilot-credits` | Billing plans for the agent environment, the Work IQ service principal and cost guardrails |
+| [Copilot Credits for Microsoft Copilot harness agents and Work IQ](../../../setup/08-tenant-credit-setup.md) | `copilot-credits` | Billing plans for the agent environment, the Work IQ service principal and cost guardrails |
 | [Configure Copilot Credits for the Work IQ API](../../../setup/10-work-iq-credit-quota.md) | `copilot-credits` | The Work IQ quota error and raising the spending policy limit |
 | [Apps in Copilot Studio](../../../setup/09-copilot-studio-apps-setup.md) | `copilot-credits` | The personal developer environment and runtime coverage through Copilot Managed Runtime |
 | [AI Teammates: Autopilot and agent accounts](../../../setup/11-ai-teammates-setup.md) | | Frontier and Agent 365 licensing from the cheapest option up |

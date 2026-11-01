@@ -2,7 +2,7 @@
 
 This topic is optional: take it when an agent has to reach people outside Microsoft 365, on a public website, inside your own app, or on a phone messenger. Publishing to Teams and Microsoft 365 Copilot covers most internal agents, and [Publishing Agents & Microsoft Channels](../02-publishing-channels/readme.md) teaches that path. Advanced channels trade the comfort of Microsoft sign-in for reach, so each one comes with its own authentication limits and security settings.
 
-Everything here applies to Standard agents (Learn: standard harness). GitHub Copilot agents publish to Microsoft 365, Teams and a website today; WhatsApp, SharePoint and Dynamics 365 Contact Center are Standard-only channels.
+Everything here applies to Standard agents (Learn: standard harness). Microsoft Copilot harness agents publish to Microsoft 365, Teams and a website today; WhatsApp, SharePoint and Dynamics 365 Contact Center are Standard-only channels.
 
 ![One publish turns the agent into a live version that reaches every connected channel at once: Teams and Microsoft 365 Copilot, SharePoint, WhatsApp, a custom website, the demo website and the Direct Line API. The authentication model chosen at publish time is Entra ID by default, manual, or none.](../pptx/images/02-01-publish-channels.svg)
 

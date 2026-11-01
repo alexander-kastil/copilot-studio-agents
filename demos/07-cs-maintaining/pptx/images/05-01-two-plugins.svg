@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
   <title id="t">Two Copilot Studio plugins for coding agents</title>
-  <desc id="d">Claude Code, GitHub Copilot CLI or VS Code load two plugins. copilot-studio from the skills-for-copilot-studio marketplace serves Standard agents in modules 3 to 5 with the Manage, Author, Test and Advisor sub-agents, 31 skills and 15 design patterns, version 1.0.11, an experimental research project; it reaches Copilot Studio through the VS Code Copilot Studio extension. mcs-assistant from the copilot-studio-plugin marketplace serves GitHub Copilot agents in module 6 with the migrate and chat commands, version 1.0.2, work in progress; it reaches Copilot Studio through the Power Platform CLI 2.9.3 or later.</desc>
+  <desc id="d">Claude Code, GitHub Copilot CLI or VS Code load two plugins. copilot-studio from the skills-for-copilot-studio marketplace serves Standard agents in modules 3 to 5 with the Manage, Author, Test and Advisor sub-agents, 31 skills and 15 design patterns, version 1.0.11, an experimental research project; it reaches Copilot Studio through the VS Code Copilot Studio extension. mcs-assistant from the copilot-studio-plugin marketplace serves Microsoft Copilot harness agents in module 6 with the migrate and chat commands, version 1.0.2, work in progress; it reaches Copilot Studio through the Power Platform CLI 2.9.3 or later.</desc>
   <rect width="1920" height="1080" fill="#ffffff"/>
   <style>
     svg { font-size: 28px; }
@@ -39,7 +39,7 @@
   <text class="m" x="1055" y="320">mcs-assistant</text>
   <text class="s" x="1055" y="362">from copilot-studio-plugin</text>
   <rect x="1055" y="392" width="750" height="64" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
-  <text class="t" x="1080" y="435">GitHub Copilot agents, module 6</text>
+  <text class="t" x="1080" y="435">Microsoft Copilot harness agents, module 6</text>
   <rect x="1055" y="468" width="750" height="64" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
   <text class="c" x="1080" y="510">/mcs-assistant:migrate</text>
   <rect x="1055" y="544" width="750" height="64" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
