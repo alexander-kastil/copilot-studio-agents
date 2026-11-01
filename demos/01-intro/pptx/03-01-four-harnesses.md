@@ -25,7 +25,7 @@ visual-prompt: >
   or phone number"; billing "Copilot Credits"; pill "Not built in this class". Below the cards one wide
   grey #f6f8fa banner: "Chosen once, at creation: a Standard agent never becomes a Microsoft Copilot harness agent,
   or back".
-order: 10
+order: 12
 source: demos/01-intro/03-agent-harnesses/readme.md
 gamma_prompt: >
   Slide titled "Four harnesses in Copilot Studio", subtitle "The runtime you pick decides behavior,

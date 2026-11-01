@@ -14,7 +14,7 @@ visual-prompt: >
   page (x 550 to 1190, y 66 to 406): "Optimize your business processes" with the Uses Copilot Credits
   label over three cards, Agent, Workflow and App (preview), each tagged GitHub Copilot, and below them
   Other ways to build, which leads to Customer Assist Agent, Copilot and standard orchestration.
-order: 19
+order: 22
 source: demos/01-intro/06-cost-license/readme.md
 gamma_prompt: >
   Slide titled "What a Copilot license covers", subtitle "The harness decides whether building draws

@@ -14,7 +14,7 @@ visual-prompt: >
   the image. Three nested rounded frames: the outer grey #f6f8fa "Assistant" (any AI that helps a person
   complete work in natural language) contains the blue #eaf2ff "Copilot" (embedded in an app you already
   use, grounded in your work content; the human asks, Copilot responds turn by turn), which contains the
-  green #e9f7ef "Agent" (a copilot given a specific job, its own knowledge, instructions and tools; the
+  green #e9f7ef "Agent" (a Copilot given a specific job, its own knowledge, instructions and tools; the
   human sets a goal, the agent plans and acts across steps) with two example chips "Handling sales
   objections" and "Answering HR policy questions". A downward arrow beside the frames is labelled
   "Narrower job, more autonomy".
@@ -35,8 +35,8 @@ gamma_prompt: >
 
 - **Assistant**: any AI that helps a person complete work in natural language
 - **Copilot**: embedded in an app you already use, grounded in your work content
-- **Agent**: a copilot with a specific job, its own knowledge, instructions and tools
-- With a copilot the human asks; with an agent the human **sets a goal**
+- **Agent**: a Copilot with a specific job, its own knowledge, instructions and tools
+- With a Copilot the human asks; with an agent the human **sets a goal**
 
 ## Speaker Notes
 
@@ -46,6 +46,6 @@ Assistant: the general category, any AI that helps a person complete work in nat
 
 Copilot: an assistant embedded in an app or surface you already use and grounded in your work content. Microsoft 365 Copilot is the broad assistant across your apps.
 
-Agent: a copilot given a specific job, its own knowledge, instructions and tools it can call. An agent built in Copilot Studio is a focused copilot for one process, for example handling sales objections or answering HR policy questions.
+Agent: a Copilot given a specific job, its own knowledge, instructions and tools it can call. An agent built in Copilot Studio is a focused Copilot for one process, for example handling sales objections or answering HR policy questions.
 
-Who drives: with a copilot the human asks and Copilot responds turn by turn; with an agent the human sets a goal and the agent plans and acts across steps. Every agent is a copilot with a narrower job and more autonomy.
+Who drives: with a Copilot the human asks and Copilot responds turn by turn; with an agent the human sets a goal and the agent plans and acts across steps. Every agent is a Copilot with a narrower job and more autonomy.

@@ -42,7 +42,7 @@ gamma_prompt: >
 
 This slide walks the path through the module once, following on from the three themes of the title slide.
 
-Concepts: topic one fixes what a copilot, an agent and an assistant are and places Copilot Chat, Cowork, Copilot Studio and SharePoint agents on one map. Topic two explains how an agent pursues a goal in a loop, how the agent, the model and the harness divide the work, and the patterns you design with.
+Concepts: topic one fixes what a Copilot, an agent and an assistant are and places Copilot Chat, Cowork, Copilot Studio and SharePoint agents on one map. Topic two explains how an agent pursues a goal in a loop, how the agent, the model and the harness divide the work, and the patterns you design with.
 
 Decide before you build: topic three compares the four harnesses of Copilot Studio and how to choose one before you create an agent. Topic four places Agent Builder, Cowork, Copilot Studio and pro-code on one effort scale, then shows the three billing routes for Copilot Credits and the spending limits to set at activation.
 

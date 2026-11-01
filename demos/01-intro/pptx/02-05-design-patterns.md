@@ -1,5 +1,5 @@
 ---
-slide: "02-04"
+slide: "02-05"
 topic: 02-how-agents-work
 title: "Design patterns in agentic AI"
 subtitle: "Five patterns to choose and combine"
@@ -17,7 +17,7 @@ visual-prompt: >
   "Restaurant". "Deterministic flow": steps 1, 2, 3 in a row. "Autonomous agent": "Trigger" to "Agent"
   to "Acts". "Human-in-the-loop": "Agent proposes" to an amber "Person approves" to a green "Action
   runs".
-order: 9
+order: 11
 source: demos/01-intro/02-how-agents-work/readme.md
 gamma_prompt: >
   Slide titled "Design patterns in agentic AI", subtitle "Five patterns to choose and combine". Full-width

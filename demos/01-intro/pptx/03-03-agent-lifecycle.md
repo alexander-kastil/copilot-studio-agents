@@ -18,7 +18,7 @@ visual-prompt: >
   back to Build beneath the row, labelled "Focused change, test again, republish". Under each card a small
   grey #f6f8fa pill naming where the course teaches it: Create "Modules 3 and 6", Build "Modules 3 to 6",
   Test "Evaluations in modules 5 and 6", Publish "Modules 3 and 7", Monitor "From module 6".
-order: 12
+order: 14
 source: demos/01-intro/03-agent-harnesses/readme.md
 gamma_prompt: >
   Slide titled "One lifecycle on every harness", subtitle "Create, build, test, publish, monitor, then

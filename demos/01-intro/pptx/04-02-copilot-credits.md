@@ -20,7 +20,7 @@ visual-prompt: >
   From the band one arrow drops into a green #e9f7ef box "Azure subscription and resource group" with
   the line "Owner or Contributor rights". SMIL animation, 6 second loop: an amber dot travels down
   each column's arrow in turn, through the band, into the Azure box.
-order: 14
+order: 16
 source: demos/01-intro/04-where-to-build/readme.md
 gamma_prompt: >
   Slide titled "What agents cost", subtitle "Copilot Credits and the three billing routes". Layout:

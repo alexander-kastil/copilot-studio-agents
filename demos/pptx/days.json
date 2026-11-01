@@ -1,0 +1,8 @@
+{
+  "days": [
+    {"name": "Meet agents and Cowork", "lede": "What agents are and cost, Cowork for everyday work, and a first Copilot Studio agent.", "modules": ["01", "02", "03"]},
+    {"name": "Give agents tools", "lede": "Ground and publish the HR agent, then connect it to prompts, connectors, flows, APIs and MCP.", "modules": ["04"]},
+    {"name": "Autonomy and the Copilot harness", "lede": "Autonomous, reasoning and multi-agent designs, then the Microsoft Copilot harness.", "modules": ["05", "06"]},
+    {"name": "Ship and hand over", "lede": "Ground, extend and evaluate harness agents, then publish, maintain and meet AI teammates.", "modules": ["07", "08"]}
+  ]
+}

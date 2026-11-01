@@ -38,6 +38,10 @@ Apply the full ruleset in [references/rules.md](references/rules.md). In short:
    module. `/init` only appears in modules about project setup.
 5. H1 headings start with an imperative verb (verb-first slugs). See the heading
    polish workflow below.
+6. Copilot and Cowork are always capitalized ("a Copilot", "Copilots"), in prose,
+   slide specs, slide text and diagram labels. Code spans, paths, YAML keys and
+   verbatim UI labels ("Sends a prompt to the specified copilot for processing")
+   keep their own spelling.
 
 ## How to run
 

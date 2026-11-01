@@ -1,6 +1,6 @@
 # Introduction to Copilot Cowork & Copilot Studio
 
-This module builds the foundation for the whole course. Before you touch Copilot Studio or Cowork, you need a clear model of what agents and copilots are, how every agent works, which harness runs it, and where to build one and what it costs. Get these right and everything in the later modules has somewhere to land.
+This module builds the foundation for the whole course. Before you touch Copilot Studio or Cowork, you need a clear model of what agents and Copilots are, how every agent works, which harness runs it, and where to build one and what it costs. Get these right and everything in the later modules has somewhere to land.
 
 It is split into five focused topics: the first two establish the concepts, the third and fourth are the decisions you make before you build (the harness, then the build path and its billing), and the fifth tours the Copilot Chat productivity surface you will build on. An optional sixth topic prepares the class tenant: the licenses each module needs, where Copilot Credits come from, and the errors that mean they are missing.
 
@@ -10,8 +10,8 @@ It is split into five focused topics: the first two establish the concepts, the 
 
 | # | Topic | What you learn |
 |---|-------|----------------|
-| 1 | [Agents & Copilots for Microsoft 365](./01-agents-copilots/readme.md) | The vocabulary (copilot, agent, assistant), the Copilot ecosystem map, and where agents live in Microsoft 365 |
-| 2 | [How Agents Work](./02-how-agents-work/readme.md) | The agentic loop with Proceed, Confirm and Escalate, the agent, model and harness, semantic index and RAG, tools via the Model Context Protocol, and the design patterns |
+| 1 | [Agents & Copilots for Microsoft 365](./01-agents-copilots/readme.md) | The vocabulary (Copilot, agent, assistant), the Copilot ecosystem map, the step from Copilot to Cowork, and where to start building an agent in Microsoft 365 |
+| 2 | [How Agents Work](./02-how-agents-work/readme.md) | The agentic loop with Proceed, Confirm and Escalate, what a harness is, the agent, model and harness, semantic index and RAG, tools via the Model Context Protocol, and the design patterns |
 | 3 | [Agent Harnesses: Choose the Runtime](./03-agent-harnesses/readme.md) | What a harness decides, classic, generative and enhanced orchestration, the four harnesses of Copilot Studio, choosing one before you build, and the agent lifecycle |
 | 4 | [Where to Build and What It Costs](./04-where-to-build/readme.md) | The build paths from Agent Builder to Copilot Studio, Copilot Credits and their three billing routes, and spending limits |
 | 5 | [Copilot Chat & Productivity Agents](./05-chat-productivity/readme.md) | Researcher and Analyst, SharePoint agents, and building your own agent with Agent Builder |

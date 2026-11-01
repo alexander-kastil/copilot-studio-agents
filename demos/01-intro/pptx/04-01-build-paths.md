@@ -21,7 +21,7 @@ visual-prompt: >
   line to a dot on the axis. Below the axis, one wide purple #f3edff bar "Serves every path" holding
   three chips: "Copilot connectors: external content", "MCP servers: tools", "Plugins: one
   installable package".
-order: 13
+order: 15
 source: demos/01-intro/04-where-to-build/readme.md
 gamma_prompt: >
   Slide titled "Where to build an agent", subtitle "The lowest-effort path that meets the need".

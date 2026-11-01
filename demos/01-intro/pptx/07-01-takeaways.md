@@ -20,7 +20,7 @@ visual-prompt: >
   and lavender, green plants, 2020s design. 2:3 portrait, contemporary editorial photography. Avoid:
   readable text, logos, watermarks, people, dark or moody lighting, vintage or retro decor, grime,
   clutter.
-order: 21
+order: 24
 source: demos/01-intro/readme.md
 gamma_prompt: >
   Closing slide titled "Takeaways", subtitle "What to carry into the Cowork module". Side-accent layout:
@@ -34,7 +34,7 @@ gamma_prompt: >
 
 ## Content
 
-- Every agent is a copilot with a **narrower job and more autonomy**
+- Every agent is a Copilot with a **narrower job and more autonomy**
 - An agent works toward a **goal** in a loop, and a person approves consequential actions
 - Fix a weak agent by naming its thin part: **instructions, knowledge or tools**
 - Choose the **harness** before you create the agent: it fixes behavior, features and billing
@@ -44,7 +44,7 @@ gamma_prompt: >
 
 Close the module with the habits it built, each one a decision you make before you start building.
 
-Narrower job, more autonomy: a copilot answers turn by turn, while an agent takes a specific job with its own knowledge, instructions and tools.
+Narrower job, more autonomy: a Copilot answers turn by turn, while an agent takes a specific job with its own knowledge, instructions and tools.
 
 Goal and approval: an agent plans, acts, observes and adjusts until the outcome is reached, and a person approves before an action such as sending an email runs.
 

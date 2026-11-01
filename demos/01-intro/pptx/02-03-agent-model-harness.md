@@ -1,5 +1,5 @@
 ---
-slide: "02-02"
+slide: "02-03"
 topic: 02-how-agents-work
 title: "Agent, model and harness"
 subtitle: "What you design, what reasons, what coordinates"
@@ -20,7 +20,7 @@ visual-prompt: >
   right, an arrow labelled "Answer or action" leaves it. Thin two-way arrows join the harness to the agent
   layer above and to the model layer below. Under the stack, one grey #f6f8fa pill: "Same model, different
   harness: a different agent".
-order: 7
+order: 9
 source: demos/01-intro/02-how-agents-work/readme.md
 gamma_prompt: >
   Slide titled "Agent, model and harness", subtitle "What you design, what reasons, what coordinates".

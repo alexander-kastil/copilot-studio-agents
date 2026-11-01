@@ -16,7 +16,7 @@ visual-prompt: >
   the tenant, filled partway, with a thick amber top line "Monthly spending limit, the tenant's total
   ceiling" and two dashed amber "Alert thresholds" lines below it; the lower threshold, already
   passed, has a filled amber marker.
-order: 15
+order: 17
 source: demos/01-intro/04-where-to-build/readme.md
 gamma_prompt: >
   Slide titled "Spending limits", subtitle "Guardrails set when you activate Copilot Credits". Layout:

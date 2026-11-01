@@ -47,6 +47,23 @@ Set the guardrails at activation, before the first bill arrives. A spending poli
 
 The Cowork tenant setup, step by step, is in [Setting Up Cowork in Your Tenant](../../02-cowork/01-intro/readme.md#setting-up-cowork-in-your-tenant).
 
+### What the Model Costs in Cowork
+
+Cowork is advanced AI: every task draws Copilot Credits through usage-based billing, on top of the user's Microsoft 365 Copilot license. Microsoft publishes no fixed price per model. A task's credits come from four things: the model, the reasoning effort, how much context Cowork retrieves, and how much orchestration and how many tools the task needs.
+
+The model picker offers these models in November 2026, grouped by how Microsoft positions them:
+
+| Weight | Models in Cowork | Positioned for |
+|---|---|---|
+| Default | **Auto** | Most day-to-day work: Cowork weighs accuracy, speed and cost and picks the model for each request |
+| Everyday | Claude Sonnet 5.5, GPT 5.6 Terra, GPT 5.5 (Frontier) | Common tasks and medium effort, with a short response cycle |
+| Hard work | GPT 6.1 Sol, Grok 4.7 | Hard problems, long documents, coding and multistep tasks |
+| Highest | Claude Opus 5.5, GPT 6 Astra, Claude Fable 5.1 (Frontier) | Complex, high-stakes work and ambitious projects |
+
+The same ladder shows up in the Microsoft 365 Copilot license: GPT 5.6 and Sonnet are included with fair use, Opus is included with limits, and frontier models such as Astra and Fable always bill Copilot Credits. In Cowork the heavier model and the higher effort level cost more credits per task, so they pay off only where the work needs them.
+
+The reasoning effort sits next to the model picker: **Light**, **Medium** (the default), **High**, **Extra High** and **Max**. Higher effort is more thorough, slower and uses more credits. Three tenant settings narrow the list: inside the EU Data Boundary only GPT models are offered, an admin can turn off the whole Anthropic family, and Claude Fable requires data retention by the model provider, which Cowork flags with a banner.
+
 ---
 
 ## Where to Go Next
@@ -65,3 +82,5 @@ The Cowork tenant setup, step by step, is in [Setting Up Cowork in Your Tenant](
 - [Usage-based billing and Copilot Credits](https://learn.microsoft.com/microsoft-365/copilot/usage-based-billing-overview-copilot-credits)
 - [Copilot Studio licensing](https://learn.microsoft.com/microsoft-copilot-studio/billing-licensing)
 - [Managing spending policies](https://learn.microsoft.com/microsoft-365/copilot/usage-based-billing-manage-copilot-credits)
+- [Choose a model for Copilot Cowork](https://learn.microsoft.com/copilot/cowork/cowork-models)
+- [User subscription license and usage-based billing](https://learn.microsoft.com/microsoft-365/copilot/user-subscription-license-usage-based-billing)

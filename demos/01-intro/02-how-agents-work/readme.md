@@ -22,6 +22,28 @@ Instructions express that line, but they don't enforce it. Sign-in, permissions,
 
 ---
 
+## What a Harness Is
+
+A model on its own only reasons and writes: text goes in, text comes out. It can't read your SharePoint site, call a connector, remember yesterday's conversation or save a file. A harness is the operating layer around the model that turns that reasoning into work: it decides how the model receives context, uses instructions and tools, reads the results and moves through a task to completion. Put simply, the model reasons, and the harness equips and directs it.
+
+Everything an agent can do beyond writing text comes from its harness:
+
+| What the harness equips the model with | What it does | Example in the HR onboarding agent |
+|---|---|---|
+| Context | Packs the instructions, the conversation so far and the retrieved knowledge into every call | The agent's rules and three snippets from the HR Documents site |
+| Tools | Describes connectors, REST APIs and MCP servers to the model and runs the calls the model asks for | The HR MCP server's `add_employee` tool creates the employee record |
+| Skills | Loads a skill, a name, a description and Markdown instructions for one task, when a request matches its purpose | A first-week checklist skill that knows the order of the onboarding steps |
+| Memory | Keeps what the agent learned across turns and runs | The agent remembers that a recruiter wants the summary as a table |
+| Sandbox and files | Runs code and creates or edits Word, Excel, PowerPoint and PDF files in an isolated container | The onboarding plan comes back as an Excel workbook |
+| Orchestration loop | Plans the steps, checks each result and decides to continue, retry, hand over to another agent or stop | The record already exists, so the agent updates the existing record |
+| Guardrails | Applies sign-in, permissions and approvals before an action runs | The record is written only after the HR manager confirms |
+
+![The model sits inside the harness, which equips and directs it: context, tools, skills, memory, a sandbox for code and files, and the orchestration loop surround the model, guardrails apply on every step, a request comes in and an answer or action goes out.](../pptx/images/02-02-what-a-harness-is.svg)
+
+The model is the same in every product; the harness is what you choose. Coding agents such as GitHub Copilot and Claude Code are harnesses around a model, and Copilot Studio's Microsoft Copilot harness shares technology with GitHub Copilot. Each Copilot Studio harness equips the model with a different set of these capabilities, which is why [Agent Harnesses: Choose the Runtime](../03-agent-harnesses/readme.md) treats the harness as the first decision you make.
+
+---
+
 ## Agent, Model and Harness
 
 Three parts shape how an agent behaves, and you write only one of them. The agent is your design: its purpose, instructions, knowledge, tools and the limits it must respect. The model generates language and makes the decision for one call, and models differ in speed, cost and how deeply they reason. The harness is the runtime around the model: it decides when to call the model, what to send with the call, how to read the reply and what happens next.
@@ -105,4 +127,6 @@ Single-agent design starts in Copilot Studio Basics; multi-agent orchestration, 
 - [Write agent instructions in Copilot Studio](https://learn.microsoft.com/microsoft-copilot-studio/authoring-instructions)
 - [Semantic Index for Microsoft 365 Copilot](https://learn.microsoft.com/microsoftsearch/semantic-index-for-copilot)
 - [Model Context Protocol](https://modelcontextprotocol.io/)
+- [Harnesses in Copilot Studio](https://learn.microsoft.com/microsoft-copilot-studio/harnesses-overview)
+- [Compare Copilot Studio agent harnesses](https://learn.microsoft.com/microsoft-copilot-studio/guidance/choose-harness)
 - [Add other agents in Copilot Studio](https://learn.microsoft.com/microsoft-copilot-studio/authoring-add-other-agents)

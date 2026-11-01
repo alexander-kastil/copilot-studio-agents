@@ -22,7 +22,7 @@ visual-prompt: >
   blurred shapes and colours, never readable UI. 2:3 portrait, contemporary editorial photography.
   Avoid: readable text, readable screen content, logos, watermarks, extra people, dark or moody
   lighting, vintage or retro decor, grime, clutter.
-order: 17
+order: 20
 source: demos/01-intro/05-chat-productivity/readme.md
 gamma_prompt: >
   Slide titled "Agent Builder", subtitle "Your own agent in Microsoft 365 Copilot, with no code". Four

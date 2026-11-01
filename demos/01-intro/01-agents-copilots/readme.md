@@ -1,6 +1,6 @@
 # Agents & Copilots for Microsoft 365
 
-This topic sets the vocabulary for the whole course. Before you build anything, you need a clear mental model of what a copilot is, what an agent is, and how both fit into the Microsoft 365 platform you already use. By the end you can place any product you meet later (Copilot Chat, Copilot Studio, Cowork, SharePoint agents) on a single map and explain what job it does.
+This topic sets the vocabulary for the whole course. Before you build anything, you need a clear mental model of what a Copilot is, what an agent is, and how both fit into the Microsoft 365 platform you already use. By the end you can place any product you meet later (Copilot Chat, Copilot Studio, Cowork, SharePoint agents) on a single map and explain what job it does.
 
 ---
 
@@ -11,12 +11,12 @@ These words get used loosely, so this course fixes their meaning up front.
 | Term | What it is | Who drives |
 |---|---|---|
 | Copilot | An AI assistant embedded in an app or surface you already use, grounded in your work content | The human asks; Copilot responds turn by turn |
-| Agent | A copilot given a specific job, its own knowledge, instructions, and tools it can call | The human sets a goal; the agent plans and acts across steps |
+| Agent | A Copilot given a specific job, its own knowledge, instructions, and tools it can call | The human sets a goal; the agent plans and acts across steps |
 | Assistant | The general category: any AI that helps a person complete work in natural language | Either, depending on capability |
 
-A useful way to hold it: every agent is a copilot with a narrower job and more autonomy. Microsoft 365 Copilot is the broad assistant across your apps. An agent you build in Copilot Studio is a focused copilot for one process, for example handling sales objections or answering HR policy questions.
+A useful way to hold it: every agent is a Copilot with a narrower job and more autonomy. Microsoft 365 Copilot is the broad assistant across your apps. An agent you build in Copilot Studio is a focused Copilot for one process, for example handling sales objections or answering HR policy questions.
 
-![Nested categories: assistant contains copilot, and copilot contains agent. Each step inward means a narrower job and more autonomy, from turn-by-turn answers to an agent that plans and acts toward a goal.](../pptx/images/01-01-vocabulary.svg)
+![Nested categories: assistant contains Copilot, and Copilot contains agent. Each step inward means a narrower job and more autonomy, from turn-by-turn answers to an agent that plans and acts toward a goal.](../pptx/images/01-01-vocabulary.svg)
 
 ---
 
@@ -30,9 +30,9 @@ The experiences layer is what end users touch. The build layer is where makers a
 
 ---
 
-## From Copilot to Agent
+## From Copilot to Cowork
 
-The step up from a copilot to an agent is autonomy: instead of answering one turn, an agent takes a goal and works a sequence of steps to reach it. An agent is a copilot given a goal, the tools to pursue it, and a loop to keep going until it is met.
+The step up from a Copilot to an agent is autonomy: instead of answering one turn, an agent takes a goal and works a sequence of steps to reach it. An agent is a Copilot given a goal, the tools to pursue it, and a loop to keep going until it is met.
 
 ![Copilot Chat answers one question at a time while you do the planning. Cowork takes the outcome you describe, breaks the goal into tasks, acts across Outlook, Teams, Word, Excel, and PowerPoint, and hands the result back for your review.](../../02-cowork/pptx/images/01-01-cowork-and-chat.svg)
 
@@ -40,7 +40,7 @@ That shift, the parts behind it, and the design patterns teams use to structure 
 
 ---
 
-## Where Agents Live in Microsoft 365
+## Start Without Code, Grow into Copilot Studio
 
 The same agent concept shows up in several places, each suited to a different builder and audience.
 
@@ -53,7 +53,7 @@ The same agent concept shows up in several places, each suited to a different bu
 
 You do not have to choose one path forever. A common pattern is to prototype in a no-code surface, then rebuild in Copilot Studio when the process needs custom tools, multi-agent orchestration, or governance.
 
-![A prototype in Agent Builder or a SharePoint agent is rebuilt in Copilot Studio when the process needs custom tools, multi-agent orchestration, or governance.](../pptx/images/01-03-where-agents-live.svg)
+![A prototype in Agent Builder or a SharePoint agent is rebuilt in Copilot Studio when the process needs custom tools, multi-agent orchestration, or governance.](../pptx/images/01-04-start-without-code.svg)
 
 ---
 

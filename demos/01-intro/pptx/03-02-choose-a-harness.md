@@ -21,7 +21,7 @@ visual-prompt: >
   green card "Standard". On the far right, one grey #f6f8fa side note "Then check: where do users reach it,
   and which billing fits?". Along the bottom, one wide grey #f6f8fa bar "Mixed needs: decide by the dominant
   job. Agents and workflows combine; each agent runs on one harness."
-order: 11
+order: 13
 source: demos/01-intro/03-agent-harnesses/readme.md
 gamma_prompt: >
   Slide titled "Choose the harness", subtitle "Answer before you create the agent". Full-width diagram

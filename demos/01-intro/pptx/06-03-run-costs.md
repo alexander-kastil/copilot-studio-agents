@@ -15,7 +15,7 @@ visual-prompt: >
   features, Copilot credits and Billed credit columns for GH-Food Buddy (Autonomous 13.85,
   pva-published-engine-direct 17.63, pva-studio 20.19), GH-Health Advisor (pva-studio 169.72) and a
   workflow (workflow-agents, Workflows, 26.67).
-order: 20
+order: 23
 source: demos/01-intro/06-cost-license/readme.md
 gamma_prompt: >
   Slide titled "Where a run's cost shows", subtitle "Billed credits per agent in the Power Platform admin

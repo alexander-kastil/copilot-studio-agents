@@ -14,7 +14,7 @@ visual-prompt: >
   pale blue: "Content you choose" with "A whole site", "Specific folders", "Selected documents".
   Right, pale green: "What the person asking already has permission to see". The overlap, filled
   pale purple: "Where the agent's answers come from".
-order: 16
+order: 19
 source: demos/01-intro/05-chat-productivity/readme.md
 gamma_prompt: >
   Slide titled "Productivity and SharePoint agents", subtitle "Ready-to-use agents with nothing to

@@ -19,7 +19,7 @@ visual-prompt: >
   admin center), "Maker's personal developer environment" with an amber border (the same billing plan,
   this environment added), "Microsoft 365 tenant" (spending policy that selects each service, Microsoft
   365 admin center). An arrow leads down to a green bar "Azure subscription and resource group".
-order: 18
+order: 21
 source: demos/01-intro/06-cost-license/readme.md
 gamma_prompt: >
   Slide titled "Licenses and credit sources", subtitle "Few seats, and credits charged where the work
