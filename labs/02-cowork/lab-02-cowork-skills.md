@@ -11,7 +11,7 @@ At a high level, an Agent Skill is a structured instruction file that teaches Co
 By the end of this lab you will:
 
 - Understand what skills are and when to create custom skills
-- Manage built-in and custom skills from the **Customize** experience
+- Manage built-in and custom skills from **Plugins** > **Cowork** > **Added**
 - Create a skill using the native guided flow from **Add** > **Create new**
 - Create skills manually at a lower level (for example with VS Code), package them, and upload them
 
@@ -54,35 +54,24 @@ Choose a skill-first approach when your main goal is guided task execution. Add 
 
 ![Side-by-side comparison of a custom skill, one SKILL.md of instructions you author for your own recurring work, and a plugin, a package of skills, connectors, or both that brings in data or expertise you cannot write yourself.](../../demos/02-cowork/03-custom-skills/_images/skill-vs-plugin.svg)
 
-## Exercise 2: Manage skills in the Customize panel
+## Exercise 2: Manage skills in the Plugins page
 
 In this exercise you explore how to manage available skills directly in Cowork.
 
-### Step 1: Open the Customize experience
+### Step 1: Open your skills
 
-Open [Microsoft Copilot](https://copilot.cloud.microsoft), switch to 1️⃣ **Cowork** in the top toggle next to **Chat**, and select 2️⃣ **Customize** in the left navigation.
+Open [Microsoft Copilot](https://copilot.cloud.microsoft), select **Plugins** in the left navigation, and select the **Cowork** tab. Skills and plugins share one list, **Added (n)**; select **Manage all** to see the full list.
 
-You should see three tabs:
+![The earlier Customize screen in Copilot Cowork, with the Skills tab and user and built-in skills.](./_images/cowork-skills-01.png)
 
-- **Preferences**
-- **Plugins**
-- **Skills**
-
-Select 3️⃣ **Skills** and review:
-
-- **Your skills**: 4️⃣ skills you created or acquired through plugin packages
-- **Built-in**: 5️⃣ skills shipped by Cowork
-
-![Customize screen in Copilot Cowork showing the Skills tab with user and built-in skills, highlighted by numbered callouts.](./_images/cowork-skills-01.png)
-
-Use the search box and source filters to narrow results and quickly find specific skills. Select a skill to open its details page.
+Select a skill to open its details page: **Share**, the **...** menu with **Download** and **Delete**, and the edit and open icons next to **Instructions**.
 
 For your own skills, if any, validate that you can perform management operations such as:
 
 - Edit instructions
 - Open the file location in OneDrive
 - Download the skill
-- Share the skill: select **Share**, choose **Only you** or **Specific users in your organization**, then select **Apply**
+- Share the skill: select **Share**; the dialog **Publish "<skill name>"** offers **Only you** or **Specific users in your organization**, then select **Publish**
 - Delete the skill
 
 ![UI screen showing the copilot-camp-flash-cards skill with description, usage guidelines, and instructions for generating PowerPoint flash cards from Copilot Dev Camp labs.](./_images/cowork-skills-02.png)
@@ -91,29 +80,19 @@ After any edit, start a new conversation to test the behavior change. After you 
 
 ## Exercise 3: Create a skill with the native Add skill flow
 
-In this exercise you use Cowork's built-in guided authoring experience from **Customize** > **Skills**.
+In this exercise you use Cowork's built-in guided authoring experience from **Plugins** > **Cowork**.
 
-### Step 1: Start guided creation from Customize
+### Step 1: Start guided creation from Plugins
 
-In **Customize** > **Skills**, select **Add** > **Create new**.
+In **Plugins** > **Cowork**, select **Add** > **New skill**.
 
-![Copilot Customize screen showing the Skills tab, with a dropdown menu highlighting the Create new and Upload skill options.](./_images/cowork-custom-skill-01.png)
+![The earlier Customize screen, with a dropdown menu showing the Create new and Upload skill options.](./_images/cowork-custom-skill-01.png)
 
 > **Important:** authoring and testing a custom skill in Copilot Cowork consumes Copilot Credits.
 
-Cowork opens a guided conversation to collect your skill definition. Notice that Cowork is now using a native skill named **Skill management** to guide you through the creation of a new skill.
+Cowork opens a guided conversation to collect your skill definition. The task is titled **Create a Personal Skill in OneDrive**, and the side panel shows **Plugins** > **Skill Management**, the native skill that guides you through the creation of a new skill.
 
-Cowork then prompts you to select the purpose of your skill. The available options are:
-
-- Writing & drafting: generates recurring written content in your voice and format.
-- Summarizing & briefing: condenses meetings, email threads, documents, or channels into a consistent structured summary.
-- Data & analysis: pulls and formats data into a standard layout such as trackers, dashboards, or recurring metric reports.
-- Process automation: runs a multi-step routine you do often, for example triage inbox, prep for a meeting, end-of-day wrap-up.
-- Describe another option: freely describe your goal.
-
-![UI showing the Copilot skill creation workflow with a Skill purpose dialog listing options and a sidebar highlighting Skills & Plugins with Skill Management.](./_images/cowork-custom-skill-02.png)
-
-Select **Skip** to provide free text instructions for your custom skill.
+Cowork asks five questions, each with a **Skip** option: what the skill does, its name, its triggers and exclusions, its category (productivity, communication, analysis, writing, research, automation or custom), and its instructions. Answer the first question with the text below and let Cowork derive the rest, or answer each question from it.
 
 For example, use the following text:
 
@@ -127,7 +106,7 @@ The result should be a PowerPoint deck with no more than 10 flash cards based on
 Name the skill "copilot-flash-cards".
 ```
 
-Cowork starts processing your request: it checks the skill name, checks the capacity of your Cowork profile, generates the skill, stores it in your OneDrive for Business, validates it, and returns a **Skill Report**.
+Cowork then asks to copy the skill file into **Your Cowork folder** / **skills** / `copilot-flash-cards`: select **Approve** on that card. It checks the skill name, checks the capacity of your Cowork profile, generates the skill, and stores it in your OneDrive for Business. Ask in the chat for the **Skill Report** to get its quality score, for example 72/100 with Trigger, Instruction, Scope and Robustness ratings.
 
 ![Diagram of the guided flow: after Add > Create new and your description, Cowork checks the name and your capacity, generates, stores, and validates the skill, and returns a Skill Report, saving it under /Documents/Cowork/skills/copilot-flash-cards/.](./_images/lab-02-guided-skill-creation.svg)
 
@@ -148,14 +127,14 @@ Read the **Skill Report** that Cowork returns each time it creates or updates yo
 Once you are happy with your skill, close the current session. Cowork stored the skill in your OneDrive for Business in a folder with the following name:
 
 ```text
-/Documents/Cowork/skills/<name-of-the-skill>
+/Documents/Cowork/Skills/<name-of-the-skill>
 ```
 
 Browse your OneDrive for Business and check the content of the new skill folder. A skill you ask Cowork to build in chat, or write yourself, is saved in the same folder.
 
 ![Diagram of the guided flow, asking in chat, and writing a SKILL.md yourself all ending in Documents/Cowork/skills/, where the next new task discovers the skills at its start while a task already open does not list them.](../../demos/02-cowork/pptx/images/03-01-create-a-skill.svg)
 
-![The folder on OneDrive for Business under Documents/Cowork/skills containing the SKILL.md definition file and the skill quality report JSON file.](./_images/cowork-custom-skill-03.png)
+![The folder on OneDrive for Business under Documents/Cowork/Skills containing the SKILL.md definition file.](./_images/cowork-custom-skill-03.png)
 
 Start a new Cowork task and test a prompt that should trigger your new skill, for example:
 
@@ -163,7 +142,7 @@ Start a new Cowork task and test a prompt that should trigger your new skill, fo
 Generate flash cards for the Copilot Dev Camp lab available at the following URL: https://microsoft.github.io/copilot-camp/pages/extend-m365-copilot/08-mcp-server/
 ```
 
-In the right side panel, open **Skills** and verify that your custom skill appears among the active skills used during execution.
+In the right side panel, open **Plugins** and verify that your custom skill appears among the chips used during execution.
 
 If the skill does not activate, refine the description to be more specific about when Cowork should use it, then test again in a new conversation.
 
@@ -293,7 +272,7 @@ Important checks:
 
 ### Step 2: Upload the skill in Cowork
 
-In Cowork, open **Customize**, select **Skills**, select the arrow next to **Add**, and then select **Upload skill** to upload your package. Upload a `.md` file (a single `SKILL.md`, up to 1 MB), or a `.zip` or `.skill` archive with `SKILL.md` at its root (up to 10 MB compressed, 50 MB uncompressed, 100 files). To package the folder from Step 1, zip the files inside it, not the folder itself.
+In Cowork, open **Plugins** > **Cowork**, select **Add** > **Upload**, and upload your package in the dialog **Upload a skill or plugin**. Upload a `.md` file (a single `SKILL.md`, up to 1 MB), or a `.zip` or `.skill` archive with `SKILL.md` at its root (up to 10 MB compressed, 50 MB uncompressed, 100 files). To package the folder from Step 1, zip the files inside it, not the folder itself.
 
 After upload, verify that the included skills appear in **Your skills**. If a skill with the same name already exists, Cowork keeps both and numbers the new one. Only upload skills from sources you trust.
 
@@ -313,6 +292,12 @@ Draft my weekly status email
 ```
 
 Verify activation from the side panel and confirm that outputs follow the expected workflow and format.
+
+> **Note: name clashes.** If your tenant already has a similar skill, for example a `weekly-status-report` skill from a plugin, a generic prompt runs that skill instead of yours. Name your skill in the prompt to be sure it runs:
+
+```text
+Use the weekly-status-mail skill to draft my weekly status email
+```
 
 ![The Cowork UI processing a task that triggers the new weekly-status-mail skill. The side panel shows the activated skill.](./_images/cowork-custom-skill-04.png)
 

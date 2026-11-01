@@ -149,7 +149,7 @@ Cowork no longer has a single **Customize** page. You find the three building bl
 
 - **Preferences**: custom instructions that Cowork applies to every task, such as tone and formatting, under **Settings** > **Personalization** > **Customize Copilot**. You can write up to 20 KB (about 3,000 English words).
 - **Plugins**: select **Plugins** in the left navigation and the **Cowork** tab; **Added** lists installed plugins and **Discover** the catalog
-- **Skills**: built-in skills and your custom skills
+- **Skills**: built-in skills and your custom skills share the same list as plugins, under **Plugins** > **Cowork** > **Added**; select **Manage all** for the full list
 
 Before continuing, keep this simple comparison in mind:
 

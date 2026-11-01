@@ -42,7 +42,7 @@ This plugin model is aligned with the Microsoft 365 app ecosystem and follows th
 
 ### Step 2: Compare plugin categories and understand management boundaries
 
-In Copilot Cowork, the plugin catalog can include the following. Browse it in **Discover** on **Customize** > **Plugins**:
+In Copilot Cowork, the plugin catalog can include the following. Browse it in **Discover** on **Plugins** > **Cowork**:
 
 - **Microsoft plugins** (for example Dynamics 365 and Fabric IQ scenarios)
 - **Partner plugins** from third-party publishers
@@ -188,7 +188,7 @@ Use the following model:
         "remoteMcpServer": {
           "mcpServerUrl": "https://learn.microsoft.com/api/mcp",
           "mcpToolDescription": {
-            "file": "./tools/microsoft-learn-mcp-tools.json"
+            "file": "tools/microsoft-learn-mcp-tools.json"
           },
           "authorization": {
             "type": "None"
@@ -221,7 +221,7 @@ Important validation checks:
 
 - Each `agentSkills[].folder` must exist in the package
 - Each skill folder must contain `SKILL.md`
-- The file named by `mcpToolDescription` exists in the `tools/` folder
+- The file named by `mcpToolDescription` exists in the `tools/` folder, and the `toolSource` path has no leading `./` (`tools/microsoft-learn-mcp-tools.json`); with `./` the Cowork upload fails with `InvalidAgentConnector: ... not found in the app package`
 - Skill frontmatter `name` must be kebab-case and match its folder name
 - Connector `id` values must be unique
 
@@ -229,8 +229,8 @@ Important validation checks:
 
 You also need the `color.png` and `outline.png` icons for the application package. Download them from the following URLs:
 
-- [color.png](https://github.com/microsoft/copilot-camp/tree/main/src/cowork/CopilotDevCamp-for-cowork/color.png)
-- [outline.png](https://github.com/microsoft/copilot-camp/tree/main/src/cowork/CopilotDevCamp-for-cowork/outline.png)
+- [color.png](https://raw.githubusercontent.com/microsoft/copilot-camp/main/src/cowork/CopilotDevCamp-for-cowork/color.png)
+- [outline.png](https://raw.githubusercontent.com/microsoft/copilot-camp/main/src/cowork/CopilotDevCamp-for-cowork/outline.png)
 
 Feel free to replace the content of the `developer` section of the manifest with your own data.
 
@@ -253,9 +253,9 @@ In each `SKILL.md`:
 
 You can copy the content of the three skills from the following URLs:
 
-- [foundry-research](https://github.com/microsoft/copilot-camp/tree/main/src/cowork/CopilotDevCamp-for-cowork/skills/foundry-research/SKILL.md)
-- [dev-camp-deck](https://github.com/microsoft/copilot-camp/tree/main/src/cowork/CopilotDevCamp-for-cowork/skills/dev-camp-deck/SKILL.md)
-- [dev-camp-document](https://github.com/microsoft/copilot-camp/tree/main/src/cowork/CopilotDevCamp-for-cowork/skills/dev-camp-document/SKILL.md)
+- [foundry-research](https://raw.githubusercontent.com/microsoft/copilot-camp/main/src/cowork/CopilotDevCamp-for-cowork/skills/foundry-research/SKILL.md)
+- [dev-camp-deck](https://raw.githubusercontent.com/microsoft/copilot-camp/main/src/cowork/CopilotDevCamp-for-cowork/skills/dev-camp-deck/SKILL.md)
+- [dev-camp-document](https://raw.githubusercontent.com/microsoft/copilot-camp/main/src/cowork/CopilotDevCamp-for-cowork/skills/dev-camp-document/SKILL.md)
 
 This design gives Cowork stronger activation accuracy and more consistent outcomes.
 
@@ -323,7 +323,7 @@ Before deployment, verify that:
 
 Fix issues now to avoid failed uploads in admin workflows.
 
-The preview `wiqd plugin validate --mode deep` command packages the plugin and runs the same checks locally, including the ASKILL-P001 to ASKILL-P008 codes for folders, `SKILL.md` frontmatter and `name` rules. Keep the npm scripts above as your packaging path and use the `wiqd` check as a second pass before upload.
+The preview `wiqd plugin validate --mode deep` command packages the plugin and runs the same checks locally, including the ASKILL-P001 to ASKILL-P008 codes for folders, `SKILL.md` frontmatter and `name` rules. Keep the npm scripts above as your packaging path and use the `wiqd` check as a second pass before upload. It works only on a `wiqd` project, such as the result of the import in Exercise 7: on this hand-built folder it stops with `Not a plugin project. Run 'wiqd plugin create' first`.
 
 ## Exercise 5: Vibe-code the whole plugin with GitHub Copilot (optional)
 
@@ -439,7 +439,9 @@ After generation, review `manifest.json`, validate each `SKILL.md` frontmatter, 
 
 In this exercise you upload your plugin package and validate end-to-end behavior in Cowork.
 
-Before you involve an admin, test the package yourself. Open **Customize** > **Plugins** > **Upload plugin**, select your `.zip`, and choose **Only you** in the **Share** dialog; no admin is needed. Sharing with **Specific users in your organization** also needs no admin, but publishing to the whole organization waits for admin approval. The admin upload in Step 1 is what lists the plugin in **Discover**, and custom plugins don't run in Cowork on mobile.
+Before you involve an admin, test the package yourself. Open **Plugins**, select the **Cowork** tab, select **Add** > **Upload**, and select your `.zip` in the dialog **Upload a skill or plugin**. In the dialog **Publish "<package name>"**, choose **Only you** and select **Publish**; no admin is needed.
+
+Sharing with **Specific users in your organization** also needs no admin, but publishing to the whole organization waits for admin approval. The admin upload in Step 1 is what lists the plugin in **Discover**, and custom plugins don't run in Cowork on mobile.
 
 ![Four widening steps of reach for an uploaded plugin: Only you and Specific users in your organization need no admin, the whole organization waits for admin approval, and a public store listing goes through Partner Center.](../../demos/02-cowork/pptx/images/05-03-sharing-a-plugin.svg)
 
@@ -451,8 +453,9 @@ Use the following path:
 2. Go to **Agents** > **Tools**
 3. On the **Registry** tab, select **Upload**
 4. Upload your plugin `.zip` package
-5. Review the components the package contains (the three skills and the MCP connector), then select **Next**
-6. In **Scope users**, choose **All users** or **Specific users or groups**, then select **Install**
+5. Check the **Name** and **Description** the upload page shows, then select **Next**
+6. On **Users**, set both **Publish** and **Install (optional)**: they default to **All users**, so change them to **Specific users or groups** for a test, then select **Next**
+7. On **Review & finish**, select **Upload**
 
 The **Registry** tab lists your plugin under the **Plugins** tile once the upload finishes. To block it later, open it from the same list.
 
@@ -462,7 +465,7 @@ Remember that users enable or disable active plugins per session, while admin de
 
 Open Copilot Cowork and verify that:
 
-- The plugin appears in **Discover** under **Customize** > **Plugins**
+- The plugin appears under **Plugins** > **Cowork** > **Added** (a search in **Discover** does not list it)
 - The plugin can be added from its detail page and turned on in **Sources & Skills**
 - The three skills activate based on relevant prompts
 - The connector is discoverable and, when applicable, prompts for authentication (in this sample the MCP server is publicly available with anonymous access)
@@ -595,7 +598,7 @@ If Step 5 was refused, upload the package from the admin center:
 
 ### Step 7: Use the plugin in Cowork and Word
 
-Sign in to Cowork as the test user from Step 6. Select **Customize** in the left navigation. Under **Discover**, select **Dev Camp Foundry Research** in **Get started**, then select **Install**. If your tenant shows a **Plugins** button in place of **Customize**, select that button instead.
+Sign in to Cowork as the test user from Step 6. Select **Plugins** in the left navigation and the **Cowork** tab. Under **Added**, select **Dev Camp Foundry Research** in **Get started**, then select **Install**. If your tenant shows a **Plugins** button in place of **Customize**, select that button instead.
 
 Expected result: the detail page shows the skill `foundry-research` with its description, version 1.0.0, and the legal links **Privacy policy** and **Terms of service**. The publisher shows **Unknown**, because the companion manifest has no `author` field and WIQD has no name to show.
 
