@@ -23,3 +23,4 @@
 ### Changed
 
 - Module 02 deck slide 20 (Anatomy of a SKILL.md) drops the companion-files picture and splits 50:50, bullets left and the SKILL.md code right.
+- Exclude all pptx folders and the assets folder from git: `.gitignore` ignores `pptx/` and `/assets/`, and their files stay on disk
