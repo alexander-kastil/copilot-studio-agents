@@ -29,16 +29,16 @@ You use the prebuilt Analyst agent to explore the survey results stored in an Ex
 
 ### Step 3: Open the Analyst agent
 
-1. In **Microsoft Copilot**, in the navigation pane, select **Analyst** under the **Agents** section.
-1. If the **Analyst** agent does not appear, select **More agents**. Then, in the **Agent Store** window, select **Analyst** under the **Built by Microsoft** section.
+1. In **Microsoft Copilot**, in the navigation pane, select **Analyst** under **Pinned**. The agent opens with the header **Analyst, Created by Microsoft** and the prompt **What do you want to analyze today?**
+1. If **Analyst** is not pinned, select **Plugins** in the navigation pane, open the **Chat** tab, and select **Analyst**.
 
 The **Analyst** agent window appears.
 
 ### Step 4: Upload the survey workbook
 
-1. In the prompt field, select the **Add and manage sources** icon, which is the plus sign (**+**) icon.
+1. In the prompt field, select the **Add and manage sources** button.
 1. In the menu that appears, select **Upload images and files**.
-1. In **File Explorer**, navigate to the **Downloads** folder, select the **Project Nexus Survey Results** file that you downloaded earlier, and then select **Open**.
+1. In **File Explorer**, navigate to the **Downloads** folder, select the **Project Nexus Survey Results** file that you downloaded earlier, and then select **Open**. The file appears as a chip in the prompt field, and a banner says that a copy is kept in your OneDrive (**Manage uploads**).
 
 ### Step 5: Identify the top three trends
 
@@ -48,7 +48,7 @@ The **Analyst** agent window appears.
     Analyze this spreadsheet and tell me the top three trends
     ```
 
-> **Note:** Analyst runs several Python commands to determine the top three trends. You might have to wait a minute or so for it to complete all the commands so that it can aggregate the results. Below each command is a description of the results of that command. Continue to scroll down through the results to see the top three trends.
+> **Note:** Analyst reasons over the data before it answers; the response starts with a collapsed **Reasoned for** line that you can expand to see the steps. Check how it reads the rating scale: in a test run it read 1 as best and 5 as worst.
 
 ### Step 6: Review the average rating for each category
 
@@ -60,8 +60,7 @@ The **Analyst** agent window appears.
 
 ### Step 7: Create a bar chart of the average ratings
 
-1. Review the Analyst agent's response. If the agent suggests a follow-up action or asks whether you want to create a visual comparison, enter `Yes` in the prompt field and submit your response.
-1. If the agent does not offer to create a visual comparison, enter the following prompt.
+1. Enter the following prompt. Answering `Yes` to a follow-up offer can return only a text placeholder such as `attachment:...png` instead of the picture; the explicit prompt renders the chart in a **Chart** card.
 
     ```text
     Create a bar chart comparing the average ratings for Project Satisfaction, Communication Effectiveness, Timeline Adherence, and Overall Experience.

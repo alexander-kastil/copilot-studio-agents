@@ -10,9 +10,9 @@ In this exercise you review what the prebuilt Researcher agent does and which so
 
 ### Step 1: Review the Researcher agent
 
-The Researcher agent opens in Microsoft Copilot Chat. The home page shows a prompt box, six starter cards, and a history of earlier requests.
+Open **Researcher** from the pinned entry in the navigation pane. The home page shows the heading **Researcher** (**Created by Microsoft**), the prompt box **What do you want to research today?**, a **Sources** button, and the tabs **Explore**, **History** and **Saved**. **Explore** offers about 30 starter cards, such as **Comparative Analysis**, **Create A Daily Briefing** and **Assess Feasibility**.
 
-![Screenshot of the Researcher home page in Microsoft Copilot Chat. A large prompt box asks "What do you want to research today?" Below it are six starter cards: Market Analysis, Meeting Prep, Status Tracker, Project Update, Topic Report and Customer Brief. A History list at the bottom shows an earlier request.](./_images/lab-04-researcher-agent-01.png)
+![Earlier screenshot of the Researcher home page in Microsoft Copilot Chat. A large prompt box asks "What do you want to research today?" Below it are six starter cards: Market Analysis, Meeting Prep, Status Tracker, Project Update, Topic Report and Customer Brief. A History list at the bottom shows an earlier request.](./_images/lab-04-researcher-agent-01.png)
 
 You can use Researcher to:
 
@@ -55,7 +55,7 @@ In this exercise you try sample prompts with the prebuilt Researcher agent in Mi
 
 ### Step 1: Market and competitive research
 
-Enter these prompts with the Researcher agent.
+Enter these prompts with the Researcher agent. Researcher first asks clarifying questions with the buttons **Short, 1 to 5 pages** and **Long, 5+ pages**: answer the questions or type `go ahead`, and choose **Short** or **Long** in a message. It then shows a **Research Plan** and works on its own for one to four minutes, and returns a report card with **Convert to** (Word, PowerPoint, PDF, Infographic) and **Sources**.
 
 ```text
 What are the emerging trends in the electric vehicle market for 2025?
@@ -77,7 +77,7 @@ What are the pros and cons of hybrid work policies?
 
 ### Step 3: Report and content drafting
 
-Enter these prompts with the Researcher agent.
+Enter these prompts with the Researcher agent. For the prompts that name a document, report or deck, attach the file with **Add and manage sources** first.
 
 ```text
 Draft an executive summary based on this Word document.
