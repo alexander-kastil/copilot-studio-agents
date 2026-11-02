@@ -15,12 +15,19 @@
     },
     {
       "id": "admin-consumption",
-      "where": "Power Platform admin center > Licensing > Copilot Studio consumption, and Microsoft 365 admin center > Copilot > Cost management",
-      "shown": "not read yet; usage reaches these reports with a delay of up to a day"
+      "where": "Power Platform admin center > Licensing > Copilot Studio > Summary and Manage Agents",
+      "readAt": "2026-11-02T06:59:00Z",
+      "shown": "Summary, month to date, last refreshed 01/11/2026 01:00:00: 0 Total Copilot Credits, capacity consumed 0, Top 5 agents by credit usage empty, Copilot Credits usage by environment \"No data available\". Manage Agents, month to date with no day filter: 15 agents at 0 billed and 0 non-billed Copilot Credits, no LAB- agent listed"
+    },
+    {
+      "id": "m365-cost-management",
+      "where": "Microsoft 365 admin center > Copilot > Cost management, month to date",
+      "readAt": "2026-11-02T06:59:00Z",
+      "shown": "416 Copilot Credits used, all by Copilot Cowork on Nov 1; Services & agents lists Copilot Cowork 416 and Work IQ 0, no Copilot Studio agent"
     }
   ],
   "status": "partly available",
-  "statusNote": "Copilot Studio shows no credit figure per test except on prompt tool tests. Re-read the admin consumption reports a day after the runs to fill the remaining credit figures; never estimate one.",
+  "statusNote": "Copilot Studio shows no credit figure per test except on prompt tool tests. On 2026-11-02 the Power Platform report was last refreshed before the runs and listed no LAB- agent; re-read it once it refreshes past 2026-11-02 to fill the remaining credit figures, never estimate one.",
   "labs": [
     {
       "lab": "labs/03-cs-basics/01-standard-agents/lab-01-create-your-first-agent.md",
@@ -113,10 +120,11 @@
       "lab": "labs/04-cs-tools/06-mcp/lab-01-give-an-agent-mcp-tools.md",
       "runDate": "2026-11-01",
       "agent": "LAB-HR Employee Management",
-      "exercisesRun": ["Exercise 1: tools/list returned 6 tools", "Exercise 2: agent created and published", "Exercise 3: list, add, assign shift, update, search and remove all worked", "Exercise 4: not verified, Microsoft 365 Copilot replies were blank"],
+      "exercisesRun": ["Exercise 1: tools/list returned 6 tools", "Exercise 2: agent created and published", "Exercise 3: list, add, assign shift, update, search and remove all worked", "Exercise 4: Microsoft 365 Copilot replies were blank on 2026-11-01; re-run on 2026-11-02: prompt, connection manager, Connect, Submit, Retry and answer verified; channel step preconditions verified (enabled and published on 2026-11-01, not re-executed); Add not executed, the agent was already installed for the account; guide steps rewritten"],
       "tests": [
         { "name": "MCP tool calls in the test pane", "credits": null, "creditsSource": "not shown" },
-        { "name": "Search for employee Marie in Microsoft 365 Copilot", "credits": null, "creditsSource": "not shown" }
+        { "name": "Search for employee Marie in Microsoft 365 Copilot, answered with Marie Dubois on 2026-11-02", "credits": null, "creditsSource": "not shown" },
+        { "name": "List all the employees in Microsoft 365 Copilot, 11 employees on 2026-11-02", "credits": null, "creditsSource": "not shown" }
       ],
       "creditsTotal": null
     },

@@ -226,7 +226,7 @@ Remove employee john.smith@greylogistics.com
 
 Select **Channels**, then the **Microsoft 365 and Microsoft Teams** card. Select **Add channel**, tick **Make agent available in Microsoft 365 Copilot**, select **Save**, and select **Publish** again.
 
-Then select **See agent in Microsoft 365**, then **Add**.
+Then select **See agent in Microsoft 365**. Microsoft 365 Copilot opens with your agent. If it shows an **Add** button, select it.
 
 Run a prompt such as:
 
@@ -234,7 +234,17 @@ Run a prompt such as:
 Search for employee Marie
 ```
 
-You are prompted to open the connection manager again. That is expected: the connection you created in the maker portal belongs to that context, and Microsoft 365 Copilot is a different one. Connect, retry, and the agent answers with the matching employee.
+You are prompted to open the connection manager again. That is expected: the connection you created in the maker portal belongs to that context, and Microsoft 365 Copilot is a different one.
+
+1. The agent first replies with `Let's get you connected first` and an **Open connection manager** link. Select the link.
+1. On **Manage your connections**, your MCP server shows **Not Connected**. Select **Connect**.
+1. The **Create or pick a connection** dialog offers the connection you created in Exercise 3. Keep it and select **Submit**.
+1. When the row shows **Connected**, select **Submit** on the page.
+1. Go back to the chat and select **Retry** on the agent's reply.
+
+The agent answers with the matching employee, Marie Dubois.
+
+![Microsoft 365 Copilot chat with LAB-HR Employee Management: the first reply asks to open the connection manager and offers Retry, and after connecting and Retry the agent answers with Marie Dubois, her email and her role.](./_images/m365-copilot-marie-answer.png)
 
 ---
 

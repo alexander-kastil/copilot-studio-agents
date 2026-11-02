@@ -37,3 +37,4 @@
 - Module 03 to 05 lab guides fixed where a live run found an error
 - Module 01 Agent Builder lab re-run: all screenshots retaken at 1280 width, two new ones for the SharePoint source and the Share menu, and the guide steps and image texts matched to the current UI
 - Publishing, secured REST API, autonomous agent, multi-agent and evaluations lab guides corrected from the live runs; the publishing lab builds its Copilot Chat agent as a Standard agent, since the Microsoft 365 Copilot agent entry is gone
+- MCP lab Exercise 4 (Microsoft 365 Copilot replied blank) rewritten to match a live rerun, where Microsoft 365 Copilot asked to connect first and answered after Connect and Retry; the blank reply did not come back, its cause is unknown
