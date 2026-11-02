@@ -9,6 +9,7 @@ These labs give the Standard HR agent tools that act: a prompt, connector and fl
 | [Give a Product Support Agent Live SharePoint and Excel Data with Connector Tools](./lab-3/readme.md) | 25 |
 | [Call a Secured REST API from an Agent](./05-rest-api/lab-01-call-a-secured-rest-api.md) | 50 |
 | [Give an Agent MCP Tools](./06-mcp/lab-01-give-an-agent-mcp-tools.md) | 40 |
+| **Total** | **140** |
 
 ![A Copilot Studio agent reaching the tool types of this module, each with what it reaches.](../../demos/04-cs-tools/pptx/images/00-01-tool-types.svg)
 

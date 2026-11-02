@@ -14,6 +14,7 @@ Work them in order: the first four each isolate one surface (the New agent menu,
 | [Build and Share a Business App](06-apps/lab-01-build-an-app.md) | 10 |
 | [Evaluate a Microsoft Copilot Harness Agent with Test Sets](07-evaluations/lab-01-evaluate-with-test-sets.md) | 25 |
 | [Upgrade the HR Agent and Rebuild Its Topics](08-migration/lab-01-upgrade-the-hr-agent.md) | 40 |
+| **Total** | **190** |
 
 ![The lab path: the New agent menu, the Build tabs, Evaluate and Skills labs each isolate one surface and feed the capstone Sales Account Assistant, after which the last two labs add IQ grounding and apps.](./_images/copilot-harness-lab-path.svg)
 

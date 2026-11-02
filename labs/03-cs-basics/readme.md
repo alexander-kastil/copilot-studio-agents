@@ -9,6 +9,7 @@ These labs build one Standard HR agent (Learn: standard harness), from an empty 
 | [Define Topics, Entities, and Variables](./03-topics/lab-01-build-topics.md) | 30 |
 | [Collect Input with Adaptive Cards](./05-adaptive-cards/lab-01-collect-input-with-adaptive-cards.md) | 10 |
 | [Publish the HR Agent to Teams and Microsoft 365 Copilot](./06-publishing/lab-01-publish-to-teams-and-copilot.md) | 30 |
+| **Total** | **100** |
 
 | Lab | Focus |
 |-----|-------|

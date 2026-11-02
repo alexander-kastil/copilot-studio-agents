@@ -9,6 +9,7 @@ Hands-on labs for [Module 1](../../demos/01-intro/readme.md). The essential labs
 | [Lab 03: Analyze Data with the Analyst Agent](./lab-03-analyst-agent.md) (optional) | not scheduled |
 | [Lab 04: Examine the Researcher Agent](./lab-04-researcher-agent.md) (optional) | not scheduled |
 | [Lab 05: Share and Use SharePoint Agents](./lab-05-share-and-use-agents.md) (optional) | not scheduled |
+| **Total** | **15** |
 
 ![The lab path: the Agent Builder and SharePoint agent labs first. The optional labs follow: Analyst and Researcher, which need a Microsoft Copilot license, then Share and use agents.](./_images/lab-path.svg)
 

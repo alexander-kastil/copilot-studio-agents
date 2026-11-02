@@ -7,6 +7,7 @@ Hands-on labs for Copilot Cowork: tenant setup, the execution model, custom Agen
 | [Cowork Setup and Extensibility](./lab-01-cowork-setup.md) | 30 |
 | [Build Your First Cowork Skill](./lab-02-cowork-skills.md) | 35 |
 | [Build Your First Cowork Plugin](./lab-03-cowork-plugins.md) | 75 |
+| **Total** | **140** |
 
 | # | Lab | What you build |
 |---|-----|----------------|
