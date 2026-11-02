@@ -17,6 +17,7 @@ Work them in order: the first four each isolate one surface (the New agent menu,
 | [Grounding Agents with Work IQ, Foundry IQ, and Fabric IQ](../../demos/06-cs-copilot-harness/05-iq-grounding/readme.md) | [Ground an Agent with Work IQ and Route Work Questions to It](05-iq-grounding/lab-01-ground-with-iq.md) | Add Work IQ to a Microsoft Copilot harness agent, route work-context questions to it in Instructions, and verify the routing in the activity trace |
 | [Building Apps in Copilot Studio](../../demos/06-cs-copilot-harness/06-apps/readme.md) | [Build and Share a Business App](06-apps/lab-01-build-an-app.md) | Connect a generated app to a SharePoint list, publish and share it with a classmate, and confirm that data access is a separate permission |
 | [Test and Evaluate Copilot Studio Agents](../../demos/06-cs-copilot-harness/07-evaluations/readme.md) | [Evaluate a Microsoft Copilot Harness Agent with Test Sets](07-evaluations/lab-01-evaluate-with-test-sets.md) | Fill a conversation test set three ways, run a baseline, diagnose each failure into a component bucket, change one thing, and prove the fix with a second run |
+| [Migrate Standard Agents to Microsoft Copilot Harness Agents](../../demos/06-cs-copilot-harness/08-migration/readme.md) | [Upgrade the HR Agent and Rebuild Its Topics](08-migration/lab-01-upgrade-the-hr-agent.md) | Upgrade the HR agent from module 03, read the upgrade report, map each topic to a skill, a workflow or a hook, rebuild the employee data topic as a workflow tool, and add a session-start hook |
 
 ## Lab assets
 

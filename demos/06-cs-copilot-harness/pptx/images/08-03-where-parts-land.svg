@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Where each Standard agent part lands on a Microsoft Copilot harness agent</title>
+  <desc id="d">Eight rows map a Standard agent part to its place on a Microsoft Copilot harness agent. Instructions, tools and suggested prompts are carried over. Topics become skills, workflow tools and hooks; system topics become the Start and Error hooks; Power Fx becomes workflow steps or the code interpreter; the prompt tool becomes skills; agent flows are rebuilt as workflows; child agents become skills or connected agents. Knowledge is added again. Computer use, voice, Adaptive Cards, custom entities, the SharePoint and WhatsApp channels and manual authentication stay on Standard agents for now.</desc>
+  <defs>
+    <marker id="ah" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+
+  <text x="60" y="105" font-size="32" font-weight="700" fill="#24292f">Standard agent</text>
+  <text x="840" y="105" font-size="32" font-weight="700" fill="#24292f">Microsoft Copilot harness agent</text>
+
+  <g font-size="29" fill="#24292f">
+    <rect x="60" y="140" width="620" height="76" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="88" y="188">Instructions, tools, suggested prompts</text>
+    <rect x="840" y="140" width="640" height="76" rx="14" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="868" y="188">Same, carried over</text>
+
+    <rect x="60" y="230" width="620" height="76" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="88" y="278">Topics</text>
+    <rect x="840" y="230" width="640" height="76" rx="14" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="868" y="278">Skills, workflow tools, hooks</text>
+
+    <rect x="60" y="320" width="620" height="76" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="88" y="368">System topics</text>
+    <rect x="840" y="320" width="640" height="76" rx="14" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="868" y="368">Hooks: Start, Error</text>
+
+    <rect x="60" y="410" width="620" height="76" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="88" y="458">Power Fx</text>
+    <rect x="840" y="410" width="640" height="76" rx="14" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="868" y="458">Workflow steps, code interpreter</text>
+
+    <rect x="60" y="500" width="620" height="76" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="88" y="548">Prompt tool</text>
+    <rect x="840" y="500" width="640" height="76" rx="14" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="868" y="548">Skills</text>
+
+    <rect x="60" y="590" width="620" height="76" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="88" y="638">Agent flows</text>
+    <rect x="840" y="590" width="640" height="76" rx="14" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="868" y="638">Workflows, rebuilt</text>
+
+    <rect x="60" y="680" width="620" height="76" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="88" y="728">Child agents</text>
+    <rect x="840" y="680" width="640" height="76" rx="14" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="868" y="728">Skills or connected agents</text>
+
+    <rect x="60" y="770" width="620" height="76" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="88" y="818">Knowledge</text>
+    <rect x="840" y="770" width="640" height="76" rx="14" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="868" y="818">Added again</text>
+  </g>
+
+  <g stroke="#57606a" stroke-width="4" marker-end="url(#ah)">
+    <line x1="690" y1="178" x2="830" y2="178"/>
+    <line x1="690" y1="268" x2="830" y2="268"/>
+    <line x1="690" y1="358" x2="830" y2="358"/>
+    <line x1="690" y1="448" x2="830" y2="448"/>
+    <line x1="690" y1="538" x2="830" y2="538"/>
+    <line x1="690" y1="628" x2="830" y2="628"/>
+    <line x1="690" y1="718" x2="830" y2="718"/>
+    <line x1="690" y1="808" x2="830" y2="808"/>
+  </g>
+
+  <g font-size="28" fill="#24292f">
+    <rect x="1560" y="140" width="40" height="40" rx="8" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="1618" y="170">carried over</text>
+    <rect x="1560" y="210" width="40" height="40" rx="8" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1618" y="240">rebuilt</text>
+    <rect x="1560" y="280" width="40" height="40" rx="8" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1618" y="310">added again</text>
+    <rect x="1560" y="350" width="40" height="40" rx="8" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <text x="1618" y="380">stays Standard</text>
+  </g>
+
+  <rect x="60" y="880" width="1800" height="140" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="92" y="937" font-size="29" fill="#24292f"><tspan font-weight="700">Stays Standard for now:</tspan> computer use, voice, Adaptive Cards, custom entities,</text>
+  <text x="92" y="983" font-size="29" fill="#24292f">SharePoint and WhatsApp channels, manual authentication</text>
+</svg>

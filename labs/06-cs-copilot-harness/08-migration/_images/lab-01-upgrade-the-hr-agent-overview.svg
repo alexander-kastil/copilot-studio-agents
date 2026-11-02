@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Each part of the Standard HR Agent finds its home on HR Agent (Upgraded)</title>
+  <desc id="d">On the left, the Standard HR Agent from module 03 with its instructions, two knowledge sources and three topics. The upgrade creates HR Agent (Upgraded) on the GitHub Copilot harness, shown on the right, one row per component. The instructions carry over. The knowledge, Microsoft Careers site and HR Documents, is added again. The topic Collect user's role becomes instructions plus the Start (pre-loop) hook Greet the signed-in user, which greets the user by first name. The topic Register a new candidate becomes the Register Candidate workflow tool, with four inputs, Send an email (V2) and the output Confirmation. The topic Register new candidate with adaptive cards stays on the Standard agent. Dots carry each row across in turn.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      svg { font-size: 26px; }
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .t { font-size: 30px; font-weight: 600; }
+      .s { font-size: 28px; fill: #57606a; }
+      .bb { font-size: 28px; font-weight: 600; }
+      .bbc { font-size: 28px; font-weight: 600; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="60" y="50" width="700" height="110" rx="20" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="90" y="98">HR Agent</text>
+  <text class="s" x="90" y="138">Standard agent, module 03</text>
+  <rect x="920" y="50" width="940" height="110" rx="20" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="950" y="98">HR Agent (Upgraded)</text>
+  <text class="s" x="950" y="138">GitHub Copilot harness</text>
+  <line x1="760" y1="105" x2="920" y2="105" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <text class="bbc" x="840" y="86">upgrade</text>
+
+  <rect x="60" y="190" width="700" height="150" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="90" y="252">Instructions</text>
+  <text class="s" x="90" y="296">eight bullets: tone and scope</text>
+  <line x1="760" y1="265" x2="920" y2="265" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <rect x="920" y="190" width="940" height="150" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="950" y="252">Instructions</text>
+  <text class="s" x="950" y="296">carried over by the upgrade</text>
+
+  <rect x="60" y="360" width="700" height="150" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="90" y="422">Knowledge</text>
+  <text class="s" x="90" y="466">Microsoft Careers site, HR Documents</text>
+  <line x1="760" y1="435" x2="920" y2="435" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <rect x="920" y="360" width="940" height="150" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="950" y="422">Knowledge, added again</text>
+  <text class="s" x="950" y="466">Microsoft Careers site, HR Documents</text>
+
+  <rect x="60" y="530" width="700" height="150" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="90" y="592">Topic: Collect user's role</text>
+  <text class="s" x="90" y="636">tailor answers to the role</text>
+  <line x1="760" y1="605" x2="920" y2="605" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <rect x="920" y="530" width="940" height="150" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="950" y="592">Instructions plus a Start (pre-loop) hook</text>
+  <text class="s" x="950" y="636">Greet the signed-in user: greets by first name</text>
+
+  <rect x="60" y="700" width="700" height="150" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="90" y="762">Topic: Register a new candidate</text>
+  <text class="s" x="90" y="806">collect and confirm a candidate</text>
+  <line x1="760" y1="775" x2="920" y2="775" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <rect x="920" y="700" width="940" height="150" rx="16" fill="#fff6e5" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="950" y="762">Register Candidate workflow tool</text>
+  <text class="s" x="950" y="806">4 inputs, Send an email (V2), Confirmation</text>
+
+  <rect x="60" y="870" width="700" height="150" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="90" y="932">Topic: Register new candidate</text>
+  <text class="s" x="90" y="976">with adaptive cards</text>
+  <rect x="920" y="870" width="940" height="150" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2" stroke-dasharray="10 8"/>
+  <text class="bb" x="950" y="932">Stays on the Standard agent</text>
+  <text class="s" x="950" y="976">no documented Adaptive Card equivalent</text>
+
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="10s" repeatCount="indefinite" path="M760,105 H920" calcMode="linear" keyTimes="0;0.02;0.1;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.02;0.03;0.1;0.11;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="10s" repeatCount="indefinite" path="M760,265 H920" calcMode="linear" keyTimes="0;0.12;0.2;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.12;0.13;0.2;0.21;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="920" y="190" width="940" height="150" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.2;0.21;0.28;0.29;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="10s" repeatCount="indefinite" path="M760,435 H920" calcMode="linear" keyTimes="0;0.29;0.37;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.29;0.3;0.37;0.38;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="920" y="360" width="940" height="150" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.37;0.38;0.45;0.46;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="10s" repeatCount="indefinite" path="M760,605 H920" calcMode="linear" keyTimes="0;0.46;0.54;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.46;0.47;0.54;0.55;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="920" y="530" width="940" height="150" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.54;0.55;0.62;0.63;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="10s" repeatCount="indefinite" path="M760,775 H920" calcMode="linear" keyTimes="0;0.63;0.71;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.63;0.64;0.71;0.72;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="920" y="700" width="940" height="150" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.71;0.72;0.79;0.8;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="60" y="870" width="700" height="150" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.8;0.81;0.95;0.96;1" values="0;0;1;1;0;0"/>
+  </rect>
+</svg>

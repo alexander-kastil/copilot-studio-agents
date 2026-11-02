@@ -5,6 +5,7 @@
 
 ### Added
 
+- Module 06 topic 08, Migrate Standard Agents to Microsoft Copilot Harness Agents: when to migrate, the upgrade, rebuild and terminal routes, where each Standard part from modules 03 to 05 lands, topics rebuilt as workflow tools and hooks; the Health Advisor demo, the HR agent lab, four slides in the module 06 deck, and the lab on the Day 4 schedule
 - Update .claude, .gitignore, .time
 - Update assets
 - Add the `wiqd plugin import` command to the Cowork module: a short teaching and one slide with an overview of what it does

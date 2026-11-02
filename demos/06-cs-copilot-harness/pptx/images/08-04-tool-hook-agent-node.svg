@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Three ways to run fixed steps on a Microsoft Copilot harness agent</title>
+  <desc id="d">Workflow tool: the agent chooses the workflow by its description; the workflow runs When an agent calls the flow, its steps and Respond to the agent, then returns to the agent. The agent decides. Hook: an event fires (Start, Prompt, Pre tool, Post tool, Error), the same three-step workflow runs and feeds the agent every time. The event decides. Agent node: a workflow runs Trigger, Agent node and Next step; the agent node calls the agent and gets its answer back, and the workflow owns the order. The workflow decides.</desc>
+  <defs>
+    <marker id="ah" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+
+  <rect x="1600" y="30" width="280" height="64" rx="14" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1740" y="73" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Who decides</text>
+
+  <rect x="40" y="110" width="1530" height="250" rx="20" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="70" y="155" font-size="32" font-weight="700" fill="#24292f">Workflow tool</text>
+  <rect x="70" y="180" width="300" height="80" rx="14" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="220" y="231" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Agent</text>
+  <rect x="60" y="272" width="330" height="50" rx="25" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="225" y="307" font-size="28" fill="#57606a" text-anchor="middle">chooses by description</text>
+  <line x1="370" y1="210" x2="422" y2="210" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <rect x="430" y="175" width="290" height="100" rx="12" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="575" y="218" font-size="28" fill="#24292f" text-anchor="middle">When an agent</text>
+  <text x="575" y="254" font-size="28" fill="#24292f" text-anchor="middle">calls the flow</text>
+  <line x1="720" y1="225" x2="762" y2="225" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <rect x="770" y="175" width="160" height="100" rx="12" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="850" y="235" font-size="28" fill="#24292f" text-anchor="middle">Steps</text>
+  <line x1="930" y1="225" x2="972" y2="225" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <rect x="980" y="175" width="230" height="100" rx="12" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="1095" y="218" font-size="28" fill="#24292f" text-anchor="middle">Respond to</text>
+  <text x="1095" y="254" font-size="28" fill="#24292f" text-anchor="middle">the agent</text>
+  <path d="M1095,275 V338 H405 V245 H378" fill="none" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+
+  <rect x="40" y="380" width="1530" height="270" rx="20" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="70" y="425" font-size="32" font-weight="700" fill="#24292f">Hook</text>
+  <rect x="70" y="445" width="300" height="185" rx="14" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="90" y="490" font-size="30" font-weight="700" fill="#24292f">Event fires</text>
+  <text x="90" y="534" font-size="28" fill="#57606a">Start, Prompt,</text>
+  <text x="90" y="572" font-size="28" fill="#57606a">Pre tool, Post tool,</text>
+  <text x="90" y="610" font-size="28" fill="#57606a">Error</text>
+  <line x1="370" y1="540" x2="422" y2="540" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <rect x="430" y="490" width="290" height="100" rx="12" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="575" y="533" font-size="28" fill="#24292f" text-anchor="middle">When an agent</text>
+  <text x="575" y="569" font-size="28" fill="#24292f" text-anchor="middle">calls the flow</text>
+  <line x1="720" y1="540" x2="762" y2="540" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <rect x="770" y="490" width="160" height="100" rx="12" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="850" y="550" font-size="28" fill="#24292f" text-anchor="middle">Steps</text>
+  <line x1="930" y1="540" x2="972" y2="540" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <rect x="980" y="490" width="230" height="100" rx="12" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="1095" y="533" font-size="28" fill="#24292f" text-anchor="middle">Respond to</text>
+  <text x="1095" y="569" font-size="28" fill="#24292f" text-anchor="middle">the agent</text>
+  <line x1="1210" y1="540" x2="1272" y2="540" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <rect x="1280" y="500" width="260" height="80" rx="14" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1410" y="551" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Agent</text>
+  <rect x="1320" y="592" width="180" height="46" rx="23" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1410" y="624" font-size="28" fill="#57606a" text-anchor="middle">every time</text>
+
+  <rect x="40" y="670" width="1530" height="360" rx="20" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="70" y="715" font-size="32" font-weight="700" fill="#24292f">Agent node</text>
+  <rect x="130" y="740" width="290" height="80" rx="12" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="275" y="790" font-size="28" fill="#24292f" text-anchor="middle">Trigger</text>
+  <line x1="420" y1="780" x2="512" y2="780" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <rect x="520" y="740" width="290" height="80" rx="12" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="665" y="790" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">Agent node</text>
+  <line x1="810" y1="780" x2="902" y2="780" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <rect x="910" y="740" width="290" height="80" rx="12" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="1055" y="790" font-size="28" fill="#24292f" text-anchor="middle">Next step</text>
+  <line x1="630" y1="820" x2="630" y2="892" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <line x1="700" y1="900" x2="700" y2="828" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <rect x="535" y="900" width="260" height="80" rx="14" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="665" y="951" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Agent</text>
+  <rect x="860" y="916" width="360" height="50" rx="25" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1040" y="951" font-size="28" fill="#57606a" text-anchor="middle">workflow owns the order</text>
+
+  <rect x="1600" y="195" width="280" height="80" rx="14" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1740" y="246" font-size="30" fill="#24292f" text-anchor="middle">the agent</text>
+  <rect x="1600" y="500" width="280" height="80" rx="14" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1740" y="551" font-size="30" fill="#24292f" text-anchor="middle">the event</text>
+  <rect x="1600" y="810" width="280" height="80" rx="14" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1740" y="861" font-size="30" fill="#24292f" text-anchor="middle">the workflow</text>
+</svg>

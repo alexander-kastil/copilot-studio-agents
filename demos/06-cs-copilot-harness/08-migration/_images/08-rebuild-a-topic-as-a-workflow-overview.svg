@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">The Check Symptoms topic of the Standard Health Advisor becomes the Check Symptoms workflow tool of Health Advisor (Upgraded)</title>
+  <desc id="d">On the left, the Standard Health Advisor runs its Check Symptoms topic: three questions in fixed order for Age, Gender and Symptoms, the agent flow SummarizePatientSymtoms, a Power Fx condition that looks for cleared for light work, and a message with the outcome. The upgrade creates Health Advisor (Upgraded) on the GitHub Copilot harness. On the right, the same journey runs as one Check Symptoms workflow tool: the trigger takes the inputs Age, Gender and Symptoms, a classify node sorts them into the branches Cleared for light work, See a doctor and Other, and each branch ends in Respond to the agent returning Outcome. At the bottom, the mapping: the three questions become three inputs, the agent flow and the Power Fx condition become one classify node, and the message becomes Respond to the agent. Dots walk the topic from top to bottom, cross the upgrade arrow and run through the workflow.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      svg { font-size: 26px; }
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .t { font-size: 30px; font-weight: 600; }
+      .s { font-size: 28px; fill: #57606a; }
+      .sc { font-size: 28px; fill: #57606a; text-anchor: middle; }
+      .b { font-size: 28px; }
+      .bb { font-size: 28px; font-weight: 600; }
+      .bbc { font-size: 28px; font-weight: 600; text-anchor: middle; }
+      .mono { font-family: Consolas, 'Courier New', monospace; font-size: 26px; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="60" y="60" width="700" height="740" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="90" y="112">Health Advisor</text>
+  <text class="s" x="90" y="152">Standard agent</text>
+  <text class="bb" x="90" y="206">Check Symptoms topic</text>
+
+  <rect x="100" y="232" width="620" height="146" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="124" y="276">3 questions</text>
+  <text class="mono" x="124" y="318">Age, Gender, Symptoms</text>
+  <text class="s" x="124" y="358">asked in fixed order</text>
+  <line x1="410" y1="378" x2="410" y2="420" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+
+  <rect x="100" y="420" width="620" height="110" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="124" y="464">Agent flow</text>
+  <text class="mono" x="124" y="506">SummarizePatientSymtoms</text>
+  <line x1="410" y1="530" x2="410" y2="570" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+
+  <rect x="100" y="570" width="620" height="100" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="124" y="612">Power Fx condition</text>
+  <text class="s" x="124" y="652">"cleared for light work"</text>
+  <line x1="410" y1="670" x2="410" y2="708" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+
+  <rect x="100" y="708" width="620" height="70" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="124" y="753">Message: the outcome</text>
+
+  <line x1="770" y1="440" x2="890" y2="440" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <text class="bbc" x="830" y="420">upgrade</text>
+
+  <rect x="900" y="60" width="960" height="740" rx="24" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="930" y="112">Health Advisor (Upgraded)</text>
+  <text class="s" x="930" y="152">GitHub Copilot harness</text>
+  <text class="bb" x="930" y="206">Check Symptoms</text>
+  <text class="s" x="1172" y="206">workflow tool</text>
+
+  <rect x="930" y="300" width="230" height="230" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="952" y="346">Trigger</text>
+  <text class="mono" x="952" y="398">Age</text>
+  <text class="mono" x="952" y="444">Gender</text>
+  <text class="mono" x="952" y="490">Symptoms</text>
+  <line x1="1160" y1="415" x2="1200" y2="415" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+
+  <rect x="1200" y="335" width="180" height="160" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bbc" x="1290" y="408">Classify</text>
+  <text class="sc" x="1290" y="448">node</text>
+
+  <line x1="1380" y1="395" x2="1440" y2="315" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <line x1="1380" y1="415" x2="1440" y2="500" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <line x1="1380" y1="440" x2="1440" y2="685" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+
+  <rect x="1440" y="240" width="400" height="150" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="1462" y="286">Cleared for light work</text>
+  <text class="s" x="1462" y="328">Respond to the agent</text>
+  <text class="mono" x="1462" y="368">Outcome</text>
+
+  <rect x="1440" y="425" width="400" height="150" rx="16" fill="#fff6e5" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="1462" y="471">See a doctor</text>
+  <text class="s" x="1462" y="513">Respond to the agent</text>
+  <text class="mono" x="1462" y="553">Outcome</text>
+
+  <rect x="1440" y="610" width="400" height="150" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="1462" y="656">Other</text>
+  <text class="s" x="1462" y="698">Respond to the agent</text>
+  <text class="mono" x="1462" y="738">Outcome</text>
+
+  <rect x="60" y="850" width="560" height="160" rx="20" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="90" y="914">3 questions</text>
+  <text class="bb" x="90" y="964">become 3 inputs</text>
+  <rect x="680" y="850" width="560" height="160" rx="20" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="710" y="914">Agent flow + Power Fx condition</text>
+  <text class="bb" x="710" y="964">become one classify node</text>
+  <rect x="1300" y="850" width="560" height="160" rx="20" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="1330" y="914">Message: the outcome</text>
+  <text class="bb" x="1330" y="964">becomes Respond to the agent</text>
+
+  <rect x="100" y="232" width="620" height="146" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.02;0.03;0.1;0.11;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="100" y="420" width="620" height="110" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.11;0.12;0.19;0.2;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="100" y="570" width="620" height="100" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.2;0.21;0.28;0.29;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="100" y="708" width="620" height="70" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.29;0.3;0.37;0.38;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M770,440 H890" calcMode="linear" keyTimes="0;0.38;0.45;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.38;0.39;0.45;0.46;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="930" y="300" width="230" height="230" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.46;0.47;0.54;0.55;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M1160,415 H1200" calcMode="linear" keyTimes="0;0.54;0.57;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.54;0.55;0.57;0.58;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1200" y="335" width="180" height="160" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.57;0.58;0.65;0.66;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M1380,395 L1440,315" calcMode="linear" keyTimes="0;0.66;0.7;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.66;0.67;0.7;0.71;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M1380,415 L1440,500" calcMode="linear" keyTimes="0;0.66;0.7;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.66;0.67;0.7;0.71;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <circle r="14" fill="#24292f" opacity="0">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M1380,440 L1440,685" calcMode="linear" keyTimes="0;0.66;0.7;1" keyPoints="0;0;1;1"/>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.66;0.67;0.7;0.71;1" values="0;0;1;1;0;0"/>
+  </circle>
+  <rect x="1440" y="240" width="400" height="150" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.71;0.72;0.95;0.96;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="1440" y="425" width="400" height="150" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.71;0.72;0.95;0.96;1" values="0;0;1;1;0;0"/>
+  </rect>
+  <rect x="1440" y="610" width="400" height="150" rx="16" fill="none" stroke="#24292f" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.71;0.72;0.95;0.96;1" values="0;0;1;1;0;0"/>
+  </rect>
+</svg>
