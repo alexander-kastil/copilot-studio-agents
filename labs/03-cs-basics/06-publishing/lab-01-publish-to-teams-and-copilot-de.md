@@ -87,7 +87,6 @@ In diesen Übungen lernen Sie:
 
 - Wie Sie einen Agent für Microsoft 365 Copilot Chat erstellen
 - Wie Sie ein eigenes Icon für Ihren Agent festlegen
-- Wie Sie Knowledge Sources für Ihren Agent konfigurieren
 - Wie Sie den Agent in Microsoft 365 Copilot Chat publishen
 - Wie Sie ein Tool für Microsoft 365 Copilot Chat erstellen
 
@@ -110,37 +109,7 @@ It should have a professional tone.
 
 Wählen Sie **Save**. Die Seite **Overview** zeigt die Abschnitte, die Sie in den nächsten Schritten konfigurieren: **Details**, **Instructions**, **Knowledge** und **Tools**. Rechts im Bildschirm können Sie den Agent im Panel **Test** jederzeit ausprobieren.
 
-### Schritt 2: Das Icon des Agents ändern
-
-Wählen Sie jetzt im Abschnitt **Details** den Befehl **Edit** und dann **Change icon**, um ein PNG-Icon hochzuladen. Wenn Sie möchten, verwenden Sie [HR-agent-color.png](../01-standard-agents/lab-01-create-your-first-agent/HR-agent-color.png) aus dem ersten Lab. Hier gibt es keinen Color Picker: Die Hintergrundfarbe des Icons legen Sie in Schritt 4 in den Details des Channels fest.
-
-Wählen Sie **Save**, um das neue Icon zu speichern, und dann erneut **Save**, um die aktualisierten Details des Agents zu speichern.
-
-### Schritt 3: Dem Agent eine Knowledge Base hinzufügen
-
-Wie in [Ihren ersten Copilot Studio Agent erstellen](../01-standard-agents/lab-01-create-your-first-agent-de.md) laden Sie über diesen [Link](https://download-directory.github.io/?url=https://github.com/microsoft/copilot-camp/tree/main/src/make/copilot-studio/HR-documents&filename=hr-documents) eine ZIP-Datei mit einigen Dateien (Word, PowerPoint, PDF) herunter.
-
-Entpacken Sie die Dateien und laden Sie sie in die Bibliothek **Documents** einer SharePoint Teams Site im selben Tenant hoch, in dem Sie Ihren Agent mit Copilot Studio bauen. Microsoft 365 Copilot hat diese Dokumente erzeugt, damit der Agent eine zusätzliche Knowledge Base hat.
-
-Kopieren Sie die absolute URL der Site, zum Beispiel: `https://xyz.sharepoint.com/sites/greylogistics`
-
-Um dem Agent eine Knowledge Source hinzuzufügen, wählen Sie den Befehl **+ Add knowledge** rechts oben im Abschnitt **Knowledge**. Ein Dialogfenster öffnet sich, in dem Sie eine Datenquelle wählen. Wählen Sie unter den **Featured** Sources die Kachel **SharePoint** und suchen Sie nach einer Site, die Sie als Datenquelle nutzen möchten.
-
-![Der Dialog zum Konfigurieren zusätzlicher Knowledge Bases für den Agent. Es gibt eine Liste **Featured** Knowledge Bases, die derzeit nur SharePoint enthält. Außerdem gibt es einen Befehl, um **Advanced** Datenquellen zu durchsuchen.](./_images/create-agent-m365-copilot-chat-06.png)
-
-Fügen Sie die URL der SharePoint Online Site mit den gespeicherten Dokumenten in den Dialog ein oder wählen Sie **Browse items**, um die SharePoint Online Sites nach Datenquellen zu durchsuchen. Sobald Sie eine URL angegeben oder eine Datenquelle gewählt haben, enthält **Name** bereits den Namen der Site; ergänzen Sie eine aussagekräftige **Description** für die neue Knowledge Base. Copilot nutzt die Description, um anhand des Intents im Prompt des Users die passende Datenquelle anzusteuern.
-
-![Der Dialog zum Konfigurieren einer SharePoint Online Datenquelle. Es gibt einen Befehl **Browse files** und ein Textfeld, in das Sie einen direkten Link zu einer Datenquelle einfügen. Außerdem gibt es eine bereits gewählte Datenquelle mit URL Link, Name und Description. Im unteren Teil des Dialogs gibt es einen Befehl **Add** zum Speichern der neuen Datenquelle, einen Befehl **Cancel** zum Abbrechen und einen Befehl **Back**, um zum vorigen Schritt zurückzukehren.](./_images/create-agent-m365-copilot-chat-07.png)
-
-Wählen Sie **Add to agent**, um die neue Datenquelle der Knowledge Base des Agents hinzuzufügen.
-
-> **Wichtig:** Ist eine SharePoint Online Site die Knowledge Base eines Agents in Copilot Studio, bekommen User nur Antworten und Inhalte aus Dokumenten, auf die sie Zugriff haben. Security und Access Control stellt die Security-Infrastruktur von Microsoft 365 sicher, und Copilot Studio Agents greifen im Namen des aktuellen Users auf Dokumente zu.
-
-![Zwei überlappende Kreise: die Inhalte, die Sie für den Agent wählen (eine ganze Site, bestimmte Ordner oder ausgewählte Dokumente), und das, was die fragende Person bereits sehen darf. Die Antworten des Agents stammen nur aus der Schnittmenge.](../../../demos/01-intro/pptx/images/04-01-productivity-agents.svg)
-
-
-
-### Schritt 4: Den Agent in Microsoft 365 Copilot Chat publishen
+### Schritt 2: Den Agent in Microsoft 365 Copilot Chat publishen
 
 ![Der Publishing-Zyklus: Agentic HR in Copilot Studio erstellen, mit den Details des App Manifests publishen, den direkten Link kopieren, im Company App Store Add wählen und dann im Copilot Chat mit dem Agent chatten. Nach einer Änderung, etwa dem Tool in Übung 2, publishen Sie erneut und wählen Update now.](./_images/publish-add-update-lifecycle.svg)
 
@@ -181,21 +150,20 @@ Wählen Sie den Agent und beginnen Sie die Interaktion. Geben Sie zum Beispiel f
 How can we hire new people in our company?
 ```
 
-Der Agent liefert Ihnen ausführliche Informationen zum Einstellungsprozess, basierend auf den Inhalten der Dokumente in der Knowledge Base. Die wichtigste Datenquelle für die Antwort ist zum Beispiel das Dokument `Hiring Procedures.docx`, das Sie in SharePoint Online hochgeladen haben.
-
-![Der Agent "Agentic HR" in Aktion in Microsoft 365 Copilot Chat: Er beantwortet einen Prompt zum Einstellungsprozess und verweist auf ein Word-Dokument in der SharePoint Online Knowledge Base des Agents.](./_images/create-agent-m365-copilot-chat-12.png)
+Der Agent antwortet aus seinen Instructions und seinem allgemeinen Wissen: Er hat keine eigene Knowledge Source, daher enthält die Antwort keine Verweise auf Ihre Dokumente.
 
 ## Übung 3: Dem Agent ein Tool hinzufügen
 
 In dieser Übung fügen Sie dem Agent aus der vorigen Übung ein Custom Tool hinzu. Wenn Sie in Microsoft Copilot Studio Agents für Microsoft 365 Copilot Chat (Declarative Agents) erstellen, können Sie verschiedene Arten von Tools hinzufügen, darunter:
 
 - Prompt: nutzt ein AI Tool, das auf einem Prompt in natürlicher Sprache basiert.
+- Connector: nutzt einen vorgefertigten Power Platform Connector, etwa Excel Online (Business).
 - Custom connector: nutzt einen Power Platform Custom Connector.
 - REST API: nutzt eine externe REST API. Weitere Details finden Sie [hier](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-rest-api).
 
 > **Tools für Agents:** Mehr zum Hinzufügen von Tools zu Agents in Copilot Studio lesen Sie im Artikel [Add tools to custom agents](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-plugin-actions).
 
-In diesem Lab fügen Sie ein Tool vom Typ `Custom connector` hinzu, um eine Liste von Kandidatinnen und Kandidaten aus einer Excel-Datei in SharePoint Online abzurufen.
+In diesem Lab fügen Sie ein Tool vom Typ `Connector` hinzu, den vorgefertigten Connector Excel Online (Business), um eine Liste von Kandidatinnen und Kandidaten aus einer Excel-Datei in SharePoint Online abzurufen.
 
 ### Schritt 1: Einem Agent für Microsoft 365 Copilot ein Tool hinzufügen
 
@@ -207,7 +175,7 @@ Ein Dialogfenster öffnet sich, in dem Sie wählen, welche Art von Tool Sie erst
 
 Finden Sie die gewünschte Option nicht in der Liste der Featured Items, wechseln Sie einfach zur Gruppe **All** und suchen Sie per Text danach.
 
-Um diesen Schritt abzuschließen, wählen Sie das Featured Tool **Excel** und dann **List rows present in a table**. Haben Sie noch keine Excel Connection, wählen Sie **Connection**, dann **Create new connection** und folgen dem Ablauf; eine Connection aus einem früheren Lab verwendet Copilot Studio wieder.
+Um diesen Schritt abzuschließen, wählen Sie das Featured Tool **Excel** und dann **List rows present in a table**. Haben Sie noch keine Excel Connection, wählen Sie **Connection**, dann **Create new connection** und folgen dem Ablauf.
 
 ![Der Dialog zum Verbinden mit dem Power Platform Ziel-Connector mit Details zur vorhandenen Connection oder einer Schaltfläche zum Erstellen einer neuen Connection. Außerdem gibt es eine Zurück-Schaltfläche, um neu zu beginnen.](./_images/create-action-excel-connector-03.png)
 

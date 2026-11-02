@@ -5,6 +5,7 @@
 
 ### Added
 
+- How Agents Work: a "Work IQ: The Work Context Behind Copilot" section on what Work IQ is (its data, the context, tools, chat and workspaces parts, user-scoped access, cost) and a "What Work IQ is" slide with its diagram in the module 01 deck
 - Presenter guides for every demo in modules 03 to 05, each beside its demo, naming the agent to use
 - German translations of the 13 lab guides in modules 03 to 05 as `lab-01-*-de.md` beside each English guide; UI labels and typed text stay English, links between labs point to the German siblings
 - Module 06 topic 08, Migrate Standard Agents to Microsoft Copilot Harness Agents: when to migrate, the upgrade, rebuild and terminal routes, where each Standard part from modules 03 to 05 lands, topics rebuilt as workflow tools and hooks; the Health Advisor demo, the HR agent lab, four slides in the module 06 deck, and the lab on the Day 4 schedule
@@ -34,6 +35,7 @@
 - The first Copilot Studio lab skips the environment exercise, since the environments are pre-created for students
 - The Workflows lab is removed from module 01 and from the lab tests
 - The SharePoint agent labs ground on the copilot-demo SharePoint site
+- The publishing lab, English and German, drops the icon and knowledge steps of the Agentic HR agent, already covered in the first and the knowledge lab, and names its Excel tool a prebuilt Connector instead of a Custom connector; the Copilot Chat test no longer promises document references or shows the knowledge citation screenshot
 
 ### Fixed
 

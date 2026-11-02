@@ -95,6 +95,25 @@ Knowledge lets an agent read; tools let it act on live systems, such as checking
 
 ---
 
+## Work IQ: The Work Context Behind Copilot
+
+Knowledge and tools are parts you add to an agent, but in Microsoft 365 a large share of both already exists. Work IQ is the intelligence layer that grounds Microsoft 365 Copilot and your agents in how your organization works: mail, meetings, Teams chats, OneDrive and SharePoint files, Planner plans, the people you work with, and business data from Dynamics 365 and Power Platform. Think of it as the semantic index, RAG and an MCP server built once for the whole tenant, so an agent needs no vector store or sync job of its own. It is why Copilot Chat can answer "what did we agree with the canteen supplier last week" without you attaching a file.
+
+Microsoft groups what Work IQ offers agents into four parts:
+
+| Part | What it gives an agent | Example |
+|---|---|---|
+| Context | Grounded input assembled from work data, with no retrieval pipeline to build | The latest emails and meeting notes about a delayed supplier delivery |
+| Tools | The Work IQ MCP server: 10 generic verbs such as fetch, create and update, applied to mail, calendar, files, people, chats and sites | Fetch the onboarding checklist from SharePoint, then create the welcome meeting |
+| Chat | A question delegated to Work IQ as a peer agent, answered with Copilot-quality reasoning | "Summarize what changed in the travel policy this quarter" |
+| Workspaces | Storage inside the tenant for the intermediate results of long-running work | A draft report the agent picks up again in its next run |
+
+![Your work data (mail, meetings, Teams chats, files, people and business data) flows into Work IQ, whose context, tools, chat and workspaces run as the signed-in user, and Work IQ grounds Copilot Chat and the Office apps, Copilot Cowork and Copilot Studio agents.](../pptx/images/02-05-work-iq.svg)
+
+Every request runs as the signed-in user, so an agent sees only what that person may see, and every tool call is logged. You meet Work IQ throughout this course: Copilot Chat and the Office apps use it built in, Cowork reaches your Microsoft 365 data through it, and Copilot Studio adds it by default to every new agent on the [Microsoft Copilot harness](../../06-cs-copilot-harness/readme.md). Inside Microsoft 365 Copilot experiences it comes with the Copilot license, while custom and third-party agents and users without that license pay per use in Copilot Credits, as [Prepare the Tenant: Licenses & Credits](../06-cost-license/readme.md) shows.
+
+---
+
 ## Design Patterns
 
 Most agent solutions are assembled from a small set of recurring patterns. You choose a pattern for the shape of the problem, and you can combine several in one solution.
@@ -127,6 +146,7 @@ Single-agent design starts in Copilot Studio Basics; multi-agent orchestration, 
 - [Write agent instructions in Copilot Studio](https://learn.microsoft.com/microsoft-copilot-studio/authoring-instructions)
 - [Semantic Index for Microsoft 365 Copilot](https://learn.microsoft.com/microsoftsearch/semantic-index-for-copilot)
 - [Model Context Protocol](https://modelcontextprotocol.io/)
+- [Work IQ overview](https://learn.microsoft.com/microsoft-365/copilot/extensibility/work-iq)
 - [Harnesses in Copilot Studio](https://learn.microsoft.com/microsoft-copilot-studio/harnesses-overview)
 - [Compare Copilot Studio agent harnesses](https://learn.microsoft.com/microsoft-copilot-studio/guidance/choose-harness)
 - [Add other agents in Copilot Studio](https://learn.microsoft.com/microsoft-copilot-studio/authoring-add-other-agents)
