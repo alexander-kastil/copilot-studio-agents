@@ -36,6 +36,7 @@
 
 - Broken image links in the readmes and labs: the slide diagrams (`pptx/images/*.svg`) they embed are tracked again, while decks, renders and photos stay local
 - Module 02 Cowork lab guides corrected from the live runs
+- Module 03 deck slides 13, 21 and 28: the screenshots are sharpened from the original captures at 4x resolution, and the PDF is re-exported
 - Module 03 to 05 lab guides fixed where a live run found an error
 - Module 01 Agent Builder lab re-run: all screenshots retaken at 1280 width, two new ones for the SharePoint source and the Share menu, and the guide steps and image texts matched to the current UI
 - Publishing, secured REST API, autonomous agent, multi-agent and evaluations lab guides corrected from the live runs; the publishing lab builds its Copilot Chat agent as a Standard agent, since the Microsoft 365 Copilot agent entry is gone
