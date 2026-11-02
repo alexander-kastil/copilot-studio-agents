@@ -21,6 +21,7 @@
 - Lab run record `labs/02-cowork/cowork-lab-cost.json` for the module 02 Cowork labs: exercises run, model and effort, and the Copilot Credits per task, still marked not yet available
 - Lab run record `labs/copilot-studio-labs.json` for the module 03 to 05 Copilot Studio labs: exercises run per lab, the tests, and the Copilot Credits each showed, most still not shown
 - Update labs
+- Update demos
 
 ### Changed
 
