@@ -2,6 +2,14 @@
 
 Hands-on labs for [Module 5](../../demos/08-ai-teammates/readme.md). This is a draft lab plan: each lab gets its full guide once it has been run end to end in a Frontier tenant with agent accounts activated.
 
+| Title | Minutes |
+|-------|---------|
+| [Lab 1: Write a Teammate Brief](#lab-1-write-a-teammate-brief) | 20 |
+| [Lab 2: Set Up Background Work and Approvals](#lab-2-set-up-background-work-and-approvals) | 30 |
+| [Lab 3: Create the Cadence Agent with an Account](#lab-3-create-the-cadence-agent-with-an-account) | 30 |
+| [Lab 4: Make Cadence Proactive](#lab-4-make-cadence-proactive) | 40 |
+| [Lab 5: Teammate Readiness Review](#lab-5-teammate-readiness-review) | 25 |
+
 > Note: Labs 2 to 5 need a tenant enrolled in the Frontier program. Labs 3 to 5 also need an early release environment, a maker license (Microsoft 365 E5 with the Agent 365 add-on, or Microsoft 365 E7), and a free Microsoft 365 Frontier for AI Teammates license per participant agent. Lab 1 runs anywhere.
 
 ## Lab 1: Write a Teammate Brief

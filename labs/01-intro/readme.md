@@ -2,6 +2,14 @@
 
 Hands-on labs for [Module 1](../../demos/01-intro/readme.md). The essential labs follow [Copilot Chat & Productivity Agents](../../demos/01-intro/05-chat-productivity/readme.md): build an agent with Agent Builder, then build and share a SharePoint agent. The optional labs come after them: put Analyst and Researcher to work and use shared agents.
 
+| Title | Minutes |
+|-------|---------|
+| [Lab 01: Build Your First Agent with Agent Builder](./lab-01-agent-builder.md) | 15, together with Lab 02 |
+| [Lab 02: Build and Share a SharePoint Agent](./lab-02-sharepoint-agents.md) | together with Lab 01 |
+| [Lab 03: Analyze Data with the Analyst Agent](./lab-03-analyst-agent.md) (optional) | not scheduled |
+| [Lab 04: Examine the Researcher Agent](./lab-04-researcher-agent.md) (optional) | not scheduled |
+| [Lab 05: Share and Use SharePoint Agents](./lab-05-share-and-use-agents.md) (optional) | not scheduled |
+
 ![The lab path: the Agent Builder and SharePoint agent labs first. The optional labs follow: Analyst and Researcher, which need a Microsoft Copilot license, then Share and use agents.](./_images/lab-path.svg)
 
 ## Agents & SharePoint Agents

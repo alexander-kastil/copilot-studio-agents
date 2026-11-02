@@ -4,6 +4,17 @@ Hands-on labs for Microsoft Copilot harness agents in Copilot Studio. Each lab b
 
 Work them in order: the first four each isolate one surface (the New agent menu, the Build tabs, Evaluate, Skills), and the fifth pulls all of them together into a capstone agent. The last two add IQ grounding and apps.
 
+| Title | Minutes |
+|-------|---------|
+| [Compare Standard and Microsoft Copilot Harness Agents Side by Side](01-standard-vs-copilot-harness/lab-01-compare-standard-and-copilot-harness.md) | 25 |
+| [Build, Evaluate, and Monitor a Northwind Sales Assistant](02-unified-build-and-orchestrator/lab-01-evaluate-and-monitor-agent.md) | 25 |
+| [Package Team Knowledge into a Portable Skill](03-agent-skills/lab-01-portable-skill.md) | 25 |
+| [Build a Sales Account Assistant as a Microsoft Copilot Harness Agent](04-workflows-and-mcp/lab-01-sales-account-assistant.md) | 30 |
+| [Ground an Agent with Work IQ and Route Work Questions to It](05-iq-grounding/lab-01-ground-with-iq.md) | 10 |
+| [Build and Share a Business App](06-apps/lab-01-build-an-app.md) | 10 |
+| [Evaluate a Microsoft Copilot Harness Agent with Test Sets](07-evaluations/lab-01-evaluate-with-test-sets.md) | 25 |
+| [Upgrade the HR Agent and Rebuild Its Topics](08-migration/lab-01-upgrade-the-hr-agent.md) | 40 |
+
 ![The lab path: the New agent menu, the Build tabs, Evaluate and Skills labs each isolate one surface and feed the capstone Sales Account Assistant, after which the last two labs add IQ grounding and apps.](./_images/copilot-harness-lab-path.svg)
 
 ## Labs

@@ -2,6 +2,12 @@
 
 Hands-on labs for Copilot Cowork: tenant setup, the execution model, custom Agent Skills, and packaged plugins with MCP connectors. Work through them in order, each lab builds on the previous one.
 
+| Title | Minutes |
+|-------|---------|
+| [Cowork Setup and Extensibility](./lab-01-cowork-setup.md) | 30 |
+| [Build Your First Cowork Skill](./lab-02-cowork-skills.md) | 35 |
+| [Build Your First Cowork Plugin](./lab-03-cowork-plugins.md) | 75 |
+
 | # | Lab | What you build |
 |---|-----|----------------|
 | 1 | [Cowork Setup and Extensibility](./lab-01-cowork-setup.md) | A Cowork-ready tenant with a spending policy that selects Cowork, a first delegated task, and a map of the skills vs plugins extensibility surfaces |
