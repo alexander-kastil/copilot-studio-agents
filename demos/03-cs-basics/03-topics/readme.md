@@ -2,6 +2,10 @@
 
 Knowledge answers open questions, but some requests must follow a fixed path every time: report a broken device, book a room, register a candidate. A topic is how a Standard agent runs that path. It asks the questions you wrote, in the order you wrote them, checks each answer, and responds with exactly the message you designed, which is what makes a Standard agent predictable enough for a help desk or a regulated process.
 
+Orchestration decides how predictable the choice of that path is. Classic orchestration is deterministic: a message that matches a topic's trigger phrases starts that topic, and the same message starts the same topic every time. Generative orchestration is non-deterministic: a language model plans each turn, chooses topics, tools, and knowledge by their descriptions, and its reply to the same question can differ from one run to the next. A chosen topic still runs deterministically, because its nodes execute in the order you wrote them and its entity and Power Fx checks hold like code.
+
+Learn's guidance for production agents therefore layers the two. Steps that must happen exactly as specified, such as processing a payment or deleting a record, run in an authored topic or flow; medium-risk work gets a checkpoint such as a manager's approval; lookups and other low-risk requests go to the generative planner.
+
 This topic covers how a topic gets triggered under each orchestration mode, the nodes you build with, how entities turn free text into clean values, and how variables carry those values through a conversation. It ends with conversation design: what the agent does when an answer is invalid, when it understands nothing, and when a human has to take over.
 
 ## What a topic is

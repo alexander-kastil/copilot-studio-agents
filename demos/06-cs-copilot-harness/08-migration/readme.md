@@ -52,6 +52,9 @@ The table maps every Standard capability modules 03 to 05 teach onto its place o
 
 Two rows decide most migrations. Every topic you built is a question about purpose: if it carries know-how, it becomes a skill; if it runs fixed steps, it becomes a workflow; if it must happen on every turn or every tool call, it becomes a hook. The rows marked "Stays Standard" are the reason some agents shouldn't move yet, and the reason a team often runs both kinds side by side.
 
+> [!NOTE]
+> Power Fx has no direct replacement on the GitHub Copilot harness, and the upgrade lists every formula as not migrated. Its logic moves by purpose: fixed branches and data steps go into a workflow, whose fields take an expression to set a value dynamically, and know-how the agent applies goes into a skill. Exact computation goes to the agent sandbox, a Bash container where the agent runs code and creates or edits Word, Excel, PowerPoint and PDF files. Microsoft's guidance puts it in one line: "tools, workflows, and the agent sandbox provide access, repeatable execution, and exact computation."
+
 ## Deterministic Steps Without Topics
 
 A Standard topic gives you a path the agent walks node by node, which is why modules 03 and 04 used topics whenever a process had to run the same way every time. The GitHub Copilot harness has no topics, yet Microsoft's guidance states that both harnesses allow predictable, deterministic responses: through predefined topics on the standard harness and through workflows on the GitHub Copilot harness. What changes is who decides that the fixed steps run, and the harness gives you three answers.

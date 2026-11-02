@@ -1,12 +1,12 @@
 {
   "deck": "03-cs-basics.pptx",
-  "deckMtimeMs": 1793617680336,
+  "deckMtimeMs": 1793632191986,
   "rules": {
     "dense": 0,
     "unreadable": 1
   },
   "problems": 1,
   "flagged": [
-    "UNREADABLE slide=28 spec=06-02-teams-republish.md file=demos/03-cs-basics/pptx/images/06-02-teams-republish.png native=2256px shown=515pt text=7.4pt crop<=2094x1581px"
+    "UNREADABLE slide=29 spec=06-02-teams-republish.md file=demos/03-cs-basics/pptx/images/06-02-teams-republish.png native=2256px shown=515pt text=7.4pt crop<=2094x1581px"
   ]
 }
