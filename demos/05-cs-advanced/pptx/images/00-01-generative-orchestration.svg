@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Generative orchestration sits between how work starts and what the plan can use</title>
+  <desc id="d">Chat, an event trigger and voice all hand a request to generative orchestration, the LLM-driven planning layer. It reads the request, picks the right tools, knowledge and agents, and executes a multi-step plan that can use tools, knowledge, other agents, a deep reasoning model and agent flows.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <text x="290" y="118" text-anchor="middle" font-size="30" font-weight="600" fill="#57606a">How work starts</text>
+  <text x="1620" y="118" text-anchor="middle" font-size="30" font-weight="600" fill="#57606a">What the plan can use</text>
+
+  <rect x="80" y="160" width="420" height="240" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="290" y="240" text-anchor="middle" font-size="36" font-weight="700" fill="#24292f">Chat</text>
+  <text x="290" y="290" text-anchor="middle" font-size="28" fill="#57606a">a person chats</text>
+  <text x="290" y="328" text-anchor="middle" font-size="28" fill="#57606a">with the agent</text>
+
+  <rect x="80" y="450" width="420" height="240" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="290" y="512" text-anchor="middle" font-size="36" font-weight="700" fill="#24292f">Event trigger</text>
+  <text x="290" y="560" text-anchor="middle" font-size="28" fill="#57606a">a new record,</text>
+  <text x="290" y="598" text-anchor="middle" font-size="28" fill="#57606a">an incoming email,</text>
+  <text x="290" y="636" text-anchor="middle" font-size="28" fill="#57606a">a scheduled time</text>
+
+  <rect x="80" y="740" width="420" height="240" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="290" y="820" text-anchor="middle" font-size="36" font-weight="700" fill="#24292f">Voice</text>
+  <text x="290" y="870" text-anchor="middle" font-size="28" fill="#57606a">speech and IVR,</text>
+  <text x="290" y="908" text-anchor="middle" font-size="28" fill="#57606a">phone-style calls</text>
+
+  <rect x="660" y="270" width="600" height="610" rx="22" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="960" y="345" text-anchor="middle" font-size="38" font-weight="700" fill="#24292f">Generative orchestration</text>
+  <text x="960" y="392" text-anchor="middle" font-size="28" fill="#57606a">the LLM-driven planning layer</text>
+
+  <rect x="700" y="430" width="520" height="110" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="756" cy="485" r="26" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="756" y="495" text-anchor="middle" font-size="28" font-weight="700" fill="#24292f">1</text>
+  <text x="806" y="495" font-size="30" fill="#24292f">Reads the request</text>
+
+  <rect x="700" y="570" width="520" height="130" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="756" cy="635" r="26" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="756" y="645" text-anchor="middle" font-size="28" font-weight="700" fill="#24292f">2</text>
+  <text x="806" y="625" font-size="30" fill="#24292f">Picks the right tools,</text>
+  <text x="806" y="665" font-size="30" fill="#24292f">knowledge, and agents</text>
+
+  <rect x="700" y="730" width="520" height="110" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="756" cy="785" r="26" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="756" y="795" text-anchor="middle" font-size="28" font-weight="700" fill="#24292f">3</text>
+  <text x="806" y="775" font-size="30" fill="#24292f">Executes a</text>
+  <text x="806" y="813" font-size="30" fill="#24292f">multi-step plan</text>
+
+  <rect x="1400" y="150" width="440" height="140" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1620" y="208" text-anchor="middle" font-size="32" font-weight="700" fill="#24292f">Tools</text>
+  <text x="1620" y="252" text-anchor="middle" font-size="28" fill="#57606a">let the agent act</text>
+
+  <rect x="1400" y="315" width="440" height="140" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1620" y="373" text-anchor="middle" font-size="32" font-weight="700" fill="#24292f">Knowledge</text>
+  <text x="1620" y="417" text-anchor="middle" font-size="28" fill="#57606a">lets the agent answer</text>
+
+  <rect x="1400" y="480" width="440" height="140" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1620" y="526" text-anchor="middle" font-size="32" font-weight="700" fill="#24292f">Other agents</text>
+  <text x="1620" y="566" text-anchor="middle" font-size="28" fill="#57606a">child, connected,</text>
+  <text x="1620" y="602" text-anchor="middle" font-size="28" fill="#57606a">Microsoft Foundry, A2A</text>
+
+  <rect x="1400" y="645" width="440" height="140" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1620" y="703" text-anchor="middle" font-size="32" font-weight="700" fill="#24292f">Deep reasoning model</text>
+  <text x="1620" y="747" text-anchor="middle" font-size="28" fill="#57606a">with the <tspan font-family="Consolas, monospace">reason</tspan> keyword</text>
+
+  <rect x="1400" y="810" width="440" height="140" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1620" y="868" text-anchor="middle" font-size="32" font-weight="700" fill="#24292f">Agent flows</text>
+  <text x="1620" y="912" text-anchor="middle" font-size="28" fill="#57606a">fixed sequence of steps</text>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="502" y1="300" x2="656" y2="470"/>
+    <line x1="502" y1="570" x2="656" y2="575"/>
+    <line x1="502" y1="840" x2="656" y2="690"/>
+    <line x1="1262" y1="400" x2="1396" y2="232"/>
+    <line x1="1262" y1="490" x2="1396" y2="395"/>
+    <line x1="1262" y1="575" x2="1396" y2="552"/>
+    <line x1="1262" y1="660" x2="1396" y2="712"/>
+    <line x1="1262" y1="750" x2="1396" y2="868"/>
+  </g>
+</svg>

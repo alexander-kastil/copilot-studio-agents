@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title id="t">Interactive conversation, heartbeat and automation over time</title>
+<desc id="d">An interactive conversation runs when you send a message. In the background, a heartbeat runs one prompt on a fixed interval of 15 minutes, 30 minutes, 1 hour or 2 hours within the work hours you set, and an automation runs on its own schedule, on a condition, or once. Both background modes run under a more restrictive permission policy because nobody is there to approve.</desc>
+<rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#57606a"/></marker></defs>
+<text x="100" y="192" font-size="32" font-weight="600" fill="#24292f">Interactive conversation</text>
+<text x="100" y="232" font-size="28" fill="#57606a">Briefing, steering, reviewing</text>
+<path d="M600,202 L1840,202" fill="none" stroke="#8c959f" stroke-width="3"/>
+<rect x="60" y="290" width="1800" height="640" rx="20" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text x="100" y="345" font-size="28" fill="#24292f">Background modes run under a more restrictive permission policy, because nobody is there to approve</text>
+<rect x="780" y="390" width="860" height="250" rx="14" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<text x="810" y="440" font-size="28" fill="#24292f">Within the work hours you set</text>
+<text x="100" y="470" font-size="32" font-weight="600" fill="#24292f">Heartbeat</text>
+<text x="100" y="510" font-size="28" fill="#57606a">One prompt on an interval</text>
+<text x="100" y="550" font-size="28" fill="#57606a">15 min, 30 min, 1 h or 2 h</text>
+<path d="M600,590 L1840,590" fill="none" stroke="#8c959f" stroke-width="3"/>
+<text x="100" y="760" font-size="32" font-weight="600" fill="#24292f">Automation</text>
+<text x="100" y="800" font-size="28" fill="#57606a">Its own schedule, prompt</text>
+<text x="100" y="840" font-size="28" fill="#57606a">and optional steps</text>
+<path d="M600,810 L1840,810" fill="none" stroke="#8c959f" stroke-width="3"/>
+<g><path d="M600,150 L600,252 M600,462 L600,890" stroke="#e0a534" stroke-width="5" fill="none"/><animateTransform attributeName="transform" type="translate" values="0,0;1240,0" keyTimes="0;1" dur="10s" repeatCount="indefinite"/></g>
+<rect x="640" y="170" width="320" height="64" rx="32" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="800.0" y="212" font-size="28" fill="#24292f" text-anchor="middle">You send a message</text>
+<rect x="640" y="170" width="320" height="64" rx="32" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.0323;0.0523;0.2703;0.2903;1.0000" dur="10s" repeatCount="indefinite"/></rect>
+<rect x="1300" y="170" width="320" height="64" rx="32" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="1460.0" y="212" font-size="28" fill="#24292f" text-anchor="middle">You send a message</text>
+<rect x="1300" y="170" width="320" height="64" rx="32" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.5645;0.5845;0.8026;0.8226;1.0000" dur="10s" repeatCount="indefinite"/></rect>
+<circle cx="830" cy="590" r="14" fill="#57606a"><animate attributeName="r" values="14;14;24;14;14" keyTimes="0;0.1855;0.2055;0.2455;1" dur="10s" repeatCount="indefinite"/></circle>
+<circle cx="938" cy="590" r="14" fill="#57606a"><animate attributeName="r" values="14;14;24;14;14" keyTimes="0;0.2726;0.2926;0.3326;1" dur="10s" repeatCount="indefinite"/></circle>
+<circle cx="1046" cy="590" r="14" fill="#57606a"><animate attributeName="r" values="14;14;24;14;14" keyTimes="0;0.3597;0.3797;0.4197;1" dur="10s" repeatCount="indefinite"/></circle>
+<circle cx="1154" cy="590" r="14" fill="#57606a"><animate attributeName="r" values="14;14;24;14;14" keyTimes="0;0.4468;0.4668;0.5068;1" dur="10s" repeatCount="indefinite"/></circle>
+<circle cx="1262" cy="590" r="14" fill="#57606a"><animate attributeName="r" values="14;14;24;14;14" keyTimes="0;0.5339;0.5539;0.5939;1" dur="10s" repeatCount="indefinite"/></circle>
+<circle cx="1370" cy="590" r="14" fill="#57606a"><animate attributeName="r" values="14;14;24;14;14" keyTimes="0;0.6210;0.6410;0.6810;1" dur="10s" repeatCount="indefinite"/></circle>
+<circle cx="1478" cy="590" r="14" fill="#57606a"><animate attributeName="r" values="14;14;24;14;14" keyTimes="0;0.7081;0.7281;0.7681;1" dur="10s" repeatCount="indefinite"/></circle>
+<circle cx="1586" cy="590" r="14" fill="#57606a"><animate attributeName="r" values="14;14;24;14;14" keyTimes="0;0.7952;0.8152;0.8552;1" dur="10s" repeatCount="indefinite"/></circle>
+<rect x="640" y="770" width="350" height="80" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="815.0" y="821" font-size="28" fill="#24292f" text-anchor="middle">Schedule-triggered</text>
+<rect x="640" y="770" width="350" height="80" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.0323;0.0523;0.2945;0.3145;1.0000" dur="10s" repeatCount="indefinite"/></rect>
+<rect x="1090" y="770" width="360" height="80" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="1270.0" y="821" font-size="28" fill="#24292f" text-anchor="middle">Condition-triggered</text>
+<rect x="1090" y="770" width="360" height="80" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.3952;0.4152;0.6655;0.6855;1.0000" dur="10s" repeatCount="indefinite"/></rect>
+<rect x="1550" y="770" width="230" height="80" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="1665.0" y="821" font-size="28" fill="#24292f" text-anchor="middle">One-shot</text>
+<rect x="1550" y="770" width="230" height="80" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.7661;0.7861;0.9316;0.9516;1.0000" dur="10s" repeatCount="indefinite"/></rect>
+<path d="M600,985 L1832,985" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<text x="575" y="995" font-size="28" font-weight="600" fill="#24292f" text-anchor="end">Time</text>
+</svg>

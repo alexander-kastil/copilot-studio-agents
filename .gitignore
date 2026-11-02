@@ -31,6 +31,9 @@ tasks/
 # Claude Code session files: time ledger, personal settings, scheduler lock
 .claude/scheduled_tasks.lock
 
-# Slide decks and local assets (kept on disk, not tracked)
-pptx/
+# Slide decks and local assets (kept on disk, not tracked); the slide diagrams the readmes and labs embed stay tracked
+**/pptx/*
+!**/pptx/images/
+**/pptx/images/*
+!**/pptx/images/*.svg
 /assets/

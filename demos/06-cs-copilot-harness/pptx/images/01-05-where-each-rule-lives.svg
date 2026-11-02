@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <style>svg { font-size: 28px; }</style>
+  <title id="t">Where each rule lives</title>
+  <desc id="d">Six requirements and the component that carries each: instructions, knowledge, tools, skills, workflows and hooks, with what to remember about each.</desc>
+  <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker></defs>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <text x="64" y="60" font-size="30" font-weight="700" fill="#24292f" text-anchor="start">Requirement</text>
+  <text x="760" y="60" font-size="30" font-weight="700" fill="#24292f" text-anchor="start">Put it in</text>
+  <text x="1000" y="60" font-size="30" font-weight="700" fill="#24292f" text-anchor="start">What to remember</text>
+  <rect x="40" y="90" width="1840" height="140" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="64" y="172" font-size="28" font-weight="400" fill="#24292f" text-anchor="start">Role, scope, forbidden actions, escalation</text>
+  <text x="760" y="172" font-size="34" font-weight="700" fill="#24292f" text-anchor="start">Instructions</text>
+  <text x="1000" y="172" font-size="26" font-weight="400" fill="#57606a" text-anchor="start">apply on every turn</text>
+  <rect x="40" y="246" width="1840" height="140" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="64" y="328" font-size="28" font-weight="400" fill="#24292f" text-anchor="start">Approved policies and trusted records</text>
+  <text x="760" y="328" font-size="34" font-weight="700" fill="#24292f" text-anchor="start">Knowledge</text>
+  <text x="1000" y="328" font-size="26" font-weight="400" fill="#57606a" text-anchor="start">search finds passages, not a read of the whole document</text>
+  <rect x="40" y="402" width="1840" height="140" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="64" y="484" font-size="28" font-weight="400" fill="#24292f" text-anchor="start">A narrow operation with clear inputs and errors</text>
+  <text x="760" y="484" font-size="34" font-weight="700" fill="#24292f" text-anchor="start">Tools</text>
+  <text x="1000" y="484" font-size="26" font-weight="400" fill="#57606a" text-anchor="start">remove actions and turn off MCP tools the task does not need</text>
+  <rect x="40" y="558" width="1840" height="140" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="64" y="640" font-size="28" font-weight="400" fill="#24292f" text-anchor="start">A repeatable procedure and its output format</text>
+  <text x="760" y="640" font-size="34" font-weight="700" fill="#24292f" text-anchor="start">Skills</text>
+  <text x="1000" y="640" font-size="26" font-weight="400" fill="#57606a" text-anchor="start">SKILL.md guides the agent, no security boundary</text>
+  <rect x="40" y="714" width="1840" height="140" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="64" y="796" font-size="28" font-weight="400" fill="#24292f" text-anchor="start">An approval, a record update, a notification</text>
+  <text x="760" y="796" font-size="34" font-weight="700" fill="#24292f" text-anchor="start">Workflows</text>
+  <text x="1000" y="796" font-size="26" font-weight="400" fill="#57606a" text-anchor="start">the authored path runs the same every time</text>
+  <rect x="40" y="870" width="1840" height="140" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="64" y="952" font-size="28" font-weight="400" fill="#24292f" text-anchor="start">A check before a tool runs</text>
+  <text x="760" y="952" font-size="34" font-weight="700" fill="#24292f" text-anchor="start">Hooks</text>
+  <text x="1000" y="952" font-size="26" font-weight="400" fill="#57606a" text-anchor="start">Pre tool use can deny; the target system still checks access</text>
+</svg>

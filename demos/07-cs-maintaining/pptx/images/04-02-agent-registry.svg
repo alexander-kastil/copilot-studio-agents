@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">The agent registry: see every agent and act on it</title>
+  <desc id="d">Every agent across the tenant appears in the agent registry in the Microsoft 365 admin center and Agent 365, one place to see and act on the whole estate. Agents-at-risk signals come from Microsoft Defender, Microsoft Entra and Microsoft Purview. From the registry an admin takes a governance action on an agent at risk: block, reassign or delete.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <style>
+    text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+    .h { font-size: 36px; font-weight: 600; }
+    .b { font-size: 30px; font-weight: 600; }
+    .t { font-size: 28px; }
+    .s { font-size: 28px; fill: #57606a; }
+  </style>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+    <g id="agent">
+      <rect width="84" height="84" rx="18" stroke="#8c959f" stroke-width="2"/>
+      <circle cx="29" cy="36" r="7" fill="#57606a"/>
+      <circle cx="55" cy="36" r="7" fill="#57606a"/>
+      <path d="M 27 56 Q 42 68 57 56" fill="none" stroke="#57606a" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <rect x="80" y="80" width="1760" height="220" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="120" y="176">Every agent</text>
+  <text class="s" x="120" y="220">across the tenant</text>
+  <use href="#agent" x="560" y="112" fill="#eaf2ff"/>
+  <use href="#agent" x="688" y="112" fill="#eaf2ff"/>
+  <use href="#agent" x="816" y="112" fill="#eaf2ff"/>
+  <use href="#agent" x="944" y="112" fill="#eaf2ff"/>
+  <use href="#agent" x="1072" y="112" fill="#eaf2ff"/>
+  <use href="#agent" x="1200" y="112" fill="#eaf2ff"/>
+  <rect x="1328" y="112" width="84" height="84" rx="18" fill="#fff6e5" stroke="#e0a534" stroke-width="3">
+    <animate attributeName="stroke-width" values="3;8;3" keyTimes="0;0.7375;0.9" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+  </rect>
+  <circle cx="1357" cy="148" r="7" fill="#57606a"/>
+  <circle cx="1383" cy="148" r="7" fill="#57606a"/>
+  <line x1="1355" y1="172" x2="1385" y2="172" stroke="#57606a" stroke-width="4" stroke-linecap="round"/>
+  <text class="s" x="1370" y="248" text-anchor="middle">At risk</text>
+  <use href="#agent" x="1456" y="112" fill="#eaf2ff"/>
+  <use href="#agent" x="1584" y="112" fill="#eaf2ff"/>
+  <use href="#agent" x="1712" y="112" fill="#eaf2ff"/>
+
+  <line x1="330" y1="302" x2="330" y2="386" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <line x1="960" y1="302" x2="960" y2="471" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <line x1="1590" y1="388" x2="1590" y2="304" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="80" y="390" width="500" height="530" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2">
+    <animate attributeName="stroke-width" values="2;6;2" keyTimes="0;0.1625;0.25" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+  </rect>
+  <text class="b" x="110" y="450">Agents-at-risk signals</text>
+  <rect x="110" y="490" width="440" height="110" rx="12" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="330" y="555" text-anchor="middle">Microsoft Defender</text>
+  <rect x="110" y="630" width="440" height="110" rx="12" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="330" y="695" text-anchor="middle">Microsoft Entra</text>
+  <rect x="110" y="770" width="440" height="110" rx="12" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="330" y="835" text-anchor="middle">Microsoft Purview</text>
+
+  <line x1="582" y1="655" x2="696" y2="655" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="700" y="475" width="520" height="360" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="3">
+    <animate attributeName="stroke-width" values="3;7;3" keyTimes="0;0.35;0.45" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+  </rect>
+  <text class="h" x="960" y="555" text-anchor="middle">Agent registry</text>
+  <text class="t" x="960" y="603" text-anchor="middle">Microsoft 365 admin center</text>
+  <text class="t" x="960" y="641" text-anchor="middle">and Agent 365</text>
+  <text class="s" x="960" y="715" text-anchor="middle">One place to see and act</text>
+  <text class="s" x="960" y="753" text-anchor="middle">on the whole estate</text>
+
+  <line x1="1222" y1="655" x2="1336" y2="655" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="1340" y="390" width="500" height="530" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2">
+    <animate attributeName="stroke-width" values="2;6;2" keyTimes="0;0.55;0.6375" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+  </rect>
+  <text class="b" x="1370" y="450">Governance actions</text>
+  <rect x="1370" y="490" width="440" height="110" rx="12" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="1590" y="555" text-anchor="middle">Block</text>
+  <rect x="1370" y="630" width="440" height="110" rx="12" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="1590" y="695" text-anchor="middle">Reassign</text>
+  <rect x="1370" y="770" width="440" height="110" rx="12" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="1590" y="835" text-anchor="middle">Delete</text>
+
+  <circle cx="0" cy="0" r="13" fill="#e0a534" opacity="0">
+    <animateMotion path="M 330 304 L 330 380" keyPoints="0;0;1;1" keyTimes="0;0.0625;0.1625;1" calcMode="linear" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.0625;0.1625" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="0" cy="0" r="13" fill="#e0a534" opacity="0">
+    <animateMotion path="M 584 655 L 690 655" keyPoints="0;0;1;1" keyTimes="0;0.25;0.35;1" calcMode="linear" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.25;0.35" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="0" cy="0" r="13" fill="#e0a534" opacity="0">
+    <animateMotion path="M 1224 655 L 1330 655" keyPoints="0;0;1;1" keyTimes="0;0.45;0.55;1" calcMode="linear" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.45;0.55" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="0" cy="0" r="13" fill="#e0a534" opacity="0">
+    <animateMotion path="M 1590 386 L 1590 310" keyPoints="0;0;1;1" keyTimes="0;0.6375;0.7375;1" calcMode="linear" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.6375;0.7375" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+  </circle>
+</svg>

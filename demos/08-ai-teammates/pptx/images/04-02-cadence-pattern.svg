@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title id="t">The Cadence review cycle</title>
+<desc id="d">The recurrence trigger fires. Cadence reads the tracker and status evidence, finds blockers and missing updates, generates a new review document and sends the link to reviewers. Reviewers reply or comment, and people decide priorities.</desc>
+<rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#57606a"/></marker></defs>
+<rect x="70" y="150" width="340" height="230" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="240.0" y="257" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">Recurrence</text>
+<text x="240.0" y="299" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">trigger fires</text>
+<rect x="550" y="150" width="340" height="230" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="720.0" y="257" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">Read tracker and</text>
+<text x="720.0" y="299" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">status evidence</text>
+<rect x="1030" y="150" width="340" height="230" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="1200.0" y="257" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">Find blockers and</text>
+<text x="1200.0" y="299" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">missing updates</text>
+<rect x="1510" y="150" width="340" height="230" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="1680.0" y="257" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">Generate a new</text>
+<text x="1680.0" y="299" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">review document</text>
+<rect x="1510" y="700" width="340" height="230" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="1680.0" y="807" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">Send link to</text>
+<text x="1680.0" y="849" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">reviewers</text>
+<rect x="1030" y="700" width="340" height="230" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="1200.0" y="807" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">Reviewers reply</text>
+<text x="1200.0" y="849" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">or comment</text>
+<rect x="550" y="700" width="340" height="230" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="720.0" y="807" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">People decide</text>
+<text x="720.0" y="849" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">priorities</text>
+<path d="M410,265 L542,265" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M890,265 L1022,265" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M1370,265 L1502,265" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M1680,380 L1680,692" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M1510,815 L1378,815" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M1030,815 L898,815" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="70" y="150" width="340" height="230" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.0200;0.0400;0.1200;0.1400;1.0000" dur="10s" repeatCount="indefinite"/></rect>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M410,265 L542,265" dur="10s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.1100;0.1550;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1060;0.1100;0.1550;0.1610;1" dur="10s" repeatCount="indefinite"/></circle>
+<rect x="550" y="150" width="340" height="230" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.1500;0.1700;0.2500;0.2700;1.0000" dur="10s" repeatCount="indefinite"/></rect>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M890,265 L1022,265" dur="10s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.2400;0.2850;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2360;0.2400;0.2850;0.2910;1" dur="10s" repeatCount="indefinite"/></circle>
+<rect x="1030" y="150" width="340" height="230" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.2800;0.3000;0.3800;0.4000;1.0000" dur="10s" repeatCount="indefinite"/></rect>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M1370,265 L1502,265" dur="10s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.3700;0.4150;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3660;0.3700;0.4150;0.4210;1" dur="10s" repeatCount="indefinite"/></circle>
+<rect x="1510" y="150" width="340" height="230" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.4100;0.4300;0.5100;0.5300;1.0000" dur="10s" repeatCount="indefinite"/></rect>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M1680,380 L1680,692" dur="10s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.5000;0.5450;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4960;0.5000;0.5450;0.5510;1" dur="10s" repeatCount="indefinite"/></circle>
+<rect x="1510" y="700" width="340" height="230" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.5400;0.5600;0.6400;0.6600;1.0000" dur="10s" repeatCount="indefinite"/></rect>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M1510,815 L1378,815" dur="10s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.6300;0.6750;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6260;0.6300;0.6750;0.6810;1" dur="10s" repeatCount="indefinite"/></circle>
+<rect x="1030" y="700" width="340" height="230" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.6700;0.6900;0.7700;0.7900;1.0000" dur="10s" repeatCount="indefinite"/></rect>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M1030,815 L898,815" dur="10s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.7600;0.8050;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7560;0.7600;0.8050;0.8110;1" dur="10s" repeatCount="indefinite"/></circle>
+<rect x="550" y="700" width="340" height="230" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.8000;0.8200;0.9000;0.9200;1.0000" dur="10s" repeatCount="indefinite"/></rect>
+</svg>

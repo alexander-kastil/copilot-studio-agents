@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Prototype in a no-code surface, then rebuild in Copilot Studio</title>
+  <desc id="d">A prototype in a no-code surface such as Agent Builder or a SharePoint agent, built by makers with no code, moves to Copilot Studio, built by low-code makers and pro-code developers, when the process needs custom tools, multi-agent orchestration, or governance.</desc>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+
+  <rect x="80" y="120" width="560" height="780" rx="24" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="124" y="205" font-size="40" font-weight="700" fill="#24292f">Prototype</text>
+  <rect x="120" y="260" width="480" height="150" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="150" y="323" font-size="32" font-weight="700" fill="#24292f">Agent Builder /</text>
+  <text x="150" y="370" font-size="32" font-weight="700" fill="#24292f">SharePoint agents</text>
+  <text x="124" y="540" font-size="28" fill="#57606a">Best for</text>
+  <text x="124" y="582" font-size="28" font-weight="700" fill="#24292f">Site-grounded and</text>
+  <text x="124" y="620" font-size="28" font-weight="700" fill="#24292f">prebuilt agents</text>
+  <text x="124" y="730" font-size="28" fill="#57606a">Who builds it</text>
+  <text x="124" y="772" font-size="28" font-weight="700" fill="#24292f">Makers, no code</text>
+
+  <rect x="1280" y="120" width="560" height="780" rx="24" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1324" y="205" font-size="40" font-weight="700" fill="#24292f">Rebuild</text>
+  <rect x="1320" y="260" width="480" height="150" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1350" y="347" font-size="32" font-weight="700" fill="#24292f">Copilot Studio</text>
+  <text x="1324" y="540" font-size="28" fill="#57606a">Best for</text>
+  <text x="1324" y="582" font-size="28" font-weight="700" fill="#24292f">Custom agents with topics,</text>
+  <text x="1324" y="620" font-size="28" font-weight="700" fill="#24292f">tools, and orchestration</text>
+  <text x="1324" y="730" font-size="28" fill="#57606a">Who builds it</text>
+  <text x="1324" y="772" font-size="28" font-weight="700" fill="#24292f">Low-code makers, pro-code</text>
+
+  <line x1="660" y1="194" x2="1258" y2="194" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <text x="960" y="300" font-size="30" fill="#57606a" text-anchor="middle">when the process needs</text>
+  <rect x="700" y="350" width="520" height="100" rx="50" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="960" y="411" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Custom tools</text>
+  <rect x="700" y="480" width="520" height="100" rx="50" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="960" y="541" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Multi-agent orchestration</text>
+  <rect x="700" y="610" width="520" height="100" rx="50" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="960" y="671" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Governance</text>
+</svg>

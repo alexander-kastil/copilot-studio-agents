@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title id="t">What publishing an agent with an account provisions</title>
+<desc id="d">A new agent with a name, description and instructions gets its account before the first publish. Publishing assigns one Microsoft 365 Frontier for AI Teammates license to the agent; when none is free, an admin frees one or buys more. It then provisions the agent account that Agent 365 governs, with a mailbox, Teams presence and directory entry, and the Microsoft Entra Agent ID that Copilot Studio creates and admins manage separately.</desc>
+<rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#57606a"/></marker></defs>
+<rect x="70" y="360" width="420" height="360" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="100" y="422" font-size="32" font-weight="600" fill="#24292f">Your new agent</text>
+<text x="100" y="475" font-size="28" fill="#57606a">Name, description</text>
+<text x="100" y="515" font-size="28" fill="#57606a">and instructions</text>
+<path d="M100,555 L460,555" fill="none" stroke="#8c959f" stroke-width="2"/>
+<text x="100" y="610" font-size="30" font-weight="600" fill="#24292f">Account added</text>
+<text x="100" y="655" font-size="28" fill="#57606a">before the first publish</text>
+<rect x="570" y="480" width="210" height="120" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text x="675" y="552" font-size="34" font-weight="600" fill="#24292f" text-anchor="middle">Publish</text>
+<rect x="870" y="400" width="350" height="280" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+<text x="1045" y="458" font-size="28" fill="#57606a" text-anchor="middle">Assigns one</text>
+<text x="1045" y="503" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">Microsoft 365</text>
+<text x="1045" y="548" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">Frontier for AI</text>
+<text x="1045" y="593" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">Teammates license</text>
+<text x="1045" y="638" font-size="28" fill="#57606a" text-anchor="middle">to the agent</text>
+<text x="1045" y="735" font-size="28" fill="#57606a" text-anchor="middle">When none is free, an admin</text>
+<text x="1045" y="775" font-size="28" fill="#57606a" text-anchor="middle">frees one or buys more</text>
+<rect x="1340" y="110" width="510" height="490" rx="20" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<text x="1370" y="170" font-size="32" font-weight="600" fill="#24292f">Agent account</text>
+<text x="1370" y="212" font-size="28" fill="#57606a">Provisioned and governed</text>
+<text x="1370" y="250" font-size="28" fill="#57606a">by Agent 365</text>
+<rect x="1370" y="285" width="450" height="80" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="1400" y="336" font-size="30" font-weight="600" fill="#24292f">Mailbox</text>
+<rect x="1370" y="385" width="450" height="80" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="1400" y="436" font-size="30" font-weight="600" fill="#24292f">Teams presence</text>
+<rect x="1370" y="485" width="450" height="80" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="1400" y="536" font-size="30" font-weight="600" fill="#24292f">Directory entry</text>
+<rect x="1340" y="660" width="510" height="270" rx="20" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text x="1370" y="720" font-size="32" font-weight="600" fill="#24292f">Microsoft Entra</text>
+<text x="1370" y="760" font-size="32" font-weight="600" fill="#24292f">Agent ID</text>
+<text x="1370" y="815" font-size="28" fill="#57606a">Created by Copilot Studio</text>
+<text x="1370" y="855" font-size="28" fill="#57606a">Admins manage it separately</text>
+<path d="M490,540 L562,540" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M780,540 L862,540" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M1220,480 L1332,380" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M1220,600 L1332,760" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="70" y="360" width="420" height="360" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.0375;0.0625;0.1875;0.2125;1.0000" dur="8s" repeatCount="indefinite"/></rect>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M490,540 L562,540" dur="8s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.1875;0.2375;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1835;0.1875;0.2375;0.2435;1" dur="8s" repeatCount="indefinite"/></circle>
+<rect x="570" y="480" width="210" height="120" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.2250;0.2500;0.3750;0.4000;1.0000" dur="8s" repeatCount="indefinite"/></rect>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M780,540 L862,540" dur="8s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.3750;0.4250;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3710;0.3750;0.4250;0.4310;1" dur="8s" repeatCount="indefinite"/></circle>
+<rect x="870" y="400" width="350" height="280" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.4125;0.4375;0.5750;0.6000;1.0000" dur="8s" repeatCount="indefinite"/></rect>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M1220,480 L1332,380" dur="8s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.5750;0.6375;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5710;0.5750;0.6375;0.6435;1" dur="8s" repeatCount="indefinite"/></circle>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M1220,600 L1332,760" dur="8s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.5750;0.6375;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5710;0.5750;0.6375;0.6435;1" dur="8s" repeatCount="indefinite"/></circle>
+<rect x="1340" y="110" width="510" height="490" rx="20" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.6250;0.6500;0.8750;0.9000;1.0000" dur="8s" repeatCount="indefinite"/></rect>
+<rect x="1340" y="660" width="510" height="270" rx="20" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.6250;0.6500;0.8750;0.9000;1.0000" dur="8s" repeatCount="indefinite"/></rect>
+</svg>

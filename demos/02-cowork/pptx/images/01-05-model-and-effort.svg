@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Choosing a model and reasoning effort</title>
+  <desc id="d">One button beside the send arrow reads Auto Medium and opens two choices. Model: Auto, the default, then GPT 6.1 Sol, GPT 6 Astra, GPT 5.5, Opus 5.5 and Sonnet 5.5, the models your admin allows. Effort: a slider with five stops, Light, Medium, High, Extra High and Max, from Faster to Smarter, with Medium selected; towards Max it is more thorough, slower and uses more credits.</desc>
+  <defs>
+    <style>
+      svg { font-size: 42px; }
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .h { font-size: 48px; font-weight: 600; }
+      .p { font-size: 44px; font-weight: 600; text-anchor: middle; }
+      .r { font-size: 42px; }
+      .rb { font-size: 42px; font-weight: 600; }
+      .g { font-size: 40px; fill: #57606a; }
+      .ge { font-size: 40px; fill: #57606a; text-anchor: end; }
+      .gm { font-size: 40px; fill: #57606a; text-anchor: middle; }
+      .m { font-size: 40px; text-anchor: middle; }
+      .sel { font-size: 42px; font-weight: 600; text-anchor: middle; fill: #0969da; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+
+  <g stroke="#8c959f" stroke-width="3" fill="none">
+    <path d="M885,150 C885,195 470,185 470,230"/>
+    <path d="M885,150 C885,195 1410,185 1410,230"/>
+  </g>
+  <rect x="720" y="50" width="330" height="100" rx="50" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="p" x="885" y="115">Auto Medium</text>
+  <circle cx="1130" cy="100" r="50" fill="#0969da"/>
+  <path d="M1108,100 H1150 M1132,80 L1152,100 L1132,120" stroke="#ffffff" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="60" y="230" width="820" height="680" rx="24" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="100" y="300">Model</text>
+  <rect x="100" y="330" width="740" height="76" rx="14" fill="#e9f7ef" stroke="#2da44e" stroke-width="2"/>
+  <g fill="#ffffff" stroke="#8c959f" stroke-width="2">
+    <rect x="100" y="420" width="740" height="76" rx="14"/>
+    <rect x="100" y="510" width="740" height="76" rx="14"/>
+    <rect x="100" y="600" width="740" height="76" rx="14"/>
+    <rect x="100" y="690" width="740" height="76" rx="14"/>
+    <rect x="100" y="780" width="740" height="76" rx="14"/>
+  </g>
+  <text class="rb" x="130" y="383">Auto</text>
+  <text class="ge" x="810" y="383">default</text>
+  <text class="r" x="130" y="473">GPT 6.1 Sol</text>
+  <text class="r" x="130" y="563">GPT 6 Astra</text>
+  <text class="r" x="130" y="653">GPT 5.5</text>
+  <text class="r" x="130" y="743">Opus 5.5</text>
+  <text class="r" x="130" y="833">Sonnet 5.5</text>
+  <text class="gm" x="470" y="975">the models your admin allows</text>
+
+  <rect x="960" y="230" width="900" height="680" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="1000" y="300">Effort</text>
+  <text class="g" x="1030" y="410">Faster</text>
+  <text class="ge" x="1790" y="410">Smarter</text>
+  <line x1="1040" y1="470" x2="1780" y2="470" stroke="#8c959f" stroke-width="8" stroke-linecap="round"/>
+  <line x1="1040" y1="470" x2="1225" y2="470" stroke="#0969da" stroke-width="8" stroke-linecap="round"/>
+  <g fill="#ffffff" stroke="#8c959f" stroke-width="3">
+    <circle cx="1040" cy="470" r="14"/>
+    <circle cx="1410" cy="470" r="14"/>
+    <circle cx="1595" cy="470" r="14"/>
+    <circle cx="1780" cy="470" r="14"/>
+  </g>
+  <circle cx="1225" cy="470" r="24" fill="#0969da" stroke="#ffffff" stroke-width="4"/>
+  <text class="m" x="1040" y="550">Light</text>
+  <text class="sel" x="1225" y="550">Medium</text>
+  <text class="m" x="1410" y="550">High</text>
+  <text class="m" x="1595" y="550">Extra High</text>
+  <text class="m" x="1780" y="550">Max</text>
+  <polygon points="1040,676 1780,616 1780,756 1040,708" fill="#fff6e5" stroke="#e0a534" stroke-width="2" stroke-linejoin="round"/>
+  <text class="gm" x="1410" y="840">more thorough, slower, more credits</text>
+</svg>

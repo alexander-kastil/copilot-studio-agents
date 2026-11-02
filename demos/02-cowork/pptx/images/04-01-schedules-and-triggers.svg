@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">A schedule or trigger points at a custom skill</title>
+  <desc id="d">Left, when it runs: a schedule (daily, weekly, monthly, or a specific time, up to 25 scheduled prompts) or a trigger (when you receive an email, when a Teams channel message arrives, when a Teams chat message arrives). Middle, how it is done: a custom skill in SKILL.md that carries your format and your sources. Right, what you get: repeatable, house-style output with zero manual effort.</desc>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <g font-size="32" font-weight="700" fill="#57606a" text-anchor="middle">
+      <text x="470" y="125">When it runs</text>
+      <text x="1210" y="125">How it is done</text>
+      <text x="1675" y="125">What you get</text>
+    </g>
+
+    <rect x="70" y="165" width="800" height="300" rx="20" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="115" y="240" font-size="44" font-weight="700" fill="#24292f">Schedule</text>
+    <text x="115" y="305" font-size="32" fill="#24292f">Daily, weekly, monthly,</text>
+    <text x="115" y="350" font-size="32" fill="#24292f">or a specific time</text>
+    <text x="115" y="420" font-size="28" fill="#57606a">Up to 25 scheduled prompts</text>
+
+    <text x="470" y="532" font-size="32" font-style="italic" fill="#57606a" text-anchor="middle">or</text>
+
+    <rect x="70" y="575" width="800" height="330" rx="20" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="115" y="650" font-size="44" font-weight="700" fill="#24292f">Trigger</text>
+    <text x="115" y="720" font-size="30" fill="#24292f">When you receive an email</text>
+    <text x="115" y="775" font-size="30" fill="#24292f">When a Teams channel message arrives</text>
+    <text x="115" y="830" font-size="30" fill="#24292f">When a Teams chat message arrives</text>
+
+    <line x1="874" y1="318" x2="1003" y2="482" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="874" y1="740" x2="1003" y2="590" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+    <rect x="1010" y="325" width="400" height="420" rx="20" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1210" y="397" font-size="40" font-weight="700" fill="#24292f" text-anchor="middle">Custom skill</text>
+    <text x="1210" y="447" font-size="32" font-family="Consolas, monospace" fill="#57606a" text-anchor="middle">SKILL.md</text>
+    <rect x="1050" y="490" width="320" height="80" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1210" y="541" font-size="30" fill="#24292f" text-anchor="middle">Your format</text>
+    <rect x="1050" y="600" width="320" height="80" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1210" y="651" font-size="30" fill="#24292f" text-anchor="middle">Your sources</text>
+
+    <line x1="1414" y1="535" x2="1493" y2="535" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+    <rect x="1500" y="375" width="350" height="320" rx="20" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <g text-anchor="middle" fill="#24292f">
+      <text x="1675" y="455" font-size="36" font-weight="700">Repeatable,</text>
+      <text x="1675" y="500" font-size="36" font-weight="700">house-style</text>
+      <text x="1675" y="545" font-size="36" font-weight="700">output</text>
+      <text x="1675" y="612" font-size="28" fill="#57606a">with zero</text>
+      <text x="1675" y="650" font-size="28" fill="#57606a">manual effort</text>
+    </g>
+  </g>
+</svg>

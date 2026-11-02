@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">What a solution carries from development to test and production</title>
+  <desc id="d">In development, the only place you customize, a custom solution holds the agent, its required objects, environment variables and connection references; native Git integration keeps a source of truth outside Dataverse. A deployment pipeline, one click in Copilot Studio or pro-dev CI/CD with Azure DevOps or GitHub, moves the solution to test and production, where it is imported as managed or unmanaged. The imported solution holds the same agent, unedited, while environment variables and connection references hold each environment's settings. Items that are not solution-aware need post-deployment steps in the target: deployed channels, authentication settings, sharing and Application Insights.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <style>
+    text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+    .h { font-size: 36px; font-weight: 600; }
+    .b { font-size: 30px; font-weight: 600; }
+    .t { font-size: 28px; }
+    .s { font-size: 28px; fill: #57606a; }
+  </style>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="80" y="90" width="540" height="610" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="120" y="150">Development</text>
+  <text class="s" x="120" y="192">Customize here, in a solution</text>
+  <rect x="120" y="225" width="460" height="440" rx="14" fill="#fff6e5" stroke="#e0a534" stroke-width="2">
+    <animate attributeName="stroke-width" values="6;2" keyTimes="0;0.0625" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+  </rect>
+  <text class="b" x="150" y="275">Custom solution</text>
+  <rect x="150" y="300" width="400" height="72" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="175" y="346">Agent</text>
+  <rect x="150" y="388" width="400" height="72" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="175" y="434">Required objects</text>
+  <rect x="150" y="476" width="400" height="72" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="175" y="522">Environment variables</text>
+  <rect x="150" y="564" width="400" height="72" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="175" y="610">Connection references</text>
+
+  <line x1="350" y1="706" x2="350" y2="774" stroke="#57606a" stroke-width="3" marker-start="url(#ah)" marker-end="url(#ah)"/>
+  <rect x="80" y="780" width="540" height="220" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="120" y="842">Native Git integration</text>
+  <text class="s" x="120" y="886">Source of truth</text>
+  <text class="s" x="120" y="924">outside Dataverse</text>
+
+  <text class="b" x="880" y="270" text-anchor="middle">Deployment pipeline</text>
+  <text class="s" x="880" y="310" text-anchor="middle">One click in Copilot Studio</text>
+  <line x1="624" y1="355" x2="1132" y2="355" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <text class="s" x="880" y="410" text-anchor="middle">or pro-dev CI/CD with</text>
+  <text class="s" x="880" y="448" text-anchor="middle">Azure DevOps or GitHub</text>
+
+  <rect x="1140" y="90" width="700" height="920" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="1180" y="150">Test and production</text>
+  <text class="s" x="1180" y="192">Imported as managed or unmanaged</text>
+  <rect x="1180" y="225" width="620" height="245" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2">
+    <animate attributeName="stroke-width" values="2;6;2" keyTimes="0;0.3125;0.5" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+  </rect>
+  <text class="b" x="1210" y="275">Imported solution</text>
+  <text class="t" x="1210" y="318">The same agent, unedited</text>
+  <text class="s" x="1210" y="360">Environment variables and</text>
+  <text class="s" x="1210" y="398">connection references hold</text>
+  <text class="s" x="1210" y="436">this environment's settings</text>
+
+  <rect x="1180" y="510" width="620" height="465" rx="14" fill="#fff6e5" stroke="#e0a534" stroke-width="2">
+    <animate attributeName="stroke-width" values="2;6;2" keyTimes="0;0.5;0.8125" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+  </rect>
+  <text class="b" x="1210" y="560">Post-deployment steps</text>
+  <text class="s" x="1210" y="600">Not solution-aware: set up here</text>
+  <rect x="1210" y="625" width="560" height="70" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1235" y="670">Deployed channels</text>
+  <rect x="1210" y="711" width="560" height="70" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1235" y="756">Authentication settings</text>
+  <rect x="1210" y="797" width="560" height="70" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1235" y="842">Sharing</text>
+  <rect x="1210" y="883" width="560" height="70" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1235" y="928">Application Insights</text>
+
+  <circle cx="0" cy="0" r="14" fill="#e0a534" opacity="0">
+    <animateMotion path="M 640 355 L 1118 355" keyPoints="0;0;1;1" keyTimes="0;0.0625;0.3125;1" calcMode="linear" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.0625;0.3125" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+  </circle>
+</svg>

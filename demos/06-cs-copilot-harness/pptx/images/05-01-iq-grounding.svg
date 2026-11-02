@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Three IQ connections and the sources they ground on</title>
+  <desc id="d">Top zone, Copilot Studio holds only the connection: your agent, whose orchestrator decides from each tool's name and description, reaches three tools. Work IQ connects through the MCP tab with a sign-in connection, Foundry IQ through a Search Service endpoint, Fabric IQ through workspace and model access. Bottom zone, each source stays where it lives with its owner: Microsoft 365 work context (files, emails, meetings, chats and Business Applications) governed by administrators in the Microsoft 365 admin center; a Foundry knowledge base (data sources with retrieval and relevance settings) tuned by the owning team through sources, retrieval and ranking; a Fabric semantic model (business data and analytics in tables and measures) whose workspace and model owner decides what it holds.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="60" y="60" width="1800" height="410" rx="24" fill="#f6f8fa"/>
+    <rect x="60" y="500" width="1800" height="520" rx="24" fill="#f6f8fa"/>
+    <text x="100" y="112" font-size="30" font-weight="700" fill="#24292f">Copilot Studio holds only the connection</text>
+    <text x="100" y="984" font-size="30" font-weight="700" fill="#24292f">Each source stays where it lives, with its owner</text>
+
+    <rect x="90" y="135" width="1740" height="120" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="960" y="186" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Your agent in Copilot Studio</text>
+    <text x="960" y="230" font-size="28" fill="#57606a" text-anchor="middle">The orchestrator decides from each tool's name and description</text>
+
+    <line x1="360" y1="257" x2="360" y2="299" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="960" y1="257" x2="960" y2="299" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="1560" y1="257" x2="1560" y2="299" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+    <rect x="90" y="305" width="540" height="140" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="360" y="363" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Work IQ</text>
+    <text x="360" y="408" font-size="28" fill="#57606a" text-anchor="middle">MCP tab, sign-in connection</text>
+    <rect x="690" y="305" width="540" height="140" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="960" y="363" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Foundry IQ</text>
+    <text x="960" y="408" font-size="28" fill="#57606a" text-anchor="middle">Search Service endpoint</text>
+    <rect x="1290" y="305" width="540" height="140" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1560" y="363" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Fabric IQ</text>
+    <text x="1560" y="408" font-size="28" fill="#57606a" text-anchor="middle">workspace and model access</text>
+
+    <line x1="360" y1="447" x2="360" y2="529" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="960" y1="447" x2="960" y2="529" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="1560" y1="447" x2="1560" y2="529" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+    <rect x="90" y="535" width="540" height="180" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="360" y="593" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Microsoft 365 work context</text>
+    <text x="360" y="638" font-size="28" fill="#57606a" text-anchor="middle">files, emails, meetings, chats</text>
+    <text x="360" y="676" font-size="28" fill="#57606a" text-anchor="middle">and Business Applications</text>
+    <rect x="690" y="535" width="540" height="180" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="960" y="593" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Foundry knowledge base</text>
+    <text x="960" y="638" font-size="28" fill="#57606a" text-anchor="middle">data sources with retrieval</text>
+    <text x="960" y="676" font-size="28" fill="#57606a" text-anchor="middle">and relevance settings</text>
+    <rect x="1290" y="535" width="540" height="180" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="1560" y="593" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Fabric semantic model</text>
+    <text x="1560" y="638" font-size="28" fill="#57606a" text-anchor="middle">business data and analytics</text>
+    <text x="1560" y="676" font-size="28" fill="#57606a" text-anchor="middle">in tables and measures</text>
+
+    <line x1="360" y1="765" x2="360" y2="721" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="960" y1="765" x2="960" y2="721" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="1560" y1="765" x2="1560" y2="721" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+    <rect x="90" y="767" width="540" height="160" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <text x="360" y="835" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Administrators govern it</text>
+    <text x="360" y="880" font-size="28" fill="#57606a" text-anchor="middle">Microsoft 365 admin center</text>
+    <rect x="690" y="767" width="540" height="160" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <text x="960" y="835" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">The owning team tunes it</text>
+    <text x="960" y="880" font-size="28" fill="#57606a" text-anchor="middle">sources, retrieval, ranking</text>
+    <rect x="1290" y="767" width="540" height="160" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <text x="1560" y="835" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Workspace and model owner</text>
+    <text x="1560" y="880" font-size="28" fill="#57606a" text-anchor="middle">decides what the model holds</text>
+  </g>
+</svg>

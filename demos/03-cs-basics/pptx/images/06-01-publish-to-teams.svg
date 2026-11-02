@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">From the agent editor to a chat in Microsoft Teams</title>
+  <desc id="d">Five stages in order. In the agent editor, edits stay until you publish. Publish registers the agent in the Power Platform environment, but not in a channel yet. On the Channels tab you add the Teams plus Microsoft 365 channel. Availability options then offer Copy link, Download a ZIP package and the Teams app store. Copy link opens the agent in Microsoft Teams: paste the link, Add, then Open, and the prompt How can we hire new people in our company returns an AI generated HR answer with references to the documents. A highlight and a moving dot step through the stages in order.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="60" y="140" width="460" height="280" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" values="#e0a534;#8c959f" keyTimes="0;0.2" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="5;2" keyTimes="0;0.2" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+    </rect>
+    <text x="94" y="206" font-size="32" font-weight="700" fill="#24292f">Agent editor</text>
+    <text x="94" y="256" font-size="28" fill="#57606a">Edits stay in the editor</text>
+    <text x="94" y="296" font-size="28" fill="#57606a">until you publish</text>
+
+    <rect x="680" y="140" width="460" height="280" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" values="#8c959f;#e0a534;#8c959f" keyTimes="0;0.2;0.4" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="2;5;2" keyTimes="0;0.2;0.4" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+    </rect>
+    <text x="714" y="206" font-size="32" font-weight="700" fill="#24292f">Published</text>
+    <text x="714" y="256" font-size="28" fill="#57606a">Registered in the Power</text>
+    <text x="714" y="296" font-size="28" fill="#57606a">Platform environment</text>
+    <text x="714" y="356" font-size="28" fill="#57606a">Not in a channel yet</text>
+
+    <rect x="1300" y="140" width="560" height="280" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" values="#8c959f;#e0a534;#8c959f" keyTimes="0;0.4;0.6" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="2;5;2" keyTimes="0;0.4;0.6" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+    </rect>
+    <text x="1334" y="206" font-size="32" font-weight="700" fill="#24292f">Teams + Microsoft 365</text>
+    <text x="1334" y="256" font-size="28" fill="#57606a">Channel added on the</text>
+    <text x="1334" y="296" font-size="28" fill="#57606a">Channels tab</text>
+
+    <rect x="1300" y="560" width="560" height="400" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" values="#8c959f;#e0a534;#8c959f" keyTimes="0;0.6;0.8" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="2;5;2" keyTimes="0;0.6;0.8" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+    </rect>
+    <text x="1334" y="622" font-size="32" font-weight="700" fill="#24292f">Availability options</text>
+    <rect x="1334" y="650" width="492" height="70" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <rect x="1334" y="740" width="492" height="70" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <rect x="1334" y="830" width="492" height="70" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1362" y="696" font-size="28" font-weight="700" fill="#24292f">Copy link</text>
+    <text x="1362" y="786" font-size="28" fill="#57606a">Download a ZIP package</text>
+    <text x="1362" y="876" font-size="28" fill="#57606a">Teams app store</text>
+
+    <rect x="60" y="560" width="1080" height="400" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2">
+      <animate attributeName="stroke" values="#8c959f;#e0a534" keyTimes="0;0.8" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="2;5" keyTimes="0;0.8" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+    </rect>
+    <text x="94" y="622" font-size="32" font-weight="700" fill="#24292f">Microsoft Teams</text>
+    <text x="94" y="666" font-size="28" fill="#57606a">Paste the link, Add, then Open</text>
+    <rect x="400" y="700" width="700" height="80" rx="20" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="430" y="751" font-size="28" fill="#24292f">How can we hire new people in our company?</text>
+    <rect x="100" y="810" width="720" height="120" rx="20" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="130" y="858" font-size="28" font-weight="700" fill="#24292f">AI generated</text>
+    <text x="130" y="902" font-size="28" fill="#57606a">HR answer with references to the documents</text>
+
+    <text x="598" y="262" font-size="28" fill="#57606a" text-anchor="middle">Publish</text>
+    <text x="1218" y="262" font-size="28" fill="#57606a" text-anchor="middle">Channels</text>
+    <text x="1220" y="667" font-size="28" fill="#57606a" text-anchor="middle">Copy link</text>
+    <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+      <line x1="524" y1="280" x2="672" y2="280"/>
+      <line x1="1144" y1="280" x2="1292" y2="280"/>
+      <line x1="1580" y1="424" x2="1580" y2="552"/>
+      <line x1="1296" y1="685" x2="1148" y2="685"/>
+    </g>
+
+    <g fill="#e0a534" stroke="#ffffff" stroke-width="3">
+      <circle cx="524" cy="280" r="14" opacity="0">
+        <animateMotion path="M0,0 L148,0" keyPoints="0;0;1;1" keyTimes="0;0.14;0.2;1" calcMode="linear" dur="10s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.14;0.2" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1144" cy="280" r="14" opacity="0">
+        <animateMotion path="M0,0 L148,0" keyPoints="0;0;1;1" keyTimes="0;0.34;0.4;1" calcMode="linear" dur="10s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.34;0.4" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1580" cy="424" r="14" opacity="0">
+        <animateMotion path="M0,0 L0,128" keyPoints="0;0;1;1" keyTimes="0;0.54;0.6;1" calcMode="linear" dur="10s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.54;0.6" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1296" cy="685" r="14" opacity="0">
+        <animateMotion path="M0,0 L-148,0" keyPoints="0;0;1;1" keyTimes="0;0.74;0.8;1" calcMode="linear" dur="10s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.74;0.8" dur="10s" calcMode="discrete" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+</svg>

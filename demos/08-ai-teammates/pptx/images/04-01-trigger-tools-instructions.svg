@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title id="t">A trigger, tools and instructions start the agent's cycle</title>
+<desc id="d">A recurrence, an email arriving in the agent's mailbox, or a person who mentions it or sends it a task starts the agent's cycle. The tools must reach the sources and the instructions say what to do, such as every Monday, prepare the review. All three must be present for the agent to run a shared process without anyone opening a chat.</desc>
+<rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#57606a"/></marker></defs>
+<rect x="70" y="90" width="560" height="900" rx="20" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="110" y="150" font-size="32" font-weight="600" fill="#24292f">Trigger</text>
+<text x="110" y="192" font-size="28" fill="#57606a">One of these starts the cycle</text>
+<rect x="110" y="230" width="480" height="210" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="140" y="292" font-size="32" font-weight="600" fill="#24292f">Recurrence</text>
+<text x="140" y="345" font-size="28" fill="#57606a">The schedule you set</text>
+<text x="140" y="387" font-size="28" fill="#57606a">comes around</text>
+<rect x="110" y="480" width="480" height="210" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="140" y="542" font-size="32" font-weight="600" fill="#24292f">Email</text>
+<text x="140" y="595" font-size="28" fill="#57606a">A message arrives in</text>
+<text x="140" y="637" font-size="28" fill="#57606a">the agent's mailbox</text>
+<rect x="110" y="730" width="480" height="210" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="140" y="792" font-size="32" font-weight="600" fill="#24292f">A person</text>
+<text x="140" y="845" font-size="28" fill="#57606a">Someone @mentions it</text>
+<text x="140" y="887" font-size="28" fill="#57606a">or sends it a task</text>
+<rect x="760" y="90" width="500" height="170" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+<text x="790" y="150" font-size="32" font-weight="600" fill="#24292f">Tools</text>
+<text x="790" y="200" font-size="28" fill="#57606a">Can reach the sources</text>
+<rect x="760" y="770" width="500" height="220" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+<text x="790" y="830" font-size="32" font-weight="600" fill="#24292f">Instructions</text>
+<text x="790" y="885" font-size="28" fill="#57606a">&quot;every Monday, prepare</text>
+<text x="790" y="925" font-size="28" fill="#57606a">the review&quot;</text>
+<rect x="1400" y="400" width="450" height="260" rx="20" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<text x="1430" y="462" font-size="32" font-weight="600" fill="#24292f">The agent's cycle</text>
+<text x="1430" y="515" font-size="28" fill="#57606a">Runs a shared process</text>
+<text x="1430" y="557" font-size="28" fill="#57606a">without anyone</text>
+<text x="1430" y="599" font-size="28" fill="#57606a">opening a chat</text>
+<path d="M590,335 L610,335 M590,585 L610,585 M590,835 L610,835 M610,335 L610,835" fill="none" stroke="#57606a" stroke-width="3"/>
+<path d="M610,585 L1392,585" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M1260,175 L1625,175 L1625,392" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M1260,880 L1625,880 L1625,668" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<text x="1010" y="645" font-size="28" fill="#24292f" text-anchor="middle">All three must be present</text>
+<rect x="110" y="230" width="480" height="210" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.0222;0.0444;0.1333;0.1556;1.0000" dur="9s" repeatCount="indefinite"/></rect>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M590,335 L610,335 L610,585 L1392,585" dur="9s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.0889;0.2222;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0849;0.0889;0.2222;0.2282;1" dur="9s" repeatCount="indefinite"/></circle>
+<rect x="1400" y="400" width="450" height="260" rx="20" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.2111;0.2333;0.3000;0.3222;1.0000" dur="9s" repeatCount="indefinite"/></rect>
+<rect x="110" y="480" width="480" height="210" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.3556;0.3778;0.4667;0.4889;1.0000" dur="9s" repeatCount="indefinite"/></rect>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M590,585 L610,585 L610,585 L1392,585" dur="9s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.4222;0.5556;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4182;0.4222;0.5556;0.5616;1" dur="9s" repeatCount="indefinite"/></circle>
+<rect x="1400" y="400" width="450" height="260" rx="20" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.5444;0.5667;0.6333;0.6556;1.0000" dur="9s" repeatCount="indefinite"/></rect>
+<rect x="110" y="730" width="480" height="210" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.6889;0.7111;0.8000;0.8222;1.0000" dur="9s" repeatCount="indefinite"/></rect>
+<circle r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion path="M590,835 L610,835 L610,585 L1392,585" dur="9s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.7556;0.8889;1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7516;0.7556;0.8889;0.8949;1" dur="9s" repeatCount="indefinite"/></circle>
+<rect x="1400" y="400" width="450" height="260" rx="20" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.8778;0.9000;0.9667;0.9889;1.0000" dur="9s" repeatCount="indefinite"/></rect>
+</svg>

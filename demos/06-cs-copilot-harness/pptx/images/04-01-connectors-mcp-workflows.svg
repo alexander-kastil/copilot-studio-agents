@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+<title id="t">Connectors, MCP servers and workflows on one Tools surface</title>
+<desc id="d">An agent reaches beyond talking through one Tools surface. A connector is one action against one service, an MCP server is one connection to a shared set of tools and resources, and a workflow is a fixed sequence of steps from an input to an output.</desc>
+<rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L16,8 L0,16 z" fill="#57606a"/></marker></defs>
+<rect x="810" y="60" width="300" height="90" rx="14" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="960" y="117" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#24292f" text-anchor="middle">Agent</text>
+<line x1="960" y1="150" x2="960" y2="208" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="100" y="210" width="1720" height="80" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text x="960" y="262" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Tools: add all three from the same place</text>
+<line x1="370" y1="290" x2="370" y2="358" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="100" y="360" width="540" height="610" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<rect x="120" y="380" width="500" height="80" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text x="370" y="432" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#24292f" text-anchor="middle">Connector</text>
+<line x1="960" y1="290" x2="960" y2="358" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="690" y="360" width="540" height="610" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<rect x="710" y="380" width="500" height="80" rx="12" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+<text x="960" y="432" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#24292f" text-anchor="middle">MCP server</text>
+<line x1="1550" y1="290" x2="1550" y2="358" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="1280" y="360" width="540" height="610" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<rect x="1300" y="380" width="500" height="80" rx="12" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<text x="1550" y="432" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#24292f" text-anchor="middle">Workflow</text>
+<rect x="200" y="500" width="340" height="80" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="370" y="550" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">Send an email</text>
+<line x1="370" y1="580" x2="370" y2="678" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="200" y="680" width="340" height="80" rx="12" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text x="370" y="730" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">Outlook</text>
+<line x1="960" y1="460" x2="960" y2="538" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<text x="982" y="508" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="start">one connection</text>
+<rect x="770" y="540" width="380" height="220" rx="14" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+<rect x="790" y="565" width="160" height="70" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="870" y="610" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#24292f" text-anchor="middle">tool</text>
+<rect x="970" y="565" width="160" height="70" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="1050" y="610" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#24292f" text-anchor="middle">tool</text>
+<rect x="790" y="665" width="160" height="70" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="870" y="710" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#24292f" text-anchor="middle">tool</text>
+<rect x="970" y="665" width="160" height="70" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="1050" y="710" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#24292f" text-anchor="middle">resource</text>
+<text x="1350" y="528" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="middle">input</text>
+<line x1="1350" y1="540" x2="1350" y2="608" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<circle cx="1350" cy="640" r="30" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<text x="1350" y="650" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">1</text>
+<line x1="1382" y1="640" x2="1418" y2="640" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<circle cx="1450" cy="640" r="30" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<text x="1450" y="650" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">2</text>
+<line x1="1482" y1="640" x2="1518" y2="640" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<circle cx="1550" cy="640" r="30" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<text x="1550" y="650" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">3</text>
+<line x1="1582" y1="640" x2="1618" y2="640" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<circle cx="1650" cy="640" r="30" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<text x="1650" y="650" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">4</text>
+<line x1="1682" y1="640" x2="1718" y2="640" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<circle cx="1750" cy="640" r="30" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<text x="1750" y="650" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">5</text>
+<line x1="1750" y1="670" x2="1750" y2="728" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<text x="1750" y="762" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="middle">output</text>
+<text x="370" y="852" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">One action, one service</text>
+<text x="370" y="896" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="middle">"send one email" or</text>
+<text x="370" y="936" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="middle">"create one record"</text>
+<text x="960" y="852" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">A shared set of tools</text>
+<text x="960" y="896" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="middle">"give every agent the</text>
+<text x="960" y="936" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="middle">same shared toolbox"</text>
+<text x="1550" y="852" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Repeated multi-step process</text>
+<text x="1550" y="896" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="middle">"do these five steps the</text>
+<text x="1550" y="936" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="middle">same way every time"</text>
+
+</svg>

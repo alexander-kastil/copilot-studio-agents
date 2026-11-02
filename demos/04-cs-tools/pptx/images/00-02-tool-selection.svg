@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">How the orchestrator routes three questions to two connector tools</title>
+  <desc id="d">Three test questions reach the enhanced orchestrator, which reads the routing lines in the instructions plus every tool name and description. What product support files are available calls List product support files, the SharePoint List folder tool on the Products document library. How many Nimbus 500 units do we have in stock, and where are they calls Get product stock levels, the Excel List rows present in a table tool on the Stock table. Give me everything you have on the Aurora X1 calls both tools in one turn. An animation sends each question in turn and lights up the tool it reaches.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse">
+      <path d="M0,0 L12,6 L0,12 z" fill="#8c959f"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <g stroke="#8c959f" stroke-width="2" fill="none" marker-end="url(#arrow)">
+      <line x1="690" y1="225" x2="816" y2="463"/>
+      <line x1="690" y1="475" x2="816" y2="538"/>
+      <line x1="690" y1="790" x2="816" y2="613"/>
+      <line x1="1180" y1="500" x2="1306" y2="325"/>
+      <line x1="1180" y1="580" x2="1306" y2="716"/>
+    </g>
+
+    <g fill="#f6f8fa" stroke="#8c959f" stroke-width="2">
+      <rect x="70" y="130" width="620" height="190" rx="22"/>
+      <rect x="70" y="360" width="620" height="230" rx="22"/>
+      <rect x="70" y="630" width="620" height="320" rx="22"/>
+    </g>
+    <g font-size="30" fill="#24292f">
+      <text x="104" y="186">What product support files are</text>
+      <text x="104" y="228">available?</text>
+      <text x="104" y="416">How many Nimbus 500 units do we have</text>
+      <text x="104" y="458">in stock, and where are they?</text>
+      <text x="104" y="686">Give me everything you have on the</text>
+      <text x="104" y="728">Aurora X1: which support documents</text>
+      <text x="104" y="770">exist and how many units are left.</text>
+    </g>
+    <g font-size="28" fill="#57606a">
+      <text x="104" y="290">calls: <tspan font-weight="700" fill="#24292f">List product support files</tspan></text>
+      <text x="104" y="560">calls: <tspan font-weight="700" fill="#24292f">Get product stock levels</tspan></text>
+      <text x="104" y="878">calls: <tspan font-weight="700" fill="#24292f">both tools</tspan></text>
+      <text x="104" y="918">in one turn</text>
+    </g>
+
+    <rect x="820" y="330" width="360" height="420" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1000" y="394" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Enhanced</text>
+    <text x="1000" y="436" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">orchestrator</text>
+    <line x1="850" y1="468" x2="1150" y2="468" stroke="#8c959f" stroke-width="2"/>
+    <g font-size="28" fill="#57606a" text-anchor="middle">
+      <text x="1000" y="514">reads the routing</text>
+      <text x="1000" y="554">lines in the</text>
+      <text x="1000" y="594">instructions, every</text>
+      <text x="1000" y="634">tool name and</text>
+      <text x="1000" y="674">description</text>
+    </g>
+
+    <g fill="#eaf2ff" stroke="#8c959f" stroke-width="2">
+      <rect x="1310" y="200" width="540" height="240" rx="16"/>
+      <rect x="1310" y="600" width="540" height="240" rx="16"/>
+    </g>
+    <g font-size="30" font-weight="700" fill="#24292f">
+      <text x="1342" y="262">List product support files</text>
+      <text x="1342" y="662">Get product stock levels</text>
+    </g>
+    <g font-size="28" fill="#57606a">
+      <text x="1342" y="320">SharePoint: List folder</text>
+      <text x="1342" y="362"><tspan font-family="Consolas, Menlo, monospace" fill="#24292f">Products</tspan> document library</text>
+      <text x="1342" y="720">Excel: List rows present in a table</text>
+      <text x="1342" y="762"><tspan font-family="Consolas, Menlo, monospace" fill="#24292f">Stock</tspan> table in</text>
+      <text x="1342" y="802" font-family="Consolas, Menlo, monospace" fill="#24292f">ProductInventory.xlsx</text>
+    </g>
+
+    <g fill="none" stroke="#e0a534" stroke-width="7">
+      <rect x="70" y="130" width="620" height="190" rx="22" opacity="0">
+        <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.01;0.03;0.29;0.31;1"/>
+      </rect>
+      <rect x="70" y="360" width="620" height="230" rx="22" opacity="0">
+        <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.343;0.363;0.623;0.643;1"/>
+      </rect>
+      <rect x="70" y="630" width="620" height="320" rx="22" opacity="0">
+        <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.677;0.697;0.957;0.977;1"/>
+      </rect>
+      <rect x="820" y="330" width="360" height="420" rx="18" opacity="0">
+        <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0;0;1;1;0;0;1;1;0;0" keyTimes="0;0.11;0.12;0.15;0.16;0.443;0.453;0.483;0.493;0.777;0.787;0.817;0.827;1"/>
+      </rect>
+      <rect x="1310" y="200" width="540" height="240" rx="16" opacity="0">
+        <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0;0;1;1;0;0" keyTimes="0;0.24;0.25;0.30;0.31;0.907;0.917;0.967;0.977;1"/>
+      </rect>
+      <rect x="1310" y="600" width="540" height="240" rx="16" opacity="0">
+        <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0;0;1;1;0;0" keyTimes="0;0.573;0.583;0.633;0.643;0.907;0.917;0.967;0.977;1"/>
+      </rect>
+    </g>
+
+    <g fill="#e0a534">
+      <circle r="13" opacity="0">
+        <animateMotion dur="12s" repeatCount="indefinite" path="M690,225 L820,470" keyPoints="0;0;1;1" keyTimes="0;0.03;0.11;1" calcMode="linear"/>
+        <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.029;0.03;0.11;0.111;1"/>
+      </circle>
+      <circle r="13" opacity="0">
+        <animateMotion dur="12s" repeatCount="indefinite" path="M1180,500 L1310,320" keyPoints="0;0;1;1" keyTimes="0;0.16;0.24;1" calcMode="linear"/>
+        <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.159;0.16;0.24;0.241;1"/>
+      </circle>
+      <circle r="13" opacity="0">
+        <animateMotion dur="12s" repeatCount="indefinite" path="M690,475 L820,540" keyPoints="0;0;1;1" keyTimes="0;0.363;0.443;1" calcMode="linear"/>
+        <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.362;0.363;0.443;0.444;1"/>
+      </circle>
+      <circle r="13" opacity="0">
+        <animateMotion dur="12s" repeatCount="indefinite" path="M1180,580 L1310,720" keyPoints="0;0;1;1" keyTimes="0;0.493;0.573;1" calcMode="linear"/>
+        <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.492;0.493;0.573;0.574;1"/>
+      </circle>
+      <circle r="13" opacity="0">
+        <animateMotion dur="12s" repeatCount="indefinite" path="M690,790 L820,610" keyPoints="0;0;1;1" keyTimes="0;0.697;0.777;1" calcMode="linear"/>
+        <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.696;0.697;0.777;0.778;1"/>
+      </circle>
+      <circle r="13" opacity="0">
+        <animateMotion dur="12s" repeatCount="indefinite" path="M1180,500 L1310,320" keyPoints="0;0;1;1" keyTimes="0;0.827;0.907;1" calcMode="linear"/>
+        <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.826;0.827;0.907;0.908;1"/>
+      </circle>
+      <circle r="13" opacity="0">
+        <animateMotion dur="12s" repeatCount="indefinite" path="M1180,580 L1310,720" keyPoints="0;0;1;1" keyTimes="0;0.827;0.907;1" calcMode="linear"/>
+        <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.826;0.827;0.907;0.908;1"/>
+      </circle>
+    </g>
+  </g>
+</svg>

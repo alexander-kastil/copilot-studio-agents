@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Where a SharePoint agent's answers come from</title>
+  <desc id="d">Two overlapping circles. The first is the content you choose for the agent: a whole site, specific folders, or selected documents. The second is what the person asking already has permission to see. The agent grounds its answers only in the overlap of the two.</desc>
+  <defs>
+    <clipPath id="left-circle">
+      <circle cx="700" cy="540" r="440"/>
+    </clipPath>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <circle cx="700" cy="540" r="440" fill="#eaf2ff"/>
+  <circle cx="1220" cy="540" r="440" fill="#e9f7ef"/>
+  <circle cx="1220" cy="540" r="440" fill="#f3edff" clip-path="url(#left-circle)"/>
+  <circle cx="700" cy="540" r="440" fill="none" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="1220" cy="540" r="440" fill="none" stroke="#8c959f" stroke-width="2"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" text-anchor="middle">
+    <text x="510" y="430" font-size="38" font-weight="700" fill="#24292f">Content you choose</text>
+    <text x="510" y="515" font-size="32" fill="#57606a">A whole site</text>
+    <text x="510" y="565" font-size="32" fill="#57606a">Specific folders</text>
+    <text x="510" y="615" font-size="32" fill="#57606a">Selected documents</text>
+
+    <text x="960" y="495" font-size="32" font-weight="700" fill="#24292f">Where the</text>
+    <text x="960" y="540" font-size="32" font-weight="700" fill="#24292f">agent's answers</text>
+    <text x="960" y="585" font-size="32" font-weight="700" fill="#24292f">come from</text>
+
+    <text x="1410" y="480" font-size="36" font-weight="700" fill="#24292f">What the person</text>
+    <text x="1410" y="528" font-size="36" font-weight="700" fill="#24292f">asking already has</text>
+    <text x="1410" y="576" font-size="36" font-weight="700" fill="#24292f">permission to see</text>
+  </g>
+</svg>

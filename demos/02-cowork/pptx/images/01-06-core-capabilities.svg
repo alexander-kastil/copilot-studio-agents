@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Core capabilities of Cowork</title>
+  <desc id="d">Five areas. Communication: emails, replies, forwards; Teams channel and chat posts; stakeholder updates. Documents and files: Word, Excel, PowerPoint, PDF; edit files in place; output in OneDrive. Calendar and meetings: schedule in plain language; resolve conflicts; Daily Briefing. Research: search people and files; Deep Research with sources; browser tasks in Edge. Automation: prompts on a schedule; start on an email or Teams message; Automations page. Under all five: skills, Cowork loads the right ones and lists them under Plugins in the Workspace panel.</desc>
+  <defs>
+    <style>
+      svg { font-size: 34px; }
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .h { font-size: 40px; font-weight: 600; text-anchor: middle; }
+      .i { font-size: 34px; text-anchor: middle; }
+      .b { font-size: 36px; text-anchor: middle; }
+      .bb { font-weight: 600; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+
+  <g stroke="#8c959f" stroke-width="2">
+    <rect x="40" y="60" width="344" height="770" rx="24" fill="#eaf2ff"/>
+    <rect x="414" y="60" width="344" height="770" rx="24" fill="#e9f7ef"/>
+    <rect x="788" y="60" width="344" height="770" rx="24" fill="#fff6e5"/>
+    <rect x="1162" y="60" width="344" height="770" rx="24" fill="#f3edff"/>
+    <rect x="1536" y="60" width="344" height="770" rx="24" fill="#e3f6f5"/>
+  </g>
+
+  <text class="h" x="212" y="152">Communication</text>
+  <text class="h" x="586" y="130">Documents</text>
+  <text class="h" x="586" y="178">&amp; files</text>
+  <text class="h" x="960" y="130">Calendar</text>
+  <text class="h" x="960" y="178">&amp; meetings</text>
+  <text class="h" x="1334" y="152">Research</text>
+  <text class="h" x="1708" y="152">Automation</text>
+
+  <g fill="#ffffff" stroke="#8c959f" stroke-width="2">
+    <rect x="60" y="220" width="304" height="170" rx="16"/>
+    <rect x="60" y="420" width="304" height="170" rx="16"/>
+    <rect x="60" y="620" width="304" height="170" rx="16"/>
+    <rect x="434" y="220" width="304" height="170" rx="16"/>
+    <rect x="434" y="420" width="304" height="170" rx="16"/>
+    <rect x="434" y="620" width="304" height="170" rx="16"/>
+    <rect x="808" y="220" width="304" height="170" rx="16"/>
+    <rect x="808" y="420" width="304" height="170" rx="16"/>
+    <rect x="808" y="620" width="304" height="170" rx="16"/>
+    <rect x="1182" y="220" width="304" height="170" rx="16"/>
+    <rect x="1182" y="420" width="304" height="170" rx="16"/>
+    <rect x="1182" y="620" width="304" height="170" rx="16"/>
+    <rect x="1556" y="220" width="304" height="170" rx="16"/>
+    <rect x="1556" y="420" width="304" height="170" rx="16"/>
+    <rect x="1556" y="620" width="304" height="170" rx="16"/>
+  </g>
+
+  <text class="i" x="212" y="295">Emails, replies,</text>
+  <text class="i" x="212" y="339">forwards</text>
+  <text class="i" x="212" y="495">Teams channel</text>
+  <text class="i" x="212" y="539">and chat posts</text>
+  <text class="i" x="212" y="695">Stakeholder</text>
+  <text class="i" x="212" y="739">updates</text>
+
+  <text class="i" x="586" y="295">Word, Excel,</text>
+  <text class="i" x="586" y="339">PowerPoint, PDF</text>
+  <text class="i" x="586" y="495">Edit files</text>
+  <text class="i" x="586" y="539">in place</text>
+  <text class="i" x="586" y="695">Output in</text>
+  <text class="i" x="586" y="739">OneDrive</text>
+
+  <text class="i" x="960" y="295">Schedule in</text>
+  <text class="i" x="960" y="339">plain language</text>
+  <text class="i" x="960" y="495">Resolve</text>
+  <text class="i" x="960" y="539">conflicts</text>
+  <text class="i" x="960" y="717">Daily Briefing</text>
+
+  <text class="i" x="1334" y="295">Search people</text>
+  <text class="i" x="1334" y="339">and files</text>
+  <text class="i" x="1334" y="495">Deep Research</text>
+  <text class="i" x="1334" y="539">with sources</text>
+  <text class="i" x="1334" y="695">Browser tasks</text>
+  <text class="i" x="1334" y="739">in Edge</text>
+
+  <text class="i" x="1708" y="295">Prompts on</text>
+  <text class="i" x="1708" y="339">a schedule</text>
+  <text class="i" x="1708" y="495">Start on an email</text>
+  <text class="i" x="1708" y="539">or Teams message</text>
+  <text class="i" x="1708" y="695">Automations</text>
+  <text class="i" x="1708" y="739">page</text>
+
+  <rect x="40" y="870" width="1840" height="140" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="960" y="953"><tspan class="bb">Skills:</tspan> Cowork loads the right ones and lists them under Plugins in the Workspace panel</text>
+</svg>

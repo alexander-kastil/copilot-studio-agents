@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <style>svg { font-size: 28px; }</style>
+  <title id="t">What the harness leaves to you</title>
+  <desc id="d">Four cards: read-only tools and write access behind a workflow, how each tool signs in, limits of hooks and Request for information, and treating everything the agent reads as data with file and memory retention limits.</desc>
+  <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker></defs>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <rect x="40" y="60" width="900" height="440" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="64" y="106" font-size="32" font-weight="700" fill="#24292f">Part of your design</text>
+  <text x="64" y="156" font-size="30" fill="#24292f">Give the agent read-only tools</text>
+  <text x="64" y="198" font-size="30" fill="#24292f">Keep write access behind a workflow</text>
+  <text x="64" y="240" font-size="30" fill="#24292f">Duplicate-write protection and human</text>
+  <text x="64" y="282" font-size="30" fill="#24292f">approval are your design, not the harness</text>
+  <rect x="980" y="60" width="900" height="440" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1004" y="106" font-size="32" font-weight="700" fill="#24292f">Check how each tool signs in</text>
+  <text x="1004" y="156" font-size="30" fill="#24292f">Maker-provided credentials: every user</text>
+  <text x="1004" y="198" font-size="30" fill="#24292f">acts with the maker's permissions</text>
+  <text x="1004" y="240" font-size="30" fill="#24292f">Admin center: Control maker credential</text>
+  <text x="1004" y="282" font-size="30" fill="#24292f">options requires end-user credentials</text>
+  <text x="1004" y="324" font-size="30" fill="#24292f">Applies to the whole environment, and</text>
+  <text x="1004" y="366" font-size="30" fill="#24292f">scheduled and background runs fail</text>
+  <rect x="40" y="540" width="900" height="480" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="64" y="586" font-size="32" font-weight="700" fill="#24292f">Limits of hooks and review</text>
+  <text x="64" y="636" font-size="30" fill="#24292f">A hook that fails or times out lets the</text>
+  <text x="64" y="678" font-size="30" fill="#24292f">agent continue as if it returned nothing</text>
+  <text x="64" y="720" font-size="30" fill="#24292f">Request for information: Outlook only,</text>
+  <text x="64" y="762" font-size="30" fill="#24292f">people in your tenant only, first response</text>
+  <text x="64" y="804" font-size="30" fill="#24292f">wins, not an all-reviewers approval</text>
+  <rect x="980" y="540" width="900" height="480" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1004" y="586" font-size="32" font-weight="700" fill="#24292f">Treat reads as data</text>
+  <text x="1004" y="636" font-size="30" fill="#24292f">Documents, mails and tool results are data,</text>
+  <text x="1004" y="678" font-size="30" fill="#24292f">never instructions</text>
+  <text x="1004" y="720" font-size="30" fill="#24292f">Created files: 10 MB each, deleted 28 days</text>
+  <text x="1004" y="762" font-size="30" fill="#24292f">after last activity</text>
+  <text x="1004" y="804" font-size="30" fill="#24292f">Memory: private per user, deleted after 28</text>
+  <text x="1004" y="846" font-size="30" fill="#24292f">days without interaction</text>
+</svg>

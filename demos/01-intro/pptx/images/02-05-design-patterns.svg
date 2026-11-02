@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Five design patterns in agentic AI</title>
+  <desc id="d">Single agent: one agent with its instructions, knowledge and tools. Multi-agent orchestration: a master agent routes work to focused specialists such as hotel booking, flight search and restaurant agents. Deterministic flow: fixed steps 1, 2 and 3 that run the same way every time. Autonomous agent: a trigger fires the agent to act without a person starting it. Human-in-the-loop: the agent proposes, a person approves, then the action runs.</desc>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+
+  <rect x="80" y="70" width="560" height="450" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="112" y="126" font-size="30" font-weight="700" fill="#24292f">Single agent</text>
+  <rect x="160" y="165" width="400" height="200" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="186" y="276" font-size="30" font-weight="700" fill="#24292f">Agent</text>
+  <rect x="300" y="177" width="240" height="52" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="420" y="213" font-size="28" fill="#24292f" text-anchor="middle">Instructions</text>
+  <rect x="300" y="239" width="240" height="52" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="420" y="275" font-size="28" fill="#24292f" text-anchor="middle">Knowledge</text>
+  <rect x="300" y="301" width="240" height="52" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="420" y="337" font-size="28" fill="#24292f" text-anchor="middle">Tools</text>
+  <text x="112" y="416" font-size="28" fill="#57606a">One job, one set of</text>
+  <text x="112" y="452" font-size="28" fill="#57606a">instructions, knowledge,</text>
+  <text x="112" y="488" font-size="28" fill="#57606a">and tools</text>
+
+  <rect x="680" y="70" width="560" height="450" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="712" y="126" font-size="30" font-weight="700" fill="#24292f">Multi-agent orchestration</text>
+  <rect x="710" y="215" width="180" height="100" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="800" y="258" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">Master</text>
+  <text x="800" y="294" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">agent</text>
+  <rect x="970" y="177" width="240" height="52" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1090" y="213" font-size="28" fill="#24292f" text-anchor="middle">Hotel booking</text>
+  <rect x="970" y="239" width="240" height="52" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1090" y="275" font-size="28" fill="#24292f" text-anchor="middle">Flight search</text>
+  <rect x="970" y="301" width="240" height="52" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1090" y="337" font-size="28" fill="#24292f" text-anchor="middle">Restaurant</text>
+  <line x1="892" y1="250" x2="964" y2="206" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <line x1="892" y1="265" x2="964" y2="265" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <line x1="892" y1="280" x2="964" y2="324" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <text x="712" y="416" font-size="28" fill="#57606a">A master agent routes work</text>
+  <text x="712" y="452" font-size="28" fill="#57606a">to focused specialists</text>
+
+  <rect x="1280" y="70" width="560" height="450" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="1312" y="126" font-size="30" font-weight="700" fill="#24292f">Deterministic flow</text>
+  <rect x="1330" y="215" width="120" height="100" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1390" y="278" font-size="36" font-weight="700" fill="#24292f" text-anchor="middle">1</text>
+  <rect x="1500" y="215" width="120" height="100" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1560" y="278" font-size="36" font-weight="700" fill="#24292f" text-anchor="middle">2</text>
+  <rect x="1670" y="215" width="120" height="100" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1730" y="278" font-size="36" font-weight="700" fill="#24292f" text-anchor="middle">3</text>
+  <line x1="1452" y1="265" x2="1496" y2="265" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <line x1="1622" y1="265" x2="1666" y2="265" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <text x="1312" y="416" font-size="28" fill="#57606a">The steps are fixed and</text>
+  <text x="1312" y="452" font-size="28" fill="#57606a">must run the same way</text>
+  <text x="1312" y="488" font-size="28" fill="#57606a">every time</text>
+
+  <rect x="80" y="560" width="860" height="450" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="112" y="616" font-size="30" font-weight="700" fill="#24292f">Autonomous agent</text>
+  <rect x="120" y="690" width="200" height="120" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="220" y="761" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Trigger</text>
+  <rect x="410" y="690" width="200" height="120" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="510" y="761" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Agent</text>
+  <rect x="700" y="690" width="200" height="120" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="800" y="761" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Acts</text>
+  <line x1="322" y1="750" x2="404" y2="750" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <line x1="612" y1="750" x2="694" y2="750" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <text x="112" y="906" font-size="28" fill="#57606a">A trigger fires the agent to act</text>
+  <text x="112" y="942" font-size="28" fill="#57606a">without a person starting it</text>
+
+  <rect x="980" y="560" width="860" height="450" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="1012" y="616" font-size="30" font-weight="700" fill="#24292f">Human-in-the-loop</text>
+  <rect x="1020" y="690" width="200" height="120" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1120" y="742" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">Agent</text>
+  <text x="1120" y="778" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">proposes</text>
+  <rect x="1310" y="690" width="200" height="120" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="1410" y="742" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">Person</text>
+  <text x="1410" y="778" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">approves</text>
+  <rect x="1600" y="690" width="200" height="120" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1700" y="742" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">Action</text>
+  <text x="1700" y="778" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">runs</text>
+  <line x1="1222" y1="750" x2="1304" y2="750" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <line x1="1512" y1="750" x2="1594" y2="750" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <text x="1012" y="906" font-size="28" fill="#57606a">A person approves before the agent</text>
+  <text x="1012" y="942" font-size="28" fill="#57606a">takes a consequential action</text>
+</svg>

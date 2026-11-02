@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Where Pause (soft), Pause (hard) and Cancel stop a task</title>
+  <desc id="d">Three lanes show a task running through the previous step, the current step and the next step, with the press point in the middle of the current step. Pause (soft) finishes the current step, then pauses; Resume continues the task. Pause (hard) stops immediately, mid-step; Resume continues the task. Cancel clears the current task. A progress bar runs to each stop point, holds, and continues on Resume for both pause lanes.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="1175" y="100" font-size="28" font-weight="700" fill="#57606a" text-anchor="middle">You press here</text>
+
+    <g>
+      <rect x="70" y="135" width="390" height="180" rx="20" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+      <text x="265" y="237" font-size="36" font-weight="700" fill="#24292f" text-anchor="middle">Pause (soft)</text>
+      <path d="M1160,137 L1190,137 L1175,161 z" fill="#57606a"/>
+      <rect x="520" y="165" width="370" height="70" rx="12" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+      <rect x="910" y="165" width="460" height="70" rx="12" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+      <rect x="1410" y="165" width="440" height="70" rx="12" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+      <g font-size="28" fill="#24292f">
+        <text x="540" y="211">Previous step</text>
+        <text x="930" y="211">Current step</text>
+        <text x="1450" y="211">Next step</text>
+      </g>
+      <rect x="1379" y="170" width="9" height="60" fill="#24292f"/>
+      <rect x="1392" y="170" width="9" height="60" fill="#24292f"/>
+      <rect x="520" y="249" width="1330" height="12" rx="6" fill="#eaeef2"/>
+      <rect x="520" y="249" width="370" height="12" rx="6" fill="#57606a">
+        <animate attributeName="width" values="370;655;850;850;1330;1330;370" keyTimes="0;0.2;0.3;0.55;0.85;0.99;1" dur="8s" repeatCount="indefinite"/>
+      </rect>
+      <circle cx="890" cy="255" r="13" fill="#24292f">
+        <animate attributeName="cx" values="890;1175;1370;1370;1850;1850;890" keyTimes="0;0.2;0.3;0.55;0.85;0.99;1" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1390" cy="200" r="42" fill="none" stroke="#e0a534" stroke-width="4" opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3;0.32;0.55;0.57;1" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <text x="520" y="305" font-size="30" fill="#57606a">Finishes the current step, then pauses. Resume continues the task.</text>
+    </g>
+
+    <g>
+      <rect x="70" y="420" width="390" height="180" rx="20" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+      <text x="265" y="522" font-size="36" font-weight="700" fill="#24292f" text-anchor="middle">Pause (hard)</text>
+      <path d="M1160,422 L1190,422 L1175,446 z" fill="#57606a"/>
+      <rect x="520" y="450" width="370" height="70" rx="12" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+      <rect x="910" y="450" width="460" height="70" rx="12" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+      <rect x="1410" y="450" width="440" height="70" rx="12" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+      <g font-size="28" fill="#24292f">
+        <text x="540" y="496">Previous step</text>
+        <text x="930" y="496">Current step</text>
+        <text x="1450" y="496">Next step</text>
+      </g>
+      <rect x="1163" y="455" width="9" height="60" fill="#24292f"/>
+      <rect x="1178" y="455" width="9" height="60" fill="#24292f"/>
+      <rect x="520" y="534" width="1330" height="12" rx="6" fill="#eaeef2"/>
+      <rect x="520" y="534" width="370" height="12" rx="6" fill="#57606a">
+        <animate attributeName="width" values="370;655;655;1330;1330;370" keyTimes="0;0.2;0.55;0.85;0.99;1" dur="8s" repeatCount="indefinite"/>
+      </rect>
+      <circle cx="890" cy="540" r="13" fill="#24292f">
+        <animate attributeName="cx" values="890;1175;1175;1850;1850;890" keyTimes="0;0.2;0.55;0.85;0.99;1" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1175" cy="485" r="42" fill="none" stroke="#e0a534" stroke-width="4" opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2;0.22;0.55;0.57;1" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <text x="520" y="590" font-size="30" fill="#57606a">Stops immediately, mid-step. Resume continues the task.</text>
+    </g>
+
+    <g>
+      <rect x="70" y="705" width="390" height="180" rx="20" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+      <text x="265" y="807" font-size="36" font-weight="700" fill="#24292f" text-anchor="middle">Cancel</text>
+      <path d="M1160,707 L1190,707 L1175,731 z" fill="#57606a"/>
+      <rect x="520" y="735" width="370" height="70" rx="12" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+      <rect x="910" y="735" width="265" height="70" rx="12" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+      <rect x="1180" y="735" width="190" height="70" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2" stroke-dasharray="10 8"/>
+      <rect x="1410" y="735" width="440" height="70" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2" stroke-dasharray="10 8"/>
+      <g font-size="28" fill="#24292f">
+        <text x="540" y="781">Previous step</text>
+        <text x="930" y="781">Current step</text>
+        <text x="1450" y="781" fill="#57606a">Cleared</text>
+      </g>
+      <rect x="1161" y="756" width="28" height="28" fill="#24292f"/>
+      <rect x="520" y="819" width="1330" height="12" rx="6" fill="#eaeef2"/>
+      <rect x="520" y="819" width="370" height="12" rx="6" fill="#57606a">
+        <animate attributeName="width" values="370;655;655;370" keyTimes="0;0.2;0.99;1" dur="8s" repeatCount="indefinite"/>
+      </rect>
+      <circle cx="890" cy="825" r="13" fill="#24292f">
+        <animate attributeName="cx" values="890;1175;1175;890" keyTimes="0;0.2;0.99;1" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1175" cy="770" r="42" fill="none" stroke="#e0a534" stroke-width="4" opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2;0.22;0.95;0.97;1" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <text x="520" y="875" font-size="30" fill="#57606a">Clears the current task.</text>
+    </g>
+  </g>
+</svg>

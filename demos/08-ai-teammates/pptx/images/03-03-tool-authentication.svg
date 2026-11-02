@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title id="t">Tool authentication without and with an agent account</title>
+<desc id="d">Without an account, the agent acts as the signed-in user or with connector credentials. The event trigger CS-When a new email arrives in a shared mailbox runs on the author's credentials, and Publish lists this for review: your agent includes triggers that use the author's credentials, and users the trigger shares data with can use those credentials. Adding an account before the first publish changes this. With an agent account, the agent acts as itself, with its own scoped access rights. Agent account becomes the default authentication for every tool that supports it, and you can change it per tool. Tools set to end-user authentication still need each person's own consent through Go to Agent Management.</desc>
+<rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#57606a"/></marker></defs>
+<rect x="70" y="130" width="700" height="820" rx="20" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+<text x="100" y="192" font-size="34" font-weight="600" fill="#24292f">Without an account</text>
+<text x="100" y="238" font-size="28" fill="#57606a">Acts as the signed-in user,</text>
+<text x="100" y="276" font-size="28" fill="#57606a">or with connector credentials</text>
+<rect x="100" y="315" width="640" height="230" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="130" y="370" font-size="30" font-weight="600" fill="#24292f">Event trigger</text>
+<text x="130" y="415" font-size="28" fill="#57606a">CS-When a new email arrives</text>
+<text x="130" y="453" font-size="28" fill="#57606a">in a shared mailbox</text>
+<text x="130" y="505" font-size="30" font-weight="600" fill="#24292f">Runs on the author's credentials</text>
+<rect x="100" y="605" width="640" height="280" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text x="130" y="660" font-size="28" fill="#57606a">Publish lists it for review</text>
+<text x="130" y="710" font-size="30" font-weight="600" fill="#24292f">Your agent includes triggers</text>
+<text x="130" y="752" font-size="30" font-weight="600" fill="#24292f">that use the author's credentials</text>
+<text x="130" y="810" font-size="28" fill="#57606a">Users the trigger shares data with</text>
+<text x="130" y="848" font-size="28" fill="#57606a">can use those credentials</text>
+<path d="M420,545 L420,597" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="840" y="480" width="240" height="120" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text x="960" y="552" font-size="32" font-weight="600" fill="#24292f" text-anchor="middle">Add account</text>
+<text x="960" y="655" font-size="28" fill="#57606a" text-anchor="middle">before the</text>
+<text x="960" y="693" font-size="28" fill="#57606a" text-anchor="middle">first publish</text>
+<path d="M770,540 L832,540" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M1080,540 L1142,540" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="1150" y="130" width="700" height="820" rx="20" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<text x="1180" y="192" font-size="34" font-weight="600" fill="#24292f">With an agent account</text>
+<text x="1180" y="238" font-size="28" fill="#57606a">Acts as itself, with its own</text>
+<text x="1180" y="276" font-size="28" fill="#57606a">scoped access rights</text>
+<rect x="1180" y="315" width="640" height="230" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="1210" y="370" font-size="30" font-weight="600" fill="#24292f">Agent account</text>
+<text x="1210" y="415" font-size="28" fill="#57606a">Default authentication for every</text>
+<text x="1210" y="453" font-size="28" fill="#57606a">tool that supports it</text>
+<text x="1210" y="505" font-size="28" fill="#24292f">You can change it per tool</text>
+<rect x="1180" y="605" width="640" height="280" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="1210" y="660" font-size="30" font-weight="600" fill="#24292f">End-user authentication</text>
+<text x="1210" y="712" font-size="28" fill="#57606a">Each person still completes</text>
+<text x="1210" y="750" font-size="28" fill="#57606a">their own consent through</text>
+<text x="1210" y="815" font-size="30" font-weight="600" fill="#24292f">Go to Agent Management</text>
+</svg>

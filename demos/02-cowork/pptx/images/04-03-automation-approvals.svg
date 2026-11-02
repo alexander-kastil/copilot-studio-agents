@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">The run is automatic, the send waits for your approval</title>
+  <desc id="d">A schedule or trigger fires, and Cowork does the work and prepares the send, post, or change on its own. The send is held for your approval (draft-and-approve) before it leaves your workspace; a dashed path shows the option to pre-authorize when you create the task, which trades control for speed. Below, the guardrails: runs with your permissions, sees only what you can see, rate-limited, guarded against triggering itself in a loop, results go only to you. A highlight moves through the four stages and pauses at the approval.</desc>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="530" y="190" font-size="34" font-weight="700" fill="#24292f" text-anchor="middle">The run: automatic</text>
+    <path d="M110,248 V226 H950 V248" fill="none" stroke="#8c959f" stroke-width="2"/>
+    <text x="1455" y="190" font-size="34" font-weight="700" fill="#24292f" text-anchor="middle">The send: waits for your approval</text>
+    <path d="M1060,248 V226 H1850 V248" fill="none" stroke="#8c959f" stroke-width="2"/>
+
+    <rect x="110" y="290" width="360" height="280" rx="20" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <g font-size="36" font-weight="700" fill="#24292f" text-anchor="middle">
+      <text x="290" y="395">Schedule</text>
+      <text x="290" y="441">or trigger</text>
+      <text x="290" y="487">fires</text>
+    </g>
+
+    <rect x="550" y="290" width="400" height="280" rx="20" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <g fill="#24292f" text-anchor="middle">
+      <text x="750" y="372" font-size="34" font-weight="700">Cowork does</text>
+      <text x="750" y="416" font-size="34" font-weight="700">the work and</text>
+      <text x="750" y="474" font-size="30">prepares the send,</text>
+      <text x="750" y="514" font-size="30">post, or change</text>
+    </g>
+
+    <rect x="1060" y="290" width="380" height="280" rx="20" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+    <g text-anchor="middle">
+      <text x="1250" y="395" font-size="36" font-weight="700" fill="#24292f">Held for</text>
+      <text x="1250" y="441" font-size="36" font-weight="700" fill="#24292f">your approval</text>
+      <text x="1250" y="502" font-size="28" fill="#57606a">draft-and-approve</text>
+    </g>
+
+    <rect x="1530" y="290" width="320" height="280" rx="20" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <g font-size="36" font-weight="700" fill="#24292f" text-anchor="middle">
+      <text x="1690" y="418">Leaves your</text>
+      <text x="1690" y="464">workspace</text>
+    </g>
+
+    <g stroke="#57606a" stroke-width="3" marker-end="url(#ah)">
+      <line x1="472" y1="430" x2="546" y2="430"/>
+      <line x1="952" y1="430" x2="1056" y2="430"/>
+      <line x1="1442" y1="430" x2="1526" y2="430"/>
+    </g>
+
+    <path d="M750,572 V650 H1690 V578" fill="none" stroke="#57606a" stroke-width="3" stroke-dasharray="12 10" marker-end="url(#ah)"/>
+    <text x="1220" y="705" font-size="28" fill="#57606a" text-anchor="middle">Or pre-authorize when you create the task: trades control for speed</text>
+
+    <g font-size="28" fill="#24292f" text-anchor="middle">
+      <rect x="440" y="780" width="500" height="72" rx="36" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+      <text x="690" y="826">Runs with your permissions</text>
+      <rect x="980" y="780" width="500" height="72" rx="36" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+      <text x="1230" y="826">Sees only what you can see</text>
+      <rect x="170" y="880" width="260" height="72" rx="36" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+      <text x="300" y="926">Rate-limited</text>
+      <rect x="470" y="880" width="800" height="72" rx="36" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+      <text x="870" y="926">Guarded against triggering itself in a loop</text>
+      <rect x="1310" y="880" width="440" height="72" rx="36" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+      <text x="1530" y="926">Results go only to you</text>
+    </g>
+
+    <g fill="none">
+      <rect x="110" y="290" width="360" height="280" rx="20" stroke="#24292f" stroke-width="6" opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0375;0.075;0.175;0.2125;1" dur="8s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="550" y="290" width="400" height="280" rx="20" stroke="#24292f" stroke-width="6" opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.225;0.25;0.35;0.375;1" dur="8s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="1060" y="290" width="380" height="280" rx="20" stroke="#e0a534" stroke-width="9" opacity="0">
+        <animate attributeName="opacity" values="0;0;1;0.35;1;0.35;1;0;0" keyTimes="0;0.4375;0.475;0.55;0.6;0.65;0.7;0.725;1" dur="8s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="1530" y="290" width="320" height="280" rx="20" stroke="#24292f" stroke-width="6" opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7875;0.8125;0.925;0.95;1" dur="8s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <g fill="#24292f">
+      <circle r="13" opacity="0">
+        <animateMotion path="M472,430 L540,430" keyPoints="0;0;1;1" keyTimes="0;0.1625;0.225;1" calcMode="linear" dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.155;0.1625;0.225;0.235;1" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="13" opacity="0">
+        <animateMotion path="M952,430 L1048,430" keyPoints="0;0;1;1" keyTimes="0;0.375;0.4375;1" calcMode="linear" dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3675;0.375;0.4375;0.4475;1" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="13" opacity="0">
+        <animateMotion path="M1442,430 L1518,430" keyPoints="0;0;1;1" keyTimes="0;0.725;0.7875;1" calcMode="linear" dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7175;0.725;0.7875;0.7975;1" dur="8s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+</svg>

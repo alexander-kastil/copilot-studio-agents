@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">How a typical Cowork interaction works</title>
+  <desc id="d">Five numbered steps. 1 Describe your task in natural language. 2 Watch Cowork work: steps, visibly, one by one. 3 Steer at any time: interrupt, add context, or redirect; you send more messages and they redirect the task, which loops back into step 2. 4 Approve before sensitive actions, with a risk level of medium or high; sending an email or posting in Teams makes Cowork pause first. 5 Review the results: download, confirm, ask for changes. A dot travels the path, loops through steering, and waits at the approval step.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .t { font-size: 30px; font-weight: 600; }
+      .s { font-size: 28px; fill: #57606a; }
+      .sr { font-size: 28px; fill: #57606a; text-anchor: end; }
+      .nc { font-size: 28px; text-anchor: middle; }
+      .sc { font-size: 28px; fill: #57606a; text-anchor: middle; }
+      .num { font-size: 30px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+    <marker id="aa" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#e0a534"/>
+    </marker>
+  </defs>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="440" y1="775" x2="546" y2="775"/>
+    <line x1="906" y1="775" x2="1012" y2="775"/>
+    <line x1="1372" y1="775" x2="1478" y2="775"/>
+    <line x1="666" y1="620" x2="666" y2="420"/>
+    <line x1="786" y1="420" x2="786" y2="620"/>
+  </g>
+  <line x1="1192" y1="420" x2="1192" y2="620" stroke="#e0a534" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#aa)"/>
+
+  <text class="sr" x="648" y="505">send more</text>
+  <text class="sr" x="648" y="541">messages</text>
+  <text class="s" x="804" y="505">they redirect</text>
+  <text class="s" x="804" y="541">the task</text>
+
+  <circle r="14" fill="#24292f">
+    <animateMotion dur="10s" repeatCount="indefinite" path="M260,775 H666 V270 H786 V775 H1192 H1658" calcMode="linear" keyTimes="0;0.12;0.27;0.32;0.45;0.55;0.72;0.84;1" keyPoints="0;0.1686;0.3783;0.4282;0.6379;0.8065;0.8065;1;1"/>
+  </circle>
+
+  <g stroke="#8c959f" stroke-width="2">
+    <rect x="80" y="620" width="360" height="310" rx="20" fill="#eaf2ff"/>
+    <rect x="546" y="620" width="360" height="310" rx="20" fill="#e9f7ef"/>
+    <rect x="546" y="120" width="360" height="300" rx="20" fill="#eaf2ff"/>
+    <rect x="1478" y="620" width="360" height="310" rx="20" fill="#eaf2ff"/>
+  </g>
+  <rect x="1012" y="620" width="360" height="310" rx="20" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+  <rect x="1012" y="230" width="360" height="190" rx="20" fill="#fff6e5" stroke="#e0a534" stroke-width="2" stroke-dasharray="10 8"/>
+
+  <g fill="#24292f">
+    <circle cx="134" cy="676" r="30"/>
+    <circle cx="600" cy="676" r="30"/>
+    <circle cx="600" cy="176" r="30"/>
+    <circle cx="1532" cy="676" r="30"/>
+  </g>
+  <circle cx="1066" cy="676" r="30" fill="#e0a534"/>
+  <text class="num" x="134" y="687">1</text>
+  <text class="num" x="600" y="687">2</text>
+  <text class="num" x="600" y="187">3</text>
+  <text class="num" x="1066" y="687">4</text>
+  <text class="num" x="1532" y="687">5</text>
+
+  <text class="t" x="112" y="758">Describe</text>
+  <text class="t" x="112" y="796">your task</text>
+  <text class="s" x="112" y="848">Use natural</text>
+  <text class="s" x="112" y="884">language</text>
+
+  <text class="t" x="578" y="758">Watch Cowork</text>
+  <text class="t" x="578" y="796">work</text>
+  <text class="s" x="578" y="848">Steps, visibly,</text>
+  <text class="s" x="578" y="884">one by one</text>
+
+  <text class="t" x="578" y="258">Steer at any time</text>
+  <text class="s" x="578" y="306">Interrupt,</text>
+  <text class="s" x="578" y="342">add context,</text>
+  <text class="s" x="578" y="378">or redirect</text>
+
+  <text class="t" x="1044" y="758">Approve before</text>
+  <text class="t" x="1044" y="796">sensitive actions</text>
+  <text class="s" x="1044" y="848">Risk level:</text>
+  <text class="s" x="1044" y="884">medium or high</text>
+
+  <text class="nc" x="1192" y="292">Sending an email</text>
+  <text class="nc" x="1192" y="330">or posting in Teams</text>
+  <text class="sc" x="1192" y="376">Cowork pauses first</text>
+
+  <text class="t" x="1510" y="758">Review the</text>
+  <text class="t" x="1510" y="796">results</text>
+  <text class="s" x="1510" y="848">Download, confirm,</text>
+  <text class="s" x="1510" y="884">ask for changes</text>
+
+  <g fill="none" stroke="#24292f" stroke-width="5">
+    <rect x="80" y="620" width="360" height="310" rx="20" opacity="1">
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.08;0.10;1" values="1;1;0;0"/>
+    </rect>
+    <rect x="546" y="620" width="360" height="310" rx="20" opacity="0">
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.08;0.10;0.16;0.18;0.40;0.42;0.48;0.50;1" values="0;0;1;1;0;0;1;1;0;0"/>
+    </rect>
+    <rect x="546" y="120" width="360" height="300" rx="20" opacity="0">
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.21;0.23;0.35;0.37;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="1478" y="620" width="360" height="310" rx="20" opacity="0">
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.78;0.80;0.98;1" values="0;0;1;1;0"/>
+    </rect>
+  </g>
+  <rect x="1012" y="620" width="360" height="310" rx="20" fill="none" stroke="#e0a534" stroke-width="8" opacity="0">
+    <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.50;0.52;0.58;0.62;0.68;0.72;0.76;0.78;1" values="0;0;1;0.3;1;0.3;1;1;0;0"/>
+  </rect>
+</svg>

@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">The plugin registry: one place to discover, publish and govern plugins</title>
+  <desc id="d">Plugins from every publisher pass the publisher categories set in Agent and plugin access: Microsoft, your organization and certified external publishers. They land in the tools registry under Agents, Tools, Registry, one inventory of plugins, skills, MCP servers and connectors. User access then sets each plugin's user scope, handles access requests and blocks plugins. At runtime the Agent 365 Tooling Gateway enforces the tool toggles.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <style>
+    svg { font-size: 28px; }
+    text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+    .h { font-size: 36px; font-weight: 600; }
+    .b { font-size: 30px; font-weight: 600; }
+    .t { font-size: 28px; }
+    .s { font-size: 28px; fill: #57606a; }
+  </style>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+    <g id="plugin">
+      <rect width="84" height="84" rx="18" stroke="#8c959f" stroke-width="2"/>
+      <rect x="16" y="32" width="36" height="36" rx="3" fill="#57606a"/>
+      <rect x="30" y="26" width="8" height="8" fill="#57606a"/>
+      <circle cx="34" cy="22" r="7" fill="#57606a"/>
+      <rect x="50" y="46" width="8" height="8" fill="#57606a"/>
+      <circle cx="62" cy="50" r="7" fill="#57606a"/>
+      <circle cx="16" cy="50" r="6"/>
+      <circle cx="34" cy="68" r="6"/>
+    </g>
+  </defs>
+
+  <rect x="80" y="70" width="1760" height="200" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="120" y="182">Plugins from every publisher</text>
+  <use href="#plugin" x="850" y="128" fill="#eaf2ff"/>
+  <use href="#plugin" x="1010" y="128" fill="#eaf2ff"/>
+  <use href="#plugin" x="1170" y="128" fill="#eaf2ff"/>
+  <use href="#plugin" x="1330" y="128" fill="#eaf2ff"/>
+  <use href="#plugin" x="1490" y="128" fill="#eaf2ff"/>
+  <use href="#plugin" x="1650" y="128" fill="#eaf2ff"/>
+
+  <line x1="330" y1="272" x2="330" y2="346" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <line x1="960" y1="272" x2="960" y2="396" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="80" y="350" width="500" height="440" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2">
+    <animate attributeName="stroke-width" values="2;6;2" keyTimes="0;0.1625;0.25" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+  </rect>
+  <text class="b" x="110" y="404">Publisher categories</text>
+  <rect x="110" y="434" width="440" height="94" rx="12" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="330" y="491" text-anchor="middle">Microsoft</text>
+  <rect x="110" y="546" width="440" height="94" rx="12" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="330" y="603" text-anchor="middle">Your organization</text>
+  <rect x="110" y="658" width="440" height="94" rx="12" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="330" y="697" text-anchor="middle">Certified external</text>
+  <text class="b" x="330" y="733" text-anchor="middle">publishers</text>
+
+  <line x1="582" y1="570" x2="696" y2="570" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="700" y="400" width="520" height="340" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="3">
+    <animate attributeName="stroke-width" values="3;7;3" keyTimes="0;0.35;0.45" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+  </rect>
+  <text class="h" x="960" y="476" text-anchor="middle">Tools registry</text>
+  <text class="t" x="960" y="524" text-anchor="middle">Agents &gt; Tools &gt; Registry</text>
+  <text class="s" x="960" y="594" text-anchor="middle">One inventory of plugins,</text>
+  <text class="s" x="960" y="632" text-anchor="middle">skills, MCP servers</text>
+  <text class="s" x="960" y="670" text-anchor="middle">and connectors</text>
+
+  <line x1="1222" y1="570" x2="1336" y2="570" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="1340" y="350" width="500" height="440" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2">
+    <animate attributeName="stroke-width" values="2;6;2" keyTimes="0;0.55;0.6375" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+  </rect>
+  <text class="b" x="1370" y="404">User access</text>
+  <rect x="1370" y="434" width="440" height="94" rx="12" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="1590" y="491" text-anchor="middle">Per-plugin user scope</text>
+  <rect x="1370" y="546" width="440" height="94" rx="12" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="1590" y="603" text-anchor="middle">Request access</text>
+  <rect x="1370" y="658" width="440" height="94" rx="12" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="b" x="1590" y="715" text-anchor="middle">Block</text>
+
+  <line x1="1590" y1="792" x2="1590" y2="866" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="80" y="870" width="1760" height="140" rx="18" fill="#e6ecf3" stroke="#8c959f" stroke-width="2">
+    <animate attributeName="stroke-width" values="2;6;2" keyTimes="0;0.7375;0.9" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+  </rect>
+  <text class="h" x="960" y="928" text-anchor="middle">Agent 365 Tooling Gateway</text>
+  <text class="s" x="960" y="972" text-anchor="middle">Tool toggles enforced at runtime</text>
+
+  <circle cx="0" cy="0" r="13" fill="#e0a534" opacity="0">
+    <animateMotion path="M 330 274 L 330 340" keyPoints="0;0;1;1" keyTimes="0;0.0625;0.1625;1" calcMode="linear" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.0625;0.1625" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="0" cy="0" r="13" fill="#e0a534" opacity="0">
+    <animateMotion path="M 584 570 L 690 570" keyPoints="0;0;1;1" keyTimes="0;0.25;0.35;1" calcMode="linear" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.25;0.35" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="0" cy="0" r="13" fill="#e0a534" opacity="0">
+    <animateMotion path="M 1224 570 L 1330 570" keyPoints="0;0;1;1" keyTimes="0;0.45;0.55;1" calcMode="linear" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.45;0.55" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="0" cy="0" r="13" fill="#e0a534" opacity="0">
+    <animateMotion path="M 1590 794 L 1590 860" keyPoints="0;0;1;1" keyTimes="0;0.6375;0.7375;1" calcMode="linear" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.6375;0.7375" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+  </circle>
+</svg>

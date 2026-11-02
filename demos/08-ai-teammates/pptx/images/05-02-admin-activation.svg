@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title id="t">Admin activation for agent accounts, in order</title>
+<desc id="d">Step 1: a global admin enrolls the tenant in Frontier in the Microsoft 365 admin center under Agents, Overview, Try now, and accepts the Agent 365 terms. Step 2: an admin activates Copilot Studio (Frontier) under All Agents with the filter Agent template: Yes and picks users or groups. Step 3: in the Power Platform admin center, an admin turns on Agent accounts under Copilot, Settings, Copilot Studio for the environment. Step 4: the environment's release cycle is set to Early. Only the users and groups chosen in step 2 can create agents with accounts.</desc>
+<rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#57606a"/></marker></defs>
+<text x="520.0" y="205" font-size="28" font-weight="600" fill="#24292f" text-anchor="middle">Microsoft 365 admin center</text>
+<path d="M70,252 L70,232 L970,232 L970,252" fill="none" stroke="#8c959f" stroke-width="2"/>
+<text x="1250.0" y="205" font-size="28" font-weight="600" fill="#24292f" text-anchor="middle">Power Platform admin center</text>
+<path d="M1030,252 L1030,232 L1470,232 L1470,252" fill="none" stroke="#8c959f" stroke-width="2"/>
+<text x="1690.0" y="205" font-size="28" font-weight="600" fill="#24292f" text-anchor="middle">The environment</text>
+<path d="M1530,252 L1530,232 L1850,232 L1850,252" fill="none" stroke="#8c959f" stroke-width="2"/>
+<rect x="70" y="280" width="480" height="440" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<circle cx="128" cy="338" r="30" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="128" y="349" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">1</text>
+<text x="100" y="420" font-size="30" font-weight="600" fill="#24292f">Enroll in Frontier</text>
+<text x="100" y="490" font-size="28" fill="#57606a">A global admin</text>
+<text x="100" y="532" font-size="28" fill="#24292f">Agents &gt; Overview &gt; Try now</text>
+<text x="100" y="574" font-size="28" fill="#57606a">Accept the Agent 365 terms</text>
+<rect x="610" y="280" width="360" height="440" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<circle cx="668" cy="338" r="30" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="668" y="349" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">2</text>
+<text x="640" y="420" font-size="30" font-weight="600" fill="#24292f">Activate Copilot</text>
+<text x="640" y="460" font-size="30" font-weight="600" fill="#24292f">Studio (Frontier)</text>
+<text x="640" y="530" font-size="28" fill="#24292f">All Agents, filter</text>
+<text x="640" y="572" font-size="28" fill="#24292f">Agent template: Yes</text>
+<text x="640" y="614" font-size="28" fill="#57606a">Pick users or groups</text>
+<rect x="1030" y="280" width="440" height="440" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<circle cx="1088" cy="338" r="30" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="1088" y="349" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">3</text>
+<text x="1060" y="420" font-size="30" font-weight="600" fill="#24292f">Turn on</text>
+<text x="1060" y="460" font-size="30" font-weight="600" fill="#24292f">Agent accounts</text>
+<text x="1060" y="530" font-size="28" fill="#24292f">Copilot &gt; Settings</text>
+<text x="1060" y="572" font-size="28" fill="#24292f">under Copilot Studio</text>
+<text x="1060" y="614" font-size="28" fill="#57606a">For the environment</text>
+<rect x="1530" y="280" width="320" height="440" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+<circle cx="1588" cy="338" r="30" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="1588" y="349" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">4</text>
+<text x="1560" y="420" font-size="30" font-weight="600" fill="#24292f">Release cycle</text>
+<text x="1560" y="460" font-size="30" font-weight="600" fill="#24292f">set to Early</text>
+<text x="1560" y="530" font-size="28" fill="#57606a">Agent accounts live</text>
+<text x="1560" y="572" font-size="28" fill="#57606a">on early release</text>
+<text x="1560" y="614" font-size="28" fill="#57606a">environments</text>
+<path d="M550,500 L602,500" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M970,500 L1022,500" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<path d="M1470,500 L1522,500" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="70" y="820" width="1780" height="140" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+<text x="960" y="902" font-size="30" font-weight="600" fill="#24292f" text-anchor="middle">Only the users and groups chosen in step 2 can create agents with accounts</text>
+<path d="M1690,720 L1690,812" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="70" y="280" width="480" height="440" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.0200;0.0400;0.1800;0.2000;1.0000" dur="10s" repeatCount="indefinite"/></rect>
+<rect x="610" y="280" width="360" height="440" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.2200;0.2400;0.3800;0.4000;1.0000" dur="10s" repeatCount="indefinite"/></rect>
+<rect x="1030" y="280" width="440" height="440" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.4200;0.4400;0.5800;0.6000;1.0000" dur="10s" repeatCount="indefinite"/></rect>
+<rect x="1530" y="280" width="320" height="440" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.6200;0.6400;0.7800;0.8000;1.0000" dur="10s" repeatCount="indefinite"/></rect>
+<rect x="70" y="820" width="1780" height="140" rx="16" fill="none" stroke="#e0a534" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.8200;0.8400;0.9600;0.9800;1.0000" dur="10s" repeatCount="indefinite"/></rect>
+</svg>

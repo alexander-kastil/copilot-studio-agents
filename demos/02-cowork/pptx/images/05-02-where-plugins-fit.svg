@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Where plugins fit</title>
+  <desc id="d">Five sources feed the Cowork side panel: built-in skills, custom skills from Customize or OneDrive, plugins from Discover, admin-deployed plugins, and skills shared with you or uploaded.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+  </defs>
+  <rect x="140" y="95" width="560" height="150" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="420" y="161" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" fill="#24292f" font-weight="600" text-anchor="middle">Built-in</text>
+  <text x="420" y="205" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" fill="#24292f" font-weight="600" text-anchor="middle">skills</text>
+  <rect x="140" y="280" width="560" height="150" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="420" y="346" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" fill="#24292f" font-weight="600" text-anchor="middle">Custom skills</text>
+  <text x="420" y="390" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" fill="#24292f" font-weight="600" text-anchor="middle">(Customize or OneDrive)</text>
+  <rect x="140" y="465" width="560" height="150" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="420" y="531" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" fill="#24292f" font-weight="600" text-anchor="middle">Plugins</text>
+  <text x="420" y="575" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" fill="#24292f" font-weight="600" text-anchor="middle">(Discover)</text>
+  <rect x="140" y="650" width="560" height="150" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="420" y="716" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" fill="#24292f" font-weight="600" text-anchor="middle">Admin-deployed</text>
+  <text x="420" y="760" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" fill="#24292f" font-weight="600" text-anchor="middle">plugins</text>
+  <rect x="140" y="835" width="560" height="150" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="420" y="901" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" fill="#24292f" font-weight="600" text-anchor="middle">Shared or</text>
+  <text x="420" y="945" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" fill="#24292f" font-weight="600" text-anchor="middle">uploaded</text>
+  <rect x="1220" y="330" width="560" height="420" rx="20" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1500" y="525" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="44" fill="#24292f" font-weight="700" text-anchor="middle">Cowork</text>
+  <text x="1500" y="585" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="44" fill="#24292f" font-weight="700" text-anchor="middle">side panel</text>
+  <path d="M700,170 L1218,380" fill="none" stroke="#57606a" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+  <path d="M700,355 L1218,460" fill="none" stroke="#57606a" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+  <path d="M700,540 L1218,540" fill="none" stroke="#57606a" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+  <path d="M700,725 L1218,620" fill="none" stroke="#57606a" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+  <path d="M700,910 L1218,700" fill="none" stroke="#57606a" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+  <g opacity="1" fill="none" stroke="#e0a534" stroke-width="7"><rect x="140" y="95" width="560" height="150" rx="16"/><animate attributeName="opacity" dur="10s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.2" values="1;0"/></g>
+  <circle cx="0" cy="0" r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="1"><animateMotion dur="10s" repeatCount="indefinite" calcMode="linear" path="M700,170 L1220,380" keyTimes="0;0.12;1" keyPoints="0;1;1"/><animate attributeName="opacity" dur="10s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.12" values="1;0"/></circle>
+  <g opacity="0" fill="none" stroke="#e0a534" stroke-width="7"><rect x="140" y="280" width="560" height="150" rx="16"/><animate attributeName="opacity" dur="10s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.2;0.4" values="0;1;0"/></g>
+  <circle cx="0" cy="0" r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion dur="10s" repeatCount="indefinite" calcMode="linear" path="M700,355 L1220,460" keyTimes="0;0.2;0.32;1" keyPoints="0;0;1;1"/><animate attributeName="opacity" dur="10s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.2;0.32" values="0;1;0"/></circle>
+  <g opacity="0" fill="none" stroke="#e0a534" stroke-width="7"><rect x="140" y="465" width="560" height="150" rx="16"/><animate attributeName="opacity" dur="10s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.4;0.6" values="0;1;0"/></g>
+  <circle cx="0" cy="0" r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion dur="10s" repeatCount="indefinite" calcMode="linear" path="M700,540 L1220,540" keyTimes="0;0.4;0.52;1" keyPoints="0;0;1;1"/><animate attributeName="opacity" dur="10s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.4;0.52" values="0;1;0"/></circle>
+  <g opacity="0" fill="none" stroke="#e0a534" stroke-width="7"><rect x="140" y="650" width="560" height="150" rx="16"/><animate attributeName="opacity" dur="10s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.6;0.8" values="0;1;0"/></g>
+  <circle cx="0" cy="0" r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion dur="10s" repeatCount="indefinite" calcMode="linear" path="M700,725 L1220,620" keyTimes="0;0.6;0.72;1" keyPoints="0;0;1;1"/><animate attributeName="opacity" dur="10s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.6;0.72" values="0;1;0"/></circle>
+  <g opacity="0" fill="none" stroke="#e0a534" stroke-width="7"><rect x="140" y="835" width="560" height="150" rx="16"/><animate attributeName="opacity" dur="10s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.8" values="0;1"/></g>
+  <circle cx="0" cy="0" r="14" fill="#e0a534" stroke="#ffffff" stroke-width="3" opacity="0"><animateMotion dur="10s" repeatCount="indefinite" calcMode="linear" path="M700,910 L1220,700" keyTimes="0;0.8;0.92;1" keyPoints="0;0;1;1"/><animate attributeName="opacity" dur="10s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.8;0.92" values="0;1;0"/></circle>
+  <g opacity="0" fill="none" stroke="#e0a534" stroke-width="7"><rect x="1220" y="330" width="560" height="420" rx="20"/><animate attributeName="opacity" dur="10s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.12;0.2;0.32;0.4;0.52;0.6;0.72;0.8;0.92" values="0;1;0;1;0;1;0;1;0;1"/></g>
+</svg>

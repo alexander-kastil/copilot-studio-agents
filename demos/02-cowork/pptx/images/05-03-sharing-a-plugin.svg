@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">How far an uploaded plugin reaches</title>
+  <desc id="d">Four widening steps of reach for a plugin uploaded as a .zip package: Only you and Specific users in your organization are Share dialog options that need no admin, the whole organization waits for admin approval, and a public store listing is submitted through Partner Center.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+  </defs>
+  <rect x="80" y="700" width="425" height="300" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="110" y="760" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" fill="#24292f" font-weight="700">Only you</text>
+  <text x="110" y="810" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">Share dialog, no admin</text>
+  <rect x="525" y="520" width="425" height="480" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="555" y="580" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" fill="#24292f" font-weight="700">Specific users in</text>
+  <text x="555" y="624" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" fill="#24292f" font-weight="700">your organization</text>
+  <text x="555" y="674" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">Share dialog, no admin</text>
+  <rect x="970" y="340" width="425" height="660" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="1000" y="400" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" fill="#24292f" font-weight="700">Whole organization</text>
+  <text x="1000" y="450" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">Waits for admin approval</text>
+  <rect x="1415" y="160" width="425" height="840" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="1445" y="220" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" fill="#24292f" font-weight="700">Public store</text>
+  <text x="1445" y="270" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">Submitted through</text>
+  <text x="1445" y="310" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">Partner Center</text>
+  <rect x="110" y="420" width="365" height="160" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="140" y="485" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" fill="#24292f" font-weight="700">Upload plugin</text>
+  <text x="140" y="532" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#57606a">.zip package</text>
+  <path d="M292,580 L292,698" fill="none" stroke="#57606a" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+</svg>

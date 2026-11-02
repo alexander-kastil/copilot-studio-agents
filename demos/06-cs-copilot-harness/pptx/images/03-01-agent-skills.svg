@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Only skill names and descriptions sit in context until a request matches</title>
+  <desc id="d">A request, a customer says we are more expensive than a competitor, reaches the orchestration runtime, which matches it to a skill description. On every turn the agent context holds the agent instructions plus the name and description of three skills: customer-support-escalation, follow-up-email-drafter and objection-handling. On the match, the full objection-handling instructions load just-in-time: Task, Method, Response format and Edge case.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="80" y="345" width="440" height="370" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="300" y="435" text-anchor="middle" font-size="36" font-weight="700" fill="#24292f">Request</text>
+  <text x="300" y="495" text-anchor="middle" font-size="28" fill="#24292f">“A customer says we are</text>
+  <text x="300" y="537" text-anchor="middle" font-size="28" fill="#24292f">more expensive than a</text>
+  <text x="300" y="579" text-anchor="middle" font-size="28" fill="#24292f">competitor. How should I</text>
+  <text x="300" y="621" text-anchor="middle" font-size="28" fill="#24292f">reply?”</text>
+
+  <rect x="630" y="420" width="380" height="220" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="820" y="482" text-anchor="middle" font-size="32" font-weight="700" fill="#24292f">Orchestration</text>
+  <text x="820" y="522" text-anchor="middle" font-size="32" font-weight="700" fill="#24292f">runtime</text>
+  <text x="820" y="572" text-anchor="middle" font-size="28" fill="#57606a">matches the request</text>
+  <text x="820" y="610" text-anchor="middle" font-size="28" fill="#57606a">to a description</text>
+
+  <line x1="520" y1="530" x2="626" y2="530" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="1090" y="60" width="750" height="960" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1130" y="120" font-size="32" font-weight="700" fill="#24292f">Agent context</text>
+
+  <text x="1130" y="172" font-size="28" fill="#57606a">On every turn</text>
+  <rect x="1130" y="192" width="670" height="78" rx="12" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="1160" y="242" font-size="30" fill="#24292f">Agent instructions</text>
+
+  <text x="1130" y="322" font-size="28" fill="#57606a">Each skill: name and description</text>
+  <rect x="1130" y="342" width="670" height="76" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="1160" y="390" font-size="28" font-family="Consolas, monospace" fill="#24292f">customer-support-escalation</text>
+  <rect x="1130" y="434" width="670" height="76" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="1160" y="482" font-size="28" font-family="Consolas, monospace" fill="#24292f">follow-up-email-drafter</text>
+  <rect x="1130" y="526" width="670" height="76" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="1160" y="574" font-size="28" font-family="Consolas, monospace" fill="#24292f">objection-handling</text>
+
+  <text x="1130" y="672" font-size="28" fill="#57606a">Loaded just-in-time on a match</text>
+  <rect x="1130" y="694" width="670" height="290" rx="12" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1160" y="746" font-size="28" fill="#24292f"><tspan font-family="Consolas, monospace" font-weight="700">objection-handling</tspan><tspan fill="#57606a"> instructions</tspan></text>
+  <rect x="1160" y="774" width="300" height="70" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1310" y="820" text-anchor="middle" font-size="28" fill="#24292f">Task</text>
+  <rect x="1480" y="774" width="300" height="70" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1630" y="820" text-anchor="middle" font-size="28" fill="#24292f">Method</text>
+  <rect x="1160" y="866" width="300" height="70" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1310" y="912" text-anchor="middle" font-size="28" fill="#24292f">Response format</text>
+  <rect x="1480" y="866" width="300" height="70" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1630" y="912" text-anchor="middle" font-size="28" fill="#24292f">Edge case</text>
+
+  <line x1="1010" y1="564" x2="1126" y2="564" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <line x1="1740" y1="604" x2="1740" y2="690" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="630" y="420" width="380" height="220" rx="18" fill="none" stroke="#1a7f37" stroke-width="6" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.125;0.135;0.25;0.26;1" dur="8s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="1130" y="526" width="670" height="76" rx="12" fill="none" stroke="#1a7f37" stroke-width="6" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.375;0.385;0.5625;0.5725;1" dur="8s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="1130" y="694" width="670" height="290" rx="12" fill="none" stroke="#1a7f37" stroke-width="6" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6875;0.6975;0.9375;0.9475;1" dur="8s" repeatCount="indefinite"/>
+  </rect>
+
+  <circle cx="0" cy="0" r="13" fill="#1a7f37" opacity="1">
+    <animateMotion path="M520,530 L626,530" keyPoints="0;1;1" keyTimes="0;0.125;1" calcMode="linear" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.125;0.13;1" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="0" cy="0" r="13" fill="#1a7f37" opacity="0">
+    <animateMotion path="M1010,564 L1126,564" keyPoints="0;0;1;1" keyTimes="0;0.25;0.375;1" calcMode="linear" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.249;0.25;0.375;0.38;1" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="0" cy="0" r="13" fill="#1a7f37" opacity="0">
+    <animateMotion path="M1740,604 L1740,690" keyPoints="0;0;1;1" keyTimes="0;0.5625;0.6875;1" calcMode="linear" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5615;0.5625;0.6875;0.6925;1" dur="8s" repeatCount="indefinite"/>
+  </circle>
+</svg>

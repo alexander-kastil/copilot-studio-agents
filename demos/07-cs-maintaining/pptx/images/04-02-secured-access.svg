@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Web channel security and Direct Line</title>
+  <desc id="d">A browser or mobile app asks your service for a token. Your service, server code that holds the two Direct Line secrets, exchanges a secret for a token and returns a token valid for one conversation that expires unless it is refreshed. The app then talks to the Copilot Studio agent over the Direct Line API: it starts a conversation, posts messages and reads replies. Require secured access under Settings, Security, Web channel security makes every client present a secret or a token and takes up to two hours to take effect. Both secrets work at the same time, so clients move to one while the other is regenerated. New apps can use the Microsoft 365 Agents SDK client with the user's own sign-in.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <style>
+    svg { font-size: 26px; }
+    text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+    .h { font-size: 34px; font-weight: 600; }
+    .b { font-size: 28px; font-weight: 600; }
+    .t { font-size: 28px; }
+    .s { font-size: 26px; fill: #57606a; }
+    .a { font-size: 26px; fill: #24292f; }
+    .n { font-size: 26px; font-weight: 700; fill: #ffffff; }
+  </style>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="60" y="120" width="400" height="680" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="90" y="178">Browser or</text>
+  <text class="h" x="90" y="222">mobile app</text>
+  <text class="s" x="90" y="262">Web Chat or your own app</text>
+  <rect x="90" y="600" width="340" height="110" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="115" y="645">Holds a token,</text>
+  <text class="t" x="115" y="683">never the secret</text>
+
+  <rect x="760" y="120" width="400" height="460" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="790" y="178">Your service</text>
+  <text class="s" x="790" y="218">Server code</text>
+  <rect x="790" y="370" width="340" height="56" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="812" y="408">Direct Line secret 1</text>
+  <rect x="790" y="436" width="340" height="56" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="812" y="474">Direct Line secret 2</text>
+  <text class="s" x="790" y="526">Both work at once: move</text>
+  <text class="s" x="790" y="558">clients, then regenerate</text>
+
+  <rect x="1460" y="120" width="400" height="680" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="h" x="1490" y="178">Copilot Studio</text>
+  <text class="h" x="1490" y="222">agent</text>
+  <rect x="1490" y="400" width="340" height="170" rx="12" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="b" x="1512" y="446">Require secured access</text>
+  <text class="s" x="1512" y="490">Settings &gt; Security &gt;</text>
+  <text class="s" x="1512" y="524">Web channel security</text>
+  <text class="s" x="1512" y="616">Up to two hours</text>
+  <text class="s" x="1512" y="650">to take effect</text>
+
+  <line x1="462" y1="300" x2="752" y2="300" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <circle cx="490" cy="262" r="17" fill="#24292f"/>
+  <text class="n" x="490" y="271" text-anchor="middle">1</text>
+  <text class="a" x="516" y="271">Ask for a token</text>
+
+  <line x1="1162" y1="300" x2="1452" y2="300" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <circle cx="1190" cy="232" r="17" fill="#24292f"/>
+  <text class="n" x="1190" y="241" text-anchor="middle">2</text>
+  <text class="a" x="1216" y="241">Exchange the</text>
+  <text class="a" x="1216" y="275">secret for a token</text>
+
+  <line x1="758" y1="470" x2="468" y2="470" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <circle cx="490" cy="400" r="17" fill="#24292f"/>
+  <text class="n" x="490" y="409" text-anchor="middle">3</text>
+  <text class="a" x="516" y="409">A token for one</text>
+  <text class="a" x="516" y="443">conversation</text>
+  <text class="s" x="490" y="508">expires unless</text>
+  <text class="s" x="490" y="540">refreshed</text>
+
+  <line x1="462" y1="720" x2="1452" y2="720" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <circle cx="610" cy="690" r="17" fill="#24292f"/>
+  <text class="n" x="610" y="699" text-anchor="middle">4</text>
+  <text class="a" x="636" y="699">Start a conversation, post messages, read replies</text>
+  <text class="s" x="960" y="764" text-anchor="middle">Direct Line API</text>
+
+  <rect x="60" y="870" width="1800" height="90" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="960" y="925" text-anchor="middle">New apps: the Microsoft 365 Agents SDK client connects with the user's own sign-in</text>
+</svg>
