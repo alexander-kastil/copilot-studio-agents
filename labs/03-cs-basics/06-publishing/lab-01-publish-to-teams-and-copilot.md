@@ -16,9 +16,11 @@ To publish an agent made with Copilot Studio you need to select the **Publish** 
 
 ![The button to publish an agent highlighted in the user interface of the agent editor.](./_images/make-agent-publish-01.png)
 
-Selecting the command will prompt you for confirmation. While confirming the publishing, you can also choose if you want to **Force newest version**, which ensures users in Teams receive your latest updates right away. Once confirmed, the publishing process takes a while and in the meantime you see a "Publishing ..." message. Publishing an agent registers it in the target Power Platform environment, but does not make it available in any target platform.
+Selecting the command will prompt you for confirmation. While confirming the publishing, you can also choose if you want to **Force newest version**, which ensures users in Teams receive your latest updates right away.
 
-In order to make the agent actually available in a specific target platform (channel), you need to 1️⃣ select the **Channels** tab in the agent editor and then you can choose one or more target channels to make the agent available for. For example, to publish the agent in Microsoft Teams, as a bot, you need to 2️⃣ select **Teams + Microsoft 365** as the target channel.
+If the agent has tools that use your credentials, the dialog also warns "Your agent runs tools that use the author's credentials". Once confirmed, the publishing process takes a while and in the meantime you see a "Publishing ..." message. Publishing an agent registers it in the target Power Platform environment, but does not make it available in any target platform.
+
+In order to make the agent actually available in a specific target platform (channel), you need to 1️⃣ open **Channels** in the agent editor (it can sit under the **+5** menu at the end of the tab bar) and then you can choose one or more target channels to make the agent available for. For example, to publish the agent in Microsoft Teams, as a bot, you need to 2️⃣ select the **Microsoft 365 and Microsoft Teams** tile.
 
 ![The **Channels** tab where you can make an agent available in one or more channels. There is a list of available channels like "Telephony", "Teams + Microsoft 365", "Demo website", "Custom website", etc.](./_images/make-agent-publish-02.png)
 
@@ -31,7 +33,7 @@ With the default authentication settings, the agent can only be published in **M
 
 > **Premium license for Microsoft Copilot Studio:** In the screenshot above, there is also an information bar about the licensing model and the potential requirement of a Premium license. In fact, when you use Copilot Studio  and you rely on premium features like premium connectors, you need to upgrade your license accordingly. Luckily, if you are just learning and testing with Microsoft Copilot Studio, you can activate a 60-days free trial period with the Premium license.
 
-When you select the **Teams and Microsoft 365** channel a side panel shows up and allows you to select the **Add channel** button.
+When you select the **Microsoft 365 and Microsoft Teams** channel, a side panel shows up with the checkbox **Make agent available in Microsoft 365 Copilot**, selected by default, and the **Add channel** button.
 
 ![The side panel to enable the Microsoft Teams channel. There is a description of the current state and a button to **Add channel**.](./_images/make-agent-publish-03.png)
 
@@ -55,11 +57,11 @@ Publishing of the agent in Microsoft Temas is now completed.
 
 ### Step 2: Testing the agent in Microsoft Teams
 
-You are now ready to test the agent in Microsoft Teams. In the **Availability options** panel select the **Copy link** button to copy a link to the agent. Then open a new browser tab and paste the just copied link, then press ENTER to browse to that URL.
+You are now ready to test the agent in Microsoft Teams. In the **Availability options** panel select the **Copy link** button to copy a link to the agent. Then open a new browser tab and paste the just copied link, then press ENTER to browse to that URL. If Teams first offers the desktop app, select **Use the web app instead**.
 
 ![The dialog window showing the agent as a new app in Microsoft Teams. There is an extended description of the app and of the agent. There is also a button to **Add** the app to Microsoft Teams.](./_images/make-agent-test-teams-01.png)
 
-Initially you will see the Microsoft Teams client showing a new app that represents your agent. Select the **Add** button to add the app to your client and the select **Open** in the following dialog.
+Initially you will see the Microsoft Teams client showing a new app that represents your agent. Select the **Add** button to add the app to your client and then select **Open** in the following dialog; **Open with Copilot** opens the agent in Microsoft 365 Copilot Chat instead.
 
 ![The dialog window showing the agent as a new app in Microsoft Teams. There is an extended description of the app and of the agent. There is also a button to **Add** the app to Microsoft Teams.](./_images/make-agent-test-teams-02.png)
 
@@ -73,17 +75,17 @@ Wait for the answer and you will see that the agent will reply back to you with 
 
 ![The dialog window showing the agent as a new app in Microsoft Teams. There is an extended description of the app and of the agent. There is also a button to **Add** the app to Microsoft Teams.](./_images/make-agent-test-teams-03.png)
 
-Notice also the disclaimer, at the top of the answer, about the fact that the provided content is "AI generated" to make the user aware that she/he is consuming an AI platform.
+Notice also the **AI agent** label beside the sender name, which makes the user aware that she/he is talking to an AI agent.
 
 Now your agent is fully functional and ready to be used in Microsoft Teams. In the next labs you will be able to customize and fine tune its behavior.
 
-## Extend Microsoft 365 Copilot with a Declarative Agent
+## Extend Microsoft 365 Copilot Chat with an Agent
 
-In the next exercises, you are going to learn how to extend Microsoft 365 Copilot Chat with a Declarative Agent made using Microsoft Copilot Studio. In fact, so far you have seen how to create agents in Copilot Studio and how to consume them in Microsoft Teams. You have also seen that agents created in Microsoft Copilot Studio can target both Microsoft Teams and Microsoft 365 Copilot Chat through the specific options available in the **Teams and Microsoft 365 Copilot** channel. Now you are moving to Declarative Agents for Microsoft 365 Copilot Chat.
+In the next exercises, you are going to extend Microsoft 365 Copilot Chat with a second agent made in Microsoft Copilot Studio. So far you have seen how to create agents in Copilot Studio and how to consume them in Microsoft Teams. You have also seen that agents created in Microsoft Copilot Studio can target both Microsoft Teams and Microsoft 365 Copilot Chat through the **Microsoft 365 and Microsoft Teams** channel. Now you build an agent for Microsoft 365 Copilot Chat.
 
 In these exercises you will learn:
 
-- How to create a declarative agent for Microsoft 365 Copilot Chat
+- How to create an agent for Microsoft 365 Copilot Chat
 - How to configure a custom icon for your agent
 - How to configure knowledge sources for your agent
 - How to publish the agent in Microsoft 365 Copilot Chat
@@ -92,64 +94,27 @@ In these exercises you will learn:
 
 ## Exercise 2 : Creating an agent for Microsoft 365 Copilot Chat
 
-In this excercise you are going to create a declarative agent with Microsoft Copilot Studio and hosting it in Microsoft 365 Copilot Chat.
+In this exercise you are going to create an agent with Microsoft Copilot Studio and host it in Microsoft 365 Copilot Chat.
 
 ### Step 1: Creating an agent for Copilot Chat
 
-To create a declarative agent for Microsoft 365 Copilot Chat you need to 1️⃣ browse the list of agents in Copilot Studio and 2️⃣ select the agent with name **Microsoft 365 Copilot**.
+On the **Home** page of Copilot Studio, under **Other ways to build**, select **Agent (Standard)**. The dialog **Name your agent** asks only for the name: enter `Agentic HR` and select **Create**.
 
-![The interface of Microsoft Copilot Studio when browsing the whole list of agents and selecting the **Microsoft 365 Copilot** agent.](./_images/create-agent-m365-copilot-chat-01.png)
+On the **Overview** page, select **Edit** in **Instructions** and paste the following instructions, which combine the purpose, the goals and the tone of the agent:
 
-A new section of Microsoft Copilot Studio will open. From there, you can select the **+ Add** command to create a new agent for Microsoft 365 Copilot Chat.
-
-![The interface of Microsoft Copilot Studio editing Microsoft 365 Copilot agents. The **+ Add** button is highlighted. There is also a list of pre-defined tools.](./_images/create-agent-m365-copilot-chat-02.png)
-
-Copilot Studio asks you to describe in natural language what the purpose of the agent is. As like as you did in [Create Your First Copilot Studio Agent](../01-standard-agents/lab-01-create-your-first-agent.md) you can define your agent requirements in natural language, using for example the following prompts.
-
-```txt
-You are an agent helping employees to find information about HR policies and procedures,
-about how to improve their career, and about how to define learning pathways.
+```text
+You are an agent helping employees to find information about HR policies and procedures, about how to improve their career, and about how to define learning pathways.
+Emphasize everything that helps team building, inclusion, and the growth mindset.
+It should have a professional tone.
 ```
 
-When requested by Copilot Studio, give the name "Agentic HR" to your custom agent. Then, instruct Copilot Studio to have specific tasks or goals with the following instruction:
-
-```txt
-Emphasize everything that helps team building, inclusion, and the growth mindset
-```
-
-Then, define a professional tone for your agent, providing the following input:
-
-```txt
-It should have a professional tone
-```
-
-![The interface of Microsoft Copilot Studio when defining the agent using natural language.](./_images/create-agent-m365-copilot-chat-03.png)
-
-Once you are done describing your agent, select the **Create** command to create the actual agent. Alternatively, you can select the **Skip to configure** command and move to the configuration user interface.
-
-Once the agent has been created, you will see its configuration page, where you can define:
-
-- Details: with generic information about the agent like name, icon, description, and instructions (system prompt).
-- Knowledge: to define the various knowledge bases for the agent.
-- Tools: to define custom tools for the agent.
-- Additional settings: to configure whether the agent will rely on public web content or not.
-- Suggested prompts: to configure up to 6 suggested prompts that will be shown in the Copilot Chat when starting a new chat.
-- Publish details: to get information about how to consume the agent, once it will be published.
-
-![The configuration page of an agent for Microsoft 365 Copilot Chat in Microsoft Copilot Studio. There are sections to define general details, knowledge bases, tools, additional settings, starter prompts, and publishing details.](./_images/create-agent-m365-copilot-chat-04.png)
-
-On the right side of the screen, you can already see a preview of the agent that you can use to test its behaviour.
-The initial setup of the agent is now ready. Move to the next steps to fine tune its settings.
+Select **Save**. The **Overview** page shows the sections you configure in the next steps: **Details**, **Instructions**, **Knowledge** and **Tools**. On the right side of the screen, the **Test** pane lets you try the agent at any time.
 
 ### Step 2: Updating the agent's icon
 
-Now, you can edit the details selecting the **Edit** command in the upper right corner of the **Details** section.
-Once in edit mode, select the **Change icon** command to upload a custom icon and to select a background color for the icon itself.
-If you like, you can use the icon available at [this link](https://github.com/microsoft/copilot-camp/blob/main/src/make/copilot-studio/HR-agent-color.png?raw=true). In case you want to use the suggested icon, the background color could be #B9BAB5.
+Now, select **Edit** in the **Details** section, then **Change icon** to upload a PNG icon. If you like, use [HR-agent-color.png](../01-standard-agents/lab-01-create-your-first-agent/HR-agent-color.png) from the first lab. There is no color picker here: you set the background color of the icon in Step 4, in the details of the channel.
 
-![The configuration page while editing the details of the agent and specifically updading the icon of the agent.](./_images/create-agent-m365-copilot-chat-05.png)
-
-Select the **Save** command to save the new icon and background color, then select the **Save** button again to save the updated details for the agent.
+Select **Save** to save the new icon, then **Save** again to save the updated details for the agent.
 
 ### Step 3: Adding a knowledge base to the agent
 
@@ -159,15 +124,15 @@ Extract the files from the zip and upload them to the **Documents** library of a
 
 Copy the absolute url of the site. For example: `https://xyz.sharepoint.com/sites/greylogistics`
 
-To add a knowledge source to the agent, select the **+ Add knowledge** command in the upper right corner of the **Knowledge** section. A dialog window pops up and allows you to select a data source. At the moment of this writing you can select a **SharePoint** data source. Select the **SharePoint** command and browse for a site that you want to use as the data source.
+To add a knowledge source to the agent, select the **+ Add knowledge** command in the upper right corner of the **Knowledge** section. A dialog window pops up and allows you to select a data source. Select the **SharePoint** tile among the **Featured** sources and browse for a site that you want to use as the data source.
 
 ![The dialog to configure additional knowledge base for the agent. There is a list of **Featured** knowledge bases, where right now there is only SharePoint. There is a command to browse **Advanced** data source, too.](./_images/create-agent-m365-copilot-chat-06.png)
 
-Paste the URL of the SharePoint Online site where you stored the documents into the dialog or select the **Browse files** command to search for data sources browsing the SharePoint Online sites. Once you have provided a URL or selected a data source, you need to provide a name and a meaningful description for the new knowledge base. The description will be used by Copilot to target the data source based on the user's intent defined by the user's prompt.
+Paste the URL of the SharePoint Online site where you stored the documents into the dialog or select **Browse items** to search for data sources browsing the SharePoint Online sites. Once you have provided a URL or selected a data source, the **Name** already carries the site name; add a meaningful **Description** for the new knowledge base. The description will be used by Copilot to target the data source based on the user's intent defined by the user's prompt.
 
 ![The dialog to configure a SharePoint Online data source. There is a command to **Browse files** and a textbox to paste a direct link to a data source. There is also an already selected data source with URL Link, Name, and Description. In the lower part of the dialog there are an **Add** command to save the new data source, a **Cancel** command to cancel the operation, and a **Back** command to go back to the previous stage.](./_images/create-agent-m365-copilot-chat-07.png)
 
-Select the **Add** button to add the new data source to the knowledge base of the agent.
+Select **Add to agent** to add the new data source to the knowledge base of the agent.
 
 > **Important:** When configuring SharePoint Online sites as the knowledge base for an agent in Copilot Studio, users will only be able to get answers and content from documents that they have access to. The security and the access control are guaranteed by the Microsoft 365 security infrastructure and Copilot Studio agents access documents on behalf of the current user.
 
@@ -179,34 +144,30 @@ Select the **Add** button to add the new data source to the knowledge base of th
 
 ![The publishing cycle: create Agentic HR in Copilot Studio, publish with the app manifest details, copy the direct link, select Add in the company app store, then chat with the agent in Copilot Chat. After a change, such as the tool in Exercise 2, you publish again and select Update now.](./_images/publish-add-update-lifecycle.svg)
 
-Now you can publish and test the agent in Microsoft 365 Copilot Chat. 1️⃣ Select the **Publish** command in the upper right corner of the page to make the agent available in Copilot Chat. Then 2️⃣ fill in the details for the agent. Lastly 3️⃣ select the **Publish** command in the lower part of the publishing dialog.
+Now you can publish and test the agent in Microsoft 365 Copilot Chat. 1️⃣ Select **Publish** in the upper right corner of the page, then **Publish** in the dialog. 2️⃣ Open **Channels**, select **Microsoft 365 and Microsoft Teams**, keep **Make agent available in Microsoft 365 Copilot** selected, and select **Add channel**. 3️⃣ Select **Edit details** to fill in the details of the app.
 
-![The agent in Copilot Studio with the **Publish** button highlighted and the publishing dialog where there are fields to define, short description, long description, developer name, developer website URL, privacy statement URL, terms of use URL.](./_images/create-agent-m365-copilot-chat-08.png)
+The details of the app are:
 
-The details for the agent are those required by a Microsoft 365 application manifest:
+- Icon: **Change icon** and **Change color**. With the suggested icon, the background color could be #B9BAB5.
+- Short description: short description of the agent (up to 80 characters).
+- Long description: long description of the agent (up to 3400 characters).
+- **Show an agent disclaimer in M365 Copilot**: a toggle that shows a disclaimer in Copilot Chat.
 
-- Short description: short description of the agent (up to 30 characters).
-- Long description: long description of the agent (up to 100 characters).
-- Developer name: name of the developer (up to 32 characters).
-- Website: URL of the developer's website (up to 2048 characters).
-- Privacy statement: URL of the privacy statement (up to 2048 characters).
-- Terms of use: URL of the terms of use (up to 2048 characters).
-
-Initial publishing takes quite some time, between 30 and 60 seconds. Once the agent is published, you will see a dialog with a recap of all the availability options.
+The panel has no fields for the developer name, website, privacy statement or terms of use, so Copilot Chat shows the agent as created by "Your developer name". Save the details. Initial publishing takes 30 to 60 seconds, and the **Availability options** panel recaps how users reach the agent.
 
 ![The dialog confirming the successful publishing and providing a command to copy a direct link to the agent app, two commands to share the agent with selected group of people or with the whole organization, and a command to download a ZIP package to publish the agent in the store.](./_images/create-agent-m365-copilot-chat-09.png)
 
 Specifically, you can select:
 
-- **Copy** command to copy a URL with a direct link to the app registered for the new agent.
+- **Copy link** to copy a URL with a direct link to the app registered for the new agent.
 - **Show to my teammates and shared users** to share the agent with selected groups or individuals in your organization.
 - **Show to everyone in my org** to share the agent with the whole organization.
 - **Download .zip file** to download a zip package of the app that you can then upload to the Microsoft 365 store.
 
 > **Show to everyone in my org:** When you choose to show the agent to the whole organization, ensure your agent is ready for release and in compliance with company standards, rules, and policies. Coordinate with your teammates. Once the agent is submitted, it can't be resubmitted by others until an admin approves or rejects it. You can find additional details about publishing an app to the whole organization reading [Show to the organization](https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-add-bot-to-microsoft-teams#show-to-the-organization).
 
-Select the **Copy** command, open a new browser tab, and paste the URL with the direct link to the agent.
-The company app store will show in the browser and a dialog will allow you to select the **Add** button, to add the agent to Microsoft 365 Copilot.
+Select **Copy link**, open a new browser tab, and paste the URL with the direct link to the agent.
+Teams opens the app (select **Use the web app instead** if it offers the desktop app first). Select **Add**, then **Open with Copilot** to open the agent in Microsoft 365 Copilot Chat.
 
 ![The company store with the agent dialog allowing to add the agent to Microsoft 365 Copilot.](./_images/create-agent-m365-copilot-chat-10.png)
 
@@ -226,7 +187,7 @@ The agent will provide you detailed information about the hiring procedures, bas
 
 ## Exercise 3 : Adding a tool to the agent
 
-In this excercise you are going to add a custom tool to the agent that you made in the previous exercise. In Microsoft Copilot Studio, when making agents for Microsoft 365 Copilot Chat (Declarative Agents), you can add four different types of tools:
+In this excercise you are going to add a custom tool to the agent that you made in the previous exercise. In Microsoft Copilot Studio, when making agents for Microsoft 365 Copilot Chat (Declarative Agents), you can add several types of tools, among them:
 
 - Prompt: allows consuming an AI tool built using a prompt written in natural language.
 - Custom connector: allows consuming a Power Platform custom connector.
@@ -238,7 +199,7 @@ In this lab you are going to add a tool of type `Custom connector` in order to r
 
 ### Step 1: Adding a tool to an agent for Microsoft 365 Copilot
 
-To add a new tool, select the **+ Add tool** command in the **Tools** section of the agent's configuration panel.
+To add a new tool, select the **Add tool** command in the **Tools** section of the agent's configuration panel.
 
 ![The **Tools** section of an agent with the **+ Add tool** command highlighted.](./_images/action-agent-m365-copilot-chat-01.png)
 
@@ -246,7 +207,7 @@ A dialog window pops up allowing you to choose what kind of tool to create. By d
 
 If you don't find the option you are looking for in the list of featured items, simply switch to the **All** group and search by text what you are looking for.
 
-To complete the current step, choose the featured tool **Excel Online (Business)** and then select **List rows present in a table**. First of all, you will need to connect to the external connector simply selecting the **Connection** and then **Create new connection** and proceeding with the process.
+To complete the current step, choose the featured tool **Excel** and then select **List rows present in a table**. If you have no Excel connection yet, select **Connection**, then **Create new connection**, and proceed with the process; a connection from an earlier lab is reused.
 
 ![The dialog to connect to the target Power Platform connector with details about the connection, if any, or a button to create a new connection. There is also a back button to start over.](./_images/create-action-excel-connector-03.png)
 
@@ -268,7 +229,7 @@ Download a sample Excel file by selecting this [link](https://github.com/microso
 Upload the file to the **Documents** library of a SharePoint Teams site in the same tenant where you are making your agent with Copilot Studio. The document was generated by Microsoft 365 Copilot for the sake of having a hypothetical list of candidates.
 
 - Copy the absolute url of the site. For example: `https://xyz.sharepoint.com/sites/greylogistics/`.
-- Copy the name of the document library. For example : `Shared documents`
+- Copy the name of the document library. For example: `Documents`
 - Copy also the name of the file. For example: `Sample-list-of-candidates.xlsx`
 
 Now go back to Microsoft Copilot Studio and finalize the tool configuration.
@@ -286,7 +247,7 @@ List HR candidates
 List candidates for an HR role
 ```
 
-Now, select the **Inputs** section and start configuring the input arguments. By default, all the mandatory input arguments have been configured so that their value will be exctracted by the User's entire response as you can notice in the **Fill using** property of each input argument, which is configured with value `Dynamically fill with AI`.
+Now, select the **Inputs** section and start configuring the input arguments. Check the **Fill using** property of each input argument: **Location**, **Document Library** and **File** may already default to `Custom value`, while **Table** defaults to `Dynamically fill with AI`, which extracts the value from the user's response.
 
 ![The section to configure the input arguments of the tool. There is a list of arguments with specific settings for each of them.](./_images/action-agent-m365-copilot-chat-02.png)
 
@@ -303,7 +264,8 @@ Now select the **Save** button in the upper right corner of the screen to save t
 ### Step 2: Testing the new tool
 
 You are now ready to publish the updated agent and to play with it in the integrated test panel or in Microsoft Teams.
-Select the **Publish** button again, to update the publishing of the agent. Wait for the publishing to complete and then open again the direct link to the agent's app. You will see an **Update now** command instead of the **Add** that you saw in Exercise 1 - Step 4. Select the **Update now** command and wait. Once ready, go to Microsoft 365 Copilot Chat, refresh the page and start interacting with the updated agent.
+
+Select the **Publish** button again, to update the publishing of the agent. Wait for the publishing to complete and then open again the direct link to the agent's app. If the app shows an **Update now** command instead of **Add**, select it and wait; if it shows only **Open**, the update is already in place. Once ready, go to Microsoft 365 Copilot Chat, refresh the page and start interacting with the updated agent.
 
 It is really easy to invoke the just created tool simply providing to the agent a prompt like the following one:
 
@@ -313,11 +275,9 @@ Show me the list of candidates for HR with role "HR Director" or "HR Manager"
 
 ![The sequence of the tool call: your prompt, the permission request for the external API, Allow once, Sign in to Agentic HR, then List rows present in a table on Candidates_Table and the matching candidates back to you.](./_images/copilot-chat-tool-call-sequence.svg)
 
-Microsoft 365 Copilot Chat will ask you the permission to consume an external API (Excel Online) and you will have to select the option to **Always allow** or **Allow once**. For the sake of testing purposes, choose **Allow once** so that you will be able to test the authorization process again in the future.
+Microsoft 365 Copilot Chat asks your permission to consume an external API (Excel Online) with a **Connect to continue** card for **List rows present in a table**. Select **Allow**.
 
-![Microsoft 365 Copilot Chat asking consent to consume the external API for Excel Online. There are three command buttons to **Always allow**, **Allow once**, and **Cancel**.](./_images/action-agent-m365-copilot-chat-03.png)
-
-Since the Power Platform connector requires a valid connection in place, the agent might prompt the user to **Sign in to Agentic HR** before being able to consume the external data source. 
+Since the Power Platform connector requires a valid connection in place, the agent might prompt the user to **Sign in to Agentic HR** before being able to consume the external data source; when the connection already exists, no sign-in appears.
 Once you are connected to the external connector, the agent will reply back providing the list of candidates retrieved from the Excel spreadsheet and matching the criteria that you provided in the prompt.
 
 ![Microsoft 365 Copilot Chat asking to sign in to consume the external Excel Online API.](./_images/action-agent-m365-copilot-chat-05.png)

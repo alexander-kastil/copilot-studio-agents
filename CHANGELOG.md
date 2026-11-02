@@ -19,6 +19,7 @@
 - Module 01 labs: five external labs (Agent Builder, SharePoint agents, Analyst, Researcher, share and use agents) migrated into `labs/01-intro` as local guides with their screenshots and sample files; the readme links the local copies and lists the originals as sources
 - Module 02 deck gets the Import a Claude plugin slide at the end of the plugins topic.
 - Lab run record `labs/02-cowork/cowork-lab-cost.json` for the module 02 Cowork labs: exercises run, model and effort, and the Copilot Credits per task, still marked not yet available
+- Lab run record `labs/copilot-studio-labs.json` for the module 03 to 05 Copilot Studio labs: exercises run per lab, the tests, and the Copilot Credits each showed, most still not shown
 - Update labs
 
 ### Changed
@@ -28,9 +29,11 @@
 - Module 02 Cowork labs name a cheaper model that does the job as a proposal note on top of each lab guide
 - The first Copilot Studio lab skips the environment exercise, since the environments are pre-created for students
 - The Workflows lab is removed from module 01 and from the lab tests
+- The SharePoint agent labs ground on the copilot-demo SharePoint site
 
 ### Fixed
 
 - Module 02 Cowork lab guides corrected from the live runs
 - Module 03 to 05 lab guides fixed where a live run found an error
 - Module 01 Agent Builder lab re-run: all screenshots retaken at 1280 width, two new ones for the SharePoint source and the Share menu, and the guide steps and image texts matched to the current UI
+- Publishing, secured REST API, autonomous agent, multi-agent and evaluations lab guides corrected from the live runs; the publishing lab builds its Copilot Chat agent as a Standard agent, since the Microsoft 365 Copilot agent entry is gone

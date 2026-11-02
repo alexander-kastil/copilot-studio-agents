@@ -24,8 +24,8 @@ Before creating the autonomous agent, you need to set up a SharePoint document l
 Navigate to your SharePoint site (you can use any SharePoint site of your Microsoft 365 tenant, or you can create a new one from scratch) and create a new document library:
 
 1. Go to **Site contents** and select **New** → **Document library**
-1. Select **Blank library** as the template
-1. Name the library: `Candidates Data`
+1. Select **Create blank document library**
+1. Name the library: `Candidate Data`
 1. Set the description: `Document library for candidate PDF data files`
 1. Select **Create** to create the library
 
@@ -101,9 +101,9 @@ In this exercise you are going to create the autonomous agent in Microsoft Copil
 
 Open a browser and, using the work account of your target Microsoft 365 tenant, go to [https://copilotstudio.microsoft.com](https://copilotstudio.microsoft.com) to start using Microsoft Copilot Studio.
 
-Select the `Copilot Dev Camp` environment prepared for you, then from the middle of the home page of Copilot Studio select **Create an agent** to create a new agent.
+Select the environment prepared for you, then select **Agents** → **More create options** → **Agent (Standard)**. The default **New agent** button creates a different agent type, which has no triggers.
 
-Configure your autonomous agent with the following settings:
+Configure your autonomous agent with the following settings. The create dialog asks only for the **Name**; set the **Description** and the **Instructions** afterwards on the **Overview** page with **Edit**.
 
 - **Name**: 
 
@@ -114,16 +114,13 @@ Autonomous HR Docs Processor
 - **Description**: 
 
 ```text
-An autonomous AI agent that monitors SharePoint for new candidate PDF uploads and 
-automatically processes them to create employee records via the HR MCP server
+An autonomous AI agent that monitors SharePoint for new candidate PDF uploads and automatically processes them to create employee records via the HR MCP server
 ```
 
 - **Instructions**: 
 
 ```text
-You are an autonomous HR assistant that specializes in processing candidate data 
-from PDF documents. When a new PDF file is uploaded to the SharePoint document library, 
-you automatically:
+You are an autonomous HR assistant that specializes in processing candidate data from PDF documents. When a new PDF file is uploaded to the SharePoint document library, you automatically:
 
 1. Extract candidate information from the PDF file content including first name, last name, email, skills, spoken languages, and current role
 2. Validate and structure the extracted data
@@ -131,13 +128,11 @@ you automatically:
 4. Provide confirmation of successful processing
 5. Send me an email with confirmation that the new employee record was created and with a recap of the candidate's data
 
-Always ensure data accuracy and provide clear feedback about the processing results. 
-Handle errors gracefully and provide informative messages when processing fails.
+Always ensure data accuracy and provide clear feedback about the processing results. Handle errors gracefully and provide informative messages when processing fails.
 
 IMPORTANT: Do not wait for any user input. Work completely autonomously.
 
-DO NOT invent or assume fake data about candidates. AVOID allucinations.
-You MUST ONLY process real and existing data.
+DO NOT invent or assume fake data about candidates. AVOID hallucinations. You MUST ONLY process real and existing data.
 ```
 
 Select **Publish** to publish your autonomous agent.
@@ -152,11 +147,11 @@ In case of any configuration changes, select **Save** to confirm them.
 
 ### Step 3: Adding the MCP Server Integration
 
-Your autonomous agent needs access to the HR MCP server tools to create employee records. Navigate to the **Tools** section and select **+ Add a tool**.
+Your autonomous agent needs access to the HR MCP server tools to create employee records. Navigate to the **Tools** section and select **Add tool**.
 
 1. Choose **Model Context Protocol** group
-2. Find and select the **HR MCP Server** that you registered in [Give an Agent MCP Tools](../../04-cs-tools/06-mcp/lab-01-give-an-agent-mcp-tools.md). If it is not in the list, add it with **+ New tool**, **Model Context Protocol**, and the server URL from Exercise 1
-3. Select **Add and configure** to integrate the MCP server tools
+2. Search for `HR MCP` and select the **HR MCP Server** that you registered in [Give an Agent MCP Tools](../../04-cs-tools/06-mcp/lab-01-give-an-agent-mcp-tools.md). If it is not in the list, add it with **+ New tool**, **Model Context Protocol**, and the server URL from Exercise 1
+3. Select **Add** to integrate the MCP server tools
 
 ![The tools section showing the HR MCP Server being added to the autonomous agent with all the available employee management tools.](./_images/autonomous-agent-02.png)
 
@@ -175,16 +170,20 @@ The agent will primarily use the `add_employee` tool for processing new PDF uplo
 
 ![The McpServerTool methods in Tools/HRTools.cs generate the six tools of the HR MCP Server, which an agent finds at runtime through tools/list, so a new method and a server restart add a capability. A custom connector, by contrast, needs its specification re-imported and the action re-added.](../../../demos/04-cs-tools/pptx/images/06-01-tool-discovery.svg)
 
-### Step 4: Adding the Email Management MCP Server
+### Step 4: Adding the Mail MCP Server
 
-Your autonomous agent also needs access to the **Email Management MCP Server** to being able to send e-mails. Navigate to the **Tools** section and select **+ Add a tool**.
+Your autonomous agent also needs access to the **Mail (Preview)** MCP server to be able to send e-mails; the older **Email Management MCP Server** is marked deprecated. Navigate to the **Tools** section and select **Add tool**.
 
 1. Choose **Model Context Protocol** group
-2. Find and select **Email Management MCP Server**
-3. Select **Add and configure** to integrate the MCP server tools
+2. Find and select **Mail (Preview)**
+3. Select **Add** to integrate the MCP server tools
 
 This gives your autonomous agent access to a wide set of tools to manage the e-mails in the current user's mailbox.
-The agent will primarily use the `SendEmail` tool for sending notification e-mails.
+The agent will primarily use the `SendEmailWithAttachments` tool for sending notification e-mails.
+
+### Step 5: Adding the SharePoint MCP Server
+
+The trigger hands the agent only the properties of the new file, not its content, so the agent needs a tool to read the PDF. Add **SharePoint (Preview)** the same way: **Add tool**, **Model Context Protocol**, **SharePoint (Preview)**, then **Add**. The agent then reads the uploaded file itself. The SharePoint connector action **Get file content using path** is not enough, because it returns only a reference to the file.
 
 ## Exercise 3: Configuring SharePoint Triggers
 
@@ -217,7 +216,7 @@ Select **Next** and proceed to configure the trigger with the following addition
 - **Library Name**: Select `Candidate Data` (the library you created)
 - **Folder**: Leave blank to monitor the entire library
 - **Limit columns by View (Optional)**: All Documents
-- **Additional instructions to the agent when it's invoked by this trigger**: Use content from `Body` and read content of the PDF file.
+- **Additional instructions to the agent when it's invoked by this trigger**: the field already says `Use content from Body`; append ` and read content of the PDF file.`
 
 ![The SharePoint trigger configuration showing the site address, library name, folder, view, and additional instructions to the agent.](./_images/autonomous-agent-06.png)
 
@@ -241,11 +240,13 @@ Once at least one file will be uploaded in the target library, the dialog update
 
 You can simply upload in the target SharePoint Online library one of the resumes that you downloaded before and wait for the agent to process it.
 
-> **Note:** It can take up to one minute for the agent to get evidence of the new file(s) uploaded. Be patient while waiting for the trigger test dialog to be ready for testing.
+> **Note:** The trigger reacts only to files uploaded after it exists, so upload the test file now, not before. It can take up to one minute for the agent to get evidence of the new file(s) uploaded, and **Start testing** stays grey until then. The list of files shows timestamps, not file names.
+
+> **Note:** If the test dialog never sees your file, open Power Automate and select **Connections**. When the SharePoint connection shows **Reconnect**, select **Reconnect**, then **Update**, and pick your account; the trigger flow shows no runs while that connection is broken.
 
 ![The dialog to test the trigger with files uploaded to the target SharePoint Online library. The "Start testing" command is now enabled, because there is a new file to process.](./_images/trigger-test-02.png)
 
-Once the test starts, the agent can interact with you through the **Test your agent** side panel. The very first thing you will need to do in this scenario is to connect the agent instance to the target HR MCP Server, so that the agent can create the new employee record. Select **Open connection manager** in the automated message sent by the agent, then **Connect** the agent to the HR MCP Server, lastly go back to the **Test your agent** panel and select **Retry**.
+Once the test starts, the agent can interact with you through the **Test your agent** side panel. The very first thing you will need to do in this scenario is to connect the agent instance to its tools, so that the agent can create the new employee record. Select **Allow** on the card for the Mail MCP server. Then select **Open connection manager** in the automated message sent by the agent, **Connect** the HR MCP Server and select **Submit**, then go back to the **Test your agent** panel and select **Retry**.
 
 You should be able to see a confirmation message that the candidate described in the PDF resume that you uploaded got added as an employee on the HR MCP server.
 

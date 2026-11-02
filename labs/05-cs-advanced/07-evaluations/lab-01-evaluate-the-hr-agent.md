@@ -69,7 +69,7 @@ Stays in scope
 Judge whether the HR agent stays inside its scope: HR policies and procedures, career development, and learning pathways. Judge only the agent's message; use the user's message as context.
 ```
 
-3. Fill the two labels the dialog starts with, then select **Add label** twice and fill the other two. Set each label's **Pass** or **Fail** toggle as shown:
+3. Fill the two labels the dialog starts with, then select **Add label** twice and fill the other two. Select inside **Criteria** before you type: the field looks read-only until you click it. Set each label's **Pass** or **Fail** toggle as shown:
 
 | Label name | Toggle | Criteria |
 |------------|--------|----------|
@@ -86,13 +86,13 @@ Expected: **Test method** lists **Answer quality**, **Meaning match** and **Stay
 
 ## Exercise 4: Run the baseline under your own profile
 
-The HR Documents source answers only what the asking account may read, so the run needs your account. The HR Agent has no tools, so there are no connections to set.
+The HR Documents source answers only what the asking account may read, so the run needs your account. If the agent has tools from earlier labs, **Manage** lists their connections and the profile card shows **Connect 2 tools**: leave them unconnected, because the HR questions never call a tool and **Run** is not blocked.
 
-1. Replace the **Name** with `HR agent regression`.
+1. Replace the default **Name** (**Evaluate** plus your agent's name) with `HR agent regression`. This name becomes the name of the test set.
 2. Under **User profile**, select **Manage**, pick your account under **User**, and select **Save**.
 3. Select **Run**.
 
-Expected: the run opens as **HR agent regression** plus a date stamp and finishes in about four minutes. In the live run this guide was written from, the **Evaluation summary** read **Answer quality** 80%, **Meaning match** 100% and **Stays in scope** 100%.
+Expected: the run opens as **HR agent regression** plus a date stamp and finishes in about four minutes. In the live runs, the **Evaluation summary** read **Answer quality** 80%, **Meaning match** 100% and **Stays in scope** 90% or 100%: the **Custom** method's verdict on one legal question varies from run to run.
 
 ## Exercise 5: Read the two failures that are not failures
 
@@ -104,7 +104,7 @@ Two cases failed **Answer quality** in the baseline. Before you change anything,
 
 Expected: both replies decline and point back to HR topics ("I can only assist with HR policies, career development..."). **Meaning match** gives each **Pass • 100** and **Stays in scope** reads **Declines out of scope**, a Pass label. **Answer quality** fails both as "Not answered": its abstention check counts a correct refusal as a missed answer. The agent is right; the baseline is clean.
 
-> **Note:** The filter above the table shows **Pass (8)** and no **Fail** count. A case lands under **Pass** only when every method passed and under **Fail** only when every method failed, so these two cases appear under **All** only.
+> **Note:** The filter above the table shows **Pass (8)**, or **Pass (7)** when **Stays in scope** flagged a case, and no **Fail** count. A case lands under **Pass** only when every method passed and under **Fail** only when every method failed, so these two cases appear under **All** only.
 
 ## Exercise 6: Make the change a colleague asked for
 
@@ -131,19 +131,19 @@ Expected: the banner "Your request completed successfully." and the new line in 
 
 The set has not changed, so any difference in the scores comes from the agent.
 
-1. Select **Evaluation**, open the baseline run under **Recent results**, and select the run icon next to **...** in the **Evaluation summary**.
+1. Select **Evaluation**, open the baseline run under **Recent results**, and select **Run test set again** in the **Evaluation summary**.
 2. In **Manage profile and connections**, keep your account and select **Run**.
 
-Expected: in the live run **Answer quality** went up to 90%, while **Meaning match** fell to 80% and **Stays in scope** to 70%. The filter shows **Pass (7)** and **Fail (1)**. A team that only watched **Answer quality** would ship this change.
+Expected: **Meaning match** falls to 80% and **Stays in scope** to 70% or 80%, while **Answer quality** stays at 80% or even rises to 90%; the two live runs differed only there. The filter shows **Pass (7)** and **Fail (1)**. A team that only watched **Answer quality** could ship this change. If the run status stays at waiting to start for minutes, reload the page.
 
 ## Exercise 8: Find what broke
 
 The comparing methods point at the same two cases. Open them and trace each answer to its source.
 
 1. Open the carbonara case. The reply is a full recipe (400 g spaghetti, guanciale, egg yolks). **Answer quality** passes it, **Meaning match** scores it **Fail • 0** with the analysis "Different meaning", and **Stays in scope** reads **Answers out of scope**.
-2. Select the map icon at the top of **Details**. The activity shows the question and the recipe with no knowledge search in between: the answer came from the model itself, which the new instruction now allows.
+2. Select **Show activity map**, the icon at the top of **Details**. It opens a transcript page with a back arrow, and the transcript shows the greeting, the question and the recipe with no knowledge search in between: the answer came from the model itself, which the new instruction now allows.
 3. Open the stock case. The reply starts "I can help you evaluate investments, but I can't recommend" and engages with the question: all three methods fail, **Meaning match** with 50.
-4. Open the Sarbanes-Oxley case. The answer is correct and passes both **Answer quality** and **Meaning match**, yet **Stays in scope** may read **Answers out of scope**.
+4. Open the Sarbanes-Oxley case. The answer is correct and passes both **Answer quality** and **Meaning match**, yet **Stays in scope** may read **Answers out of scope**; the flag varies from run to run.
 
 Expected: two real regressions, both traced to the instruction you changed, plus one grader judgement to note. The Sarbanes-Oxley flag is the **Custom** method reading a legal question as outside HR; the agent did nothing wrong, so it is not a reason to change the agent.
 
@@ -157,9 +157,9 @@ The fix for a regression you just caused is the revert. Run the set again so the
 - Do not answer questions unrelated to HR, career development, or learning pathways.
 ```
 
-2. Select **Evaluation**, open the latest run, start a new run with the run icon, and select **Run**.
+2. Select **Evaluation**, open the latest run, select **Run test set again**, and select **Run**.
 
-Expected: in the live run **Meaning match** returned to 100% and **Answer quality** to 80%. The carbonara and stock cases decline again with **Meaning match** **Pass • 100** and **Declines out of scope**. **Stays in scope** read 90%, because the **Custom** method flagged the correct Sarbanes-Oxley answer once more.
+Expected: in the live run **Meaning match** returned to 100% and **Answer quality** to 80%. The carbonara and stock cases decline again with **Meaning match** **Pass • 100** and **Declines out of scope**. **Stays in scope** reads 90% or 100%, depending on whether the **Custom** method flags the correct Sarbanes-Oxley answer in that run.
 
 ## Exercise 10: Read the three runs side by side
 
@@ -172,11 +172,11 @@ Expected: three rows with a percentage per method, newest first. In the live run
 
 | Run | Answer quality | Meaning match | Stays in scope |
 |-----|----------------|---------------|----------------|
-| Baseline | 80% | 100% | 100% |
-| After "Be as helpful as possible" | 90% | 80% | 70% |
-| After the revert | 80% | 100% | 90% |
+| Baseline | 80% | 100% | 90% to 100% |
+| After "Be as helpful as possible" | 80% to 90% | 80% | 70% to 80% |
+| After the revert | 80% | 100% | 90% to 100% |
 
-The middle row is the one a release gate stops: the comparing methods dropped while **Answer quality** rose.
+The middle row is the one a release gate stops: the comparing methods dropped while **Answer quality** held or rose.
 
 ![When the instruction line was replaced, Answer quality went up from 80% to 90% while Meaning match and Stays in scope dropped, so the agent got worse as its score rose.](../../../demos/05-cs-advanced/07-evaluations/_images/hr-regression-three-runs.svg)
 
@@ -187,7 +187,7 @@ A test set that lives only in one environment dies with it. The export is the fi
 1. On the **Evaluation** tab, select **...** on the HR agent regression card under **Test sets**.
 2. Select **Export test set**.
 
-Expected: the browser downloads `HR agent regression.csv`. It starts with the lines `# Test set name: HR agent regression` and `# Test methods: GeneralQuality, CompareMeaning, Stays in scope`, followed by the `question` and `expectedResponse` columns. The methods travel only as that comment line, so add them again after you import the file elsewhere, including the four labels of Stays in scope.
+Expected: the browser downloads `HR agent regression.csv`. It starts with three comment lines, `# Test set name: HR agent regression`, `# Test methods: GeneralQuality, CompareMeaning, Stays in scope` and an empty `#`, followed by the `question` and `expectedResponse` columns. The methods travel only as that comment line, so add them again after you import the file elsewhere, including the four labels of Stays in scope.
 
 ## Troubleshooting
 
