@@ -42,3 +42,8 @@ Facts for the global create-pptx skill (`references/gamma-deck.md`) and the `/cr
 - Class OneDrive folder: `E:\Onedrive\OneDrive - Integrations IT Solutions\Classes\copilot-studio-agents`. The first `deliver` creates it.
 - Every deck change ends with `deliver` to that folder in the same turn, unasked (owner, 2026-11-01: "always publish to onedrive when done").
 - The OneDrive copy is the owner's working copy: `cmp` before overwriting a deck already there.
+
+## Git
+
+- `pptx/` folders are gitignored except their SVGs. When the owner asks to commit a deck change, force-add (`git add -f`) the module PDF, its `.quality.json` and the slide PNGs that changed; the `.pptx` stays local (precedent: `01-intro`, `03-cs-basics`).
+- Copy an ignored deck, PDF or image to the scratch folder before editing it: git cannot restore it.

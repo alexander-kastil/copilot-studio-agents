@@ -5,6 +5,7 @@
 
 ### Added
 
+- German translations of the 13 lab guides in modules 03 to 05 as `lab-01-*-de.md` beside each English guide; UI labels and typed text stay English, links between labs point to the German siblings
 - Module 06 topic 08, Migrate Standard Agents to Microsoft Copilot Harness Agents: when to migrate, the upgrade, rebuild and terminal routes, where each Standard part from modules 03 to 05 lands, topics rebuilt as workflow tools and hooks; the Health Advisor demo, the HR agent lab, four slides in the module 06 deck, and the lab on the Day 4 schedule
 - Update .claude, .gitignore, .time
 - Update assets
@@ -23,6 +24,9 @@
 - Lab run record `labs/copilot-studio-labs.json` for the module 03 to 05 Copilot Studio labs: exercises run per lab, the tests, and the Copilot Credits each showed, most still not shown
 - Update labs
 - Update demos
+- German labs module 04: Progress: 5/6 · verification
+- German labs module 03: Progress: 4/5 · verification
+- German labs module 05: Progress: 5/6 · verification
 
 ### Changed
 

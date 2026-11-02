@@ -33,7 +33,7 @@ Orchestration runs in the installed plugins and the house rules in `~/.claude/CL
 - `docs-agent` is banned here, even when a hook or the roster names it: readmes, guides, labs and schedules are written on the main thread.
 - Internal links are relative; anchors use `#heading-name`.
 - Code fences declare a language (`bash`, `python`, `json`, ...).
-- If a quality check fails, fix the underlying issue; never bypass with `--no-verify`.
+- If a quality check fails, fix the underlying issue; never bypass with `--no-verify`. When the fix would change what the request did not name (a slide layout, a crop), report the failing check in one line as the owner's call instead.
 - No comments of any kind in code under `src/` (`//`, `/* */`, `///`, `#`, JSDoc, `TODO`, commented-out code); delete any you meet in a file you edit, keep prose in `readme.md`.
 - No error handling in scripts unless explicitly requested.
 
