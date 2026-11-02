@@ -24,9 +24,6 @@
 - Lab run record `labs/copilot-studio-labs.json` for the module 03 to 05 Copilot Studio labs: exercises run per lab, the tests, and the Copilot Credits each showed, most still not shown
 - Update labs
 - Update demos
-- German labs module 04: Progress: 5/6 · verification
-- German labs module 03: Progress: 4/5 · verification
-- German labs module 05: Progress: 5/6 · verification
 
 ### Changed
 
