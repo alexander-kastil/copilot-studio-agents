@@ -11,11 +11,12 @@ demos/NN-<module>/readme.md          module readme, 8 modules from 01-intro to 0
 demos/NN-<module>/NN-<topic>/        readme.md (teaching), demo-<slug>.md guides, companion folders, _images/
 demos/NN-<module>/pptx/              slide specs NN-MM-<slug>.md, topics.json, images/
 demos/pptx/                          portraits.json
-labs/NN-<module>/                    readme.md, NN-<topic>/lab-01-<slug>.md, _images/
+labs/NN-<module>/                    readme.md (one lab table, Deutsch column), NN-<topic>/lab-01-<slug>.md and -de.md, _images/
 src/cs-schema/                       Copilot Studio agents, CS- rebuilds and workflows as .mcs.yml
 src/food-catalog-mcp/, hr-mcp-server/  MCP servers (.NET)
 src/parts-inventory-connector/       custom connector API (.NET)
 src/food-shop/                       Angular sample app
+src/food-catalog-service/            catalog service of the food shop (.NET)
 src/assets/                          food-api-swagger.json
 infra/, azure.yaml                   deployment of the sample projects
 setup/                               tenant, Cowork, credit and AI teammates setup
@@ -36,6 +37,7 @@ Orchestration runs in the installed plugins and the house rules in `~/.claude/CL
 - If a quality check fails, fix the underlying issue; never bypass with `--no-verify`. When the fix would change what the request did not name (a slide layout, a crop), report the failing check in one line as the owner's call instead.
 - No comments of any kind in code under `src/` (`//`, `/* */`, `///`, `#`, JSDoc, `TODO`, commented-out code); delete any you meet in a file you edit, keep prose in `readme.md`.
 - No error handling in scripts unless explicitly requested.
+- Labs run with no command-line tool on the learner's machine (no PnP PowerShell, `npx`, `dotnet run`, dev tunnels) and build on the hosted class services; presenter demos may use them.
 
 ## Working Method
 

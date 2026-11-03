@@ -5,6 +5,7 @@
 
 ### Added
 
+- German translation of the module 07 lab (`lab-01-build-and-migrate-from-the-terminal-de.md`); the module 07 lab readme gains a title, an intro and a lab table with Deutsch and Focus columns like modules 02 to 06
 - Module 05 deck teaches each topic beside its lab slides: teaching slides with concept diagrams (unattended instructions, guardrails and cost, routing descriptions, child or connected agent, routing rules, Foundry agent types, endpoint protocols, how the planner calls a Foundry agent, access and preview, the parts of an evaluation, test methods, failing case to fix); the deep reasoning topic is six plain slides (what deep reasoning is, what it brings, turning it on for one step, where it is configured in a Standard agent, seeing where it reasoned, when it pays off) in place of the reason keyword, model and ticket backlog slides; 29 to 45 slides
 - Module 04 and 05 labs run without command-line tools: the class uses the hosted REST API and MCP labs (readmes, topic readmes and schedule link them), the hosted MCP lab drops its MCP Inspector exercise, connectors lab-02 drops the PnP PowerShell provisioning, and the autonomous agent lab drops the Inspector, `dotnet run` and dev tunnel steps and points at the hosted `lab-human-resource-mcp` server
 - The hosted REST API and MCP labs no longer refer to the local versions (alternative-version intros, the Entra ID and local-server pointers are gone), so every lab builds on the hosted services
