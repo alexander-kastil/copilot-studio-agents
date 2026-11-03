@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Only the parent agent replies to the user; each subagent reports back from its own source</title>
+  <desc id="d">The parent agent invokes, waits, combines and responds once, with MUST, NEVER and ONLY in its instructions. Three subagents, A, B and C, each search one knowledge source of their own and report back, never reply. Arrows run from the parent to each subagent and back, and a single arrow from the parent to the user carries one reply. A dashed red arrow from a subagent straight to the user is crossed out: duplicate reply. A question no subagent covers goes to the parent, which handles nothing found.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+    <marker id="ahr" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#d1242f"/>
+    </marker>
+  </defs>
+
+  <circle cx="160" cy="345" r="34" fill="#f6f8fa" stroke="#57606a" stroke-width="3"/>
+  <path d="M100,450 C100,400 128,385 160,385 C192,385 220,400 220,450 Z" fill="#f6f8fa" stroke="#57606a" stroke-width="3"/>
+  <text x="160" y="500" text-anchor="middle" font-size="30" font-weight="700" fill="#24292f">User</text>
+
+  <rect x="420" y="200" width="680" height="380" rx="22" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="460" y="268" font-size="36" font-weight="700" fill="#24292f">Parent agent</text>
+  <rect x="760" y="176" width="320" height="52" rx="12" fill="#fff4e0" stroke="#8c959f" stroke-width="2"/>
+  <text x="920" y="212" text-anchor="middle" font-size="28" font-weight="700" fill="#24292f">MUST, NEVER, ONLY</text>
+
+  <g fill="#ffffff" stroke="#8c959f" stroke-width="2">
+    <rect x="440" y="420" width="120" height="60" rx="12"/>
+    <rect x="590" y="420" width="100" height="60" rx="12"/>
+    <rect x="720" y="420" width="140" height="60" rx="12"/>
+    <rect x="890" y="420" width="200" height="60" rx="12"/>
+  </g>
+  <g font-size="28" fill="#24292f" text-anchor="middle">
+    <text x="500" y="460">invoke</text>
+    <text x="640" y="460">wait</text>
+    <text x="790" y="460">combine</text>
+    <text x="990" y="460" font-weight="700">respond once</text>
+  </g>
+  <g fill="#57606a">
+    <path d="M564,444 l14,6 l-14,6 z"/>
+    <path d="M694,444 l14,6 l-14,6 z"/>
+    <path d="M864,444 l14,6 l-14,6 z"/>
+  </g>
+
+  <g>
+    <rect x="1320" y="100" width="540" height="200" rx="20" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1350" y="152" font-size="32" font-weight="700" fill="#24292f">Subagent A</text>
+    <rect x="1350" y="172" width="160" height="48" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="1430" y="206" text-anchor="middle" font-size="28" fill="#24292f">source A</text>
+    <text x="1350" y="268" font-size="28" fill="#57606a">reports back, never replies</text>
+  </g>
+  <g>
+    <rect x="1320" y="420" width="540" height="200" rx="20" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1350" y="472" font-size="32" font-weight="700" fill="#24292f">Subagent B</text>
+    <rect x="1350" y="492" width="160" height="48" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="1430" y="526" text-anchor="middle" font-size="28" fill="#24292f">source B</text>
+    <text x="1350" y="588" font-size="28" fill="#57606a">reports back, never replies</text>
+  </g>
+  <g>
+    <rect x="1320" y="740" width="540" height="200" rx="20" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1350" y="792" font-size="32" font-weight="700" fill="#24292f">Subagent C</text>
+    <rect x="1350" y="812" width="160" height="48" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="1430" y="846" text-anchor="middle" font-size="28" fill="#24292f">source C</text>
+    <text x="1350" y="908" font-size="28" fill="#57606a">reports back, never replies</text>
+  </g>
+
+  <g stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)">
+    <line x1="1102" y1="250" x2="1316" y2="170"/>
+    <line x1="1316" y1="230" x2="1104" y2="300"/>
+    <line x1="1102" y1="460" x2="1316" y2="490"/>
+    <line x1="1316" y1="545" x2="1104" y2="520"/>
+    <line x1="1102" y1="545" x2="1316" y2="810"/>
+    <line x1="1316" y1="870" x2="1104" y2="572"/>
+    <line x1="660" y1="756" x2="660" y2="584"/>
+  </g>
+  <line x1="418" y1="390" x2="234" y2="390" stroke="#1B365D" stroke-width="5" marker-end="url(#ah)"/>
+  <text x="326" y="370" text-anchor="middle" font-size="28" font-weight="700" fill="#24292f">one reply</text>
+
+  <path d="M1590,96 L1590,40 L160,40 L160,302" fill="none" stroke="#d1242f" stroke-width="3" stroke-dasharray="12 9" marker-end="url(#ahr)"/>
+  <path d="M880,22 L916,58 M916,22 L880,58" stroke="#d1242f" stroke-width="6" stroke-linecap="round"/>
+  <text x="898" y="100" text-anchor="middle" font-size="28" font-weight="700" fill="#d1242f">duplicate reply</text>
+
+  <rect x="60" y="760" width="760" height="190" rx="20" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="100" y="830" font-size="32" font-weight="700" fill="#24292f">Question no subagent covers</text>
+  <text x="100" y="890" font-size="28" fill="#57606a">parent handles nothing found</text>
+</svg>

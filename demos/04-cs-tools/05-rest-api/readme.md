@@ -81,7 +81,7 @@ Two habits keep the first real call clean. When a connector call replaces a stub
 
 ## Hands-On Lab
 
-- [Call a Secured REST API from an Agent](../../../labs/04-cs-tools/05-rest-api/lab-01-call-a-secured-rest-api.md): learners run an HR API locally, secure it with two Entra ID app registrations, publish it through a dev tunnel, wrap it in a custom connector with OAuth 2.0, and call it from an agent as the signed-in user.
+- [Call a Hosted REST API from an Agent](../../../labs/04-cs-tools/05-rest-api/lab-01-call-a-secured-rest-api-alt.md): learners put the HR API deployed for the class behind a custom connector, test it, and call it from an agent, with nothing to run on their own machine.
 
 ## Key Topics covered in this module
 

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Who may call a connected Foundry agent, and what the maker checks while it is in preview</title>
+  <desc id="d">The Copilot Studio connection signs in with the user's Microsoft Entra ID and reaches the Foundry endpoint. The endpoint admits callers under Entra with the Foundry Agent Consumer role or higher, or under BotServiceRbac identities with Azure permissions only. API keys are not accepted. Because the connection is in preview and its behavior can change, the maker checks data flows, quality and reliability, permissions and approvals, and observability and oversight, and agrees with the developer team on a pinned version or Always use latest.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="60" y="250" width="360" height="250" rx="22" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="240" y="318" text-anchor="middle" font-size="32" font-weight="700" fill="#24292f">Copilot Studio</text>
+  <text x="240" y="358" text-anchor="middle" font-size="32" font-weight="700" fill="#24292f">connection</text>
+  <text x="240" y="416" text-anchor="middle" font-size="28" fill="#57606a">user's Microsoft</text>
+  <text x="240" y="454" text-anchor="middle" font-size="28" fill="#57606a">Entra ID sign-in</text>
+
+  <line x1="420" y1="375" x2="486" y2="375" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+
+  <rect x="490" y="150" width="460" height="560" rx="22" fill="#ffffff" stroke="#1B365D" stroke-width="5"/>
+  <text x="720" y="214" text-anchor="middle" font-size="34" font-weight="700" fill="#1B365D">Foundry endpoint</text>
+  <rect x="520" y="250" width="400" height="190" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="550" y="298" font-size="30" font-weight="700" fill="#24292f">Entra</text>
+  <text x="550" y="346" font-size="28" fill="#24292f">Foundry Agent Consumer</text>
+  <text x="550" y="386" font-size="28" fill="#24292f">role or higher</text>
+  <rect x="520" y="470" width="400" height="190" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="550" y="518" font-size="30" font-weight="700" font-family="Consolas, monospace" fill="#24292f">BotServiceRbac</text>
+  <text x="550" y="566" font-size="28" fill="#24292f">identities with Azure</text>
+  <text x="550" y="606" font-size="28" fill="#24292f">permissions only</text>
+
+  <rect x="580" y="780" width="280" height="110" rx="16" fill="#fdecea" stroke="#cf222e" stroke-width="2"/>
+  <text x="720" y="846" text-anchor="middle" font-size="32" font-weight="700" fill="#24292f">API key</text>
+  <line x1="640" y1="835" x2="800" y2="835" stroke="#cf222e" stroke-width="5"/>
+
+  <rect x="1020" y="150" width="840" height="560" rx="22" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1060" y="190" width="470" height="70" rx="16" fill="#fff4e0" stroke="#b7791f" stroke-width="2"/>
+  <text x="1295" y="236" text-anchor="middle" font-size="30" font-weight="700" fill="#24292f">Preview: behavior can change</text>
+  <rect x="1070" y="312" width="44" height="44" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="3"/>
+  <text x="1140" y="345" font-size="30" fill="#24292f">Data flows</text>
+  <rect x="1070" y="412" width="44" height="44" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="3"/>
+  <text x="1140" y="445" font-size="30" fill="#24292f">Quality and reliability</text>
+  <rect x="1070" y="512" width="44" height="44" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="3"/>
+  <text x="1140" y="545" font-size="30" fill="#24292f">Permissions and approvals</text>
+  <rect x="1070" y="612" width="44" height="44" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="3"/>
+  <text x="1140" y="645" font-size="30" fill="#24292f">Observability and oversight</text>
+
+  <rect x="1020" y="760" width="840" height="140" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1060" y="818" font-size="28" font-weight="700" fill="#24292f">Pinned version or Always use latest:</text>
+  <text x="1060" y="860" font-size="28" fill="#24292f">agree with the developer team</text>
+</svg>

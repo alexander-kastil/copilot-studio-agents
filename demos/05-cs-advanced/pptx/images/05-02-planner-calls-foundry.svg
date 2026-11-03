@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">The planner of the main agent calls a Foundry specialist across the platform boundary</title>
+  <desc id="d">Left of a dashed boundary, Copilot Studio, owned by the maker: the main agent's planner chooses between topics, tools, connected agents and a Foundry agent, guided by the description: domain, typical questions, what it does not cover. The input is validated first, then the call crosses to Microsoft Foundry, owned by the developer team, where the Foundry specialist holds model, instructions, tools and versions. The crossing is one more hop: more latency, citations may drop. The answer returns to the main agent, the only voice the user hears.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <text x="60" y="80" font-size="32" font-weight="700" fill="#24292f">Copilot Studio</text>
+  <text x="60" y="120" font-size="28" fill="#57606a">owned by the maker</text>
+  <text x="1200" y="80" font-size="32" font-weight="700" fill="#24292f">Microsoft Foundry</text>
+  <text x="1200" y="120" font-size="28" fill="#57606a">owned by the developer team</text>
+  <line x1="1160" y1="40" x2="1160" y2="1040" stroke="#8c959f" stroke-width="3" stroke-dasharray="16 12"/>
+
+  <rect x="60" y="160" width="1000" height="540" rx="22" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="100" y="222" font-size="34" font-weight="700" fill="#24292f">Main agent</text>
+  <text x="100" y="264" font-size="28" fill="#57606a">the planner picks one</text>
+
+  <rect x="100" y="300" width="300" height="64" rx="32" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="250" y="342" text-anchor="middle" font-size="28" fill="#24292f">topics</text>
+  <rect x="100" y="384" width="300" height="64" rx="32" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="250" y="426" text-anchor="middle" font-size="28" fill="#24292f">tools</text>
+  <rect x="100" y="468" width="300" height="64" rx="32" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="250" y="510" text-anchor="middle" font-size="28" fill="#24292f">connected agents</text>
+  <rect x="100" y="552" width="300" height="64" rx="32" fill="#1B365D" stroke="#1B365D" stroke-width="2"/>
+  <text x="250" y="594" text-anchor="middle" font-size="28" font-weight="700" fill="#ffffff">Foundry agent</text>
+
+  <rect x="460" y="300" width="420" height="190" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="490" y="350" font-size="28" font-weight="700" fill="#24292f">Description:</text>
+  <text x="490" y="395" font-size="28" fill="#24292f">domain, typical questions,</text>
+  <text x="490" y="437" font-size="28" fill="#24292f">what it does not cover</text>
+  <line x1="400" y1="566" x2="490" y2="490" stroke="#8c959f" stroke-width="3" stroke-dasharray="8 8"/>
+
+  <line x1="400" y1="584" x2="846" y2="584" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <rect x="850" y="534" width="190" height="100" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="945" y="576" text-anchor="middle" font-size="28" fill="#24292f">validate</text>
+  <text x="945" y="612" text-anchor="middle" font-size="28" fill="#24292f">input first</text>
+
+  <line x1="1040" y1="584" x2="1296" y2="584" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <rect x="880" y="730" width="410" height="104" rx="16" fill="#fff4e0" stroke="#b7791f" stroke-width="2"/>
+  <text x="1085" y="773" text-anchor="middle" font-size="28" fill="#24292f">one more hop: more latency,</text>
+  <text x="1085" y="811" text-anchor="middle" font-size="28" fill="#24292f">citations may drop</text>
+  <line x1="1210" y1="730" x2="1210" y2="590" stroke="#b7791f" stroke-width="3"/>
+  <circle cx="1210" cy="584" r="8" fill="#b7791f"/>
+
+  <rect x="1300" y="420" width="560" height="420" rx="22" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1340" y="484" font-size="34" font-weight="700" fill="#24292f">Foundry specialist</text>
+  <circle cx="1350" cy="560" r="8" fill="#57606a"/>
+  <text x="1374" y="570" font-size="28" fill="#24292f">model</text>
+  <circle cx="1350" cy="620" r="8" fill="#57606a"/>
+  <text x="1374" y="630" font-size="28" fill="#24292f">instructions</text>
+  <circle cx="1350" cy="680" r="8" fill="#57606a"/>
+  <text x="1374" y="690" font-size="28" fill="#24292f">tools</text>
+  <circle cx="1350" cy="740" r="8" fill="#57606a"/>
+  <text x="1374" y="750" font-size="28" fill="#24292f">versions</text>
+
+  <path d="M1580,840 V940 H760 V704" fill="none" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <text x="800" y="920" font-size="28" fill="#57606a">answer</text>
+
+  <line x1="250" y1="700" x2="250" y2="790" stroke="#1B365D" stroke-width="4" marker-end="url(#ah)"/>
+  <text x="280" y="760" font-size="28" font-weight="700" fill="#1B365D">the only voice</text>
+  <circle cx="250" cy="836" r="34" fill="#f6f8fa" stroke="#8c959f" stroke-width="3"/>
+  <path d="M190,960 C190,900 215,880 250,880 C285,880 310,900 310,960 Z" fill="#f6f8fa" stroke="#8c959f" stroke-width="3"/>
+  <text x="340" y="930" font-size="30" font-weight="700" fill="#24292f">User</text>
+</svg>

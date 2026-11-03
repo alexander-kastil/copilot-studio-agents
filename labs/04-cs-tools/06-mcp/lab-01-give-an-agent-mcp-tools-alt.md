@@ -1,6 +1,6 @@
 # Give an Agent MCP Tools on the Hosted Server
 
-This is the alternative version of [Give an Agent MCP Tools](./lab-01-give-an-agent-mcp-tools.md), run against the HR MCP server already deployed for the class. In [Call a Hosted REST API from an Agent](../05-rest-api/lab-01-call-a-secured-rest-api-alt.md) you described an API with OpenAPI, wrapped it in a custom connector, and mapped one operation to one action. This lab does the same job with far less ceremony. You point Copilot Studio at a Model Context Protocol (MCP) server URL, and every tool the server exposes shows up in the agent at once.
+This lab runs against the HR MCP server already deployed for the class. In [Call a Hosted REST API from an Agent](../05-rest-api/lab-01-call-a-secured-rest-api-alt.md) you described an API with OpenAPI, wrapped it in a custom connector, and mapped one operation to one action. This lab does the same job with far less ceremony. You point Copilot Studio at a Model Context Protocol (MCP) server URL, and every tool the server exposes shows up in the agent at once.
 
 That difference is the lesson. A connector is a design-time contract: you import a specification and the tool list is frozen until you re-import it. An MCP server is a runtime contract: the agent asks the server what it can do, so adding a tool on the server side makes it available to the agent without touching the agent.
 
@@ -13,7 +13,6 @@ The server you will use is the HR MCP server from this repository, a .NET 10 app
 ## What you will learn
 
 - What an MCP server exposes and how tool discovery differs from a connector's fixed operation list
-- How to inspect a live MCP server with MCP Inspector before wiring it into an agent
 - How to register an MCP server as a tool in Copilot Studio and connect to it
 - How connections work for MCP tools in the test panel and again in Microsoft 365 Copilot
 
@@ -25,7 +24,6 @@ flowchart LR
     B --> C["HR MCP Server<br/>lab-human-resource-mcp"]
     C --> D["EmployeeService"]
     D --> E["SQL database<br/>HR-Data"]
-    F["MCP Inspector"] --> C
 ```
 
 The agent never learns the tool list from you. It calls `tools/list` on the server and gets back the current set, with names, descriptions, and parameter schemas generated from the C# method signatures.
@@ -46,7 +44,6 @@ Each employee carries personal details (first name, last name, email) and profes
 ## Prerequisites
 
 - A Microsoft 365 tenant and a Power Platform environment with Copilot Studio (the labs assume an environment named `Copilot Dev Camp`)
-- [Node.js v22 or higher](https://nodejs.org/en) for MCP Inspector
 
 The server is deployed for this class and accepts calls without authentication:
 
@@ -60,42 +57,7 @@ The source is in this repository under [`src/hr-mcp-server`](../../../src/hr-mcp
 
 ---
 
-## Exercise 1: Inspect the server
-
-Before handing a server to an agent, look at it yourself. MCP Inspector is the reference client for exactly that.
-
-### Step 1: Launch MCP Inspector
-
-```powershell
-npx @modelcontextprotocol/inspector
-```
-
-The terminal prints a proxy port and a local URL, and a browser tab opens automatically.
-
-### Step 2: Connect
-
-In the left panel, configure:
-
-- **Transport type:** Streamable HTTP
-- **URL:** `https://lab-human-resource-mcp.azurewebsites.net`
-
-Select **Connect**. A green dot and the word **Connected** confirm the session.
-
-Streamable HTTP is the transport Copilot Studio requires. The older stdio transport works only for servers running on the same machine as the client, which is why a cloud service cannot use it.
-
-### Step 3: List and run a tool
-
-In the **Tools** section, select **List Tools**. All six tools appear, each with the description and parameter schema derived from `Tools/HRTools.cs`.
-
-Select `list_employees`, then **Run tool**. A green **Success** message and a JSON employee collection come back.
-
-Now select `search_employees`, enter a `searchTerm` such as `Marie`, and run it. The **History** section keeps every request and response, which is the fastest way to see what the agent will send later.
-
-> **Checkpoint:** six tools listed, `list_employees` returning data. If the connection fails here, it will fail in Copilot Studio too, so fix it before moving on.
-
----
-
-## Exercise 2: Create the agent
+## Exercise 1: Create the agent
 
 ### Step 1: Create it
 
@@ -148,7 +110,7 @@ Select **Save**.
 
 ---
 
-## Exercise 3: Wire the MCP server into the agent
+## Exercise 2: Wire the MCP server into the agent
 
 ### Step 1: Register the server as a tool
 
@@ -165,7 +127,7 @@ Configure the server in the **Add a Model Context Protocol server** form:
 
 Select **Create**.
 
-Authentication is `None` because this server is open for the class. In production you would put Entra ID in front of it, which is the same identity problem solved in [Call a Secured REST API from an Agent](../05-rest-api/lab-01-call-a-secured-rest-api.md), applied to MCP instead of a connector.
+Authentication is `None` because this server is open for the class. In production you would put Entra ID in front of it.
 
 ### Step 2: Connect
 
@@ -218,7 +180,7 @@ Remove employee john.smith@greylogistics.com
 
 ---
 
-## Exercise 4: Publish to Microsoft 365 Copilot
+## Exercise 3: Publish to Microsoft 365 Copilot
 
 Select **Channels**, then the **Microsoft 365 and Microsoft Teams** card. Select **Add channel**, tick **Make agent available in Microsoft 365 Copilot**, select **Save**, and select **Publish** again.
 
@@ -234,7 +196,7 @@ You are prompted to open the connection manager again. That is expected: the con
 
 1. The agent first replies with `Let's get you connected first` and an **Open connection manager** link. Select the link.
 1. On **Manage your connections**, your MCP server shows **Not Connected**. Select **Connect**.
-1. The **Create or pick a connection** dialog offers the connection you created in Exercise 3. Keep it and select **Submit**.
+1. The **Create or pick a connection** dialog offers the connection you created in Exercise 2. Keep it and select **Submit**.
 1. When the row shows **Connected**, select **Submit** on the page.
 1. Go back to the chat and select **Retry** on the agent's reply.
 
@@ -242,13 +204,10 @@ The agent answers with the matching employee, Marie Dubois.
 
 ![Microsoft 365 Copilot chat with LAB-HR Employee Management: the first reply asks to open the connection manager and offers Retry, and after connecting and Retry the agent answers with Marie Dubois, her email and her role.](./_images/m365-copilot-marie-answer.png)
 
-To change the tools, add breakpoints, or work offline, run the server locally as described in the optional exercise of [Give an Agent MCP Tools](./lab-01-give-an-agent-mcp-tools.md#optional-run-the-server-locally).
-
 ---
 
 ## Checkpoint
 
-- [ ] MCP Inspector lists six tools and `list_employees` returns data
 - [ ] The `HR MCP Server` tool is registered in the agent with a live connection
 - [ ] The agent lists employees in the test panel
 - [ ] The agent adds an employee from a single natural-language prompt
@@ -259,7 +218,6 @@ To change the tools, add breakpoints, or work offline, run the server locally as
 
 | Symptom | Cause |
 | --- | --- |
-| Inspector cannot connect | Wrong transport; it must be Streamable HTTP, not SSE or stdio |
 | Copilot Studio rejects the URL | A trailing slash or a path was appended; use the bare server URL |
 | The agent replies but never calls a tool | The agent was not published after adding the tool, or the connection is missing |
 | `Open connection manager` appears repeatedly | You connected in a different context; each channel needs its own connection |

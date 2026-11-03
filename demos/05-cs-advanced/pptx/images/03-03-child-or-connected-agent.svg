@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">A child agent lives inside the main agent, a connected agent is its own published agent in the same environment</title>
+  <desc id="d">The main agent contains a child agent, published with it. Across a dashed line, in the same environment, the main agent calls a connected agent, its own published agent. Comparison of child agent and connected agent. Where it lives: inside the main agent, a separate published agent. Who maintains it: the same maker, often another team with its own lifecycle. Own settings, model, channels: no, yes. Conversation context: always the parent's, only with Pass conversation history. Reuse: no, across main agents. Typical use: one task or intent, a shared domain service. Split at about 30 to 40 choices. Every hop runs its own orchestration and adds latency.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="60" y="40" width="1000" height="330" rx="22" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="100" y="200" font-size="36" font-weight="700" fill="#24292f">Main agent</text>
+  <rect x="460" y="80" width="560" height="250" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="740" y="190" text-anchor="middle" font-size="34" font-weight="700" fill="#24292f">Child agent</text>
+  <text x="740" y="240" text-anchor="middle" font-size="28" fill="#57606a">inside, published with it</text>
+
+  <line x1="1210" y1="40" x2="1210" y2="370" stroke="#8c959f" stroke-width="3" stroke-dasharray="12 10"/>
+  <text x="1210" y="410" text-anchor="middle" font-size="26" fill="#57606a">same environment</text>
+
+  <rect x="1360" y="40" width="500" height="330" rx="22" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1610" y="190" text-anchor="middle" font-size="34" font-weight="700" fill="#24292f">Connected agent</text>
+  <text x="1610" y="240" text-anchor="middle" font-size="28" fill="#57606a">its own published agent</text>
+
+  <line x1="1062" y1="205" x2="1356" y2="205" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="600" y="450" width="600" height="60" rx="14" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="900" y="490" text-anchor="middle" font-size="30" font-weight="700" fill="#24292f">Child agent</text>
+  <rect x="1220" y="450" width="640" height="60" rx="14" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1540" y="490" text-anchor="middle" font-size="30" font-weight="700" fill="#24292f">Connected agent</text>
+
+  <g fill="#f6f8fa" stroke="#8c959f" stroke-width="2">
+    <rect x="60" y="525" width="520" height="62" rx="12"/>
+    <rect x="60" y="597" width="520" height="62" rx="12"/>
+    <rect x="60" y="669" width="520" height="62" rx="12"/>
+    <rect x="60" y="741" width="520" height="62" rx="12"/>
+    <rect x="60" y="813" width="520" height="62" rx="12"/>
+    <rect x="60" y="885" width="520" height="62" rx="12"/>
+  </g>
+  <g stroke="#d0d7de" stroke-width="2">
+    <line x1="600" y1="592" x2="1860" y2="592"/>
+    <line x1="600" y1="664" x2="1860" y2="664"/>
+    <line x1="600" y1="736" x2="1860" y2="736"/>
+    <line x1="600" y1="808" x2="1860" y2="808"/>
+    <line x1="600" y1="880" x2="1860" y2="880"/>
+    <line x1="600" y1="952" x2="1860" y2="952"/>
+  </g>
+
+  <g font-size="28" font-weight="600" fill="#24292f">
+    <text x="85" y="566">Where it lives</text>
+    <text x="85" y="638">Who maintains it</text>
+    <text x="85" y="710">Own settings, model, channels</text>
+    <text x="85" y="782">Conversation context</text>
+    <text x="85" y="854">Reuse</text>
+    <text x="85" y="926">Typical use</text>
+  </g>
+  <g font-size="28" fill="#24292f">
+    <text x="620" y="566">inside the main agent</text>
+    <text x="620" y="638">the same maker</text>
+    <text x="620" y="710">no</text>
+    <text x="620" y="782">always the parent's</text>
+    <text x="620" y="854">no</text>
+    <text x="620" y="926">one task or intent</text>
+    <text x="1240" y="566">a separate published agent</text>
+    <text x="1240" y="638">often another team with its own lifecycle</text>
+    <text x="1240" y="710">yes</text>
+    <text x="1240" y="782">only with <tspan font-weight="600">Pass conversation history</tspan></text>
+    <text x="1240" y="854">across main agents</text>
+    <text x="1240" y="926">a shared domain service</text>
+  </g>
+
+  <text x="960" y="1020" text-anchor="middle" font-size="30" fill="#24292f">Split at about 30 to 40 choices. Every hop runs its own orchestration and adds latency.</text>
+</svg>

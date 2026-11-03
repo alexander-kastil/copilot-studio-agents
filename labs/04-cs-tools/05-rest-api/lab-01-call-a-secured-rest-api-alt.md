@@ -1,8 +1,8 @@
 # Call a Hosted REST API from an Agent
 
-This is the alternative version of [Call a Secured REST API from an Agent](./lab-01-call-a-secured-rest-api.md). It uses the HR service that is already deployed for the class, so you run nothing on your machine: no Azure Functions host, no dev tunnel, and no Entra ID app registrations. You put the hosted API behind a Power Platform custom connector and let an agent call it.
+This lab uses the HR service that is already deployed for the class, so you run nothing on your machine: no Azure Functions host, no dev tunnel, and no Entra ID app registrations. You put the hosted API behind a Power Platform custom connector and let an agent call it.
 
-The hosted service accepts calls without a token. You learn the connector mechanics (OpenAPI import, host configuration, the **Test** tab, adding the action to an agent) and skip the identity chain, which the main lab covers.
+The hosted service accepts calls without a token. You learn the connector mechanics (OpenAPI import, host configuration, the **Test** tab, adding the action to an agent) and skip the identity chain.
 
 **Estimated time:** 20 to 30 minutes
 
@@ -179,7 +179,6 @@ Build a custom connector from it the same way as in Exercise 2, with the host `l
 
 - Import the remaining operations as actions and ask the agent to add or remove a candidate
 - Use `askCandidateData.json` to collect new candidate data with an Adaptive Card instead of free-text prompts
-- Secure the same API with Entra ID in the main lab, [Call a Secured REST API from an Agent](./lab-01-call-a-secured-rest-api.md)
 - Compare this flow with [Give an Agent MCP Tools on the Hosted Server](../06-mcp/lab-01-give-an-agent-mcp-tools-alt.md), where an MCP server exposes its tools without an OpenAPI file or a connector definition
 
 ![Two lanes: the Lab 4 custom connector imports hr-service-swagger.json at design time into four fixed operations, while the Lab 5 agent asks the HR MCP Server for its six tools with tools/list at runtime.](../../../demos/04-cs-tools/pptx/images/06-01-tool-discovery.svg)

@@ -1,8 +1,8 @@
 # Eine gehostete REST API aus einem Agent aufrufen
 
-Dies ist die alternative Version von [Eine gesicherte REST API aus einem Agent aufrufen](./lab-01-call-a-secured-rest-api-de.md). Diese Version nutzt den HR Service, der für den Kurs bereits deployt ist, deshalb führen Sie nichts auf Ihrem Rechner aus: keinen Azure Functions Host, keinen Dev Tunnel und keine Entra ID App Registrations. Sie stellen die gehostete API hinter einen Power Platform Custom Connector und lassen einen Agent sie aufrufen.
+Dieses Lab nutzt den HR Service, der für den Kurs bereits deployt ist, deshalb führen Sie nichts auf Ihrem Rechner aus: keinen Azure Functions Host, keinen Dev Tunnel und keine Entra ID App Registrations. Sie stellen die gehostete API hinter einen Power Platform Custom Connector und lassen einen Agent sie aufrufen.
 
-Der gehostete Service akzeptiert Aufrufe ohne Token. Sie lernen die Mechanik des Connectors (OpenAPI Import, Host-Konfiguration, den Tab **Test**, das Hinzufügen der Action zu einem Agent) und lassen die Identity Chain aus, die das Haupt-Lab behandelt.
+Der gehostete Service akzeptiert Aufrufe ohne Token. Sie lernen die Mechanik des Connectors (OpenAPI Import, Host-Konfiguration, den Tab **Test**, das Hinzufügen der Action zu einem Agent) und lassen die Identity Chain aus.
 
 **Geschätzte Dauer:** 20 bis 30 Minuten
 
@@ -179,7 +179,6 @@ Bauen Sie daraus einen Custom Connector genau wie in Übung 2, mit dem Host `lab
 
 - Importieren Sie die übrigen Operations als Actions und lassen Sie den Agent eine Kandidatin oder einen Kandidaten hinzufügen oder entfernen
 - Erfassen Sie die Daten neuer Kandidatinnen und Kandidaten mit `askCandidateData.json` über eine Adaptive Card statt über Freitext-Prompts
-- Sichern Sie dieselbe API im Haupt-Lab mit Entra ID ab: [Eine gesicherte REST API aus einem Agent aufrufen](./lab-01-call-a-secured-rest-api-de.md)
 - Vergleichen Sie diesen Ablauf mit [Einem Agent MCP Tools auf dem gehosteten Server geben](../06-mcp/lab-01-give-an-agent-mcp-tools-alt-de.md), wo ein MCP Server seine Tools ohne OpenAPI-Datei und ohne Connector-Definition bereitstellt
 
 ![Zwei Bahnen: Der Custom Connector aus Lab 4 importiert hr-service-swagger.json zur Design Time als vier feste Operations, während der Agent aus Lab 5 den HR MCP Server zur Runtime mit tools/list nach seinen sechs Tools fragt.](../../../demos/04-cs-tools/pptx/images/06-01-tool-discovery.svg)

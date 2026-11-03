@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Eight test methods in four groups, and what every test case needs for each</title>
+  <desc id="d">Check responses: Answer quality and Content safety need nothing. Check agent run: Tool use needs the expected topics or tools. Compare with reference: Meaning match needs an expected response and scores out of 100, Text match compares the wording of an expected response, Keyword match needs keywords with Any or All, Exact match needs an expected response. Create your own: Custom uses labels you define. Rules: right answer by the wrong route is wrong, add Tool use; any correct phrasing is fine, Meaning match; a code or a fixed phrase, Exact match.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="50" y="50" width="380" height="390" rx="22" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="80" y="112" font-size="30" font-weight="700" fill="#24292f">Check responses</text>
+  <rect x="70" y="150" width="340" height="110" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="96" y="195" font-size="30" font-weight="700" fill="#24292f">Answer quality</text>
+  <text x="96" y="236" font-size="26" fill="#57606a">needs nothing</text>
+  <rect x="70" y="276" width="340" height="110" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="96" y="321" font-size="30" font-weight="700" fill="#24292f">Content safety</text>
+  <text x="96" y="362" font-size="26" fill="#57606a">needs nothing</text>
+
+  <rect x="470" y="50" width="380" height="264" rx="22" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="500" y="112" font-size="30" font-weight="700" fill="#24292f">Check agent run</text>
+  <rect x="490" y="150" width="340" height="110" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="516" y="195" font-size="30" font-weight="700" fill="#24292f">Tool use</text>
+  <text x="516" y="236" font-size="26" fill="#57606a">expected topics or tools</text>
+
+  <rect x="890" y="50" width="540" height="642" rx="22" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="920" y="112" font-size="30" font-weight="700" fill="#24292f">Compare with reference</text>
+  <rect x="910" y="150" width="500" height="110" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="936" y="195" font-size="30" font-weight="700" fill="#24292f">Meaning match</text>
+  <text x="936" y="236" font-size="26" fill="#57606a">expected response, score out of 100</text>
+  <rect x="910" y="276" width="500" height="110" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="936" y="321" font-size="30" font-weight="700" fill="#24292f">Text match</text>
+  <text x="936" y="362" font-size="26" fill="#57606a">expected response, wording</text>
+  <rect x="910" y="402" width="500" height="110" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="936" y="447" font-size="30" font-weight="700" fill="#24292f">Keyword match</text>
+  <text x="936" y="488" font-size="26" fill="#57606a">keywords, Any or All</text>
+  <rect x="910" y="528" width="500" height="110" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="936" y="573" font-size="30" font-weight="700" fill="#24292f">Exact match</text>
+  <text x="936" y="614" font-size="26" fill="#57606a">expected response</text>
+
+  <rect x="1470" y="50" width="400" height="264" rx="22" fill="#fff4e0" stroke="#8c959f" stroke-width="2"/>
+  <text x="1500" y="112" font-size="30" font-weight="700" fill="#24292f">Create your own</text>
+  <rect x="1490" y="150" width="360" height="110" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1516" y="195" font-size="30" font-weight="700" fill="#24292f">Custom</text>
+  <text x="1516" y="236" font-size="26" fill="#57606a">labels you define</text>
+
+  <rect x="50" y="770" width="1820" height="180" rx="22" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+
+  <path d="M300,770 V600 H660 V320" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <text x="90" y="850" font-size="28" fill="#24292f">Right answer by the wrong route</text>
+  <text x="90" y="894" font-size="28" fill="#24292f">is wrong: add <tspan font-weight="700">Tool use</tspan></text>
+
+  <path d="M800,770 V730 H870 V205 H884" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <text x="700" y="850" font-size="28" fill="#24292f">Any correct phrasing is fine:</text>
+  <text x="700" y="894" font-size="28" font-weight="700" fill="#24292f">Meaning match</text>
+
+  <line x1="1360" y1="770" x2="1360" y2="698" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <text x="1260" y="850" font-size="28" fill="#24292f">A code or a fixed phrase:</text>
+  <text x="1260" y="894" font-size="28" font-weight="700" fill="#24292f">Exact match</text>
+</svg>

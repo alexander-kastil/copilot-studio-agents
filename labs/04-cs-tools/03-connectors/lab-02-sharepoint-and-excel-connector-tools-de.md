@@ -31,7 +31,7 @@ flowchart LR
 
 - Den HR Agent aus den vorigen Labs mit der Excel Online (Business) Connection, die Sie in [Tools mit Power Platform Connectors definieren](./lab-01-connector-and-flow-tools-de.md) angelegt haben.
 - Die Berechtigung, eine SharePoint Site anzulegen, oder eine bestehende Site, in der Sie eine Document Library hinzufügen dürfen.
-- Eine Site namens `Product Support` mit einer Document Library namens `Products`, gefüllt mit den fünf Dateien aus dem Ordner [assets](./lab-02-sharepoint-and-excel-connector-tools/assets). Bauen Sie sie mit den Skripten in [setup](./lab-02-sharepoint-and-excel-connector-tools/setup) oder von Hand; beide Wege stehen unten.
+- Eine Site namens `Product Support` mit einer Document Library namens `Products`, gefüllt mit den fünf Dateien aus dem Ordner [assets](./lab-02-sharepoint-and-excel-connector-tools/assets). Bauen Sie sie von Hand, wie unten beschrieben.
 
 ## Lab-Dateien
 
@@ -45,17 +45,7 @@ Alles, was der Agent liest, liegt in [assets](./lab-02-sharepoint-and-excel-conn
 | `Nimbus-500-Warranty.docx` | Garantiebedingungen des Nimbus 500: Leistungstabelle, Verlängerung, Ablauf eines Garantiefalls, Ausschlüsse |
 | `ProductInventory.xlsx` | Lager-Arbeitsmappe, Blatt `Inventory`, Tabelle `Stock`, 12 Zeilen: Produktcode, Name, Lagerbestand, Lager, Garantiemonate |
 
-### Die Library automatisch bereitstellen
-
-Der Ordner [setup](./lab-02-sharepoint-and-excel-connector-tools/setup) legt die Library `Products` an und lädt alle fünf Dateien in einem Lauf hoch, mit PnP PowerShell, einem PnP Site Template oder der CLI for Microsoft 365. Die Optionen und die einmalige App Registration, die PnP braucht, stehen in [setup/readme.md](./lab-02-sharepoint-and-excel-connector-tools/setup/readme.md).
-
-```powershell
-cd setup
-$env:PNP_CLIENT_ID = "<your client id>"
-./Provision-ProductSupport.ps1 -SiteUrl "https://greylogistics.sharepoint.com/sites/product-support"
-```
-
-### Oder von Hand anlegen
+### Von Hand anlegen
 
 Vier Schritte im Browser, etwa fünf Minuten. Führen Sie sie der Reihe nach aus; die Connector-Inputs in Übung 2 und Übung 4 sind die Werte, die Sie am Ende notieren.
 
@@ -340,7 +330,7 @@ Sie haben dem HR Agent über Connector Tools Live-Daten aus SharePoint und Excel
 - Mit der Activity Map belegen, welches Tool lief, und eine falsche Auswahl debuggen.
 - Bewusst zwischen User Credentials und Maker-provided Credentials für einen Connector entscheiden.
 
-Geben Sie als Nächstes einem Agent eine eigene Action in [Eine gesicherte REST API aus einem Agent aufrufen](../05-rest-api/lab-01-call-a-secured-rest-api-de.md), wo die Datenquelle ein Service ist, den Sie selbst hosten, statt eines vorgefertigten Connectors.
+Geben Sie als Nächstes einem Agent eine eigene Action in [Eine gehostete REST API aus einem Agent aufrufen](../05-rest-api/lab-01-call-a-secured-rest-api-alt-de.md), wo die Datenquelle ein Service ist, den Sie selbst hosten, statt eines vorgefertigten Connectors.
 
 ## Links und Ressourcen
 

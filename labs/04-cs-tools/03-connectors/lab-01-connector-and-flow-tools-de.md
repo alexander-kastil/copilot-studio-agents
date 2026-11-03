@@ -275,4 +275,4 @@ Füllen Sie die Adaptive Card aus und senden Sie die Anfrage ab. Das Topic löst
 
 Ihr Agent unterstützt jetzt Tools. Im nächsten Lab lernen Sie, wie Sie mit Copilot Studio Declarative Agents für Microsoft 365 Copilot Chat erstellen.
 
-Weiter mit [Eine gesicherte REST API aus einem Agent aufrufen](../05-rest-api/lab-01-call-a-secured-rest-api-de.md).
+Weiter mit [Eine gehostete REST API aus einem Agent aufrufen](../05-rest-api/lab-01-call-a-secured-rest-api-alt-de.md).

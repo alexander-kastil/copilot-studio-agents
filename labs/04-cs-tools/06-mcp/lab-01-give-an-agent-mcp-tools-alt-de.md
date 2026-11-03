@@ -1,6 +1,6 @@
 # Einem Agent MCP Tools auf dem gehosteten Server geben
 
-Dies ist die alternative Version von [Einem Agent MCP Tools geben](./lab-01-give-an-agent-mcp-tools-de.md), ausgeführt gegen den HR MCP Server, der für den Kurs bereits deployt ist. In [Eine gehostete REST API aus einem Agent aufrufen](../05-rest-api/lab-01-call-a-secured-rest-api-alt-de.md) haben Sie eine API mit OpenAPI beschrieben, in einen Custom Connector verpackt und eine Operation auf eine Action abgebildet. Dieses Lab erledigt dieselbe Aufgabe mit weit weniger Aufwand. Sie geben Copilot Studio die URL eines Model Context Protocol (MCP) Servers, und jedes Tool, das der Server bereitstellt, erscheint sofort im Agent.
+Dieses Lab läuft gegen den HR MCP Server, der für den Kurs bereits deployt ist. In [Eine gehostete REST API aus einem Agent aufrufen](../05-rest-api/lab-01-call-a-secured-rest-api-alt-de.md) haben Sie eine API mit OpenAPI beschrieben, in einen Custom Connector verpackt und eine Operation auf eine Action abgebildet. Dieses Lab erledigt dieselbe Aufgabe mit weit weniger Aufwand. Sie geben Copilot Studio die URL eines Model Context Protocol (MCP) Servers, und jedes Tool, das der Server bereitstellt, erscheint sofort im Agent.
 
 Genau dieser Unterschied ist die Lektion. Ein Connector ist ein Design-Time Contract: Sie importieren eine Specification, und die Tool-Liste bleibt eingefroren, bis Sie sie neu importieren. Ein MCP Server ist ein Runtime Contract: Der Agent fragt den Server, was er kann, deshalb steht ein serverseitig hinzugefügtes Tool dem Agent zur Verfügung, ohne dass Sie den Agent anfassen.
 
@@ -13,7 +13,6 @@ Sie nutzen den HR MCP Server aus diesem Repository, eine .NET 10 Anwendung auf B
 ## Was Sie lernen
 
 - Was ein MCP Server bereitstellt und wie sich Tool Discovery von der festen Operation-Liste eines Connectors unterscheidet
-- Wie Sie einen laufenden MCP Server mit MCP Inspector prüfen, bevor Sie ihn an einen Agent anbinden
 - Wie Sie einen MCP Server in Copilot Studio als Tool registrieren und sich mit ihm verbinden
 - Wie Connections für MCP Tools im Test Panel und noch einmal in Microsoft 365 Copilot funktionieren
 
@@ -25,7 +24,6 @@ flowchart LR
     B --> C["HR MCP Server<br/>lab-human-resource-mcp"]
     C --> D["EmployeeService"]
     D --> E["SQL database<br/>HR-Data"]
-    F["MCP Inspector"] --> C
 ```
 
 Die Tool-Liste erfährt der Agent nie von Ihnen. Er ruft `tools/list` auf dem Server auf und erhält den aktuellen Satz, mit Namen, Beschreibungen und Parameter Schemas, die aus den C# Methodensignaturen generiert werden.
@@ -46,7 +44,6 @@ Zu jeder mitarbeitenden Person gehören persönliche Angaben (Vorname, Nachname,
 ## Voraussetzungen
 
 - Ein Microsoft 365 Tenant und eine Power Platform Environment mit Copilot Studio (die Labs gehen von einer Environment namens `Copilot Dev Camp` aus)
-- [Node.js v22 oder höher](https://nodejs.org/en) für MCP Inspector
 
 Der Server ist für diesen Kurs deployt und akzeptiert Aufrufe ohne Authentication:
 
@@ -60,42 +57,7 @@ Den Quellcode finden Sie in diesem Repository unter [`src/hr-mcp-server`](../../
 
 ---
 
-## Übung 1: Den Server prüfen
-
-Bevor Sie einen Server an einen Agent übergeben, sehen Sie ihn sich selbst an. MCP Inspector ist genau dafür der Referenz-Client.
-
-### Schritt 1: MCP Inspector starten
-
-```powershell
-npx @modelcontextprotocol/inspector
-```
-
-Das Terminal gibt einen Proxy Port und eine lokale URL aus, und ein Browser-Tab öffnet sich automatisch.
-
-### Schritt 2: Verbinden
-
-Konfigurieren Sie im linken Panel:
-
-- **Transport type:** Streamable HTTP
-- **URL:** `https://lab-human-resource-mcp.azurewebsites.net`
-
-Wählen Sie **Connect**. Ein grüner Punkt und das Wort **Connected** bestätigen die Session.
-
-Streamable HTTP ist der Transport, den Copilot Studio verlangt. Der ältere stdio Transport funktioniert nur für Server, die auf demselben Rechner wie der Client laufen, deshalb kann ein Cloud Service ihn nicht nutzen.
-
-### Schritt 3: Ein Tool auflisten und ausführen
-
-Wählen Sie im Abschnitt **Tools** den Befehl **List Tools**. Alle sechs Tools erscheinen, jedes mit der Beschreibung und dem Parameter Schema aus `Tools/HRTools.cs`.
-
-Wählen Sie `list_employees` und dann **Run tool**. Eine grüne Meldung **Success** und eine JSON Collection der Mitarbeitenden kommen zurück.
-
-Wählen Sie jetzt `search_employees`, geben Sie einen `searchTerm` wie `Marie` ein und führen Sie das Tool aus. Der Abschnitt **History** speichert jeden Request und jede Response; so sehen Sie am schnellsten, was der Agent später sendet.
-
-> **Checkpoint:** sechs Tools gelistet, `list_employees` liefert Daten. Scheitert die Verbindung hier, scheitert sie auch in Copilot Studio, beheben Sie das Problem also, bevor Sie weitermachen.
-
----
-
-## Übung 2: Den Agent erstellen
+## Übung 1: Den Agent erstellen
 
 ### Schritt 1: Den Agent anlegen
 
@@ -148,7 +110,7 @@ Wählen Sie **Save**.
 
 ---
 
-## Übung 3: Den MCP Server an den Agent anbinden
+## Übung 2: Den MCP Server an den Agent anbinden
 
 ### Schritt 1: Den Server als Tool registrieren
 
@@ -165,7 +127,7 @@ Konfigurieren Sie den Server im Formular **Add a Model Context Protocol server**
 
 Wählen Sie **Create**.
 
-Die Authentication ist `None`, weil dieser Server für den Kurs offen ist. In Production würden Sie Entra ID davorschalten; das ist dasselbe Identity-Problem, das [Eine gesicherte REST API aus einem Agent aufrufen](../05-rest-api/lab-01-call-a-secured-rest-api-de.md) löst, nur für MCP statt für einen Connector.
+Die Authentication ist `None`, weil dieser Server für den Kurs offen ist. In Production würden Sie Entra ID davorschalten.
 
 ### Schritt 2: Verbinden
 
@@ -218,7 +180,7 @@ Remove employee john.smith@greylogistics.com
 
 ---
 
-## Übung 4: In Microsoft 365 Copilot veröffentlichen
+## Übung 3: In Microsoft 365 Copilot veröffentlichen
 
 Wählen Sie **Channels** und dann die Karte **Microsoft 365 and Microsoft Teams**. Wählen Sie **Add channel**, setzen Sie das Häkchen bei **Make agent available in Microsoft 365 Copilot**, wählen Sie **Save** und wählen Sie erneut **Publish**.
 
@@ -234,7 +196,7 @@ Sie werden erneut aufgefordert, den Connection Manager zu öffnen. Das ist so ge
 
 1. Der Agent antwortet zuerst mit `Let's get you connected first` und einem Link **Open connection manager**. Wählen Sie den Link.
 1. Auf **Manage your connections** zeigt Ihr MCP Server **Not Connected**. Wählen Sie **Connect**.
-1. Der Dialog **Create or pick a connection** bietet die Connection an, die Sie in Übung 3 erstellt haben. Behalten Sie sie und wählen Sie **Submit**.
+1. Der Dialog **Create or pick a connection** bietet die Connection an, die Sie in Übung 2 erstellt haben. Behalten Sie sie und wählen Sie **Submit**.
 1. Sobald die Zeile **Connected** zeigt, wählen Sie **Submit** auf der Seite.
 1. Kehren Sie zum Chat zurück und wählen Sie **Retry** in der Antwort des Agents.
 
@@ -242,13 +204,10 @@ Der Agent antwortet mit der passenden Mitarbeiterin, Marie Dubois.
 
 ![Der Chat in Microsoft 365 Copilot mit LAB-HR Employee Management: Die erste Antwort fordert auf, den Connection Manager zu öffnen, und bietet Retry an; nach dem Verbinden und Retry antwortet der Agent mit Marie Dubois, ihrer E-Mail und ihrer Rolle.](./_images/m365-copilot-marie-answer.png)
 
-Möchten Sie die Tools ändern, Breakpoints setzen oder offline arbeiten, führen Sie den Server lokal aus, wie in der optionalen Übung von [Einem Agent MCP Tools geben](./lab-01-give-an-agent-mcp-tools-de.md#optional-den-server-lokal-ausführen) beschrieben.
-
 ---
 
 ## Checkpoint
 
-- [ ] MCP Inspector listet sechs Tools, und `list_employees` liefert Daten
 - [ ] Das Tool `HR MCP Server` ist im Agent mit einer aktiven Connection registriert
 - [ ] Der Agent listet die Mitarbeitenden im Test Panel
 - [ ] Der Agent fügt mit einem einzigen Prompt in natürlicher Sprache eine mitarbeitende Person hinzu
@@ -259,7 +218,6 @@ Möchten Sie die Tools ändern, Breakpoints setzen oder offline arbeiten, führe
 
 | Symptom | Ursache |
 | --- | --- |
-| Inspector kann sich nicht verbinden | Falscher Transport; er muss Streamable HTTP sein, nicht SSE oder stdio |
 | Copilot Studio lehnt die URL ab | Ein abschließender Schrägstrich oder ein Pfad wurde angehängt; verwenden Sie die reine Server URL |
 | Der Agent antwortet, ruft aber nie ein Tool auf | Der Agent wurde nach dem Hinzufügen des Tools nicht veröffentlicht, oder die Connection fehlt |
 | `Open connection manager` erscheint immer wieder | Sie haben sich in einem anderen Kontext verbunden; jeder Channel braucht seine eigene Connection |
