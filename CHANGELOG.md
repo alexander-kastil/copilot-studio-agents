@@ -26,9 +26,11 @@
 - Lab run record `labs/copilot-studio-labs.json` for the module 03 to 05 Copilot Studio labs: exercises run per lab, the tests, and the Copilot Credits each showed, most still not shown
 - Update labs
 - Update demos
+- Update src
 
 ### Changed
 
+- Module 05 drops the Voice Agents topic: Test and Evaluate Standard Agents moves from `07-evaluations` to `06-evaluations` in demos and labs, the module 05 deck loses its voice slides (31 to 29 slides, six topics on the overview, dividers and module path diagram) and is redelivered to OneDrive, and the class readme, module readmes, cost and harness tables and migration table no longer link to voice
 - Module 02 deck slide 20 (Anatomy of a SKILL.md) drops the companion-files picture and splits 50:50, bullets left and the SKILL.md code right.
 - Exclude all pptx folders and the assets folder from git: `.gitignore` ignores `pptx/` and `/assets/`, and their files stay on disk
 - Module 02 Cowork labs name a cheaper model that does the job as a proposal note on top of each lab guide
