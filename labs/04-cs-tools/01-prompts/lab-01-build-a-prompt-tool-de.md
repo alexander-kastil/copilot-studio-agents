@@ -8,7 +8,7 @@ Für dieses Lab brauchen Sie:
 
 - Einen Computer mit Internetzugang.
 - Zugang zum bereitgestellten Microsoft Tenant (manche Unternehmen erlauben Usern nur die Verbindung zum eigenen Firmen-Tenant) oder Ihren eigenen Enterprise Tenant mit einer Copilot Studio User License (oder Testversion).
-- Einen Agent mit dem Topic **Check Ticket Status**, das das Ticket-JSON in der Variable `SNTicketInfo` speichert und mit einer Message endet, die eine Adaptive Card zeigt. Eine ServiceNow-Instanz brauchen Sie nicht, wenn das Topic `SNTicketInfo` aus Beispiel-JSON setzt.
+- Einen Agent, den Sie bearbeiten dürfen, zum Beispiel den HR Agent aus den früheren Labs. Aufgabe 1 fügt ihm das Topic **Check Ticket Status** mit Beispiel-Ticketdaten hinzu, eine ServiceNow-Instanz brauchen Sie also nicht.
 - Authentication auf "Authenticate with Microsoft" gesetzt (unter Settings, Security, Authentication).
 
 ## AI Builder Prompts
@@ -21,7 +21,76 @@ Prompts lassen sich in Flows einbinden, um intelligente Automation ohne manuelle
 
 Mit Custom Prompts weisen Maker das GPT Model an, sich auf eine bestimmte Weise zu verhalten oder eine bestimmte Aufgabe zu erledigen. Mit einem sorgfältig formulierten Prompt erzeugen Sie Antworten, die zu Ihren Business-Anforderungen passen. So wird das GPT Model zu einem flexiblen Tool für ganz unterschiedliche Aufgaben.
 
-### Aufgabe 1: Einen Prompt zum Zusammenfassen von Text erstellen
+### Aufgabe 1: Das Topic Check Ticket Status erstellen
+
+Das Topic ersetzt eine ServiceNow-Abfrage: Es speichert ein Beispiel-Ticket als JSON-Text in der Variable `SNTicketInfo` und zeigt das Ticket in einer Adaptive Card.
+
+1. Öffnen Sie Ihren Agent, gehen Sie zu **Topics** und wählen Sie **+ Add a topic** > **From blank**.
+2. Wählen Sie den Topic-Namen oben im Canvas und benennen Sie ihn um in:
+
+```text
+Check Ticket Status
+```
+
+3. Geben Sie im Feld **Describe what the topic does** des Triggers ein:
+
+```text
+Shows the status of the user's support ticket when they ask about their ticket.
+```
+
+4. Wählen Sie **Add node** (+) > **Variable management** > **Set a variable value**. Wählen Sie unter **Set variable** den Eintrag **Create a new variable** und benennen Sie die Variable unter **Variable properties** in `SNTicketInfo` um.
+5. Wählen Sie bei **To value** das Symbol **>**, öffnen Sie den Tab **Formula**, fügen Sie die folgende Formel ein und wählen Sie **Insert**. `JSON` macht aus dem Record Text, damit ist `SNTicketInfo` ein String, den ein Prompt Input annimmt.
+
+```powerfx
+JSON({
+  number: "INC0010042",
+  short_description: "VPN connection drops every hour",
+  state: "In Progress",
+  priority: "2 - High",
+  assigned_to: "Maria Keller",
+  opened_by: "Alex Berger",
+  opened_at: "2026-10-28 09:14:00",
+  comments: "We have reproduced the issue and are testing a new VPN client build."
+})
+```
+
+6. Wählen Sie **Add node** (+) > **Send a message**. Wählen Sie oben links in der Message **+ Add** und dann **Adaptive card**.
+7. Wählen Sie im Seitenpanel **Edit adaptive card**, fügen Sie das folgende JSON in den **Card payload editor** ein und wählen Sie **Save** und dann **Close**.
+
+```json
+{
+  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.5",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Ticket INC0010042",
+      "weight": "Bolder",
+      "size": "Medium"
+    },
+    {
+      "type": "TextBlock",
+      "text": "VPN connection drops every hour",
+      "wrap": true
+    },
+    {
+      "type": "FactSet",
+      "facts": [
+        { "title": "State", "value": "In Progress" },
+        { "title": "Priority", "value": "2 - High" },
+        { "title": "Assigned to", "value": "Maria Keller" },
+        { "title": "Opened by", "value": "Alex Berger" },
+        { "title": "Opened at", "value": "2026-10-28 09:14:00" }
+      ]
+    }
+  ]
+}
+```
+
+8. Speichern Sie das Topic.
+
+### Aufgabe 2: Einen Prompt zum Zusammenfassen von Text erstellen
 
 ![Im Topic Check Ticket Status übergibt ein Prompt Node SNTicketInfo an den Input Ticket Details des AI Builder Prompts Ticket customer communication (GPT4o) und speichert den Output als PersonalizedMessage, den ein Message Node als PersonalizedMessage.text anzeigt.](./_images/ticket-prompt-data-flow.svg)
 

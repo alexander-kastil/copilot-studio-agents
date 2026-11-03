@@ -8,7 +8,7 @@ For this lab you need:
 
 - A computer with internet access.
 - Access to the provided Microsoft tenant (some companies enforce users to only connect to their company tenant) or your own enterprise tenant with a Copilot Studio User License (or trial).
-- An agent with the topic **Check Ticket Status**, which stores the ticket JSON in the variable `SNTicketInfo` and ends with a message that shows an Adaptive Card. A ServiceNow instance is not needed when the topic sets `SNTicketInfo` from sample JSON.
+- An agent you can edit, for example the HR agent from the earlier labs. Task 1 adds the topic **Check Ticket Status** to it with sample ticket data, so no ServiceNow instance is needed.
 - Authentication set to "Authenticate with Microsoft" (in Settings, Security, Authentication).
 
 ## AI Builder prompts
@@ -21,7 +21,76 @@ Prompts can be integrated into flows to build intelligent hands-off automation. 
 
 Custom prompts give makers the freedom to instruct the GPT model to behave in a certain way or to perform a specific task. By carefully crafting a prompt, you can generate responses that suit your specific business needs. This transforms the GPT model into a flexible tool to accomplish various tasks.
 
-### Task 1: Create a prompt to summarize text
+### Task 1: Create the Check Ticket Status topic
+
+The topic stands in for a ServiceNow lookup: it stores a sample ticket as JSON text in the variable `SNTicketInfo` and shows the ticket in an Adaptive Card.
+
+1. Open your agent, go to **Topics**, and select **+ Add a topic** > **From blank**.
+2. Select the topic name at the top of the canvas and rename it to:
+
+```text
+Check Ticket Status
+```
+
+3. In the **Describe what the topic does** box of the trigger, enter:
+
+```text
+Shows the status of the user's support ticket when they ask about their ticket.
+```
+
+4. Select **Add node** (+) > **Variable management** > **Set a variable value**. Under **Set variable**, select **Create a new variable**, then rename it to `SNTicketInfo` in **Variable properties**.
+5. In **To value**, select **>**, open the **Formula** tab, paste the formula below, and select **Insert**. `JSON` turns the record into text, so `SNTicketInfo` is a string that a prompt input accepts.
+
+```powerfx
+JSON({
+  number: "INC0010042",
+  short_description: "VPN connection drops every hour",
+  state: "In Progress",
+  priority: "2 - High",
+  assigned_to: "Maria Keller",
+  opened_by: "Alex Berger",
+  opened_at: "2026-10-28 09:14:00",
+  comments: "We have reproduced the issue and are testing a new VPN client build."
+})
+```
+
+6. Select **Add node** (+) > **Send a message**. Select **+ Add** in the upper left corner of the message and select **Adaptive card**.
+7. In the side panel, select **Edit adaptive card**, paste the JSON below into the **Card payload editor**, then select **Save** and **Close**.
+
+```json
+{
+  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.5",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Ticket INC0010042",
+      "weight": "Bolder",
+      "size": "Medium"
+    },
+    {
+      "type": "TextBlock",
+      "text": "VPN connection drops every hour",
+      "wrap": true
+    },
+    {
+      "type": "FactSet",
+      "facts": [
+        { "title": "State", "value": "In Progress" },
+        { "title": "Priority", "value": "2 - High" },
+        { "title": "Assigned to", "value": "Maria Keller" },
+        { "title": "Opened by", "value": "Alex Berger" },
+        { "title": "Opened at", "value": "2026-10-28 09:14:00" }
+      ]
+    }
+  ]
+}
+```
+
+8. Save the topic.
+
+### Task 2: Create a prompt to summarize text
 
 ![In the Check Ticket Status topic, a Prompt node passes SNTicketInfo to the Ticket Details input of the AI Builder prompt Ticket customer communication (GPT4o) and saves the output as PersonalizedMessage, which a Message node shows as PersonalizedMessage.text.](./_images/ticket-prompt-data-flow.svg)
 
