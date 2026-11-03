@@ -93,6 +93,12 @@ When an API or a connector exists, use it: it is faster, cheaper per call, and e
 
 - [Read and Fill a Legacy Web App with Computer Use](./demo-computer-use.md): the presenter adds a computer use tool that looks up values in a sample portfolio web app, makes the client name an input, locks the tool to one site with access control and HTTPS, and adds a second tool that submits inventory items into a sample web form.
 
+## Hands-On Lab
+
+- [Run a Food Shop Back Office with Computer Use](../../../labs/04-cs-tools/07-computer-use/lab-01-run-the-food-shop-with-computer-use.md): the learner builds a shop assistant with three computer use tools that read the stock list, change the stock of a dish on its edit page, and place an order through the checkout of the class food shop.
+
+> **Note:** The class food shop is the Angular app in [src/food-shop](../../../src/food-shop) with the .NET catalog service in [src/food-catalog-service](../../../src/food-catalog-service), deployed in the resource group `rg-copilotstudio-labs` as the Static Web App `lab-food-shop` (`https://victorious-sky-029f1cb03.6.azurestaticapps.net`) and the Web App `lab-food-catalog-service`.
+
 ## Key Topics covered in this module
 
 [Automate web and desktop apps with computer use](https://learn.microsoft.com/microsoft-copilot-studio/computer-use)

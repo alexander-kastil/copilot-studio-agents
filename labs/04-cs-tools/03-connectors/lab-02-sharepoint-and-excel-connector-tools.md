@@ -34,7 +34,7 @@ flowchart LR
 - A Microsoft 365 tenant with Microsoft 365 Copilot and a Copilot Studio license, and permission to create agents.
 - The new agent experience turned on. Open [Copilot Studio](https://copilotstudio.microsoft.com/), and use the **New experience** toggle on the home page. You are in the new experience when the agent surface shows **Build**, **Preview**, **Evaluate**, and **Monitor** tabs instead of **Topics**, **Knowledge**, **Actions**, and **Settings**.
 - Permission to create a SharePoint site, or an existing site where you may add a document library.
-- A site named `Product Support` holding a document library named `Products`, filled with the five files from the [assets](./assets) folder. Build it with the scripts in [setup](./setup) or by hand, both covered below.
+- A site named `Product Support` holding a document library named `Products`, filled with the five files from the [assets](./lab-02-sharepoint-and-excel-connector-tools/assets) folder. Build it with the scripts in [setup](./lab-02-sharepoint-and-excel-connector-tools/setup) or by hand, both covered below.
 
 ![Classic Copilot Studio lists Topics, Knowledge, Actions and Settings down the left, while the new experience shows Build, Preview, Evaluate and Monitor tabs across the top, with Instructions, Knowledge, Tools and Skills in the Build tab's components panel.](../../../demos/06-cs-copilot-harness/pptx/images/01-02-telling-experiences-apart.svg)
 
@@ -42,7 +42,7 @@ flowchart LR
 
 ## Lab files
 
-Everything the agent reads is in [assets](./assets). The content is fictional (Northwind Devices, a hardware vendor) but internally consistent, so answers about one product line up across the documents and the stock table.
+Everything the agent reads is in [assets](./lab-02-sharepoint-and-excel-connector-tools/assets). The content is fictional (Northwind Devices, a hardware vendor) but internally consistent, so answers about one product line up across the documents and the stock table.
 
 | File | What it represents |
 |------|--------------------|
@@ -54,7 +54,7 @@ Everything the agent reads is in [assets](./assets). The content is fictional (N
 
 ### Provision the library automatically
 
-The [setup](./setup) folder creates the `Products` library and uploads all five files in one run, with PnP PowerShell, a PnP site template, or the CLI for Microsoft 365. Read [setup/readme.md](./setup/readme.md) for the options and the one-time app registration PnP needs.
+The [setup](./lab-02-sharepoint-and-excel-connector-tools/setup) folder creates the `Products` library and uploads all five files in one run, with PnP PowerShell, a PnP site template, or the CLI for Microsoft 365. Read [setup/readme.md](./lab-02-sharepoint-and-excel-connector-tools/setup/readme.md) for the options and the one-time app registration PnP needs.
 
 ```powershell
 cd setup
@@ -106,7 +106,7 @@ Expected: the empty `Products` library opens, and `Products` now appears in the 
 
 1. Open the `Products` library.
 2. Select **Upload** in the command bar, then **Files**.
-3. Navigate to the [assets](./assets) folder next to this lab, select all five files, and confirm.
+3. Navigate to the [assets](./lab-02-sharepoint-and-excel-connector-tools/assets) folder next to this lab, select all five files, and confirm.
 4. Wait until the upload column stops showing progress.
 
 Expected: the library lists exactly five items, four documents and one workbook, with no folders and nothing nested inside a subfolder.
@@ -422,7 +422,7 @@ You built a Product Support Assistant that reads live data out of SharePoint and
 - Choose deliberately between user credentials and maker-provided credentials for a connector.
 - Publish a connector-backed agent into Microsoft 365 Copilot.
 
-Next, extend the same agent with an action of your own in [Lab 4: REST Api Tools](../readme.md#lab-4-rest-api-tools), where the data source is a service you host rather than a prebuilt connector.
+Next, give an agent an action of your own in [Call a Secured REST API from an Agent](../05-rest-api/lab-01-call-a-secured-rest-api.md), where the data source is a service you host rather than a prebuilt connector.
 
 ## Links and resources
 

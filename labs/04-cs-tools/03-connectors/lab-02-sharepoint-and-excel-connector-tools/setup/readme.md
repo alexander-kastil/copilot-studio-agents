@@ -1,12 +1,12 @@
 # Provision the Product Support Site Content
 
-Creates the `Products` document library on a SharePoint site and uploads the five lab files from [../assets](../assets). Run this once per tenant before delivering [the lab](../readme.md), or hand it to students so they provision their own site.
+Creates the `Products` document library on a SharePoint site and uploads the five lab files from [../assets](../assets). Run this once per tenant before delivering [the lab](../../lab-02-sharepoint-and-excel-connector-tools.md), or hand it to students so they provision their own site.
 
 The default site is `https://integrationsonline.sharepoint.com/sites/copilot-demo`. Every script takes `-SiteUrl` to point somewhere else.
 
 ## What gets created
 
-![The Product Support site, the Products library, its five files and the Stock table, with the SharePoint tool inputs and the Excel tool inputs placed beside the level each one points at.](../_images/connector-inputs-to-sharepoint.svg)
+![The Product Support site, the Products library, its five files and the Stock table, with the SharePoint tool inputs and the Excel tool inputs placed beside the level each one points at.](../../_images/connector-inputs-to-sharepoint.svg)
 
 | Item | Value |
 |------|-------|

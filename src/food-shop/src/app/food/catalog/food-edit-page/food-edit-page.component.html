@@ -1,0 +1,7 @@
+@if (food$ | async; as food) {
+  <app-food-edit
+    [food]="food"
+    (saveFood)="save(food, $event)"
+    (cancelEdit)="back()"
+  ></app-food-edit>
+}

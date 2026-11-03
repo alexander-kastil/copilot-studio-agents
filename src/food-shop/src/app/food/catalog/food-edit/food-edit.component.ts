@@ -31,6 +31,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 export class FoodEditComponent implements OnChanges {
   @Input() food: CatalogItem = new CatalogItem();
   @Output() saveFood: EventEmitter<CatalogItem> = new EventEmitter();
+  @Output() cancelEdit: EventEmitter<void> = new EventEmitter();
   fb = inject(FormBuilder);
   form = this.fb.group({
     id: this.food.id,

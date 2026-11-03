@@ -6,11 +6,4 @@
     (foodDeleted)="deleteFood($event)"
     (foodAdding)="addFood($event)"
   ></app-food-list>
-
-  @if (selected) {
-    <app-food-edit
-      [food]="selected"
-      (saveFood)="foodSaved($event)"
-    ></app-food-edit>
-  }
 </section>

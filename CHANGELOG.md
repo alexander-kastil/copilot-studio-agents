@@ -5,6 +5,9 @@
 
 ### Added
 
+- Module 04 labs follow the demo numbering: `labs/04-cs-tools/lab-3` is now `03-connectors/lab-02-sharepoint-and-excel-connector-tools.md` with its `assets` and `setup` in a companion folder and its diagrams in `03-connectors/_images`; the module lab readme and the class schedule link to it, and its closing link points to the REST API lab
+- Prompts lab `labs/04-cs-tools/01-prompts/lab-01-build-a-prompt-tool.md` (and its German sibling) starts with a task that builds the **Check Ticket Status** topic on any agent, with sample ticket JSON in `SNTicketInfo` and an Adaptive Card, so the lab no longer needs an agent from outside the class or a ServiceNow instance
+- Computer use lab `labs/04-cs-tools/07-computer-use/lab-01-run-the-food-shop-with-computer-use.md` on the class food shop, with a note in the topic readme where the shop comes from; `src/food-shop` replaced by the Angular shop of the Claude Code masterclass (catalog edit on its own page) and `src/food-catalog-service` added from its .NET catalog service, deployed in `rg-copilotstudio-labs` as `lab-food-shop` and `lab-food-catalog-service`
 - Module 04 alternative labs on hosted services: `lab-01-call-a-secured-rest-api-alt.md` builds the HR-Services connector on the anonymous `lab-hr-service` Function App (with `lab-food-catalog-api` as the optional second API), and `lab-01-give-an-agent-mcp-tools-alt.md` registers the anonymous `lab-human-resource-mcp` server, all deployed in `rg-copilotstudio-labs`
 - How Agents Work: a "Work IQ: The Work Context Behind Copilot" section on what Work IQ is (its data, the context, tools, chat and workspaces parts, user-scoped access, cost) and a "What Work IQ is" slide with its diagram in the module 01 deck
 - Presenter guides for every demo in modules 03 to 05, each beside its demo, naming the agent to use
@@ -29,6 +32,7 @@
 - Update demos
 - Update src
 - Release build
+- Clean and verify new food shop: Save already sent the full item, so pictureUrl and description survive an edit
 
 ### Changed
 
