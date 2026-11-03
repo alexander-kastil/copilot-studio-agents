@@ -5,6 +5,7 @@
 
 ### Added
 
+- German translations of every lab in modules 02, 04 and 06 (21 new `-de.md` guides, module 04's hosted alternatives included); the lab readmes of modules 02 to 06 each have one lab table with a Deutsch column linking the German guide
 - Dataverse lab `labs/04-cs-tools/02-dataverse/lab-01-answer-and-record-job-openings-in-dataverse.md` (20 minutes): the HR agent answers from a Job Opening table as knowledge and records a new row through a Dataverse tool, listed in the module lab readme and the topic readme
 - Connectors lab-02 builds on the HR agent as a Standard agent: the agent creation, the new-experience steps, the repeated Excel tool setup and the publish exercise are gone, testing uses the activity map, and the lab is retitled "Give the HR Agent Live SharePoint and Excel Data with Connector Tools"
 - Agent flows lab `labs/04-cs-tools/04-agent-flows/lab-01-calculate-a-start-date-with-an-agent-flow.md` (15 minutes): the HR agent calls an agent flow that calculates a new hire's earliest start date, listed in the module lab readme and the topic readme
@@ -36,6 +37,8 @@
 - Update src
 - Release build
 - Clean and verify new food shop: Save already sent the full item, so pictureUrl and description survive an edit
+- Translate module 02 Cowork labs: Progress: 4/5 · check
+- Translate module 06 labs 05 to 08: Progress: 5/6 · check
 
 ### Changed
 
@@ -57,3 +60,5 @@
 - Module 01 Agent Builder lab re-run: all screenshots retaken at 1280 width, two new ones for the SharePoint source and the Share menu, and the guide steps and image texts matched to the current UI
 - Publishing, secured REST API, autonomous agent, multi-agent and evaluations lab guides corrected from the live runs; the publishing lab builds its Copilot Chat agent as a Standard agent, since the Microsoft 365 Copilot agent entry is gone
 - MCP lab Exercise 4 (Microsoft 365 Copilot replied blank) rewritten to match a live rerun, where Microsoft 365 Copilot asked to connect first and answered after Connect and Retry; the blank reply did not come back, its cause is unknown
+- Translate three module 04 labs to German: I wrote the three German lab translations and the translation check ends with files=10 errors=0
+- Translate module 06 labs 01 to 04: Of the shared section names, only "Verify" needed fixing in my four files

@@ -148,7 +148,7 @@ Erwartet: Nachdem die Berechtigung für die Liste erteilt ist, sieht die Person 
 | Änderungen verschwinden, wenn die App neu lädt | Die App nutzt noch Beispieldaten | Öffnen Sie die Ansicht **Data**, prüfen Sie, dass die SharePoint-Liste die Quelle ist, und verbinden Sie sie bei Bedarf neu |
 | Die erwartete Auswahl unter **Share** fehlt | Eine Richtlinie der Environment oder des Administrators blendet sie aus | Nutzen Sie die angezeigten Methoden oder fragen Sie Ihren Trainer, welche Methoden zum Teilen die Environment erlaubt |
 
-## Überprüfen
+## Prüfen
 
 Sie haben das Ziel des Labs erreicht, wenn alle folgenden Punkte zutreffen:
 

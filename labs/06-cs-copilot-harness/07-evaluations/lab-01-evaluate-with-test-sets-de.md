@@ -291,7 +291,7 @@ Erwartet: Der zweite Run wird als eigenes Ergebnis neben dem ersten gespeichert,
 | Der Score hat sich um zwei Punkte bewegt, und kein Case hat sein Urteil geändert | Normale Schwankung eines Graders auf Basis eines Language Models | Ignorieren Sie das; handeln Sie bei Cases, die von Pass zu Fail kippen, nicht bei kleinen Bewegungen des Gesamt-Scores |
 | Der Tab **Monitor** ist abgeblendet und lässt sich nicht öffnen | Der Agent hat noch keine auswertbaren Runs | Veröffentlichen Sie den Agent, erzeugen Sie echte Sessions und kehren Sie dann zu **Monitor** zurück |
 
-## Überprüfen
+## Prüfen
 
 Sie haben das Ziel des Labs erreicht, wenn alle folgenden Punkte zutreffen:
 

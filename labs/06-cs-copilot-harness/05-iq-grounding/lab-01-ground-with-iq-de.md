@@ -177,7 +177,7 @@ Erwartet: Der Trace zeigt einen Node für den Fabric IQ Aufruf, und die Antwort 
 | Ein Mail oder Teams Tool erscheint unter Tools | Das Legacy Tool wurde in Schritt 4 hinzugefügt | Entfernen Sie dieses Tool und fügen Sie Work IQ (Preview) über den Tab MCP hinzu |
 | Der Picker für Foundry IQ oder Fabric IQ ist leer | Ihr Account hat keinen Zugriff auf die Knowledge Base, den Workspace oder das Semantic Model | Bitten Sie den Owner der Resource, Ihnen Zugriff zu geben, und öffnen Sie den Picker dann erneut |
 
-## Überprüfen
+## Prüfen
 
 Sie haben das Ziel des Labs erreicht, wenn alle folgenden Punkte zutreffen:
 

@@ -171,7 +171,7 @@ Erwartet: Die erste Antwort in jeder Unterhaltung begrüßt Sie mit Vornamen; hi
 | Der Agent registriert, ohne nach einer Bestätigung zu fragen | Der Bestätigungssatz fehlt in den Instructions | Fügen Sie den Satz aus Schritt 8 hinzu und veröffentlichen Sie erneut |
 | **Register Candidate** scheitert beim E-Mail-Schritt | Die Outlook Connection fehlt oder gehört zu einem anderen Account | Öffnen Sie den Workflow, korrigieren Sie die Connection bei **Send an email (V2)** und veröffentlichen Sie erneut |
 
-## Überprüfen
+## Prüfen
 
 - `hr-agent-migration.txt` hat für jede Zeile ein Upgrade-Ergebnis und einen Endzustand.
 - Der Dialog **Hooks** listet **Greet the signed-in user** auf **Start (pre-loop)**.
