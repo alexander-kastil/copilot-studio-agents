@@ -134,5 +134,3 @@ You connected a Microsoft Foundry agent to a Standard Copilot Studio agent and k
 - Connect a Foundry agent on the **Agents** page with a project endpoint and an agent ID
 - Prove in the activity map which questions reach the specialist and which don't
 - Explain how version pinning in Foundry controls what the help desk receives
-
-The optional voice topic takes the help desk to the phone: [Voice Agents: IVR & Post-Call](../06-voice/readme.md).

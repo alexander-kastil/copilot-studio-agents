@@ -206,7 +206,7 @@ The **Agent status** on the **Overview** page carries a warning, opened with **R
 
 ## Hands-On Lab
 
-- [Evaluate the HR Agent with a Test Set](../../../labs/05-cs-advanced/07-evaluations/lab-01-evaluate-the-hr-agent.md): import ten HR questions, add Meaning match and a Custom scope grader, run a baseline under your own profile, diagnose the failing cases in the activity view, change one thing, and prove it with a second run.
+- [Evaluate the HR Agent with a Test Set](../../../labs/05-cs-advanced/06-evaluations/lab-01-evaluate-the-hr-agent.md): import ten HR questions, add Meaning match and a Custom scope grader, run a baseline under your own profile, diagnose the failing cases in the activity view, change one thing, and prove it with a second run.
 
 ## Key Topics covered in this module
 

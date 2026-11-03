@@ -6,7 +6,7 @@ You start with the essentials: what agents and Copilots are, how agents work wit
 
 Copilot Cowork, the agentic experience for everyday knowledge workers, follows. With built-in skills, custom SKILL.md skills, scheduled and event-driven prompts, and plugins, anyone on your team automates recurring workflows without writing code, while human-in-the-loop approvals keep every step under control.
 
-Copilot Studio Basics teaches you to create and configure Standard agents, ground them with knowledge, and build conversations with topics, entities, variables, Power Fx, and Adaptive Cards before you publish to Teams and Copilot. You then give agents tools: prompts with Code Interpreter, Dataverse, connectors, Agent Flows, REST APIs, MCP servers, and Computer Use for apps without an API. Advanced topics add autonomous agents with event triggers, deep reasoning, multi-agent routing, and Microsoft Foundry agents, with voice agents as an option.
+Copilot Studio Basics teaches you to create and configure Standard agents, ground them with knowledge, and build conversations with topics, entities, variables, Power Fx, and Adaptive Cards before you publish to Teams and Copilot. You then give agents tools: prompts with Code Interpreter, Dataverse, connectors, Agent Flows, REST APIs, MCP servers, and Computer Use for apps without an API. Advanced topics add autonomous agents with event triggers, deep reasoning, multi-agent routing, and Microsoft Foundry agents.
 
 Microsoft Copilot harness agents come next, built side by side with the Standard agents of the earlier modules: the unified Build surface and its orchestrator, Agent Skills in the open SKILL.md format, tools, MCP, and the Workflows designer, grounding with Work IQ, Foundry IQ, and Fabric IQ, building apps, and testing agents with evaluations. 
 
@@ -77,7 +77,6 @@ An optional forward look hands whole processes to AI teammates: Autopilot, and a
 - Generative Orchestration & Multi-Agent Routing
 - Microsoft Foundry Agents: Core Concepts
 - Foundry Agents in Copilot Studio
-- Voice Agents: IVR & Post-Call (optional)
 - Test and Evaluate Standard Agents (optional)
 
 ### Module 6: Microsoft Copilot Harness Agents in Copilot Studio

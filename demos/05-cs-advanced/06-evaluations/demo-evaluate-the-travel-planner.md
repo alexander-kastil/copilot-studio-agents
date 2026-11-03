@@ -126,4 +126,4 @@ You put CS-Business Travel Planner on a routing test set and found the one answe
 - Tell an agent problem from a test-case problem before you change anything
 - Prove a fix with repeated runs instead of a single score
 
-Next, the lab [Evaluate the HR Agent with a Test Set](../../../labs/05-cs-advanced/07-evaluations/lab-01-evaluate-the-hr-agent.md) applies the same loop to the HR agent from the Basics labs.
+Next, the lab [Evaluate the HR Agent with a Test Set](../../../labs/05-cs-advanced/06-evaluations/lab-01-evaluate-the-hr-agent.md) applies the same loop to the HR agent from the Basics labs.

@@ -178,7 +178,7 @@ Expected: three rows with a percentage per method, newest first. In the live run
 
 The middle row is the one a release gate stops: the comparing methods dropped while **Answer quality** held or rose.
 
-![When the instruction line was replaced, Answer quality went up from 80% to 90% while Meaning match and Stays in scope dropped, so the agent got worse as its score rose.](../../../demos/05-cs-advanced/07-evaluations/_images/hr-regression-three-runs.svg)
+![When the instruction line was replaced, Answer quality went up from 80% to 90% while Meaning match and Stays in scope dropped, so the agent got worse as its score rose.](../../../demos/05-cs-advanced/06-evaluations/_images/hr-regression-three-runs.svg)
 
 ## Exercise 11: Export the test set for the next environment
 
@@ -208,4 +208,4 @@ You put the HR Agent on a regression test set and watched it stop a well-meant c
 - Prove a change and its revert with runs of the identical set
 - Export a test set so it travels with the agent
 
-The topic readme [Test and Evaluate Standard Agents](../../../demos/05-cs-advanced/07-evaluations/readme.md) explains each test method and where Learn's names differ from the product's.
+The topic readme [Test and Evaluate Standard Agents](../../../demos/05-cs-advanced/06-evaluations/readme.md) explains each test method and where Learn's names differ from the product's.

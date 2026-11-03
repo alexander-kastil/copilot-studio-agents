@@ -47,8 +47,8 @@ The table maps every Standard capability modules 03 to 05 teach onto its place o
 | Deep reasoning ([05/02](../../05-cs-advanced/02-deep-reasoning/readme.md)) | A reasoning model chosen under **Model** on the **Build** tab; no `reason` keyword | Rebuilt |
 | Child agents ([05/03](../../05-cs-advanced/03-multi-agent/readme.md)) | Skills, or a connected agent | Not migrated |
 | Connected Copilot Studio, Foundry and A2A agents ([05/03](../../05-cs-advanced/03-multi-agent/readme.md), [05/05](../../05-cs-advanced/05-connect-foundry-agents/readme.md)) | **Connected agents** | Added again |
-| Voice and phone menus ([05/06](../../05-cs-advanced/06-voice/readme.md)) | Not on the GitHub Copilot harness; voice agents run on the Customer Conversation harness | Stays Standard |
-| Evaluations ([05/07](../../05-cs-advanced/07-evaluations/readme.md)) | The **Evaluate** tab, as in [topic 7](../07-evaluations/readme.md) | Rebuilt |
+| Voice and phone menus | Not on the GitHub Copilot harness; voice agents run on the Customer Conversation harness | Stays Standard |
+| Evaluations ([05/06](../../05-cs-advanced/06-evaluations/readme.md)) | The **Evaluate** tab, as in [topic 7](../07-evaluations/readme.md) | Rebuilt |
 
 Two rows decide most migrations. Every topic you built is a question about purpose: if it carries know-how, it becomes a skill; if it runs fixed steps, it becomes a workflow; if it must happen on every turn or every tool call, it becomes a hook. The rows marked "Stays Standard" are the reason some agents shouldn't move yet, and the reason a team often runs both kinds side by side.
 

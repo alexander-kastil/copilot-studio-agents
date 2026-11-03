@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
-  <title id="t">The seven topics of module 5 in four groups</title>
-  <desc id="d">Topic 1, Autonomous Agents and Event Triggers, wakes an agent on an event: CS-Returns Agent answers every new email in a shared mailbox. Topic 2, Deep Reasoning Models, reasons through a hard problem: the help desk orders a ticket backlog with the reason keyword on one step. Topics 3 to 5 route work to other agents: CS-Business Travel Planner routes to connected agents and a child agent, a device specialist is built as a prompt agent in Microsoft Foundry, and CS-Compliance Agent hands a confirmed check to CS-Social Profiler. Topics 6 and 7 are optional: a keypad and speech menu with a post-call action, and a routing test set for CS-Business Travel Planner.</desc>
+  <title id="t">The six topics of module 5 in four groups</title>
+  <desc id="d">Topic 1, Autonomous Agents and Event Triggers, wakes an agent on an event: CS-Returns Agent answers every new email in a shared mailbox. Topic 2, Deep Reasoning Models, reasons through a hard problem: the help desk orders a ticket backlog with the reason keyword on one step. Topics 3 to 5 route work to other agents: CS-Business Travel Planner routes to connected agents and a child agent, a device specialist is built as a prompt agent in Microsoft Foundry, and CS-Compliance Agent hands a confirmed check to CS-Social Profiler. Topic 6 is optional: a routing test set for CS-Business Travel Planner.</desc>
   <style>
     svg { font-size: 28px; }
     .group { font-weight: 700; fill: #24292f; }
@@ -10,6 +10,7 @@
     .demo { fill: #57606a; }
   </style>
   <rect width="1920" height="1080" fill="#ffffff"/>
+  <g transform="translate(0,66)">
 
   <text x="60" y="100" class="group" font-size="32">Wakes on an event</text>
   <text x="60" y="140" class="groupsub" font-size="26">topic 1</text>
@@ -25,9 +26,9 @@
   <text x="60" y="594" class="groupsub" font-size="26">topics 3 to 5</text>
   <line x1="432" y1="370" x2="432" y2="734" stroke="#8c959f" stroke-width="4" stroke-linecap="round"/>
 
-  <text x="60" y="896" class="group" font-size="32">Optional</text>
-  <text x="60" y="934" class="groupsub" font-size="26">topics 6 and 7</text>
-  <line x1="432" y1="790" x2="432" y2="1022" stroke="#8c959f" stroke-width="4" stroke-linecap="round"/>
+  <text x="60" y="832" class="group" font-size="32">Optional</text>
+  <text x="60" y="870" class="groupsub" font-size="26">topic 6</text>
+  <line x1="432" y1="790" x2="432" y2="890" stroke="#8c959f" stroke-width="4" stroke-linecap="round"/>
 
   <rect x="460" y="50" width="1400" height="116" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
   <circle cx="530" cy="108" r="34" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
@@ -59,15 +60,11 @@
   <text x="596" y="676" class="ttl" font-size="34">Foundry Agents in Copilot Studio</text>
   <text x="596" y="718" class="demo">CS-Compliance Agent hands a confirmed check to CS-Social Profiler</text>
 
+
   <rect x="460" y="782" width="1400" height="116" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2" stroke-dasharray="10 8"/>
   <circle cx="530" cy="840" r="34" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
   <text x="530" y="850" class="num" font-size="30" text-anchor="middle">6</text>
-  <text x="596" y="832" class="ttl" font-size="34">Voice Agents: IVR &amp; Post-Call</text>
-  <text x="596" y="874" class="demo">A keypad and speech menu with a post-call action</text>
-
-  <rect x="460" y="914" width="1400" height="116" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2" stroke-dasharray="10 8"/>
-  <circle cx="530" cy="972" r="34" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
-  <text x="530" y="982" class="num" font-size="30" text-anchor="middle">7</text>
-  <text x="596" y="964" class="ttl" font-size="34">Test and Evaluate Standard Agents</text>
-  <text x="596" y="1006" class="demo">A routing test set for CS-Business Travel Planner</text>
+  <text x="596" y="832" class="ttl" font-size="34">Test and Evaluate Standard Agents</text>
+  <text x="596" y="874" class="demo">A routing test set for CS-Business Travel Planner</text>
+  </g>
 </svg>

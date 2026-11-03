@@ -22,8 +22,7 @@ Few of the licenses this class needs are per-user seats. Every learner needs a M
 | An Azure subscription and resource group with Owner or Contributor rights | The tenant admin | Pays every pay-as-you-go route; hosts the sample REST API and MCP server in 4 | Azure usage; the sample services ran on the free App Service F1 tier |
 | A Microsoft Foundry project | The instructor | 5 ([Foundry agents](../../05-cs-advanced/04-foundry-agents/readme.md)); Foundry IQ in 6 is optional | Azure usage for the model deployment |
 | A Microsoft Fabric semantic model | The instructor | 6, the optional Fabric IQ step | Access to a Fabric workspace and its semantic model |
-| Azure Communication Services | The tenant | 5 (a phone number for voice) and 7 (a WhatsApp number), both optional | Azure usage |
-| Dynamics 365 Contact Center | The tenant | 5, the optional [Voice Agents](../../05-cs-advanced/06-voice/readme.md) topic | Contact Center licensing, plus 10 to 75 credits per voice minute |
+| Azure Communication Services | The tenant | 7 (a WhatsApp number), optional | Azure usage |
 | Agent 365, one maker license and a Microsoft 365 Frontier for AI Teammates license per agent | One maker, plus each agent | 8 (agent accounts) | Agent 365 trial free for 30 days, then about $15 to $18 per user per month; Frontier for AI Teammates is free |
 | Autopilot preview access: Frontier, an Intune policy and a GitHub Copilot Business or Enterprise seat | Invited tenants | 8 (Autopilot) | Private preview by invitation |
 

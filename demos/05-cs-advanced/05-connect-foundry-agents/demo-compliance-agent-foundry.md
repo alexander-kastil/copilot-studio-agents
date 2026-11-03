@@ -219,5 +219,3 @@ You rebuilt the Compliance Agent as CS-Compliance Agent and let a Foundry agent 
 - Choose an external model from Anthropic as an agent's primary model
 - Connect a Microsoft Foundry agent on the **Agents** page with a project endpoint and an agent ID
 - Prove in the activity map that the Foundry call runs only after confirmation
-
-The optional voice topic takes agents to the phone: [Voice Agents: IVR & Post-Call](../06-voice/readme.md).

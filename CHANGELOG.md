@@ -5,6 +5,7 @@
 
 ### Added
 
+- Module 04 alternative labs on hosted services: `lab-01-call-a-secured-rest-api-alt.md` builds the HR-Services connector on the anonymous `lab-hr-service` Function App (with `lab-food-catalog-api` as the optional second API), and `lab-01-give-an-agent-mcp-tools-alt.md` registers the anonymous `lab-human-resource-mcp` server, all deployed in `rg-copilotstudio-labs`
 - How Agents Work: a "Work IQ: The Work Context Behind Copilot" section on what Work IQ is (its data, the context, tools, chat and workspaces parts, user-scoped access, cost) and a "What Work IQ is" slide with its diagram in the module 01 deck
 - Presenter guides for every demo in modules 03 to 05, each beside its demo, naming the agent to use
 - German translations of the 13 lab guides in modules 03 to 05 as `lab-01-*-de.md` beside each English guide; UI labels and typed text stay English, links between labs point to the German siblings

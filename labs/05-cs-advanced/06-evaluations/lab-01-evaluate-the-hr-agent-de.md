@@ -178,7 +178,7 @@ Erwartetes Ergebnis: drei Zeilen mit einem Prozentwert pro Method, die neueste z
 
 Die mittlere Zeile ist die, die ein Release Gate stoppt: Die vergleichenden Methods sind gefallen, während **Answer quality** gehalten hat oder gestiegen ist.
 
-![Als die Instruction-Zeile ersetzt wurde, stieg Answer quality von 80% auf 90%, während Meaning match und Stays in scope fielen: Der Agent wurde schlechter, während sein Score stieg.](../../../demos/05-cs-advanced/07-evaluations/_images/hr-regression-three-runs.svg)
+![Als die Instruction-Zeile ersetzt wurde, stieg Answer quality von 80% auf 90%, während Meaning match und Stays in scope fielen: Der Agent wurde schlechter, während sein Score stieg.](../../../demos/05-cs-advanced/06-evaluations/_images/hr-regression-three-runs.svg)
 
 ## Übung 11: Das Test Set für die nächste Environment exportieren
 
@@ -208,4 +208,4 @@ Sie haben den HR Agent mit einem Regression Test Set abgesichert und gesehen, wi
 - Eine Änderung und ihren Revert mit Runs desselben Sets belegen
 - Ein Test Set exportieren, sodass es mit dem Agent mitreist
 
-Das Readme zum Thema, [Test and Evaluate Standard Agents](../../../demos/05-cs-advanced/07-evaluations/readme.md), erklärt jede Test Method und wo die Namen auf Learn von denen im Produkt abweichen.
+Das Readme zum Thema, [Test and Evaluate Standard Agents](../../../demos/05-cs-advanced/06-evaluations/readme.md), erklärt jede Test Method und wo die Namen auf Learn von denen im Produkt abweichen.
