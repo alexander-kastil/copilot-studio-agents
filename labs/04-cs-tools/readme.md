@@ -5,19 +5,23 @@ These labs give the Standard HR agent tools that act: a prompt, connector and fl
 | Title | Minutes |
 |-------|---------|
 | [Invoke Prompts from a Copilot Studio Agent](./01-prompts/lab-01-build-a-prompt-tool.md) | 10 |
+| [Answer and Record Job Openings in Dataverse](./02-dataverse/lab-01-answer-and-record-job-openings-in-dataverse.md) | 20 |
 | [Define Tools with Power Platform Connectors](./03-connectors/lab-01-connector-and-flow-tools.md) | 15 |
-| [Give a Product Support Agent Live SharePoint and Excel Data with Connector Tools](./03-connectors/lab-02-sharepoint-and-excel-connector-tools.md) | 25 |
+| [Give the HR Agent Live SharePoint and Excel Data with Connector Tools](./03-connectors/lab-02-sharepoint-and-excel-connector-tools.md) | 25 |
+| [Calculate a Start Date with an Agent Flow](./04-agent-flows/lab-01-calculate-a-start-date-with-an-agent-flow.md) | 15 |
 | [Call a Secured REST API from an Agent](./05-rest-api/lab-01-call-a-secured-rest-api.md) | 50 |
 | [Give an Agent MCP Tools](./06-mcp/lab-01-give-an-agent-mcp-tools.md) | 40 |
 | [Run a Food Shop Back Office with Computer Use](./07-computer-use/lab-01-run-the-food-shop-with-computer-use.md) | 65 |
-| **Total** | **205** |
+| **Total** | **240** |
 
 ![A Copilot Studio agent reaching the tool types of this module, each with what it reaches.](../../demos/04-cs-tools/pptx/images/00-01-tool-types.svg)
 
 | Lab | Focus |
 |-----|-------|
 | [Invoke Prompts from a Copilot Studio Agent](./01-prompts/lab-01-build-a-prompt-tool.md) | A prompt built in prompt builder with typed inputs, called from the agent as a tool |
+| [Answer and Record Job Openings in Dataverse](./02-dataverse/lab-01-answer-and-record-job-openings-in-dataverse.md) | A Dataverse table as knowledge for the HR agent, and a Dataverse connector tool that records a new row after the user confirms |
 | [Define Tools with Power Platform Connectors](./03-connectors/lab-01-connector-and-flow-tools.md) | Excel Online connector tools and a Power Automate flow tool for the HR agent, called from a topic and by generative orchestration |
+| [Calculate a Start Date with an Agent Flow](./04-agent-flows/lab-01-calculate-a-start-date-with-an-agent-flow.md) | An agent flow that calculates a new hire's earliest start date with a built-in date action, called by the HR agent as a tool |
 | [Call a Secured REST API from an Agent](./05-rest-api/lab-01-call-a-secured-rest-api.md) | An HR API behind a custom connector secured with Microsoft Entra ID, called on behalf of the signed-in user; the API source is in [05-rest-api/hr-service](./05-rest-api/hr-service) |
 | [Give an Agent MCP Tools](./06-mcp/lab-01-give-an-agent-mcp-tools.md) | The HR MCP server registered as a tool, with every server tool discovered at runtime; its source is in [src/hr-mcp-server](../../src/hr-mcp-server) |
 | [Run a Food Shop Back Office with Computer Use](./07-computer-use/lab-01-run-the-food-shop-with-computer-use.md) | Three computer use tools that read stock, change a dish on its edit page and check out an order in the class food shop; its source is in [src/food-shop](../../src/food-shop) and [src/food-catalog-service](../../src/food-catalog-service) |

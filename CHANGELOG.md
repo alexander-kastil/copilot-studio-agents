@@ -5,6 +5,9 @@
 
 ### Added
 
+- Dataverse lab `labs/04-cs-tools/02-dataverse/lab-01-answer-and-record-job-openings-in-dataverse.md` (20 minutes): the HR agent answers from a Job Opening table as knowledge and records a new row through a Dataverse tool, listed in the module lab readme and the topic readme
+- Connectors lab-02 builds on the HR agent as a Standard agent: the agent creation, the new-experience steps, the repeated Excel tool setup and the publish exercise are gone, testing uses the activity map, and the lab is retitled "Give the HR Agent Live SharePoint and Excel Data with Connector Tools"
+- Agent flows lab `labs/04-cs-tools/04-agent-flows/lab-01-calculate-a-start-date-with-an-agent-flow.md` (15 minutes): the HR agent calls an agent flow that calculates a new hire's earliest start date, listed in the module lab readme and the topic readme
 - Module 04 labs follow the demo numbering: `labs/04-cs-tools/lab-3` is now `03-connectors/lab-02-sharepoint-and-excel-connector-tools.md` with its `assets` and `setup` in a companion folder and its diagrams in `03-connectors/_images`; the module lab readme and the class schedule link to it, and its closing link points to the REST API lab
 - Prompts lab `labs/04-cs-tools/01-prompts/lab-01-build-a-prompt-tool.md` (and its German sibling) starts with a task that builds the **Check Ticket Status** topic on any agent, with sample ticket JSON in `SNTicketInfo` and an Adaptive Card, so the lab no longer needs an agent from outside the class or a ServiceNow instance
 - Computer use lab `labs/04-cs-tools/07-computer-use/lab-01-run-the-food-shop-with-computer-use.md` on the class food shop, with a note in the topic readme where the shop comes from; `src/food-shop` replaced by the Angular shop of the Claude Code masterclass (catalog edit on its own page) and `src/food-catalog-service` added from its .NET catalog service, deployed in `rg-copilotstudio-labs` as `lab-food-shop` and `lab-food-catalog-service`

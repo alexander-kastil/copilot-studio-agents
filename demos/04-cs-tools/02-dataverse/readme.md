@@ -79,6 +79,10 @@ Keep tables focused. A knowledge source takes up to 15 tables, but an agent answ
 - [Save Expense Claims to Dataverse](./demo-expense-claims-in-dataverse.md): the presenter creates the CS-Travel Expense Claims table and an agent flow that adds a row, calls the flow from the claim topic of CS-Travel Expense Refund, and opens the saved row in Power Apps.
 - [Answer and Record Supplier Offers from Dataverse](./demo-dataverse-knowledge-and-records.md) (optional): the presenter adds the two offer tables as knowledge, teaches the agent their vocabulary with synonyms and a glossary term, asks comparison questions, and then records a new offer through a Dataverse connector tool that asks for confirmation.
 
+## Hands-On Lab
+
+- [Answer and Record Job Openings in Dataverse](../../../labs/04-cs-tools/02-dataverse/lab-01-answer-and-record-job-openings-in-dataverse.md): learners create a small Job Opening table, add it to the HR agent as knowledge, and record a new opening through a Dataverse tool that asks for confirmation.
+
 ## Key Topics covered in this module
 
 [Add Dataverse tables as a knowledge source](https://learn.microsoft.com/microsoft-copilot-studio/knowledge-add-dataverse)

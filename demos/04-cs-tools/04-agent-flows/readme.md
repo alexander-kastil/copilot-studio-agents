@@ -135,6 +135,10 @@ When the prepaid capacity is used up, new agent flow runs are blocked while runs
 - [Rebuild the Health Advisor with Two Agent Flows](./demo-health-advisor-flows.md): the presenter rebuilds CS-Health Advisor with one agent flow that classifies symptoms through a prompt, a topic that branches on its outcome, and a second flow that waits for a reviewer before it posts to Teams.
 - [Build an Agent Flow and Call It from an Agent](./demo-build-an-agent-flow.md) (optional): the presenter builds a ticket-logging flow with a prompt step and a confirmation email, adds it to the Grey Logistics IT Help Desk agent as a tool, and traces the call in the activity map.
 
+## Hands-On Lab
+
+- [Calculate a Start Date with an Agent Flow](../../../labs/04-cs-tools/04-agent-flows/lab-01-calculate-a-start-date-with-an-agent-flow.md): learners build an agent flow that calculates a new hire's earliest start date and add it to the HR agent as a tool.
+
 ## Key Topics covered in this module
 
 [Agent flows overview](https://learn.microsoft.com/microsoft-copilot-studio/flows-overview)
