@@ -2,18 +2,12 @@
 
 Hands-on labs for Copilot Cowork: tenant setup, the execution model, custom Agent Skills, and packaged plugins with MCP connectors. Work through them in order, each lab builds on the previous one.
 
-| Title | Minutes |
-|-------|---------|
-| [Cowork Setup and Extensibility](./lab-01-cowork-setup.md) | 30 |
-| [Build Your First Cowork Skill](./lab-02-cowork-skills.md) | 35 |
-| [Build Your First Cowork Plugin](./lab-03-cowork-plugins.md) | 75 |
-| **Total** | **140** |
-
-| # | Lab | What you build |
-|---|-----|----------------|
-| 1 | [Cowork Setup and Extensibility](./lab-01-cowork-setup.md) | A Cowork-ready tenant with a spending policy that selects Cowork, a first delegated task, and a map of the skills vs plugins extensibility surfaces |
-| 2 | [Build Your First Cowork Skill](./lab-02-cowork-skills.md) | A custom Agent Skill, created once with the guided flow and once by hand-authoring `SKILL.md` |
-| 3 | [Build Your First Cowork Plugin](./lab-03-cowork-plugins.md) | A plugin package with three skills and a Microsoft Learn MCP connector, deployed from the admin center |
+| # | Lab | Deutsch | What you build | Minutes |
+|---|-----|---------|----------------|---------|
+| 1 | [Cowork Setup and Extensibility](./lab-01-cowork-setup.md) | [Copilot Cowork einrichten und erweitern](./lab-01-cowork-setup-de.md) | A Cowork-ready tenant with a spending policy that selects Cowork, a first delegated task, and a map of the skills vs plugins extensibility surfaces | 30 |
+| 2 | [Build Your First Cowork Skill](./lab-02-cowork-skills.md) | [Ihren ersten Cowork Skill bauen](./lab-02-cowork-skills-de.md) | A custom Agent Skill, created once with the guided flow and once by hand-authoring `SKILL.md` | 35 |
+| 3 | [Build Your First Cowork Plugin](./lab-03-cowork-plugins.md) | [Ihr erstes Cowork Plugin bauen](./lab-03-cowork-plugins-de.md) | A plugin package with three skills and a Microsoft Learn MCP connector, deployed from the admin center | 75 |
+| | **Total** | | | **140** |
 
 ## Prerequisites
 

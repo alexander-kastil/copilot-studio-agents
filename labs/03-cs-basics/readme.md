@@ -2,22 +2,14 @@
 
 These labs build one Standard HR agent (Learn: standard harness), from an empty environment to an agent published in Teams and Microsoft 365 Copilot. Each lab continues with the agent from the one before. The theory and demos for each topic are in [demos/03-cs-basics](../../demos/03-cs-basics/readme.md).
 
-| Title | Minutes |
-|-------|---------|
-| [Create Your First Copilot Studio Agent](./01-standard-agents/lab-01-create-your-first-agent.md) | 20 |
-| [Ground the HR Agent with SharePoint Knowledge](./02-knowledge/lab-01-ground-with-sharepoint.md) | 10 |
-| [Define Topics, Entities, and Variables](./03-topics/lab-01-build-topics.md) | 30 |
-| [Collect Input with Adaptive Cards](./05-adaptive-cards/lab-01-collect-input-with-adaptive-cards.md) | 10 |
-| [Publish the HR Agent to Teams and Microsoft 365 Copilot](./06-publishing/lab-01-publish-to-teams-and-copilot.md) | 30 |
-| **Total** | **100** |
-
-| Lab | Focus |
-|-----|-------|
-| [Create Your First Copilot Studio Agent](./01-standard-agents/lab-01-create-your-first-agent.md) | A Trial Power Platform environment with Copilot Studio activated, and the HR agent created, given an icon and tested |
-| [Ground the HR Agent with SharePoint Knowledge](./02-knowledge/lab-01-ground-with-sharepoint.md) | SharePoint HR documents added as knowledge, and an agent that stays inside its instructions and sources |
-| [Define Topics, Entities, and Variables](./03-topics/lab-01-build-topics.md) | Generative orchestration turned on, then a single-turn and a multi-turn topic that collect and validate input |
-| [Collect Input with Adaptive Cards](./05-adaptive-cards/lab-01-collect-input-with-adaptive-cards.md) | A topic that collects a candidate's data in an Adaptive Card and confirms it with a formula card |
-| [Publish the HR Agent to Teams and Microsoft 365 Copilot](./06-publishing/lab-01-publish-to-teams-and-copilot.md) | The HR agent in Teams, plus a declarative agent with knowledge and an Excel tool in Microsoft 365 Copilot Chat |
+| Lab | Deutsch | Focus | Minutes |
+|-----|---------|-------|---------|
+| [Create Your First Copilot Studio Agent](./01-standard-agents/lab-01-create-your-first-agent.md) | [Ihren ersten Copilot Studio Agent erstellen](./01-standard-agents/lab-01-create-your-first-agent-de.md) | A Trial Power Platform environment with Copilot Studio activated, and the HR agent created, given an icon and tested | 20 |
+| [Ground the HR Agent with SharePoint Knowledge](./02-knowledge/lab-01-ground-with-sharepoint.md) | [Den HR Agent mit SharePoint Knowledge erden](./02-knowledge/lab-01-ground-with-sharepoint-de.md) | SharePoint HR documents added as knowledge, and an agent that stays inside its instructions and sources | 10 |
+| [Define Topics, Entities, and Variables](./03-topics/lab-01-build-topics.md) | [Topics, Entities und Variables definieren](./03-topics/lab-01-build-topics-de.md) | Generative orchestration turned on, then a single-turn and a multi-turn topic that collect and validate input | 30 |
+| [Collect Input with Adaptive Cards](./05-adaptive-cards/lab-01-collect-input-with-adaptive-cards.md) | [Input mit Adaptive Cards erfassen](./05-adaptive-cards/lab-01-collect-input-with-adaptive-cards-de.md) | A topic that collects a candidate's data in an Adaptive Card and confirms it with a formula card | 10 |
+| [Publish the HR Agent to Teams and Microsoft 365 Copilot](./06-publishing/lab-01-publish-to-teams-and-copilot.md) | [Den HR Agent in Teams und Microsoft 365 Copilot publishen](./06-publishing/lab-01-publish-to-teams-and-copilot-de.md) | The HR agent in Teams, plus a declarative agent with knowledge and an Excel tool in Microsoft 365 Copilot Chat | 30 |
+| **Total** | | | **100** |
 
 ## More Practice on Microsoft Learn
 
