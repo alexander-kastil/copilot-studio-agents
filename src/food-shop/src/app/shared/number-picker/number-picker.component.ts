@@ -1,9 +1,9 @@
 import {
-  ChangeDetectionStrategy,
   Component,
   EventEmitter,
   Input,
-  Output
+  Output,
+  ChangeDetectionStrategy
 } from '@angular/core';
 import {
   AbstractControl,
@@ -14,12 +14,12 @@ import {
   Validator,
 } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-number-picker',
   templateUrl: './number-picker.component.html',
   styleUrls: ['./number-picker.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
@@ -32,12 +32,16 @@ import { MatIconModule } from '@angular/material/icon';
       useExisting: NumberPickerComponent,
     },
   ],
-  imports: [MatIconModule]
+  standalone: true,
+  changeDetection: ChangeDetectionStrategy.Eager,
+  imports: [MatIconModule, MatButtonModule],
 })
 export class NumberPickerComponent implements ControlValueAccessor, Validator {
   quantity = 0;
 
   @Input() increment: number = 1;
+
+  @Input() itemName = '';
 
   @Output() amountChanged: EventEmitter<number> = new EventEmitter<number>();
 

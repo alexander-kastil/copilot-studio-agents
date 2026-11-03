@@ -1,14 +1,16 @@
 import { JsonPipe } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
 import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss'],
-  imports: [MatCardModule, JsonPipe],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  standalone: true,
+  changeDetection: ChangeDetectionStrategy.Eager,
+  imports: [MatCardModule, MatIconModule, JsonPipe]
 })
 export class AboutComponent {
   config = environment;

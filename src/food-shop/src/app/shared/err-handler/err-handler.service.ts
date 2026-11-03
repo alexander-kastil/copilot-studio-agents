@@ -1,5 +1,5 @@
 import { ErrorHandler, Injectable } from '@angular/core';
-import { AILoggerService } from '../logger/ai-logger.service';
+import { AILoggerService } from '../../logger/ai-logger.service';
 
 @Injectable({
   providedIn: 'root',
@@ -9,6 +9,5 @@ export class ErrHandlerService extends ErrorHandler {
     super();
   }
   override handleError(error: Error) {
-    // this.ai.logException(error);
   }
 }

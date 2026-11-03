@@ -1,0 +1,49 @@
+@baseUrl = http://localhost:5000
+
+
+###
+GET {{baseUrl}}/config
+Content-Type: application/json
+
+###
+GET {{baseUrl}}/config/getEnvVars
+Content-Type: application/json
+
+###
+GET {{baseUrl}}/config/getFeatureFlags
+Content-Type: application/json
+
+
+###
+GET {{baseUrl}}/food
+Content-Type: application/json
+
+###
+GET {{baseUrl}}/food/1
+Content-Type: application/json
+
+###
+POST {{baseUrl}}/food
+Content-Type: application/json
+
+{
+  "id": 0,
+  "name": "Pizza",
+  "description": "Delicious cheese pizza",
+  "price": 12.99
+}
+
+###
+PUT {{baseUrl}}/food
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Margherita Pizza",
+  "description": "Classic Italian pizza with fresh mozzarella",
+  "price": 14.99
+}
+
+###
+DELETE {{baseUrl}}/food/1
+Content-Type: application/json

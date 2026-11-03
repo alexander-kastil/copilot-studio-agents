@@ -1,44 +1,43 @@
-import { isPlatformBrowser } from '@angular/common';
-import { ChangeDetectionStrategy, Component, Inject, PLATFORM_ID, inject, signal } from '@angular/core';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
-import { of } from 'rxjs';
+import { Component, OnDestroy, ChangeDetectionStrategy } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+import { Subject, takeUntil } from 'rxjs';
 import { filter, map, startWith, tap } from 'rxjs/operators';
 import { environment } from '../environments/environment';
-import { NavbarComponent } from './shared/navbar/navbar.component';
+import { MsalAuthFacade } from './auth/state/auth.facade';
+import { SidenavFacade } from './state/sidenav/sidenav.facade';
+
+import { CommonModule } from '@angular/common';
+import { RouterOutlet } from '@angular/router';
+import { NavbarComponent } from './menus/navbar/navbar.component';
+import { SidebarComponent } from './menus/sidebar/sidebar.component';
+import { LoginComponent } from './auth/components/login/login.component';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [
-    MatSidenavModule,
+    CommonModule,
     RouterOutlet,
     NavbarComponent,
-  ],
-  // Fully migrated to zoneless with OnPush change detection
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    SidebarComponent,
+    LoginComponent
+  ]
 })
-export class AppComponent {
-  router = inject(Router);
+export class AppComponent implements OnDestroy {
   title = environment.title;
-  isIframe = signal(window !== window.parent && !window.opener);
+  sidenavVisible = this.mf.getSideNavVisible();
+  isIframe = window !== window.parent && !window.opener;
 
   authEnabled = environment.authEnabled;
-  authenticated = of(true);
-
-  constructor(@Inject(PLATFORM_ID) private platformId: any) {
-    this.setMSALIframe();
-  }
-
-  setMSALIframe() {
-    console.log('setMSALIframe', this.isIframe());
-    if (isPlatformBrowser(this.platformId)) {
-      // Use the window reference: this.windowRef
-      this.isIframe.set(window !== window.parent && !window.opener);
-    }
-  }
-
+  authenticated = this.af.isAuthenticated();
+  isHome = this.router.events.pipe(
+    startWith(null),
+    filter((e) => e === null || e instanceof NavigationEnd),
+    map(() => this.router.url.split(/[?#]/)[0] === '/')
+  );
   publicRoute = this.router.events.pipe(
     startWith(false),
     filter((e) => e instanceof NavigationEnd),
@@ -49,4 +48,18 @@ export class AppComponent {
       console.log('publicRoute', result);
     })
   );
+
+  private destroy$ = new Subject();
+
+  constructor(
+    private af: MsalAuthFacade,
+    public mf: SidenavFacade,
+    private router: Router
+  ) {
+  }
+
+  ngOnDestroy() {
+    this.destroy$.next(true);
+    this.destroy$.complete();
+  }
 }

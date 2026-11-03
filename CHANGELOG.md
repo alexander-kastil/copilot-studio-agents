@@ -28,6 +28,7 @@
 - Update labs
 - Update demos
 - Update src
+- Release build
 
 ### Changed
 

@@ -1,11 +1,10 @@
-import { provideZonelessChangeDetection } from "@angular/core";
-import { registerLocaleData } from '@angular/common';
-import localeAT from '@angular/common/locales/de-AT';
 import { bootstrapApplication } from '@angular/platform-browser';
+import { registerLocaleData } from '@angular/common';
+import localeDe from '@angular/common/locales/de';
 import { AppComponent } from './app/app.component';
 import { appConfig } from './app/app.config';
 
-registerLocaleData(localeAT);
+registerLocaleData(localeDe);
 
-bootstrapApplication(AppComponent, { ...appConfig, providers: [provideZonelessChangeDetection(), ...appConfig.providers] })
+bootstrapApplication(AppComponent, appConfig)
   .catch(err => console.error(err));

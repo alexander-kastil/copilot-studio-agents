@@ -13,7 +13,7 @@ const initialState: SidenavState = {
   sideNavPosition: 'side',
 };
 
-export const sidenavState = createFeature({
+export const sidenavFeature = createFeature({
   name: 'sidenav',
   reducer: createReducer(
     initialState,
