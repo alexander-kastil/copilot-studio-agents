@@ -102,7 +102,7 @@ Check that an answer really came from the server. When a reply names people miss
 
 ## Hands-On Lab
 
-- [Give an Agent MCP Tools on the Hosted Server](../../../labs/04-cs-tools/06-mcp/lab-01-give-an-agent-mcp-tools-alt.md): learners register the HR MCP server deployed for the class as a tool, connect per user, test its six tools, and publish the agent to Microsoft 365 Copilot.
+- [Give an Agent MCP Tools on the Hosted Server](../../../labs/04-cs-tools/06-mcp/lab-01-give-an-agent-mcp-tools.md): learners register the HR MCP server deployed for the class as a tool, connect per user, test its six tools, and publish the agent to Microsoft 365 Copilot.
 
 ## Key Topics covered in this module
 

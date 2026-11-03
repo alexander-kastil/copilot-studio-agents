@@ -330,7 +330,7 @@ Sie haben dem HR Agent über Connector Tools Live-Daten aus SharePoint und Excel
 - Mit der Activity Map belegen, welches Tool lief, und eine falsche Auswahl debuggen.
 - Bewusst zwischen User Credentials und Maker-provided Credentials für einen Connector entscheiden.
 
-Geben Sie als Nächstes einem Agent eine eigene Action in [Eine gehostete REST API aus einem Agent aufrufen](../05-rest-api/lab-01-call-a-secured-rest-api-alt-de.md), wo die Datenquelle ein Service ist, den Sie selbst hosten, statt eines vorgefertigten Connectors.
+Geben Sie als Nächstes einem Agent eine eigene Action in [Eine gehostete REST API aus einem Agent aufrufen](../05-rest-api/lab-01-call-a-secured-rest-api-de.md), wo die Datenquelle ein Service ist, den Sie selbst hosten, statt eines vorgefertigten Connectors.
 
 ## Links und Ressourcen
 

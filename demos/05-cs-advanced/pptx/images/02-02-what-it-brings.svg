@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Four things deep reasoning brings, and its price</title>
+  <desc id="d">Choose between options: which supplier or investment fits the rules best. Plan against changing conditions: stock against changing demand. Find the cause: why the same incident keeps coming back. Show the working: the steps it took, open to check. The price: slower answers and more Copilot Credits per step.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+
+  <rect x="60" y="60" width="880" height="380" rx="22" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="500" y="226" text-anchor="middle" font-size="40" font-weight="700" fill="#24292f">Choose between options</text>
+  <text x="500" y="296" text-anchor="middle" font-size="30" fill="#57606a">which supplier or investment</text>
+  <text x="500" y="338" text-anchor="middle" font-size="30" fill="#57606a">fits the rules best</text>
+
+  <rect x="980" y="60" width="880" height="380" rx="22" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1420" y="226" text-anchor="middle" font-size="40" font-weight="700" fill="#24292f">Plan against changing conditions</text>
+  <text x="1420" y="296" text-anchor="middle" font-size="30" fill="#57606a">stock against changing demand</text>
+
+  <rect x="60" y="480" width="880" height="380" rx="22" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="500" y="646" text-anchor="middle" font-size="40" font-weight="700" fill="#24292f">Find the cause</text>
+  <text x="500" y="716" text-anchor="middle" font-size="30" fill="#57606a">why the same incident</text>
+  <text x="500" y="758" text-anchor="middle" font-size="30" fill="#57606a">keeps coming back</text>
+
+  <rect x="980" y="480" width="880" height="380" rx="22" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="1420" y="646" text-anchor="middle" font-size="40" font-weight="700" fill="#24292f">Show the working</text>
+  <text x="1420" y="716" text-anchor="middle" font-size="30" fill="#57606a">the steps it took,</text>
+  <text x="1420" y="758" text-anchor="middle" font-size="30" fill="#57606a">open to check</text>
+
+  <rect x="60" y="910" width="1800" height="110" rx="18" fill="#fff4e0" stroke="#8c959f" stroke-width="2"/>
+  <text x="960" y="977" text-anchor="middle" font-size="32" fill="#24292f"><tspan font-weight="700">The price:</tspan> slower answers and more Copilot Credits per step</text>
+</svg>

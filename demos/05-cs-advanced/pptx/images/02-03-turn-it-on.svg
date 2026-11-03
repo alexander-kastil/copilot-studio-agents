@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Switch on deep reasoning, then mark the one step that has to think with reason</title>
+  <desc id="d">In the agent settings, Deep reasoning is switched on. In the agent instructions, five steps run in order: gather the facts, look up the rules and collect the options run fast; step 4, use reason to choose the best option, thinks it through; step 5, present the answer, runs fast again.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="24" markerHeight="24" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+    <marker id="ahs" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="18" markerHeight="18" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#8c959f"/>
+    </marker>
+  </defs>
+
+  <rect x="60" y="380" width="520" height="300" rx="22" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="100" y="448" font-size="34" font-weight="700" fill="#24292f">Agent settings</text>
+  <rect x="90" y="490" width="460" height="140" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="120" y="571" font-size="30" fill="#24292f">Deep reasoning</text>
+  <rect x="420" y="534" width="104" height="52" rx="26" fill="#1B365D"/>
+  <circle cx="498" cy="560" r="20" fill="#ffffff"/>
+
+  <line x1="580" y1="530" x2="680" y2="530" stroke="#57606a" stroke-width="5" marker-end="url(#ah)"/>
+
+  <rect x="690" y="40" width="1170" height="1000" rx="22" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="730" y="106" font-size="34" font-weight="700" fill="#24292f">Agent instructions</text>
+
+  <rect x="730" y="140" width="1090" height="130" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="790" cy="205" r="28" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="790" y="215" text-anchor="middle" font-size="28" font-weight="700" fill="#24292f">1</text>
+  <text x="844" y="216" font-size="30" fill="#24292f">Gather the facts</text>
+  <rect x="1680" y="182" width="110" height="46" rx="23" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1735" y="215" text-anchor="middle" font-size="28" fill="#57606a">fast</text>
+  <line x1="790" y1="270" x2="790" y2="314" stroke="#8c959f" stroke-width="3" marker-end="url(#ahs)"/>
+
+  <rect x="730" y="318" width="1090" height="130" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="790" cy="383" r="28" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="790" y="393" text-anchor="middle" font-size="28" font-weight="700" fill="#24292f">2</text>
+  <text x="844" y="394" font-size="30" fill="#24292f">Look up the rules</text>
+  <rect x="1680" y="360" width="110" height="46" rx="23" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1735" y="393" text-anchor="middle" font-size="28" fill="#57606a">fast</text>
+  <line x1="790" y1="448" x2="790" y2="492" stroke="#8c959f" stroke-width="3" marker-end="url(#ahs)"/>
+
+  <rect x="730" y="496" width="1090" height="130" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="790" cy="561" r="28" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="790" y="571" text-anchor="middle" font-size="28" font-weight="700" fill="#24292f">3</text>
+  <text x="844" y="572" font-size="30" fill="#24292f">Collect the options</text>
+  <rect x="1680" y="538" width="110" height="46" rx="23" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1735" y="571" text-anchor="middle" font-size="28" fill="#57606a">fast</text>
+  <line x1="790" y1="626" x2="790" y2="670" stroke="#8c959f" stroke-width="3" marker-end="url(#ahs)"/>
+
+  <rect x="730" y="674" width="1090" height="130" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="790" cy="739" r="28" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="790" y="749" text-anchor="middle" font-size="28" font-weight="700" fill="#24292f">4</text>
+  <text x="844" y="750" font-size="30" font-weight="700" fill="#24292f">Use</text>
+  <rect x="908" y="713" width="130" height="52" rx="10" fill="#ffffff" stroke="#1B365D" stroke-width="2"/>
+  <text x="973" y="749" text-anchor="middle" font-size="30" font-weight="700" font-family="Consolas, monospace" fill="#1B365D">reason</text>
+  <text x="1052" y="750" font-size="30" font-weight="700" fill="#24292f">to choose the best option</text>
+  <rect x="1530" y="716" width="260" height="46" rx="23" fill="#1B365D"/>
+  <text x="1660" y="749" text-anchor="middle" font-size="28" fill="#ffffff">thinks it through</text>
+  <line x1="790" y1="804" x2="790" y2="848" stroke="#8c959f" stroke-width="3" marker-end="url(#ahs)"/>
+
+  <rect x="730" y="852" width="1090" height="130" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="790" cy="917" r="28" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="790" y="927" text-anchor="middle" font-size="28" font-weight="700" fill="#24292f">5</text>
+  <text x="844" y="928" font-size="30" fill="#24292f">Present the answer</text>
+  <rect x="1680" y="894" width="110" height="46" rx="23" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1735" y="927" text-anchor="middle" font-size="28" fill="#57606a">fast</text>
+</svg>

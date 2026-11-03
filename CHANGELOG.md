@@ -5,9 +5,10 @@
 
 ### Added
 
+- Module 05 deck teaches each topic beside its lab slides: teaching slides with concept diagrams (unattended instructions, guardrails and cost, routing descriptions, child or connected agent, routing rules, Foundry agent types, endpoint protocols, how the planner calls a Foundry agent, access and preview, the parts of an evaluation, test methods, failing case to fix); the deep reasoning topic is five plain slides (what deep reasoning is, what it brings, turning it on for one step, seeing where it reasoned, when it pays off) in place of the reason keyword, model and ticket backlog slides; 29 to 44 slides
 - Module 04 and 05 labs run without command-line tools: the class uses the hosted REST API and MCP labs (readmes, topic readmes and schedule link them), the hosted MCP lab drops its MCP Inspector exercise, connectors lab-02 drops the PnP PowerShell provisioning, and the autonomous agent lab drops the Inspector, `dotnet run` and dev tunnel steps and points at the hosted `lab-human-resource-mcp` server
 - The hosted REST API and MCP labs no longer refer to the local versions (alternative-version intros, the Entra ID and local-server pointers are gone), so every lab builds on the hosted services
-- Removed the local REST API and MCP lab guides (`lab-01-call-a-secured-rest-api.md`, `lab-01-give-an-agent-mcp-tools.md` and their German versions); the hosted labs replace them
+- Removed the local REST API and MCP lab guides (`lab-01-call-a-secured-rest-api.md`, `lab-01-give-an-agent-mcp-tools.md` and their German versions); the hosted labs replace them and take over their file names (the `-alt` suffix is gone)
 - German translations of every lab in modules 02, 04 and 06 (21 new `-de.md` guides, module 04's hosted alternatives included); the lab readmes of modules 02 to 06 each have one lab table with a Deutsch column linking the German guide
 - Dataverse lab `labs/04-cs-tools/02-dataverse/lab-01-answer-and-record-job-openings-in-dataverse.md` (20 minutes): the HR agent answers from a Job Opening table as knowledge and records a new row through a Dataverse tool, listed in the module lab readme and the topic readme
 - Connectors lab-02 builds on the HR agent as a Standard agent: the agent creation, the new-experience steps, the repeated Excel tool setup and the publish exercise are gone, testing uses the activity map, and the lab is retitled "Give the HR Agent Live SharePoint and Excel Data with Connector Tools"
@@ -45,6 +46,8 @@
 - Draw topic 01-03 teaching SVGs: All seven SVGs are written
 - Draw topic 04-06 teaching SVGs: I drew all six SVGs and wrote each one to its media-file path
 - Draw topic 01-03 teaching SVGs: I drew the diagram and wrote it to
+- Draw topic 04-06 teaching SVGs: I drew both diagrams at their media-file paths and checked them at half size: no overlaps, no clipped
+- Draw topic 01-03 teaching SVGs: I drew both diagrams
 
 ### Changed
 

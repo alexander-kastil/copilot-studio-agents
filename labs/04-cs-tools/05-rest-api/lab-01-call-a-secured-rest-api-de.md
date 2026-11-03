@@ -179,7 +179,7 @@ Bauen Sie daraus einen Custom Connector genau wie in Übung 2, mit dem Host `lab
 
 - Importieren Sie die übrigen Operations als Actions und lassen Sie den Agent eine Kandidatin oder einen Kandidaten hinzufügen oder entfernen
 - Erfassen Sie die Daten neuer Kandidatinnen und Kandidaten mit `askCandidateData.json` über eine Adaptive Card statt über Freitext-Prompts
-- Vergleichen Sie diesen Ablauf mit [Einem Agent MCP Tools auf dem gehosteten Server geben](../06-mcp/lab-01-give-an-agent-mcp-tools-alt-de.md), wo ein MCP Server seine Tools ohne OpenAPI-Datei und ohne Connector-Definition bereitstellt
+- Vergleichen Sie diesen Ablauf mit [Einem Agent MCP Tools auf dem gehosteten Server geben](../06-mcp/lab-01-give-an-agent-mcp-tools-de.md), wo ein MCP Server seine Tools ohne OpenAPI-Datei und ohne Connector-Definition bereitstellt
 
 ![Zwei Bahnen: Der Custom Connector aus Lab 4 importiert hr-service-swagger.json zur Design Time als vier feste Operations, während der Agent aus Lab 5 den HR MCP Server zur Runtime mit tools/list nach seinen sechs Tools fragt.](../../../demos/04-cs-tools/pptx/images/06-01-tool-discovery.svg)
 

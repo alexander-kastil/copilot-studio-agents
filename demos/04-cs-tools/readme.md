@@ -36,8 +36,8 @@ Adding a tool is a configuration task in the agent's **Tools** area. Tools, MCP 
 |-----|-------|
 | [Invoke Prompts from a Copilot Studio Agent](../../labs/04-cs-tools/01-prompts/lab-01-build-a-prompt-tool.md) | A prompt built in prompt builder with typed inputs, called from the agent as a tool |
 | [Define Tools with Power Platform Connectors](../../labs/04-cs-tools/03-connectors/lab-01-connector-and-flow-tools.md) | Excel Online connector tools and a Power Automate flow tool for the HR agent |
-| [Call a Hosted REST API from an Agent](../../labs/04-cs-tools/05-rest-api/lab-01-call-a-secured-rest-api-alt.md) | The HR API deployed for the class behind a custom connector, called from an agent |
-| [Give an Agent MCP Tools on the Hosted Server](../../labs/04-cs-tools/06-mcp/lab-01-give-an-agent-mcp-tools-alt.md) | The HR MCP server deployed for the class registered as a tool, with every server tool discovered at runtime |
+| [Call a Hosted REST API from an Agent](../../labs/04-cs-tools/05-rest-api/lab-01-call-a-secured-rest-api.md) | The HR API deployed for the class behind a custom connector, called from an agent |
+| [Give an Agent MCP Tools on the Hosted Server](../../labs/04-cs-tools/06-mcp/lab-01-give-an-agent-mcp-tools.md) | The HR MCP server deployed for the class registered as a tool, with every server tool discovered at runtime |
 
 ## Links & Resources
 

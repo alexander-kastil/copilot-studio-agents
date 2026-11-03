@@ -1,6 +1,6 @@
 # Give an Agent MCP Tools on the Hosted Server
 
-This lab runs against the HR MCP server already deployed for the class. In [Call a Hosted REST API from an Agent](../05-rest-api/lab-01-call-a-secured-rest-api-alt.md) you described an API with OpenAPI, wrapped it in a custom connector, and mapped one operation to one action. This lab does the same job with far less ceremony. You point Copilot Studio at a Model Context Protocol (MCP) server URL, and every tool the server exposes shows up in the agent at once.
+This lab runs against the HR MCP server already deployed for the class. In [Call a Hosted REST API from an Agent](../05-rest-api/lab-01-call-a-secured-rest-api.md) you described an API with OpenAPI, wrapped it in a custom connector, and mapped one operation to one action. This lab does the same job with far less ceremony. You point Copilot Studio at a Model Context Protocol (MCP) server URL, and every tool the server exposes shows up in the agent at once.
 
 That difference is the lesson. A connector is a design-time contract: you import a specification and the tool list is frozen until you re-import it. An MCP server is a runtime contract: the agent asks the server what it can do, so adding a tool on the server side makes it available to the agent without touching the agent.
 

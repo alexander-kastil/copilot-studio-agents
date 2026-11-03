@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">When deep reasoning pays off, and when to skip it</title>
+  <desc id="d">Pays off: choosing between options under rules, planning against changing conditions, finding the cause of a recurring problem. Skip it: FAQs and lookups, use the fast model with knowledge; a fixed rule, the same every time, use an agent flow; people waiting, such as a phone line, use the fast model; unclear instructions, rewrite them first. Every reasoning step is slower and costs more.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+
+  <rect x="60" y="50" width="840" height="760" rx="22" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <path d="M102,108 l14,16 l28,-34" fill="none" stroke="#2da44e" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="166" y="124" font-size="36" font-weight="700" fill="#24292f">Pays off</text>
+  <rect x="90" y="170" width="780" height="180" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="124" y="271" font-size="30" fill="#24292f">choosing between options under rules</text>
+  <rect x="90" y="370" width="780" height="180" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="124" y="471" font-size="30" fill="#24292f">planning against changing conditions</text>
+  <rect x="90" y="570" width="780" height="180" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="124" y="671" font-size="30" fill="#24292f">finding the cause of a recurring problem</text>
+
+  <rect x="960" y="50" width="900" height="760" rx="22" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="1000" y="124" font-size="36" font-weight="700" fill="#24292f">Skip it</text>
+  <rect x="990" y="170" width="840" height="135" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1024" y="226" font-size="30" fill="#24292f">FAQs and lookups</text>
+  <text x="1024" y="270" font-size="28" fill="#57606a">the fast model with knowledge</text>
+  <rect x="990" y="320" width="840" height="135" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1024" y="376" font-size="30" fill="#24292f">A fixed rule, the same every time</text>
+  <text x="1024" y="420" font-size="28" fill="#57606a">an agent flow</text>
+  <rect x="990" y="470" width="840" height="135" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1024" y="526" font-size="30" fill="#24292f">People waiting, such as a phone line</text>
+  <text x="1024" y="570" font-size="28" fill="#57606a">the fast model</text>
+  <rect x="990" y="620" width="840" height="135" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1024" y="676" font-size="30" fill="#24292f">Unclear instructions</text>
+  <text x="1024" y="720" font-size="28" fill="#57606a">rewrite them first</text>
+
+  <rect x="60" y="860" width="1800" height="140" rx="22" fill="#fff4e0" stroke="#b7791f" stroke-width="2"/>
+  <text x="960" y="943" text-anchor="middle" font-size="34" font-weight="700" fill="#24292f">Every reasoning step is slower and costs more</text>
+</svg>

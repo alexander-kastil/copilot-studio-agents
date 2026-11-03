@@ -4,7 +4,7 @@ In diesem Lab lernen Sie, wie Sie mit Microsoft Copilot Studio einen Autonomous 
 
 ![Eine nach SharePoint hochgeladene Kandidaten-PDF löst einen Power Automate Trigger aus, der dem Autonomous HR Docs Processor einen Prompt sendet; der Agent ruft add_employee auf dem HR MCP Server und SendEmail auf dem Email Management MCP Server auf.](../../../demos/05-cs-advanced/pptx/images/01-01-autonomous-triggers.svg)
 
-> **Hinweis:** Dieses Lab baut auf [Einem Agent MCP Tools auf dem gehosteten Server geben](../../04-cs-tools/06-mcp/lab-01-give-an-agent-mcp-tools-alt-de.md) auf und nutzt denselben Server, den HR MCP Server in [`src/hr-mcp-server`](../../../src/hr-mcp-server). Der Server ist eine .NET 10 Anwendung auf Basis des MCP C# SDK und verwaltet Mitarbeitende in einer SQL-Datenbank. Sie bauen hier nichts Neues, Sie registrieren den Server nur erneut als Tool, diesmal in einem Agent, der ohne User in the Loop läuft.
+> **Hinweis:** Dieses Lab baut auf [Einem Agent MCP Tools auf dem gehosteten Server geben](../../04-cs-tools/06-mcp/lab-01-give-an-agent-mcp-tools-de.md) auf und nutzt denselben Server, den HR MCP Server in [`src/hr-mcp-server`](../../../src/hr-mcp-server). Der Server ist eine .NET 10 Anwendung auf Basis des MCP C# SDK und verwaltet Mitarbeitende in einer SQL-Datenbank. Sie bauen hier nichts Neues, Sie registrieren den Server nur erneut als Tool, diesmal in einem Agent, der ohne User in the Loop läuft.
 
 In diesem Lab lernen Sie:
 
@@ -59,7 +59,7 @@ Stellen Sie vor dem Weitermachen sicher, dass Sie Folgendes haben:
 - **Power Platform Environment**: Zugriff auf dieselbe Environment wie in den vorigen Labs
 - **Beispiel-PDF-Dateien**: mindestens 2 oder 3 Test-PDF-Dateien mit Kandidatendaten
 
-Der Server aus [Einem Agent MCP Tools auf dem gehosteten Server geben](../../04-cs-tools/06-mcp/lab-01-give-an-agent-mcp-tools-alt-de.md) ist für diesen Kurs deployt, daher führen Sie nichts auf Ihrem Rechner aus. Verwenden Sie diese URL, wenn Sie das MCP Tool registrieren:
+Der Server aus [Einem Agent MCP Tools auf dem gehosteten Server geben](../../04-cs-tools/06-mcp/lab-01-give-an-agent-mcp-tools-de.md) ist für diesen Kurs deployt, daher führen Sie nichts auf Ihrem Rechner aus. Verwenden Sie diese URL, wenn Sie das MCP Tool registrieren:
 
 ```text
 https://lab-human-resource-mcp.azurewebsites.net
@@ -124,7 +124,7 @@ Wählen Sie nach Konfigurationsänderungen **Save**, um sie zu bestätigen.
 Ihr Autonomous Agent braucht Zugriff auf die Tools des HR MCP Servers, um Mitarbeiterdatensätze anzulegen. Öffnen Sie den Abschnitt **Tools** und wählen Sie **Add tool**.
 
 1. Wählen Sie die Gruppe **Model Context Protocol**
-2. Suchen Sie nach `HR MCP` und wählen Sie den **HR MCP Server**, den Sie in [Einem Agent MCP Tools auf dem gehosteten Server geben](../../04-cs-tools/06-mcp/lab-01-give-an-agent-mcp-tools-alt-de.md) registriert haben. Steht er nicht in der Liste, fügen Sie ihn mit **+ New tool**, **Model Context Protocol** und der Server-URL aus Übung 1 hinzu
+2. Suchen Sie nach `HR MCP` und wählen Sie den **HR MCP Server**, den Sie in [Einem Agent MCP Tools auf dem gehosteten Server geben](../../04-cs-tools/06-mcp/lab-01-give-an-agent-mcp-tools-de.md) registriert haben. Steht er nicht in der Liste, fügen Sie ihn mit **+ New tool**, **Model Context Protocol** und der Server-URL aus Übung 1 hinzu
 3. Wählen Sie **Add**, um die Tools des MCP Servers zu integrieren
 
 ![Der Abschnitt Tools, in dem der HR MCP Server mit allen verfügbaren Tools zur Mitarbeiterverwaltung zum Autonomous Agent hinzugefügt wird.](./_images/autonomous-agent-02.png)

@@ -330,7 +330,7 @@ You gave the HR agent live data out of SharePoint and Excel through connector to
 - Use the activity map to prove which tool ran and debug a wrong selection.
 - Choose deliberately between user credentials and maker-provided credentials for a connector.
 
-Next, give an agent an action of your own in [Call a Hosted REST API from an Agent](../05-rest-api/lab-01-call-a-secured-rest-api-alt.md), where the data source is a service you host rather than a prebuilt connector.
+Next, give an agent an action of your own in [Call a Hosted REST API from an Agent](../05-rest-api/lab-01-call-a-secured-rest-api.md), where the data source is a service you host rather than a prebuilt connector.
 
 ## Links and resources
 
