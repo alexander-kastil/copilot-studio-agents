@@ -32,7 +32,7 @@ Duration: about 25 minutes, not counting the optional Step 8.
 
 - A Copilot Studio environment where you can create agents (maker role), where the **New agent** menu on the **Agents** page offers **Agent** with the **GitHub Copilot** badge. The agent's top tabs read Build, Preview, Evaluate, and Monitor.
 - Your own environment: select the environment name at the bottom of the left navigation (**Switch environment**) and check that **Current environment** shows the environment named after your account, for example `copilot-studio-01` (Sandbox) for `copilot-studio-01@mst.fastlane.net`. Work through the whole lab in it, never in the shared Default environment.
-- The class HR MCP server at `https://lab-human-resource-mcp.azurewebsites.net`, hosted for the class with no sign-in. Every learner reads the same staff list, so this lab only reads from it.
+- The class HR MCP server at `https://lab-human-resource-mcp.azurewebsites.net/mcp`, hosted for the class with no sign-in. Every learner reads the same staff list, so this lab only reads from it.
 - No files to download. You paste every input from this guide.
 
 ## Step 1: Create a Microsoft Copilot harness agent
@@ -73,7 +73,7 @@ The HR MCP server is the grounding source. Adding it gives the agent a set of st
 3. In **Add MCP server**, fill in the fields below, set **Authentication** to **None**, and select **Add**.
    - Server name: `HR MCP Server`
    - Server description: `Looks up the restaurant's employees: names, roles, skills, spoken languages and email addresses.`
-   - Server URL: `https://lab-human-resource-mcp.azurewebsites.net`
+   - Server URL: `https://lab-human-resource-mcp.azurewebsites.net/mcp`
 4. Under **Select a connection**, open the **Not connected** list, select **Create new connection**, and select **Create** in the connection dialog (the display name is optional). When the list shows the connection, select **Add**.
 5. Select **Save** before you open the tool; opening it with unsaved changes asks **Leave without saving?**, and **Discard** drops the new tool.
 6. Under **Tools**, select **HR MCP Server** to open **Edit tool**. Under **Tool permissions**, turn off every tool that adds, updates or removes an employee or assigns a shift, keep **List employees** and **Search employees** on, select **Done**, and select **Save**.

@@ -15,7 +15,7 @@ The scenario company is Northwind Traders, a wholesale distributor whose sellers
 | 3 | Add product Knowledge and ground the agent | [The Unified Build Surface and the New Orchestrator](../../../demos/06-cs-copilot-harness/02-unified-build-and-orchestrator/readme.md) |
 | 4 | Add account Knowledge and confirm grounding in Preview | [The Unified Build Surface and the New Orchestrator](../../../demos/06-cs-copilot-harness/02-unified-build-and-orchestrator/readme.md) |
 | 5 | Add an Office 365 Outlook connector action as a tool | [Tools, MCP, and the New Workflows Designer](../../../demos/06-cs-copilot-harness/04-workflows-and-mcp/readme.md) |
-| 6 | Add the class food catalog MCP server | [Tools, MCP, and the New Workflows Designer](../../../demos/06-cs-copilot-harness/04-workflows-and-mcp/readme.md) |
+| 6 | Register and add the class food catalog MCP server | [Tools, MCP, and the New Workflows Designer](../../../demos/06-cs-copilot-harness/04-workflows-and-mcp/readme.md) |
 | 7 | Chain knowledge and tools and inspect the plan | [The Unified Build Surface and the New Orchestrator](../../../demos/06-cs-copilot-harness/02-unified-build-and-orchestrator/readme.md) |
 | 8 | Package and upload a reusable Skill (SKILL.md) | [Agent Skills in Copilot Studio](../../../demos/06-cs-copilot-harness/03-agent-skills/readme.md) |
 | 9 | Build and publish a workflow with typed inputs | [Tools, MCP, and the New Workflows Designer](../../../demos/06-cs-copilot-harness/04-workflows-and-mcp/readme.md) |
@@ -160,7 +160,7 @@ Expected: the Office 365 Outlook **Send an email (V2)** action appears in the **
 
 > **Tip:** Keep one action per tool and give each a "call it when" description. The orchestrator picks tools by matching the request against these descriptions, so a vague description is the most common reason an available action never gets used.
 
-## Step 6: Add the class food catalog MCP server
+## Step 6: Register and add the class food catalog MCP server
 
 An MCP server gives the agent a standardized, shared set of tools over Model Context Protocol, rather than a single connector action. The class hosts Northwind's food catalog as an MCP server, so the assistant can read live dishes, prices, and stock without you wiring up individual actions. Because the connection uses the Streamable transport, later changes on the server are reflected without republishing the agent.
 
@@ -168,13 +168,17 @@ An MCP server gives the agent a standardized, shared set of tools over Model Con
 
 1. On the **Build** tab, select **+** next to **Tools**.
 2. In **Add a tool**, select **+ Add**, then select **Model Context Protocol (MCP)**.
-3. In **Add MCP server**, enter `Northwind Food Catalog` as **Server name**, paste the text below as **Server description** so the orchestrator knows when to call it, enter `https://lab-food-catalog-api.azurewebsites.net/api/mcp` as **Server URL**, set **Authentication** to **None**, and select **Add**:
+3. Register the server: in **Add MCP server**, fill in the fields below, then select **Add**.
+   - Server name: `Northwind Food Catalog`
+   - Server description: the text below, so the orchestrator knows when to call the server
+   - Server URL: `https://lab-food-catalog-api.azurewebsites.net/api/mcp`
+   - Authentication: **None**
 
 ```text
 Use this server to look up Northwind's live food catalog: dishes, current prices, and units in stock. Prefer it over uploaded documents when the seller asks about the current price or stock of a food item. Only read from it; never add, update, or delete catalog items.
 ```
 
-4. Under **Select a connection**, open the **Not connected** list, select **Create new connection**, select **Create** in the connection dialog, then select **Add**, and select **Save** before you open the tool (with unsaved changes, **Leave without saving?** appears and **Discard** drops the new tool).
+4. Connect the registered server to the agent: under **Select a connection**, open the **Not connected** list, select **Create new connection**, select **Create** in the connection dialog, then select **Add**, and select **Save** before you open the tool (with unsaved changes, **Leave without saving?** appears and **Discard** drops the new tool).
 5. Under **Tools**, select **Northwind Food Catalog** to open **Edit tool**. Under **Tool permissions**, turn off **Add food item**, **Update food item**, **Update food item stock**, and **Delete food item**, keep **Get all food items** and **Get food items by name** on, select **Done**, and select **Save**.
 
 Expected: **Northwind Food Catalog** appears in the **Tools** list alongside the Outlook action, and its **Tool permissions** allow only reading tools such as **Get all food items** and **Get food items by name**. The agent now has two kinds of source, uploaded documents for accounts and orders and a live server for prices and stock, and the next step forces it to combine them.

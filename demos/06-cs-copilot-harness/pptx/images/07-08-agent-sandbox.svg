@@ -52,7 +52,7 @@
   <rect x="1530" y="510" width="220" height="64" rx="14" fill="#1a7f37"/>
   <text x="1640" y="552" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Download</text>
 
-  <path d="M1640,640 C1640,900 245,900 245,522" fill="none" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <path d="M1640,640 C1640,900 245,900 245,474" fill="none" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
   <text x="940" y="880" font-size="28" fill="#57606a" text-anchor="middle">make the chart taller: the agent reads the file back</text>
 
   <rect x="570" y="960" width="780" height="64" rx="32" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
