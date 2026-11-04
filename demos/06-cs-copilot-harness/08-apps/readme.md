@@ -46,7 +46,7 @@ App creation is a conversation that builds toward a working app. Each pass throu
 3. Refine by conversation. Describe one change, such as adding a filter or changing a field. You can also attach a file, add a screenshot, or annotate the canvas to point at the part you want changed.
 4. Repeat until the main scenarios work, then publish.
 
-![The app build loop: describe the problem, review the draft, and refine by conversation, repeating review and refine until the main scenarios work, then publish.](../pptx/images/06-01-building-apps.svg)
+![The app build loop: describe the problem, review the draft, and refine by conversation, repeating review and refine until the main scenarios work, then publish.](../pptx/images/08-01-building-apps.svg)
 
 Each change updates the data model, the logic, and the interface together. Keep requests small and review the preview after each one, because a large request is harder to check when something goes wrong. Microsoft recommends the same approach for complex apps: break the requirements into smaller changes.
 
@@ -119,11 +119,11 @@ Microsoft's guidance is to use the normal design, security, testing, and release
 
 ## Hands-On Demo
 
-- [Build an App from a Description](./demo-06-build-an-app.md): describe a tasting request tracker, refine it twice, read the code view, then publish and share it.
+- [Build an App from a Description](./demo-08-build-an-app.md): describe a tasting request tracker, refine it twice, read the code view, then publish and share it.
 
 ## Hands-On Lab
 
-- [Build and Share a Business App](../../../labs/06-cs-copilot-harness/06-apps/lab-01-build-an-app.md): connect an app to a SharePoint list, publish it, share it with a classmate, and confirm that data access is a separate permission.
+- [Build and Share a Business App](../../../labs/06-cs-copilot-harness/08-apps/lab-01-build-an-app.md): connect an app to a SharePoint list, publish it, share it with a classmate, and confirm that data access is a separate permission.
 
 ## Key Topics covered in this module
 

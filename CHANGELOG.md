@@ -9,7 +9,6 @@
 - Module 05 deck teaches each topic beside its lab slides: teaching slides with concept diagrams (unattended instructions, guardrails and cost, routing descriptions, child or connected agent, routing rules, Foundry agent types, endpoint protocols, how the planner calls a Foundry agent, access and preview, the parts of an evaluation, test methods, failing case to fix); the deep reasoning topic is six plain slides (what deep reasoning is, what it brings, turning it on for one step, where it is configured in a Standard agent, seeing where it reasoned, when it pays off) in place of the reason keyword, model and ticket backlog slides; 29 to 45 slides
 - Module 04 and 05 labs run without command-line tools: the class uses the hosted REST API and MCP labs (readmes, topic readmes and schedule link them), the hosted MCP lab drops its MCP Inspector exercise, connectors lab-02 drops the PnP PowerShell provisioning, and the autonomous agent lab drops the Inspector, `dotnet run` and dev tunnel steps and points at the hosted `lab-human-resource-mcp` server
 - The hosted REST API and MCP labs no longer refer to the local versions (alternative-version intros, the Entra ID and local-server pointers are gone), so every lab builds on the hosted services
-- Removed the local REST API and MCP lab guides (`lab-01-call-a-secured-rest-api.md`, `lab-01-give-an-agent-mcp-tools.md` and their German versions); the hosted labs replace them and take over their file names (the `-alt` suffix is gone)
 - German translations of every lab in modules 02, 04 and 06 (21 new `-de.md` guides, module 04's hosted alternatives included); the lab readmes of modules 02 to 06 each have one lab table with a Deutsch column linking the German guide
 - Dataverse lab `labs/04-cs-tools/02-dataverse/lab-01-answer-and-record-job-openings-in-dataverse.md` (20 minutes): the HR agent answers from a Job Opening table as knowledge and records a new row through a Dataverse tool, listed in the module lab readme and the topic readme
 - Connectors lab-02 builds on the HR agent as a Standard agent: the agent creation, the new-experience steps, the repeated Excel tool setup and the publish exercise are gone, testing uses the activity map, and the lab is retitled "Give the HR Agent Live SharePoint and Excel Data with Connector Tools"
@@ -22,8 +21,6 @@
 - Presenter guides for every demo in modules 03 to 05, each beside its demo, naming the agent to use
 - German translations of the 13 lab guides in modules 03 to 05 as `lab-01-*-de.md` beside each English guide; UI labels and typed text stay English, links between labs point to the German siblings
 - Module 06 topic 08, Migrate Standard Agents to Microsoft Copilot Harness Agents: when to migrate, the upgrade, rebuild and terminal routes, where each Standard part from modules 03 to 05 lands, topics rebuilt as workflow tools and hooks; the Health Advisor demo, the HR agent lab, four slides in the module 06 deck, and the lab on the Day 4 schedule
-- Update .claude, .gitignore, .time
-- Update assets
 - Add the `wiqd plugin import` command to the Cowork module: a short teaching and one slide with an overview of what it does
 - Module 02 deck slide 10 "A typical Cowork interaction" shows the interaction-loop diagram full width instead of the screenshot
 - Module 02 intro topic: three new slides on what Cowork remembers, model and effort, and core capabilities, each with its own diagram
@@ -37,19 +34,9 @@
 - Module 02 deck gets the Import a Claude plugin slide at the end of the plugins topic.
 - Lab run record `labs/02-cowork/cowork-lab-cost.json` for the module 02 Cowork labs: exercises run, model and effort, and the Copilot Credits per task, still marked not yet available
 - Lab run record `labs/copilot-studio-labs.json` for the module 03 to 05 Copilot Studio labs: exercises run per lab, the tests, and the Copilot Credits each showed, most still not shown
-- Update labs
+- Presenter guides for every demo in module 06, each beside its demo, with a note under the title naming the agents the demo shows
+- Module 06 skills topic opens with an intro: what a skill is, where skills come from (including the skills marketplace, preview) and where they are saved (including the Copilot Cowork OneDrive location) and the built-in skills, as four new slides with their diagrams, and the topic readme carries the matching teaching
 - Update demos
-- Update src
-- Release build
-- Clean and verify new food shop: Save already sent the full item, so pictureUrl and description survive an edit
-- Translate module 02 Cowork labs: Progress: 4/5 · check
-- Translate module 06 labs 05 to 08: Progress: 5/6 · check
-- Draw topic 01-03 teaching SVGs: All seven SVGs are written
-- Draw topic 04-06 teaching SVGs: I drew all six SVGs and wrote each one to its media-file path
-- Draw topic 01-03 teaching SVGs: I drew the diagram and wrote it to
-- Draw topic 04-06 teaching SVGs: I drew both diagrams at their media-file paths and checked them at half size: no overlaps, no clipped
-- Draw topic 01-03 teaching SVGs: I drew both diagrams
-- Draw topic 04-06 teaching SVGs: I drew the diagram at and checked i
 
 ### Changed
 
@@ -61,9 +48,17 @@
 - The Workflows lab is removed from module 01 and from the lab tests
 - The SharePoint agent labs ground on the copilot-demo SharePoint site
 - The publishing lab, English and German, drops the icon and knowledge steps of the Agentic HR agent, already covered in the first and the knowledge lab, and names its Excel tool a prebuilt Connector instead of a Custom connector; the Copilot Chat test no longer promises document references or shows the knowledge citation screenshot
+- Module 06 migration readme: the Adaptive Cards row says what replaces cards (the agent asks in conversation, passes input to a workflow and shows results as formatted text), with no card designer needed
+- Module 06 topics reordered: Test and Evaluate is now topic 06, Migrate topic 07 and Building Apps topic 08, in demos, labs, deck images and the class and module readmes
+
+### Removed
+
+- The local REST API and MCP lab guides (`lab-01-call-a-secured-rest-api.md`, `lab-01-give-an-agent-mcp-tools.md` and their German versions); the hosted labs replace them and take over their file names (the `-alt` suffix is gone)
+- Module 06 topic 01 drops "Where each rule lives", slide and readme section, since the real Build tab shows no Workflows or Hooks
 
 ### Fixed
 
+- Module 06 deck: the "Reading the plan in Preview" slide is retitled "Following the agent's reasoning in Preview" and describes only what the screenshot shows, with no plan or execution path; the skills slide 20 is rebuilt
 - Broken image links in the readmes and labs: the slide diagrams (`pptx/images/*.svg`) they embed are tracked again, while decks, renders and photos stay local
 - Module 02 Cowork lab guides corrected from the live runs
 - Module 03 deck slides 13, 21 and 28: the screenshots are sharpened from the original captures at 4x resolution, and the PDF is re-exported
@@ -71,5 +66,3 @@
 - Module 01 Agent Builder lab re-run: all screenshots retaken at 1280 width, two new ones for the SharePoint source and the Share menu, and the guide steps and image texts matched to the current UI
 - Publishing, secured REST API, autonomous agent, multi-agent and evaluations lab guides corrected from the live runs; the publishing lab builds its Copilot Chat agent as a Standard agent, since the Microsoft 365 Copilot agent entry is gone
 - MCP lab Exercise 4 (Microsoft 365 Copilot replied blank) rewritten to match a live rerun, where Microsoft 365 Copilot asked to connect first and answered after Connect and Retry; the blank reply did not come back, its cause is unknown
-- Translate three module 04 labs to German: I wrote the three German lab translations and the translation check ends with files=10 errors=0
-- Translate module 06 labs 01 to 04: Of the shared section names, only "Verify" needed fixing in my four files

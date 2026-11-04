@@ -17,7 +17,7 @@ Few of the licenses this class needs are per-user seats. Every learner needs a M
 | A GitHub account | Every learner | Class prerequisite | Free |
 | Claude Code or GitHub Copilot CLI | Every learner in [Agentic Building](../../07-cs-maintaining/05-agentic-building/readme.md) | 7 | A Claude plan or a GitHub Copilot plan |
 | A Power Platform billing plan with the **Copilot Studio** meter on the agent environment | The tenant | 4 (computer use), 5 (autonomous runs), 6 (from the first build step), 8; channels outside Microsoft 365 in 7 | Copilot Credits pay-as-you-go, about $0.01 each |
-| The same billing plan on each maker's personal developer environment | Every maker who builds an app | 6 ([Building Apps](../../06-cs-copilot-harness/06-apps/readme.md)) | Copilot Credits pay-as-you-go |
+| The same billing plan on each maker's personal developer environment | Every maker who builds an app | 6 ([Building Apps](../../06-cs-copilot-harness/08-apps/readme.md)) | Copilot Credits pay-as-you-go |
 | A Microsoft 365 spending policy that selects Cowork, the Work IQ API and Copilot Managed Runtime | The tenant | 2 (Cowork), 5 and 6 (Work IQ API), 6 (published apps) | Copilot Credits up to a monthly limit |
 | An Azure subscription and resource group with Owner or Contributor rights | The tenant admin | Pays every pay-as-you-go route; hosts the sample REST API and MCP server in 4 | Azure usage; the sample services ran on the free App Service F1 tier |
 | A Microsoft Foundry project | The instructor | 5 ([Foundry agents](../../05-cs-advanced/04-foundry-agents/readme.md)); Foundry IQ in 6 is optional | Azure usage for the model deployment |

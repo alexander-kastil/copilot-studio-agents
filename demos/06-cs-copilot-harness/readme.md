@@ -15,9 +15,9 @@ Treat Standard agents as the primary teaching track and Microsoft Copilot harnes
 | [Agent Skills in Copilot Studio](03-agent-skills/readme.md) | The Agent Skills open format, `SKILL.md`, and importing Claude Code or GitHub Copilot skills |
 | [Tools, MCP, and the New Workflows Designer](04-workflows-and-mcp/readme.md) | Connectors, MCP servers, and the new node-by-node workflows designer with agent nodes |
 | [Grounding Agents with Work IQ, Foundry IQ, and Fabric IQ](05-iq-grounding/readme.md) | What each IQ grounds on, how it is added to a Microsoft Copilot harness agent, and how to choose between Work IQ, Foundry IQ, and Fabric IQ |
-| [Building Apps in Copilot Studio](06-apps/readme.md) | Apps generated from a description beside agents and workflows: refining by conversation, publish versus share, and data access |
-| [Test and Evaluate Copilot Studio Agents](07-evaluations/readme.md) | Test sets and graders for both kinds of agent, the Evaluate tab of Microsoft Copilot harness agents, diagnosing a failing case, and post-release analytics from thumbs to CSAT to themes |
-| [Migrate Standard Agents to Microsoft Copilot Harness Agents](08-migration/readme.md) | When a Standard agent should move, the upgrade, rebuild and terminal routes, where each Standard part lands, and topics rebuilt as workflow tools and hooks |
+| [Test and Evaluate Copilot Studio Agents](06-evaluations/readme.md) | Test sets and graders for both kinds of agent, the Evaluate tab of Microsoft Copilot harness agents, diagnosing a failing case, and post-release analytics from thumbs to CSAT to themes |
+| [Migrate Standard Agents to Microsoft Copilot Harness Agents](07-migration/readme.md) | When a Standard agent should move, the upgrade, rebuild and terminal routes, where each Standard part lands, and topics rebuilt as workflow tools and hooks |
+| [Building Apps in Copilot Studio](08-apps/readme.md) | Apps generated from a description beside agents and workflows: refining by conversation, publish versus share, and data access |
 
 ## Demos
 
@@ -28,8 +28,8 @@ Treat Standard agents as the primary teaching track and Microsoft Copilot harnes
 | [Agent Skills in Copilot Studio](03-agent-skills/readme.md) | [Add and Tune an Agent Skill](03-agent-skills/demo-03-add-a-reusable-skill.md) |
 | [Tools, MCP, and the New Workflows Designer](04-workflows-and-mcp/readme.md) | [Connect an MCP Server and Automate with a Workflow](04-workflows-and-mcp/demo-04-connect-mcp-and-workflow.md) |
 | [Grounding Agents with Work IQ, Foundry IQ, and Fabric IQ](05-iq-grounding/readme.md) | [Ground an Agent in Your Work Context with Work IQ](05-iq-grounding/demo-05-ground-with-iq.md) |
-| [Building Apps in Copilot Studio](06-apps/readme.md) | [Build an App from a Description](06-apps/demo-06-build-an-app.md) |
-| [Migrate Standard Agents to Microsoft Copilot Harness Agents](08-migration/readme.md) | [Rebuild a Topic and Its Agent Flow as a Workflow](08-migration/demo-08-rebuild-a-topic-as-a-workflow.md) |
+| [Migrate Standard Agents to Microsoft Copilot Harness Agents](07-migration/readme.md) | [Rebuild a Topic and Its Agent Flow as a Workflow](07-migration/demo-07-rebuild-a-topic-as-a-workflow.md) |
+| [Building Apps in Copilot Studio](08-apps/readme.md) | [Build an App from a Description](08-apps/demo-08-build-an-app.md) |
 
 ## Labs
 
@@ -40,9 +40,9 @@ Treat Standard agents as the primary teaching track and Microsoft Copilot harnes
 | [Package Team Knowledge into a Portable Skill](../../labs/06-cs-copilot-harness/03-agent-skills/lab-01-portable-skill.md) | Author a `SKILL.md`, reuse it across two agents, and contrast with Standard agent topics |
 | [Build a Sales Account Assistant as a Microsoft Copilot Harness Agent](../../labs/06-cs-copilot-harness/04-workflows-and-mcp/lab-01-sales-account-assistant.md) | Capstone: build, ground, tool up, skill, and publish a Microsoft Copilot harness agent end to end |
 | [Ground an Agent with Work IQ and Route Work Questions to It](../../labs/06-cs-copilot-harness/05-iq-grounding/lab-01-ground-with-iq.md) | Add Work IQ to a Microsoft Copilot harness agent, route work-context questions to it in Instructions, and verify the routing in the activity trace |
-| [Build and Share a Business App](../../labs/06-cs-copilot-harness/06-apps/lab-01-build-an-app.md) | Connect a generated app to a SharePoint list, publish and share it with a classmate, and confirm that data access is a separate permission |
-| [Evaluate a Microsoft Copilot Harness Agent with Test Sets](../../labs/06-cs-copilot-harness/07-evaluations/lab-01-evaluate-with-test-sets.md) | Fill a conversation test set three ways, run a baseline, diagnose each failure into a component bucket, change one thing, and prove the fix with a second run |
-| [Upgrade the HR Agent and Rebuild Its Topics](../../labs/06-cs-copilot-harness/08-migration/lab-01-upgrade-the-hr-agent.md) | Upgrade the HR agent from module 03, map each topic to a skill, a workflow or a hook, rebuild the employee data topic as a workflow tool, and add a session-start hook |
+| [Evaluate a Microsoft Copilot Harness Agent with Test Sets](../../labs/06-cs-copilot-harness/06-evaluations/lab-01-evaluate-with-test-sets.md) | Fill a conversation test set three ways, run a baseline, diagnose each failure into a component bucket, change one thing, and prove the fix with a second run |
+| [Upgrade the HR Agent and Rebuild Its Topics](../../labs/06-cs-copilot-harness/07-migration/lab-01-upgrade-the-hr-agent.md) | Upgrade the HR agent from module 03, map each topic to a skill, a workflow or a hook, rebuild the employee data topic as a workflow tool, and add a session-start hook |
+| [Build and Share a Business App](../../labs/06-cs-copilot-harness/08-apps/lab-01-build-an-app.md) | Connect a generated app to a SharePoint list, publish and share it with a classmate, and confirm that data access is a separate permission |
 
 ## Standard to Microsoft Copilot quick reference
 

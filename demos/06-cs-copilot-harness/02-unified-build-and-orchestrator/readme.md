@@ -58,7 +58,7 @@ A Microsoft Copilot harness agent makes its thinking visible so you can trust an
 
 - [Build, Evaluate, and Monitor a Northwind Sales Assistant](../../../labs/06-cs-copilot-harness/02-unified-build-and-orchestrator/lab-01-evaluate-and-monitor-agent.md): Compose an agent across the Build and Preview tabs, then score it with a test set on the Evaluate tab and review its runs on the Monitor tab.
 
-Scoring the agent in depth is its own topic: see [Test and Evaluate Copilot Studio Agents](../07-evaluations/readme.md).
+Scoring the agent in depth is its own topic: see [Test and Evaluate Copilot Studio Agents](../06-evaluations/readme.md).
 
 ## Key Topics covered in this module
 

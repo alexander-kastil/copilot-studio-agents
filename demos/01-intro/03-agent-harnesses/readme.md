@@ -74,7 +74,7 @@ Every agent goes through the same five stages, whichever harness runs it: create
 |---|---|---|
 | Create | Name the purpose and pick the harness | [Module 3](../../03-cs-basics/readme.md) for Standard agents, [module 6](../../06-cs-copilot-harness/readme.md) for Microsoft Copilot harness agents |
 | Build | Write instructions, add knowledge and tools, pick the model, set boundaries | Modules 3 to 6 |
-| Test | Try requests in the test chat or Preview, then run an evaluation set | [Test and Evaluate Standard Agents](../../05-cs-advanced/06-evaluations/readme.md), [Test and Evaluate Copilot Studio Agents](../../06-cs-copilot-harness/07-evaluations/readme.md) |
+| Test | Try requests in the test chat or Preview, then run an evaluation set | [Test and Evaluate Standard Agents](../../05-cs-advanced/06-evaluations/readme.md), [Test and Evaluate Copilot Studio Agents](../../06-cs-copilot-harness/06-evaluations/readme.md) |
 | Publish | Release the agent to its channels | [Publishing to Teams & Copilot](../../03-cs-basics/06-publishing/readme.md), [module 7](../../07-cs-maintaining/readme.md) |
 | Monitor | Review real conversations, tasks and credits | The **Monitor** tab, used from [module 6](../../06-cs-copilot-harness/readme.md) on |
 

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Where a Copilot Studio skill comes from and where skills are saved</title>
+  <desc id="d">Five ways a skill reaches a Copilot Studio agent's Skills panel on the Build tab through Add skill: Generate with AI, where you describe the skill, answer Copilot's questions and then Add to agent; Create from blank, where you type a name, description and Markdown instructions in the panel; Upload a skill, a SKILL.md or a ZIP with SKILL.md at the root plus scripts, templates and reference documents, in the same SKILL.md format Claude Code and GitHub Copilot use; Marketplace (preview), where Browse skills (preview) next to Skills adds a skill shared by admins or skill owners in your organization and the agent gets a snapshot that keeps a reference to the original; and Built-in skills the harness provides, neither uploaded nor authored. In the agent, each skill is its own folder inside that agent; Download gives back the Markdown file and Replace uploads an edited one. Copilot Cowork saves custom skills in OneDrive at Documents/Cowork/skills/name/SKILL.md and discovers them at the start of each session.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="330" y="30" width="520" height="162" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="590" y="68" text-anchor="middle" font-size="30" font-weight="700" fill="#24292f">Generate with AI</text>
+  <text x="590" y="106" text-anchor="middle" font-size="26" fill="#57606a">describe the skill, answer</text>
+  <text x="590" y="138" text-anchor="middle" font-size="26" fill="#57606a">Copilot's questions, then</text>
+  <text x="590" y="170" text-anchor="middle" font-size="26" fill="#57606a">Add to agent</text>
+
+  <rect x="330" y="206" width="520" height="130" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="590" y="244" text-anchor="middle" font-size="30" font-weight="700" fill="#24292f">Create from blank</text>
+  <text x="590" y="282" text-anchor="middle" font-size="26" fill="#57606a">name, description and Markdown</text>
+  <text x="590" y="314" text-anchor="middle" font-size="26" fill="#57606a">instructions typed in the panel</text>
+
+  <rect x="30" y="360" width="250" height="90" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="155" y="416" text-anchor="middle" font-size="30" font-weight="700" fill="#24292f">Claude Code</text>
+  <rect x="30" y="520" width="250" height="90" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="155" y="576" text-anchor="middle" font-size="30" font-weight="700" fill="#24292f">GitHub Copilot</text>
+  <line x1="284" y1="405" x2="324" y2="440" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <line x1="284" y1="565" x2="324" y2="530" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="330" y="350" width="520" height="266" rx="18" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="590" y="388" text-anchor="middle" font-size="30" font-weight="700" fill="#24292f">Upload a skill</text>
+  <text x="590" y="424" text-anchor="middle" font-size="28" font-weight="700" font-family="Consolas, monospace" fill="#24292f">SKILL.md</text>
+  <text x="590" y="458" text-anchor="middle" font-size="26" fill="#57606a">or a ZIP with SKILL.md at the</text>
+  <text x="590" y="490" text-anchor="middle" font-size="26" fill="#57606a">root plus scripts, templates</text>
+  <text x="590" y="522" text-anchor="middle" font-size="26" fill="#57606a">and reference documents</text>
+  <text x="590" y="562" text-anchor="middle" font-size="26" fill="#24292f">same SKILL.md format as</text>
+  <text x="590" y="594" text-anchor="middle" font-size="26" fill="#24292f">Claude Code and GitHub Copilot</text>
+
+  <rect x="330" y="630" width="520" height="238" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="590" y="668" text-anchor="middle" font-size="30" font-weight="700" fill="#24292f">Marketplace (preview)</text>
+  <text x="590" y="706" text-anchor="middle" font-size="26" fill="#57606a">Browse skills (preview) next to</text>
+  <text x="590" y="738" text-anchor="middle" font-size="26" fill="#57606a">Skills adds a skill shared by admins</text>
+  <text x="590" y="770" text-anchor="middle" font-size="26" fill="#57606a">or skill owners in your organization</text>
+  <text x="590" y="814" text-anchor="middle" font-size="26" fill="#24292f">the agent gets a snapshot that</text>
+  <text x="590" y="846" text-anchor="middle" font-size="26" fill="#24292f">keeps a reference to the original</text>
+
+  <rect x="330" y="886" width="520" height="130" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="590" y="924" text-anchor="middle" font-size="30" font-weight="700" fill="#24292f">Built-in</text>
+  <text x="590" y="962" text-anchor="middle" font-size="26" fill="#57606a">provided by the harness,</text>
+  <text x="590" y="994" text-anchor="middle" font-size="26" fill="#57606a">not uploaded or authored</text>
+
+  <rect x="930" y="330" width="340" height="420" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1100" y="420" text-anchor="middle" font-size="34" font-weight="700" fill="#24292f">Copilot Studio</text>
+  <text x="1100" y="464" text-anchor="middle" font-size="34" font-weight="700" fill="#24292f">agent</text>
+  <text x="1100" y="560" text-anchor="middle" font-size="28" fill="#24292f">Skills panel</text>
+  <text x="1100" y="600" text-anchor="middle" font-size="26" fill="#57606a">Build tab</text>
+  <text x="1100" y="640" text-anchor="middle" font-size="26" fill="#57606a">Add skill</text>
+
+  <line x1="854" y1="111" x2="926" y2="380" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <line x1="854" y1="271" x2="926" y2="460" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <line x1="854" y1="483" x2="926" y2="540" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <line x1="854" y1="749" x2="926" y2="630" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <line x1="854" y1="951" x2="926" y2="710" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="1380" y="150" width="500" height="340" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1630" y="204" text-anchor="middle" font-size="32" font-weight="700" fill="#24292f">In the agent</text>
+  <text x="1630" y="254" text-anchor="middle" font-size="26" fill="#24292f">each skill is its own folder</text>
+  <text x="1630" y="290" text-anchor="middle" font-size="26" fill="#24292f">inside that agent</text>
+  <rect x="1410" y="330" width="440" height="66" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1630" y="373" text-anchor="middle" font-size="26" fill="#24292f">Download: the Markdown file</text>
+  <rect x="1410" y="406" width="440" height="66" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1630" y="449" text-anchor="middle" font-size="26" fill="#24292f">Replace: upload an edited one</text>
+  <line x1="1274" y1="420" x2="1376" y2="320" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="1380" y="580" width="500" height="380" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1630" y="634" text-anchor="middle" font-size="32" font-weight="700" fill="#24292f">Copilot Cowork</text>
+  <text x="1630" y="684" text-anchor="middle" font-size="26" fill="#24292f">custom skills saved in OneDrive</text>
+  <rect x="1410" y="712" width="440" height="110" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1630" y="756" text-anchor="middle" font-size="26" font-family="Consolas, monospace" fill="#24292f">Documents/Cowork/skills/</text>
+  <text x="1630" y="798" text-anchor="middle" font-size="26" font-family="Consolas, monospace" fill="#24292f">&lt;name&gt;/SKILL.md</text>
+  <text x="1630" y="874" text-anchor="middle" font-size="26" fill="#57606a">discovered at the start</text>
+  <text x="1630" y="910" text-anchor="middle" font-size="26" fill="#57606a">of each session</text>
+</svg>

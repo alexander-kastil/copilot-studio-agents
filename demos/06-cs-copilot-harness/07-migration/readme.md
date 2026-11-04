@@ -14,7 +14,7 @@ Treat a migration as re-architecture. First write down the agent's tasks, outcom
 
 All three routes leave the Standard agent untouched and produce a new agent next to it, so you can run both against the same test set before you switch users over.
 
-![Three routes start from one Standard agent and end in a new Microsoft Copilot harness agent beside it: upgrade on the Copilot Studio home page with a report, rebuild by hand from a capability map, and migrate from the terminal with mcs-assistant and a plan file, while the original stays unchanged.](../pptx/images/08-02-migration-routes.svg)
+![Three routes start from one Standard agent and end in a new Microsoft Copilot harness agent beside it: upgrade on the Copilot Studio home page with a report, rebuild by hand from a capability map, and migrate from the terminal with mcs-assistant and a plan file, while the original stays unchanged.](../pptx/images/07-02-migration-routes.svg)
 
 The first route is the upgrade, in preview. On the Copilot Studio home page you type a request such as `upgrade my HR Buddy agent` into the input box, answer the questions Copilot Studio asks in the chat (whether it found the right agent, what to do with features that don't carry over), and the new agent appears as a card whose name ends in **(Upgraded)**. The upgrade carries over instructions, tools and suggested prompts, can rebuild custom topics as skills or workflows, and reports what was migrated, what requires attention and what was skipped. Knowledge sources, Power Fx expressions and child agents are not migrated, and the upgrade itself consumes Copilot Credits.
 
@@ -24,7 +24,7 @@ The second route is the rebuild by hand: you create a new agent with the **GitHu
 
 The table maps every Standard capability modules 03 to 05 teach onto its place on the GitHub Copilot harness. The last column says whether the upgrade brings it across or you add it yourself.
 
-![Standard parts on the left map to their places on a Microsoft Copilot harness agent on the right: instructions and tools carry over, topics become skills, workflows and hooks, prompts become skills, agent flows are rebuilt as workflows, knowledge is added again, child agents become connected agents or skills, and computer use, voice, Adaptive Cards and some channels stay on Standard agents.](../pptx/images/08-03-where-parts-land.svg)
+![Standard parts on the left map to their places on a Microsoft Copilot harness agent on the right: instructions and tools carry over, topics become skills, workflows and hooks, prompts become skills, agent flows are rebuilt as workflows, knowledge is added again, child agents become connected agents or skills, and computer use, voice, Adaptive Cards and some channels stay on Standard agents.](../pptx/images/07-03-where-parts-land.svg)
 
 | Standard capability (where taught) | On the GitHub Copilot harness | Upgrade |
 |---|---|---|
@@ -35,7 +35,7 @@ The table maps every Standard capability modules 03 to 05 teach onto its place o
 | Question nodes, slot filling and custom entities ([03/03](../../03-cs-basics/03-topics/readme.md)) | The agent asks in conversation and passes the values as workflow inputs; custom entities aren't supported | Rebuilt |
 | Topic and global variables ([03/03](../../03-cs-basics/03-topics/readme.md)) | Workflow inputs and outputs; user, channel and agent details arrive in a hook's `metadata`; **Memory** for what should outlast a session | Rebuilt |
 | Power Fx formulas ([03/04](../../03-cs-basics/04-power-fx/readme.md)) | Branching and data steps inside a workflow, or the native code interpreter | Not migrated |
-| Adaptive Cards in a topic ([03/05](../../03-cs-basics/05-adaptive-cards/readme.md)) | No documented equivalent; a workflow's human-in-the-loop action can request information instead | Stays Standard |
+| Adaptive Cards in a topic ([03/05](../../03-cs-basics/05-adaptive-cards/readme.md)) | No card designer; each purpose moves elsewhere: the agent asks for input in conversation and passes it to a workflow, shows results as formatted text or a generated Word, Excel, PowerPoint or PDF file, and a workflow's **Request for information** asks a person outside the chat | Stays Standard |
 | Publishing and authentication ([03/06](../../03-cs-basics/06-publishing/readme.md)) | Microsoft 365 and Teams, websites; Entra ID or no authentication. SharePoint, WhatsApp and Dynamics 365 Contact Center channels and manual authentication aren't supported | Published again |
 | Prompt tool ([04/01](../../04-cs-tools/01-prompts/readme.md)) | Not supported; replaced by skills, with the code interpreter for computation | Rebuilt |
 | Connector tools and custom connectors ([04/03](../../04-cs-tools/03-connectors/readme.md), [04/05](../../04-cs-tools/05-rest-api/readme.md)) | **Connectors** on the Tools surface | Carried over as tools |
@@ -48,7 +48,7 @@ The table maps every Standard capability modules 03 to 05 teach onto its place o
 | Child agents ([05/03](../../05-cs-advanced/03-multi-agent/readme.md)) | Skills, or a connected agent | Not migrated |
 | Connected Copilot Studio, Foundry and A2A agents ([05/03](../../05-cs-advanced/03-multi-agent/readme.md), [05/05](../../05-cs-advanced/05-connect-foundry-agents/readme.md)) | **Connected agents** | Added again |
 | Voice and phone menus | Not on the GitHub Copilot harness; voice agents run on the Customer Conversation harness | Stays Standard |
-| Evaluations ([05/06](../../05-cs-advanced/06-evaluations/readme.md)) | The **Evaluate** tab, as in [topic 7](../07-evaluations/readme.md) | Rebuilt |
+| Evaluations ([05/06](../../05-cs-advanced/06-evaluations/readme.md)) | The **Evaluate** tab, as in [topic 6](../06-evaluations/readme.md) | Rebuilt |
 
 Two rows decide most migrations. Every topic you built is a question about purpose: if it carries know-how, it becomes a skill; if it runs fixed steps, it becomes a workflow; if it must happen on every turn or every tool call, it becomes a hook. The rows marked "Stays Standard" are the reason some agents shouldn't move yet, and the reason a team often runs both kinds side by side.
 
@@ -59,7 +59,7 @@ Two rows decide most migrations. Every topic you built is a question about purpo
 
 A Standard topic gives you a path the agent walks node by node, which is why modules 03 and 04 used topics whenever a process had to run the same way every time. The GitHub Copilot harness has no topics, yet Microsoft's guidance states that both harnesses allow predictable, deterministic responses: through predefined topics on the standard harness and through workflows on the GitHub Copilot harness. What changes is who decides that the fixed steps run, and the harness gives you three answers.
 
-![Three ways to keep fixed steps on a Microsoft Copilot harness agent: a workflow tool that the agent chooses by its description, a hook whose workflow runs every time its event fires, and a workflow that owns the order and calls the agent from one agent node.](../pptx/images/08-04-tool-hook-agent-node.svg)
+![Three ways to keep fixed steps on a Microsoft Copilot harness agent: a workflow tool that the agent chooses by its description, a hook whose workflow runs every time its event fires, and a workflow that owns the order and calls the agent from one agent node.](../pptx/images/07-04-tool-hook-agent-node.svg)
 
 A workflow as a tool keeps the steps fixed and leaves the decision to the agent. The workflow starts with the trigger **When an agent calls the flow**, ends with **Respond to the agent**, and runs connectors, branches, loops and AI actions in between; the agent picks it by its name and description, the way a generative Standard agent picks a topic by its description. It must be published, it must answer within the 100 second action limit, and **Asynchronous response** under **Networking** must stay off. Agent flows you built in module 04 aren't converted, so each one is rebuilt as a workflow in the designer.
 
@@ -81,11 +81,11 @@ The Action node that called an agent flow becomes the steps of that flow inside 
 
 ## Hands-On Demo
 
-- [Rebuild a Topic and Its Agent Flow as a Workflow](./demo-08-rebuild-a-topic-as-a-workflow.md): upgrade the Health Advisor from module 04, read what the upgrade carried over and skipped, and rebuild its symptom topic and agent flow as a workflow tool the upgraded agent calls.
+- [Rebuild a Topic and Its Agent Flow as a Workflow](./demo-07-rebuild-a-topic-as-a-workflow.md): upgrade the Health Advisor from module 04, read what the upgrade carried over and skipped, and rebuild its symptom topic and agent flow as a workflow tool the upgraded agent calls.
 
 ## Hands-On Lab
 
-- [Upgrade the HR Agent and Rebuild Its Topics](../../../labs/06-cs-copilot-harness/08-migration/lab-01-upgrade-the-hr-agent.md): upgrade the HR agent you built in module 03, map each of its topics to a skill, a workflow or a hook, rebuild the employee data topic as a workflow tool, add a session-start hook, and prove both in Preview.
+- [Upgrade the HR Agent and Rebuild Its Topics](../../../labs/06-cs-copilot-harness/07-migration/lab-01-upgrade-the-hr-agent.md): upgrade the HR agent you built in module 03, map each of its topics to a skill, a workflow or a hook, rebuild the employee data topic as a workflow tool, add a session-start hook, and prove both in Preview.
 
 ## Key Topics covered in this module
 

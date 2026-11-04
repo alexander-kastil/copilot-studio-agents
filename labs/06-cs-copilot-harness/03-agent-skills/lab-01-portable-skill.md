@@ -65,7 +65,7 @@ Expected: you can state one reason a skill fits better than instructions here, n
 
 The runtime keeps only the name and description of each skill in context until a request matches, so those two lines do all of the activation work. A hyphenated, lowercase name reads cleanly across the open Agent Skills format, and a keyword-rich description is what makes activation reliable. Aim the description at the exact words a seller would type when they hit a wall.
 
-![Animated diagram: a request reaches the orchestration runtime, which matches it to the objection-handling description. Agent instructions and every skill's name and description sit in context on every turn; the objection-handling instructions load only on the match.](../../../demos/06-cs-copilot-harness/pptx/images/03-01-agent-skills.svg)
+![Animated diagram: a request reaches the orchestration runtime, which matches it to the objection-handling description. Agent instructions and every skill's name and description sit in context on every turn; the objection-handling instructions load only on the match.](../../../demos/06-cs-copilot-harness/pptx/images/03-05-agent-skills.svg)
 
 Write the description so it says both what the skill does and when to use it. Pack it with the trigger words a real request would contain: objection, push-back, price, timing, budget, competitor.
 

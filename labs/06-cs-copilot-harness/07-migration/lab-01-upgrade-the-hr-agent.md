@@ -21,7 +21,7 @@ Duration: about 40 minutes.
 - The HR Agent from the module 03 labs, starting with [Create Your First Copilot Studio Agent](../../03-cs-basics/01-standard-agents/lab-01-create-your-first-agent.md): its instructions, the Microsoft Careers site and the SharePoint HR Documents knowledge, and the topics from [Define Topics, Entities, and Variables](../../03-cs-basics/03-topics/lab-01-build-topics.md) and [Collect Input with Adaptive Cards](../../03-cs-basics/05-adaptive-cards/lab-01-collect-input-with-adaptive-cards.md).
 - A Copilot Studio environment where the **New agent** menu offers **Agent** with the **GitHub Copilot** badge, with the maker role and Copilot Credits available: the upgrade, workflow runs, hooks and Preview turns consume them.
 - An Office 365 Outlook connection for your own account, so the workflow can send you the candidate summary.
-- The demo [Rebuild a Topic and Its Agent Flow as a Workflow](../../../demos/06-cs-copilot-harness/08-migration/demo-08-rebuild-a-topic-as-a-workflow.md) watched or worked, so the workflow designer is familiar.
+- The demo [Rebuild a Topic and Its Agent Flow as a Workflow](../../../demos/06-cs-copilot-harness/07-migration/demo-07-rebuild-a-topic-as-a-workflow.md) watched or worked, so the workflow designer is familiar.
 
 ## Step 1: Map the HR Agent and record a baseline
 

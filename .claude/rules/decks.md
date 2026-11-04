@@ -41,7 +41,7 @@ Facts for the global create-pptx skill (`references/gamma-deck.md`) and the `/cr
 
 - Class OneDrive folder: `E:\Onedrive\OneDrive - Integrations IT Solutions\Classes\copilot-studio-agents`. The first `deliver` creates it.
 - Every deck change ends with `deliver` to that folder in the same turn, unasked (owner, 2026-11-01: "always publish to onedrive when done").
-- The OneDrive copy is the owner's working copy: `cmp` before overwriting a deck already there.
+- The OneDrive copy is the owner's working copy: `cmp` before overwriting a deck already there. A mismatch at the same size and time is often only a PowerPoint re-save (zip flags 0x0006, 1980 dates): `deck_diff.py --a <copy> --b <delivered>` printing `differ=0` means no owner edits (2026-11-04).
 
 ## Git
 

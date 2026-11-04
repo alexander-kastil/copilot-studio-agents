@@ -50,19 +50,6 @@ Learn's harness comparison frames the choice as task weight. A light task works 
 
 The two harnesses can also share one solution. In Learn's data curation scenario, high-volume Standard agents stay the responsive layer users talk to, while a Microsoft Copilot harness agent runs on a schedule, turns large Excel workbooks into structured Dataverse tables and tidies the SharePoint content those agents search. Only validated output goes back into the shared data. Each agent keeps the kind it was created as, so the one-way rule still holds.
 
-### Where each rule lives
-
-The [GitHub Copilot Harness Execution](https://github.com/microsoft/ai-agent-runbooks/blob/main/02-patterns/GitHub-Copilot-Harness-Execution/GitHub-Copilot-Harness-Execution.md) pattern in Microsoft's AI Agent Runbooks starts with a sorting rule: put each requirement in the component that can carry it, and keep the user's request about the outcome. Rules that hold for every run belong in the agent's configuration.
-
-| Requirement | Put it in | What to remember |
-|-------------|-----------|------------------|
-| Role, scope, forbidden actions, when to escalate | Instructions | They apply on every turn, so no request has to repeat them |
-| Approved policies, standards and trusted records | Knowledge | A knowledge search finds passages; it doesn't prove the agent read a whole document |
-| A narrow operation with clear inputs, outputs and errors | Tools | Remove the connector actions and turn off the MCP tools the task doesn't need, so the agent can't call them |
-| A repeatable procedure and its output format | Skills | A `SKILL.md` guides the agent; it isn't a security boundary |
-| An approval, a record update or a notification | Workflows | The authored path runs the same way every time |
-| A check before a tool runs | Hooks | **Pre tool use** can deny the call; the target system still checks access itself |
-
 ### Bounding the agent's loop
 
 A Microsoft Copilot harness agent plans its own route, so the pattern sets the limits that route must stay inside. The agent asks for missing inputs, makes a plan, picks the knowledge, skills and tools it needs, runs the steps it may run, and checks that the evidence supports its output. When something is missing and recovery is safe, it plans again; when access is denied, a safety rule fails or a limit on calls, time or retries is reached, it stops and reports the work as partial or blocked. Replanning never widens permissions or works around a denial.

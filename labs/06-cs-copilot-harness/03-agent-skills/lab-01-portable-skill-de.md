@@ -65,7 +65,7 @@ Erwartet: Sie können einen Grund nennen, warum ein Skill hier besser passt als 
 
 Die Runtime hält von jedem Skill nur Name und Description im Kontext, bis eine Anfrage passt, deshalb leisten diese beiden Zeilen die gesamte Aktivierungsarbeit. Ein Name in Kleinbuchstaben mit Bindestrichen liest sich im offenen Agent Skills Format sauber, und eine keywordreiche Description macht die Aktivierung zuverlässig. Richten Sie die Description auf genau die Wörter aus, die Seller tippen, wenn sie nicht weiterkommen.
 
-![Animiertes Diagramm: Eine Anfrage erreicht die Orchestration Runtime, die sie der Description von objection-handling zuordnet. Die Instructions des Agents sowie Name und Description jedes Skills stehen in jedem Turn im Kontext; die Instructions von objection-handling laden erst bei einem Treffer.](../../../demos/06-cs-copilot-harness/pptx/images/03-01-agent-skills.svg)
+![Animiertes Diagramm: Eine Anfrage erreicht die Orchestration Runtime, die sie der Description von objection-handling zuordnet. Die Instructions des Agents sowie Name und Description jedes Skills stehen in jedem Turn im Kontext; die Instructions von objection-handling laden erst bei einem Treffer.](../../../demos/06-cs-copilot-harness/pptx/images/03-05-agent-skills.svg)
 
 Schreiben Sie die Description so, dass sie sagt, was der Skill tut und wann er zum Einsatz kommt. Packen Sie die Trigger-Wörter hinein, die eine echte Anfrage enthalten würde: objection, push-back, price, timing, budget, competitor.
 
