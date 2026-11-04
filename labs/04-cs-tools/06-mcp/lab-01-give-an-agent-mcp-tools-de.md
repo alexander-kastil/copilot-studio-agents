@@ -43,7 +43,8 @@ Zu jeder mitarbeitenden Person gehören persönliche Angaben (Vorname, Nachname,
 
 ## Voraussetzungen
 
-- Ein Microsoft 365 Tenant und eine Power Platform Environment mit Copilot Studio (die Labs gehen von einer Environment namens `Copilot Dev Camp` aus)
+- Ein Microsoft 365 Tenant und eine Power Platform Environment mit Copilot Studio.
+- Ihre eigene Environment: Wählen Sie unten in der linken Navigation den Namen der Environment (**Switch environment**) und prüfen Sie, dass unter **Current environment** die nach Ihrem Account benannte Environment steht, zum Beispiel `copilot-studio-01` (Sandbox) für `copilot-studio-01@mst.fastlane.net`. Arbeiten Sie das ganze Lab darin, nie in der gemeinsamen Default Environment.
 
 Der Server ist für diesen Kurs deployt und akzeptiert Aufrufe ohne Authentication:
 
@@ -61,7 +62,7 @@ Den Quellcode finden Sie in diesem Repository unter [`src/hr-mcp-server`](../../
 
 ### Schritt 1: Den Agent anlegen
 
-Öffnen Sie [Copilot Studio](https://copilotstudio.microsoft.com) und wechseln Sie zu Ihrer Environment `Copilot Dev Camp`. Wählen Sie auf der Startseite unter **Other ways to build** den Eintrag **Agent** mit dem Badge **Standard**. Der Dialog **Name your agent** fragt nur nach dem Namen; geben Sie ihn ein und bestätigen Sie.
+Öffnen Sie [Copilot Studio](https://copilotstudio.microsoft.com) und wechseln Sie zu Ihrer eigenen Environment, der nach Ihrem Account benannten. Wählen Sie auf der Startseite unter **Other ways to build** den Eintrag **Agent** mit dem Badge **Standard**. Der Dialog **Name your agent** fragt nur nach dem Namen; geben Sie ihn ein und bestätigen Sie.
 
 - **Name:**
 
@@ -135,7 +136,7 @@ Copilot Studio erstellt das Tool und fordert dann eine Connection an; der Status
 
 Einen Server zu registrieren und sich mit ihm zu verbinden sind zwei getrennte Vorgänge. Die Registrierung ist eine Definition in der Environment; die Connection gilt pro User, und deshalb verbinden Sie sich später in Microsoft 365 Copilot erneut.
 
-![Eine MCP Tool Registrierung in der Environment Copilot Dev Camp, genutzt aus dem Test Panel von Copilot Studio und aus Microsoft 365 Copilot, jeweils mit einer eigenen Connection pro User zum selben HR MCP Server.](./_images/mcp-registration-and-connections.svg)
+![Eine MCP Tool Registrierung in Ihrer eigenen Environment, genutzt aus dem Test Panel von Copilot Studio und aus Microsoft 365 Copilot, jeweils mit einer eigenen Connection pro User zum selben HR MCP Server.](./_images/mcp-registration-and-connections.svg)
 
 Wählen Sie nach dem Verbinden **Add**. Wählen Sie das Tool in der Liste **Tools**, um seine Detailseite zu öffnen; sie listet alle sechs Tools, die dem Agent jetzt zur Verfügung stehen.
 

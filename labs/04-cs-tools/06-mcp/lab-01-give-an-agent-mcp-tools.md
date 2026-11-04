@@ -43,7 +43,8 @@ Each employee carries personal details (first name, last name, email) and profes
 
 ## Prerequisites
 
-- A Microsoft 365 tenant and a Power Platform environment with Copilot Studio (the labs assume an environment named `Copilot Dev Camp`)
+- A Microsoft 365 tenant and a Power Platform environment with Copilot Studio.
+- Your own environment: select the environment name at the bottom of the left navigation (**Switch environment**) and check that **Current environment** shows the environment named after your account, for example `copilot-studio-01` (Sandbox) for `copilot-studio-01@mst.fastlane.net`. Work through the whole lab in it, never in the shared Default environment.
 
 The server is deployed for this class and accepts calls without authentication:
 
@@ -61,7 +62,7 @@ The source is in this repository under [`src/hr-mcp-server`](../../../src/hr-mcp
 
 ### Step 1: Create it
 
-Open [Copilot Studio](https://copilotstudio.microsoft.com), switch to your `Copilot Dev Camp` environment. On the home page, under **Other ways to build**, select **Agent** with the **Standard** badge. The **Name your agent** dialog asks only for the name; enter it and confirm.
+Open [Copilot Studio](https://copilotstudio.microsoft.com), switch to your own environment, the one named after your account. On the home page, under **Other ways to build**, select **Agent** with the **Standard** badge. The **Name your agent** dialog asks only for the name; enter it and confirm.
 
 - **Name:**
 
@@ -135,7 +136,7 @@ Copilot Studio creates the tool and then asks for a connection, showing **Not co
 
 Registering a server and connecting to it are two separate acts. The registration is a definition in the environment; the connection is per user, and this is why you connect again later in Microsoft 365 Copilot.
 
-![One MCP tool registration in the Copilot Dev Camp environment, used from the Copilot Studio test panel and from Microsoft 365 Copilot, each with its own per-user connection to the same HR MCP Server.](./_images/mcp-registration-and-connections.svg)
+![One MCP tool registration in your own environment, used from the Copilot Studio test panel and from Microsoft 365 Copilot, each with its own per-user connection to the same HR MCP Server.](./_images/mcp-registration-and-connections.svg)
 
 Once connected, select **Add**. Select the tool in the **Tools** list to open its details page, which lists all six tools now available to the agent.
 

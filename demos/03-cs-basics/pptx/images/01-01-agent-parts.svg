@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
   <title id="t">What the HR Agent is made of and what it reaches</title>
-  <desc id="d">The HR Agent built in labs 01 to 03. The agent (model GPT-4.1, Default) has four parts: Instructions on HR policies, career growth and learning pathways; Knowledge from a public website and a SharePoint site; Topics Collect user's role, Register a new candidate and Register new candidate with adaptive cards; Settings with generative AI orchestration. It lives in the Power Platform environment Copilot Dev Camp. Knowledge points to the Microsoft Careers site and to HR Documents in SharePoint, which answers only from documents the user has access to. Publishing to the Teams plus Microsoft 365 channel brings the agent to Microsoft Teams. Each part is tagged with the lab that adds it.</desc>
+  <desc id="d">The HR Agent built in labs 01 to 03. The agent (model GPT-4.1, Default) has four parts: Instructions on HR policies, career growth and learning pathways; Knowledge from a public website and a SharePoint site; Topics Collect user's role, Register a new candidate and Register new candidate with adaptive cards; Settings with generative AI orchestration. It lives in your own Power Platform environment. Knowledge points to the Microsoft Careers site and to HR Documents in SharePoint, which answers only from documents the user has access to. Publishing to the Teams plus Microsoft 365 channel brings the agent to Microsoft Teams. Each part is tagged with the lab that adds it.</desc>
   <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
   <defs>
     <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
@@ -36,7 +36,7 @@
 
     <rect x="60" y="830" width="1120" height="150" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
     <text x="100" y="892" font-size="30" font-weight="700" fill="#24292f">Power Platform environment</text>
-    <text x="100" y="940" font-size="28" fill="#57606a">Copilot Dev Camp (Developer), where the agent lives</text>
+    <text x="100" y="940" font-size="28" fill="#57606a">Your own environment, where the agent lives</text>
 
     <g stroke="#8c959f" stroke-width="2" fill="#ffffff">
       <rect x="1030" y="158" width="120" height="44" rx="22"/>
