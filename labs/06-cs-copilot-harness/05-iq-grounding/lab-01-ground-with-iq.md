@@ -21,7 +21,7 @@ Duration: about 25 minutes, not counting the optional Step 8.
 |------|-------|
 | 1 | Create a Microsoft Copilot harness agent |
 | 2 | Ask the agent without grounding and read the baseline |
-| 3 | Add the HR MCP server from the Tools panel |
+| 3 | Register and add the HR MCP server from the Tools panel |
 | 4 | Route staff questions to the HR MCP server in Instructions |
 | 5 | Test a staff question |
 | 6 | Read the step list and check the source |
@@ -64,19 +64,19 @@ Who on our team speaks Japanese, and what is their role and email address?
 
 Expected: the reply does not name Kenji Tanaka. It either says it has no access to staff records or gives a general answer. The step list under the reply shows no **Used tool** line, so any name in the reply is a guess, which is the failure this lab fixes.
 
-## Step 3: Add the HR MCP server from the Tools panel
+## Step 3: Register and add the HR MCP server from the Tools panel
 
 The HR MCP server is the grounding source. Adding it gives the agent a set of staff tools it can call, and Step 4 decides when it does. The server can also add, change and remove employees and assign shifts; you turn those write tools off in this lab because every learner shares the same staff list.
 
 1. Open the **Build** tab and select **+** next to **Tools** in the components panel.
 2. In **Add a tool**, select **+ Add**, then select **Model Context Protocol (MCP)**.
-3. In **Add MCP server**, fill in the fields below, set **Authentication** to **None**, and select **Add**.
+3. Register the server: in **Add MCP server**, fill in the fields below, set **Authentication** to **None**, and select **Add**.
    - Server name: `HR MCP Server`
    - Server description: `Looks up the restaurant's employees: names, roles, skills, spoken languages and email addresses.`
    - Server URL: `https://lab-human-resource-mcp.azurewebsites.net/mcp`
-4. Under **Select a connection**, open the **Not connected** list, select **Create new connection**, and select **Create** in the connection dialog (the display name is optional). When the list shows the connection, select **Add**.
+4. Connect the registered server to the agent: under **Select a connection**, open the **Not connected** list, select **Create new connection**, and select **Create** in the connection dialog (the display name is optional). When the list shows the connection, select **Add**.
 5. Select **Save** before you open the tool; opening it with unsaved changes asks **Leave without saving?**, and **Discard** drops the new tool.
-6. Under **Tools**, select **HR MCP Server** to open **Edit tool**. Under **Tool permissions**, turn off every tool that adds, updates or removes an employee or assigns a shift, keep **List employees** and **Search employees** on, select **Done**, and select **Save**.
+6. Under **Tools**, select **HR MCP Server** to open **Edit tool**. Under **Tool permissions**, turn off every tool that adds, updates or removes an employee or assigns a shift, keep **List employees** and **Search employees** on, and select **Done**. Then select **Save** at the top right; **Done** alone does not save the permissions.
 
 Expected: **HR MCP Server** appears under **Tools** on the **Build** tab, and its **Tool permissions** allow only **List employees** and **Search employees**.
 

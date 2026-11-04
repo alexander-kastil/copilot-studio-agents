@@ -88,7 +88,7 @@ The legacy workload tools, such as Mail and Teams, appear in the same tool catal
 
 ## Hands-On Lab
 
-- [Ground an Agent with Work IQ and Route Work Questions to It](../../../labs/06-cs-copilot-harness/05-iq-grounding/lab-01-ground-with-iq.md): learners add Work IQ, write Instructions that route work questions to it, and read the trace. An optional step adds Foundry IQ or Fabric IQ when the resources exist.
+- [Ground an Agent with the HR MCP Server and Route Staff Questions to It](../../../labs/06-cs-copilot-harness/05-iq-grounding/lab-01-ground-with-iq.md): learners add the class HR MCP server, write Instructions that route staff questions to it, and read the Preview step list. An optional step adds Foundry IQ or Fabric IQ when the resources exist.
 
 ## Key Topics covered in this module
 
