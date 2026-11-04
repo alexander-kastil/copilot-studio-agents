@@ -11,7 +11,7 @@ Dauer: etwa 15 Minuten.
 
 ## Voraussetzungen
 
-- Den HR Agent aus den vorigen Labs oder einen beliebigen Standard Agent mit eingeschalteter Generative Orchestration.
+- Den HR Agent oder einen beliebigen Standard Agent mit eingeschalteter Generative Orchestration. Wenn Sie keinen haben, erstellen Sie einen: Wählen Sie auf **Home** den Befehl **Other ways to build**, dann den Eintrag **Agent** mit dem Badge **Standard**, und nennen Sie ihn `HR Agent`.
 - Eine Environment, in der Sie Agent Flows erstellen dürfen. Der Flow nutzt nur Built-in Actions und braucht deshalb keine Connection.
 
 ## Aufgabe 1: Den Flow bauen

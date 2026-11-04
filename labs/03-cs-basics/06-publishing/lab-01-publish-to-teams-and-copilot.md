@@ -1,8 +1,39 @@
 # Publish the HR Agent to Teams and Microsoft 365 Copilot
 
-In this lab, you publish the HR agent from the previous labs to Microsoft Teams, then build a declarative agent for Microsoft 365 Copilot Chat with its own knowledge and a tool.
+In this lab, you publish the HR agent to Microsoft Teams, then build a declarative agent for Microsoft 365 Copilot Chat with its own knowledge and a tool.
 
-> **Note:** This lab builds on [Collect Input with Adaptive Cards](../05-adaptive-cards/lab-01-collect-input-with-adaptive-cards.md). Continue working on the same agent.
+## Set up the HR Agent
+
+This lab starts from the HR Agent with its instructions and the Microsoft Careers site as knowledge. If you built it in the earlier Basics labs, for example [Collect Input with Adaptive Cards](../05-adaptive-cards/lab-01-collect-input-with-adaptive-cards.md), open it from **Agents** and continue with Exercise 1. Otherwise create it now:
+
+1. Go to [Copilot Studio](https://copilotstudio.microsoft.com), on **Home** select **Other ways to build**, then, under **Build with standard orchestration**, select **Agent** with the **Standard** badge.
+2. In the **Name your agent** dialog, enter `HR Agent` and select **Create**.
+3. Wait until the agent has finished setting up (the **Edit** commands stay disabled for about a minute). On the **Overview** tab, select **Edit** in the **Details** section, paste the following text into **Description** and select **Save**.
+
+```txt
+You help employees to find information about HR related policies
+```
+
+4. Select **Edit** in the **Instructions** section, paste the following instructions and select **Save**.
+
+```txt
+- Provide employees with clear, accurate information about HR policies and procedures.
+- Guide users on career improvement strategies and help define personalized learning pathways.
+- Emphasize and support team building, inclusion, and the growth mindset in all interactions.
+- Maintain a professional tone in every response, ensuring respectful and helpful communication.
+- Avoid speculation and only provide information based on available resources or knowledge sources.
+- Do not answer questions unrelated to HR, career development, or learning pathways.
+- Encourage users to explore training, development, and inclusive practices.
+- Respond promptly and clearly to all user queries.
+```
+
+5. In the **Knowledge** section, select **+ Add knowledge** > **Public websites**, enter `https://careers.microsoft.com/` and select **Add**. Name the site `Microsoft Careers site`, paste the following description and select **Add to agent**.
+
+```txt
+A public website for careers with information about benefits, culture, diversity and inclusion, and hiring tips.
+```
+
+Expected: the **Overview** tab of HR Agent shows the description, the instructions and **Microsoft Careers site** under **Knowledge**.
 
 ## Exercise 1 : Publishing the agent in Microsoft Teams
 
@@ -65,7 +96,7 @@ Initially you will see the Microsoft Teams client showing a new app that represe
 
 ![The dialog window showing the agent as a new app in Microsoft Teams. There is an extended description of the app and of the agent. There is also a button to **Add** the app to Microsoft Teams.](./_images/make-agent-test-teams-02.png)
 
-After a while, the Microsoft Teams client will show a chat with a bot, which is actually your agent. Provide a prompt, for example the one you already used before:
+After a while, the Microsoft Teams client will show a chat with a bot, which is actually your agent. Provide a prompt, for example:
 
 ```txt
 How can we hire new people in our company?
@@ -97,7 +128,7 @@ In this exercise you are going to create an agent with Microsoft Copilot Studio 
 
 ### Step 1: Creating an agent for Copilot Chat
 
-On the **Home** page of Copilot Studio, under **Other ways to build**, select **Agent (Standard)**. The dialog **Name your agent** asks only for the name: enter `Agentic HR` and select **Create**.
+On the **Home** page of Copilot Studio, under **Other ways to build**, select **Agent (Standard)**. The dialog **Name your agent** asks for the name (its **Agent settings** section is optional): enter `Agentic HR` and select **Create**.
 
 On the **Overview** page, select **Edit** in **Instructions** and paste the following instructions, which combine the purpose, the goals and the tone of the agent:
 
@@ -117,7 +148,7 @@ Now you can publish and test the agent in Microsoft 365 Copilot Chat. 1️⃣ Se
 
 The details of the app are:
 
-- Icon: **Change icon** and **Change color**. With the suggested icon, the background color could be #B9BAB5.
+- Icon: **Change icon** and **Change color**; any background color works.
 - Short description: short description of the agent (up to 80 characters).
 - Long description: long description of the agent (up to 3400 characters).
 - **Show an agent disclaimer in M365 Copilot**: a toggle that shows a disclaimer in Copilot Chat.
@@ -140,17 +171,17 @@ Teams opens the app (select **Use the web app instead** if it offers the desktop
 
 ![The company store with the agent dialog allowing to add the agent to Microsoft 365 Copilot.](./_images/create-agent-m365-copilot-chat-10.png)
 
-Once you have added the agent to Microsoft 365 Copilot Chat, you will find it in the list of agents in the right side of the Copilot chat, like illustrated in the following screenshot.
+**Open with Copilot** opens the agent directly in Microsoft 365 Copilot Chat, like illustrated in the following screenshot.
 
 ![The "Agentic HR" agent in Microsoft 365 Copilot Chat.](./_images/create-agent-m365-copilot-chat-11.png)
 
-Select the agent and start interacting with it. For example, you can provide the following prompt:
+Start interacting with the agent. For example, you can provide the following prompt:
 
 ```txt
 How can we hire new people in our company?
 ```
 
-The agent answers from its instructions and general knowledge: it has no knowledge source of its own, so the answer carries no references to your documents.
+The agent answers from its instructions and general knowledge: it has no knowledge source of its own, so the answer carries no references to your documents. With **Web Search** on, the default for a new agent, it can still cite public web pages.
 
 ## Exercise 3 : Adding a tool to the agent
 
@@ -171,11 +202,11 @@ To add a new tool, select the **Add tool** command in the **Tools** section of t
 
 ![The **Tools** section of an agent with the **+ Add tool** command highlighted.](./_images/action-agent-m365-copilot-chat-01.png)
 
-A dialog window pops up allowing you to choose what kind of tool to create. By default, there are some **Featured** tools like those that allow you to interact with Excel Online content or other common services. You can also create a new tool from scratch, selecting the **+ New tool** command and choosing between the options highlighted in the previous paragraphs.
+A dialog window pops up allowing you to choose what kind of tool to add. **Add new** tiles create a new tool from scratch with the options highlighted in the previous paragraphs, and chips such as **Popular**, **Connector** and **Prompt** filter the existing ones.
 
-If you don't find the option you are looking for in the list of featured items, simply switch to the **All** group and search by text what you are looking for.
+If you don't find the option you are looking for, simply search by text in the search box of the dialog.
 
-To complete the current step, choose the featured tool **Excel** and then select **List rows present in a table**. If you have no Excel connection yet, select **Connection**, then **Create new connection**, and proceed with the process.
+To complete the current step, choose the tool **Excel** and then select **List rows present in a table**. If **Connection** reads **Not connected**, select **Create new connection**; in the **Connect to Excel Online (Business)** dialog the display name is optional, then pick your account.
 
 ![The dialog to connect to the target Power Platform connector with details about the connection, if any, or a button to create a new connection. There is also a back button to start over.](./_images/create-action-excel-connector-03.png)
 
@@ -187,12 +218,12 @@ After adding the tool, you will get the list of tools in Copilot Studio. Click o
 
 - Name: a display name for the tool.
 - Description: a description in natural language that will be used by generative orchestration to determine when to use your tool. 
-- Inputs and outputs: to define the input and output arguments for the action, if any.
-- Additional details: defines how the action handles the request and response to the user.
+- Inputs: to define the input arguments for the action, if any.
+- Completion: defines how the action handles the request and response to the user.
 - Completion: to specify what the agent does when it finishes using the tool.
 
 Before configuring the tool, you need to prepare the Excel spreadsheet with the list of candidates.
-Download a sample Excel file by selecting this [link](https://github.com/microsoft/copilot-camp/blob/main/src/make/copilot-studio/Candidates/Sample-list-of-candidates.xlsx?raw=true).
+Download a sample Excel file by selecting this [link](https://github.com/alexander-kastil/copilot-studio-agents/blob/master/src/assets/candidates/Sample-list-of-candidates.xlsx?raw=true).
 
 Upload the file to the **Documents** library of a SharePoint Teams site in the same tenant where you are making your agent with Copilot Studio. The document was generated by Microsoft 365 Copilot for the sake of having a hypothetical list of candidates.
 

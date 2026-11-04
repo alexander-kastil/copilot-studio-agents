@@ -1,20 +1,20 @@
 # Einen Microsoft Copilot Harness Agent mit Test Sets evaluieren
 
-Ein Maker findet immer eine Frage, die der Agent glänzend beantwortet, und genau deshalb sollte niemand einer Demo trauen. Der Tab Evaluate ersetzt diesen Eindruck durch eine Zahl, die jedes Mal auf dieselbe Weise entsteht, sodass Sie eine Änderung vom Dienstag am Donnerstag an der Messlatte vom Dienstag messen können. In diesem Lab liefern Sie bewusst einen schwachen Northwind Sales Assistant aus, bewerten ihn mit einem kuratierten Test Set aus sieben Unterhaltungen, diagnostizieren, warum er scheitert, ändern genau eine Sache und belegen die Korrektur mit einem zweiten Run.
+Ein Maker findet immer eine Frage, die der Agent glänzend beantwortet, und genau deshalb sollte niemand einer Demo trauen. Der Tab Evaluate ersetzt diesen Eindruck durch eine Zahl, die jedes Mal auf dieselbe Weise entsteht, sodass Sie eine Änderung vom Dienstag am Donnerstag an der Messlatte vom Dienstag messen können. In diesem Lab liefern Sie bewusst einen schwachen Happy Longnose Sales Assistant aus, bewerten ihn mit einem kuratierten Test Set aus sieben Unterhaltungen, diagnostizieren, warum er scheitert, ändern genau eine Sache und belegen die Korrektur mit einem zweiten Run.
 
-Das Szenario-Unternehmen ist Northwind Traders, ein Großhändler, dessen Vertriebsmitarbeitende nach Produkten, Listenpreisen, Lieferzeiten, Account Tiers, Expresslieferung und Retouren fragen. Ihr Ergebnis ist eine ausgefüllte Scorecard: eine benannte Evaluation mit acht Conversation Test Cases, ein Baseline Run, eine Diagnose pro Case, ein abgestimmter Agent und ein zweiter Run desselben Sets, der zeigt, wie sich der Score bewegt. Jede Übung baut auf der vorigen auf, lassen Sie also durchgehend dieselbe Browser Session und den Ordner `lab-01-evaluate-with-test-sets` geöffnet.
+Das Szenario-Unternehmen ist Happy Longnose Ltd, ein Großhändler, dessen Vertriebsmitarbeitende nach Produkten, Listenpreisen, Lieferzeiten, Account Tiers, Expresslieferung und Retouren fragen. Ihr Ergebnis ist eine ausgefüllte Scorecard: eine benannte Evaluation mit acht Conversation Test Cases, ein Baseline Run, eine Diagnose pro Case, ein abgestimmter Agent und ein zweiter Run desselben Sets, der zeigt, wie sich der Score bewegt. Jede Übung baut auf der vorigen auf, lassen Sie also durchgehend dieselbe Browser Session und den Ordner `lab-01-evaluate-with-test-sets` geöffnet.
 
-Dieses Lab geht tiefer in den Tab Evaluate als [Einen Northwind Sales Assistant bauen, evaluieren und überwachen](../02-unified-build-and-orchestrator/lab-01-evaluate-and-monitor-agent-de.md), das alle vier Tabs weniger tief durchgeht. Wo jenes Lab die Oberfläche zeigt, baut dieses die Disziplin des Messens auf: drei Wege, ein Test Set zu füllen, was der Grader tatsächlich beurteilt, wie Sie Invalid und Error von Fail unterscheiden, und die Regel einer Änderung pro Run.
+Dieses Lab geht tiefer in den Tab Evaluate als [Einen Happy Longnose Sales Assistant bauen, evaluieren und überwachen](../02-unified-build-and-orchestrator/lab-01-evaluate-and-monitor-agent-de.md), das alle vier Tabs weniger tief durchgeht. Wo jenes Lab die Oberfläche zeigt, baut dieses die Disziplin des Messens auf: drei Wege, ein Test Set zu füllen, was der Grader tatsächlich beurteilt, wie Sie Invalid und Error von Fail unterscheiden, und die Regel einer Änderung pro Run.
 
 ## Was Sie bauen
 
-- Einen Northwind Sales Assistant, gegroundet in einem einzigen Referenzdokument, mit absichtlich schwachen Baseline Instructions.
+- Einen Happy Longnose Sales Assistant, gegroundet in einem einzigen Referenzdokument, mit absichtlich schwachen Baseline Instructions.
 - Ein Test Set aus acht Unterhaltungen, auf drei Arten gebaut: von AI generiert mit **Quick conversation set**, aus einer kuratierten CSV hochgeladen und für den Multi-Turn Case von Hand geschrieben.
 - Einen Baseline Run mit einem Score in der **Evaluation summary** und einer Tabelle **Test run result** pro Unterhaltung.
 - Eine Diagnose pro Case, die jeden Fehlschlag einem Component Bucket zuordnet (knowledge, instructions, tool, multi-turn, test case, environment).
 - Einen zweiten Run desselben Sets nach einer gezielten Änderung der Instructions, mit beiden Runs nebeneinander in einem Scorecard Workbook festgehalten.
 
-![Die zehn Übungen der Reihe nach: den Agent grounden und schwache Instructions einsetzen, das Northwind regression set füllen und konfigurieren, dann eine Baseline ausführen, jeden Fehlschlag diagnostizieren, eine Sache ändern und erneut ausführen.](./_images/lab-overview-ten-exercises.svg)
+![Die zehn Übungen der Reihe nach: den Agent grounden und schwache Instructions einsetzen, das Happy Longnose regression set füllen und konfigurieren, dann eine Baseline ausführen, jeden Fehlschlag diagnostizieren, eine Sache ändern und erneut ausführen.](./_images/lab-overview-ten-exercises.svg)
 
 ## Lab-Dateien
 
@@ -22,8 +22,8 @@ Alles, was Sie in diesem Lab einfügen oder hochladen, liegt im Ordner `lab-01-e
 
 | Datei | Was sie ist |
 |------|------------|
-| `northwind-sales-reference.docx` | Die Knowledge Source: Account Tiers, Listenpreise, Accounts, Angebotsrichtlinie, Expresslieferung und Retouren. Jede erwartete Antwort im Test Set lässt sich auf dieses Dokument zurückführen. |
-| `northwind-test-set.csv` | Das kuratierte Test Set in der Template-Form des Produkts: sieben Unterhaltungen über vierzehn Turns, mit Grounded Facts, einem Tier Lookup über mehrere Turns, zwei Guardrails und einem Off-Topic Request. |
+| `happy-longnose-sales-reference.docx` | Die Knowledge Source: Account Tiers, Listenpreise, Accounts, Angebotsrichtlinie, Expresslieferung und Retouren. Jede erwartete Antwort im Test Set lässt sich auf dieses Dokument zurückführen. |
+| `happy-longnose-test-set.csv` | Das kuratierte Test Set in der Template-Form des Produkts: sieben Unterhaltungen über vierzehn Turns, mit Grounded Facts, einem Tier Lookup über mehrere Turns, zwei Guardrails und einem Off-Topic Request. |
 | `agent-instructions-v1.txt` | Die absichtlich schwachen Baseline Instructions. Keine Zitierregel, keine Ablehnungsregeln, keine Scope-Grenze. |
 | `agent-instructions-v2.txt` | Die abgestimmten Instructions für den zweiten Run, ergänzt um Regeln für Zitate, Ablehnungen, Routing und Scope. |
 | `evaluation-scorecard.xlsx` | Ein lokales Tracking Workbook: ein Blatt Read me first, ein Run log, eine Scorecard pro Case und eine Referenz Diagnosis buckets, die Sie in Übung 9 nutzen. Wird nie in Copilot Studio hochgeladen. |
@@ -33,7 +33,7 @@ Alles, was Sie in diesem Lab einfügen oder hochladen, liegt im Ordner `lab-01-e
 - Eine Copilot Studio Environment, in der Sie Agents erstellen können (eine Power Platform Environment mit der Maker-Rolle) und in der das Menü **New agent** auf [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com) den Eintrag **Agent** mit dem Badge **GitHub Copilot** anbietet. Die Agent Evaluation für Microsoft Copilot Harness Agents ist eine Production-ready Preview, rechnen Sie also damit, dass sich die Oberfläche weiter ändert.
 - Ihre eigene Environment: Wählen Sie unten in der linken Navigation den Namen der Environment (**Switch environment**) und prüfen Sie, dass unter **Current environment** die nach Ihrem Account benannte Environment steht, zum Beispiel `copilot-studio-01` (Sandbox) für `copilot-studio-01@mst.fastlane.net`. Arbeiten Sie das ganze Lab darin, nie in der gemeinsamen Default Environment.
 - Der Ordner `lab-01-evaluate-with-test-sets` aus diesem Repository, lokal verfügbar, damit Sie daraus hochladen können.
-- Eine Tabellenkalkulation, um `evaluation-scorecard.xlsx` zu öffnen und, wenn Sie sie bearbeiten möchten, `northwind-test-set.csv`. Das Workbook ist nur ein lokales Tracking Sheet; der Tab **Evaluate** akzeptiert CSV und lehnt `.xlsx` ab.
+- Eine Tabellenkalkulation, um `evaluation-scorecard.xlsx` zu öffnen und, wenn Sie sie bearbeiten möchten, `happy-longnose-test-set.csv`. Das Workbook ist nur ein lokales Tracking Sheet; der Tab **Evaluate** akzeptiert CSV und lehnt `.xlsx` ab.
 
 > **Hinweis:** Ein Microsoft Copilot Harness Agent lässt sich nicht in einen Standard Agent umwandeln, und umgekehrt auch nicht. Zeigt der Agent Topics, Knowledge, Tools und Settings, ist er ein Standard Agent und hat keinen Tab Evaluate; gehen Sie zurück zu **Agents** und erstellen Sie den Agent erneut mit **Agent** (GitHub Copilot) aus dem Menü **New agent**.
 
@@ -42,17 +42,17 @@ Alles, was Sie in diesem Lab einfügen oder hochladen, liegt im Ordner `lab-01-e
 Eine Evaluation sagt nur dann etwas aus, wenn der Agent echte Inhalte hat, bei denen er richtig oder falsch liegen kann. Ein Agent ohne Grounding antwortet aus dem allgemeinen Wissen des Models und erzeugt flüssigen Text, den kein Test Set sinnvoll bewerten kann; deshalb kommt zuerst das Grounding und dann das Test Set. Sie fügen genau eine Knowledge Source hinzu, denn mit einem einzigen Dokument lässt sich jede erwartete Antwort auf eine Stelle zurückführen und jeder Fehlschlag leicht zuordnen.
 
 1. Wählen Sie im Seitenbereich **Agents**, öffnen Sie den Pfeil neben **New agent** und wählen Sie unter **Optimize your business processes** den Eintrag **Agent** mit dem Badge **GitHub Copilot**.
-2. Geben Sie im Namensfeld `Northwind Sales Assistant` ein, fügen Sie dann den folgenden Text in den Abschnitt **Instructions** ein und wählen Sie **Save**.
+2. Geben Sie im Namensfeld `Happy Longnose Sales Assistant` ein, fügen Sie dann den folgenden Text in den Abschnitt **Instructions** ein und wählen Sie **Save**.
 
 ```text
-You are the Northwind Sales Assistant. You help Northwind Traders sellers answer questions about products, list pricing, standard lead times, account tiers, expedited delivery, and returns.
+You are the Happy Longnose Sales Assistant. You help Happy Longnose Ltd sellers answer questions about products, list pricing, standard lead times, account tiers, expedited delivery, and returns.
 ```
 
 3. Öffnen Sie im Tab **Build** die Component **Knowledge** und wählen Sie **Add knowledge**.
-4. Entscheiden Sie sich für den Upload einer Datei und wählen Sie `northwind-sales-reference.docx` aus dem Lab-Ordner.
+4. Entscheiden Sie sich für den Upload einer Datei und wählen Sie `happy-longnose-sales-reference.docx` aus dem Lab-Ordner.
 5. Warten Sie, bis der Status der Quelle zeigt, dass die Verarbeitung abgeschlossen ist.
 
-Erwartet: Der Agent öffnet sich im Tab **Build** mit **Build**, **Preview**, **Evaluate** und **Monitor** am oberen Rand, und `northwind-sales-reference` erscheint unter **Knowledge** mit dem Status bereit. Der Tab **Monitor** kann an dieser Stelle abgeblendet sein; das ist normal für einen Agent, der noch keine auswertbaren Runs hat.
+Erwartet: Der Agent öffnet sich im Tab **Build** mit **Build**, **Preview**, **Evaluate** und **Monitor** am oberen Rand, und `happy-longnose-sales-reference` erscheint unter **Knowledge** mit dem Status bereit. Der Tab **Monitor** kann an dieser Stelle abgeblendet sein; das ist normal für einen Agent, der noch keine auswertbaren Runs hat.
 
 > **Warnung:** Machen Sie nicht weiter, solange die Knowledge Source noch verarbeitet wird. Ein Test Set Run gegen eine Quelle, deren Indexierung nicht abgeschlossen ist, erzeugt Fehlschläge, die wie Probleme des Agents aussehen, in Wahrheit aber Timing-Probleme sind, und Sie verschwenden eine Übung damit, ihnen nachzujagen.
 
@@ -64,9 +64,9 @@ Die meisten Evaluation Tutorials beginnen mit einem guten Agent und zeigen einen
 2. Ersetzen Sie den Inhalt durch den Inhalt von `agent-instructions-v1.txt`:
 
 ```text
-Role: You are the Northwind Sales Assistant, an internal helper for Northwind Traders sellers.
+Role: You are the Happy Longnose Sales Assistant, an internal helper for Happy Longnose Ltd sellers.
 
-You help sellers with questions about Northwind products, list pricing, standard lead times, account
+You help sellers with questions about Happy Longnose products, list pricing, standard lead times, account
 tiers, expedited delivery, and returns.
 
 Keep answers concise and professional.
@@ -125,8 +125,8 @@ Das Template hat genau drei Spalten, und die eigentliche Arbeit leistet `convers
 
 1. Kehren Sie zum Tab **Evaluate** zurück und wählen Sie **New evaluation**, um eine neue Evaluation zu beginnen.
 2. Wählen Sie im Abschnitt **Data source** den Link **CSV**, um `EvalConversationTemplate.csv` herunterzuladen, und öffnen Sie die Datei. Lesen Sie den Kommentarblock mit `#` am Anfang: Er nennt die Spalten und die Limits, und die Zeilen darunter sind ein ausgearbeitetes Beispiel.
-3. Öffnen Sie `northwind-test-set.csv` aus dem Lab-Ordner und vergleichen Sie die Datei mit dem Template. Sie hat denselben Kommentarblock mit `#`, dieselben drei Spaltenüberschriften und dieselben Anführungszeichen.
-4. Ziehen Sie `northwind-test-set.csv` auf den Upload-Bereich, oder wählen Sie **browse** und wählen Sie die Datei aus.
+3. Öffnen Sie `happy-longnose-test-set.csv` aus dem Lab-Ordner und vergleichen Sie die Datei mit dem Template. Sie hat denselben Kommentarblock mit `#`, dieselben drei Spaltenüberschriften und dieselben Anführungszeichen.
+4. Ziehen Sie `happy-longnose-test-set.csv` auf den Upload-Bereich, oder wählen Sie **browse** und wählen Sie die Datei aus.
 5. Prüfen Sie die importierten Unterhaltungen in der Liste **Review your test cases**.
 
 Die Limits, die das Template nennt, sollten Sie aufschreiben, weil sie bestimmen, wie Sie ein Set entwerfen:
@@ -140,7 +140,7 @@ Die Limits, die das Template nennt, sollten Sie aufschreiben, weil sie bestimmen
 
 Erwartet: Ein grünes Banner zeigt "Your file was uploaded successfully. Review your test cases or start evaluation.", und **Review your test cases (7)** listet sieben Unterhaltungen. Jede Zeile zeigt die erste Frage der Unterhaltung und einen Wert **Total messages**, der doppelt so hoch ist wie die Zahl ihrer Frage-Antwort-Paare, also zeigen die Unterhaltungen mit drei Turns 6 und die mit einem Turn 2.
 
-![Die vierzehn Zeilen von northwind-test-set.csv, über conversationNumber zu sieben Unterhaltungen gruppiert: vier Grounded Facts, zwei Guardrails und ein Off-Topic Request, jede mit einem Wert Total messages, der doppelt so hoch ist wie die Zahl ihrer Fragen.](./_images/northwind-csv-to-seven-conversations.svg)
+![Die vierzehn Zeilen von happy-longnose-test-set.csv, über conversationNumber zu sieben Unterhaltungen gruppiert: vier Grounded Facts, zwei Guardrails und ein Off-Topic Request, jede mit einem Wert Total messages, der doppelt so hoch ist wie die Zahl ihrer Fragen.](./_images/happy-longnose-csv-to-seven-conversations.svg)
 
 > **Warnung:** Laden Sie nur die `.csv` hoch. Der Bereich **Data source** lehnt `.xlsx` ab; ziehen Sie `evaluation-scorecard.xlsx` hierher, erhalten Sie "The CSV file does not match the expected format. Please use the correct template." Dieses Workbook ist ein lokales Tracking Sheet, das Sie nie hochladen.
 
@@ -175,13 +175,13 @@ Das Panel **Configure test set** ist klein und leicht zu übersehen, und wer es 
 
 ![Im Tab Evaluate beurteilt General quality nur die Antwort des Agents, und die optionale erwartete Antwort dient den Menschen, die das Set pflegen; auf der Seite des Standard Agents lesen Compare meaning oder Text similarity die Antwort und die verpflichtende erwartete Antwort und bewerten gegen einen Pass Threshold.](../../../demos/06-cs-copilot-harness/06-evaluations/_images/general-quality-inputs.svg)
 
-1. Setzen Sie im Panel **Configure test set** rechts **Name** auf `Northwind regression set`.
+1. Setzen Sie im Panel **Configure test set** rechts **Name** auf `Happy Longnose regression set`.
 2. Lesen Sie das Label **Data type** darüber. Es zeigt `Data type: Conversation`, den einzigen Test Set Typ, den es in dieser Experience gibt.
 3. Lesen Sie die Karte **Test method**. Sie zeigt **General quality**, beschrieben als Antworten, die Qualitätsstandards wie Relevanz und Vollständigkeit erfüllen, und sie sagt klar, dass sie nicht mit erwarteten Antworten vergleicht. Test Methods reisen nicht in der CSV mit, und **General quality** gilt standardmäßig für jedes importierte Set.
 4. Wählen Sie unter **User profile** den Eintrag **Manage**, bestätigen Sie das Profil, unter dem die Evaluation läuft, und prüfen Sie, dass seine Connections als bereit angezeigt werden.
 5. Wählen Sie **Save**, um das Test Set zu speichern, ohne es schon auszuführen.
 
-Erwartet: Das Panel zeigt den Namen `Northwind regression set`, das Label `Data type: Conversation`, eine einzige Karte **General quality** als Test Method ohne weitere Optionen und ein konfiguriertes User Profile. **Save** und **Evaluate** sind beide aktiv, weil das Set jetzt Cases enthält.
+Erwartet: Das Panel zeigt den Namen `Happy Longnose regression set`, das Label `Data type: Conversation`, eine einzige Karte **General quality** als Test Method ohne weitere Optionen und ein konfiguriertes User Profile. **Save** und **Evaluate** sind beide aktiv, weil das Set jetzt Cases enthält.
 
 > **Hinweis:** Microsoft hat im Oktober 2026 weitere Grader für die Agent Evaluation angekündigt, und Learn dokumentiert sie noch nicht. Bietet **Test method** in Ihrem Tenant mehr als **General quality** an, wählen Sie trotzdem **General quality**, damit beide Runs vergleichbar bleiben.
 
@@ -193,7 +193,7 @@ Erwartet: Das Panel zeigt den Namen `Northwind regression set`, das Label `Data 
 
 Wenn Sie das Set ausführen, wird aus acht Cases eine objektive Baseline, auf die Sie zeigen können, statt mit einer Demo zu argumentieren. Lesen Sie das Ergebnis auf zwei Ebenen, denn sie beantworten unterschiedliche Fragen: Die Summary zeigt den Gesamtzustand, und die Tabelle pro Unterhaltung zeigt, welches Verhalten Sie ändern müssen. Ein Maker, der nur den Score der Summary liest, lernt eine Zahl und behebt nichts.
 
-1. Wählen Sie bei ausgewähltem `Northwind regression set` den Befehl **Evaluate**, um den Run zu starten.
+1. Wählen Sie bei ausgewähltem `Happy Longnose regression set` den Befehl **Evaluate**, um den Run zu starten.
 2. Warten Sie, bis er fertig ist. Ein Set dieser Größe braucht mehrere Minuten.
 3. Lesen Sie die **Evaluation summary**: **Score**, **Duration**, **Test cases**, **Data type** und **User profile**.
 4. Lesen Sie in der Tabelle **Test run result** für jede Unterhaltung die Zahl der Nachrichten und das Urteil von General quality.
@@ -242,32 +242,32 @@ Erwartet: Die Fehlschläge konzentrieren sich stark im Bucket **Instructions**, 
 
 Einen Score zu erzeugen lohnt sich nur, wenn er eine Änderung auslöst, und eine Änderung lohnt sich nur, wenn Sie belegen können, dass sie gewirkt hat. Diese Übung schließt den Kreis mit der Regel, die eine Evaluation vertrauenswürdig macht: Ändern Sie genau eine Sache, führen Sie dasselbe Set erneut aus und vergleichen Sie. Bearbeiten Sie drei Components auf einmal, sagt Ihnen ein höherer Score, dass das Paket geholfen hat, verbirgt aber, welcher Teil.
 
-![Run 1 und Run 2 teilen die Knowledge Source, das Northwind regression set, die Test Method General quality und das User Profile; nur die Instructions ändern sich, von agent-instructions-v1.txt zu agent-instructions-v2.txt.](./_images/one-change-two-runs.svg)
+![Run 1 und Run 2 teilen die Knowledge Source, das Happy Longnose regression set, die Test Method General quality und das User Profile; nur die Instructions ändern sich, von agent-instructions-v1.txt zu agent-instructions-v2.txt.](./_images/one-change-two-runs.svg)
 
 1. Öffnen Sie im Tab **Build** die **Instructions** und ersetzen Sie den Inhalt durch `agent-instructions-v2.txt`:
 
 ```text
-Role: You are the Northwind Sales Assistant, an internal helper for Northwind Traders sellers.
+Role: You are the Happy Longnose Sales Assistant, an internal helper for Happy Longnose Ltd sellers.
 
 You do:
-- Answer questions about Northwind products, list pricing, standard lead times, account tiers,
+- Answer questions about Happy Longnose products, list pricing, standard lead times, account tiers,
   expedited delivery, and returns.
 - Begin every factual answer by naming the knowledge source, for example
-  "From the Northwind sales reference:".
+  "From the Happy Longnose sales reference:".
 - Keep answers concise and professional, and state the tier explicitly whenever a tier decides
   the answer.
 
 You do not:
 - Issue binding quotes, agree discounts, or commit to contract terms. Route any such request to
-  Sales Operations at sales-ops@northwind.example and state the list price instead.
+  Sales Operations at sales-ops@happylongnose.example and state the list price instead.
 - Interpret contract, liability, indemnity, or termination language. Route those to Legal.
-- Invent facts. If the answer is not in the Northwind sales reference, say you do not have it.
-- Answer questions unrelated to Northwind sales. Decline, then offer help with products, pricing,
+- Invent facts. If the answer is not in the Happy Longnose sales reference, say you do not have it.
+- Answer questions unrelated to Happy Longnose sales. Decline, then offer help with products, pricing,
   lead times, or accounts.
 ```
 
 2. Wählen Sie **Save**. Ändern Sie nichts anderes: nicht die Knowledge Source, nicht das Test Set, nicht das User Profile.
-3. Kehren Sie zum Tab **Evaluate** zurück, wählen Sie `Northwind regression set` und führen Sie es erneut aus.
+3. Kehren Sie zum Tab **Evaluate** zurück, wählen Sie `Happy Longnose regression set` und führen Sie es erneut aus.
 4. Wenn der zweite Run fertig ist, vergleichen Sie seinen **Score** mit der Baseline und füllen Sie die Spalte Run 2 verdict der **Case scorecard** aus; markieren Sie dabei jeden Case, der gekippt ist.
 5. Halten Sie beide Runs im Blatt **Run log** fest, einschließlich der einzeiligen Beschreibung der Änderung.
 6. Öffnen Sie die drei Punkte (**…**) und wählen Sie **Export test results**, um den Run als CSV herunterzuladen, und speichern Sie die Datei dann neben der Scorecard.
@@ -282,7 +282,7 @@ Erwartet: Der zweite Run wird als eigenes Ergebnis neben dem ersten gespeichert,
 |---------|--------------|-----|
 | Es gibt keinen Tab **Evaluate**, und die Seiten heißen Topics, Knowledge, Tools, Settings | Der Agent wurde als Standard Agent erstellt | Gehen Sie zurück zu **Agents** und erstellen Sie ihn neu mit **Agent** (GitHub Copilot) aus dem Menü **New agent**; ein Standard Agent lässt sich nicht umwandeln |
 | **Save** und **Evaluate** sind beide ausgegraut | Das Test Set hat noch keine Cases, oder das Feld **Name** ist leer | Fügen Sie mindestens eine Unterhaltung hinzu und geben Sie im Panel **Configure test set** einen **Name** ein |
-| "The CSV file does not match the expected format. Please use the correct template." | Die Datei ist gar keine CSV (zum Beispiel die Scorecard als `.xlsx`), oder ihre Spalten sind nicht `conversationNumber`, `question`, `response` | Laden Sie `northwind-test-set.csv` hoch, nie das Workbook. Laden Sie `EvalConversationTemplate.csv` über den Link **CSV** herunter und übernehmen Sie seine drei Überschriften exakt |
+| "The CSV file does not match the expected format. Please use the correct template." | Die Datei ist gar keine CSV (zum Beispiel die Scorecard als `.xlsx`), oder ihre Spalten sind nicht `conversationNumber`, `question`, `response` | Laden Sie `happy-longnose-test-set.csv` hoch, nie das Workbook. Laden Sie `EvalConversationTemplate.csv` über den Link **CSV** herunter und übernehmen Sie seine drei Überschriften exakt |
 | Der Import gelingt, aber jede Zeile wurde ein eigener Test Case | Jede Zeile hat eine andere `conversationNumber`, also wurde nichts gruppiert | Geben Sie jedem Turn eines Szenarios dieselbe `conversationNumber`, in der Reihenfolge, in der die Turns laufen sollen |
 | Eine Unterhaltung wird abgelehnt oder abgeschnitten | Sie überschreitet 8 Frage-Antwort-Paare, die Datei überschreitet 50 Unterhaltungen, oder eine Frage überschreitet 500 Zeichen | Teilen Sie das Szenario auf zwei Unterhaltungen auf oder kürzen Sie die Frage |
 | Grounded-Fact Cases scheitern, obwohl **Preview** sie korrekt beantwortet | Die Knowledge Source wurde noch verarbeitet, als der Run startete | Prüfen Sie, dass die Quelle im Tab **Build** als bereit angezeigt wird, und führen Sie den Run erneut aus |
@@ -296,8 +296,8 @@ Erwartet: Der zweite Run wird als eigenes Ergebnis neben dem ersten gespeichert,
 
 Sie haben das Ziel des Labs erreicht, wenn alle folgenden Punkte zutreffen:
 
-1. Der Agent ist in `northwind-sales-reference.docx` gegroundet, und die Quelle wird im Tab **Build** als bereit angezeigt.
-2. `Northwind regression set` enthält acht Conversation Cases, darunter den handgeschriebenen Case zur Expresslieferung mit zwei Turns.
+1. Der Agent ist in `happy-longnose-sales-reference.docx` gegroundet, und die Quelle wird im Tab **Build** als bereit angezeigt.
+2. `Happy Longnose regression set` enthält acht Conversation Cases, darunter den handgeschriebenen Case zur Expresslieferung mit zwei Turns.
 3. Das Blatt **Run log** hält zwei Runs desselben Sets mit genau einer Änderung dazwischen fest.
 4. Das Blatt **Case scorecard** enthält für jeden Case in beiden Runs ein Urteil, mit einem Diagnosis Bucket bei jedem Fehlschlag der Baseline.
 5. Mindestens ein Guardrail- oder Off-Topic Case ist von Fail zu Pass gekippt, und Sie können die Zeile der Instructions nennen, die das bewirkt hat.
@@ -317,4 +317,4 @@ Lesen Sie als Nächstes die Konzepte hinter all dem in [Copilot Studio Agents te
 
 ## Aufräumen
 
-Löschen Sie die Evaluation `Northwind regression set` und die Evaluation aus Quick conversation set im Tab **Evaluate**, wenn sie nur für dieses Lab gedacht waren. Entfernen Sie den Agent Northwind Sales Assistant, wenn Sie ihn für kein späteres Lab brauchen (öffnen Sie die Agent-Liste, wählen Sie den Agent und dann **Delete**). Behalten Sie die lokale Scorecard und die exportierte CSV mit den Ergebnissen; sie sind das Artefakt, das dieses Lab erzeugt hat.
+Löschen Sie die Evaluation `Happy Longnose regression set` und die Evaluation aus Quick conversation set im Tab **Evaluate**, wenn sie nur für dieses Lab gedacht waren. Entfernen Sie den Agent Happy Longnose Sales Assistant, wenn Sie ihn für kein späteres Lab brauchen (öffnen Sie die Agent-Liste, wählen Sie den Agent und dann **Delete**). Behalten Sie die lokale Scorecard und die exportierte CSV mit den Ergebnissen; sie sind das Artefakt, das dieses Lab erzeugt hat.

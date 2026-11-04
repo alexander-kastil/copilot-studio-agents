@@ -1,0 +1,162 @@
+uid=6_0 RootWebArea "Agents" url="https://copilotstudio.preview.microsoft.com/environments/20f43690-ffae-e858-9da8-97373bf2124b/bots/ffc2c01f-75d8-f111-84e8-0022489d5abe/overview"
+  uid=18_0 generic live="assertive" relevant="additions text"
+  uid=18_1 generic live="polite" relevant="additions text"
+  uid=18_2 link "Skip to main content" url="https://copilotstudio.preview.microsoft.com/environments/20f43690-ffae-e858-9da8-97373bf2124b/bots/ffc2c01f-75d8-f111-84e8-0022489d5abe/overview#main-content"
+  uid=18_4 navigation "Main navigation"
+    uid=18_5 "Copilot Studio"
+    uid=18_6 button "Collapse navigation" expandable expanded
+    uid=18_7 link "Home" url="https://copilotstudio.preview.microsoft.com/environments/20f43690-ffae-e858-9da8-97373bf2124b/home"
+    uid=18_9 link "Chat" url="https://copilotstudio.preview.microsoft.com/environments/20f43690-ffae-e858-9da8-97373bf2124b/chat-history"
+    uid=18_11 link "Agents" url="https://copilotstudio.preview.microsoft.com/environments/20f43690-ffae-e858-9da8-97373bf2124b/agents"
+    uid=18_13 link "Workflows" url="https://copilotstudio.preview.microsoft.com/environments/20f43690-ffae-e858-9da8-97373bf2124b/workflows"
+    uid=18_15 link "Apps (Preview)" url="https://copilotstudio.preview.microsoft.com/environments/20f43690-ffae-e858-9da8-97373bf2124b/apps"
+    uid=18_17 button "Switch environment (current: Integrationsonline)" expandable haspopup="dialog"
+    uid=18_18 button "Open account menu for Alexander Kastil" description="Alexander Kastil" expandable haspopup="dialog"
+    uid=18_19 button "More options" haspopup="menu"
+  uid=18_20 main
+    uid=18_21 image "Icon for your agent" url="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAYAAACLz2ctAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAADiGSURBVHgB7X1rjF3ZldZa+7rclXeFJFL+9W0NA8oMMM4PgoKY9DUiAw0MVS0BQySkcqNJmABKuyEJCQnYFYYJYhBth0ciAtj+AZFgkNMZQovMCFdPhCIBI... <truncated>"
+    uid=18_22 heading "LAB-HR Agent" level="1"
+    uid=18_23 image "Securely authenticated with Microsoft"
+    uid=18_24 tab "Overview" selectable selected
+    uid=18_25 tab "Knowledge" selectable
+    uid=18_26 tab "Tools" selectable
+    uid=18_27 tab "Agents" selectable
+    uid=18_28 tab "Topics" selectable
+    uid=18_29 tab "Activity" selectable
+    uid=18_30 tab "Evaluation" selectable
+    uid=18_31 tab "Monitor" selectable
+    uid=18_32 tab "Channels" selectable
+    uid=18_33 button "Search your agent"
+    uid=18_34 button "Publish"
+    uid=18_35 button "Settings"
+    uid=18_36 button "Options" haspopup="menu"
+    uid=18_37 button "Test" expandable expanded
+    uid=18_38 "Your agent has been provisioned."
+    uid=18_39 button "Close Message Banner"
+    uid=18_40 heading "Details" level="2"
+    uid=18_41 button "Edit Details"
+    uid=18_42 "Name"
+    uid=18_43 " "
+    uid=18_44 "LAB-HR Agent"
+    uid=18_45 "Description"
+    uid=18_46 " "
+    uid=18_47 "64/1024"
+    uid=18_48 "You help employees to find information about HR related policies"
+    uid=18_49 "Agent status"
+    uid=18_50 "1 Warning"
+    uid=18_51 button "Review"
+    uid=18_52 heading "Select your agent's model" level="2"
+    uid=18_53 "Your agent will primarily use the model for reasoning and responding. Experimental models are subject to "
+    uid=18_54 link "preview terms" url="https://go.microsoft.com/fwlink/?linkid=2321468"
+    uid=18_56 ". "
+    uid=18_57 link "Learn more about agent's model selection" url="https://go.microsoft.com/fwlink/?linkid=2328608"
+      uid=18_58 "Learn more"
+    uid=18_59 "Your model was retired. We switched your agent to a different model. You can change it below."
+    uid=18_60 combobox expandable haspopup="listbox" value="GPT Chat Latest (Oct 2026)"
+    uid=18_61 "Use / to add tools, topics, and more"
+    uid=18_62 "686 of 8,000 characters entered. Maximum 8,000 characters."
+    uid=18_63 status atomic live="assertive" relevant="additions text"
+      uid=18_64 "686 of 8,000 characters entered. Maximum 8,000 characters."
+    uid=18_65 heading "Instructions" level="2"
+    uid=18_66 button "Edit Instructions"
+    uid=18_67 textbox "Describe what you want this agent to do, its tone, and rules." description="Use / to add tools, topics, and more 686 of 8,000 characters entered. Maximum 8,000 characters." haspopup="menu" readonly value="- Provide employees with clear, accurate information about HR policies and procedures.
+
+- Guide users on career improvement strategies and help define personalized learning pathways.
+
+- Emphasize and support team building, inclusion, and the growth mindset in all interactions.
+
+- Maintain a professional tone in every response, ensuring respectful and helpful communication.
+
+- Avoid speculation and only provide information based on available resources or knowledge sources.
+
+- Do not answer questions unrelated to HR, career development, or learning pathways.
+
+- Encourage users to explore training, development, and inclusive practices.
+
+- Respond promptly and clearly to all user queries."
+    uid=18_68 heading "Knowledge" level="2"
+    uid=18_69 "Add data, files, and other resources to inform and improve AI-generated responses."
+    uid=18_70 button "Add knowledge" focusable focused
+    uid=18_71 link "Microsoft Careers site" url="https://copilotstudio.preview.microsoft.com/environments/20f43690-ffae-e858-9da8-97373bf2124b/bots/ffc2c01f-75d8-f111-84e8-0022489d5abe/knowledge/eaf47973-9fbf-4ce1-a709-3e6470b523a8/details"
+    uid=18_73 status "Ready" atomic live="polite" relevant="additions text"
+      uid=18_74 "Microsoft Careers site Status: Ready"
+      uid=18_75 "Ready"
+    uid=18_76 button "More" haspopup="menu"
+    uid=18_77 button "See all"
+    uid=18_78 heading "Web Search" level="3"
+    uid=18_79 "Enable your agent to search all public websites. "
+    uid=18_80 link "Learn more about knowledge sources" url="https://go.microsoft.com/fwlink/?linkid=2270017"
+      uid=18_81 "Learn more"
+    uid=18_82 switch "Web Search Enabled" checked description="Enable your agent to search all public websites. Learn more about knowledge sources"
+    uid=18_83 "Enabled"
+    uid=18_84 heading "Tools" level="2"
+    uid=18_85 "Add tools to empower the AI to complete specific tasks for improved engagement. "
+    uid=18_86 link "Learn more about tools" url="https://go.microsoft.com/fwlink/?linkid=2319940"
+      uid=18_87 "Learn more"
+    uid=18_88 "."
+    uid=18_89 button "Add tool"
+    uid=18_90 button "Add tool"
+    uid=18_91 heading "Triggers" level="2"
+    uid=18_92 "Set up your agent to activate when certain events happen. "
+    uid=18_93 link "Learn more about triggers and channels" url="https://go.microsoft.com/fwlink/?linkid=2339488"
+      uid=18_94 "Learn more"
+    uid=18_95 "."
+    uid=18_96 button "Add trigger"
+    uid=18_97 button "No triggers added. Add trigger"
+    uid=18_98 heading "Agents" level="2"
+    uid=18_99 "Connect your agent with another agent, dedicated to handling steps of your workflow. "
+    uid=18_100 link "Learn more about connected agents" url="https://go.microsoft.com/fwlink/?linkid=2317908"
+      uid=18_101 "Learn more"
+    uid=18_102 button "Add agent"
+    uid=18_103 button "No agents Add agent"
+    uid=18_104 heading "Topics" level="2"
+    uid=18_105 "Add conversation topics to focus and guide the way your agent answers."
+    uid=18_106 button "Add topic"
+    uid=18_107 link "Goodbye" url="https://copilotstudio.preview.microsoft.com/environments/20f43690-ffae-e858-9da8-97373bf2124b/bots/ffc2c01f-75d8-f111-84e8-0022489d5abe/adaptive/8097fcf0-678c-41ef-bbdf-ddfee292f2a4"
+    uid=18_109 button "Use this for topic tools" description="Goodbye" expandable haspopup="menu"
+    uid=18_110 link "Greeting" url="https://copilotstudio.preview.microsoft.com/environments/20f43690-ffae-e858-9da8-97373bf2124b/bots/ffc2c01f-75d8-f111-84e8-0022489d5abe/adaptive/781f7eb0-3982-434b-9976-aa3c05d6c48e"
+    uid=18_112 button "Use this for topic tools" description="Greeting" expandable haspopup="menu"
+    uid=18_113 link "Start Over" url="https://copilotstudio.preview.microsoft.com/environments/20f43690-ffae-e858-9da8-97373bf2124b/bots/ffc2c01f-75d8-f111-84e8-0022489d5abe/adaptive/40a441d7-1894-438e-a441-cac0cdec16ef"
+    uid=18_115 button "Use this for topic tools" description="Start Over" expandable haspopup="menu"
+    uid=18_116 button "See all"
+    uid=18_117 heading "Suggested prompts" level="2"
+    uid=18_118 button "Add suggested prompts"
+    uid=18_119 "Suggest ways of starting conversations for Teams and Microsoft 365 channels. "
+    uid=18_120 link "Learn more about suggested prompts" url="https://go.microsoft.com/fwlink/?linkid=2299940"
+      uid=18_121 "Learn more."
+    uid=18_122 button "Add suggested prompts"
+    uid=18_123 separator orientation="horizontal" value="65" valuemax="75" valuemin="50" valuetext=""
+    uid=18_124 heading "Test your agent" level="2"
+    uid=18_125 button "Start new test session"
+    uid=18_126 button "Evaluate LAB-HR Agent"
+    uid=18_127 button "Variables" expandable
+    uid=18_128 button "More" haspopup="menu"
+    uid=18_129 button "Expand test pane"
+    uid=18_130 button "Close test pane "
+    uid=18_131 generic live="polite" relevant="additions text"
+    uid=18_132 generic live="polite" relevant="additions text"
+    uid=18_133 log live="polite" relevant="all"
+    uid=18_134 group "Chat history, press arrow keys to navigate."
+      uid=18_135 generic
+      uid=18_136 feed roledescription="chat history"
+        uid=18_137 group roledescription="message"
+          uid=18_138 "Bot said:"
+          uid=18_139 "Hello, I'm LAB-HR Agent. How can I help?"
+          uid=18_140 form
+            uid=18_141 radio "Like"
+            uid=18_142 radio "Dislike"
+        uid=18_143 "Sent at November 4 at 6:28 PM"
+      uid=18_144 generic
+      uid=18_145 note "End of chat history"
+    uid=18_146 "Connectivity Status: Connected"
+    uid=18_147 form
+      uid=18_148 toolbar "Suggested actions" orientation="vertical"
+      uid=18_149 textbox "Ask a question or describe what you need, LAB-HR Agent" multiline
+      uid=18_150 "0/2000"
+      uid=18_151 button "Upload file"
+      uid=18_152 button "Send"
+    uid=18_153 "You're testing your agent's real responses and capabilities. "
+    uid=18_154 link "Find troubleshooting help here." url="https://go.microsoft.com/fwlink/?linkid=2345957"
+    uid=18_156 " Make sure AI-generated content is accurate and appropriate before using. "
+    uid=18_157 link "See terms" url="https://go.microsoft.com/fwlink/?linkid=2182773"
+  uid=6_22 generic live="assertive" relevant="additions text"

@@ -33,9 +33,31 @@ https://lab-hr-service.azurewebsites.net
 ## Voraussetzungen
 
 - Ein Microsoft 365 Tenant und eine Power Platform Environment mit Copilot Studio (die für Sie vorbereitete Environment)
+- Ein Standard Agent namens `Agentic HR`, der in Microsoft 365 Copilot verfügbar ist; [Den Agent Agentic HR einrichten](#den-agent-agentic-hr-einrichten) baut ihn, falls Sie ihn noch nicht haben.
 - Ein Browser oder [Visual Studio Code](https://code.visualstudio.com/) mit der [REST Client Extension](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
 
 Die Specification, die Sie in die Power Platform importieren, ist [`./hr-service-swagger.json`](./hr-service-swagger.json), in diesem Ordner.
+
+---
+
+## Den Agent Agentic HR einrichten
+
+Übung 3 fügt den Connector einem Standard Agent namens `Agentic HR` hinzu, der in Microsoft 365 Copilot verfügbar ist. Wenn Sie ihn in [Den HR Agent in Teams und Microsoft 365 Copilot publishen](../../03-cs-basics/06-publishing/lab-01-publish-to-teams-and-copilot-de.md) gebaut haben, öffnen Sie ihn unter **Agents** und überspringen diesen Abschnitt. Andernfalls erstellen Sie ihn jetzt:
+
+1. Rufen Sie [Copilot Studio](https://copilotstudio.microsoft.com) auf, wählen Sie auf **Home** den Befehl **Other ways to build** und dann unter **Build with standard orchestration** den Eintrag **Agent** mit dem Badge **Standard**.
+2. Geben Sie im Dialog **Name your agent** den Namen `Agentic HR` ein und wählen Sie **Create**.
+3. Warten Sie, bis der Agent eingerichtet ist (die Befehle **Edit** bleiben etwa eine Minute deaktiviert). Wählen Sie dann auf der Seite **Overview** in **Instructions** den Befehl **Edit**, fügen Sie die folgenden Instructions ein und wählen Sie **Save**.
+
+```text
+You are an agent helping employees to find information about HR policies and procedures, about how to improve their career, and about how to define learning pathways.
+Emphasize everything that helps team building, inclusion, and the growth mindset.
+It should have a professional tone.
+```
+
+4. Wählen Sie rechts oben auf der Seite **Publish** und dann im Dialog **Publish**.
+5. Öffnen Sie **Channels**, wählen Sie **Microsoft 365 and Microsoft Teams**, lassen Sie **Make agent available in Microsoft 365 Copilot** ausgewählt und wählen Sie **Add channel**.
+
+Erwartet: **Channels** führt **Microsoft 365 and Microsoft Teams** für `Agentic HR` als hinzugefügt.
 
 ---
 
@@ -107,7 +129,7 @@ Eine 200 Response mit der Liste der Kandidatinnen und Kandidaten bedeutet, dass 
 
 ### Schritt 1: Die Action hinzufügen
 
-Öffnen Sie [Copilot Studio](https://copilotstudio.microsoft.com) in derselben Environment und bearbeiten Sie Ihren Agent `Agentic HR` aus dem vorigen Lab. Öffnen Sie **Tools** (oder **Actions**, je nach Release) und wählen Sie **+ Add a tool**.
+Öffnen Sie [Copilot Studio](https://copilotstudio.microsoft.com) in derselben Environment und bearbeiten Sie Ihren Agent `Agentic HR`. Öffnen Sie **Tools** (oder **Actions**, je nach Release) und wählen Sie **+ Add a tool**.
 
 Suchen Sie nach `HR-Services`, wählen Sie **See all**, dann die Operation **Get all candidates** und dann **Add and configure**. Konfigurieren Sie:
 

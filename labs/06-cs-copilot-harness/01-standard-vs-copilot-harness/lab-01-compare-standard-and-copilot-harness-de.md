@@ -1,16 +1,16 @@
 # Standard und Microsoft Copilot Harness Agents nebeneinander vergleichen
 
-Wer in diesem Jahr Copilot Studio öffnet, arbeitet in einem Tenant mit zwei Arten von Agents, und die falsche Art zu bauen ist teuer, weil sich Agents nicht von einer Art in die andere konvertieren lassen. Dieses Lab baut die Gewohnheit auf, die diesen Fehler verhindert: Sie erstellen einen minimalen Northwind Assistant als Microsoft Copilot Harness Agent, öffnen ihn neben einem Standard Agent und halten fest, was sich tatsächlich unterscheidet, damit die Wahl danach jedes Mal offensichtlich ist. Am Ende haben Sie einen funktionierenden Microsoft Copilot Harness Agent und eine ausgefüllte Northwind Agent Decision Card, die Sie in Ihrem eigenen Tenant wiederverwenden können.
+Wer in diesem Jahr Copilot Studio öffnet, arbeitet in einem Tenant mit zwei Arten von Agents, und die falsche Art zu bauen ist teuer, weil sich Agents nicht von einer Art in die andere konvertieren lassen. Dieses Lab baut die Gewohnheit auf, die diesen Fehler verhindert: Sie erstellen einen minimalen Happy Longnose Assistant als Microsoft Copilot Harness Agent, öffnen ihn neben einem Standard Agent und halten fest, was sich tatsächlich unterscheidet, damit die Wahl danach jedes Mal offensichtlich ist. Am Ende haben Sie einen funktionierenden Microsoft Copilot Harness Agent und eine ausgefüllte Happy Longnose Agent Decision Card, die Sie in Ihrem eigenen Tenant wiederverwenden können.
 
-Das Szenario-Unternehmen ist Northwind Traders, ein Großhändler, dessen Seller einen schnellen Account Helper brauchen. Die Demo und das Capstone Lab bauen diesen Helper vollständig; hier ist eine bewusst minimale Version das Vergleichsobjekt, damit der Fokus auf dem Menü **New agent** bleibt, auf der Unterscheidung der beiden Arten, auf der Koexistenz und auf der Regel, dass sich die Art nicht konvertieren lässt.
+Das Szenario-Unternehmen ist Happy Longnose Ltd, ein Großhändler, dessen Seller einen schnellen Account Helper brauchen. Die Demo und das Capstone Lab bauen diesen Helper vollständig; hier ist eine bewusst minimale Version das Vergleichsobjekt, damit der Fokus auf dem Menü **New agent** bleibt, auf der Unterscheidung der beiden Arten, auf der Koexistenz und auf der Regel, dass sich die Art nicht konvertieren lässt.
 
 ## Was Sie bauen
 
-- Einen minimalen Northwind Sales Assistant, erstellt als Microsoft Copilot Harness Agent aus einem einzigen Satz in natürlicher Sprache, der in Preview eine Smoke-Test-Frage beantwortet.
-- Eine ausgefüllte Northwind Agent Decision Card: einen ausgefüllten Vergleich von Standard und Microsoft Copilot Harness Agents plus eine festgehaltene Entscheidung pro Agent für zwei Northwind Szenarien.
+- Einen minimalen Happy Longnose Sales Assistant, erstellt als Microsoft Copilot Harness Agent aus einem einzigen Satz in natürlicher Sprache, der in Preview eine Smoke-Test-Frage beantwortet.
+- Eine ausgefüllte Happy Longnose Agent Decision Card: einen ausgefüllten Vergleich von Standard und Microsoft Copilot Harness Agents plus eine festgehaltene Entscheidung pro Agent für zwei Happy Longnose Szenarien.
 - Ein Verständnis aus erster Hand für das Menü **New agent**, die Koexistenz, die Erkennungsmerkmale der Navigation und die Regel, dass sich die Art nicht konvertieren lässt.
 
-![Die Lab Map: Übungen, die in einer Environment zwischen einem Standard Agent und dem als Microsoft Copilot Harness Agent gebauten Northwind Sales Assistant wechseln, und der Abschnitt der Decision Card, den jede Übung füllt, von der Wahl der Art in Übung 1 bis zur Durchsicht in Übung 10.](./_images/two-experience-lab-map.svg)
+![Die Lab Map: Übungen, die in einer Environment zwischen einem Standard Agent und dem als Microsoft Copilot Harness Agent gebauten Happy Longnose Sales Assistant wechseln, und der Abschnitt der Decision Card, den jede Übung füllt, von der Wahl der Art in Übung 1 bis zur Durchsicht in Übung 10.](./_images/two-experience-lab-map.svg)
 
 ## Voraussetzungen
 
@@ -26,10 +26,10 @@ Bevor Sie eine Art von Agent wählen können, müssen Sie sehen, dass Ihr Tenant
 3. Schließen Sie das Menü und suchen Sie in der Liste **Agents** nach einer Spalte, die Agents als Standard kennzeichnet.
 4. Wählen Sie **...** unten in der Seitenleiste, beachten Sie den Eintrag **Open classic experience** und schließen Sie das Menü wieder.
 
-Beginnen Sie jetzt mit Ihrem Ergebnis. Fügen Sie diese leere Card in eine Textdatei namens `northwind-agent-decision-card.md` ein und lassen Sie sie geöffnet; Sie füllen pro Übung einen Abschnitt:
+Beginnen Sie jetzt mit Ihrem Ergebnis. Fügen Sie diese leere Card in eine Textdatei namens `happy-longnose-agent-decision-card.md` ein und lassen Sie sie geöffnet; Sie füllen pro Übung einen Abschnitt:
 
 ```text
-# Northwind Agent Decision Card
+# Happy Longnose Agent Decision Card
 
 ## Where you choose the kind
 Path to create each kind:
@@ -59,24 +59,24 @@ Erwartet: Unter **Optimize your business processes** zeigt das Menü **Agent** m
 
 Am klarsten erkennen Sie einen Standard Agent später, wenn Sie seine Navigation jetzt sehen. Ein Standard Agent ist Topic-getrieben: Sie schreiben Topics, binden Knowledge und Tools an und konfigurieren Settings. Wenn Sie dieses Layout einmal gesehen haben, erkennen Sie es auf den ersten Blick.
 
-1. Öffnen Sie auf der Seite **Agents** einen bestehenden Agent mit der Kennzeichnung Standard. Haben Sie keinen, öffnen Sie den Pfeil neben **New agent**, wählen Sie unter **Other ways to build** den Eintrag **Agent** mit dem Badge **Standard** und erstellen Sie einen leeren Agent namens `Northwind Returns Intake`.
+1. Öffnen Sie auf der Seite **Agents** einen bestehenden Agent mit der Kennzeichnung Standard. Haben Sie keinen, öffnen Sie den Pfeil neben **New agent**, wählen Sie unter **Other ways to build** den Eintrag **Agent** mit dem Badge **Standard** und erstellen Sie einen leeren Agent namens `Happy Longnose Returns Intake`.
 2. Lassen Sie den Agent laden und lesen Sie die Seiten, die seine Navigation anbietet.
 
 Erwartet: Der Agent öffnet sich auf seiner Seite **Overview**, und seine Navigation bietet Seiten wie Knowledge, Tools, Topics und Settings. Füllen Sie in der Card "Standard agent navigation" so aus: Overview, Knowledge, Tools, Topics, Settings. Sehen Sie oben die Tabs Build, Preview, Evaluate und Monitor, haben Sie einen Microsoft Copilot Harness Agent geöffnet; gehen Sie zurück und öffnen Sie einen Standard Agent.
 
-## Übung 3: Einen minimalen Northwind Assistant als Microsoft Copilot Harness Agent erstellen
+## Übung 3: Einen minimalen Happy Longnose Assistant als Microsoft Copilot Harness Agent erstellen
 
 Erstellen Sie jetzt Ihr Vergleichsobjekt als die andere Art. Ein Microsoft Copilot Harness Agent ist Natural-Language-First: Sie beschreiben die Aufgabe des Agents in natürlicher Sprache, und die Orchestration Runtime arbeitet mit dieser Beschreibung. Das ist Ihr Ergebnis-Agent, bewusst minimal gehalten, damit es in diesem Lab um die beiden Arten von Agents geht.
 
 1. Gehen Sie zurück zu **Agents**, öffnen Sie den Pfeil neben **New agent** und wählen Sie unter **Optimize your business processes** den Eintrag **Agent** mit dem Badge **GitHub Copilot**.
-2. Geben Sie im Namensfeld `Northwind Sales Assistant` ein.
+2. Geben Sie im Namensfeld `Happy Longnose Sales Assistant` ein.
 3. Fügen Sie im Abschnitt **Instructions** Folgendes ein und wählen Sie dann **Save**:
 
 ```text
-You are the Northwind Sales Assistant. You help Northwind Traders sellers by answering short questions about our products, standard lead times, and account tiers. Keep answers brief, factual, and professional.
+You are the Happy Longnose Sales Assistant. You help Happy Longnose Ltd sellers by answering short questions about our products, standard lead times, and account tiers. Keep answers brief, factual, and professional.
 ```
 
-Erwartet: Der Agent ist gespeichert und auf seiner Authoring-Oberfläche geöffnet, ohne dass Sie ein einziges Topic geschrieben haben. Der Name des Agents lautet Northwind Sales Assistant. Diese Oberfläche lesen Sie in der nächsten Übung.
+Erwartet: Der Agent ist gespeichert und auf seiner Authoring-Oberfläche geöffnet, ohne dass Sie ein einziges Topic geschrieben haben. Der Name des Agents lautet Happy Longnose Sales Assistant. Diese Oberfläche lesen Sie in der nächsten Übung.
 
 > **Tipp:** Öffnet sich der neue Agent auf einer Seite **Overview** mit Topics in der Navigation, haben Sie den Eintrag Standard gewählt. Gehen Sie zurück zu **Agents** und wählen Sie **Agent** mit dem Badge **GitHub Copilot**.
 
@@ -97,8 +97,8 @@ Erwartet: Die Tabs oben lauten Build, Preview, Evaluate und Monitor, und der Tab
 Sie haben jetzt beide Arten gesehen; diese Übung beweist, dass sie nebeneinander bestehen. Sie wechseln über die Liste **Agents** zwischen den beiden Agents und prüfen, dass keiner den anderen verändert hat. Das ist Koexistenz in der Praxis.
 
 1. Wählen Sie **Agents** im Seitenbereich.
-2. Suchen Sie den Standard Agent aus Übung 2 und den Northwind Sales Assistant in derselben Liste und notieren Sie, welcher als Standard gekennzeichnet ist.
-3. Öffnen Sie den Standard Agent, gehen Sie dann zurück und öffnen Sie den Northwind Sales Assistant.
+2. Suchen Sie den Standard Agent aus Übung 2 und den Happy Longnose Sales Assistant in derselben Liste und notieren Sie, welcher als Standard gekennzeichnet ist.
+3. Öffnen Sie den Standard Agent, gehen Sie dann zurück und öffnen Sie den Happy Longnose Sales Assistant.
 
 Erwartet: Beide Agents erscheinen in einer Liste derselben Environment, der Agent aus Übung 2 ist als Standard gekennzeichnet, und jeder öffnet sich unverändert auf seiner eigenen Oberfläche. Nichts, was Sie an einem Agent getan haben, hat den anderen berührt.
 
@@ -106,18 +106,18 @@ Erwartet: Beide Agents erscheinen in einer Liste derselben Environment, der Agen
 
 Der Unterschied in der Navigation spiegelt einen tieferen wider: wie Sie ändern, was der Agent tut. In einem Standard Agent öffnen Sie ein Topic, fügen Trigger Phrases hinzu und verdrahten verzweigende Nodes; in einem Microsoft Copilot Harness Agent bearbeiten Sie Instructions in natürlicher Sprache, und die Runtime leitet ihr Vorgehen daraus ab. Wenn Sie die Instructions einmal bearbeiten, wird der Unterschied greifbar.
 
-1. Öffnen Sie in Ihrem Northwind Sales Assistant den Tab **Build** und dort die Component **Instructions**.
+1. Öffnen Sie in Ihrem Happy Longnose Sales Assistant den Tab **Build** und dort die Component **Instructions**.
 2. Ersetzen Sie den Inhalt durch Folgendes:
 
 ```text
-Role: You are the Northwind Sales Assistant, an internal helper for Northwind Traders sellers.
+Role: You are the Happy Longnose Sales Assistant, an internal helper for Happy Longnose Ltd sellers.
 
 You do:
-- Answer short questions about Northwind products, standard lead times, and account tiers.
+- Answer short questions about Happy Longnose products, standard lead times, and account tiers.
 
 You do not:
 - Give binding price quotes, contract terms, or legal advice.
-- Answer questions unrelated to Northwind sales.
+- Answer questions unrelated to Happy Longnose sales.
 
 Style: concise and professional.
 ```
@@ -153,7 +153,7 @@ Diese Regel macht die Wahl erst bedeutsam. Ein Agent, der als eine Art erstellt 
 
 ![Innerhalb eines Tenants schickt die Wahl beim Erstellen eines Agents ihn entweder in die Standard-Bahn aus geschriebenen Topics und Verzweigungen oder in die Microsoft Copilot-Bahn aus Instructions plus Reasoning Runtime, und die Bahnen treffen sich nie.](../../../demos/06-cs-copilot-harness/pptx/images/01-01-experience-per-agent.svg)
 
-1. Öffnen Sie im Northwind Sales Assistant das Menü des Agents und seine Settings oder Overflow-Optionen.
+1. Öffnen Sie im Happy Longnose Sales Assistant das Menü des Agents und seine Settings oder Overflow-Optionen.
 2. Suchen Sie nach einem Befehl, der den Agent in einen Standard Agent konvertiert, umschaltet oder exportiert.
 3. Bestätigen Sie, dass es keinen solchen Befehl gibt; die Art ist beim Erstellen festgelegt.
 
@@ -161,9 +161,9 @@ Erwartet: Es gibt keine Option, diesen Microsoft Copilot Harness Agent in einen 
 
 > **Warnung:** Weil keine Konvertierung möglich ist, entscheiden Sie die Art, bevor Sie in einen Agent investieren. Einen ausgereiften Standard Agent als Microsoft Copilot Harness Agent neu zu bauen, bedeutet ein komplettes Re-Authoring, und umgekehrt ebenso.
 
-## Übung 9: Eine Entscheidung pro Agent für zwei Northwind Szenarien festhalten
+## Übung 9: Eine Entscheidung pro Agent für zwei Happy Longnose Szenarien festhalten
 
-Die beiden Arten zu unterscheiden, dient dazu, pro Agent gut zu wählen. Standard Agents sind die bessere Wahl, wo Sie deterministische, auditierbare Pfade und ihren breiteren, ausgereiften Funktionsumfang brauchen; Microsoft Copilot Harness Agents sind die bessere Wahl für Greenfield Agents, die mit einem einfacheren Instructions-First-Modell über Microsoft 365 Daten schlussfolgern. Wenden Sie das auf zwei echte Northwind Szenarien an.
+Die beiden Arten zu unterscheiden, dient dazu, pro Agent gut zu wählen. Standard Agents sind die bessere Wahl, wo Sie deterministische, auditierbare Pfade und ihren breiteren, ausgereiften Funktionsumfang brauchen; Microsoft Copilot Harness Agents sind die bessere Wahl für Greenfield Agents, die mit einem einfacheren Instructions-First-Modell über Microsoft 365 Daten schlussfolgern. Wenden Sie das auf zwei echte Happy Longnose Szenarien an.
 
 ![Zwei Spalten mit Entscheidungskriterien: ein Standard Agent für deterministische Kontrolle, auditierbare Pfade, geschriebene Topics und seinen ausgereiften Funktionsumfang; ein Microsoft Copilot Harness Agent für Greenfield Agents, die mit Instructions, Skills und dem Enhanced Orchestrator über Microsoft 365 Daten schlussfolgern.](../../../demos/06-cs-copilot-harness/01-standard-vs-copilot-harness/_images/when-to-choose-standard-or-copilot-harness.svg)
 
@@ -184,11 +184,11 @@ Erwartet: Scenario A ist einem Standard Agent zugeordnet (deterministische, audi
 
 Wenn jeder Abschnitt ausgefüllt ist, gehen Sie die Card ein letztes Mal durch, damit sie als Referenz für sich allein steht und Sie sie einem Teammitglied geben können. Mit einer guten Card erkennt jemand jede Art auf den ersten Blick, erklärt, warum eine Konvertierung ausgeschlossen ist, und trifft die Entscheidung pro Agent, ohne dieses Lab zu öffnen. Diese fertige Card ist Ihr Ergebnis.
 
-1. Öffnen Sie `northwind-agent-decision-card.md` erneut und prüfen Sie, dass jeder Abschnitt einen Wert hat: den Pfad zum Erstellen jeder Art, beide Navigationen, beide Authoring-Modelle, die Antwort zur Konvertierung und beide Szenario-Entscheidungen mit Begründung.
+1. Öffnen Sie `happy-longnose-agent-decision-card.md` erneut und prüfen Sie, dass jeder Abschnitt einen Wert hat: den Pfad zum Erstellen jeder Art, beide Navigationen, beide Authoring-Modelle, die Antwort zur Konvertierung und beide Szenario-Entscheidungen mit Begründung.
 2. Lesen Sie die Card von oben nach unten und schärfen Sie jeden Abschnitt, der nur eine Bezeichnung wiederholt, sodass er ein konkretes Erkennungsmerkmal oder Kriterium nennt.
-3. Speichern Sie die Datei und lassen Sie den Agent Northwind Sales Assistant als Ihr lebendes Vergleichsobjekt bestehen.
+3. Speichern Sie die Datei und lassen Sie den Agent Happy Longnose Sales Assistant als Ihr lebendes Vergleichsobjekt bestehen.
 
-Erwartet: Die Northwind Agent Decision Card ist vollständig und in sich stimmig, und der Northwind Sales Assistant besteht weiterhin als Microsoft Copilot Harness Agent. Wer die Card liest, kann die beiden Arten unterscheiden, die Regel nennen, dass sich die Art nicht konvertieren lässt, und pro Agent eine Art wählen. Das ist das Ergebnis.
+Erwartet: Die Happy Longnose Agent Decision Card ist vollständig und in sich stimmig, und der Happy Longnose Sales Assistant besteht weiterhin als Microsoft Copilot Harness Agent. Wer die Card liest, kann die beiden Arten unterscheiden, die Regel nennen, dass sich die Art nicht konvertieren lässt, und pro Agent eine Art wählen. Das ist das Ergebnis.
 
 ## Troubleshooting
 
@@ -202,12 +202,12 @@ Erwartet: Die Northwind Agent Decision Card ist vollständig und in sich stimmig
 
 ## Zusammenfassung
 
-Sie haben zwei Dinge gebaut: einen minimalen Northwind Sales Assistant als Microsoft Copilot Harness Agent und eine ausgefüllte Northwind Agent Decision Card, die aus eigener Prüfung festhält, wie sich Standard und Microsoft Copilot Harness Agents unterscheiden und wie Sie zwischen ihnen wählen. Sie können jetzt:
+Sie haben zwei Dinge gebaut: einen minimalen Happy Longnose Sales Assistant als Microsoft Copilot Harness Agent und eine ausgefüllte Happy Longnose Agent Decision Card, die aus eigener Prüfung festhält, wie sich Standard und Microsoft Copilot Harness Agents unterscheiden und wie Sie zwischen ihnen wählen. Sie können jetzt:
 
 - Beide Arten von Agent über das Menü **New agent** erstellen und Standard Agents in der Liste **Agents** finden.
 - Jede Art auf den ersten Blick an ihrer Navigation erkennen (Overview, Knowledge, Tools, Topics, Settings für einen Standard Agent; Build, Preview, Evaluate, Monitor für einen Microsoft Copilot Harness Agent).
 - Die Regel erklären, dass sich die Art nicht konvertieren lässt, und warum sie die Wahl pro Agent zu einer echten Festlegung macht.
 - Die Koexistenz bestätigen: Beide Arten von Agents leben in einer Environment, ohne einander zu berühren.
-- Für ein gegebenes Northwind Szenario die richtige Art wählen und sie mit einem konkreten Kriterium begründen.
+- Für ein gegebenes Happy Longnose Szenario die richtige Art wählen und sie mit einem konkreten Kriterium begründen.
 
 Grounden Sie als Nächstes einen Microsoft Copilot Harness Agent durchgängig und bestätigen Sie zitierte Antworten in [Build and Ground Your First Microsoft Copilot Harness Agent](../../../demos/06-cs-copilot-harness/01-standard-vs-copilot-harness/demo-01-build-and-ground-an-agent.md).

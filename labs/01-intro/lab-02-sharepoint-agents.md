@@ -42,7 +42,7 @@ Select the **Standard team** site template. You see a preview of the site. Selec
 
 ![The UI to select the 'Standard' site template for the target site.](./_images/lab-02-sharepoint-agents-05.png)
 
-Give your site a name, such as "Copilot Dev Camp - HR", and select **Next**. The name must be unique in your tenant, so do not use an already allocated name.
+Give your site a name, such as "Grey Logistics HR", and select **Next**. The name must be unique in your tenant, so do not use an already allocated name.
 
 ![The UI to provide name, description, and other details for the target site to create.](./_images/lab-02-sharepoint-agents-06.png)
 
@@ -54,7 +54,7 @@ Skip adding any new members to the site and select **Finish** when the site prov
 
 ### Step 2: Upload the sample documents
 
-Download this zip file of a few files (Word, PowerPoint, PDF) by selecting this [link](https://download-directory.github.io/?url=https://github.com/microsoft/copilot-camp/tree/main/src/make/copilot-studio/HR-documents&filename=hr-documents) and unzip the file somewhere on your local file system.
+Download this zip file of a few files (Word, PowerPoint, PDF) by selecting this [link](https://download-directory.github.io/?url=https://github.com/alexander-kastil/copilot-studio-agents/tree/master/src/assets/hr-documents&filename=hr-documents) and unzip the file somewhere on your local file system.
 
 Go back to the SharePoint site that you just created and, in the **Documents** web part, select **See all** to view the document library page.
 

@@ -74,8 +74,6 @@ Prüfen Sie für Ihre eigenen Skills, falls vorhanden, ob Sie Verwaltungsoperati
 - Den Skill teilen: Wählen Sie **Share**; der Dialog **Publish "<skill name>"** bietet **Only you** oder **Specific users in your organization**, dann wählen Sie **Publish**
 - Den Skill löschen
 
-![Bildschirm mit dem Skill copilot-camp-flash-cards, mit Beschreibung, Hinweisen zur Nutzung und Instructions zum Erzeugen von PowerPoint Flash Cards aus Labs des Copilot Dev Camp.](./_images/cowork-skills-02.png)
-
 Starten Sie nach jeder Änderung eine neue Unterhaltung, um das geänderte Verhalten zu testen. Nachdem Sie einen geteilten Skill bearbeitet haben, wählen Sie **Re-share**, um die neueste Version zu senden. Custom Skills werden in Cowork auf Mobilgeräten nicht unterstützt.
 
 ## Übung 3: Einen Skill mit dem nativen Add-Skill-Ablauf erstellen
@@ -97,11 +95,11 @@ Cowork stellt fünf Fragen, jede mit der Option **Skip**: was der Skill tut, wie
 Verwenden Sie zum Beispiel den folgenden Text:
 
 ```text
-Generate a set of flash cards in PowerPoint to test my knowledge about a specific lab of the Copilot Dev Camp.
+Generate a set of flash cards in PowerPoint to test my knowledge about a specific Microsoft Learn article for Grey Logistics training.
 
-Trigger this skill whenever the prompt includes "Create flash cards for a Copilot Dev Camp lab" or something similar, but still referring to "flash cards" and "Copilot Dev Camp".
+Trigger this skill whenever the prompt includes "Create flash cards for a Grey Logistics training article" or something similar, but still referring to "flash cards" and "Grey Logistics".
 
-The result should be a PowerPoint deck with no more than 10 flash cards based on the actual content of the lab referenced, as a URL, by the user. If there is no URL of the lab, ask the user to provide it.
+The result should be a PowerPoint deck with no more than 10 flash cards based on the actual content of the article referenced, as a URL, by the user. If there is no URL of the article, ask the user to provide it.
 
 Name the skill "copilot-flash-cards".
 ```
@@ -115,7 +113,7 @@ Cowork bittet dann darum, die Skill-Datei nach **Your Cowork folder** / **skills
 Sie können Ihren Skill direkt aus Cowork testen und iterativ verfeinern. Geben Sie zum Beispiel den folgenden Prompt ein und prüfen Sie das Ergebnis:
 
 ```text
-Test it with the following URL: https://microsoft.github.io/copilot-camp/pages/extend-m365-copilot/11-mcp-app/
+Test it with the following URL: https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp
 ```
 
 Lesen Sie den **Skill Report**, den Cowork bei jedem Erstellen oder Aktualisieren Ihres Skills zurückgibt. Der Score reicht von 0 bis 100 über **Trigger clarity**, **Instruction specificity**, **Scope boundaries** und **Robustness**, jede Dimension mit 25 Punkten. Die Stufen sind **Excellent** (85+), **Good** (70-84), **Needs work** (50-69) und **Poor** (unter 50). Beheben Sie zuerst die Dimension mit dem niedrigsten Score und testen Sie dann erneut in einer neuen Unterhaltung.
@@ -139,7 +137,7 @@ Durchsuchen Sie Ihr OneDrive for Business und prüfen Sie den Inhalt des neuen S
 Starten Sie einen neuen Cowork Task und testen Sie einen Prompt, der Ihren neuen Skill auslösen sollte, zum Beispiel:
 
 ```text
-Generate flash cards for the Copilot Dev Camp lab available at the following URL: https://microsoft.github.io/copilot-camp/pages/extend-m365-copilot/08-mcp-server/
+Generate flash cards for the Grey Logistics training article available at the following URL: https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-plugin-development
 ```
 
 Öffnen Sie im rechten Side Panel **Plugins** und prüfen Sie, dass Ihr Custom Skill unter den Chips erscheint, die während der Ausführung verwendet wurden.
@@ -262,7 +260,7 @@ Thanks!
 - Use a light touch with emojis — section headers and the greeting, not every bullet.
 `````
 
-Den vollständigen Quelltext des Skills können Sie aus [dem Copilot Dev Camp Repository](https://github.com/microsoft/copilot-camp/blob/main/src/cowork/weekly-status-mail/SKILL.md) herunterladen.
+Den vollständigen Quelltext des Skills können Sie als [weekly-status-mail/SKILL.md](./lab-02-cowork-skills/weekly-status-mail/SKILL.md) herunterladen.
 
 Wichtige Prüfungen:
 

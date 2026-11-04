@@ -18,7 +18,7 @@ Duration: about 60 minutes.
 
 ## Prerequisites
 
-- The Grey Logistics IT Help Desk Standard agent from [Create a Standard IT Help Desk Agent](../../../demos/03-cs-basics/01-standard-agents/demo-create-a-standard-agent.md), or any Standard agent in an environment where you hold the maker role. Use a trial or sandbox environment.
+- The Grey Logistics IT Help Desk Standard agent from [Create a Standard IT Help Desk Agent](../../../demos/03-cs-basics/01-standard-agents/demo-create-a-standard-agent.md), or any Standard agent in an environment where you hold the maker role. Use a trial or sandbox environment. If you have none, create one in [Copilot Studio](https://copilotstudio.microsoft.com): on **Home** select **Other ways to build**, then **Agent** with the **Standard** badge, and name it `Grey Logistics IT Help Desk`.
 - Claude Code, Git, Node.js 18 or later, and VS Code with the Copilot Studio extension.
 - The .NET SDK and the Power Platform CLI 2.9.3 or later for Exercise 6.
 - This repo cloned to your machine. The [topic readme](../../../demos/07-cs-maintaining/05-agentic-building/readme.md#prerequisites) lists the install commands.

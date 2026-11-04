@@ -8,7 +8,7 @@ Für dieses Lab brauchen Sie:
 
 - Einen Computer mit Internetzugang.
 - Zugang zum bereitgestellten Microsoft Tenant (manche Unternehmen erlauben Usern nur die Verbindung zum eigenen Firmen-Tenant) oder Ihren eigenen Enterprise Tenant mit einer Copilot Studio User License (oder Testversion).
-- Einen Agent, den Sie bearbeiten dürfen, zum Beispiel den HR Agent aus den früheren Labs. Aufgabe 1 fügt ihm das Topic **Check Ticket Status** mit Beispiel-Ticketdaten hinzu, eine ServiceNow-Instanz brauchen Sie also nicht.
+- Einen Agent, den Sie bearbeiten dürfen, zum Beispiel den HR Agent. Wenn Sie keinen haben, erstellen Sie einen: Wählen Sie auf **Home** den Befehl **Other ways to build**, dann den Eintrag **Agent** mit dem Badge **Standard**, und nennen Sie ihn `HR Agent`. Aufgabe 1 fügt ihm das Topic **Check Ticket Status** mit Beispiel-Ticketdaten hinzu, eine ServiceNow-Instanz brauchen Sie also nicht.
 - Authentication auf "Authenticate with Microsoft" gesetzt (unter Settings, Security, Authentication).
 
 ## AI Builder Prompts

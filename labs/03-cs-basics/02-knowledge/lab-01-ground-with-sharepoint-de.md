@@ -12,13 +12,46 @@ In diesem Lab lernen Sie:
 
 > **Hinweis:** Diese Beispiele und Labs dienen der Schulung und Demonstration und sind nicht für den Produktivbetrieb gedacht. Bringen Sie sie nicht in Production, ohne sie auf Production-Qualität zu heben.
 
+## Den HR Agent einrichten
+
+Dieses Lab startet mit dem HR Agent, seinen Instructions und der Microsoft Careers Site als Knowledge. Wenn Sie ihn in [Ihren ersten Copilot Studio Agent erstellen](../01-standard-agents/lab-01-create-your-first-agent-de.md) gebaut haben, öffnen Sie ihn unter **Agents** und machen mit Übung 1 weiter. Andernfalls erstellen Sie ihn jetzt:
+
+1. Rufen Sie [Copilot Studio](https://copilotstudio.microsoft.com) auf, wählen Sie auf **Home** den Befehl **Other ways to build** und dann unter **Build with standard orchestration** den Eintrag **Agent** mit dem Badge **Standard**.
+2. Geben Sie im Dialog **Name your agent** den Namen `HR Agent` ein und wählen Sie **Create**.
+3. Warten Sie, bis der Agent eingerichtet ist (die Befehle **Edit** bleiben etwa eine Minute deaktiviert). Wählen Sie dann im Tab **Overview** im Abschnitt **Details** den Befehl **Edit**, fügen Sie den folgenden Text in **Description** ein und wählen Sie **Save**.
+
+```txt
+You help employees to find information about HR related policies
+```
+
+4. Wählen Sie im Abschnitt **Instructions** den Befehl **Edit**, fügen Sie die folgenden Instructions ein und wählen Sie **Save**.
+
+```txt
+- Provide employees with clear, accurate information about HR policies and procedures.
+- Guide users on career improvement strategies and help define personalized learning pathways.
+- Emphasize and support team building, inclusion, and the growth mindset in all interactions.
+- Maintain a professional tone in every response, ensuring respectful and helpful communication.
+- Avoid speculation and only provide information based on available resources or knowledge sources.
+- Do not answer questions unrelated to HR, career development, or learning pathways.
+- Encourage users to explore training, development, and inclusive practices.
+- Respond promptly and clearly to all user queries.
+```
+
+5. Wählen Sie im Abschnitt **Knowledge** den Befehl **+ Add knowledge** > **Public websites**, geben Sie `https://careers.microsoft.com/` ein und wählen Sie **Add**. Nennen Sie die Site `Microsoft Careers site`, fügen Sie die folgende Beschreibung ein und wählen Sie **Add to agent**.
+
+```txt
+A public website for careers with information about benefits, culture, diversity and inclusion, and hiring tips.
+```
+
+Erwartet: Der Tab **Overview** des HR Agent zeigt die Description, die Instructions und unter **Knowledge** die **Microsoft Careers site**.
+
 ## Übung 1: Die Knowledge Base erweitern
 
 In dieser Übung fügen Sie Ihrem Agent Dokumente (Word und PDF) aus Microsoft SharePoint Online als zusätzliche Knowledge Base hinzu. 
 
 ### Schritt 1: SharePoint Online Dokumente als Knowledge Base hinzufügen
 
-Laden Sie über diesen [Link](https://download-directory.github.io/?url=https://github.com/microsoft/copilot-camp/tree/main/src/make/copilot-studio/HR-documents&filename=hr-documents) eine ZIP-Datei mit einigen Dateien (Word, PowerPoint, PDF) herunter.
+Laden Sie über diesen [Link](https://download-directory.github.io/?url=https://github.com/alexander-kastil/copilot-studio-agents/tree/master/src/assets/hr-documents&filename=hr-documents) eine ZIP-Datei mit einigen Dateien (Word, PowerPoint, PDF) herunter.
 
 Entpacken Sie die Dateien und laden Sie sie in die Bibliothek **Documents** einer SharePoint Teams Site im selben Tenant hoch, in dem Sie Ihren Agent mit Copilot Studio bauen. Microsoft 365 Copilot hat diese Dokumente erzeugt, damit der Agent eine zusätzliche Knowledge Base hat.
 
@@ -26,7 +59,7 @@ Kopieren Sie die absolute URL der Site, zum Beispiel: `https://xyz.sharepoint.co
 
 ![Der Tab **Overview** des Agents mit hervorgehobener Schaltfläche **+ Add knowledge**.](./_images/make-agent-spo-knowledge-01.png)
 
-Scrollen Sie im Tab **Overview** des zuvor gebauten Agents zum Abschnitt **Knowledge**. Dort sehen Sie die Website aus dem vorigen Lab. Wählen Sie **+ Add knowledge**, um die SharePoint Site und ihre Dokumente als weitere Knowledge Source hinzuzufügen.
+Scrollen Sie im Tab **Overview** des HR Agent zum Abschnitt **Knowledge**. Dort sehen Sie die Microsoft Careers Site. Wählen Sie **+ Add knowledge**, um die SharePoint Site und ihre Dokumente als weitere Knowledge Source hinzuzufügen.
 
 ![Der Dialog für zusätzliches Knowledge des Agents. Zur Auswahl stehen Public Websites, SharePoint, Dataverse und weitere Datenquellen.](./_images/make-agent-spo-knowledge-02.png)
 
@@ -79,7 +112,7 @@ Testen Sie den Agent jetzt erneut im rechten Panel. Geben Sie zum Beispiel diese
 How can we hire new people in our company?
 ```
 
-Der Agent antwortet mit Informationen zum Einstellungsprozess und verweist auf die Dokumente aus der SharePoint Online Knowledge Base sowie auf die öffentliche Website aus der Knowledge Base.
+Der Agent antwortet mit Informationen zum Einstellungsprozess und verweist auf die Dokumente aus der SharePoint Online Knowledge Base; Verweise auf die öffentliche Website können ebenfalls erscheinen.
 
 ![Das Test Panel mit einer Unterhaltung mit dem Agent und Verweisen auf Dokumente aus der SharePoint Online Knowledge Base.](./_images/make-agent-spo-knowledge-06.png)
 

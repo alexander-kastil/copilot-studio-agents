@@ -74,8 +74,6 @@ For your own skills, if any, validate that you can perform management operations
 - Share the skill: select **Share**; the dialog **Publish "<skill name>"** offers **Only you** or **Specific users in your organization**, then select **Publish**
 - Delete the skill
 
-![UI screen showing the copilot-camp-flash-cards skill with description, usage guidelines, and instructions for generating PowerPoint flash cards from Copilot Dev Camp labs.](./_images/cowork-skills-02.png)
-
 After any edit, start a new conversation to test the behavior change. After you edit a shared skill, select **Re-share** to send the latest version. Custom skills aren't supported in Cowork on mobile.
 
 ## Exercise 3: Create a skill with the native Add skill flow
@@ -97,11 +95,11 @@ Cowork asks five questions, each with a **Skip** option: what the skill does, it
 For example, use the following text:
 
 ```text
-Generate a set of flash cards in PowerPoint to test my knowledge about a specific lab of the Copilot Dev Camp.
+Generate a set of flash cards in PowerPoint to test my knowledge about a specific Microsoft Learn article for Grey Logistics training.
 
-Trigger this skill whenever the prompt includes "Create flash cards for a Copilot Dev Camp lab" or something similar, but still referring to "flash cards" and "Copilot Dev Camp".
+Trigger this skill whenever the prompt includes "Create flash cards for a Grey Logistics training article" or something similar, but still referring to "flash cards" and "Grey Logistics".
 
-The result should be a PowerPoint deck with no more than 10 flash cards based on the actual content of the lab referenced, as a URL, by the user. If there is no URL of the lab, ask the user to provide it.
+The result should be a PowerPoint deck with no more than 10 flash cards based on the actual content of the article referenced, as a URL, by the user. If there is no URL of the article, ask the user to provide it.
 
 Name the skill "copilot-flash-cards".
 ```
@@ -115,7 +113,7 @@ Cowork then asks to copy the skill file into **Your Cowork folder** / **skills**
 You can test your skill directly from Cowork and iterate to fine-tune it. For example, provide the following prompt and check the result:
 
 ```text
-Test it with the following URL: https://microsoft.github.io/copilot-camp/pages/extend-m365-copilot/11-mcp-app/
+Test it with the following URL: https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp
 ```
 
 Read the **Skill Report** that Cowork returns each time it creates or updates your skill. The score runs from 0 to 100 across **Trigger clarity**, **Instruction specificity**, **Scope boundaries**, and **Robustness**, each worth 25 points. The bands are **Excellent** (85+), **Good** (70-84), **Needs work** (50-69), and **Poor** (below 50). Fix the lowest-scoring dimension first, then test again in a new conversation.
@@ -139,7 +137,7 @@ Browse your OneDrive for Business and check the content of the new skill folder.
 Start a new Cowork task and test a prompt that should trigger your new skill, for example:
 
 ```text
-Generate flash cards for the Copilot Dev Camp lab available at the following URL: https://microsoft.github.io/copilot-camp/pages/extend-m365-copilot/08-mcp-server/
+Generate flash cards for the Grey Logistics training article available at the following URL: https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-plugin-development
 ```
 
 In the right side panel, open **Plugins** and verify that your custom skill appears among the chips used during execution.
@@ -262,7 +260,7 @@ Thanks!
 - Use a light touch with emojis — section headers and the greeting, not every bullet.
 `````
 
-You can download the whole source of the skill from [the Copilot Dev Camp repository](https://github.com/microsoft/copilot-camp/blob/main/src/cowork/weekly-status-mail/SKILL.md).
+You can download the whole source of the skill from [weekly-status-mail/SKILL.md](./lab-02-cowork-skills/weekly-status-mail/SKILL.md).
 
 Important checks:
 

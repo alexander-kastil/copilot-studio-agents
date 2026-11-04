@@ -64,7 +64,7 @@ If a plugin requires connector authentication, each user still completes their o
 
 ## Exercise 2: Inspect plugin structure and design decisions
 
-In this exercise you analyze the architecture of a real plugin, available in the [CopilotDevCamp-for-cowork repository](https://github.com/PaoloPia/CopilotDevCamp-for-cowork), and understand why packaging multiple skills with connectors is valuable.
+In this exercise you analyze the architecture of the Grey Logistics sample plugin in [lab-03-grey-logistics-plugin](./lab-03-grey-logistics-plugin/), and understand why packaging multiple skills with connectors is valuable.
 
 ### Step 1: Review a production-style plugin layout
 
@@ -89,20 +89,20 @@ plugin-root-folder/
         └── SKILL.md
 ```
 
-The plugin you build in this lab processes the content of the Copilot Dev Camp labs and creates PowerPoint presentations or Word documents based on a specific lab. It also relies on the Microsoft Learn MCP server (`https://learn.microsoft.com/api/mcp`) to provide technical details about Microsoft Foundry.
+The plugin you build in this lab turns Microsoft Learn articles into PowerPoint presentations or Word documents for Grey Logistics. It also relies on the Microsoft Learn MCP server (`https://learn.microsoft.com/api/mcp`) to provide technical details about Microsoft Foundry.
 
 The plugin is made of the following skills:
 
 - **foundry-research**: researches and compiles comprehensive information about Microsoft Foundry, including documentation, architecture, models, and deployment options. Used when the user asks to "research Microsoft Foundry", "learn about Foundry", "Foundry documentation", "Foundry architecture", "Foundry models", "how to deploy with Foundry", "Foundry features", or "Foundry capabilities".
-- **dev-camp-deck**: creates a professional PowerPoint presentation about a Copilot Dev Camp lab or topic. Researches Microsoft Learn documentation, organizes content into a slide structure, and generates a polished deck with speaker notes. Used when the user asks to "create a presentation on", "make a deck about", "build a slideshow for", "present on Dev Camp topic", or "generate slides about" any Copilot Dev Camp lab or Microsoft technology topic.
-- **dev-camp-document**: authors a professional Word document about a Copilot Dev Camp lab or Microsoft technology topic. Researches Microsoft Learn documentation, organizes content into a document structure, and generates a polished one-pager or detailed guide with formatting and citations. Used when the user asks to "write a document about", "create a guide for", "author a one-pager on", "write a technical brief on", or "create documentation for" any Copilot Dev Camp lab or Microsoft technology topic.
+- **grey-logistics-deck**: creates a professional PowerPoint presentation for Grey Logistics about a Microsoft Learn article or topic. Researches Microsoft Learn documentation, organizes content into a slide structure, and generates a polished deck with speaker notes. Used when the user asks to "create a presentation on", "make a deck about", "build a slideshow for", "present on a Grey Logistics topic", or "generate slides about" any Microsoft Learn article or Microsoft technology topic.
+- **grey-logistics-document**: authors a professional Word document for Grey Logistics about a Microsoft Learn article or Microsoft technology topic. Researches Microsoft Learn documentation, organizes content into a document structure, and generates a polished one-pager or detailed guide with formatting and citations. Used when the user asks to "write a document about", "create a guide for", "author a one-pager on", "write a technical brief on", or "create documentation for" any Microsoft Learn article or Microsoft technology topic.
 
-![Three Cowork prompts each activate one skill of the Copilot Dev Camp plugin. The skill calls the Microsoft Learn MCP Server through the microsoft-learn-mcp connector and returns Foundry research, a PowerPoint deck or a Word document.](./_images/lab-03-dev-camp-plugin-runtime.svg)
+![Three Cowork prompts each activate one skill of the Grey Logistics plugin. The skill calls the Microsoft Learn MCP Server through the microsoft-learn-mcp connector and returns Foundry research, a PowerPoint deck or a Word document.](./_images/lab-03-grey-logistics-plugin-runtime.svg)
 
 The plugin folder structure is the following:
 
 ```text
-CopilotDevCamp-for-cowork/
+GreyLogistics-for-cowork/
 ├── manifest.json
 ├── color.png
 ├── outline.png
@@ -110,9 +110,9 @@ CopilotDevCamp-for-cowork/
 └── skills/
     ├── foundry-research/
     │   └── SKILL.md
-    ├── dev-camp-deck/
+    ├── grey-logistics-deck/
     │   └── SKILL.md
-    └── dev-camp-document/
+    └── grey-logistics-document/
         └── SKILL.md
 ```
 
@@ -141,7 +141,7 @@ Choose the model based on security and data sensitivity. For production, authent
 
 ## Exercise 3: Build the custom plugin package
 
-In this exercise you create a plugin similar to the Copilot Dev Camp sample, with three skills and one connector. Create a new folder on your file system named `CopilotDevCamp-for-cowork` and open it with Visual Studio Code or any other code editor.
+In this exercise you create a plugin similar to the Grey Logistics sample, with three skills and one connector. Create a new folder on your file system named `GreyLogistics-for-cowork` and open it with Visual Studio Code or any other code editor.
 
 ### Step 1: Create the manifest with skills and connector
 
@@ -156,18 +156,18 @@ Use the following model:
   "version": "1.5.0",
   "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
   "developer": {
-    "name": "Paolo Pialorsi",
-    "websiteUrl": "https://github.com/PaoloPia",
-    "privacyUrl": "https://github.com/PaoloPia",
-    "termsOfUseUrl": "https://github.com/PaoloPia"
+    "name": "Grey Logistics",
+    "websiteUrl": "https://github.com/alexander-kastil/copilot-studio-agents",
+    "privacyUrl": "https://github.com/alexander-kastil/copilot-studio-agents",
+    "termsOfUseUrl": "https://github.com/alexander-kastil/copilot-studio-agents"
   },
   "name": {
-    "short": "Copilot Dev Camp",
-    "full": "Copilot Dev Camp for Cowork - Copilot Dev Camp and Microsoft Foundry Content Creation & Research"
+    "short": "Grey Logistics",
+    "full": "Grey Logistics for Cowork - Microsoft Foundry Content Creation & Research"
   },
   "description": {
-    "short": "Copilot Dev Camp and Microsoft Foundry presentations and documentation",
-    "full": "Comprehensive Cowork plugin for Copilot Dev Camp with skills to research Microsoft Foundry documentation, create professional PowerPoint presentations on Dev Camp topics, and author Word documents with technical guides and one-pagers. Powered by the Microsoft Learn MCP Server."
+    "short": "Grey Logistics presentations and documentation on Microsoft technology",
+    "full": "Comprehensive Cowork plugin for Grey Logistics with skills to research Microsoft Foundry documentation, create professional PowerPoint presentations on Microsoft technology topics, and author Word documents with technical guides and one-pagers. Powered by the Microsoft Learn MCP Server."
   },
   "icons": {
     "color": "color.png",
@@ -176,8 +176,8 @@ Use the following model:
   "accentColor": "#000000",
   "agentSkills": [
     { "folder": "./skills/foundry-research" },
-    { "folder": "./skills/dev-camp-deck" },
-    { "folder": "./skills/dev-camp-document" }
+    { "folder": "./skills/grey-logistics-deck" },
+    { "folder": "./skills/grey-logistics-document" }
   ],
   "agentConnectors": [
     {
@@ -225,12 +225,12 @@ Important validation checks:
 - Skill frontmatter `name` must be kebab-case and match its folder name
 - Connector `id` values must be unique
 
-![Inside copilot-dev-camp.zip, manifest.json points to color.png, outline.png, the three skill folders and tools/microsoft-learn-mcp-tools.json, while mcpServerUrl points outside the package to the Microsoft Learn MCP Server.](./_images/lab-03-manifest-wiring.svg)
+![Inside grey-logistics.zip, manifest.json points to color.png, outline.png, the three skill folders and tools/microsoft-learn-mcp-tools.json, while mcpServerUrl points outside the package to the Microsoft Learn MCP Server.](./_images/lab-03-manifest-wiring.svg)
 
 You also need the `color.png` and `outline.png` icons for the application package. Download them from the following URLs:
 
-- [color.png](https://raw.githubusercontent.com/microsoft/copilot-camp/main/src/cowork/CopilotDevCamp-for-cowork/color.png)
-- [outline.png](https://raw.githubusercontent.com/microsoft/copilot-camp/main/src/cowork/CopilotDevCamp-for-cowork/outline.png)
+- [color.png](./lab-03-grey-logistics-plugin/color.png)
+- [outline.png](./lab-03-grey-logistics-plugin/outline.png)
 
 Feel free to replace the content of the `developer` section of the manifest with your own data.
 
@@ -239,8 +239,8 @@ Feel free to replace the content of the `developer` section of the manifest with
 Create these skill folders under `skills/`:
 
 - `foundry-research`
-- `dev-camp-deck`
-- `dev-camp-document`
+- `grey-logistics-deck`
+- `grey-logistics-document`
 
 In each `SKILL.md`:
 
@@ -253,9 +253,9 @@ In each `SKILL.md`:
 
 You can copy the content of the three skills from the following URLs:
 
-- [foundry-research](https://raw.githubusercontent.com/microsoft/copilot-camp/main/src/cowork/CopilotDevCamp-for-cowork/skills/foundry-research/SKILL.md)
-- [dev-camp-deck](https://raw.githubusercontent.com/microsoft/copilot-camp/main/src/cowork/CopilotDevCamp-for-cowork/skills/dev-camp-deck/SKILL.md)
-- [dev-camp-document](https://raw.githubusercontent.com/microsoft/copilot-camp/main/src/cowork/CopilotDevCamp-for-cowork/skills/dev-camp-document/SKILL.md)
+- [foundry-research](./lab-03-grey-logistics-plugin/skills/foundry-research/SKILL.md)
+- [grey-logistics-deck](./lab-03-grey-logistics-plugin/skills/grey-logistics-deck/SKILL.md)
+- [grey-logistics-document](./lab-03-grey-logistics-plugin/skills/grey-logistics-document/SKILL.md)
 
 This design gives Cowork stronger activation accuracy and more consistent outcomes.
 
@@ -278,13 +278,13 @@ Add a `package.json` file in the plugin root folder and define scripts like the 
 
 ```json
 {
-  "name": "copilot-dev-camp-cowork-plugin",
+  "name": "grey-logistics-cowork-plugin",
   "version": "1.0.0",
-  "description": "Copilot Dev Camp plugin for Cowork - Research Microsoft Foundry, create presentations and documentation",
+  "description": "Grey Logistics plugin for Cowork - Research Microsoft Foundry, create presentations and documentation",
   "main": "manifest.json",
   "scripts": {
-    "package": "PowerShell -Command \"Compress-Archive -Path manifest.json, color.png, outline.png, tools, skills -DestinationPath copilot-dev-camp.zip -Force; Write-Host 'Plugin packaged: copilot-dev-camp.zip'\"",
-    "package:unix": "zip -r copilot-dev-camp.zip manifest.json color.png outline.png tools/ skills/"
+    "package": "PowerShell -Command \"Compress-Archive -Path manifest.json, color.png, outline.png, tools, skills -DestinationPath grey-logistics.zip -Force; Write-Host 'Plugin packaged: grey-logistics.zip'\"",
+    "package:unix": "zip -r grey-logistics.zip manifest.json color.png outline.png tools/ skills/"
   },
   "license": "MIT"
 }
@@ -339,7 +339,7 @@ Use the following prompt as-is with GitHub Copilot:
 You are GitHub Copilot acting as a senior Microsoft 365 + Copilot Cowork plugin engineer.
 
 Goal: Build a **new Copilot Cowork plugin** in this repository, following the same project structure and engineering style as:
-- https://github.com/PaoloPia/CopilotDevCamp-for-cowork
+- https://github.com/alexander-kastil/copilot-studio-agents/tree/master/labs/02-cowork/lab-03-grey-logistics-plugin
 
 and grounded in official guidance from:
 - https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-plugin-development
@@ -349,10 +349,10 @@ and grounded in official guidance from:
 1. Implement plugin capabilities
 - Add a skill with name `foundry-research` with support for **Microsoft Foundry** content (both documentation and samples) using this MCP server:
     - https://learn.microsoft.com/api/mcp
-- Add a skill with name `dev-camp-deck` to create a **PowerPoint presentation** about one Copilot Dev Camp lab/topic.
-- Add a skill with name `dev-camp-document` to author a **Word document** about one Copilot Dev Camp lab/topic.
-- Use Copilot Dev Camp content as source context:
-    - https://microsoft.github.io/copilot-camp/
+- Add a skill with name `grey-logistics-deck` to create a **PowerPoint presentation** about one Microsoft Learn article or topic for Grey Logistics.
+- Add a skill with name `grey-logistics-document` to author a **Word document** about one Microsoft Learn article or topic for Grey Logistics.
+- Use Microsoft Learn content as source context:
+    - https://learn.microsoft.com/
 - Register the MCP server https://learn.microsoft.com/api/mcp in the manifest, with anonymous access
 
 2. Keep repository conventions
@@ -379,10 +379,9 @@ and grounded in official guidance from:
     - `color.png`
     - `outline.png`
 - Visual requirements:
-    - Subject: a **book inside/with a camp tent** motif
-    - Tent color: **purple**
-    - Book color: **white**
-    - Background: **black**
+    - Subject: a **parcel box** motif
+    - Box color: **white**
+    - Background: **grey**
 - Ensure dimensions and style are compliant with Cowork plugin requirements.
 
 ### Implementation instructions
@@ -395,7 +394,7 @@ and grounded in official guidance from:
     - Add clear prompt instructions and usage examples.
 - For the PowerPoint and Word skills:
     - Create dedicated skill folders/files with clear instructions, expected inputs, and generated outputs.
-    - Ensure prompts are practical for Copilot users and tied to Copilot Dev Camp topics.
+    - Ensure prompts are practical for Copilot users and tied to Grey Logistics topics.
 
 ### README packaging + deployment documentation (must include)
 
@@ -479,13 +478,13 @@ Research Microsoft Foundry deployment options
 or:
 
 ```text
-Create a presentation about Copilot Dev Camp lab: https://microsoft.github.io/copilot-camp/pages/extend-m365-copilot/08-mcp-server/
+Create a presentation for Grey Logistics about this Microsoft Learn article: https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp
 ```
 
 or:
 
 ```text
-Write a one-pager about Copilot Dev Camp lab: https://microsoft.github.io/copilot-camp/pages/extend-m365-copilot/11-mcp-app/
+Write a one-pager for Grey Logistics about this Microsoft Learn article: https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-plugin-development
 ```
 
 > **Important:** testing the custom skills of this plugin in Copilot Cowork consumes Copilot Credits.
@@ -534,7 +533,7 @@ wiqd plugin import --path <source> --privacy-url <privacy-url> --terms-url <term
 
 The companion `plugin.json` has no `homepage` or `author` field, so `--website-url` is required. Without it, the import stops with `developer.websiteUrl could not be resolved`.
 
-Expected result: `✔ Plugin imported`, plus a new project folder named `dev-camp-foundry-research` in the folder where you ran the command. The import reports the name `Dev Camp Foundry Research` and the capability `agentSkills`. Open the project folder. The remaining steps run inside it.
+Expected result: `✔ Plugin imported`, plus a new project folder named `grey-logistics-foundry-research` in the folder where you ran the command. The import reports the name `Grey Logistics Foundry Research` and the capability `agentSkills`. Open the project folder. The remaining steps run inside it.
 
 ### Step 3: Validate and sign in
 
@@ -598,7 +597,7 @@ If Step 5 was refused, upload the package from the admin center:
 
 ### Step 7: Use the plugin in Cowork and Word
 
-Sign in to Cowork as the test user from Step 6. Select **Plugins** in the left navigation and the **Cowork** tab. Under **Added**, select **Dev Camp Foundry Research** in **Get started**, then select **Install**. If your tenant shows a **Plugins** button in place of **Customize**, select that button instead.
+Sign in to Cowork as the test user from Step 6. Select **Plugins** in the left navigation and the **Cowork** tab. Under **Added**, select **Grey Logistics Foundry Research** in **Get started**, then select **Install**. If your tenant shows a **Plugins** button in place of **Customize**, select that button instead.
 
 Expected result: the detail page shows the skill `foundry-research` with its description, version 1.0.0, and the legal links **Privacy policy** and **Terms of service**. The publisher shows **Unknown**, because the companion manifest has no `author` field and WIQD has no name to show.
 

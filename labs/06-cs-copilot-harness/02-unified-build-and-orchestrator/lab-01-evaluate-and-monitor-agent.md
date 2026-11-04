@@ -1,14 +1,14 @@
-# Build, Evaluate, and Monitor a Northwind Sales Assistant
+# Build, Evaluate, and Monitor a Happy Longnose Sales Assistant
 
-Sellers do not trust an assistant because it answered one demo question well; they trust it because it answers the same questions the same way, every time, across a whole territory. The only way a maker earns that trust is to stop testing by hand and start scoring the agent against a fixed set of questions with objective graders, then watch the real runs to confirm the agent behaved as scored. In this lab you take a Northwind Sales Assistant across all four tabs of a Microsoft Copilot harness agent: you compose it on **Build**, smoke-test it on **Preview**, score it with a grader-backed test set on **Evaluate**, and review its runs on **Monitor**.
+Sellers do not trust an assistant because it answered one demo question well; they trust it because it answers the same questions the same way, every time, across a whole territory. The only way a maker earns that trust is to stop testing by hand and start scoring the agent against a fixed set of questions with objective graders, then watch the real runs to confirm the agent behaved as scored. In this lab you take a Happy Longnose Sales Assistant across all four tabs of a Microsoft Copilot harness agent: you compose it on **Build**, smoke-test it on **Preview**, score it with a grader-backed test set on **Evaluate**, and review its runs on **Monitor**.
 
-The scenario company is Northwind Traders, a wholesale distributor whose sellers each manage dozens of accounts. Your deliverable is a scored, tuned evaluation: a Northwind Sales Assistant with a named five-case test set, graders attached to each case, a first evaluation run with a baseline score, a targeted fix, and a second run that proves the fix, all reviewed on the Monitor tab. This lab deliberately stays inside the four tabs and does not add MCP servers, workflows, or uploaded skills; those live in the workflows and skills topics. Each exercise feeds the next: the Instructions and Knowledge you set shape the answers, the test set measures them, the score sends you back to Instructions, and Monitor confirms what actually ran.
+The scenario company is Happy Longnose Ltd, a wholesale distributor whose sellers each manage dozens of accounts. Your deliverable is a scored, tuned evaluation: a Happy Longnose Sales Assistant with a named five-case test set, graders attached to each case, a first evaluation run with a baseline score, a targeted fix, and a second run that proves the fix, all reviewed on the Monitor tab. This lab deliberately stays inside the four tabs and does not add MCP servers, workflows, or uploaded skills; those live in the workflows and skills topics. Each exercise feeds the next: the Instructions and Knowledge you set shape the answers, the test set measures them, the score sends you back to Instructions, and Monitor confirms what actually ran.
 
-![The lab's path across the four tabs: Build with Instructions, the northwind-reference Knowledge source and the Send an email Tool, a Preview smoke test, and Evaluate with the five-case Northwind quality set and two runs. A failing case loops back to one Instructions fix, and Monitor confirms what ran.](./_images/northwind-build-evaluate-tune-loop.svg)
+![The lab's path across the four tabs: Build with Instructions, the happy-longnose-reference Knowledge source and the Send an email Tool, a Preview smoke test, and Evaluate with the five-case Happy Longnose quality set and two runs. A failing case loops back to one Instructions fix, and Monitor confirms what ran.](./_images/happy-longnose-build-evaluate-tune-loop.svg)
 
 ## What you'll build
 
-- A Northwind Sales Assistant composed on the **Build** tab from a description, scoped Instructions, one Knowledge source, and one Tool.
+- A Happy Longnose Sales Assistant composed on the **Build** tab from a description, scoped Instructions, one Knowledge source, and one Tool.
 - A five-case test set on the **Evaluate** tab, each case carrying an expected response, scored by the set's **General quality** test method.
 - A baseline evaluation run with an aggregate quality score and a per-case scorecard.
 - A targeted Instructions fix driven by a failing case, and a second run that shows the score move.
@@ -24,11 +24,11 @@ The scenario company is Northwind Traders, a wholesale distributor whose sellers
 A Microsoft Copilot harness agent is natural-language-first: instead of authoring topics, you describe the agent's job in a sentence and refine it from there. Creating the agent this way is also the fastest way to see the four tabs you will work across in this lab, because they only appear on a Microsoft Copilot harness agent. Confirming the tabs now saves you from discovering an hour in that you built a Standard agent that has no Evaluate tab at all.
 
 1. In the side pane, select **Agents**, open the arrow next to **New agent**, and under **Optimize your business processes** select **Agent** with the **GitHub Copilot** badge.
-2. In the name field, enter `Northwind Sales Assistant`.
+2. In the name field, enter `Happy Longnose Sales Assistant`.
 3. In the **Instructions** section, paste the following, then select **Save**:
 
 ```text
-You are the Northwind Sales Assistant. You help Northwind Traders sellers answer questions about products, pricing, standard lead times, and account tiers, and you always cite the source you drew each fact from.
+You are the Happy Longnose Sales Assistant. You help Happy Longnose Ltd sellers answer questions about products, pricing, standard lead times, and account tiers, and you always cite the source you drew each fact from.
 ```
 
 4. Read the tabs across the top: **Build**, **Preview**, **Evaluate**, and **Monitor**.
@@ -47,33 +47,33 @@ Instructions are the always-in-context brief the enhanced orchestration runtime 
 2. Replace the contents with the following:
 
 ```text
-Role: You are the Northwind Sales Assistant, an internal helper for Northwind Traders sellers.
+Role: You are the Happy Longnose Sales Assistant, an internal helper for Happy Longnose Ltd sellers.
 
 You do:
-- Answer questions about Northwind products, pricing, standard lead times, and account tiers.
+- Answer questions about Happy Longnose products, pricing, standard lead times, and account tiers.
 - Cite the knowledge source you drew each fact from, in every answer.
 - Keep answers concise and professional.
 
 You do not:
 - Give binding price quotes, contract terms, or legal advice.
 - Invent facts; if the answer is not in your knowledge, say you do not have it.
-- Answer questions unrelated to Northwind sales.
+- Answer questions unrelated to Happy Longnose sales.
 ```
 
 3. Select **Save**.
 
-Expected: the **Instructions** component shows your saved text. Nothing else has changed yet; you have set behavior, not knowledge, so the agent still cannot cite a single Northwind fact.
+Expected: the **Instructions** component shows your saved text. Nothing else has changed yet; you have set behavior, not knowledge, so the agent still cannot cite a single Happy Longnose fact.
 
 > **Tip:** Write instructions as short "You do / You do not" lists rather than one long paragraph. The runtime follows scoped, itemized guardrails far more reliably, and the "cite the source" line is what makes the citation grader in Exercise 7 meaningful.
 
 ## Exercise 3: Ground the agent with a Knowledge source
 
-An agent with no knowledge answers from the general model and cannot cite a single Northwind fact, which means every quality grader would fail it. Adding a **Knowledge** source grounds answers in your content and lets the agent show where each fact came from, giving your test set something real to score against. One combined reference document is enough for this lab because the goal here is evaluation, not multi-source chaining.
+An agent with no knowledge answers from the general model and cannot cite a single Happy Longnose fact, which means every quality grader would fail it. Adding a **Knowledge** source grounds answers in your content and lets the agent show where each fact came from, giving your test set something real to score against. One combined reference document is enough for this lab because the goal here is evaluation, not multi-source chaining.
 
-First, create a file named `northwind-reference.md` (or a Word document) with exactly this content:
+First, create a file named `happy-longnose-reference.md` (or a Word document) with exactly this content:
 
 ```text
-# Northwind Traders - Product and Account Reference
+# Happy Longnose Ltd - Product and Account Reference
 
 ## Account tiers and standard lead times
 - Tier 1 (strategic): 3 business days, priority support.
@@ -92,7 +92,7 @@ First, create a file named `northwind-reference.md` (or a Word document) with ex
 ```
 
 1. On the **Build** tab, open the **Knowledge** component and select **Add knowledge**.
-2. Choose to upload a file, then select your `northwind-reference` document.
+2. Choose to upload a file, then select your `happy-longnose-reference` document.
 3. Wait until the source status shows it has finished processing.
 
 Expected: the document appears under **Knowledge** with a status indicating it is ready. The agent can now draw tier lead times, product prices, and account tiers from it, which is exactly what your test cases will check.
@@ -129,7 +129,7 @@ What is the standard lead time for a Tier 2 account, and what does a case of Org
 
 3. Read the answer and confirm it cites the knowledge source.
 
-Expected: **Preview** answers that a Tier 2 account has a 5 business day standard lead time and that a case of NWT Organic Green Tea (GT-220) lists at 62.00 USD, with a citation back to your `northwind-reference` source. If both facts are correct and cited, the agent is ready to evaluate; if not, fix Instructions or wait for Knowledge to finish processing before continuing.
+Expected: **Preview** answers that a Tier 2 account has a 5 business day standard lead time and that a case of NWT Organic Green Tea (GT-220) lists at 62.00 USD, with a citation back to your `happy-longnose-reference` source. If both facts are correct and cited, the agent is ready to evaluate; if not, fix Instructions or wait for Knowledge to finish processing before continuing.
 
 ## Exercise 6: Create a test set on the Evaluate tab
 
@@ -141,33 +141,33 @@ Hand-testing one question at a time cannot tell you whether the agent is reliabl
 
 ```text
 Question: What is the standard lead time for a Tier 1 account?
-Expected response: Tier 1 (strategic) accounts have a standard lead time of 3 business days, cited from the Northwind reference.
+Expected response: Tier 1 (strategic) accounts have a standard lead time of 3 business days, cited from the Happy Longnose reference.
 
 Question: How much does a case of NWT Cold Brew Concentrate cost?
-Expected response: A case of 12 NWT Cold Brew Concentrate (CB-100) lists at 48.00 USD, cited from the Northwind reference.
+Expected response: A case of 12 NWT Cold Brew Concentrate (CB-100) lists at 48.00 USD, cited from the Happy Longnose reference.
 
 Question: What tier and region is Blauer See Delikatessen?
-Expected response: Blauer See Delikatessen is a Tier 3 (transactional) account in region South, cited from the Northwind reference.
+Expected response: Blauer See Delikatessen is a Tier 3 (transactional) account in region South, cited from the Happy Longnose reference.
 
 Question: Can you give me a binding quote for 500 cases of Dark Roast Beans?
 Expected response: The assistant declines to give a binding quote, explains that it does not provide binding price quotes or contract terms, and offers list-price information instead.
 
 Question: What is the capital of France?
-Expected response: The assistant declines because the question is unrelated to Northwind sales.
+Expected response: The assistant declines because the question is unrelated to Happy Longnose sales.
 ```
 
-4. In the **Configure test set** panel, set the **Name** to Northwind quality set.
+4. In the **Configure test set** panel, set the **Name** to Happy Longnose quality set.
 5. Select **Save** (do not run it yet).
 
-Expected: the **Evaluate** tab lists five test cases under Northwind quality set, each showing its question and expected response, and the set is saved but not yet run. Two of the five cases (the binding quote and the capital of France) deliberately test a refusal, not a fact, so the set measures guardrails as well as grounding.
+Expected: the **Evaluate** tab lists five test cases under Happy Longnose quality set, each showing its question and expected response, and the set is saved but not yet run. Two of the five cases (the binding quote and the capital of France) deliberately test a refusal, not a fact, so the set measures guardrails as well as grounding.
 
-> **Tip:** Give each expected response the citation phrasing you want ("cited from the Northwind reference"), not just the bare fact. That way the grader rewards the behavior your Instructions require, not only a correct number.
+> **Tip:** Give each expected response the citation phrasing you want ("cited from the Happy Longnose reference"), not just the bare fact. That way the grader rewards the behavior your Instructions require, not only a correct number.
 
 ## Exercise 7: Configure the test set and understand what the grader judges
 
 A test set with no grader is just a list of questions; the grader (the test method) is what turns each answer into a pass or fail. On a Microsoft Copilot harness agent the **Configure test set** panel holds three settings that decide what your score means, and the test method is fixed rather than chosen per case. Understanding what that one grader actually judges is the difference between reading your results correctly and misreading them confidently.
 
-1. On the **Evaluate** tab, open the Northwind quality set.
+1. On the **Evaluate** tab, open the Happy Longnose quality set.
 2. In the **Configure test set** panel, read the **Data type** label. It reads `Data type: Conversation`, the only test set type available here.
 3. Read the **Test method** card. It shows **General quality**, described as responses meeting quality standards such as relevance and completeness, and it states that it does not compare to expected responses. There is no per-case grader picker.
 4. Under **User profile**, select **Manage** and confirm the profile that will run the evaluation, checking that its connections show as ready.
@@ -183,7 +183,7 @@ Expected: the panel shows the set name, the `Data type: Conversation` label, a s
 
 Running the set turns your five cases into an objective baseline: an aggregate score plus a per-case breakdown you can point at instead of arguing from a single demo. This is the moment ad-hoc testing becomes measurement, and the baseline is what every later change is compared against. Read both levels of the result: the summary score tells you overall health, and the per-case table tells you exactly which behavior to fix.
 
-1. On the **Evaluate** tab, with Northwind quality set selected, select **Evaluate** to start the run.
+1. On the **Evaluate** tab, with Happy Longnose quality set selected, select **Evaluate** to start the run.
 2. Wait for the run to finish; a five-case set takes a few minutes.
 3. Read the **Evaluation summary** (the aggregate score, duration, and test-case count).
 4. In the **Test run result** table, select any failing or low case to open its transcript and see the agent's actual answer against the expected one.
@@ -198,12 +198,12 @@ A score is only useful if it drives a change, so this exercise closes the loop: 
 2. On the **Build** tab, open **Instructions** and sharpen the relevant line. For a missed refusal or missing citation, add:
 
 ```text
-- When asked for a binding quote or contract terms, refuse and offer list-price information from the Northwind reference instead.
-- Begin every factual answer by naming the knowledge source, for example "From the Northwind reference:".
+- When asked for a binding quote or contract terms, refuse and offer list-price information from the Happy Longnose reference instead.
+- Begin every factual answer by naming the knowledge source, for example "From the Happy Longnose reference:".
 ```
 
 3. Select **Save**.
-4. Return to the **Evaluate** tab, select Northwind quality set, and under **Recent results** choose **Evaluate test set again**.
+4. Return to the **Evaluate** tab, select Happy Longnose quality set, and under **Recent results** choose **Evaluate test set again**.
 5. When the second run finishes, compare its aggregate score and the previously failing case against the first run.
 
 Expected: the second run is saved as a separate result next to the first, the previously failing case now passes, and the aggregate score is higher than the baseline. You can point to two runs of the identical set as objective proof that the Instructions change improved quality without breaking the passing cases.
@@ -218,10 +218,10 @@ Evaluate tells you whether an answer was right; **Monitor** tells you what the a
 
 1. Open the **Monitor** tab.
 2. Locate the recent sessions, including the Preview smoke test from Exercise 5 and the evaluation runs.
-3. Open the activity or transcript for the Tier 2 lead-time answer and confirm it shows a lookup against the `northwind-reference` knowledge source.
+3. Open the activity or transcript for the Tier 2 lead-time answer and confirm it shows a lookup against the `happy-longnose-reference` knowledge source.
 4. Open the off-topic "capital of France" turn and confirm the activity shows the agent did not call the Send an email tool.
 
-Expected: **Monitor** lists the agent's sessions, and opening a turn shows its transcript and the resources it used. The grounded answer's activity names the Knowledge source, and the off-topic turn shows no tool call, matching the scores from the Evaluate tab and confirming the agent passed for the right reasons. You now have a scored, tuned, and independently verified Northwind Sales Assistant.
+Expected: **Monitor** lists the agent's sessions, and opening a turn shows its transcript and the resources it used. The grounded answer's activity names the Knowledge source, and the off-topic turn shows no tool call, matching the scores from the Evaluate tab and confirming the agent passed for the right reasons. You now have a scored, tuned, and independently verified Happy Longnose Sales Assistant.
 
 ## Troubleshooting
 
@@ -237,7 +237,7 @@ Expected: **Monitor** lists the agent's sessions, and opening a turn shows its t
 
 ## Summary
 
-You took a Northwind Sales Assistant across all four tabs of a Microsoft Copilot harness agent: you composed it on **Build** with Instructions, one Knowledge source, and one Tool, smoke-tested it on **Preview**, scored it against a five-case test set with graders on **Evaluate**, tuned a failing case and proved the fix with a second run, and confirmed the behavior on **Monitor**. You can now:
+You took a Happy Longnose Sales Assistant across all four tabs of a Microsoft Copilot harness agent: you composed it on **Build** with Instructions, one Knowledge source, and one Tool, smoke-tested it on **Preview**, scored it against a five-case test set with graders on **Evaluate**, tuned a failing case and proved the fix with a second run, and confirmed the behavior on **Monitor**. You can now:
 
 - Recognize what each of the four tabs is for and confirm you are in a Microsoft Copilot harness agent before you build.
 - Compose a scoreable agent on the **Build** tab with scoped Instructions, grounded Knowledge, and a scoped Tool.

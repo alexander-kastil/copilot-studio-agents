@@ -1,0 +1,16 @@
+uid=183_0 RootWebArea "Agents" url="https://copilotstudio.preview.microsoft.com/environments/20f43690-ffae-e858-9da8-97373bf2124b/bots/980a51ae-7bd8-f111-84e8-0022489d5abe/overview?operationGroupName=shared_excelonlinebusiness&operationName=GetItems"
+  uid=183_1 generic live="assertive" relevant="additions text"
+  uid=183_2 dialog modal
+    uid=183_3 heading "Add tool" level="1"
+    uid=183_4 button "Close"
+    uid=183_5 "Let your agent do more. "
+    uid=183_6 link "Learn more" url="https://go.microsoft.com/fwlink/?linkid=2258253"
+    uid=184_0 image "Connector logo image" url="https://static.powerapps.com/resource/ppcr/releases/v1.0.1826/1.0.1826.4868/excelonlinebusiness/icon.png"
+    uid=184_1 "List rows present in a table"
+    uid=184_2 "List rows present in a table."
+    uid=184_3 link "Connector documentation" url="https://docs.microsoft.com/connectors/excelonlinebusiness/#list-rows-present-in-a-table"
+    uid=184_5 "Connection"
+    uid=184_6 button "Not connected" expandable haspopup="menu"
+    uid=184_7 button "Back"
+    uid=184_8 button "Add and configure" disableable disabled
+    uid=184_9 button "Cancel"

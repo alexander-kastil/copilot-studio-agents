@@ -23,9 +23,49 @@ The file you upload ships in the `lab-01-evaluate-the-hr-agent` folder beside th
 
 ## Prerequisites
 
-- The HR Agent from [Create Your First Copilot Studio Agent](../../03-cs-basics/01-standard-agents/lab-01-create-your-first-agent.md) and [Ground the HR Agent with SharePoint Knowledge](../../03-cs-basics/02-knowledge/lab-01-ground-with-sharepoint.md): the instructions from the first lab, and the knowledge sources Microsoft Careers site and HR Documents, both showing **Ready**.
+- The HR Agent with the instructions of [Create Your First Copilot Studio Agent](../../03-cs-basics/01-standard-agents/lab-01-create-your-first-agent.md) and the knowledge sources Microsoft Careers site and HR Documents, both showing **Ready**; [Set up the HR Agent](#set-up-the-hr-agent) builds it if you don't have it.
 - An account that can read the SharePoint site with the HR documents.
 - Copilot Studio in the classic experience, where the agent shows the tabs **Overview**, **Knowledge**, **Tools**, **Agents**, **Topics**, **Activity**, **Evaluation**, **Monitor** and **Channels**.
+
+## Set up the HR Agent
+
+This lab evaluates the HR Agent with its instructions and two knowledge sources, Microsoft Careers site and HR Documents. If you built it in the Basics labs, open it from **Agents** and skip this section. Otherwise create it now:
+
+1. Go to [Copilot Studio](https://copilotstudio.microsoft.com), on **Home** select **Other ways to build**, then, under **Build with standard orchestration**, select **Agent** with the **Standard** badge.
+2. In the **Name your agent** dialog, enter `HR Agent` and select **Create**.
+3. Wait until the agent has finished setting up (the **Edit** commands stay disabled for about a minute). On the **Overview** tab, select **Edit** in the **Details** section, paste the following text into **Description** and select **Save**.
+
+```txt
+You help employees to find information about HR related policies
+```
+
+4. Select **Edit** in the **Instructions** section, paste the following instructions and select **Save**.
+
+```txt
+- Provide employees with clear, accurate information about HR policies and procedures.
+- Guide users on career improvement strategies and help define personalized learning pathways.
+- Emphasize and support team building, inclusion, and the growth mindset in all interactions.
+- Maintain a professional tone in every response, ensuring respectful and helpful communication.
+- Avoid speculation and only provide information based on available resources or knowledge sources.
+- Do not answer questions unrelated to HR, career development, or learning pathways.
+- Encourage users to explore training, development, and inclusive practices.
+- Respond promptly and clearly to all user queries.
+```
+
+5. In the **Knowledge** section, select **+ Add knowledge** > **Public websites**, enter `https://careers.microsoft.com/` and select **Add**. Name the site `Microsoft Careers site`, paste the following description and select **Add to agent**.
+
+```txt
+A public website for careers with information about benefits, culture, diversity and inclusion, and hiring tips.
+```
+
+6. Download the [HR documents](https://download-directory.github.io/?url=https://github.com/alexander-kastil/copilot-studio-agents/tree/master/src/assets/hr-documents&filename=hr-documents), unzip them and upload them to the **Documents** library of a SharePoint Teams site in your tenant. Copy the URL of the site.
+7. In the **Knowledge** section, select **+ Add knowledge** > **SharePoint**, enter the site URL and select **Add**. Name the source `HR Documents`, paste the following description and select **Add to agent**.
+
+```txt
+Provides documents about policies, procedures, and rules related to the HR department.
+```
+
+Expected: **Knowledge** on the **Overview** tab lists **Microsoft Careers site** and **HR Documents**, both showing **Ready**. New files can take several minutes to be indexed.
 
 ## Exercise 1: Import the HR test set
 

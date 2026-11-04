@@ -1,0 +1,20 @@
+uid=6_0 RootWebArea "Agents" url="https://copilotstudio.preview.microsoft.com/environments/20f43690-ffae-e858-9da8-97373bf2124b/bots/ffc2c01f-75d8-f111-84e8-0022489d5abe/overview"
+  uid=6_22 generic live="assertive" relevant="additions text"
+  uid=19_0 alertdialog modal
+    uid=20_0 heading "SharePoint" level="2"
+    uid=19_2 "SharePoint will only be available to authenticated end-users. "
+    uid=19_3 link "Learn more" url="https://go.microsoft.com/fwlink/?linkid=2269816"
+    uid=19_5 button "Close"
+    uid=23_0 button "Browse items"
+    uid=23_1 separator "or" orientation="horizontal"
+    uid=23_2 "Enter URL of a SharePoint site"
+    uid=23_3 textbox "Enter URL of a SharePoint site" description="Enter URL of a SharePoint site" multiline value="
+"
+    uid=23_4 button "Open variable picker"
+    uid=23_5 button "Add" disableable disabled
+    uid=23_6 "Ready when you are"
+    uid=23_7 "Browse your SharePoint files or paste a SharePoint URL above"
+    uid=23_8 button "Back"
+    uid=23_9 button "Add to agent" disableable disabled
+    uid=23_10 button "Cancel"
+    uid=19_27 generic live="polite" relevant="additions text"

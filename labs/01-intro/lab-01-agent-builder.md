@@ -146,11 +146,11 @@ Add a knowledge base with Word documents that contain information about plants a
 - [Healing a Plant in Your Garden.docx](./lab-01-agent-builder/Healing%20a%20Plant%20in%20Your%20Garden.docx)
 - [The Most Common Types of Plants in a Home Garden.docx](./lab-01-agent-builder/The%20Most%20Common%20Types%20of%20Plants%20in%20a%20Home%20Garden.docx)
 
-You can also download the same four files as a zip from [this link](https://download-directory.github.io/?url=https://github.com/microsoft/copilot-camp/tree/main/src/make/agent-builder/sharepoint-docs&filename=sharepoint-docs).
+You can also download the same four files as a zip from [this link](https://download-directory.github.io/?url=https://github.com/alexander-kastil/copilot-studio-agents/tree/master/labs/01-intro/lab-01-agent-builder&filename=sharepoint-docs).
 
 Upload the four files to a SharePoint Teams site in the same tenant where you are testing this lab. Put the files in the document library **Documents**. These documents make the agent more expert and the game more challenging.
 
-Copy the absolute URL of the site, for example `https://xyz.sharepoint.com/sites/contoso`.
+Copy the absolute URL of the site, for example `https://xyz.sharepoint.com/sites/greylogistics`.
 
 ### Step 2: Add support for SharePoint Online documents
 

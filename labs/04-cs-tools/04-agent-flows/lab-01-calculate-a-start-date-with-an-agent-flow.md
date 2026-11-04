@@ -11,7 +11,7 @@ Duration: about 15 minutes.
 
 ## Prerequisites
 
-- The HR agent from the earlier labs, or any Standard agent with generative orchestration on.
+- The HR agent, or any Standard agent with generative orchestration on. If you have none, create one: on **Home** select **Other ways to build**, then **Agent** with the **Standard** badge, and name it `HR Agent`.
 - An environment where you can create agent flows. The flow uses only built-in actions, so no connection is needed.
 
 ## Task 1: Build the flow

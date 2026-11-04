@@ -1,11 +1,11 @@
 ---
 name: account-research
-description: Research and summarize a customer account before a sales call. Use when a seller asks for an account brief, account summary, account research, pre-call prep, or a quick briefing on a Northwind Traders customer before a meeting.
+description: Research and summarize a customer account before a sales call. Use when a seller asks for an account brief, account summary, account research, pre-call prep, or a quick briefing on a Happy Longnose Ltd customer before a meeting.
 ---
 
 # Account research
 
-Produce a concise pre-call briefing for a Northwind Traders seller so they walk into a customer meeting prepared. Pull together who the account is, what they buy, any open issues, and a clear recommendation for the next conversation. Keep it factual and short enough to read in under two minutes.
+Produce a concise pre-call briefing for a Happy Longnose Ltd seller so they walk into a customer meeting prepared. Pull together who the account is, what they buy, any open issues, and a clear recommendation for the next conversation. Keep it factual and short enough to read in under two minutes.
 
 ## Task
 

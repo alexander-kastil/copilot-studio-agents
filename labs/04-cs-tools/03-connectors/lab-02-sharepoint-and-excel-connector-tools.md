@@ -4,7 +4,7 @@ Your product support team keeps its material in two places: the datasheets, manu
 
 ![The three parts of an agent at run time: the agent reads its instructions, retrieves grounding from knowledge when it needs facts, and calls tools when it needs live data or has to act, ending in a grounded answer or an action.](../../../demos/01-intro/pptx/images/02-02-three-parts.svg)
 
-In this lab you give the HR agent from the previous labs two more prebuilt connector tools: SharePoint List folder and Excel List rows present in a table. You then tune the tool descriptions until generative orchestration picks the right tool on its own, and use the activity map to prove which tool ran.
+In this lab you give the HR agent two more prebuilt connector tools: SharePoint List folder and Excel List rows present in a table. You then tune the tool descriptions until generative orchestration picks the right tool on its own, and use the activity map to prove which tool ran.
 
 This is a rewrite of the Microsoft Learn lab [Create a connector action](https://microsoftlearning.github.io/MS-4022-Extend-Microsoft-365-Copilot-in-Copilot-Studio/Instructions/Labs/03-Connector-actions/01-create-connector-action.html), extended with the Excel and SharePoint scenarios from Copilot Camp.
 
@@ -29,13 +29,40 @@ flowchart LR
 
 ## Prerequisites
 
-- The HR agent from the previous labs, with the Excel Online (Business) connection you created in [Define Tools with Power Platform Connectors](./lab-01-connector-and-flow-tools.md).
+- The HR agent; [Set up the HR Agent](#set-up-the-hr-agent) builds it if you don't have it.
 - Permission to create a SharePoint site, or an existing site where you may add a document library.
 - A site named `Product Support` holding a document library named `Products`, filled with the five files from the [assets](./lab-02-sharepoint-and-excel-connector-tools/assets) folder. Build it by hand as described below.
 
+## Set up the HR Agent
+
+This lab starts from a Standard agent named HR Agent with its description and instructions. If you built it in the Basics labs, for example in [Create Your First Copilot Studio Agent](../../03-cs-basics/01-standard-agents/lab-01-create-your-first-agent.md), open it from **Agents** and skip this section. Otherwise create it now:
+
+1. Go to [Copilot Studio](https://copilotstudio.microsoft.com), on **Home** select **Other ways to build**, then, under **Build with standard orchestration**, select **Agent** with the **Standard** badge.
+2. In the **Name your agent** dialog, enter `HR Agent` and select **Create**.
+3. Wait until the agent has finished setting up (the **Edit** commands stay disabled for about a minute). On the **Overview** tab, select **Edit** in the **Details** section, paste the following text into **Description** and select **Save**.
+
+```txt
+You help employees to find information about HR related policies
+```
+
+4. Select **Edit** in the **Instructions** section, paste the following instructions and select **Save**.
+
+```txt
+- Provide employees with clear, accurate information about HR policies and procedures.
+- Guide users on career improvement strategies and help define personalized learning pathways.
+- Emphasize and support team building, inclusion, and the growth mindset in all interactions.
+- Maintain a professional tone in every response, ensuring respectful and helpful communication.
+- Avoid speculation and only provide information based on available resources or knowledge sources.
+- Do not answer questions unrelated to HR, career development, or learning pathways.
+- Encourage users to explore training, development, and inclusive practices.
+- Respond promptly and clearly to all user queries.
+```
+
+Expected: the **Overview** tab of HR Agent shows the description and the instructions.
+
 ## Lab files
 
-Everything the agent reads is in [assets](./lab-02-sharepoint-and-excel-connector-tools/assets). The content is fictional (Northwind Devices, a hardware vendor) but internally consistent, so answers about one product line up across the documents and the stock table.
+Everything the agent reads is in [assets](./lab-02-sharepoint-and-excel-connector-tools/assets). The content is fictional (Happy Longnose Ltd, a hardware vendor) but internally consistent, so answers about one product line up across the documents and the stock table.
 
 | File | What it represents |
 |------|--------------------|
@@ -53,8 +80,8 @@ Four steps in the browser, roughly five minutes. Do them in order; the connector
 
 Skip to Step 2 if you already have a site you can use.
 
-1. Go to [https://www.office.com/launch/sharepoint](https://www.office.com/launch/sharepoint) and select **Create site**.
-2. Choose **Team site**. A communication site works equally well; the connector does not care which.
+1. Go to [https://www.office.com/launch/sharepoint](https://www.office.com/launch/sharepoint) and select **Build** > **Site**.
+2. Choose **Team site** and the **Standard team** template. A communication site works equally well; the connector does not care which.
 3. Set **Site name** to:
 
 ```text
@@ -62,7 +89,7 @@ Product Support
 ```
 
 4. Check the site address that SharePoint proposes underneath the name, for example `https://greylogistics.sharepoint.com/sites/ProductSupport`. Copy it now, this is the **Site Address** input the connector needs.
-5. Select **Next**, leave the privacy and language defaults, select **Create site**, then skip adding members.
+5. Select **Create site**, then **Go to site** on **Your site is ready!**.
 
 Expected: the new site opens on its Home page, with **Documents** already listed in the left navigation.
 
@@ -71,7 +98,7 @@ Expected: the new site opens on its Home page, with **Documents** already listed
 The lab needs a document library, not a list and not a folder. A library stores files and is what the SharePoint **List folder** action and the Excel connector both read. A custom list stores rows of columns and holds no files at all, so it cannot serve this lab.
 
 1. On the site Home page, select **+ New** in the command bar at the top.
-2. Select **Document library**.
+2. Select **Document library**, then **Create blank document library**.
 3. Set **Name** to exactly:
 
 ```text
@@ -81,14 +108,14 @@ Products
 4. Optionally set **Description** to `Product support material`.
 5. Leave **Show in site navigation** checked, then select **Create**.
 
-Expected: the empty `Products` library opens, and `Products` now appears in the left navigation under **Documents**. The address bar reads something like `https://greylogistics.sharepoint.com/sites/ProductSupport/Products`.
+Expected: the empty `Products` library opens, and `Products` now appears in the left navigation next to **Documents**. The address bar reads something like `https://greylogistics.sharepoint.com/sites/ProductSupport/Products`.
 
 > **Warning:** The name must be exactly `Products`, with a capital P and no trailing space. You type this string into the connector's **File Identifier** input in Exercise 2, and SharePoint matches it literally. Renaming the library later changes its display name but not its internal URL, which then no longer matches what you typed.
 
 #### Step 3: Upload the five files
 
 1. Open the `Products` library.
-2. Select **Upload** in the command bar, then **Files**.
+2. Select **Create or upload** in the command bar, then **Files upload**.
 3. Navigate to the [assets](./lab-02-sharepoint-and-excel-connector-tools/assets) folder next to this lab, select all five files, and confirm.
 4. Wait until the upload column stops showing progress.
 
@@ -131,8 +158,8 @@ Every connector input in the lab comes from this table. Fill in your own site ad
 A connector tool is a single action from a Power Platform connector, exposed to the orchestrator as something the agent may call. SharePoint ships as a standard connector, so it is included with every Copilot Studio plan. The **List folder** action returns the items in one folder of one document library, which is exactly the live view a knowledge source cannot give you.
 
 1. Open the HR agent, select the **Tools** tab, then select **+ Add a tool**.
-2. Switch to the **All** group, search for `SharePoint`, and select **List folder**.
-3. If the connection shows no account yet, select **Connection** > **Create new connection** and sign in with your Microsoft 365 account.
+2. Select the **Connector** group, then the **SharePoint** tile, and select **List folder**.
+3. If no connection of your own is selected, select **Connection** > **Create new connection**, then **Create**, and pick your Microsoft 365 account.
 4. Select **Add and configure**.
 
 Expected: the configuration page of the new **List folder** tool opens, with its name, description, inputs, and completion settings.
@@ -157,13 +184,13 @@ library on the Product Support SharePoint site. Use this when the user asks whic
 manuals, datasheets, troubleshooting guides, or warranty documents exist for a product.
 ```
 
-3. Expand **Additional details** and set the end user authentication description to:
+3. Expand **Additional details** and set **Description**, the text users see when they are asked to sign in, to:
 
 ```text
 Please sign in to access the Product Support SharePoint site.
 ```
 
-4. Under **Inputs**, set **Fill using** of **Site Address** to **Custom value** and select your `Product Support` site, or paste its URL.
+4. Under **Inputs**, set **Fill using** of **Site Address** to **Custom value** and select **Enter custom value** and paste the site URL; a new site can be missing from the list.
 5. Set **Fill using** of **File Identifier** to **Custom value** and enter:
 
 ```text
@@ -186,7 +213,7 @@ product, call the "List product support files" tool and answer only from what it
 returns. Name the tool you used in your answer.
 ```
 
-2. Open the test pane and select the map icon at its top to show the activity map.
+2. Open the test pane and check that **...** > **Show activity map when testing** is on.
 3. Send:
 
 ```text
@@ -199,9 +226,9 @@ Expected: the answer lists the real file names from your `Products` library and 
 
 ## Exercise 4: Add the Excel stock tool
 
-File names answer what exists. They cannot answer how many are left. The Excel Online (Business) action **List rows present in a table** reads a named table out of a workbook and returns it as structured rows, which the orchestrator can filter, count, and summarise. You add it the same way as **List HR candidates** in [Define Tools with Power Platform Connectors](./lab-01-connector-and-flow-tools.md#step-1-consuming-a-power-platform-connector), with the existing Excel connection, and pin all four inputs to the stock table so the agent never has to ask the user where the data lives.
+File names answer what exists. They cannot answer how many are left. The Excel Online (Business) action **List rows present in a table** reads a named table out of a workbook and returns it as structured rows, which the orchestrator can filter, count, and summarise. You add it the same way as **List HR candidates** in [Define Tools with Power Platform Connectors](./lab-01-connector-and-flow-tools.md#step-1-consuming-a-power-platform-connector), with an Excel Online (Business) connection, and pin all four inputs to the stock table so the agent never has to ask the user where the data lives.
 
-1. On the **Tools** tab, select **+ Add a tool**, select **Excel Online (Business)** > **List rows present in a table**, and select **Add and configure**.
+1. On the **Tools** tab, select **+ Add a tool**, select **Excel Online (Business)** > **List rows present in a table**. If no connection of your own is selected, select **Connection** > **Create new connection**, then **Create**, and pick your Microsoft 365 account. Then select **Add and configure**.
 2. Change **Name** to:
 
 ```text
@@ -224,6 +251,8 @@ user asks about availability, stock, quantities, warehouses, or warranty duratio
 | Document Library | `Products` |
 | File | `ProductInventory.xlsx` |
 | Table | `Stock` |
+
+In the **Location** list the site appears as **Group - <site name>**. The **Document Library** and **Table** lists stay empty until you select **Refresh**, and **File** is picked with the file browser.
 
 5. Select **Save**.
 
@@ -287,7 +316,7 @@ not use this tool to list documents or files.
 
 5. Select **Save**, start a new test session, and send the same warranty question again.
 
-Expected: with the vague description the agent either picks the SharePoint tool, asks a clarifying question, or answers from the warranty document instead of the table. With the precise description the activity map shows **Get product stock levels** and the answer quotes the number of months from the table.
+Expected: with the vague description the agent may still pick the stock tool, because the routing line from Exercise 5 names it; otherwise it picks the SharePoint tool, asks a clarifying question, or answers from the warranty document instead of the table. With the precise description the activity map shows **Get product stock levels** and the answer quotes the number of months from the table.
 
 > **Tip:** Negative guidance (`Do not use this tool to list documents or files`) is the single most effective fix when two tools overlap. Add it to the tool that keeps getting picked wrongly, not to the one being missed.
 
@@ -303,7 +332,7 @@ By default a connector tool runs under the credentials of the person chatting wi
 4. Decide for this scenario: the `Products` library is readable by all employees, so maker-provided credentials remove a needless sign-in step. Select **Maker-provided credentials**.
 5. Select **Save**, start a new test session, and ask the file listing question again.
 
-Expected: the connection card no longer appears for that tool, and the file list returns immediately.
+Expected: the tool no longer needs the user's own connection, so no connection card can appear for it, and the file list returns immediately.
 
 > **Warning:** Maker-provided credentials mean every user of the agent reads SharePoint as you. Never use it for a library with per-user or per-department restrictions; leave those tools on user credentials.
 

@@ -4,6 +4,30 @@ In this lab you share an agent with other users, share it in a Microsoft Teams c
 
 Sharing an agent extends its benefits to a broader audience in your organization. Your colleagues can then use the agent's capabilities to improve their own work processes. Sharing also keeps the knowledge built into the agent available to the right people at the right time.
 
+## Set up the agents to share
+
+This lab shares and uses two agents: an agent in Copilot Chat and a Custom SharePoint agent. If you built the Gardener in [Lab 01: Build Your First Agent with Agent Builder](./lab-01-agent-builder.md) and the HR agent in [Lab 02: Build and Share a SharePoint Agent](./lab-02-sharepoint-agents.md), use them and continue with Exercise 1. Otherwise prepare them now.
+
+The agent in Copilot Chat:
+
+1. Open the [Microsoft 365 Copilot chat home page](https://www.microsoft365.com/copilot), select **Agents & Plugins** in the left side panel, open the **Chat** tab (the page opens on **Cowork**) and select **New agent**.
+2. In **Message Agent Builder**, send the following description.
+
+```text
+You are an expert gardener and you help users to maintain and improve their home garden providing detailed instructions and advice about the best practices for home gardening. Name the agent Gardener.
+```
+
+3. When the configuration on the right shows the Gardener agent, stop here: Exercise 1 Step 1 selects **Create** and shares the agent.
+
+The Custom SharePoint agent:
+
+1. On the SharePoint start page, select **Build** > **Site**, choose **Team site** > **Standard team** > **Use template**, give it a unique name such as `Grey Logistics HR` and select **Create site**; skip adding members and select **Go to site**. Any Team site where you can add files works too.
+2. Download the [HR documents](https://download-directory.github.io/?url=https://github.com/alexander-kastil/copilot-studio-agents/tree/master/src/assets/hr-documents&filename=hr-documents) and unzip them.
+3. On the site, open the **Documents** library, select **Create or upload** > **Files upload** and upload all the sample documents.
+4. Select the uploaded files, open the **Copilot** chevron in the toolbar, select **Create an agent** and then **Create agent**.
+
+Expected: Agent Builder shows the Gardener draft, and the **Documents** library lists a new **.agent** file, named **New agent.agent** by default, next to the HR documents.
+
 ## Exercise 1: Share an agent with other users
 
 In this exercise you learn the sharing options for agents in Copilot Chat, share a live agent, and approve or set a default agent in SharePoint.
@@ -51,24 +75,22 @@ After you select the **Create** button, Microsoft Copilot creates the agent and 
 You can still share an agent once it's live. Choose one of the following two ways to do so.
 
 1. Sign in to **Microsoft Copilot** with your work or school account. The **Microsoft Copilot Chat** page appears by default.
-2. Select **Plugins** in the left side panel and open the **Chat** tab. Select **Manage all**, then **More options** beside the agent and **Edit**, and select **Share** next to the **Update** button.
+2. Select **Agents & Plugins** in the left side panel and open the **Chat** tab. Select **Manage all**, then **More options** beside the agent and **Share**. From the agent's **Edit** page, **Share** is in the **More** (**...**) menu next to **Update**.
 
 ![Screenshot of the navigation pane on the Microsoft Copilot home page showing the Share option highlighted for an agent.](./_images/lab-05-share-and-use-agents-03.png)
 
 ![Screenshot of the All agents page with the Share option highlighted for one of your agents.](./_images/lab-05-share-and-use-agents-04.png)
 
-3. In the **Change sharing settings** window that appears, select the sharing option that you want to apply.
+3. In the **Share "<agent name>"** window that appears, select the sharing option that you want to apply.
 
 ### Step 2: Share the agent through external applications
 
-Sharing through an external application lets you share your agent through apps such as Facebook, LinkedIn, WhatsApp, or Outlook. When you share an agent through an app, the agent's link goes to that platform, so that it can be used across different communication and collaboration tools.
+The **Share** window has no buttons for other apps. To share an agent through Outlook, Teams or another app, copy its link and paste it there:
 
-1. From the navigation pane on the Microsoft Copilot home page, right-click the agent in the agent pane. In the menu that appears, select **Share**.
-2. In the **Share** window that appears, select the application that you want to use to share the agent.
+1. In **Agents & Plugins** > **Chat**, select **Manage all**, then **More options** beside the agent and **Share**.
+2. In the **Share** window, select **Copy chat link** and paste the link into an email, a chat or a post. The chevron beside it copies an edit link instead.
 
 ![Screenshot of the Share window that appears when you want to update the sharing settings for a live agent.](./_images/lab-05-share-and-use-agents-05.png)
-
-When you select an app, the app opens and presents a corresponding method for sharing the agent. For example, if you select a social media platform such as Facebook, a window appears that lets you create a post that includes the link to the agent. If you select an email app such as Outlook, a New Email page appears that displays the link for the agent in the body of the message. Fill out the email form and send it to whomever you want to share the agent with.
 
 ### Automatically share SharePoint files and folders in Copilot Chat agents
 
@@ -88,9 +110,9 @@ SharePoint agents no longer need an approval step. A site owner picks the agent 
 
 1. Go to the home page of the site and select the gear icon (**Settings**).
 2. Select **Site AI**.
-3. Open the **Main agent** dropdown, pick your agent, and select **Save**.
+3. Select the **Main agent** button (it shows **Copilot**), find your agent with **Search for an agent** or under **Recent**, and select **Save**. A Custom SharePoint agent is named **New agent** until you rename its file.
 
-The Copilot pane of the site now opens with your agent. A new .agent file can take a while to appear in the dropdown, because SharePoint first has to index it.
+The Copilot pane of the site now opens with your agent. A new .agent file can take a while to appear in the picker, because SharePoint first has to index it.
 
 To share a SharePoint agent with people, open its .agent file and select **Share** in the agent pane: it is a regular file share (**Add people**, **Change** for who can access the link, **Copy link**).
 
@@ -133,7 +155,7 @@ Perform the following steps to add a SharePoint or Copilot Chat agent to a Teams
 
 > **Note:** You can't share the ready-made agent that comes with a SharePoint site.
 
-4. In the pane of a SharePoint agent, select the **ellipsis** icon (the three dots) and then **Copy link for Teams**. In the dialog **Choose who can access the file link**, select **Copy link**. For an agent in Copilot Chat, the agent's **More** menu offers **Add to Teams** instead.
+4. In the pane of a SharePoint agent, select the **ellipsis** icon (the three dots) and then **Copy link for Teams**. In the dialog **Choose who can access the file link**, select **Copy link**. For an agent in Copilot Chat, copy its link with **Copy chat link** in the **Share** window instead.
 
 ![Screenshot of the earlier SharePoint drop-down menu with the Add to Teams option highlighted.](./_images/lab-05-share-and-use-agents-10.jpeg)
 
@@ -167,7 +189,7 @@ When you visit a SharePoint site, page, or document library, or when you use Mic
 
 Your site administrator might also have configured agents that are tailored to specific projects and teams. These agents give more focused assistance based on a defined set of sites, pages, files, or chat contexts that are relevant to your work. Here are three examples of prompts that users might enter in a SharePoint or Copilot Chat agent.
 
-An HR employee wants to know how the company hires new people. They ask the HR agent from the SharePoint agents lab, which answers from the HR documents in the library:
+An HR employee wants to know how the company hires new people. They ask the Custom SharePoint HR agent, which answers from the HR documents in the library:
 
 ```text
 What is the hiring process?
@@ -205,9 +227,9 @@ Keep the following considerations in mind when you interact with agents:
 
 1. Sign in to **Microsoft Copilot** with your work or school account. The **Microsoft Copilot Chat** page appears by default.
 
-Agents now appear as plugins: select **Plugins** in the navigation pane, open the **Chat** tab and then **Added** to see your agents. Pinned agents also appear in the navigation pane. Pinned agents appear first, followed by the most recently used agents.
+Agents now appear as plugins: select **Agents & Plugins** in the navigation pane, open the **Chat** tab and then **Added** to see your agents. Pinned agents appear in the flyout behind the pin icon in the navigation pane.
 
-2. Select the agent you want to use from **Plugins** > **Chat** > **Added**, or from the pinned agents in the navigation pane.
+2. Select the agent you want to use from **Agents & Plugins** > **Chat** > **Added**, or from the pin flyout in the navigation pane.
 
 ![Screenshot of the earlier Agent Store window, which appeared when you selected All agents in the navigation pane of the Microsoft Copilot home page.](./_images/lab-05-share-and-use-agents-14.png)
 
@@ -215,11 +237,11 @@ Agents now appear as plugins: select **Plugins** in the navigation pane, open th
 
 ### Step 3: Pin and unpin an agent in Copilot Chat
 
-1. To pin an agent, select **More options** on the agent tile in **Plugins** > **Chat** > **Added**, and select **Pin**. The agent then appears in the navigation pane.
+1. To pin an agent, select **More options** on the agent tile in **Agents & Plugins** > **Chat** > **Added**, and select **Pin**. The agent then appears in the pin flyout of the navigation pane.
 
 ![Screenshot of the Microsoft Copilot navigation pane showing the menu for an agent with the Pin icon highlighted.](./_images/lab-05-share-and-use-agents-15.png)
 
-2. To unpin an agent, select **More** on the pinned agent in the navigation pane, and select **Unpin**.
+2. To unpin an agent, open the pin flyout in the navigation pane and select **Unpin** on the agent's row.
 
 ### Step 4: Refer to specific files in your chat
 

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
   <title id="t">Two portals, one environment</title>
-  <desc id="d">Inside your Microsoft 365 tenant, the Power Platform admin center at admin.powerplatform.com creates the environment Copilot Dev Camp in Exercise 1 (Manage, then Environments, then + New). The environment is of type Developer and holds apps, flows, data and agents; delete it after the training path to remove everything. In Exercise 2, Copilot Studio at copilotstudio.microsoft.com selects that environment with the environment picker in the top right. Any other environment is isolated and shares nothing with it.</desc>
+  <desc id="d">Inside your Microsoft 365 tenant, the Power Platform admin center at admin.powerplatform.com creates the environment Grey Logistics in Exercise 1 (Manage, then Environments, then + New). The environment is of type Developer and holds apps, flows, data and agents; delete it after the training path to remove everything. In Exercise 2, Copilot Studio at copilotstudio.microsoft.com selects that environment with the environment picker in the top right. Any other environment is isolated and shares nothing with it.</desc>
   <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
   <defs>
     <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
@@ -21,7 +21,7 @@
     <text x="210" y="560" font-size="28" fill="#24292f" text-anchor="middle">Exercise 1</text>
 
     <rect x="740" y="140" width="440" height="530" rx="18" fill="#f6f8fa" stroke="#57606a" stroke-width="3"/>
-    <text x="770" y="200" font-size="34" font-weight="700" fill="#24292f">Copilot Dev Camp</text>
+    <text x="770" y="200" font-size="34" font-weight="700" fill="#24292f">Grey Logistics</text>
     <text x="770" y="244" font-size="28" fill="#57606a">Type: Developer</text>
     <g stroke="#8c959f" stroke-width="2">
       <rect x="770" y="280" width="180" height="100" rx="12" fill="#ffffff"/>
@@ -42,7 +42,7 @@
     <text x="1350" y="232" font-size="32" font-weight="700" fill="#24292f">Copilot Studio</text>
     <text x="1350" y="290" font-size="28" font-family="Consolas, monospace" fill="#57606a">copilotstudio.microsoft.com</text>
     <text x="1350" y="360" font-size="28" fill="#57606a">Environment picker, top right:</text>
-    <text x="1350" y="400" font-size="28" fill="#57606a">choose Copilot Dev Camp</text>
+    <text x="1350" y="400" font-size="28" fill="#57606a">choose Grey Logistics</text>
     <rect x="1350" y="526" width="160" height="48" rx="24" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
     <text x="1430" y="560" font-size="28" fill="#24292f" text-anchor="middle">Exercise 2</text>
 

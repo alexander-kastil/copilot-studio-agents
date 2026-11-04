@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
   <title id="t">What Evaluate and Monitor each read from one turn</title>
-  <desc id="d">The test case What is the capital of France? from the Northwind quality set produces one turn with two parts. The answer text declines because the question is unrelated to Northwind sales; the Evaluate tab's General quality test method reads that answer text for relevance and completeness. The activity shows Send an email was not called; the Monitor tab shows the transcript and the resources used, here no tool call.</desc>
+  <desc id="d">The test case What is the capital of France? from the Happy Longnose quality set produces one turn with two parts. The answer text declines because the question is unrelated to Happy Longnose sales; the Evaluate tab's General quality test method reads that answer text for relevance and completeness. The activity shows Send an email was not called; the Monitor tab shows the transcript and the resources used, here no tool call.</desc>
   <rect width="1920" height="1080" fill="#ffffff"/>
   <defs>
     <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
@@ -16,7 +16,7 @@
     <text x="270" y="550">capital of</text>
     <text x="270" y="595">France?</text>
   </g>
-  <text x="270" y="660" font-size="28" fill="#57606a" text-anchor="middle">Northwind quality set</text>
+  <text x="270" y="660" font-size="28" fill="#57606a" text-anchor="middle">Happy Longnose quality set</text>
 
   <text x="900" y="140" font-size="32" font-weight="700" fill="#57606a" text-anchor="middle">One turn</text>
 
@@ -25,7 +25,7 @@
   <g font-size="30" fill="#24292f" text-anchor="middle">
     <text x="900" y="320">Declines: the question</text>
     <text x="900" y="365">is unrelated to</text>
-    <text x="900" y="410">Northwind sales</text>
+    <text x="900" y="410">Happy Longnose sales</text>
   </g>
 
   <rect x="630" y="600" width="540" height="290" rx="20" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>

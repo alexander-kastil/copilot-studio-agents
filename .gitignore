@@ -17,9 +17,6 @@ app.zip
 credentials.md
 credentials.json
 
-# Local reference clone of microsoft/copilot-camp (1.1 GB, not ours to track)
-labs/copilot-dev-camp/
-
 .claude/settings.local.json
 
 # Local working folders

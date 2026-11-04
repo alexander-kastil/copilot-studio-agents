@@ -1,6 +1,6 @@
 # Copilot Studio Basics
 
-These labs build one Standard HR agent (Learn: standard harness), from an empty environment to an agent published in Teams and Microsoft 365 Copilot. Each lab continues with the agent from the one before. The theory and demos for each topic are in [demos/03-cs-basics](../../demos/03-cs-basics/readme.md).
+These labs build one Standard HR agent (Learn: standard harness), from an empty environment to an agent published in Teams and Microsoft 365 Copilot. Each lab can start on its own: a lab that needs the HR Agent opens with a short section that builds it, and a learner who already has it continues with that agent. The theory and demos for each topic are in [demos/03-cs-basics](../../demos/03-cs-basics/readme.md).
 
 | Lab | Deutsch | Focus | Minutes |
 |-----|---------|-------|---------|

@@ -7,7 +7,7 @@ description: Help a seller respond to common customer objections and push-back a
 
 ## Task
 
-Help a Northwind Traders seller reply to a customer objection during an active deal. Turn a raw push-back (too expensive, not the right time, or a competitor looks better) into a calm, specific response the seller can send or say out loud. Keep the buyer relationship intact and move the deal one step forward.
+Help a Happy Longnose Ltd seller reply to a customer objection during an active deal. Turn a raw push-back (too expensive, not the right time, or a competitor looks better) into a calm, specific response the seller can send or say out loud. Keep the buyer relationship intact and move the deal one step forward.
 
 ## Method
 
@@ -15,7 +15,7 @@ Follow these four moves in order:
 
 1. Acknowledge the concern in one sentence so the buyer feels heard.
 2. Clarify with one question that exposes the real driver behind the objection.
-3. Reframe with a Northwind Traders value point (total cost of ownership, delivery reliability, or account support), drawing the standard wording from the reference file.
+3. Reframe with a Happy Longnose Ltd value point (total cost of ownership, delivery reliability, or account support), drawing the standard wording from the reference file.
 4. Next step: propose one concrete action (a scoped pilot, a revised quote, or a reference call).
 
 Ground every price or comparison claim in the reference document `references/objection-handling.md`. Do not invent discounts, dates, or figures that the seller has not confirmed.

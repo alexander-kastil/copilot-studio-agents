@@ -4,7 +4,7 @@ In this lab, you are going to understand how to create an autonomous agent using
 
 ![A candidate PDF uploaded to SharePoint fires a Power Automate trigger that prompts the Autonomous HR Docs Processor, which calls add_employee on the HR MCP server and SendEmail on the Email Management MCP Server.](../../../demos/05-cs-advanced/pptx/images/01-01-autonomous-triggers.svg)
 
-> **Note:** This lab builds on [Give an Agent MCP Tools on the Hosted Server](../../04-cs-tools/06-mcp/lab-01-give-an-agent-mcp-tools.md) and consumes the same server, the HR MCP server in [`src/hr-mcp-server`](../../../src/hr-mcp-server). It is a .NET 10 application built on the MCP C# SDK that manages employees in a SQL database. Nothing new needs to be built here, you only register the server as a tool again, this time in an agent that runs without a user in the loop.
+> **Note:** This lab uses the same server as [Give an Agent MCP Tools on the Hosted Server](../../04-cs-tools/06-mcp/lab-01-give-an-agent-mcp-tools.md), the HR MCP server in [`src/hr-mcp-server`](../../../src/hr-mcp-server). It is a .NET 10 application built on the MCP C# SDK that manages employees in a SQL database. Nothing new needs to be built here, you register the server as a tool, this time in an agent that runs without a user in the loop.
 
 In this lab you will learn:
 
@@ -39,7 +39,7 @@ Once created, configure the library permissions to ensure your autonomous agent 
 
 ### Step 2: Preparing Sample PDF Files
 
-For testing purposes, download [resumes.zip](https://download-directory.github.io/?url=https://github.com/microsoft/copilot-camp/tree/main/src/make/copilot-studio/autonomous-agent&filename=resumes) and unzip the folder.
+For testing purposes, download [resumes.zip](https://download-directory.github.io/?url=https://github.com/alexander-kastil/copilot-studio-agents/tree/master/labs/05-cs-advanced/01-autonomous-agents/lab-01-create-an-autonomous-agent/resumes&filename=resumes) and unzip the folder.
 The downloaded files describe hypothetical candidates including information such as:
 
 - Full name
@@ -56,7 +56,7 @@ Before proceeding, ensure you have the following:
 
 - **HR MCP server**: the instance deployed for this class
 - **SharePoint Access**: permissions to create and manage document libraries
-- **Power Platform Environment**: access to the same environment used in previous labs
+- **Power Platform Environment**: a Copilot Studio environment where you can create agents
 - **Sample PDF Files**: at least 2 or 3 test PDF files with candidate data
 
 The server used in [Give an Agent MCP Tools on the Hosted Server](../../04-cs-tools/06-mcp/lab-01-give-an-agent-mcp-tools.md) is deployed for this class, so you run nothing on your machine. Use this URL when you register the MCP tool:
@@ -124,7 +124,15 @@ In case of any configuration changes, select **Save** to confirm them.
 Your autonomous agent needs access to the HR MCP server tools to create employee records. Navigate to the **Tools** section and select **Add tool**.
 
 1. Choose **Model Context Protocol** group
-2. Search for `HR MCP` and select the **HR MCP Server** that you registered in [Give an Agent MCP Tools on the Hosted Server](../../04-cs-tools/06-mcp/lab-01-give-an-agent-mcp-tools.md). If it is not in the list, add it with **+ New tool**, **Model Context Protocol**, and the server URL from Exercise 1
+2. Search for `HR MCP`. If the **HR MCP Server** is in the list, for example because you registered it in [Give an Agent MCP Tools on the Hosted Server](../../04-cs-tools/06-mcp/lab-01-give-an-agent-mcp-tools.md), select it. Otherwise select **+ New tool** > **Model Context Protocol** and fill in the **Add a Model Context Protocol server** form:
+
+| Field | Value |
+| --- | --- |
+| Server name | `HR MCP Server` |
+| Server description | `Allows managing the list of employees and their shifts for the HR department` |
+| Server URL | `https://lab-human-resource-mcp.azurewebsites.net` |
+| Authentication | None |
+
 3. Select **Add** to integrate the MCP server tools
 
 ![The tools section showing the HR MCP Server being added to the autonomous agent with all the available employee management tools.](./_images/autonomous-agent-02.png)

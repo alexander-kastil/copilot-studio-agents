@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
 <title id="t">Two runs of the identical set with one change between them</title>
-<desc id="d">Run 1, the baseline, and Run 2 share the knowledge source Northwind sales reference, the Northwind regression set, the General quality test method and the user profile you confirmed. The one change is the Instructions, from agent-instructions-v1.txt to agent-instructions-v2.txt. Run 1 records a baseline Score and verdicts in the scorecard; Run 2 compares its Score to Run 1 and marks every case that flipped.</desc>
+<desc id="d">Run 1, the baseline, and Run 2 share the knowledge source Happy Longnose sales reference, the Happy Longnose regression set, the General quality test method and the user profile you confirmed. The one change is the Instructions, from agent-instructions-v1.txt to agent-instructions-v2.txt. Run 1 records a baseline Score and verdicts in the scorecard; Run 2 compares its Score to Run 1 and marks every case that flipped.</desc>
 <rect width="1920" height="1080" fill="#ffffff"/>
 <defs>
 <style>
@@ -20,17 +20,17 @@
 
 <text class="h" x="80" y="245" font-size="30">Knowledge source</text>
 <rect x="560" y="180" width="590" height="110" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
-<text class="r" x="855" y="245" font-size="28" text-anchor="middle">Northwind sales reference</text>
+<text class="r" x="855" y="245" font-size="28" text-anchor="middle">Happy Longnose sales reference</text>
 <text class="e" x="1210" y="250" font-size="44" text-anchor="middle">=</text>
 <rect x="1270" y="180" width="590" height="110" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
-<text class="r" x="1565" y="245" font-size="28" text-anchor="middle">Northwind sales reference</text>
+<text class="r" x="1565" y="245" font-size="28" text-anchor="middle">Happy Longnose sales reference</text>
 
 <text class="h" x="80" y="377" font-size="30">Test set</text>
 <rect x="560" y="312" width="590" height="110" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
-<text class="r" x="855" y="377" font-size="28" text-anchor="middle">Northwind regression set</text>
+<text class="r" x="855" y="377" font-size="28" text-anchor="middle">Happy Longnose regression set</text>
 <text class="e" x="1210" y="382" font-size="44" text-anchor="middle">=</text>
 <rect x="1270" y="312" width="590" height="110" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
-<text class="r" x="1565" y="377" font-size="28" text-anchor="middle">Northwind regression set</text>
+<text class="r" x="1565" y="377" font-size="28" text-anchor="middle">Happy Longnose regression set</text>
 
 <text class="h" x="80" y="509" font-size="30">Test method</text>
 <rect x="560" y="444" width="590" height="110" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>

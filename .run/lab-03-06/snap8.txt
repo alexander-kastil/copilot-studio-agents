@@ -1,0 +1,90 @@
+uid=176_0 RootWebArea "(1) Chat | Alexander Kastil (You) | Microsoft Teams" url="https://teams.cloud.microsoft/"
+  uid=176_1 button "Open office app launcher" expandable
+  uid=176_2 button "Collapse app bar" keyshortcuts="Control+\"
+  uid=176_3 search
+    uid=176_4 combobox "Search or ask Copilot (Ctrl+Alt+E)" autocomplete="list" expandable haspopup="listbox"
+  uid=176_5 button "Settings and more" haspopup="menu"
+  uid=176_6 button "Your profile, status Busy " expandable
+  uid=176_7 "Stay in the know. Turn on desktop notifications."
+  uid=176_8 button "Turn on"
+  uid=176_9 button "Close"
+  uid=176_10 navigation "Apps"
+    uid=176_11 button "Activity" description="Has context menu" keyshortcuts="Control+Shift+1"
+    uid=176_12 button "Chat" description="1 chat with new messages Has context menu" keyshortcuts="Control+Shift+2" pressed
+    uid=176_13 button "Teams" description="Has context menu" keyshortcuts="Control+Shift+3"
+    uid=176_14 button "Calendar" description="Has context menu" keyshortcuts="Control+Shift+4"
+    uid=176_15 button "Calls" description="Has context menu" keyshortcuts="Control+Shift+5"
+    uid=176_16 button "OneDrive" description="Has context menu" keyshortcuts="Control+Shift+6"
+    uid=176_17 button "Copilot" description="Has context menu" keyshortcuts="Control+Shift+7"
+    uid=176_18 button "Admin" description="Has context menu" keyshortcuts="Control+Shift+8"
+  uid=176_19 button "Store" description="Has context menu"
+  uid=176_20 button "View more apps" haspopup="dialog"
+  uid=176_21 status atomic live="assertive" relevant="additions text"
+  uid=176_22 heading "Chat" level="1"
+  uid=176_23 button "More list options" haspopup="menu"
+  uid=176_24 button "Show filter text box" keyshortcuts="Control+Shift+F"
+  uid=176_25 button "New message" keyshortcuts="Alt+Shift+N"
+  uid=176_26 button "New items" haspopup="menu"
+  uid=176_27 button "Unread" keyshortcuts="Control+Alt+U"
+  uid=176_28 button "Chats" keyshortcuts="Control+Alt+C"
+  uid=176_29 button "Unmuted" keyshortcuts="Control+Alt+Q"
+  uid=176_30 button "Meeting chats" keyshortcuts="Control+Alt+B"
+  uid=176_31 tree "Chats" orientation="vertical"
+    uid=176_32 treeitem "Copilot" description="Has context menu" level="1" selectable
+    uid=176_33 treeitem "Quick views" expandable expanded level="1" selectable
+      uid=176_34 treeitem "Mentions" description="Has context menu" level="2" selectable
+      uid=176_35 treeitem "Drafts" description="Has context menu" level="2" selectable
+    uid=176_36 treeitem "Favorites" description="Has context menu" expandable expanded level="1" selectable
+    uid=176_37 treeitem "Chats More section options 1 Badged chat Has context menu" description="Has context menu" expandable focusable focused level="1" selectable selected
+      uid=176_38 button "More section options" haspopup="menu"
+  uid=176_39 status atomic live="assertive" relevant="additions text"
+  uid=176_40 slider "Resize left panel" orientation="horizontal" value="360" valuemax="400" valuemin="280" valuetext=""
+  uid=176_41 listitem "Alexander Kastil (You) Busy" haspopup="dialog" level="1"
+    uid=176_42 "Alexander Kastil (You)"
+  uid=176_43 tab "Chat" selectable selected
+  uid=176_44 tab "Shared" selectable
+  uid=176_45 tab "Notes" selectable
+  uid=176_46 tab "Storyline" selectable
+  uid=176_47 button "Open Copilot" keyshortcuts="Alt+C"
+  uid=176_48 button "Find in chat" keyshortcuts="Control+F"
+  uid=176_49 button "Open chat details" keyshortcuts="Alt+P"
+  uid=176_50 button "More chat options" haspopup="menu"
+  uid=176_51 heading "Link https://integrationsonline.sharepoint.... by Alexander Kastil, has attachments." level="4"
+  uid=176_52 "Sunday 10:21 PM"
+  uid=176_53 "Alexander Kastil"
+  uid=176_54 group "Alexander Kastil Link https://integrationsonline.sharepoint.com/sites/copilot-demo/Shared%20Documents/LAB-HR%20agent.agent The message has an attachment. Sunday, November 1, 2026 10:21 PM."
+    uid=176_55 button "More message options" expandable
+    uid=176_56 link "Link https://integrationsonline.sharepoint.com/sites/copilot-demo/Shared%20Documents/LAB-HR%20agent.agent" url="https://integrationsonline.sharepoint.com/sites/copilot-demo/Shared%20Documents/LAB-HR%20agent.agent"
+      uid=176_57 "https://integrationsonline.sharepoint.com/sites/copilot-demo/Shared%20Documents/LAB-HR%20agent.agent"
+    uid=176_58 progressbar busy valuemax="100" valuemin="0" valuetext=""
+  uid=176_59 heading "Confirmed: "LAB-Project Sync" is scheduled ... by Alexander Kastil" level="4"
+  uid=176_60 "Sunday 10:34 PM"
+  uid=176_61 "Alexander Kastil"
+  uid=176_62 group "Alexander Kastil Sent Confirmed: "LAB-Project Sync" is scheduled for tomorrow, Monday 2 November 2026, 10:00–10:30 (CET). Invitee: you only. Sent by Link Copilot Cowork Sunday, November 1, 2026 10:34 PM."
+    uid=176_63 button "More message options" expandable
+    uid=176_64 "Confirmed: "LAB-Project Sync" is scheduled for tomorrow, Monday 2 November 2026, 10:00–10:30 (CET). Invitee: you only."
+    uid=176_65 LineBreak "
+"
+    uid=176_66 LineBreak "
+"
+    uid=176_67 "Sent by "
+    uid=176_68 link "Link Copilot Cowork" url="https://aka.ms/cowork?cw_source=teams&cw_tool=PostMessage"
+      uid=176_69 "Copilot Cowork"
+  uid=176_70 image "Sent"
+  uid=176_71 textbox "Type a message" multiline value="
+"
+    uid=176_72 paragraph
+  uid=176_73 log live="assertive" relevant="additions text"
+  uid=176_74 log live="polite" relevant="additions text"
+  uid=176_75 button "Show Formatting options" keyshortcuts="Control+Shift+X"
+  uid=176_76 button "Emoji, GIFs and Stickers" expandable haspopup="dialog"
+  uid=176_77 button "Attach files" haspopup="dialog" keyshortcuts="Alt+Shift+O"
+  uid=176_78 button "Write with Copilot" keyshortcuts="Alt+A"
+  uid=176_79 button "Loop components" keyshortcuts="Control+Alt+L"
+  uid=176_80 button "Actions and apps" haspopup="dialog"
+  uid=176_81 button "Send" keyshortcuts="Control+Enter"
+  uid=176_82 generic live="assertive" relevant="additions text"
+  uid=176_83 generic live="polite" relevant="additions text"
+  uid=176_84 generic atomic live="polite" relevant="additions text"
+  uid=176_85 generic atomic live="assertive" relevant="additions text"
+  uid=176_86 generic live="assertive" relevant="additions text"

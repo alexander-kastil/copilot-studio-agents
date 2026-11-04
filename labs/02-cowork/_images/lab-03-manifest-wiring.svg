@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
   <title id="t">How manifest.json points into the plugin package</title>
-  <desc id="d">Inside copilot-dev-camp.zip at root level, manifest.json references color.png and outline.png through icons, the three skill folders foundry-research, dev-camp-deck and dev-camp-document through agentSkills, each holding a SKILL.md whose frontmatter name equals the folder name, and tools/microsoft-learn-mcp-tools.json through mcpToolDescription.file. Its mcpServerUrl points outside the package to the remote Microsoft Learn MCP Server.</desc>
+  <desc id="d">Inside grey-logistics.zip at root level, manifest.json references color.png and outline.png through icons, the three skill folders foundry-research, grey-logistics-deck and grey-logistics-document through agentSkills, each holding a SKILL.md whose frontmatter name equals the folder name, and tools/microsoft-learn-mcp-tools.json through mcpToolDescription.file. Its mcpServerUrl points outside the package to the remote Microsoft Learn MCP Server.</desc>
   <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
   <defs>
     <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
   </defs>
   <rect x="40" y="50" width="1360" height="980" rx="20" fill="#ffffff" stroke="#8c959f" stroke-width="2" stroke-dasharray="14 10"/>
-  <text x="70" y="102" font-size="30" fill="#24292f"><tspan font-family="Consolas, 'Courier New', monospace" font-weight="700">copilot-dev-camp.zip</tspan><tspan font-family="Segoe UI, Helvetica, Arial, sans-serif" fill="#57606a">, root level</tspan></text>
+  <text x="70" y="102" font-size="30" fill="#24292f"><tspan font-family="Consolas, 'Courier New', monospace" font-weight="700">grey-logistics.zip</tspan><tspan font-family="Segoe UI, Helvetica, Arial, sans-serif" fill="#57606a">, root level</tspan></text>
   <rect x="840" y="130" width="520" height="860" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
   <text x="870" y="190" font-family="Consolas, 'Courier New', monospace" font-size="30" fill="#24292f" font-weight="700">manifest.json</text>
   <text x="870" y="255" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f" font-weight="700">icons</text>
@@ -30,9 +30,9 @@
   <rect x="280" y="468" width="460" height="44" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
   <text x="300" y="500" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f">foundry-research/SKILL.md</text>
   <rect x="280" y="528" width="460" height="44" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
-  <text x="300" y="560" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f">dev-camp-deck/SKILL.md</text>
+  <text x="300" y="560" font-family="Consolas, 'Courier New', monospace" font-size="23" fill="#24292f">grey-logistics-deck/SKILL.md</text>
   <rect x="280" y="588" width="460" height="44" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
-  <text x="300" y="620" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f">dev-camp-document/SKILL.md</text>
+  <text x="300" y="620" font-family="Consolas, 'Courier New', monospace" font-size="23" fill="#24292f">grey-logistics-document/SKILL.md</text>
   <text x="150" y="668" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#57606a">frontmatter name = folder name</text>
   <rect x="120" y="760" width="640" height="205" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
   <text x="150" y="802" font-family="Consolas, 'Courier New', monospace" font-size="28" fill="#24292f" font-weight="700">tools/</text>

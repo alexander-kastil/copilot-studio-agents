@@ -23,9 +23,49 @@ Die Datei, die Sie hochladen, liegt im Ordner `lab-01-evaluate-the-hr-agent` neb
 
 ## Voraussetzungen
 
-- Der HR Agent aus [Ihren ersten Copilot Studio Agent erstellen](../../03-cs-basics/01-standard-agents/lab-01-create-your-first-agent-de.md) und [Den HR Agent mit SharePoint Knowledge erden](../../03-cs-basics/02-knowledge/lab-01-ground-with-sharepoint-de.md): die Instructions aus dem ersten Lab und die Knowledge Sources Microsoft Careers site und HR Documents, beide mit Status **Ready**.
+- Der HR Agent mit den Instructions aus [Ihren ersten Copilot Studio Agent erstellen](../../03-cs-basics/01-standard-agents/lab-01-create-your-first-agent-de.md) und den Knowledge Sources Microsoft Careers site und HR Documents, beide mit Status **Ready**; [Den HR Agent einrichten](#den-hr-agent-einrichten) baut ihn, falls Sie ihn noch nicht haben.
 - Ein Account, der die SharePoint Site mit den HR-Dokumenten lesen kann.
 - Copilot Studio in der klassischen Experience, in der der Agent die Tabs **Overview**, **Knowledge**, **Tools**, **Agents**, **Topics**, **Activity**, **Evaluation**, **Monitor** und **Channels** zeigt.
+
+## Den HR Agent einrichten
+
+Dieses Lab evaluiert den HR Agent mit seinen Instructions und zwei Knowledge Sources, Microsoft Careers site und HR Documents. Wenn Sie ihn in den Basics Labs gebaut haben, öffnen Sie ihn unter **Agents** und überspringen diesen Abschnitt. Andernfalls erstellen Sie ihn jetzt:
+
+1. Rufen Sie [Copilot Studio](https://copilotstudio.microsoft.com) auf, wählen Sie auf **Home** den Befehl **Other ways to build** und dann unter **Build with standard orchestration** den Eintrag **Agent** mit dem Badge **Standard**.
+2. Geben Sie im Dialog **Name your agent** den Namen `HR Agent` ein und wählen Sie **Create**.
+3. Warten Sie, bis der Agent eingerichtet ist (die Befehle **Edit** bleiben etwa eine Minute deaktiviert). Wählen Sie dann im Tab **Overview** im Abschnitt **Details** den Befehl **Edit**, fügen Sie den folgenden Text in **Description** ein und wählen Sie **Save**.
+
+```txt
+You help employees to find information about HR related policies
+```
+
+4. Wählen Sie im Abschnitt **Instructions** den Befehl **Edit**, fügen Sie die folgenden Instructions ein und wählen Sie **Save**.
+
+```txt
+- Provide employees with clear, accurate information about HR policies and procedures.
+- Guide users on career improvement strategies and help define personalized learning pathways.
+- Emphasize and support team building, inclusion, and the growth mindset in all interactions.
+- Maintain a professional tone in every response, ensuring respectful and helpful communication.
+- Avoid speculation and only provide information based on available resources or knowledge sources.
+- Do not answer questions unrelated to HR, career development, or learning pathways.
+- Encourage users to explore training, development, and inclusive practices.
+- Respond promptly and clearly to all user queries.
+```
+
+5. Wählen Sie im Abschnitt **Knowledge** den Befehl **+ Add knowledge** > **Public websites**, geben Sie `https://careers.microsoft.com/` ein und wählen Sie **Add**. Nennen Sie die Site `Microsoft Careers site`, fügen Sie die folgende Beschreibung ein und wählen Sie **Add to agent**.
+
+```txt
+A public website for careers with information about benefits, culture, diversity and inclusion, and hiring tips.
+```
+
+6. Laden Sie die [HR-Dokumente](https://download-directory.github.io/?url=https://github.com/alexander-kastil/copilot-studio-agents/tree/master/src/assets/hr-documents&filename=hr-documents) herunter, entpacken Sie sie und laden Sie sie in die Bibliothek **Documents** einer SharePoint Teams Site in Ihrem Tenant hoch. Kopieren Sie die URL der Site.
+7. Wählen Sie im Abschnitt **Knowledge** den Befehl **+ Add knowledge** > **SharePoint**, geben Sie die URL der Site ein und wählen Sie **Add**. Nennen Sie die Quelle `HR Documents`, fügen Sie die folgende Beschreibung ein und wählen Sie **Add to agent**.
+
+```txt
+Provides documents about policies, procedures, and rules related to the HR department.
+```
+
+Erwartet: **Knowledge** im Tab **Overview** führt **Microsoft Careers site** und **HR Documents**, beide mit Status **Ready**. Neue Dateien werden erst nach einigen Minuten indexiert.
 
 ## Übung 1: Das HR Test Set importieren
 

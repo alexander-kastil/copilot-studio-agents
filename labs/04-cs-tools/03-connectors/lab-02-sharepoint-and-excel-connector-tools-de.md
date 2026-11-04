@@ -4,7 +4,7 @@ Ihr Product-Support-Team hält sein Material an zwei Orten: Datasheets, Handbüc
 
 ![Die drei Teile eines Agents zur Laufzeit: Der Agent liest seine Instructions, holt Grounding aus Knowledge, wenn er Fakten braucht, und ruft Tools auf, wenn er Live-Daten braucht oder handeln muss; am Ende steht eine fundierte Antwort oder eine Aktion.](../../../demos/01-intro/pptx/images/02-02-three-parts.svg)
 
-In diesem Lab geben Sie dem HR Agent aus den vorigen Labs zwei weitere vorgefertigte Connector Tools: SharePoint List folder und Excel List rows present in a table. Danach schärfen Sie die Tool-Beschreibungen, bis Generative Orchestration selbst das richtige Tool wählt, und belegen mit der Activity Map, welches Tool lief.
+In diesem Lab geben Sie dem HR Agent zwei weitere vorgefertigte Connector Tools: SharePoint List folder und Excel List rows present in a table. Danach schärfen Sie die Tool-Beschreibungen, bis Generative Orchestration selbst das richtige Tool wählt, und belegen mit der Activity Map, welches Tool lief.
 
 Dies ist eine Überarbeitung des Microsoft Learn Labs [Create a connector action](https://microsoftlearning.github.io/MS-4022-Extend-Microsoft-365-Copilot-in-Copilot-Studio/Instructions/Labs/03-Connector-actions/01-create-connector-action.html), erweitert um die Excel- und SharePoint-Szenarien aus Copilot Camp.
 
@@ -29,13 +29,40 @@ flowchart LR
 
 ## Voraussetzungen
 
-- Den HR Agent aus den vorigen Labs mit der Excel Online (Business) Connection, die Sie in [Tools mit Power Platform Connectors definieren](./lab-01-connector-and-flow-tools-de.md) angelegt haben.
+- Den HR Agent; [Den HR Agent einrichten](#den-hr-agent-einrichten) baut ihn, falls Sie ihn noch nicht haben.
 - Die Berechtigung, eine SharePoint Site anzulegen, oder eine bestehende Site, in der Sie eine Document Library hinzufügen dürfen.
 - Eine Site namens `Product Support` mit einer Document Library namens `Products`, gefüllt mit den fünf Dateien aus dem Ordner [assets](./lab-02-sharepoint-and-excel-connector-tools/assets). Bauen Sie sie von Hand, wie unten beschrieben.
 
+## Den HR Agent einrichten
+
+Dieses Lab startet mit einem Standard Agent namens HR Agent mit seiner Description und seinen Instructions. Wenn Sie ihn in den Basics Labs gebaut haben, zum Beispiel in [Ihren ersten Copilot Studio Agent erstellen](../../03-cs-basics/01-standard-agents/lab-01-create-your-first-agent-de.md), öffnen Sie ihn unter **Agents** und überspringen diesen Abschnitt. Andernfalls erstellen Sie ihn jetzt:
+
+1. Rufen Sie [Copilot Studio](https://copilotstudio.microsoft.com) auf, wählen Sie auf **Home** den Befehl **Other ways to build** und dann unter **Build with standard orchestration** den Eintrag **Agent** mit dem Badge **Standard**.
+2. Geben Sie im Dialog **Name your agent** den Namen `HR Agent` ein und wählen Sie **Create**.
+3. Warten Sie, bis der Agent eingerichtet ist (die Befehle **Edit** bleiben etwa eine Minute deaktiviert). Wählen Sie dann im Tab **Overview** im Abschnitt **Details** den Befehl **Edit**, fügen Sie den folgenden Text in **Description** ein und wählen Sie **Save**.
+
+```txt
+You help employees to find information about HR related policies
+```
+
+4. Wählen Sie im Abschnitt **Instructions** den Befehl **Edit**, fügen Sie die folgenden Instructions ein und wählen Sie **Save**.
+
+```txt
+- Provide employees with clear, accurate information about HR policies and procedures.
+- Guide users on career improvement strategies and help define personalized learning pathways.
+- Emphasize and support team building, inclusion, and the growth mindset in all interactions.
+- Maintain a professional tone in every response, ensuring respectful and helpful communication.
+- Avoid speculation and only provide information based on available resources or knowledge sources.
+- Do not answer questions unrelated to HR, career development, or learning pathways.
+- Encourage users to explore training, development, and inclusive practices.
+- Respond promptly and clearly to all user queries.
+```
+
+Erwartet: Der Tab **Overview** des HR Agent zeigt die Description und die Instructions.
+
 ## Lab-Dateien
 
-Alles, was der Agent liest, liegt in [assets](./lab-02-sharepoint-and-excel-connector-tools/assets). Die Inhalte sind fiktiv (Northwind Devices, ein Hardwarehersteller), aber in sich stimmig, sodass Antworten zu einem Produkt über die Dokumente und die Lagertabelle hinweg zusammenpassen.
+Alles, was der Agent liest, liegt in [assets](./lab-02-sharepoint-and-excel-connector-tools/assets). Die Inhalte sind fiktiv (Happy Longnose Ltd, ein Hardwarehersteller), aber in sich stimmig, sodass Antworten zu einem Produkt über die Dokumente und die Lagertabelle hinweg zusammenpassen.
 
 | Datei | Was sie darstellt |
 |-------|-------------------|
@@ -53,8 +80,8 @@ Vier Schritte im Browser, etwa fünf Minuten. Führen Sie sie der Reihe nach aus
 
 Springen Sie zu Schritt 2, wenn Sie bereits eine Site haben, die Sie nutzen können.
 
-1. Öffnen Sie [https://www.office.com/launch/sharepoint](https://www.office.com/launch/sharepoint) und wählen Sie **Create site**.
-2. Wählen Sie **Team site**. Eine Communication Site funktioniert genauso gut; dem Connector ist das egal.
+1. Öffnen Sie [https://www.office.com/launch/sharepoint](https://www.office.com/launch/sharepoint) und wählen Sie **Build** > **Site**.
+2. Wählen Sie **Team site** und die Vorlage **Standard team**. Eine Communication Site funktioniert genauso gut; dem Connector ist das egal.
 3. Setzen Sie **Site name** auf:
 
 ```text
@@ -62,7 +89,7 @@ Product Support
 ```
 
 4. Prüfen Sie die Site-Adresse, die SharePoint unter dem Namen vorschlägt, zum Beispiel `https://greylogistics.sharepoint.com/sites/ProductSupport`. Kopieren Sie sie jetzt, denn sie ist der Input **Site Address**, den der Connector braucht.
-5. Wählen Sie **Next**, übernehmen Sie die Standardwerte für Datenschutz und Sprache, wählen Sie **Create site** und überspringen Sie das Hinzufügen von Mitgliedern.
+5. Wählen Sie **Create site** und dann auf **Your site is ready!** die Schaltfläche **Go to site**.
 
 Erwartet: Die neue Site öffnet sich auf ihrer Home Page, und **Documents** steht bereits in der linken Navigation.
 
@@ -71,7 +98,7 @@ Erwartet: Die neue Site öffnet sich auf ihrer Home Page, und **Documents** steh
 Das Lab braucht eine Document Library, keine Liste und keinen Ordner. Eine Library speichert Dateien, und genau sie lesen die SharePoint Action **List folder** und der Excel Connector. Eine Custom List speichert Zeilen mit Spalten und enthält gar keine Dateien, deshalb taugt sie für dieses Lab nicht.
 
 1. Wählen Sie auf der Home Page der Site oben in der Befehlsleiste **+ New**.
-2. Wählen Sie **Document library**.
+2. Wählen Sie **Document library** und dann **Create blank document library**.
 3. Setzen Sie **Name** auf genau:
 
 ```text
@@ -81,14 +108,14 @@ Products
 4. Setzen Sie optional **Description** auf `Product support material`.
 5. Lassen Sie **Show in site navigation** aktiviert und wählen Sie **Create**.
 
-Erwartet: Die leere Library `Products` öffnet sich, und `Products` erscheint in der linken Navigation unter **Documents**. Die Adressleiste zeigt etwa `https://greylogistics.sharepoint.com/sites/ProductSupport/Products`.
+Erwartet: Die leere Library `Products` öffnet sich, und `Products` erscheint in der linken Navigation neben **Documents**. Die Adressleiste zeigt etwa `https://greylogistics.sharepoint.com/sites/ProductSupport/Products`.
 
 > **Warnung:** Der Name muss genau `Products` lauten, mit großem P und ohne Leerzeichen am Ende. Sie tippen diesen String in Übung 2 in den Connector-Input **File Identifier**, und SharePoint vergleicht ihn wörtlich. Benennen Sie die Library später um, ändert sich nur der Anzeigename, nicht die interne URL, die dann nicht mehr zu Ihrer Eingabe passt.
 
 #### Schritt 3: Die fünf Dateien hochladen
 
 1. Öffnen Sie die Library `Products`.
-2. Wählen Sie in der Befehlsleiste **Upload** und dann **Files**.
+2. Wählen Sie in der Befehlsleiste **Create or upload** und dann **Files upload**.
 3. Navigieren Sie zum Ordner [assets](./lab-02-sharepoint-and-excel-connector-tools/assets) neben diesem Lab, wählen Sie alle fünf Dateien und bestätigen Sie.
 4. Warten Sie, bis die Upload-Spalte keinen Fortschritt mehr anzeigt.
 
@@ -131,8 +158,8 @@ Jeder Connector-Input im Lab stammt aus dieser Tabelle. Tragen Sie Ihre eigene S
 Ein Connector Tool ist eine einzelne Action eines Power Platform Connectors, die der Orchestrator als etwas sieht, das der Agent aufrufen darf. SharePoint ist ein Standard Connector und deshalb in jedem Copilot Studio Plan enthalten. Die Action **List folder** liefert die Einträge eines Ordners einer Document Library, also genau die Live-Sicht, die eine Knowledge Source nicht bietet.
 
 1. Öffnen Sie den HR Agent, wählen Sie den Tab **Tools** und dann **+ Add a tool**.
-2. Wechseln Sie in die Gruppe **All**, suchen Sie nach `SharePoint` und wählen Sie **List folder**.
-3. Zeigt die Connection noch kein Konto, wählen Sie **Connection** > **Create new connection** und melden Sie sich mit Ihrem Microsoft 365 Konto an.
+2. Wählen Sie die Gruppe **Connector**, dann die Kachel **SharePoint** und **List folder**.
+3. Ist keine eigene Connection ausgewählt, wählen Sie **Connection** > **Create new connection**, dann **Create**, und wählen Sie Ihr Microsoft 365 Konto.
 4. Wählen Sie **Add and configure**.
 
 Erwartet: Die Konfigurationsseite des neuen Tools **List folder** öffnet sich mit Name, Beschreibung, Inputs und Completion-Einstellungen.
@@ -157,13 +184,13 @@ library on the Product Support SharePoint site. Use this when the user asks whic
 manuals, datasheets, troubleshooting guides, or warranty documents exist for a product.
 ```
 
-3. Klappen Sie **Additional details** auf und setzen Sie die Beschreibung für die End User Authentication auf:
+3. Klappen Sie **Additional details** auf und setzen Sie **Description**, den Text, den User bei der Anmeldung sehen, auf:
 
 ```text
 Please sign in to access the Product Support SharePoint site.
 ```
 
-4. Setzen Sie unter **Inputs** bei **Site Address** den Wert **Fill using** auf **Custom value** und wählen Sie Ihre Site `Product Support` oder fügen Sie ihre URL ein.
+4. Setzen Sie unter **Inputs** bei **Site Address** den Wert **Fill using** auf **Custom value**, wählen Sie **Enter custom value** und fügen Sie die URL der Site ein; eine neue Site fehlt oft in der Liste.
 5. Setzen Sie bei **File Identifier** den Wert **Fill using** auf **Custom value** und geben Sie ein:
 
 ```text
@@ -186,7 +213,7 @@ product, call the "List product support files" tool and answer only from what it
 returns. Name the tool you used in your answer.
 ```
 
-2. Öffnen Sie den Test Pane und wählen Sie oben das Kartensymbol, um die Activity Map einzublenden.
+2. Öffnen Sie den Test Pane und prüfen Sie, dass **...** > **Show activity map when testing** eingeschaltet ist.
 3. Senden Sie:
 
 ```text
@@ -199,9 +226,9 @@ Erwartet: Die Antwort nennt die echten Dateinamen aus Ihrer Library `Products` u
 
 ## Übung 4: Das Excel-Lager-Tool hinzufügen
 
-Dateinamen beantworten, was es gibt. Sie beantworten nicht, wie viel noch da ist. Die Excel Online (Business) Action **List rows present in a table** liest eine benannte Tabelle aus einer Arbeitsmappe und liefert sie als strukturierte Zeilen, die der Orchestrator filtern, zählen und zusammenfassen kann. Sie fügen sie genauso hinzu wie **List HR candidates** in [Tools mit Power Platform Connectors definieren](./lab-01-connector-and-flow-tools-de.md#schritt-1-einen-power-platform-connector-nutzen), mit der bestehenden Excel Connection, und legen alle vier Inputs auf die Lagertabelle fest, damit der Agent den User nie fragen muss, wo die Daten liegen.
+Dateinamen beantworten, was es gibt. Sie beantworten nicht, wie viel noch da ist. Die Excel Online (Business) Action **List rows present in a table** liest eine benannte Tabelle aus einer Arbeitsmappe und liefert sie als strukturierte Zeilen, die der Orchestrator filtern, zählen und zusammenfassen kann. Sie fügen sie genauso hinzu wie **List HR candidates** in [Tools mit Power Platform Connectors definieren](./lab-01-connector-and-flow-tools-de.md#schritt-1-einen-power-platform-connector-nutzen), mit einer Excel Online (Business) Connection, und legen alle vier Inputs auf die Lagertabelle fest, damit der Agent den User nie fragen muss, wo die Daten liegen.
 
-1. Wählen Sie im Tab **Tools** den Eintrag **+ Add a tool**, dann **Excel Online (Business)** > **List rows present in a table** und schließlich **Add and configure**.
+1. Wählen Sie im Tab **Tools** den Eintrag **+ Add a tool** und dann **Excel Online (Business)** > **List rows present in a table**. Ist keine eigene Connection ausgewählt, wählen Sie **Connection** > **Create new connection**, dann **Create**, und wählen Sie Ihr Microsoft 365 Konto. Wählen Sie dann **Add and configure**.
 2. Ändern Sie **Name** auf:
 
 ```text
@@ -224,6 +251,8 @@ user asks about availability, stock, quantities, warehouses, or warranty duratio
 | Document Library | `Products` |
 | File | `ProductInventory.xlsx` |
 | Table | `Stock` |
+
+In der Liste **Location** erscheint die Site als **Group - <site name>**. Die Listen **Document Library** und **Table** bleiben leer, bis Sie **Refresh** wählen, und **File** wählen Sie im Datei-Browser.
 
 5. Wählen Sie **Save**.
 
@@ -287,7 +316,7 @@ not use this tool to list documents or files.
 
 5. Wählen Sie **Save**, starten Sie eine neue Test-Session und senden Sie dieselbe Garantiefrage erneut.
 
-Erwartet: Mit der vagen Beschreibung wählt der Agent das SharePoint Tool, stellt eine Rückfrage oder antwortet aus dem Garantiedokument statt aus der Tabelle. Mit der präzisen Beschreibung zeigt die Activity Map **Get product stock levels**, und die Antwort nennt die Zahl der Garantiemonate aus der Tabelle.
+Erwartet: Mit der vagen Beschreibung wählt der Agent womöglich trotzdem das Lager-Tool, weil die Routing-Zeile aus Übung 5 es nennt; sonst wählt er das SharePoint Tool, stellt eine Rückfrage oder antwortet aus dem Garantiedokument statt aus der Tabelle. Mit der präzisen Beschreibung zeigt die Activity Map **Get product stock levels**, und die Antwort nennt die Zahl der Garantiemonate aus der Tabelle.
 
 > **Tipp:** Negative Hinweise (`Do not use this tool to list documents or files`) sind die wirksamste Lösung, wenn sich zwei Tools überschneiden. Fügen Sie sie dem Tool hinzu, das immer wieder fälschlich gewählt wird, nicht dem, das übergangen wird.
 
@@ -303,7 +332,7 @@ Standardmäßig läuft ein Connector Tool mit den Credentials der Person, die mi
 4. Entscheiden Sie für dieses Szenario: Die Library `Products` ist für alle Mitarbeitenden lesbar, deshalb ersparen Maker-provided Credentials eine unnötige Anmeldung. Wählen Sie **Maker-provided credentials**.
 5. Wählen Sie **Save**, starten Sie eine neue Test-Session und stellen Sie die Frage nach den Dateien erneut.
 
-Erwartet: Die Karte für die Connection erscheint für dieses Tool nicht mehr, und die Dateiliste kommt sofort.
+Erwartet: Das Tool braucht keine eigene Connection des Users mehr, daher kann für dieses Tool keine Karte für die Connection erscheinen, und die Dateiliste kommt sofort.
 
 > **Warnung:** Maker-provided Credentials bedeuten, dass jeder User des Agents SharePoint als Sie liest. Nutzen Sie sie nie für eine Library mit Einschränkungen pro User oder pro Abteilung; lassen Sie solche Tools auf User Credentials.
 

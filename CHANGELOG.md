@@ -5,6 +5,8 @@
 
 ### Added
 
+- The Cowork plugin lab builds a Grey Logistics sample plugin shipped in `labs/02-cowork/lab-03-grey-logistics-plugin/` (deck, document and Foundry research skills, own icons), the skills lab links its own `weekly-status-mail` copy, and the HR documents, the candidates workbook, the resumes and the gardening documents download from this repository (`src/assets/` and the lab folders) instead of the copilot-camp repository; no lab, demo or diagram names Copilot Dev Camp any more
+- Every lab outside module 02 starts on its own: a lab that used an earlier lab's agent, topic, connection or MCP registration opens with a short setup section that builds it (learners who have it keep using it), in English and German; the labs name their company Happy Longnose Ltd or Grey Logistics instead of Northwind or Contoso, the sample HR site is Grey Logistics HR and the environment diagram shows Grey Logistics, in text, diagrams, companion files and file names
 - Module 06 apps topic opens with what an app is and how an app in Copilot Studio compares with the Cowork App skill and Power Apps canvas and model-driven apps: two new slides with diagrams and the matching readme section
 - Module 02 deck notes where Cowork saves custom skills (OneDrive, Documents/Cowork/Skills) and that plugins are Microsoft 365 app packages under Customize > Plugins, on the skill sources and plugins slides
 - German translation of the module 07 lab (`lab-01-build-and-migrate-from-the-terminal-de.md`); the module 07 lab readme gains a title, an intro and a lab table with Deutsch and Focus columns like modules 02 to 06
@@ -44,8 +46,14 @@
 - Update lab 06/04 and 06/05 SVGs: I relabelled the diagram in
 - Find 404 path on HR MCP server: No 404 request is recorded anywhere
 - Add /mcp path to HR MCP server: The HR server now answers MCP at both / and /mcp
+- Run lab 03/06 in the browser: Progress: 9/9 · report
+- Run lab 01/05 in the browser: The site is renamed: its title is now LAB-Grey Logistics HR 0105 (checked after a reload)
 
 ### Changed
+
+- Labs 06/04 and 06/05 build on the class MCP servers: the Sales Account Assistant registers the hosted food catalog (`lab-food-catalog-api`) in place of the Dataverse MCP server and reads live prices and stock with its write tools turned off, and the grounding lab builds a Restaurant Staff Assistant on the hosted HR MCP server in place of Work IQ; both guides, their German versions and diagrams match the live product after browser runs on 2026-11-04, and the module, class and schedule tables carry the new 06/05 title
+- The HR MCP server also answers at `/mcp`, the address Microsoft Copilot harness agents can list tools from; the root address stays for the module 04 MCP lab
+- The module 04 MCP lab and the agent-parts diagram send learners to their own environment instead of a shared class environment
 
 - Module 06 topics reordered in demos, labs, deck and schedule: Test and Evaluate is topic 06, Migrate is topic 07 and Building Apps is topic 08, with the demo files, slide numbers, overview diagram, lab path and day 4 lab order following
 - Module 05 drops the Voice Agents topic: Test and Evaluate Standard Agents moves from `07-evaluations` to `06-evaluations` in demos and labs, the module 05 deck loses its voice slides (31 to 29 slides, six topics on the overview, dividers and module path diagram) and is redelivered to OneDrive, and the class readme, module readmes, cost and harness tables and migration table no longer link to voice
@@ -66,7 +74,8 @@
 
 ### Fixed
 
-- Lab 06/01 (compare Standard and Microsoft Copilot harness agents) matches the live product after a run on 2026-11-04: the Agents list has no kind column, a Microsoft Copilot harness agent saves with the **Save** icon at the top right and folds its tabs into a **Build** drop-down in a narrow window, its new agent already holds Work IQ and Search all websites, and Troubleshooting covers the EnforcementUsageCredits error in Preview
+- Martin's lab 01 (reconcile with an agent flow, German): the file step uses Get files (properties only) instead of Get file properties, with no ID to fill in, and the script step loads its parameters from the workbook before the file expression is set, so the flow receives the parameters
+- Lab 06/01 (compare Standard and Microsoft Copilot harness agents) matches the live product after a run on 2026-11-04: the Agents list has no kind column, a Microsoft Copilot harness agent saves with the **Save** icon at the top right and folds its tabs into a **Build** drop-down in a narrow window, its new agent already holds Work IQ and Search all websites, and Troubleshooting covers the EnforcementUsageCredits error in Preview; Exercise 7 ran with credits in Integrationsonline Production and its Expected now says the agent finds no Tier 1 figure without Northwind data
 - Module 06 deck: the "Reading the plan in Preview" slide is retitled "Following the agent's reasoning in Preview" and describes only what the screenshot shows, with no plan or execution path; the skills slide 20 is rebuilt
 - Broken image links in the readmes and labs: the slide diagrams (`pptx/images/*.svg`) they embed are tracked again, while decks, renders and photos stay local
 - Module 02 Cowork lab guides corrected from the live runs

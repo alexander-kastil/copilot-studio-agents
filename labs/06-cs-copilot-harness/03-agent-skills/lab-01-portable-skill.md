@@ -1,6 +1,6 @@
 # Package Team Knowledge into a Portable Skill
 
-Northwind Traders sellers handle the same customer objections every week: price, timing, and competitors. Instead of pasting that guidance into every agent's instructions, you will capture it once as a portable Agent Skill and reuse it wherever it is needed. This lab walks a low-code maker from a raw repeatable task to a shareable skill package that runs on two different agents.
+Happy Longnose Ltd sellers handle the same customer objections every week: price, timing, and competitors. Instead of pasting that guidance into every agent's instructions, you will capture it once as a portable Agent Skill and reuse it wherever it is needed. This lab walks a low-code maker from a raw repeatable task to a shareable skill package that runs on two different agents.
 
 By the end you have one deliverable: a reusable `objection-handling` skill, packaged as a ZIP, tested, refined, and added to a second agent to prove portability. Each step builds on the last, so keep the same browser session and files open throughout. The lab closes by contrasting this approach with the topic-and-trigger-phrase model of Standard agents so you can explain why a skill is the more reusable choice.
 
@@ -33,17 +33,31 @@ By the end you have one deliverable: a reusable `objection-handling` skill, pack
 |------|---------|
 | `lab-01-portable-skill/` | Folder that holds the finished skill package for this lab. |
 | `lab-01-portable-skill/SKILL.md` | The skill definition: YAML front matter (name, description) plus Markdown instructions. |
-| `lab-01-portable-skill/references/objection-handling.md` | Supporting reference doc with the standard Northwind Traders objection responses. |
+| `lab-01-portable-skill/references/objection-handling.md` | Supporting reference doc with the standard Happy Longnose Ltd objection responses. |
 
 ## Prerequisites
 
 - A Copilot Studio environment where you can create agents (a Power Platform environment with the maker role).
 - Your own environment: select the environment name at the bottom of the left navigation (**Switch environment**) and check that **Current environment** shows the environment named after your account, for example `copilot-studio-01` (Sandbox) for `copilot-studio-01@mst.fastlane.net`. Work through the whole lab in it, never in the shared Default environment.
-- One Microsoft Copilot harness agent already built. If you do not have one, run [Build and Ground Your First Microsoft Copilot Harness Agent](../../../demos/06-cs-copilot-harness/01-standard-vs-copilot-harness/demo-01-build-and-ground-an-agent.md) first and keep that Sales Assistant agent open.
+- One Microsoft Copilot harness agent. If you do not have one, [Set up the Sales Assistant](#set-up-the-sales-assistant) builds it, or run [Build and Ground Your First Microsoft Copilot Harness Agent](../../../demos/06-cs-copilot-harness/01-standard-vs-copilot-harness/demo-01-build-and-ground-an-agent.md) first and keep that Sales Assistant agent open.
 - A second new-type agent to reuse the skill across (for example an Account Manager). You can create it during Step 8 if you do not have it yet.
 - A plain text editor (Notepad, VS Code, or similar) and the built-in ZIP tool of your operating system.
 
 > **Note:** A Skill is just a name, a description, and Markdown in one `SKILL.md` file. The same open format is used by Claude Code and GitHub Copilot skills, so a skill you author here can be imported there, and skills from there can be imported into Copilot Studio.
+
+## Set up the Sales Assistant
+
+The skill needs a Microsoft Copilot harness agent to live on. If you already have one, use it and skip this section. Otherwise create it now:
+
+1. In [Copilot Studio](https://copilotstudio.microsoft.com), go to **Agents**, open the arrow next to **New agent**, and under **Optimize your business processes** select **Agent** with the **GitHub Copilot** badge.
+2. In the name field, enter `Sales Assistant`.
+3. In the **Instructions** section, paste the following, then select **Save** (the disk icon at the top right; in a narrow window, **...** > **Save**).
+
+```text
+You are the Sales Assistant. You help Happy Longnose Ltd sellers by answering short questions about our products, standard lead times, and account tiers. Keep answers brief, factual, and professional.
+```
+
+Expected: "Your agent has been saved." appears and the Sales Assistant stays open on its **Build** tab.
 
 ## Step 1: Identify a repeatable task worth packaging
 
@@ -54,7 +68,7 @@ A skill solves both problems at once. It is authored once and reused, and only i
 1. Write the task down in one sentence, using the wording below as your test case.
 
 ```text
-Help a Northwind seller respond to a customer objection about price, timing, or competitors.
+Help a Happy Longnose seller respond to a customer objection about price, timing, or competitors.
 ```
 
 2. Confirm the task passes the three skill tests: it is repeatable, self-contained, and needed only for specific requests (not on every turn).
@@ -104,7 +118,7 @@ description: Help a seller respond to common customer objections and push-back a
 
 ## Task
 
-Help a Northwind Traders seller reply to a customer objection during an active deal. Turn a raw push-back (too expensive, not the right time, or a competitor looks better) into a calm, specific response the seller can send or say out loud. Keep the buyer relationship intact and move the deal one step forward.
+Help a Happy Longnose Ltd seller reply to a customer objection during an active deal. Turn a raw push-back (too expensive, not the right time, or a competitor looks better) into a calm, specific response the seller can send or say out loud. Keep the buyer relationship intact and move the deal one step forward.
 
 ## Method
 
@@ -112,7 +126,7 @@ Follow these four moves in order:
 
 1. Acknowledge the concern in one sentence so the buyer feels heard.
 2. Clarify with one question that exposes the real driver behind the objection.
-3. Reframe with a Northwind Traders value point (total cost of ownership, delivery reliability, or account support), drawing the standard wording from the reference file.
+3. Reframe with a Happy Longnose Ltd value point (total cost of ownership, delivery reliability, or account support), drawing the standard wording from the reference file.
 4. Next step: propose one concrete action (a scoped pilot, a revised quote, or a reference call).
 
 Ground every price or comparison claim in the reference document `references/objection-handling.md`. Do not invent discounts, dates, or figures that the seller has not confirmed.
@@ -138,19 +152,19 @@ Expected: `lab-01-portable-skill/SKILL.md` exists, opens as readable Markdown, a
 
 ## Step 4: Add a reference file and package a ZIP
 
-A skill can bundle supporting files (scripts, templates, reference documents) alongside `SKILL.md` inside a ZIP. Here the reference file holds the standard Northwind Traders objection responses so the instructions stay short and the data stays maintainable in one place. The one hard rule: the ZIP must contain `SKILL.md` at its root, not inside a nested folder, or the upload is rejected.
+A skill can bundle supporting files (scripts, templates, reference documents) alongside `SKILL.md` inside a ZIP. Here the reference file holds the standard Happy Longnose Ltd objection responses so the instructions stay short and the data stays maintainable in one place. The one hard rule: the ZIP must contain `SKILL.md` at its root, not inside a nested folder, or the upload is rejected.
 
 1. Inside `lab-01-portable-skill`, create a `references` subfolder.
 2. Save the objection responses as `references/objection-handling.md` using the content below.
 
 ```text
-# Northwind Traders objection responses
+# Happy Longnose Ltd objection responses
 
 | Objection                                    | Recommended response                                                                 |
 |----------------------------------------------|--------------------------------------------------------------------------------------|
 | "Your price is higher than the others."      | Shift to total cost of ownership: bundled onboarding, no overage fees, fixed 3-year rate. |
 | "We do not have budget this quarter."         | Propose a scoped pilot now with a start-of-next-quarter rollout.                     |
-| "A competitor offers the same thing cheaper." | Name Northwind differentiators: 99.9% delivery reliability, named account manager, same-region support. |
+| "A competitor offers the same thing cheaper." | Name Happy Longnose differentiators: 99.9% delivery reliability, named account manager, same-region support. |
 | "We are happy with our current supplier."     | Do not attack the incumbent; ask what one thing they wish worked better, then map one strength to it. |
 | "Send me information and I will look later."   | Send one focused one-pager, then book a 15-minute follow-up while still on the call. |
 | "We need to think about it."                  | Ask which part needs the most thought (price, fit, or timing) so the real objection surfaces. |

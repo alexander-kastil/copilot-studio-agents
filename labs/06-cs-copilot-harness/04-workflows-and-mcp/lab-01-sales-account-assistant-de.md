@@ -2,7 +2,7 @@
 
 Jeder Seller verliert die ersten zehn Minuten eines Kundengesprächs damit, Account-Fakten aus CRM-Datensätzen, Produktblättern, E-Mail-Verläufen und offenen Support-Tickets zusammenzusuchen. Ein Assistant, der Fragen zu Accounts beantwortet, ein Briefing vor dem Gespräch zusammenstellt und die Follow-up E-Mail an einer Stelle entwirft, gibt diese Zeit zurück und hält das Vorgehen über ein ganzes Verkaufsgebiet hinweg einheitlich. In diesem Capstone Lab bauen Sie genau diesen Assistant als Microsoft Copilot Harness Agent, von einer Beschreibung aus einem Satz bis zu einem veröffentlichten Agent mit Grounding auf echten Daten.
 
-Das Szenario-Unternehmen ist Northwind Traders, ein Großhändler, dessen Seller jeweils Dutzende Accounts betreuen. Sie erstellen einen Sales Account Assistant, schärfen seine Instructions, grounden ihn auf zwei Knowledge-Dokumenten, binden eine Outlook Action und den Food Catalog MCP Server der Klasse an, beobachten, wie der Orchestrator sie verkettet, verpacken einen wiederverwendbaren Skill für Account Research, bauen einen Follow-up Workflow, übergeben ihn dem Agent als Tool und veröffentlichen den Agent für die Seller. Dieses Lab basiert auf dem Lab mcs-orchestration von Microsoft, und jeder Schritt speist den nächsten: Die Instructions formen die Tests in Preview, Knowledge und Tools werden vom Orchestrator verkettet, der Skill, den Sie hochladen, stammt aus dem Begleitordner dieses Labs, und der Workflow nutzt den Outlook Connector wieder, bei dem Sie sich zuvor angemeldet haben.
+Das Szenario-Unternehmen ist Happy Longnose Ltd, ein Großhändler, dessen Seller jeweils Dutzende Accounts betreuen. Sie erstellen einen Sales Account Assistant, schärfen seine Instructions, grounden ihn auf zwei Knowledge-Dokumenten, binden eine Outlook Action und den Food Catalog MCP Server der Klasse an, beobachten, wie der Orchestrator sie verkettet, verpacken einen wiederverwendbaren Skill für Account Research, bauen einen Follow-up Workflow, übergeben ihn dem Agent als Tool und veröffentlichen den Agent für die Seller. Dieses Lab basiert auf dem Lab mcs-orchestration von Microsoft, und jeder Schritt speist den nächsten: Die Instructions formen die Tests in Preview, Knowledge und Tools werden vom Orchestrator verkettet, der Skill, den Sie hochladen, stammt aus dem Begleitordner dieses Labs, und der Workflow nutzt den Outlook Connector wieder, bei dem Sie sich zuvor angemeldet haben.
 
 ![Der fertige Sales Account Assistant auf dem Tab Build, jede Component markiert mit dem Lab-Schritt, der sie füllt, plus die Tests in Preview und die Veröffentlichung in Teams und Microsoft 365 Copilot in Schritt 11.](./_images/sales-account-assistant-overview.svg)
 
@@ -46,7 +46,7 @@ Ein Microsoft Copilot Harness Agent ist Natural-Language-First. Statt Topics und
 3. Fügen Sie im Abschnitt **Instructions** Folgendes ein und wählen Sie dann **Save** (das Diskettensymbol oben rechts):
 
 ```text
-You are the Northwind Sales Assistant. You help Northwind Traders sellers prepare for customer calls by answering questions about products, pricing, lead times, and account tiers, preparing pre-call briefings, and drafting follow-up emails.
+You are the Happy Longnose Sales Assistant. You help Happy Longnose Ltd sellers prepare for customer calls by answering questions about products, pricing, lead times, and account tiers, preparing pre-call briefings, and drafting follow-up emails.
 ```
 
 4. Sehen Sie sich die Tabs am oberen Rand und das Components Panel auf dem Tab **Build** an.
@@ -63,10 +63,10 @@ In einem Microsoft Copilot Harness Agent ersetzen die **Instructions** die Topic
 2. Ersetzen Sie ihn durch Folgendes:
 
 ```text
-Role: You are the Sales Account Assistant, an internal helper for Northwind Traders sellers.
+Role: You are the Sales Account Assistant, an internal helper for Happy Longnose Ltd sellers.
 
 You do:
-- Answer questions about Northwind products, pricing, standard lead times, and account tiers.
+- Answer questions about Happy Longnose products, pricing, standard lead times, and account tiers.
 - Prepare a short pre-call briefing when a seller names an account, using the account-research format.
 - Draft a follow-up email that recaps decisions and next steps after a call.
 - Cite the knowledge source or record you drew each fact from.
@@ -74,7 +74,7 @@ You do:
 You do not:
 - Give binding price quotes, contract terms, or legal advice.
 - Invent account facts; if data is missing, say so instead of guessing.
-- Answer questions unrelated to Northwind sales.
+- Answer questions unrelated to Happy Longnose sales.
 
 Style: concise and professional. If a request does not name the account or product it needs, ask for it before answering.
 ```
@@ -87,12 +87,12 @@ Erwartet: **Instructions** zeigt Ihren gespeicherten Text, und die Identität de
 
 ## Schritt 3: Produkt-Knowledge hinzufügen
 
-Ein Agent ohne Knowledge antwortet aus dem allgemeinen Model und kann keinen einzigen Northwind Fakt zitieren. Eine **Knowledge** Source verankert die Antworten in Ihren Inhalten und lässt den Agent zeigen, woher jeder Fakt stammt; das macht ihn vertrauenswürdig für Seller, die gleich in einem Live-Gespräch eine Lead Time nennen. Sie fügen eine Referenz zu Produkten und Accounts hinzu, damit der Assistant aus echten Northwind Daten antwortet.
+Ein Agent ohne Knowledge antwortet aus dem allgemeinen Model und kann keinen einzigen Happy Longnose Fakt zitieren. Eine **Knowledge** Source verankert die Antworten in Ihren Inhalten und lässt den Agent zeigen, woher jeder Fakt stammt; das macht ihn vertrauenswürdig für Seller, die gleich in einem Live-Gespräch eine Lead Time nennen. Sie fügen eine Referenz zu Produkten und Accounts hinzu, damit der Assistant aus echten Happy Longnose Daten antwortet.
 
-Erstellen Sie zuerst eine Datei namens `northwind-products.md` (oder ein Word-Dokument) mit diesem Inhalt:
+Erstellen Sie zuerst eine Datei namens `happy-longnose-products.md` (oder ein Word-Dokument) mit diesem Inhalt:
 
 ```text
-# Northwind Traders - Product and Account Reference
+# Happy Longnose Ltd - Product and Account Reference
 ## Account tiers and standard lead times
 - Tier 1 (strategic): 3 business days, priority support.
 - Tier 2 (growth): 5 business days, standard support.
@@ -104,7 +104,7 @@ Erstellen Sie zuerst eine Datei namens `northwind-products.md` (oder ein Word-Do
 ```
 
 1. Öffnen Sie auf dem Tab **Build** die Component **Knowledge** und wählen Sie **Add knowledge**.
-2. Wählen Sie das Hochladen einer Datei und dann Ihr Dokument `northwind-products`.
+2. Wählen Sie das Hochladen einer Datei und dann Ihr Dokument `happy-longnose-products`.
 3. Warten Sie, bis das Dokument unter **Knowledge** erscheint.
 
 Erwartet: Das Dokument erscheint unter **Knowledge**. Der Agent kann jetzt die Lead Times der Tiers und die Produktpreise daraus beziehen, auch wenn Sie noch nicht bestätigt haben, dass er es tut; diese Prüfung folgt nach dem zweiten Dokument.
@@ -115,10 +115,10 @@ Erwartet: Das Dokument erscheint unter **Knowledge**. Der Agent kann jetzt die L
 
 Ein Dokument erzählt dem Agent von Produkten; ein zweites gibt ihm die Accounts und Bestellungen, die ein Briefing tatsächlich braucht. Die Aufteilung spiegelt, wie die Fakten in einem Unternehmen wirklich liegen, und Sie können in Schritt 7 beobachten, wie der Orchestrator aus mehr als einer Quelle schöpft. Nachdem Sie das zweite Dokument hinzugefügt haben, bestätigen Sie das Grounding in **Preview**, dem Tab, auf dem Sie das Verhalten des Agents sehen, bevor es jemand anderes sieht.
 
-Erstellen Sie zuerst eine Datei namens `northwind-accounts.md` (oder ein Word-Dokument) mit diesem Inhalt:
+Erstellen Sie zuerst eine Datei namens `happy-longnose-accounts.md` (oder ein Word-Dokument) mit diesem Inhalt:
 
 ```text
-# Northwind Traders - Account and Order Reference
+# Happy Longnose Ltd - Account and Order Reference
 ## Accounts
 - Alfreds Futterkiste (Tier 1): region North, owner J. Berg.
 - Around the Horn (Tier 2): region North, owner M. Diaz.
@@ -130,7 +130,7 @@ Erstellen Sie zuerst eine Datei namens `northwind-accounts.md` (oder ein Word-Do
 ```
 
 1. Öffnen Sie auf dem Tab **Build** die Component **Knowledge** und wählen Sie erneut **Add knowledge**.
-2. Laden Sie Ihr Dokument `northwind-accounts` hoch und warten Sie, bis die Verarbeitung abgeschlossen ist.
+2. Laden Sie Ihr Dokument `happy-longnose-accounts` hoch und warten Sie, bis die Verarbeitung abgeschlossen ist.
 3. Öffnen Sie den Tab **Preview** und senden Sie diese Nachricht:
 
 ```text
@@ -139,7 +139,7 @@ What did Around the Horn order last quarter, and what is their standard lead tim
 
 4. Lesen Sie die Antwort und suchen Sie nach einem Zitat, das auf Ihre Knowledge Sources verweist.
 
-Erwartet: **Preview** antwortet, dass Around the Horn 12 Kartons Organic Green Tea bestellt hat (ein Karton davon im Rückstand) und als Tier 2 Account eine Standard Lead Time von 5 Werktagen hat. Die Antwort zitiert die beiden Quellen `northwind`, statt eine generische Antwort zu liefern. Das bestätigt, dass der Agent beide Dokumente in einem Turn kombiniert hat.
+Erwartet: **Preview** antwortet, dass Around the Horn 12 Kartons Organic Green Tea bestellt hat (ein Karton davon im Rückstand) und als Tier 2 Account eine Standard Lead Time von 5 Werktagen hat. Die Antwort zitiert die beiden Quellen `happy-longnose`, statt eine generische Antwort zu liefern. Das bestätigt, dass der Agent beide Dokumente in einem Turn kombiniert hat.
 
 ## Schritt 5: Eine Outlook Connector Action als Tool hinzufügen
 
@@ -162,26 +162,26 @@ Erwartet: Die Office 365 Outlook Action **Send an email (V2)** erscheint mit Ihr
 
 ## Schritt 6: Den Food Catalog MCP Server der Klasse registrieren und hinzufügen
 
-Ein MCP Server gibt dem Agent über das Model Context Protocol einen standardisierten, gemeinsamen Satz von Tools statt einer einzelnen Connector Action. Die Klasse hostet den Food Catalog von Northwind als MCP Server, damit der Assistant Gerichte, aktuelle Preise und Lagerbestände live lesen kann, ohne dass Sie einzelne Actions verdrahten. Weil die Connection den Streamable Transport nutzt, kommen spätere Änderungen am Server an, ohne dass Sie den Agent neu veröffentlichen.
+Ein MCP Server gibt dem Agent über das Model Context Protocol einen standardisierten, gemeinsamen Satz von Tools statt einer einzelnen Connector Action. Die Klasse hostet den Food Catalog von Happy Longnose als MCP Server, damit der Assistant Gerichte, aktuelle Preise und Lagerbestände live lesen kann, ohne dass Sie einzelne Actions verdrahten. Weil die Connection den Streamable Transport nutzt, kommen spätere Änderungen am Server an, ohne dass Sie den Agent neu veröffentlichen.
 
 ![Ein Agent greift über eine einzige Tools-Oberfläche in drei Formen nach außen: ein Connector für eine Action gegen einen Service, etwa Send an email in Outlook, ein MCP Server für eine Connection zu einem gemeinsamen Satz von Tools und ein Workflow für eine feste Abfolge von Schritten vom Input zum Output.](../../../demos/06-cs-copilot-harness/pptx/images/04-01-connectors-mcp-workflows.svg)
 
 1. Wählen Sie auf dem Tab **Build** das **+** neben **Tools**.
 2. Wählen Sie in **Add a tool** den Eintrag **+ Add** und dann **Model Context Protocol (MCP)**.
 3. Registrieren Sie den Server: Füllen Sie in **Add MCP server** die Felder unten aus und wählen Sie dann **Add**.
-   - Server name: `Northwind Food Catalog`
+   - Server name: `Happy Longnose Food Catalog`
    - Server description: der Text unten, damit der Orchestrator weiß, wann er den Server aufrufen soll
    - Server URL: `https://lab-food-catalog-api.azurewebsites.net/api/mcp`
    - Authentication: **None**
 
 ```text
-Use this server to look up Northwind's live food catalog: dishes, current prices, and units in stock. Prefer it over uploaded documents when the seller asks about the current price or stock of a food item. Only read from it; never add, update, or delete catalog items.
+Use this server to look up Happy Longnose's live food catalog: dishes, current prices, and units in stock. Prefer it over uploaded documents when the seller asks about the current price or stock of a food item. Only read from it; never add, update, or delete catalog items.
 ```
 
 4. Verbinden Sie den registrierten Server mit dem Agent: Öffnen Sie unter **Select a connection** die Liste **Not connected**, wählen Sie **Create new connection**, im Dialog der Connection **Create** und dann **Add**, und wählen Sie **Save**, bevor Sie das Tool öffnen (bei ungespeicherten Änderungen erscheint **Leave without saving?**, und **Discard** verwirft das neue Tool).
-5. Wählen Sie unter **Tools** den Eintrag **Northwind Food Catalog**, um **Edit tool** zu öffnen. Schalten Sie unter **Tool permissions** die Tools **Add food item**, **Update food item**, **Update food item stock** und **Delete food item** aus, lassen Sie **Get all food items** und **Get food items by name** eingeschaltet, wählen Sie **Done** und dann **Save**.
+5. Wählen Sie unter **Tools** den Eintrag **Happy Longnose Food Catalog**, um **Edit tool** zu öffnen. Schalten Sie unter **Tool permissions** die Tools **Add food item**, **Update food item**, **Update food item stock** und **Delete food item** aus, lassen Sie **Get all food items** und **Get food items by name** eingeschaltet, wählen Sie **Done** und dann **Save**.
 
-Erwartet: **Northwind Food Catalog** erscheint in der Liste **Tools** neben der Outlook Action, und seine **Tool permissions** erlauben nur lesende Tools wie **Get all food items** und **Get food items by name**. Der Agent hat jetzt zwei Arten von Quellen, hochgeladene Dokumente für Accounts und Bestellungen und einen Live-Server für Preise und Lagerbestände, und der nächste Schritt zwingt ihn, sie zu kombinieren.
+Erwartet: **Happy Longnose Food Catalog** erscheint in der Liste **Tools** neben der Outlook Action, und seine **Tool permissions** erlauben nur lesende Tools wie **Get all food items** und **Get food items by name**. Der Agent hat jetzt zwei Arten von Quellen, hochgeladene Dokumente für Accounts und Bestellungen und einen Live-Server für Preise und Lagerbestände, und der nächste Schritt zwingt ihn, sie zu kombinieren.
 
 > **Hinweis:** Der Food Catalog Server stellt einen standardisierten Satz von Tools bereit, deshalb haben Sie keine einzelnen Actions definiert. Alle Teilnehmenden teilen sich diesen Katalog, und er bietet auch schreibende Tools an; deshalb haben Sie diese ausgeschaltet, und die Beschreibung beschränkt den Agent aufs Lesen. Wird der Server später aktualisiert, macht der Streamable Transport diese Änderungen für Ihren Agent sichtbar, ohne dass Sie neu veröffentlichen.
 
@@ -189,7 +189,7 @@ Erwartet: **Northwind Food Catalog** erscheint in der Liste **Tools** neben der 
 
 Hier macht der Enhanced Orchestrator seinem Namen Ehre. Die Runtime ist immer aktiv und schlussfolgert in mehreren Schritten, sodass eine einzige Frage sie zwingen kann, die gegroundeten Dokumente mit einem Live-Lookup im Katalog zu kombinieren und die Reihenfolge selbst zu planen. Sie stellen eine Frage in Form eines Briefings und klappen dann die Liste der Schritte unter der Antwort auf, um den Plan zu sehen, den der Orchestrator gebaut hat; so verstehen und debuggen Sie am schnellsten, wie der Agent denkt.
 
-![Die Frage aus Schritt 7 zu Around the Horn geht an den Orchestrator, der die Bestellung in northwind-accounts, die Tier 2 Lead Time in northwind-products und Preis und Lagerbestand von Kaiserschmarrn im Northwind Food Catalog MCP Server nachschlägt und dann eine einzige Antwort liefert, deren Plan die Liste der Schritte zeigt.](./_images/chained-plan-knowledge-and-mcp.svg)
+![Die Frage aus Schritt 7 zu Around the Horn geht an den Orchestrator, der die Bestellung in happy-longnose-accounts, die Tier 2 Lead Time in happy-longnose-products und Preis und Lagerbestand von Kaiserschmarrn im Happy Longnose Food Catalog MCP Server nachschlägt und dann eine einzige Antwort liefert, deren Plan die Liste der Schritte zeigt.](./_images/chained-plan-knowledge-and-mcp.svg)
 
 1. Öffnen Sie den Tab **Preview**.
 2. Senden Sie diese Nachricht:
@@ -231,7 +231,7 @@ Ein Workflow übernimmt einen wiederkehrenden, deterministischen Prozess, den de
 5. Wählen Sie unter **Inputs** den Eintrag **Add an input** und dann **Text**. Ersetzen Sie den vorbelegten Namen und die Beschreibung (**Please enter your input**) durch den Namen `accountName` und diese Beschreibung:
 
 ```text
-The Northwind account the follow-up is about, for example Around the Horn.
+The Happy Longnose account the follow-up is about, for example Around the Horn.
 ```
 
 6. Wählen Sie noch zweimal **Add an input** und erstellen Sie diese beiden, beide vom Typ **Text**:
@@ -267,7 +267,7 @@ Use this workflow to send an approved follow-up email after a customer call. Cal
 4. Lassen Sie für `accountName` **Fill with Intelligence** ausgewählt, wählen Sie **Improve Intelligence fill** und fügen Sie diese Beschreibung ein:
 
 ```text
-The Northwind account the seller just spoke with. Take it from the conversation, for example Around the Horn.
+The Happy Longnose account the seller just spoke with. Take it from the conversation, for example Around the Horn.
 ```
 
 5. Lassen Sie für `followUpBody` **Fill with Intelligence** ausgewählt, wählen Sie **Improve Intelligence fill** und fügen Sie diese Beschreibung ein:
@@ -303,7 +303,7 @@ Prepare me for my call with Around the Horn, including today's price of Kaisersc
 4. Wenn Sie zufrieden sind, wählen Sie **Publish** und im Dialog **Publish agent**.
 5. Lesen Sie die Channel-Optionen unter **Add channels** (Teams and Microsoft 365, Demo website, App), damit Sie wissen, wo die Seller den Assistant erreichen, und schließen Sie dann den Dialog.
 
-Erwartet: Der Assistant schließt den vollständigen Ablauf in einer Unterhaltung in Preview ab, erzeugt ein formatiertes Briefing und danach eine entworfene Follow-up E-Mail und wird dann ohne Fehler veröffentlicht, wobei er die Channels auflistet, in denen er hinzugefügt werden kann. Ihr Northwind Sales Account Assistant ist jetzt live.
+Erwartet: Der Assistant schließt den vollständigen Ablauf in einer Unterhaltung in Preview ab, erzeugt ein formatiertes Briefing und danach eine entworfene Follow-up E-Mail und wird dann ohne Fehler veröffentlicht, wobei er die Channels auflistet, in denen er hinzugefügt werden kann. Ihr Happy Longnose Sales Account Assistant ist jetzt live.
 
 ## Troubleshooting
 
@@ -311,8 +311,8 @@ Erwartet: Der Assistant schließt den vollständigen Ablauf in einer Unterhaltun
 |---------|--------------|-----|
 | Die Seiten lauten Topics / Knowledge / Tools / Settings | Sie haben einen Standard Agent erstellt | Gehen Sie zurück zu **Agents** und erstellen Sie ihn neu mit **Agent** (GitHub Copilot) aus dem Menü **New agent**; ein Standard Agent lässt sich nicht konvertieren |
 | Die gegroundete Antwort ist korrekt, hat aber kein Zitat | Die Knowledge Source wird noch verarbeitet, oder die Zeile zum Zitieren wurde aus den Instructions entfernt | Warten Sie, bis der Status der Quelle bereit zeigt, prüfen Sie die Zeile "cite the source" aus Schritt 2 und fragen Sie erneut |
-| Die Liste der Schritte zeigt nur eine genutzte Quelle | Die Frage hat keinen Plan über mehrere Quellen erzwungen, oder eine Quelle ist nicht bereit | Stellen Sie die kombinierte Frage aus Schritt 7, die Bestellhistorie und einen Live-Preis braucht, und prüfen Sie, dass beide Dokumente und der Northwind Food Catalog unter **Knowledge** und **Tools** aufgelistet sind |
-| **Northwind Food Catalog** zeigt keine Tools oder **Not connected** | Die Connection wurde in Schritt 6 nicht erstellt | Öffnen Sie das Tool, wählen Sie **Create new connection** und dann **Create**, und speichern Sie den Agent |
+| Die Liste der Schritte zeigt nur eine genutzte Quelle | Die Frage hat keinen Plan über mehrere Quellen erzwungen, oder eine Quelle ist nicht bereit | Stellen Sie die kombinierte Frage aus Schritt 7, die Bestellhistorie und einen Live-Preis braucht, und prüfen Sie, dass beide Dokumente und der Happy Longnose Food Catalog unter **Knowledge** und **Tools** aufgelistet sind |
+| **Happy Longnose Food Catalog** zeigt keine Tools oder **Not connected** | Die Connection wurde in Schritt 6 nicht erstellt | Öffnen Sie das Tool, wählen Sie **Create new connection** und dann **Create**, und speichern Sie den Agent |
 | Der Agent bietet an, einen Eintrag im Katalog oder seinen Bestand zu ändern | Ein schreibendes Tool ist noch eingeschaltet, oder die Zeile zum reinen Lesen fehlt in der Beschreibung | Schalten Sie die schreibenden Tools unter **Tool permissions** aus (Schritt 6); bestätigen Sie in diesem Lab nie eine Änderung am Katalog |
 | Preview antwortet "You need credits to continue ... Error code: EnforcementUsageCredits" | Die Environment hat keine Copilot Credits mehr, und ein Microsoft Copilot Harness Agent verbraucht in Preview Credits | Bitten Sie den Admin, der Environment Copilot Credits zuzuweisen, und senden Sie die Nachricht erneut |
 | Der hochgeladene Skill ändert die Form des Briefings nicht | Der Skill wurde importiert, aber nicht ausgelöst, oder die Anfrage passte nicht zu seiner Description | Fragen Sie ausdrücklich nach einem Account Brief, damit die Anfrage zur Description von account-research passt; prüfen Sie, dass der Skill unter **Skills** aufgelistet ist |
@@ -324,7 +324,7 @@ Erwartet: Der Assistant schließt den vollständigen Ablauf in einer Unterhaltun
 
 ## Zusammenfassung
 
-Sie haben den Northwind Sales Account Assistant gebaut: einen Microsoft Copilot Harness Agent, aus einer Beschreibung erstellt, mit Instructions abgegrenzt, auf zwei Dokumenten gegroundet, mit einer Outlook Action und dem Food Catalog MCP Server der Klasse verbunden, um einen wiederverwendbaren Skill account-research erweitert, mit einem veröffentlichten Follow-up Workflow verdrahtet, dessen Inputs der Agent füllt, und für die Seller veröffentlicht. Sie können jetzt:
+Sie haben den Happy Longnose Sales Account Assistant gebaut: einen Microsoft Copilot Harness Agent, aus einer Beschreibung erstellt, mit Instructions abgegrenzt, auf zwei Dokumenten gegroundet, mit einer Outlook Action und dem Food Catalog MCP Server der Klasse verbunden, um einen wiederverwendbaren Skill account-research erweitert, mit einem veröffentlichten Follow-up Workflow verdrahtet, dessen Inputs der Agent füllt, und für die Seller veröffentlicht. Sie können jetzt:
 
 - Einen Microsoft Copilot Harness Agent aus einer Beschreibung in natürlicher Sprache erstellen und seinen Scope festlegen.
 - Einen Agent auf mehreren Knowledge Sources grounden und zitierte Antworten in **Preview** bestätigen.

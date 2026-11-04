@@ -2,9 +2,6 @@
 
 In diesem Lab lernen Sie, eigene Topics in Microsoft Copilot Studio zu erstellen. Topics sind zentrale Bausteine eines Agents. Mit Topics bieten Sie Ihren End Usern eine Conversational Experience, als Single-Turn oder als Multi-Turn Unterhaltung. Topics legen über klar abgegrenzte Interaktionspfade fest, wie sich die Unterhaltung zwischen User und Agent entwickeln kann.
 
-
-> **Hinweis:** Dieses Lab baut auf dem vorigen auf, [Den HR Agent mit SharePoint Knowledge erden](../02-knowledge/lab-01-ground-with-sharepoint-de.md). Sie arbeiten am selben Agent weiter und erweitern seine Funktionen um neue Capabilities.
-
 Topics erstellen Sie mit einem grafischen Designer oder indem Sie den Intent in natürlicher Sprache beschreiben. Ein fertiges Topic können Sie außerdem in einem Low-Level Code Editor bearbeiten, wenn Sie Details feinjustieren müssen.
 
 Es gibt zwei Arten von Topics:
@@ -20,9 +17,42 @@ In diesem Lab lernen Sie:
 - Wie Sie ein Single-Turn Topic erstellen
 - Wie Sie ein Multi-Turn Topic erstellen
 
+## Den HR Agent einrichten
+
+Dieses Lab startet mit dem HR Agent, seinen Instructions und der Microsoft Careers Site als Knowledge. Wenn Sie ihn in [Ihren ersten Copilot Studio Agent erstellen](../01-standard-agents/lab-01-create-your-first-agent-de.md) oder [Den HR Agent mit SharePoint Knowledge erden](../02-knowledge/lab-01-ground-with-sharepoint-de.md) gebaut haben, öffnen Sie ihn unter **Agents** und machen mit Übung 1 weiter. Andernfalls erstellen Sie ihn jetzt:
+
+1. Rufen Sie [Copilot Studio](https://copilotstudio.microsoft.com) auf, wählen Sie auf **Home** den Befehl **Other ways to build** und dann unter **Build with standard orchestration** den Eintrag **Agent** mit dem Badge **Standard**.
+2. Geben Sie im Dialog **Name your agent** den Namen `HR Agent` ein und wählen Sie **Create**.
+3. Warten Sie, bis der Agent eingerichtet ist (die Befehle **Edit** bleiben etwa eine Minute deaktiviert). Wählen Sie dann im Tab **Overview** im Abschnitt **Details** den Befehl **Edit**, fügen Sie den folgenden Text in **Description** ein und wählen Sie **Save**.
+
+```txt
+You help employees to find information about HR related policies
+```
+
+4. Wählen Sie im Abschnitt **Instructions** den Befehl **Edit**, fügen Sie die folgenden Instructions ein und wählen Sie **Save**.
+
+```txt
+- Provide employees with clear, accurate information about HR policies and procedures.
+- Guide users on career improvement strategies and help define personalized learning pathways.
+- Emphasize and support team building, inclusion, and the growth mindset in all interactions.
+- Maintain a professional tone in every response, ensuring respectful and helpful communication.
+- Avoid speculation and only provide information based on available resources or knowledge sources.
+- Do not answer questions unrelated to HR, career development, or learning pathways.
+- Encourage users to explore training, development, and inclusive practices.
+- Respond promptly and clearly to all user queries.
+```
+
+5. Wählen Sie im Abschnitt **Knowledge** den Befehl **+ Add knowledge** > **Public websites**, geben Sie `https://careers.microsoft.com/` ein und wählen Sie **Add**. Nennen Sie die Site `Microsoft Careers site`, fügen Sie die folgende Beschreibung ein und wählen Sie **Add to agent**.
+
+```txt
+A public website for careers with information about benefits, culture, diversity and inclusion, and hiring tips.
+```
+
+Erwartet: Der Tab **Overview** des HR Agent zeigt die Description, die Instructions und unter **Knowledge** die **Microsoft Careers site**.
+
 ## Übung 1: Orchestration auf Basis von Generative AI
 
-In dieser ersten Übung aktivieren Sie für den Agent, den Sie in [Ihren ersten Copilot Studio Agent erstellen](../01-standard-agents/lab-01-create-your-first-agent-de.md) erstellt haben, die Orchestration auf Basis von Generative AI, zum Zeitpunkt der Erstellung dieses Labs ein neues Feature in Preview.
+In dieser ersten Übung aktivieren Sie für den HR Agent die Orchestration auf Basis von Generative AI, zum Zeitpunkt der Erstellung dieses Labs ein neues Feature in Preview.
 
 ### Schritt 1: Generative AI Orchestration verstehen
 
@@ -36,7 +66,7 @@ In Copilot Studio können Sie außerdem **Deep reasoning** (ein Preview Feature)
 
 Um Orchestration und Deep Reasoning zu konfigurieren, öffnen Sie einen Browser und rufen mit dem Work Account Ihres Microsoft 365 Ziel-Tenants [https://copilotstudio.microsoft.com](https://copilotstudio.microsoft.com) auf, um mit Microsoft Copilot Studio zu arbeiten.
 
-Öffnen Sie die Liste der 1️⃣ **Agents** und 2️⃣ bearbeiten Sie den Agent, den Sie im vorigen Lab 02 erstellt haben.
+Öffnen Sie die Liste der 1️⃣ **Agents** und 2️⃣ bearbeiten Sie den HR Agent.
 
 ![Die Oberfläche von Microsoft Copilot Studio beim Durchsuchen der Agents und bei der Auswahl eines Agents zum Bearbeiten.](./_images/edit-agent-01.png)
 
@@ -44,7 +74,7 @@ Wählen Sie den Befehl **Settings** rechts oben im Bildschirm, wie im folgenden 
 
 ![Die Oberfläche von Microsoft Copilot Studio mit hervorgehobenem Befehl "Settings".](./_images/edit-settings-01.png)
 
-Der erste Abschnitt der Settings ist **Orchestration**. Dort wählen Sie zwischen **generative AI orchestration** und **classic orchestration** und können **Deep reasoning** aktivieren. Copilot Studio braucht meist eine Weile, bis die Orchestration Settings aktualisiert sind. Sobald die Einstellung übernommen ist, schließen Sie das Settings-Fenster und publishen den Agent, um die Änderungen zu bestätigen.
+Settings öffnet die Seite **Generative AI** mit der Frage **Use generative AI orchestration for your agent's responses?**: **Yes** behält die Generative AI Orchestration, die ein neuer Agent bereits nutzt, und **No** schaltet auf Classic Orchestration um. Auf derselben Seite können Sie **Deep reasoning** aktivieren. Wenn Sie eine Einstellung ändern, wählen Sie unten auf der Seite **Save** und publishen den Agent, um die Änderungen zu bestätigen.
 
 ![Die Oberfläche von Microsoft Copilot Studio mit hervorgehobenem Befehl "Settings".](./_images/generative-orchestration-01.png)
 
@@ -112,10 +142,7 @@ Benennen Sie die Variable zum Beispiel in `UserRole` um. So sieht die Action aus
 
 ### Schritt 3: Dem User Feedback geben
 
-Wählen Sie jetzt die Schaltfläche **+** in der Mitte des Bildschirms und dann **Add a condition**. Wählen Sie im linken Branch die Option **Select a variable** und dann die Variable **UserRole**, die Sie im vorigen Schritt erstellt haben (die Condition Card zeigt sie als **UserRole choice**).
-
-Das Feld für den Vergleichswert ist zunächst leer: Öffnen Sie es und wählen Sie die Option im Dropdown, sodass die Condition `UserRole is equal to Candidate` lautet.
-Wiederholen Sie diese Schritte zweimal für die Conditions `UserRole is equal to Employee` und `UserRole is equal to HR staff member`. Lassen Sie die letzte Condition für `All other conditions` stehen.
+Unter dem Node **Ask a question** hat Copilot Studio bereits einen **Condition** Branch pro Option auf der Variable **UserRole** angelegt (die Condition Cards zeigen sie als **UserRole choice**): `UserRole is equal to Candidate`, `UserRole is equal to Employee` und `UserRole is equal to HR staff member`. Ein vierter Branch, **All other conditions**, führt zum Topic **Fallback**. Prüfen Sie, dass jede Condition ihre Option als Wert zeigt.
 
 In jedem Branch können Sie eigene Logik hinterlegen, um dem User ein passendes Feedback zu geben. Wählen Sie dazu den Befehl **+** unter jedem **Condition** Branch und fügen Sie eine Action vom Typ **Send a message** hinzu. Bei Bedarf fügen Sie jedem Branch auch mehrere Actions hinzu.
 
@@ -167,6 +194,8 @@ Collect user's role and provide feedback
 Eine lockerere Formulierung wie "What's your feedback for my role?" kann der Agent statt mit diesem Topic aus den Knowledge Sources beantworten.
 
 Der Agent fordert Sie auf, eine Rolle zu wählen, und je nach Auswahl erhalten Sie ein spezifisches Feedback, wie im folgenden Screenshot.
+
+> **Hinweis:** Im Test Panel kann der Agent das Topic direkt nach dem Feedback erneut starten und noch einmal "What is your role?" fragen. Starten Sie dann eine neue Test Session, um weiterzumachen.
 
 ![Der Agent in Aktion im Test Panel von Microsoft Copilot Studio.](./_images/create-topic-single-turn-09.png)
 
@@ -245,7 +274,7 @@ Konfigurieren Sie die Action so, dass sie die Antworten `Yes` und `No` unterstü
 ![Der letzte Teil des Topics mit der letzten Action **Ask a question**, drei Branches für den Input des Users und einer abschließenden Action **End current topic**.](./_images/create-topic-multi-turn-05.png)
 
 Jetzt können Sie das Topic speichern, ihm einen Namen wie zum Beispiel `Register a new candidate` geben und es in der integrierten Testumgebung testen.
-Der folgende Screenshot zeigt die Interaktion mit dem Multi-Turn Topic. Außerdem sehen Sie: Ist der Wert für das E-Mail-Feld ungültig, fordert Copilot Studio den User automatisch erneut zu einem gültigen Wert auf.
+Der folgende Screenshot zeigt die Interaktion mit dem Multi-Turn Topic. Außerdem sehen Sie: Ist der Wert für das E-Mail-Feld ungültig, fordert Copilot Studio den User automatisch erneut zu einem gültigen Wert auf. Wie in Übung 2 kann der Agent nach dem 👍 erneut nach dem Vornamen fragen; starten Sie dann eine neue Test Session, um weiterzumachen.
 
 ![Die Interaktion mit dem Multi-Turn Topic: eine Reihe von Fragen und Antworten, die alle Daten der Kandidatin oder des Kandidaten erfassen.](./_images/create-topic-multi-turn-06.png)
 

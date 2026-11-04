@@ -43,6 +43,6 @@ Orchestration runs in the installed plugins and the house rules in `~/.claude/CL
 
 - **Plan first** for anything non-trivial (3+ steps or an architectural decision): write it to `tasks/todo.md`, check in, then track progress there.
 - **Verify before reporting done.** Run the check, show the command and its output. A claim is not a receipt.
-- **Review `tasks/lessons.md`** at session start with a `grep` for the task's topic, never a full read in the opening turn (the lookup guard's 20,000-character budget); `claude-learn`'s `instruction-audit` gate prunes it and this file.
+- **Review `tasks/lessons.md`** at session start with a `grep` for the task's topic, never a full read in the opening turn, and read a window (`offset`, `limit`) around a line the owner names instead of the whole file (the lookup guard's 20,000-character budget); `claude-learn`'s `instruction-audit` gate prunes it and this file.
 - **Simplicity first**: minimal diff, root causes over patches, no rewrite to fix a typo.
 - **Tutorial over library**: clear explanations and copy-paste examples over reusable abstractions.

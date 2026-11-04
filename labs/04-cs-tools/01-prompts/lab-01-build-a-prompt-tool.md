@@ -8,7 +8,7 @@ For this lab you need:
 
 - A computer with internet access.
 - Access to the provided Microsoft tenant (some companies enforce users to only connect to their company tenant) or your own enterprise tenant with a Copilot Studio User License (or trial).
-- An agent you can edit, for example the HR agent from the earlier labs. Task 1 adds the topic **Check Ticket Status** to it with sample ticket data, so no ServiceNow instance is needed.
+- An agent you can edit, for example the HR agent. If you have none, create one: on **Home** select **Other ways to build**, then **Agent** with the **Standard** badge, and name it `HR Agent`. Task 1 adds the topic **Check Ticket Status** to it with sample ticket data, so no ServiceNow instance is needed.
 - Authentication set to "Authenticate with Microsoft" (in Settings, Security, Authentication).
 
 ## AI Builder prompts

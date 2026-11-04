@@ -3,8 +3,6 @@
 In this lab, you'll learn how to create Tools in Microsoft Copilot Studio. Tools are another core building block of an agent. With tools you can extend the capabilities of your agent by adding support for external Power Platform connectors (native or custom), external REST APIs, Power Automate flows, MCP (Model Context Protocol) servers, etc.
 
 
-> **Note:** This lab builds on the previous one, [Define Topics, Entities, and Variables](../../03-cs-basics/03-topics/lab-01-build-topics.md). You should be able to continue working on the same agent, improving its functionalities with new capabilities.
-
 Tools can be created with a graphical designer. Once you have created a new Tool, you can also edit its definition with a low level code editor, in case you need to apply detailed fine tuning.
 
 In this lab you will learn:
@@ -13,9 +11,36 @@ In this lab you will learn:
 - How to create a tool to invoke a Power Automate flow
 - How to invoke tools from topics
 
+## Set up the HR Agent
+
+This lab starts from a Standard agent named HR Agent with its description and instructions. If you built it in the Basics labs, for example in [Create Your First Copilot Studio Agent](../../03-cs-basics/01-standard-agents/lab-01-create-your-first-agent.md), open it from **Agents** and skip this section. Otherwise create it now:
+
+1. Go to [Copilot Studio](https://copilotstudio.microsoft.com), on **Home** select **Other ways to build**, then, under **Build with standard orchestration**, select **Agent** with the **Standard** badge.
+2. In the **Name your agent** dialog, enter `HR Agent` and select **Create**.
+3. Wait until the agent has finished setting up (the **Edit** commands stay disabled for about a minute). On the **Overview** tab, select **Edit** in the **Details** section, paste the following text into **Description** and select **Save**.
+
+```txt
+You help employees to find information about HR related policies
+```
+
+4. Select **Edit** in the **Instructions** section, paste the following instructions and select **Save**.
+
+```txt
+- Provide employees with clear, accurate information about HR policies and procedures.
+- Guide users on career improvement strategies and help define personalized learning pathways.
+- Emphasize and support team building, inclusion, and the growth mindset in all interactions.
+- Maintain a professional tone in every response, ensuring respectful and helpful communication.
+- Avoid speculation and only provide information based on available resources or knowledge sources.
+- Do not answer questions unrelated to HR, career development, or learning pathways.
+- Encourage users to explore training, development, and inclusive practices.
+- Respond promptly and clearly to all user queries.
+```
+
+Expected: the **Overview** tab of HR Agent shows the description and the instructions.
+
 ## Exercise 1 : Creating tools in Microsoft Copilot Studio
 
-In this exercise you are going to enhance the agent that you created in [Define Topics, Entities, and Variables](../../03-cs-basics/03-topics/lab-01-build-topics.md) to use Excel Online to retrieve a hypotethical list of candidates from an Excel spreadsheet stored in a SharePoint Online document library. Then you will add a tool to consume a Power Automate flow that can add new candidates to the same spreadsheet.
+In this exercise you are going to enhance the HR Agent to use Excel Online to retrieve a hypotethical list of candidates from an Excel spreadsheet stored in a SharePoint Online document library. Then you will add a tool to consume a Power Automate flow that can add new candidates to the same spreadsheet.
 
 ![The HR agent in Copilot Studio with two tools: List HR candidates reads Candidates_Table through Excel Online (Business), and the agent flow behind Insert new candidate for HR adds a row to the same table. Generative orchestration can call both tools; the topic Add a new candidate to Excel calls the insert tool.](./_images/hr-agent-excel-tools-overview.svg)
 
@@ -29,10 +54,10 @@ A dialog window titled **Add tool** pops up allowing you to choose what kind of 
 
 ![The interface of Microsoft Copilot Studio when creating a new tool. There is the list of "Featured" tools and the command "+ New tool" to create a new tool.](./_images/create-action-excel-connector-02a.png)
 
-You can also create a new tool from scratch with the **Add new** tiles (**Computer use**, **Workflows**, **Prompt**, **MCP**) or **See more**, which offers the following options:
+You can also create a new tool from scratch with the **Add new** tiles **Computer use**, **Workflows**, **Prompt** and **MCP**; **See more** adds **REST API** and **Custom connector**. The options are:
 
 - Prompt: allows consuming an AI tool built using a prompt written in natural language.
-- Agent flow: allows consuming a Power Automate flow (see [Step 3](#step-3-consuming-an-agent-flow)).
+- Workflows: allows consuming a Power Automate agent flow (see [Step 3](#step-3-consuming-an-agent-flow)).
 - Computer use: to allow your agent to directly use web and desktop apps.
 - Custom connector: allows consuming a Power Platform custom connector.
 - REST API: allows consuming an external REST API. You can find additional details [here](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-rest-api).
@@ -42,7 +67,7 @@ You can also create a new tool from scratch with the **Add new** tiles (**Comput
 
 If you don't find the option you are looking for in the list of popular items, simply switch to the **All** group and search by text what you are looking for.
 
-To complete the current step, choose the tool **Excel Online (Business)** and then select **List rows present in a table**. First of all, you will need to connect to the external connector simply selecting the **Connection** and then **Create new connection**. A **Connect to Excel Online (Business)** dialog asks for an optional **Display name**, and then an account picker opens.
+To complete the current step, choose the tool **Excel Online (Business)** and then select **List rows present in a table**. If no connection is preselected, open the **Connection** dropdown, select **Create new connection** and then **Create**. A **Connect to Excel Online (Business)** dialog asks for an optional **Display name**, and then an account picker opens.
 
 ![The dialog to connect to the target Power Platform connector with details about the connection, if any, or a button to create a new connection. There is also a back button to start over.](./_images/create-action-excel-connector-03.png)
 
@@ -58,7 +83,7 @@ Next, you get a page to configure the actual tool. You need to provide:
 - Completion: defines how the tool handles the request and response to the user.
 
 Before configuring the tool, you need to prepare the Excel spreadsheet with the list of candidates.
-Download a sample Excel file by selecting this [link](https://github.com/microsoft/copilot-camp/blob/main/src/make/copilot-studio/Candidates/Sample-list-of-candidates.xlsx?raw=true).
+Download a sample Excel file by selecting this [link](https://github.com/alexander-kastil/copilot-studio-agents/blob/master/src/assets/candidates/Sample-list-of-candidates.xlsx?raw=true).
 
 Upload the downloaded file yourself to the **Documents** library of a SharePoint Teams site in the same tenant where you are making your agent with Copilot Studio. The document was generated by Microsoft 365 Copilot for the sake of having a hypothetical list of candidates.
 
@@ -75,8 +100,8 @@ Use the following settings:
 - Name: List HR candidates
 - Description: List candidates for an HR role
 
-Then select the **Inputs** tab and start configuring the input arguments.
-By default, all the mandatory input arguments have been configured so that their value will be `Dynamically fill with AI` as you can notice in the **Fill as** property of each input argument.
+Then select **Inputs** in the sections on the left and start configuring the input arguments.
+By default, all the mandatory input arguments have been configured so that their value will be `Dynamically fill with AI` as you can notice in the **Fill using** column of each input argument.
 
 ![The tab to configure the input arguments of the tool. There is a list of arguments with specific settings for each of them and with "Fill as" with value "Dynamically fill with AI".](./_images/create-action-excel-connector-05.png)
 
@@ -85,8 +110,8 @@ By default, all the mandatory input arguments have been configured so that their
 Use the following static values:
 
 - Location: pick the SharePoint site where you stored the Excel spreadsheet from the list, shown as **SharePoint Site - <site name>**.
-- Document Library: use the name of the document library where you stored the Excel spreadsheet. For example: `Shared Documents`.
-- File: provide the name of the Excel file. For example: `Sample-list-of-candidates.xlsx`.
+- Document Library: use the name of the document library where you stored the Excel spreadsheet. For example: `Documents`.
+- File: provide the name of the Excel file. For example: `Sample-list-of-candidates.xlsx`. If you pick the file with the file browser, the field shows the file's id instead of its name.
 - Table: `Candidates_Table`
 
 You can browse the sites, libraries, files, and tables through the native UI of Microsoft Copilot Studio.
@@ -99,7 +124,7 @@ Now select the **Save** button in the upper right corner of the screen to save t
 
 You are now ready to publish the updated agent and to play with it in the integrated test panel or in Microsoft Teams.
 
-Since in [Define Topics, Entities, and Variables](../../03-cs-basics/03-topics/lab-01-build-topics.md) you enabled generative orchestration, it is really easy to invoke the just created tool simply providing to the agent a prompt like the following one:
+Since the agent uses generative orchestration, it is really easy to invoke the just created tool simply providing to the agent a prompt like the following one:
 
 ```txt
 Show me the list of candidates for an HR role
@@ -107,7 +132,7 @@ Show me the list of candidates for an HR role
 
 Something really nice of Copilot Studio when using the generative orchestration and invoking prompts within the test panel is that by default you get an Activity map to investigate how the orchestrator works. In the following screenshot you can see the Activity map for the prompt suggested before. The orchestrator indentifies the user's intent, based on the prompt, and triggers the tool that you created in Step 1. You can also validate the manually defined input arguments.
 
-Since the Power Platform connector requires a valid connection in place, the test panel shows a **Connect to continue** card with **Allow** and **Cancel** before the agent can consume the external data source. Select **Allow**.
+Since the Power Platform connector requires a valid connection in place, the test panel can show a **Connect to continue** card with **Allow** and **Cancel** before the agent consumes the external data source. If it appears, select **Allow**.
 
 ![The agent serving the suggested prompt. There is the Activity map in the main body of the page, with all the manually defined input arguments. There is also, in the test panel a prompt to connect to the external connector.](./_images/create-action-excel-connector-09.png)
 
@@ -125,11 +150,11 @@ To create such a tool, in the upper side of the screen select the **Tools** tab,
 
 ![The initial design of the Agent flow to define a custom tool for an agent. There is a trigger action with name "When an agent calls the flow" and there is a closing action with name "Respond to the agent".](./_images/create-action-flow-connector-01.png)
 
-The flow has an initial triggering action with name `When an agent calls the flow` and a final action with name `Respond to the agent`. The overall idea is that you can define your own business process between these two flow actions and the Copilot Studio tool will trigger the business process for you, eventually providing one or more input arguments and providing a response back to the agent. Select the first action to edit its properties. You can configure a set of input arguments for the flow, so that Copilot Studio will be able to feed the flow through the action upon activation.
+The flow has an initial triggering action with name `When an agent calls the flow` and a final action with name `Respond to the agent`. The overall idea is that you can define your own business process between these two flow actions and the Copilot Studio tool will trigger the business process for you, eventually providing one or more input arguments and providing a response back to the agent. Select the first action to edit it: the trigger expands inline, and **Open panel** on an action shows its parameters and its code view. You can configure a set of input arguments for the flow, so that Copilot Studio will be able to feed the flow through the action upon activation.
 
 ![The properties of the trigger action with four input arguments for firstname, lastname, role, and expertise. There is also the list of supported type for input arguments.](./_images/create-action-flow-connector-02.png)
 
-For the sake of being able to add new candidates, add four input parameters to the trigger one by one with **Add an input** > **Text**:
+For the sake of being able to add new candidates, add four input parameters to the trigger one by one with **Add an input** > **Text**, and give each one a description such as `The candidate's first name`, so that the agent fills the right value into each input:
 
 - Firstname: text
 - Lastname: text
@@ -143,7 +168,7 @@ Rename the action into `Add new candidate row`. In the following screenshot you 
 
 ![The properties of the flow action to add a new row to the Excel spreadsheet table. There are the coordinates of the target file and the column fields mapping to the input argument of the triggering action invoked by Copilot.](./_images/create-action-flow-connector-03.png)
 
-Now select the final action `Respond to the agent`, edit its properties and add an output parameter with **Add an output** > **Text** with name `Result`. Set the value of the output parameter to a formula that renders a message like the following one:
+Now select the final action `Respond to the agent`, edit its properties and add an output parameter with **Add an output** > **Text** with name `Result`. Set the value of the output parameter to a formula that renders a message like the following one, and press **Tab** after you enter it, because **Save draft** drops a value that still has the focus:
 
 ```text
 The candidate @{triggerBody()?['text']} @{triggerBody()?['text_1']} was inserted into the HR Excel spreadsheet as @{triggerBody()?['text_2']} with expertise @{triggerBody()?['text_3']}.
@@ -151,7 +176,7 @@ The candidate @{triggerBody()?['text']} @{triggerBody()?['text_1']} was inserted
 
 ![The properties of the flow action `Respond to the agent`. There is an output parameter with a calculated value based on the input parameters provided and confirming that the candidate was inserted into the target list.](./_images/create-action-flow-connector-04.png)
 
-Now **Save draft**, update the name of the flow in the **Overview** tab with **Details** > **Edit** (the first save names the flow after its trigger, `manual`).
+Now **Save draft**, update the name of the flow in the **Overview** tab with **Details** > **Edit** (after the first save the flow is still named **Untitled**, and its trigger is named `manual`).
 
 You can use a name like for example `Insert new candidate for HR`. Publish the flow and go back to the agent where you were editing the tool. Open again the dialog window to add a new tool, select **Workflows** as the filter and you will be able to see the new Agent flow that you just created. If not, try searching for its name.
 
@@ -263,7 +288,7 @@ At the end, the tool action will look like in the following image.
 
 Add an action to **End current topic** and save it.
 
-Now, disable any other topic that you created in the Basics labs and invoke the new topic to insert a new candidate row into the Excel spreadsheet using the following prompt:
+Now, disable any other custom topic of the agent in the **Enabled** column, such as **Goodbye**, **Greeting**, **Start Over** and **Thank you** on a new agent or the topics of the Basics labs, and invoke the new topic to insert a new candidate row into the Excel spreadsheet using the following prompt:
 
 ```txt
 Add a new a new row to the persistence storage

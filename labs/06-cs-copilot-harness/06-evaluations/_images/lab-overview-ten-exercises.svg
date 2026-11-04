@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
 <title id="t">The ten exercises of the evaluation lab</title>
-<desc id="d">Exercises 1 to 3 prepare the agent: ground it in northwind-sales-reference.docx, install the weak baseline Instructions from agent-instructions-v1.txt, and smoke-test on Preview while predicting a verdict per case in the Case scorecard. Exercises 4 to 7 fill and configure the test set: a Quick conversation set of 10 generated conversations, an upload of northwind-test-set.csv with 7 conversations, one hand-written two-turn expedited delivery case so the set holds 8, and the Northwind regression set configured with General quality. Exercises 8 to 10 run it: Run 1 as the baseline, a diagnosis bucket for each failure, then one change to agent-instructions-v2.txt, Run 2, comparison and export. A highlight steps through the exercises in order.</desc>
+<desc id="d">Exercises 1 to 3 prepare the agent: ground it in happy-longnose-sales-reference.docx, install the weak baseline Instructions from agent-instructions-v1.txt, and smoke-test on Preview while predicting a verdict per case in the Case scorecard. Exercises 4 to 7 fill and configure the test set: a Quick conversation set of 10 generated conversations, an upload of happy-longnose-test-set.csv with 7 conversations, one hand-written two-turn expedited delivery case so the set holds 8, and the Happy Longnose regression set configured with General quality. Exercises 8 to 10 run it: Run 1 as the baseline, a diagnosis bucket for each failure, then one change to agent-instructions-v2.txt, Run 2, comparison and export. A highlight steps through the exercises in order.</desc>
 <rect width="1920" height="1080" fill="#ffffff"/>
 <defs>
 <style>
@@ -16,7 +16,7 @@
 <circle cx="112" cy="118" r="30" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
 <text class="h" x="112" y="128" font-size="28" text-anchor="middle">1</text>
 <text class="h" x="160" y="130" font-size="30">Ground the agent</text>
-<text class="c" x="96" y="205" font-size="28">northwind-sales-reference.docx</text>
+<text class="c" x="96" y="205" font-size="25">happy-longnose-sales-reference.docx</text>
 <text class="s" x="96" y="255" font-size="28">wait until it shows ready</text>
 
 <rect x="60" y="410" width="580" height="260" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
@@ -44,7 +44,7 @@
 <circle cx="762" cy="367" r="30" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
 <text class="h" x="762" y="377" font-size="28" text-anchor="middle">5</text>
 <text class="h" x="810" y="377" font-size="30">Upload the curated CSV</text>
-<text class="c" x="746" y="432" font-size="28">northwind-test-set.csv</text>
+<text class="c" x="746" y="432" font-size="28">happy-longnose-test-set.csv</text>
 <text class="s" x="746" y="475" font-size="28">7 conversations</text>
 
 <rect x="710" y="570" width="500" height="195" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
@@ -58,7 +58,7 @@
 <circle cx="762" cy="877" r="30" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
 <text class="h" x="762" y="887" font-size="28" text-anchor="middle">7</text>
 <text class="h" x="810" y="887" font-size="30">Configure the set</text>
-<text class="r" x="746" y="942" font-size="28">Northwind regression set</text>
+<text class="r" x="746" y="942" font-size="28">Happy Longnose regression set</text>
 <text class="s" x="746" y="985" font-size="28">General quality</text>
 
 <rect x="1280" y="60" width="580" height="260" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>

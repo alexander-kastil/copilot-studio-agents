@@ -1,6 +1,6 @@
 # Team-Wissen in einen portablen Skill packen
 
-Die Seller von Northwind Traders hören jede Woche dieselben Einwände von Kunden: Preis, Timing und Mitbewerber. Statt diese Anleitung in die Instructions jedes Agents zu kopieren, erfassen Sie sie einmal als portablen Agent Skill und verwenden ihn überall wieder, wo er gebraucht wird. Dieses Lab führt einen Low-Code Maker von einer rohen, wiederkehrenden Aufgabe zu einem teilbaren Skill Package, das auf zwei verschiedenen Agents läuft.
+Die Seller von Happy Longnose Ltd hören jede Woche dieselben Einwände von Kunden: Preis, Timing und Mitbewerber. Statt diese Anleitung in die Instructions jedes Agents zu kopieren, erfassen Sie sie einmal als portablen Agent Skill und verwenden ihn überall wieder, wo er gebraucht wird. Dieses Lab führt einen Low-Code Maker von einer rohen, wiederkehrenden Aufgabe zu einem teilbaren Skill Package, das auf zwei verschiedenen Agents läuft.
 
 Am Ende haben Sie ein Ergebnis: einen wiederverwendbaren Skill `objection-handling`, als ZIP verpackt, getestet, verfeinert und einem zweiten Agent hinzugefügt, um die Portabilität zu beweisen. Jeder Schritt baut auf dem vorherigen auf, lassen Sie also dieselbe Browser Session und dieselben Dateien die ganze Zeit geöffnet. Das Lab schließt mit einem Vergleich dieses Ansatzes mit dem Modell aus Topics und Trigger Phrases der Standard Agents, damit Sie erklären können, warum ein Skill die besser wiederverwendbare Wahl ist.
 
@@ -33,17 +33,31 @@ Am Ende haben Sie ein Ergebnis: einen wiederverwendbaren Skill `objection-handli
 |------|---------|
 | `lab-01-portable-skill/` | Ordner mit dem fertigen Skill Package für dieses Lab. |
 | `lab-01-portable-skill/SKILL.md` | Die Definition des Skills: YAML Front Matter (name, description) plus Instructions in Markdown. |
-| `lab-01-portable-skill/references/objection-handling.md` | Begleitendes Referenzdokument mit den Standardantworten von Northwind Traders auf Einwände. |
+| `lab-01-portable-skill/references/objection-handling.md` | Begleitendes Referenzdokument mit den Standardantworten von Happy Longnose Ltd auf Einwände. |
 
 ## Voraussetzungen
 
 - Eine Copilot Studio Environment, in der Sie Agents erstellen können (eine Power Platform Environment mit der Maker-Rolle).
 - Ihre eigene Environment: Wählen Sie unten in der linken Navigation den Namen der Environment (**Switch environment**) und prüfen Sie, dass unter **Current environment** die nach Ihrem Account benannte Environment steht, zum Beispiel `copilot-studio-01` (Sandbox) für `copilot-studio-01@mst.fastlane.net`. Arbeiten Sie das ganze Lab darin, nie in der gemeinsamen Default Environment.
-- Ein bereits gebauter Microsoft Copilot Harness Agent. Haben Sie keinen, führen Sie zuerst [Build and Ground Your First Microsoft Copilot Harness Agent](../../../demos/06-cs-copilot-harness/01-standard-vs-copilot-harness/demo-01-build-and-ground-an-agent.md) aus und lassen Sie diesen Agent Sales Assistant geöffnet.
+- Ein Microsoft Copilot Harness Agent. Haben Sie keinen, baut ihn [Den Sales Assistant einrichten](#den-sales-assistant-einrichten), oder Sie führen zuerst [Build and Ground Your First Microsoft Copilot Harness Agent](../../../demos/06-cs-copilot-harness/01-standard-vs-copilot-harness/demo-01-build-and-ground-an-agent.md) aus und lassen diesen Agent Sales Assistant geöffnet.
 - Ein zweiter Agent der neuen Art, auf dem Sie den Skill wiederverwenden (zum Beispiel ein Account Manager). Sie können ihn in Schritt 8 erstellen, falls Sie ihn noch nicht haben.
 - Ein einfacher Texteditor (Notepad, VS Code oder ähnlich) und das eingebaute ZIP-Tool Ihres Betriebssystems.
 
 > **Hinweis:** Ein Skill besteht nur aus einem Namen, einer Description und Markdown in einer Datei `SKILL.md`. Dasselbe offene Format nutzen auch die Skills von Claude Code und GitHub Copilot, deshalb lässt sich ein Skill, den Sie hier schreiben, dort importieren, und Skills von dort lassen sich in Copilot Studio importieren.
+
+## Den Sales Assistant einrichten
+
+Der Skill braucht einen Microsoft Copilot Harness Agent. Haben Sie bereits einen, verwenden Sie ihn und überspringen diesen Abschnitt. Andernfalls erstellen Sie ihn jetzt:
+
+1. Öffnen Sie in [Copilot Studio](https://copilotstudio.microsoft.com) die Seite **Agents**, öffnen Sie den Pfeil neben **New agent** und wählen Sie unter **Optimize your business processes** den Eintrag **Agent** mit dem Badge **GitHub Copilot**.
+2. Geben Sie im Namensfeld `Sales Assistant` ein.
+3. Fügen Sie im Abschnitt **Instructions** den folgenden Text ein und wählen Sie **Save** (das Disketten-Icon rechts oben; in einem schmalen Fenster **...** > **Save**).
+
+```text
+You are the Sales Assistant. You help Happy Longnose Ltd sellers by answering short questions about our products, standard lead times, and account tiers. Keep answers brief, factual, and professional.
+```
+
+Erwartet: "Your agent has been saved." erscheint, und der Sales Assistant bleibt auf seinem Tab **Build** geöffnet.
 
 ## Schritt 1: Eine wiederkehrende Aufgabe finden, die sich zum Verpacken lohnt
 
@@ -54,7 +68,7 @@ Ein Skill löst beide Probleme auf einmal. Er wird einmal geschrieben und wieder
 1. Schreiben Sie die Aufgabe in einem Satz auf und nutzen Sie die Formulierung unten als Testfall.
 
 ```text
-Help a Northwind seller respond to a customer objection about price, timing, or competitors.
+Help a Happy Longnose seller respond to a customer objection about price, timing, or competitors.
 ```
 
 2. Prüfen Sie, dass die Aufgabe die drei Skill-Tests besteht: Sie wiederholt sich, sie ist in sich abgeschlossen, und sie wird nur für bestimmte Anfragen gebraucht (nicht in jedem Turn).
@@ -104,7 +118,7 @@ description: Help a seller respond to common customer objections and push-back a
 
 ## Task
 
-Help a Northwind Traders seller reply to a customer objection during an active deal. Turn a raw push-back (too expensive, not the right time, or a competitor looks better) into a calm, specific response the seller can send or say out loud. Keep the buyer relationship intact and move the deal one step forward.
+Help a Happy Longnose Ltd seller reply to a customer objection during an active deal. Turn a raw push-back (too expensive, not the right time, or a competitor looks better) into a calm, specific response the seller can send or say out loud. Keep the buyer relationship intact and move the deal one step forward.
 
 ## Method
 
@@ -112,7 +126,7 @@ Follow these four moves in order:
 
 1. Acknowledge the concern in one sentence so the buyer feels heard.
 2. Clarify with one question that exposes the real driver behind the objection.
-3. Reframe with a Northwind Traders value point (total cost of ownership, delivery reliability, or account support), drawing the standard wording from the reference file.
+3. Reframe with a Happy Longnose Ltd value point (total cost of ownership, delivery reliability, or account support), drawing the standard wording from the reference file.
 4. Next step: propose one concrete action (a scoped pilot, a revised quote, or a reference call).
 
 Ground every price or comparison claim in the reference document `references/objection-handling.md`. Do not invent discounts, dates, or figures that the seller has not confirmed.
@@ -138,19 +152,19 @@ Erwartet: `lab-01-portable-skill/SKILL.md` existiert, öffnet sich als lesbares 
 
 ## Schritt 4: Eine Referenzdatei hinzufügen und ein ZIP packen
 
-Ein Skill kann begleitende Dateien (Scripts, Templates, Referenzdokumente) neben `SKILL.md` in einem ZIP bündeln. Hier enthält die Referenzdatei die Standardantworten von Northwind Traders auf Einwände, damit die Instructions kurz bleiben und Sie die Daten an einer Stelle pflegen. Die eine feste Regel: Das ZIP muss `SKILL.md` in seinem Root enthalten, nicht in einem verschachtelten Ordner, sonst wird der Upload abgelehnt.
+Ein Skill kann begleitende Dateien (Scripts, Templates, Referenzdokumente) neben `SKILL.md` in einem ZIP bündeln. Hier enthält die Referenzdatei die Standardantworten von Happy Longnose Ltd auf Einwände, damit die Instructions kurz bleiben und Sie die Daten an einer Stelle pflegen. Die eine feste Regel: Das ZIP muss `SKILL.md` in seinem Root enthalten, nicht in einem verschachtelten Ordner, sonst wird der Upload abgelehnt.
 
 1. Erstellen Sie in `lab-01-portable-skill` einen Unterordner `references`.
 2. Speichern Sie die Antworten auf Einwände mit dem Inhalt unten als `references/objection-handling.md`.
 
 ```text
-# Northwind Traders objection responses
+# Happy Longnose Ltd objection responses
 
 | Objection                                    | Recommended response                                                                 |
 |----------------------------------------------|--------------------------------------------------------------------------------------|
 | "Your price is higher than the others."      | Shift to total cost of ownership: bundled onboarding, no overage fees, fixed 3-year rate. |
 | "We do not have budget this quarter."         | Propose a scoped pilot now with a start-of-next-quarter rollout.                     |
-| "A competitor offers the same thing cheaper." | Name Northwind differentiators: 99.9% delivery reliability, named account manager, same-region support. |
+| "A competitor offers the same thing cheaper." | Name Happy Longnose differentiators: 99.9% delivery reliability, named account manager, same-region support. |
 | "We are happy with our current supplier."     | Do not attack the incumbent; ask what one thing they wish worked better, then map one strength to it. |
 | "Send me information and I will look later."   | Send one focused one-pager, then book a 15-minute follow-up while still on the call. |
 | "We need to think about it."                  | Ask which part needs the most thought (price, fit, or timing) so the real objection surfaces. |

@@ -2,7 +2,38 @@
 
 In this lab, you extend the HR agent from [Define Topics, Entities, and Variables](../03-topics/lab-01-build-topics.md) with a topic that collects a new candidate's data through an Adaptive Card and confirms it with a formula card.
 
-> **Note:** This lab builds on the previous one. Continue working on the same agent.
+## Set up the HR Agent
+
+This lab starts from the HR Agent with its instructions and the Microsoft Careers site as knowledge. If you built it in the earlier Basics labs, for example [Define Topics, Entities, and Variables](../03-topics/lab-01-build-topics.md), open it from **Agents** and continue with Exercise 1. Otherwise create it now:
+
+1. Go to [Copilot Studio](https://copilotstudio.microsoft.com), on **Home** select **Other ways to build**, then, under **Build with standard orchestration**, select **Agent** with the **Standard** badge.
+2. In the **Name your agent** dialog, enter `HR Agent` and select **Create**.
+3. Wait until the agent has finished setting up (the **Edit** commands stay disabled for about a minute). On the **Overview** tab, select **Edit** in the **Details** section, paste the following text into **Description** and select **Save**.
+
+```txt
+You help employees to find information about HR related policies
+```
+
+4. Select **Edit** in the **Instructions** section, paste the following instructions and select **Save**.
+
+```txt
+- Provide employees with clear, accurate information about HR policies and procedures.
+- Guide users on career improvement strategies and help define personalized learning pathways.
+- Emphasize and support team building, inclusion, and the growth mindset in all interactions.
+- Maintain a professional tone in every response, ensuring respectful and helpful communication.
+- Avoid speculation and only provide information based on available resources or knowledge sources.
+- Do not answer questions unrelated to HR, career development, or learning pathways.
+- Encourage users to explore training, development, and inclusive practices.
+- Respond promptly and clearly to all user queries.
+```
+
+5. In the **Knowledge** section, select **+ Add knowledge** > **Public websites**, enter `https://careers.microsoft.com/` and select **Add**. Name the site `Microsoft Careers site`, paste the following description and select **Add to agent**.
+
+```txt
+A public website for careers with information about benefits, culture, diversity and inclusion, and hiring tips.
+```
+
+Expected: the **Overview** tab of HR Agent shows the description, the instructions and **Microsoft Careers site** under **Knowledge**.
 
 ## Exercise 1 : Using Adaptive Cards
 
@@ -29,7 +60,7 @@ Imagine that you want to create yet another topic to collect the following infor
 
 Specifically, spoken languages and skills are multi-select lists of values.
 
-So open the **Topics** tab and, under **Custom**, switch **Enabled** off for the multi-turn topic `Register a new candidate` from the topics lab, to avoid any overlapping of trigger conditions. Then create a new topic with **Add a topic** > **From blank**, and enter the trigger text in the **Describe what the topic does** box:
+So open the **Topics** tab. If your agent has the multi-turn topic `Register a new candidate` from the topics lab, switch its **Enabled** off under **Custom** to avoid any overlapping of trigger conditions. Then create a new topic with **Add a topic** > **From blank**, and enter the trigger text in the **Describe what the topic does** box:
 
 ```txt
 This topic helps to collect information about a new candidate to process. Trigger sentences can be: 
@@ -134,7 +165,7 @@ Now add a new action of type **Ask with adaptive card**, 1️⃣ select the body
 }
 ```
 
-In the **Adaptive card designer** dialog, select **Save** and then **Close**: **Save** alone leaves the dialog open.
+In the header of the **Adaptive card designer** dialog, select **Save** and then **Close**: **Save** alone leaves the dialog open. Use the dialog's own **Save**, not the topic's **Save** behind the dialog, which saves the topic without the card.
 
 Once you updated the JSON of the adaptive card, Copilot Studio renders the preview of the card in the UI of the topic designer, as you can see in the following screenshot. Copilot Studio also automatically defines a set of topic-level variables to collect the values provided by the user: **Outputs (7)**, the six card inputs plus `actionSubmitId`. `spoken_languages` and `skills` are of type `table`, the other four are `string`.
 
@@ -177,7 +208,7 @@ A side panel shows up allowing you to select the **Edit adaptive card** command 
 }
 ```
 
-It is very important that, when pasting the JSON of the adaptive card, you have the **Edit JSON** option selected (which is by the way the default one) at the top of the text area. That means that you are editing the actual JSON of the adaptive card. As soon as you will move the focus out of the text area where you pasted the JSON, the **Send a message** action will start previewing the adaptive card. As you can see the adaptive card is rendering static values for all the variables (firstname, lastname, etc.).
+Paste the JSON into the **Card payload editor** of the **Adaptive card designer**, then select **Save** and **Close** in the dialog header. The **Send a message** action then previews the adaptive card. As you can see the adaptive card is rendering static values for all the variables (firstname, lastname, etc.).
 
 ![The **Send a message** action configured to render an adaptive card. In the side panel on the right side there is the JSON of the adaptive card. In the body of the action there is a preview of the adaptive card.](./_images/create-topic-adaptive-card-04.png)
 
@@ -244,7 +275,7 @@ One by one, you can replace all the static values with the actual variables. In 
 
 ### Step 3: Testing the current topic
 
-Now add an **End current topic** action at the end of the topic, save it, give it a name like for example `Register new candidate with adaptive cards`, and test it in the test panel on the right side of the agent designer. In the following screenshot you can see how the topic interacts with a user.
+Now select **+** below the last node and choose **Topic management** > **End current topic**. Select **Save**, give the topic a name like for example `Register new candidate with adaptive cards` if Copilot Studio asks for one, and test it in the test panel on the right side of the agent designer. In the following screenshot you can see how the topic interacts with a user.
 
 ![The topic collecting information about a new candidate using an adaptive card and providing feedback through another adaptive card.](./_images/create-topic-adaptive-card-08.png)
 

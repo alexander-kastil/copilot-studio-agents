@@ -2,7 +2,7 @@
 
 ![Der Standard HR Agent aus Modul 03 mit seinen Instructions, zwei Knowledge Sources und drei Topics wird zu HR Agent (Upgraded) auf dem GitHub Copilot Harness upgegradet: Die Knowledge wird neu hinzugefügt, das Rollen-Topic wird zu Instructions plus einem Start Hook, der den angemeldeten User begrüßt, das Kandidaten-Topic wird zum Workflow Tool Register Candidate, das eine E-Mail sendet, und das Adaptive Card Topic bleibt auf dem Standard Agent.](./_images/lab-01-upgrade-the-hr-agent-overview.svg)
 
-Der HR Agent, den Sie in Modul 03 gebaut haben, beantwortet Fragen zu Policies und Jobs, fragt Personen nach ihrer Rolle und registriert Kandidatinnen und Kandidaten über feste Topics. In diesem Lab bringen Sie ihn so auf den GitHub Copilot Harness, wie es die Guidance von Microsoft beschreibt: auflisten, wofür jeder Teil da ist, eine Kopie upgraden, neu aufbauen, was das Upgrade übersprungen hat, und dieselben Journeys auf beiden Agents belegen. Am Ende haben Sie einen upgegradeten HR Agent, der Kandidatinnen und Kandidaten über ein Workflow Tool registriert und jeden User über einen Hook begrüßt.
+Der Standard HR Agent aus Modul 03 beantwortet Fragen zu Policies und Jobs, fragt Personen nach ihrer Rolle und registriert Kandidatinnen und Kandidaten über feste Topics. In diesem Lab bringen Sie ihn so auf den GitHub Copilot Harness, wie es die Guidance von Microsoft beschreibt: auflisten, wofür jeder Teil da ist, eine Kopie upgraden, neu aufbauen, was das Upgrade übersprungen hat, und dieselben Journeys auf beiden Agents belegen. Am Ende haben Sie einen upgegradeten HR Agent, der Kandidatinnen und Kandidaten über ein Workflow Tool registriert und jeden User über einen Hook begrüßt.
 
 Was Sie hier üben: einen Standard Agent Journey für Journey migrieren und pro Topic zwischen Instructions, einem Workflow Tool und einem Hook entscheiden.
 
@@ -18,11 +18,390 @@ Dauer: etwa 40 Minuten.
 
 ## Voraussetzungen
 
-- Der HR Agent aus den Labs von Modul 03, beginnend mit [Ihren ersten Copilot Studio Agent erstellen](../../03-cs-basics/01-standard-agents/lab-01-create-your-first-agent-de.md): seine Instructions, die Knowledge aus der Microsoft Careers site und den SharePoint HR Documents sowie die Topics aus [Topics, Entities und Variables definieren](../../03-cs-basics/03-topics/lab-01-build-topics-de.md) und [Input mit Adaptive Cards erfassen](../../03-cs-basics/05-adaptive-cards/lab-01-collect-input-with-adaptive-cards-de.md).
+- Der Standard HR Agent aus den Labs von Modul 03, beginnend mit [Ihren ersten Copilot Studio Agent erstellen](../../03-cs-basics/01-standard-agents/lab-01-create-your-first-agent-de.md), oder gebaut in [Den Standard HR Agent einrichten](#den-standard-hr-agent-einrichten): seine Instructions, die Knowledge aus der Microsoft Careers site und den SharePoint HR Documents sowie die Topics aus [Topics, Entities und Variables definieren](../../03-cs-basics/03-topics/lab-01-build-topics-de.md) und [Input mit Adaptive Cards erfassen](../../03-cs-basics/05-adaptive-cards/lab-01-collect-input-with-adaptive-cards-de.md).
 - Eine Copilot Studio Environment, in der das Menü **New agent** den Eintrag **Agent** mit dem Badge **GitHub Copilot** anbietet, mit der Maker-Rolle und verfügbaren Copilot Credits: Das Upgrade, Workflow Runs, Hooks und Turns in Preview verbrauchen sie.
 - Ihre eigene Environment: Wählen Sie unten in der linken Navigation den Namen der Environment (**Switch environment**) und prüfen Sie, dass unter **Current environment** die nach Ihrem Account benannte Environment steht, zum Beispiel `copilot-studio-01` (Sandbox) für `copilot-studio-01@mst.fastlane.net`. Arbeiten Sie das ganze Lab darin, nie in der gemeinsamen Default Environment.
 - Eine Office 365 Outlook Connection für Ihren eigenen Account, damit der Workflow Ihnen die Zusammenfassung zur Kandidatur senden kann.
 - Die Demo [Ein Topic und seinen Agent Flow als Workflow neu aufbauen](../../../demos/06-cs-copilot-harness/07-migration/demo-07-rebuild-a-topic-as-a-workflow.md), gesehen oder durchgearbeitet, damit Ihnen der Workflow Designer vertraut ist.
+
+## Den Standard HR Agent einrichten
+
+Dieses Lab migriert den Standard HR Agent aus Modul 03: seine Instructions, zwei Knowledge Sources, drei Topics und seinen Channel für Teams und Microsoft 365 Copilot. Wenn Sie ihn in den Labs von Modul 03 gebaut haben, öffnen Sie ihn unter **Agents** und überspringen diesen Abschnitt. Andernfalls bauen Sie ihn jetzt; die drei Topics kommen als YAML, das Sie in den Code Editor des jeweiligen Topics einfügen.
+
+1. Rufen Sie [Copilot Studio](https://copilotstudio.microsoft.com) auf, wählen Sie auf **Home** den Befehl **Other ways to build** und dann unter **Build with standard orchestration** den Eintrag **Agent** mit dem Badge **Standard**.
+2. Geben Sie im Dialog **Name your agent** den Namen `HR Agent` ein und wählen Sie **Create**.
+3. Warten Sie, bis der Agent eingerichtet ist (die Befehle **Edit** bleiben etwa eine Minute deaktiviert). Wählen Sie dann im Tab **Overview** im Abschnitt **Details** den Befehl **Edit**, fügen Sie den folgenden Text in **Description** ein und wählen Sie **Save**.
+
+```txt
+You help employees to find information about HR related policies
+```
+
+4. Wählen Sie im Abschnitt **Instructions** den Befehl **Edit**, fügen Sie die folgenden Instructions ein und wählen Sie **Save**.
+
+```txt
+- Provide employees with clear, accurate information about HR policies and procedures.
+- Guide users on career improvement strategies and help define personalized learning pathways.
+- Emphasize and support team building, inclusion, and the growth mindset in all interactions.
+- Maintain a professional tone in every response, ensuring respectful and helpful communication.
+- Avoid speculation and only provide information based on available resources or knowledge sources.
+- Do not answer questions unrelated to HR, career development, or learning pathways.
+- Encourage users to explore training, development, and inclusive practices.
+- Respond promptly and clearly to all user queries.
+```
+
+5. Wählen Sie im Abschnitt **Knowledge** den Befehl **+ Add knowledge** > **Public websites**, geben Sie `https://careers.microsoft.com/` ein und wählen Sie **Add**. Nennen Sie die Site `Microsoft Careers site`, fügen Sie die folgende Beschreibung ein und wählen Sie **Add to agent**.
+
+```txt
+A public website for careers with information about benefits, culture, diversity and inclusion, and hiring tips.
+```
+
+6. Laden Sie die [HR-Dokumente](https://download-directory.github.io/?url=https://github.com/alexander-kastil/copilot-studio-agents/tree/master/src/assets/hr-documents&filename=hr-documents) herunter, entpacken Sie sie und laden Sie sie in die Bibliothek **Documents** einer SharePoint Teams Site in Ihrem Tenant hoch. Kopieren Sie die URL der Site.
+7. Wählen Sie im Abschnitt **Knowledge** den Befehl **+ Add knowledge** > **SharePoint**, geben Sie die URL der Site ein und wählen Sie **Add**. Nennen Sie die Quelle `HR Documents`, fügen Sie die folgende Beschreibung ein und wählen Sie **Add to agent**.
+
+```txt
+Provides documents about policies, procedures, and rules related to the HR department.
+```
+
+8. Erstellen Sie nacheinander die drei folgenden Topics: Wählen Sie im Tab **Topics** den Befehl **+ Add a topic** > **From blank**, wählen Sie links oben den Namen des Topics und geben Sie den unten genannten Namen ein, öffnen Sie rechts oben **...** und wählen Sie **Open code editor**, ersetzen Sie den gesamten Text durch das YAML des Topics und wählen Sie **Save**.
+
+Topic `Collect user's role`:
+
+```yaml
+kind: AdaptiveDialog
+modelDescription: |-
+  This topic can handle queries like these: collect user's role and provide feedback,
+  give me a feedback based on my role, what's your feedback for my role?
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent: {}
+  actions:
+    - kind: Question
+      id: question_role01
+      variable: Topic.UserRole
+      prompt: What is your role?
+      entity:
+        kind: EmbeddedEntity
+        definition:
+          kind: ClosedListEntity
+          optionSetName: UserRoleOptions
+          items:
+            - id: Candidate
+              displayName: Candidate
+
+            - id: Employee
+              displayName: Employee
+
+            - id: HRStaff
+              displayName: HR staff member
+
+    - kind: ConditionGroup
+      id: conditionGroup_role02
+      conditions:
+        - id: conditionItem_role03
+          condition: =Topic.UserRole = UserRoleOptions.Candidate
+          actions:
+            - kind: SendActivity
+              id: sendMessage_role04
+              activity: You are a new candidate, as such you can submit your resume for evaluation.
+
+        - id: conditionItem_role05
+          condition: =Topic.UserRole = UserRoleOptions.Employee
+          actions:
+            - kind: SendActivity
+              id: sendMessage_role06
+              activity: |-
+                As an employee, you can ask me about how to improve your career or about
+                how to learn more about your growth mindset.
+
+        - id: conditionItem_role07
+          condition: =Topic.UserRole = UserRoleOptions.HRStaff
+          actions:
+            - kind: SendActivity
+              id: sendMessage_role08
+              activity: As an HR staff member, you can manage the list of candidates and all the hiring procedures.
+
+    - kind: EndDialog
+      id: endDialog_role09
+
+inputType: {}
+outputType: {}
+```
+
+Topic `Register a new candidate`:
+
+```yaml
+kind: AdaptiveDialog
+modelDescription: |-
+  This topic helps to collect information about a new candidate to process. Trigger sentences can be:
+  register a new candidate, create a new candidate, add a new candidate.
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent: {}
+  actions:
+    - kind: Question
+      id: question_cand01
+      variable: Topic.FirstName
+      prompt: What is the candidate's first name?
+      entity: StringPrebuiltEntity
+
+    - kind: Question
+      id: question_cand02
+      variable: Topic.LastName
+      prompt: What is the candidate's last name?
+      entity: StringPrebuiltEntity
+
+    - kind: Question
+      id: question_cand03
+      variable: Topic.Email
+      prompt: What is the candidate's e-mail?
+      entity: EmailPrebuiltEntity
+
+    - kind: Question
+      id: question_cand04
+      variable: Topic.CurrentRole
+      prompt: What is the candidate's current role?
+      entity: StringPrebuiltEntity
+
+    - kind: SendActivity
+      id: sendMessage_cand05
+      activity: "Candidate: {Topic.FirstName} {Topic.LastName}, e-mail {Topic.Email}, current role {Topic.CurrentRole}."
+
+    - kind: Question
+      id: question_cand06
+      variable: Topic.Confirmation
+      prompt: Is it ok for you to insert this new candidate?
+      entity:
+        kind: EmbeddedEntity
+        definition:
+          kind: ClosedListEntity
+          optionSetName: ConfirmationOptions
+          items:
+            - id: "Yes"
+              displayName: "Yes"
+
+            - id: "No"
+              displayName: "No"
+
+    - kind: ConditionGroup
+      id: conditionGroup_cand07
+      conditions:
+        - id: conditionItem_cand08
+          condition: =Topic.Confirmation = ConfirmationOptions.Yes
+          actions:
+            - kind: SendActivity
+              id: sendMessage_cand09
+              activity: 👍
+
+        - id: conditionItem_cand10
+          condition: =Topic.Confirmation = ConfirmationOptions.No
+          actions:
+            - kind: SendActivity
+              id: sendMessage_cand11
+              activity: 👎
+
+    - kind: EndDialog
+      id: endDialog_cand12
+
+inputType: {}
+outputType: {}
+```
+
+Topic `Register new candidate with adaptive cards`:
+
+```yaml
+kind: AdaptiveDialog
+modelDescription: |-
+  This topic helps to collect information about a new candidate to process. Trigger sentences can be:
+  register a new candidate, create a new candidate, add a new candidate.
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent: {}
+  actions:
+    - kind: AdaptiveCardPrompt
+      id: adaptiveCardPrompt_card01
+      card: |-
+        {
+            "type": "AdaptiveCard",
+            "body": [
+                {
+                    "type": "TextBlock",
+                    "size": "Medium",
+                    "weight": "Bolder",
+                    "text": "New HR Candidate Information"
+                },
+                {
+                    "type": "Input.Text",
+                    "id": "firstname",
+                    "placeholder": "First Name"
+                },
+                {
+                    "type": "Input.Text",
+                    "id": "lastname",
+                    "placeholder": "Last Name"
+                },
+                {
+                    "type": "Input.Text",
+                    "id": "email",
+                    "placeholder": "Email"
+                },
+                {
+                    "type": "Input.Text",
+                    "id": "current_role",
+                    "placeholder": "Current Role"
+                },
+                {
+                    "type": "Input.ChoiceSet",
+                    "id": "spoken_languages",
+                    "placeholder": "Spoken Languages",
+                    "isMultiSelect": true,
+                    "choices": [
+                        {
+                            "title": "English",
+                            "value": "English"
+                        },
+                        {
+                            "title": "French",
+                            "value": "French"
+                        },
+                        {
+                            "title": "German",
+                            "value": "German"
+                        },
+                        {
+                            "title": "Italian",
+                            "value": "Italian"
+                        },
+                        {
+                            "title": "Portuguese",
+                            "value": "Portuguese"
+                        },
+                        {
+                            "title": "Spanish",
+                            "value": "Spanish"
+                        }
+                    ]
+                },
+                {
+                    "type": "Input.ChoiceSet",
+                    "id": "skills",
+                    "placeholder": "Skills",
+                    "isMultiSelect": true,
+                    "choices": [
+                        {
+                            "title": "Computer Programming",
+                            "value": "Computer Programming"
+                        },
+                        {
+                            "title": "Project Management",
+                            "value": "Project Management"
+                        },
+                        {
+                            "title": "Team Lead",
+                            "value": "Team Lead"
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Submit"
+                }
+            ],
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "version": "1.5"
+        }
+      output:
+        binding:
+          actionSubmitId: Topic.actionSubmitId
+          current_role: Topic.current_role
+          email: Topic.email
+          firstname: Topic.firstname
+          lastname: Topic.lastname
+          skills: Topic.skills
+          spoken_languages: Topic.spoken_languages
+
+      outputType:
+        properties:
+          actionSubmitId: String
+          current_role: String
+          email: String
+          firstname: String
+          lastname: String
+          skills:
+            type:
+              kind: Table
+              properties:
+                Value: String
+
+          spoken_languages:
+            type:
+              kind: Table
+              properties:
+                Value: String
+
+    - kind: SendActivity
+      id: sendMessage_card02
+      activity:
+        attachments:
+          - kind: AdaptiveCardTemplate
+            cardContent: |-
+              ={
+                type: "AdaptiveCard",
+                body: [
+                  {
+                    type: "TextBlock",
+                    size: "Medium",
+                    weight: "Bolder",
+                    text: "Candidate Summary"
+                  },
+                  {
+                    type: "FactSet",
+                    facts: [
+                      {
+                        title: "First Name:",
+                        value: Topic.firstname
+                      },
+                      {
+                        title: "Last Name:",
+                        value: Topic.lastname
+                      },
+                      {
+                        title: "E-mail:",
+                        value: Topic.email
+                      },
+                      {
+                        title: "Current Role:",
+                        value: Topic.current_role
+                      },
+                      {
+                        title: "Spoken Languages:",
+                        value: Text(Concat(Topic.spoken_languages, Value, ", "))
+                      },
+                      {
+                        title: "Skills:",
+                        value: Text(Concat(Topic.skills, Value, ", "))
+                      }
+                    ]
+                  }
+                ],
+                '$schema': "http://adaptivecards.io/schemas/adaptive-card.json",
+                version: "1.3"
+              }
+
+    - kind: EndDialog
+      id: endDialog_card03
+
+inputType: {}
+outputType: {}
+```
+
+9. Wählen Sie rechts oben **Publish** und dann im Dialog **Publish**. Öffnen Sie **Channels**, wählen Sie **Microsoft 365 and Microsoft Teams**, lassen Sie **Make agent available in Microsoft 365 Copilot** ausgewählt und wählen Sie **Add channel**.
+
+Erwartet: **Knowledge** führt **Microsoft Careers site** und **HR Documents**, beide mit Status **Ready**; **Topics** führt die drei Custom Topics; **Channels** zeigt **Microsoft 365 and Microsoft Teams** als hinzugefügt.
 
 ## Schritt 1: Den HR Agent kartieren und eine Baseline festhalten
 
@@ -75,7 +454,7 @@ upgrade my HR Agent
 2. Lesen Sie jeden Eintrag des Reports und füllen Sie die Spalte **Upgrade result** in `hr-agent-migration.txt`.
 3. Wählen Sie das Icon **Open** auf der Karte **HR Agent (Upgraded)**.
 4. Wählen Sie im Tab **Build** das **+** neben **Knowledge** und fügen Sie die öffentliche Website `https://careers.microsoft.com/` mit dem Namen `Microsoft Careers site` hinzu.
-5. Fügen Sie die SharePoint Site aus Modul 03 mit dem Namen `HR Documents` und der folgenden Beschreibung hinzu und wählen Sie dann das Icon **Save**.
+5. Fügen Sie die SharePoint Site mit den HR-Dokumenten, die der Standard HR Agent nutzt, mit dem Namen `HR Documents` und der folgenden Beschreibung hinzu und wählen Sie dann das Icon **Save**.
 
 ```text
 Provides documents about policies, procedures, and rules related to the HR department.
@@ -153,7 +532,7 @@ Wiederholen Sie die Baseline aus Schritt 1 auf dem upgegradeten Agent. Jede Jour
 2. Antworten Sie bei der vierten Nachricht als Mitglied des HR-Teams, geben Sie die folgenden Daten zur Kandidatur an und bestätigen Sie, wenn der Agent die Werte zur Kontrolle anzeigt.
 
 ```text
-Ana Silva, ana.silva@contoso.com, current role Project Manager
+Ana Silva, ana.silva@greylogistics.com, current role Project Manager
 ```
 
 3. Öffnen Sie Ihren Outlook-Posteingang.

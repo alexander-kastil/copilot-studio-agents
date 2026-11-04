@@ -1,0 +1,161 @@
+uid=181_0 RootWebArea "Copilot Demo Office - Documents" url="https://integrationsonline.sharepoint.com/sites/copilot-demo/Shared%20Documents/Forms/AllItems.aspx"
+  uid=181_1 link "Skip to main content" url="https://integrationsonline.sharepoint.com/sites/copilot-demo/Shared%20Documents/Forms/AllItems.aspx#"
+  uid=181_3 navigation
+    uid=181_4 button "Discover, 1 of 4" description="Press Enter to navigate to page, or Alt plus Down Arrow to open flyout" expandable
+    uid=181_5 button "Publish, 2 of 4" description="Press Enter to navigate to page, or Alt plus Down Arrow to open flyout" expandable
+    uid=181_6 button "Build, 3 of 4" description="Press Enter to navigate to page, or Alt plus Down Arrow to open flyout" expandable
+    uid=181_7 button "OneDrive, 4 of 4" description="Press Enter to navigate to page"
+  uid=181_8 region "SharePoint Site Header"
+    uid=181_9 link "Copilot Demo Office home" url="https://integrationsonline.sharepoint.com/sites/copilot-demo"
+    uid=181_10 generic
+      uid=181_11 generic
+        uid=181_12 "Copilot Demo Office"
+    uid=181_13 button "Go to the Microsoft Teams channel" description="Go to the Microsoft Teams channel"
+    uid=181_14 "Public group"
+    uid=181_15 button busy description="..." live="polite" relevant="additions text"
+    uid=181_16 button "Not following, Add to favorites" description="Add this site to your favorites"
+      uid=181_17 generic live="polite" relevant="additions text"
+    uid=181_18 button "1 member. Open Group Membership pane"
+  uid=181_19 navigation "Site"
+    uid=181_20 link "Home" url="https://integrationsonline.sharepoint.com/sites/copilot-demo"
+    uid=181_22 link "Conversations" url="https://integrationsonline.sharepoint.com/sites/copilot-demo/_layouts/15/groupstatus.aspx?Target=CONVERSATIONS&Source=QuickLaunch"
+    uid=181_24 link "Teams" url="https://teams.microsoft.com/l/team/19%3a6Ivu331rZb46kxuKCQvw2O94gnq_gPF7ryoBsUBnIEo1%40thread.tacv2/conversations?groupId=9c07913d-b504-4571-a451-28cb721a4ef5&tenantId=d92b247e-90e0-4469-a129-6a32866c0d0a"
+    uid=181_26 link "Documents" url="https://integrationsonline.sharepoint.com/sites/copilot-demo/Shared%20Documents/Forms/AllItems.aspx"
+    uid=181_28 link "Notebook" url="https://integrationsonline.sharepoint.com/sites/copilot-demo/_layouts/15/Doc.aspx?sourcedoc={81bedb7c-ac68-43b3-9da8-131da3a32cbc}&action=editnew"
+    uid=181_30 link "Pages" url="https://integrationsonline.sharepoint.com/sites/copilot-demo/SitePages/Forms/ByAuthor.aspx"
+    uid=181_32 link "Manuals" url="https://integrationsonline.sharepoint.com/sites/copilot-demo/Manuals/Forms/AllItems.aspx"
+    uid=181_34 link "Sightseeing" url="https://integrationsonline.sharepoint.com/sites/copilot-demo/Sightseeing/Forms/AllItems.aspx"
+    uid=181_36 link "HR-Documents" url="https://integrationsonline.sharepoint.com/sites/copilot-demo/HRDocuments/Forms/AllItems.aspx"
+    uid=181_38 link "Copilot and Agentic AI" url="https://integrationsonline.sharepoint.com/sites/copilot-demo/Agentic%20AI/Forms/AllItems.aspx"
+    uid=181_40 link "Instructions" url="https://integrationsonline.sharepoint.com/sites/copilot-demo/Instructions/Forms/AllItems.aspx"
+    uid=181_42 link "Revenue" url="https://integrationsonline.sharepoint.com/sites/copilot-demo/Revenue/Forms/AllItems.aspx"
+    uid=181_44 link "Employees" url="https://integrationsonline.sharepoint.com/sites/copilot-demo/Lists/Employees/AllItems.aspx"
+    uid=181_46 link "Site contents" url="https://integrationsonline.sharepoint.com/sites/copilot-demo/_layouts/15/viewlsts.aspx"
+    uid=181_48 link "Recycle bin" description="Recycle bin, Opens the Recycle Bin view to see a list of files and folders that have been deleted." url="https://integrationsonline.sharepoint.com/sites/copilot-demo/_layouts/15/RecycleBin.aspx"
+    uid=181_50 button "Edit"
+  uid=181_51 link "Click or enter to return to classic SharePoint" url="https://integrationsonline.sharepoint.com/sites/copilot-demo/Shared%20Documents/Forms/AllItems.aspx#"
+    uid=181_52 "Return to classic SharePoint"
+  uid=181_53 main
+    uid=181_54 button "Documents" haspopup="menu"
+    uid=181_55 menubar orientation="horizontal"
+      uid=181_56 menuitem "Copilot" description="Open Copilot chat"
+      uid=181_57 menuitem "Show Copilot actions for selected items" description="Show Copilot actions for selected items" expandable haspopup="menu"
+      uid=181_58 menuitem "Add shortcut to OneDrive" description="Add a shortcut to this folder in OneDrive" expandable haspopup="menu"
+      uid=181_59 menuitem "Forms"
+      uid=181_60 menuitem "Edit in grid view"
+      uid=181_61 menuitem "Pin to Quick access"
+      uid=181_62 menuitem "Export to Excel"
+      uid=181_63 menuitem "Workflows"
+      uid=181_64 menuitem "Integrate" expandable haspopup="menu"
+      uid=181_65 menuitem "More" description="More commands"
+    uid=181_66 button "Create or upload" expandable haspopup="menu"
+    uid=181_67 tab "All Documents" description="Open for options for current view" expandable haspopup="menu" selectable selected
+    uid=181_68 tab "In channels" selectable
+    uid=181_69 button "Add view" expandable haspopup="dialog"
+    uid=181_70 button "More filters" description="Filters" expandable haspopup="dialog"
+    uid=181_71 menubar "Filters" orientation="horizontal"
+      uid=181_72 menuitemcheckbox "Word" description="Word"
+      uid=181_73 menuitemcheckbox "Excel" description="Excel"
+      uid=181_74 menuitemcheckbox "PowerPoint" description="PowerPoint"
+      uid=181_75 menuitemcheckbox "PDF" description="PDF"
+    uid=181_76 button "Hide applied filters" description="Hide applied filters" expandable expanded
+    uid=181_77 button "Options" description="Options"
+    uid=181_78 button "Hide header and navigation" description="Hide header and navigation"
+    uid=181_79 button "Details pane" description="Details pane"
+    uid=181_80 gridcell "Select all rows" selectable
+      uid=181_81 checkbox "Select all rows"
+    uid=181_82 columnheader "Type" description="Type"
+      uid=181_83 button "Type" expandable haspopup="menu"
+    uid=181_84 columnheader "Name"
+      uid=181_85 button "Name" expandable haspopup="menu"
+    uid=181_86 columnheader "Modified"
+      uid=181_87 button "Modified" expandable haspopup="menu"
+    uid=181_88 columnheader "Modified By"
+      uid=181_89 button "Modified By" expandable haspopup="menu"
+    uid=181_90 columnheader " Add column"
+      uid=181_91 button " Add column" expandable haspopup="menu"
+    uid=181_92 gridcell "Select row" selectable
+      uid=181_93 checkbox "Select row"
+    uid=181_94 gridcell "Yellow folder" readonly
+      uid=181_95 image "Yellow folder"
+    uid=181_96 gridcell "General"
+      uid=181_97 button "General"
+    uid=181_98 gridcell "August 26, 2025" description="8/26/2025 8:22 AM" readonly
+    uid=181_100 gridcell "Opens profile card for Alexander Admin" readonly
+      uid=181_101 button "Opens profile card for Alexander Admin" haspopup="dialog"
+    uid=181_102 generic
+    uid=181_103 gridcell "Select row" selectable
+      uid=181_104 checkbox "Select row"
+    uid=181_105 gridcell ".pptx" readonly
+      uid=181_106 image ".pptx" url="https://res.public.onecdn.static.microsoft/files/fabric-cdn-prod_20260506.001/assets/item-types/20/pptx.svg"
+    uid=181_107 gridcell "LAB-Career Path Options in the USA.pptx"
+      uid=181_108 button "LAB-Career Path Options in the USA.pptx"
+    uid=181_109 gridcell "Sunday at 10:05 PM" description="11/1/2026 10:05 PM" readonly
+    uid=181_111 gridcell "Opens profile card for Alexander Kastil" readonly
+      uid=181_112 button "Opens profile card for Alexander Kastil" haspopup="dialog"
+    uid=181_113 generic
+    uid=181_114 gridcell "Select row" selectable
+      uid=181_115 checkbox "Select row"
+    uid=181_116 gridcell ".docx" readonly
+      uid=181_117 image ".docx" url="https://res.public.onecdn.static.microsoft/files/fabric-cdn-prod_20260506.001/assets/item-types/20/docx.svg"
+    uid=181_118 gridcell "LAB-Career Path Options.docx"
+      uid=181_119 button "LAB-Career Path Options.docx"
+    uid=181_120 gridcell "Sunday at 10:05 PM" description="11/1/2026 10:05 PM" readonly
+    uid=181_122 gridcell "Opens profile card for Alexander Kastil" readonly
+      uid=181_123 button "Opens profile card for Alexander Kastil" haspopup="dialog"
+    uid=181_124 generic
+    uid=181_125 gridcell "Select row" selectable
+      uid=181_126 checkbox "Select row"
+    uid=181_127 gridcell ".docx" readonly
+      uid=181_128 image ".docx" url="https://res.public.onecdn.static.microsoft/files/fabric-cdn-prod_20260506.001/assets/item-types/20/docx.svg"
+    uid=181_129 gridcell "LAB-Hiring Procedures.docx"
+      uid=181_130 button "LAB-Hiring Procedures.docx"
+    uid=181_131 gridcell "Sunday at 10:05 PM" description="11/1/2026 10:05 PM" readonly
+    uid=181_133 gridcell "Opens profile card for Alexander Kastil" readonly
+      uid=181_134 button "Opens profile card for Alexander Kastil" haspopup="dialog"
+    uid=181_135 generic
+    uid=181_136 gridcell "Select row" selectable
+      uid=181_137 checkbox "Select row"
+    uid=181_138 gridcell ".agent" readonly
+      uid=181_139 image ".agent" url="https://res.public.onecdn.static.microsoft/files/sp-client/odsp-media-49ffc1dd/images/copilot/svg/copilot_v2/ic_fluent_copilot_v2_20_color.svg"
+    uid=181_140 gridcell "LAB-HR agent.agent"
+      uid=181_141 button "LAB-HR agent.agent"
+    uid=181_142 gridcell "Sunday at 10:09 PM" description="11/1/2026 10:09 PM" readonly
+    uid=181_144 gridcell "Opens profile card for Alexander Kastil" readonly
+      uid=181_145 button "Opens profile card for Alexander Kastil" haspopup="dialog"
+    uid=181_146 generic
+    uid=181_147 gridcell "Select row" selectable
+      uid=181_148 checkbox "Select row"
+    uid=181_149 gridcell ".pdf" readonly
+      uid=181_150 image ".pdf" url="https://res.public.onecdn.static.microsoft/files/fabric-cdn-prod_20260506.001/assets/item-types/20/pdf.svg"
+    uid=181_151 gridcell "LAB-Incomes of Employees in the USA.pdf"
+      uid=181_152 button "LAB-Incomes of Employees in the USA.pdf"
+    uid=181_153 gridcell "Sunday at 10:05 PM" description="11/1/2026 10:05 PM" readonly
+    uid=181_155 gridcell "Opens profile card for Alexander Kastil" readonly
+      uid=181_156 button "Opens profile card for Alexander Kastil" haspopup="dialog"
+    uid=181_157 generic
+    uid=181_158 gridcell "Select row" selectable
+      uid=181_159 checkbox "Select row"
+    uid=181_160 gridcell ".docx" readonly
+      uid=181_161 image ".docx" url="https://res.public.onecdn.static.microsoft/files/fabric-cdn-prod_20260506.001/assets/item-types/20/docx.svg"
+    uid=181_162 gridcell "LAB-Layoff Procedures.docx"
+      uid=181_163 button "LAB-Layoff Procedures.docx"
+    uid=181_164 gridcell "Sunday at 10:05 PM" description="11/1/2026 10:05 PM" readonly
+    uid=181_166 gridcell "Opens profile card for Alexander Kastil" readonly
+      uid=181_167 button "Opens profile card for Alexander Kastil" haspopup="dialog"
+    uid=181_168 generic
+    uid=181_169 gridcell "Select row" selectable
+      uid=181_170 checkbox "Select row"
+    uid=181_171 gridcell ".docx" readonly
+      uid=181_172 image ".docx" url="https://res.public.onecdn.static.microsoft/files/fabric-cdn-prod_20260506.001/assets/item-types/20/docx.svg"
+    uid=181_173 gridcell "LAB-Whistleblowing Procedures.docx"
+      uid=181_174 button "LAB-Whistleblowing Procedures.docx"
+    uid=181_175 gridcell "Sunday at 10:05 PM" description="11/1/2026 10:05 PM" readonly
+    uid=181_177 gridcell "Opens profile card for Alexander Kastil" readonly
+      uid=181_178 button "Opens profile card for Alexander Kastil" haspopup="dialog"
+    uid=181_179 generic
+    uid=181_180 grid
+    uid=181_181 status atomic live="polite" relevant="additions text"
+  uid=181_182 group "Copilot"
+    uid=181_183 button "Copilot" description="Open Copilot chat"
+  uid=181_184 generic live="assertive" relevant="additions text"
