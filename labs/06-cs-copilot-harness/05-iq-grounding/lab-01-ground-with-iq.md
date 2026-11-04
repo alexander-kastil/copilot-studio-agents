@@ -32,6 +32,7 @@ Duration: about 25 minutes, not counting the optional Step 9.
 ## Prerequisites
 
 - A Copilot Studio environment where you can create agents (maker role), where the **New agent** menu on the **Agents** page offers **Agent** with the **GitHub Copilot** badge. The agent's top tabs read Build, Preview, Evaluate, and Monitor.
+- Your own environment: select the environment name at the bottom of the left navigation (**Switch environment**) and check that **Current environment** shows the environment named after your account, for example `copilot-studio-01` (Sandbox) for `copilot-studio-01@mst.fastlane.net`. Work through the whole lab in it, never in the shared Default environment.
 - Work IQ enabled for the class tenant by an administrator, with your user assigned to the usage-based billing plan. If Work IQ (Preview) is missing from the tool list in Step 4, ask your instructor before you continue.
 - Your own class mailbox, so you can send yourself the seed email in Step 2.
 - No files to download. You paste every input from this guide.

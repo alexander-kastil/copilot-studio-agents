@@ -5,6 +5,7 @@ Copilot Studio can turn a plain-language description into a working business app
 | Section | Description |
 | --- | --- |
 | [What an app is](#what-an-app-is) | The parts of an app and what the maker sees and controls |
+| [How these apps compare](#how-these-apps-compare) | What an app in Copilot Studio brings next to Power Apps and the Cowork App skill |
 | [Choosing an app, a workflow, or an agent](#choosing-an-app-a-workflow-or-an-agent) | How to match the build to the shape of the work |
 | [The describe, draft, and refine loop](#the-describe-draft-and-refine-loop) | How a conversation becomes a working app |
 | [Data and permissions](#data-and-permissions) | Where app records live and who can reach them |
@@ -21,7 +22,17 @@ An app in Copilot Studio is an interactive web experience that a maker describes
 
 The maker can open the code behind the app, but the code view is read-only. The maker reads and checks the code there, and makes every change in the conversation.
 
-![A message in the conversation makes Copilot Studio update the data model, the logic, and the user interface together. The live preview and the read-only code view show the result, and every change goes back through the conversation.](./_images/app-parts-conversation-to-code.svg)
+![A message in the conversation makes Copilot Studio update the data model, the logic, and the user interface together. The live preview and the read-only code view show the result, and every change goes back through the conversation.](../pptx/images/08-01-what-an-app-is.svg)
+
+## How these apps compare
+
+The benefit of an app in Copilot Studio is how much a description buys. You describe the business need and get a working app with its data model, logic and interface, preview it while it takes shape, and manage the app, its data and its connections in one place. Data access uses the signed-in user's existing permissions, and you publish a stable version and share it with selected people and groups. The app runs on Microsoft-hosted infrastructure that gives administrators identity, governance, approved connectivity and an app inventory.
+
+Microsoft offers other ways to build a business app, and each starts somewhere else. A Power Apps canvas app starts from a blank canvas, where you place controls and write Power Fx formulas, so you design every part of the screen. A Power Apps model-driven app starts from the data model in Dataverse, and its forms, views and layout come from the components you add. The **App** skill in Copilot Cowork (Frontier) builds a lightweight, interactive app from a description inside a Cowork conversation.
+
+![Four columns compare how you build each app and what you get: an app in Copilot Studio is generated from a description with data, connections and sharing in one place; the App skill in Cowork builds a lightweight app in a conversation; a Power Apps canvas app is designed control by control on a blank canvas; a model-driven app starts from the data model in Dataverse.](../pptx/images/08-02-apps-compared.svg)
+
+The Power Apps vibe preview, the earlier AI-native app builder in Power Apps, now points makers to app building in Copilot Cowork and Copilot Studio.
 
 ## Choosing an app, a workflow, or an agent
 
@@ -46,7 +57,7 @@ App creation is a conversation that builds toward a working app. Each pass throu
 3. Refine by conversation. Describe one change, such as adding a filter or changing a field. You can also attach a file, add a screenshot, or annotate the canvas to point at the part you want changed.
 4. Repeat until the main scenarios work, then publish.
 
-![The app build loop: describe the problem, review the draft, and refine by conversation, repeating review and refine until the main scenarios work, then publish.](../pptx/images/08-01-building-apps.svg)
+![The app build loop: describe the problem, review the draft, and refine by conversation, repeating review and refine until the main scenarios work, then publish.](../pptx/images/08-03-building-apps.svg)
 
 Each change updates the data model, the logic, and the interface together. Keep requests small and review the preview after each one, because a large request is harder to check when something goes wrong. Microsoft recommends the same approach for complex apps: break the requirements into smaller changes.
 
@@ -136,6 +147,12 @@ Microsoft's guidance is to use the normal design, security, testing, and release
 [Publish and share an app in Microsoft Copilot Studio (preview)](https://learn.microsoft.com/microsoft-copilot-studio/apps-experience/publish-share-app)
 
 [FAQ for apps in Microsoft Copilot Studio (preview)](https://learn.microsoft.com/microsoft-copilot-studio/faq-apps)
+
+[Overview of creating apps in Power Apps](https://learn.microsoft.com/power-apps/maker/)
+
+[Cowork skills: the App skill](https://learn.microsoft.com/copilot/cowork/use-cowork#cowork-skills)
+
+[Overview of the new Power Apps vibe experience (preview)](https://learn.microsoft.com/power-apps/vibe/overview)
 
 [Overview of usage-based billing](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/billing-credit-overview)
 

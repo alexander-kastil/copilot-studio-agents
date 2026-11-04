@@ -27,6 +27,7 @@ Setup: sign in to Copilot Studio in an environment that offers Microsoft Copilot
 ## Prerequisites
 
 - A Copilot Studio account where you can create apps, with the **App** tile visible on the **Home** page.
+- Your own environment: sign in with your own class account. Copilot Studio builds the app in your personal developer environment, named after you (for example **Copilot Studio 1's Environment**, type Developer), and picks it for you, so you don't switch environments for this lab.
 - The SharePoint team site your instructor names, where you can create lists.
 - A classmate's work account for the sharing step in Step 7.
 - Copilot Credits allocated to your environment. Building, previewing, and testing consume credits, so keep each request short.
@@ -77,7 +78,7 @@ Expected: open the **Data** view from the app's metadata menu. It names the Shar
 
 A filter is a single, checkable change. Keep the request to one change, so that if the preview breaks you know which change caused it.
 
-![The app build loop: describe the problem, review the draft, and refine by conversation, repeating review and refine until the main scenarios work, then publish.](../../../demos/06-cs-copilot-harness/pptx/images/08-01-building-apps.svg)
+![The app build loop: describe the problem, review the draft, and refine by conversation, repeating review and refine until the main scenarios work, then publish.](../../../demos/06-cs-copilot-harness/pptx/images/08-03-building-apps.svg)
 
 1. Paste the request below and send it.
 

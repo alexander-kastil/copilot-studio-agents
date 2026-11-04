@@ -32,6 +32,7 @@ Dauer: etwa 25 Minuten, ohne den optionalen Schritt 9.
 ## Voraussetzungen
 
 - Eine Copilot Studio Environment, in der Sie Agents erstellen können (Maker-Rolle) und in der das Menü **New agent** auf der Seite **Agents** den Eintrag **Agent** mit dem Badge **GitHub Copilot** anbietet. Die oberen Tabs des Agents heißen Build, Preview, Evaluate und Monitor.
+- Ihre eigene Environment: Wählen Sie unten in der linken Navigation den Namen der Environment (**Switch environment**) und prüfen Sie, dass unter **Current environment** die nach Ihrem Account benannte Environment steht, zum Beispiel `copilot-studio-01` (Sandbox) für `copilot-studio-01@mst.fastlane.net`. Arbeiten Sie das ganze Lab darin, nie in der gemeinsamen Default Environment.
 - Work IQ, von einem Administrator für den Kurs-Tenant aktiviert, und Ihr User dem Usage-based Billing Plan zugewiesen. Fehlt Work IQ (Preview) in Schritt 4 in der Tool-Liste, fragen Sie Ihren Trainer, bevor Sie weitermachen.
 - Ihre eigene Kurs-Mailbox, damit Sie sich in Schritt 2 die Seed-E-Mail selbst schicken können.
 - Keine Dateien zum Herunterladen. Sie fügen jeden Input aus dieser Anleitung ein.

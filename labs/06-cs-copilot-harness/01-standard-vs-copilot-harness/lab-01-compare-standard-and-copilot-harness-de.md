@@ -15,6 +15,7 @@ Das Szenario-Unternehmen ist Northwind Traders, ein Großhändler, dessen Seller
 ## Voraussetzungen
 
 - Eine Copilot Studio Environment, in der Sie Agents erstellen können (eine Power Platform Environment mit der Maker-Rolle), mit Zugriff auf [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com). Sie brauchen keine Dateien, Connectors oder API Keys: Jede Eingabe dieses Labs steht direkt im Text.
+- Ihre eigene Environment: Wählen Sie unten in der linken Navigation den Namen der Environment (**Switch environment**) und prüfen Sie, dass unter **Current environment** die nach Ihrem Account benannte Environment steht, zum Beispiel `copilot-studio-01` (Sandbox) für `copilot-studio-01@mst.fastlane.net`. Arbeiten Sie das ganze Lab darin, nie in der gemeinsamen Default Environment.
 
 ## Übung 1: Finden, wo Sie die Art des Agents wählen
 

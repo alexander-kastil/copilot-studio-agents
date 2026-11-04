@@ -38,6 +38,7 @@ Am Ende haben Sie ein Ergebnis: einen wiederverwendbaren Skill `objection-handli
 ## Voraussetzungen
 
 - Eine Copilot Studio Environment, in der Sie Agents erstellen können (eine Power Platform Environment mit der Maker-Rolle).
+- Ihre eigene Environment: Wählen Sie unten in der linken Navigation den Namen der Environment (**Switch environment**) und prüfen Sie, dass unter **Current environment** die nach Ihrem Account benannte Environment steht, zum Beispiel `copilot-studio-01` (Sandbox) für `copilot-studio-01@mst.fastlane.net`. Arbeiten Sie das ganze Lab darin, nie in der gemeinsamen Default Environment.
 - Ein bereits gebauter Microsoft Copilot Harness Agent. Haben Sie keinen, führen Sie zuerst [Build and Ground Your First Microsoft Copilot Harness Agent](../../../demos/06-cs-copilot-harness/01-standard-vs-copilot-harness/demo-01-build-and-ground-an-agent.md) aus und lassen Sie diesen Agent Sales Assistant geöffnet.
 - Ein zweiter Agent der neuen Art, auf dem Sie den Skill wiederverwenden (zum Beispiel ein Account Manager). Sie können ihn in Schritt 8 erstellen, falls Sie ihn noch nicht haben.
 - Ein einfacher Texteditor (Notepad, VS Code oder ähnlich) und das eingebaute ZIP-Tool Ihres Betriebssystems.

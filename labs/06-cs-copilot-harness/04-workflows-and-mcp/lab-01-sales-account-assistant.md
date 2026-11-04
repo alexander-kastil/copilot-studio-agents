@@ -31,6 +31,7 @@ The scenario company is Northwind Traders, a wholesale distributor whose sellers
 ## Prerequisites
 
 - A Copilot Studio environment where you can create agents (a Power Platform environment with the maker role).
+- Your own environment: select the environment name at the bottom of the left navigation (**Switch environment**) and check that **Current environment** shows the environment named after your account, for example `copilot-studio-01` (Sandbox) for `copilot-studio-01@mst.fastlane.net`. Work through the whole lab in it, never in the shared Default environment.
 - Microsoft Copilot harness agents available: open [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com), go to **Agents**, and confirm that the **New agent** menu offers **Agent** with the **GitHub Copilot** badge. This is the only setup step; everything after it is building.
 - Permission to add connectors and tools, plus a Dataverse environment you can reach for the MCP server in Step 6.
 - The companion file `SKILL.md` available locally in the `lab-01-sales-account-assistant` folder next to this guide, for the upload in Step 8.

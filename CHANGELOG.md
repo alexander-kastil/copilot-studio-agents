@@ -5,6 +5,8 @@
 
 ### Added
 
+- Module 06 apps topic opens with what an app is and how an app in Copilot Studio compares with the Cowork App skill and Power Apps canvas and model-driven apps: two new slides with diagrams and the matching readme section
+- Module 02 deck notes where Cowork saves custom skills (OneDrive, Documents/Cowork/Skills) and that plugins are Microsoft 365 app packages under Customize > Plugins, on the skill sources and plugins slides
 - German translation of the module 07 lab (`lab-01-build-and-migrate-from-the-terminal-de.md`); the module 07 lab readme gains a title, an intro and a lab table with Deutsch and Focus columns like modules 02 to 06
 - Module 05 deck teaches each topic beside its lab slides: teaching slides with concept diagrams (unattended instructions, guardrails and cost, routing descriptions, child or connected agent, routing rules, Foundry agent types, endpoint protocols, how the planner calls a Foundry agent, access and preview, the parts of an evaluation, test methods, failing case to fix); the deep reasoning topic is six plain slides (what deep reasoning is, what it brings, turning it on for one step, where it is configured in a Standard agent, seeing where it reasoned, when it pays off) in place of the reason keyword, model and ticket backlog slides; 29 to 45 slides
 - Module 04 and 05 labs run without command-line tools: the class uses the hosted REST API and MCP labs (readmes, topic readmes and schedule link them), the hosted MCP lab drops its MCP Inspector exercise, connectors lab-02 drops the PnP PowerShell provisioning, and the autonomous agent lab drops the Inspector, `dotnet run` and dev tunnel steps and points at the hosted `lab-human-resource-mcp` server
@@ -40,6 +42,7 @@
 
 ### Changed
 
+- Module 06 topics reordered in demos, labs, deck and schedule: Test and Evaluate is topic 06, Migrate is topic 07 and Building Apps is topic 08, with the demo files, slide numbers, overview diagram, lab path and day 4 lab order following
 - Module 05 drops the Voice Agents topic: Test and Evaluate Standard Agents moves from `07-evaluations` to `06-evaluations` in demos and labs, the module 05 deck loses its voice slides (31 to 29 slides, six topics on the overview, dividers and module path diagram) and is redelivered to OneDrive, and the class readme, module readmes, cost and harness tables and migration table no longer link to voice
 - Module 02 deck slide 20 (Anatomy of a SKILL.md) drops the companion-files picture and splits 50:50, bullets left and the SKILL.md code right.
 - Exclude all pptx folders and the assets folder from git: `.gitignore` ignores `pptx/` and `/assets/`, and their files stay on disk
@@ -58,6 +61,7 @@
 
 ### Fixed
 
+- Lab 06/01 (compare Standard and Microsoft Copilot harness agents) matches the live product after a run on 2026-11-04: the Agents list has no kind column, a Microsoft Copilot harness agent saves with the **Save** icon at the top right and folds its tabs into a **Build** drop-down in a narrow window, its new agent already holds Work IQ and Search all websites, and Troubleshooting covers the EnforcementUsageCredits error in Preview
 - Module 06 deck: the "Reading the plan in Preview" slide is retitled "Following the agent's reasoning in Preview" and describes only what the screenshot shows, with no plan or execution path; the skills slide 20 is rebuilt
 - Broken image links in the readmes and labs: the slide diagrams (`pptx/images/*.svg`) they embed are tracked again, while decks, renders and photos stay local
 - Module 02 Cowork lab guides corrected from the live runs

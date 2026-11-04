@@ -17,6 +17,7 @@ Das Szenario-Unternehmen ist Northwind Traders, ein Großhändler, dessen Seller
 ## Voraussetzungen
 
 - Eine Copilot Studio Environment, in der Sie Agents erstellen können (eine Power Platform Environment mit der Maker-Rolle) und in der das Menü **New agent** den Eintrag **Agent** mit dem Badge **GitHub Copilot** anbietet: Öffnen Sie [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com), prüfen Sie das Menü auf der Seite **Agents** und beachten Sie, dass die Agent Evaluation für Microsoft Copilot Harness Agents eine Production-Ready Preview ist, die Oberfläche sich also laufend ändert. Das ist der einzige Setup-Schritt; alles danach ist Bauen.
+- Ihre eigene Environment: Wählen Sie unten in der linken Navigation den Namen der Environment (**Switch environment**) und prüfen Sie, dass unter **Current environment** die nach Ihrem Account benannte Environment steht, zum Beispiel `copilot-studio-01` (Sandbox) für `copilot-studio-01@mst.fastlane.net`. Arbeiten Sie das ganze Lab darin, nie in der gemeinsamen Default Environment.
 
 ## Übung 1: Den Agent erstellen und die Oberfläche mit vier Tabs bestätigen
 

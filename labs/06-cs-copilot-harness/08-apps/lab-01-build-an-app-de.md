@@ -27,6 +27,7 @@ Setup: Melden Sie sich bei Copilot Studio in einer Environment an, die Microsoft
 ## Voraussetzungen
 
 - Ein Copilot Studio Account, mit dem Sie Apps erstellen können, mit der Kachel **App** auf der Seite **Home**.
+- Ihre eigene Environment: Melden Sie sich mit Ihrem eigenen Kurs-Account an. Copilot Studio baut die App in Ihrer persönlichen Developer Environment, die nach Ihnen benannt ist (zum Beispiel **Copilot Studio 1's Environment**, Typ Developer), und wählt sie selbst aus, deshalb wechseln Sie in diesem Lab keine Environment.
 - Die SharePoint Team Site, die Ihr Trainer nennt, auf der Sie Listen erstellen können.
 - Den Work Account einer Person aus dem Kurs für das Teilen in Schritt 7.
 - Copilot Credits, die Ihrer Environment zugewiesen sind. Jeder Build, jede Vorschau und jeder Test verbraucht Credits, halten Sie also jeden Request kurz.
@@ -77,7 +78,7 @@ Erwartet: Öffnen Sie die Ansicht **Data** über das Metadaten-Menü der App. Si
 
 Ein Filter ist eine einzelne, überprüfbare Änderung. Beschränken Sie den Request auf eine Änderung, damit Sie wissen, welche Änderung die Ursache war, falls die Vorschau kaputtgeht.
 
-![Die Build-Schleife einer App: das Problem beschreiben, den Entwurf prüfen und im Gespräch verfeinern, Prüfen und Verfeinern wiederholen, bis die Hauptszenarien funktionieren, dann veröffentlichen.](../../../demos/06-cs-copilot-harness/pptx/images/08-01-building-apps.svg)
+![Die Build-Schleife einer App: das Problem beschreiben, den Entwurf prüfen und im Gespräch verfeinern, Prüfen und Verfeinern wiederholen, bis die Hauptszenarien funktionieren, dann veröffentlichen.](../../../demos/06-cs-copilot-harness/pptx/images/08-03-building-apps.svg)
 
 1. Fügen Sie den folgenden Request ein und senden Sie ihn.
 

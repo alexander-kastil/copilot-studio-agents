@@ -20,6 +20,7 @@ Dauer: etwa 40 Minuten.
 
 - Der HR Agent aus den Labs von Modul 03, beginnend mit [Ihren ersten Copilot Studio Agent erstellen](../../03-cs-basics/01-standard-agents/lab-01-create-your-first-agent-de.md): seine Instructions, die Knowledge aus der Microsoft Careers site und den SharePoint HR Documents sowie die Topics aus [Topics, Entities und Variables definieren](../../03-cs-basics/03-topics/lab-01-build-topics-de.md) und [Input mit Adaptive Cards erfassen](../../03-cs-basics/05-adaptive-cards/lab-01-collect-input-with-adaptive-cards-de.md).
 - Eine Copilot Studio Environment, in der das Menü **New agent** den Eintrag **Agent** mit dem Badge **GitHub Copilot** anbietet, mit der Maker-Rolle und verfügbaren Copilot Credits: Das Upgrade, Workflow Runs, Hooks und Turns in Preview verbrauchen sie.
+- Ihre eigene Environment: Wählen Sie unten in der linken Navigation den Namen der Environment (**Switch environment**) und prüfen Sie, dass unter **Current environment** die nach Ihrem Account benannte Environment steht, zum Beispiel `copilot-studio-01` (Sandbox) für `copilot-studio-01@mst.fastlane.net`. Arbeiten Sie das ganze Lab darin, nie in der gemeinsamen Default Environment.
 - Eine Office 365 Outlook Connection für Ihren eigenen Account, damit der Workflow Ihnen die Zusammenfassung zur Kandidatur senden kann.
 - Die Demo [Ein Topic und seinen Agent Flow als Workflow neu aufbauen](../../../demos/06-cs-copilot-harness/07-migration/demo-07-rebuild-a-topic-as-a-workflow.md), gesehen oder durchgearbeitet, damit Ihnen der Workflow Designer vertraut ist.
 

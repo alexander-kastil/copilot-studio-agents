@@ -38,6 +38,7 @@ By the end you have one deliverable: a reusable `objection-handling` skill, pack
 ## Prerequisites
 
 - A Copilot Studio environment where you can create agents (a Power Platform environment with the maker role).
+- Your own environment: select the environment name at the bottom of the left navigation (**Switch environment**) and check that **Current environment** shows the environment named after your account, for example `copilot-studio-01` (Sandbox) for `copilot-studio-01@mst.fastlane.net`. Work through the whole lab in it, never in the shared Default environment.
 - One Microsoft Copilot harness agent already built. If you do not have one, run [Build and Ground Your First Microsoft Copilot Harness Agent](../../../demos/06-cs-copilot-harness/01-standard-vs-copilot-harness/demo-01-build-and-ground-an-agent.md) first and keep that Sales Assistant agent open.
 - A second new-type agent to reuse the skill across (for example an Account Manager). You can create it during Step 8 if you do not have it yet.
 - A plain text editor (Notepad, VS Code, or similar) and the built-in ZIP tool of your operating system.

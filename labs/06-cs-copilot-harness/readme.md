@@ -2,9 +2,9 @@
 
 Hands-on labs for Microsoft Copilot harness agents in Copilot Studio. Each lab belongs to a topic in the matching module, [Microsoft Copilot Harness Agents in Copilot Studio](../../demos/06-cs-copilot-harness/readme.md), and assumes you have read that topic's guide first.
 
-Work them in order: the first four each isolate one surface (the New agent menu, the Build tabs, Evaluate, Skills), and the fifth pulls all of them together into a capstone agent. The last two add IQ grounding and apps.
+Work them in order: the first three each isolate one surface (the New agent menu, the Build tabs, Skills), and the fourth pulls all of them together into a capstone agent. The labs after it add IQ grounding, evaluation with test sets and apps.
 
-![The lab path: the New agent menu, the Build tabs, Evaluate and Skills labs each isolate one surface and feed the capstone Sales Account Assistant, after which the last two labs add IQ grounding and apps.](./_images/copilot-harness-lab-path.svg)
+![The lab path: the New agent menu, the Build tabs and Skills labs each isolate one surface and feed the capstone Sales Account Assistant, after which the labs add IQ grounding, evaluation with test sets and apps.](./_images/copilot-harness-lab-path.svg)
 
 ## Labs
 
@@ -35,4 +35,5 @@ Some labs ship starter files in a folder next to the lab guide:
 
 - A Copilot Studio environment where the **New agent** menu offers **Agent** with the **GitHub Copilot** badge
 - Permission to create agents, knowledge sources, and tools in that environment
+- Your own environment, named after your class account (for example `copilot-studio-01`), selected under **Switch environment** at the bottom of the left navigation
 - The Standard agent labs in [Basics](../03-cs-basics/readme.md), [Tools](../04-cs-tools/readme.md), and [Advanced](../05-cs-advanced/readme.md) completed, so the Standard to Microsoft Copilot comparisons land

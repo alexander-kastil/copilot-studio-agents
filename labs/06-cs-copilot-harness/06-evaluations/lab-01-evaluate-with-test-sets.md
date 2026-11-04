@@ -31,6 +31,7 @@ Everything you paste or upload in this lab ships in the `lab-01-evaluate-with-te
 ## Prerequisites
 
 - A Copilot Studio environment where you can create agents (a Power Platform environment with the maker role), where the **New agent** menu at [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com) offers **Agent** with the **GitHub Copilot** badge. Agent evaluation for Microsoft Copilot harness agents is a production-ready preview, so expect the surface to keep changing.
+- Your own environment: select the environment name at the bottom of the left navigation (**Switch environment**) and check that **Current environment** shows the environment named after your account, for example `copilot-studio-01` (Sandbox) for `copilot-studio-01@mst.fastlane.net`. Work through the whole lab in it, never in the shared Default environment.
 - The `lab-01-evaluate-with-test-sets` folder from this repository, available locally so you can upload from it.
 - A spreadsheet application to open `evaluation-scorecard.xlsx` and, if you want to edit it, `northwind-test-set.csv`. The workbook is a local tracking sheet only; the **Evaluate** tab accepts CSV and rejects `.xlsx`.
 

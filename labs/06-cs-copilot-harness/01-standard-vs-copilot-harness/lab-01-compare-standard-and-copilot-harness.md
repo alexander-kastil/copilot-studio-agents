@@ -15,14 +15,15 @@ The scenario company is Northwind Traders, a wholesale distributor whose sellers
 ## Prerequisites
 
 - A Copilot Studio environment where you can create agents (a Power Platform environment with the maker role), with access to [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com). No files, connectors, or API keys are needed: every input in this lab is provided inline.
+- Your own environment: select the environment name at the bottom of the left navigation (**Switch environment**) and check that **Current environment** shows the environment named after your account, for example `copilot-studio-01` (Sandbox) for `copilot-studio-01@mst.fastlane.net`. Work through the whole lab in it, never in the shared Default environment.
 
 ## Exercise 1: Find where you choose the kind of agent
 
-Before you can choose a kind of agent, you need to see that both are offered in your tenant. Copilot Studio asks the question once, when you create an agent, from the **New agent** menu. Reading that menu and the **Agents** list shows you the two kinds and how the list tells them apart.
+Before you can choose a kind of agent, you need to see that both are offered in your tenant. Copilot Studio asks the question once, when you create an agent, from the **New agent** menu. Reading that menu and the **Agents** list shows you the two kinds and that the list alone doesn't tell them apart.
 
 1. Open [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com) and select **Agents** in the side pane.
 2. Open the arrow next to **New agent** and read both entries without selecting one.
-3. Close the menu and look at the **Agents** list for a column that marks agents as Standard.
+3. Close the menu and look at the **Agents** list: check whether any column marks an agent's kind.
 4. Select **...** at the bottom of the side bar and note the **Open classic experience** entry, then close the menu.
 
 Start your deliverable now. Paste this blank card into a text file named `northwind-agent-decision-card.md` and keep it open; you fill one section per exercise:
@@ -50,7 +51,7 @@ Scenario B (greenfield M365 account helper): kind =
 Reason for each:
 ```
 
-Expected: under **Optimize your business processes** the menu shows **Agent** with the **GitHub Copilot** badge ("Create an agent to take actions and answer questions"), and under **Other ways to build** it shows **Agent** with the **Standard** badge ("Create an agent with predefined rules and flows"). Existing Standard agents show Standard in the list. In the card, fill "Path to create each kind" with: **Agents**, arrow next to **New agent**, then **Agent** (GitHub Copilot) or **Other ways to build** > **Agent** (Standard).
+Expected: under **Optimize your business processes** the menu shows **Agent** with the **GitHub Copilot** badge ("Create an agent to take actions and answer questions"), and under **Other ways to build** it shows **Agent** with the **Standard** badge ("Create an agent with predefined rules and flows"). The **Agents** list has only a **Name** column and doesn't mark the kind; you tell the kinds apart by opening an agent, as the next exercises show. In the card, fill "Path to create each kind" with: **Agents**, arrow next to **New agent**, then **Agent** (GitHub Copilot) or **Other ways to build** > **Agent** (Standard).
 
 > **Note:** The kind is a per-agent choice made at creation. Coexistence is the normal state, so both kinds of agent live in the same environment.
 
@@ -58,10 +59,10 @@ Expected: under **Optimize your business processes** the menu shows **Agent** wi
 
 The clearest way to recognize a Standard agent later is to see its navigation now. A Standard agent is topic-driven: you author Topics, wire Knowledge and Tools, and configure Settings. Seeing this layout once makes it unmistakable on sight.
 
-1. On the **Agents** page, open an existing agent marked Standard. If you have none, open the arrow next to **New agent**, select **Agent** with the **Standard** badge under **Other ways to build**, and create a blank agent named `Northwind Returns Intake`.
+1. On the **Agents** page, open an existing Standard agent (it opens on an **Overview** page). If you have none, open the arrow next to **New agent**, select **Agent** with the **Standard** badge under **Other ways to build**, and create a blank agent named `Northwind Returns Intake`.
 2. Let the agent load and read the pages its navigation offers.
 
-Expected: the agent opens on its **Overview** page, and its navigation offers pages such as Knowledge, Tools, Topics, and Settings. In the card, fill "Standard agent navigation" with: Overview, Knowledge, Tools, Topics, Settings. If you see Build, Preview, Evaluate, and Monitor tabs across the top, you opened a Microsoft Copilot harness agent; go back and open a Standard one.
+Expected: the agent opens on its **Overview** page, with page tabs across the top such as Knowledge, Tools, Agents, Topics, Activity, Evaluation, Monitor, and Channels (in a narrow window they fold into a **+8** entry beside **Overview**), plus **Test** and Settings at the top right (under **...** in a narrow window). In the card, fill "Standard agent navigation" with: Overview, Knowledge, Tools, Topics, Settings. If you see Build, Preview, Evaluate, and Monitor tabs across the top (a **Build** drop-down in a narrow window), you opened a Microsoft Copilot harness agent; go back and open a Standard one.
 
 ## Exercise 3: Create a minimal Northwind assistant as a Microsoft Copilot harness agent
 
@@ -69,13 +70,13 @@ Now create your comparison specimen as the other kind. A Microsoft Copilot harne
 
 1. Go back to **Agents**, open the arrow next to **New agent**, and under **Optimize your business processes** select **Agent** with the **GitHub Copilot** badge.
 2. In the name field, enter `Northwind Sales Assistant`.
-3. In the **Instructions** section, paste the following, then select **Save**:
+3. In the **Instructions** section, paste the following, then select **Save** (the disk icon at the top right; in a narrow window, **...** > **Save**):
 
 ```text
 You are the Northwind Sales Assistant. You help Northwind Traders sellers by answering short questions about our products, standard lead times, and account tiers. Keep answers brief, factual, and professional.
 ```
 
-Expected: the agent is saved and open on its authoring surface without you having written a single topic. The agent name reads Northwind Sales Assistant. You read that surface in the next exercise.
+Expected: "Your agent has been saved." appears and the agent stays open on its authoring surface without you having written a single topic. The agent name reads Northwind Sales Assistant. You read that surface in the next exercise.
 
 > **Tip:** If the new agent opens on an **Overview** page with Topics in its navigation, you picked the Standard entry. Go back to **Agents** and select **Agent** with the **GitHub Copilot** badge.
 
@@ -85,27 +86,27 @@ With the new agent open, read its layout the same way you read the Standard agen
 
 ![A Standard agent lists its pages down the left, while a Microsoft Copilot harness agent shows Build, Preview, Evaluate and Monitor tabs across the top with Instructions filled and Knowledge, Tools and Skills empty on the Build tab.](../../../demos/06-cs-copilot-harness/pptx/images/01-02-telling-experiences-apart.svg)
 
-1. Look at the tabs across the top of the agent.
-2. On the **Build** tab, find the components panel and note which components are present.
+1. Look at the tabs across the top of the agent (in a narrow window they fold into a **Build** drop-down).
+2. On the **Build** tab, find the components panel beside **Instructions** and note which components are present.
 3. Confirm the **Instructions** component holds the text you pasted in Exercise 3.
 
-Expected: the top tabs read Build, Preview, Evaluate, and Monitor, and the **Build** tab shows **Instructions** with your sentence plus empty Knowledge, Tools, and Skills. In the card, fill "Microsoft Copilot harness agent navigation" with: Build, Preview, Evaluate, Monitor (top tabs). You authored zero topics.
+Expected: the top tabs read Build, Preview, Evaluate, and Monitor, next to **Review** and **Publish**, and the **Build** tab shows **Instructions** with your sentence and a components panel with Model, Channels, Skills, Tools, Knowledge, Connected agents, and Memory. Skills is empty; Tools already holds **Work IQ** and Knowledge holds **Search all websites**, both added by default. In the card, fill "Microsoft Copilot harness agent navigation" with: Build, Preview, Evaluate, Monitor (top tabs). You authored zero topics.
 
 ## Exercise 5: Confirm coexistence in the Agents list
 
 You have now seen both kinds; this exercise proves they live together. You move between the two agents from the **Agents** list and confirm that neither one changed the other. This is coexistence in action.
 
 1. Select **Agents** in the side pane.
-2. Find the Standard agent from Exercise 2 and the Northwind Sales Assistant in the same list, and note which one is marked Standard.
+2. Find the Standard agent from Exercise 2 and the Northwind Sales Assistant in the same list; the list shows names only, so you know each one's kind from the earlier exercises.
 3. Open the Standard agent, then go back and open the Northwind Sales Assistant.
 
-Expected: both agents appear in one list of the same environment, the Exercise 2 agent is marked Standard, and each opens on its own surface with nothing altered. Nothing you did to one agent touched the other.
+Expected: both agents appear in one list of the same environment, the Exercise 2 agent opens on its **Overview** page and the Northwind Sales Assistant on its **Build** tab, each with nothing altered. Nothing you did to one agent touched the other.
 
 ## Exercise 6: Contrast the authoring model in practice
 
 The navigation difference reflects a deeper one: how you change what the agent does. In a Standard agent you open a Topic, add trigger phrases, and wire branching nodes; in a Microsoft Copilot harness agent you edit plain-language Instructions and the runtime reasons against them. Editing Instructions once makes the difference concrete.
 
-1. On your Northwind Sales Assistant, open the **Build** tab and open the **Instructions** component.
+1. On your Northwind Sales Assistant, stay on the **Build** tab and select the text under **Instructions**.
 2. Replace the contents with the following:
 
 ```text
@@ -121,15 +122,15 @@ You do not:
 Style: concise and professional.
 ```
 
-3. Select **Save**.
+3. Select **Save** at the top right.
 
-Expected: the **Instructions** component shows your saved text, and you changed the agent's behavior without opening a single topic or trigger. In the card, fill "Microsoft Copilot harness agent (how you add behavior)" with: edit plain-language Instructions, and "Standard agent (how you add behavior)" with: author Topics with trigger phrases and branching nodes.
+Expected: **Instructions** shows your saved text, and you changed the agent's behavior without opening a single topic or trigger. In the card, fill "Microsoft Copilot harness agent (how you add behavior)" with: edit plain-language Instructions, and "Standard agent (how you add behavior)" with: author Topics with trigger phrases and branching nodes.
 
 > **Tip:** Write instructions as short "You do / You do not" lists. The runtime follows scoped, itemized guardrails more reliably than one long paragraph.
 
 ## Exercise 7: Smoke-test the Microsoft Copilot harness agent in Preview
 
-A comparison is only fair if your specimen actually works, so give it one quick test. The **Preview** tab is where you see the agent respond before anyone else does. One in-scope question and one out-of-scope question confirm the Instructions took effect.
+A comparison is only fair if your specimen actually works, so give it one quick test. **Preview** is where you see the agent respond before anyone else does. One in-scope question and one out-of-scope question confirm the Instructions took effect.
 
 1. Open the **Preview** tab.
 2. Send this message:
@@ -144,7 +145,7 @@ What is the standard lead time for a Tier 1 account?
 Can you give me a signed contract price for 500 cases?
 ```
 
-Expected: the first reply gives a short, professional answer about Tier 1 lead time, and the second declines the binding quote because your Exercise 6 "You do not" list forbids contract terms. The agent is a working specimen, which keeps the rest of your comparison honest. You added no knowledge, so exact figures may be general; that is fine for this lab.
+Expected: the first reply gives a short, professional answer about Tier 1 lead time, and the second declines the binding quote because your Exercise 6 "You do not" list forbids contract terms. The agent is a working specimen, which keeps the rest of your comparison honest. You added no knowledge of your own (only the default **Search all websites**), so exact figures may be general; that is fine for this lab.
 
 ## Exercise 8: Test the one-way conversion rule
 
@@ -197,13 +198,14 @@ Expected: the Northwind Agent Decision Card is complete and internally consisten
 | The **New agent** menu offers only one kind of agent | The environment or your role doesn't offer Microsoft Copilot harness agents yet | Switch to an environment where you can create agents, or ask the admin to confirm Microsoft Copilot harness agents are available there |
 | A Learn page tells you to turn off **New experience** | Some Learn pages for Standard agents still describe an older switch | Use **Other ways to build** > **Agent** with the **Standard** badge; the result is the same Standard agent |
 | No convert option appears anywhere | Working as designed; conversion between the two kinds isn't possible | Record this in the card as expected behavior; plan to rebuild if you ever need the other kind |
-| Preview gives vague figures for the smoke-test question | The minimal agent has no Knowledge source, so it answers generally | This is fine for this lab; the demo and capstone lab add grounded Knowledge for cited, exact answers |
+| Preview gives vague figures for the smoke-test question | The minimal agent has no Knowledge source of its own, only the default **Search all websites**, so it answers generally | This is fine for this lab; the demo and capstone lab add grounded Knowledge for cited, exact answers |
+| Preview answers "You need credits to continue ... Error code: EnforcementUsageCredits" | The environment has no Copilot Credits left, and a Microsoft Copilot harness agent uses credits in Preview | Ask the admin to allocate Copilot Credits to the environment, then send the message again |
 
 ## Summary
 
 You built two things: a minimal Northwind Sales Assistant as a Microsoft Copilot harness agent and a completed Northwind Agent Decision Card that captures, from first-hand inspection, how Standard and Microsoft Copilot harness agents differ and how to choose between them. You can now:
 
-- Create either kind of agent from the **New agent** menu and find Standard agents in the **Agents** list.
+- Create either kind of agent from the **New agent** menu and find both kinds in the **Agents** list.
 - Identify each kind on sight from its navigation (Overview, Knowledge, Tools, Topics, Settings for a Standard agent; Build, Preview, Evaluate, Monitor for a Microsoft Copilot harness agent).
 - Explain the one-way conversion rule and why it makes the per-agent choice a real commitment.
 - Confirm coexistence: both kinds of agent live in one environment, untouched by each other.
