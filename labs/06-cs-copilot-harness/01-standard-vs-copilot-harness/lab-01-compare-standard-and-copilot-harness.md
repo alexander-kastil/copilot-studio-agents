@@ -145,7 +145,7 @@ What is the standard lead time for a Tier 1 account?
 Can you give me a signed contract price for 500 cases?
 ```
 
-Expected: the first reply gives a short, professional answer about Tier 1 lead time, and the second declines the binding quote because your Exercise 6 "You do not" list forbids contract terms. The agent is a working specimen, which keeps the rest of your comparison honest. You added no knowledge of your own (only the default **Search all websites**), so exact figures may be general; that is fine for this lab.
+Expected: the first reply answers the lead-time question professionally, and because the agent holds no Northwind data it says it found no Tier 1 standard or gives only a general figure from the web; the step list shows it searched with the default **Search all websites** and **Work IQ** tools. The second reply declines the binding quote because your Exercise 6 "You do not" list forbids contract terms. The agent is a working specimen, which keeps the rest of your comparison honest; the missing figure is fine for this lab.
 
 ## Exercise 8: Test the one-way conversion rule
 

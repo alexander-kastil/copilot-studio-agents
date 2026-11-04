@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
-  <title id="t">Instructions route work questions to Work IQ</title>
-  <desc id="d">The finished lab agent, Aurora Provisions Account Assistant, receives two questions. Its Instructions send work context, such as email, meetings, Teams chats and files, to Work IQ. The Step 6 work-context question about the renewal requests goes to Work IQ (Preview), used read-only, which reads the seed email Aurora Provisions renewal call in your mailbox; the reply lists the three requests and the Thursday reply date, and the trace shows a Work IQ node. The Step 8 general question about a call opening is answered directly with no tool call; the reply is a one-sentence call opening for a new customer, and the trace shows no Work IQ node.</desc>
+  <title id="t">Instructions route staff questions to the HR MCP server</title>
+  <desc id="d">The finished agent, Restaurant Staff Assistant, receives two questions. Its Instructions send staff questions, such as roles, skills and spoken languages, to the HR MCP Server. The Step 5 staff question about who speaks Japanese goes to the HR MCP Server, used read-only, whose search_employees call returns Kenji Tanaka; the reply names Kenji Tanaka, Sushi Chef, with his email address, and the step list shows a Used tool line. The Step 7 general question about welcoming a new waiter is answered directly with no tool call, and the step list shows no HR tool line.</desc>
   <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
   <defs>
     <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
@@ -8,34 +8,30 @@
     </marker>
   </defs>
   <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
-    <rect x="1030" y="90" width="360" height="150" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
-    <text x="1210" y="142" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Seed email</text>
-    <text x="1210" y="182" font-size="28" fill="#57606a" text-anchor="middle">Aurora Provisions</text>
-    <text x="1210" y="218" font-size="28" fill="#57606a" text-anchor="middle">renewal call</text>
-    <line x1="1190" y1="298" x2="1190" y2="246" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
-    <line x1="1230" y1="244" x2="1230" y2="294" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
-    <rect x="1030" y="300" width="360" height="130" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
-    <text x="1210" y="358" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Work IQ (Preview)</text>
-    <text x="1210" y="400" font-size="28" fill="#57606a" text-anchor="middle">used read-only</text>
+    <rect x="1030" y="265" width="360" height="200" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1210" y="320" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">HR MCP Server</text>
+    <text x="1210" y="364" font-family="Consolas, Menlo, monospace" font-size="28" fill="#24292f" text-anchor="middle">search_employees</text>
+    <text x="1210" y="404" font-size="28" fill="#57606a" text-anchor="middle">returns Kenji Tanaka</text>
+    <text x="1210" y="442" font-size="28" fill="#57606a" text-anchor="middle">used read-only</text>
 
     <rect x="60" y="295" width="460" height="140" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
-    <text x="290" y="355" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Work-context question</text>
-    <text x="290" y="398" font-size="28" fill="#57606a" text-anchor="middle">Step 6: renewal requests</text>
+    <text x="290" y="355" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Staff question</text>
+    <text x="290" y="398" font-size="28" fill="#57606a" text-anchor="middle">Step 5: who speaks Japanese</text>
     <rect x="60" y="750" width="460" height="140" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
     <text x="290" y="810" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">General question</text>
-    <text x="290" y="853" font-size="28" fill="#57606a" text-anchor="middle">Step 8: a call opening</text>
+    <text x="290" y="853" font-size="28" fill="#57606a" text-anchor="middle">Step 7: welcome a new waiter</text>
     <line x1="522" y1="365" x2="574" y2="365" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
     <line x1="522" y1="820" x2="574" y2="820" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
 
     <rect x="580" y="270" width="380" height="620" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
-    <text x="770" y="332" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Aurora Provisions</text>
-    <text x="770" y="374" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Account Assistant</text>
+    <text x="770" y="332" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Restaurant Staff</text>
+    <text x="770" y="374" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Assistant</text>
     <line x1="612" y1="408" x2="928" y2="408" stroke="#8c959f" stroke-width="2"/>
     <text x="770" y="560" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">Instructions</text>
-    <text x="770" y="604" font-size="28" fill="#57606a" text-anchor="middle">Work context, such as</text>
-    <text x="770" y="644" font-size="28" fill="#57606a" text-anchor="middle">email, meetings,</text>
-    <text x="770" y="684" font-size="28" fill="#57606a" text-anchor="middle">Teams chats and files,</text>
-    <text x="770" y="724" font-size="28" fill="#57606a" text-anchor="middle">goes to Work IQ</text>
+    <text x="770" y="604" font-size="28" fill="#57606a" text-anchor="middle">Staff questions, such as</text>
+    <text x="770" y="644" font-size="28" fill="#57606a" text-anchor="middle">roles, skills and</text>
+    <text x="770" y="684" font-size="28" fill="#57606a" text-anchor="middle">spoken languages, go</text>
+    <text x="770" y="724" font-size="28" fill="#57606a" text-anchor="middle">to the HR MCP Server</text>
 
     <line x1="962" y1="365" x2="1024" y2="365" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
     <line x1="1392" y1="365" x2="1434" y2="365" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
@@ -44,28 +40,25 @@
 
     <rect x="1440" y="285" width="420" height="160" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
     <text x="1650" y="340" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Reply</text>
-    <text x="1650" y="382" font-size="28" fill="#57606a" text-anchor="middle">lists the three requests</text>
-    <text x="1650" y="420" font-size="28" fill="#57606a" text-anchor="middle">and the Thursday reply date</text>
+    <text x="1650" y="382" font-size="28" fill="#57606a" text-anchor="middle">names Kenji Tanaka,</text>
+    <text x="1650" y="420" font-size="28" fill="#57606a" text-anchor="middle">Sushi Chef, with email</text>
     <rect x="1440" y="465" width="420" height="70" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
-    <text x="1650" y="510" font-size="28" fill="#24292f" text-anchor="middle">Trace: Work IQ node</text>
+    <text x="1650" y="510" font-size="28" fill="#24292f" text-anchor="middle">Step list: Used tool line</text>
 
     <rect x="1440" y="740" width="420" height="160" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
     <text x="1650" y="795" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Reply</text>
-    <text x="1650" y="837" font-size="28" fill="#57606a" text-anchor="middle">one-sentence call opening</text>
-    <text x="1650" y="875" font-size="28" fill="#57606a" text-anchor="middle">for a new customer</text>
+    <text x="1650" y="837" font-size="28" fill="#57606a" text-anchor="middle">one-sentence welcome</text>
+    <text x="1650" y="875" font-size="28" fill="#57606a" text-anchor="middle">for a new waiter</text>
     <rect x="1440" y="920" width="420" height="70" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
-    <text x="1650" y="965" font-size="28" fill="#24292f" text-anchor="middle">Trace: no Work IQ node</text>
+    <text x="1650" y="965" font-size="28" fill="#24292f" text-anchor="middle">Step list: no HR tool line</text>
   </g>
 
   <g fill="none" stroke="#0969da" stroke-width="6">
     <rect x="580" y="270" width="380" height="620" rx="16" opacity="0">
       <animate attributeName="opacity" dur="10s" repeatCount="indefinite" values="0;0;1;1;0;0;1;1;0;0" keyTimes="0;0.08;0.09;0.13;0.14;0.70;0.71;0.75;0.76;1"/>
     </rect>
-    <rect x="1030" y="300" width="360" height="130" rx="16" opacity="0">
+    <rect x="1030" y="265" width="360" height="200" rx="16" opacity="0">
       <animate attributeName="opacity" dur="10s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.22;0.23;0.49;0.50;1"/>
-    </rect>
-    <rect x="1030" y="90" width="360" height="150" rx="16" opacity="0">
-      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.36;0.37;0.41;0.42;1"/>
     </rect>
     <rect x="1440" y="285" width="420" height="160" rx="16" opacity="0">
       <animate attributeName="opacity" dur="10s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.56;0.57;0.65;0.66;1"/>
@@ -89,14 +82,6 @@
     <circle r="14" opacity="0">
       <animateMotion dur="10s" repeatCount="indefinite" values="974,365;974,365;1012,365;1012,365" keyTimes="0;0.14;0.22;1"/>
       <animate attributeName="opacity" dur="10s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.14;0.22"/>
-    </circle>
-    <circle r="14" opacity="0">
-      <animateMotion dur="10s" repeatCount="indefinite" values="1190,288;1190,288;1190,256;1190,256" keyTimes="0;0.28;0.36;1"/>
-      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.28;0.36"/>
-    </circle>
-    <circle r="14" opacity="0">
-      <animateMotion dur="10s" repeatCount="indefinite" values="1230,254;1230,254;1230,286;1230,286" keyTimes="0;0.42;0.50;1"/>
-      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.42;0.50"/>
     </circle>
     <circle r="14" opacity="0">
       <animateMotion dur="10s" repeatCount="indefinite" values="1402,365;1402,365;1424,365;1424,365" keyTimes="0;0.50;0.56;1"/>

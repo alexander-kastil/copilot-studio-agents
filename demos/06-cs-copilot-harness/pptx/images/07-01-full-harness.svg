@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">The full Microsoft Copilot harness at a glance</title>
+  <desc id="d">A run starts with a chat message on Teams, Microsoft 365 or a website, a trigger in preview on an email, a SharePoint item or a schedule, or a workflow agent node. The agent loop plans, calls, checks and replans with the model; six hooks sit on its border: Start, Prompt, Pre tool, Post tool, Tool failure and Error. The Build tab holds instructions, knowledge, tools (connectors, MCP, workflows), skills, connected agents and memory. Under the loop the agent sandbox runs code and creates Word, Excel, PowerPoint and PDF files. What comes back is an answer, a created file card or actions through tools. Preview, Evaluate and Monitor span the whole harness. Amber marks what is new in this topic, blue the Build tab, purple the runtime and green the results.</desc>
+  <defs>
+    <marker id="ah" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+
+  <text x="40" y="60" font-size="32" font-weight="700" fill="#24292f">A run starts</text>
+  <rect x="40" y="80" width="480" height="110" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="62" y="124" font-size="30" font-weight="700" fill="#24292f">Chat message</text>
+  <text x="62" y="166" font-size="28" fill="#57606a">Teams, Microsoft 365, website</text>
+  <rect x="40" y="205" width="480" height="110" rx="14" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="62" y="249" font-size="30" font-weight="700" fill="#24292f">Trigger (preview)</text>
+  <text x="62" y="291" font-size="28" fill="#57606a">email, SharePoint item, schedule</text>
+  <rect x="40" y="330" width="480" height="80" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="62" y="381" font-size="30" font-weight="700" fill="#24292f">Workflow agent node</text>
+  <line x1="520" y1="135" x2="578" y2="135" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <line x1="520" y1="260" x2="578" y2="260" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <line x1="520" y1="370" x2="578" y2="370" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+
+  <rect x="40" y="450" width="480" height="510" rx="20" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="62" y="498" font-size="32" font-weight="700" fill="#24292f">Build tab</text>
+  <g font-size="28" fill="#24292f">
+    <rect x="60" y="520" width="440" height="58" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="80" y="559">Instructions</text>
+    <rect x="60" y="588" width="440" height="58" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="80" y="627">Knowledge</text>
+    <rect x="60" y="656" width="440" height="96" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="80" y="695">Tools: connectors, MCP,</text>
+    <text x="80" y="733">workflows</text>
+    <rect x="60" y="762" width="440" height="58" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="80" y="801">Skills</text>
+    <rect x="60" y="830" width="440" height="58" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="80" y="869">Connected agents</text>
+    <rect x="60" y="898" width="440" height="50" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="80" y="933">Memory</text>
+  </g>
+  <line x1="520" y1="500" x2="578" y2="500" stroke="#57606a" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#ah)"/>
+
+  <rect x="580" y="120" width="870" height="480" rx="28" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="945" y="98" width="140" height="46" rx="23" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1015" y="131" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">Model</text>
+  <text x="1015" y="230" font-size="44" font-weight="700" fill="#24292f" text-anchor="middle">Agent loop</text>
+  <text x="1015" y="285" font-size="32" fill="#57606a" text-anchor="middle">plan, call, check, replan</text>
+  <path d="M1075,390 A60,60 0 1 1 1015,330" fill="none" stroke="#57606a" stroke-width="5" marker-end="url(#ah)"/>
+  <text x="605" y="550" font-size="30" font-weight="700" fill="#9a6700">Hooks</text>
+  <g font-size="28" fill="#24292f" text-anchor="middle">
+    <rect x="599" y="576" width="102" height="48" rx="10" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <text x="650" y="610">Start</text>
+    <rect x="707" y="576" width="122" height="48" rx="10" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <text x="768" y="610">Prompt</text>
+    <rect x="835" y="576" width="142" height="48" rx="10" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <text x="906" y="610">Pre tool</text>
+    <rect x="983" y="576" width="152" height="48" rx="10" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <text x="1059" y="610">Post tool</text>
+    <rect x="1141" y="576" width="182" height="48" rx="10" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <text x="1232" y="610">Tool failure</text>
+    <rect x="1329" y="576" width="102" height="48" rx="10" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <text x="1380" y="610">Error</text>
+  </g>
+
+  <rect x="580" y="680" width="870" height="170" rx="20" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="1015" y="752" font-size="34" font-weight="700" fill="#24292f" text-anchor="middle">Agent sandbox</text>
+  <text x="1015" y="804" font-size="28" fill="#57606a" text-anchor="middle">runs code, creates Word, Excel, PowerPoint, PDF</text>
+
+  <text x="1510" y="60" font-size="32" font-weight="700" fill="#24292f">What comes back</text>
+  <line x1="1450" y1="175" x2="1508" y2="175" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <line x1="1450" y1="295" x2="1508" y2="295" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <line x1="1450" y1="415" x2="1508" y2="415" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <rect x="1510" y="130" width="370" height="90" rx="14" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1695" y="186" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Answer</text>
+  <rect x="1510" y="250" width="370" height="90" rx="14" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1695" y="306" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Created file card</text>
+  <rect x="1510" y="370" width="370" height="90" rx="14" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1695" y="426" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Actions through tools</text>
+
+  <g font-size="28" fill="#24292f">
+    <rect x="1510" y="690" width="40" height="40" rx="8" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <text x="1566" y="720">New in this topic</text>
+    <rect x="1510" y="745" width="40" height="40" rx="8" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1566" y="775">Build tab</text>
+    <rect x="1510" y="800" width="40" height="40" rx="8" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1566" y="830">Runtime</text>
+    <rect x="1510" y="855" width="40" height="40" rx="8" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="1566" y="885">Results</text>
+  </g>
+
+  <rect x="40" y="985" width="1840" height="70" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="960" y="1031" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Preview, Evaluate, Monitor</text>
+</svg>

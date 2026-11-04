@@ -39,6 +39,11 @@
 - Presenter guides for every demo in module 06, each beside its demo, with a note under the title naming the agents the demo shows
 - Module 06 skills topic opens with an intro: what a skill is, where skills come from (including the skills marketplace, preview) and where they are saved (including the Copilot Cowork OneDrive location) and the built-in skills, as four new slides with their diagrams, and the topic readme carries the matching teaching
 - Update demos
+- Update lab 06/04 and 06/05 SVGs: Progress: 3/3 · routing-staff-questions-to-hr-mcp.svg
+- Run lab 06/04 in browser: Lab 06/04 browser run (Integrationsonline Production)
+- Update lab 06/04 and 06/05 SVGs: I relabelled the diagram in
+- Find 404 path on HR MCP server: No 404 request is recorded anywhere
+- Add /mcp path to HR MCP server: The HR server now answers MCP at both / and /mcp
 
 ### Changed
 

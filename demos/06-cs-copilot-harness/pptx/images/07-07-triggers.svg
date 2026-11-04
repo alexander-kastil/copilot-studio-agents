@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Triggers start the agent on an event</title>
+  <desc id="d">A new email, a SharePoint item created or a recurrence feed one trigger in preview, set up with a connection, extra instructions and trigger options. The trigger sends the event details to the agent, whose instructions and tools turn them into work done: a reply drafted or an item updated. Test with Start listening or a previous event. After Publish, activate for myself with the maker's credentials or share with others, who run it with their own credentials. Runs use Copilot Credits of the environment.</desc>
+  <defs>
+    <marker id="ah" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <g transform="translate(0,-60)">
+
+  <g font-size="29" fill="#24292f" text-anchor="middle">
+    <rect x="40" y="200" width="380" height="90" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="230" y="255">New email</text>
+    <rect x="40" y="330" width="380" height="90" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="230" y="385">SharePoint item created</text>
+    <rect x="40" y="460" width="380" height="90" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="230" y="515">Recurrence</text>
+  </g>
+  <g fill="none" stroke="#57606a" stroke-width="4">
+    <path d="M420,245 C460,245 460,330 498,330" marker-end="url(#ah)"/>
+    <line x1="420" y1="375" x2="498" y2="375" marker-end="url(#ah)"/>
+    <path d="M420,505 C460,505 460,420 498,420" marker-end="url(#ah)"/>
+  </g>
+
+  <rect x="500" y="230" width="340" height="290" rx="18" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="670" y="290" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Trigger (preview)</text>
+  <g font-size="28" fill="#57606a" text-anchor="middle">
+    <text x="670" y="360">connection</text>
+    <text x="670" y="412">extra instructions</text>
+    <text x="670" y="464">trigger options</text>
+  </g>
+
+  <line x1="840" y1="375" x2="1048" y2="375" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <text x="944" y="352" font-size="28" fill="#57606a" text-anchor="middle">event details</text>
+
+  <rect x="1050" y="250" width="300" height="250" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1200" y="310" font-size="34" font-weight="700" fill="#24292f" text-anchor="middle">Agent</text>
+  <rect x="1090" y="340" width="220" height="56" rx="28" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1200" y="378" font-size="28" fill="#24292f" text-anchor="middle">instructions</text>
+  <rect x="1090" y="414" width="220" height="56" rx="28" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1200" y="452" font-size="28" fill="#24292f" text-anchor="middle">tools</text>
+
+  <line x1="1350" y1="375" x2="1438" y2="375" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <rect x="1440" y="290" width="440" height="170" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1660" y="360" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Work done</text>
+  <text x="1660" y="410" font-size="28" fill="#57606a" text-anchor="middle">reply drafted, item updated</text>
+
+  <line x1="670" y1="520" x2="670" y2="588" stroke="#57606a" stroke-width="3" stroke-dasharray="8 6"/>
+  <rect x="380" y="590" width="580" height="60" rx="30" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="670" y="630" font-size="28" fill="#24292f" text-anchor="middle">Test: Start listening or a previous event</text>
+
+  <line x1="1200" y1="500" x2="1200" y2="638" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <rect x="1080" y="640" width="240" height="80" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="1200" y="691" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Publish</text>
+  <g fill="none" stroke="#57606a" stroke-width="4">
+    <path d="M1150,720 V760 H905 V808" marker-end="url(#ah)"/>
+    <path d="M1250,720 V760 H1565 V808" marker-end="url(#ah)"/>
+  </g>
+  <g font-size="28" fill="#24292f" text-anchor="middle">
+    <rect x="590" y="810" width="630" height="64" rx="32" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="905" y="852">Activate for myself: maker credentials</text>
+    <rect x="1250" y="810" width="630" height="64" rx="32" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1565" y="852">Share with others: their own credentials</text>
+  </g>
+
+  <rect x="1220" y="960" width="660" height="64" rx="32" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="1550" y="1002" font-size="28" fill="#24292f" text-anchor="middle">Runs use Copilot Credits of the environment</text>
+  </g>
+</svg>

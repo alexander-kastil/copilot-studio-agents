@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
 <title id="t">How the agent fills the Send Account Follow-Up inputs</title>
-<desc id="d">The Sales Account Assistant fills accountName and followUpBody with AI from the conversation, while recipientEmail is pinned with Value to your own mailbox. The trigger passes the three Text inputs to Send an email (V2) as Subject, Body and To, and Respond to the agent returns status Follow-up sent to the assistant.</desc>
+<desc id="d">The agent fills accountName and followUpBody with Fill with Intelligence from the conversation while recipientEmail is pinned with Custom; the trigger passes all three to the Subject, Body and To fields of Send an email (V2), and Respond to the agent returns the status.</desc>
 <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
 <defs><marker id="ah" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L16,8 L0,16 z" fill="#57606a"/></marker></defs>
 <text x="1360" y="100" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Send Account Follow-Up workflow</text>
@@ -15,8 +15,8 @@
 <rect x="1300" y="150" width="540" height="640" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
 <text x="1570" y="220" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">Send an email (V2)</text>
 <rect x="420" y="280" width="380" height="120" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
-<rect x="440" y="294" width="72" height="44" rx="22" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
-<text x="476.0" y="325" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">AI</text>
+<rect x="440" y="294" width="320" height="44" rx="22" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="600.0" y="324" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#24292f" text-anchor="middle">Fill with Intelligence</text>
 <text x="440" y="378" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="start">from the conversation</text>
 <rect x="900" y="280" width="300" height="120" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
 <text x="1050" y="338" font-family="Consolas, Menlo, monospace" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">accountName</text>
@@ -28,8 +28,8 @@
 <line x1="800" y1="340" x2="896" y2="340" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
 <line x1="1200" y1="340" x2="1316" y2="340" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
 <rect x="420" y="460" width="380" height="120" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
-<rect x="440" y="474" width="72" height="44" rx="22" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
-<text x="476.0" y="505" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">AI</text>
+<rect x="440" y="474" width="320" height="44" rx="22" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+<text x="600.0" y="504" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#24292f" text-anchor="middle">Fill with Intelligence</text>
 <text x="440" y="558" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="start">from the conversation</text>
 <rect x="900" y="460" width="300" height="120" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
 <text x="1050" y="518" font-family="Consolas, Menlo, monospace" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">followUpBody</text>
@@ -41,8 +41,8 @@
 <line x1="800" y1="520" x2="896" y2="520" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
 <line x1="1200" y1="520" x2="1316" y2="520" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
 <rect x="420" y="640" width="380" height="120" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
-<rect x="440" y="654" width="120" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
-<text x="500.0" y="685" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">Value</text>
+<rect x="440" y="654" width="140" height="44" rx="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+<text x="510.0" y="685" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#24292f" text-anchor="middle">Custom</text>
 <text x="440" y="738" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#57606a" text-anchor="start">your own mailbox</text>
 <rect x="900" y="640" width="300" height="120" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
 <text x="1050" y="698" font-family="Consolas, Menlo, monospace" font-size="30" font-weight="700" fill="#24292f" text-anchor="middle">recipientEmail</text>

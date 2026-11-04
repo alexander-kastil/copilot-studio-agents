@@ -1,170 +1,162 @@
-# Ground an Agent with Work IQ and Route Work Questions to It
+# Ground an Agent with the HR MCP Server and Route Staff Questions to It
 
-An agent with no tools guesses about the work an account manager cares about most: what a customer wrote and what was agreed. This lab adds Work IQ to a Microsoft Copilot harness agent, writes the instructions that tell it when to call Work IQ, and checks the result in the activity trace. You finish with an agent that answers work questions from your own mail, and you can prove from the trace which answers came from Work IQ.
+An agent with no tools guesses about the facts a shift manager needs most: who is on the team, what they can do, and which languages they speak. This lab adds the class HR MCP server to a Microsoft Copilot harness agent, writes the instructions that tell it when to call the server, and checks the result in the Preview step list. You finish with an agent that answers staff questions from the live staff list, and you can prove from the step list which answers came from the server.
 
-What you practice here: writing instructions that route one kind of question to a grounding tool, then verifying the routing in the activity trace.
+What you practice here: writing instructions that route one kind of question to a grounding tool, then verifying the routing in the step list.
 
-Duration: about 25 minutes, not counting the optional Step 9.
+Duration: about 25 minutes, not counting the optional Step 8.
 
 ## What you'll build
 
-- Aurora Provisions Account Assistant, a Microsoft Copilot harness agent with Work IQ (Preview) in its Tools section.
-- Instructions that send work-context questions to Work IQ and name the source of each answer.
-- A reply that quotes a renewal email you sent to yourself, checked against your inbox.
-- A trace check that shows which replies used Work IQ and which did not.
+- Restaurant Staff Assistant, a Microsoft Copilot harness agent with the HR MCP server in its Tools section.
+- Instructions that send staff questions to the HR MCP server, keep it read-only, and name the source of each answer.
+- A reply that names the right team member, checked against the server's output in the step list.
+- A step-list check that shows which replies used the HR MCP server and which did not.
 
-![The finished agent's Instructions send the Step 6 renewal question to Work IQ (Preview), which reads the seed email, while the Step 8 general question is answered directly with no Work IQ node in the trace.](./_images/routing-work-questions-to-work-iq.svg)
+![The finished agent's Instructions send the Step 5 staff question to the HR MCP server, whose search returns Kenji Tanaka, while the Step 7 general question is answered directly with no HR tool line in the step list.](./_images/routing-staff-questions-to-hr-mcp.svg)
 
 ## What This Lab Covers
 
 | Step | Focus |
 |------|-------|
 | 1 | Create a Microsoft Copilot harness agent |
-| 2 | Send a seed email that the agent will need to find |
-| 3 | Ask the agent without grounding and read the baseline |
-| 4 | Add Work IQ (Preview) from the Tools panel |
-| 5 | Route work-context questions to Work IQ in Instructions |
-| 6 | Test a work-context question and grant consent |
-| 7 | Read the activity trace and check the source |
-| 8 | Confirm that a general question does not call Work IQ |
-| 9 | Optional: ground the agent with Foundry IQ or Fabric IQ |
+| 2 | Ask the agent without grounding and read the baseline |
+| 3 | Add the HR MCP server from the Tools panel |
+| 4 | Route staff questions to the HR MCP server in Instructions |
+| 5 | Test a staff question |
+| 6 | Read the step list and check the source |
+| 7 | Confirm that a general question does not call the HR MCP server |
+| 8 | Optional: ground the agent with Foundry IQ or Fabric IQ |
 
 ## Prerequisites
 
 - A Copilot Studio environment where you can create agents (maker role), where the **New agent** menu on the **Agents** page offers **Agent** with the **GitHub Copilot** badge. The agent's top tabs read Build, Preview, Evaluate, and Monitor.
 - Your own environment: select the environment name at the bottom of the left navigation (**Switch environment**) and check that **Current environment** shows the environment named after your account, for example `copilot-studio-01` (Sandbox) for `copilot-studio-01@mst.fastlane.net`. Work through the whole lab in it, never in the shared Default environment.
-- Work IQ enabled for the class tenant by an administrator, with your user assigned to the usage-based billing plan. If Work IQ (Preview) is missing from the tool list in Step 4, ask your instructor before you continue.
-- Your own class mailbox, so you can send yourself the seed email in Step 2.
+- The class HR MCP server at `https://lab-human-resource-mcp.azurewebsites.net`, hosted for the class with no sign-in. Every learner reads the same staff list, so this lab only reads from it.
 - No files to download. You paste every input from this guide.
 
 ## Step 1: Create a Microsoft Copilot harness agent
 
-You need an agent to ground, and the Build tab is where tools and instructions live. Start with short instructions now. You rewrite them in Step 5, once Work IQ exists to route to.
+You need an agent to ground, and the Build tab is where tools and instructions live. Start with short instructions now. You rewrite them in Step 4, once the HR MCP server exists to route to.
 
 1. In the side pane, select **Agents**, open the arrow next to **New agent**, and under **Optimize your business processes** select **Agent** with the **GitHub Copilot** badge.
-2. In the name field, enter `Aurora Provisions Account Assistant`, then paste the description below into the **Instructions** section and select **Save**.
+2. Select the pencil icon next to the agent name and enter `Restaurant Staff Assistant`.
+3. Paste the text below into the **Instructions** section.
 
 ```text
-You are the Aurora Provisions Account Assistant. You help Aurora Provisions account managers prepare for customer calls. Keep answers short and professional.
+You are the Restaurant Staff Assistant. You help shift managers plan the team for each service. Keep answers short and professional.
 ```
 
-Expected: the agent opens on the **Build** tab, and the top tabs read Build, Preview, Evaluate, and Monitor. If the agent shows Topics, Knowledge, Tools, and Settings, it is a Standard agent. Go back to **Agents** and create the agent again with **Agent** (GitHub Copilot) from the **New agent** menu.
+4. In the components panel, a new agent already lists **Work IQ** under **Tools** and **Search all websites** under **Knowledge**. Select the **x** on **Work IQ** and confirm **Remove** in **Remove tool?**, so the HR MCP server becomes the agent's only tool.
+5. Select **Save** (the disk icon at the top right).
 
-## Step 2: Send yourself a seed email
+Expected: "Your agent has been saved." appears, the agent stays on the **Build** tab, and the top tabs read Build, Preview, Evaluate, and Monitor. **Tools** is empty. If the agent shows Topics, Knowledge, Tools, and Settings, it is a Standard agent. Go back to **Agents** and create the agent again with **Agent** (GitHub Copilot) from the **New agent** menu.
 
-Work IQ can only ground an answer in mail that exists. This seed email gives the agent a real renewal request to find, and the reply you check later must match what is in your inbox, not what this guide says.
+## Step 2: Ask the agent without grounding
 
-1. Open your mail client and send an email to your own class address with the subject and body below.
-
-```text
-Subject: Aurora Provisions renewal call
-
-Hi, before the renewal Aurora Provisions asks for three things: a 12-month price hold, the cold-chain delivery report by Friday, and a named account contact. Please confirm by Thursday.
-```
-
-Expected: the message arrives in your inbox. Allow a few minutes before Step 6, so the message is available to Work IQ when you ask about it.
-
-## Step 3: Ask the agent without grounding
-
-The baseline comes first, so the change in Step 6 has something to beat. Right now the agent has no tool that reads mail, so it can only reason from its instructions and general knowledge. Ask the question that the seed email answers.
+The baseline comes first, so the change in Step 5 has something to beat. Right now the agent has no tool that reads the staff list, so it can only reason from its instructions and general knowledge. Ask the question that the staff list answers.
 
 1. Open the **Preview** tab and send this question:
 
 ```text
-What three things did Aurora Provisions ask for before the renewal, and when do they need a reply?
+Who on our team speaks Japanese, and what is their role and email address?
 ```
 
-Expected: the reply does not list the three requests from your inbox. It either says it cannot see your email or gives a general answer. The trace shows no Work IQ node, so any specific name or date in the reply is a guess, which is the failure this lab fixes.
+Expected: the reply does not name Kenji Tanaka. It either says it has no access to staff records or gives a general answer. The step list under the reply shows no **Used tool** line, so any name in the reply is a guess, which is the failure this lab fixes.
 
-## Step 4: Add Work IQ from the Tools panel
+## Step 3: Add the HR MCP server from the Tools panel
 
-Work IQ is the grounding source. Adding it gives the agent a tool it can call, and Step 5 decides when it does. Learn describes Work IQ as a preview feature that is read-only unless an administrator turns on write operations. You use it read-only in this lab.
+The HR MCP server is the grounding source. Adding it gives the agent a set of staff tools it can call, and Step 4 decides when it does. The server can also add, change and remove employees and assign shifts; you turn those write tools off in this lab because every learner shares the same staff list.
 
-1. Open the **Build** tab and select **Tools** in the components panel.
-2. Select **Add tool**, then select **MCP**.
-3. Select **Work IQ (Preview)**, expand **Connection**, select **Create new connection**, then select **Create**.
-4. Sign in with your class account, then select **Add and Configure**.
+1. Open the **Build** tab and select **+** next to **Tools** in the components panel.
+2. In **Add a tool**, select **+ Add**, then select **Model Context Protocol (MCP)**.
+3. In **Add MCP server**, fill in the fields below, set **Authentication** to **None**, and select **Add**.
+   - Server name: `HR MCP Server`
+   - Server description: `Looks up the restaurant's employees: names, roles, skills, spoken languages and email addresses.`
+   - Server URL: `https://lab-human-resource-mcp.azurewebsites.net`
+4. Under **Select a connection**, open the **Not connected** list, select **Create new connection**, and select **Create** in the connection dialog (the display name is optional). When the list shows the connection, select **Add**.
+5. Select **Save** before you open the tool; opening it with unsaved changes asks **Leave without saving?**, and **Discard** drops the new tool.
+6. Under **Tools**, select **HR MCP Server** to open **Edit tool**. Under **Tool permissions**, turn off every tool that adds, updates or removes an employee or assigns a shift, keep **List employees** and **Search employees** on, select **Done**, and select **Save**.
 
-Expected: Work IQ (Preview) appears in the Tools section of the **Build** tab as a connected tool.
+Expected: **HR MCP Server** appears under **Tools** on the **Build** tab, and its **Tool permissions** allow only **List employees** and **Search employees**.
 
-> **Warning:** Do not select Mail, Teams, OneDrive, SharePoint, or the other workload-specific tools in this step. Learn lists them as a legacy experience with standard licensing, so they are a different product path from Work IQ (Preview).
+## Step 4: Route staff questions to the HR MCP server in Instructions
 
-## Step 5: Route work-context questions to Work IQ in Instructions
+A tool sits unused until the agent knows when to call it. Naming the kinds of staff question in Instructions tells the agent to reach for the HR MCP server, and the "You do not" line keeps the shared staff list unchanged. The last "You do" line asks the agent to name its source, which gives you something to check in Step 6.
 
-A tool sits unused until the agent knows when to call it. Naming the kinds of work context in Instructions tells the agent to reach for Work IQ on mail, meeting, and chat questions. The last line asks the agent to name its source, which gives you something to check in Step 7.
-
-1. On the **Build** tab, open the **Instructions** component.
-2. Replace its contents with the text below.
+1. On the **Build** tab, select the text under **Instructions**.
+2. Replace it with the text below.
 3. Select **Save**.
 
 ```text
-Role: You are the Aurora Provisions Account Assistant, an internal helper for Aurora Provisions account managers.
+Role: You are the Restaurant Staff Assistant, an internal helper for the restaurant's shift managers.
 
 You do:
-- When a question asks about my own work context (email, meetings, Teams chats, or files about a customer or deal), use the Work IQ tool to find the answer before you reply.
-- Name the email subject, meeting, or chat that your answer came from.
+- When a question asks about our team (who works here, their roles, skills, spoken languages or email addresses), use the HR MCP Server to look it up before you reply.
+- Name the HR MCP Server as the source of every staff fact in your answer.
+
+You do not:
+- Add, change or remove employees, or assign shifts.
 
 Style: concise and professional.
 ```
 
-Expected: the Instructions component shows the saved text, and Work IQ (Preview) is still listed under Tools. Nothing is tested yet, so the next step is the first real check.
+Expected: **Instructions** shows the saved text, and **HR MCP Server** is still listed under **Tools**. Nothing is tested yet, so the next step is the first real check.
 
-## Step 6: Test a work-context question and grant consent
+## Step 5: Test a staff question
 
-The question matches Step 3, so any change in the reply comes from the routing you wrote. The first send can ask for consent, because Work IQ connects to Microsoft 365 services for your account.
+The question matches Step 2, so any change in the reply comes from the tool and the routing you wrote.
 
-1. Open the **Preview** tab, start a new conversation, and send the Step 3 question again.
-2. When asked to allow Work IQ to connect and use services, select **Allow**.
-3. Read the reply.
+1. Open the **Preview** tab, select **New chat**, and send the Step 2 question again.
+2. Read the reply.
 
-Expected: the reply lists the three requests (the price hold, the cold-chain report by Friday, and a named account contact), gives Thursday as the reply date, and names the subject Aurora Provisions renewal call. If the reply is still generic, use the Troubleshooting table before you change anything else.
+Expected: the reply names Kenji Tanaka, Sushi Chef, with the email address `kenji.tanaka@restaurant.com`, and says the facts come from the HR MCP Server. If the reply is still generic, use the Troubleshooting table before you change anything else.
 
-## Step 7: Read the activity trace and check the source
+## Step 6: Read the step list and check the source
 
-A reply is a claim, and the trace is the evidence. You confirm that a Work IQ node ran, read what it returned, and compare that output with the reply.
+A reply is a claim, and the step list is the evidence. With **Debug mode** on (the default in the **Preview** header), every answer carries an expandable list of the steps the agent took. You confirm that the HR MCP server ran, read what it returned, and compare that output with the reply.
 
-1. In the **Preview** tab, keep the trace panel visible beside the chat. Confirm the **End user preview** toggle is off.
-2. Select the Work IQ tool node in the trace and read its input and output.
-3. Scroll to the end of the trace and find the green checkmark.
+1. Under the Step 5 reply, expand the step list.
+2. Find the **Used tool** line for the HR MCP server and open its **Input** and **Output**.
 
-Expected: the Work IQ output contains the seed email from Step 2, and the three requests in the reply match it. The green checkmark shows that every tool call finished.
+Expected: the **Used tool** line shows a call such as `search_employees` or `list_employees`, its **Output** contains Kenji Tanaka with the role Sushi Chef and the languages Japanese, English, and Mandarin, and the reply matches that output. Each finished tool line carries a grey check-circle.
 
-## Step 8: Confirm a general question does not call Work IQ
+## Step 7: Confirm a general question does not call the HR MCP server
 
-Routing works in both directions. A general question should answer without a mail lookup, because every Work IQ call is metered under usage-based billing. This check shows that the instruction is scoped to work context.
+Routing works in both directions. A general question should answer without a staff lookup, because each tool call adds time and cost. This check shows that the instruction is scoped to staff questions.
 
-1. Open the **Preview** tab, start a new conversation, and send the question below.
-2. Open the trace and check for a Work IQ node.
+1. In the **Preview** tab, select **New chat** and send the question below.
+2. Expand the step list under the reply and check for a **Used tool** line.
 
 ```text
-Suggest a one-sentence opening for a call with a new customer.
+Suggest a one-sentence welcome for a new waiter on their first shift.
 ```
 
-Expected: the agent answers the question directly, and the trace shows no Work IQ node. The routing line in Instructions covers work-context questions only.
+Expected: the agent answers the question directly, and the step list shows no **Used tool** line for the HR MCP server. The routing line in Instructions covers staff questions only.
 
-## Step 9: Optional: ground the agent with Foundry IQ or Fabric IQ
+## Step 8: Optional: ground the agent with Foundry IQ or Fabric IQ
 
-Foundry IQ and Fabric IQ ground an agent in data outside mail, but each needs a resource that your instructor must provide: a knowledge base in Microsoft Foundry, or a semantic model in Microsoft Fabric that your account can open. Skip this step if you do not have access. Add either connection to a second agent, so the Work IQ agent from Steps 1 to 7 stays as built.
+Foundry IQ and Fabric IQ ground an agent in data outside the HR MCP server, but each needs a resource that your instructor must provide: a knowledge base in Microsoft Foundry, or a semantic model in Microsoft Fabric that your account can open. Skip this step if you do not have access. Add either connection to a second agent, so the HR agent from Steps 1 to 7 stays as built.
 
 ![Copilot Studio holds the Work IQ, Foundry IQ and Fabric IQ connections as tools, while each source stays in Microsoft 365, Microsoft Foundry or Microsoft Fabric with the owner who tunes it.](../../../demos/06-cs-copilot-harness/pptx/images/05-01-iq-grounding.svg)
 
 Path A: Foundry IQ
 
-1. On the second agent's **Build** tab, select **Tools** in the components panel, then select **Foundry IQ**.
+1. On the second agent's **Build** tab, select **+** next to **Tools**, open the **MCP** tab of **Add a tool**, and select **Azure - Foundry IQ**.
 2. Select **Create new connection**, choose **Microsoft Entra ID Integrated** as the authentication type, enter the Search Service endpoint your instructor gives you, then select **Create**.
 3. Select **Next**, select a knowledge base from the list, select **Add to agent**, then select **Save**.
-4. Select the Foundry IQ connection, write one sentence for each topic the knowledge base covers in the words an account manager would type, then select **Save**.
-5. Open the **Preview** tab, ask a question the knowledge base should answer, and open the trace.
+4. Select the Foundry IQ connection, write one sentence for each topic the knowledge base covers in the words a shift manager would type, then select **Save**.
+5. Open the **Preview** tab, ask a question the knowledge base should answer, and expand the step list.
 
-Expected: the trace shows a Foundry IQ retrieval step and lists the items it returned, and the reply uses those items.
+Expected: the step list shows a Foundry IQ retrieval step and lists the items it returned, and the reply uses those items.
 
 Path B: Fabric IQ
 
-1. On the second agent's **Build** tab, select **+ Add tool** in the components panel, then select **Fabric IQ**.
+1. On the second agent's **Build** tab, select **+** next to **Tools**, open the **MCP** tab of **Add a tool**, and select **Fabric IQ Data MCP** (or **Fabric IQ Ontology MCP** for an ontology).
 2. Follow the standard add-tool steps, sign in with the account that can open the workspace, and select **Save**. The picker shows only the items your account can access.
-3. Open the **Preview** tab, ask a question that a measure in the semantic model can answer, and open the trace.
+3. Open the **Preview** tab, ask a question that a measure in the semantic model can answer, and expand the step list.
 
-Expected: the trace shows a node for the Fabric IQ call, and the reply reflects the figure in the semantic model.
+Expected: the step list shows a line for the Fabric IQ call, and the reply reflects the figure in the semantic model.
 
 > **Note:** Removing a connection in Copilot Studio does not change the knowledge base in Microsoft Foundry or the semantic model in Microsoft Fabric.
 
@@ -172,31 +164,34 @@ Expected: the trace shows a node for the Fabric IQ call, and the reply reflects 
 
 | Symptom | Likely cause | Fix |
 |---------|--------------|-----|
-| Work IQ (Preview) is missing from the MCP list | The tenant is not set up for Work IQ, or your user is not on the usage-based billing plan | Ask your instructor to confirm the one-time tenant setup and billing assignment, then reopen Add a tool |
-| The reply is generic after Step 6 | Consent was not given, the connection uses another account, or the seed email is not yet available | Confirm the connection under Tools, allow a few more minutes, and ask again; select **Allow** if the consent prompt returns |
-| The trace shows no Work IQ node for a work question | The routing line is missing from Instructions, or the wording does not look like work context | Check that Step 5 was saved, then ask with the words "from my email" |
-| A Mail or Teams tool appears in Tools | The legacy tool was added in Step 4 | Remove that tool and add Work IQ (Preview) from the MCP tab |
+| **Add MCP server** says "Choose a different server name. This name is already in use." | The server was already created in this environment, for example in an earlier attempt whose tool was discarded, and **Add a tool** does not list it | Enter another server name, for example `HR MCP Server 2`, and repeat Step 3 |
+| **HR MCP Server** shows no tools or reads **Not connected** | The connection was not created in Step 3 | Open the tool, select **Create new connection**, then **Create**, and save the agent |
+| The reply is generic after Step 5 | Step 4 was not saved, or the question does not look like a staff question | Check that Step 4 was saved, then ask with the words "from our staff list" |
+| The step list shows no **Used tool** line for a staff question | The routing line is missing from Instructions, or Work IQ is still under **Tools** and answered instead | Check that Step 4 was saved and that **Work IQ** is removed under **Tools** |
+| The reply lists people you do not expect, such as test entries | Every learner shares the staff list, and the MCP lab in module 04 adds employees to it | This is fine for this lab; check that Kenji Tanaka is in the reply |
+| The agent offers to add, change or remove an employee | A write tool is still on, or the "You do not" line is missing | Turn the write tools off under **Tool permissions** (Step 3) and check that Step 4 was saved; never confirm a write in this lab |
+| Preview answers "You need credits to continue ... Error code: EnforcementUsageCredits" | The environment has no Copilot Credits left, and a Microsoft Copilot harness agent uses credits in Preview | Ask the admin to allocate Copilot Credits to the environment, then send the message again |
 | The Foundry IQ or Fabric IQ picker is empty | Your account has no access to the knowledge base, workspace, or semantic model | Ask the owner of the resource to grant access, then reopen the picker |
 
 ## Verify
 
 You have met the lab goal when all of the following are true:
 
-1. Work IQ (Preview) appears under Tools on the **Build** tab as a connected tool.
-2. The Step 3 reply contains no request from your inbox, and the Step 6 reply names the three requests and the Thursday reply date.
-3. The Step 6 trace contains a Work IQ node whose output includes the seed email, and the Step 8 trace contains none.
-4. The Instructions on the **Build** tab contain the routing line from Step 5.
+1. **HR MCP Server** appears under **Tools** on the **Build** tab as a connected tool, and **Work IQ** is removed.
+2. The Step 2 reply does not name Kenji Tanaka, and the Step 5 reply names him with his role and email address.
+3. The Step 5 step list contains a **Used tool** line for the HR MCP server whose output includes Kenji Tanaka, and the Step 7 step list contains none.
+4. The Instructions on the **Build** tab contain the routing line and the "You do not" line from Step 4.
 
 ## Summary
 
-You grounded an agent in your own mail. You added Work IQ (Preview), wrote Instructions that route work-context questions to it, confirmed the answer against your inbox, and used the activity trace to show that a general question skips the tool. You can now:
+You grounded an agent in the class HR MCP server. You added the server as a tool, wrote Instructions that route staff questions to it and keep it read-only, confirmed the answer against the server's output, and used the step list to show that a general question skips the tool. You can now:
 
-- Add Work IQ (Preview) from the Tools panel through the MCP tab, and handle its connection and consent prompt.
-- Write Instructions that send one kind of question to a grounding tool.
-- Prove grounding in the activity trace and tell a grounded reply from a guess.
+- Add a hosted MCP server from the Tools panel through **+ Add** > **Model Context Protocol (MCP)**, and create its connection.
+- Write Instructions that send one kind of question to a grounding tool and rule out its write operations.
+- Prove grounding in the step list and tell a grounded reply from a guess.
 
-Return to [Grounding Agents with Work IQ, Foundry IQ, and Fabric IQ](../../../demos/06-cs-copilot-harness/05-iq-grounding/readme.md) to compare the three grounding sources when you choose one for a real agent.
+Return to [Grounding Agents with Work IQ, Foundry IQ, and Fabric IQ](../../../demos/06-cs-copilot-harness/05-iq-grounding/readme.md) to compare the grounding sources when you choose one for a real agent.
 
 ## Cleanup
 
-Delete the Aurora Provisions Account Assistant from the agent list if you do not need it: open the agent, then choose **Delete**. If you added the optional connections, open the second agent's **Tools** section and remove each connection with the **x** control. Removing a connection leaves the Foundry knowledge base and the Fabric semantic model unchanged. Delete the seed email from your mailbox if you do not want to keep it.
+Delete the Restaurant Staff Assistant from the agent list if you do not need it: open the agent, then choose **Delete**. If you added the optional connections, open the second agent's **Tools** section and remove each connection with the **x** control. Removing a connection leaves the HR MCP server, the Foundry knowledge base and the Fabric semantic model unchanged.

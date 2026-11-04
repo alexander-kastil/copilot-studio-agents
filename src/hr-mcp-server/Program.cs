@@ -22,5 +22,6 @@ var app = builder.Build();
 await EmployeeDbInitializer.InitializeAsync(app.Services);
 
 app.MapMcp();
+app.MapMcp("/mcp");
 
 app.Run();
