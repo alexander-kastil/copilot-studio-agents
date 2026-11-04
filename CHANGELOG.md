@@ -48,6 +48,7 @@
 - Add /mcp path to HR MCP server: The HR server now answers MCP at both / and /mcp
 - Run lab 03/06 in the browser: Progress: 9/9 · report
 - Run lab 01/05 in the browser: The site is renamed: its title is now LAB-Grey Logistics HR 0105 (checked after a reload)
+- Update .run
 
 ### Changed
 

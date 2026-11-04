@@ -55,9 +55,9 @@ It should have a professional tone.
 ```
 
 4. Wählen Sie rechts oben auf der Seite **Publish** und dann im Dialog **Publish**.
-5. Öffnen Sie **Channels**, wählen Sie **Microsoft 365 and Microsoft Teams**, lassen Sie **Make agent available in Microsoft 365 Copilot** ausgewählt und wählen Sie **Add channel**.
+5. Öffnen Sie **Channels** (in einem schmalen Fenster steht es im Menü **+N** der Tab-Leiste), wählen Sie **Microsoft 365 and Microsoft Teams**, lassen Sie **Make agent available in Microsoft 365 Copilot** ausgewählt und wählen Sie **Add channel**.
 
-Erwartet: **Channels** führt **Microsoft 365 and Microsoft Teams** für `Agentic HR` als hinzugefügt.
+Erwartet: Das Panel **Microsoft 365 and Microsoft Teams** von `Agentic HR` meldet **The channel was added.**
 
 ---
 
@@ -94,7 +94,7 @@ Jede Person, die die URL erreicht, kann Datensätze von Kandidatinnen und Kandid
 
 Öffnen Sie [Power Automate](https://make.powerautomate.com) und wechseln Sie über die Environment-Auswahl rechts oben zur für Sie vorbereiteten Environment. Navigieren Sie zu **More**, **Discover all** und dann **Custom connectors**.
 
-Wählen Sie **+ New custom connector** und dann **Import an OpenAPI file**. Nennen Sie den Connector `HR-Services` und wählen Sie [`hr-service-swagger.json`](./hr-service-swagger.json) in diesem Lab-Ordner. Wählen Sie **Continue**.
+Verdeckt ein Cookie-Banner die Seite, beantworten Sie es vor dem Start: Eine spätere Antwort lädt die Seite neu und verwirft den ungespeicherten Connector. Wählen Sie **New custom connector** und dann **Import from OpenAPI file**. Nennen Sie den Connector `HR-Services` und wählen Sie [`hr-service-swagger.json`](./hr-service-swagger.json) in diesem Lab-Ordner. Wählen Sie **Continue**.
 
 Verwenden Sie diese Datei, nicht `hr-service/src/openapi.json`. Der Service liefert eine OpenAPI 3.0 Specification mit, Power Platform Custom Connectors beruhen aber auf Swagger 2.0, deshalb wird die 3.0-Datei abgelehnt oder mit fehlenden Operations importiert. `hr-service-swagger.json` beschreibt dieselbe API in Swagger 2.0, mit drei Ergänzungen, die später wichtig werden:
 
@@ -147,15 +147,15 @@ Haben Sie in einem früheren Lab ein gleichwertiges Tool hinzugefügt, etwa **Li
 
 ### Schritt 2: Veröffentlichen und ausführen
 
-Wählen Sie **Publish**. Sobald die Veröffentlichung fertig ist, öffnen Sie Microsoft 365 Copilot Chat, wählen Sie den Agent und senden Sie:
+Wählen Sie **Publish**. Sobald die Veröffentlichung fertig ist, öffnen Sie **Channels** > **Microsoft 365 and Microsoft Teams**, wählen Sie **See agent in Microsoft 365** und dann **Add**. Der Chat öffnet sich mit dem Feld **Message Agentic HR**. Senden Sie:
 
 ```text
 Lists all the HR candidates from an external system
 ```
 
-Beim ersten Mal fragt ein Consent Prompt, ob der Agent einen externen Service aufrufen darf. Wählen Sie **Allow once**, solange Sie noch testen, oder **Always allow**, sobald Sie dem Service vertrauen. Fordert der Agent Sie auf, sich zuerst zu verbinden, öffnen Sie den Connection Manager, verbinden Sie `HR-Services` und senden Sie den Prompt erneut.
+Beim ersten Mal antwortet der Agent mit einer Card **Let's get you connected first**. Wählen Sie **Open connection manager**, dann bei `HR-Services` **Connect** und **Submit**, bis **Connected** erscheint, kehren Sie zum Chat zurück und wählen Sie **Retry**. Der Test Pane in Copilot Studio fragt einmal nach derselben Connection.
 
-Sie erhalten die Liste der Kandidatinnen und Kandidaten, mit einer Kennzeichnung in der Antwort, dass die Daten aus einem externen Service stammen.
+Sie erhalten die Liste der Kandidatinnen und Kandidaten.
 
 ---
 

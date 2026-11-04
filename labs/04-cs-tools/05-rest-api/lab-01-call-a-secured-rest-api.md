@@ -55,9 +55,9 @@ It should have a professional tone.
 ```
 
 4. Select **Publish** in the upper right corner of the page, then **Publish** in the dialog.
-5. Open **Channels**, select **Microsoft 365 and Microsoft Teams**, keep **Make agent available in Microsoft 365 Copilot** selected and select **Add channel**.
+5. Open **Channels** (in a narrow window it sits under the **+N** menu of the tab bar), select **Microsoft 365 and Microsoft Teams**, keep **Make agent available in Microsoft 365 Copilot** selected and select **Add channel**.
 
-Expected: **Channels** lists **Microsoft 365 and Microsoft Teams** as added for `Agentic HR`.
+Expected: the **Microsoft 365 and Microsoft Teams** panel of `Agentic HR` says **The channel was added.**
 
 ---
 
@@ -94,7 +94,7 @@ Anyone who can reach the URL can read and delete candidate records. That is acce
 
 Go to [Power Automate](https://make.powerautomate.com) and switch to the environment prepared for you with the environment picker in the top right corner. Navigate to **More**, **Discover all**, then **Custom connectors**.
 
-Select **+ New custom connector**, then **Import an OpenAPI file**. Name the connector `HR-Services` and browse to [`hr-service-swagger.json`](./hr-service-swagger.json) in this lab folder. Select **Continue**.
+If a cookie banner covers the page, answer it before you start: answering it later reloads the page and discards the unsaved connector. Select **New custom connector**, then **Import from OpenAPI file**. Name the connector `HR-Services` and select [`hr-service-swagger.json`](./hr-service-swagger.json) in this lab folder. Select **Continue**.
 
 Use that file, not `hr-service/src/openapi.json`. The service ships an OpenAPI 3.0 specification, and Power Platform custom connectors are built on Swagger 2.0, so the 3.0 file is rejected or imported with missing operations. `hr-service-swagger.json` is the same API expressed in Swagger 2.0, with three additions that matter downstream:
 
@@ -147,15 +147,15 @@ If you added an equivalent tool in an earlier lab, such as **List HR candidates*
 
 ### Step 2: Publish and run it
 
-Select **Publish**. Once publishing finishes, open Microsoft 365 Copilot Chat, select the agent, and send:
+Select **Publish**. Once publishing finishes, open **Channels** > **Microsoft 365 and Microsoft Teams**, select **See agent in Microsoft 365** and then **Add**. The chat opens with the box **Message Agentic HR**. Send:
 
 ```text
 Lists all the HR candidates from an external system
 ```
 
-The first time, a consent prompt asks to call an external service. Select **Allow once** while you are still testing, or **Always allow** once you trust it. If the agent asks you to connect first, open the connection manager, connect `HR-Services`, and send the prompt again.
+The first time, the agent answers with a card **Let's get you connected first**. Select **Open connection manager**, select **Connect** for `HR-Services` and then **Submit** until it shows **Connected**, go back to the chat and select **Retry**. The test pane in Copilot Studio asks for the same connection once.
 
-You get the candidate list, with an indicator in the response showing the data came from an external service.
+You get the candidate list.
 
 ---
 
