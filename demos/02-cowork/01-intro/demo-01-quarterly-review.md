@@ -18,7 +18,7 @@ Hand Cowork three files holding a quarter of raw numbers, manager notes, and las
 
 ## Related Topics
 
-This demo puts the [Getting Started with Cowork](./readme.md) interaction model to work in its native shape: one outcome brief, a plan you review and steer while the task runs, and artefacts that land as files. The building blocks are the document and communication capabilities from the built-in [Skills](../02-built-in-skills/readme.md) catalogue, and the send in the final step runs through the approval flow covered in [Human-in-the-Loop](../06-staying-in-control/readme.md).
+This demo puts the [Getting Started with Cowork](./readme.md) interaction model to work in its native shape: one outcome brief, a plan you review and steer while the task runs, and artefacts that land as files. The building blocks are the document and communication capabilities from the built-in [Skills](../02-built-in-skills/readme.md) catalogue, and the send in the final step runs through the approval flow covered in [Human-in-the-Loop](../07-staying-in-control/readme.md).
 
 ---
 
@@ -142,4 +142,4 @@ Draft an email with "Aurora Northern Europe - Q3 Review" attached, addressed to 
 
 **Expected Outcome:** The send is held at a **Send draft?** card with a **Medium risk** badge, your name on the **To** line, the subject and the full body, plus **Cancel** and **Send** buttons, even though the prompt said to send it. The card does not list the attachment; the **Add attachments** step above it confirms one was added, and after you select **Send** the reply names the attached deck. The task shows **Approved 1 action** and the email lands in your own inbox with the deck attached: the full loop from brief to delivered artefact, with you in it exactly once per irreversible action.
 
-> Approvals, risk levels, and how to steer a task mid-run are covered in [Human-in-the-Loop](../06-staying-in-control/readme.md).
+> Approvals, risk levels, and how to steer a task mid-run are covered in [Human-in-the-Loop](../07-staying-in-control/readme.md).

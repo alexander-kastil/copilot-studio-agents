@@ -36,7 +36,7 @@ This gives you a flexible packaging model:
 - Connector-only plugin (external tools used by built-in skills)
 - Combined plugin (custom skills orchestrating external tools)
 
-![Three plugin shapes: a skills-only plugin packages custom skills, a connector-only plugin packages a connector that built-in skills use to reach a remote MCP endpoint, and a combined plugin packages custom skills that call the remote endpoint through its connector.](./_images/lab-03-plugin-shapes.svg)
+![Three plugin shapes: a skills-only plugin packages custom skills, a connector-only plugin packages a connector that built-in skills use to reach a remote MCP endpoint, and a combined plugin packages custom skills that call the remote endpoint through its connector.](./_images/lab-04-plugin-shapes.svg)
 
 This plugin model is aligned with the Microsoft 365 app ecosystem and follows the same enterprise governance patterns used for Teams apps and agents.
 
@@ -58,13 +58,13 @@ Keep this distinction in mind:
 - **Users** add allowed plugins from **Discover**, turn them on or off per conversation in **Sources & Skills**, and can't remove admin-deployed plugins
 - **Admins** control availability, deployment scope, and governance from the Microsoft 365 Admin Center
 
-![Five sources feed the Cowork side panel: built-in skills, custom skills from Customize or OneDrive, plugins from Discover, admin-deployed plugins, and skills that are shared or uploaded.](../../demos/02-cowork/pptx/images/05-02-where-plugins-fit.svg)
+![Five sources feed the Cowork side panel: built-in skills, custom skills from Customize or OneDrive, plugins from Discover, admin-deployed plugins, and skills that are shared or uploaded.](../../demos/02-cowork/pptx/images/06-02-where-plugins-fit.svg)
 
 If a plugin requires connector authentication, each user still completes their own one-time sign-in and consent flow.
 
 ## Exercise 2: Inspect plugin structure and design decisions
 
-In this exercise you analyze the architecture of the Grey Logistics sample plugin in [lab-03-grey-logistics-plugin](./lab-03-grey-logistics-plugin/), and understand why packaging multiple skills with connectors is valuable.
+In this exercise you analyze the architecture of the Grey Logistics sample plugin in [lab-03-grey-logistics-plugin](./lab-04-grey-logistics-plugin), and understand why packaging multiple skills with connectors is valuable.
 
 ### Step 1: Review a production-style plugin layout
 
@@ -97,7 +97,7 @@ The plugin is made of the following skills:
 - **grey-logistics-deck**: creates a professional PowerPoint presentation for Grey Logistics about a Microsoft Learn article or topic. Researches Microsoft Learn documentation, organizes content into a slide structure, and generates a polished deck with speaker notes. Used when the user asks to "create a presentation on", "make a deck about", "build a slideshow for", "present on a Grey Logistics topic", or "generate slides about" any Microsoft Learn article or Microsoft technology topic.
 - **grey-logistics-document**: authors a professional Word document for Grey Logistics about a Microsoft Learn article or Microsoft technology topic. Researches Microsoft Learn documentation, organizes content into a document structure, and generates a polished one-pager or detailed guide with formatting and citations. Used when the user asks to "write a document about", "create a guide for", "author a one-pager on", "write a technical brief on", or "create documentation for" any Microsoft Learn article or Microsoft technology topic.
 
-![Three Cowork prompts each activate one skill of the Grey Logistics plugin. The skill calls the Microsoft Learn MCP Server through the microsoft-learn-mcp connector and returns Foundry research, a PowerPoint deck or a Word document.](./_images/lab-03-grey-logistics-plugin-runtime.svg)
+![Three Cowork prompts each activate one skill of the Grey Logistics plugin. The skill calls the Microsoft Learn MCP Server through the microsoft-learn-mcp connector and returns Foundry research, a PowerPoint deck or a Word document.](./_images/lab-04-grey-logistics-plugin-runtime.svg)
 
 The plugin folder structure is the following:
 
@@ -225,12 +225,12 @@ Important validation checks:
 - Skill frontmatter `name` must be kebab-case and match its folder name
 - Connector `id` values must be unique
 
-![Inside grey-logistics.zip, manifest.json points to color.png, outline.png, the three skill folders and tools/microsoft-learn-mcp-tools.json, while mcpServerUrl points outside the package to the Microsoft Learn MCP Server.](./_images/lab-03-manifest-wiring.svg)
+![Inside grey-logistics.zip, manifest.json points to color.png, outline.png, the three skill folders and tools/microsoft-learn-mcp-tools.json, while mcpServerUrl points outside the package to the Microsoft Learn MCP Server.](./_images/lab-04-manifest-wiring.svg)
 
 You also need the `color.png` and `outline.png` icons for the application package. Download them from the following URLs:
 
-- [color.png](./lab-03-grey-logistics-plugin/color.png)
-- [outline.png](./lab-03-grey-logistics-plugin/outline.png)
+- [color.png](./lab-04-grey-logistics-plugin/color.png)
+- [outline.png](./lab-04-grey-logistics-plugin/outline.png)
 
 Feel free to replace the content of the `developer` section of the manifest with your own data.
 
@@ -253,9 +253,9 @@ In each `SKILL.md`:
 
 You can copy the content of the three skills from the following URLs:
 
-- [foundry-research](./lab-03-grey-logistics-plugin/skills/foundry-research/SKILL.md)
-- [grey-logistics-deck](./lab-03-grey-logistics-plugin/skills/grey-logistics-deck/SKILL.md)
-- [grey-logistics-document](./lab-03-grey-logistics-plugin/skills/grey-logistics-document/SKILL.md)
+- [foundry-research](./lab-04-grey-logistics-plugin/skills/foundry-research/SKILL.md)
+- [grey-logistics-deck](./lab-04-grey-logistics-plugin/skills/grey-logistics-deck/SKILL.md)
+- [grey-logistics-document](./lab-04-grey-logistics-plugin/skills/grey-logistics-document/SKILL.md)
 
 This design gives Cowork stronger activation accuracy and more consistent outcomes.
 
@@ -442,7 +442,7 @@ Before you involve an admin, test the package yourself. Open **Plugins**, select
 
 Sharing with **Specific users in your organization** also needs no admin, but publishing to the whole organization waits for admin approval. The admin upload in Step 1 is what lists the plugin in **Discover**, and custom plugins don't run in Cowork on mobile.
 
-![Four widening steps of reach for an uploaded plugin: Only you and Specific users in your organization need no admin, the whole organization waits for admin approval, and a public store listing goes through Partner Center.](../../demos/02-cowork/pptx/images/05-03-sharing-a-plugin.svg)
+![Four widening steps of reach for an uploaded plugin: Only you and Specific users in your organization need no admin, the whole organization waits for admin approval, and a public store listing goes through Partner Center.](../../demos/02-cowork/pptx/images/06-03-sharing-a-plugin.svg)
 
 ### Step 1: Upload the plugin in the Microsoft 365 Admin Center
 
@@ -491,7 +491,7 @@ Write a one-pager for Grey Logistics about this Microsoft Learn article: https:/
 
 ## Exercise 7: Write once, run in Claude and Copilot
 
-In this exercise you round-trip a plugin between the Claude and Copilot formats. You import a Claude plugin with the `wiqd` command-line tool, publish it for admin approval, use it in Cowork, and export it back to the Claude format. The companion folder [lab-03-cowork-plugins](./lab-03-cowork-plugins) holds the Claude plugin: a `.claude-plugin/plugin.json` manifest and the `foundry-research` skill from Exercise 3. The skill has no connector, so the round trip carries skills only.
+In this exercise you round-trip a plugin between the Claude and Copilot formats. You import a Claude plugin with the `wiqd` command-line tool, publish it for admin approval, use it in Cowork, and export it back to the Claude format. The companion folder [lab-03-cowork-plugins](./lab-04-cowork-plugins) holds the Claude plugin: a `.claude-plugin/plugin.json` manifest and the `foundry-research` skill from Exercise 3. The skill has no connector, so the round trip carries skills only.
 
 WIQD is a preview tool, and its `wiqd plugin` commands are alpha and may change. Run `wiqd --help` if a command differs from the one shown here. The expected results in this exercise come from a run in a course tenant on 2026-10-21 with WIQD 0.19.0.
 

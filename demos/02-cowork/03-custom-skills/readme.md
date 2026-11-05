@@ -138,7 +138,7 @@ A skill carries one recurring task: the sources, format, and steps for a job you
 
 ## Custom Skills vs. Plugins
 
-Both add new capabilities, but they come from different places and solve different problems. A custom skill is *yours*: plain-language instructions you author for your own recurring work. A [plugin](../05-plugins/readme.md) is a package of skills, connectors, or both, from **Discover**, your admin, a colleague, or your own upload. Reach for a custom skill to standardize how *you* do a task; reach for a plugin to bring in data or expertise you cannot write yourself.
+Both add new capabilities, but they come from different places and solve different problems. A custom skill is *yours*: plain-language instructions you author for your own recurring work. A [plugin](../06-plugins/readme.md) is a package of skills, connectors, or both, from **Discover**, your admin, a colleague, or your own upload. Reach for a custom skill to standardize how *you* do a task; reach for a plugin to bring in data or expertise you cannot write yourself.
 
 ![Side-by-side comparison of a custom skill, one SKILL.md of instructions you author for your own recurring work, and a plugin, a package of skills, connectors, or both that brings in data or expertise you cannot write yourself.](./_images/skill-vs-plugin.svg)
 
@@ -153,9 +153,9 @@ Both add new capabilities, but they come from different places and solve differe
 
 ## Where to Go Next
 
-- **[Scheduled Prompts & Event-Driven Tasks](../04-automation/readme.md)**: put the skill you authored on a recurring schedule
-- **[Extending Cowork with Plugins](../05-plugins/readme.md)**: add capabilities you cannot write yourself
-- **[Human-in-the-Loop](../06-staying-in-control/readme.md)**: approve, pause, and govern what your skills do
+- **[Scheduled Prompts & Event-Driven Tasks](../05-automation/readme.md)**: put the skill you authored on a recurring schedule
+- **[Extending Cowork with Plugins](../06-plugins/readme.md)**: add capabilities you cannot write yourself
+- **[Human-in-the-Loop](../07-staying-in-control/readme.md)**: approve, pause, and govern what your skills do
 
 ---
 

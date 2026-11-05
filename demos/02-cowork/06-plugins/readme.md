@@ -14,7 +14,7 @@ Built-in skills handle common office tasks and [custom skills](../03-custom-skil
 - **Microsoft and role-based plugins**: Dynamics 365 Customer Service, Sales and ERP, Fabric IQ and Business Applications in Work IQ, plus role-based plugins for Legal, Sales, Service and Education
 - **Admin deployment**: IT admins can roll out plugins organization-wide; they appear with **Managed by your organization**
 
-![A plugin adds expertise skills to the Cowork side panel and MCP connectors that reach CRM data, ticketing systems and third-party APIs beyond Microsoft 365. An MCP app returns an interactive widget into the conversation.](../pptx/images/05-01-what-plugins-add.svg)
+![A plugin adds expertise skills to the Cowork side panel and MCP connectors that reach CRM data, ticketing systems and third-party APIs beyond Microsoft 365. An MCP app returns an interactive widget into the conversation.](../pptx/images/06-01-what-plugins-add.svg)
 
 ---
 
@@ -22,7 +22,7 @@ Built-in skills handle common office tasks and [custom skills](../03-custom-skil
 
 Cowork draws skills from five sources, and every one of them surfaces in the same **Plugins** list of the side panel and activates the same way: automatically, based on the task.
 
-![Five sources feed the Cowork side panel: built-in skills, custom skills from Customize or OneDrive, plugins from Discover, admin-deployed plugins, and skills that are shared or uploaded.](../pptx/images/05-02-where-plugins-fit.svg)
+![Five sources feed the Cowork side panel: built-in skills, custom skills from Customize or OneDrive, plugins from Discover, admin-deployed plugins, and skills that are shared or uploaded.](../pptx/images/06-02-where-plugins-fit.svg)
 
 Built-in skills handle the common office tasks. Custom skills handle *your* recurring workflows. Plugins reach into the systems and expertise your work depends on, and admin-deployed plugins let IT standardize that reach across the whole organization. Skills and plugins that colleagues share with you, or that you upload yourself, join the same panel.
 
@@ -52,7 +52,7 @@ Anthropic's Claude plugins follow the same idea, and the table compares the two.
 | Who controls it | Org admin settings | Agent 365: publisher filters, user scopes, access requests, tool toggles |
 | Format | Claude plugin, `SKILL.md` | M365 app package, the same `SKILL.md`, imports and exports the Claude format |
 
-Cowork converts a Claude plugin package when you upload it, and `wiqd` imports and exports that format, as the [plugin round-trip exercise](../../../labs/02-cowork/lab-03-cowork-plugins.md#exercise-7-write-once-run-in-claude-and-copilot) shows.
+Cowork converts a Claude plugin package when you upload it, and `wiqd` imports and exports that format, as the [plugin round-trip exercise](../../../labs/02-cowork/lab-04-cowork-plugins.md#exercise-7-write-once-run-in-claude-and-copilot) shows.
 
 ---
 
@@ -75,7 +75,7 @@ Select **Add** > **Upload** on the **Customize** page and pick a `.zip` package 
 
 A **Publish** dialog then asks who gets the plugin under **This plugin will be available to**: **Only you** or **Specific users in your organization**. Sharing with specific people needs no admin, while publishing to the whole organization waits for admin approval. The plugin then appears under **Added** with its publisher, its skills, and an **Enable** switch.
 
-![Four widening steps of reach for an uploaded plugin: Only you and Specific users in your organization need no admin, the whole organization waits for admin approval, and a public store listing goes through Partner Center.](../pptx/images/05-03-sharing-a-plugin.svg)
+![Four widening steps of reach for an uploaded plugin: Only you and Specific users in your organization need no admin, the whole organization waits for admin approval, and a public store listing goes through Partner Center.](../pptx/images/06-03-sharing-a-plugin.svg)
 
 For code-first authoring, the `wiqd` command-line tool (preview) scaffolds, validates, packages and shares plugins:
 
@@ -95,13 +95,13 @@ Public store listings are submitted through Partner Center.
 
 Many teams already keep their skills in a Claude Code plugin. The `wiqd plugin import` command reads a Claude, Cursor or Open Plugin folder and turns it into a Microsoft 365 plugin project, which WIQD then validates, provisions, packages and shares like a plugin it created itself. Skills use the same `SKILL.md` format on both sides and are copied as they are, and the MCP servers in `.mcp.json` become the plugin's connectors.
 
-![A Claude plugin folder passes through the wiqd plugin import command into a Microsoft 365 plugin: plugin.json becomes manifest.json, the skills are copied as they are and .mcp.json becomes the connectors, while commands, agents and hooks are marked not converted.](../pptx/images/05-04-import-a-claude-plugin.svg)
+![A Claude plugin folder passes through the wiqd plugin import command into a Microsoft 365 plugin: plugin.json becomes manifest.json, the skills are copied as they are and .mcp.json becomes the connectors, while commands, agents and hooks are marked not converted.](../pptx/images/06-04-import-a-claude-plugin.svg)
 
 ```powershell
 wiqd plugin import --path <claude-plugin-folder> --privacy-url <privacy-url> --terms-url <terms-url> --website-url <website-url>
 ```
 
-The Microsoft 365 manifest requires a privacy and a terms link, so the first import needs both. The website link is needed when the plugin's `plugin.json` names no homepage or author; without it the import stops with `developer.websiteUrl could not be resolved`. Microsoft Learn says an imported project cannot yet be provisioned, packaged or shared, but in the course tenant on 2026-10-21 (WIQD 0.19.0) all three ran, as [Exercise 7 of the lab](../../../labs/02-cowork/lab-03-cowork-plugins.md#exercise-7-write-once-run-in-claude-and-copilot) shows.
+The Microsoft 365 manifest requires a privacy and a terms link, so the first import needs both. The website link is needed when the plugin's `plugin.json` names no homepage or author; without it the import stops with `developer.websiteUrl could not be resolved`. Microsoft Learn says an imported project cannot yet be provisioned, packaged or shared, but in the course tenant on 2026-10-21 (WIQD 0.19.0) all three ran, as [Exercise 7 of the lab](../../../labs/02-cowork/lab-04-cowork-plugins.md#exercise-7-write-once-run-in-claude-and-copilot) shows.
 
 > **Important:** Only skills and MCP servers make the trip. Slash commands (`commands/`), sub-agents (`agents/`) and hooks (`hooks/`) are not yet supported in the Microsoft 365 manifest, and `settings.json` and `bin/` do not apply, so the import leaves all of them behind. A Claude harness built mostly from commands, agents and hooks arrives in Cowork as its skills and connectors only.
 
@@ -122,8 +122,8 @@ Beyond the official Microsoft 365 plugins, the community publishes ready-to-inst
 ## Where to Go Next
 
 - **[Creating Custom Skills](../03-custom-skills/readme.md)**: author the in-house equivalent of a plugin skill
-- **[Scheduled Prompts & Event-Driven Tasks](../04-automation/readme.md)**: run plugin-driven work on a schedule
-- **[Human-in-the-Loop](../06-staying-in-control/readme.md)**: approvals and governance for plugin-driven actions
+- **[Scheduled Prompts & Event-Driven Tasks](../05-automation/readme.md)**: run plugin-driven work on a schedule
+- **[Human-in-the-Loop](../07-staying-in-control/readme.md)**: approvals and governance for plugin-driven actions
 
 ---
 

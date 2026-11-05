@@ -48,7 +48,7 @@ On the **Automations** page, each event-driven task shows **Active**, **Draft**,
 
 They pair well but solve different problems. A [custom skill](../03-custom-skills/readme.md) defines *how* a recurring task is done; a schedule defines *when* it runs. Point a schedule at a custom skill to get a repeatable, house-style output with zero manual effort. The skill carries your format and sources; the schedule, or a trigger, carries the cadence.
 
-![A schedule (daily, weekly, monthly, or a specific time) or a trigger (an email, a Teams channel message, or a Teams chat message) points at a custom skill that carries your format and sources. Together they give repeatable, house-style output.](../pptx/images/04-01-schedules-and-triggers.svg)
+![A schedule (daily, weekly, monthly, or a specific time) or a trigger (an email, a Teams channel message, or a Teams chat message) points at a custom skill that carries your format and sources. Together they give repeatable, house-style output.](../pptx/images/05-01-schedules-and-triggers.svg)
 
 ---
 
@@ -58,9 +58,9 @@ By default, scheduled and event-driven tasks prepare any send, post, or change t
 
 Tasks run with your permissions and see only what you can see. They are rate-limited and guarded against triggering themselves in a loop. Results go only to you unless you approve otherwise.
 
-![A schedule or trigger fires and Cowork prepares the send, post, or change on its own, then holds it for your approval before it leaves your workspace, unless you pre-authorized it. The guardrails below: your permissions, rate limits, loop protection, and results only to you.](../pptx/images/04-03-automation-approvals.svg)
+![A schedule or trigger fires and Cowork prepares the send, post, or change on its own, then holds it for your approval before it leaves your workspace, unless you pre-authorized it. The guardrails below: your permissions, rate limits, loop protection, and results only to you.](../pptx/images/05-03-automation-approvals.svg)
 
-Automation removes the repetitive work, and by default it keeps your control over what leaves your workspace. The full approval model is covered in [Human-in-the-Loop](../06-staying-in-control/readme.md).
+Automation removes the repetitive work, and by default it keeps your control over what leaves your workspace. The full approval model is covered in [Human-in-the-Loop](../07-staying-in-control/readme.md).
 
 ---
 
@@ -73,8 +73,8 @@ Automation removes the repetitive work, and by default it keeps your control ove
 ## Where to Go Next
 
 - **[Creating Custom Skills](../03-custom-skills/readme.md)**: build the custom skills you schedule here
-- **[Extending Cowork with Plugins](../05-plugins/readme.md)**: add new skills and connect external services
-- **[Human-in-the-Loop](../06-staying-in-control/readme.md)**: approvals and governance for automated actions
+- **[Extending Cowork with Plugins](../06-plugins/readme.md)**: add new skills and connect external services
+- **[Human-in-the-Loop](../07-staying-in-control/readme.md)**: approvals and governance for automated actions
 
 ---
 

@@ -20,7 +20,7 @@ Send Cowork out to research the outdoor market, hold its findings up against you
 
 ## Related Topics
 
-This demo runs on the Deep Research capability described in [Understanding Skills](./readme.md); watch the **Plugins** list in the **Workspace** panel to see Deep Research, Web Search, and Word activate as the task runs. The same recurring-report idea returns in [Scheduled Prompts & Event-Driven Tasks](../04-automation/readme.md) when you put a brief like this on a schedule.
+This demo runs on the Deep Research capability described in [Understanding Skills](./readme.md); watch the **Plugins** list in the **Workspace** panel to see Deep Research, Web Search, and Word activate as the task runs. The same recurring-report idea returns in [Scheduled Prompts & Event-Driven Tasks](../05-automation/readme.md) when you put a brief like this on a schedule.
 
 ---
 

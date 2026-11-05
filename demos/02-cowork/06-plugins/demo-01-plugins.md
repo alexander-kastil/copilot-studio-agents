@@ -68,7 +68,7 @@ The plugin is packaged as a Microsoft 365 / Teams app, not a single file: it is 
 
 **Finding:** Uploading a plugin for yourself needs no admin; only org-wide sharing waits for admin approval. If the upload is blocked, the tenant has blocked that plugin or uses Purview Information Barriers, which currently block plugin and skill uploads, so that is the gate to clear with IT.
 
-![Four widening steps of reach for an uploaded plugin: Only you and Specific users in your organization need no admin, the whole organization waits for admin approval, and a public store listing goes through Partner Center.](../pptx/images/05-03-sharing-a-plugin.svg)
+![Four widening steps of reach for an uploaded plugin: Only you and Specific users in your organization need no admin, the whole organization waits for admin approval, and a public store listing goes through Partner Center.](../pptx/images/06-03-sharing-a-plugin.svg)
 
 **Expected Outcome:** **Customize** lists `dietitian` first under **Added**. Its page reads **Created by The AI Career Lab**, the **Enable dietitian** switch is on, and **Skills** lists `clinical-nutrition` and `dietary-communication`. In a task, each skill appears under **Plugins** in the **Workspace** panel, for example `dietitian (clinical-nutrition)`, once Cowork loads it.
 

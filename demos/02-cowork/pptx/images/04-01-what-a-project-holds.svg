@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">What a Cowork project holds</title>
+  <desc id="d">A Q3 Close project holds its instructions, the Recent chats and tasks, the Outputs files and the Project context. A new task started from the project page inherits the project instructions, which take precedence over your personal instructions, and the context available to it; the file it creates lands in Outputs. The project is private to you.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="18" markerHeight="18" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="80" y="60" width="1240" height="960" rx="22" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <circle cx="132" cy="122" r="16" fill="#2da44e"/>
+    <text x="164" y="134" font-size="36" font-weight="700" fill="#24292f">Q3 Close</text>
+    <text x="1288" y="134" font-size="28" fill="#57606a" text-anchor="end">private to you</text>
+
+    <rect x="120" y="180" width="1160" height="200" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+    <text x="152" y="232" font-size="32" font-weight="700" fill="#24292f">Instructions</text>
+    <text x="152" y="280" font-size="28" fill="#57606a">audience, format and terms for every task in the project</text>
+    <text x="152" y="324" font-size="28" fill="#57606a">take precedence over your Customize &gt; Preferences instructions</text>
+    <text x="152" y="362" font-size="26" fill="#57606a" font-style="italic">More actions &gt; Edit instructions</text>
+
+    <rect x="120" y="420" width="360" height="560" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="152" y="472" font-size="32" font-weight="700" fill="#24292f">Recent</text>
+    <text x="152" y="516" font-size="28" fill="#57606a">chats and tasks</text>
+    <rect x="148" y="550" width="304" height="76" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="168" y="598" font-size="28" fill="#24292f">Q3 review deck</text>
+    <rect x="148" y="642" width="304" height="76" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="168" y="690" font-size="28" fill="#24292f">Q3 close summary</text>
+    <text x="152" y="790" font-size="26" fill="#57606a">Add existing chats</text>
+    <text x="152" y="830" font-size="26" fill="#57606a">Remove from project</text>
+    <text x="152" y="870" font-size="26" fill="#57606a">keeps the conversation</text>
+
+    <rect x="520" y="420" width="360" height="560" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="552" y="472" font-size="32" font-weight="700" fill="#24292f">Outputs</text>
+    <text x="552" y="516" font-size="28" fill="#57606a">files the tasks created</text>
+    <rect x="548" y="550" width="304" height="76" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="568" y="598" font-size="28" fill="#24292f" font-family="Consolas, Menlo, monospace">.pptx deck</text>
+    <rect x="548" y="642" width="304" height="76" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="568" y="690" font-size="28" fill="#24292f" font-family="Consolas, Menlo, monospace">.docx summary</text>
+    <text x="552" y="790" font-size="26" fill="#57606a">opens on the web</text>
+    <text x="552" y="830" font-size="26" fill="#57606a">or in its task;</text>
+    <text x="552" y="870" font-size="26" fill="#57606a">cannot be removed yet</text>
+
+    <rect x="920" y="420" width="360" height="560" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="952" y="472" font-size="32" font-weight="700" fill="#24292f">Project context</text>
+    <text x="952" y="516" font-size="28" fill="#57606a">when available</text>
+    <text x="952" y="590" font-size="28" fill="#24292f">reference items</text>
+    <text x="952" y="640" font-size="28" fill="#24292f">uploaded project files</text>
+    <text x="952" y="690" font-size="28" fill="#24292f">items from its chats</text>
+    <text x="952" y="790" font-size="26" fill="#57606a">a chat attachment</text>
+    <text x="952" y="830" font-size="26" fill="#57606a">listed here is not</text>
+    <text x="952" y="870" font-size="26" fill="#57606a">shared with every task</text>
+
+    <rect x="1440" y="380" width="400" height="300" rx="18" fill="#ffffff" stroke="#57606a" stroke-width="3"/>
+    <text x="1640" y="452" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">New task</text>
+    <text x="1640" y="496" font-size="28" fill="#57606a" text-anchor="middle">started from the</text>
+    <text x="1640" y="536" font-size="28" fill="#57606a" text-anchor="middle">project page</text>
+    <text x="1640" y="606" font-size="28" fill="#24292f" text-anchor="middle">belongs to the project</text>
+    <text x="1640" y="646" font-size="28" fill="#24292f" text-anchor="middle">from its first message</text>
+
+    <line x1="1280" y1="280" x2="1500" y2="377" stroke="#e0a534" stroke-width="4" marker-end="url(#ah)"/>
+    <text x="1460" y="300" font-size="26" fill="#57606a">inherits</text>
+    <line x1="1640" y1="680" x2="1640" y2="800" stroke="#57606a" stroke-width="3"/>
+    <line x1="1640" y1="800" x2="884" y2="800" stroke="#57606a" stroke-width="3" stroke-dasharray="1 0" marker-end="url(#ah)"/>
+    <text x="1680" y="760" font-size="26" fill="#57606a">its file lands</text>
+    <text x="1680" y="796" font-size="26" fill="#57606a">in Outputs</text>
+  </g>
+</svg>

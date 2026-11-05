@@ -105,7 +105,7 @@ Draft an email to Markus Lind at Fjallbryggan with the finished proposal attache
 
 **Expected Outcome:** A three-paragraph email with the finished proposal attached, saved in your Outlook Drafts folder and not sent, plus a short list of what to fix before sending.
 
-![The approval card with its risk level indicator and Show parameters. Approve once (Send, Post, or Create) approves that one action; More options, Approve All (n) and Cancel are the other choices.](../pptx/images/06-01-approval-model.svg)
+![The approval card with its risk level indicator and Show parameters. Approve once (Send, Post, or Create) approves that one action; More options, Approve All (n) and Cancel are the other choices.](../pptx/images/07-01-approval-model.svg)
 
 ---
 

@@ -18,7 +18,7 @@ Author a custom `SKILL.md` that converts a research brief into a partner-ready p
 
 ## Related Topics
 
-This demo picks up where [Understanding Skills](../02-built-in-skills/readme.md) left off: the AW26 Market Brief that Deep Research produced there is the raw material the pitch is built from, so a research output becomes a sales input. It applies the `SKILL.md` anatomy and companion-file model introduced in [Creating Custom Skills](./readme.md), this time with a PowerPoint template as the companion. When the skill is stable, [Extending Cowork with Plugins](../05-plugins/readme.md) shows how a skill like this gets packaged and shared with the rest of the commercial team.
+This demo picks up where [Understanding Skills](../02-built-in-skills/readme.md) left off: the AW26 Market Brief that Deep Research produced there is the raw material the pitch is built from, so a research output becomes a sales input. It applies the `SKILL.md` anatomy and companion-file model introduced in [Creating Custom Skills](./readme.md), this time with a PowerPoint template as the companion. When the skill is stable, [Extending Cowork with Plugins](../06-plugins/readme.md) shows how a skill like this gets packaged and shared with the rest of the commercial team.
 
 ---
 

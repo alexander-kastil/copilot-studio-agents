@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Three layers that shape a Cowork task</title>
+  <desc id="d">Personal instructions on Customize, Preferences apply to every Cowork task you run. Project instructions, set with More actions, Edit instructions, apply to every task inside one project and take precedence over personal instructions. A skill, a SKILL.md in OneDrive or a plugin, loads in any task whose request matches its description. A task started inside the Q3 Close project gets all three, and the project wins where it disagrees with your personal instructions.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="18" markerHeight="18" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="80" y="80" width="1100" height="240" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="112" y="140" font-size="34" font-weight="700" fill="#24292f">Personal instructions</text>
+    <text x="112" y="190" font-size="30" fill="#57606a">Customize &gt; Preferences</text>
+    <text x="112" y="270" font-size="30" fill="#24292f">every Cowork task you run</text>
+
+    <rect x="80" y="380" width="1100" height="260" rx="18" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+    <text x="112" y="440" font-size="34" font-weight="700" fill="#24292f">Project instructions</text>
+    <text x="112" y="490" font-size="30" fill="#57606a">More actions &gt; Edit instructions</text>
+    <text x="112" y="566" font-size="30" fill="#24292f">every task inside one project</text>
+    <text x="112" y="612" font-size="30" font-weight="700" fill="#9a6700">take precedence over personal instructions</text>
+
+    <rect x="80" y="700" width="1100" height="260" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="112" y="760" font-size="34" font-weight="700" fill="#24292f">Skill</text>
+    <text x="112" y="810" font-size="30" fill="#57606a"><tspan font-family="Consolas, Menlo, monospace" fill="#24292f">SKILL.md</tspan> in OneDrive or a plugin</text>
+    <text x="112" y="886" font-size="30" fill="#24292f">any task whose request matches</text>
+    <text x="112" y="930" font-size="30" fill="#24292f">its description</text>
+
+    <line x1="1180" y1="200" x2="1377" y2="440" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="1180" y1="510" x2="1377" y2="530" stroke="#e0a534" stroke-width="5" marker-end="url(#ah)"/>
+    <line x1="1180" y1="830" x2="1377" y2="620" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+    <rect x="1380" y="380" width="460" height="300" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <circle cx="1432" cy="442" r="16" fill="#2da44e"/>
+    <text x="1464" y="454" font-size="32" font-weight="700" fill="#24292f">Q3 Close</text>
+    <text x="1412" y="516" font-size="30" fill="#24292f">a task started</text>
+    <text x="1412" y="560" font-size="30" fill="#24292f">in the project</text>
+    <text x="1412" y="624" font-size="28" fill="#57606a">gets all three; the</text>
+    <text x="1412" y="662" font-size="28" fill="#57606a">project wins a conflict</text>
+  </g>
+</svg>

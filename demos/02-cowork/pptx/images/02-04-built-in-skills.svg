@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">The built-in skills of Cowork in five groups</title>
+  <desc id="d">Fifteen built-in skills in five groups. Documents: Word, Excel, PowerPoint in your brand template, and PDF. Communication: Email and Communications for stakeholder updates. Calendar and meetings: Scheduling, Calendar Management, Meetings and Daily Briefing. Research: Enterprise Search across your organization and Deep Research. Cards, apps and images: Adaptive Cards, App in Frontier, and image generation with ChatGPT Images 2.0. Cowork picks them from your task, and each one it uses shows under Plugins in the Workspace panel.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="80" y="56" width="1760" height="150" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="112" y="143" font-size="34" font-weight="700" fill="#24292f">Documents</text>
+    <rect x="404" y="74" width="193" height="114" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="426" y="122" font-size="34" font-weight="700" fill="#24292f">Word</text>
+    <text x="426" y="166" font-size="30" fill="#57606a">documents</text>
+    <rect x="615" y="74" width="219" height="114" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="637" y="122" font-size="34" font-weight="700" fill="#24292f">Excel</text>
+    <text x="637" y="166" font-size="30" fill="#57606a">spreadsheets</text>
+    <rect x="852" y="74" width="306" height="114" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="874" y="122" font-size="34" font-weight="700" fill="#24292f">PowerPoint</text>
+    <text x="874" y="166" font-size="30" fill="#57606a">decks in your brand</text>
+    <rect x="1176" y="74" width="254" height="114" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1198" y="122" font-size="34" font-weight="700" fill="#24292f">PDF</text>
+    <text x="1198" y="166" font-size="30" fill="#57606a">PDF documents</text>
+    <rect x="80" y="228" width="1760" height="150" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="112" y="315" font-size="34" font-weight="700" fill="#24292f">Communication</text>
+    <rect x="404" y="246" width="327" height="114" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="426" y="294" font-size="34" font-weight="700" fill="#24292f">Email</text>
+    <text x="426" y="338" font-size="30" fill="#57606a">compose, reply, send</text>
+    <rect x="749" y="246" width="314" height="114" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="771" y="294" font-size="34" font-weight="700" fill="#24292f">Communications</text>
+    <text x="771" y="338" font-size="30" fill="#57606a">stakeholder updates</text>
+    <rect x="80" y="400" width="1760" height="150" rx="18" fill="#fff6e5" stroke="#8c959f" stroke-width="2"/>
+    <text x="112" y="466" font-size="34" font-weight="700" fill="#24292f">Calendar &amp;</text>
+    <text x="112" y="508" font-size="34" font-weight="700" fill="#24292f">meetings</text>
+    <rect x="404" y="418" width="293" height="114" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="426" y="466" font-size="34" font-weight="700" fill="#24292f">Scheduling</text>
+    <text x="426" y="510" font-size="30" fill="#57606a">schedule meetings</text>
+    <rect x="715" y="418" width="406" height="114" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="737" y="466" font-size="34" font-weight="700" fill="#24292f">Calendar Management</text>
+    <text x="737" y="510" font-size="30" fill="#57606a">events, Teams links</text>
+    <rect x="1139" y="418" width="314" height="114" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1161" y="466" font-size="34" font-weight="700" fill="#24292f">Meetings</text>
+    <text x="1161" y="510" font-size="30" fill="#57606a">meeting intelligence</text>
+    <rect x="1471" y="418" width="284" height="114" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1493" y="466" font-size="34" font-weight="700" fill="#24292f">Daily Briefing</text>
+    <text x="1493" y="510" font-size="30" fill="#57606a">your daily briefing</text>
+    <rect x="80" y="572" width="1760" height="150" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="112" y="659" font-size="34" font-weight="700" fill="#24292f">Research</text>
+    <rect x="404" y="590" width="369" height="114" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="426" y="638" font-size="34" font-weight="700" fill="#24292f">Enterprise Search</text>
+    <text x="426" y="682" font-size="30" fill="#57606a">across your organization</text>
+    <rect x="791" y="590" width="352" height="114" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="813" y="638" font-size="34" font-weight="700" fill="#24292f">Deep Research</text>
+    <text x="813" y="682" font-size="30" fill="#57606a">in depth, many sources</text>
+    <rect x="80" y="744" width="1760" height="150" rx="18" fill="#e6f6f6" stroke="#8c959f" stroke-width="2"/>
+    <text x="112" y="810" font-size="34" font-weight="700" fill="#24292f">Cards, apps</text>
+    <text x="112" y="852" font-size="34" font-weight="700" fill="#24292f">&amp; images</text>
+    <rect x="404" y="762" width="354" height="114" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="426" y="810" font-size="34" font-weight="700" fill="#24292f">Adaptive Cards</text>
+    <text x="426" y="854" font-size="30" fill="#57606a">interactive cards in chat</text>
+    <rect x="776" y="762" width="358" height="114" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="798" y="810" font-size="34" font-weight="700" fill="#24292f">App (Frontier)</text>
+    <text x="798" y="854" font-size="30" fill="#57606a">apps from a description</text>
+    <rect x="1152" y="762" width="327" height="114" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1174" y="810" font-size="34" font-weight="700" fill="#24292f">Image generation</text>
+    <text x="1174" y="854" font-size="30" fill="#57606a">ChatGPT Images 2.0</text>
+    <rect x="80" y="926" width="1760" height="104" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="960" y="990" font-size="32" fill="#24292f" text-anchor="middle">Cowork picks them from your task; each one it uses shows under <tspan font-weight="700">Plugins</tspan> in the Workspace panel</text>
+  </g>
+</svg>

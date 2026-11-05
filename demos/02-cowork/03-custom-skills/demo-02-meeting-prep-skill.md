@@ -18,7 +18,7 @@ Author a custom `SKILL.md` that turns Cowork into a repeatable meeting-brief wri
 
 ## Related Topics
 
-This demo builds on [Understanding Skills](../02-built-in-skills/readme.md), which explains how Cowork picks a skill for a task and why a clear description matters, and on [Creating Custom Skills](./readme.md), which introduces the `SKILL.md` file and companion files you author here. Once the skill is reliable, [Scheduled Prompts & Event-Driven Tasks](../04-automation/readme.md) shows how to put it on a recurring schedule so the prep happens before you even open your calendar.
+This demo builds on [Understanding Skills](../02-built-in-skills/readme.md), which explains how Cowork picks a skill for a task and why a clear description matters, and on [Creating Custom Skills](./readme.md), which introduces the `SKILL.md` file and companion files you author here. Once the skill is reliable, [Scheduled Prompts & Event-Driven Tasks](../05-automation/readme.md) shows how to put it on a recurring schedule so the prep happens before you even open your calendar.
 
 ---
 
@@ -109,7 +109,7 @@ To upload instead, zip the contents of the `meeting-prep` folder, with `SKILL.md
 
 ## Step 3: Run the skill for a real meeting
 
-**Overview:** Never trust a recipe until you have seen it produce a good result once. Run the skill by name for a real upcoming meeting and inspect the brief against the template. The prompt preps the call booked in [Turn a Partner Meeting into a Follow-Up Package](../06-staying-in-control/demo-01-follow-up.md), and Cowork builds the brief from that invite and its files, so run that demo first.
+**Overview:** Never trust a recipe until you have seen it produce a good result once. Run the skill by name for a real upcoming meeting and inspect the brief against the template. The prompt preps the call booked in [Turn a Partner Meeting into a Follow-Up Package](../07-staying-in-control/demo-01-follow-up.md), and Cowork builds the brief from that invite and its files, so run that demo first.
 
 **Recipe:**
 

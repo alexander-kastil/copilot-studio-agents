@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Where Cowork plugins are stored</title>
+  <desc id="d">A plugin is a Microsoft 365 app package, a ZIP with manifest.json, color.png, outline.png, a tools folder with the tool description and a skills folder with SKILL.md and references. The package is registered in your Microsoft 365 tenant and managed in the admin center under Agents, Tools, Registry, and store plugins come from the Microsoft 365 App Store. The tool description points to the connector implementation, which stays on the provider's remote MCP server or API. The plugin skills sit inside the package. In Cowork, Customize shows them on the Skills tab and the Plugins tab; there is no local folder like Claude Code's .claude/skills/.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="18" markerHeight="18" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" transform="translate(0,-90)">
+
+    <rect x="80" y="230" width="820" height="620" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="112" y="290" font-size="32" font-weight="700" fill="#24292f" font-family="Consolas, Menlo, monospace">my-plugin.zip</text>
+    <text x="112" y="334" font-size="28" fill="#57606a">a Microsoft 365 app package</text>
+    <g font-family="Consolas, Menlo, monospace" font-size="30" fill="#24292f">
+      <text x="112" y="404">├── manifest.json</text>
+      <text x="112" y="452">├── color.png</text>
+      <text x="112" y="500">├── outline.png</text>
+      <text x="112" y="548">├── tools/</text>
+      <text x="112" y="596">│&#160;&#160;&#160;└── tool-description.json</text>
+      <text x="112" y="644">└── skills/</text>
+      <text x="112" y="692">&#160;&#160;&#160;&#160;└── my-skill/</text>
+      <text x="112" y="740">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;├── SKILL.md</text>
+      <text x="112" y="788">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;└── references/</text>
+    </g>
+
+    <line x1="900" y1="310" x2="1017" y2="330" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="900" y1="572" x2="1017" y2="560" stroke="#57606a" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#ah)"/>
+    <line x1="900" y1="660" x2="1017" y2="750" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+    <rect x="1020" y="230" width="820" height="220" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+    <text x="1052" y="280" font-size="32" font-weight="700" fill="#24292f">Installed and org plugins</text>
+    <text x="1052" y="322" font-size="28" fill="#57606a">registered in your Microsoft 365 tenant</text>
+    <text x="1052" y="362" font-size="28" fill="#57606a">admin center &gt; Agents &gt; Tools &gt; Registry</text>
+    <text x="1052" y="420" font-size="28" fill="#24292f"><tspan font-weight="700">Store plugins:</tspan> Microsoft 365 App Store</text>
+
+    <rect x="1020" y="470" width="820" height="170" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="1052" y="520" font-size="32" font-weight="700" fill="#24292f">Connector implementation</text>
+    <text x="1052" y="564" font-size="28" fill="#57606a">on the provider's remote MCP server or API</text>
+    <text x="1052" y="606" font-size="28" fill="#57606a">the package holds only the tool description</text>
+
+    <rect x="1020" y="660" width="820" height="190" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1052" y="710" font-size="32" font-weight="700" fill="#24292f">Plugin skills</text>
+    <text x="1052" y="754" font-size="28" fill="#57606a">inside the app package</text>
+    <text x="1052" y="804" font-size="28" fill="#24292f" font-family="Consolas, Menlo, monospace">skills/&lt;name&gt;/SKILL.md</text>
+
+    <rect x="80" y="890" width="1760" height="140" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="112" y="946" font-size="32" font-weight="700" fill="#24292f">In Cowork, Customize shows them: the Skills tab and the Plugins tab</text>
+    <text x="112" y="996" font-size="28" fill="#57606a">No local folder like Claude Code's <tspan font-family="Consolas, Menlo, monospace" fill="#24292f">.claude/skills/</tspan>: packages resolve through the tenant registry</text>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">The two required fields of a SKILL.md frontmatter</title>
+  <desc id="d">The weekly-report frontmatter: two --- lines around name: weekly-report and description: Generates a weekly status report from my recent emails and calendar. Both fields are required: name, 1 to 64 characters in kebab-case and the same as the folder name, and description, 1 to 1,024 characters on what the skill does and when to use it, with trigger phrases.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="80" y="60" width="1760" height="400" rx="18" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <g font-family="Consolas, Menlo, monospace" font-size="34" fill="#24292f">
+      <text x="128" y="140" fill="#57606a">---</text>
+      <text x="128" y="210"><tspan font-weight="700" fill="#1a7f37">name:</tspan> weekly-report</text>
+      <text x="128" y="280"><tspan font-weight="700" fill="#1a7f37">description:</tspan> Generates a weekly status report</text>
+      <text x="128" y="336">&#160;&#160;from my recent emails and calendar.</text>
+      <text x="128" y="406" fill="#57606a">---</text>
+    </g>
+
+    <rect x="80" y="500" width="1760" height="520" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="112" y="566" font-size="36" font-weight="700" fill="#24292f">Required</text>
+    <rect x="112" y="600" width="1696" height="180" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="144" y="700" font-size="36" font-weight="700" fill="#24292f" font-family="Consolas, Menlo, monospace">name</text>
+    <text x="560" y="676" font-size="32" fill="#24292f">1 to 64 characters, kebab-case,</text>
+    <text x="560" y="724" font-size="32" fill="#24292f">the same as the folder name</text>
+    <rect x="112" y="808" width="1696" height="180" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="144" y="908" font-size="36" font-weight="700" fill="#24292f" font-family="Consolas, Menlo, monospace">description</text>
+    <text x="560" y="884" font-size="32" fill="#24292f">1 to 1,024 characters: what it does and when,</text>
+    <text x="560" y="932" font-size="32" fill="#24292f">with trigger phrases</text>
+  </g>
+</svg>

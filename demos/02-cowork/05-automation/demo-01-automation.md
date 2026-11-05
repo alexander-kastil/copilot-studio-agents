@@ -18,7 +18,7 @@ Teach Cowork your house status-report format once, then hand it a schedule so th
 
 ## Related Topics
 
-This demo builds directly on [Scheduled Prompts & Event-Driven Tasks](./readme.md), where scheduling and recurring prompts are introduced, and on [Creating Custom Skills](../03-custom-skills/readme.md), which explains the custom `SKILL.md` file you author here. The scheduled send still respects the approval and governance model from [Human-in-the-Loop](../06-staying-in-control/readme.md), so automation never means unsupervised.
+This demo builds directly on [Scheduled Prompts & Event-Driven Tasks](./readme.md), where scheduling and recurring prompts are introduced, and on [Creating Custom Skills](../03-custom-skills/readme.md), which explains the custom `SKILL.md` file you author here. The scheduled send still respects the approval and governance model from [Human-in-the-Loop](../07-staying-in-control/readme.md), so automation never means unsupervised.
 
 ---
 
@@ -149,7 +149,7 @@ Schedule my Weekly Regional Status Report skill to run every Friday at 3 PM. Eac
 
 Open **Automations** in the left navigation and confirm the task is listed under **Active** with "Every week on Friday at 3:00 PM" and its next run. Its **...** menu offers **Edit**, **Run now**, **Pause**, and **Delete**. Note that scheduling the run does not schedule the send: each run saves the email to your Drafts folder and never sends it on its own, so nothing reaches your manager unread.
 
-![The run is automatic and the send waits for your approval: a schedule or trigger fires, Cowork prepares the send, and it is held for your approval before it leaves your workspace unless you pre-authorized it. Below, the guardrails: your permissions, rate limits, loop protection, and results only to you.](../pptx/images/04-03-automation-approvals.svg)
+![The run is automatic and the send waits for your approval: a schedule or trigger fires, Cowork prepares the send, and it is held for your approval before it leaves your workspace unless you pre-authorized it. Below, the guardrails: your permissions, rate limits, loop protection, and results only to you.](../pptx/images/05-03-automation-approvals.svg)
 
 **Expected Outcome:** A recurring task listed under **Automations** > **Active**, set to every week on Friday at 3:00 PM, that will generate the report each week and leave the email in your Drafts folder. After the demo, choose **...** > **Pause**: the task moves under **Paused**, its toggle switches off, and no next run is shown.
 

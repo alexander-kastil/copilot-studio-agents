@@ -36,7 +36,7 @@ Damit haben Sie ein flexibles Packaging-Modell:
 - Plugin nur mit Connector (externe Tools, die integrierte Skills nutzen)
 - Kombiniertes Plugin (Custom Skills, die externe Tools orchestrieren)
 
-![Drei Formen von Plugins: Ein Plugin nur mit Skills verpackt Custom Skills, ein Plugin nur mit Connector verpackt einen Connector, über den integrierte Skills einen Remote MCP Endpoint erreichen, und ein kombiniertes Plugin verpackt Custom Skills, die den Remote Endpoint über ihren Connector aufrufen.](./_images/lab-03-plugin-shapes.svg)
+![Drei Formen von Plugins: Ein Plugin nur mit Skills verpackt Custom Skills, ein Plugin nur mit Connector verpackt einen Connector, über den integrierte Skills einen Remote MCP Endpoint erreichen, und ein kombiniertes Plugin verpackt Custom Skills, die den Remote Endpoint über ihren Connector aufrufen.](./_images/lab-04-plugin-shapes.svg)
 
 Dieses Plugin-Modell ist auf das Microsoft 365 App Ökosystem abgestimmt und folgt denselben Governance-Mustern für Unternehmen wie Teams Apps und Agents.
 
@@ -58,13 +58,13 @@ Behalten Sie diese Unterscheidung im Kopf:
 - **User** fügen erlaubte Plugins aus **Discover** hinzu, schalten sie pro Unterhaltung in **Sources & Skills** ein oder aus und können von Admins deployte Plugins nicht entfernen
 - **Admins** steuern Verfügbarkeit, Deployment Scope und Governance aus dem Microsoft 365 Admin Center
 
-![Fünf Quellen speisen das Side Panel von Cowork: integrierte Skills, Custom Skills aus Customize oder OneDrive, Plugins aus Discover, von Admins deployte Plugins und Skills, die geteilt oder hochgeladen wurden.](../../demos/02-cowork/pptx/images/05-02-where-plugins-fit.svg)
+![Fünf Quellen speisen das Side Panel von Cowork: integrierte Skills, Custom Skills aus Customize oder OneDrive, Plugins aus Discover, von Admins deployte Plugins und Skills, die geteilt oder hochgeladen wurden.](../../demos/02-cowork/pptx/images/06-02-where-plugins-fit.svg)
 
 Verlangt ein Plugin Authentication für einen Connector, durchläuft trotzdem jeder User einmalig seinen eigenen Sign-in und Consent Flow.
 
 ## Übung 2: Struktur und Designentscheidungen eines Plugins untersuchen
 
-In dieser Übung analysieren Sie die Architektur des Grey Logistics Beispiel-Plugins in [lab-03-grey-logistics-plugin](./lab-03-grey-logistics-plugin/) und verstehen, warum es sich lohnt, mehrere Skills mit Connectors zu verpacken.
+In dieser Übung analysieren Sie die Architektur des Grey Logistics Beispiel-Plugins in [lab-03-grey-logistics-plugin](./lab-04-grey-logistics-plugin) und verstehen, warum es sich lohnt, mehrere Skills mit Connectors zu verpacken.
 
 ### Schritt 1: Ein Plugin-Layout im Production-Stil ansehen
 
@@ -97,7 +97,7 @@ Das Plugin besteht aus den folgenden Skills:
 - **grey-logistics-deck**: erstellt für Grey Logistics eine professionelle PowerPoint Präsentation zu einem Artikel auf Microsoft Learn oder einem Thema. Der Skill recherchiert die Dokumentation auf Microsoft Learn, ordnet die Inhalte in eine Folienstruktur und erzeugt ein ausgearbeitetes Deck mit Speaker Notes. Er greift, wenn der User mit "create a presentation on", "make a deck about", "build a slideshow for", "present on a Grey Logistics topic" oder "generate slides about" nach einem Artikel auf Microsoft Learn oder einem Thema zu Microsoft Technologien fragt.
 - **grey-logistics-document**: schreibt für Grey Logistics ein professionelles Word Dokument zu einem Artikel auf Microsoft Learn oder einem Thema zu Microsoft Technologien. Der Skill recherchiert die Dokumentation auf Microsoft Learn, ordnet die Inhalte in eine Dokumentstruktur und erzeugt einen ausgearbeiteten One-Pager oder einen ausführlichen Guide mit Formatierung und Quellenangaben. Er greift, wenn der User mit "write a document about", "create a guide for", "author a one-pager on", "write a technical brief on" oder "create documentation for" nach einem Artikel auf Microsoft Learn oder einem Thema zu Microsoft Technologien fragt.
 
-![Drei Cowork Prompts aktivieren jeweils einen Skill des Grey Logistics Plugins. Der Skill ruft den Microsoft Learn MCP Server über den Connector microsoft-learn-mcp auf und liefert eine Recherche zu Foundry, ein PowerPoint Deck oder ein Word Dokument.](./_images/lab-03-grey-logistics-plugin-runtime.svg)
+![Drei Cowork Prompts aktivieren jeweils einen Skill des Grey Logistics Plugins. Der Skill ruft den Microsoft Learn MCP Server über den Connector microsoft-learn-mcp auf und liefert eine Recherche zu Foundry, ein PowerPoint Deck oder ein Word Dokument.](./_images/lab-04-grey-logistics-plugin-runtime.svg)
 
 Die Ordnerstruktur des Plugins sieht so aus:
 
@@ -225,12 +225,12 @@ Wichtige Prüfungen bei der Validierung:
 - Der `name` im Skill Frontmatter muss kebab-case sein und dem Ordnernamen entsprechen
 - Die Werte von Connector `id` müssen eindeutig sein
 
-![In grey-logistics.zip zeigt manifest.json auf color.png, outline.png, die drei Skill-Ordner und tools/microsoft-learn-mcp-tools.json, während mcpServerUrl aus dem Package hinaus auf den Microsoft Learn MCP Server zeigt.](./_images/lab-03-manifest-wiring.svg)
+![In grey-logistics.zip zeigt manifest.json auf color.png, outline.png, die drei Skill-Ordner und tools/microsoft-learn-mcp-tools.json, während mcpServerUrl aus dem Package hinaus auf den Microsoft Learn MCP Server zeigt.](./_images/lab-04-manifest-wiring.svg)
 
 Sie brauchen außerdem die Icons `color.png` und `outline.png` für das Application Package. Laden Sie sie von den folgenden URLs herunter:
 
-- [color.png](./lab-03-grey-logistics-plugin/color.png)
-- [outline.png](./lab-03-grey-logistics-plugin/outline.png)
+- [color.png](./lab-04-grey-logistics-plugin/color.png)
+- [outline.png](./lab-04-grey-logistics-plugin/outline.png)
 
 Ersetzen Sie den Inhalt des Abschnitts `developer` im Manifest gern durch Ihre eigenen Daten.
 
@@ -253,9 +253,9 @@ In jeder `SKILL.md`:
 
 Den Inhalt der drei Skills können Sie von den folgenden URLs kopieren:
 
-- [foundry-research](./lab-03-grey-logistics-plugin/skills/foundry-research/SKILL.md)
-- [grey-logistics-deck](./lab-03-grey-logistics-plugin/skills/grey-logistics-deck/SKILL.md)
-- [grey-logistics-document](./lab-03-grey-logistics-plugin/skills/grey-logistics-document/SKILL.md)
+- [foundry-research](./lab-04-grey-logistics-plugin/skills/foundry-research/SKILL.md)
+- [grey-logistics-deck](./lab-04-grey-logistics-plugin/skills/grey-logistics-deck/SKILL.md)
+- [grey-logistics-document](./lab-04-grey-logistics-plugin/skills/grey-logistics-document/SKILL.md)
 
 Mit diesem Design aktiviert Cowork die Skills treffsicherer und liefert konsistentere Ergebnisse.
 
@@ -442,7 +442,7 @@ Bevor Sie einen Admin einbeziehen, testen Sie das Package selbst. Öffnen Sie **
 
 Auch das Teilen mit **Specific users in your organization** braucht keinen Admin, die Veröffentlichung für die gesamte Organisation wartet dagegen auf die Freigabe durch einen Admin. Erst der Admin-Upload in Schritt 1 listet das Plugin in **Discover**, und Custom Plugins laufen in Cowork nicht auf Mobilgeräten.
 
-![Vier Stufen wachsender Reichweite für ein hochgeladenes Plugin: Only you und Specific users in your organization brauchen keinen Admin, die gesamte Organisation wartet auf die Freigabe durch einen Admin, und ein öffentlicher Eintrag im Store läuft über Partner Center.](../../demos/02-cowork/pptx/images/05-03-sharing-a-plugin.svg)
+![Vier Stufen wachsender Reichweite für ein hochgeladenes Plugin: Only you und Specific users in your organization brauchen keinen Admin, die gesamte Organisation wartet auf die Freigabe durch einen Admin, und ein öffentlicher Eintrag im Store läuft über Partner Center.](../../demos/02-cowork/pptx/images/06-03-sharing-a-plugin.svg)
 
 ### Schritt 1: Das Plugin im Microsoft 365 Admin Center hochladen
 
@@ -491,7 +491,7 @@ Write a one-pager for Grey Logistics about this Microsoft Learn article: https:/
 
 ## Übung 7: Einmal schreiben, in Claude und Copilot ausführen
 
-In dieser Übung bringen Sie ein Plugin vom Claude Format ins Copilot Format und wieder zurück. Sie importieren ein Claude Plugin mit dem Kommandozeilen-Tool `wiqd`, veröffentlichen es zur Freigabe durch einen Admin, nutzen es in Cowork und exportieren es zurück ins Claude Format. Der Begleitordner [lab-03-cowork-plugins](./lab-03-cowork-plugins) enthält das Claude Plugin: ein Manifest `.claude-plugin/plugin.json` und den Skill `foundry-research` aus Übung 3. Der Skill hat keinen Connector, deshalb überträgt der Round Trip nur Skills.
+In dieser Übung bringen Sie ein Plugin vom Claude Format ins Copilot Format und wieder zurück. Sie importieren ein Claude Plugin mit dem Kommandozeilen-Tool `wiqd`, veröffentlichen es zur Freigabe durch einen Admin, nutzen es in Cowork und exportieren es zurück ins Claude Format. Der Begleitordner [lab-03-cowork-plugins](./lab-04-cowork-plugins) enthält das Claude Plugin: ein Manifest `.claude-plugin/plugin.json` und den Skill `foundry-research` aus Übung 3. Der Skill hat keinen Connector, deshalb überträgt der Round Trip nur Skills.
 
 WIQD ist ein Preview-Tool, und seine Befehle `wiqd plugin` sind Alpha und können sich ändern. Führen Sie `wiqd --help` aus, wenn ein Befehl von dem hier gezeigten abweicht. Die erwarteten Ergebnisse in dieser Übung stammen aus einem Lauf in einem Kurs-Tenant am 2026-10-21 mit WIQD 0.19.0.
 
