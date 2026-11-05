@@ -58,7 +58,7 @@ Built-in skills are only the starting point. You can also:
 
 - **Create custom skills** with **Customize** > **Add** > **Create skill with Cowork**, or as a `SKILL.md` file in OneDrive (see [Creating Custom Skills](../03-custom-skills/readme.md))
 - **Upload a skill file** with **Customize** > **Add** > **Upload**, or use a skill a colleague shares with you
-- **Add plugin skills** from **Discover** (see [Extending Cowork with Plugins](../05-plugins/readme.md))
+- **Add plugin skills** from **Discover** (see [Extending Cowork with Plugins](../06-plugins/readme.md))
 - **Use admin-deployed plugins** rolled out by your IT organization
 - **Upload a plugin package** of your own with the same **Customize** > **Add** > **Upload**
 
@@ -79,8 +79,8 @@ Custom skills, uploaded skills, and plugin skills all appear in the same **Plugi
 ## Where to Go Next
 
 - **[Creating Custom Skills](../03-custom-skills/readme.md)**: teach Cowork your own recurring workflows with a `SKILL.md` file
-- **[Scheduled Prompts & Event-Driven Tasks](../04-automation/readme.md)**: put a skill on a recurring schedule
-- **[Human-in-the-Loop](../06-staying-in-control/readme.md)**: approve, pause, and govern what your skills do
+- **[Scheduled Prompts & Event-Driven Tasks](../05-automation/readme.md)**: put a skill on a recurring schedule
+- **[Human-in-the-Loop](../07-staying-in-control/readme.md)**: approve, pause, and govern what your skills do
 
 ---
 

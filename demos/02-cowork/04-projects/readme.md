@@ -44,6 +44,8 @@ The instructions apply to every later interaction inside the project, and they t
 | Project instructions | Project **More actions** > **Edit instructions** | Every task inside that project, ahead of personal instructions |
 | Skill | A `SKILL.md` in OneDrive or a plugin | Any task whose request matches the skill's description |
 
+![Personal instructions apply to every Cowork task, project instructions apply to every task inside one project and take precedence over the personal ones, and a skill loads in any task whose request matches its description; a task started in the Q3 Close project gets all three.](../pptx/images/04-02-instruction-layers.svg)
+
 A skill carries a repeatable procedure across all your work, while project instructions carry the facts of one piece of work. A weekly-report skill knows the house format; the Q3 Close project knows that this quarter's reports go to the Nordic leadership team and call the region "Northern Europe".
 
 ---

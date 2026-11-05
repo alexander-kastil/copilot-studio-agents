@@ -50,6 +50,7 @@
 - Run lab 01/05 in the browser: The site is renamed: its title is now LAB-Grey Logistics HR 0105 (checked after a reload)
 - Update .run
 - Release build
+- Update demos, labs
 
 ### Changed
 

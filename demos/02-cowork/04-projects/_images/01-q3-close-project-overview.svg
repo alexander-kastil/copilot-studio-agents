@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Run the Q3 Close as a project</title>
+  <desc id="d">Five steps on one track. Step 1 creates the Q3 Close project and saves its instructions: the Nordic leadership team, Northern Europe, EUR thousands against the Targets sheet, two pages ending with Open decisions. Step 2 writes q3-close-summary.docx from the project page. Step 3 turns it into q3-decision-ask.pptx. Both files land under Outputs. Step 4 runs the same summary request outside the project, where the instructions do not apply. Step 5 archives the project when the close is done.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="18" markerHeight="18" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="60" y="60" width="1380" height="600" rx="22" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <circle cx="110" cy="116" r="16" fill="#2da44e"/>
+    <text x="142" y="128" font-size="34" font-weight="700" fill="#24292f">Q3 Close project</text>
+
+    <rect x="100" y="170" width="400" height="440" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+    <text x="132" y="222" font-size="30" font-weight="700" fill="#24292f">1  Instructions</text>
+    <text x="132" y="276" font-size="26" fill="#57606a">Nordic leadership team</text>
+    <text x="132" y="318" font-size="26" fill="#57606a">"Northern Europe"</text>
+    <text x="132" y="360" font-size="26" fill="#57606a">EUR thousands vs</text>
+    <text x="132" y="396" font-size="26" fill="#57606a">the Targets sheet</text>
+    <text x="132" y="438" font-size="26" fill="#57606a">two pages, decision first,</text>
+    <text x="132" y="474" font-size="26" fill="#57606a">ends with Open decisions</text>
+    <text x="132" y="566" font-size="26" fill="#57606a" font-style="italic">Edit instructions</text>
+
+    <rect x="560" y="170" width="380" height="200" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="592" y="222" font-size="30" font-weight="700" fill="#24292f">2  Close summary</text>
+    <text x="592" y="276" font-size="26" fill="#57606a">from the project page</text>
+    <text x="592" y="330" font-size="26" fill="#24292f" font-family="Consolas, Menlo, monospace">q3-close-summary.docx</text>
+
+    <rect x="560" y="410" width="380" height="200" rx="16" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="592" y="462" font-size="30" font-weight="700" fill="#24292f">3  Decision ask</text>
+    <text x="592" y="516" font-size="26" fill="#57606a">builds on the summary</text>
+    <text x="592" y="570" font-size="26" fill="#24292f" font-family="Consolas, Menlo, monospace">q3-decision-ask.pptx</text>
+
+    <rect x="1000" y="170" width="400" height="440" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="1032" y="222" font-size="30" font-weight="700" fill="#24292f">Outputs</text>
+    <rect x="1024" y="262" width="352" height="70" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1042" y="306" font-size="26" fill="#24292f" font-family="Consolas, Menlo, monospace">q3-close-summary.docx</text>
+    <rect x="1024" y="350" width="352" height="70" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1042" y="394" font-size="26" fill="#24292f" font-family="Consolas, Menlo, monospace">q3-decision-ask.pptx</text>
+    <text x="1032" y="490" font-size="26" fill="#57606a">Recent lists</text>
+    <text x="1032" y="526" font-size="26" fill="#57606a">both tasks</text>
+
+    <line x1="500" y1="270" x2="557" y2="270" stroke="#e0a534" stroke-width="4" marker-end="url(#ah)"/>
+    <line x1="500" y1="510" x2="557" y2="510" stroke="#e0a534" stroke-width="4" marker-end="url(#ah)"/>
+    <line x1="750" y1="370" x2="750" y2="407" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="940" y1="298" x2="1025" y2="298" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="940" y1="510" x2="980" y2="510" stroke="#57606a" stroke-width="3"/>
+    <line x1="980" y1="510" x2="980" y2="386" stroke="#57606a" stroke-width="3"/>
+    <line x1="980" y1="386" x2="1025" y2="386" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+    <rect x="1500" y="60" width="360" height="600" rx="22" fill="#ffffff" stroke="#8c959f" stroke-width="2" stroke-dasharray="12 8"/>
+    <text x="1532" y="128" font-size="30" font-weight="700" fill="#24292f">4  Outside</text>
+    <text x="1532" y="166" font-size="30" font-weight="700" fill="#24292f">the project</text>
+    <text x="1532" y="230" font-size="26" fill="#57606a">same files,</text>
+    <text x="1532" y="266" font-size="26" fill="#57606a">same prompt</text>
+    <text x="1532" y="340" font-size="26" fill="#24292f">no project</text>
+    <text x="1532" y="376" font-size="26" fill="#24292f">instructions:</text>
+    <text x="1532" y="412" font-size="26" fill="#24292f">Cowork's own</text>
+    <text x="1532" y="448" font-size="26" fill="#24292f">default layout</text>
+    <text x="1532" y="530" font-size="26" fill="#57606a">not in Outputs</text>
+
+    <rect x="60" y="720" width="1800" height="160" rx="18" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+    <text x="92" y="788" font-size="30" font-weight="700" fill="#24292f">5  Archive when the close is done</text>
+    <text x="92" y="840" font-size="26" fill="#57606a">More actions &gt; Archive: out of the navigation, listed under Archived, tasks and Outputs intact; Restore brings it back</text>
+
+    <text x="960" y="980" font-size="28" fill="#57606a" text-anchor="middle">Every task started on the project page follows the instructions without being told</text>
+  </g>
+</svg>

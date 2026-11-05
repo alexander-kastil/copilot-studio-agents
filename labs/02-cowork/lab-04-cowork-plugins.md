@@ -1,4 +1,4 @@
-# Lab 03: Build Your First Cowork Plugin
+# Lab 04: Build Your First Cowork Plugin
 
 > **Proposal: run this lab on a cheaper model.** In the Cowork model picker (**Model and generation settings**), choose **Sonnet 5.5** ("Efficient for everyday tasks") instead of **Auto**, and set **Effort level** to **Light** instead of **Medium (default)**. A test run of the setup lab finished every Cowork task at that setting. If your tenant has turned off Anthropic models, choose **GPT 5.5** instead.
 

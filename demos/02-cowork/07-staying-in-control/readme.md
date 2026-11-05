@@ -89,8 +89,8 @@ Control does not stop at the individual. Admins decide whether Cowork is availab
 ## Where to Go Next
 
 - **[Getting Started with Cowork](../01-intro/readme.md)**: revisit the interaction model this control layer sits on
-- **[Scheduled Prompts & Event-Driven Tasks](../04-automation/readme.md)**: the same approval model applies to scheduled actions
-- **[Extending Cowork with Plugins](../05-plugins/readme.md)**: approvals apply to plugin-driven actions too
+- **[Scheduled Prompts & Event-Driven Tasks](../05-automation/readme.md)**: the same approval model applies to scheduled actions
+- **[Extending Cowork with Plugins](../06-plugins/readme.md)**: approvals apply to plugin-driven actions too
 
 ---
 
