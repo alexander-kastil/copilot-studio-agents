@@ -64,7 +64,7 @@ Verlangt ein Plugin Authentication für einen Connector, durchläuft trotzdem je
 
 ## Übung 2: Struktur und Designentscheidungen eines Plugins untersuchen
 
-In dieser Übung analysieren Sie die Architektur des Grey Logistics Beispiel-Plugins in [lab-03-grey-logistics-plugin](./lab-04-grey-logistics-plugin) und verstehen, warum es sich lohnt, mehrere Skills mit Connectors zu verpacken.
+In dieser Übung analysieren Sie die Architektur des Grey Logistics Beispiel-Plugins in [lab-04-grey-logistics-plugin](./lab-04-grey-logistics-plugin) und verstehen, warum es sich lohnt, mehrere Skills mit Connectors zu verpacken.
 
 ### Schritt 1: Ein Plugin-Layout im Production-Stil ansehen
 
@@ -339,7 +339,7 @@ Verwenden Sie den folgenden Prompt unverändert mit GitHub Copilot:
 You are GitHub Copilot acting as a senior Microsoft 365 + Copilot Cowork plugin engineer.
 
 Goal: Build a **new Copilot Cowork plugin** in this repository, following the same project structure and engineering style as:
-- https://github.com/alexander-kastil/copilot-studio-agents/tree/master/labs/02-cowork/lab-03-grey-logistics-plugin
+- https://github.com/alexander-kastil/copilot-studio-agents/tree/master/labs/02-cowork/lab-04-grey-logistics-plugin
 
 and grounded in official guidance from:
 - https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-plugin-development
@@ -491,7 +491,7 @@ Write a one-pager for Grey Logistics about this Microsoft Learn article: https:/
 
 ## Übung 7: Einmal schreiben, in Claude und Copilot ausführen
 
-In dieser Übung bringen Sie ein Plugin vom Claude Format ins Copilot Format und wieder zurück. Sie importieren ein Claude Plugin mit dem Kommandozeilen-Tool `wiqd`, veröffentlichen es zur Freigabe durch einen Admin, nutzen es in Cowork und exportieren es zurück ins Claude Format. Der Begleitordner [lab-03-cowork-plugins](./lab-04-cowork-plugins) enthält das Claude Plugin: ein Manifest `.claude-plugin/plugin.json` und den Skill `foundry-research` aus Übung 3. Der Skill hat keinen Connector, deshalb überträgt der Round Trip nur Skills.
+In dieser Übung bringen Sie ein Plugin vom Claude Format ins Copilot Format und wieder zurück. Sie importieren ein Claude Plugin mit dem Kommandozeilen-Tool `wiqd`, veröffentlichen es zur Freigabe durch einen Admin, nutzen es in Cowork und exportieren es zurück ins Claude Format. Der Begleitordner [lab-04-cowork-plugins](./lab-04-cowork-plugins) enthält das Claude Plugin: ein Manifest `.claude-plugin/plugin.json` und den Skill `foundry-research` aus Übung 3. Der Skill hat keinen Connector, deshalb überträgt der Round Trip nur Skills.
 
 WIQD ist ein Preview-Tool, und seine Befehle `wiqd plugin` sind Alpha und können sich ändern. Führen Sie `wiqd --help` aus, wenn ein Befehl von dem hier gezeigten abweicht. Die erwarteten Ergebnisse in dieser Übung stammen aus einem Lauf in einem Kurs-Tenant am 2026-10-21 mit WIQD 0.19.0.
 
@@ -525,7 +525,7 @@ Erwartetes Ergebnis: `wiqd --version` gibt eine Versionsnummer aus, und `wiqd do
 
 ### Schritt 2: Das Claude Plugin importieren
 
-Importieren Sie den Begleitordner. Ersetzen Sie `<source>` durch den Pfad zu `labs/02-cowork/lab-03-cowork-plugins` in Ihrem Klon dieses Repositorys. Ersetzen Sie die drei URLs durch die Seiten Ihrer Organisation für Website, Datenschutz und Nutzungsbedingungen:
+Importieren Sie den Begleitordner. Ersetzen Sie `<source>` durch den Pfad zu `labs/02-cowork/lab-04-cowork-plugins` in Ihrem Klon dieses Repositorys. Ersetzen Sie die drei URLs durch die Seiten Ihrer Organisation für Website, Datenschutz und Nutzungsbedingungen:
 
 ```powershell
 wiqd plugin import --path <source> --privacy-url <privacy-url> --terms-url <terms-url> --website-url <website-url>

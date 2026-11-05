@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">How approvals work in an automated Cowork run</title>
+  <desc id="d">A schedule or event fires and the run starts in its own conversation. Steps that need no approval run through: reading, searching, writing new files into Output, saving a draft. Before a send, a post, a meeting or a change to a shared system, the run shows an approval card with a preview, a risk level for medium and high risk actions, and Show parameters, and waits in that conversation. The action button such as Send acts once; More options skips similar prompts for this conversation only, Only to a recipient, Only to a domain or Always allow; Approve All clears several pending approvals; Cancel skips the action and the task moves on. The next run starts a new conversation and asks again, unless the action was pre-authorized when the task was created.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="18" markerHeight="18" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="60" y="80" width="400" height="230" rx="18" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="92" y="138" font-size="32" font-weight="700" fill="#24292f">Run fires</text>
+    <text x="92" y="190" font-size="28" fill="#57606a">schedule or event</text>
+    <text x="92" y="232" font-size="28" fill="#57606a">in its own, new</text>
+    <text x="92" y="270" font-size="28" fill="#57606a">conversation</text>
+
+    <rect x="60" y="360" width="400" height="330" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="92" y="418" font-size="32" font-weight="700" fill="#24292f">Runs through</text>
+    <text x="92" y="470" font-size="28" fill="#57606a">reads and searches</text>
+    <text x="92" y="512" font-size="28" fill="#57606a">writes new files</text>
+    <text x="92" y="550" font-size="28" fill="#57606a">into Output</text>
+    <text x="92" y="592" font-size="28" fill="#57606a">saves a draft</text>
+    <text x="92" y="650" font-size="28" fill="#24292f" font-weight="700">no approval needed</text>
+
+    <line x1="260" y1="310" x2="260" y2="357" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="460" y1="525" x2="557" y2="525" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+    <rect x="560" y="80" width="720" height="610" rx="20" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+    <text x="592" y="140" font-size="32" font-weight="700" fill="#24292f">Approval card</text>
+    <text x="592" y="186" font-size="28" fill="#57606a">before a send, a post, a meeting</text>
+    <text x="592" y="224" font-size="28" fill="#57606a">or a change to a shared system</text>
+    <rect x="592" y="258" width="656" height="150" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="620" y="306" font-size="28" fill="#24292f">Preview: the draft email, message</text>
+    <text x="620" y="344" font-size="28" fill="#24292f">or meeting, or a summary</text>
+    <text x="620" y="384" font-size="26" fill="#57606a" font-style="italic">Show parameters for the details</text>
+    <rect x="592" y="430" width="300" height="60" rx="30" fill="#ffd8b5" stroke="#bc4c00" stroke-width="2"/>
+    <text x="742" y="470" font-size="26" fill="#24292f" text-anchor="middle">Risk: Medium or High</text>
+    <text x="912" y="470" font-size="26" fill="#57606a">for riskier actions</text>
+    <text x="592" y="556" font-size="28" fill="#24292f" font-weight="700">The run waits here, in its</text>
+    <text x="592" y="596" font-size="28" fill="#24292f" font-weight="700">own conversation, until you answer</text>
+    <text x="592" y="650" font-size="26" fill="#57606a">find it from the automation's run history</text>
+
+    <line x1="1280" y1="385" x2="1377" y2="385" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+    <g font-size="28">
+      <rect x="1380" y="80" width="480" height="128" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+      <text x="1408" y="128" font-weight="700" fill="#24292f">Send, Post, Create</text>
+      <text x="1408" y="172" fill="#57606a">acts this one time</text>
+      <rect x="1380" y="224" width="480" height="196" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+      <text x="1408" y="272" font-weight="700" fill="#24292f">More options</text>
+      <text x="1408" y="314" fill="#57606a">Only to a recipient or domain,</text>
+      <text x="1408" y="352" fill="#57606a">Always allow: skips similar</text>
+      <text x="1408" y="390" fill="#57606a">prompts in this conversation</text>
+      <rect x="1380" y="436" width="480" height="116" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+      <text x="1408" y="484" font-weight="700" fill="#24292f">Approve All (3)</text>
+      <text x="1408" y="526" fill="#57606a">clears several at once</text>
+      <rect x="1380" y="568" width="480" height="122" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+      <text x="1408" y="616" font-weight="700" fill="#24292f">Cancel</text>
+      <text x="1408" y="658" fill="#57606a">skips it, the task moves on</text>
+    </g>
+
+    <rect x="60" y="760" width="1800" height="250" rx="20" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+    <text x="92" y="824" font-size="32" font-weight="700" fill="#24292f">Next run: a new conversation, so it asks again</text>
+    <text x="92" y="876" font-size="28" fill="#57606a">Always allow lasts one conversation; revoke it under Permissions in the side panel</text>
+    <text x="92" y="928" font-size="28" fill="#57606a">To act without asking, pre-authorize the action when you create the task: speed for control</text>
+    <text x="92" y="980" font-size="28" fill="#24292f">Default: draft-and-approve, with your permissions, rate limits and loop protection</text>
+  </g>
+</svg>

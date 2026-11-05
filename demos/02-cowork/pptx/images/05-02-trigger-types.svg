@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">The trigger types of a Cowork automation</title>
+  <desc id="d">Two kinds of triggers. A schedule starts a task daily, weekly, monthly or at a set time, set up through a Create recurring task? card with the recurrence, Run in a new conversation for each run, and Run once now; up to 25 scheduled prompts. An event starts a task when you receive a matching email, when a Teams channel message arrives or when a Teams chat message arrives, and the Teams triggers can react only to messages that mention you; it is set up through a Set up trigger? card with When, Run in a new or the current conversation, What it does and the permissions it needs. Both land on the Automations page, as Active, Draft or Paused, with the last run and the run history.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="18" markerHeight="18" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="80" y="60" width="860" height="700" rx="22" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="112" y="122" font-size="36" font-weight="700" fill="#24292f">Schedule</text>
+    <text x="112" y="166" font-size="28" fill="#57606a">starts the task at a time</text>
+
+    <g font-size="28" fill="#24292f">
+      <rect x="112" y="200" width="180" height="64" rx="32" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+      <text x="202" y="242" text-anchor="middle">Daily</text>
+      <rect x="308" y="200" width="180" height="64" rx="32" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+      <text x="398" y="242" text-anchor="middle">Weekly</text>
+      <rect x="504" y="200" width="180" height="64" rx="32" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+      <text x="594" y="242" text-anchor="middle">Monthly</text>
+      <rect x="112" y="280" width="276" height="64" rx="32" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+      <text x="250" y="322" text-anchor="middle">At a set time</text>
+    </g>
+
+    <rect x="112" y="384" width="796" height="300" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="144" y="436" font-size="30" font-weight="700" fill="#24292f">Create recurring task?</text>
+    <text x="144" y="490" font-size="28" fill="#57606a">Repeat: Weekly, Friday, 3:00 PM</text>
+    <text x="144" y="534" font-size="28" fill="#57606a">Run in: a new conversation for each run</text>
+    <text x="144" y="578" font-size="28" fill="#57606a">Description: the prompt every run receives</text>
+    <text x="144" y="622" font-size="28" fill="#57606a">Run once now, then Schedule</text>
+    <text x="112" y="730" font-size="28" fill="#24292f">up to 25 scheduled prompts</text>
+
+    <rect x="980" y="60" width="860" height="700" rx="22" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="1012" y="122" font-size="36" font-weight="700" fill="#24292f">Event</text>
+    <text x="1012" y="166" font-size="28" fill="#57606a">starts the task when something happens</text>
+
+    <rect x="1012" y="196" width="796" height="64" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1036" y="238" font-size="28" fill="#24292f">When you receive an email (a matching one)</text>
+    <rect x="1012" y="272" width="796" height="64" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1036" y="314" font-size="28" fill="#24292f">When a Teams channel message arrives</text>
+    <rect x="1012" y="348" width="796" height="64" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1036" y="390" font-size="28" fill="#24292f">When a Teams chat message arrives</text>
+    <text x="1036" y="446" font-size="26" fill="#57606a" font-style="italic">Teams triggers: optionally only when you are mentioned</text>
+
+    <rect x="1012" y="476" width="796" height="208" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <text x="1044" y="526" font-size="30" font-weight="700" fill="#24292f">Set up trigger?</text>
+    <text x="1044" y="574" font-size="28" fill="#57606a">When, Run in (new or current conversation)</text>
+    <text x="1044" y="616" font-size="28" fill="#57606a">What it does, the permissions it needs</text>
+    <text x="1044" y="658" font-size="28" fill="#57606a">Set up arms the task</text>
+    <text x="1012" y="730" font-size="28" fill="#24292f">rate-limited so it cannot fire too often</text>
+
+    <line x1="510" y1="760" x2="900" y2="850" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+    <line x1="1410" y1="760" x2="1020" y2="850" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+    <rect x="560" y="850" width="800" height="170" rx="18" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+    <text x="960" y="908" font-size="32" font-weight="700" fill="#24292f" text-anchor="middle">Automations page</text>
+    <text x="960" y="956" font-size="28" fill="#57606a" text-anchor="middle">Active, Draft or Paused, last run, run history</text>
+    <text x="960" y="996" font-size="28" fill="#57606a" text-anchor="middle">edit, run now, pause, resume or delete</text>
+  </g>
+</svg>

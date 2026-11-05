@@ -1,14 +1,31 @@
 # Scheduled Prompts & Event-Driven Tasks
 
-> **Generally available**: part of [Getting Started with Cowork](../01-intro/readme.md). Last checked against Microsoft Learn on 2026-10-17.
+> **Generally available**: part of [Getting Started with Cowork](../01-intro/readme.md). Last checked against Microsoft Learn on 2026-11-05.
 
 The earlier topics covered what Cowork does and the skills behind it. This topic makes that work repeatable: a prompt you can run once can repeat on a schedule or start when something happens, and Cowork delivers the result without you.
 
 ---
 
+## Two Kinds of Triggers
+
+Every automation starts from a trigger, and Cowork offers two kinds. A **schedule** starts the task at a time: on a recurrence such as every morning, every Friday or the first of the month, or at a set time. An **event** starts the task when something happens in your Microsoft 365 work: an email arrives, a Teams channel message arrives, or a Teams chat message arrives. After the trigger fires, both kinds run the same way and appear side by side on the **Automations** page.
+
+| Trigger | Starts the task when | Cowork proposes | What you set on the card |
+| --- | --- | --- | --- |
+| **Schedule** | The recurrence or the set time comes round (daily, weekly, monthly, or a specific time) | **Create recurring task?** | The recurrence and time, **Run in** (a new conversation for each run), the description every run receives, **Run once now** |
+| **When you receive an email** | An email that matches what you described, such as a sender and a subject, arrives | **Set up trigger?** | **Run in** (a new conversation or the current one), **What it does**, the permissions the task needs |
+| **When a Teams channel message arrives** | A message is posted in the channel you named | **Set up trigger?** | The same fields, plus an option to react only to messages that mention you |
+| **When a Teams chat message arrives** | A message arrives in a 1:1 or group chat | **Set up trigger?** | The same fields, plus an option to react only to messages that mention you |
+
+![A schedule starts a task daily, weekly, monthly or at a set time through a Create recurring task? card; an event starts it when a matching email, a Teams channel message or a Teams chat message arrives, optionally only when you are mentioned, through a Set up trigger? card. Both land on the Automations page as Active, Draft or Paused.](../pptx/images/05-02-trigger-types.svg)
+
+Pick the trigger by who sets the timing. A schedule fits work whose timing you know, such as the Friday status report or a morning briefing. An event fits work whose timing someone else sets, such as a supplier delay email or an @mention in an operations channel. You can have up to 25 scheduled prompts, and Cowork applies rate limits so an event-driven task cannot fire too often.
+
+---
+
 ## How Scheduling Works
 
-Instead of asking for the same report every week, you hand Cowork the recipe once and it runs on its own.
+You hand Cowork the recipe for a recurring report once, and it runs on its own every week.
 
 1. **Write the prompt** as you normally would, describing the full outcome.
 2. **Set a recurrence** (daily, weekly, monthly, or a specific time).
@@ -31,7 +48,7 @@ When you ask for a schedule in chat, Cowork proposes a **Create recurring task?*
 
 ## Event-Driven Tasks
 
-Event-driven tasks start when something happens, such as an email arriving, instead of at a set time. Describe the trigger and the job in chat, and Cowork proposes a **Set up trigger?** card. Select **Set up** on the card to arm the task.
+Event-driven tasks start when something happens, such as an email arriving. Describe the trigger and the job in chat, and Cowork proposes a **Set up trigger?** card. Select **Set up** on the card to arm the task.
 
 The **When** field offers **When you receive an email**, **When a Teams channel message arrives**, and **When a Teams chat message arrives**. Teams triggers can be limited to messages that mention you. The card also shows **Run in** (a new conversation for each run, or the current one), **What it does**, and the permissions the task needs.
 
@@ -60,6 +77,31 @@ Tasks run with your permissions and see only what you can see. They are rate-lim
 
 ![A schedule or trigger fires and Cowork prepares the send, post, or change on its own, then holds it for your approval before it leaves your workspace, unless you pre-authorized it. The guardrails below: your permissions, rate limits, loop protection, and results only to you.](../pptx/images/05-03-automation-approvals.svg)
 
+### What Pauses and What Runs Through
+
+A run pauses before an action that leaves your workspace or changes something other people share: sending an email, posting in a Teams channel or chat, scheduling a meeting, or changing a shared system. Gathering information and writing new files into the run's **Output** do not pause. In this topic's demo, the Word report and the email saved to your Drafts folder needed no approval; only the send would have.
+
+### The Approval Card
+
+The card shows what Cowork is about to do before it happens. A draft email, a Teams message or a meeting appear as a rich preview, other actions as a summary, and an Outlook mail rule as a detailed card of what the rule will do. Medium and high risk actions carry a risk level indicator, and **Show parameters** reveals the technical details of the action. The button is named after the action itself:
+
+| Choice | What it does |
+| --- | --- |
+| The action button (**Send**, **Post**, **Create**) | Lets Cowork take the action this one time |
+| **More options** (the dropdown next to the action button) | Approves the action and skips the prompt for similar actions for the rest of the conversation: for email and Teams messages **Only to** one recipient, **Only to** one domain, or **Always allow**; for other actions **Approve & don't ask again** |
+| **Approve All** | Appears when several approvals are pending and lets all of them proceed, for example **Approve All (3)** |
+| **Cancel** | Skips the action; Cowork moves on with the rest of the task |
+
+### Where a Waiting Run Waits
+
+A scheduled run starts a new conversation for each run, so its approval card appears in that run's own conversation, separate from the chat where you created the schedule. Open the automation on the **Automations** page to see its run history and jump into the run that waits. Until you answer, the action does not happen, while everything the run could do without you, such as the report under **Output** and the saved draft, is already there.
+
+### Always Allow Lasts One Conversation
+
+**Always allow** and the other "don't ask again" choices apply only to the current conversation, and the **Permissions** section of the side panel lists them so you can revoke one. Because every scheduled run starts a new conversation, an **Always allow** given in one run does not carry into the next, and next Friday's run asks again. To let a task act without asking at all, pre-authorize the action when you create the task, which trades control for speed; without that, the default stays draft-and-approve.
+
+![A run fires in its own conversation, works through steps that need no approval, then reaches a send, post, meeting or shared change and shows an approval card with a preview, a risk level for medium and high risk actions and Show parameters. Send acts once, More options skips similar prompts for this conversation only, Approve All clears several, and Cancel skips the action; the next run asks again unless the task was pre-authorized.](../pptx/images/05-04-how-approvals-work.svg)
+
 Automation removes the repetitive work, and by default it keeps your control over what leaves your workspace. The full approval model is covered in [Human-in-the-Loop](../07-staying-in-control/readme.md).
 
 ---
@@ -82,5 +124,7 @@ Automation removes the repetitive work, and by default it keeps your control ove
 
 - [Schedule Prompts](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/use-cowork#schedule-prompts)
 - [Set Up Event-Driven Tasks](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/use-cowork#set-up-event-driven-tasks)
+- [Approve Actions](https://learn.microsoft.com/en-us/copilot/cowork/use-cowork#approve-actions)
+- [Automated Tasks in Cowork Governance](https://learn.microsoft.com/en-us/copilot/cowork/cowork-admin-governance#automated-tasks)
 - [Cowork Overview](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/)
 - [Cowork FAQ](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-faq)

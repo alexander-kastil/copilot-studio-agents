@@ -51,6 +51,7 @@
 - Update .run
 - Release build
 - Update demos, labs
+- Automation teaching and slides: Progress: 8/8 · brand voice and link checks clean
 
 ### Changed
 
