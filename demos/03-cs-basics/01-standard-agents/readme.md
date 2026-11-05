@@ -115,3 +115,5 @@ Two habits save time from the first day. Test after every change, because the te
 [Review agent activity](https://learn.microsoft.com/microsoft-copilot-studio/authoring-review-activity)
 
 [Power Platform environments overview](https://learn.microsoft.com/power-platform/admin/environments-overview)
+
+[Agent Academy: Recruit and Operative courses for the Standard harness](https://microsoft.github.io/agent-academy/)

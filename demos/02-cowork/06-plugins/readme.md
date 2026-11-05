@@ -77,6 +77,12 @@ A **Publish** dialog then asks who gets the plugin under **This plugin will be a
 
 ![Four widening steps of reach for an uploaded plugin: Only you and Specific users in your organization need no admin, the whole organization waits for admin approval, and a public store listing goes through Partner Center.](../pptx/images/06-03-sharing-a-plugin.svg)
 
+An uploaded plugin never lands in your OneDrive. Cowork publishes the package as a Microsoft 365 app to your organization's plugin registry, the same catalog that holds Teams apps and Copilot agents, and **Only you** scopes it to your account. You find it on [Agents & Plugins](https://copilot.cloud.microsoft/plugins) under **Cowork** > **Added**, and admins see it in the Microsoft 365 admin center under **Agents** > **All agents** or **Tools**. To get the files back, download the package again from where you got it.
+
+Your OneDrive folder `Documents/Cowork` holds only what Cowork keeps for you across sessions: `Skills/` with your custom skills, `Projects/`, `Tasks/`, `sessions/`, and an `AGENTS.md` note that tells the agent the folder is read-only to it.
+
+![An uploaded dietitian.zip goes to the plugin registry of your Microsoft 365 tenant and shows on Agents & Plugins under Cowork > Added, while the OneDrive folder Documents/Cowork holds Skills, Projects, Tasks, sessions and AGENTS.md and gets no copy of the plugin.](../pptx/images/06-06-onedrive-cowork-folder.svg)
+
 For code-first authoring, the `wiqd` command-line tool (preview) scaffolds, validates, packages and shares plugins:
 
 ```powershell
@@ -136,7 +142,7 @@ Beyond the official Microsoft 365 plugins, the community publishes ready-to-inst
 - [Customize Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-customize)
 - [Build Plugins for Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-plugin-development)
 - [Manage Plugins for Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-manage-plugins)
-- [Available Plugins](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-available-plugins)
+- [Available Plugins](https://learn.microsoft.com/en-us/copilot/cowork/cowork-available-plugins)
 - [Introducing the plugin registry (Tech Community, 2026-09-30)](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/introducing-the-plugin-registry---one-place-to-discover-and-govern-plugins-for-m/4559682)
 - [The new Microsoft Copilot: Home, Code and Autopilot (Microsoft Blog, 2026-09-25)](https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/)
 - [What is a Microsoft 365 Copilot plugin?](https://learn.microsoft.com/microsoft-365/copilot/extensibility/plugins-overview)

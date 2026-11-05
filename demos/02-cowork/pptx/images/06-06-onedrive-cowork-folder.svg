@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Where an uploaded plugin goes</title>
+  <desc id="d">An uploaded dietitian.zip goes to the plugin registry of your Microsoft 365 tenant and shows on Agents and Plugins under Cowork, Added. The OneDrive folder Documents/Cowork holds Skills, Projects, Tasks, sessions and AGENTS.md and gets no copy of the plugin. To get the files back, download the zip again.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M0,0 L12,6 L0,12 z" fill="#57606a"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M0,0 L12,6 L0,12 z" fill="#b35454"/>
+    </marker>
+  </defs>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="80" y="120" width="460" height="320" rx="16" fill="#f1e8fb" stroke="#8c959f" stroke-width="2"/>
+    <text x="310" y="215" text-anchor="middle" font-size="42" font-weight="700" fill="#24292f">dietitian.zip</text>
+    <text x="310" y="275" text-anchor="middle" font-size="30" fill="#57606a">Microsoft 365</text>
+    <text x="310" y="315" text-anchor="middle" font-size="30" fill="#57606a">app package</text>
+    <text x="310" y="385" text-anchor="middle" font-size="28" font-family="Consolas, monospace" fill="#24292f">manifest.json + skills/</text>
+
+    <line x1="545" y1="280" x2="770" y2="280" stroke="#57606a" stroke-width="4" marker-end="url(#arrow)"/>
+    <text x="657" y="235" text-anchor="middle" font-size="28" fill="#24292f">Upload</text>
+    <text x="657" y="330" text-anchor="middle" font-size="28" font-weight="700" fill="#24292f">Only you</text>
+
+    <rect x="780" y="120" width="520" height="320" rx="16" fill="#fff3d6" stroke="#8c959f" stroke-width="2"/>
+    <text x="1040" y="215" text-anchor="middle" font-size="42" font-weight="700" fill="#24292f">Plugin registry</text>
+    <text x="1040" y="275" text-anchor="middle" font-size="30" fill="#57606a">of your Microsoft 365 tenant</text>
+    <text x="1040" y="325" text-anchor="middle" font-size="30" fill="#57606a">scoped to your account</text>
+
+    <line x1="1305" y1="280" x2="1430" y2="280" stroke="#57606a" stroke-width="4" marker-end="url(#arrow)"/>
+
+    <rect x="1440" y="120" width="400" height="320" rx="16" fill="#dff5e3" stroke="#8c959f" stroke-width="2"/>
+    <text x="1640" y="215" text-anchor="middle" font-size="38" font-weight="700" fill="#24292f">Agents &amp; Plugins</text>
+    <text x="1640" y="275" text-anchor="middle" font-size="30" fill="#57606a">Cowork &gt; Added</text>
+    <text x="1640" y="325" text-anchor="middle" font-size="30" fill="#57606a">switch it on or off</text>
+
+    <line x1="310" y1="445" x2="310" y2="575" stroke="#b35454" stroke-width="4" stroke-dasharray="14 10" marker-end="url(#arrowRed)"/>
+    <line x1="285" y1="485" x2="335" y2="535" stroke="#b35454" stroke-width="6"/>
+    <line x1="335" y1="485" x2="285" y2="535" stroke="#b35454" stroke-width="6"/>
+    <text x="360" y="520" font-size="28" fill="#b35454">no copy in OneDrive</text>
+
+    <rect x="80" y="585" width="1220" height="395" rx="16" fill="#e3f0fc" stroke="#8c959f" stroke-width="2"/>
+    <text x="120" y="655" font-size="38" font-weight="700" fill="#24292f">OneDrive &gt; Documents &gt; Cowork</text>
+    <g font-size="30" fill="#24292f">
+      <text x="130" y="740" font-family="Consolas, monospace">Skills/</text>
+      <text x="330" y="740" fill="#57606a">your custom skills</text>
+      <text x="130" y="810" font-family="Consolas, monospace">Projects/</text>
+      <text x="130" y="880" font-family="Consolas, monospace">Tasks/</text>
+      <text x="740" y="810" font-family="Consolas, monospace">sessions/</text>
+      <text x="740" y="880" font-family="Consolas, monospace">AGENTS.md</text>
+      <text x="950" y="880" fill="#57606a">read-only note</text>
+    </g>
+    <text x="130" y="945" font-size="28" fill="#57606a">What Cowork keeps for you across sessions</text>
+
+    <rect x="1360" y="585" width="480" height="395" rx="16" fill="#f3f4f6" stroke="#8c959f" stroke-width="2"/>
+    <text x="1600" y="685" text-anchor="middle" font-size="36" font-weight="700" fill="#24292f">Need the files?</text>
+    <text x="1600" y="760" text-anchor="middle" font-size="30" fill="#57606a">Download the zip</text>
+    <text x="1600" y="805" text-anchor="middle" font-size="30" fill="#57606a">again from where</text>
+    <text x="1600" y="850" text-anchor="middle" font-size="30" fill="#57606a">you got it</text>
+  </g>
+</svg>

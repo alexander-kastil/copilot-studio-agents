@@ -102,4 +102,5 @@ Control does not stop at the individual. Admins decide whether Cowork is availab
 - [How Access to Cowork Is Determined](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-access)
 - [Manage Cowork for Your Organization](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-admin-governance)
 - [Cowork Usage Report](https://learn.microsoft.com/en-us/microsoft-365/admin/activity-reports/cowork-usage-report)
+- [Cowork Team Report: team ROI dashboard skills (GitHub)](https://github.com/microsoft/CoworkDashboard)
 - [Microsoft Purview and Cowork](https://learn.microsoft.com/en-us/purview/ai-copilot-cowork)

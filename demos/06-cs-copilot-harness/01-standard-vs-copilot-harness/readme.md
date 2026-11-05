@@ -111,3 +111,5 @@ Building, testing, evaluating and running a Microsoft Copilot harness agent all 
 [What's new in Copilot Studio](https://learn.microsoft.com/microsoft-copilot-studio/whats-new)
 
 [Meet the new Copilot Studio (announcement)](https://techcommunity.microsoft.com/blog/copilot-studio-blog/meet-the-new-copilot-studio-rebuilt-for-more-complex-multi-step-work/4526488)
+
+[Agent Academy: Recruit and Operative courses for the Microsoft Copilot harness](https://microsoft.github.io/agent-academy/)
