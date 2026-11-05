@@ -1,8 +1,0 @@
-uid=243_0 RootWebArea "LAB-Grey Logistics HR 0105 - Home" url="https://integrationsonline.sharepoint.com/sites/LAB-CopilotDevCamp-HR0105/SitePages/CollabHome.aspx#"
-  uid=243_1 alertdialog "Delete Microsoft 365 Group" modal
-    uid=243_2 generic
-      uid=243_3 heading "Delete Microsoft 365 Group" level="2"
-      uid=243_4 "You are about to delete the 'LAB-Grey Logistics HR 0105' group. This will delete all 'LAB-Grey Logistics HR 0105' resources including the site, files, conversations, calendar, etc. Please backup any files or other content before proceeding. Do you want to continue?"
-      uid=243_5 checkbox "Yes, delete this group and all its associated resources." focusable focused
-      uid=243_6 button "Delete" disableable disabled
-      uid=243_7 button "Cancel"
