@@ -43,8 +43,8 @@ Point Cowork at the `demo-01-q3-close-project` folder.
 
 **Recipe:**
 
-1. In Microsoft 365 Copilot, select the **Cowork** tab. In the left navigation, select **+** next to the **Projects** heading.
-2. Enter the name `Q3 Close`, choose a color and select **Create**.
+1. In Microsoft 365 Copilot, set the **Chat / Cowork** toggle to **Cowork**. In the left navigation, hover the **Projects** heading and select the **+** that appears.
+2. In the **New project** dialog, enter `Q3 Close` as the **Project name**, choose a color and select **Create**.
 3. On the project page, open **More actions** (**...**) > **Edit instructions**, paste the text below and select **Save**.
 
 ```text
@@ -54,7 +54,7 @@ Report revenue in EUR thousands and compare it with the Targets sheet of q3-sale
 Keep every document to two pages, open with the decision you need from leadership, and end with a section titled "Open decisions".
 ```
 
-**Expected Outcome:** **Q3 Close** is listed under **Projects** in the left navigation, and its page shows the chat input with empty **Recent**, **Outputs** and **Project context** sections. **More actions** > **Edit instructions** shows the four saved lines.
+**Expected Outcome:** **Q3 Close** is listed under **Projects** in the left navigation, and its page shows the chat input and the tabs **Recent**, **Outputs** and **Project context**, with "No chats or tasks yet" under **Recent**. **More actions** > **Edit instructions** shows the four saved lines.
 
 ---
 
@@ -96,7 +96,7 @@ Turn q3-close-summary.docx into a one-slide PowerPoint named q3-decision-ask.ppt
 
 **Recipe:**
 
-Select **New task** in the left navigation, outside the project, attach the same two files, then send the same prompt:
+Select **New** in the left navigation, outside the project, attach the same two files, then send the same prompt:
 
 ```text
 Read q3-sales-by-region.xlsx and q3-regional-notes.docx and write the Q3 close summary as a Word document named q3-close-summary.docx.
@@ -112,6 +112,6 @@ Read q3-sales-by-region.xlsx and q3-regional-notes.docx and write the Q3 close s
 
 **Recipe:**
 
-Open **Q3 Close**, select **More actions** > **Archive** and confirm with **Archive**. Then open **Back to Projects** (or **View all projects**), select **Archived**, open **Q3 Close** and check **Outputs**.
+Open **Q3 Close**, select **More actions** > **Archive** and confirm with **Archive**. Cowork opens the projects page: select **Archived**, open **Q3 Close** and check **Outputs**.
 
 **Expected Outcome:** **Q3 Close** is gone from the left navigation and listed under **Archived**, with both tasks and both files still in place. **More actions** > **Restore** brings it back to **Active** for next quarter's close.

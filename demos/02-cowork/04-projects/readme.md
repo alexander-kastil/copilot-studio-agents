@@ -8,9 +8,9 @@ The earlier topics covered what Cowork does in one task and the skills it brings
 
 A project is a named workspace inside Cowork that groups related tasks. You start tasks from it, return to its earlier chats and review the files those tasks produced. Projects are private to the person who creates them: a colleague never sees your project, its instructions or its outputs.
 
-The project page organizes the work in three sections:
+The project page organizes the work in three tabs:
 
-| Section | What you find there |
+| Tab | What you find there |
 | --- | --- |
 | **Recent** | The chats and tasks that belong to the project. Select one to return to its conversation. |
 | **Outputs** | The files the project's tasks created. Select a file to open it on the web or in the task that made it. |
@@ -18,13 +18,13 @@ The project page organizes the work in three sections:
 
 ![A Q3 Close project holds its instructions, the Recent tasks, the Outputs files and the Project context; a new task started from the project page inherits the instructions and the available context, and its file lands in Outputs.](../pptx/images/04-01-what-a-project-holds.svg)
 
-To work with projects, select the **Cowork** tab in Microsoft 365 Copilot. In the left navigation, expand **Projects** and select a project's name to see its tasks. **Back to Projects** (or **View all projects**, where your layout shows it) opens the projects page, where **Search projects** finds a project by name and the **Active** and **Archived** tabs split current work from finished work. Frontier users may see a different set of tabs at the top of the navigation.
+To work with projects, set the **Chat / Cowork** toggle in Microsoft 365 Copilot to **Cowork**. In the left navigation, expand **Projects** and select a project's name to see its tasks. **Back to Projects** (or **View all projects**, where your layout shows it) opens the projects page, where **Search projects** finds a project by name and the **Active** and **Archived** tabs split current work from finished work. Frontier users may see a different set of tabs at the top of the navigation.
 
 ---
 
 ## Create a Project and Start Its First Task
 
-Create a project for a piece of work that will take more than one task, such as preparing a launch or writing a recurring status report. Next to the **Projects** heading in the left navigation, select **+**, enter a name, choose a color and select **Create**. Cowork opens the new project, ready for its instructions and its first task. When you have no projects yet, the same flow starts from **Add project**.
+Create a project for a piece of work that will take more than one task, such as preparing a launch or writing a recurring status report. Hover the **Projects** heading in the left navigation, select the **+** that appears, enter a **Project name** in the **New project** dialog, choose a color and select **Create**. Cowork opens the new project, ready for its instructions and its first task. When you have no projects yet, the same dialog opens from **Add project here**.
 
 Start every task of the project from the project page, so it belongs to the project from its first message. Type the request into the project's chat input and send it: Cowork starts the task with the project's instructions and the context available to it. To start the next task, return to the project page and enter a new request.
 
@@ -52,9 +52,9 @@ A skill carries a repeatable procedure across all your work, while project instr
 
 ## Bring Existing Chats into a Project
 
-Work often starts before anyone creates a project for it. Open an active project and select **add from existing** or **+** (labeled **Add existing chats** in some experiences, and shown beside the task list once the project has tasks). Pick the chats to add, using **Search chats and tasks** or **Load older chats** to find older ones, and select **Add**. The chats appear in the project's task list.
+Work often starts before anyone creates a project for it. Open an active project and select the **+** beside the search icon on the **Recent** tab (tooltip **Add existing chats**); an empty project shows the link **add from existing** instead. Pick the chats to add, using **Search chats and tasks** or **Load older chats** to find older ones, and select **Add**. The chats appear in the project's task list.
 
-A chat belongs to one project at a time: a chat that is already in another project is not selectable in the picker. Drag a chat from one project to another to move it, or select **...** on a task and **Move to projects**. To take a task out again, open its **More actions** menu in **Recent** or the task list and select **Remove from project**. Removing a task does not delete its conversation, and you can still open it from **Recent**.
+A chat belongs to one project at a time: a chat that is already in another project is not selectable in the picker. Drag a chat from one project to another to move it, or select **...** on a task and **Move to projects**. To take a task out again, open its **...** menu on the **Recent** tab and select **Remove from project**, which applies at once. Removing a task does not delete its conversation, and you can still open it from **Recent**.
 
 ---
 
