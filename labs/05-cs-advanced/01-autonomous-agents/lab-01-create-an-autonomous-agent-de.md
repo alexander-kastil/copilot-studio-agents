@@ -117,7 +117,7 @@ Nachdem Sie den Agent erstellt haben, stellen Sie sicher, dass seine Fähigkeite
 
 Im Abschnitt **Knowledge** des Agents können Sie optional Knowledge Sources hinzufügen, wenn Sie eigene HR-Dokumentation oder Richtlinien zur Verarbeitung von Kandidaten haben. In diesem Lab verlassen wir uns auf die eingebauten AI-Fähigkeiten des Agents und die Integration des MCP Servers.
 
-Schalten Sie im selben Abschnitt **Knowledge** die **Web Search** aus. Sie ist standardmäßig an, und damit sucht der Agent im öffentlichen Web nach dem Namen des Kandidaten, statt nur mit der hochgeladenen Datei zu arbeiten.
+Stellen Sie im selben Abschnitt **Knowledge** unter **Add knowledge** den Schalter **Web Search** von **Enabled** auf **Disabled**; ein **Save** ist nicht nötig. Web Search ist standardmäßig an, und damit sucht der Agent im öffentlichen Web nach dem Namen des Kandidaten, statt nur mit der hochgeladenen Datei zu arbeiten.
 
 Wählen Sie nach Konfigurationsänderungen **Save**, um sie zu bestätigen.
 
@@ -229,7 +229,7 @@ Sobald mindestens eine Datei in der Ziel-Bibliothek liegt, aktualisiert sich der
 
 Laden Sie einfach einen der zuvor heruntergeladenen Lebensläufe in die Ziel-Bibliothek in SharePoint Online hoch und warten Sie, bis der Agent ihn verarbeitet.
 
-> **Hinweis:** Der Trigger reagiert nur auf Dateien, die nach seiner Erstellung hochgeladen werden, laden Sie die Testdatei also jetzt hoch, nicht vorher. Es kann bis zu einer Minute dauern, bis der Agent die neuen Dateien bemerkt, und **Start testing** bleibt bis dahin grau. Der Dialog aktualisiert sich nicht selbst: Wählen Sie sein Aktualisieren-Symbol, damit die neue Datei erscheint. Die Dateiliste zeigt Zeitstempel, keine Dateinamen.
+> **Hinweis:** Der Trigger reagiert nur auf Dateien, die nach seiner Erstellung hochgeladen werden, laden Sie die Testdatei also jetzt hoch, nicht vorher. Es kann bis zu einer Minute dauern, bis der Agent die neuen Dateien bemerkt, und **Start testing** bleibt bis dahin grau. Der Dialog aktualisiert sich nicht selbst: Wählen Sie sein Aktualisieren-Symbol, damit die neue Datei erscheint. Die Dateiliste zeigt Zeitstempel, keine Dateinamen; enthält sie auch frühere Uploads, wählen Sie den neuesten Zeitstempel.
 
 > **Hinweis:** Sieht der Testdialog Ihre Datei nie, öffnen Sie Power Automate und wählen Sie **Connections**. Zeigt die SharePoint Connection **Reconnect**, wählen Sie **Reconnect**, dann **Update**, und wählen Sie Ihren Account; der Trigger Flow zeigt keine Runs, solange diese Connection unterbrochen ist.
 

@@ -52,6 +52,7 @@
 - Release build
 - Update demos, labs
 - Automation teaching and slides: Progress: 8/8 · brand voice and link checks clean
+- Run lab 05/01 in the browser: The text-resume retest works
 
 ### Changed
 
@@ -79,7 +80,7 @@
 ### Fixed
 
 - Lab 06/03 (portable skill) follows its browser run of 2026-11-05, in English and German: **Add skill** is the **+** next to **Skills**, the upload starts on file selection, the skill is a chip whose description shows when selected, **Replace** and **Download** sit in the chip's **...** menu, the skill is deleted with the **X** on its chip, the reply labels read Acknowledge, Clarify or reframe, Next step with a **Used skill** line, and the second agent gets a sample instruction
-- Labs 05/01 and 05/06 follow what the browser runs of 2026-11-05 showed, in English and German: the autonomous agent lab reads text resumes (`.txt` beside each PDF, read with the SharePoint text-file tool, because a PDF comes back as encoded binary data), creates the tool connections with **Create new connection**, turns **Web Search** off and names the current library, trigger and test-dialog controls; the evaluations lab turns **Web Search** off, uploads the HR documents to a site without other files, and uses **Single responses**, the **Import** tab, **Select test methods**, **Apply**, **Results** and **Run again**; labs 01/01, 01/02 and 04/07 name **Agents & Plugins**, **Build** > **Site** and **Other ways to build**
+- Labs 05/01 and 05/06 follow what the browser runs of 2026-11-05 showed, in English and German: the autonomous agent lab reads text resumes (`.txt` beside each PDF, read with the SharePoint text-file tool, because a PDF comes back as encoded binary data), creates the tool connections with **Create new connection**, turns the **Web Search** toggle to **Disabled**, picks the newest upload in the test dialog and names the current library, trigger and test-dialog controls; the evaluations lab turns **Web Search** off, uploads the HR documents to a site without other files, and uses **Single responses**, the **Import** tab, **Select test methods**, **Apply**, **Results** and **Run again**; labs 01/01, 01/02 and 04/07 name **Agents & Plugins**, **Build** > **Site** and **Other ways to build**
 - Martin's lab 01 (reconcile with an agent flow, German): the file step uses Get files (properties only) instead of Get file properties, with no ID to fill in, and the script step loads its parameters from the workbook before the file expression is set, so the flow receives the parameters
 - Lab 06/01 (compare Standard and Microsoft Copilot harness agents) matches the live product after a run on 2026-11-04: the Agents list has no kind column, a Microsoft Copilot harness agent saves with the **Save** icon at the top right and folds its tabs into a **Build** drop-down in a narrow window, its new agent already holds Work IQ and Search all websites, and Troubleshooting covers the EnforcementUsageCredits error in Preview; Exercise 7 ran with credits in Integrationsonline Production and its Expected now says the agent finds no Tier 1 figure without Northwind data
 - Module 06 deck: the "Reading the plan in Preview" slide is retitled "Following the agent's reasoning in Preview" and describes only what the screenshot shows, with no plan or execution path; the skills slide 20 is rebuilt

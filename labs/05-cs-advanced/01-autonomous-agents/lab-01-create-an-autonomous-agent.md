@@ -117,7 +117,7 @@ After creating the agent, you need to ensure that its capabilities are enhanced 
 
 In the **Knowledge** section of the agent, you can optionally add knowledge sources if you have specific HR documentation or candidate processing guidelines. For this lab, we'll rely on the agent's built-in AI capabilities and the MCP server integration.
 
-In the same **Knowledge** section, turn **Web Search** off. It is on by default, and with it the agent searches the public web for the candidate's name instead of working only from the uploaded file.
+In the same **Knowledge** section, below **Add knowledge**, switch the **Web Search** toggle from **Enabled** to **Disabled**; it needs no **Save**. It is on by default, and with it the agent searches the public web for the candidate's name instead of working only from the uploaded file.
 
 In case of any configuration changes, select **Save** to confirm them.
 
@@ -229,7 +229,7 @@ Once at least one file will be uploaded in the target library, the dialog update
 
 You can simply upload in the target SharePoint Online library one of the resumes that you downloaded before and wait for the agent to process it.
 
-> **Note:** The trigger reacts only to files uploaded after it exists, so upload the test file now, not before. It can take up to one minute for the agent to get evidence of the new file(s) uploaded, and **Start testing** stays grey until then. The dialog does not update on its own: select its refresh icon to list the new file. The list of files shows timestamps, not file names.
+> **Note:** The trigger reacts only to files uploaded after it exists, so upload the test file now, not before. It can take up to one minute for the agent to get evidence of the new file(s) uploaded, and **Start testing** stays grey until then. The dialog does not update on its own: select its refresh icon to list the new file. The list of files shows timestamps, not file names; if it holds earlier uploads too, select the newest timestamp.
 
 > **Note:** If the test dialog never sees your file, open Power Automate and select **Connections**. When the SharePoint connection shows **Reconnect**, select **Reconnect**, then **Update**, and pick your account; the trigger flow shows no runs while that connection is broken.
 
