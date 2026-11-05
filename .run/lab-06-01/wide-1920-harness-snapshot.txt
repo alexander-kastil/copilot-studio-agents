@@ -1,0 +1,107 @@
+uid=51_0 RootWebArea "Agents" url="https://copilotstudio.microsoft.com/environments/e7fca141-ff0f-e73a-a858-4bbe5bc04a42/agents/032333db-0da0-44f4-b50e-560a25b40f2e"
+  uid=51_1 generic live="assertive" relevant="additions text"
+  uid=51_2 generic live="polite" relevant="additions text"
+  uid=51_3 link "Skip to main content" url="https://copilotstudio.microsoft.com/environments/e7fca141-ff0f-e73a-a858-4bbe5bc04a42/agents/032333db-0da0-44f4-b50e-560a25b40f2e#main-content"
+  uid=51_5 navigation "Main navigation"
+    uid=51_6 "Copilot Studio"
+    uid=51_7 button "Collapse navigation" expandable expanded
+    uid=51_8 link "Home" url="https://copilotstudio.microsoft.com/environments/e7fca141-ff0f-e73a-a858-4bbe5bc04a42/home"
+    uid=51_10 link "Agents" url="https://copilotstudio.microsoft.com/environments/e7fca141-ff0f-e73a-a858-4bbe5bc04a42/agents"
+    uid=51_12 link "Workflows" url="https://copilotstudio.microsoft.com/environments/e7fca141-ff0f-e73a-a858-4bbe5bc04a42/workflows"
+    uid=51_14 link "Apps (Preview)" url="https://copilotstudio.microsoft.com/environments/e7fca141-ff0f-e73a-a858-4bbe5bc04a42/apps"
+    uid=51_16 button "Switch environment (current: Microsoft 365)" expandable haspopup="dialog"
+    uid=51_17 button "Open account menu for Alexander Kastil" description="Alexander Kastil" expandable haspopup="dialog"
+    uid=51_18 button "More options" haspopup="menu"
+  uid=51_19 main
+    uid=51_20 generic live="assertive" relevant="additions text"
+    uid=51_21 generic live="polite" relevant="additions text"
+    uid=51_22 heading "LAB-Northwind Sales Assistant" level="1"
+    uid=51_23 button "Rename agent"
+    uid=51_24 image "Draft" description="Last saved: 1:51 PM, 11/4/26 Last published: Not available"
+    uid=51_25 tab "Build" selectable selected
+    uid=51_26 tab "Preview" selectable
+    uid=51_27 tab "Evaluate" selectable
+    uid=51_28 tab "Monitor" selectable
+    uid=51_29 button "More options" haspopup="menu"
+    uid=51_30 button "Submit feedback"
+    uid=51_31 button "Publish to Microsoft 365 to enable sharing." disableable disabled expandable haspopup="dialog"
+    uid=51_32 button "Save (Ctrl+S) Last saved: 1:51 PM, 11/4/26 Reason: No unsaved changes" disableable disabled keyshortcuts="Control+S Meta+S"
+    uid=51_33 button "Review" expandable haspopup="dialog"
+    uid=51_34 button "Publish" expandable haspopup="dialog"
+    uid=51_35 status atomic live="polite" relevant="additions text"
+    uid=51_36 status atomic live="polite" relevant="additions text"
+    uid=51_37 region "Agent editor"
+      uid=51_38 generic
+        uid=51_39 button "Edit agent icon"
+        uid=51_40 textbox "Name your agent" multiline value="LAB-Northwind Sales Assistant"
+        uid=51_41 heading "Instructions" level="2"
+        uid=51_42 button "More information about instructions" expandable
+        uid=51_43 button "Undo" description="Undo" disableable disabled
+        uid=51_44 button "Redo" description="Redo" disableable disabled
+        uid=51_45 button "Bold" description="Bold"
+        uid=51_46 button "Italic" description="Italic"
+        uid=51_47 button "Strikethrough" description="Strikethrough"
+        uid=51_48 button "Bullet list" description="Bullet list"
+        uid=51_49 button "Number list" description="Number list"
+        uid=51_50 button "Clear formatting" description="Clear formatting"
+        uid=51_51 button "Blockquote" description="Blockquote"
+        uid=51_52 button "Inline code" description="Inline code"
+        uid=51_53 button "Insert link"
+        uid=51_54 status atomic live="polite" relevant="additions text"
+        uid=51_55 textbox "Agent instructions" focusable focused multiline value="Role: You are the Northwind Sales Assistant, an internal helper for Northwind Traders sellers.
+
+
+
+
+You do:
+
+Answer short questions about Northwind products, standard lead times, and account tiers.
+
+You do not:
+
+Give binding price quotes, contract terms, or legal advice.
+- Answer questions unrelated to Northwind sales.
+
+Style: concise and professional.​‌"
+          uid=51_56 paragraph
+            uid=51_57 "Role: You are the Northwind Sales Assistant, an internal helper for Northwind Traders sellers."
+          uid=51_58 paragraph
+          uid=51_59 paragraph
+            uid=51_60 "You do:"
+          uid=51_61 list
+            uid=51_62 listitem level="1"
+              uid=51_63 "Answer short questions about Northwind products, standard lead times, and account tiers."
+          uid=51_64 paragraph
+            uid=51_65 "You do not:"
+          uid=51_66 list
+            uid=51_67 listitem level="1"
+              uid=51_68 "Give binding price quotes, contract terms, or legal advice."
+            uid=51_69 listitem level="1"
+              uid=51_70 "- Answer questions unrelated to Northwind sales."
+          uid=51_71 paragraph
+            uid=51_72 "Style: concise and professional."
+      uid=51_73 complementary "Agent configuration"
+        uid=51_74 separator "Resize panel" orientation="vertical" value="400" valuemax="800" valuemin="400" valuetext=""
+        uid=51_75 region "Model"
+          uid=51_76 heading "Model" level="2"
+          uid=51_77 button "Model: Claude Opus 5.5" expandable haspopup="menu"
+        uid=51_78 button "Add channel"
+        uid=51_79 button "Add skill"
+        uid=51_80 generic atomic live="polite" relevant="additions text"
+        uid=51_81 region "Tools"
+          uid=51_82 button "Add tool"
+          uid=51_83 button "Work IQ. Couldn't load tools from this MCP server. Open the tool for details."
+          uid=51_84 button "Remove Work IQ"
+        uid=51_85 region "Knowledge"
+          uid=51_86 button "Add knowledge"
+          uid=51_87 button "Search all websites"
+          uid=51_88 button "Remove Search all websites"
+        uid=51_89 region "Connected agents"
+          uid=51_90 button "Add multi agent"
+        uid=51_91 region "Memory"
+          uid=51_92 heading "Memory" level="2"
+          uid=51_93 "Preview"
+          uid=51_94 "Save preferences and work progress across sessions to get better results over time."
+          uid=51_95 switch "Enable memory"
+  uid=51_96 generic live="assertive" relevant="additions text"
+  uid=51_97 generic live="assertive" relevant="additions text"

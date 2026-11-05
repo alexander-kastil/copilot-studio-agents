@@ -1,0 +1,19 @@
+uid=68_0 RootWebArea "Agents" url="https://copilotstudio.preview.microsoft.com/environments/20f43690-ffae-e858-9da8-97373bf2124b/bots/85bf2e18-77d8-f111-84e8-0022489d5abe/adaptive/00000000-0000-0000-0000-000000000000/triggers/main/actions/sendActivity_K2xj6E"
+  uid=68_111 generic live="assertive" relevant="additions text"
+  uid=95_0 dialog modal
+    uid=95_1 heading "Select a variable" level="2"
+    uid=95_2 button "Dismiss" focusable focused
+    uid=95_3 tab "Custom" selectable selected
+    uid=95_4 tab "System" selectable
+    uid=95_5 tab "Environment" selectable
+    uid=95_6 textbox "Search variables"
+    uid=95_7 button "All" expandable haspopup="menu"
+    uid=95_8 menu orientation="vertical"
+      uid=95_9 menuitem "CurrentRole (Topic.CurrentRole) string"
+        uid=95_10 generic
+      uid=95_11 menuitem "Email (Topic.Email) string"
+        uid=95_12 generic
+      uid=95_13 menuitem "FirstName (Topic.FirstName) string"
+        uid=95_14 generic
+      uid=95_15 menuitem "LastName (Topic.LastName) string"
+        uid=95_16 generic

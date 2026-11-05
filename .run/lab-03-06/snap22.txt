@@ -1,0 +1,27 @@
+uid=193_0 RootWebArea "Microsoft Copilot" url="https://copilot.cloud.microsoft/chat/agent/T_63de4823-0563-3f30-1a1a-1c17c1314a7e.55ffe19b-a6c2-4a3e-bf8b-70bc95e89682"
+  uid=193_1 main
+    uid=193_2 link "Skip to main content" url="https://copilot.cloud.microsoft/chat/agent/T_63de4823-0563-3f30-1a1a-1c17c1314a7e.55ffe19b-a6c2-4a3e-bf8b-70bc95e89682#m365-copilot-app-layout-content"
+    uid=193_4 navigation
+      uid=193_5 button "Expand sidebar" expandable
+      uid=193_6 button "Home" haspopup="menu"
+      uid=193_7 link "New" url="https://copilot.cloud.microsoft/home"
+      uid=193_8 link "Search" url="https://copilot.cloud.microsoft/search?sessionId=ca53b78b-4d84-67db-43be-83da2572598b"
+      uid=193_9 link "Library" url="https://copilot.cloud.microsoft/library/all"
+      uid=193_10 link "Agents & Plugins" url="https://copilot.cloud.microsoft/plugins"
+      uid=193_11 link "Automations" url="https://copilot.cloud.microsoft/cowork#/scheduled"
+      uid=193_12 link "Workspaces" url="https://copilot.cloud.microsoft/workspaces"
+      uid=193_13 button "Pinned" expandable haspopup="menu"
+      uid=193_14 button "Alexander Kastil"
+    uid=193_15 generic
+      uid=193_16 button "Commercial data protection badge." expandable
+      uid=193_17 button "Settings and more" description="Settings and more" haspopup="menu"
+      uid=193_18 button "LAB-Agentic HR 0306" description="Click to learn more"
+      uid=193_19 "Created by "
+      uid=193_20 button "Your developer name"
+      uid=193_21 textbox "Message LAB-Agentic HR 0306" focusable focused multiline value="Show me the list of candidates for HR with role "HR Director" or "HR Manager"​‌"
+        uid=193_22 paragraph
+          uid=193_23 "Show me the list of candidates for HR with role "HR Director" or "HR Manager""
+      uid=193_24 button "Add and manage sources" expandable haspopup="menu"
+      uid=193_25 button "Start dictation"
+      uid=193_26 button "Send"
+  uid=193_27 generic live="assertive" relevant="additions text"

@@ -184,11 +184,11 @@ Skills live on the **Build** tab of a Microsoft Copilot harness agent, in the **
 You will need the files from the `lab-01-portable-skill` folder you created in Steps 3 and 4 (the `SKILL.md` and the ZIP). Have that folder open in a file explorer window before you start.
 
 1. Open your first agent (for example the Sales Assistant) at [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com).
-2. On the **Build** tab, find the **Skills** panel and select **Add skill**.
-3. Choose **Upload a skill** (rather than **Create from blank**), then browse to `lab-01-portable-skill` and select your ZIP.
-4. Confirm the upload and wait for `objection-handling` to appear in the **Skills** list.
+2. On the **Build** tab, find the **Skills** heading and select its **+** (**Add skill**).
+3. Keep the **Upload a skill** tab (the other tab is **Create from blank**), then browse to `lab-01-portable-skill` and select your ZIP.
+4. The upload starts as soon as you select the ZIP and shows "Saving skill..."; wait until the dialog closes and `objection-handling` appears under **Skills**.
 
-Expected: `objection-handling` shows in the agent's **Skills** panel with the description you wrote. Only the name and description are loaded into context now; the full instructions load when a request matches.
+Expected: `objection-handling` shows as a chip under **Skills**; select it to see the description you wrote. Only the name and description are loaded into context now; the full instructions load when a request matches.
 
 ## Step 6: Test activation in the Preview tab
 
@@ -209,11 +209,11 @@ A customer says we are more expensive than a competitor. How should I reply?
 What is our standard return policy?
 ```
 
-4. Compare the two: the first should follow the Acknowledge, Clarify, Next step format from your skill; the second should be a plain answer with no skill activation.
+4. Compare the two: the first should follow the Acknowledge, Clarify or reframe, Next step format from your skill; the second should be a plain answer with no skill activation.
 
 Expected: the objection message activates `objection-handling` and the reply follows the labelled format, while the return-policy message does not activate the skill. That contrast confirms the description scoped the trigger correctly.
 
-> **Tip:** If the reply looks right but you are not sure the skill fired, watch the activation indicator in **Preview** that names the skill used. A correct-looking answer from general instructions is not the same as a skill activation.
+> **Tip:** If the reply looks right but you are not sure the skill fired, expand the agent's reasoning in **Preview**: a line **Used skill: objection-handling** names the skill used. A correct-looking answer from general instructions is not the same as a skill activation.
 
 ## Step 7: Refine the description and Replace the skill
 
@@ -226,8 +226,8 @@ description: Help a seller answer a customer objection or push-back during a liv
 ```
 
 2. Save `SKILL.md` and re-create the ZIP as in Step 4, keeping `SKILL.md` at the root.
-3. In the agent's **Skills** panel, open the `objection-handling` configuration and choose **Replace**.
-4. Upload the updated package, then re-run both **Preview** messages from Step 6.
+3. Under **Skills**, select `objection-handling`, open the **...** menu at the top right of its file view, and choose **Replace**.
+4. Select the updated package (the upload starts right away), then re-run both **Preview** messages from Step 6.
 
 Expected: after **Replace**, the objection message still activates the skill and the general policy question still does not, while the **Skills** list still shows exactly one `objection-handling` entry, confirming **Replace** updated rather than duplicated it.
 
@@ -235,9 +235,9 @@ Expected: after **Replace**, the objection message still activates the skill and
 
 Portability is the payoff: a skill created once can be added to many agents. You **Download** the skill from the first agent, then **Upload a skill** to a second agent to prove it travels without re-authoring. Distribution is per-agent, so each agent gets its own copy of the package; there is no shared cross-tenant catalog yet.
 
-1. On the first agent's **Skills** panel, open the `objection-handling` configuration and choose **Download** to save the package.
-2. Open or create a second new-type agent, for example an Account Manager agent.
-3. On the second agent's **Build** tab, open the **Skills** panel, select **Add skill**, then **Upload a skill** and select the package you just downloaded.
+1. On the first agent, select `objection-handling` under **Skills**, open the **...** menu at the top right, and choose **Download** to save the package.
+2. Open or create a second new-type agent, for example an Account Manager agent. A new agent needs a name and instructions before **Save**, for example `You are the Account Manager. You help Happy Longnose Ltd account managers with short answers about their accounts.`
+3. On the second agent's **Build** tab, select the **+** next to **Skills**, keep **Upload a skill**, and select the package you just downloaded.
 4. Open the second agent's **Preview** tab and send the activation message below to confirm the skill travelled.
 
 ```text
@@ -277,7 +277,7 @@ Expected: you can explain in one or two sentences why the portable skill is more
 | The skill activates on the wrong messages (any pricing or policy question) | The description is too broad and overlaps general lookups | Narrow the description as in Step 7 to name objection and push-back explicitly and exclude general lookups, then **Replace** |
 | Upload is rejected or the skill does not appear | `SKILL.md` is nested inside a wrapper folder in the ZIP, not at the root | Re-zip from inside `lab-01-portable-skill` so `SKILL.md` sits at the ZIP root with `references/` beside it |
 | Upload fails with a front-matter or format error | The YAML front matter is malformed (missing a `---` line, a missing `name` or `description`, or a colon inside an unquoted value) | Confirm both `---` fences are present, `name` and `description` are both set, and any value containing a colon is wrapped in quotes; save and re-upload |
-| A second copy of the skill appears after editing | You used **Add skill** again instead of **Replace** | Delete the duplicate, then use the `objection-handling` configuration's **Replace** to update in place |
+| A second copy of the skill appears after editing | You used **Add skill** again instead of **Replace** | Delete the duplicate with the **X** on its chip, then use **Replace** in the **...** menu of `objection-handling` to update in place |
 
 ## Verify
 
@@ -301,4 +301,4 @@ Next, wire an external system into the same agent in [Connect an MCP Server and 
 
 ## Cleanup
 
-Delete the skill from each agent's **Skills** panel if the agents were only for this lab: open the `objection-handling` configuration and choose **Delete**. Remove any throwaway agents you created (open the agent list, select the agent, choose **Delete**). Keep the local `lab-01-portable-skill` folder and its ZIP if you want to reuse the skill in a later lab.
+Delete the skill from each agent if the agents were only for this lab: under **Skills**, select the **X** on the `objection-handling` chip (**Remove skill**), then **Delete** in **Delete skill?**. Remove any throwaway agents you created (open the agent list, select the agent, choose **Delete**). Keep the local `lab-01-portable-skill` folder and its ZIP if you want to reuse the skill in a later lab.

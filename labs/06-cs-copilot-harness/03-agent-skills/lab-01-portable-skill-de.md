@@ -184,11 +184,11 @@ Skills liegen auf dem Tab **Build** eines Microsoft Copilot Harness Agents, im P
 Sie brauchen die Dateien aus dem Ordner `lab-01-portable-skill`, den Sie in den Schritten 3 und 4 erstellt haben (die `SKILL.md` und das ZIP). Öffnen Sie diesen Ordner in einem Datei-Explorer-Fenster, bevor Sie beginnen.
 
 1. Öffnen Sie Ihren ersten Agent (zum Beispiel den Sales Assistant) unter [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com).
-2. Suchen Sie auf dem Tab **Build** das Panel **Skills** und wählen Sie **Add skill**.
-3. Wählen Sie **Upload a skill** (statt **Create from blank**), navigieren Sie zu `lab-01-portable-skill` und wählen Sie Ihr ZIP.
-4. Bestätigen Sie den Upload und warten Sie, bis `objection-handling` in der Liste **Skills** erscheint.
+2. Suchen Sie auf dem Tab **Build** die Überschrift **Skills** und wählen Sie ihr **+** (**Add skill**).
+3. Bleiben Sie auf dem Tab **Upload a skill** (der andere Tab heißt **Create from blank**), navigieren Sie zu `lab-01-portable-skill` und wählen Sie Ihr ZIP.
+4. Der Upload startet, sobald Sie das ZIP wählen, und zeigt "Saving skill..."; warten Sie, bis sich der Dialog schließt und `objection-handling` unter **Skills** erscheint.
 
-Erwartet: `objection-handling` erscheint im Panel **Skills** des Agents mit der Description, die Sie geschrieben haben. Nur Name und Description sind jetzt in den Kontext geladen; die vollständigen Instructions laden, wenn eine Anfrage passt.
+Erwartet: `objection-handling` erscheint als Chip unter **Skills**; wählen Sie ihn, um die Description zu sehen, die Sie geschrieben haben. Nur Name und Description sind jetzt in den Kontext geladen; die vollständigen Instructions laden, wenn eine Anfrage passt.
 
 ## Schritt 6: Die Aktivierung auf dem Tab Preview testen
 
@@ -209,11 +209,11 @@ A customer says we are more expensive than a competitor. How should I reply?
 What is our standard return policy?
 ```
 
-4. Vergleichen Sie die beiden: Die erste sollte dem Format Acknowledge, Clarify, Next step aus Ihrem Skill folgen; die zweite sollte eine einfache Antwort ohne Aktivierung eines Skills sein.
+4. Vergleichen Sie die beiden: Die erste sollte dem Format Acknowledge, Clarify or reframe, Next step aus Ihrem Skill folgen; die zweite sollte eine einfache Antwort ohne Aktivierung eines Skills sein.
 
 Erwartet: Die Nachricht mit dem Einwand aktiviert `objection-handling`, und die Antwort folgt dem Format mit Labels, während die Nachricht zur Rückgabe-Policy den Skill nicht aktiviert. Dieser Kontrast bestätigt, dass die Description den Trigger richtig abgegrenzt hat.
 
-> **Tipp:** Wenn die Antwort richtig aussieht, Sie aber nicht sicher sind, ob der Skill ausgelöst hat, achten Sie in **Preview** auf den Aktivierungshinweis, der den genutzten Skill nennt. Eine korrekt aussehende Antwort aus den allgemeinen Instructions ist nicht dasselbe wie eine Aktivierung des Skills.
+> **Tipp:** Wenn die Antwort richtig aussieht, Sie aber nicht sicher sind, ob der Skill ausgelöst hat, klappen Sie in **Preview** das Reasoning des Agents auf: Eine Zeile **Used skill: objection-handling** nennt den genutzten Skill. Eine korrekt aussehende Antwort aus den allgemeinen Instructions ist nicht dasselbe wie eine Aktivierung des Skills.
 
 ## Schritt 7: Die Description verfeinern und den Skill mit Replace ersetzen
 
@@ -226,8 +226,8 @@ description: Help a seller answer a customer objection or push-back during a liv
 ```
 
 2. Speichern Sie `SKILL.md` und erstellen Sie das ZIP wie in Schritt 4 neu, mit `SKILL.md` im Root.
-3. Öffnen Sie im Panel **Skills** des Agents die Konfiguration von `objection-handling` und wählen Sie **Replace**.
-4. Laden Sie das aktualisierte Package hoch und senden Sie dann beide Nachrichten aus Schritt 6 erneut in **Preview**.
+3. Wählen Sie unter **Skills** den Eintrag `objection-handling`, öffnen Sie oben rechts in seiner Dateiansicht das Menü **...** und wählen Sie **Replace**.
+4. Wählen Sie das aktualisierte Package (der Upload startet sofort) und senden Sie dann beide Nachrichten aus Schritt 6 erneut in **Preview**.
 
 Erwartet: Nach **Replace** aktiviert die Nachricht mit dem Einwand den Skill weiterhin und die allgemeine Policy-Frage weiterhin nicht, während die Liste **Skills** immer noch genau einen Eintrag `objection-handling` zeigt; das bestätigt, dass **Replace** aktualisiert und nicht dupliziert hat.
 
@@ -235,9 +235,9 @@ Erwartet: Nach **Replace** aktiviert die Nachricht mit dem Einwand den Skill wei
 
 Portabilität ist der Gewinn: Einen einmal erstellten Skill können Sie vielen Agents hinzufügen. Sie laden den Skill mit **Download** vom ersten Agent herunter und dann mit **Upload a skill** auf einen zweiten Agent hoch, um zu beweisen, dass er ohne erneutes Schreiben mitwandert. Sie verteilen Skills pro Agent, deshalb bekommt jeder Agent seine eigene Kopie des Packages; einen gemeinsamen, tenantübergreifenden Katalog gibt es noch nicht.
 
-1. Öffnen Sie im Panel **Skills** des ersten Agents die Konfiguration von `objection-handling` und wählen Sie **Download**, um das Package zu speichern.
-2. Öffnen oder erstellen Sie einen zweiten Agent der neuen Art, zum Beispiel einen Agent Account Manager.
-3. Öffnen Sie auf dem Tab **Build** des zweiten Agents das Panel **Skills**, wählen Sie **Add skill**, dann **Upload a skill**, und wählen Sie das Package, das Sie eben heruntergeladen haben.
+1. Wählen Sie beim ersten Agent unter **Skills** den Eintrag `objection-handling`, öffnen Sie oben rechts das Menü **...** und wählen Sie **Download**, um das Package zu speichern.
+2. Öffnen oder erstellen Sie einen zweiten Agent der neuen Art, zum Beispiel einen Agent Account Manager. Ein neuer Agent braucht vor **Save** einen Namen und Instructions, zum Beispiel `You are the Account Manager. You help Happy Longnose Ltd account managers with short answers about their accounts.`
+3. Wählen Sie auf dem Tab **Build** des zweiten Agents das **+** neben **Skills**, bleiben Sie auf **Upload a skill** und wählen Sie das Package, das Sie eben heruntergeladen haben.
 4. Öffnen Sie den Tab **Preview** des zweiten Agents und senden Sie die Nachricht zur Aktivierung unten, um zu bestätigen, dass der Skill mitgewandert ist.
 
 ```text
@@ -277,7 +277,7 @@ Erwartet: Sie können in ein oder zwei Sätzen erklären, warum der portable Ski
 | Der Skill wird bei den falschen Nachrichten aktiviert (bei jeder Preis- oder Policy-Frage) | Die Description ist zu breit und überschneidet sich mit allgemeinen Abfragen | Engen Sie die Description wie in Schritt 7 ein, sodass sie Einwand und Push-back ausdrücklich nennt und allgemeine Abfragen ausschließt, und nutzen Sie dann **Replace** |
 | Der Upload wird abgelehnt, oder der Skill erscheint nicht | `SKILL.md` liegt im ZIP in einem umschließenden Ordner statt im Root | Zippen Sie erneut aus `lab-01-portable-skill` heraus, sodass `SKILL.md` im Root des ZIP liegt und `references/` daneben |
 | Der Upload schlägt mit einem Front-Matter- oder Formatfehler fehl | Das YAML Front Matter ist fehlerhaft (eine Zeile `---` fehlt, `name` oder `description` fehlt, oder ein Doppelpunkt steht in einem Wert ohne Anführungszeichen) | Prüfen Sie, dass beide Zeilen `---` vorhanden sind, `name` und `description` beide gesetzt sind und jeder Wert mit Doppelpunkt in Anführungszeichen steht; speichern Sie und laden Sie erneut hoch |
-| Nach dem Bearbeiten erscheint eine zweite Kopie des Skills | Sie haben erneut **Add skill** statt **Replace** genutzt | Löschen Sie das Duplikat und nutzen Sie dann **Replace** in der Konfiguration von `objection-handling`, um an Ort und Stelle zu aktualisieren |
+| Nach dem Bearbeiten erscheint eine zweite Kopie des Skills | Sie haben erneut **Add skill** statt **Replace** genutzt | Löschen Sie das Duplikat mit dem **X** auf seinem Chip und nutzen Sie dann **Replace** im Menü **...** von `objection-handling`, um an Ort und Stelle zu aktualisieren |
 
 ## Prüfen
 
@@ -301,4 +301,4 @@ Binden Sie als Nächstes ein externes System an denselben Agent an, in [Connect 
 
 ## Aufräumen
 
-Löschen Sie den Skill aus dem Panel **Skills** jedes Agents, wenn die Agents nur für dieses Lab gedacht waren: Öffnen Sie die Konfiguration von `objection-handling` und wählen Sie **Delete**. Entfernen Sie alle Wegwerf-Agents, die Sie erstellt haben (öffnen Sie die Liste der Agents, wählen Sie den Agent und dann **Delete**). Behalten Sie den lokalen Ordner `lab-01-portable-skill` und sein ZIP, wenn Sie den Skill in einem späteren Lab wiederverwenden möchten.
+Löschen Sie den Skill aus jedem Agent, wenn die Agents nur für dieses Lab gedacht waren: Wählen Sie unter **Skills** das **X** auf dem Chip `objection-handling` (**Remove skill**) und dann **Delete** in **Delete skill?**. Entfernen Sie alle Wegwerf-Agents, die Sie erstellt haben (öffnen Sie die Liste der Agents, wählen Sie den Agent und dann **Delete**). Behalten Sie den lokalen Ordner `lab-01-portable-skill` und sein ZIP, wenn Sie den Skill in einem späteren Lab wiederverwenden möchten.
