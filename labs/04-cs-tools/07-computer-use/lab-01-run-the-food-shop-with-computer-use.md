@@ -26,7 +26,7 @@ Duration: about 65 minutes.
 
 The orchestrator picks a computer use tool by its name and description, and the agent instructions tell it how the tools work together. You create the agent first, so every tool you add later lands in the same place.
 
-1. In Copilot Studio, on the home page, open the dropdown next to **New agent** and, under **Other ways to build**, select **Agent** with the **Standard** badge.
+1. In Copilot Studio, on **Home** select **Other ways to build**, then, under **Build with standard orchestration**, select **Agent** with the **Standard** badge.
 2. In the **Name your agent** dialog, enter `CS-Food Shop Assistant` and confirm.
 3. On the agent's configuration page, select **Edit** in the **Instructions** section, paste these instructions, and select **Save**:
 

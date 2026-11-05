@@ -1,0 +1,31 @@
+Ariane Meyer - Développeuse Logicielle
+
+Informations de Contact:
+- Email: ariane@relecloud.com
+- Téléphone: +33 555-0105
+- Adresse: 76 Rue du Faubourg, Paris, 75010
+
+Profil: Développeuse logicielle expérimentée avec plus de 7 ans d'expérience, spécialisée dans le développement de solutions logicielles front-end en utilisant Angular et TypeScript.
+
+Expérience Professionnelle:
+- Relecloud, Paris, France, Développeuse Logicielle
+  - Dates: Avril 2018 - Présent
+  - Responsabilités:
+    - Conception et développement d'interfaces utilisateur riches pour des applications web d'entreprise.
+    - Collaboration étroite avec les équipes de back-end pour assurer l'intégration et la performance des systèmes.
+  - Réalisations:
+    - Mené la refonte de l'interface utilisateur, améliorant la satisfaction utilisateur de 30%.
+- Lucerne Publishing, Paris, France, Développeuse Junior
+  - Dates: Février 2014 - Mars 2018
+  - Responsabilités:
+    - Participation au développement de fonctionnalités pour des plateformes de publication en ligne.
+    - Assistance dans l'amélioration continue des pratiques de développement agile.
+
+Compétences:
+- Langages de Programmation: JavaScript, TypeScript, HTML, CSS
+- Outils et Technologies: Angular, Node.js, Git
+- Compétences Interpersonnelles: Communication, créativité, gestion de projet
+
+Langues:
+- Français: Langue maternelle
+- Anglais: Courant

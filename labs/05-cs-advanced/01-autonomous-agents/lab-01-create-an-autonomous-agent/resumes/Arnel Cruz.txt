@@ -1,0 +1,31 @@
+Arnel Cruz - Software Developer
+
+Contact Information:
+- Email: arnel@fabrikam.com
+- Phone: +63 555-0350
+- Address: 9984 Rizal Park, Manila, 1000
+
+Profile: Software Developer with over 7 years of experience in .NET and C#. Skilled in developing scalable enterprise applications with a focus on financial services.
+
+Professional Experience:
+- Fabrikam, Inc., Manila, Philippines, Software Developer
+  - Dates: May 2015 - Present
+  - Responsibilities:
+    - Develop and maintain enterprise applications for financial institutions.
+    - Lead projects to integrate new technologies into existing systems.
+  - Achievements:
+    - Developed a transaction processing system that reduced processing time by 25%.
+- Grey Logistics, Ltd., Manila, Philippines, Junior Developer
+  - Dates: April 2011 - April 2015
+  - Responsibilities:
+    - Assisted in developing software solutions for client data management.
+    - Supported system upgrades and performance optimizations.
+
+Skills:
+- Programming Languages: C#, .NET, JavaScript
+- Tools & Technologies: Microsoft SQL Server, Azure, Visual Studio, Git
+- Soft Skills: Analytical thinking, effective communication, teamwork
+
+Languages:
+- Filipino: Native
+- English: Fluent

@@ -34,7 +34,7 @@ Within the [Microsoft 365 Portal](https://m365.cloud.microsoft/), or elsewhere i
 
 ![The UI of Microsoft 365 Portal with the Apps command and the SharePoint workload highlighted.](./_images/lab-02-sharepoint-agents-03.png)
 
-Then select **Create Site** and choose a **Team site**.
+Then select **Build** > **Site** and choose a **Team site**.
 
 ![The UI to create a new SharePoint Online site, with 'Team Site' template suggested.](./_images/lab-02-sharepoint-agents-04.png)
 
@@ -46,7 +46,7 @@ Give your site a name, such as "Grey Logistics HR", and select **Next**. The nam
 
 ![The UI to provide name, description, and other details for the target site to create.](./_images/lab-02-sharepoint-agents-06.png)
 
-Then select your privacy settings and language, and select **Create Site**.
+Then select your privacy settings and language, and select **Create site**.
 
 ![The UI to select the privacy settings and the language for the target site.](./_images/lab-02-sharepoint-agents-07.png)
 

@@ -10,7 +10,7 @@ Duration: about 90 minutes.
 
 - A test set named HR agent regression with ten questions from the lab file.
 - Three test methods: **Answer quality**, **Meaning match** with a pass score of 70, and a **Custom** method named Stays in scope with four labels.
-- Three runs: a baseline, a run after the requested change, and a run after the revert, side by side under **Recent results**.
+- Three runs: a baseline, a run after the requested change, and a run after the revert, side by side on the test set's **Results** tab.
 - An exported copy of the test set that you can import into another environment.
 
 ## Lab Files
@@ -25,7 +25,7 @@ The file you upload ships in the `lab-01-evaluate-the-hr-agent` folder beside th
 
 - The HR Agent with the instructions of [Create Your First Copilot Studio Agent](../../03-cs-basics/01-standard-agents/lab-01-create-your-first-agent.md) and the knowledge sources Microsoft Careers site and HR Documents, both showing **Ready**; [Set up the HR Agent](#set-up-the-hr-agent) builds it if you don't have it.
 - An account that can read the SharePoint site with the HR documents.
-- Copilot Studio in the classic experience, where the agent shows the tabs **Overview**, **Knowledge**, **Tools**, **Agents**, **Topics**, **Activity**, **Evaluation**, **Monitor** and **Channels**.
+- Copilot Studio in the classic experience, where the agent shows the tabs **Overview**, **Knowledge**, **Tools**, **Agents**, **Topics**, **Activity**, **Evaluation**, **Monitor** and **Channels**; in a narrower window every tab after **Tools** sits under a **+** button such as **+6**.
 
 ## Set up the HR Agent
 
@@ -52,18 +52,20 @@ You help employees to find information about HR related policies
 - Respond promptly and clearly to all user queries.
 ```
 
-5. In the **Knowledge** section, select **+ Add knowledge** > **Public websites**, enter `https://careers.microsoft.com/` and select **Add**. Name the site `Microsoft Careers site`, paste the following description and select **Add to agent**.
+5. In the **Knowledge** section, select **Add knowledge** > **Public websites**, enter `https://careers.microsoft.com/` and select **Add**. Name the site `Microsoft Careers site`, paste the following description and select **Add to agent**.
 
 ```txt
 A public website for careers with information about benefits, culture, diversity and inclusion, and hiring tips.
 ```
 
-6. Download the [HR documents](https://download-directory.github.io/?url=https://github.com/alexander-kastil/copilot-studio-agents/tree/master/src/assets/hr-documents&filename=hr-documents), unzip them and upload them to the **Documents** library of a SharePoint Teams site in your tenant. Copy the URL of the site.
-7. In the **Knowledge** section, select **+ Add knowledge** > **SharePoint**, enter the site URL and select **Add**. Name the source `HR Documents`, paste the following description and select **Add to agent**.
+6. Download the [HR documents](https://download-directory.github.io/?url=https://github.com/alexander-kastil/copilot-studio-agents/tree/master/src/assets/hr-documents&filename=hr-documents), unzip them and upload them to the **Documents** library of a SharePoint Teams site in your tenant that holds no other documents: the agent searches the whole site, so other files there also ground its answers. Copy the URL of the site.
+7. In the **Knowledge** section, select **Add knowledge** > **SharePoint**, enter the site URL and select **Add**. Name the source `HR Documents`, paste the following description and select **Add to agent**.
 
 ```txt
 Provides documents about policies, procedures, and rules related to the HR department.
 ```
+
+8. In the same **Knowledge** section, turn **Web Search** off. It is on by default, and with it the agent answers off-topic questions from the web instead of declining them.
 
 Expected: **Knowledge** on the **Overview** tab lists **Microsoft Careers site** and **HR Documents**, both showing **Ready**. New files can take several minutes to be indexed.
 
@@ -72,8 +74,8 @@ Expected: **Knowledge** on the **Overview** tab lists **Microsoft Careers site**
 A regression set is a fixed list of questions with the answer you expect, kept in a file you can review and reuse. Seven cases check facts from the HR documents; three check that the agent stays inside its job.
 
 1. Open the HR Agent and select the **Evaluation** tab.
-2. Select **Create a test set**. On **New evaluation**, keep **Data type** on **Single response**.
-3. Drag `hr-agent-test-set.csv` onto **Drag a file or click to upload (CSV)**.
+2. Select **Create a test set**. On **New evaluation**, keep **Data type** on **Single responses**.
+3. Select the **Import** tab and drag `hr-agent-test-set.csv` onto **Drag a file or click to upload (CSV)**.
 
 The file follows the **template** download on the same panel: two columns and one row per case.
 
@@ -83,7 +85,7 @@ The file follows the **template** download on the same panel: two columns and on
 "What is a good recipe for spaghetti alla carbonara?","The agent declines, because the question is not about HR, career development or learning pathways."
 ```
 
-Expected: the banner "Your file was uploaded successfully." and **Review your test cases (10)**. The **Configure test set** panel on the right lists **Answer quality**.
+Expected: the banner "Your file was uploaded successfully." and **Review data set (10)**. Under **Select test methods**, the chip **Answer quality** is selected.
 
 ## Exercise 2: Add Meaning match with a pass score of 70
 
@@ -92,13 +94,13 @@ Expected: the banner "Your file was uploaded successfully." and **Review your te
 1. Select **Add test method**, choose **Meaning match** under **Compare with reference**, and select **Next**.
 2. On **Set pass score**, drag the slider from 50 to 70 and select **OK**.
 
-Expected: **Test method** lists **Meaning match** with the tag **Pass score 70**.
+Expected: **Select test methods** shows a **Meaning match** chip next to **Answer quality**. The pass score shows later in the test set's row on the **Evaluation** tab as **Pass score 70**.
 
 ## Exercise 3: Define "in scope" with a Custom method
 
 The HR Agent's job has a boundary: HR, career development and learning pathways. A **Custom** method turns that boundary into labels, each marked **Pass** or **Fail**, and the grader picks one label per answer.
 
-1. Select **Add test method**, choose **Custom** under **Create your own**, and select **Next**.
+1. Select **Add test method**, choose **Custom** under **Create your own**, and select **Next**. In **Select a custom test method**, select **New**.
 2. In **Configure custom test method**, enter the **Name** and the **Evaluation instructions**:
 
 ```text
@@ -118,9 +120,9 @@ Judge whether the HR agent stays inside its scope: HR policies and procedures, c
 | Declines out of scope | Pass | The question is not about HR, career development or learning pathways, and the agent declines without answering it. |
 | Declines in scope | Fail | The question is about HR, career development or learning pathways, and the agent declines it or says it has no information. |
 
-4. Select **OK**.
+4. Select **Apply**. **Apply & save to library** does the same and also keeps the method for other test sets.
 
-Expected: **Test method** lists **Answer quality**, **Meaning match** and **Stays in scope**.
+Expected: **Select test methods** shows the chips **Answer quality**, **Meaning match** and **Stays in scope**.
 
 > **Tip:** A label name holds at most 30 characters. Write the detail into **Criteria**, which the grader reads.
 
@@ -132,7 +134,7 @@ The HR Documents source answers only what the asking account may read, so the ru
 2. Under **User profile**, select **Manage**, pick your account under **User**, and select **Save**.
 3. Select **Run**.
 
-Expected: the run opens as **HR agent regression** plus a date stamp and finishes in about four minutes. In the live runs, the **Evaluation summary** read **Answer quality** 80%, **Meaning match** 100% and **Stays in scope** 90% or 100%: the **Custom** method's verdict on one legal question varies from run to run.
+Expected: the run opens as **HR agent regression** plus a date stamp and finishes in about four to five minutes. In the live runs, the **Results** page under **Overall score** read **Answer quality** 80%, **Meaning match** 100% and **Stays in scope** 90% or 100%: the **Custom** method's verdict on one legal question varies from run to run.
 
 ## Exercise 5: Read the two failures that are not failures
 
@@ -142,7 +144,7 @@ Two cases failed **Answer quality** in the baseline. Before you change anything,
 2. Read the response and the three verdicts under **Details**.
 3. Repeat for **Can you recommend a good stock to invest my bonus in?**.
 
-Expected: both replies decline and point back to HR topics ("I can only assist with HR policies, career development..."). **Meaning match** gives each **Pass • 100** and **Stays in scope** reads **Declines out of scope**, a Pass label. **Answer quality** fails both as "Not answered": its abstention check counts a correct refusal as a missed answer. The agent is right; the baseline is clean.
+Expected: both replies decline and point back to HR topics ("I can only assist with HR policies, career development..."). **Meaning match** gives each a **Pass** with a score of 75 or more, and **Stays in scope** reads **Declines out of scope**, a Pass label. **Answer quality** fails both as "Not answered": its abstention check counts a correct refusal as a missed answer. The agent is right; the baseline is clean.
 
 > **Note:** The filter above the table shows **Pass (8)**, or **Pass (7)** when **Stays in scope** flagged a case, and no **Fail** count. A case lands under **Pass** only when every method passed and under **Fail** only when every method failed, so these two cases appear under **All** only.
 
@@ -171,18 +173,18 @@ Expected: the banner "Your request completed successfully." and the new line in 
 
 The set has not changed, so any difference in the scores comes from the agent.
 
-1. Select **Evaluation**, open the baseline run under **Recent results**, and select **Run test set again** in the **Evaluation summary**.
+1. Select **Evaluation**, open the **HR agent regression** test set, and select **Run again** on its **Results** tab.
 2. In **Manage profile and connections**, keep your account and select **Run**.
 
-Expected: **Meaning match** falls to 80% and **Stays in scope** to 70% or 80%, while **Answer quality** stays at 80% or even rises to 90%; the two live runs differed only there. The filter shows **Pass (7)** and **Fail (1)**. A team that only watched **Answer quality** could ship this change. If the run status stays at waiting to start for minutes, reload the page.
+Expected: **Meaning match** falls to 80% and **Stays in scope** to 70% or 80%, while **Answer quality** stays at 80% or even rises to 90%; the two live runs differed only there. The filter shows **All** and **Pass (7)**, no **Fail** count. A team that only watched **Answer quality** could ship this change. If the run status stays at waiting to start for minutes, reload the page.
 
 ## Exercise 8: Find what broke
 
 The comparing methods point at the same two cases. Open them and trace each answer to its source.
 
-1. Open the carbonara case. The reply is a full recipe (400 g spaghetti, guanciale, egg yolks). **Answer quality** passes it, **Meaning match** scores it **Fail • 0** with the analysis "Different meaning", and **Stays in scope** reads **Answers out of scope**.
-2. Select **Show activity map**, the icon at the top of **Details**. It opens a transcript page with a back arrow, and the transcript shows the greeting, the question and the recipe with no knowledge search in between: the answer came from the model itself, which the new instruction now allows.
-3. Open the stock case. The reply starts "I can help you evaluate investments, but I can't recommend" and engages with the question: all three methods fail, **Meaning match** with 50.
+1. Open the carbonara case. The reply is a full recipe (400 g spaghetti, guanciale, egg yolks). **Answer quality** passes it, **Meaning match** scores it **Fail • 0** with an analysis such as "Irrelevant info", and **Stays in scope** reads **Answers out of scope**.
+2. Select **Show activity map**, the icon at the top of **Details**. It opens a transcript page with a back arrow, and the transcript shows the greeting, the question and the recipe. If a **Search sources** step appears, it found nothing about cooking in the HR sources: the answer came from the model itself, which the new instruction now allows.
+3. Open the stock case. The reply starts "I can help you evaluate investments, but I can't recommend" and engages with the question: **Meaning match** and **Stays in scope** fail, while **Answer quality** passes it.
 4. Open the Sarbanes-Oxley case. The answer is correct and passes both **Answer quality** and **Meaning match**, yet **Stays in scope** may read **Answers out of scope**; the flag varies from run to run.
 
 Expected: two real regressions, both traced to the instruction you changed, plus one grader judgement to note. The Sarbanes-Oxley flag is the **Custom** method reading a legal question as outside HR; the agent did nothing wrong, so it is not a reason to change the agent.
@@ -197,16 +199,16 @@ The fix for a regression you just caused is the revert. Run the set again so the
 - Do not answer questions unrelated to HR, career development, or learning pathways.
 ```
 
-2. Select **Evaluation**, open the latest run, select **Run test set again**, and select **Run**.
+2. Select **Evaluation**, open the **HR agent regression** test set, select **Run again**, and select **Run**.
 
-Expected: in the live run **Meaning match** returned to 100% and **Answer quality** to 80%. The carbonara and stock cases decline again with **Meaning match** **Pass • 100** and **Declines out of scope**. **Stays in scope** reads 90% or 100%, depending on whether the **Custom** method flags the correct Sarbanes-Oxley answer in that run.
+Expected: in the live run **Meaning match** returned to 100% and **Answer quality** to 80%. The carbonara and stock cases decline again with a **Meaning match** **Pass** and **Declines out of scope**. **Stays in scope** reads 90% or 100%, depending on whether the **Custom** method flags the correct Sarbanes-Oxley answer in that run.
 
 ## Exercise 10: Read the three runs side by side
 
 The release decision comes from the comparison, never from one run.
 
-1. Select **Evaluation**.
-2. Under **Recent results**, read the three **HR agent regression** rows.
+1. Select **Evaluation** and open the **HR agent regression** test set.
+2. On its **Results** tab, read the three runs.
 
 Expected: three rows with a percentage per method, newest first. In the live runs:
 
@@ -224,7 +226,7 @@ The middle row is the one a release gate stops: the comparing methods dropped wh
 
 A test set that lives only in one environment dies with it. The export is the file you commit next to the agent or import into the test environment.
 
-1. On the **Evaluation** tab, select **...** on the HR agent regression card under **Test sets**.
+1. On the **Evaluation** tab, open the **HR agent regression** test set and select **...** at its top right, beside **Save**.
 2. Select **Export test set**.
 
 Expected: the browser downloads `HR agent regression.csv`. It starts with three comment lines, `# Test set name: HR agent regression`, `# Test methods: GeneralQuality, CompareMeaning, Stays in scope` and an empty `#`, followed by the `question` and `expectedResponse` columns. The methods travel only as that comment line, so add them again after you import the file elsewhere, including the four labels of Stays in scope.
@@ -235,7 +237,7 @@ Expected: the browser downloads `HR agent regression.csv`. It starts with three 
 |---------|--------------|-----|
 | The upload fails with a format error | The header row differs from the template | Use `question` and `expectedResponse` exactly, as in the **template** download |
 | The fact cases fail with "no information" answers | The profile can't read the HR documents, or the HR Documents source isn't **Ready** | Check **Knowledge** on **Overview**, then pick an account with access under **Manage** |
-| **OK** stays disabled in **Configure custom test method** | A label is missing its name or its criteria | Fill both fields of every label |
+| **Apply** stays disabled in **Configure custom test method** | A label is missing its name or its criteria | Fill both fields of every label |
 | A correct case gets a **Fail** label from **Stays in scope** | The grader read the criteria more narrowly than you meant | Read the label's analysis and sharpen its **Criteria** before you blame the agent |
 | The scores differ from the numbers in this guide | Language-model answers and graders vary between runs | Compare which cases flip, not the totals |
 

@@ -1,6 +1,6 @@
 # Einen Autonomous Agent erstellen
 
-In diesem Lab lernen Sie, wie Sie mit Microsoft Copilot Studio einen Autonomous Agent erstellen. Der Autonomous Agent, den Sie erstellen, verarbeitet automatisch Kandidatendaten aus PDF-Dateien, die nach SharePoint hochgeladen werden. Der Agent überwacht eine SharePoint Dokumentbibliothek auf neue PDF-Uploads, extrahiert die Kandidateninformationen mit AI und legt über den HR MCP Server dieses Repositorys automatisch Mitarbeiterdatensätze an. Dieses Lab zeigt, wie Autonomous Agents HR Workflows vereinfachen, indem sie Dokumentverarbeitung und Dateneingabe automatisieren.
+In diesem Lab lernen Sie, wie Sie mit Microsoft Copilot Studio einen Autonomous Agent erstellen. Der Autonomous Agent, den Sie erstellen, verarbeitet automatisch Kandidatendaten aus Lebenslauf-Textdateien, die nach SharePoint hochgeladen werden. Der Agent überwacht eine SharePoint Dokumentbibliothek auf neue Lebenslauf-Uploads, extrahiert die Kandidateninformationen mit AI und legt über den HR MCP Server dieses Repositorys automatisch Mitarbeiterdatensätze an. Dieses Lab zeigt, wie Autonomous Agents HR Workflows vereinfachen, indem sie Dokumentverarbeitung und Dateneingabe automatisieren.
 
 ![Eine nach SharePoint hochgeladene Kandidaten-PDF löst einen Power Automate Trigger aus, der dem Autonomous HR Docs Processor einen Prompt sendet; der Agent ruft add_employee auf dem HR MCP Server und SendEmail auf dem Email Management MCP Server auf.](../../../demos/05-cs-advanced/pptx/images/01-01-autonomous-triggers.svg)
 
@@ -10,36 +10,36 @@ In diesem Lab lernen Sie:
 
 - Wie Sie Autonomous Agents in Microsoft Copilot Studio erstellen
 - Wie Sie Trigger für SharePoint Dokumentbibliotheken konfigurieren
-- Wie Sie PDF-Dokumente mit AI verarbeiten, um strukturierte Daten zu extrahieren
+- Wie Sie Lebenslauf-Dokumente mit AI verarbeiten, um strukturierte Daten zu extrahieren
 - Wie Sie Autonomous Agents mit MCP Servern integrieren
 
 ## Übung 1: Die SharePoint Environment einrichten
 
-In dieser Übung bereiten Sie eine SharePoint Dokumentbibliothek vor, an der der Trigger Ihres Autonomous Agents ansetzt. Der Agent überwacht diese Bibliothek auf neue PDF-Dateien mit Kandidatendaten und verarbeitet sie automatisch.
+In dieser Übung bereiten Sie eine SharePoint Dokumentbibliothek vor, an der der Trigger Ihres Autonomous Agents ansetzt. Der Agent überwacht diese Bibliothek auf neue Lebenslauf-Dateien mit Kandidatendaten und verarbeitet sie automatisch.
 
 ### Schritt 1: Die SharePoint Dokumentbibliothek erstellen
 
-Bevor Sie den Autonomous Agent erstellen, richten Sie eine SharePoint Dokumentbibliothek ein, in die HR-Mitarbeitende PDF-Dateien von Kandidaten hochladen können.
+Bevor Sie den Autonomous Agent erstellen, richten Sie eine SharePoint Dokumentbibliothek ein, in die HR-Mitarbeitende Lebenslauf-Dateien von Kandidaten hochladen können.
 
 Öffnen Sie Ihre SharePoint Site (Sie können jede SharePoint Site Ihres Microsoft 365 Tenants verwenden oder eine neue von Grund auf erstellen) und erstellen Sie eine neue Dokumentbibliothek:
 
 1. Öffnen Sie **Site contents** und wählen Sie **New** → **Document library**
-1. Wählen Sie **Create blank document library**
+1. Die Seite öffnet mit einem Eingabefeld, um die Bibliothek zu beschreiben; scrollen Sie zu **Start from scratch or reuse** und wählen Sie **Create blank document library**
 1. Benennen Sie die Bibliothek: `Candidate Data`
-1. Legen Sie die Beschreibung fest: `Document library for candidate PDF data files`
+1. Legen Sie die Beschreibung fest: `Document library for candidate resume files`
 1. Wählen Sie **Create**, um die Bibliothek zu erstellen
 
 ![Die SharePoint Oberfläche beim Erstellen einer neuen Dokumentbibliothek namens "Candidate Data" mit ausgefülltem Namen und passender Beschreibung.](./_images/sharepoint-library-01.png)
 
 Konfigurieren Sie nach dem Erstellen die Berechtigungen der Bibliothek, damit Ihr Autonomous Agent darauf zugreifen kann:
 
-1. Wählen Sie **Settings** (Zahnrad-Symbol) → **Library settings**
+1. Wählen Sie **Settings** (Zahnrad-Symbol) → **Library settings** und im Seitenbereich **More library settings**
 1. Wählen Sie unter **Permissions and Management** den Eintrag **Permissions for this document library**
 1. Stellen Sie sicher, dass der Account, den Sie für Microsoft Copilot Studio verwenden, mindestens die Berechtigung **Contribute** hat
 
-### Schritt 2: Beispiel-PDF-Dateien vorbereiten
+### Schritt 2: Beispiel-Lebensläufe vorbereiten
 
-Laden Sie zum Testen [resumes.zip](https://download-directory.github.io/?url=https://github.com/alexander-kastil/copilot-studio-agents/tree/master/labs/05-cs-advanced/01-autonomous-agents/lab-01-create-an-autonomous-agent/resumes&filename=resumes) herunter und entpacken Sie den Ordner.
+Laden Sie zum Testen [resumes.zip](https://download-directory.github.io/?url=https://github.com/alexander-kastil/copilot-studio-agents/tree/master/labs/05-cs-advanced/01-autonomous-agents/lab-01-create-an-autonomous-agent/resumes&filename=resumes) herunter und entpacken Sie den Ordner. Er enthält jeden Lebenslauf zweimal, als PDF und als Textdatei (`.txt`); dieses Lab verwendet die `.txt`-Dateien.
 Die heruntergeladenen Dateien beschreiben fiktive Kandidaten mit Informationen wie:
 
 - Vollständiger Name
@@ -48,7 +48,7 @@ Die heruntergeladenen Dateien beschreiben fiktive Kandidaten mit Informationen w
 - Skills und Expertise
 - Gesprochene Sprachen
 
-Sie können auch einfache PDF-Dateien mit einem beliebigen Textverarbeitungsprogramm erstellen und als PDF speichern oder vorhandene Lebensläufe (Resume/CV) verwenden. Achten Sie darauf, dass der Text lesbar ist (keine gescannten Bilder), damit die AI die Informationen korrekt extrahieren kann.
+Sie können auch einen eigenen Lebenslauf als reine Textdatei in einem beliebigen Texteditor schreiben. Verwenden Sie Textdateien, keine PDF- oder Word-Dokumente: Das SharePoint Tool, das die Datei liest, liefert bei einer `.txt`-Datei den Text, bei einer PDF aber nur kodierte Binärdaten, die der Agent nicht lesen kann.
 
 ### Schritt 3: Voraussetzungen sicherstellen
 
@@ -57,7 +57,7 @@ Stellen Sie vor dem Weitermachen sicher, dass Sie Folgendes haben:
 - **HR MCP server**: die für diesen Kurs deployte Instanz
 - **SharePoint-Zugriff**: Berechtigungen, um Dokumentbibliotheken zu erstellen und zu verwalten
 - **Power Platform Environment**: eine Copilot Studio Environment, in der Sie Agents erstellen dürfen
-- **Beispiel-PDF-Dateien**: mindestens 2 oder 3 Test-PDF-Dateien mit Kandidatendaten
+- **Beispiel-Lebensläufe**: mindestens 2 oder 3 Lebenslauf-Textdateien mit Kandidatendaten
 
 Der Server aus [Einem Agent MCP Tools auf dem gehosteten Server geben](../../04-cs-tools/06-mcp/lab-01-give-an-agent-mcp-tools-de.md) ist für diesen Kurs deployt, daher führen Sie nichts auf Ihrem Rechner aus. Verwenden Sie diese URL, wenn Sie das MCP Tool registrieren:
 
@@ -69,15 +69,15 @@ https://lab-human-resource-mcp.azurewebsites.net
 
 ## Übung 2: Den Autonomous Agent erstellen
 
-In dieser Übung erstellen Sie in Microsoft Copilot Studio den Autonomous Agent, der die SharePoint Dokumentbibliothek überwacht und neue PDF-Uploads automatisch verarbeitet.
+In dieser Übung erstellen Sie in Microsoft Copilot Studio den Autonomous Agent, der die SharePoint Dokumentbibliothek überwacht und neue Lebenslauf-Uploads automatisch verarbeitet.
 
 ### Schritt 1: Den Autonomous Agent erstellen
 
 Öffnen Sie einen Browser und rufen Sie mit dem Work Account Ihres Microsoft 365 Ziel-Tenants [https://copilotstudio.microsoft.com](https://copilotstudio.microsoft.com) auf, um mit Microsoft Copilot Studio zu arbeiten.
 
-Wählen Sie die für Sie vorbereitete Environment und dann **Agents** → **More create options** → **Agent (Standard)**. Die voreingestellte Schaltfläche **New agent** erstellt einen anderen Agent-Typ, der keine Trigger hat.
+Wählen Sie die für Sie vorbereitete Environment und dann **Agents** → **More create options** → **Agent (Standard)**. Dasselbe Menü bietet auch **Agent** mit dem Badge **GitHub Copilot** und **Customer Assist Agent** an; dieses Lab verwendet den Standard Agent.
 
-Konfigurieren Sie Ihren Autonomous Agent mit den folgenden Einstellungen. Der Dialog zum Erstellen fragt nur nach dem **Name**; **Description** und **Instructions** legen Sie danach auf der Seite **Overview** mit **Edit** fest.
+Konfigurieren Sie Ihren Autonomous Agent mit den folgenden Einstellungen. Der Dialog **Name your agent** fragt nur nach dem **Name**; die **Description** legen Sie danach auf der Seite **Overview** mit **Edit** im Abschnitt **Details** fest, die **Instructions** mit **Edit** im Abschnitt **Instructions**. Beide haben ein eigenes **Save**.
 
 - **Name**: 
 
@@ -88,15 +88,15 @@ Autonomous HR Docs Processor
 - **Description**: 
 
 ```text
-An autonomous AI agent that monitors SharePoint for new candidate PDF uploads and automatically processes them to create employee records via the HR MCP server
+An autonomous AI agent that monitors SharePoint for new candidate resume uploads and automatically processes them to create employee records via the HR MCP server
 ```
 
 - **Instructions**: 
 
 ```text
-You are an autonomous HR assistant that specializes in processing candidate data from PDF documents. When a new PDF file is uploaded to the SharePoint document library, you automatically:
+You are an autonomous HR assistant that specializes in processing candidate data from resume files. When a new resume file is uploaded to the SharePoint document library, you automatically:
 
-1. Extract candidate information from the PDF file content including first name, last name, email, skills, spoken languages, and current role
+1. Read the content of the new file with the 'readSmallTextFile' tool of SharePoint and extract candidate information including first name, last name, email, skills, spoken languages, and current role
 2. Validate and structure the extracted data
 3. Create a new employee record using the 'add_employee' tool of the HR MCP server
 4. Provide confirmation of successful processing
@@ -117,6 +117,8 @@ Nachdem Sie den Agent erstellt haben, stellen Sie sicher, dass seine Fähigkeite
 
 Im Abschnitt **Knowledge** des Agents können Sie optional Knowledge Sources hinzufügen, wenn Sie eigene HR-Dokumentation oder Richtlinien zur Verarbeitung von Kandidaten haben. In diesem Lab verlassen wir uns auf die eingebauten AI-Fähigkeiten des Agents und die Integration des MCP Servers.
 
+Schalten Sie im selben Abschnitt **Knowledge** die **Web Search** aus. Sie ist standardmäßig an, und damit sucht der Agent im öffentlichen Web nach dem Namen des Kandidaten, statt nur mit der hochgeladenen Datei zu arbeiten.
+
 Wählen Sie nach Konfigurationsänderungen **Save**, um sie zu bestätigen.
 
 ### Schritt 3: Die MCP Server Integration hinzufügen
@@ -124,7 +126,7 @@ Wählen Sie nach Konfigurationsänderungen **Save**, um sie zu bestätigen.
 Ihr Autonomous Agent braucht Zugriff auf die Tools des HR MCP Servers, um Mitarbeiterdatensätze anzulegen. Öffnen Sie den Abschnitt **Tools** und wählen Sie **Add tool**.
 
 1. Wählen Sie die Gruppe **Model Context Protocol**
-2. Suchen Sie nach `HR MCP`. Steht der **HR MCP Server** in der Liste, zum Beispiel weil Sie ihn in [Einem Agent MCP Tools auf dem gehosteten Server geben](../../04-cs-tools/06-mcp/lab-01-give-an-agent-mcp-tools-de.md) registriert haben, wählen Sie ihn. Andernfalls wählen Sie **+ New tool** > **Model Context Protocol** und füllen das Formular **Add a Model Context Protocol server** aus:
+2. Suchen Sie nach `HR MCP`. Steht der **HR MCP Server** in der Liste, zum Beispiel weil Sie ihn in [Einem Agent MCP Tools auf dem gehosteten Server geben](../../04-cs-tools/06-mcp/lab-01-give-an-agent-mcp-tools-de.md) registriert haben, wählen Sie ihn. Andernfalls wählen Sie oben im Dialog **Add tool** die Kachel **Add new MCP** und füllen das Formular **Add a Model Context Protocol server** aus:
 
 | Feld | Wert |
 | --- | --- |
@@ -133,7 +135,9 @@ Ihr Autonomous Agent braucht Zugriff auf die Tools des HR MCP Servers, um Mitarb
 | Server URL | `https://lab-human-resource-mcp.azurewebsites.net` |
 | Authentication | None |
 
-3. Wählen Sie **Add**, um die Tools des MCP Servers zu integrieren
+3. Wählen Sie **Create**. Der Server verlangt keine Anmeldung.
+4. Wählen Sie neben **Connection** den Eintrag **Create new connection** und dann **Create**. **Add** bleibt deaktiviert, bis die Verbindung existiert.
+5. Wählen Sie **Add**, um die Tools des MCP Servers zu integrieren
 
 ![Der Abschnitt Tools, in dem der HR MCP Server mit allen verfügbaren Tools zur Mitarbeiterverwaltung zum Autonomous Agent hinzugefügt wird.](./_images/autonomous-agent-02.png)
 
@@ -148,7 +152,7 @@ Damit hat Ihr Autonomous Agent Zugriff auf alle Tools, die [`src/hr-mcp-server`]
 | `remove_employee` | Entfernt einen Mitarbeiter anhand der E-Mail |
 | `assign_shift` | Teilt einen Mitarbeiter nach Name, Datum und Position einer 8-Stunden-Schicht zu |
 
-Der Agent nutzt für neue PDF-Uploads vor allem das Tool `add_employee`. Beachten Sie, dass Sie diese Liste nirgends deklariert haben: Der Agent hat auf dem Server `tools/list` aufgerufen und sie so entdeckt. Deshalb steht ein neues Tool in `Tools/HRTools.cs` dem Autonomous Agent zur Verfügung, ohne dass Sie den Agent überhaupt anfassen.
+Der Agent nutzt für neue Lebenslauf-Uploads vor allem das Tool `add_employee`. Beachten Sie, dass Sie diese Liste nirgends deklariert haben: Der Agent hat auf dem Server `tools/list` aufgerufen und sie so entdeckt. Deshalb steht ein neues Tool in `Tools/HRTools.cs` dem Autonomous Agent zur Verfügung, ohne dass Sie den Agent überhaupt anfassen.
 
 ![Die McpServerTool-Methoden in Tools/HRTools.cs erzeugen die sechs Tools des HR MCP Servers, die ein Agent zur Runtime über tools/list findet; eine neue Methode und ein Neustart des Servers fügen also eine Fähigkeit hinzu. Bei einem Custom Connector dagegen müssen Sie die Spezifikation neu importieren und die Action neu hinzufügen.](../../../demos/04-cs-tools/pptx/images/06-01-tool-discovery.svg)
 
@@ -158,18 +162,19 @@ Ihr Autonomous Agent braucht außerdem Zugriff auf den MCP Server **Mail (Previe
 
 1. Wählen Sie die Gruppe **Model Context Protocol**
 2. Suchen und wählen Sie **Mail (Preview)**
-3. Wählen Sie **Add**, um die Tools des MCP Servers zu integrieren
+3. Wählen Sie neben **Connection** den Eintrag **Create new connection**, dann **Create**, und wählen Sie im Fenster **Pick an account** Ihr Arbeitskonto
+4. Wählen Sie **Add**, um die Tools des MCP Servers zu integrieren
 
 Damit hat Ihr Autonomous Agent Zugriff auf eine breite Auswahl an Tools, um die E-Mails in der Mailbox des aktuellen Users zu verwalten.
 Der Agent nutzt für Benachrichtigungs-E-Mails vor allem das Tool `SendEmailWithAttachments`.
 
 ### Schritt 5: Den SharePoint MCP Server hinzufügen
 
-Der Trigger übergibt dem Agent nur die Eigenschaften der neuen Datei, nicht ihren Inhalt, daher braucht der Agent ein Tool, um die PDF zu lesen. Fügen Sie **SharePoint (Preview)** auf dieselbe Weise hinzu: **Add tool**, **Model Context Protocol**, **SharePoint (Preview)**, dann **Add**. Der Agent liest die hochgeladene Datei dann selbst. Die SharePoint Connector Action **Get file content using path** reicht nicht aus, weil sie nur eine Referenz auf die Datei zurückgibt.
+Der Trigger übergibt dem Agent nur die Eigenschaften der neuen Datei, nicht ihren Inhalt, daher braucht der Agent ein Tool, um die Datei zu lesen. Fügen Sie **SharePoint (Preview)** auf dieselbe Weise hinzu: **Add tool**, **Model Context Protocol**, **SharePoint (Preview)**, **Create new connection**, **Create**, Ihr Konto unter **Pick an account**, dann **Add**. Der Agent liest die hochgeladene Datei dann selbst. Die SharePoint Connector Action **Get file content using path** reicht nicht aus, weil sie nur eine Referenz auf die Datei zurückgibt.
 
 ## Übung 3: SharePoint Trigger konfigurieren
 
-In dieser Übung konfigurieren Sie den Autonomous Agent so, dass er automatisch getriggert wird, wenn neue PDF-Dateien in die SharePoint Dokumentbibliothek hochgeladen werden.
+In dieser Übung konfigurieren Sie den Autonomous Agent so, dass er automatisch getriggert wird, wenn neue Lebenslauf-Dateien in die SharePoint Dokumentbibliothek hochgeladen werden.
 
 ### Schritt 1: Den SharePoint Trigger hinzufügen
 
@@ -177,7 +182,7 @@ In dieser Übung konfigurieren Sie den Autonomous Agent so, dass er automatisch 
 
 ![Der Bereich Triggers des Autonomous Agents mit hervorgehobenem Befehl "+ Add trigger".](./_images/autonomous-agent-03.png)
 
-Wählen Sie im Dialog **Add trigger** unter den Optionen des SharePoint Connectors **When a file is created (properties only)**. Wählen Sie dann **Next**, um den Trigger zu konfigurieren.
+Wählen Sie im Dialog **Add trigger** unter den Optionen des SharePoint Connectors das Kontrollkästchen **When a file is created (properties only)**. Wählen Sie dann **Next**, um den Trigger zu konfigurieren.
 
 ![Der Dialog zur Trigger-Auswahl mit den SharePoint-Datei-Triggern, die für den Autonomous Agent verfügbar sind, zusammen mit weiteren Out-of-the-Box Triggern. Der Trigger "When a file is created (properties only)" ist hervorgehoben. Rechts unten im Dialog steht die Schaltfläche "Next", mit der Sie die Konfiguration fortsetzen.](./_images/autonomous-agent-04.png)
 
@@ -188,21 +193,23 @@ Im nächsten Schritt der Konfiguration geben Sie dem Trigger einen Namen und kon
 
 Konfigurieren Sie den Trigger so:
 
-- **Trigger name**: `When PDF uploaded to Candidate Data library`
+- **Trigger name**: ersetzen Sie den vorgegebenen Namen `When a file is created (properties only)` durch `When resume uploaded to Candidate Data library`
 
 ![Die Konfiguration des SharePoint Triggers mit dem Namen und den erforderlichen Berechtigungen für die Apps.](./_images/autonomous-agent-05.png)
 
 Wählen Sie **Next** und konfigurieren Sie den Trigger mit diesen zusätzlichen Einstellungen:
 
-- **Site Address**: Wählen Sie Ihre SharePoint Ziel-Site oder geben Sie ihre URL ein
+- **Site Address**: Wählen Sie Ihre SharePoint Ziel-Site aus der Liste oder geben Sie ihre URL ein
 - **Library Name**: Wählen Sie `Candidate Data` (die Bibliothek, die Sie erstellt haben)
 - **Folder**: Lassen Sie das Feld leer, um die gesamte Bibliothek zu überwachen
 - **Limit columns by View (Optional)**: All Documents
-- **Additional instructions to the agent when it's invoked by this trigger**: Das Feld enthält bereits `Use content from Body`; hängen Sie ` and read content of the PDF file.` an.
+- **Additional instructions to the agent when it's invoked by this trigger**: Das Feld enthält bereits `Use content from Body`; hängen Sie ` and read the content of the uploaded text file.` an.
 
 ![Die Konfiguration des SharePoint Triggers mit Site-Adresse, Bibliotheksname, Ordner, Ansicht und zusätzlichen Instructions an den Agent.](./_images/autonomous-agent-06.png)
 
 Wählen Sie **Create trigger**, um den SharePoint Trigger zur Überwachung zu Ihrem Agent hinzuzufügen. Der Vorgang dauert eine Weile. Sobald er fertig ist, sehen Sie einen Dialog, der Sie einlädt, den Trigger zu testen.
+
+Zeigt der Dialog "That didn't work. The template definition is invalid.", wählen Sie **Create trigger** erneut.
 
 ![Der Dialog mit der Bestätigung der Trigger-Erstellung und einer Einladung, den eben erstellten Trigger zu testen.](./_images/autonomous-agent-07.png)
 
@@ -222,15 +229,15 @@ Sobald mindestens eine Datei in der Ziel-Bibliothek liegt, aktualisiert sich der
 
 Laden Sie einfach einen der zuvor heruntergeladenen Lebensläufe in die Ziel-Bibliothek in SharePoint Online hoch und warten Sie, bis der Agent ihn verarbeitet.
 
-> **Hinweis:** Der Trigger reagiert nur auf Dateien, die nach seiner Erstellung hochgeladen werden, laden Sie die Testdatei also jetzt hoch, nicht vorher. Es kann bis zu einer Minute dauern, bis der Agent die neuen Dateien bemerkt, und **Start testing** bleibt bis dahin grau. Die Dateiliste zeigt Zeitstempel, keine Dateinamen.
+> **Hinweis:** Der Trigger reagiert nur auf Dateien, die nach seiner Erstellung hochgeladen werden, laden Sie die Testdatei also jetzt hoch, nicht vorher. Es kann bis zu einer Minute dauern, bis der Agent die neuen Dateien bemerkt, und **Start testing** bleibt bis dahin grau. Der Dialog aktualisiert sich nicht selbst: Wählen Sie sein Aktualisieren-Symbol, damit die neue Datei erscheint. Die Dateiliste zeigt Zeitstempel, keine Dateinamen.
 
 > **Hinweis:** Sieht der Testdialog Ihre Datei nie, öffnen Sie Power Automate und wählen Sie **Connections**. Zeigt die SharePoint Connection **Reconnect**, wählen Sie **Reconnect**, dann **Update**, und wählen Sie Ihren Account; der Trigger Flow zeigt keine Runs, solange diese Connection unterbrochen ist.
 
 ![Der Dialog zum Testen des Triggers mit Dateien, die in die Ziel-Bibliothek in SharePoint Online hochgeladen wurden. Der Befehl "Start testing" ist jetzt aktiv, weil eine neue Datei zur Verarbeitung bereitsteht.](./_images/trigger-test-02.png)
 
-Sobald der Test startet, kann der Agent über das Seitenpanel **Test your agent** mit Ihnen interagieren. In diesem Szenario verbinden Sie als Erstes die Agent-Instanz mit ihren Tools, damit der Agent den neuen Mitarbeiterdatensatz anlegen kann. Wählen Sie **Allow** auf der Card für den Mail MCP Server. Wählen Sie dann **Open connection manager** in der automatischen Nachricht des Agents, verbinden Sie den HR MCP Server mit **Connect**, wählen Sie **Submit**, kehren Sie zum Panel **Test your agent** zurück und wählen Sie **Retry**.
+Sobald der Test startet, kann der Agent über das Seitenpanel **Test your agent** mit Ihnen interagieren. Weil Sie die Verbindungen beim Hinzufügen der Tools angelegt haben, legt der Agent sofort los. Zeigt das Panel trotzdem eine **Allow** Card für den Mail MCP Server, wählen Sie **Allow**; zeigt es **Open connection manager**, verbinden Sie den HR MCP Server mit **Connect**, wählen Sie **Submit**, kehren Sie zum Panel **Test your agent** zurück und wählen Sie **Retry**.
 
-Sie sollten eine Bestätigung sehen, dass die Kandidatin oder der Kandidat aus dem hochgeladenen PDF-Lebenslauf als Mitarbeiter auf dem HR MCP Server angelegt wurde.
+Sie sollten eine Bestätigung sehen, dass die Kandidatin oder der Kandidat aus dem hochgeladenen Lebenslauf als Mitarbeiter auf dem HR MCP Server angelegt wurde.
 
 ![Das Test Panel von Copilot Studio beim Testen des Triggers. Zu sehen sind die Aufforderung, sich mit dem HR MCP Server zu verbinden, und die Bestätigung, dass ein neuer Mitarbeiterdatensatz angelegt wurde.](./_images/trigger-test-03.png)
 
@@ -244,7 +251,7 @@ Beim Veröffentlichen des Agents sehen Sie möglicherweise einige Warnungen wie 
 1. **Full access for editors**: User mit der Berechtigung Editor haben Zugriff auf eingebettete Connections, die Flows oder Trigger dieses Agents nutzen.
 1. **Your agent includes triggers that use the author's credentials**: Teilen die Instructions in diesen Triggern Daten mit anderen Usern, können diese User die Credentials des ursprünglichen Editors nutzen, um auf Informationen zuzugreifen oder eine Aufgabe zu erledigen.
 
-Nachdem Sie den Agent veröffentlicht haben, laden Sie neue PDF-Lebensläufe hoch und beobachten Sie, was passiert. Öffnen Sie nach dem Hochladen einer oder mehrerer Dateien in die Ziel-Bibliothek in SharePoint Online den Bereich **Activity** des Agents, dann sehen Sie den Aufruf des Agents vom Typ `Automated`.
+Nachdem Sie den Agent veröffentlicht haben, laden Sie neue Lebenslauf-Textdateien hoch und beobachten Sie, was passiert. Öffnen Sie nach dem Hochladen einer oder mehrerer Dateien in die Ziel-Bibliothek in SharePoint Online den Bereich **Activity** des Agents, dann sehen Sie den Aufruf des Agents vom Typ `Automated`.
 
 ![Die "Activity" des Agents mit einem Aufruf des Autonomous Agents, ausgelöst durch das Hochladen einer Datei in die Ziel-Bibliothek.](./_images/autonomous-agent-10.png)
 
@@ -282,7 +289,7 @@ Prüfen Sie dieses Verhalten, indem Sie den Bereich **Activity** des Autonomous 
 Wählen Sie die Instanz, dann sehen Sie, dass der Agent zwei (oder mehr) Dateien autonom verarbeitet und für jede das Tool `add_employee` aufgerufen hat. Sie müssen keine komplexe Logik in Ihrem Agent definieren. Es genügt, dass wir in den Instructions des Agents geschrieben haben
 
 ```text
-... When a new PDF file is uploaded to the SharePoint document library: ...
+... When a new resume file is uploaded to the SharePoint document library: ...
 ```
 
 Das reicht der autonomen Intelligenz des Agents, um über alle hochgeladenen Dateien zu iterieren und auf alle dieselbe Logik anzuwenden. Das ist erstaunlich und zeigt Ihnen, wie leistungsfähig AI heute ist!

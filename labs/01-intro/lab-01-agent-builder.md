@@ -19,7 +19,7 @@ In this exercise you create the Gardener agent from a natural language descripti
 
 ### Step 1: Describe your agent
 
-Open the [Microsoft 365 Copilot chat home page](https://www.microsoft365.com/copilot), select **Plugins** in the left side panel, open the **Chat** tab, and select **New agent** in the upper right corner. **Agent Builder** opens with the prompt box **Message Agent Builder**.
+Open the [Microsoft 365 Copilot chat home page](https://www.microsoft365.com/copilot), select **Agents & Plugins** in the left side panel, open the **Chat** tab, and select **New agent** in the upper right corner. **Agent Builder** opens with the prompt box **Message Agent Builder**.
 
 ![The Plugins page of Microsoft 365 Copilot Chat on the Chat tab, with New agent highlighted in the upper right corner.](./_images/lab-01-agent-builder-02.png)
 
@@ -71,7 +71,7 @@ Select the first suggested prompt, which fills the prompt box, then send it and 
 
 In this exercise you add a custom icon to the agent and define the rules of the plant and flower guessing game.
 
-Select **Plugins** in the left side panel and open the **Chat** tab (the page remembers the last tab you used). Select **Manage all**, then **More options** beside **Gardener**, and select **Edit** to configure the agent.
+Select **Agents & Plugins** in the left side panel and open the **Chat** tab (the page remembers the last tab you used). Select **Manage all**, then **More options** beside **Gardener**, and select **Edit** to configure the agent.
 
 ![The Manage all list of agents with the More options menu of the agent open and Edit highlighted.](./_images/lab-01-agent-builder-09.png)
 

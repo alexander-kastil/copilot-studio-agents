@@ -1,0 +1,30 @@
+Isaac Talbot - Software Developer
+
+Contact Information:
+- Email: isaac@adventure-works.com
+- Phone: +44 555-0150
+- Address: 2987 Queen's Road, London, EC4M 7JN
+
+Profile: Experienced Software Developer with over 5 years of experience in .NET and SQL Server development. Proven expertise in building robust financial and e-commerce systems.
+
+Professional Experience:
+- Adventure Works Cycles, London, UK, Software Developer
+  - Dates: May 2019 - Present
+  - Responsibilities:
+    - Design and implement efficient solutions for e-commerce applications.
+    - Collaborate with product teams to define system requirements and enhancements.
+  - Achievements:
+    - Developed a new order processing system that reduced transaction times by 25%.
+- Grey Logistics Pharmaceuticals, London, UK, Junior Developer
+  - Dates: June 2015 - April 2019
+  - Responsibilities:
+    - Supported the development of database solutions for large-scale pharmaceutical systems.
+    - Assisted in upgrading and maintaining legacy systems.
+
+Skills:
+- Programming Languages: C#, .NET, SQL
+- Tools & Technologies: Azure, Visual Studio, Git
+- Soft Skills: Critical thinking, detail-oriented, effective communication
+
+Languages:
+- English: Native

@@ -1,0 +1,34 @@
+Anthony Ivanov - Senior Software Engineer
+
+Contact Information:
+- Email: anthony@greylogistics.com
+- Phone: +1 555-0101
+- Address: 4567 Main St, Buffalo, NY 98052
+
+Profile: Experienced Senior Software Engineer with over 10 years of expertise in system architecture, cloud-based solutions, and team leadership. Proven track record of enhancing system efficiency and integrating cutting-edge technology solutions.
+
+Professional Experience:
+- Grey Logistics, Ltd., Buffalo, NY, Senior Software Engineer
+  - Dates: June 2018 - Present
+  - Responsibilities:
+    - Architect and lead the development of scalable enterprise applications.
+    - Spearhead cloud technology integration, focusing on Microsoft Azure.
+    - Mentor and manage a team of junior developers and engineers.
+  - Achievements:
+    - Successfully migrated multiple legacy systems to cloud infrastructure, reducing operational costs and improving scalability.
+- Adatum Corporation, Buffalo, NY, Software Developer
+  - Dates: May 2014 - May 2018
+  - Responsibilities:
+    - Developed robust backend solutions to enhance data processing capabilities.
+    - Enhanced security protocols, reducing system vulnerabilities.
+  - Achievements:
+    - Boosted system performance and customer satisfaction by implementing new software updates and features.
+
+Skills:
+- Programming Languages: C#, .NET, JavaScript, SQL
+- Tools & Technologies: Azure, Docker, Jenkins, Git
+- Soft Skills: Leadership, strategic planning, effective communication
+
+Languages:
+- English: Native
+- Spanish: Fluent
