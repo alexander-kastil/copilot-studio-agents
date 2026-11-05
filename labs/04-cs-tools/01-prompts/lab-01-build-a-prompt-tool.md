@@ -38,8 +38,8 @@ Check Ticket Status
 Shows the status of the user's support ticket when they ask about their ticket.
 ```
 
-4. Select **Add node** (+) > **Variable management** > **Set a variable value**. Under **Set variable**, select **Create a new variable**, then rename it to `SNTicketInfo` in **Variable properties**.
-5. In **To value**, select **>**, open the **Formula** tab, paste the formula below, and select **Insert**. `JSON` turns the record into text, so `SNTicketInfo` is a string that a prompt input accepts.
+4. Select **Add node** (+) > **Variable management** > **Set a variable value**. Under **Set variable**, the **Select a variable** panel opens with an empty list: select **Create new**, then rename the variable to `SNTicketInfo` in **Variable properties**.
+5. Select the **...** button at the right edge of **To value**, open the **Formula** tab, paste the formula below into **Enter formula**, and select **Insert**. `JSON` turns the record into text, so `SNTicketInfo` is a string that a prompt input accepts.
 
 ```powerfx
 JSON({
@@ -105,21 +105,21 @@ JSON({
 Ticket customer communication
 ```
 
-4. Select **Add content** > **Text** to add an input, and rename **Text input** to the name below. **Add content** inserts the input into the instructions straight away.
+4. Select **Add content** > **Text** to add an input, and rename **Text input** to the name below. **Add content** inserts the input as a chip at the top of the instructions straight away, and the chip stays there.
 
 ```text
 Ticket Details
 ```
 
-5. In the instructions, paste the prompt instructions. Under the `## Ticket details` section, type **/** or use **Add content** and pick the existing **Ticket Details** input.
+5. In the instructions, paste the prompt instructions below the chip. Under the `## Ticket details` section, type **/** or use **Add content** and pick the existing **Ticket Details** input again; the prompt works with both chips.
 
 ```text
 Write a short, friendly message to the customer about the status of their support ticket. Mention the ticket number, the current state, who is working on it and the latest comment.
 
 ## Ticket details
 ```
-6. Open the **Model** dropdown in the **Instructions** header and choose **GPT-4.1**. The list no longer offers GPT-4o.
-7. Test your prompt by pasting the sample JSON payload in the input sample data and selecting **Test prompt**.
+6. Open the **Model** dropdown in the **Instructions** header; the default is **Basic GPT-4.1 mini**. Choose **Standard GPT-4.1**. The list no longer offers GPT-4o.
+7. Test your prompt: select the **1 input** button under the instructions, paste the sample JSON payload as the sample data, and select **Test prompt**.
 
 ```json
 {
@@ -149,7 +149,7 @@ Write a short, friendly message to the customer about the status of their suppor
 
 ![Image](_images/image_6.png)
 
-12. Save the topic, open the test pane, and ask:
+12. Select outside the message field first, otherwise the inserted variable is dropped and the message is saved empty. Then save the topic, open the test pane, and ask:
 
 ```text
 What is the status of my ticket?

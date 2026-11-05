@@ -62,7 +62,7 @@ A public website for careers with information about benefits, culture, diversity
 Provides documents about policies, procedures, and rules related to the HR department.
 ```
 
-8. Create the three topics below, one at a time: on the **Topics** tab select **+ Add a topic** > **From blank**, select the topic name at the top left and enter the name given below, open **...** at the top right and select **Open code editor**, replace all of the text with the topic's YAML, and select **Save**.
+8. Create the three topics below, one at a time: on the **Topics** tab select **+ Add a topic** > **From blank**, select the topic name at the top left (it reads **Untitled**), select all of it and enter the name given below, open **...** at the top right and select **Open code editor**, replace all of the text with the topic's YAML, and select **Save**.
 
 Topic `Collect user's role`:
 
@@ -439,19 +439,19 @@ What do our HR documents say about the onboarding of new employees?
 I want to register a new candidate.
 ```
 
-Expected: `hr-agent-migration.txt` lists every component with a purpose and a destination, and the Adaptive Card topic is the one row without a rebuild, because Adaptive Cards have no documented equivalent on the GitHub Copilot harness. In the test pane, the first message runs **Collect user's role**, the second and third answer from the Microsoft Careers site and HR Documents with citations, and the fourth collects the candidate on an Adaptive Card.
+Expected: `hr-agent-migration.txt` lists every component with a purpose and a destination, and the Adaptive Card topic is the one row without a rebuild, because Adaptive Cards have no documented equivalent on the GitHub Copilot harness. In the test pane, the orchestrator picks a topic or a knowledge source by its description, so note what actually answered: the first message runs **Collect user's role** or answers straight from HR Documents, the second and third answer from the Microsoft Careers site and HR Documents, and the fourth runs one of the two candidate topics, because both share the same description.
 
 ## Step 2: Upgrade the agent and add back what it skipped
 
 The upgrade builds a copy on the GitHub Copilot harness, leaves your Standard agent as it is, and reports what was migrated, what requires attention and what was skipped. Knowledge sources are never part of the upgrade, so the job and policy journeys fail until you add them back.
 
-1. On the Copilot Studio home page, type the request below into the input box, using your agent's exact name from the **Agents** list, and answer the questions in the chat.
+1. On the Copilot Studio home page, type the request below into the input box, using your agent's exact name from the **Agents** list. The chat asks one question per knowledge source and per topic and offers to rebuild each as a skill; answer **I'll handle it myself** each time, because this lab rebuilds them by hand.
 
 ```text
 upgrade my HR Agent
 ```
 
-2. Read each item of the report and fill the **Upgrade result** column of `hr-agent-migration.txt`.
+2. Read each item of the report, under **Carried over**, **Not copied automatically** and **Needs your attention**, and fill the **Upgrade result** column of `hr-agent-migration.txt`. **Needs your attention** marks authentication, tenant or runtime policy and gpt components as "Blocks adoption and publishing"; in the live run the agent still published.
 3. Select the **Open** icon on the card named **HR Agent (Upgraded)**.
 4. On the **Build** tab, select **+** next to **Knowledge** and add the public website `https://careers.microsoft.com/` with the name `Microsoft Careers site`.
 5. Add the SharePoint site with the HR documents that the Standard HR Agent uses, with the name `HR Documents` and the description below, then select the **Save** icon.
@@ -460,7 +460,7 @@ upgrade my HR Agent
 Provides documents about policies, procedures, and rules related to the HR department.
 ```
 
-Expected: **HR Agent (Upgraded)** opens on the **Build** tab with your instructions, **Knowledge** lists **Microsoft Careers site** and **HR Documents**, and the Standard HR Agent is still listed unchanged on the **Agents** page. Every row of the map carries an upgrade result, and both knowledge rows read not migrated.
+Expected: **HR Agent (Upgraded)** opens on the **Build** tab with your instructions, **Knowledge** lists **Microsoft Careers site** and **HR Documents**, and the Standard HR Agent is still listed unchanged on the **Agents** page. Every row of the map carries an upgrade result, and both knowledge rows read not copied automatically.
 
 > **Note:** When the upgrade already built a skill or a workflow for a topic, compare it with your map, keep the one that matches and remove the other, so the agent has one way to do each job.
 
@@ -469,7 +469,7 @@ Expected: **HR Agent (Upgraded)** opens on the **Build** tab with your instructi
 The candidate topics collected four values, showed them back and asked for a yes before inserting. The workflow takes the four values as inputs and does the work; the agent collects them in conversation, and the yes or no question becomes one sentence in the instructions, next to the rule that replaces the role topic.
 
 1. On the **Build** tab, select **+** next to **Tools**, then **+ Add** > **Workflow**.
-2. Select the trigger **When an agent calls the flow**, then **+ Add an input** > **Text**, and add these four inputs with their descriptions.
+2. The trigger **When an agent calls the flow** is already in place. Select it, then **+ Add an input** > **Text**, and add these four inputs with their descriptions.
 
 ```text
 FirstName: The candidate's first name.
@@ -478,7 +478,7 @@ Email: The candidate's e-mail address.
 CurrentRole: The candidate's current job role.
 ```
 
-3. Select the **+** between the trigger and **Respond to the agent**, search for **Office 365 Outlook**, and add **Send an email (V2)** with your own address in **To**, the subject `New candidate`, and the body below, inserting each input with the lightning icon at its label.
+3. Select the **+** between the trigger and **Respond to the agent**, search for **Office 365 Outlook**, and add **Send an email** with your own address in **To**, the subject `New candidate`, and the body below, inserting each input with the lightning icon at its label.
 
 ```text
 New candidate: FirstName LastName, e-mail Email, current role CurrentRole. Registered by the HR agent.
@@ -491,7 +491,7 @@ Registered FirstName LastName (Email) and sent the summary to HR.
 ```
 
 5. Rename the workflow to `Register Candidate`, select the **Save** icon, then **Publish**.
-6. Back on the agent, select **Register Candidate** under **Tools**, paste the description below, and select **Save**.
+6. Back on the agent, the published workflow is not listed under **Tools** yet: select **+** next to **Tools**, then **Add**, open the **Workflows** tab and add **Register Candidate**. Select the pencil in **Workflow details**, paste the description below, and select **Save**.
 
 ```text
 Registers a new job candidate and emails the summary to HR. Use it when a member of HR staff wants to register a candidate, after you have the first name, last name, e-mail address and current role.
@@ -503,21 +503,21 @@ Registers a new job candidate and emails the summary to HR. Use it when a member
 Every user is a candidate, an employee or a member of HR staff. If you don't know which, ask once before you answer an HR question. Candidates get information about applying and open jobs from the Microsoft Careers site; employees get answers about policies and procedures from HR Documents; HR staff can also register a new candidate with Register Candidate. Before you run Register Candidate, show the four values back to the user and run it only after they confirm.
 ```
 
-Expected: the workflow canvas shows the trigger with four inputs, **Send an email (V2)** and **Respond to the agent** with `Confirmation`, and its status shows **Published**. **Tools** lists **Register Candidate** with its description, and the instructions name the three roles, both knowledge sources, the tool and the confirmation rule.
+Expected: the workflow canvas shows the trigger with four inputs, **Send an email** and **Respond to the agent** with `Confirmation`, and its status shows **Published**. **Tools** lists **Register Candidate** with its description, and the instructions name the three roles, both knowledge sources, the tool and the confirmation rule.
 
 ## Step 4: Add a Start hook that greets the signed-in user
 
 A Conversation Start topic ran at the beginning of every Standard conversation. A **Start (pre-loop)** hook takes over that job: its workflow runs every time a session begins and returns `additionalContext`, background text the agent reads before the first message, so the greeting and the role question no longer depend on the agent deciding to ask.
 
-1. On the top menu bar, select **…** > **Hooks**, then **Create**.
-2. Set **Event type** to **Start (pre-loop)** and **Name** to `Greet the signed-in user`, then select **New workflow**.
-3. In the starter workflow, keep the field names. Select **Respond to the agent** and set `additionalContext` to the text below, inserting `userDisplayName` from **metadata** in the variable picker at its label.
+1. On the top menu bar, select **…** > **Hooks** (marked **Preview**), then **Create**.
+2. **Event type** already reads **Start (pre-loop)**. Replace the prefilled **Name** `On session start` with `Greet the signed-in user`, then select **New workflow**. The workflow designer opens and leaves the dialog, so the hook itself is not saved yet.
+3. In the starter workflow, keep the field names. Select **Respond to the agent** and set `additionalContext` to the text below, inserting `userDisplayName` from the variable picker at its label.
 
 ```text
 The user's name is userDisplayName. Greet them by first name in your first reply, and ask whether they are a candidate, an employee or a member of HR staff unless they have already said so.
 ```
 
-4. Select the **Save** icon, then **Publish**; back on **Add hook**, check that the new workflow is selected, then select **Done**.
+4. Select the **Save** icon, then **Publish**. Back on the agent, select **…** > **Hooks** > **Create** again, set **Name** to `Greet the signed-in user`, pick the new workflow under **Workflow**, and select **Done**.
 5. Select the **Save** icon on the agent, then **Publish** and **Publish agent**.
 
 Expected: the **Hooks** dialog lists **Greet the signed-in user** with the event type **Start (pre-loop)**, and the agent is published with the hook, the tool and both knowledge sources.
@@ -538,7 +538,7 @@ Ana Silva, ana.silva@greylogistics.com, current role Project Manager
 3. Open your Outlook inbox.
 4. In `hr-agent-migration.txt`, mark each row as done, stays Standard, or open, and note the Standard and the upgraded result of each journey side by side.
 
-Expected: the first reply in each conversation greets you by first name, which is the hook's context at work. The candidate question gets applying advice, the job and onboarding questions answer from **Microsoft Careers site** and **HR Documents**, and the fourth journey shows the four values back before the step list shows **Used tool** **Register Candidate** with `Confirmation` in its output. An email with the subject `New candidate` and Ana Silva's details is in your inbox, and every row of the map except the Adaptive Card topic reads done.
+Expected: the first reply in each conversation greets you by first name, and the step list shows **Executed hook: SessionStart**, which is the hook's context at work. The candidate question gets applying advice, while the job, onboarding and registration questions may first get the role question and, once you answer it (for example `I'm an employee`), answer from **Microsoft Careers site** and **HR Documents** with citations. The fourth journey shows the four values back before the step list shows **Used tool** **Register Candidate** with the confirmation text in its output. An email with the subject `New candidate` and Ana Silva's details is in your inbox, and every row of the map except the Adaptive Card topic reads done.
 
 ## Troubleshooting
 

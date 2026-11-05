@@ -62,7 +62,7 @@ A public website for careers with information about benefits, culture, diversity
 Provides documents about policies, procedures, and rules related to the HR department.
 ```
 
-8. Erstellen Sie nacheinander die drei folgenden Topics: Wählen Sie im Tab **Topics** den Befehl **+ Add a topic** > **From blank**, wählen Sie links oben den Namen des Topics und geben Sie den unten genannten Namen ein, öffnen Sie rechts oben **...** und wählen Sie **Open code editor**, ersetzen Sie den gesamten Text durch das YAML des Topics und wählen Sie **Save**.
+8. Erstellen Sie nacheinander die drei folgenden Topics: Wählen Sie im Tab **Topics** den Befehl **+ Add a topic** > **From blank**, wählen Sie links oben den Namen des Topics (er lautet **Untitled**), markieren Sie ihn ganz und geben Sie den unten genannten Namen ein, öffnen Sie rechts oben **...** und wählen Sie **Open code editor**, ersetzen Sie den gesamten Text durch das YAML des Topics und wählen Sie **Save**.
 
 Topic `Collect user's role`:
 
@@ -439,19 +439,19 @@ What do our HR documents say about the onboarding of new employees?
 I want to register a new candidate.
 ```
 
-Erwartet: `hr-agent-migration.txt` listet jede Component mit einem Zweck und einem Ziel, und das Adaptive Card Topic ist die einzige Zeile ohne Neuaufbau, weil Adaptive Cards auf dem GitHub Copilot Harness kein dokumentiertes Gegenstück haben. Im Test Pane führt die erste Nachricht **Collect user's role** aus, die zweite und dritte werden aus der Microsoft Careers site und den HR Documents mit Zitaten beantwortet, und die vierte erfasst die Kandidatur auf einer Adaptive Card.
+Erwartet: `hr-agent-migration.txt` listet jede Component mit einem Zweck und einem Ziel, und das Adaptive Card Topic ist die einzige Zeile ohne Neuaufbau, weil Adaptive Cards auf dem GitHub Copilot Harness kein dokumentiertes Gegenstück haben. Im Test Pane wählt der Orchestrator ein Topic oder eine Knowledge Source nach ihrer Description, notieren Sie also, was tatsächlich geantwortet hat: Die erste Nachricht führt **Collect user's role** aus oder wird direkt aus den HR Documents beantwortet, die zweite und dritte werden aus der Microsoft Careers site und den HR Documents beantwortet, und die vierte führt eines der beiden Kandidaten-Topics aus, weil beide dieselbe Description haben.
 
 ## Schritt 2: Den Agent upgraden und wieder hinzufügen, was übersprungen wurde
 
 Das Upgrade baut eine Kopie auf dem GitHub Copilot Harness, lässt Ihren Standard Agent, wie er ist, und meldet, was migriert wurde, was Aufmerksamkeit braucht und was übersprungen wurde. Knowledge Sources sind nie Teil des Upgrades, deshalb scheitern die Journeys zu Jobs und Policies, bis Sie sie wieder hinzufügen.
 
-1. Geben Sie auf der Startseite von Copilot Studio den folgenden Request in das Eingabefeld ein, mit dem exakten Namen Ihres Agents aus der Liste **Agents**, und beantworten Sie die Fragen im Chat.
+1. Geben Sie auf der Startseite von Copilot Studio den folgenden Request in das Eingabefeld ein, mit dem exakten Namen Ihres Agents aus der Liste **Agents**. Der Chat stellt eine Frage pro Knowledge Source und pro Topic und bietet an, jedes als Skill neu aufzubauen; antworten Sie jedes Mal mit **I'll handle it myself**, weil dieses Lab sie von Hand neu aufbaut.
 
 ```text
 upgrade my HR Agent
 ```
 
-2. Lesen Sie jeden Eintrag des Reports und füllen Sie die Spalte **Upgrade result** in `hr-agent-migration.txt`.
+2. Lesen Sie jeden Eintrag des Reports unter **Carried over**, **Not copied automatically** und **Needs your attention** und füllen Sie die Spalte **Upgrade result** in `hr-agent-migration.txt`. **Needs your attention** markiert Authentifizierung, Tenant- oder Runtime-Policy und gpt Components als "Blocks adoption and publishing"; im Live Run wurde der Agent trotzdem veröffentlicht.
 3. Wählen Sie das Icon **Open** auf der Karte **HR Agent (Upgraded)**.
 4. Wählen Sie im Tab **Build** das **+** neben **Knowledge** und fügen Sie die öffentliche Website `https://careers.microsoft.com/` mit dem Namen `Microsoft Careers site` hinzu.
 5. Fügen Sie die SharePoint Site mit den HR-Dokumenten, die der Standard HR Agent nutzt, mit dem Namen `HR Documents` und der folgenden Beschreibung hinzu und wählen Sie dann das Icon **Save**.
@@ -460,7 +460,7 @@ upgrade my HR Agent
 Provides documents about policies, procedures, and rules related to the HR department.
 ```
 
-Erwartet: **HR Agent (Upgraded)** öffnet sich im Tab **Build** mit Ihren Instructions, **Knowledge** listet **Microsoft Careers site** und **HR Documents**, und der Standard HR Agent steht unverändert auf der Seite **Agents**. Jede Zeile der Map trägt ein Upgrade-Ergebnis, und bei beiden Knowledge-Zeilen steht not migrated.
+Erwartet: **HR Agent (Upgraded)** öffnet sich im Tab **Build** mit Ihren Instructions, **Knowledge** listet **Microsoft Careers site** und **HR Documents**, und der Standard HR Agent steht unverändert auf der Seite **Agents**. Jede Zeile der Map trägt ein Upgrade-Ergebnis, und bei beiden Knowledge-Zeilen steht not copied automatically.
 
 > **Hinweis:** Hat das Upgrade für ein Topic bereits einen Skill oder einen Workflow gebaut, vergleichen Sie ihn mit Ihrer Map, behalten Sie den passenden und entfernen Sie den anderen, damit der Agent für jede Aufgabe genau einen Weg hat.
 
@@ -469,7 +469,7 @@ Erwartet: **HR Agent (Upgraded)** öffnet sich im Tab **Build** mit Ihren Instru
 Die Kandidaten-Topics haben vier Werte erfasst, sie zur Kontrolle angezeigt und vor dem Einfügen nach einem Ja gefragt. Der Workflow nimmt die vier Werte als Inputs und erledigt die Arbeit; der Agent erfasst sie im Gespräch, und die Ja-oder-Nein-Frage wird zu einem Satz in den Instructions, neben der Regel, die das Rollen-Topic ersetzt.
 
 1. Wählen Sie im Tab **Build** das **+** neben **Tools** und dann **+ Add** > **Workflow**.
-2. Wählen Sie den Trigger **When an agent calls the flow**, dann **+ Add an input** > **Text**, und fügen Sie diese vier Inputs mit ihren Beschreibungen hinzu.
+2. Der Trigger **When an agent calls the flow** ist bereits vorhanden. Wählen Sie ihn, dann **+ Add an input** > **Text**, und fügen Sie diese vier Inputs mit ihren Beschreibungen hinzu.
 
 ```text
 FirstName: The candidate's first name.
@@ -478,7 +478,7 @@ Email: The candidate's e-mail address.
 CurrentRole: The candidate's current job role.
 ```
 
-3. Wählen Sie das **+** zwischen dem Trigger und **Respond to the agent**, suchen Sie nach **Office 365 Outlook** und fügen Sie **Send an email (V2)** hinzu, mit Ihrer eigenen Adresse in **To**, dem Betreff `New candidate` und dem folgenden Text; fügen Sie jeden Input über das Blitz-Icon an der Stelle seines Labels ein.
+3. Wählen Sie das **+** zwischen dem Trigger und **Respond to the agent**, suchen Sie nach **Office 365 Outlook** und fügen Sie **Send an email** hinzu, mit Ihrer eigenen Adresse in **To**, dem Betreff `New candidate` und dem folgenden Text; fügen Sie jeden Input über das Blitz-Icon an der Stelle seines Labels ein.
 
 ```text
 New candidate: FirstName LastName, e-mail Email, current role CurrentRole. Registered by the HR agent.
@@ -491,7 +491,7 @@ Registered FirstName LastName (Email) and sent the summary to HR.
 ```
 
 5. Benennen Sie den Workflow in `Register Candidate` um, wählen Sie das Icon **Save** und dann **Publish**.
-6. Wählen Sie zurück im Agent **Register Candidate** unter **Tools**, fügen Sie die folgende Beschreibung ein und wählen Sie **Save**.
+6. Zurück im Agent steht der veröffentlichte Workflow noch nicht unter **Tools**: Wählen Sie **+** neben **Tools**, dann **Add**, öffnen Sie den Tab **Workflows** und fügen Sie **Register Candidate** hinzu. Wählen Sie den Stift in **Workflow details**, fügen Sie die folgende Beschreibung ein und wählen Sie **Save**.
 
 ```text
 Registers a new job candidate and emails the summary to HR. Use it when a member of HR staff wants to register a candidate, after you have the first name, last name, e-mail address and current role.
@@ -503,21 +503,21 @@ Registers a new job candidate and emails the summary to HR. Use it when a member
 Every user is a candidate, an employee or a member of HR staff. If you don't know which, ask once before you answer an HR question. Candidates get information about applying and open jobs from the Microsoft Careers site; employees get answers about policies and procedures from HR Documents; HR staff can also register a new candidate with Register Candidate. Before you run Register Candidate, show the four values back to the user and run it only after they confirm.
 ```
 
-Erwartet: Das Workflow Canvas zeigt den Trigger mit vier Inputs, **Send an email (V2)** und **Respond to the agent** mit `Confirmation`, und sein Status zeigt **Published**. **Tools** listet **Register Candidate** mit seiner Beschreibung, und die Instructions nennen die drei Rollen, beide Knowledge Sources, das Tool und die Bestätigungsregel.
+Erwartet: Das Workflow Canvas zeigt den Trigger mit vier Inputs, **Send an email** und **Respond to the agent** mit `Confirmation`, und sein Status zeigt **Published**. **Tools** listet **Register Candidate** mit seiner Beschreibung, und die Instructions nennen die drei Rollen, beide Knowledge Sources, das Tool und die Bestätigungsregel.
 
 ## Schritt 4: Einen Start Hook hinzufügen, der den angemeldeten User begrüßt
 
 Ein Topic Conversation Start lief am Anfang jeder Standard-Unterhaltung. Ein Hook **Start (pre-loop)** übernimmt diese Aufgabe: Sein Workflow läuft jedes Mal, wenn eine Session beginnt, und gibt `additionalContext` zurück, Hintergrundtext, den der Agent vor der ersten Nachricht liest; so hängen die Begrüßung und die Frage nach der Rolle nicht mehr davon ab, dass der Agent sich entscheidet zu fragen.
 
-1. Wählen Sie in der oberen Menüleiste **…** > **Hooks** und dann **Create**.
-2. Setzen Sie **Event type** auf **Start (pre-loop)** und **Name** auf `Greet the signed-in user` und wählen Sie dann **New workflow**.
-3. Behalten Sie im Starter Workflow die Feldnamen bei. Wählen Sie **Respond to the agent** und setzen Sie `additionalContext` auf den folgenden Text; fügen Sie dabei `userDisplayName` aus **metadata** über den Variable Picker an der Stelle seines Labels ein.
+1. Wählen Sie in der oberen Menüleiste **…** > **Hooks** (mit **Preview** markiert) und dann **Create**.
+2. **Event type** steht bereits auf **Start (pre-loop)**. Ersetzen Sie den vorbelegten **Name** `On session start` durch `Greet the signed-in user` und wählen Sie dann **New workflow**. Der Workflow-Designer öffnet sich und verlässt den Dialog, der Hook selbst ist also noch nicht gespeichert.
+3. Behalten Sie im Starter Workflow die Feldnamen bei. Wählen Sie **Respond to the agent** und setzen Sie `additionalContext` auf den folgenden Text; fügen Sie dabei `userDisplayName` über den Variable Picker an der Stelle seines Labels ein.
 
 ```text
 The user's name is userDisplayName. Greet them by first name in your first reply, and ask whether they are a candidate, an employee or a member of HR staff unless they have already said so.
 ```
 
-4. Wählen Sie das Icon **Save** und dann **Publish**; prüfen Sie zurück in **Add hook**, dass der neue Workflow ausgewählt ist, und wählen Sie dann **Done**.
+4. Wählen Sie das Icon **Save** und dann **Publish**. Wählen Sie zurück im Agent erneut **…** > **Hooks** > **Create**, setzen Sie **Name** auf `Greet the signed-in user`, wählen Sie unter **Workflow** den neuen Workflow und dann **Done**.
 5. Wählen Sie das Icon **Save** am Agent und dann **Publish** und **Publish agent**.
 
 Erwartet: Der Dialog **Hooks** listet **Greet the signed-in user** mit dem Event Type **Start (pre-loop)**, und der Agent ist mit dem Hook, dem Tool und beiden Knowledge Sources veröffentlicht.
@@ -538,7 +538,7 @@ Ana Silva, ana.silva@greylogistics.com, current role Project Manager
 3. Öffnen Sie Ihren Outlook-Posteingang.
 4. Markieren Sie in `hr-agent-migration.txt` jede Zeile als done, stays Standard oder open, und notieren Sie das Ergebnis jeder Journey auf dem Standard Agent und dem upgegradeten Agent nebeneinander.
 
-Erwartet: Die erste Antwort in jeder Unterhaltung begrüßt Sie mit Vornamen; hier wirkt der Kontext des Hooks. Die Kandidatenfrage bekommt Hinweise zur Bewerbung, die Fragen zu Jobs und Onboarding werden aus **Microsoft Careers site** und **HR Documents** beantwortet, und die vierte Journey zeigt die vier Werte zur Kontrolle an, bevor die Schrittliste **Used tool** **Register Candidate** mit `Confirmation` im Output zeigt. In Ihrem Posteingang liegt eine E-Mail mit dem Betreff `New candidate` und den Daten von Ana Silva, und jede Zeile der Map außer dem Adaptive Card Topic zeigt done.
+Erwartet: Die erste Antwort in jeder Unterhaltung begrüßt Sie mit Vornamen, und die Schrittliste zeigt **Executed hook: SessionStart**; hier wirkt der Kontext des Hooks. Die Kandidatenfrage bekommt Hinweise zur Bewerbung, während der Agent bei den Fragen zu Jobs, Onboarding und Registrierung eventuell zuerst nach Ihrer Rolle fragt; sobald Sie antworten (zum Beispiel `I'm an employee`), kommen die Antworten aus **Microsoft Careers site** und **HR Documents** mit Zitaten. Die vierte Journey zeigt die vier Werte zur Kontrolle an, bevor die Schrittliste **Used tool** **Register Candidate** mit dem Bestätigungstext im Output zeigt. In Ihrem Posteingang liegt eine E-Mail mit dem Betreff `New candidate` und den Daten von Ana Silva, und jede Zeile der Map außer dem Adaptive Card Topic zeigt done.
 
 ## Troubleshooting
 

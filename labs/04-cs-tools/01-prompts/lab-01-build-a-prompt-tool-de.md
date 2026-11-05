@@ -38,8 +38,8 @@ Check Ticket Status
 Shows the status of the user's support ticket when they ask about their ticket.
 ```
 
-4. Wählen Sie **Add node** (+) > **Variable management** > **Set a variable value**. Wählen Sie unter **Set variable** den Eintrag **Create a new variable** und benennen Sie die Variable unter **Variable properties** in `SNTicketInfo` um.
-5. Wählen Sie bei **To value** das Symbol **>**, öffnen Sie den Tab **Formula**, fügen Sie die folgende Formel ein und wählen Sie **Insert**. `JSON` macht aus dem Record Text, damit ist `SNTicketInfo` ein String, den ein Prompt Input annimmt.
+4. Wählen Sie **Add node** (+) > **Variable management** > **Set a variable value**. Unter **Set variable** öffnet sich das Panel **Select a variable** mit einer leeren Liste: Wählen Sie **Create new** und benennen Sie die Variable unter **Variable properties** in `SNTicketInfo` um.
+5. Wählen Sie die Schaltfläche **...** am rechten Rand von **To value**, öffnen Sie den Tab **Formula**, fügen Sie die folgende Formel in **Enter formula** ein und wählen Sie **Insert**. `JSON` macht aus dem Record Text, damit ist `SNTicketInfo` ein String, den ein Prompt Input annimmt.
 
 ```powerfx
 JSON({
@@ -105,21 +105,21 @@ JSON({
 Ticket customer communication
 ```
 
-4. Wählen Sie **Add content** > **Text**, um einen Input hinzuzufügen, und benennen Sie **Text input** in den folgenden Namen um. **Add content** fügt den Input sofort in die Instructions ein.
+4. Wählen Sie **Add content** > **Text**, um einen Input hinzuzufügen, und benennen Sie **Text input** in den folgenden Namen um. **Add content** fügt den Input sofort als Chip oben in die Instructions ein, und der Chip bleibt dort.
 
 ```text
 Ticket Details
 ```
 
-5. Fügen Sie die Prompt Instructions in die Instructions ein. Tippen Sie unter dem Abschnitt `## Ticket details` **/** oder nutzen Sie **Add content** und wählen Sie den vorhandenen Input **Ticket Details**.
+5. Fügen Sie die Prompt Instructions unter dem Chip in die Instructions ein. Tippen Sie unter dem Abschnitt `## Ticket details` **/** oder nutzen Sie **Add content** und wählen Sie den vorhandenen Input **Ticket Details** noch einmal; der Prompt funktioniert mit beiden Chips.
 
 ```text
 Write a short, friendly message to the customer about the status of their support ticket. Mention the ticket number, the current state, who is working on it and the latest comment.
 
 ## Ticket details
 ```
-6. Öffnen Sie das Dropdown **Model** im Header **Instructions** und wählen Sie **GPT-4.1**. Die Liste bietet GPT-4o nicht mehr an.
-7. Testen Sie Ihren Prompt: Fügen Sie das Beispiel-JSON-Payload in die Input-Beispieldaten ein und wählen Sie **Test prompt**.
+6. Öffnen Sie das Dropdown **Model** im Header **Instructions**; voreingestellt ist **Basic GPT-4.1 mini**. Wählen Sie **Standard GPT-4.1**. Die Liste bietet GPT-4o nicht mehr an.
+7. Testen Sie Ihren Prompt: Wählen Sie die Schaltfläche **1 input** unter den Instructions, fügen Sie das Beispiel-JSON-Payload als Beispieldaten ein und wählen Sie **Test prompt**.
 
 ```json
 {
@@ -149,7 +149,7 @@ Write a short, friendly message to the customer about the status of their suppor
 
 ![Bild](_images/image_6.png)
 
-12. Speichern Sie das Topic, öffnen Sie den Test Pane und fragen Sie:
+12. Klicken Sie zuerst außerhalb des Nachrichtenfelds, sonst geht die eingefügte Variable verloren und die Nachricht wird leer gespeichert. Speichern Sie dann das Topic, öffnen Sie den Test Pane und fragen Sie:
 
 ```text
 What is the status of my ticket?
