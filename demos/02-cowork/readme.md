@@ -2,20 +2,21 @@
 
 > **Generally available**: Cowork has been generally available since June 2026. Access comes from a Copilot Credits spending policy, not from Frontier enrollment. This module was last checked against Microsoft Learn on 2026-10-17.
 
-Cowork is Microsoft 365's agentic AI that does work on your behalf. You describe an outcome in plain language, Cowork plans and executes the steps across your apps, and you approve before anything is sent or saved. This module is split into six focused topics: start with getting started and its core capabilities, learn to use and author skills, make that work recurring and extensible, then keep it all under human control.
+Cowork is Microsoft 365's agentic AI that does work on your behalf. You describe an outcome in plain language, Cowork plans and executes the steps across your apps, and you approve before anything is sent or saved. This module is split into seven focused topics: start with getting started and its core capabilities, learn to use and author skills, organize the work in projects and make it recurring, extend it with plugins, then keep it all under human control.
 
 ## Topics
 
-![Six numbered topic cards in four phases: get started with core capabilities, use and author skills, make it recurring and extensible, and keep it under human control.](./pptx/images/00-02-overview.svg)
+![Seven numbered topic cards in four phases: get started with core capabilities, use and author skills, organize and repeat the work, and extend it under human control.](./pptx/images/00-02-overview.svg)
 
 | # | Topic | What you learn |
 |---|-------|----------------|
 | 1 | [Getting Started with Cowork](./01-intro/readme.md) | What Cowork is, how it differs from Copilot Chat, where to access it, the interaction model, what it remembers, choosing a model and reasoning effort, and its core capabilities across communication, documents, calendar, research, and automation |
 | 2 | [Understanding Skills: Built-in Skills & the Side Panel](./02-built-in-skills/readme.md) | The built-in skill catalog, how the side panel shows Cowork's live work, and where additional skills come from |
 | 3 | [Creating Custom Skills with SKILL.md](./03-custom-skills/readme.md) | Authoring your own skills in plain language: the `SKILL.md` anatomy, discovery, description tuning, and companion files |
-| 4 | [Scheduled Prompts & Event-Driven Tasks](./04-automation/readme.md) | Running a prompt or custom skill on a schedule or when an email or Teams message arrives, while high-risk actions still pause for approval |
-| 5 | [Extending Cowork with Plugins](./05-plugins/readme.md) | Adding plugins from the Customize page, uploading and sharing your own, and community repositories to add external data and expertise |
-| 6 | [Human-in-the-Loop: Approving Actions & Staying in Control](./06-staying-in-control/readme.md) | The approval model, risk levels, pause and resume, feedback, and how admins govern Cowork |
+| 4 | [Organizing Work with Projects](./04-projects/readme.md) | Keeping related tasks, project instructions that take precedence over your personal ones, project context and outputs together, bringing existing chats in, and archiving finished work |
+| 5 | [Scheduled Prompts & Event-Driven Tasks](./05-automation/readme.md) | Running a prompt or custom skill on a schedule or when an email or Teams message arrives, while high-risk actions still pause for approval |
+| 6 | [Extending Cowork with Plugins](./06-plugins/readme.md) | Adding plugins from the Customize page, uploading and sharing your own, and community repositories to add external data and expertise |
+| 7 | [Human-in-the-Loop: Approving Actions & Staying in Control](./07-staying-in-control/readme.md) | The approval model, risk levels, pause and resume, feedback, and how admins govern Cowork |
 
 ## Licensing at a Glance
 
@@ -34,9 +35,10 @@ Guided, copy-paste demos that put each topic to work. Most run on one shared sce
 | [Understanding Skills](./02-built-in-skills/readme.md) | [Produce a Competitive Market Brief](./02-built-in-skills/demo-01-research-brief.md) |
 | [Creating Custom Skills](./03-custom-skills/readme.md) | [Turn a Market Brief into a Repeatable Product Pitch](./03-custom-skills/demo-01-product-pitch-skill.md) |
 | [Creating Custom Skills](./03-custom-skills/readme.md) | [Build a Reusable Meeting-Prep Skill](./03-custom-skills/demo-02-meeting-prep-skill.md) |
-| [Scheduled Prompts & Event-Driven Tasks](./04-automation/readme.md) | [Automate a Weekly Status Report](./04-automation/demo-01-automation.md) |
-| [Extending Cowork with Plugins](./05-plugins/readme.md) | [Extend Cowork with a Community Plugin](./05-plugins/demo-01-plugins.md) |
-| [Human-in-the-Loop: Staying in Control](./06-staying-in-control/readme.md) | [Turn a Partner Meeting into a Follow-Up Package](./06-staying-in-control/demo-01-follow-up.md) |
+| [Organizing Work with Projects](./04-projects/readme.md) | [Run the Q3 Close as a Project](./04-projects/demo-01-q3-close-project.md) |
+| [Scheduled Prompts & Event-Driven Tasks](./05-automation/readme.md) | [Automate a Weekly Status Report](./05-automation/demo-01-automation.md) |
+| [Extending Cowork with Plugins](./06-plugins/readme.md) | [Extend Cowork with a Community Plugin](./06-plugins/demo-01-plugins.md) |
+| [Human-in-the-Loop: Staying in Control](./07-staying-in-control/readme.md) | [Turn a Partner Meeting into a Follow-Up Package](./07-staying-in-control/demo-01-follow-up.md) |
 
 ## Hands-On Learning
 

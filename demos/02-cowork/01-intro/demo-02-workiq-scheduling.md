@@ -18,7 +18,7 @@ Let Cowork read your live week through Work IQ, reason about where a one-hour Ag
 
 ## Related Topics
 
-This demo runs the [Getting Started with Cowork](./readme.md) interaction model against live tenant data instead of attached files. The Calendar Management, Scheduling, and Enterprise Search capabilities it exercises come from the built-in [Skills](../02-built-in-skills/readme.md) catalogue, and every write to your calendar pauses at the approval flow covered in [Human-in-the-Loop](../06-staying-in-control/readme.md).
+This demo runs the [Getting Started with Cowork](./readme.md) interaction model against live tenant data instead of attached files. The Calendar Management, Scheduling, and Enterprise Search capabilities it exercises come from the built-in [Skills](../02-built-in-skills/readme.md) catalogue, and every write to your calendar pauses at the approval flow covered in [Human-in-the-Loop](../07-staying-in-control/readme.md).
 
 ---
 
@@ -98,7 +98,7 @@ Pick the single best one-hour slot this week for a working discussion on Agentic
 
 **Overview:** So far Cowork has only read. Creating an event writes to your real calendar, and a write is where the approval model shows up: the action carries a risk level and pauses for you. You are about to approve a real booking, which is exactly why the demo made Cowork defend the slot first.
 
-![The approval card with its risk level indicator and Show parameters. Approve once (Send, Post, or Create) approves that one action; More options, Approve All (n) and Cancel are the other choices.](../pptx/images/06-01-approval-model.svg)
+![The approval card with its risk level indicator and Show parameters. Approve once (Send, Post, or Create) approves that one action; More options, Approve All (n) and Cancel are the other choices.](../pptx/images/07-01-approval-model.svg)
 
 **Research / Planning / Discussion:**
 
@@ -146,4 +146,4 @@ Create a one-page Word document called "Agentic AI Prep" with the three most rel
 
 **Expected Outcome:** `Agentic AI Prep.docx` appears under **Output** in the Workspace panel, and an **Update event?** card (**Medium risk**) holds the calendar change before the meeting changes. The card shows the agenda followed by a **Prep document: Agentic AI Prep** link: Cowork's calendar tools can edit the meeting but cannot add file attachments, so it links the document from your OneDrive instead and says so after you select **Update**. Opening the meeting in Outlook shows the link under the agenda, so you walk in briefed by your own data; for a true file attachment, add it to the meeting in Outlook yourself.
 
-> Approvals, risk levels, and how to steer a task mid-run are covered in [Human-in-the-Loop](../06-staying-in-control/readme.md).
+> Approvals, risk levels, and how to steer a task mid-run are covered in [Human-in-the-Loop](../07-staying-in-control/readme.md).

@@ -88,7 +88,7 @@ For a click-by-click admin checklist with the plugin settings and a verification
 
 ![The five steps of a Cowork interaction: describe your task, watch Cowork work, steer at any time with more messages, approve before sensitive actions such as sending an email or posting in Teams, and review the results.](../pptx/images/01-03-interaction-loop.svg)
 
-The approval model, risk indicators, and pause controls are covered in depth in [Human-in-the-Loop](../06-staying-in-control/readme.md).
+The approval model, risk indicators, and pause controls are covered in depth in [Human-in-the-Loop](../07-staying-in-control/readme.md).
 
 ---
 
@@ -126,7 +126,7 @@ Reasoning effort sets how hard Cowork works on a task. One button next to the se
 
 Cowork shows no credit figure per task. In a task, **...** > **Usage details** shows your Cowork usage limit as a bar with the share left, the date the limit resets, and the credits spent over time, all for your whole account, and recent activity can take a while to appear. Admins see consumption per service and per user under **Copilot** > **Cost management** > **Consumption** in the Microsoft 365 admin center.
 
-Admins can turn off the Anthropic model family or build model profiles and assign them to spending policies; see [Human-in-the-Loop](../06-staying-in-control/readme.md).
+Admins can turn off the Anthropic model family or build model profiles and assign them to spending policies; see [Human-in-the-Loop](../07-staying-in-control/readme.md).
 
 ---
 
@@ -165,7 +165,7 @@ Cowork's capabilities span five areas: communication, documents, calendar, resea
 - Manage them on the **Automations** page: each automation has an **Enable** switch and a **...** menu to edit, run now, pause or resume, and delete it
 - Start a task when an email or a Teams message arrives
 
-Automation is covered in detail in [Scheduled Prompts & Event-Driven Tasks](../04-automation/readme.md), and connecting external systems in [Extending Cowork with Plugins](../05-plugins/readme.md).
+Automation is covered in detail in [Scheduled Prompts & Event-Driven Tasks](../05-automation/readme.md), and connecting external systems in [Extending Cowork with Plugins](../06-plugins/readme.md).
 
 ---
 
@@ -200,9 +200,9 @@ Put this interaction model to work end to end on the Aurora Outdoor scenario:
 
 1. **[Understanding Skills](../02-built-in-skills/readme.md)**: the built-in catalog and the side panel that shows Cowork's work
 2. **[Creating Custom Skills](../03-custom-skills/readme.md)**: teach Cowork your own recurring workflows with a `SKILL.md`
-3. **[Scheduled Prompts & Event-Driven Tasks](../04-automation/readme.md)**: put recurring work on a schedule
-4. **[Extending Cowork with Plugins](../05-plugins/readme.md)**: connect external systems with plugins from Discover or your own upload
-5. **[Human-in-the-Loop](../06-staying-in-control/readme.md)**: approvals, risk, and governance
+3. **[Scheduled Prompts & Event-Driven Tasks](../05-automation/readme.md)**: put recurring work on a schedule
+4. **[Extending Cowork with Plugins](../06-plugins/readme.md)**: connect external systems with plugins from Discover or your own upload
+5. **[Human-in-the-Loop](../07-staying-in-control/readme.md)**: approvals, risk, and governance
 
 ---
 

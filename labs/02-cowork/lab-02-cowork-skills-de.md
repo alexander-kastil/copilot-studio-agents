@@ -303,4 +303,4 @@ Use the weekly-status-mail skill to draft my weekly status email
 
 Sie haben einen Cowork Skill zweimal erstellt: einmal über den geführten Ablauf **Add** > **Create new** und einmal, indem Sie `SKILL.md` von Hand geschrieben und hochgeladen haben. Außerdem wissen Sie, wo Cowork Ihre Skills speichert und wie Sie die Aktivierung prüfen.
 
-Weiter mit [Ihr erstes Cowork Plugin bauen](./lab-03-cowork-plugins-de.md).
+Weiter mit [Arbeit mit Cowork Projects organisieren](./lab-03-cowork-projects-de.md).
