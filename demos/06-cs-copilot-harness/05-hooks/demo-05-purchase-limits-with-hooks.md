@@ -1,5 +1,7 @@
 # Enforce Purchase Limits with Hooks
 
+![The Grey Logistics Purchasing Assistant reads the user's approval limit and manager from the Approval Limit table when a session starts, holds an order above that limit before Submit Purchase Order runs, writes a failed order to the Agent Error Log, and lets an order within the limit through as an email.](./_images/05-purchase-limits-with-hooks-overview.svg)
+
 A purchasing agent that places orders must know each requester's approval limit and must never submit an order above it, whatever the requester types. This demo builds a Grey Logistics purchasing agent on the Microsoft Copilot harness and puts both rules into hooks: a Start hook loads the user's limit and manager from Dataverse, a Pre tool use hook holds any order above that limit, and an After tool failure hook writes a failed order to an error log. The audience sees the same request blocked or let through by data in a table, with no change to the agent's instructions.
 
 What you practice here: moving a business rule from the instructions into hooks that read live data on every session and every tool call.

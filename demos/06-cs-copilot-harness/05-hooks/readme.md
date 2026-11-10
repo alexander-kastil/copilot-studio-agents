@@ -8,6 +8,8 @@ The maker takeaway is placement by certainty. Guidance the agent may weigh goes 
 
 Instructions shape what the model plans, and the model weighs them against the request in front of it, so a line such as "log every order" holds most of the time and still leaves the choice to the agent. A workflow as a tool runs only when the agent picks it by its name and description. A hook runs when its event fires, with no decision by the agent in between, which makes it the place for rules you need applied consistently: an audit record for every tool call, a policy check before a tool runs, or the same background facts at the start of every session.
 
+![Three cards from left to right: an Instruction, which the model reads while it plans and which holds as far as the model follows it; a Workflow as a tool, which the agent picks by name and description and which runs when the agent judges it relevant; and a Hook, which runs every time its event occurs; an arrow beneath runs from the agent decides to the event decides, with log every order as the example.](../pptx/images/05-01-who-decides.svg)
+
 | | Instruction | Workflow as a tool | Hook |
 |---|---|---|---|
 | What starts it | The model reads it while it plans | The agent chooses it by name and description | The event fires |
@@ -36,6 +38,8 @@ All outputs are optional, and an empty output leaves the agent's default behavio
 ## Four Patterns Worth Building
 
 Most business rules that need a hook fall into four patterns, one per stage of the run. Each pattern below names the event, what the workflow reads and what it returns.
+
+![Four hook patterns along one run from session start to answer: Start (pre-loop) loads the user's context such as the approval limit and manager from Dataverse, Pre tool use checks a call and returns deny with a reason, Post tool use and After tool failure record what the tools did, and Error decides whether to retry, skip or abort; a strip below warns that a hook fails open and is never the only safeguard.](../pptx/images/05-03-four-patterns.svg)
 
 ### Load the user's context when a session starts
 
@@ -98,6 +102,6 @@ The harness uses usage-based billing: using, building, testing and evaluating th
 
 [Edit and manage your agent flow or workflow in the designer](https://learn.microsoft.com/microsoft-copilot-studio/workflows-experience/flow-designer)
 
-[Use the activity trace to debug your agent](https://learn.microsoft.com/microsoft-copilot-studio/authoring-activity-trace)
+[Use the activity trace to debug your agent (GitHub Copilot)](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/authoring-activity-trace)
 
 [Hooks in Copilot Studio (Copilot Studio team blog)](https://microsoft.github.io/mcscatblog/posts/hooks-in-copilot-studio/)

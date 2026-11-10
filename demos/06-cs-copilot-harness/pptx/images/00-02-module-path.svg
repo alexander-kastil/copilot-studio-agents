@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
   <title id="t">The nine topics of module 6 in five groups</title>
-  <desc id="d">Topics 1 and 2 cover the two kinds of agent: Standard vs. Microsoft Copilot Harness Agents, then the unified Build surface and the new orchestrator. Topics 3 to 6 sit on the Build tab: Agent Skills, then Tools, MCP and the new Workflows designer, then Hooks: Steps That Run Every Time, then grounding with Work IQ, Foundry IQ and Fabric IQ. Topic 7, Test and Evaluate Copilot Studio Agents, comes before an agent ships. Topic 8, Migrate Standard Agents to Microsoft Copilot Harness Agents, covers existing agents. Topic 9, Building Apps in Copilot Studio, sits beside agents. Arrows lead from one group to the next.</desc>
+  <desc id="d">Topics 1 and 2 cover the two kinds of agent: Standard vs. Microsoft Copilot Harness Agents, then the unified Build surface and the new orchestrator. Topics 3 to 6 build and extend the agent: Agent Skills, then Tools, MCP and the new Workflows designer, then Hooks: Steps That Run Every Time, then grounding with Work IQ, Foundry IQ and Fabric IQ. Topic 7, Test and Evaluate Copilot Studio Agents, comes before an agent ships. Topic 8, Migrate Standard Agents to Microsoft Copilot Harness Agents, covers existing agents. Topic 9, Building Apps in Copilot Studio, sits beside agents. Arrows lead from one group to the next.</desc>
   <defs>
     <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
       <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
@@ -13,7 +13,7 @@
   <text x="73" y="182" font-size="28" fill="#57606a">Topics 1 and 2</text>
 
   <rect x="423" y="70" width="330" height="940" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
-  <text x="445" y="140" font-size="30" font-weight="700" fill="#24292f">On the Build tab</text>
+  <text x="445" y="140" font-size="30" font-weight="700" fill="#24292f">Build and extend</text>
   <text x="445" y="182" font-size="28" fill="#57606a">Topics 3 to 6</text>
 
   <rect x="795" y="70" width="330" height="940" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
