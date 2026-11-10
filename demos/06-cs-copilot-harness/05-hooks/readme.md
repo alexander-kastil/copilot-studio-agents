@@ -49,6 +49,8 @@ A **Start (pre-loop)** hook looks up who is chatting and hands the agent the fac
 
 A **Pre tool use** hook receives `toolName` and `parameters` and can return `permissionDecision` set to `deny` with a `permissionDecisionReason`, which blocks the call; the agent reads the reason and explains it to the user. It can also return `modifiedParameters` to correct the arguments, for example to add a cost center the agent left out. It is the only event that can block an action, so a rule such as "no order above the user's limit" lives here, scoped in the **Tools** field to the tool that places the order.
 
+The keys in `parameters` are the tool's own input keys, which for a workflow tool are the designer's `text`, `text_1` and `number`, so read them in the hook workflow's run history before you write the expression. In the class demo the agent held a 6,400 EUR order from the Start context alone and asked for approval; when the user insisted, it called the tool, and the Pre tool use hook blocked the call. The context made the right answer likely, and the hook made it certain.
+
 ### Record what the tools did
 
 A **Post tool use** hook receives the call and its `result` after a tool succeeded: it can write an audit row to a Dataverse table or a SharePoint list, and return `modifiedResult` to redact a value before the model sees it. An **After tool failure** hook receives the `error` of a failed call, can log it the same way or send a mail, and returns `additionalContext` that tells the agent how to read the failure, for example "the HR system is unavailable, offer to try again later". Scoped to all tools, one hook of each covers every call the agent makes.

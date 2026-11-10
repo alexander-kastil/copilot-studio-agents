@@ -1,6 +1,6 @@
 # Ground an Agent in Your Work Context with Work IQ
 
-![Work IQ (Preview) is picked on the MCP tab instead of the legacy workload tools, and the Aurora Account Assistant's question travels by retrieve and fetch through Work IQ to your Outlook mailbox and back as a reply naming the subject and deadline of a real email.](./_images/05-ground-with-iq-overview.svg)
+![Work IQ (Preview) is picked on the MCP tab instead of the legacy workload tools, and the Aurora Account Assistant's question travels by retrieve and fetch through Work IQ to your Outlook mailbox and back as a reply naming the subject and deadline of a real email.](./_images/06-ground-with-iq-overview.svg)
 
 A seller who asks an agent about yesterday's customer email gets a confident answer only when the agent can read that email. Without a grounding tool, the agent answers from general knowledge, and the reply can sound right while naming nothing from your mailbox. In this demo you ask the same question before and after you add Work IQ, then open the activity trace to show the call that made the difference.
 
@@ -19,7 +19,7 @@ Duration: about 15 minutes.
 
 ## Related Topics
 
-This demo applies [Grounding Agents with Work IQ, Foundry IQ, and Fabric IQ](readme.md) to a live agent. The lab repeats the steps with learners and adds routing instructions: [Ground an Agent with Work IQ and Route Work Questions to It](../../../labs/06-cs-copilot-harness/05-iq-grounding/lab-01-ground-with-iq.md).
+This demo applies [Grounding Agents with Work IQ, Foundry IQ, and Fabric IQ](readme.md) to a live agent. The lab repeats the steps with learners and adds routing instructions: [Ground an Agent with Work IQ and Route Work Questions to It](../../../labs/06-cs-copilot-harness/06-iq-grounding/lab-01-ground-with-iq.md).
 
 ## Prerequisites
 
@@ -106,4 +106,4 @@ You grounded an agent in work context. You created it, asked the same question b
 - Compare a grounded reply with an ungrounded one in Preview.
 - Read the activity trace to confirm which tool produced an answer.
 
-Foundry IQ and Fabric IQ use the same Tools panel with different sources, and the lab's optional step adds them. Next, practice the routing in [Ground an Agent with Work IQ and Route Work Questions to It](../../../labs/06-cs-copilot-harness/05-iq-grounding/lab-01-ground-with-iq.md).
+Foundry IQ and Fabric IQ use the same Tools panel with different sources, and the lab's optional step adds them. Next, practice the routing in [Ground an Agent with Work IQ and Route Work Questions to It](../../../labs/06-cs-copilot-harness/06-iq-grounding/lab-01-ground-with-iq.md).

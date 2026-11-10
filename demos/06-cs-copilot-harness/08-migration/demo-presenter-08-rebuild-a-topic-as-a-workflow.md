@@ -1,5 +1,5 @@
 ---
-presents: demo-07-rebuild-a-topic-as-a-workflow.md
+presents: demo-08-rebuild-a-topic-as-a-workflow.md
 budget: 5 min
 beats: 5
 ---
@@ -8,7 +8,7 @@ beats: 5
 
 > **Note:** This demo shows two agents: the Health Advisor, a Standard agent, and **Health Advisor (Upgraded)**, its Microsoft Copilot harness copy.
 
-**Guide:** [Rebuild a Topic and Its Agent Flow as a Workflow](demo-07-rebuild-a-topic-as-a-workflow.md) · runs in [Copilot Studio](https://copilotstudio.microsoft.com) · the upgrade, the workflow runs and every Preview turn consume Copilot Credits
+**Guide:** [Rebuild a Topic and Its Agent Flow as a Workflow](demo-08-rebuild-a-topic-as-a-workflow.md) · runs in [Copilot Studio](https://copilotstudio.microsoft.com) · the upgrade, the workflow runs and every Preview turn consume Copilot Credits
 
 **Agent:** the Standard Health Advisor from [Rebuild the Health Advisor with Two Agent Flows](../../04-cs-tools/04-agent-flows/demo-health-advisor-flows.md), upgraded in Exercise 2 to **Health Advisor (Upgraded)**
 

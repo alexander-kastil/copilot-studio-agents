@@ -22,7 +22,7 @@ Duration: about 40 minutes.
 - A Copilot Studio environment where the **New agent** menu offers **Agent** with the **GitHub Copilot** badge, with the maker role and Copilot Credits available: the upgrade, workflow runs, hooks and Preview turns consume them.
 - Your own environment: select the environment name at the bottom of the left navigation (**Switch environment**) and check that **Current environment** shows the environment named after your account, for example `copilot-studio-01` (Sandbox) for `copilot-studio-01@mst.fastlane.net`. Work through the whole lab in it, never in the shared Default environment.
 - An Office 365 Outlook connection for your own account, so the workflow can send you the candidate summary.
-- The demo [Rebuild a Topic and Its Agent Flow as a Workflow](../../../demos/06-cs-copilot-harness/07-migration/demo-07-rebuild-a-topic-as-a-workflow.md) watched or worked, so the workflow designer is familiar.
+- The demo [Rebuild a Topic and Its Agent Flow as a Workflow](../../../demos/06-cs-copilot-harness/08-migration/demo-08-rebuild-a-topic-as-a-workflow.md) watched or worked, so the workflow designer is familiar.
 
 ## Set up the Standard HR Agent
 

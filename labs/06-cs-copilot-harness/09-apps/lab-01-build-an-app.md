@@ -78,7 +78,7 @@ Expected: open the **Data** view from the app's metadata menu. It names the Shar
 
 A filter is a single, checkable change. Keep the request to one change, so that if the preview breaks you know which change caused it.
 
-![The app build loop: describe the problem, review the draft, and refine by conversation, repeating review and refine until the main scenarios work, then publish.](../../../demos/06-cs-copilot-harness/pptx/images/08-03-building-apps.svg)
+![The app build loop: describe the problem, review the draft, and refine by conversation, repeating review and refine until the main scenarios work, then publish.](../../../demos/06-cs-copilot-harness/pptx/images/09-03-building-apps.svg)
 
 1. Paste the request below and send it.
 
@@ -128,7 +128,7 @@ Expected: your classmate appears in the share list, and the dialog states what d
 
 This step proves the rule from the topic readme. Your classmate can open the app, but the records come from the SharePoint list, and the list has its own permissions. You grant those permissions in SharePoint.
 
-![An app user reaches connected data only after three separate decisions: the maker shares the app, the user consents to the connection, and the data owner grants access to the SharePoint list or Dataverse table.](../../../demos/06-cs-copilot-harness/08-apps/_images/app-sharing-is-not-data-access.svg)
+![An app user reaches connected data only after three separate decisions: the maker shares the app, the user consents to the connection, and the data owner grants access to the SharePoint list or Dataverse table.](../../../demos/06-cs-copilot-harness/09-apps/_images/app-sharing-is-not-data-access.svg)
 
 1. Ask your classmate to open the app link from Step 7 and select the sharing invitation.
 2. Ask your classmate to note what the app shows. The app may open with no records, or show a permission message or a consent prompt for the connection.

@@ -1,5 +1,5 @@
 ---
-presents: demo-08-build-an-app.md
+presents: demo-09-build-an-app.md
 budget: 4 min
 beats: 4
 ---
@@ -8,7 +8,7 @@ beats: 4
 
 > **Note:** This demo shows no agent: it builds Tasting Request Tracker, an app made from the **App (preview)** tile.
 
-**Guide:** [Build an App from a Description](demo-08-build-an-app.md) · runs in [Copilot Studio](https://copilotstudio.microsoft.com) · your personal environment needs Copilot Credits, and the first build takes about five minutes
+**Guide:** [Build an App from a Description](demo-09-build-an-app.md) · runs in [Copilot Studio](https://copilotstudio.microsoft.com) · your personal environment needs Copilot Credits, and the first build takes about five minutes
 
 **Agent:** none; the demo builds Tasting Request Tracker from the **App (preview)** tile in your personal environment
 

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
-  <title id="t">The Grey Logistics Purchasing Assistant enforces purchase limits with three hooks that read and write Dataverse</title>
-  <desc id="d">On the left, two Dataverse tables: Approval Limit holds Email, Limit and Manager, with one row for the presenter at a limit of 5000 and the manager Mara Grey, and Agent Error Log holds Tool, Error and User. In the middle, the Grey Logistics Purchasing Assistant runs three hooks around its order tool. The Start (pre-loop) hook Load my approval limit reads the limit and manager from Approval Limit and returns them as additionalContext. The Pre tool use hook Hold orders above the limit reads the same row before every call of Submit Purchase Order and returns deny when the amount is above the limit. Submit Purchase Order sends an Outlook email with the order. The After tool failure hook Log tool failures adds a row to Agent Error Log and returns additionalContext. On the right, the prompts of Step 6: the first reply names the 5,000 EUR limit and Mara Grey, the 6,400 EUR chairs order is held with no email, the 2,100 EUR monitors order goes through and its email arrives, the Offline Supplier printers order fails and is logged, and after the limit changes to 10000 the chairs order goes through.</desc>
+  <title id="t">The Grey Purchasing Assistant enforces purchase limits with three hooks that read and write Dataverse</title>
+  <desc id="d">On the left, two Dataverse tables: Approval Limit holds Email, Limit and Manager, with one row for the presenter at a limit of 5000 and the manager Mara Grey, and Agent Error Log holds Tool, Error and User. In the middle, the Grey Purchasing Assistant runs three hooks around its order tool. The Start (pre-loop) hook Load my approval limit reads the limit and manager from Approval Limit and returns them as additionalContext. The Pre tool use hook Hold orders above the limit reads the same row before every call of Submit Purchase Order and returns deny when the amount is above the limit. Submit Purchase Order sends an Outlook email with the order. The After tool failure hook Log tool failures adds a row to Agent Error Log and returns additionalContext. On the right, the prompts of Step 6: the first reply names the 5,000 EUR limit and Mara Grey, the 6,400 EUR chairs order is held with no email, the 2,100 EUR monitors order goes through and its email arrives, the Offline Supplier printers order fails and is logged, and after the limit changes to 10000 the chairs order goes through.</desc>
   <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
   <defs>
     <style>
@@ -39,7 +39,7 @@
   <text class="mono" x="94" y="956">User</text>
 
   <rect x="600" y="40" width="600" height="1000" rx="24" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
-  <text class="t" x="630" y="96">Grey Logistics</text>
+  <text class="t" x="630" y="96">Grey</text>
   <text class="t" x="630" y="136">Purchasing Assistant</text>
   <text class="s" x="1170" y="96" text-anchor="end">GitHub Copilot</text>
 

@@ -1,5 +1,5 @@
 ---
-presents: demo-05-ground-with-iq.md
+presents: demo-06-ground-with-iq.md
 budget: 4 min
 beats: 4
 ---
@@ -8,7 +8,7 @@ beats: 4
 
 > **Note:** This demo shows one agent: GH-Aurora Account Assistant, a Microsoft Copilot harness agent.
 
-**Guide:** [Ground an Agent in Your Work Context with Work IQ](demo-05-ground-with-iq.md) · runs in [Copilot Studio](https://copilotstudio.microsoft.com) and [Outlook](https://outlook.office.com/mail/inbox) · Work IQ must be enabled for the tenant with your user on the usage-based billing plan; know which mail thread the question will find
+**Guide:** [Ground an Agent in Your Work Context with Work IQ](demo-06-ground-with-iq.md) · runs in [Copilot Studio](https://copilotstudio.microsoft.com) and [Outlook](https://outlook.office.com/mail/inbox) · Work IQ must be enabled for the tenant with your user on the usage-based billing plan; know which mail thread the question will find
 
 **Agent:** GH-Aurora Account Assistant
 

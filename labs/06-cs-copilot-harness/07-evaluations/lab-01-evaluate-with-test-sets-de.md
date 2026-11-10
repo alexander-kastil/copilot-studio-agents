@@ -173,7 +173,7 @@ Erwartet: Die neue Unterhaltung zeigt bei **Total messages** den Wert 4 (zwei Fr
 
 Das Panel **Configure test set** ist klein und leicht zu übersehen, und wer es überspringt, liest am Ende die eigenen Ergebnisse falsch. Hier liegen drei Einstellungen, und jede ändert, was der Score bedeutet. Vor dem Run sollten Sie vor allem verstehen, was der Grader tatsächlich beurteilt, denn die ehrliche Antwort überrascht die meisten, die von der Seite Evaluation eines Standard Agents kommen.
 
-![Im Tab Evaluate beurteilt General quality nur die Antwort des Agents, und die optionale erwartete Antwort dient den Menschen, die das Set pflegen; auf der Seite des Standard Agents lesen Compare meaning oder Text similarity die Antwort und die verpflichtende erwartete Antwort und bewerten gegen einen Pass Threshold.](../../../demos/06-cs-copilot-harness/06-evaluations/_images/general-quality-inputs.svg)
+![Im Tab Evaluate beurteilt General quality nur die Antwort des Agents, und die optionale erwartete Antwort dient den Menschen, die das Set pflegen; auf der Seite des Standard Agents lesen Compare meaning oder Text similarity die Antwort und die verpflichtende erwartete Antwort und bewerten gegen einen Pass Threshold.](../../../demos/06-cs-copilot-harness/07-evaluations/_images/general-quality-inputs.svg)
 
 1. Setzen Sie im Panel **Configure test set** rechts **Name** auf `Happy Longnose regression set`.
 2. Lesen Sie das Label **Data type** darüber. Es zeigt `Data type: Conversation`, den einzigen Test Set Typ, den es in dieser Experience gibt.
@@ -204,7 +204,7 @@ Erwartet: Der Run endet mit einem aggregierten **Score** und einer Tabelle pro U
 
 > **Tipp:** Nicht jedes Nicht-Bestehen ist ein Fehler des Agents. Ein Case mit **Invalid** konnte nicht bewertet werden, meist weil ein benötigter Input fehlt, und ein Case mit **Error** bedeutet, dass der Run selbst gescheitert ist, typischerweise an einem Authentication- oder Connection-Problem unter dem ausgewählten User Profile. Klären Sie diese beiden, bevor Sie irgendetwas anderes interpretieren; sie sind Ihr Problem, nicht das des Agents.
 
-![Die vier Ergebnisse eines Test Case: Invalid und Error betreffen den Run oder den Case und werden zuerst geklärt; Pass und Fail sind Urteile über die Antwort des Agents und werden danach interpretiert.](../../../demos/06-cs-copilot-harness/06-evaluations/_images/four-outcomes-two-owners.svg)
+![Die vier Ergebnisse eines Test Case: Invalid und Error betreffen den Run oder den Case und werden zuerst geklärt; Pass und Fail sind Urteile über die Antwort des Agents und werden danach interpretiert.](../../../demos/06-cs-copilot-harness/07-evaluations/_images/four-outcomes-two-owners.svg)
 
 ## Übung 9: Jeden Fehlschlag einem Component Bucket zuordnen
 
@@ -313,7 +313,7 @@ Sie haben die Disziplin des Messens aufgebaut, für die es den Tab Evaluate gibt
 - Einen gescheiterten Case knowledge, instructions, tool, multi-turn, test case oder environment zuordnen, bevor Sie etwas ändern.
 - Einen Vergleich mit einer Änderung pro Run ausführen, das Ergebnis vertreten und es exportieren, bevor die Aufbewahrungsfrist von 89 Tagen abläuft.
 
-Lesen Sie als Nächstes die Konzepte hinter all dem in [Copilot Studio Agents testen und evaluieren](../../../demos/06-cs-copilot-harness/06-evaluations/readme.md), und sehen Sie dann in [Den Agentic Reasoning Loop nachverfolgen](../../../demos/06-cs-copilot-harness/02-unified-build-and-orchestrator/demo-02-trace-agent-reasoning.md) zu, wie der Orchestrator die Entscheidungen trifft, die Sie bewertet haben.
+Lesen Sie als Nächstes die Konzepte hinter all dem in [Copilot Studio Agents testen und evaluieren](../../../demos/06-cs-copilot-harness/07-evaluations/readme.md), und sehen Sie dann in [Den Agentic Reasoning Loop nachverfolgen](../../../demos/06-cs-copilot-harness/02-unified-build-and-orchestrator/demo-02-trace-agent-reasoning.md) zu, wie der Orchestrator die Entscheidungen trifft, die Sie bewertet haben.
 
 ## Aufräumen
 

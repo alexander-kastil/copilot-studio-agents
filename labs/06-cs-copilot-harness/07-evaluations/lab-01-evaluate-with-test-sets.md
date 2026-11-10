@@ -173,7 +173,7 @@ Expected: the new conversation shows a **Total messages** count of 4 (two questi
 
 The **Configure test set** panel is small and easy to skip, and skipping it is how makers end up misreading their own results. Three settings live here, and each one changes what the score means. The most important thing to understand before you run is what the grader is actually judging, because the honest answer surprises most people coming from the Evaluation page of a Standard agent.
 
-![On the Evaluate tab, General quality judges the agent's answer alone and the optional expected response serves the people who maintain the set; on the Standard agent page, Compare meaning or Text similarity reads the answer and the required expected response and scores against a pass threshold.](../../../demos/06-cs-copilot-harness/06-evaluations/_images/general-quality-inputs.svg)
+![On the Evaluate tab, General quality judges the agent's answer alone and the optional expected response serves the people who maintain the set; on the Standard agent page, Compare meaning or Text similarity reads the answer and the required expected response and scores against a pass threshold.](../../../demos/06-cs-copilot-harness/07-evaluations/_images/general-quality-inputs.svg)
 
 1. In the **Configure test set** panel on the right, set **Name** to `Happy Longnose regression set`.
 2. Read the **Data type** label above it. It reads `Data type: Conversation`, which is the only test set type available in this experience.
@@ -204,7 +204,7 @@ Expected: the run completes with an aggregate **Score** and a per-conversation t
 
 > **Tip:** Not every non-pass is a failure of the agent. A case that returns **Invalid** could not be graded, usually because a required input is missing, and a case that returns **Error** means the run itself failed, typically an authentication or connection problem under the selected user profile. Clear those two before you interpret anything else; they are your problem, not the agent's.
 
-![The four outcomes of one test case: Invalid and Error are about the run or the case and are cleared first; Pass and Fail are verdicts about the agent's answer and are interpreted second.](../../../demos/06-cs-copilot-harness/06-evaluations/_images/four-outcomes-two-owners.svg)
+![The four outcomes of one test case: Invalid and Error are about the run or the case and are cleared first; Pass and Fail are verdicts about the agent's answer and are interpreted second.](../../../demos/06-cs-copilot-harness/07-evaluations/_images/four-outcomes-two-owners.svg)
 
 ## Exercise 9: Diagnose each failure into a component bucket
 
@@ -313,7 +313,7 @@ You built the measurement discipline the Evaluate tab exists for: you grounded a
 - Sort a failing case into knowledge, instructions, tool, multi-turn, test case, or environment before changing anything.
 - Run a one-change-per-run comparison and defend the result, and export it before the 89-day retention window closes.
 
-Next, read the concepts behind all of this in [Test and Evaluate Copilot Studio Agents](../../../demos/06-cs-copilot-harness/06-evaluations/readme.md), then watch the orchestrator make the decisions you have been grading in [Trace the Agentic Reasoning Loop](../../../demos/06-cs-copilot-harness/02-unified-build-and-orchestrator/demo-02-trace-agent-reasoning.md).
+Next, read the concepts behind all of this in [Test and Evaluate Copilot Studio Agents](../../../demos/06-cs-copilot-harness/07-evaluations/readme.md), then watch the orchestrator make the decisions you have been grading in [Trace the Agentic Reasoning Loop](../../../demos/06-cs-copilot-harness/02-unified-build-and-orchestrator/demo-02-trace-agent-reasoning.md).
 
 ## Cleanup
 

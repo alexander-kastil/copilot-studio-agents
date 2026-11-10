@@ -6,9 +6,9 @@ Modules 03 to 05 built Standard agents out of topics, entities, variables, Power
 
 A harness is the runtime between what you design and the model you pick: it decides when to call the model, what to send it, how to read what comes back, and which tools to call. Before you map a Standard agent onto it, it helps to see every part at once. A run starts from a chat message, a trigger or a workflow's agent node, goes through the agent loop that plans, calls, checks and replans, and ends in an answer, a created file or an action taken through a tool.
 
-![The full Microsoft Copilot harness: a run starts from a chat message, a trigger in preview or a workflow agent node, passes through the agent loop with its model, six hook points, the Build tab parts and the agent sandbox, and returns an answer, a created file card or actions through tools, with Preview, Evaluate and Monitor around it; hooks, triggers and the sandbox are highlighted as new in this topic.](../pptx/images/07-01-full-harness.svg)
+![The full Microsoft Copilot harness: a run starts from a chat message, a trigger in preview or a workflow agent node, passes through the agent loop with its model, six hook points, the Build tab parts and the agent sandbox, and returns an answer, a created file card or actions through tools, with Preview, Evaluate and Monitor around it; hooks, triggers and the sandbox are highlighted as new in this topic.](../pptx/images/08-01-full-harness.svg)
 
-The Build tab holds the parts you met in topics 1 to 5: instructions, knowledge, tools, skills, the model, connected agents and memory. Three parts sit outside it, and this topic gives each its own section after the migration map. Hooks run your workflows at six fixed points of the loop, triggers start the agent when an event happens in a connected service, and the agent sandbox runs code and creates Word, Excel, PowerPoint and PDF files. Preview, Evaluate and Monitor test and watch the whole run.
+The Build tab holds the parts you met in topics 1 to 6: instructions, knowledge, tools, skills, the model, connected agents and memory. Three parts sit outside it. Hooks run your workflows at six fixed points of the loop, as [topic 5](../05-hooks/readme.md) teaches, and this topic gives the other two their own sections after the migration map: triggers start the agent when an event happens in a connected service, and the agent sandbox runs code and creates Word, Excel, PowerPoint and PDF files. Preview, Evaluate and Monitor test and watch the whole run.
 
 ## Migrate When the Scenario Gains Something
 
@@ -22,7 +22,7 @@ Treat a migration as re-architecture. First write down the agent's tasks, outcom
 
 All three routes leave the Standard agent untouched and produce a new agent next to it, so you can run both against the same test set before you switch users over.
 
-![Three routes start from one Standard agent and end in a new Microsoft Copilot harness agent beside it: upgrade on the Copilot Studio home page with a report, rebuild by hand from a capability map, and migrate from the terminal with mcs-assistant and a plan file, while the original stays unchanged.](../pptx/images/07-03-migration-routes.svg)
+![Three routes start from one Standard agent and end in a new Microsoft Copilot harness agent beside it: upgrade on the Copilot Studio home page with a report, rebuild by hand from a capability map, and migrate from the terminal with mcs-assistant and a plan file, while the original stays unchanged.](../pptx/images/08-03-migration-routes.svg)
 
 The first route is the upgrade, in preview. On the Copilot Studio home page you type a request such as `upgrade my HR Buddy agent` into the input box, answer the questions Copilot Studio asks in the chat (whether it found the right agent, what to do with features that don't carry over), and the new agent appears as a card whose name ends in **(Upgraded)**. The upgrade carries over instructions, tools and suggested prompts, can rebuild custom topics as skills or workflows, and reports what was migrated, what requires attention and what was skipped. Knowledge sources, Power Fx expressions and child agents are not migrated, and the upgrade itself consumes Copilot Credits.
 
@@ -32,7 +32,7 @@ The second route is the rebuild by hand: you create a new agent with the **GitHu
 
 The table maps every Standard capability modules 03 to 05 teach onto its place on the GitHub Copilot harness. The last column says whether the upgrade brings it across or you add it yourself.
 
-![Standard parts on the left map to their places on a Microsoft Copilot harness agent on the right: instructions and tools carry over, topics become skills, workflows and hooks, prompts become skills, agent flows are rebuilt as workflows, knowledge is added again, child agents become connected agents or skills, and computer use, voice, Adaptive Cards and some channels stay on Standard agents.](../pptx/images/07-04-where-parts-land.svg)
+![Standard parts on the left map to their places on a Microsoft Copilot harness agent on the right: instructions and tools carry over, topics become skills, workflows and hooks, prompts become skills, agent flows are rebuilt as workflows, knowledge is added again, child agents become connected agents or skills, and computer use, voice, Adaptive Cards and some channels stay on Standard agents.](../pptx/images/08-04-where-parts-land.svg)
 
 | Standard capability (where taught) | On the GitHub Copilot harness | Upgrade |
 |---|---|---|
@@ -56,7 +56,7 @@ The table maps every Standard capability modules 03 to 05 teach onto its place o
 | Child agents ([05/03](../../05-cs-advanced/03-multi-agent/readme.md)) | Skills, or a connected agent | Not migrated |
 | Connected Copilot Studio, Foundry and A2A agents ([05/03](../../05-cs-advanced/03-multi-agent/readme.md), [05/05](../../05-cs-advanced/05-connect-foundry-agents/readme.md)) | **Connected agents** | Added again |
 | Voice and phone menus | Not on the GitHub Copilot harness; voice agents run on the Customer Conversation harness | Stays Standard |
-| Evaluations ([05/06](../../05-cs-advanced/06-evaluations/readme.md)) | The **Evaluate** tab, as in [topic 6](../06-evaluations/readme.md) | Rebuilt |
+| Evaluations ([05/06](../../05-cs-advanced/06-evaluations/readme.md)) | The **Evaluate** tab, as in [topic 7](../07-evaluations/readme.md) | Rebuilt |
 
 Two rows decide most migrations. Every topic you built is a question about purpose: if it carries know-how, it becomes a skill; if it runs fixed steps, it becomes a workflow; if it must happen on every turn or every tool call, it becomes a hook. The rows marked "Stays Standard" are the reason some agents shouldn't move yet, and the reason a team often runs both kinds side by side.
 
@@ -67,11 +67,11 @@ Two rows decide most migrations. Every topic you built is a question about purpo
 
 A Standard topic gives you a path the agent walks node by node, which is why modules 03 and 04 used topics whenever a process had to run the same way every time. The GitHub Copilot harness has no topics, yet Microsoft's guidance states that both harnesses allow predictable, deterministic responses: through predefined topics on the standard harness and through workflows on the GitHub Copilot harness. What changes is who decides that the fixed steps run, and the harness gives you three answers.
 
-![Three ways to keep fixed steps on a Microsoft Copilot harness agent: a workflow tool that the agent chooses by its description, a hook whose workflow runs every time its event fires, and a workflow that owns the order and calls the agent from one agent node.](../pptx/images/07-05-tool-hook-agent-node.svg)
+![Three ways to keep fixed steps on a Microsoft Copilot harness agent: a workflow tool that the agent chooses by its description, a hook whose workflow runs every time its event fires, and a workflow that owns the order and calls the agent from one agent node.](../pptx/images/08-05-tool-hook-agent-node.svg)
 
 A workflow as a tool keeps the steps fixed and leaves the decision to the agent. The workflow starts with the trigger **When an agent calls the flow**, ends with **Respond to the agent**, and runs connectors, branches, loops and AI actions in between; the agent picks it by its name and description, the way a generative Standard agent picks a topic by its description. It must be published, it must answer within the 100 second action limit, and **Asynchronous response** under **Networking** must stay off. Agent flows you built in module 04 aren't converted, so each one is rebuilt as a workflow in the designer.
 
-A hook takes the decision away from the agent. You add it from the top menu bar (**…** > **Hooks** > **Create**), pick an event and bind a workflow whose inputs and outputs fit that event, and the workflow runs every time the event fires. The events are **Start (pre-loop)**, **User prompt submitted**, **Error**, **Pre tool use**, **Post tool use** and **After tool failure**; a **Start (pre-loop)** hook replaces a Conversation Start topic by returning `additionalContext`, and only **Pre tool use** can block a call, by returning `permissionDecision` set to `deny`. A failing hook doesn't stop the agent, so it is never the only safeguard for a business-critical rule.
+A hook takes the decision away from the agent: you bind a workflow to an event such as **Start (pre-loop)** or **Pre tool use**, and it runs every time the event fires. A **Start (pre-loop)** hook replaces a Conversation Start topic by returning `additionalContext`, an **Error** hook takes over the job of the On Error topic, and only **Pre tool use** can block a call. [Topic 5](../05-hooks/readme.md) teaches the six events, their inputs and outputs and the patterns built on them.
 
 | | Workflow as a tool | Hook |
 |---|---|---|
@@ -81,32 +81,11 @@ A hook takes the decision away from the agent. You add it from the top menu bar 
 
 The third answer inverts the relationship: a workflow owns the order of the steps and calls the agent from one agent node, as the follow-up workflow in [topic 4](../04-workflows-and-mcp/readme.md) does. Use it when the process itself is the product, for example an approval that must always run through the same three steps and only needs the agent to draft one of them.
 
-## Hooks: Six Points Where Your Workflow Runs
-
-A hook has two parts: an event in the agent's lifecycle and a workflow that runs when the event fires. Copilot Studio passes the workflow what just happened and reads its response back into the conversation, so the response changes what the agent does next. You manage hooks from the top menu bar (**…** > **Hooks**), and on the **Add hook** page you pick the **Event type**, a **Name**, the **Tools** for the three tool events and the **Workflow**. **New workflow** opens a starter with **When an agent calls the flow** carrying the event's inputs and **Respond to the agent** carrying its outputs; keep those field names, because Copilot Studio matches the workflow to the event by them.
-
-![One run of a Microsoft Copilot harness agent from session start to answer, with six hook events along it: Start (pre-loop) returns additionalContext, User prompt submitted returns modifiedPrompt, Pre tool use can deny the call or change its parameters as the only hook that blocks, Post tool use returns modifiedResult on success, After tool failure returns additionalContext on failure, and Error decides retry, skip or abort; every hook receives event, timestamp and metadata.](../pptx/images/07-06-hook-events.svg)
-
-| Event | When it fires | What the workflow receives | What it can return |
-|---|---|---|---|
-| **Start (pre-loop)** | A new conversation begins | Only the three common inputs | `additionalContext`: background for the session |
-| **User prompt submitted** | Each user message, before the agent reads it | `prompt` | `modifiedPrompt`, `suppressOutput` |
-| **Pre tool use** | Before the agent calls a tool | `toolName`, `parameters` | `permissionDecision` (`deny`), `permissionDecisionReason`, `modifiedParameters`, `additionalContext`, `suppressOutput` |
-| **Post tool use** | After a tool finishes successfully | `toolName`, `parameters`, `result` | `modifiedResult`, `additionalContext`, `suppressOutput` |
-| **After tool failure** | When a tool returns an error | `toolName`, `parameters`, `error` | `additionalContext` |
-| **Error** | An error outside a tool call | `error`, `errorContext`, `recoverable` | `errorHandling` (`retry`, `skip`, `abort`), `retryCount`, `userNotification`, `suppressOutput` |
-
-Every event also sends `event`, `timestamp` and `metadata`, an object with the conversation ID, the user's channel ID and Entra object ID, the display name, the channel and the agent's ID and names. Any metadata field can be empty, and the user fields are empty when the person isn't signed in, so check a field before the workflow relies on it. All outputs are optional: an empty output leaves the agent's default behavior in place.
-
-Each event answers one kind of need. A **Start (pre-loop)** hook looks up the user's region, team or open cases and hands it to the agent before the first message, the job a Conversation Start topic did. **User prompt submitted** standardizes what the agent receives, and **Pre tool use** checks a call against a business rule, blocks it with `permissionDecision` set to `deny`, or corrects the arguments. **Post tool use** redacts or reformats a result or writes an audit record, **After tool failure** tells the agent how to read a failed call, and **Error** decides whether to retry, skip or abort and what the user is told.
-
-The three tool events run for every tool until you narrow them in the **Tools** field, and both scopes combine: one hook on all tools writes the audit record while a second hook on one sensitive tool adds an extra check. One workflow can serve as a tool and as several hooks, because a hook stores a reference to it, so editing the workflow changes every hook that uses it. The workflow must be published, hooks are stored only when you save the agent and reach users only after you publish it, and every input (prompts, tool results, error messages) is untrusted content to validate. A hook that fails, times out or returns something unreadable lets the agent continue as if it returned nothing, which is why it is never the only safeguard for a business-critical rule.
-
 ## Triggers: Agents That Start on an Event
 
 Triggers, in preview, make a Microsoft Copilot harness agent autonomous: it runs when something happens in a connected service, such as an email arriving, an item created in SharePoint or a scheduled time. They are the counterpart of the event triggers you gave Standard autonomous agents in [module 05](../../05-cs-advanced/01-autonomous-agents/readme.md). A trigger sends only the event details, and the agent's instructions and tools decide what happens with them. So add the tools first and write instructions that say how to handle the event and when to use each tool.
 
-![Three event sources, New email, SharePoint item created and Recurrence, feed a Trigger (preview) with its connection, extra instructions and trigger options; the trigger sends event details to the agent, whose instructions and tools do the work, tested with Start listening or a previous event, and after publishing the agent is activated for the maker with maker credentials or shared so others run it with their own credentials, billed in Copilot Credits to the environment.](../pptx/images/07-07-triggers.svg)
+![Three event sources, New email, SharePoint item created and Recurrence, feed a Trigger (preview) with its connection, extra instructions and trigger options; the trigger sends event details to the agent, whose instructions and tools do the work, tested with Start listening or a previous event, and after publishing the agent is activated for the maker with maker credentials or shared so others run it with their own credentials, billed in Copilot Credits to the environment.](../pptx/images/08-06-triggers.svg)
 
 You add a trigger under **Triggers** on the agent and configure it in four parts. The connection must show a green check, except for triggers such as **Recurrence** and the Copilot and Teams triggers, which need none. Optional extra instructions tell the agent what this trigger means, which matters as soon as an agent has more than one, and the **Trigger options** decide which events invoke the agent (for **New email**: the folder, To and CC). **Editable by user** marks the options people may change once you share the agent, and **Advanced parameters** hold the rest.
 
@@ -118,7 +97,7 @@ After publishing, the success dialog asks who runs the agent. **Activate for mys
 
 Every task of a Microsoft Copilot harness agent runs in a secure sandbox governed by Copilot Studio, a Bash container where the agent runs code. It is the native code interpreter of the harness comparison (Standard agents get one only as an opt-in for prompts) and the place where exact computation from a Power Fx formula lands. There is no tool to add and no switch to turn on: when a request needs a file or a calculation, the agent writes and runs the code itself.
 
-![A chat request to chart revenue by region with sales.xlsx attached runs in the agent sandbox, where Python code uses pandas, matplotlib, openpyxl, python-docx, python-pptx and reportlab with the built-in file skills, and returns a created file card with a Download button; a follow-up makes the agent read the file back, and each file is limited to 10 MB and kept 28 days after the last activity.](../pptx/images/07-08-agent-sandbox.svg)
+![A chat request to chart revenue by region with sales.xlsx attached runs in the agent sandbox, where Python code uses pandas, matplotlib, openpyxl, python-docx, python-pptx and reportlab with the built-in file skills, and returns a created file card with a Download button; a follow-up makes the agent read the file back, and each file is limited to 10 MB and kept 28 days after the last activity.](../pptx/images/08-07-agent-sandbox.svg)
 
 The sandbox comes with Python packages for file and data work, and the user only describes the result, for example a summary of a sales workbook with a chart of revenue by region.
 
@@ -143,11 +122,11 @@ The Action node that called an agent flow becomes the steps of that flow inside 
 
 ## Hands-On Demo
 
-- [Rebuild a Topic and Its Agent Flow as a Workflow](./demo-07-rebuild-a-topic-as-a-workflow.md): upgrade the Health Advisor from module 04, read what the upgrade carried over and skipped, and rebuild its symptom topic and agent flow as a workflow tool the upgraded agent calls.
+- [Rebuild a Topic and Its Agent Flow as a Workflow](./demo-08-rebuild-a-topic-as-a-workflow.md): upgrade the Health Advisor from module 04, read what the upgrade carried over and skipped, and rebuild its symptom topic and agent flow as a workflow tool the upgraded agent calls.
 
 ## Hands-On Lab
 
-- [Upgrade the HR Agent and Rebuild Its Topics](../../../labs/06-cs-copilot-harness/07-migration/lab-01-upgrade-the-hr-agent.md): upgrade the HR agent you built in module 03, map each of its topics to a skill, a workflow or a hook, rebuild the employee data topic as a workflow tool, add a session-start hook, and prove both in Preview.
+- [Upgrade the HR Agent and Rebuild Its Topics](../../../labs/06-cs-copilot-harness/08-migration/lab-01-upgrade-the-hr-agent.md): upgrade the HR agent you built in module 03, map each of its topics to a skill, a workflow or a hook, rebuild the employee data topic as a workflow tool, add a session-start hook, and prove both in Preview.
 
 ## Key Topics covered in this module
 

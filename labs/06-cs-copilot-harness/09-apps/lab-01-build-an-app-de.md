@@ -78,7 +78,7 @@ Erwartet: Öffnen Sie die Ansicht **Data** über das Metadaten-Menü der App. Si
 
 Ein Filter ist eine einzelne, überprüfbare Änderung. Beschränken Sie den Request auf eine Änderung, damit Sie wissen, welche Änderung die Ursache war, falls die Vorschau kaputtgeht.
 
-![Die Build-Schleife einer App: das Problem beschreiben, den Entwurf prüfen und im Gespräch verfeinern, Prüfen und Verfeinern wiederholen, bis die Hauptszenarien funktionieren, dann veröffentlichen.](../../../demos/06-cs-copilot-harness/pptx/images/08-03-building-apps.svg)
+![Die Build-Schleife einer App: das Problem beschreiben, den Entwurf prüfen und im Gespräch verfeinern, Prüfen und Verfeinern wiederholen, bis die Hauptszenarien funktionieren, dann veröffentlichen.](../../../demos/06-cs-copilot-harness/pptx/images/09-03-building-apps.svg)
 
 1. Fügen Sie den folgenden Request ein und senden Sie ihn.
 
@@ -128,7 +128,7 @@ Erwartet: Die Person aus dem Kurs erscheint in der Liste der Freigaben, und der 
 
 Dieser Schritt belegt die Regel aus dem Topic Readme. Die Person aus dem Kurs kann die App öffnen, aber die Datensätze kommen aus der SharePoint-Liste, und die Liste hat eigene Berechtigungen. Diese Berechtigungen erteilen Sie in SharePoint.
 
-![Ein App User erreicht verbundene Daten erst nach drei getrennten Entscheidungen: Der Maker teilt die App, der User stimmt der Connection zu, und der Owner der Daten erteilt Zugriff auf die SharePoint-Liste oder die Dataverse-Tabelle.](../../../demos/06-cs-copilot-harness/08-apps/_images/app-sharing-is-not-data-access.svg)
+![Ein App User erreicht verbundene Daten erst nach drei getrennten Entscheidungen: Der Maker teilt die App, der User stimmt der Connection zu, und der Owner der Daten erteilt Zugriff auf die SharePoint-Liste oder die Dataverse-Tabelle.](../../../demos/06-cs-copilot-harness/09-apps/_images/app-sharing-is-not-data-access.svg)
 
 1. Bitten Sie die Person aus dem Kurs, den App-Link aus Schritt 7 zu öffnen und die Einladung zum Teilen auszuwählen.
 2. Bitten Sie die Person, zu notieren, was die App zeigt. Die App kann ohne Datensätze öffnen oder eine Berechtigungsmeldung oder einen Consent Prompt für die Connection zeigen.

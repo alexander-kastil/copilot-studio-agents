@@ -2,7 +2,7 @@
 
 Aurora Provisions sales reps log customer tasting requests in email, so nobody can see which requests are open or who owns them. In this demo you describe a small tracker app in plain language, refine it twice by conversation, read the generated code, then publish and share it. The app runs on sample data, which keeps the focus on the build loop and away from connections.
 
-![The app build loop: describe the problem, review the draft, and refine by conversation, repeating review and refine until the main scenarios work, then publish.](../pptx/images/08-03-building-apps.svg)
+![The app build loop: describe the problem, review the draft, and refine by conversation, repeating review and refine until the main scenarios work, then publish.](../pptx/images/09-03-building-apps.svg)
 
 What you practice here: turning a plain-language description into a published app through small, checked refinements.
 
@@ -69,7 +69,7 @@ Expected: the status menu in each row, the status filter and the form offer the 
 
 Every app has real code behind it. The code view shows what Copilot Studio generated. The view is read-only, so you learn from the code but make every change through the conversation. Reading the priority field shows how your sentence became a data structure.
 
-![A message in the conversation makes Copilot Studio update the data model, the logic, and the user interface together. The live preview and the read-only code view show the result, and every change goes back through the conversation.](../pptx/images/08-01-what-an-app-is.svg)
+![A message in the conversation makes Copilot Studio update the data model, the logic, and the user interface together. The live preview and the read-only code view show the result, and every change goes back through the conversation.](../pptx/images/09-01-what-an-app-is.svg)
 
 1. In the bar above the preview, select the **Code view** icon (**</>**) next to the **App preview** eye. The **Code preview** pane opens with a file tree and **Search file names**.
 2. Open `src`, then `data`, then `tasting-requests.ts`, and find the priority field and its choices.

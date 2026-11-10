@@ -84,7 +84,7 @@ Test methods are not carried in the file, and **General quality** is applied by 
 
 Writing questions by hand is the only way to get the cases that hurt: the refusal, the off-topic request, the multi-turn exchange where the agent has to ask which account before it can answer. A set built only from generation confirms your assumptions; a set with hand-written guardrails challenges them.
 
-![A Quick conversation set, a CSV upload, or questions you write yourself fill the test set; the test set goes to a run, which produces a score and per-case verdicts, then you diagnose one failing case, change exactly one component, and run again.](../pptx/images/06-01-test-set-loop.svg)
+![A Quick conversation set, a CSV upload, or questions you write yourself fill the test set; the test set goes to a run, which produces a score and per-case verdicts, then you diagnose one failing case, change exactly one component, and run again.](../pptx/images/07-01-test-set-loop.svg)
 
 ## What the graders actually measure
 
@@ -233,7 +233,7 @@ The holder can view and run evaluation test sets from other makers, and can rena
 
 ## Hands-On Lab
 
-- [Evaluate a Microsoft Copilot Harness Agent with Test Sets](../../../labs/06-cs-copilot-harness/06-evaluations/lab-01-evaluate-with-test-sets.md): Ground an agent, install weak instructions on purpose, fill a test set three ways, run a baseline, diagnose every failure into a component bucket, change one thing, and prove the fix with a second run of the identical set.
+- [Evaluate a Microsoft Copilot Harness Agent with Test Sets](../../../labs/06-cs-copilot-harness/07-evaluations/lab-01-evaluate-with-test-sets.md): Ground an agent, install weak instructions on purpose, fill a test set three ways, run a baseline, diagnose every failure into a component bucket, change one thing, and prove the fix with a second run of the identical set.
 - [Build, Evaluate, and Monitor a Northwind Sales Assistant](../../../labs/06-cs-copilot-harness/02-unified-build-and-orchestrator/lab-01-evaluate-and-monitor-agent.md): Work all four tabs end to end, from composing the agent on Build through scoring it on Evaluate and reviewing its runs on Monitor.
 
 ## Key Topics covered in this module

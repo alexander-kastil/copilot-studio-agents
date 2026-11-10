@@ -1,6 +1,6 @@
 # Rebuild a Topic and Its Agent Flow as a Workflow
 
-![The Standard Health Advisor's Check Symptoms topic, with three questions, an agent flow and a Power Fx condition, is upgraded to a Microsoft Copilot harness agent, where the same journey runs as one Check Symptoms workflow tool: inputs Age, Gender and Symptoms, a classify node with the branches Cleared for light work, See a doctor and Other, and Respond to the agent returning Outcome.](./_images/07-rebuild-a-topic-as-a-workflow-overview.svg)
+![The Standard Health Advisor's Check Symptoms topic, with three questions, an agent flow and a Power Fx condition, is upgraded to a Microsoft Copilot harness agent, where the same journey runs as one Check Symptoms workflow tool: inputs Age, Gender and Symptoms, a classify node with the branches Cleared for light work, See a doctor and Other, and Respond to the agent returning Outcome.](./_images/08-rebuild-a-topic-as-a-workflow-overview.svg)
 
 The Health Advisor from module 04 walks every user through the same Check Symptoms topic: three fixed questions, an agent flow that judges the symptoms, and a Power Fx condition that decides the follow-up. A Microsoft Copilot harness agent has no topics, and the upgrade doesn't migrate Power Fx, so the deterministic part of that journey needs a new home. In this demo you upgrade the Health Advisor, then rebuild its symptom check as one workflow tool whose classify node replaces the formula, and you prove that the new agent reaches the same outcomes.
 
@@ -183,4 +183,4 @@ You rebuilt the Health Advisor's deterministic symptom check on the GitHub Copil
 - Turn question nodes into workflow inputs, and a prompt plus a Power Fx condition into one classify node.
 - Prove a migration by running the same journeys against both agents.
 
-Next, migrate the HR agent you built in module 03 in [Upgrade the HR Agent and Rebuild Its Topics](../../../labs/06-cs-copilot-harness/07-migration/lab-01-upgrade-the-hr-agent.md), where a hook takes over what a system topic did.
+Next, migrate the HR agent you built in module 03 in [Upgrade the HR Agent and Rebuild Its Topics](../../../labs/06-cs-copilot-harness/08-migration/lab-01-upgrade-the-hr-agent.md), where a hook takes over what a system topic did.

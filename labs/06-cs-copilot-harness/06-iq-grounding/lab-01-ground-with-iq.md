@@ -138,7 +138,7 @@ Expected: the agent answers the question directly, and the step list shows no **
 
 Foundry IQ and Fabric IQ ground an agent in data outside the HR MCP server, but each needs a resource that your instructor must provide: a knowledge base in Microsoft Foundry, or a semantic model in Microsoft Fabric that your account can open. Skip this step if you do not have access. Add either connection to a second agent, so the HR agent from Steps 1 to 7 stays as built.
 
-![Copilot Studio holds the Work IQ, Foundry IQ and Fabric IQ connections as tools, while each source stays in Microsoft 365, Microsoft Foundry or Microsoft Fabric with the owner who tunes it.](../../../demos/06-cs-copilot-harness/pptx/images/05-01-iq-grounding.svg)
+![Copilot Studio holds the Work IQ, Foundry IQ and Fabric IQ connections as tools, while each source stays in Microsoft 365, Microsoft Foundry or Microsoft Fabric with the owner who tunes it.](../../../demos/06-cs-copilot-harness/pptx/images/06-01-iq-grounding.svg)
 
 Path A: Foundry IQ
 
@@ -190,7 +190,7 @@ You grounded an agent in the class HR MCP server. You added the server as a tool
 - Write Instructions that send one kind of question to a grounding tool and rule out its write operations.
 - Prove grounding in the step list and tell a grounded reply from a guess.
 
-Return to [Grounding Agents with Work IQ, Foundry IQ, and Fabric IQ](../../../demos/06-cs-copilot-harness/05-iq-grounding/readme.md) to compare the grounding sources when you choose one for a real agent.
+Return to [Grounding Agents with Work IQ, Foundry IQ, and Fabric IQ](../../../demos/06-cs-copilot-harness/06-iq-grounding/readme.md) to compare the grounding sources when you choose one for a real agent.
 
 ## Cleanup
 

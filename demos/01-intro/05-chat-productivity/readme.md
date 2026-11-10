@@ -28,7 +28,7 @@ Knowledge is what makes the agent specific to your team. An agent grounds on up 
 
 You share the agent with specific people, or with the whole organization when your admin allows org-wide sharing. To make it discoverable, submit it to the org catalog: an admin reviews it in the Microsoft 365 admin center and can approve it into **Built by your org** in the Agent Store. SharePoint agents are moving into Agent Builder from mid-November 2026, as [Copilot Studio security and governance](https://learn.microsoft.com/microsoft-copilot-studio/security-and-governance) explains.
 
-Agent Builder stops where integration starts: it can't author actions that call external services. When the agent needs a connector, a workflow, or a custom tool, copy it to Copilot Studio and continue there. [Module 3: Copilot Studio](../../03-cs-basics/readme.md) picks up from that point, and building apps from a description is covered with [Apps in Copilot Studio](../../06-cs-copilot-harness/08-apps/readme.md).
+Agent Builder stops where integration starts: it can't author actions that call external services. When the agent needs a connector, a workflow, or a custom tool, copy it to Copilot Studio and continue there. [Module 3: Copilot Studio](../../03-cs-basics/readme.md) picks up from that point, and building apps from a description is covered with [Apps in Copilot Studio](../../06-cs-copilot-harness/09-apps/readme.md).
 
 | Scenario | Reach for |
 |---|---|

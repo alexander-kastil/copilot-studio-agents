@@ -99,7 +99,7 @@ If you do not have a product sheet, create a file named `northwind-products.md` 
 
 Expected: the document appears under Knowledge beside **Search all websites**, and its status moves from **In progress** to **Ready**; the status refreshes only after a page reload. The agent can now draw on it, though you have not yet confirmed that it does; that is the next exercise.
 
-> **Note:** To ground the agent in live Microsoft 365 data (emails, files, meetings) instead of an uploaded file, add **Work IQ (Preview)** from **Tools**, on the **MCP** tab of **Add a tool**, as in [Ground an Agent in Your Work Context with Work IQ](../05-iq-grounding/demo-05-ground-with-iq.md). This demo uses a file so any learner can complete it without tenant data.
+> **Note:** To ground the agent in live Microsoft 365 data (emails, files, meetings) instead of an uploaded file, add **Work IQ (Preview)** from **Tools**, on the **MCP** tab of **Add a tool**, as in [Ground an Agent in Your Work Context with Work IQ](../06-iq-grounding/demo-06-ground-with-iq.md). This demo uses a file so any learner can complete it without tenant data.
 
 ## Exercise 4: Test grounding and iterate in Preview
 

@@ -25,7 +25,7 @@ The difference matters most for questions about information that moves, such as 
 
 ## What each IQ grounds on
 
-![Copilot Studio holds the Work IQ, Foundry IQ and Fabric IQ connections as tools, while each source stays in Microsoft 365, Microsoft Foundry or Microsoft Fabric with the owner who tunes it.](../pptx/images/05-01-iq-grounding.svg)
+![Copilot Studio holds the Work IQ, Foundry IQ and Fabric IQ connections as tools, while each source stays in Microsoft 365, Microsoft Foundry or Microsoft Fabric with the owner who tunes it.](../pptx/images/06-01-iq-grounding.svg)
 
 ### Work IQ
 
@@ -84,11 +84,11 @@ The legacy workload tools, such as Mail and Teams, appear in the same tool catal
 
 ## Hands-On Demo
 
-- [Ground an Agent in Your Work Context with Work IQ](./demo-05-ground-with-iq.md): the presenter asks the same work question before and after adding Work IQ, then opens the activity trace to show the call that changed the reply.
+- [Ground an Agent in Your Work Context with Work IQ](./demo-06-ground-with-iq.md): the presenter asks the same work question before and after adding Work IQ, then opens the activity trace to show the call that changed the reply.
 
 ## Hands-On Lab
 
-- [Ground an Agent with the HR MCP Server and Route Staff Questions to It](../../../labs/06-cs-copilot-harness/05-iq-grounding/lab-01-ground-with-iq.md): learners add the class HR MCP server, write Instructions that route staff questions to it, and read the Preview step list. An optional step adds Foundry IQ or Fabric IQ when the resources exist.
+- [Ground an Agent with the HR MCP Server and Route Staff Questions to It](../../../labs/06-cs-copilot-harness/06-iq-grounding/lab-01-ground-with-iq.md): learners add the class HR MCP server, write Instructions that route staff questions to it, and read the Preview step list. An optional step adds Foundry IQ or Fabric IQ when the resources exist.
 
 ## Key Topics covered in this module
 

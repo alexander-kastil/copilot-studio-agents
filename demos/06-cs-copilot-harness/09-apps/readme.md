@@ -22,7 +22,7 @@ An app in Copilot Studio is an interactive web experience that a maker describes
 
 The maker can open the code behind the app, but the code view is read-only. The maker reads and checks the code there, and makes every change in the conversation.
 
-![A message in the conversation makes Copilot Studio update the data model, the logic, and the user interface together. The live preview and the read-only code view show the result, and every change goes back through the conversation.](../pptx/images/08-01-what-an-app-is.svg)
+![A message in the conversation makes Copilot Studio update the data model, the logic, and the user interface together. The live preview and the read-only code view show the result, and every change goes back through the conversation.](../pptx/images/09-01-what-an-app-is.svg)
 
 ## How these apps compare
 
@@ -30,7 +30,7 @@ The benefit of an app in Copilot Studio is how much a description buys. You desc
 
 Microsoft offers other ways to build a business app, and each starts somewhere else. A Power Apps canvas app starts from a blank canvas, where you place controls and write Power Fx formulas, so you design every part of the screen. A Power Apps model-driven app starts from the data model in Dataverse, and its forms, views and layout come from the components you add. The **App** skill in Copilot Cowork (Frontier) builds a lightweight, interactive app from a description inside a Cowork conversation.
 
-![Four columns compare how you build each app and what you get: an app in Copilot Studio is generated from a description with data, connections and sharing in one place; the App skill in Cowork builds a lightweight app in a conversation; a Power Apps canvas app is designed control by control on a blank canvas; a model-driven app starts from the data model in Dataverse.](../pptx/images/08-02-apps-compared.svg)
+![Four columns compare how you build each app and what you get: an app in Copilot Studio is generated from a description with data, connections and sharing in one place; the App skill in Cowork builds a lightweight app in a conversation; a Power Apps canvas app is designed control by control on a blank canvas; a model-driven app starts from the data model in Dataverse.](../pptx/images/09-02-apps-compared.svg)
 
 The Power Apps vibe preview, the earlier AI-native app builder in Power Apps, now points makers to app building in Copilot Cowork and Copilot Studio.
 
@@ -57,7 +57,7 @@ App creation is a conversation that builds toward a working app. Each pass throu
 3. Refine by conversation. Describe one change, such as adding a filter or changing a field. You can also attach a file, add a screenshot, or annotate the canvas to point at the part you want changed.
 4. Repeat until the main scenarios work, then publish.
 
-![The app build loop: describe the problem, review the draft, and refine by conversation, repeating review and refine until the main scenarios work, then publish.](../pptx/images/08-03-building-apps.svg)
+![The app build loop: describe the problem, review the draft, and refine by conversation, repeating review and refine until the main scenarios work, then publish.](../pptx/images/09-03-building-apps.svg)
 
 Each change updates the data model, the logic, and the interface together. Keep requests small and review the preview after each one, because a large request is harder to check when something goes wrong. Microsoft recommends the same approach for complex apps: break the requirements into smaller changes.
 
@@ -130,11 +130,11 @@ Microsoft's guidance is to use the normal design, security, testing, and release
 
 ## Hands-On Demo
 
-- [Build an App from a Description](./demo-08-build-an-app.md): describe a tasting request tracker, refine it twice, read the code view, then publish and share it.
+- [Build an App from a Description](./demo-09-build-an-app.md): describe a tasting request tracker, refine it twice, read the code view, then publish and share it.
 
 ## Hands-On Lab
 
-- [Build and Share a Business App](../../../labs/06-cs-copilot-harness/08-apps/lab-01-build-an-app.md): connect an app to a SharePoint list, publish it, share it with a classmate, and confirm that data access is a separate permission.
+- [Build and Share a Business App](../../../labs/06-cs-copilot-harness/09-apps/lab-01-build-an-app.md): connect an app to a SharePoint list, publish it, share it with a classmate, and confirm that data access is a separate permission.
 
 ## Key Topics covered in this module
 
