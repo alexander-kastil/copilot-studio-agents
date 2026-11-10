@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Who decides that a step runs</title>
+  <desc id="d">Three cards read left to right. Instruction: the model reads it while it plans, and it holds as far as the model follows it. Workflow as a tool: the agent picks it by name and description, and it runs when the agent judges it relevant. Hook: the event fires, and it runs every time the event occurs. An arrow under the cards runs from the agent decides on the left to the event decides on the right. The example at the bottom: log every order can be a line in the instructions, a tool the agent may call, or a Post tool use hook that writes the record after every call.</desc>
+  <defs>
+    <marker id="ah" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+
+  <g fill="#24292f">
+    <rect x="60" y="60" width="560" height="600" rx="14" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text x="340" y="140" font-size="40" font-weight="700" text-anchor="middle">Instruction</text>
+    <line x1="100" y1="185" x2="580" y2="185" stroke="#8c959f" stroke-width="2"/>
+    <text x="100" y="250" font-size="28" fill="#57606a">What starts it</text>
+    <text x="100" y="300" font-size="30">The model reads it</text>
+    <text x="100" y="342" font-size="30">while it plans</text>
+    <text x="100" y="450" font-size="28" fill="#57606a">How reliably it runs</text>
+    <text x="100" y="500" font-size="30">Holds as far as the</text>
+    <text x="100" y="542" font-size="30">model follows it</text>
+
+    <rect x="680" y="60" width="560" height="600" rx="14" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+    <text x="960" y="140" font-size="40" font-weight="700" text-anchor="middle">Workflow as a tool</text>
+    <line x1="720" y1="185" x2="1200" y2="185" stroke="#8c959f" stroke-width="2"/>
+    <text x="720" y="250" font-size="28" fill="#57606a">What starts it</text>
+    <text x="720" y="300" font-size="30">The agent picks it by</text>
+    <text x="720" y="342" font-size="30">name and description</text>
+    <text x="720" y="450" font-size="28" fill="#57606a">How reliably it runs</text>
+    <text x="720" y="500" font-size="30">Runs when the agent</text>
+    <text x="720" y="542" font-size="30">judges it relevant</text>
+
+    <rect x="1300" y="60" width="560" height="600" rx="14" fill="#fff6e5" stroke="#e0a534" stroke-width="3"/>
+    <text x="1580" y="140" font-size="40" font-weight="700" text-anchor="middle">Hook</text>
+    <line x1="1340" y1="185" x2="1820" y2="185" stroke="#e0a534" stroke-width="2"/>
+    <text x="1340" y="250" font-size="28" fill="#57606a">What starts it</text>
+    <text x="1340" y="300" font-size="30">The event fires</text>
+    <text x="1340" y="450" font-size="28" fill="#57606a">How reliably it runs</text>
+    <text x="1340" y="500" font-size="30" font-weight="700">Runs every time the</text>
+    <text x="1340" y="542" font-size="30" font-weight="700">event occurs</text>
+  </g>
+
+  <line x1="80" y1="780" x2="1834" y2="780" stroke="#57606a" stroke-width="10" marker-end="url(#ahw)"/>
+  <defs>
+    <marker id="ahw" viewBox="0 0 16 16" refX="2" refY="8" markerWidth="44" markerHeight="44" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <text x="80" y="745" font-size="30" font-weight="700" fill="#24292f">The agent decides</text>
+  <text x="1860" y="745" font-size="30" font-weight="700" fill="#24292f" text-anchor="end">The event decides</text>
+
+  <rect x="60" y="870" width="1800" height="150" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="960" y="932" font-size="30" fill="#24292f" text-anchor="middle"><tspan font-weight="700">'Log every order':</tspan> a line in the instructions, a tool the agent may call,</text>
+  <text x="960" y="980" font-size="30" fill="#24292f" text-anchor="middle">or a Post tool use hook that writes the record after every call</text>
+</svg>

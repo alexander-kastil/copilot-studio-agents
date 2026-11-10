@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">The Grey Logistics Purchasing Assistant enforces purchase limits with three hooks that read and write Dataverse</title>
+  <desc id="d">On the left, two Dataverse tables: Approval Limit holds Email, Limit and Manager, with one row for the presenter at a limit of 5000 and the manager Mara Grey, and Agent Error Log holds Tool, Error and User. In the middle, the Grey Logistics Purchasing Assistant runs three hooks around its order tool. The Start (pre-loop) hook Load my approval limit reads the limit and manager from Approval Limit and returns them as additionalContext. The Pre tool use hook Hold orders above the limit reads the same row before every call of Submit Purchase Order and returns deny when the amount is above the limit. Submit Purchase Order sends an Outlook email with the order. The After tool failure hook Log tool failures adds a row to Agent Error Log and returns additionalContext. On the right, the prompts of Step 6: the first reply names the 5,000 EUR limit and Mara Grey, the 6,400 EUR chairs order is held with no email, the 2,100 EUR monitors order goes through and its email arrives, the Offline Supplier printers order fails and is logged, and after the limit changes to 10000 the chairs order goes through.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      svg { font-size: 26px; }
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .t { font-size: 30px; font-weight: 600; }
+      .s { font-size: 26px; fill: #57606a; }
+      .b { font-size: 28px; }
+      .bb { font-size: 28px; font-weight: 600; }
+      .mono { font-family: Consolas, 'Courier New', monospace; font-size: 26px; }
+      .num { font-size: 26px; font-weight: 700; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="40" y="40" width="460" height="1000" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="70" y="96">Dataverse</text>
+
+  <rect x="70" y="200" width="400" height="330" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="94" y="246">Approval Limit</text>
+  <line x1="70" y1="270" x2="470" y2="270" stroke="#d0d7de" stroke-width="2"/>
+  <text class="s" x="94" y="316">Email</text>
+  <text class="b" x="94" y="356">presenter</text>
+  <text class="s" x="94" y="416">Limit</text>
+  <text class="mono" x="94" y="456">5000</text>
+  <text class="s" x="290" y="416">Manager</text>
+  <text class="b" x="290" y="456">Mara Grey</text>
+
+  <rect x="70" y="760" width="400" height="230" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="bb" x="94" y="806">Agent Error Log</text>
+  <line x1="70" y1="830" x2="470" y2="830" stroke="#d0d7de" stroke-width="2"/>
+  <text class="mono" x="94" y="876">Tool</text>
+  <text class="mono" x="94" y="916">Error</text>
+  <text class="mono" x="94" y="956">User</text>
+
+  <rect x="600" y="40" width="600" height="1000" rx="24" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="630" y="96">Grey Logistics</text>
+  <text class="t" x="630" y="136">Purchasing Assistant</text>
+  <text class="s" x="1170" y="96" text-anchor="end">GitHub Copilot</text>
+
+  <rect x="630" y="200" width="540" height="150" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="s" x="654" y="240">Start (pre-loop)</text>
+  <text class="bb" x="654" y="282">Load my approval limit</text>
+  <text class="mono" x="654" y="324">additionalContext</text>
+  <line x1="900" y1="350" x2="900" y2="378" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="630" y="380" width="540" height="150" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="s" x="654" y="420">Pre tool use</text>
+  <text class="bb" x="654" y="462">Hold orders above the limit</text>
+  <text class="mono" x="654" y="504">deny</text>
+  <line x1="900" y1="530" x2="900" y2="568" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="630" y="570" width="540" height="150" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text class="s" x="654" y="610">Tool</text>
+  <text class="bb" x="654" y="652">Submit Purchase Order</text>
+  <text class="b" x="654" y="694">Outlook email to the presenter</text>
+  <line x1="900" y1="720" x2="900" y2="758" stroke="#cf222e" stroke-width="3" marker-end="url(#ah)"/>
+  <text class="s" x="920" y="748">fails</text>
+
+  <rect x="630" y="760" width="540" height="150" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text class="s" x="654" y="800">After tool failure</text>
+  <text class="bb" x="654" y="842">Log tool failures</text>
+  <text class="mono" x="654" y="884">additionalContext</text>
+
+  <path d="M470,300 H628" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <path d="M470,460 H628" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <text class="s" x="550" y="288" text-anchor="middle">reads</text>
+  <text class="s" x="550" y="448" text-anchor="middle">reads</text>
+  <path d="M630,850 H472" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <text class="s" x="550" y="838" text-anchor="middle">adds</text>
+
+  <rect x="1260" y="40" width="620" height="1000" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="1290" y="96">Step 6 in Preview</text>
+  <text class="s" x="1290" y="136">Same agent, same instructions</text>
+
+  <g>
+    <rect x="1290" y="170" width="560" height="150" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <circle cx="1330" cy="210" r="22" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+    <text class="num" x="1330" y="219">1</text>
+    <text class="bb" x="1370" y="220">What can I order without approval?</text>
+    <text class="b" x="1314" y="264">Names 5,000 EUR and Mara Grey</text>
+    <text class="mono" x="1314" y="302">Executed hook: SessionStart</text>
+
+    <rect x="1290" y="340" width="560" height="130" rx="16" fill="#ffffff" stroke="#cf222e" stroke-width="2"/>
+    <circle cx="1330" cy="380" r="22" fill="#ffebe9" stroke="#cf222e" stroke-width="2"/>
+    <text class="num" x="1330" y="389">2</text>
+    <text class="bb" x="1370" y="390">20 office chairs, 6,400 EUR</text>
+    <text class="b" x="1314" y="438">Held for Mara Grey, no email</text>
+
+    <rect x="1290" y="490" width="560" height="130" rx="16" fill="#ffffff" stroke="#1a7f37" stroke-width="2"/>
+    <circle cx="1330" cy="530" r="22" fill="#e9f7ef" stroke="#1a7f37" stroke-width="2"/>
+    <text class="num" x="1330" y="539">3</text>
+    <text class="bb" x="1370" y="540">10 monitors, 2,100 EUR</text>
+    <text class="b" x="1314" y="588">Goes through, the email arrives</text>
+
+    <rect x="1290" y="640" width="560" height="170" rx="16" fill="#ffffff" stroke="#e0a534" stroke-width="2"/>
+    <circle cx="1330" cy="680" r="22" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <text class="num" x="1330" y="689">4</text>
+    <text class="bb" x="1370" y="690">5 printers, 900 EUR</text>
+    <text class="s" x="1314" y="734">from Offline Supplier</text>
+    <text class="b" x="1314" y="778">Fails, a row in Agent Error Log</text>
+
+    <rect x="1290" y="830" width="560" height="180" rx="16" fill="#ffffff" stroke="#1a7f37" stroke-width="2"/>
+    <circle cx="1330" cy="870" r="22" fill="#e9f7ef" stroke="#1a7f37" stroke-width="2"/>
+    <text class="num" x="1330" y="879">5</text>
+    <text class="bb" x="1370" y="880">Limit changed to</text>
+    <text class="mono" x="1600" y="880">10000</text>
+    <text class="b" x="1314" y="926">Chairs order again:</text>
+    <text class="b" x="1314" y="968">it goes through</text>
+  </g>
+</svg>

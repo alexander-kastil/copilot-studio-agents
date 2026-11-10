@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Four hook patterns along one run</title>
+  <desc id="d">One run reads from session starts to answer, with four patterns in a row. Start (pre-loop): load the user's context, the approval limit and manager from Dataverse, and return additionalContext. Pre tool use: check a call before it runs, such as an order above the limit, and return deny with a reason. Post tool use or After tool failure: record what the tools did as an audit row or error log, and return modifiedResult or guidance. Error: decide how to recover, retry, skip or abort, and return userNotification. A hook fails open: if its workflow fails, the agent continues, so it is never the only safeguard.</desc>
+  <defs>
+    <marker id="ah" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+
+  <rect x="30" y="40" width="1860" height="830" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <rect x="60" y="70" width="260" height="70" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="190" y="116" font-size="28" fill="#24292f" text-anchor="middle">Session starts</text>
+  <rect x="1720" y="70" width="140" height="70" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1790" y="116" font-size="28" fill="#24292f" text-anchor="middle">Answer</text>
+  <line x1="320" y1="105" x2="1718" y2="105" stroke="#57606a" stroke-width="4" marker-end="url(#ah)"/>
+  <g stroke="#57606a" stroke-width="3">
+    <line x1="276" y1="140" x2="276" y2="180"/>
+    <line x1="732" y1="105" x2="732" y2="180"/>
+    <line x1="1188" y1="105" x2="1188" y2="180"/>
+    <line x1="1644" y1="105" x2="1644" y2="180"/>
+  </g>
+  <g fill="#57606a">
+    <circle cx="732" cy="105" r="9"/>
+    <circle cx="1188" cy="105" r="9"/>
+    <circle cx="1644" cy="105" r="9"/>
+  </g>
+
+  <g fill="#24292f">
+    <rect x="60" y="180" width="432" height="660" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <rect x="84" y="204" width="384" height="110" rx="14" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <text x="276" y="270" font-size="30" font-weight="700" text-anchor="middle">Start (pre-loop)</text>
+    <text x="90" y="384" font-size="32" font-weight="700">Load the user's</text>
+    <text x="90" y="426" font-size="32" font-weight="700">context</text>
+    <text x="90" y="510" font-size="28" fill="#57606a">approval limit and</text>
+    <text x="90" y="550" font-size="28" fill="#57606a">manager from Dataverse</text>
+    <line x1="90" y1="640" x2="462" y2="640" stroke="#d0d7de" stroke-width="2"/>
+    <text x="90" y="700" font-size="28" fill="#57606a">returns</text>
+    <text x="90" y="748" font-size="28" font-weight="700" font-family="Consolas, monospace">additionalContext</text>
+
+    <rect x="516" y="180" width="432" height="660" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <rect x="540" y="204" width="384" height="110" rx="14" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <text x="732" y="270" font-size="30" font-weight="700" text-anchor="middle">Pre tool use</text>
+    <text x="546" y="384" font-size="32" font-weight="700">Check a call</text>
+    <text x="546" y="426" font-size="32" font-weight="700">before it runs</text>
+    <text x="546" y="510" font-size="28" fill="#57606a">order above the limit</text>
+    <line x1="546" y1="640" x2="918" y2="640" stroke="#d0d7de" stroke-width="2"/>
+    <text x="546" y="700" font-size="28" fill="#57606a">returns</text>
+    <text x="546" y="748" font-size="28" font-weight="700"><tspan font-family="Consolas, monospace">deny</tspan> with a reason</text>
+
+    <rect x="972" y="180" width="432" height="660" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <rect x="996" y="204" width="384" height="110" rx="14" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+    <text x="1188" y="250" font-size="30" font-weight="700" text-anchor="middle">Post tool use /</text>
+    <text x="1188" y="292" font-size="30" font-weight="700" text-anchor="middle">After tool failure</text>
+    <text x="1002" y="384" font-size="32" font-weight="700">Record what the</text>
+    <text x="1002" y="426" font-size="32" font-weight="700">tools did</text>
+    <text x="1002" y="510" font-size="28" fill="#57606a">audit row or error log</text>
+    <line x1="1002" y1="640" x2="1374" y2="640" stroke="#d0d7de" stroke-width="2"/>
+    <text x="1002" y="700" font-size="28" fill="#57606a">returns</text>
+    <text x="1002" y="748" font-size="28" font-weight="700"><tspan font-family="Consolas, monospace">modifiedResult</tspan> or guidance</text>
+
+    <rect x="1428" y="180" width="432" height="660" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+    <rect x="1452" y="204" width="384" height="110" rx="14" fill="#fff6e5" stroke="#e0a534" stroke-width="2" stroke-dasharray="12 8"/>
+    <text x="1644" y="270" font-size="30" font-weight="700" text-anchor="middle">Error</text>
+    <text x="1458" y="384" font-size="32" font-weight="700">Decide how to</text>
+    <text x="1458" y="426" font-size="32" font-weight="700">recover</text>
+    <text x="1458" y="510" font-size="28" fill="#57606a">retry, skip or abort</text>
+    <line x1="1458" y1="640" x2="1830" y2="640" stroke="#d0d7de" stroke-width="2"/>
+    <text x="1458" y="700" font-size="28" fill="#57606a">returns</text>
+    <text x="1458" y="748" font-size="28" font-weight="700" font-family="Consolas, monospace">userNotification</text>
+  </g>
+
+  <rect x="30" y="910" width="1860" height="120" rx="14" fill="#ffebe9" stroke="#cf222e" stroke-width="2"/>
+  <text x="960" y="982" font-size="30" fill="#24292f" text-anchor="middle"><tspan font-weight="700" fill="#a40e26">A hook fails open:</tspan> if its workflow fails, the agent continues, so it is never the only safeguard</text>
+</svg>
