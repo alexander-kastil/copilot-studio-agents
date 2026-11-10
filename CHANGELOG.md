@@ -5,6 +5,7 @@
 
 ### Added
 
+- Module 06 gains topic 05, Hooks: Steps That Run Every Time, with teaching, a demo, a lab and its German translation, five diagrams and deck slides, because the class only met hooks inside the migration topic; topics 05 to 08 move to 06 to 09 with their links and slide files renumbered
 - The Cowork plugin lab builds a Grey Logistics sample plugin shipped in `labs/02-cowork/lab-03-grey-logistics-plugin/` (deck, document and Foundry research skills, own icons), the skills lab links its own `weekly-status-mail` copy, and the HR documents, the candidates workbook, the resumes and the gardening documents download from this repository (`src/assets/` and the lab folders) instead of the copilot-camp repository; no lab, demo or diagram names Copilot Dev Camp any more
 - Every lab outside module 02 starts on its own: a lab that used an earlier lab's agent, topic, connection or MCP registration opens with a short setup section that builds it (learners who have it keep using it), in English and German; the labs name their company Happy Longnose Ltd or Grey Logistics instead of Northwind or Contoso, the sample HR site is Grey Logistics HR and the environment diagram shows Grey Logistics, in text, diagrams, companion files and file names
 - Module 06 apps topic opens with what an app is and how an app in Copilot Studio compares with the Cowork App skill and Power Apps canvas and model-driven apps: two new slides with diagrams and the matching readme section
