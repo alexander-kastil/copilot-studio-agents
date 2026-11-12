@@ -1,0 +1,73 @@
+{
+    "tools": [
+        {
+            "name": "show_food_catalog",
+            "description": "Shows the food catalog as an interactive table inside the conversation. Columns: name, price, in stock, minimum stock. The user can sort by any column and open a row to see its description and whether stock is below the minimum. Use this when the user wants to look at, browse, sort or compare the catalog or its stock levels. Call get_all_food_items instead when only raw data is needed without a table.",
+            "inputSchema": {
+                "type": "object",
+                "properties": {}
+            },
+            "_meta": {
+                "ui": {
+                    "resourceUri": "ui://food-catalog/food-catalog.html",
+                    "visibility": [
+                        "model",
+                        "app"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "open_demand_form",
+            "description": "Opens the demand form: an interactive form listing every dish of the food catalog with a quantity field, so the user can enter how many portions of each dish are needed and submit the demand. Call this when the user wants to submit or enter a demand. Not for reading catalog data; use the get_* tools for that.",
+            "inputSchema": {
+                "type": "object",
+                "properties": {}
+            },
+            "_meta": {
+                "ui": {
+                    "resourceUri": "ui://food-catalog/demand-form.html",
+                    "visibility": [
+                        "model",
+                        "app"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "submit_demand",
+            "description": "Records a demand: how many portions of which dishes are needed. foodIds and quantities are parallel arrays of the same length, the quantity at position n belongs to the food id at position n. Lines with a quantity of 0 or less are dropped. Returns the demand id and the recorded lines.",
+            "inputSchema": {
+                "type": "object",
+                "properties": {
+                    "foodIds": {
+                        "description": "Food item ids, e.g. [1, 6]. Same length and order as quantities.",
+                        "type": "array",
+                        "items": {
+                            "type": "integer"
+                        }
+                    },
+                    "quantities": {
+                        "description": "Requested portions per food id, e.g. [3, 2]. Same length and order as foodIds. Entries of 0 or less are ignored.",
+                        "type": "array",
+                        "items": {
+                            "type": "integer"
+                        }
+                    }
+                },
+                "required": [
+                    "foodIds",
+                    "quantities"
+                ]
+            }
+        },
+        {
+            "name": "get_all_food_items",
+            "description": "Returns the full list of food items in the catalog",
+            "inputSchema": {
+                "type": "object",
+                "properties": {}
+            }
+        }
+    ]
+}

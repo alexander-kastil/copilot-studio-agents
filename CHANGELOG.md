@@ -54,6 +54,9 @@
 - Update demos, labs
 - Automation teaching and slides: Progress: 8/8 · brand voice and link checks clean
 - Run lab 05/01 in the browser: The text-resume retest works
+- Food catalog MCP server gains a demand form MCP App that submits to the agent, the replacement for the Submit Demand adaptive card in the migration demo
+- Food catalog MCP server gains a read-only catalog table MCP App as the intro teaser for the MCP Apps topic
+- Food Demand Agent package in `src/food-demand-agent/` puts the demand form into Microsoft 365 Copilot Chat, published only to the owner's account through the Microsoft 365 admin center
 
 ### Changed
 
@@ -79,6 +82,8 @@
 - Module 06 topic 01 drops "Where each rule lives", slide and readme section, since the real Build tab shows no Workflows or Hooks
 
 ### Fixed
+
+- Demand form MCP App sends `appInfo` in the widget handshake, so the form renders in MCP Inspector and in Microsoft 365 Copilot Chat
 
 - Lab 06/07 (upgrade the HR Agent) follows its browser run of 2026-11-05, in English and German: the pasted topic YAMLs save live; the new topic name replaces **Untitled**; the baseline notes what the orchestrator actually picked; the upgrade asks one question per source and topic and reports **Carried over**, **Not copied automatically** and **Needs your attention**; the workflow trigger is preset, the action is **Send an email**, the published workflow is added under **Tools** from the **Workflows** tab; the Start hook is created again after **New workflow**; the journeys show **Executed hook: SessionStart** and may ask for the role first
 - Lab 04/01 (prompt tool) follows its browser run of 2026-11-05, in English and German: **Create new** in the empty **Select a variable** panel, the **...** button of **To value** with **Enter formula**, the **Ticket Details** chip that stays at the top of the instructions, **Standard GPT-4.1** instead of the **Basic GPT-4.1 mini** default, the **1 input** button for the sample data, and a click outside the message field before **Save** so the inserted variable is kept

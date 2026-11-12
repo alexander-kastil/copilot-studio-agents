@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi;
+using ModelContextProtocol.Extensions.Apps;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -36,7 +37,9 @@ builder.Services.AddControllers();
 
 builder.Services.AddMcpServer()
     .WithHttpTransport(options => options.Stateless = true)
-    .WithToolsFromAssembly();
+    .WithToolsFromAssembly()
+    .WithResourcesFromAssembly()
+    .WithMcpApps();
 
 builder.Services.AddOpenApi(options =>
 {

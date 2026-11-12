@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demand form</title>
+<style>
+:root {
+  color-scheme: light;
+  --canvas: transparent;
+  --surface: #ffffff;
+  --surface-alt: #f3f4f6;
+  --text: #1b1b1b;
+  --text-muted: #5c5c5c;
+  --field-edge: #8a8a8a;
+  --card-edge: #e0e0e0;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .08), 0 4px 14px rgba(0, 0, 0, .06);
+  --accent: #0f6cbd;
+  --accent-fill: #0f6cbd;
+  --on-accent-fill: #ffffff;
+  --ok: #0e700e;
+  --ok-bg: #e9f5e9;
+  --warn: #8a5a00;
+  --warn-bg: #fff4d6;
+  --danger: #b10e1c;
+  --danger-bg: #fdeaec;
+  --radius: 10px;
+  --unit: 12px;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --surface: #1f2125;
+  --surface-alt: #2a2d33;
+  --text: #f2f2f2;
+  --text-muted: #adb0b6;
+  --field-edge: #8f949c;
+  --card-edge: transparent;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .5), 0 6px 18px rgba(0, 0, 0, .35);
+  --accent: #6cb8f6;
+  --accent-fill: #115ea3;
+  --on-accent-fill: #ffffff;
+  --ok: #7ad26d;
+  --ok-bg: #20301f;
+  --warn: #f2c561;
+  --warn-bg: #3a2f14;
+  --danger: #ff9ca5;
+  --danger-bg: #3d2226;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { margin: 0; background: var(--canvas); }
+body { font-family: var(--font-sans, "Segoe UI", system-ui, -apple-system, sans-serif); color: var(--text); padding: 8px; line-height: 1.4; }
+.card { background: var(--surface); border: 1px solid var(--card-edge); border-radius: var(--radius); box-shadow: var(--shadow); padding: calc(var(--unit) * 1.5); width: 100%; max-width: 520px; }
+header { display: flex; align-items: baseline; justify-content: space-between; gap: var(--unit); margin-bottom: var(--unit); }
+h1 { font-size: 17px; font-weight: 600; margin: 0; }
+.count { font-size: 12px; color: var(--text-muted); white-space: nowrap; }
+.list { display: grid; gap: 6px; }
+.row { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: var(--unit); background: var(--surface-alt); border-radius: 8px; padding: 8px 10px; }
+.row.has { outline: 2px solid var(--accent); outline-offset: -2px; }
+.dish { min-width: 0; }
+.name { display: block; font-size: 14px; font-weight: 600; overflow-wrap: anywhere; }
+.meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; font-size: 12px; color: var(--text-muted); }
+.badge { font-size: 11px; font-weight: 600; padding: 1px 6px; border-radius: 999px; color: var(--warn); background: var(--warn-bg); }
+.stepper { display: inline-flex; align-items: center; gap: 4px; }
+.stepper button { width: 32px; height: 32px; margin: 0; padding: 0; font-size: 18px; line-height: 1; font-weight: 600; color: var(--text); background: var(--surface); border: 1px solid var(--field-edge); border-radius: 6px; }
+.stepper button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+input[type=number] { width: 56px; height: 32px; padding: 0 4px; text-align: center; font: inherit; font-size: 14px; color: var(--text); background: var(--surface); border: 1px solid var(--field-edge); border-radius: 6px; appearance: textfield; -moz-appearance: textfield; }
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+button { font: inherit; cursor: pointer; }
+button:disabled, input:disabled { opacity: .5; cursor: default; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+footer { margin-top: var(--unit); padding-top: var(--unit); display: flex; align-items: center; justify-content: space-between; gap: var(--unit); flex-wrap: wrap; }
+.total { font-size: 14px; }
+.total strong { font-size: 16px; font-variant-numeric: tabular-nums; }
+.actions { display: flex; align-items: center; gap: 8px; margin-left: auto; }
+.primary { min-height: 40px; padding: 0 18px; font-weight: 600; color: var(--on-accent-fill); background: var(--accent-fill); border: 0; border-radius: 6px; }
+.primary:hover:not(:disabled) { filter: brightness(1.1); }
+.link { min-height: 40px; padding: 0 8px; color: var(--accent); background: transparent; border: 0; border-radius: 6px; }
+.status { margin-top: var(--unit); padding: 10px 12px; border-radius: 8px; font-size: 14px; font-weight: 600; overflow-wrap: anywhere; }
+.status.ok { color: var(--ok); background: var(--ok-bg); }
+.status.info { color: var(--warn); background: var(--warn-bg); }
+.status.err { color: var(--danger); background: var(--danger-bg); }
+.receipt { display: grid; gap: 6px; }
+.receipt .qty { font-variant-numeric: tabular-nums; font-weight: 600; font-size: 14px; }
+.skeleton { height: 44px; border-radius: 8px; background: var(--surface-alt); animation: pulse 1.2s ease-in-out infinite; }
+@keyframes pulse { 50% { opacity: .5; } }
+@media (prefers-reduced-motion: reduce) { .skeleton { animation: none; } }
+@media (max-width: 360px) { .row { grid-template-columns: 1fr; } .stepper { justify-self: start; } }
+</style>
+</head>
+<body>
+<main class="card" id="card" aria-labelledby="title">
+  <header>
+    <h1 id="title">Please enter your demand</h1>
+    <span class="count" id="count"></span>
+  </header>
+  <div class="list" id="list" aria-busy="true"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>
+  <footer id="footer">
+    <div class="total" id="total" role="status" aria-live="polite">Total: <strong>0 items</strong></div>
+    <div class="actions">
+      <button class="link" id="clear" type="button" hidden>Clear</button>
+      <button class="primary" id="submit" type="button" disabled>Submit Demand</button>
+    </div>
+  </footer>
+  <div id="status" role="status" aria-live="polite"></div>
+</main>
+<script>
+(function () {
+  var PROTOCOL = "2026-01-26";
+  var INIT_TIMEOUT = 10000;
+  var CALL_TIMEOUT = 15000;
+  var MAX_QTY = 99;
+  var standalone = window.parent === window;
+  var SAMPLE = [
+    { id: 1, name: "Wiener Schnitzel", price: 18, inStock: 30, minStock: 6 },
+    { id: 2, name: "Germknoedel", price: 7, inStock: 4, minStock: 6 },
+    { id: 3, name: "Kaiserschmarrn", price: 9, inStock: 22, minStock: 5 },
+    { id: 7, name: "Weißwurst mit Brezn", price: 10, inStock: 20, minStock: 5 },
+    { id: 12, name: "Pizza Napoli", price: 9, inStock: 18, minStock: 4 },
+    { id: 14, name: "Green Curry", price: 14, inStock: 11, minStock: 3 }
+  ];
+  var money = new Intl.NumberFormat("en-US", { style: "currency", currency: "EUR" });
+  var seq = 0, pending = {}, items = [], qty = {}, locked = false, demandCounter = 0;
+
+  var $ = function (id) { return document.getElementById(id); };
+  var listEl = $("list"), totalEl = $("total"), submitEl = $("submit"), clearEl = $("clear"), statusEl = $("status"), countEl = $("count"), footerEl = $("footer");
+  var str = function (v) { return v === undefined || v === null ? "" : String(v); };
+  var num = function (v) { var n = Number(v); return isFinite(n) ? n : 0; };
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined) e.textContent = text; return e; }
+
+  function post(msg) { window.parent.postMessage(msg, "*"); }
+  function notify(method, params) { if (!standalone) post({ jsonrpc: "2.0", method: method, params: params || {} }); }
+  function request(method, params, timeout) {
+    var id = ++seq;
+    return new Promise(function (resolve, reject) {
+      var timer = setTimeout(function () { delete pending[id]; reject({ message: "No response from host for " + method }); }, timeout || CALL_TIMEOUT);
+      pending[id] = {
+        resolve: function (r) { clearTimeout(timer); resolve(r); },
+        reject: function (e) { clearTimeout(timer); reject(e); }
+      };
+      post({ jsonrpc: "2.0", id: id, method: method, params: params });
+    });
+  }
+
+  function setTheme(t) { if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); }
+  var mq = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
+  var hostTheme = null;
+  function followSystem() { if (!hostTheme && mq) setTheme(mq.matches ? "dark" : "light"); }
+  if (mq && mq.addEventListener) mq.addEventListener("change", followSystem);
+  var wanted = new URLSearchParams(location.search).get("theme");
+  if (standalone && (wanted === "dark" || wanted === "light")) { hostTheme = wanted; setTheme(wanted); } else followSystem();
+
+  function applyContext(ctx) {
+    if (!ctx) return;
+    if (ctx.theme) { hostTheme = ctx.theme; setTheme(ctx.theme); }
+    var v = ctx.styles && ctx.styles.variables;
+    if (v && v["--font-sans"]) document.documentElement.style.setProperty("--font-sans", v["--font-sans"]);
+  }
+
+  var lastHeight = 0;
+  function reportSize() {
+    var h = Math.ceil(document.documentElement.getBoundingClientRect().height);
+    if (h === lastHeight) return;
+    lastHeight = h;
+    notify("ui/notifications/size-changed", { width: Math.ceil(document.documentElement.scrollWidth), height: h });
+  }
+  if (window.ResizeObserver) new ResizeObserver(reportSize).observe(document.body);
+
+  function clamp(v) { var n = parseInt(v, 10); if (!(n > 0)) return 0; return Math.min(n, MAX_QTY); }
+  function lines() {
+    return items.filter(function (it) { return qty[it.id] > 0; }).map(function (it) { return { id: it.id, name: it.name, price: it.price, quantity: qty[it.id] }; });
+  }
+  function plural(n, w) { return n + " " + w + (n === 1 ? "" : /(s|sh|ch|x)$/.test(w) ? "es" : "s"); }
+
+  function update() {
+    var ls = lines(), n = 0, sum = 0;
+    ls.forEach(function (l) { n += l.quantity; sum += l.quantity * num(l.price); });
+    totalEl.replaceChildren(document.createTextNode("Total: "), el("strong", "", plural(n, "item") + (n > 0 ? " · " + money.format(sum) : "")));
+    countEl.textContent = ls.length > 0 ? plural(ls.length, "dish") + " selected" : "";
+    submitEl.disabled = locked || n === 0;
+    clearEl.hidden = locked || n === 0;
+    items.forEach(function (it) {
+      var row = $("row" + it.id), input = $("q" + it.id);
+      if (!row) return;
+      row.classList.toggle("has", qty[it.id] > 0);
+      if (document.activeElement !== input) input.value = String(qty[it.id]);
+      $("dec" + it.id).disabled = locked || qty[it.id] <= 0;
+      $("inc" + it.id).disabled = locked || qty[it.id] >= MAX_QTY;
+    });
+    reportSize();
+  }
+
+  function setQty(id, v) { qty[id] = clamp(v); update(); }
+
+  function buildRow(it) {
+    var row = el("div", "row"); row.id = "row" + it.id;
+    var dish = el("div", "dish");
+    var label = el("label", "name", str(it.name)); label.htmlFor = "q" + it.id;
+    var meta = el("div", "meta");
+    if (num(it.price) > 0) meta.appendChild(el("span", "", money.format(num(it.price))));
+    if (it.inStock !== undefined && it.inStock !== null) meta.appendChild(el("span", "", num(it.inStock) + " in stock"));
+    if (it.minStock !== undefined && num(it.inStock) < num(it.minStock)) meta.appendChild(el("span", "badge", "Low stock"));
+    dish.appendChild(label); dish.appendChild(meta);
+    var step = el("div", "stepper");
+    var dec = el("button", "", "−"); dec.type = "button"; dec.id = "dec" + it.id; dec.setAttribute("aria-label", "One less " + str(it.name));
+    var input = el("input"); input.type = "number"; input.min = "0"; input.max = String(MAX_QTY); input.step = "1"; input.inputMode = "numeric"; input.value = "0"; input.id = "q" + it.id;
+    var inc = el("button", "", "+"); inc.type = "button"; inc.id = "inc" + it.id; inc.setAttribute("aria-label", "One more " + str(it.name));
+    dec.addEventListener("click", function () { setQty(it.id, qty[it.id] - 1); });
+    inc.addEventListener("click", function () { setQty(it.id, qty[it.id] + 1); });
+    input.addEventListener("input", function () { qty[it.id] = clamp(input.value); update(); });
+    input.addEventListener("change", function () { setQty(it.id, input.value); input.value = String(qty[it.id]); });
+    input.addEventListener("focus", function () { input.select(); });
+    input.addEventListener("keydown", function (e) { if (e.key === "Enter" && !submitEl.disabled) submit(); });
+    step.appendChild(dec); step.appendChild(input); step.appendChild(inc);
+    row.appendChild(dish); row.appendChild(step);
+    return row;
+  }
+
+  function showItems(list) {
+    items = (list || []).filter(function (it) { return it && it.id !== undefined && it.id !== null; });
+    items.forEach(function (it) { if (qty[it.id] === undefined) qty[it.id] = 0; });
+    listEl.removeAttribute("aria-busy");
+    listEl.replaceChildren();
+    if (items.length === 0) listEl.appendChild(el("div", "meta", "The catalog has no dishes."));
+    items.forEach(function (it) { listEl.appendChild(buildRow(it)); });
+    update();
+  }
+
+  function showStatus(kind, text) {
+    statusEl.replaceChildren();
+    if (text) statusEl.appendChild(el("div", "status " + kind, text));
+    reportSize();
+  }
+
+  function textOf(result) {
+    return ((result && result.content) || []).filter(function (c) { return c && c.type === "text"; }).map(function (c) { return str(c.text); }).join(" ");
+  }
+
+  function lockToReceipt(ls, id) {
+    locked = true;
+    var box = el("div", "receipt"), n = 0, sum = 0;
+    ls.forEach(function (l) {
+      n += l.quantity; sum += l.quantity * num(l.price);
+      var row = el("div", "row");
+      row.appendChild(el("span", "name", str(l.name)));
+      row.appendChild(el("span", "qty", "× " + l.quantity));
+      box.appendChild(row);
+    });
+    listEl.replaceChildren(box);
+    footerEl.hidden = true;
+    countEl.textContent = (id ? id + " · " : "") + plural(n, "item") + (sum > 0 ? " · " + money.format(sum) : "");
+    reportSize();
+  }
+
+  function lineSummary(ls) { return ls.map(function (l) { return l.quantity + " x " + l.name; }).join(", "); }
+  function lineSummaryWithIds(ls) { return ls.map(function (l) { return l.quantity + " x " + l.name + " (id " + l.id + ")"; }).join(", "); }
+
+  function callSubmit(ls) {
+    var args = { foodIds: ls.map(function (l) { return l.id; }), quantities: ls.map(function (l) { return l.quantity; }) };
+    if (standalone) {
+      return new Promise(function (resolve) {
+        setTimeout(function () {
+          var id = "D-" + String(++demandCounter).padStart(4, "0");
+          resolve({ content: [{ type: "text", text: "Demand " + id + " noted: " + lineSummary(ls) + "." }], structuredContent: { demandId: id, lines: ls.map(function (l) { return { foodId: l.id, name: l.name, quantity: l.quantity }; }) } });
+        }, 400);
+      });
+    }
+    return request("tools/call", { name: "submit_demand", arguments: args }, CALL_TIMEOUT).then(function (r) {
+      if (!r || r.isError) throw { message: textOf(r) || "submit_demand failed" };
+      return r;
+    });
+  }
+
+  function sendMessage(text) {
+    if (standalone) { window.__lastMessage = text; return Promise.resolve({}); }
+    return request("ui/message", { role: "user", content: [{ type: "text", text: text }] }, CALL_TIMEOUT);
+  }
+
+  function submit() {
+    var ls = lines();
+    if (ls.length === 0 || locked) return;
+    locked = true; update();
+    submitEl.textContent = "Submitting...";
+    showStatus("", "");
+    callSubmit(ls).then(function (result) {
+      var text = textOf(result);
+      var sc = result.structuredContent || {};
+      var id = str(sc.demandId);
+      if (!id) { var m = /Demand (D-\d+)/.exec(text); id = m ? m[1] : ""; }
+      var confirmed = ls;
+      if (sc.lines && sc.lines.length) {
+        confirmed = sc.lines.map(function (l) {
+          var known = items.filter(function (it) { return it.id === l.foodId; })[0] || {};
+          return { id: l.foodId, name: l.name, price: known.price, quantity: l.quantity };
+        });
+      }
+      lockToReceipt(confirmed, id);
+      showStatus("ok", text || "Your demand was successfully noted.");
+      var msg = id ? "I submitted demand " + id + ": " + lineSummary(confirmed) + "." : "I submitted my demand: " + lineSummary(confirmed) + ".";
+      return sendMessage(msg).catch(function () {});
+    }, function () {
+      return sendMessage("Please submit this demand: " + lineSummaryWithIds(ls) + ".").then(function () {
+        lockToReceipt(ls, "");
+        showStatus("info", "The form could not submit directly. Your demand was sent to the agent to submit.");
+      }, function () {
+        locked = false;
+        submitEl.textContent = "Submit Demand";
+        update();
+        showStatus("err", "The demand could not be submitted. Please try again.");
+      });
+    });
+  }
+
+  submitEl.addEventListener("click", submit);
+  clearEl.addEventListener("click", function () { items.forEach(function (it) { qty[it.id] = 0; }); update(); });
+
+  window.addEventListener("message", function (e) {
+    if (e.source !== window.parent) return;
+    var m = e.data;
+    if (!m || m.jsonrpc !== "2.0") return;
+    if (m.method === undefined && m.id !== undefined && pending[m.id]) {
+      var p = pending[m.id];
+      delete pending[m.id];
+      if (m.error) p.reject(m.error); else p.resolve(m.result);
+      return;
+    }
+    if (m.method === "ui/notifications/tool-result") {
+      var sc = m.params && m.params.structuredContent;
+      if (sc && sc.items) showItems(sc.items);
+      else if (m.params && m.params.isError) {
+        listEl.removeAttribute("aria-busy");
+        listEl.replaceChildren();
+        footerEl.hidden = true;
+        showStatus("err", textOf(m.params) || "The demand form could not be loaded.");
+      }
+    } else if (m.method === "ui/notifications/host-context-changed") {
+      applyContext(m.params);
+    } else if (m.method === "ui/resource-teardown" && m.id !== undefined) {
+      post({ jsonrpc: "2.0", id: m.id, result: {} });
+    }
+  });
+
+  if (standalone) {
+    showItems(SAMPLE);
+  } else {
+    request("ui/initialize", { protocolVersion: PROTOCOL, appCapabilities: {}, appInfo: { name: "demand-form", version: "1.0.0" } }, INIT_TIMEOUT).then(function (result) {
+      applyContext(result && result.hostContext);
+      notify("ui/notifications/initialized", {});
+      reportSize();
+    }, function () {
+      listEl.removeAttribute("aria-busy");
+      listEl.replaceChildren();
+      footerEl.hidden = true;
+      showStatus("err", "The host did not answer. Ask the agent to open the demand form again.");
+    });
+  }
+  update();
+})();
+</script>
+</body>
+</html>
