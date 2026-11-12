@@ -1,0 +1,41 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.24/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.24",
+    "version": "1.0.2",
+    "id": "48365813-a152-4fad-a151-0e7d1a451f8d",
+    "developer": {
+        "name": "Integrations",
+        "websiteUrl": "https://integrations.at",
+        "privacyUrl": "https://integrations.at/privacy",
+        "termsOfUseUrl": "https://integrations.at/terms"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "Food Demand Agent",
+        "full": "Food Demand Agent with MCP Apps"
+    },
+    "description": {
+        "short": "Enter food demand in a form inside the chat",
+        "full": "A declarative agent for the canteen team. It opens the demand form of the food catalog MCP server as an MCP App inside Microsoft 365 Copilot, records the submitted quantities and shows the catalog as an interactive table."
+    },
+    "accentColor": "#FFFFFF",
+    "composeExtensions": [],
+    "copilotAgents": {
+        "declarativeAgents": [
+            {
+                "id": "declarativeAgent",
+                "file": "declarativeAgent.json"
+            }
+        ]
+    },
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "food-catalog-mcp-apps.azurewebsites.net"
+    ]
+}
