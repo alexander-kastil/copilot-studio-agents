@@ -30,6 +30,19 @@ Both modes run under a more restrictive permission policy than an interactive co
 | Heartbeat | One prompt on an interval, within work hours | Triage and monitoring |
 | Automation | Its own schedule or condition, or once | A weekly status pack, a reminder chain |
 
+## Tools: Work IQ, MCP, Browser and Shell
+
+Scout reaches its work through four capability groups that you switch on or off in **Settings** > **Permissions**: Work IQ, browser, shell, and file system. A group that is off is removed from the system prompt, so the agent can't use it at all. Shell commands run in three tiers: read-only commands run without asking, installs, pushes, and network calls ask first, and destructive commands are blocked. You add your own allow and deny patterns on top.
+
+| Tool group | What it reaches | Example |
+|---|---|---|
+| Work IQ and Microsoft 365 | Mail, calendar, Teams meetings and chats, SharePoint lists, OneDrive and SharePoint files, meeting transcripts | A one-page brief built from every thread, file, and chat about a client, an hour before the meeting |
+| Browser control | Any web page: navigate, click, fill forms, upload files, read content | Expense entries typed into a web portal that has no API |
+| Shell | PowerShell, `git`, `gh`, `curl`, and scripts on the machine | Old installers cleared out of the Downloads folder |
+| File system | Files in the workspace and, once you grant access, folders such as Downloads | A CSV of the sales figures found in your mail |
+
+The walkthrough videos also connect Scout to outside systems such as a CRM through MCP servers. Learn doesn't document MCP for Scout yet, so read it as a preview of where the tool list is heading.
+
 ## Approvals and Permissions
 
 Before a sensitive action such as sending an email, posting in Teams, or running a command, Scout pauses and shows exactly what it plans to do. You choose **Approve**, **Always allow** (which adds the pattern to the auto-approve list), or **Deny**. Capability categories (file system, shell, browser, Microsoft 365) can be switched on or off, and sensitive locations can be marked so they always need approval.
@@ -61,6 +74,8 @@ Planned: [Set Up Background Work and Approvals](../../../labs/08-ai-teammates/re
 ## Key Topics covered in this module
 
 [Microsoft Scout (Frontier) overview](https://learn.microsoft.com/microsoft-scout/overview)
+
+[Use Microsoft Scout](https://learn.microsoft.com/microsoft-scout/use-microsoft-scout)
 
 [Microsoft Scout common questions](https://learn.microsoft.com/microsoft-scout/faq)
 

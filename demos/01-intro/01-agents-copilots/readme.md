@@ -36,6 +36,8 @@ The step up from a Copilot to an agent is autonomy: instead of answering one tur
 
 ![Copilot Chat answers one question at a time while you do the planning. Cowork takes the outcome you describe, breaks the goal into tasks, acts across Outlook, Teams, Word, Excel, and PowerPoint, and hands the result back for your review.](../../02-cowork/pptx/images/01-01-cowork-and-chat.svg)
 
+Autopilot takes the next step. With Chat you ask, with Cowork you delegate, and with Autopilot you onboard a teammate: it has its own identity, starts work on a schedule or a signal, and keeps a process moving while you're away. It is a private preview, covered in the optional [AI Teammates](../../08-ai-teammates/readme.md) module.
+
 That shift, the parts behind it, and the design patterns teams use to structure it are the subject of the [next topic, How Agents Work](../02-how-agents-work/readme.md). Here it is enough to place agents on the map above; the mechanics come next.
 
 ---

@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Happy Longnose Customer Service answers dessert questions with a Generative skill and allergen questions with a Topic skill</title>
+  <desc id="d">On the left, the customer sends two messages. In the middle, the agent Happy Longnose Customer Service runs on the Customer Conversation harness; step 1 creates it and hands allergen questions to the allergen enquiry skill. Step 2 adds the Generative skill dish-recommendation, which calls the Happy Longnose Food Catalog MCP server on the right and suggests two or three desserts with their price and stock, such as Kaiserschmarrn at 9 EUR with 22 in stock and Germknoedel at 7 EUR with 26 in stock. Step 3 adds the Topic skill allergen enquiry: the Question Which ingredient do you need to avoid?, the Question Is it a severe allergy, where even traces are dangerous?, and a Condition Severe is equal to true that gives the severe message, while all other conditions give the standard message. Step 4 runs both questions in Preview, where the Activity map shows the food catalog call Happy Longnose Food Catalog: get all food items for the desserts, and allergen enquiry for the nut allergy: Nuts and Yes end with the severe message, Nuts and No with the standard message.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <style>
+      svg { font-size: 26px; }
+      text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; fill: #24292f; }
+      .t { font-size: 30px; font-weight: 600; }
+      .s { font-size: 26px; fill: #57606a; }
+      .b { font-size: 28px; }
+      .q { font-size: 26px; }
+      .bb { font-size: 28px; font-weight: 600; }
+      .mono { font-family: Consolas, 'Courier New', monospace; font-size: 26px; }
+      .num { font-size: 26px; font-weight: 700; text-anchor: middle; }
+    </style>
+    <marker id="ah" viewBox="0 0 16 16" refX="16" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="40" y="40" width="370" height="1000" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text class="t" x="70" y="96">Customer</text>
+
+  <rect x="66" y="170" width="318" height="300" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="q" x="88" y="222">We're six people for a</text>
+  <text class="q" x="88" y="262">birthday on Saturday.</text>
+  <text class="q" x="88" y="302">Which desserts do you</text>
+  <text class="q" x="88" y="342">recommend, and what</text>
+  <text class="q" x="88" y="382">do they cost?</text>
+
+  <rect x="66" y="570" width="318" height="150" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="q" x="88" y="620">Can I eat the</text>
+  <text class="q" x="88" y="660">Kaiserschmarrn? I have</text>
+  <text class="q" x="88" y="700">a nut allergy.</text>
+
+  <rect x="66" y="760" width="318" height="130" rx="16" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="s" x="88" y="808">Answers</text>
+  <text class="bb" x="88" y="852">Nuts, then Yes or No</text>
+
+  <rect x="450" y="40" width="980" height="1000" rx="24" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="500" cy="86" r="22" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="num" x="500" y="95">1</text>
+  <text class="t" x="536" y="96">Happy Longnose Customer Service</text>
+  <rect x="1090" y="62" width="314" height="48" rx="24" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="s" x="1247" y="95" text-anchor="middle">Customer Conversation</text>
+  <text class="s" x="480" y="140">Hands every allergen question to the allergen enquiry skill</text>
+
+  <rect x="480" y="170" width="920" height="300" rx="16" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="520" cy="212" r="22" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="num" x="520" y="221">2</text>
+  <text class="s" x="556" y="221">Generative skill</text>
+  <text class="mono" x="510" y="272" font-weight="700">dish-recommendation</text>
+  <text class="b" x="510" y="330">Suggests two or three desserts with their</text>
+  <text class="b" x="510" y="370">price in EUR and the units in stock</text>
+  <rect x="504" y="398" width="440" height="48" rx="24" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="q" x="724" y="431" text-anchor="middle">Kaiserschmarrn, 9 EUR, 22 in stock</text>
+  <rect x="954" y="398" width="420" height="48" rx="24" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="q" x="1164" y="431" text-anchor="middle">Germknoedel, 7 EUR, 26 in stock</text>
+
+  <rect x="480" y="500" width="920" height="520" rx="16" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <circle cx="520" cy="542" r="22" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="num" x="520" y="551">3</text>
+  <text class="s" x="556" y="551">Topic skill</text>
+  <text class="mono" x="760" y="551" font-weight="700">allergen enquiry</text>
+
+  <rect x="510" y="584" width="860" height="90" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="s" x="534" y="618">Question</text>
+  <text class="q" x="534" y="656">Which ingredient do you need to avoid?</text>
+  <line x1="940" y1="674" x2="940" y2="696" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="510" y="698" width="860" height="90" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="s" x="534" y="732">Question</text>
+  <text class="q" x="534" y="770">Is it a severe allergy, where even traces are dangerous?</text>
+  <line x1="940" y1="788" x2="940" y2="810" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+
+  <rect x="690" y="812" width="500" height="60" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="q" x="940" y="851" text-anchor="middle"><tspan fill="#57606a">Condition</tspan>  Severe is equal to true</text>
+
+  <path d="M940,872 V890 H720 V912" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <path d="M940,890 H1160 V912" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+
+  <rect x="510" y="914" width="420" height="88" rx="12" fill="#ffffff" stroke="#cf222e" stroke-width="2"/>
+  <text class="s" x="534" y="948">Severe is true</text>
+  <text class="bb" x="534" y="986">Severe message</text>
+  <rect x="950" y="914" width="420" height="88" rx="12" fill="#ffffff" stroke="#1a7f37" stroke-width="2"/>
+  <text class="s" x="974" y="948">All other conditions</text>
+  <text class="bb" x="974" y="986">Standard message</text>
+
+  <rect x="1480" y="170" width="400" height="300" rx="16" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text class="s" x="1506" y="216">MCP server</text>
+  <text class="bb" x="1506" y="262">Happy Longnose</text>
+  <text class="bb" x="1506" y="302">Food Catalog</text>
+  <text class="b" x="1506" y="370">Dishes, prices and</text>
+  <text class="b" x="1506" y="410">units in stock</text>
+
+  <path d="M384,320 H478" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <path d="M1400,320 H1478" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>  <path d="M384,640 H508" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+  <path d="M384,825 H446 V743 H508" stroke="#57606a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+
+  <rect x="1480" y="500" width="400" height="520" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="1520" cy="542" r="22" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="num" x="1520" y="551">4</text>
+  <text class="t" x="1556" y="552">Preview</text>
+  <text class="s" x="1506" y="596">Activity map</text>
+
+  <rect x="1506" y="620" width="348" height="170" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="s" x="1526" y="658">Desserts</text>
+  <text class="q" x="1526" y="702" font-weight="700">Food Catalog:</text>
+  <text class="mono" x="1526" y="746">get all food items</text>
+
+  <rect x="1506" y="810" width="348" height="190" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text class="s" x="1526" y="848">Nut allergy</text>
+  <text class="mono" x="1526" y="892" font-weight="700">allergen enquiry</text>
+  <text class="q" x="1526" y="936">Yes: severe message</text>
+  <text class="q" x="1526" y="976">No: standard message</text>
+
+  <rect x="1500" y="614" width="360" height="182" rx="16" fill="none" stroke="#0969da" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.36;0.4;0.48;0.5;1" dur="14s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="1500" y="804" width="360" height="202" rx="16" fill="none" stroke="#0969da" stroke-width="5" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.86;0.9;0.97;0.99;1" dur="14s" repeatCount="indefinite"/>
+  </rect>
+
+  <circle r="14" fill="#0969da" opacity="0">
+    <animateMotion path="M384,320 H1480" keyPoints="0;0;1;1" keyTimes="0;0.04;0.34;1" calcMode="linear" dur="14s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.03;0.05;0.34;0.36;1" dur="14s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="14" fill="#0969da" opacity="0">
+    <animateMotion path="M384,640 H940 V890 H720 V958" keyPoints="0;0;1;1" keyTimes="0;0.52;0.84;1" calcMode="linear" dur="14s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.51;0.53;0.84;0.86;1" dur="14s" repeatCount="indefinite"/>
+  </circle>
+</svg>

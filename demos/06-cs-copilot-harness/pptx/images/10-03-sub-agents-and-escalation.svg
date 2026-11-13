@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Sub-agents and a way to a person</title>
+  <desc id="d">A customer reaches the agent through website chat or phone. The primary agent greets and routes by description, with the events Conversation Start, End of Conversation, On Error and Silence Detection. It routes to two sub-agents: Menu Specialist with the food catalog MCP and dish-recommendation, and Catering Specialist with the Topic skill catering request. The Catering Specialist escalates by Email, Teams Phone or Customer Engagement to a human representative. Deploy: demo website, web chat, Teams Phone, contact centers.</desc>
+  <defs>
+    <marker id="ah" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <rect x="30" y="280" width="300" height="330" rx="20" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="180" y="344" font-size="32" fill="#24292f" font-weight="700" text-anchor="middle">Customer</text>
+  <rect x="56" y="394" width="248" height="64" rx="32" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="180" y="437" font-size="28" fill="#24292f" text-anchor="middle">Website chat</text>
+  <rect x="56" y="488" width="248" height="64" rx="32" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="180" y="531" font-size="28" fill="#24292f" text-anchor="middle">Phone</text>
+  <path d="M330,445 H408" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <rect x="410" y="160" width="560" height="570" rx="20" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="690" y="230" font-size="34" fill="#24292f" font-weight="700" text-anchor="middle">Primary agent</text>
+  <text x="690" y="290" font-size="30" fill="#24292f" text-anchor="middle">Greets and routes by</text>
+  <text x="690" y="332" font-size="30" fill="#24292f" text-anchor="middle">description</text>
+  <rect x="450" y="400" width="480" height="60" rx="30" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="690" y="441" font-size="28" fill="#24292f" text-anchor="middle">Conversation Start</text>
+  <rect x="450" y="476" width="480" height="60" rx="30" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="690" y="517" font-size="28" fill="#24292f" text-anchor="middle">End of Conversation</text>
+  <rect x="450" y="552" width="480" height="60" rx="30" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="690" y="593" font-size="28" fill="#24292f" text-anchor="middle">On Error</text>
+  <rect x="450" y="628" width="480" height="60" rx="30" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="690" y="669" font-size="28" fill="#24292f" text-anchor="middle">Silence Detection</text>
+  <path d="M970,280 H1038" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <path d="M970,600 H1038" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <rect x="1040" y="160" width="440" height="240" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1070" y="224" font-size="32" fill="#24292f" font-weight="700">Menu Specialist</text>
+  <text x="1070" y="290" font-size="28" fill="#57606a">Food catalog MCP,</text>
+  <text x="1070" y="334" font-size="28" fill="#57606a">dish-recommendation</text>
+  <rect x="1040" y="480" width="440" height="240" rx="18" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1070" y="544" font-size="32" fill="#24292f" font-weight="700">Catering Specialist</text>
+  <text x="1070" y="610" font-size="28" fill="#57606a">Topic skill</text>
+  <text x="1070" y="654" font-size="28" fill="#57606a">catering request</text>
+  <path d="M1480,600 H1538" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <rect x="1540" y="400" width="350" height="330" rx="18" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="1566" y="460" font-size="32" fill="#24292f" font-weight="700">Human handoff</text>
+  <text x="1566" y="530" font-size="28" fill="#24292f">Email</text>
+  <text x="1566" y="588" font-size="28" fill="#24292f">Teams Phone</text>
+  <text x="1566" y="646" font-size="28" fill="#24292f">Customer Engagement</text>
+  <path d="M1715,730 V770" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <rect x="1540" y="772" width="350" height="96" rx="48" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1715" y="832" font-size="28" fill="#24292f" text-anchor="middle">Human representative</text>
+  <rect x="30" y="930" width="1860" height="110" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="960" y="996" font-size="30" fill="#24292f" text-anchor="middle"><tspan font-weight="700">Deploy:</tspan> demo website, web chat, Teams Phone, contact centers</text>
+</svg>

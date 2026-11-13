@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Generative skills and Topic skills</title>
+  <desc id="d">On a Customer Conversation agent, Add skill has two tabs. Generative: Markdown instructions, the model words the reply, a kebab-case name and a description up to 200 characters, for example dish-recommendation. Topic: a flow of Question, Condition and Message nodes with the same wording every time, for example allergen enquiry. A Microsoft Copilot harness agent has Markdown skills only, created from blank, generated with AI or uploaded as a skill, so a fixed flow goes into a workflow tool or a script in a skill ZIP. Learn names both skill types for Customer Conversation and says nothing about Topic skills on the Microsoft Copilot harness.</desc>
+  <defs>
+    <marker id="ah" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <rect x="30" y="40" width="1220" height="850" rx="24" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="64" y="104" font-size="32" fill="#24292f" font-weight="700">Customer Conversation agent</text>
+  <rect x="60" y="134" width="1160" height="64" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="84" y="176" font-size="28" fill="#57606a" font-weight="600">Add skill</text>
+  <rect x="60" y="226" width="565" height="634" rx="18" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="90" y="290" font-size="34" fill="#24292f" font-weight="700">Generative</text>
+  <text x="90" y="380" font-size="30" fill="#24292f">Markdown instructions</text>
+  <text x="90" y="440" font-size="30" fill="#24292f">The model words the reply</text>
+  <text x="90" y="530" font-size="28" fill="#57606a">kebab-case name,</text>
+  <text x="90" y="572" font-size="28" fill="#57606a">description up to 200</text>
+  <text x="90" y="614" font-size="28" fill="#57606a">characters</text>
+  <rect x="90" y="750" width="380" height="64" rx="32" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="280" y="793" font-size="28" fill="#24292f" text-anchor="middle" font-family="Consolas, monospace">dish-recommendation</text>
+  <rect x="655" y="226" width="565" height="634" rx="18" fill="#fff6e5" stroke="#e0a534" stroke-width="2"/>
+  <text x="685" y="290" font-size="34" fill="#24292f" font-weight="700">Topic</text>
+  <rect x="685" y="330" width="240" height="64" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="805" y="373" font-size="28" fill="#24292f" text-anchor="middle">Question</text>
+  <path d="M805,394 V428" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <rect x="685" y="430" width="240" height="64" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="805" y="473" font-size="28" fill="#24292f" text-anchor="middle">Condition</text>
+  <path d="M805,494 V528" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <rect x="685" y="530" width="240" height="64" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="805" y="573" font-size="28" fill="#24292f" text-anchor="middle">Message</text>
+  <text x="685" y="660" font-size="30" fill="#24292f">Same wording every time</text>
+  <rect x="685" y="750" width="320" height="64" rx="32" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="845" y="793" font-size="28" fill="#24292f" text-anchor="middle" font-family="Consolas, monospace">allergen enquiry</text>
+  <rect x="1290" y="40" width="600" height="850" rx="24" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1320" y="104" font-size="32" fill="#24292f" font-weight="700">Microsoft Copilot</text>
+  <text x="1320" y="148" font-size="32" fill="#24292f" font-weight="700">harness agent</text>
+  <text x="1320" y="214" font-size="30" fill="#24292f">Markdown skills only</text>
+  <rect x="1320" y="246" width="540" height="64" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1344" y="289" font-size="28" fill="#24292f">Create from blank</text>
+  <rect x="1320" y="330" width="540" height="64" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1344" y="373" font-size="28" fill="#24292f">Generate with AI</text>
+  <rect x="1320" y="414" width="540" height="64" rx="12" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1344" y="457" font-size="28" fill="#24292f">Upload a skill</text>
+  <path d="M1590,478 V570" fill="none" stroke="#57606a" stroke-width="3" marker-end="url(#ah)"/>
+  <rect x="1320" y="574" width="540" height="190" rx="14" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1344" y="630" font-size="30" fill="#24292f">A fixed flow goes into</text>
+  <text x="1344" y="674" font-size="30" fill="#24292f">a workflow tool or a script</text>
+  <text x="1344" y="718" font-size="30" fill="#24292f">in a skill ZIP</text>
+  <rect x="30" y="930" width="1860" height="110" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="960" y="996" font-size="28" fill="#24292f" text-anchor="middle">Learn names both skill types for Customer Conversation and says nothing about Topic skills on the Microsoft Copilot harness</text>
+</svg>

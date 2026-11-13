@@ -2,9 +2,9 @@
 
 Hands-on labs for Microsoft Copilot harness agents in Copilot Studio. Each lab belongs to a topic in the matching module, [Microsoft Copilot Harness Agents in Copilot Studio](../../demos/06-cs-copilot-harness/readme.md), and assumes you have read that topic's guide first.
 
-Work them in order: the first three each isolate one surface (the New agent menu, the Build tabs, Skills), and the fourth pulls all of them together into a capstone agent. The labs after it add hooks, IQ grounding, evaluation with test sets and apps.
+Work them in order: the first three each isolate one surface (the New agent menu, the Build tabs, Skills), and the fourth pulls all of them together into a capstone agent. The labs after it add hooks, IQ grounding, evaluation with test sets and apps, and an optional lab closes the module with a Customer Conversation agent.
 
-![The lab path: the New agent menu, the Build tabs and Skills labs each isolate one surface and feed the capstone Sales Account Assistant, after which the labs add hooks, IQ grounding, evaluation with test sets and apps.](./_images/copilot-harness-lab-path.svg)
+![The lab path: the New agent menu, the Build tabs and Skills labs each isolate one surface and feed the capstone Sales Account Assistant, after which the labs add hooks, IQ grounding, evaluation with test sets and apps, and the optional Customer Conversation lab closes the path.](./_images/copilot-harness-lab-path.svg)
 
 ## Labs
 
@@ -19,7 +19,8 @@ Work them in order: the first three each isolate one surface (the New agent menu
 | [Test and Evaluate Copilot Studio Agents](../../demos/06-cs-copilot-harness/07-evaluations/readme.md) | [Evaluate a Microsoft Copilot Harness Agent with Test Sets](07-evaluations/lab-01-evaluate-with-test-sets.md) | [Einen Microsoft Copilot Harness Agent mit Test Sets evaluieren](07-evaluations/lab-01-evaluate-with-test-sets-de.md) | Fill a conversation test set three ways, run a baseline, diagnose each failure into a component bucket, change one thing, and prove the fix with a second run | 25 |
 | [Migrate Standard Agents to Microsoft Copilot Harness Agents](../../demos/06-cs-copilot-harness/08-migration/readme.md) | [Upgrade the HR Agent and Rebuild Its Topics](08-migration/lab-01-upgrade-the-hr-agent.md) | [Den HR Agent upgraden und seine Topics neu aufbauen](08-migration/lab-01-upgrade-the-hr-agent-de.md) | Upgrade the HR agent from module 03, read the upgrade report, map each topic to a skill, a workflow or a hook, rebuild the employee data topic as a workflow tool, and add a session-start hook | 40 |
 | [Building Apps in Copilot Studio](../../demos/06-cs-copilot-harness/09-apps/readme.md) | [Build and Share a Business App](09-apps/lab-01-build-an-app.md) | [Eine Business App bauen und teilen](09-apps/lab-01-build-an-app-de.md) | Connect a generated app to a SharePoint list, publish and share it with a classmate, and confirm that data access is a separate permission | 10 |
-| | **Total** | | | **220** |
+| [Customer Conversation Agents: Topic Skills, Sub-Agents, and Escalation](../../demos/06-cs-copilot-harness/10-customer-conversation/readme.md) | [Build a Customer Service Agent with Sub-Agents and Topic Skills](10-customer-conversation/lab-01-customer-service-agent.md) (optional) | [Einen Customer Service Agent mit Sub-Agents und Topic Skills bauen](10-customer-conversation/lab-01-customer-service-agent-de.md) | Build a Customer Conversation agent whose primary agent routes to a menu specialist with a Generative skill on the food catalog and a catering specialist with a Topic skill and an email escalation, then open it on the demo website | 80 |
+| | **Total** | | | **300** |
 
 ## Lab assets
 
@@ -34,7 +35,7 @@ Some labs ship starter files in a folder next to the lab guide:
 
 ## Prerequisites
 
-- A Copilot Studio environment where the **New agent** menu offers **Agent** with the **GitHub Copilot** badge
+- A Copilot Studio environment where the **New agent** menu offers **Agent** with the **GitHub Copilot** badge; the optional Customer Conversation lab needs **Agent** with the **Customer Conversation** badge
 - Permission to create agents, knowledge sources, and tools in that environment
 - Your own environment, named after your class account (for example `copilot-studio-01`), selected under **Switch environment** at the bottom of the left navigation
 - The Standard agent labs in [Basics](../03-cs-basics/readme.md), [Tools](../04-cs-tools/readme.md), and [Advanced](../05-cs-advanced/readme.md) completed, so the Standard to Microsoft Copilot comparisons land

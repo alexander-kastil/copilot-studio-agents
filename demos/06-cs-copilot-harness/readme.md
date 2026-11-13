@@ -19,6 +19,7 @@ Treat Standard agents as the primary teaching track and Microsoft Copilot harnes
 | [Test and Evaluate Copilot Studio Agents](07-evaluations/readme.md) | Test sets and graders for both kinds of agent, the Evaluate tab of Microsoft Copilot harness agents, diagnosing a failing case, and post-release analytics from thumbs to CSAT to themes |
 | [Migrate Standard Agents to Microsoft Copilot Harness Agents](08-migration/readme.md) | When a Standard agent should move, the upgrade, rebuild and terminal routes, where each Standard part lands, and topics rebuilt as workflow tools and hooks |
 | [Building Apps in Copilot Studio](09-apps/readme.md) | Apps generated from a description beside agents and workflows: refining by conversation, publish versus share, and data access |
+| [Customer Conversation Agents: Topic Skills, Sub-Agents, and Escalation](10-customer-conversation/readme.md) | The third harness for customers over voice and chat: a primary agent with sub-agents, Generative and Topic skills, events, escalation to a person, and where a fixed flow lives on each harness |
 
 ## Demos
 
@@ -32,6 +33,7 @@ Treat Standard agents as the primary teaching track and Microsoft Copilot harnes
 | [Grounding Agents with Work IQ, Foundry IQ, and Fabric IQ](06-iq-grounding/readme.md) | [Ground an Agent in Your Work Context with Work IQ](06-iq-grounding/demo-06-ground-with-iq.md) |
 | [Migrate Standard Agents to Microsoft Copilot Harness Agents](08-migration/readme.md) | [Rebuild a Topic and Its Agent Flow as a Workflow](08-migration/demo-08-rebuild-a-topic-as-a-workflow.md) |
 | [Building Apps in Copilot Studio](09-apps/readme.md) | [Build an App from a Description](09-apps/demo-09-build-an-app.md) |
+| [Customer Conversation Agents: Topic Skills, Sub-Agents, and Escalation](10-customer-conversation/readme.md) | [Script an Allergen Answer with a Topic Skill](10-customer-conversation/demo-10-customer-service-with-topic-skills.md) |
 
 ## Labs
 
@@ -46,6 +48,7 @@ Treat Standard agents as the primary teaching track and Microsoft Copilot harnes
 | [Evaluate a Microsoft Copilot Harness Agent with Test Sets](../../labs/06-cs-copilot-harness/07-evaluations/lab-01-evaluate-with-test-sets.md) | Fill a conversation test set three ways, run a baseline, diagnose each failure into a component bucket, change one thing, and prove the fix with a second run |
 | [Upgrade the HR Agent and Rebuild Its Topics](../../labs/06-cs-copilot-harness/08-migration/lab-01-upgrade-the-hr-agent.md) | Upgrade the HR agent from module 03, map each topic to a skill, a workflow or a hook, rebuild the employee data topic as a workflow tool, and add a session-start hook |
 | [Build and Share a Business App](../../labs/06-cs-copilot-harness/09-apps/lab-01-build-an-app.md) | Connect a generated app to a SharePoint list, publish and share it with a classmate, and confirm that data access is a separate permission |
+| [Build a Customer Service Agent with Sub-Agents and Topic Skills](../../labs/06-cs-copilot-harness/10-customer-conversation/lab-01-customer-service-agent.md) (optional) | Build a Customer Conversation agent that routes to a menu specialist with a Generative skill and a catering specialist with a Topic skill and an email escalation, then open it on the demo website |
 
 ## Standard to Microsoft Copilot quick reference
 
@@ -73,6 +76,8 @@ The official [microsoft/mcs-labs](https://github.com/microsoft/mcs-labs) repo ca
 [Access standard harness agents and agent flows](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/switch-experiences)
 
 [Skills overview (preview)](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/skills-overview)
+
+[Agents powered by the Customer Conversation harness overview (preview)](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/overview-customer-conversation)
 
 [What's new in Copilot Studio](https://learn.microsoft.com/microsoft-copilot-studio/whats-new)
 

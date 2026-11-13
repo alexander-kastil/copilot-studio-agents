@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Three harnesses, three kinds of agent</title>
+  <desc id="d">Three columns compare the harnesses. Microsoft Copilot harness: best for complex multi-step processes, reasons through a goal, retries and finds another path when it goes wrong, has Markdown skills and bills Copilot Credits. Customer Conversation harness: best for customers over voice and chat, a primary agent routes to sub-agents, escalates to a person when it goes wrong, has Generative and Topic skills and bills Copilot Credits. Standard harness: best for rule-based conversations, follows your topics, follows the paths you built when it goes wrong, has Topics and uses standard licensing. Tell them apart: only a Customer Conversation agent has a Deploy tab.</desc>
+  <defs>
+    <marker id="ah" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <rect x="350" y="40" width="500" height="850" rx="24" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="364" y="64" width="472" height="80" rx="40" fill="#f3edff" stroke="#8c959f" stroke-width="2"/>
+  <text x="600" y="115" font-size="30" fill="#24292f" font-weight="700" text-anchor="middle">Microsoft Copilot harness</text>
+  <rect x="870" y="30" width="500" height="870" rx="24" fill="#ffffff" stroke="#1a7f37" stroke-width="4"/>
+  <rect x="884" y="64" width="472" height="80" rx="40" fill="#e9f7ef" stroke="#8c959f" stroke-width="2"/>
+  <text x="1120" y="115" font-size="29" fill="#24292f" font-weight="700" text-anchor="middle">Customer Conversation harness</text>
+  <rect x="1390" y="40" width="500" height="850" rx="24" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <rect x="1404" y="64" width="472" height="80" rx="40" fill="#eaf2ff" stroke="#8c959f" stroke-width="2"/>
+  <text x="1640" y="115" font-size="30" fill="#24292f" font-weight="700" text-anchor="middle">Standard harness</text>
+  <line x1="40" y1="180" x2="1880" y2="180" stroke="#d0d7de" stroke-width="2"/>
+  <text x="40" y="260" font-size="28" fill="#57606a">Best for</text>
+  <text x="390" y="240" font-size="30" fill="#24292f">Complex multi-step</text>
+  <text x="390" y="282" font-size="30" fill="#24292f">processes</text>
+  <text x="910" y="240" font-size="30" fill="#24292f">Customers over</text>
+  <text x="910" y="282" font-size="30" fill="#24292f">voice and chat</text>
+  <text x="1430" y="240" font-size="30" fill="#24292f">Rule-based</text>
+  <text x="1430" y="282" font-size="30" fill="#24292f">conversations</text>
+  <line x1="40" y1="320" x2="1880" y2="320" stroke="#d0d7de" stroke-width="2"/>
+  <text x="40" y="400" font-size="28" fill="#57606a">How it works</text>
+  <text x="390" y="380" font-size="30" fill="#24292f">Reasons through</text>
+  <text x="390" y="422" font-size="30" fill="#24292f">a goal</text>
+  <text x="910" y="380" font-size="30" fill="#24292f">Primary agent routes</text>
+  <text x="910" y="422" font-size="30" fill="#24292f">to sub-agents</text>
+  <text x="1430" y="402" font-size="30" fill="#24292f">Follows your topics</text>
+  <line x1="40" y1="460" x2="1880" y2="460" stroke="#d0d7de" stroke-width="2"/>
+  <text x="40" y="540" font-size="28" fill="#57606a">When it goes wrong</text>
+  <text x="390" y="520" font-size="30" fill="#24292f">Retries, finds</text>
+  <text x="390" y="562" font-size="30" fill="#24292f">another path</text>
+  <text x="910" y="542" font-size="30" fill="#24292f">Escalates to a person</text>
+  <text x="1430" y="520" font-size="30" fill="#24292f">Follows the paths</text>
+  <text x="1430" y="562" font-size="30" fill="#24292f">you built</text>
+  <line x1="40" y1="600" x2="1880" y2="600" stroke="#d0d7de" stroke-width="2"/>
+  <text x="40" y="680" font-size="28" fill="#57606a">Skills</text>
+  <text x="390" y="682" font-size="30" fill="#24292f">Markdown skills</text>
+  <text x="910" y="660" font-size="30" fill="#24292f">Generative and</text>
+  <text x="910" y="702" font-size="30" fill="#24292f">Topic skills</text>
+  <text x="1430" y="682" font-size="30" fill="#24292f">Topics</text>
+  <line x1="40" y1="740" x2="1880" y2="740" stroke="#d0d7de" stroke-width="2"/>
+  <text x="40" y="820" font-size="28" fill="#57606a">Billing</text>
+  <text x="390" y="822" font-size="30" fill="#24292f">Copilot Credits</text>
+  <text x="910" y="822" font-size="30" fill="#24292f">Copilot Credits</text>
+  <text x="1430" y="822" font-size="30" fill="#24292f">Standard licensing</text>
+  <rect x="30" y="930" width="1860" height="110" rx="14" fill="#f6f8fa" stroke="#8c959f" stroke-width="2"/>
+  <text x="960" y="996" font-size="30" fill="#24292f" text-anchor="middle"><tspan font-weight="700">Tell them apart:</tspan> only a Customer Conversation agent has a Deploy tab</text>
+</svg>

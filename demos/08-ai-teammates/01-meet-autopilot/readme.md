@@ -41,6 +41,22 @@ Two other products share the word. Windows Autopilot is Intune device provisioni
 | A process with an owner that never sleeps | Autopilot | Persistent, proactive, reachable like a colleague |
 | A governed process agent with your own tools and triggers | [Agent account](../03-agent-accounts/readme.md) | A maker controls instructions, tools, and triggers in Copilot Studio |
 
+## What Autopilot Does in Practice
+
+The walkthrough videos show the same pattern again and again: a trigger starts the work, Work IQ and the other tools gather what is needed, and the result lands where people already work. The scenarios below come from those videos and run on the Scout preview. Use them to decide which of your own processes a teammate could own.
+
+| Scenario | Starts on | What it uses | What comes out |
+|---|---|---|---|
+| Meeting prep | One hour before a client meeting | Mail threads, SharePoint files, Teams chats | A one-page brief |
+| Inbox triage | A heartbeat every 15 minutes | Mail from priority contacts | Flagged messages and draft replies for your review |
+| Morning briefing | Every weekday at 8:00 | Overnight mail, changed documents, call notes | A structured briefing waiting when you log on |
+| Overnight report | A manager's request late in the evening | SharePoint, Power BI, Teams, and mail | A finished executive report by morning |
+| Monthly business review | Nine days before the review date | Teams messages to direct reports, market input, the PowerPoint template | Reminders sent, input collected, the deck filled in |
+| Expense entry | New receipts | Browser control on an expense portal without an API | Expense lines entered and receipts uploaded |
+| Self-review | A one-time request | Nine months of mail, Teams chats, and documents | Five recurring tasks ranked by the time automating them would save |
+
+Every outbound step in these scenarios, a sent mail or a Teams post, stops for your approval in a conversation and is skipped in heartbeat mode. [Working with Autopilot](../02-autopilot-at-work/readme.md) explains both rules and the tools behind each row.
+
 ## Availability and Billing
 
 Microsoft expanded Autopilot to private preview at the end of September 2026 and has not announced a general availability date. Cowork, Code, and Autopilot run on usage-based billing, so plan consumption through Copilot Credits rather than a per-user seat. Home and Code roll out through the Frontier program first.
@@ -62,5 +78,9 @@ Planned: [Write a Teammate Brief](../../../labs/08-ai-teammates/readme.md). You 
 [Introducing Microsoft Scout](https://www.microsoft.com/en-us/copilot/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/)
 
 [Microsoft Scout (Frontier) overview](https://learn.microsoft.com/microsoft-scout/overview)
+
+[Copilot vs Cowork vs Scout: Microsoft's AI Layers Explained (video)](https://www.youtube.com/watch?v=MqoGC0bgbr8)
+
+[Microsoft Scout Explained (video)](https://www.youtube.com/watch?v=mvtQVnWUz_g)
 
 [Introducing the plugin registry](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/introducing-the-plugin-registry---one-place-to-discover-and-govern-plugins-for-m/4559682)
