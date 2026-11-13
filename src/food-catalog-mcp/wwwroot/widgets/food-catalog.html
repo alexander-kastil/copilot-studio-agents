@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Food catalog</title>
+<style>
+:root {
+  color-scheme: light;
+  --bg: var(--color-background-primary, #ffffff);
+  --bg-alt: var(--color-background-secondary, #f3f5f9);
+  --bg-hover: var(--color-background-tertiary, #eaeef5);
+  --text: var(--color-text-primary, #0b1220);
+  --text-muted: var(--color-text-secondary, #566275);
+  --border: var(--color-border-secondary, #dfe4ec);
+  --accent: #1d4ed8;
+  --accent-fill: #1d4ed8;
+  --on-accent: #ffffff;
+  --warn-bg: #fdecc8;
+  --warn-text: #7a4a00;
+  --ok-text: #046c4e;
+  --ring: var(--color-ring-primary, #2563eb);
+  --font: var(--font-sans, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif);
+  --cap: 640px;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: var(--color-background-primary, #182033);
+  --bg-alt: var(--color-background-secondary, #212b41);
+  --bg-hover: var(--color-background-tertiary, #2a3650);
+  --text: var(--color-text-primary, #e8eef7);
+  --text-muted: var(--color-text-secondary, #9aa7bd);
+  --border: var(--color-border-secondary, #34415c);
+  --accent: #7db3ff;
+  --accent-fill: #2563eb;
+  --on-accent: #ffffff;
+  --warn-bg: #4a3512;
+  --warn-text: #ffd27a;
+  --ok-text: #4ade9a;
+  --ring: var(--color-ring-primary, #7db3ff);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { background: transparent; color: var(--text); font: 14px/1.4 var(--font); }
+.card { background: var(--bg); border-radius: 12px; overflow: hidden; box-shadow: 0 1px 2px rgba(11, 18, 32, .12), 0 0 0 1px var(--border); }
+:root[data-theme="dark"] .card { box-shadow: 0 1px 3px rgba(0, 0, 0, .5); }
+.head { display: flex; align-items: center; gap: 8px; padding: 10px 12px; flex-wrap: wrap; }
+.title { font-size: 15px; font-weight: 650; margin: 0; flex: 1 1 auto; min-width: 0; }
+.sub { color: var(--text-muted); font-size: 12px; font-weight: 400; margin-left: 6px; }
+button { font: inherit; color: inherit; cursor: pointer; }
+button:focus-visible, tr.row:focus-visible { outline: 2px solid var(--ring); outline-offset: -2px; }
+.chip { border: 1px solid var(--border); background: var(--bg-alt); border-radius: 999px; padding: 3px 10px; font-size: 12px; min-height: 28px; }
+.chip[aria-pressed="true"] { background: var(--warn-bg); color: var(--warn-text); border-color: transparent; font-weight: 600; }
+.btn { border: 1px solid var(--border); background: var(--bg-alt); border-radius: 8px; padding: 5px 12px; min-height: 30px; }
+.btn:hover { background: var(--bg-hover); }
+.btn.primary { background: var(--accent-fill); color: var(--on-accent); border-color: transparent; font-weight: 600; }
+.btn.primary:hover { filter: brightness(1.1); }
+.btn:disabled { opacity: .6; cursor: default; }
+[hidden] { display: none !important; }
+.scroll { max-height: calc(var(--cap) - 54px); overflow: auto; border-top: 1px solid var(--border); }
+table { width: 100%; border-collapse: collapse; }
+thead th { position: sticky; top: 0; background: var(--bg-alt); z-index: 1; padding: 0; text-align: left; font-weight: 600; font-size: 12px; color: var(--text-muted); }
+thead th.num { text-align: right; }
+.sort { display: flex; width: 100%; align-items: center; gap: 4px; padding: 8px 10px; border: 0; background: transparent; font-weight: 600; font-size: 12px; color: inherit; white-space: nowrap; }
+th.num .sort { justify-content: flex-end; }
+.sort:hover { color: var(--text); }
+.arrow { display: inline-block; width: 10px; opacity: .35; }
+th[aria-sort="ascending"] .arrow, th[aria-sort="descending"] .arrow { opacity: 1; color: var(--accent); }
+th[aria-sort="ascending"], th[aria-sort="descending"] { color: var(--text); }
+td { padding: 8px 10px; border-top: 1px solid var(--border); vertical-align: middle; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+tr.row { cursor: pointer; }
+tr.row:hover td { background: var(--bg-hover); }
+tr.row.open td { background: var(--bg-alt); }
+.name { display: flex; align-items: center; gap: 6px; font-weight: 550; }
+.caret { display: inline-block; width: 10px; color: var(--text-muted); transition: transform .15s; flex: none; }
+tr.row.open .caret { transform: rotate(90deg); }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--warn-text); flex: none; }
+.low { color: var(--warn-text); font-weight: 650; }
+tr.detail td { background: var(--bg-alt); padding: 4px 12px 12px 26px; border-top: 0; }
+.desc { margin: 0 0 8px; color: var(--text); }
+.facts { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; margin-bottom: 10px; color: var(--text-muted); font-size: 12px; }
+.badge { background: var(--warn-bg); color: var(--warn-text); border-radius: 999px; padding: 2px 9px; font-weight: 650; font-size: 12px; }
+.badge.ok { background: transparent; color: var(--ok-text); padding-left: 0; }
+.msg { padding: 14px 12px; color: var(--text-muted); text-align: center; }
+.msg.err { color: var(--warn-text); }
+.live { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+@media (max-width: 420px) {
+  .hide-narrow { display: none; }
+  .sub { display: block; margin: 0; }
+  td, .sort { padding-left: 8px; padding-right: 8px; }
+}
+@media (prefers-reduced-motion: reduce) { .caret { transition: none; } }
+</style>
+</head>
+<body>
+<div class="card" id="card">
+  <div class="head">
+    <h1 class="title">Food catalog<span class="sub" id="count"></span></h1>
+    <button class="chip" id="lowOnly" type="button" aria-pressed="false" hidden></button>
+    <button class="btn" id="refresh" type="button" hidden>Refresh</button>
+  </div>
+  <div class="scroll">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col" data-key="name" aria-sort="none"><button class="sort" type="button">Name<span class="arrow"></span></button></th>
+          <th scope="col" class="num" data-key="price" aria-sort="none"><button class="sort" type="button">Price<span class="arrow"></span></button></th>
+          <th scope="col" class="num" data-key="inStock" aria-sort="none"><button class="sort" type="button">In stock<span class="arrow"></span></button></th>
+          <th scope="col" class="num hide-narrow" data-key="minStock" aria-sort="none"><button class="sort" type="button">Min stock<span class="arrow"></span></button></th>
+        </tr>
+      </thead>
+      <tbody id="body"></tbody>
+    </table>
+    <div class="msg" id="status" role="status">Waiting for the catalog...</div>
+  </div>
+</div>
+<div class="live" id="live" aria-live="polite"></div>
+<script>
+(function () {
+  var SAMPLE = [
+    { id: 1, name: "Wiener Schnitzel", price: 14.9, inStock: 42, minStock: 20, description: "Veal cutlet, breaded and fried golden, served with parsley potatoes." },
+    { id: 2, name: "Germknoedel", price: 6.5, inStock: 8, minStock: 15, description: "Steamed yeast dumpling filled with plum jam, poppy seeds and melted butter." },
+    { id: 3, name: "Kaiserschmarrn", price: 9.8, inStock: 31, minStock: 12, description: "Shredded caramelised pancake with raisins and plum compote." },
+    { id: 4, name: "Weißwurst mit Brezn", price: 7.9, inStock: 12, minStock: 25, description: "Bavarian veal sausage with sweet mustard and a fresh pretzel." },
+    { id: 5, name: "Schweinshaxe mit Kraut", price: 16.5, inStock: 19, minStock: 10, description: "Roasted pork knuckle with crackling and braised sauerkraut." },
+    { id: 6, name: "Pizza Napoli", price: 11.2, inStock: 55, minStock: 30, description: "Tomato, mozzarella, anchovies, capers and oregano on a thin base." },
+    { id: 7, name: "Arancini Napoletana", price: 8.4, inStock: 4, minStock: 18, description: "Fried rice balls with ragu and mozzarella." },
+    { id: 8, name: "Pad Ka Prao", price: 12.6, inStock: 27, minStock: 14, description: "Stir-fried minced meat with holy basil, chili and a fried egg." },
+    { id: 9, name: "Green Curry", price: 13.1, inStock: 23, minStock: 16, description: "Coconut curry with green chili paste, bamboo shoots and Thai basil." }
+  ];
+
+  var embedded = window.parent !== window;
+  var root = document.documentElement;
+  var items = [];
+  var sortKey = null;
+  var sortDir = 1;
+  var lowOnly = false;
+  var open = {};
+  var nextId = 1;
+  var pending = {};
+  var locale = navigator.language || "en-US";
+  var fmt = null;
+
+  var el = {
+    body: document.getElementById("body"),
+    status: document.getElementById("status"),
+    count: document.getElementById("count"),
+    refresh: document.getElementById("refresh"),
+    lowOnly: document.getElementById("lowOnly"),
+    live: document.getElementById("live"),
+    heads: document.querySelectorAll("thead th")
+  };
+
+  function makeFmt() {
+    fmt = new Intl.NumberFormat(locale, { style: "currency", currency: "EUR" });
+  }
+
+  function post(msg) {
+    window.parent.postMessage(Object.assign({ jsonrpc: "2.0" }, msg), "*");
+  }
+
+  function request(method, params, timeoutMs) {
+    return new Promise(function (resolve, reject) {
+      var id = nextId++;
+      var timer = timeoutMs ? setTimeout(function () {
+        delete pending[id];
+        reject(new Error("timeout"));
+      }, timeoutMs) : null;
+      pending[id] = { resolve: resolve, reject: reject, timer: timer };
+      post({ id: id, method: method, params: params });
+    });
+  }
+
+  function notify(method, params) {
+    post({ method: method, params: params });
+  }
+
+  function applyTheme(theme) {
+    if (theme === "dark" || theme === "light") root.setAttribute("data-theme", theme);
+  }
+
+  function applyHostContext(ctx) {
+    if (!ctx) return;
+    if (ctx.theme) applyTheme(ctx.theme);
+    var vars = ctx.styles && ctx.styles.variables;
+    if (vars) {
+      Object.keys(vars).forEach(function (k) {
+        if (vars[k]) root.style.setProperty(k, vars[k]);
+      });
+    }
+    var fonts = ctx.styles && ctx.styles.css && ctx.styles.css.fonts;
+    if (fonts && !document.getElementById("hostFonts")) {
+      var s = document.createElement("style");
+      s.id = "hostFonts";
+      s.textContent = fonts;
+      document.head.appendChild(s);
+    }
+    if (ctx.locale) { locale = ctx.locale; makeFmt(); }
+    var dim = ctx.containerDimensions;
+    if (dim) {
+      var cap = dim.height || dim.maxHeight;
+      if (cap) root.style.setProperty("--cap", Math.min(640, cap) + "px");
+    }
+    if (items.length) render();
+  }
+
+  function normalize(list) {
+    return (list || []).map(function (i) {
+      return {
+        id: i.id, name: String(i.name), price: Number(i.price),
+        inStock: Number(i.inStock), minStock: Number(i.minStock),
+        description: i.description || "",
+        belowMinimum: typeof i.belowMinimum === "boolean" ? i.belowMinimum : Number(i.inStock) < Number(i.minStock)
+      };
+    });
+  }
+
+  function setItems(list) {
+    items = normalize(list);
+    render();
+  }
+
+  function visibleItems() {
+    var list = items.filter(function (i) { return !lowOnly || i.belowMinimum; });
+    if (sortKey) {
+      list = list.slice().sort(function (a, b) {
+        var x = a[sortKey], y = b[sortKey];
+        var c = typeof x === "string" ? x.localeCompare(y, locale) : x - y;
+        return c * sortDir;
+      });
+    }
+    return list;
+  }
+
+  function node(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text !== undefined) n.textContent = text;
+    return n;
+  }
+
+  function reorderText(i) {
+    return "Plan a reorder for " + i.name + ": " + i.inStock + " in stock, minimum " + i.minStock + ".";
+  }
+
+  function toggle(id) {
+    if (open[id]) delete open[id]; else open[id] = true;
+    render();
+  }
+
+  function render() {
+    var low = items.filter(function (i) { return i.belowMinimum; }).length;
+    el.count.textContent = items.length + (items.length === 1 ? " item" : " items");
+    el.lowOnly.hidden = low === 0 && !lowOnly;
+    el.lowOnly.textContent = low + " below minimum";
+    el.lowOnly.setAttribute("aria-pressed", String(lowOnly));
+
+    el.heads.forEach(function (th) {
+      var active = th.getAttribute("data-key") === sortKey;
+      th.setAttribute("aria-sort", active ? (sortDir === 1 ? "ascending" : "descending") : "none");
+      th.querySelector(".arrow").textContent = active ? (sortDir === 1 ? "▲" : "▼") : "↕";
+    });
+
+    var focused = document.activeElement && document.activeElement.getAttribute && document.activeElement.getAttribute("data-row");
+    var frag = document.createDocumentFragment();
+    visibleItems().forEach(function (i) {
+      var isOpen = !!open[i.id];
+      var tr = node("tr", "row" + (isOpen ? " open" : ""));
+      tr.tabIndex = 0;
+      tr.setAttribute("role", "button");
+      tr.setAttribute("aria-expanded", String(isOpen));
+      tr.setAttribute("data-row", i.id);
+      tr.addEventListener("click", function () { toggle(i.id); });
+      tr.addEventListener("keydown", function (e) {
+        if (e.target === tr && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); toggle(i.id); }
+      });
+
+      var n = node("td");
+      var wrap = node("span", "name");
+      wrap.appendChild(node("span", "caret", "▸"));
+      wrap.appendChild(node("span", "", i.name));
+      if (i.belowMinimum) {
+        var d = node("span", "dot");
+        d.title = "Below minimum stock";
+        wrap.appendChild(d);
+      }
+      n.appendChild(wrap);
+      tr.appendChild(n);
+      tr.appendChild(node("td", "num", fmt.format(i.price)));
+      tr.appendChild(node("td", "num" + (i.belowMinimum ? " low" : ""), String(i.inStock)));
+      tr.appendChild(node("td", "num hide-narrow", String(i.minStock)));
+      frag.appendChild(tr);
+
+      if (isOpen) {
+        var dr = node("tr", "detail");
+        var td = node("td");
+        td.colSpan = 4;
+        td.appendChild(node("p", "desc", i.description || "No description."));
+        var facts = node("div", "facts");
+        facts.appendChild(node("span", "", i.inStock + " in stock, minimum " + i.minStock));
+        facts.appendChild(node("span", i.belowMinimum ? "badge" : "badge ok", i.belowMinimum ? "Below minimum" : "Stock OK"));
+        td.appendChild(facts);
+        var ask = node("button", "btn primary", "Ask the agent to reorder");
+        ask.type = "button";
+        ask.addEventListener("click", function (e) {
+          e.stopPropagation();
+          sendReorder(i, ask);
+        });
+        td.appendChild(ask);
+        dr.appendChild(td);
+        frag.appendChild(dr);
+      }
+    });
+    el.body.replaceChildren(frag);
+    if (focused) {
+      var again = el.body.querySelector('[data-row="' + focused + '"]');
+      if (again) again.focus({ preventScroll: true });
+    }
+    if (!el.body.children.length) {
+      el.status.hidden = false;
+      el.status.className = "msg";
+      el.status.textContent = items.length ? "No items below minimum stock." : "The catalog is empty.";
+    } else {
+      el.status.hidden = true;
+    }
+    scheduleSize();
+  }
+
+  function announce(t) { el.live.textContent = t; }
+
+  function sendReorder(i, btn) {
+    if (!embedded) {
+      announce("Preview: would send " + reorderText(i));
+      btn.textContent = "Preview only";
+      return;
+    }
+    btn.disabled = true;
+    request("ui/message", { role: "user", content: [{ type: "text", text: reorderText(i) }] })
+      .then(function () { btn.textContent = "Sent to the agent"; announce("Reorder request sent."); })
+      .catch(function () { btn.disabled = false; btn.textContent = "Not sent, try again"; });
+  }
+
+  function showError(t) {
+    el.status.hidden = false;
+    el.status.className = "msg err";
+    el.status.textContent = t;
+    scheduleSize();
+  }
+
+  function refresh() {
+    el.refresh.disabled = true;
+    el.refresh.textContent = "Refreshing...";
+    request("tools/call", { name: "show_food_catalog", arguments: {} })
+      .then(function (res) {
+        var sc = res && res.structuredContent;
+        if (!sc || !sc.items) throw new Error("no data");
+        setItems(sc.items);
+        announce("Catalog refreshed.");
+      })
+      .catch(function () { showError("Could not refresh the catalog."); })
+      .then(function () { el.refresh.disabled = false; el.refresh.textContent = "Refresh"; });
+  }
+
+  el.heads.forEach(function (th) {
+    th.querySelector("button").addEventListener("click", function () {
+      var key = th.getAttribute("data-key");
+      if (sortKey === key) sortDir = -sortDir; else { sortKey = key; sortDir = 1; }
+      render();
+    });
+  });
+  el.lowOnly.addEventListener("click", function () { lowOnly = !lowOnly; render(); });
+  el.refresh.addEventListener("click", refresh);
+
+  var lastW = 0, lastH = 0, queued = false;
+  function scheduleSize() {
+    if (!embedded || queued) return;
+    queued = true;
+    requestAnimationFrame(function () {
+      queued = false;
+      var r = document.body.getBoundingClientRect();
+      var w = Math.ceil(r.width), h = Math.min(Math.ceil(r.height), 640);
+      if (w !== lastW || h !== lastH) {
+        lastW = w; lastH = h;
+        notify("ui/notifications/size-changed", { width: w, height: h });
+      }
+    });
+  }
+  if (window.ResizeObserver) new ResizeObserver(scheduleSize).observe(document.body);
+
+  window.addEventListener("message", function (e) {
+    if (e.source !== window.parent) return;
+    var m = e.data;
+    if (!m || m.jsonrpc !== "2.0") return;
+    if (m.method === undefined && m.id !== undefined) {
+      var p = pending[m.id];
+      if (!p) return;
+      delete pending[m.id];
+      if (p.timer) clearTimeout(p.timer);
+      if (m.error) p.reject(new Error(m.error.message || "error")); else p.resolve(m.result);
+      return;
+    }
+    if (m.method === "ui/notifications/tool-result") {
+      var r = m.params || {};
+      if (r.structuredContent && r.structuredContent.items) setItems(r.structuredContent.items);
+      else showError("The tool returned no catalog data.");
+    } else if (m.method === "ui/notifications/host-context-changed") {
+      applyHostContext(m.params);
+    } else if (m.method === "ui/notifications/tool-cancelled") {
+      showError("The catalog request was cancelled.");
+    } else if ((m.method === "ping" || m.method === "ui/resource-teardown") && m.id !== undefined) {
+      post({ id: m.id, result: {} });
+    }
+  });
+
+  makeFmt();
+  if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) applyTheme("dark");
+
+  if (!embedded) {
+    setItems(SAMPLE);
+    return;
+  }
+
+  request("ui/initialize", {
+    protocolVersion: "2026-01-26",
+    appInfo: { name: "food-catalog", version: "1.0.0" },
+    appCapabilities: { availableDisplayModes: ["inline"] }
+  }, 10000).then(function (res) {
+    el.refresh.hidden = !(res && res.hostCapabilities && res.hostCapabilities.serverTools);
+    applyHostContext(res && res.hostContext);
+    notify("ui/notifications/initialized", {});
+    scheduleSize();
+  }).catch(function () {
+    showError("The host did not answer the handshake.");
+  });
+})();
+</script>
+</body>
+</html>

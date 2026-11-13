@@ -1,0 +1,45 @@
+{
+    "$schema": "https://aka.ms/json-schemas/copilot-extensions/v2.1/plugin.schema.json",
+    "schema_version": "v2.4",
+    "name_for_human": "Food Catalog",
+    "description_for_human": "Demand form and catalog table of the canteen's food catalog",
+    "namespace": "foodcatalog",
+    "functions": [
+        {
+            "name": "open_demand_form",
+            "description": "Opens the demand form, an interactive form inside the conversation that lists every dish of the food catalog with a number input. Use it when the user wants to submit demand, plan an order or buy food."
+        },
+        {
+            "name": "submit_demand",
+            "description": "Records the food demand: parallel arrays of food ids and quantities. Use it when the user states the quantities in chat."
+        },
+        {
+            "name": "show_food_catalog",
+            "description": "Shows the food catalog as an interactive table with prices and stock inside the conversation."
+        },
+        {
+            "name": "get_all_food_items",
+            "description": "Returns the full list of food items in the catalog with ids, prices and stock."
+        }
+    ],
+    "runtimes": [
+        {
+            "type": "RemoteMCPServer",
+            "spec": {
+                "url": "https://food-catalog-mcp-apps.azurewebsites.net/api/mcp",
+                "mcp_tool_description": {
+                    "file": "mcp-tools.json"
+                }
+            },
+            "run_for_functions": [
+                "open_demand_form",
+                "submit_demand",
+                "show_food_catalog",
+                "get_all_food_items"
+            ],
+            "auth": {
+                "type": "None"
+            }
+        }
+    ]
+}
